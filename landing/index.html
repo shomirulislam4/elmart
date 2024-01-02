@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#FF497C">
+
+    <title>Elmart - Multipurpose eCommerce HTML5 Template</title>
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/icon.png">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!-- Start of Preloader -->
+    <div id="preloader">
+        <div id="loader"> </div>
+        <div class="pre-close-btn"><i class="fa-solid fa-x"></i></div>
+    </div>
+    <!-- End of Preloader -->
+
+    <!-- Start of Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 col-6">
+                    <div class="logo">
+                        <a href="index.html"><img src="img/logo.png" alt="Elmart Logo"></a>
+                    </div>
+                </div>
+                <div class="col-sm-9 col-6 navigation-bar">
+                    <nav>
+                        <ul class="nav-items desktop-menu">
+                            <li><a class="active" href="#hero-section"><i class="fa-brands fa-slack"></i> Overview</a></li>
+                            <li><a href="#demo-section"><i class="fa-regular fa-window-restore"></i> Demo</a></li>
+                            <li><a href="#features"><i class="fa-solid fa-list-ul"></i> Features</a></li>
+                            <li><a href="#core"><i class="fa-solid fa-database"></i> Core</a></li>
+                        </ul>
+                    </nav>
+                    <a class="buy-btn button-a" href="#">Buy Theme</a>
+                    <div class="mobile-menu-toggle">
+                        <a href="#"><i class="fa-solid fa-bars"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End of Header -->
+
+    <!-- Start of Hero Section -->
+    <section id="hero-section">
+        <div class="container">
+            <div class="row hero-wrapper">
+                <div class="col-md-6 hero-content left-side">
+                    <div class="content">
+                        <h2>The Best</h2>
+                        <span id="text-change"></span>
+                        <h2>eCommerce template!</h2>
+                        <p>Elmart: an advanced, modern, and responsive multipurpose eCommerce HTML template.</p>
+                        <div class="cta-btn">
+                            <a href="#" class="hero-btn button-a">Buy Theme</a>
+                            <a href="#demo-section" class="hero-btn button-b">View Demos</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 hero-content right-side">
+                    <img src="img/website-mockup.gif" alt="Website Demo">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Hero Section -->
+
+    <!-- Start of Demo Section -->
+    <section id="demo-section">
+        <div class="container demo-wrap">
+            <div class="row">
+                <div class="section-title text-center">
+                    <h2>Demos & Prebuilt Pages</h2>
+                    <p>Discover everything you need effortlessly, from shops and products to profiles, payments, blogs, vendors, and much more - all seamlessly pre-built for Elmart.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-3 col-md-4 .col-12">
+                    <form class="demo-search-box">
+                        <input type="text" id="demosearch" placeholder="Search...">
+                        <button class="demo-search-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                    <button class="show-btn">Categories</button>
+                    <div class="demo-filter">
+                        <li class="active" data-filter=".home">
+                            <span>All Demos</span>
+                            <span>(3)</span>
+                        </li>
+                        <li data-filter="*">
+                            <span>All Pages</span>
+                            <span>(37)</span>
+                        </li>
+                        <li data-filter=".shop">
+                            <span>Shop</span>
+                            <span>(6)</span>
+                        </li>
+                        <li data-filter=".single-product">
+                            <span>Single Product</span>
+                            <span>(7)</span>
+                        </li>
+                        <li data-filter=".blog">
+                            <span>Blog</span>
+                            <span>(4)</span>
+                        </li>
+                        <li data-filter=".about">
+                            <span>About</span>
+                            <span>(1)</span>
+                        </li>
+                        <li data-filter=".contact">
+                            <span>Contact</span>
+                            <span>(1)</span>
+                        </li>
+                        <li data-filter=".user">
+                            <span>User</span>
+                            <span>(3)</span>
+                        </li>
+                        <li data-filter=".vendor">
+                            <span>Vendor</span>
+                            <span>(7)</span>
+                        </li>
+                        <li data-filter=".cart">
+                            <span>Cart</span>
+                            <span>(1)</span>
+                        </li>
+                        <li data-filter=".checkout">
+                            <span>Checkout</span>
+                            <span>(1)</span>
+                        </li>
+                        <li data-filter=".my-acc">
+                            <span>My Account</span>
+                            <span>(2)</span>
+                        </li>
+                        <li data-filter=".others">
+                            <span>Others</span>
+                            <span>(7)</span>
+                        </li>
+                    </div>
+                </div>
+                <div class="col-xl-9 col-md-8 .col-12">
+                    <div class="row demo-contents">
+                        <div class="col-xl-4 col-sm-6 demo-items home">
+                            <figure>
+                            <a href="../index.html"><img src="img/demo/home/home1.png" alt="Homepage 1"></a>
+                            <figcaption>Homepage 1</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items home">
+                            <figure>
+                            <a href="../index-2.html"><img src="img/demo/home/home2.png" alt="Homepage 2"></a>
+                            <figcaption>Homepage 2</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items home">
+                            <figure>
+                            <a href="../index-3.html"><img src="img/demo/home/home3.png" alt="Homepage 3"></a>
+                            <figcaption>Homepage 3</figcaption>
+                            </figure>
+                        </div>
+                        
+                        <div class="col-xl-4 col-sm-6 demo-items shop">
+                            <figure>
+                            <a href="../shop.html"><img src="img/demo/shop/shop-leftbar.png" alt="Shop Left Sidebar"></a>
+                            <figcaption>Shop Left Sidebar (2 Styles)</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items shop">
+                            <figure>
+                            <a href="../shop-right-sidebar.html"><img src="img/demo/shop/shop-rightbar.png" alt="shop Right Sidebar"></a>
+                            <figcaption>Shop Right Sidebar (2 Styles)</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items shop">
+                            <figure>
+                            <a href="../shop-banner-left-sidebar.html"><img src="img/demo/shop/shop-banner-leftbar.png" alt="shop Banner Left Sidebar"></a>
+                            <figcaption>Shop Banner Left Sidebar (2 Styles)</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items shop">
+                            <figure>
+                            <a href="../shop-banner-right-sidebar.html"><img src="img/demo/shop/shop-banner-rightbar.png" alt="shop Banner Right Sidebar"></a>
+                            <figcaption>Shop Banner Right Sidebar (2 Styles)</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items shop">
+                            <figure>
+                            <a href="../shop-product-style-2.html"><img src="img/demo/shop/shop-product-style2.png" alt="shop Product Style 2"></a>
+                            <figcaption>Shop Product Style 2</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items shop">
+                            <figure>
+                            <a href="../shop-infinite-scroll.html"><img src="img/demo/shop/shop-infinite-scroll.png" alt="shop Infinite Scroll"></a>
+                            <figcaption>Shop Infinite Scroll (2 Styles)</figcaption>
+                            </figure>
+                        </div>
+    
+                        <div class="col-xl-4 col-sm-6 demo-items single-product">
+                            <figure>
+                            <a href="../shop-details.html"><img src="img/demo/single-product/single-prod-default.png" alt="Single Product Default"></a>
+                            <figcaption>Single Product Default</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items single-product">
+                            <figure>
+                            <a href="../shop-details-countdown.html"><img src="img/demo/single-product/single-prod-countdown.png" alt="Single Product with Countdown"></a>
+                            <figcaption>Single Product with Countdown</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items single-product">
+                            <figure>
+                            <a href="../shop-details-ask-question.html"><img src="img/demo/single-product/single-prod-ask-question.png" alt="Single Product Ask a Question"></a>
+                            <figcaption>Single Product Ask a Question</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items single-product">
+                            <figure>
+                            <a href="../shop-details-size-guide.html"><img src="img/demo/single-product/single-prod-size-guide.png" alt="Single Product Size Guide"></a>
+                            <figcaption>Single Product Size Guide</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items single-product">
+                            <figure>
+                            <a href="../shop-details-color-compare.html"><img src="img/demo/single-product/single-prod-color-compare.png" alt="Single Product Color Compare"></a>
+                            <figcaption>Single Product Color Compare</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items single-product">
+                            <figure>
+                            <a href="../shop-details-product-image-slider.html"><img src="img/demo/single-product/single-prod-image-slider.png" alt="Single Product Image Slider"></a>
+                            <figcaption>Single Product Image Slider</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items single-product">
+                            <figure>
+                            <a href="../shop-details-sidebar.html"><img src="img/demo/single-product/single-prod-sidebar.png" alt="Single Product with Sidebar"></a>
+                            <figcaption>Single Product with Sidebar (both side)</figcaption>
+                            </figure>
+                        </div>
+    
+                        <div class="col-xl-4 col-sm-6 demo-items blog">
+                            <figure>
+                            <a href="../blog.html"><img src="img/demo/blog/blog-no-sidebar.png" alt="Blog No Sidebar"></a>
+                            <figcaption>Blog No Sidebar</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items blog">
+                            <figure>
+                            <a href="../blog-post.html"><img src="img/demo/blog/blog-post-right-sidebar.png" alt="Blog Post Right Sidebar"></a>
+                            <figcaption>Blog Post Right Sidebar</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items blog">
+                            <figure>
+                            <a href="../blog-post-left-sidebar.html"><img src="img/demo/blog/blog-post-left-sidebar.png" alt="Blog Post Left Sidebar"></a>
+                            <figcaption>Blog Post Left Sidebar</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items blog">
+                            <figure>
+                            <a href="../blog-post-no-sidebar.html"><img src="img/demo/blog/blog-post-no-sidebar.png" alt="Blog Post No Sidebar"></a>
+                            <figcaption>Blog Post No Sidebar</figcaption>
+                            </figure>
+                        </div>
+    
+                        <div class="col-xl-4 col-sm-6 demo-items user">
+                            <figure>
+                            <a href="../login-register.html"><img src="img/demo/user/user-vendor-login.png" alt="User & Vendor Login"></a>
+                            <figcaption>User & Vendor Login</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items user">
+                            <figure>
+                            <a href="../login-register.html"><img src="img/demo/user/user-register.png" alt="User Register"></a>
+                            <figcaption>User Register</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items user my-acc">
+                            <figure>
+                            <a href="../user-dashboard.html"><img src="img/demo/user/user-dashboard.png" alt="User Dashboard"></a>
+                            <figcaption>User Dashboard</figcaption>
+                            </figure>
+                        </div>
+    
+                        <div class="col-xl-4 col-sm-6 demo-items vendor">
+                            <figure>
+                            <a href="../login-register.html"><img src="img/demo/vendor/vendor-register.png" alt="Vendor Register"></a>
+                            <figcaption>Vendor Register</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items vendor">
+                            <figure>
+                            <a href="../vendor-list.html"><img src="img/demo/vendor/vendor-list.png" alt="Vendor List"></a>
+                            <figcaption>Vendor List (2 Styles)</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items vendor">
+                            <figure>
+                            <a href="../vendor-shop-left-Sidebar.html"><img src="img/demo/vendor/vendor-shop-left-sidebar.png" alt="Vendor Shop Left Sidebar"></a>
+                            <figcaption>Vendor Shop Leftbar (2 Styles)</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items vendor">
+                            <figure>
+                            <a href="../vendor-shop-right-Sidebar.html"><img src="img/demo/vendor/vendor-shop-right-sidebar.png" alt="Vendor Shop Right Sidebar"></a>
+                            <figcaption>Vendor Shop Rightbar (2 Styles)</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items vendor">
+                            <figure>
+                            <a href="../vendor-shop-banner-1.html"><img src="img/demo/vendor/vendor-shop-banner-left-sidebar.png" alt="Vendor Shop Banner Left Sidebar"></a>
+                            <figcaption>Vendor Shop Banner Leftbar (2 Styles)</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items vendor">
+                            <figure>
+                            <a href="../vendor-shop-banner-2.html"><img src="img/demo/vendor/vendor-shop-banner-right-sidebar.png" alt="Vendor Shop Banner Right Sidebar"></a>
+                            <figcaption>Vendor Shop Banner Rightbar (2 Styles)</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items vendor my-acc">
+                            <figure>
+                            <a href="../seller-dashboard.html"><img src="img/demo/vendor/vendor-dashboard.png" alt="Vendor/ Seller Dashboard"></a>
+                            <figcaption>Vendor/ Seller Dashboard</figcaption>
+                            </figure>
+                        </div>
+    
+                        <div class="col-xl-4 col-sm-6 demo-items others">
+                            <figure>
+                            <a href="../faqs.html"><img src="img/demo/others/faq.png" alt="FAQs"></a>
+                            <figcaption>FAQs</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items others about">
+                            <figure>
+                            <a href="../about.html"><img src="img/demo/others/about.png" alt="About Us"></a>
+                            <figcaption>About Us</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items others contact">
+                            <figure>
+                            <a href="../contact.html"><img src="img/demo/others/contact.png" alt="Contact Us"></a>
+                            <figcaption>Contact Us</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items others">
+                            <figure>
+                            <a href="../wishlist.html"><img src="img/demo/others/wishlist.png" alt="Wishlist"></a>
+                            <figcaption>Wishlist</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items others cart">
+                            <figure>
+                            <a href="../cart.html"><img src="img/demo/others/cart.png" alt="Cart"></a>
+                            <figcaption>Cart</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items others checkout">
+                            <figure>
+                            <a href="../checkout.html"><img src="img/demo/others/checkout.png" alt="Checkout"></a>
+                            <figcaption>Checkout</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items others">
+                            <figure>
+                            <a href="../order-tracking.html"><img src="img/demo/others/track-order.png" alt="Track Order"></a>
+                            <figcaption>Track Order</figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="col-xl-4 col-sm-6 demo-items home">
+                            <figure>
+                            <a href="#"><img src="img/demo/home/coming-soon.png" alt="Coming Soon"></a>
+                            <figcaption>Coming Soon</figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="no-results-message" style="display: none;">
+                            <h4>No item found.</a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- End of Demo Section -->
+
+    <!-- Start of Features Section -->
+    <section id="features">
+        <div class="container">
+            <div class="row">
+                <div class="section-title text-center">
+                    <h2>Features</h2>
+                    <p>Shop, product, profile, payment, checkout, blog, vendor, and many more pages are already included in Elmart. Lightweight and easy to customize, unique, modern, responsive and up to date with the latest trends! We developed this template to make your marketplace development easier.</p>
+                </div>
+            </div>
+            <div class="row swiper features-images">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide feature-items">
+                        <figure>
+                            <img src="img/features/cart-quick-view-sidebar.png" alt="Cart Quick View Slider">
+                            <figcaption>Cart Quick View Slider</figcaption>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide feature-items">
+                        <figure>
+                            <img src="img/features/change-currency.png" alt="Change Currency">
+                            <figcaption>Change Currency</figcaption>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide feature-items">
+                        <figure>
+                            <img src="img/features/change-language.png" alt="Change Language">
+                            <figcaption>Change Language</figcaption>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide feature-items">
+                        <figure>
+                            <img src="img/features/custom-scroll-bar.png" alt="Custom Scrollbar">
+                            <figcaption>Custom Scrollbar</figcaption>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide feature-items">
+                        <figure>
+                            <img src="img/features/email-subscription-popup.png" alt="Email Subscription (Popup)">
+                            <figcaption>Email Subscription (Popup)</figcaption>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide feature-items">
+                        <figure>
+                            <img src="img/features/header-top-promo-banner.png" alt="Header Promo (Top)">
+                            <figcaption>Header Promo (Top)</figcaption>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide feature-items">
+                        <figure>
+                            <img src="img/features/login-registration-slider.png" alt="Login & Registration Slider">
+                            <figcaption>Login & Registration Slider</figcaption>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide feature-items">
+                        <figure>
+                            <img src="img/features/mega-custom-search-popup.png" alt="Custom Search (Popup)">
+                            <figcaption>Custom Search (Popup)</figcaption>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide feature-items">
+                        <figure>
+                            <img src="img/features/mega-menu.png" alt="Mega Menu">
+                            <figcaption>Mega Menu</figcaption>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide feature-items">
+                        <figure>
+                            <img src="img/features/product-quick-view.png" alt="Product Quick View">
+                            <figcaption>Product Quick View</figcaption>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide feature-items">
+                        <figure>
+                            <img src="img/features/product-sorting.png" alt="Product Sorting">
+                            <figcaption>Product Sorting</figcaption>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide feature-items">
+                        <figure>
+                            <img src="img/features/sales-notification-bottom-left.png" alt="Sales Notification (Bottom Left)">
+                            <figcaption>Sales Notification (Bottom Left)</figcaption>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide feature-items">
+                        <figure>
+                            <img src="img/features/shop-filter-sidebar.png" alt="Shop Filter Sidebar">
+                            <figcaption>Shop Filter Sidebar</figcaption>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide feature-items">
+                        <figure>
+                            <img src="img/features/unique-preloader.png" alt="Preloader">
+                            <figcaption>Preloader</figcaption>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide feature-items">
+                        <figure>
+                            <img src="img/features/custom-cursor.png" alt="Custom Cursor">
+                            <figcaption>Custom Cursor</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="swiper-button-next"><i class="fa-solid fa-circle-chevron-right"></i></div>
+                <div class="swiper-button-prev"><i class="fa-solid fa-circle-chevron-left"></i></div>
+            </div>
+            <div class="row list-of-features">
+                <div class="section-title text-center">
+                    <h2>What we offer</h2>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Features</th>
+                            <th>Other Themes</th>
+                            <th>Our Theme</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Advanced Mega Menu</td>
+                            <td><i class="paid-icon fa-solid fa-circle-dollar-to-slot"></i>PAID</td>
+                            <td><i class="free-icon fa-solid fa-circle-check"></i>FREE</td>
+                        </tr>
+                        <tr class="with-bg">
+                            <td>Product Filtering</td>
+                            <td><i class="paid-icon fa-solid fa-circle-dollar-to-slot"></i>PAID</td>
+                            <td><i class="free-icon fa-solid fa-circle-check"></i>FREE</td>
+                        </tr>
+                        <tr>
+                            <td>Countdown Timer</td>
+                            <td><i class="paid-icon fa-solid fa-circle-dollar-to-slot"></i>PAID</td>
+                            <td><i class="free-icon fa-solid fa-circle-check"></i>FREE</td>
+                        </tr>
+                        <tr class="with-bg">
+                            <td>Quick Shop/ View</td>
+                            <td><i class="paid-icon fa-solid fa-circle-xmark"></i>N/A</td>
+                            <td><i class="free-icon fa-solid fa-circle-check"></i>FREE</td>
+                        </tr>
+                        <tr>
+                            <td>Size Chart</td>
+                            <td><i class="paid-icon fa-solid fa-circle-dollar-to-slot"></i>PAID</td>
+                            <td><i class="free-icon fa-solid fa-circle-check"></i>FREE</td>
+                        </tr>
+                        <tr class="with-bg">
+                            <td>Wishlist</td>
+                            <td><i class="free-icon fa-solid fa-circle-check"></i>FREE</td>
+                            <td><i class="free-icon fa-solid fa-circle-check"></i>FREE</td>
+                        </tr>
+                        <tr>
+                            <td>Quick Cart View</td>
+                            <td><i class="free-icon fa-solid fa-circle-check"></i>FREE</td>
+                            <td><i class="free-icon fa-solid fa-circle-check"></i>FREE</td>
+                        </tr>
+                        <tr class="with-bg">
+                            <td>Advanced Custom Search</td>
+                            <td><i class="paid-icon fa-solid fa-circle-xmark"></i>N/A</td>
+                            <td><i class="free-icon fa-solid fa-circle-check"></i>FREE</td>
+                        </tr>
+                        <tr>
+                            <td>Custom Scrollbar</td>
+                            <td><i class="paid-icon fa-solid fa-circle-xmark"></i>N/A</td>
+                            <td><i class="free-icon fa-solid fa-circle-check"></i>FREE</td>
+                        </tr>
+                        <tr class="with-bg">
+                            <td>Custom Cursor</td>
+                            <td><i class="paid-icon fa-solid fa-circle-xmark"></i>N/A</td>
+                            <td><i class="free-icon fa-solid fa-circle-check"></i>FREE</td>
+                        </tr>
+                        <tr>
+                            <td>Sales Notifications</td>
+                            <td><i class="paid-icon fa-solid fa-circle-dollar-to-slot"></i>PAID</td>
+                            <td><i class="free-icon fa-solid fa-circle-check"></i>FREE</td>
+                        </tr>
+                        <tr class="with-bg">
+                            <td>Login & Register Slider</td>
+                            <td><i class="free-icon fa-solid fa-circle-check"></i>FREE</td>
+                            <td><i class="free-icon fa-solid fa-circle-check"></i>FREE</td>
+                        </tr>
+                        <tr>
+                            <td>Email Subscription Popup</td>
+                            <td><i class="paid-icon fa-solid fa-circle-xmark"></i>N/A</td>
+                            <td><i class="free-icon fa-solid fa-circle-check"></i>FREE</td>
+                        </tr>
+                        <tr class="with-bg">
+                            <td>User Dashboard</td>
+                            <td><i class="paid-icon fa-solid fa-circle-xmark"></i>N/A</td>
+                            <td><i class="free-icon fa-solid fa-circle-check"></i>FREE</td>
+                        </tr>
+                        <tr>
+                            <td>Vendor Dashboard</td>
+                            <td><i class="paid-icon fa-solid fa-circle-xmark"></i>N/A</td>
+                            <td><i class="free-icon fa-solid fa-circle-check"></i>FREE</td>
+                        </tr>
+                        <tr class="with-bg">
+                            <td>Multiple Variations</td>
+                            <td><i class="paid-icon fa-solid fa-circle-xmark"></i>N/A</td>
+                            <td><i class="free-icon fa-solid fa-circle-check"></i>FREE</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <!-- End of Features Section -->
+    
+    <!-- Start of Core Section -->
+    <section id="core">
+        <div class="container core-wrap">
+            <div class="row">
+                <div class="section-title text-center">
+                    <h2>Core Structures</h2>
+                    <p>We used HTML5, CSS3, jQuery, and jQuery plugins. Elmart is fully SEO-optimized, W3 validated, and easily customizable. The full structure of codes is commented on appropriately with well-documentation for ease of customization.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-sm-4 col-6 core-items">
+                    <figure>
+                        <img src="img/core/html.png" alt="HTML5">
+                        <figcaption>HTML5</figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 core-items">
+                    <figure>
+                        <img src="img/core/css.png" alt="CSS3">
+                        <figcaption>CSS3</figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 core-items">
+                    <figure>
+                        <img src="img/core/bootstrap.png" alt="Bootstrap">
+                        <figcaption>Bootstrap</figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 core-items">
+                    <figure>
+                        <img src="img/core/js.png" alt="JavaScript">
+                        <figcaption>JavaScript</figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 core-items">
+                    <figure>
+                        <img src="img/core/jquery.png" alt="jQuery">
+                        <figcaption>jQuery</figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 core-items">
+                    <figure>
+                        <img src="img/core/isotope.png" alt="Isotope">
+                        <figcaption>Isotope</figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 core-items">
+                    <figure>
+                        <img src="img/core/swiper.png" alt="Swiper">
+                        <figcaption>Swiper</figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 core-items">
+                    <figure>
+                        <img src="img/core/responsive.png" alt="Responsive">
+                        <figcaption>Responsive</figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 core-items">
+                    <figure>
+                        <img src="img/core/w3c-logo.png" alt="W3C Validated">
+                        <figcaption>W3C Validated</figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 core-items">
+                    <figure>
+                        <img src="img/core/seo.png" alt="SEO Optimized">
+                        <figcaption>SEO Optimized</figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 core-items">
+                    <figure>
+                        <img src="img/core/documentation.png" alt="Well Documentation">
+                        <figcaption>Well Documentation</figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 core-items">
+                    <figure>
+                        <img src="img/core/browsers.png" alt="Popular Browsers Compatible">
+                        <figcaption>Popular Browsers Compatible</figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 core-items">
+                    <figure>
+                        <img src="img/core/fontawesome.png" alt="Fontawesome">
+                        <figcaption>Fontawesome</figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 core-items">
+                    <figure>
+                        <img src="img/core/google-fonts.png" alt="Google Fonts">
+                        <figcaption>Google Fonts</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Core Section -->
+
+    <!-- Start of Footer Section -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p>©2023 Elmart. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End of Footer Section -->
+
+    <!-- Back to Top -->
+    <a href="javascript:" id="return-to-top"><i class="fa-solid fa-arrow-up-long"></i></a>
+
+    <!-- JS Links -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/typed.umd.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

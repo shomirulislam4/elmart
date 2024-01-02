@@ -1,0 +1,333 @@
+@media (min-width: 1200px) and (max-width: 1399px) {
+    /*** Back to Top ***/
+    #return-to-top {
+        bottom: 80px;
+        right: 80px;
+    }
+    /* Main CSS */
+    .hero-content h2,
+    .hero-content span {
+        font-size: 46px;
+        line-height: 55px;
+    }
+    .typed-cursor {
+        height: 40px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    /*** Back to Top ***/
+    #return-to-top {
+        bottom: 60px;
+        right: 60px;
+        width: 40px;
+        height: 40px;
+    }
+    #return-to-top i {
+        line-height: 40px;
+    }
+    #return-to-top:hover i {
+        line-height: 35px;
+    }
+    /* Main CSS */
+    .hero-content h2,
+    .hero-content span {
+        font-size: 40px;
+        line-height: 46px;
+    }
+    .typed-cursor {
+        height: 32px;
+    }
+    span, p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .button-b,
+    .button-a {
+        padding: 7px 30px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /*** Back to Top ***/
+    #return-to-top {
+        bottom: 50px;
+        right: 50px;
+        width: 40px;
+        height: 40px;
+    }
+    #return-to-top i {
+        line-height: 40px;
+    }
+    #return-to-top:hover i {
+        line-height: 35px;
+    }
+    /* Main CSS */
+    .hero-content h2,
+    .hero-content span {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .typed-cursor {
+        height: 26px;
+    }
+    .hero-content p {
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    span, p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .button-b,
+    .button-a {
+        padding: 5px 30px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .nav-items li {
+        margin-right: 0;
+    }
+    .nav-items li a {
+        padding: 3px 10px;
+        font-size: 16px;
+    }
+    .nav-items li a:hover, .nav-items li a.active {
+        padding: 3px 10px;
+    }
+    .hero-content {
+        padding-bottom: 100px;
+    }
+    .buy-btn.button-a {
+        padding: 3px 10px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    /*** Back to Top ***/
+    #return-to-top {
+        bottom: 45px;
+        right: 45px;
+        width: 40px;
+        height: 40px;
+    }
+    #return-to-top i {
+        font-size: 16px;
+        line-height: 40px;
+    }
+    #return-to-top:hover i {
+        line-height: 35px;
+    }
+    /* Main CSS */
+    .desktop-menu {
+        display: none;
+    }
+    .mobile-menu-toggle {
+        display: block;
+    }
+    /* Hero Section */
+    .hero-content.right-side {
+        padding-top: 0;
+    }
+    .buy-btn.button-a {
+        margin-right: 15px;
+    }
+    .hero-content {
+        padding: 60px 0;
+        padding-top: 150px;
+    }
+    .hero-content h2,
+    .hero-content span {
+        font-size: 48px;
+        line-height: 64px;
+    }
+    .typed-cursor {
+        height: 36px;
+    }
+    .section-title p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    /* Demo Section */
+    #demo-section {
+        padding: 60px;
+    }
+    .demo-wrap .section-title {
+        margin-bottom: 20px;
+    }
+    .demo-filter {
+        margin-bottom: 20px;
+        height: 0;
+        overflow: hidden;
+        padding: 0 20px;
+    }
+    .show-btn {
+        display: block;
+    }
+    .demo-filter.show {
+        height: 660px;
+    }
+    .demo-items {
+        margin-bottom: 20px;
+        height: auto;
+    }
+    .demo-items figcaption {
+        font-size: 14px;
+        line-height: 26px;
+        height: 72px;
+    }
+    /* Features Section */
+    #features {
+        padding: 60px;
+    }
+    .feature-items {
+        margin-bottom: 10px;
+    }
+    .list-of-features table th {
+        font-size: 18px;
+        padding: 5px;
+    }
+    .list-of-features table td {
+        font-size: 14px;
+        padding: 5px;
+    }
+    /* Others */
+    #core,
+    #footer {
+        padding: 60px;
+    }
+    #core {
+        padding-bottom: 0;
+    }
+    #footer p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 575px) {
+    /*** Back to Top ***/
+    #return-to-top {
+        bottom: 40px;
+        right: 35px;
+        width: 35px;
+        height: 35px;
+    }
+    #return-to-top i {
+        font-size: 14px;
+        line-height: 35px;
+    }
+    #return-to-top:hover i {
+        line-height: 30px;
+    }
+    /* Main Css */
+    .desktop-menu {
+        display: none;
+    }
+    .mobile-menu-toggle {
+        display: block;
+    }
+    /* Hero Section */
+    .hero-content.right-side {
+        padding-top: 0;
+    }
+    .buy-btn.button-a {
+        margin-right: 15px;
+        padding: 4px 15px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .hero-content {
+        padding: 60px 10px;
+        padding-top: 120px;
+    }
+    .button-b,
+    .button-a {
+        padding: 5px 25px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .hero-content h2,
+    .hero-content span {
+        font-size: 34px;
+        line-height: 42px;
+    }
+    .typed-cursor {
+        height: 26px;
+    }
+    h2 {
+        font-size: 32px;
+        line-height: 38px;
+    }
+    span, p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .section-title p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    /* Demo Section */
+    #demo-section {
+        padding: 40px;
+    }
+    .demo-wrap .section-title {
+        margin-bottom: 20px;
+    }
+    .demo-filter {
+        margin-bottom: 20px;
+        height: 0;
+        overflow: hidden;
+        padding: 0 20px;
+    }
+    .show-btn {
+        display: block;
+    }
+    .demo-filter.show {
+        height: 660px;
+    }
+    .demo-items {
+        margin-bottom: 20px;
+        height: auto;
+    }
+    .demo-items figcaption {
+        font-size: 14px;
+        line-height: 26px;
+        height: 72px;
+    }
+    /* Features Section */
+    #features {
+        padding: 40px 10px;
+    }
+    .feature-items {
+        margin-bottom: 10px;
+    }
+    .list-of-features table th {
+        font-size: 18px;
+        padding: 5px;
+    }
+    .list-of-features table td {
+        font-size: 14px;
+        padding: 5px;
+    }
+    /* Others */
+    .core-items {
+        margin-bottom: 10px;
+    }
+    #core,
+    #footer {
+        padding: 40px;
+    }
+    #core {
+        padding-bottom: 0;
+    }
+    #footer p {
+        font-size: 16px;
+    }
+    .feature-items figcaption,
+    .core-items figcaption  {
+        font-size: 12px;
+    }
+}
