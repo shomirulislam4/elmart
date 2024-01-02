@@ -2104,8 +2104,9 @@ $(function() {
   })
 });
 
-//Hero Slider Main
+//Hero Section Slider
 $(function() {
+  //Main Slider
   var swiper = new Swiper(".hero-main-slider", {
     slidesPerView: 1,
     loop: true,
@@ -2118,10 +2119,7 @@ $(function() {
       prevEl: ".hero-main-slider-btn-prev",
     },
   });
-});
-
-//Hero Slider Bottom
-$(function() {
+  //Bottom Slider
   var swiper = new Swiper(".hero-in-bottom", {
     slidesPerView: 3,
     breakpoints: {
@@ -2186,13 +2184,17 @@ $(function() {
       prevEl: ".fp-prod-prev",
     },
     breakpoints: {
-      250: {
+      200: {
         slidesPerView: 1,
-        spaceBetween: 6,
+        spaceBetween: 4,
       },
-      375: {
+      290: {
         slidesPerView: 1,
-        spaceBetween: 8,
+        spaceBetween: 10,
+      },
+      415: {
+        slidesPerView: 2,
+        spaceBetween: 4,
       },
       576: {
         slidesPerView: 2,
@@ -2226,6 +2228,18 @@ $(function() {
   });
 });
 
+//Featured Product (Variant 3) - Column Reverse on Screen Size
+function adjustClass() {
+  var screenWidth = $(window).width();
+  var $myDiv = $('#fp-col-cng');
+  if (screenWidth < 992) {
+      $myDiv.addClass('flex-column-reverse');
+  } else {
+      $myDiv.removeClass('flex-column-reverse');
+  }
+}
+adjustClass();
+$(window).resize(adjustClass);
 
 
 
