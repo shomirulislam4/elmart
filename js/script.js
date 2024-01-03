@@ -161,7 +161,6 @@ $(function() {
       clickable: true,
     },
   });
-
 });
 
 //Countdown Timer - Deal Product Section
@@ -2122,6 +2121,7 @@ $(function() {
   //Bottom Slider
   var swiper = new Swiper(".hero-in-bottom", {
     slidesPerView: 3,
+    loop: true,
     breakpoints: {
       100: {
         slidesPerView: 1,
@@ -2154,6 +2154,134 @@ $(function() {
   });
 });
 
+// Featured Product (Variant 3) Product Color Change
+$(function() {
+  // Product 1
+  $('.fpv3-cng-img1-btn1').on('click', function(){
+    $('#fpv3-cng-img-1').fadeOut('fast', function() {
+        $(this).attr('src', 'image/home-four/featured-product/drone.png').fadeIn('fast');
+    });
+  });
+
+  // Product 2
+  $('.fpv3-cng-img2-btn1').on('click', function(){
+    $('#fpv3-cng-img-2').fadeOut('fast', function() {
+        $(this).attr('src', 'image/home-four/featured-product/headphones1.png').fadeIn('fast');
+    });
+  });
+  $('.fpv3-cng-img2-btn2').on('click', function(){
+    $('#fpv3-cng-img-2').fadeOut('fast', function() {
+        $(this).attr('src', 'image/home-four/featured-product/headphones1-2.png').fadeIn('fast');
+    });
+  });
+  $('.fpv3-cng-img2-btn3').on('click', function(){
+    $('#fpv3-cng-img-2').fadeOut('fast', function() {
+        $(this).attr('src', 'image/home-four/featured-product/headphones1-3.png').fadeIn('fast');
+    });
+  });
+
+  // Product 3
+  $('.fpv3-cng-img3-btn1').on('click', function(){
+    $('#fpv3-cng-img-3').fadeOut('fast', function() {
+        $(this).attr('src', 'image/home-four/featured-product/smartphones1.png').fadeIn('fast');
+    });
+  });
+  $('.fpv3-cng-img3-btn2').on('click', function(){
+    $('#fpv3-cng-img-3').fadeOut('fast', function() {
+        $(this).attr('src', 'image/home-four/featured-product/smartphones1-2.png').fadeIn('fast');
+    });
+  });
+  $('.fpv3-cng-img3-btn3').on('click', function(){
+    $('#fpv3-cng-img-3').fadeOut('fast', function() {
+        $(this).attr('src', 'image/home-four/featured-product/smartphones1-3.png').fadeIn('fast');
+    });
+  });
+
+  // Product 4
+  $('.fpv3-cng-img4-btn1').on('click', function(){
+    $('#fpv3-cng-img-4').fadeOut('fast', function() {
+        $(this).attr('src', 'image/home-four/featured-product/drone2.png').fadeIn('fast');
+    });
+  });
+
+  // Product 5
+  $('.fpv3-cng-img5-btn1').on('click', function(){
+    $('#fpv3-cng-img-5').fadeOut('fast', function() {
+        $(this).attr('src', 'image/home-four/featured-product/laptops1.png').fadeIn('fast');
+    });
+  });
+  $('.fpv3-cng-img5-btn2').on('click', function(){
+    $('#fpv3-cng-img-5').fadeOut('fast', function() {
+        $(this).attr('src', 'image/home-four/featured-product/laptops1-2.png').fadeIn('fast');
+    });
+  });
+
+  // Product 6
+  $('.fpv3-cng-img6-btn1').on('click', function(){
+    $('#fpv3-cng-img-6').fadeOut('fast', function() {
+        $(this).attr('src', 'image/home-four/featured-product/smartphones2.png').fadeIn('fast');
+    });
+  });
+  $('.fpv3-cng-img6-btn2').on('click', function(){
+    $('#fpv3-cng-img-6').fadeOut('fast', function() {
+        $(this).attr('src', 'image/home-four/featured-product/smartphones2-2.png').fadeIn('fast');
+    });
+  });
+  $('.fpv3-cng-img6-btn3').on('click', function(){
+    $('#fpv3-cng-img-6').fadeOut('fast', function() {
+        $(this).attr('src', 'image/home-four/featured-product/smartphones2-3.png').fadeIn('fast');
+    });
+  });
+
+  //Product 7
+  $('.fpv3-cng-img7-btn1').on('click', function(){
+    $('#fpv3-cng-img-7').fadeOut('fast', function() {
+        $(this).attr('src', 'image/home-four/featured-product/headphones2.png').fadeIn('fast');
+    });
+  });
+  $('.fpv3-cng-img7-btn2').on('click', function(){
+      $('#fpv3-cng-img-7').fadeOut('fast', function() {
+          $(this).attr('src', 'image/home-four/featured-product/headphones2-2.png').fadeIn('fast');
+      });
+  });
+  $('.fpv3-cng-img7-btn3').on('click', function(){
+      $('#fpv3-cng-img-7').fadeOut('fast', function() {
+          $(this).attr('src', 'image/home-four/featured-product/headphones2-3.png').fadeIn('fast');
+      });
+  });
+
+  //Product 8
+  $('.fpv3-cng-img8-btn1').on('click', function(){
+    $('#fpv3-cng-img-8').fadeOut('fast', function() {
+        $(this).attr('src', 'image/home-four/featured-product/laptops2.png').fadeIn('fast');
+    });
+  });
+  $('.fpv3-cng-img8-btn2').on('click', function(){
+      $('#fpv3-cng-img-8').fadeOut('fast', function() {
+          $(this).attr('src', 'image/home-four/featured-product/laptops2-2.png').fadeIn('fast');
+      });
+  });
+
+  //Product 
+
+});
+
+//Featured Product (Variant 3) - Column Reverse on Screen Size
+$(function() {
+  function adjustClass() {
+    var screenWidth = $(window).width();
+    var $myDiv = $('#fp-col-cng');
+    if (screenWidth < 992) {
+        $myDiv.addClass('flex-column-reverse');
+    } else {
+        $myDiv.removeClass('flex-column-reverse');
+    }
+  }
+  adjustClass();
+  $(window).resize(adjustClass);
+
+});
+
 //Featured Product (Variant 3)
 $(function() {
   //Promo Code Copy
@@ -2175,10 +2303,11 @@ $(function() {
   //Grid View Slider
   var swiper = new Swiper(".shop-product-items-v3", {
     slidesPerView: 3,
+    loop: true,
     grid: {
       rows: 2,
     },
-    spaceBetween: 12,
+    spaceBetween: 10,
     navigation: {
       nextEl: ".fp-prod-next",
       prevEl: ".fp-prod-prev",
@@ -2190,15 +2319,12 @@ $(function() {
       },
       290: {
         slidesPerView: 1,
-        spaceBetween: 10,
       },
       415: {
         slidesPerView: 2,
-        spaceBetween: 4,
       },
       576: {
         slidesPerView: 2,
-        spaceBetween: 10,
       },
       768: {
         slidesPerView: 3,
@@ -2227,20 +2353,5 @@ $(function() {
     }
   });
 });
-
-//Featured Product (Variant 3) - Column Reverse on Screen Size
-function adjustClass() {
-  var screenWidth = $(window).width();
-  var $myDiv = $('#fp-col-cng');
-  if (screenWidth < 992) {
-      $myDiv.addClass('flex-column-reverse');
-  } else {
-      $myDiv.removeClass('flex-column-reverse');
-  }
-}
-adjustClass();
-$(window).resize(adjustClass);
-
-
 
 }) (jQuery);
