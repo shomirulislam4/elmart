@@ -2303,7 +2303,6 @@ $(function() {
   //Grid View Slider
   var swiper = new Swiper(".shop-product-items-v3", {
     slidesPerView: 3,
-    loop: true,
     grid: {
       rows: 2,
     },
