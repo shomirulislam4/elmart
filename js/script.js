@@ -2262,7 +2262,29 @@ $(function() {
       });
   });
 
-  //Product 
+  // Product 9
+  $('.fpv3-cng-img9-btn1').on('click', function(){
+    $('#fpv3-cng-img-9').fadeOut('fast', function() {
+        $(this).attr('src', 'image/home-four/featured-product/smartphones1.png').fadeIn('fast');
+    });
+  });
+  $('.fpv3-cng-img9-btn2').on('click', function(){
+    $('#fpv3-cng-img-9').fadeOut('fast', function() {
+        $(this).attr('src', 'image/home-four/featured-product/smartphones1-2.png').fadeIn('fast');
+    });
+  });
+  $('.fpv3-cng-img9-btn3').on('click', function(){
+    $('#fpv3-cng-img-9').fadeOut('fast', function() {
+        $(this).attr('src', 'image/home-four/featured-product/smartphones1-3.png').fadeIn('fast');
+    });
+  });
+
+  // Product 10
+  $('.fpv3-cng-img10-btn1').on('click', function(){
+    $('#fpv3-cng-img-10').fadeOut('fast', function() {
+        $(this).attr('src', 'image/home-four/featured-product/drone2.png').fadeIn('fast');
+    });
+  });
 
 });
 
@@ -2303,18 +2325,19 @@ $(function() {
   //Grid View Slider
   var swiper = new Swiper(".shop-product-items-v3", {
     slidesPerView: 3,
+    loop: true,
     grid: {
       rows: 2,
     },
-    spaceBetween: 10,
     navigation: {
       nextEl: ".fp-prod-next",
       prevEl: ".fp-prod-prev",
     },
+    spaceBetween: 10,
     breakpoints: {
       200: {
         slidesPerView: 1,
-        spaceBetween: 4,
+        spaceBetween: 8,
       },
       290: {
         slidesPerView: 1,
@@ -2331,8 +2354,8 @@ $(function() {
       },
       1400: {
         slidesPerView: 3,
-        spaceBetween: 20,
-      }
+        spaceBetween: 15,
+      },
     },
   });
 
