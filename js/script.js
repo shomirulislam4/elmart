@@ -2324,42 +2324,7 @@ $(function() {
 
 //Featured Product (Variant 3) - Sliders
 $(function() {
-  var slider = new Swiper('.shop-product-items-v3', {
-    slidesPerView: 3,
-    loop: true,
-    grid: {
-      rows: 2,
-    },
-    navigation: {
-      nextEl: ".fp-prod-next",
-      prevEl: ".fp-prod-prev",
-    },
-    spaceBetween: 10,
-    breakpoints: {
-      200: {
-        slidesPerView: 1,
-        spaceBetween: 8,
-      },
-      290: {
-        slidesPerView: 1,
-      },
-      415: {
-        slidesPerView: 2,
-      },
-      576: {
-        slidesPerView: 2,
-      },
-      768: {
-        slidesPerView: 3,
-        spaceBetween: 12,
-      },
-      1400: {
-        slidesPerView: 3,
-        spaceBetween: 15,
-      },
-    },
-  });
-
+  //Swiper works on other tabs
   function initializeSlider(tabId, sliderClass) {
     $(tabId).on('shown.bs.tab', function () {
       var slider = new Swiper(sliderClass, {
@@ -2399,12 +2364,48 @@ $(function() {
       });
     });
   }
-
   initializeSlider('#all-product-tab', ".spiv3ap");
   initializeSlider('#smartphones-tab', ".spiv3sm");
   initializeSlider('#laptops-tab', ".spiv3lt");
   initializeSlider('#headphones-tab', ".spiv3hp");
   initializeSlider('#drones-tab', ".spiv3d");
+
+  //Swiper Initializes
+  var slider = new Swiper('.shop-product-items-v3', {
+    slidesPerView: 3,
+    loop: true,
+    grid: {
+      rows: 2,
+    },
+    navigation: {
+      nextEl: ".fp-prod-next",
+      prevEl: ".fp-prod-prev",
+    },
+    spaceBetween: 10,
+    breakpoints: {
+      200: {
+        slidesPerView: 1,
+        spaceBetween: 8,
+      },
+      290: {
+        slidesPerView: 1,
+      },
+      415: {
+        slidesPerView: 2,
+      },
+      576: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 12,
+      },
+      1400: {
+        slidesPerView: 3,
+        spaceBetween: 15,
+      },
+    },
+  });
 });
 
 
