@@ -2304,9 +2304,8 @@ $(function() {
 
 });
 
-//Featured Product (Variant 3)
+//Promo Code Copy
 $(function() {
-  //Promo Code Copy
   var clipboard = new ClipboardJS('.copy-btn', {
     text: function() {
       return $('.elm-code').text();
@@ -2321,9 +2320,11 @@ $(function() {
   clipboard.on('error', function(e) {
     alert('Failed to copy code. Please select and copy manually.');
   });
+});
 
-  //Grid View Slider
-  var swiper = new Swiper(".shop-product-items-v3", {
+//Featured Product (Variant 3) - Sliders
+$(function() {
+  var slider = new Swiper('.shop-product-items-v3', {
     slidesPerView: 3,
     loop: true,
     grid: {
@@ -2359,21 +2360,52 @@ $(function() {
     },
   });
 
-  //Filter active item
-  $('.fp-category').on('click','button',function(){
-    $(this).addClass('active').siblings().removeClass('active');
-  });
+  function initializeSlider(tabId, sliderClass) {
+    $(tabId).on('shown.bs.tab', function () {
+      var slider = new Swiper(sliderClass, {
+        slidesPerView: 3,
+        loop: true,
+        grid: {
+          rows: 2,
+        },
+        navigation: {
+          nextEl: ".fp-prod-next",
+          prevEl: ".fp-prod-prev",
+        },
+        spaceBetween: 10,
+        breakpoints: {
+          200: {
+            slidesPerView: 1,
+            spaceBetween: 8,
+          },
+          290: {
+            slidesPerView: 1,
+          },
+          415: {
+            slidesPerView: 2,
+          },
+          576: {
+            slidesPerView: 2,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 12,
+          },
+          1400: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+          },
+        },
+      });
+    });
+  }
 
-  //Shop Category Filter
-  var mixer = mixitup('.prod-filter-out');
-  var mixer = mixitup(containerEl, {
-    selectors: {
-        target: '.fp-category'
-    },
-    animation: {
-        duration: 300
-    }
-  });
+  initializeSlider('#all-product-tab', ".spiv3ap");
+  initializeSlider('#smartphones-tab', ".spiv3sm");
+  initializeSlider('#laptops-tab', ".spiv3lt");
+  initializeSlider('#headphones-tab', ".spiv3hp");
+  initializeSlider('#drones-tab', ".spiv3d");
 });
+
 
 }) (jQuery);
