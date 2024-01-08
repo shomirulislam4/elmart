@@ -2324,89 +2324,91 @@ $(function() {
 
 //Featured Product (Variant 3) - Sliders
 $(function() {
-  //Swiper works on other tabs
-  function initializeSlider(tabId, sliderClass) {
-    $(tabId).on('shown.bs.tab', function () {
-      var slider = new Swiper(sliderClass, {
-        slidesPerView: 3,
-        loop: true,
-        grid: {
-          rows: 2,
+  function initSlickSlider(sliderElement) {
+    $(sliderElement).slick({
+      rows: 2,
+      dots: false,
+      arrows: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+          }
         },
-        navigation: {
-          nextEl: ".fp-prod-next",
-          prevEl: ".fp-prod-prev",
+        {
+          breakpoint: 414,
+          settings: {
+            slidesToShow: 1,
+          }
         },
-        spaceBetween: 10,
-        breakpoints: {
-          200: {
-            slidesPerView: 1,
-            spaceBetween: 8,
-          },
-          290: {
-            slidesPerView: 1,
-          },
-          415: {
-            slidesPerView: 2,
-          },
-          576: {
-            slidesPerView: 2,
-          },
-          768: {
-            slidesPerView: 3,
-            spaceBetween: 12,
-          },
-          1400: {
-            slidesPerView: 3,
-            spaceBetween: 15,
-          },
-        },
-      });
+      ]
     });
   }
-  initializeSlider('#all-product-tab', ".spiv3ap");
-  initializeSlider('#smartphones-tab', ".spiv3sm");
-  initializeSlider('#laptops-tab', ".spiv3lt");
-  initializeSlider('#headphones-tab', ".spiv3hp");
-  initializeSlider('#drones-tab', ".spiv3d");
 
-  //Swiper Initializes
-  var slider = new Swiper('.shop-product-items-v3', {
-    slidesPerView: 3,
+  // Initialize the slider on page load
+  initSlickSlider('.shop-product-items-v3');
+
+  // Function to destroy Slick slider instances
+  function destroySlickSlider(sliderElement) {
+    if ($(sliderElement).hasClass('slick-initialized')) {
+      $(sliderElement).slick('unslick');
+    }
+  }
+
+  // Reinitialize the slider when a tab becomes active
+  $('button[data-bs-toggle="pill"]').on('click', function (e) {
+    var targetTab = $(this).data('bs-target'); // Get the target tab ID
+    var sliderInTab = $(targetTab).find('.shop-product-items-v3');
+
+    // Destroy existing slider instances
+    $('.shop-product-items-v3').each(function() {
+      destroySlickSlider(this);
+    });
+
+    // If the slider exists in the targeted tab, initialize it
+    if (sliderInTab.length) {
+      initSlickSlider(sliderInTab);
+    }
+  });
+
+  // Custom Next and Previous Button
+  $('.fp-prod-prev').click(function(){
+    $('.shop-product-items-v3').slick('slickPrev');
+  });
+
+  $('.fp-prod-next').click(function(){
+    $('.shop-product-items-v3').slick('slickNext');
+  });
+});
+
+//Trending Section
+  var swiper = new Swiper(".trending-slider", {
     loop: true,
-    grid: {
-      rows: 2,
-    },
     navigation: {
-      nextEl: ".fp-prod-next",
-      prevEl: ".fp-prod-prev",
+      nextEl: ".tss-next",
+      prevEl: ".tss-prev",
     },
-    spaceBetween: 10,
-    breakpoints: {
-      200: {
-        slidesPerView: 1,
-        spaceBetween: 8,
-      },
-      290: {
-        slidesPerView: 1,
-      },
-      415: {
-        slidesPerView: 2,
-      },
-      576: {
-        slidesPerView: 2,
-      },
-      768: {
-        slidesPerView: 3,
-        spaceBetween: 12,
-      },
-      1400: {
-        slidesPerView: 3,
-        spaceBetween: 15,
+    on: {
+      slideChange: function () {
+        // Get the current slide index
+        var currentSlide = this.realIndex;
+        // Change the image in the first column based on the slide index
+        var imageColumns = document.querySelectorAll(".img-trnd-slider img");
+        imageColumns.forEach(function (img, index) {
+          if (index === currentSlide) {
+            img.style.display = "block";
+          } else {
+            img.style.display = "none";
+          }
+        });
       },
     },
   });
-});
 
 
 }) (jQuery);
