@@ -156,6 +156,7 @@ $(function() {
   });
 
   var swiper = new Swiper(".testimonial-slider", {
+    spaceBetween: 24,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -2387,28 +2388,57 @@ $(function() {
 });
 
 //Trending Section
+$(function() {
   var swiper = new Swiper(".trending-slider", {
     loop: true,
+    slidesPerView: 1,
+    speed: 500,
     navigation: {
       nextEl: ".tss-next",
       prevEl: ".tss-prev",
     },
     on: {
       slideChange: function () {
-        // Get the current slide index
         var currentSlide = this.realIndex;
-        // Change the image in the first column based on the slide index
         var imageColumns = document.querySelectorAll(".img-trnd-slider img");
         imageColumns.forEach(function (img, index) {
           if (index === currentSlide) {
-            img.style.display = "block";
+            img.classList.add('active');
           } else {
-            img.style.display = "none";
+            img.classList.remove('active');
           }
         });
       },
     },
   });
+});
 
+$(function() {
+  var swiper = new Swiper(".cat-sldr-h4", {
+    slidesPerView: 6,
+    spaceBetween: 10,
+    pagination: {
+      el: ".cat-nav-dots",
+      clickable: true,
+    },
+    breakpoints: {
+      100: {
+        slidesPerView: 2,
+      },
+      576: {
+        slidesPerView: 3,
+      },
+      768: {
+        slidesPerView: 4,
+      },
+      992: {
+        slidesPerView: 5,
+      },
+      1200: {
+        slidesPerView: 6,
+      }
+    },
+  });
+});
 
 }) (jQuery);

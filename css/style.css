@@ -50,7 +50,9 @@
     1. Header Top Promo Area (Variant 2)
     2. Header - Style Four
     3. Hero Section (Variant 4)
-    4. Featured Product (Variant 3)
+    4. categories-section
+    5. Featured Product (Variant 3)
+    6. Trending Section
 **********************************************/
 
 /* ====================================================================
@@ -3631,7 +3633,7 @@ button:focus {
 	position: absolute;
 	transition: .3s opacity;
 	z-index: 10;
-	margin: 0 0 -15px 0;
+	margin: 0 0 -14px 0;
 	text-align: left;
 }
  
@@ -13129,14 +13131,6 @@ button:focus {
     text-align: center;
 }
 
-.hero-main-slider-btn-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    background: #F7B600;
-}
-
-.hero-main-slider-btn-pagination .swiper-pagination-bullet {
-    background: #FFCF4D;
-}
-
 .hero-itm-mid-cont {
     width: 100%;
     height: 248px;
@@ -13238,8 +13232,6 @@ button:focus {
 .hero-in-bottom-btn-prev i {
 	left: 0;
 }
-
-
 
 /* Hero Right */
 .hero-item-small {
@@ -13924,32 +13916,208 @@ button:focus {
 
 /** Start of Trending Section **/
 .trending-section {
-    height: 100vh;
-    overflow: hidden;
-}
-.img-trnd-slider img {
-    width: 100%;
-    height: auto;
-}
-
-.cont-trnd-slider {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin: 0;
 }
 
-.cont-trnd-slider h2 {
+.img-trnd-slider {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.img-trnd-slider img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 100%;
+    opacity: 0;
+    transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-o-transition: 0.5s;
+}
+
+.img-trnd-slider img.active {
+    opacity: 1;
+    animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(50%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.cont-trnd-slider .title {
+    margin-bottom: 40px;
+}
+
+.cont-trnd-slider .title h2 {
     font-size: 80px;
     font-weight: 600;
     line-height: 90px;
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
+    text-align: center;
 }
 
+.cont-trnd-slider {
+    position: relative;
+}
 
+.trending-slider {
+	display: block;
+	width: inherit;
+}
+
+.trending-slider .swiper-slide-active {
+    display: flex;
+    justify-content: center;
+    height: 570px !important;
+}
+
+.trending-slider .shop-cat-card-v3 {
+    margin: 0;
+}
+
+.tss-prev,
+.tss-next {
+    position: absolute;
+    top: 50%;
+    font-size: 50px;
+    z-index: 100;
+    transform: translateY(-50%);
+    transition: 0.3s;
+	-moz-transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+
+.tss-prev:hover,
+.tss-next:hover {
+    color: #F7B600;
+}
+
+.tss-prev {
+    left: 5%;
+}
+
+.tss-next {
+    right: 5%;
+}
+
+.ss-active-custom-width {
+    width: 300px;
+}
 /** End of Trending Section **/
+
+/** Start of Category Section (Home 4) **/
+.categories-section {
+    margin-top: 80px;
+}
+
+.cat-sldr-h4 .cat-sldr-wrap {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.cat-item-v4 .image {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: 0.3s;
+	-moz-transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+    margin-bottom: 10px;
+}
+
+.cat-item-v4 .image:hover {
+    border: 5px solid #F7B600;
+}
+
+.cat-item-v4 .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.cat-item-v4 .info {
+    text-align: center;
+}
+
+.cat-item-v4 .info h2 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.cat-item-v4 .info p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    color: #A4A4A4;
+}
+
+.cat-nav-dots {
+    position: absolute;
+    text-align: center;
+    bottom: 0 !important;
+    z-index: 10;
+}
+/** End of Category Section (Home 4) **/
+
+/** Start of Other Minor Changes **/
+.homepage_four .swiper-pagination-bullet.swiper-pagination-bullet-active {
+	background: #F7B600;
+}
+
+.homepage_four .swiper-pagination-bullet {
+	background: #FFCF4D;
+}
+
+.homepage_four .social-links li a:hover,
+.homepage_four .section-title span {
+    color: #F7B600;
+}
+
+.homepage_four .dwl-timer #days,
+.homepage_four .dwl-timer #hours,
+.homepage_four .dwl-timer #minutes,
+.homepage_four .dwl-timer #seconds {
+	color: #F7B600;
+}
+
+.homepage_four .button-b {
+    background: #F7B600;
+    border-color: #F7B600;
+    color: #FFF;
+}
+
+.homepage_four .button-b:hover {
+    background: #FFF;
+}
+
+.homepage_four .deal-week-right {
+	background-color: #FFF4E6;
+}
+/** End of Other Minor Changes **/
 
 /*
 font-family: 'Josefin Sans', sans-serif;
