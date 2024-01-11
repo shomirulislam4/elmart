@@ -2416,14 +2416,6 @@ $(function() {
       },
     },
   });
-
-  //Atropos
-  var myAtropos = Atropos({
-    activeOffset: 40,
-    shadowScale: 1.05,
-    el: '.product-promo',
-    // rest of parameters
-  });
 });
 
 //Category Section Slider

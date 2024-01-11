@@ -14102,23 +14102,28 @@ button:focus {
     width: 100%;
     position: relative;
     border-bottom: 1px solid #CCC;
+    overflow: hidden;
 }
 
-.pp-item-half::before {
+.pp-item-half::before,
+.pp-item-full::before,
+.pp-item-w50::before,
+.big-promo::before {
     content: "";
     position: absolute;
     top: 0;
-    left: 0;
-    width: 10%;
+    left: -30px;
+    width: 30px;
     height: 100%;
-    background: linear-gradient(to right, transparent 50%, rgba(255, 255, 255, 0.5) 50%);
-    background-size: 200% 100%;
-    transition: background-position 0.5s;
-    pointer-events: none;
+    background: rgba(255, 255, 255, 0.4);
+    transition: 0.3s;
 }
 
-.pp-item-half:hover::before {
-    background-position: -100%;
+.pp-item-half:hover::before,
+.pp-item-full:hover::before,
+.pp-item-w50:hover::before,
+.big-promo:hover::before {
+    left: 100%;
 }
 
 .pp-item-half img {
@@ -14189,6 +14194,7 @@ button:focus {
     position: relative;
     text-align: center;
     border-bottom: 1px solid #CCC;
+    overflow: hidden;
 }
 
 .pp-item-full img {
@@ -14219,6 +14225,7 @@ button:focus {
     height: 500px;
     width: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .pp-item-w50 img {
@@ -14234,6 +14241,7 @@ button:focus {
     height: 1000px;
     width: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .big-promo img {
