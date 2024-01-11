@@ -4141,10 +4141,6 @@
         bottom: -4px;
     }
     /* Featured Product Section */
-    .feat-prod-promo,
-    .fp-promo-code {
-        margin-bottom: 10px;
-    }
     .feat-prod-promo {
         padding: 15px;
         margin-bottom: 10px;
@@ -4171,6 +4167,7 @@
     .fp-promo-code {
         padding: 15px 5px;
         gap: 14px;
+        margin-bottom: 10px;
     }
     .fp-promo-code .content {
         gap: 8px;
@@ -4196,6 +4193,29 @@
     .fp-promo-code .content h2 {
         font-size: 22px;
         line-height: 28px;
+    }
+    .special-offer {
+        padding: 15px;
+    }
+    .special-offer h2 {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 5px;
+    }
+    .special-offer .product h4 {
+        color: #191C1F;
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+    }
+    .special-offer .info .price {
+        font-size: 24px;
+        line-height: 26px;
+        margin-bottom: 4px;
+    }
+    .special-offer .instock-amount {
+        font-size: 12px;
     }
     .fp-product-area .fp-header,
     .fp-product-area .titlencat {
@@ -7943,10 +7963,6 @@
         bottom: -4px;
     }
     /* Featured Product Section */
-    .feat-prod-promo,
-    .fp-promo-code {
-        margin-bottom: 10px;
-    }
     .feat-prod-promo {
         padding: 15px;
         margin-bottom: 10px;
@@ -7973,6 +7989,7 @@
     .fp-promo-code {
         padding: 15px 5px;
         gap: 14px;
+        margin-bottom: 10px;
     }
     .fp-promo-code .content {
         gap: 8px;
@@ -10825,37 +10842,47 @@
         display: flex;
         justify-content: space-between;
     }
-    .feat-prod-promo,
-    .fp-promo-code {
+    .feat-prod-promo {
         margin-bottom: 10px;
-        width: 49.5%;
+        width: 35%;
     }
     .feat-prod-promo {
-        padding: 15px;
+        padding: 10px;
         margin-bottom: 10px;
+    }
+    .feat-prod-promo .image,
+    .special-offer .product img {
+        width: 60px;
+        height: 60px;
     }
     .feat-prod-promo .content {
         margin-bottom: 5px;
     }
     .feat-prod-promo .content h2 {
-        font-size: 22px;
-        line-height: 28px;
-        margin-bottom: 6px;
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 4px;
     }
     .feat-prod-promo .content p {
-        font-size: 14px;
-        line-height: 20px;
-        margin-bottom: 12px;
+        font-size: 10px;
+        line-height: 16px;
+        margin-bottom: 6px;
     }
     .feat-prod-promo .content p span {
-        padding: 5px 10px;
-        font-size: 14px;
+        padding: 5px;
+        font-size: 10px;
         line-height: 20px;
-        margin-left: 6px;
+        margin-left: 4px;
+    }
+    .feat-prod-promo .hm4-btn-b {
+        padding: 5px 20px;
+        font-size: 12px;
     }
     .fp-promo-code {
+        margin-bottom: 10px;
+        width: 34%;
         padding: 15px 5px;
-        gap: 14px;
+        gap: 10px;
     }
     .fp-promo-code .content {
         gap: 8px;
@@ -10881,6 +10908,29 @@
     .fp-promo-code .content h2 {
         font-size: 22px;
         line-height: 28px;
+    }
+    .special-offer {
+        padding: 10px;
+        width: 29%;
+        margin-bottom: 10px;
+    }
+    .special-offer h2 {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 4px;
+    }
+    .special-offer .product h4 {
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 4px;
+    }
+    .special-offer .info .price {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 4px;
+    }
+    .special-offer .instock-amount {
+        font-size: 8px;
     }
     .fp-product-area {
         padding: 2px;
@@ -13109,28 +13159,26 @@
     }
     .feat-prod-promo {
         margin-bottom: 10px;
-        width: 59%;
+        width: 39%;
+        padding: 10px;
     }
-    .fp-promo-code {
-        margin-bottom: 10px;
-        width: 40%;
-    }
-    .feat-prod-promo {
-        padding: 20px;
-        margin-bottom: 10px;
+    .feat-prod-promo .image,
+    .special-offer .product img {
+        width: 80px;
+        height: 80px;
     }
     .feat-prod-promo .content {
         margin-bottom: 5px;
     }
     .feat-prod-promo .content h2 {
-        font-size: 22px;
-        line-height: 28px;
-        margin-bottom: 6px;
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 4px;
     }
     .feat-prod-promo .content p {
         font-size: 14px;
-        line-height: 20px;
-        margin-bottom: 12px;
+        line-height: 18px;
+        margin-bottom: 10px;
     }
     .feat-prod-promo .content p span {
         padding: 5px 10px;
@@ -13141,6 +13189,8 @@
     .fp-promo-code {
         padding: 20px 10px;
         gap: 14px;
+        margin-bottom: 10px;
+        width: 29%;
     }
     .fp-promo-code .content {
         gap: 8px;
@@ -13166,6 +13216,23 @@
     .fp-promo-code .content h2 {
         font-size: 22px;
         line-height: 28px;
+    }
+    .special-offer {
+        width: 30%;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    .special-offer h2 {
+        font-size: 17px;
+        line-height: 18px;
+        margin-bottom: 4px;
+    }
+    .special-offer .product h4 {
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .special-offer .instock-amount {
+        font-size: 10px;
     }
     .fp-product-area .titlencat {
         align-items: flex-start;
@@ -15149,15 +15216,8 @@
     }
     .feat-prod-promo {
         margin-bottom: 10px;
-        width: 69%;
-    }
-    .fp-promo-code {
-        margin-bottom: 10px;
-        width: 30%;
-    }
-    .feat-prod-promo {
         padding: 20px;
-        margin-bottom: 10px;
+        width: 39%;
     }
     .feat-prod-promo .content {
         margin-bottom: 5px;
@@ -15181,6 +15241,8 @@
     .fp-promo-code {
         padding: 20px 10px;
         gap: 14px;
+        margin-bottom: 10px;
+        width: 29%;
     }
     .fp-promo-code .content {
         gap: 8px;
@@ -15206,6 +15268,11 @@
     .fp-promo-code .content h2 {
         font-size: 22px;
         line-height: 28px;
+    }
+    .special-offer {
+        width: 29%;
+        padding: 20px;
+        margin-bottom: 10px;
     }
     .fp-product-area .titlencat h2 {
         font-size: 18px;
@@ -16889,21 +16956,21 @@
     }
     /* Featured Product Section */
     .feat-prod-promo {
-        padding: 20px;
+        padding: 15px;
         margin-bottom: 10px;
     }
     .feat-prod-promo .content {
-        margin-bottom: 5px;
+        margin-bottom: 3px;
     }
     .feat-prod-promo .content h2 {
-        font-size: 22px;
-        line-height: 28px;
-        margin-bottom: 6px;
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 4px;
     }
     .feat-prod-promo .content p {
         font-size: 14px;
-        line-height: 20px;
-        margin-bottom: 12px;
+        line-height: 18px;
+        margin-bottom: 10px;
     }
     .feat-prod-promo .content p span {
         padding: 5px 10px;
@@ -16912,11 +16979,12 @@
         margin-left: 6px;
     }
     .fp-promo-code {
-        padding: 20px 10px;
-        gap: 14px;
+        padding: 15px 10px;
+        gap: 8px;
+        margin-bottom: 10px;
     }
     .fp-promo-code .content {
-        gap: 8px;
+        gap: 4px;
     }
     .fp-promo-code .content .fp-cd-type {
         padding: 5px 10px;
@@ -16939,6 +17007,30 @@
     .fp-promo-code .content h2 {
         font-size: 22px;
         line-height: 28px;
+    }
+    .special-offer {
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+    .special-offer h2 {
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 0;
+    }
+    .special-offer .product h4 {
+        font-size: 13px;
+        line-height: 16px;
+        margin-bottom: 4px;
+    }
+    .special-offer .info .price {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 0;
+    }
+    .special-offer .instock-amount {
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: 4px;
     }
     .fp-product-area {
         padding: 0;
@@ -17854,6 +17946,30 @@
         line-height: 20px;
     }
     /* Featured Product Section */
+    .feat-prod-promo {
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+    .feat-prod-promo .content {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .feat-prod-promo .content h2 {
+        margin-bottom: 2px;
+    }
+    .feat-prod-promo .content p {
+        margin-bottom: 10px;
+    }
+    .fp-promo-code {
+        gap: 12px;
+        margin-bottom: 10px;
+    }
+    .fp-promo-code .content {
+        gap: 8px;
+    }
+    .special-offer {
+        padding: 16px;
+    }
     .shop-product-items-v3 {
         display: flex;
         justify-content: center;
@@ -17925,7 +18041,10 @@
     }
     /* Trending Section */
     .img-trnd-slider {
-        height: 450px;
+        height: 461px;
+    }
+    .trending-slider .swiper-slide-active {
+        height: 470px !important;
     }
     .cont-trnd-slider .title {
         margin-bottom: 20px;

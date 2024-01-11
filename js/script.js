@@ -2389,6 +2389,7 @@ $(function() {
 
 //Trending Section
 $(function() {
+  //Slider
   var swiper = new Swiper(".trending-slider", {
     loop: true,
     slidesPerView: 1,
@@ -2396,6 +2397,10 @@ $(function() {
     navigation: {
       nextEl: ".tss-next",
       prevEl: ".tss-prev",
+    },
+    pagination: {
+      el: ".tss-nav-dots",
+      clickable: true,
     },
     on: {
       slideChange: function () {
@@ -2411,8 +2416,17 @@ $(function() {
       },
     },
   });
+
+  //Atropos
+  var myAtropos = Atropos({
+    activeOffset: 40,
+    shadowScale: 1.05,
+    el: '.product-promo',
+    // rest of parameters
+  });
 });
 
+//Category Section Slider
 $(function() {
   var swiper = new Swiper(".cat-sldr-h4", {
     slidesPerView: 6,
@@ -2440,5 +2454,7 @@ $(function() {
     },
   });
 });
+
+
 
 }) (jQuery);
