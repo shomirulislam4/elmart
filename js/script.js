@@ -2447,6 +2447,133 @@ $(function() {
   });
 });
 
+//Best Deals Today Prod Color Change
+$(function(){
+  // Product 1
+  $('.bdt-cng-img1-btn1').on('click', function(){
+    $('#bdt-cng-img-1').fadeOut('fast', function() {
+        $(this).attr('src', 'image/home-four/featured-product/drone.png').fadeIn('fast');
+    });
+  });
+
+  // Product 2
+  $('.bdt-cng-img2-btn1').on('click', function(){
+    $('#bdt-cng-img-2').fadeOut('fast', function() {
+        $(this).attr('src', 'image/home-four/featured-product/headphones1.png').fadeIn('fast');
+    });
+  });
+  $('.bdt-cng-img2-btn2').on('click', function(){
+    $('#bdt-cng-img-2').fadeOut('fast', function() {
+        $(this).attr('src', 'image/home-four/featured-product/headphones1-2.png').fadeIn('fast');
+    });
+  });
+  $('.bdt-cng-img2-btn3').on('click', function(){
+    $('#bdt-cng-img-2').fadeOut('fast', function() {
+        $(this).attr('src', 'image/home-four/featured-product/headphones1-3.png').fadeIn('fast');
+    });
+  });
+
+  // Product 3
+  $('.bdt-cng-img3-btn1').on('click', function(){
+    $('#bdt-cng-img-3').fadeOut('fast', function() {
+        $(this).attr('src', 'image/home-four/featured-product/smartphones1.png').fadeIn('fast');
+    });
+  });
+  $('.bdt-cng-img3-btn2').on('click', function(){
+    $('#bdt-cng-img-3').fadeOut('fast', function() {
+        $(this).attr('src', 'image/home-four/featured-product/smartphones1-2.png').fadeIn('fast');
+    });
+  });
+  $('.bdt-cng-img3-btn3').on('click', function(){
+    $('#bdt-cng-img-3').fadeOut('fast', function() {
+        $(this).attr('src', 'image/home-four/featured-product/smartphones1-3.png').fadeIn('fast');
+    });
+  });
+
+  // Product 4
+  $('.bdt-cng-img4-btn1').on('click', function(){
+    $('#bdt-cng-img-4').fadeOut('fast', function() {
+        $(this).attr('src', 'image/home-four/featured-product/drone2.png').fadeIn('fast');
+    });
+  });
+
+  // Product 5
+  $('.bdt-cng-img5-btn1').on('click', function(){
+    $('#bdt-cng-img-5').fadeOut('fast', function() {
+        $(this).attr('src', 'image/home-four/featured-product/laptops1.png').fadeIn('fast');
+    });
+  });
+  $('.bdt-cng-img5-btn2').on('click', function(){
+    $('#bdt-cng-img-5').fadeOut('fast', function() {
+        $(this).attr('src', 'image/home-four/featured-product/laptops1-2.png').fadeIn('fast');
+    });
+  });
+
+  // Product 6
+  $('.bdt-cng-img6-btn1').on('click', function(){
+    $('#bdt-cng-img-6').fadeOut('fast', function() {
+        $(this).attr('src', 'image/home-four/featured-product/smartphones2.png').fadeIn('fast');
+    });
+  });
+  $('.bdt-cng-img6-btn2').on('click', function(){
+    $('#bdt-cng-img-6').fadeOut('fast', function() {
+        $(this).attr('src', 'image/home-four/featured-product/smartphones2-2.png').fadeIn('fast');
+    });
+  });
+  $('.bdt-cng-img6-btn3').on('click', function(){
+    $('#bdt-cng-img-6').fadeOut('fast', function() {
+        $(this).attr('src', 'image/home-four/featured-product/smartphones2-3.png').fadeIn('fast');
+    });
+  });
+
+  //Product 7
+  $('.bdt-cng-img7-btn1').on('click', function(){
+    $('#bdt-cng-img-7').fadeOut('fast', function() {
+        $(this).attr('src', 'image/home-four/featured-product/headphones2.png').fadeIn('fast');
+    });
+  });
+  $('.bdt-cng-img7-btn2').on('click', function(){
+      $('#bdt-cng-img-7').fadeOut('fast', function() {
+          $(this).attr('src', 'image/home-four/featured-product/headphones2-2.png').fadeIn('fast');
+      });
+  });
+  $('.bdt-cng-img7-btn3').on('click', function(){
+      $('#bdt-cng-img-7').fadeOut('fast', function() {
+          $(this).attr('src', 'image/home-four/featured-product/headphones2-3.png').fadeIn('fast');
+      });
+  });
+
+  //Product 8
+  $('.bdt-cng-img8-btn1').on('click', function(){
+    $('#bdt-cng-img-8').fadeOut('fast', function() {
+        $(this).attr('src', 'image/home-four/featured-product/laptops2.png').fadeIn('fast');
+    });
+  });
+  $('.bdt-cng-img8-btn2').on('click', function(){
+      $('#bdt-cng-img-8').fadeOut('fast', function() {
+          $(this).attr('src', 'image/home-four/featured-product/laptops2-2.png').fadeIn('fast');
+      });
+  });
+
+  // Product 9
+  $('.bdt-cng-img9-btn1').on('click', function(){
+    $('#bdt-cng-img-9').fadeOut('fast', function() {
+        $(this).attr('src', 'image/home-four/best-deals-today/iphone15-1.png').fadeIn('fast');
+    });
+  });
+  $('.bdt-cng-img9-btn2').on('click', function(){
+    $('#bdt-cng-img-9').fadeOut('fast', function() {
+        $(this).attr('src', 'image/home-four/best-deals-today/iphone15-2.png').fadeIn('fast');
+    });
+  });
+  $('.bdt-cng-img9-btn3').on('click', function(){
+    $('#bdt-cng-img-9').fadeOut('fast', function() {
+        $(this).attr('src', 'image/home-four/best-deals-today/iphone15-3.png').fadeIn('fast');
+    });
+  });
+
+});
+
 
 
 }) (jQuery);

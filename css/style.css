@@ -14091,17 +14091,17 @@ button:focus {
 
 /* Product Promo Section*/
 .product-promo {
-    height: 1500px;
+    height: auto;
     width: 100%;
     margin: 0 auto;
     padding: 0;
 }
 
 .pp-item-half {
-    height: 500px;
+    height: 480px;
     width: 100%;
+    max-width: 480px;
     position: relative;
-    border-bottom: 1px solid #CCC;
     overflow: hidden;
 }
 
@@ -14115,7 +14115,7 @@ button:focus {
     left: -30px;
     width: 30px;
     height: 100%;
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.2);
     transition: 0.3s;
 }
 
@@ -14126,9 +14126,12 @@ button:focus {
     left: 100%;
 }
 
-.pp-item-half img {
-    height: 100%;
+.pp-item-half img,
+.pp-item-full img,
+.pp-item-w50 img,
+.big-promo img {
     width: 100%;
+    height: 100%;
 }
 
 .pp-item-half .top-text,
@@ -14189,17 +14192,11 @@ button:focus {
 }
 
 .pp-item-full {
-    height: 1000px;
+    height: 960px;
     width: 100%;
     position: relative;
     text-align: center;
-    border-bottom: 1px solid #CCC;
     overflow: hidden;
-}
-
-.pp-item-full img {
-    height: 100%;
-    width: 100%;
 }
 
 .pp-item-full .hm4-btn-b,
@@ -14217,8 +14214,8 @@ button:focus {
 .pp-item-full .hm4-btn-b:hover,
 .pp-item-w50 .hm4-btn-b:hover,
 .big-promo .hm4-btn-b:hover {
-	color: #FFF !important;
     border-color: #FFF;
+    background-color: #FFF;
 }
 
 .pp-item-w50 {
@@ -14228,25 +14225,15 @@ button:focus {
     overflow: hidden;
 }
 
-.pp-item-w50 img {
-    height: 100%;
-    width: 100%;
-}
-
 .product-promo .top-sec {
     display: flex;
 }
 
 .big-promo {
-    height: 1000px;
+    height: 980px;
     width: 100%;
     position: relative;
     overflow: hidden;
-}
-
-.big-promo img {
-    height: 100%;
-    width: 100%;
 }
 
 /** End of Trending Section **/
@@ -14316,6 +14303,238 @@ button:focus {
     z-index: 10;
 }
 /** End of Category Section (Home 4) **/
+
+/** Start of Best Deals Today **/
+.best-deals-today {
+    margin-top: 80px;
+}
+
+/* Title and Tabs */
+.best-deals-wrapper h2 {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 50px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.best-deals-wrapper .nav-link {
+	color: #191C1F;
+}
+
+.best-deals-wrapper .nav-tabs {
+	border-color: #FFF;
+	display: flex;
+	justify-content: center;
+    margin-bottom: 10px;
+}
+
+.best-deals-wrapper .nav-link:focus,
+.best-deals-wrapper .nav-link:hover {
+    color: #F7B600;
+	border-color: #FFF;
+    position: relative;
+}
+
+.best-deals-wrapper .nav-link.active {
+	color: #F7B600;
+	background-color: #FFF;
+	border-color: #FFF;
+    position: relative;
+}
+
+.best-deals-wrapper .nav-link.active:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #F7B600;
+    transition: 0.3s;
+	-moz-transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+
+.best-deals-wrapper .nav-link:before,
+.best-deals-wrapper .nav-link:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0;
+    background-color: #F7B600;
+    transition: 0.3s;
+	-moz-transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+
+.best-deals-wrapper .nav-link:before {
+    left: 0;
+    bottom: 0;
+}
+
+.best-deals-wrapper .nav-link:after {
+    right: 0;
+    bottom: 0;
+}
+
+.best-deals-wrapper .nav-link:hover:before,
+.best-deals-wrapper .nav-link:hover:after {
+    width: 50%;
+}
+
+/* Items */
+.small-item .shop-image-v3 {
+    height: 223px;
+}
+
+.small-item .shop-cat-card-v3,
+.small-item .shop-background-v3 {
+    width: 230px !important;
+    height: 308px !important;
+}
+
+.small-item .shop-cat-card-v3:hover .shop-background-v3 {
+    height: 372px !important;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+.small-item .shop-hover-v3 ul li {
+    height: 36px;
+    width: 36px;
+    top: 10px;
+    right: 10px;
+}
+
+.small-item .shop-image-v3 .tag-best-deals-v3,
+.small-item .shop-image-v3 .tag-discount-v3,
+.small-item .shop-image-v3 .tag-onsale,
+.small-item .shop-image-v3 .tag-hot,
+.small-item .shop-image-v3 .tag-narrival {
+    font-size: 12px;
+    line-height: 20px;
+    top: 10px;
+    left: 10px;
+}
+
+.small-item .timer-and-btn .deal-product-timer {
+    padding: 3px;
+    height: fit-content;
+}
+
+.small-item .timer-and-btn .deal-product-timer #days,
+.small-item .timer-and-btn .deal-product-timer #hours,
+.small-item .timer-and-btn .deal-product-timer #minutes,
+.small-item .timer-and-btn .deal-product-timer #seconds {
+    font-size: 12px;
+}
+
+.small-item .timer-and-btn .deal-product-timer #days span,
+.small-item .timer-and-btn .deal-product-timer #hours span,
+.small-item .timer-and-btn .deal-product-timer #minutes span,
+.small-item .timer-and-btn .deal-product-timer #seconds span {
+    font-size: 10px;
+    margin: 0 2px;
+}
+
+.small-item .timer-and-btn .shop-button-v3 {
+    font-size: 12px;
+    line-height: 45px;
+    padding: 0 14px;
+    margin: 0;
+}
+
+.small-item .timer-and-btn {
+    bottom: -25%;
+    gap: 5px;
+}
+
+.small-item .shop-hover-v3 ul li a {
+    font-size: 18px;
+    line-height: 39px;
+}
+
+.small-item .shop-cat-card-v3:hover .shop-hover-v3 ul li:nth-child(2) {
+    margin-top: 40px;;
+}
+
+.small-item .shop-cat-card-v3:hover .shop-hover-v3 ul li:nth-child(3) {
+    margin-top: 80px;
+}
+
+.small-item .shop-content-v3 {
+    height: 85px;
+    padding: 14px;
+}
+
+.small-item .shop-content-v3 h5 {
+    font-size: 14px;
+    line-height: 16px;
+    height: 32px;
+}
+
+.small-item .shop-content-v3 h3 {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.small-item .shop-cat-card-v3:hover .shop-info-v3 {
+    height: 14px;
+    margin-bottom: 10px;
+}
+
+.small-item .product-variant-v3 .color-1,
+.small-item .product-variant-v3 .color-2,
+.small-item .product-variant-v3 .color-3 {
+    height: 12px;
+    width: 12px;
+}
+
+.small-item .shop-info-v3 .rating-star {
+    font-size: 11px;
+}
+
+.small-item .shop-content-v3 .instock-amount {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 5px;
+}
+
+.large-item .shop-cat-card-v3,
+.large-item .shop-background-v3 {
+	width: 469px !important;
+	height: 625px !important;
+    overflow: visible;
+}
+
+.large-item .shop-info-v3 {
+	height: fit-content;
+	margin-bottom: 0;
+	overflow: visible;
+    margin-bottom: 20px;
+}
+
+.large-item .shop-content-v3 {
+	overflow: visible;
+}
+
+.large-item .shop-content-v3 h5 {
+	font-size: 20px;
+	line-height: 26px;
+	height: auto;
+}
+
+.large-item .shop-content-v3 h3 {
+	margin-top: 20px;
+}
+
+.large-item .instock-progress-bar {
+    height: 10px;
+}
+/** End of Best Deals Today **/
 
 /** Start of Footer **/
 .homepage_four .social-links li a:hover {
