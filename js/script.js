@@ -2574,6 +2574,23 @@ $(function(){
 
 });
 
-
+//Best Deals Today column change on breakpoint
+$(function() {
+  function updateColumnClass() {
+    var screenWidth = $(window).width();
+    $('#bdtwTabContent').each(function() {
+      var $section = $(this);
+      if (screenWidth <= 414) {
+        $section.find('.col-6').removeClass('col-6').addClass('col-12');
+      } else {
+        $section.find('.col-12').removeClass('col-12').addClass('col-6');
+      }
+    });
+  }
+  updateColumnClass();
+  $(window).resize(function() {
+    updateColumnClass();
+  });
+});
 
 }) (jQuery);
