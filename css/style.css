@@ -13983,7 +13983,95 @@ button:focus {
     margin: 0;
 }
 
-.img-trnd-slider {
+.trending-slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.ts-pagination-bullet {
+    width: 24px;
+    height: 24px;
+    margin: 0 8px;
+    border-radius: 50%;
+}
+
+.pagination-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.ts-btn-next,
+.ts-btn-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #191C1F;
+    cursor: pointer;
+    z-index: 10;
+    transition: 0.3s;
+	-moz-transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+
+.ts-btn-next:hover,
+.ts-btn-prev:hover {
+    background: #f0f0f0;
+}
+
+.ts-btn-prev {
+    left: 10px;
+}
+
+.ts-btn-next {
+    right: 10px;
+}
+
+.ts-pagination {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    z-index: 20;
+}
+
+.ts-pagination .swiper-pagination-bullet {
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #fff;
+    height: 60px;
+    width: 60px;
+    border-radius: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+    border-bottom: 5px solid transparent;
+    margin-right: 10px;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+
+.ts-pagination .swiper-pagination-bullet-active {
+    background-color: #fff !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    border-bottom: 5px solid #F7B600;
+}
+
+/*.img-trnd-slider {
     position: relative;
     overflow: hidden;
     text-align: center;
@@ -14087,7 +14175,7 @@ button:focus {
 
 .ss-active-custom-width {
     width: 300px;
-}
+}*/
 
 /* Product Promo Section*/
 .product-promo {
@@ -14534,8 +14622,17 @@ button:focus {
 .large-item .instock-progress-bar {
     height: 10px;
 }
-
 /** End of Best Deals Today **/
+
+/** Start of Best Deals Today **/
+.new-arrival-products {
+    margin-top: 80px;
+}
+/** End of Best Deals Today **/
+
+/** Start of Recently Viewed Products **/
+
+/** End of Recently Viewed Products **/
 
 /** Start of Footer **/
 .homepage_four .social-links li a:hover {

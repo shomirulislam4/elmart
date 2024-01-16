@@ -2593,4 +2593,55 @@ $(function() {
   });
 });
 
+//New Arrival Product column change on breakpoint
+$(function() {
+  function updateColumnClass() {
+    var screenWidth = $(window).width();
+    $('#napTabContent').each(function() {
+      var $section = $(this);
+      if (screenWidth <= 414) {
+        $section.find('.col-6').removeClass('col-6').addClass('col-12');
+      } else {
+        $section.find('.col-12').removeClass('col-12').addClass('col-6');
+      }
+    });
+  }
+  updateColumnClass();
+  $(window).resize(function() {
+    updateColumnClass();
+  });
+});
+
+$(function(){
+  var swiper = new Swiper(".trending-slider", {
+    loop: true,
+    navigation: {
+      nextEl: ".ts-btn-next",
+      prevEl: ".ts-btn-prev",
+    },
+    pagination: {
+      el: ".ts-pagination",
+      clickable: true,
+      renderBullet: function (index, className) {
+        return (
+          '<span class="' +
+          className +
+          ' pagination-image" style="background-image: url(' +
+          getPaginationImage(index) +
+          ');"></span>'
+        );
+      },
+    },
+  });
+
+  function getPaginationImage(index) {
+    var images = [
+      "../image/home-two/hero-section/hero-client-1.png",
+      "../image/home-two/hero-section/hero-client-2.png",
+      "../image/home-two/hero-section/hero-client-3.png",
+    ];
+    return images[index % images.length];
+  }
+})
+
 }) (jQuery);
