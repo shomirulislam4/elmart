@@ -4349,39 +4349,59 @@
         margin-top: 5px;
     }
     /* Trending Section */
-    .img-trnd-slider {
-        width: 200px;
-        height: 139px;
-        margin: 0 auto;
-        margin-bottom: 10px;
+    .trending-slider .swiper-slide {
+        height: 238px;
     }
-    .cont-trnd-slider,
-    .trending-slider .swiper-slide-active {
-        height: 400px !important;
-        padding: 5px 0;
+    .trnd-img-sldr img {
+        width: 100%;
+        height: auto;
     }
-    .trending-slider {
-        width: 190px;
+    .ts-pagination .swiper-pagination-bullet {
+        height: 35px;
+        width: 35px;
+        border-bottom: 2px solid transparent;
+        margin-right: 5px;
     }
-    .cont-trnd-slider .title {
-        margin-bottom: 10px;
+    .ts-pagination .swiper-pagination-bullet-active {
+        border-bottom: 2px solid #F7B600;
     }
-    .cont-trnd-slider .title h2 {
-        font-size: 32px;
-        line-height: 26px;
+    .trnd-prod-info h2 {
+        font-size: 26px;
+        line-height: 30px;
+        margin-top: 5px;
+        margin-bottom: 6px;
     }
-    .tss-prev,
-    .tss-next {
-        font-size: 20px;
-        line-height: 42px;
-        height: 40px;
-        width: 40px;
+    .trnd-prod-info .rating-star {
+        font-size: 10px;
     }
-    .tss-prev {
-        left: 0;
+    .trnd-prod-info .price {
+        font-size: 24px;
+        line-height: 28px;
     }
-    .tss-next {
-        right: 0;
+    .tr-color-selected p {
+        font-size: 16px;
+    }
+    .tr-prod-color {
+        margin-top: 5px;
+    }
+    .tr-color-selector {
+        margin-bottom: 5px;
+    }
+    .tr-color {
+        width: 25px;
+        height: 25px;
+        margin-right: 5px;
+    }
+    .trnd-prod-info .item-quantity {
+        margin-top: 10px;
+    }
+    .trnd-prod-info .hm4-btn-a,
+    .trnd-prod-info .hm4-btn-b {
+        display: inline-block;
+        padding: 5px 13px;
+        margin-right: 5px;
+        margin-top: 10px;
+        font-weight: 400;
     }
     .pp-item-half,
     .pp-item-w50 {
@@ -4390,9 +4410,6 @@
     .pp-item-full,
     .big-promo {
         height: 200px;
-    }
-    .tss-nav-dots {
-        margin-top: -70px;
     }
     .pp-item-full .hm4-btn-b,
     .pp-item-w50 .hm4-btn-b,
@@ -8300,39 +8317,49 @@
         margin-top: 5px;
     }
     /* Trending Section */
-    .img-trnd-slider {
-        width: 290px;
-        height: 202px;
-        margin: 0 auto;
+    .trending-slider .swiper-slide {
+        height: 325px;
+    }
+    .trnd-img-sldr img {
+        width: 90%;
+        height: auto;
+    }
+    .trnd-prod-info h2 {
+        font-size: 30px;
+        line-height: 34px;
+        margin-top: 5px;
         margin-bottom: 10px;
     }
-    .cont-trnd-slider,
-    .trending-slider .swiper-slide-active {
-        height: 400px !important;
-        padding: 10px 0;
+    .trnd-prod-info .rating-star {
+        font-size: 10px;
     }
-    .trending-slider {
-        width: 270px;
+    .trnd-prod-info .price {
+        font-size: 24px;
+        line-height: 28px;
     }
-    .cont-trnd-slider .title {
-        margin-bottom: 10px;
+    .tr-color-selected p {
+        font-size: 16px;
     }
-    .cont-trnd-slider .title h2 {
-        font-size: 32px;
-        line-height: 26px;
+    .tr-prod-color {
+        margin-top: 5px;
     }
-    .tss-prev,
-    .tss-next {
-        font-size: 20px;
-        line-height: 42px;
-        height: 40px;
-        width: 40px;
+    .tr-color-selector {
+        margin-bottom: 5px;
     }
-    .tss-prev {
-        left: 0;
+    .trnd-prod-info .item-quantity {
+        margin-top: 10px;
     }
-    .tss-next {
-        right: 0;
+    .trnd-prod-info .tr-btns {
+        display: flex;
+    }
+    .trnd-prod-info .hm4-btn-a,
+    .trnd-prod-info .hm4-btn-b {
+        display: inline-block;
+        width: auto;
+        padding: 5px 13px;
+        margin-right: 5px;
+        margin-top: 10px;
+        font-weight: 500;
     }
     .pp-item-half,
     .pp-item-w50 {
@@ -8341,9 +8368,6 @@
     .pp-item-full,
     .big-promo {
         height: 290px;
-    }
-    .tss-nav-dots {
-        margin-top: -70px;
     }
     .pp-item-full .hm4-btn-b,
     .pp-item-w50 .hm4-btn-b,
@@ -11319,29 +11343,42 @@
         margin-top: 5px;
     }
     /* Trending Section */
-    .img-trnd-slider {
-        width: 415px;
-        height: 289px;
-        margin: 0 auto;
-        margin-bottom: 15px;
+    .trending-slider .swiper-slide {
+        height: 400px;
     }
-    .cont-trnd-slider,
-    .trending-slider .swiper-slide-active {
-        height: 368px !important;
+    .trnd-img-sldr img {
+        width: 80%;
+        height: auto;
     }
-    .trending-slider {
-        width: 260px;
-    }
-    .cont-trnd-slider .title {
-        margin-bottom: 15px;
-    }
-    .cont-trnd-slider .title h2 {
-        font-size: 44px;
-        line-height: 30px;
-    }
-    .tss-prev,
-    .tss-next {
+    .trnd-prod-info h2 {
         font-size: 30px;
+        line-height: 34px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .trnd-prod-info .rating-star {
+        font-size: 10px;
+    }
+    .trnd-prod-info .price {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .tr-color-selected p {
+        font-size: 16px;
+    }
+    .tr-prod-color {
+        margin-top: 10px;
+    }
+    .trnd-prod-info .tr-btns {
+        display: flex;
+    }
+    .trnd-prod-info .hm4-btn-a,
+    .trnd-prod-info .hm4-btn-b {
+        display: inline-block;
+        width: auto;
+        padding: 10px 30px;
+        margin-right: 10px;
+        margin-top: 15px;
     }
     .pp-item-half,
     .pp-item-w50 {
@@ -11350,9 +11387,6 @@
     .pp-item-full,
     .big-promo {
         height: 384px;
-    }
-    .tss-nav-dots {
-        margin-top: -85px;
     }
     .pp-item-full .hm4-btn-b,
     .pp-item-w50 .hm4-btn-b,
@@ -13746,29 +13780,37 @@
         margin-top: 5px;
     }
     /* Trending Section */
-    .img-trnd-slider {
-        width: 576px;
-        height: 401px;
-        margin: 0 auto;
-        margin-bottom: 20px;
+    .trending-slider .swiper-slide {
+        height: 420px;
     }
-    .cont-trnd-slider,
-    .trending-slider .swiper-slide-active {
-        height: 400px !important;
+    .trnd-img-sldr img {
+        width: 100%;
+        height: auto;
     }
-    .trending-slider {
-        width: 260px;
+    .trnd-prod-info h2 {
+        font-size: 20px;
+        line-height: 22px;
+        margin-top: 5px;
+        margin-bottom: 10px;
     }
-    .cont-trnd-slider .title {
-        margin-bottom: 15px;
+    .trnd-prod-info .rating-star {
+        font-size: 10px;
     }
-    .cont-trnd-slider .title h2 {
-        font-size: 44px;
-        line-height: 30px;
+    .trnd-prod-info .price {
+        font-size: 14px;
+        line-height: 16px;
     }
-    .tss-prev,
-    .tss-next {
-        font-size: 30px;
+    .tr-prod-color {
+        margin-top: 10px;
+    }
+    .tr-color {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+    }
+    .trnd-prod-info .hm4-btn-a,
+    .trnd-prod-info .hm4-btn-b {
+        padding: 10px 15px;
     }
     .pp-item-half,
     .pp-item-w50 {
@@ -13777,9 +13819,6 @@
     .pp-item-full,
     .big-promo {
         height: 576px;
-    }
-    .tss-nav-dots {
-        margin-top: -85px;
     }
     .pp-item-full .hm4-btn-b,
     .pp-item-w50 .hm4-btn-b,
@@ -15874,19 +15913,12 @@
     .trending-slider .swiper-slide-active {
         height: 390px !important;
     }
-    .trending-slider {
-        width: 260px;
+    .trending-slider .swiper-slide {
+        height: 550px;
     }
-    .cont-trnd-slider .title {
-        margin-bottom: 15px;
-    }
-    .cont-trnd-slider .title h2 {
-        font-size: 44px;
-        line-height: 30px;
-    }
-    .tss-prev,
-    .tss-next {
-        font-size: 30px;
+    .trnd-img-sldr img {
+        width: 100%;
+        height: auto;
     }
     .pp-item-half,
     .pp-item-w50 {
@@ -15895,9 +15927,6 @@
     .pp-item-full,
     .big-promo {
         height: 384px;
-    }
-    .tss-nav-dots {
-        margin-top: -85px;
     }
     .pp-item-full .hm4-btn-b,
     .pp-item-w50 .hm4-btn-b,

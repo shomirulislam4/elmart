@@ -2388,33 +2388,47 @@ $(function() {
 });
 
 //Trending Section
-$(function() {
+$(function(){
   //Slider
   var swiper = new Swiper(".trending-slider", {
     loop: true,
-    slidesPerView: 1,
-    speed: 500,
     navigation: {
-      nextEl: ".tss-next",
-      prevEl: ".tss-prev",
+      nextEl: ".ts-btn-next",
+      prevEl: ".ts-btn-prev",
     },
     pagination: {
-      el: ".tss-nav-dots",
+      el: ".ts-pagination",
       clickable: true,
-    },
-    on: {
-      slideChange: function () {
-        var currentSlide = this.realIndex;
-        var imageColumns = document.querySelectorAll(".img-trnd-slider img");
-        imageColumns.forEach(function (img, index) {
-          if (index === currentSlide) {
-            img.classList.add('active');
-          } else {
-            img.classList.remove('active');
-          }
-        });
+      renderBullet: function (index, className) {
+        return (
+          '<span class="' +
+          className +
+          ' pagination-image" style="background-image: url(' +
+          getPaginationImage(index) +
+          ');"></span>'
+        );
       },
     },
+  });
+
+  function getPaginationImage(index) {
+    var images = [
+      "../image/home-four/trending-slider/img-thumb-1.png",
+      "../image/home-four/trending-slider/img-thumb-2.png",
+      "../image/home-four/trending-slider/img-thumb-3.png",
+    ];
+    return images[index % images.length];
+  }
+
+  //Select Color
+  $(".tr-color:not(.disabled)").click(function () {
+    var selectedColor = $(this).data("color");
+    $("#tr-selected-color").text("").css({
+      "background-color": selectedColor,
+      width: "20px",
+      height: "20px",
+      display: "block",
+    });
   });
 });
 
@@ -2612,36 +2626,5 @@ $(function() {
   });
 });
 
-$(function(){
-  var swiper = new Swiper(".trending-slider", {
-    loop: true,
-    navigation: {
-      nextEl: ".ts-btn-next",
-      prevEl: ".ts-btn-prev",
-    },
-    pagination: {
-      el: ".ts-pagination",
-      clickable: true,
-      renderBullet: function (index, className) {
-        return (
-          '<span class="' +
-          className +
-          ' pagination-image" style="background-image: url(' +
-          getPaginationImage(index) +
-          ');"></span>'
-        );
-      },
-    },
-  });
-
-  function getPaginationImage(index) {
-    var images = [
-      "../image/home-two/hero-section/hero-client-1.png",
-      "../image/home-two/hero-section/hero-client-2.png",
-      "../image/home-two/hero-section/hero-client-3.png",
-    ];
-    return images[index % images.length];
-  }
-})
 
 }) (jQuery);
