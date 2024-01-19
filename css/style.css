@@ -53,6 +53,10 @@
     4. categories-section
     5. Featured Product (Variant 3)
     6. Trending Section
+    7. Best Deals Today
+    8. New Arrival Product
+    9. Recently Viewed Products
+    10. Blog (Variant 2)
 **********************************************/
 
 /* ====================================================================
@@ -14685,10 +14689,180 @@ button:focus {
 /** End of Best Deals Today **/
 
 /** Start of Recently Viewed Products **/
+.recently-viewed-products {
+    margin-top: 80px;
+}
 
+.recently-viewed-products .title {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 50px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+}
+
+.rvp-slider-nav {
+    margin: 0;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 90px;
+}
+
+.rvp-slider-nav .rvp-slider-next,
+.rvp-slider-nav .rvp-slider-prev {
+	background: #F7B600;
+	width: 40px;
+	height: 40px;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+	cursor: pointer;
+	color: #FFF;
+	border-radius: 50px;
+	margin: 0;
+    opacity: 0.4;
+	transition: 0.3s;
+	-moz-transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+
+.rvp-slider-nav .rvp-slider-next:hover,
+.rvp-slider-nav .rvp-slider-prev:hover {
+    opacity: 1;
+}
+
+
+.rvp-slider-item {
+    display: flex;
+}
+
+.rvp-slider-item .image {
+    position: relative;
+}
+
+.rvp-slider-item .discount {
+    position: absolute;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 12px;
+    padding: 5px;
+    top: 5px;
+    left: 5px;
+    background: #FFF;
+    text-transform: uppercase;
+    border: 1px solid #F7B600;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.rvp-slider-item .image img {
+    width: 100px;
+    height: 100px;
+}
+
+.rvp-slider-item .info {
+    margin-left: 10px;
+}
+
+.rvp-slider-item .info h3 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+}
+
+.rvp-slider-item .info .price,
+.rvp-slider-item .info .price span {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #F7B600;
+}
+
+.rvp-slider-item .info .price span {
+    color: #AEAEAE;
+    text-decoration: line-through;
+}
 /** End of Recently Viewed Products **/
 
+/** Start of Blog (Variant 2) **/
+.blog-v2 {
+    margin-top: 80px;
+}
+
+.blog-v2 .title {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 50px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.blog-v2 .title:after {
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    content: '';
+    width: 150px;
+    height: 2px;
+    background: #191C1F;
+}
+
+.blog-v2-item {
+    display: flex;
+}
+
+.blog-v2-item .image img {
+    width: 100px;
+    height: 100px;
+}
+
+.blog-v2-item .info {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.blog-v2-item .info h3 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    margin-bottom: 2px;
+}
+
+.blog-v2-item .info .publish-date {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: lowercase;
+    color: #A4A4A4;
+    margin: 0;
+}
+
+/** End of Blog (Variant 2) **/
+
 /** Start of Footer **/
+.homepage_four .footer-section,
+.homepage_four .footer-widget p,
+.homepage_four .footer-about-brand a,
+.homepage_four .footer-link li a,
+.homepage_four .copyright span {
+    font-family: 'Poppins', sans-serif;
+}
+
 .homepage_four .social-links li a:hover {
     color: #F7B600;
 }
