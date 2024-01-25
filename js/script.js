@@ -2155,6 +2155,99 @@ $(function() {
   });
 });
 
+//Category Section Slider
+$(function() {
+  var swiper = new Swiper(".cat-sldr-h4", {
+    slidesPerView: 6,
+    spaceBetween: 10,
+    pagination: {
+      el: ".cat-nav-dots",
+      clickable: true,
+    },
+    breakpoints: {
+      100: {
+        slidesPerView: 2,
+      },
+      576: {
+        slidesPerView: 3,
+      },
+      768: {
+        slidesPerView: 4,
+      },
+      992: {
+        slidesPerView: 5,
+      },
+      1200: {
+        slidesPerView: 6,
+      }
+    },
+  });
+});
+
+//Featured Product (Variant 3) - Sliders
+$(function() {
+  function initSlickSlider(sliderElement) {
+    $(sliderElement).slick({
+      rows: 2,
+      dots: false,
+      arrows: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 414,
+          settings: {
+            slidesToShow: 1,
+          }
+        },
+      ]
+    });
+  }
+
+  // Initialize the slider on page load
+  initSlickSlider('.shop-product-items-v3');
+
+  // Function to destroy Slick slider instances
+  function destroySlickSlider(sliderElement) {
+    if ($(sliderElement).hasClass('slick-initialized')) {
+      $(sliderElement).slick('unslick');
+    }
+  }
+
+  // Reinitialize the slider when a tab becomes active
+  $('button[data-bs-toggle="pill"]').on('click', function (e) {
+    var targetTab = $(this).data('bs-target'); // Get the target tab ID
+    var sliderInTab = $(targetTab).find('.shop-product-items-v3');
+
+    // Destroy existing slider instances
+    $('.shop-product-items-v3').each(function() {
+      destroySlickSlider(this);
+    });
+
+    // If the slider exists in the targeted tab, initialize it
+    if (sliderInTab.length) {
+      initSlickSlider(sliderInTab);
+    }
+  });
+
+  // Custom Next and Previous Button
+  $('.fp-prod-prev').click(function(){
+    $('.shop-product-items-v3').slick('slickPrev');
+  });
+
+  $('.fp-prod-next').click(function(){
+    $('.shop-product-items-v3').slick('slickNext');
+  });
+});
+
 // Featured Product (Variant 3) Product Color Change
 $(function() {
   // Product 1
@@ -2323,70 +2416,6 @@ $(function() {
   });
 });
 
-//Featured Product (Variant 3) - Sliders
-$(function() {
-  function initSlickSlider(sliderElement) {
-    $(sliderElement).slick({
-      rows: 2,
-      dots: false,
-      arrows: true,
-      infinite: true,
-      speed: 300,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 2,
-          }
-        },
-        {
-          breakpoint: 414,
-          settings: {
-            slidesToShow: 1,
-          }
-        },
-      ]
-    });
-  }
-
-  // Initialize the slider on page load
-  initSlickSlider('.shop-product-items-v3');
-
-  // Function to destroy Slick slider instances
-  function destroySlickSlider(sliderElement) {
-    if ($(sliderElement).hasClass('slick-initialized')) {
-      $(sliderElement).slick('unslick');
-    }
-  }
-
-  // Reinitialize the slider when a tab becomes active
-  $('button[data-bs-toggle="pill"]').on('click', function (e) {
-    var targetTab = $(this).data('bs-target'); // Get the target tab ID
-    var sliderInTab = $(targetTab).find('.shop-product-items-v3');
-
-    // Destroy existing slider instances
-    $('.shop-product-items-v3').each(function() {
-      destroySlickSlider(this);
-    });
-
-    // If the slider exists in the targeted tab, initialize it
-    if (sliderInTab.length) {
-      initSlickSlider(sliderInTab);
-    }
-  });
-
-  // Custom Next and Previous Button
-  $('.fp-prod-prev').click(function(){
-    $('.shop-product-items-v3').slick('slickPrev');
-  });
-
-  $('.fp-prod-next').click(function(){
-    $('.shop-product-items-v3').slick('slickNext');
-  });
-});
-
 //Trending Section
 $(function(){
   //Slider
@@ -2429,35 +2458,6 @@ $(function(){
       height: "20px",
       display: "block",
     });
-  });
-});
-
-//Category Section Slider
-$(function() {
-  var swiper = new Swiper(".cat-sldr-h4", {
-    slidesPerView: 6,
-    spaceBetween: 10,
-    pagination: {
-      el: ".cat-nav-dots",
-      clickable: true,
-    },
-    breakpoints: {
-      100: {
-        slidesPerView: 2,
-      },
-      576: {
-        slidesPerView: 3,
-      },
-      768: {
-        slidesPerView: 4,
-      },
-      992: {
-        slidesPerView: 5,
-      },
-      1200: {
-        slidesPerView: 6,
-      }
-    },
   });
 });
 

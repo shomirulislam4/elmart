@@ -14237,10 +14237,11 @@ button:focus {
   
 /* Product Promo Section*/
 .product-promo {
-    height: auto;
-    width: 100%;
     margin: 0 auto;
     padding: 0;
+    margin-top: 80px;
+    height: auto;
+    width: 100%;
 }
 
 .pp-item-half {
@@ -14533,6 +14534,12 @@ button:focus {
 }
 
 /* Items */
+.small-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .small-item .shop-image-v3 {
     height: 223px;
 }
@@ -14649,6 +14656,11 @@ button:focus {
     margin-top: 5px;
 }
 
+.large-item {
+    display: flex;
+    justify-content: center;
+}
+
 .large-item .shop-cat-card-v3,
 .large-item .shop-background-v3 {
 	width: 469px !important;
@@ -14664,7 +14676,8 @@ button:focus {
 }
 
 .large-item .shop-content-v3 {
-	overflow: visible;
+    overflow: visible;
+    height: fit-content;
 }
 
 .large-item .shop-content-v3 h5 {
