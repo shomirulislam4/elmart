@@ -2413,9 +2413,9 @@ $(function(){
 
   function getPaginationImage(index) {
     var images = [
-      "../image/home-four/trending-slider/img-thumb-1.png",
-      "../image/home-four/trending-slider/img-thumb-2.png",
-      "../image/home-four/trending-slider/img-thumb-3.png",
+      "image/home-four/trending-slider/img-thumb-1.png",
+      "image/home-four/trending-slider/img-thumb-2.png",
+      "image/home-four/trending-slider/img-thumb-3.png",
     ];
     return images[index % images.length];
   }
