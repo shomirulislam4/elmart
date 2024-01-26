@@ -57,6 +57,7 @@
     8. New Arrival Product
     9. Recently Viewed Products
     10. Blog (Variant 2)
+22. Shop Page Style Three
 **********************************************/
 
 /* ====================================================================
@@ -6549,7 +6550,7 @@ button:focus {
 }
 
 .shop-sec-progress-bar {
-    width: 200px;
+    width: 100%;
     height: 10px;
     border: 1px solid #FF497C;
     border-radius: 10px;
@@ -14880,6 +14881,31 @@ button:focus {
     color: #F7B600;
 }
 /** End of Footer **/
+
+
+/* ====================================================================
+22. Shop Page Style Three
+==================================================================== */
+.shop-page-v3 {
+    margin-top: 80px;
+}
+
+.shop-page-v3 .shop-content-v3 h5:hover,
+.shop-page-v3 .shop-content-v3 .instock-amount {
+	color: #FF497C;
+}
+
+.shop-page-v3 .timer-and-btn .shop-button-v3:hover,
+.shop-page-v3 .instock-progress {
+	background: #FF497C;
+}
+
+.shop-page-v3 .timer-and-btn .shop-button-v3,
+.shop-page-v3 .instock-progress-bar {
+	border-color: #FF497C;
+}
+
+
 
 /*
 font-family: 'Josefin Sans', sans-serif;
