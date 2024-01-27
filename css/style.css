@@ -14887,25 +14887,75 @@ button:focus {
 /* ====================================================================
 22. Shop Page Style Three
 ==================================================================== */
+.shop-page-style-3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.shop-page-style-3 ::selection {
+    background: #F7B600;
+}
+
+.shop-page-style-3 a {
+    color: #072654;
+}
+
+.shop-page-style-3 a:hover {
+    color: #F7B600;
+}
+
+.shop-page-style-3 #return-to-top {
+    background: #051D40;
+}
+.shop-page-style-3 #return-to-top:hover {
+    background: #F7B600;
+}
+
+.shop-page-style-3::-webkit-scrollbar-thumb,
+.shop-page-style-3 ::-webkit-scrollbar-thumb {
+    background: #F7B600;
+    border-radius: 10px;
+}
+
+.shop-page-style-3::-webkit-scrollbar-thumb:hover,
+.shop-page-style-3 ::-webkit-scrollbar-thumb:hover {
+    background: #FFD35B;
+}
+
+.shop-page-style-3 .cursor:after {
+    background: #F7B600;
+}
+
+.shop-page-style-3 .cursor:before {
+    background: #ffce4934;
+	border: 2px solid #F7B600;
+}
+
 .shop-page-v3 {
     margin-top: 80px;
 }
 
-.shop-page-v3 .shop-content-v3 h5:hover,
-.shop-page-v3 .shop-content-v3 .instock-amount {
-	color: #FF497C;
+.shop-page-style-3 .breadcrumb .current-page {
+    color: #F7B600
 }
 
-.shop-page-v3 .timer-and-btn .shop-button-v3:hover,
-.shop-page-v3 .instock-progress {
-	background: #FF497C;
+.shop-page-style-3 .shop-page-navigation .page-item .page-link {
+	border-color: #F7B600;
 }
 
-.shop-page-v3 .timer-and-btn .shop-button-v3,
-.shop-page-v3 .instock-progress-bar {
-	border-color: #FF497C;
+.shop-page-style-3 .shop-page-navigation .page-item .page-link span {
+    color: #F7B600;
 }
 
+.shop-page-style-3 .shop-page-navigation .page-item .page-link:focus span,
+.shop-page-style-3 .shop-page-navigation .page-item .page-link:hover span{
+    color: #FFF;
+}
+
+.shop-page-style-3 .shop-page-navigation .page-item .page-link:focus,
+.shop-page-style-3 .shop-page-navigation .page-item .page-link:hover {
+	border-color: #F7B600;
+	background: #F7B600;
+}
 
 
 /*
