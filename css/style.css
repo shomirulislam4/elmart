@@ -2,6 +2,7 @@
 1. Global
     1. Default CSS
 2. Home Page Two
+    0. Preloader
     1. Header - Style Two
     2. Hero Section
     3. Features Section
@@ -47,6 +48,7 @@
     4. Purchase Notification
     5. Deal Today Popup
 21. Home Page Four
+    0. Preloader v2 & Custom Cursor v2
     1. Header Top Promo Area (Variant 2)
     2. Header - Style Four
     3. Hero Section (Variant 4)
@@ -541,7 +543,7 @@ button:focus {
 .cursor {
 	position: fixed;
 	top: 0;
-	left: -100px;
+	left: 0;
 	overflow: visible;
 	z-index: 9999999999999999999999;
 	pointer-events: none;
@@ -11690,15 +11692,6 @@ button:focus {
     background: #FFD35B;
 }
 
-.homepage_four .cursor:after {
-    background: #F7B600;
-}
-
-.homepage_four .cursor:before {
-    background: #ffce4934;
-	border: 2px solid #F7B600;
-}
-
 .hm4-btn-a {
     margin: 0;
     padding: 7px 24px;
@@ -11788,6 +11781,112 @@ button:focus {
 .homepage_four .swiper-pagination-bullet {
 	background: #FFCF4D;
 }
+
+/** Start of Preloader v2 **/
+#preloader-v2 {
+    position: fixed; 
+	width: 100%;
+    height: 100%;
+    background: #F2F4F5;
+    z-index: 9999999;
+}
+
+#preloader-v2 .pre-close-btn {
+    color: #F7B600;
+}
+
+#preloader-v2 svg {
+	font-family: 'Poppins', sans-serif;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#preloader-v2 svg text {
+	text-transform: uppercase;
+	animation: stroke 4s infinite alternate;
+	stroke-width: 2px;
+	stroke: #F7B600;
+	font-size: 200px;
+}
+
+@keyframes stroke {
+	0%   {
+		fill: rgba(247,182,0,0); stroke: rgba(247,182,0,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2px;
+	}
+	70%  {fill: rgba(247,182,0,0); stroke: rgba(247,182,0,1); }
+	80%  {fill: rgba(247,182,0,0); stroke: rgba(247,182,0,1); stroke-width: 3px; }
+	100% {
+		fill: rgba(247,182,0,1); stroke: rgba(247,182,0,0); 
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+/** End of Preloader v2 **/
+
+/** Start of Custom Cursor v2 **/
+.cursor-v2 {
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow: visible;
+	z-index: 9999998;
+	pointer-events: none;
+}
+
+.cursor-v2::before {
+	content:'';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 5px;
+	height: 5px;
+	background: #F7B600;
+	border-radius: 50%;
+	transform: translate(-50%,-50%);
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	transition: 0.3s ease;
+	
+}
+
+.cursor-v2::after {
+	content:'';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 30px;
+	height: 30px;
+	background: transparent;
+	border: 1px solid #F7B600;
+	border-radius: 50%;
+	transform: translate(-50%,-50%);  
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	transition: 0.3s ease;
+	
+}
+
+.cursor-v2.hover::before {
+    width: 15px;
+    height: 15px;
+}
+
+.cursor-v2.hover::after {
+    background: #ffce4934;
+}
+
+@media (max-width: 767px) {
+    .cursor-v2 {
+    display: none;
+    }
+}
+/** End of Custom Cursor v2 **/
 
 /* Start of Header Top Promo Area (Variant 2) */
 .header-top-banner-v2 {
@@ -13894,7 +13993,7 @@ button:focus {
 }
 
 .shop-cat-card-v3:hover .shop-info-v3 {
-    height: 24px;
+    height: fit-content;
     margin-bottom: 20px;
 }
 
@@ -14899,6 +14998,7 @@ button:focus {
     color: #072654;
 }
 
+.shop-page-style-3 .header-top-right ul li a:hover,
 .shop-page-style-3 a:hover {
     color: #F7B600;
 }
@@ -14921,7 +15021,12 @@ button:focus {
     background: #FFD35B;
 }
 
-.shop-page-style-3 .cursor:after {
+.shop-page-style-3 .header-top-right ul li::after {
+    background: #FFD35B !important;
+}
+
+.shop-page-style-3 .cursor:after,
+.shop-page-style-3 .menu-right .notify-count {
     background: #F7B600;
 }
 
@@ -14930,19 +15035,36 @@ button:focus {
 	border: 2px solid #F7B600;
 }
 
-.shop-page-v3 {
-    margin-top: 80px;
-}
-
-.shop-page-style-3 .breadcrumb .current-page {
+.shop-page-style-3 .header-top-left p span,
+.shop-page-style-3 .main-menu a.active,
+.shop-page-style-3 .mobile-menu a.active,
+.shop-page-style-3 .main-menu a:hover,
+.shop-page-style-3 .menu-right a:hover,
+.shop-page-style-3 .main-menu li:hover > a,
+.shop-page-style-3 .breadcrumb .current-page,
+.shop-page-style-3 .cart-slide .cart-header .cart-close:hover,
+.shop-page-style-3 .cart-slide .cart-item .item-img .close-btn:hover,
+.shop-page-style-3 .search-box .close-btn:hover,
+.shop-page-style-3 .search-box button:hover {
     color: #F7B600
 }
 
+.shop-page-style-3 .header-top-right .top-sub-menu a:hover,
+.shop-page-style-3 .main-menu .sub-menu a:hover,
+.shop-page-style-3 .pro-search-result-area .search-content .product-cart a:hover {
+    color: #FFF;
+    background: #F7B600;
+}
+
+.shop-page-v3 .promo-button:hover,
+.shop-page-v3 .tag-item:hover,
 .shop-page-style-3 .shop-page-navigation .page-item .page-link {
 	border-color: #F7B600;
 }
 
-.shop-page-style-3 .shop-page-navigation .page-item .page-link span {
+.shop-page-v3 .sorting-select .nice-select::after,
+.shop-page-style-3 .shop-page-navigation .page-item .page-link span,
+.shop-page-style-3 .section-title span {
     color: #F7B600;
 }
 
@@ -14954,6 +15076,42 @@ button:focus {
 .shop-page-style-3 .shop-page-navigation .page-item .page-link:focus,
 .shop-page-style-3 .shop-page-navigation .page-item .page-link:hover {
 	border-color: #F7B600;
+	background: #F7B600;
+}
+
+.shop-page-style-3 .breadcrumb span  {
+	background: #051D40;
+}
+
+.shop-page-style-3 .button-b {
+    border-color: #F7B600;
+	background: #F7B600;
+    color: #FFF;
+}
+
+.shop-page-style-3 .button-b:hover {
+    color: #072654;
+	background: transparent;
+}
+
+.shop-page-style-3 .button-a,
+.shop-page-style-3 .newsletter-content form .button-c {
+    border-color: #F7B600;
+}
+
+.shop-page-style-3 .button-a:hover,
+.shop-page-style-3 .newsletter-content form .button-c:hover {
+    color: #FFF;
+    background: #F7B600;
+}
+
+.shop-page-v3 {
+    margin-top: 80px;
+}
+
+.shop-page-v3 .sorting-select .nice-select.open .option.selected,
+.shop-page-v3 .sorting-select .nice-select.open .option:hover,
+.shop-page-v3 .price-range-slider .progress  {
 	background: #F7B600;
 }
 

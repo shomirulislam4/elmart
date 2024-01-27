@@ -30,23 +30,43 @@ $(function(){
 
 //Custom Cursor
 $(function(){
-  $("body").prepend('<div class="cursor"></div>');
+  var Dif_HomeFour = $('body').hasClass('homepage_four');
 
-  $(document).mousemove(function(e) {
-    $('.cursor').css({
-      "left": e.pageX,
-      "top": e.pageY - $(window).scrollTop()
+  if (Dif_HomeFour) {
+    $("body").prepend('<div class="cursor-v2"></div>');
+    $(document).mousemove(function(e) {
+      $('.cursor-v2').css({
+        "left": e.pageX,
+        "top": e.pageY - $(window).scrollTop()
+      });
     });
-  });
 
-  $("a, button, div, span, input[type=submit]").mouseenter(function(){
-    var cursorStyle = $(this).css('cursor');
-    if (cursorStyle === 'pointer') {
-      $('.cursor').addClass('hover');
-    }
-  }).mouseleave(function(){
-    $('.cursor').removeClass('hover');
-  });
+    $("a, button, div, span, input[type=submit]").mouseenter(function(){
+      var cursorStyle = $(this).css('cursor');
+      if (cursorStyle === 'pointer') {
+        $('.cursor-v2').addClass('hover');
+      }
+    }).mouseleave(function(){
+      $('.cursor-v2').removeClass('hover');
+    });
+    
+  } else {
+    $("body").prepend('<div class="cursor"></div>');
+    $(document).mousemove(function(e) {
+      $('.cursor').css({
+        "left": e.pageX,
+        "top": e.pageY - $(window).scrollTop()
+      });
+    });
+    $("a, button, div, span, input[type=submit]").mouseenter(function(){
+      var cursorStyle = $(this).css('cursor');
+      if (cursorStyle === 'pointer') {
+        $('.cursor').addClass('hover');
+      }
+    }).mouseleave(function(){
+      $('.cursor').removeClass('hover');
+    });
+  }
 });
 
 /*============================ Home Style Two ============================*/
@@ -2077,6 +2097,16 @@ $( function() {
 });
 
 /*============================ Home Style Four ============================*/
+//Preloader v2
+$(function(){
+  $(window).on("load",function(){
+    $('#preloader-v2').delay(3700).fadeOut(500);
+  });
+  $('.pre-close-btn').on('click', function(){
+    $('#preloader-v2').fadeOut(500);
+  })
+});
+
 //Mobile Menu (Header - Style Four)
 $(function() {
   $('.mobile-menu-btn').on('click',function() {
