@@ -2100,7 +2100,7 @@ $( function() {
 //Preloader v2
 $(function(){
   $(window).on("load",function(){
-    $('#preloader-v2').delay(3700).fadeOut(500);
+    $('#preloader-v2').delay(3200).fadeOut(500);
   });
   $('.pre-close-btn').on('click', function(){
     $('#preloader-v2').fadeOut(500);
