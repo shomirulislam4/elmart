@@ -13631,6 +13631,7 @@ button:focus {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+    margin-bottom: 20px;
 }
 
 .fp-product-area .titlencat {
@@ -13721,9 +13722,9 @@ button:focus {
 .shop-cat-card-v3 {
 	width: 340px !important;
 	height: 456px !important;
-	margin: 0; 
-    margin-top: 8px;
-    margin-left: 6px;
+	margin: 0;
+	margin-top: 12px;
+	margin-left: 6px;
 }
 
 .shop-cat-card-v3:hover {
@@ -14192,6 +14193,21 @@ button:focus {
     margin-bottom: 15px;
 }
 
+.trnd-prod-info h2 a {
+    color: #191C1F;
+}
+
+.trnd-prod-info h2 a:hover {
+    color: #F7B600;
+}
+
+.trnd-prod-info p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
 .trnd-prod-info .price {
     font-size: 30px;
     font-weight: 500;
@@ -14398,14 +14414,14 @@ button:focus {
     margin-bottom: 0;
 }
 
-.pp-item-half a {
+.pp-item-half .pricing {
     position: absolute;
     bottom: 20px;
     right: 20px;
     display: flex;
 }
 
-.pp-item-half .bottom-text {
+.pp-item-half .pricing .bottom-text {
     color: #FFF;
     font-family: 'Poppins', sans-serif;
     font-size: 26px;
@@ -14416,7 +14432,7 @@ button:focus {
     margin-bottom: 0;
 }
 
-.pp-item-half a > span {
+.pp-item-half .pricing span {
     margin-left: 10px;
     color: #191C1F;
     font-size: 16px;
@@ -14433,7 +14449,7 @@ button:focus {
 	-o-transition: 0.3s;
 }
 
-.pp-item-half a:hover > span {
+.pp-item-half:hover .pricing span {
     color: #FFF;
     background: #F7B600;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -14575,7 +14591,7 @@ button:focus {
 	border-color: #FFF;
 	display: flex;
 	justify-content: center;
-    margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 
 .best-deals-wrapper .nav-link:focus,
@@ -14807,6 +14823,10 @@ button:focus {
     margin-top: 80px;
 }
 
+.recently-viewed-products .titlennav {
+    margin-bottom: 30px;
+}
+
 .recently-viewed-products .title {
     font-size: 40px;
     font-weight: 500;
@@ -14917,7 +14937,7 @@ button:focus {
     text-transform: capitalize;
     text-align: center;
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 45px;
 }
 
 .blog-v2 .title:after {
