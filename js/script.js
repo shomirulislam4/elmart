@@ -2106,6 +2106,42 @@ $(function() {
   })
 });
 
+//List to grid on screen breakpoint
+$(function() {
+  function adjustClass() {
+    var screenWidth = $(window).width();
+    var $myDiv = $('#grid-to-list-sps3');
+
+    if (screenWidth < 576) {
+      $myDiv.removeClass('shop-page-v3-list').addClass('shop-page-v3');
+    } else {
+      $myDiv.removeClass('shop-page-v3').addClass('shop-page-v3-list');
+    }
+  }
+
+  adjustClass();
+  $(window).resize(adjustClass);
+});
+
+//List to grid col class change
+$(function() {
+  function updateColumnClass() {
+    var screenWidth = $(window).width();
+    $('#sps3-col-class-cng').each(function() {
+      var $section = $(this);
+      if (screenWidth <= 576) {
+        $section.find('.col-12').addClass('d-flex justify-content-center');
+      } else {
+        $section.find('.col-12').removeClass('d-flex justify-content-center');
+      }
+    });
+  }
+  updateColumnClass();
+  $(window).resize(function() {
+    updateColumnClass();
+  });
+});
+
 /*============================ Home Style Four ============================*/
 //Preloader v2
 $(function(){
