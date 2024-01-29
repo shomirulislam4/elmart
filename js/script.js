@@ -2096,6 +2096,16 @@ $( function() {
   })
 });
 
+/*============================ Shop Page Style Three ============================*/
+$(function() {
+  $('.shop-filter-sidebar-toggle').on('click',function() {
+    $('.shop-page-filter-sidebar').addClass('open');
+  })
+  $('.sidebar-close-btn').on('click',function() {
+    $('.shop-page-filter-sidebar').removeClass('open');
+  })
+});
+
 /*============================ Home Style Four ============================*/
 //Preloader v2
 $(function(){

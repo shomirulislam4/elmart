@@ -4752,7 +4752,8 @@ button:focus {
 }
 
 .sorting-select .nice-select .option.selected.focus {
-    color: #5A5858;
+    color: #FFF;
+    background-color: #FF497C !important;
 }
 
 .sorting-select .nice-select::after {
@@ -15135,6 +15136,10 @@ button:focus {
 	background: #F7B600;
 }
 
+.shop-page-v3 .sorting-select .nice-select .option.selected.focus {
+    background-color: #F7B600 !important;
+}
+
 .grid-toggle-button a {
     font-size: 18px;
     margin: 0 5px;
@@ -15143,6 +15148,92 @@ button:focus {
 .grid-toggle-button .active {
     color: #F7B600;
 }
+
+.shop-filter-sidebar-toggle {
+    display: block;
+    padding: 5px 20px;
+    border: 1px solid #000;
+    cursor: pointer;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.shop-filter-sidebar-toggle:hover {
+    color: #FFF;
+    border-color: #F7B600;
+    background: #F7B600;
+}
+
+.product-sorting .sorting-select-result {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.shop-page-filter-sidebar {
+    position: fixed;
+    top: 0;
+    left: -40%;
+    width: 20%;
+    height: 100%;
+    z-index: 5000;
+    background: #FFF;
+    overflow-y: auto;
+    padding-bottom: 40px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+    transition: 0.4s;
+    -moz-transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.shop-page-filter-sidebar.open {
+    left: 0;
+}
+
+.shop-page-filter-sidebar .left-sidebar-shop {
+    position: relative;
+    background: #FFF;
+}
+
+.sidebar-close-btn {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 5001;
+}
+
+.sidebar-close-btn:hover {
+    color: #F7B600;
+}
+
+.shop-page-filter-sidebar .range-input input[type="range"]::-webkit-slider-thumb {
+    border: 1px solid #000;
+    height: 15px;
+    width: 15px;
+}
+.shop-page-filter-sidebar .range-input input[type="range"]::-moz-range-thumb {
+    border: 1px solid #000;
+    height: 15px;
+    width: 15px;
+}
+
+.lsb-widget-1,
+.lsb-widget-2,
+.lsb-widget-3 {
+	border-bottom: 1px solid #FFEACD;
+}
+
+.shop-page-filter-sidebar .price-input .field input {
+	width: 60px;
+}
+
 
 
 /*
