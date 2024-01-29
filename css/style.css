@@ -60,6 +60,7 @@
     9. Recently Viewed Products
     10. Blog (Variant 2)
 22. Shop Page Style Three
+23. Shop Page Style Three (List)
 **********************************************/
 
 /* ====================================================================
@@ -15140,6 +15141,146 @@ button:focus {
     background-color: #F7B600 !important;
 }
 
+/* ====================================================================
+23. Shop Page Style Three (List)
+==================================================================== */
+.shop-page-style-3-list {
+    font-family: 'Poppins', sans-serif;
+}
+
+.shop-page-style-3-list ::selection {
+    background: #F7B600;
+}
+
+.shop-page-style-3-list a {
+    color: #072654;
+}
+
+.shop-page-style-3-list .header-top-right ul li a:hover,
+.shop-page-style-3-list a:hover {
+    color: #F7B600;
+}
+
+.shop-page-style-3-list #return-to-top {
+    background: #051D40;
+}
+.shop-page-style-3-list #return-to-top:hover {
+    background: #F7B600;
+}
+
+.shop-page-style-3-list::-webkit-scrollbar-thumb,
+.shop-page-style-3-list ::-webkit-scrollbar-thumb {
+    background: #F7B600;
+    border-radius: 10px;
+}
+
+.shop-page-style-3-list::-webkit-scrollbar-thumb:hover,
+.shop-page-style-3-list ::-webkit-scrollbar-thumb:hover {
+    background: #FFD35B;
+}
+
+.shop-page-style-3-list .header-top-right ul li::after {
+    background: #FFD35B !important;
+}
+
+.shop-page-style-3-list .cursor:after,
+.shop-page-style-3-list .menu-right .notify-count {
+    background: #F7B600;
+}
+
+.shop-page-style-3-list .cursor:before {
+    background: #ffce4934;
+	border: 2px solid #F7B600;
+}
+
+.shop-page-style-3-list .header-top-left p span,
+.shop-page-style-3-list .main-menu a.active,
+.shop-page-style-3-list .mobile-menu a.active,
+.shop-page-style-3-list .main-menu a:hover,
+.shop-page-style-3-list .menu-right a:hover,
+.shop-page-style-3-list .main-menu li:hover > a,
+.shop-page-style-3-list .breadcrumb .current-page,
+.shop-page-style-3-list .cart-slide .cart-header .cart-close:hover,
+.shop-page-style-3-list .cart-slide .cart-item .item-img .close-btn:hover,
+.shop-page-style-3-list .search-box .close-btn:hover,
+.shop-page-style-3-list .search-box button:hover {
+    color: #F7B600
+}
+
+.shop-page-style-3-list .header-top-right .top-sub-menu a:hover,
+.shop-page-style-3-list .main-menu .sub-menu a:hover,
+.shop-page-style-3-list .pro-search-result-area .search-content .product-cart a:hover {
+    color: #FFF;
+    background: #F7B600;
+}
+
+.shop-page-v3-list .promo-button:hover,
+.shop-page-v3-list .tag-item:hover,
+.shop-page-style-3-list .shop-page-navigation .page-item .page-link {
+	border-color: #F7B600;
+}
+
+.shop-page-v3-list .sorting-select .nice-select::after,
+.shop-page-style-3-list .shop-page-navigation .page-item .page-link span,
+.shop-page-style-3-list .section-title span {
+    color: #F7B600;
+}
+
+.shop-page-style-3-list .shop-page-navigation .page-item .page-link:focus span,
+.shop-page-style-3-list .shop-page-navigation .page-item .page-link:hover span{
+    color: #FFF;
+}
+
+.shop-page-style-3-list .shop-page-navigation .page-item .page-link:focus,
+.shop-page-style-3-list .shop-page-navigation .page-item .page-link:hover {
+	border-color: #F7B600;
+	background: #F7B600;
+}
+
+.shop-page-style-3-list .breadcrumb span  {
+	background: #051D40;
+}
+
+.shop-page-style-3-list .button-b {
+    border-color: #F7B600;
+	background: #F7B600;
+    color: #FFF;
+}
+
+.shop-page-style-3-list .button-b:hover {
+    color: #072654;
+	background: transparent;
+}
+
+.shop-page-style-3-list .button-a,
+.shop-page-style-3-list .newsletter-content form .button-c {
+    border-color: #F7B600;
+}
+
+.shop-page-style-3-list .button-a:hover,
+.shop-page-style-3-list .newsletter-content form .button-c:hover {
+    color: #FFF;
+    background: #F7B600;
+}
+
+.shop-page-v3-list {
+    margin-top: 80px;
+}
+
+.shop-page-v3-list .sorting-select .nice-select .list {
+	z-index: 99999;
+}
+
+.shop-page-v3-list .sorting-select .nice-select.open .option.selected,
+.shop-page-v3-list .sorting-select .nice-select.open .option:hover,
+.shop-page-v3-list .price-range-slider .progress  {
+	background: #F7B600;
+}
+
+.shop-page-v3-list .sorting-select .nice-select .option.selected.focus {
+    background-color: #F7B600 !important;
+}
+
 .grid-toggle-button a {
     font-size: 18px;
     margin: 0 5px;
@@ -15224,9 +15365,9 @@ button:focus {
     width: 15px;
 }
 
-.lsb-widget-1,
-.lsb-widget-2,
-.lsb-widget-3 {
+.shop-page-filter-sidebar .lsb-widget-1,
+.shop-page-filter-sidebar .lsb-widget-2,
+.shop-page-filter-sidebar .lsb-widget-3 {
 	border-bottom: 1px solid #FFEACD;
 }
 
@@ -15234,7 +15375,168 @@ button:focus {
 	width: 60px;
 }
 
+.shop-page-v3-list .shop-page-navigation {
+    margin-top: 60px;
+}
 
+.shop-page-v3-list .shop-page-navigation .pagination {
+    justify-content: center;
+}
+
+.shop-page-v3-list .shop-cat-card-v3 {
+	width: 100% !important;
+	position: relative;
+	height: 334px !important;
+	margin-top: 20px;
+	margin-left: 0;
+}
+
+.shop-page-v3-list .shop-cat-card-v3 .shop-background-v3 {
+    width: 100%;
+    display: flex;
+    height: 100%;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5) !important;
+}
+
+.shop-page-v3-list .shop-cat-card-v3 .shop-image-v3 {
+    width: 340px !important;
+    height: 334px !important;
+    text-align: left;
+    float: left;
+    border-radius: 0;
+}
+
+.shop-page-v3-list .shop-image-v3 .shop-img-wrap-v3 .ori-img-hover {
+	left: 0;
+	transform: translateY(-50%);
+}
+
+.shop-page-v3-list .timer-and-btn {
+	bottom: 2%;
+}
+
+.shop-page-v3-list .timer-and-btn .deal-product-timer #days,
+.shop-page-v3-list .timer-and-btn .deal-product-timer #hours,
+.shop-page-v3-list .timer-and-btn .deal-product-timer #minutes,
+.shop-page-v3-list .timer-and-btn .deal-product-timer #seconds {
+	font-size: 16px;
+    font-weight: 600;
+}
+
+.shop-page-v3-list .timer-and-btn .deal-product-timer #days span,
+.shop-page-v3-list .timer-and-btn .deal-product-timer #hours span,
+.shop-page-v3-list .timer-and-btn .deal-product-timer #minutes span,
+.shop-page-v3-list .timer-and-btn .deal-product-timer #seconds span {
+    font-size: 14px;
+    margin: 0 5px;
+}
+
+.shop-page-v3-list .shop-content-v3 {
+	width: calc(100% - 340px);
+	border-radius: 0;
+	z-index: 10;
+	height: fit-content;
+	padding: 20px;
+	padding-bottom: 21px;
+}
+
+.shop-page-v3-list .shop-info-v3 {
+	flex-direction: column;
+    align-items: flex-start;
+	height: fit-content;
+    margin-bottom: 10px;
+}
+
+.shop-page-v3-list .product-variant-v3 {
+	margin-bottom: 10px;
+}
+
+.shop-page-v3-list .shop-cat-card-v3:hover .shop-info-v3 {
+    margin-bottom: 10px;
+}
+
+.shop-page-v3-list .shop-content-v3 h5 {
+	font-size: 24px;
+	line-height: 30px;
+	height: fit-content;
+}
+
+.shop-page-v3-list .shop-content-v3 p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.shop-page-v3-list .shop-content-v3 .instock-amount {
+	margin-top: 10px;
+}
+
+.shop-content-v3 .cta-btn {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    align-items: center;
+}
+
+.shop-content-v3 .cta-btn .shop-button-v3 {
+    display: block;
+    width: fit-content;
+    border-radius: 50px;
+    background: #FFF;
+    border: 1px solid #F7B600;
+    color: #191C1F;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: capitalize;
+    padding: 12px 25px;
+    text-align: center;
+    margin: 0;
+    cursor: pointer;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+ 
+.shop-content-v3 .cta-btn .shop-button-v3:hover {
+    background: #F7B600;
+    color: #FFF;
+}
+
+.shop-content-v3 .cta-btn ul li {
+    display: inline-block;
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+    border: 1px solid #F7B600;
+    padding: 0;
+    background: #FFF;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.shop-content-v3 .cta-btn ul li:hover {
+    background: #F7B600;
+}
+
+.shop-content-v3 .cta-btn ul li a {
+    color: #191C1F;
+    font-size: 20px;
+    line-height: 42px;
+}
+ 
+.shop-content-v3 .cta-btn ul li:hover a {
+    color: #FFF;
+}
 
 /*
 font-family: 'Josefin Sans', sans-serif;
