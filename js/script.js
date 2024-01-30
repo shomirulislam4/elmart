@@ -1042,6 +1042,146 @@ $(function(){
   });
 });
 
+/*============================ Shop Details Slider Image ============================*/
+//Image Slider / Trending Section (Home 4)
+$(function(){
+  //Slider
+  var swiper = new Swiper(".trending-slider", {
+    loop: true,
+    navigation: {
+      nextEl: ".ts-btn-next",
+      prevEl: ".ts-btn-prev",
+    },
+    pagination: {
+      el: ".ts-pagination",
+      clickable: true,
+      renderBullet: function (index, className) {
+        return (
+          '<span class="' +
+          className +
+          ' pagination-image" style="background-image: url(' +
+          getPaginationImage(index) +
+          ');"></span>'
+        );
+      },
+    },
+  });
+
+  function getPaginationImage(index) {
+    var images = [
+      "image/home-four/trending-slider/img-thumb-1.png",
+      "image/home-four/trending-slider/img-thumb-2.png",
+      "image/home-four/trending-slider/img-thumb-3.png",
+      "image/home-four/trending-slider/img-thumb-4.png",
+    ];
+    return images[index % images.length];
+  }
+
+  //Select Color
+  $(".tr-color:not(.disabled)").click(function () {
+    var selectedColor = $(this).data("color");
+    $("#tr-selected-color").text("").css({
+      "background-color": selectedColor,
+      width: "20px",
+      height: "20px",
+      display: "block",
+    });
+  });
+});
+
+//Image Lightbox
+$(function() {
+  var initPhotoSwipeFromDOM = function(gallerySelector) {
+      var parseThumbnailElements = function(el) {
+          var thumbElements = $(el).find('.swiper-slide'),
+              items = [],
+              figureEl,
+              linkEl,
+              size,
+              item;
+
+          thumbElements.each(function() {
+              figureEl = $(this);
+              linkEl = figureEl.find('a')[0];
+              size = linkEl.getAttribute('data-size').split('x');
+
+              // Check if the item should be excluded based on a condition
+              if (!figureEl.hasClass('exclude')) {
+                  item = {
+                      src: linkEl.getAttribute('href'),
+                      w: parseInt(size[0], 10),
+                      h: parseInt(size[1], 10),
+                      title: linkEl.getAttribute('title')
+                  };
+                  items.push(item);
+              }
+          });
+
+          return items;
+      };
+
+      var openPhotoSwipe = function(index, galleryElement, disableAnimation) {
+          var pswpElement = document.querySelectorAll('.pswp')[0],
+              items = parseThumbnailElements(galleryElement),
+              options = {
+                  index: index,
+                  bgOpacity: 0.7,
+                  showHideOpacity: true,
+                  timeToIdle: 0,
+                  timeToIdleOutside: 0
+              };
+
+          if (disableAnimation) {
+              options.showAnimationDuration = 0;
+          }
+
+          var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+          gallery.init();
+
+          var closeButton = pswpElement.querySelector('.pswp__button--close');
+          if (closeButton) {
+              closeButton.addEventListener('click', function() {
+                  gallery.close();
+              });
+          }
+      };
+
+      // Event listener for each image
+      $(gallerySelector).on('click', 'a', function(event) {
+          event.preventDefault();
+          var index = $(this).parent('.swiper-slide').index();
+          openPhotoSwipe(index, $(this).closest('.swiper-wrapper')[0]);
+      });
+  };
+
+  // Execute for the gallery
+  initPhotoSwipeFromDOM('#sdsi-img-lightbox');
+});
+
+//Write a Review Form Toggle
+$('.rev-form-toggle').on('click', function(){
+  $('.write_review').toggleClass('show');
+});
+
+//SDSI New Arrival Product column change on breakpoint
+$(function() {
+  function updateColumnClass() {
+    var screenWidth = $(window).width();
+    $('#sdsinapTabContent').each(function() {
+      var $section = $(this);
+      if (screenWidth <= 414) {
+        $section.find('.col-6').removeClass('col-6').addClass('col-12');
+      } else {
+        $section.find('.col-12').removeClass('col-12').addClass('col-6');
+      }
+    });
+  }
+  updateColumnClass();
+  $(window).resize(function() {
+    updateColumnClass();
+  });
+});
+
 /*============================ About Us Page ============================*/
 //About Video Popup
 $(function() {
@@ -2143,53 +2283,6 @@ $(function() {
   });
 });
 
-
-/*============================ Shop Details Slider Image ============================*/
-//Image Slider / Trending Section (Home 4)
-$(function(){
-  //Slider
-  var swiper = new Swiper(".trending-slider", {
-    loop: true,
-    navigation: {
-      nextEl: ".ts-btn-next",
-      prevEl: ".ts-btn-prev",
-    },
-    pagination: {
-      el: ".ts-pagination",
-      clickable: true,
-      renderBullet: function (index, className) {
-        return (
-          '<span class="' +
-          className +
-          ' pagination-image" style="background-image: url(' +
-          getPaginationImage(index) +
-          ');"></span>'
-        );
-      },
-    },
-  });
-
-  function getPaginationImage(index) {
-    var images = [
-      "image/home-four/trending-slider/img-thumb-1.png",
-      "image/home-four/trending-slider/img-thumb-2.png",
-      "image/home-four/trending-slider/img-thumb-3.png",
-    ];
-    return images[index % images.length];
-  }
-
-  //Select Color
-  $(".tr-color:not(.disabled)").click(function () {
-    var selectedColor = $(this).data("color");
-    $("#tr-selected-color").text("").css({
-      "background-color": selectedColor,
-      width: "20px",
-      height: "20px",
-      display: "block",
-    });
-  });
-});
-
 /*============================ Home Style Four ============================*/
 //Preloader v2
 $(function(){
@@ -2372,7 +2465,7 @@ $(function() {
   });
 });
 
-// Featured Product (Variant 3) Product Color Change
+//Featured Product (Variant 3) Product Color Change
 $(function() {
   // Product 1
   $('.fpv3-cng-img1-btn1').on('click', function(){

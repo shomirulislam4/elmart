@@ -5869,9 +5869,6 @@ button:focus {
     color: #FFF;
     border-bottom: 0;
     border-color: transparent;
-}
-
-.rev-desc-wrap .nav-tabs .nav-link.active {
     background: #FF497C;
 }
 
@@ -5949,7 +5946,7 @@ button:focus {
 	height: 70px;
 	background-color: #E4F2FF;
 	border: 1px solid #FF497C;
-	border-radius: 50px;
+	border-radius: 50%;
 	padding: 4px;
 	margin-right: 26px;
 	overflow: hidden;
@@ -6029,7 +6026,7 @@ button:focus {
 	height: 70px;
 	background-color: #E4F2FF;
 	border: 1px solid #FF497C;
-	border-radius: 50px;
+	border-radius: 50%;
 	padding: 4px;
     margin-right: 26px;
     overflow: hidden;
@@ -6682,6 +6679,285 @@ button:focus {
 .sdsi-page .button-b:hover {
     color: #072654;
 	background: transparent;
+}
+
+.pswp__counter,
+.pswp__button--close,
+.pswp__button--zoom {
+    color: #FFF;
+}
+
+.pswp__button--arrow--left,
+.pswp__button--arrow--right {
+    position: absolute;
+    font-size: 16px;
+    line-height: 50px;
+    color: #FFF;
+    top: 50%;
+	height: 50px;
+	width: 50px;
+    background: #000;
+	border-radius: 50%;
+    transform: translateY(-50%);
+    opacity: 1;
+}
+
+.pswp__button--arrow--left::before,
+.pswp__button--arrow--right::before {
+	display: none;
+}
+
+.pswp__button--arrow--left {
+    left: 5%;
+}
+
+.pswp__button--arrow--right {
+    right: 5%;
+}
+
+.pswp__button--arrow--left:hover,
+.pswp__button--arrow--right:hover {
+    background: #F7B600;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.pswp__ui--fit .pswp__caption,
+.pswp__ui--fit .pswp__top-bar {
+	height: 40px;
+    background: #000;
+}
+
+.pswp__caption__center {
+	text-align: center;
+	font-size: 15px;
+	padding: 0;
+	line-height: 40px;
+	color: #FFF;
+}
+
+.sdsi-page .prod-size-select .tag-item-v2.active {
+	border: 1px solid #F7B600;
+}
+
+.rev-desc-wrap-v2 .nav-tabs {
+    border: 0;
+}
+
+.rev-desc-wrap-v2 .nav-tabs .nav-item {
+	border: 0;
+}
+
+.rev-desc-wrap-v2 .nav-tabs .nav-item .nav-link {
+    color: #191C1F;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: capitalize;
+    border: 0;
+}
+
+.rev-desc-wrap-v2 .nav-tabs .nav-item .nav-link:hover,
+.rev-desc-wrap-v2 .nav-tabs .nav-item .nav-link.active {
+    color: #F7B600;
+    border: 0;
+    background: transparent;
+}
+
+.rev-desc-wrap-v2 .tab-content {
+	padding: 24px 30px;
+	border: 1px solid #E4F2FF;
+    border-radius: 5px;
+}
+.rev-desc-wrap-v2 .tab-content h2 {
+    color: #191C1F;
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 35px;
+    text-transform: capitalize;
+    margin-bottom: 22px;
+}
+
+.rev-desc-wrap-v2 .tab-content p {
+    color: #5A5858;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.rev-desc-wrap-v2 .tab-content h4 {
+    color: #191C1F;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: capitalize;
+}
+
+.rev-desc-wrap-v2 .tab-content ul {
+	margin-left: 15px;
+}
+
+.rev-desc-wrap-v2 .tab-content ul li {
+    list-style: disc;
+    color: #5A5858;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.rev-desc-wrap-v2 table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border-width: 1px 0 0 1px;
+    margin: 1.5em 0 1.75em;
+    width: 100%;
+}
+
+.rev-desc-wrap-v2 table tr {
+    color: #191C1F;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.rev-desc-wrap-v2 table tr.with-bg {
+    background: #F1F5F6;
+}
+
+.rev-desc-wrap-v2 table th {
+    padding: 15px;
+    border-radius: 5px 0 0 5px;
+}
+
+.rev-desc-wrap-v2 table td {
+    padding: 15px;
+    border-radius: 0 5px 5px 0;
+}
+
+.rev-desc-wrap-v2 .author-info .author-img,
+.rev-desc-wrap-v2 .review-reply .author-id-2nd .author-img {
+	border-color: #F7B600;
+}
+
+#review-toggle .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#review-toggle .title .rev-form-toggle {
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    cursor: pointer;
+}
+
+#review-toggle .title .rev-form-toggle:hover {
+    color: #F7B600;
+}
+
+.write_review {
+    display: none;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #E4F2FF;
+}
+
+.write_review.show {
+    display: block;
+}
+
+.write_review h2 {
+    color: #191C1F;
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 35px;
+    text-transform: capitalize;
+    margin-bottom: 24px;
+}
+
+.write_review-rating {
+    display: flex;
+}
+
+.write_review-rating p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-right: 10px;
+}
+
+.write_review-rating .rating-star {
+    color: #C1C1C1;
+    font-size: 16px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.write_review-rating .rating-star span {
+    color: #5A5858;
+}
+
+.write_review form {
+    width: 100%;
+}
+
+.write_review-form-top {
+	display: flex;
+	justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.write_review-form-top input {
+    width: 435px;
+    height: 50px;
+    border-radius: 50px;
+    background: #E4F2FF;
+    padding: 13px 26px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: capitalize;
+}
+
+.write_review-form-bottom textarea {
+    width: 100%;
+    height: 208px;
+    border-radius: 30px;
+    background: #E4F2FF;
+    padding: 13px 26px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: capitalize;
+    resize: none;
+}
+
+.write_review-form-bottom .form-btn {
+    margin-top: 20px;
+}
+
+.write_review-form-bottom .form-btn.button-b {
+    padding: 16px 45px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: capitalize;
 }
 
 
@@ -14208,6 +14484,7 @@ button:focus {
 .trnd-img-sldr {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .pagination-image {

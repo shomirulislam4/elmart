@@ -4803,107 +4803,88 @@
 
   <!-- Start of Shop Details Popup -->
   <div class="row mfp-hide" id="shop-details-top-area">
-    <div class="col-md-6 col-sm-12 product-images">
-        <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="red-dress-toggle" role="tabpanel" aria-labelledby="red-dress" tabindex="0">
-                <img id="prod-img1" src="image/shop-page/shop-details/red-dress.png" alt="Red Dress">
+    <div class="row">
+        <div class="col-sm-8">
+          <div class="swiper trending-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="trnd-img-sldr">
+                  <img src="image/home-four/trending-slider/img-1.png" alt="Image 1">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="trnd-img-sldr">
+                  <img src="image/home-four/trending-slider/img-2.png" alt="Image 1">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="trnd-img-sldr">
+                  <img src="image/home-four/trending-slider/img-3.png" alt="Image 1">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="trnd-img-sldr">
+                    <video width="800px" height="auto" controls>
+                        <source src="image/home-four/trending-slider/video.mp4" type="video/mp4">
+                        Your browser does not support html5 video.
+                    </video>
+                </div>
             </div>
-            <div class="tab-pane fade" id="blue-green-dress-toggle" role="tabpanel" aria-labelledby="blue-green-dress" tabindex="0">
-                <img id="prod-img2" src="image/shop-page/shop-details/greenish-bluey-grey-dress.png" alt="Blue Green">
             </div>
-            <div class="tab-pane fade" id="red-dress-2-toggle" role="tabpanel" aria-labelledby="red-dress-2" tabindex="0">
-                <img id="prod-img3" src="image/shop-page/shop-details/red-dress-v2.png" alt="Red Dress V2">
-            </div>
-            <div class="tab-pane fade" id="blue-purple-toggle" role="tabpanel" aria-labelledby="ble-purple" tabindex="0">
-                <img id="prod-img4" src="image/shop-page/shop-details/bluish-purple-dress.png" alt="Blue Purple Dress">
-            </div>
+            <div class="ts-pagination"></div>
+            <div class="ts-btn-next"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="ts-btn-prev"><i class="fa-solid fa-arrow-left"></i></div>
+          </div>      
         </div>
-        <ul class="nav" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="red-dress" data-bs-toggle="tab" data-bs-target="#red-dress-toggle" type="button" role="tab" aria-controls="red-dress-toggle" aria-selected="true">
-                    <img src="image/shop-page/shop-details/icon1.png" alt="Dress 1">
-                </button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="blue-green-dress" data-bs-toggle="tab" data-bs-target="#blue-green-dress-toggle" type="button" role="tab" aria-controls="blue-green-dress-toggle" aria-selected="true">
-                    <img src="image/shop-page/shop-details/icon2.png" alt="Dress 2">
-                </button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="red-dress-2" data-bs-toggle="tab" data-bs-target="#red-dress-2-toggle" type="button" role="tab" aria-controls="red-dress-2-toggle" aria-selected="true">
-                    <img src="image/shop-page/shop-details/icon3.png" alt="Dress 3">
-                </button>
-            </li>
-            <li class="nav-item last" role="presentation">
-                <button class="nav-link" id="ble-purple" data-bs-toggle="tab" data-bs-target="#blue-purple-toggle" type="button" role="tab" aria-controls="blue-purple-toggle" aria-selected="true">
-                    <img src="image/shop-page/shop-details/icon4.png" alt="Dress 4">
-                </button>
-            </li>
-        </ul>
-    </div>
-    <div class="col-md-6 col-sm-12 product-information">
-        <h2>Embroidered Square Neck Sheath Gown</h2>
-        <div class="price">
-            <span class="ori-price">$140</span>
-            <span>$120</span>
-        </div>
-        <div class="prod-details-review">
-            <div class="rating-star">
+        <div class="col-sm-4 trnd-prod-info">
+          <div class="rating-star">
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <span>&nbsp;6 Reviews</span>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h2><a href="shop-details-slider-image.html">Poogle Hixel 7 Pro</a></h2>
+          <p>A smartphone released by Poogle packed with the latest hardware and software.</p>
+          <h3 class="price">$899.00</h3>
+          <div class="tr-prod-color">
+            <div class="tr-color-selected">
+              <p>Color:</p>
+              <p id="tr-selected-color"></p>
             </div>
-        </div>
-        <div class="shop-details-divider"></div>
-        <p>There are many variations of passages of Lorem Ipsum available, as but the majority have suffered alteration in some form.</p>
-        <div class="analytics">
-            <p><i class="fa-regular fa-eye"></i> 28 people are viewing this right now</p>
-            <p class="in-stock"><img src="image/shop-page/shop-details/in-stock.svg" alt="in stock"> In Stock 56</p>
-        </div>
-        <div class="color-selection">
-            <h2>Color</h2>
-            <div class="prod-colors-select">
-                <span class="color-choice prod-color1 active" style="background:#952847;border:2px solid #952847;"></span>
-                <span class="color-choice prod-color2" style="background:#626262;border:2px solid #626262;"></span>
-                <span class="color-choice prod-color3" style="background:#263C97;border:2px solid #263C97;"></span>
-                <span class="color-choice prod-color4" style="background:#424264;border:2px solid #424264;"></span>
+            <div class="tr-color-selector">
+              <div title="Snow"
+                style="background-color:#ebebeb"
+                class="tr-color"
+                data-color="#ebebeb"
+              ></div>
+              <div title="Obsidian"
+                style="background-color:#2c2c2c"
+                class="tr-color"
+                data-color="#2c2c2c"
+              ></div>
+              <div title="Out of Stock"
+                style="background-color:#EEF0E2"
+                class="tr-color disabled"
+                data-color="disabled"
+              ></div>
+              <div title="Hazel"
+                style="background-color:#828783"
+                class="tr-color"
+                data-color="#828783"
+              ></div>
             </div>
-        </div>
-        <div class="prod-size-select">
-            <h2>Size</h2>
-            <div class="tag-cloud-v2">
-                <div class="tag-item-v2 active"><span>M</span></div>
-                <div class="tag-item-v2"><span>L</span></div>
-                <div class="tag-item-v2"><span>XL</span></div>
-                <div class="tag-item-v2"><span>XXL</span></div>
-            </div>
-        </div>
-        <div class="prod-qty-btns">
-            <form class="item-quantity" action="#">
-                <span class="decrease qty-btn">-</span>
-                <input disabled type="number" value="1">
-                <span class="increase qty-btn">+</span>
-            </form>
-            <a href="#" class="add-to-cart button-b">Add To Cart</a>
-            <div class="wishlist">
-                <a href="#"><i class="fa-solid fa-rotate"></i></a>
-                <a href="wishlist.html"><i class="fa-solid fa-heart"></i></a>
-            </div>
-        </div>
-        <div class="shop-details-divider"></div>
-        <div class="product-other-info">
-            <p>SKU : <span>KE-91039</span></p>
-            <p>Category : <span>Kitchen</span></p>
-            <p>Tags : <span>Beer, Foamer</span></p>
-        </div>
-        <div class="social-share">
-            <span>Share</span>
-            <a href="#"><i style="color:#3E75B2;" class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i style="color:#E12828;" class="fa-brands fa-pinterest"></i></a>
-            <a href="#"><i style="color:#000;" class="fa-brands fa-x-twitter"></i></a>
+          </div>
+          <div class="item-quantity">
+            <span class="decrease qty-btn">-</span>
+            <input disabled="" type="number" value="1">
+            <span class="increase qty-btn">+</span>
+          </div>
+          <div class="tr-btns">
+            <a class="hm4-btn-a" href="shop-details-slider-image.html">Add to Cart</a>
+            <a class="hm4-btn-b" href="shop-details-slider-image.html">Pay with <img class="img1" src="image/home-four/trending-slider/paypal-logo-white.png" alt="paypal">
+            <img class="img2" src="image/home-four/trending-slider/paypal-logo.png" alt="paypal"></a>
+          </div>
         </div>
     </div>
   </div>
