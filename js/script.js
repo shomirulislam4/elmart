@@ -2097,6 +2097,7 @@ $( function() {
 });
 
 /*============================ Shop Page Style Three ============================*/
+//Shop Filter Sidebar
 $(function() {
   $('.shop-filter-sidebar-toggle').on('click',function() {
     $('.shop-page-filter-sidebar').addClass('open');
@@ -2139,6 +2140,53 @@ $(function() {
   updateColumnClass();
   $(window).resize(function() {
     updateColumnClass();
+  });
+});
+
+
+/*============================ Shop Details Slider Image ============================*/
+//Image Slider / Trending Section (Home 4)
+$(function(){
+  //Slider
+  var swiper = new Swiper(".trending-slider", {
+    loop: true,
+    navigation: {
+      nextEl: ".ts-btn-next",
+      prevEl: ".ts-btn-prev",
+    },
+    pagination: {
+      el: ".ts-pagination",
+      clickable: true,
+      renderBullet: function (index, className) {
+        return (
+          '<span class="' +
+          className +
+          ' pagination-image" style="background-image: url(' +
+          getPaginationImage(index) +
+          ');"></span>'
+        );
+      },
+    },
+  });
+
+  function getPaginationImage(index) {
+    var images = [
+      "image/home-four/trending-slider/img-thumb-1.png",
+      "image/home-four/trending-slider/img-thumb-2.png",
+      "image/home-four/trending-slider/img-thumb-3.png",
+    ];
+    return images[index % images.length];
+  }
+
+  //Select Color
+  $(".tr-color:not(.disabled)").click(function () {
+    var selectedColor = $(this).data("color");
+    $("#tr-selected-color").text("").css({
+      "background-color": selectedColor,
+      width: "20px",
+      height: "20px",
+      display: "block",
+    });
   });
 });
 
@@ -2489,51 +2537,6 @@ $(function() {
 
   clipboard.on('error', function(e) {
     alert('Failed to copy code. Please select and copy manually.');
-  });
-});
-
-//Trending Section
-$(function(){
-  //Slider
-  var swiper = new Swiper(".trending-slider", {
-    loop: true,
-    navigation: {
-      nextEl: ".ts-btn-next",
-      prevEl: ".ts-btn-prev",
-    },
-    pagination: {
-      el: ".ts-pagination",
-      clickable: true,
-      renderBullet: function (index, className) {
-        return (
-          '<span class="' +
-          className +
-          ' pagination-image" style="background-image: url(' +
-          getPaginationImage(index) +
-          ');"></span>'
-        );
-      },
-    },
-  });
-
-  function getPaginationImage(index) {
-    var images = [
-      "image/home-four/trending-slider/img-thumb-1.png",
-      "image/home-four/trending-slider/img-thumb-2.png",
-      "image/home-four/trending-slider/img-thumb-3.png",
-    ];
-    return images[index % images.length];
-  }
-
-  //Select Color
-  $(".tr-color:not(.disabled)").click(function () {
-    var selectedColor = $(this).data("color");
-    $("#tr-selected-color").text("").css({
-      "background-color": selectedColor,
-      width: "20px",
-      height: "20px",
-      display: "block",
-    });
   });
 });
 

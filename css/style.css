@@ -6581,6 +6581,110 @@ button:focus {
     margin: 0;
 }
 
+/* Shop Details Image as Slider */
+#sdsi-top-margin {
+    margin-top: 80px;
+}
+
+.sdsi-page .breadcrumb span  {
+	background: #051D40;
+}
+
+.sdsi-page {
+    font-family: 'Poppins', sans-serif;
+}
+
+.sdsi-page ::selection {
+    background: #F7B600;
+}
+
+.sdsi-page a {
+    color: #072654;
+}
+
+.sdsi-page .header-top-right ul li a:hover,
+.sdsi-page a:hover {
+    color: #F7B600;
+}
+
+.sdsi-page #return-to-top {
+    background: #051D40;
+}
+.sdsi-page #return-to-top:hover {
+    background: #F7B600;
+}
+
+.sdsi-page::-webkit-scrollbar-thumb,
+.sdsi-page ::-webkit-scrollbar-thumb {
+    background: #F7B600;
+    border-radius: 10px;
+}
+
+.sdsi-page::-webkit-scrollbar-thumb:hover,
+.sdsi-page ::-webkit-scrollbar-thumb:hover {
+    background: #FFD35B;
+}
+
+.sdsi-page .header-top-right ul li::after {
+    background: #FFD35B !important;
+}
+
+.sdsi-page .cursor:after,
+.sdsi-page .menu-right .notify-count {
+    background: #F7B600;
+}
+
+.sdsi-page .cursor:before {
+    background: #ffce4934;
+	border: 2px solid #F7B600;
+}
+
+.sdsi-page .header-top-left p span,
+.sdsi-page .main-menu a.active,
+.sdsi-page .mobile-menu a.active,
+.sdsi-page .main-menu a:hover,
+.sdsi-page .menu-right a:hover,
+.sdsi-page .main-menu li:hover > a,
+.sdsi-page .breadcrumb .current-page,
+.sdsi-page .cart-slide .cart-header .cart-close:hover,
+.sdsi-page .cart-slide .cart-item .item-img .close-btn:hover,
+.sdsi-page .search-box .close-btn:hover,
+.sdsi-page .search-box button:hover,
+.sdsi-page .section-title span,
+.sdsi-page .social-links li a:hover {
+    color: #F7B600
+}
+
+.sdsi-page .header-top-right .top-sub-menu a:hover,
+.sdsi-page .main-menu .sub-menu a:hover,
+.sdsi-page .pro-search-result-area .search-content .product-cart a:hover {
+    color: #FFF;
+    background: #F7B600;
+}
+
+.sdsi-page .button-a,
+.sdsi-page .newsletter-content form .button-c {
+    border-color: #F7B600;
+}
+
+.sdsi-page .button-a:hover,
+.sdsi-page .newsletter-content form .button-c:hover {
+    color: #FFF;
+    background: #F7B600;
+}
+
+.sdsi-page .button-b {
+    border-color: #F7B600;
+	background: #F7B600;
+    color: #FFF;
+}
+
+.sdsi-page .button-b:hover {
+    color: #072654;
+	background: transparent;
+}
+
+
 /* ====================================================================
 8. Wishlist Page
 ==================================================================== */
@@ -15261,6 +15365,10 @@ button:focus {
 .shop-page-style-3-list .newsletter-content form .button-c:hover {
     color: #FFF;
     background: #F7B600;
+}
+
+.shop-page-style-3-list .social-links li a:hover {
+    color: #F7B600;
 }
 
 .shop-page-v3-list {
