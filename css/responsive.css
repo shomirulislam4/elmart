@@ -8503,8 +8503,12 @@
         height: 325px;
     }
     .trnd-img-sldr img {
-        width: 90%;
-        height: auto;
+        width: auto;
+        height: 300px;
+    }
+    .ts-pagination .swiper-pagination-bullet {
+        height: 40px;
+        width: 40px;
     }
     .trnd-prod-info h2 {
         font-size: 30px;
@@ -11632,6 +11636,9 @@
         width: 80%;
         height: auto;
     }
+    .ts-pagination .swiper-pagination-bullet-active {
+        border-bottom: 5px solid #F7B600;
+    }
     .trnd-prod-info h2 {
         font-size: 30px;
         line-height: 34px;
@@ -14251,8 +14258,8 @@
         height: 420px;
     }
     .trnd-img-sldr img {
-        width: 100%;
-        height: auto;
+        width: auto;
+        height: 335px;
     }
     .trnd-prod-info h2 {
         font-size: 20px;
@@ -16530,8 +16537,9 @@
     .trending-slider .swiper-slide-active {
         height: 390px !important;
     }
+    .trending-slider,
     .trending-slider .swiper-slide {
-        height: 550px;
+        height: 420px;
     }
     .trnd-img-sldr img {
         width: 100%;

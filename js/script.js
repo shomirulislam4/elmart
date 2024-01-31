@@ -1105,8 +1105,7 @@ $(function() {
               linkEl = figureEl.find('a')[0];
               size = linkEl.getAttribute('data-size').split('x');
 
-              // Check if the item should be excluded based on a condition
-              if (!figureEl.hasClass('exclude')) {
+              if (!figureEl.hasClass('ltbox_exclude')) {
                   item = {
                       src: linkEl.getAttribute('href'),
                       w: parseInt(size[0], 10),
