@@ -13739,17 +13739,17 @@ button:focus {
     z-index: 9999999;
     background: #072654;
     transform: translate(0px 20px);
-    animation: SHFrame 0.5s alternate forwards ease-in-out;
+    animation: SHFrame 0.5s;
 }
 
 @keyframes SHFrame {
     0% {
-        transform: translate(0px, -110px);
+        transform: translate(0, -100px);
         opacity: 0;
     }
 
     100% {
-        transform: translate(0px, 0px);
+        transform: translate(0, 0);
         opacity: 1;
     }
 }

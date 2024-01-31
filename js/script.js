@@ -2294,15 +2294,22 @@ $(function(){
 });
 
 //Sticky Header
-$( function() {
+$(function() {
+  var lastScrollTop = 0;
+
   $(window).on("scroll", function() {
-    if($(window).scrollTop()){
-      $("#sticky_header").addClass("sticky_header")
-    }else{
-      $("#sticky_header").removeClass("sticky_header")
+    var currentScrollTop = $(this).scrollTop();
+
+    if (currentScrollTop > lastScrollTop){
+      $("#sticky_header").addClass("sticky_header");
+    } else {
+      $("#sticky_header").removeClass("sticky_header");
     }
-  })
+
+    lastScrollTop = currentScrollTop;
+  });
 });
+
 
 
 //Mobile Menu (Header - Style Four)
