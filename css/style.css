@@ -13729,6 +13729,39 @@ button:focus {
     color: #5F6C72;
 }
 /** End of Mobile Menu (Header - Style Four) **/
+
+/* Sticky Header */
+.sticky_header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999999;
+    background: #072654;
+    transform: translate(0px 20px);
+    animation: SHFrame 0.5s alternate forwards ease-in-out;
+}
+
+@keyframes SHFrame {
+    0% {
+        transform: translate(0px, -110px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+.sticky_header.header-four .header-bg-top .header-top {
+	display: none;
+}
+
+.sticky_header.header-four .header-middle {
+	padding: 20px 0;
+}
+
 /*** End of Header - Style Four ***/
 
 /*** Start of Hero Section (Variant 4) ***/

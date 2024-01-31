@@ -2293,6 +2293,18 @@ $(function(){
   })
 });
 
+//Sticky Header
+$( function() {
+  $(window).on("scroll", function() {
+    if($(window).scrollTop()){
+      $("#sticky_header").addClass("sticky_header")
+    }else{
+      $("#sticky_header").removeClass("sticky_header")
+    }
+  })
+});
+
+
 //Mobile Menu (Header - Style Four)
 $(function() {
   $('.mobile-menu-btn').on('click',function() {
