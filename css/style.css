@@ -75,7 +75,7 @@
     font-family: 'Jost';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/jost-v15-latin-regular.woff2') format('woff2');
+    src: url('../fonts/jost/jost-v15-latin-regular.woff2') format('woff2');
 }
 
 @font-face {
@@ -83,7 +83,7 @@
     font-family: 'Jost';
     font-style: normal;
     font-weight: 500;
-    src: url('../fonts/jost-v15-latin-500.woff2') format('woff2');
+    src: url('../fonts/jost/jost-v15-latin-500.woff2') format('woff2');
 }
 
 @font-face {
@@ -91,7 +91,7 @@
     font-family: 'Jost';
     font-style: normal;
     font-weight: 600;
-    src: url('../fonts/jost-v15-latin-600.woff2') format('woff2');
+    src: url('../fonts/jost/jost-v15-latin-600.woff2') format('woff2');
 }
 
 @font-face {
@@ -99,7 +99,7 @@
     font-family: 'Jost';
     font-style: normal;
     font-weight: 700;
-    src: url('../fonts/jost-v15-latin-700.woff2') format('woff2');
+    src: url('../fonts/jost/jost-v15-latin-700.woff2') format('woff2');
 }
  
 /* Josefin Sans */
@@ -108,14 +108,14 @@
     font-family: 'Josefin Sans';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/josefin-sans-v32-latin-regular.woff2') format('woff2');
+    src: url('../fonts/josefin-sans/josefin-sans-v32-latin-regular.woff2') format('woff2');
 }
 @font-face {
     font-display: swap;
     font-family: 'Josefin Sans';
     font-style: normal;
     font-weight: 500;
-    src: url('../fonts/josefin-sans-v32-latin-500.woff2') format('woff2');
+    src: url('../fonts/josefin-sans/josefin-sans-v32-latin-500.woff2') format('woff2');
 }
 
 @font-face {
@@ -123,7 +123,7 @@
     font-family: 'Josefin Sans';
     font-style: normal;
     font-weight: 600;
-    src: url('../fonts/josefin-sans-v32-latin-600.woff2') format('woff2');
+    src: url('../fonts/josefin-sans/josefin-sans-v32-latin-600.woff2') format('woff2');
 }
 
 @font-face {
@@ -131,7 +131,7 @@
     font-family: 'Josefin Sans';
     font-style: normal;
     font-weight: 700;
-    src: url('../fonts/josefin-sans-v32-latin-700.woff2') format('woff2');
+    src: url('../fonts/josefin-sans/josefin-sans-v32-latin-700.woff2') format('woff2');
 }
 
 /* Poppins */
@@ -140,7 +140,7 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2');
+    src: url('../fonts/poppins/poppins-v20-latin-regular.woff2') format('woff2');
 }
 
 @font-face {
@@ -148,7 +148,7 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    src: url('../fonts/poppins-v20-latin-500.woff2') format('woff2');
+    src: url('../fonts/poppins/poppins-v20-latin-500.woff2') format('woff2');
 }
 
 @font-face {
@@ -156,7 +156,7 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2');
+    src: url('../fonts/poppins/poppins-v20-latin-600.woff2') format('woff2');
 }
 
 @font-face {
@@ -164,7 +164,49 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
-    src: url('../fonts/poppins-v20-latin-700.woff2') format('woff2');
+    src: url('../fonts/poppins/poppins-v20-latin-700.woff2') format('woff2');
+}
+
+/* Bebas Neue */
+@font-face {
+    font-display: swap;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/bebas-neue-v14-latin-regular.woff2') format('woff2');
+  }
+
+/* Fira Sans */
+@font-face {
+  font-display: swap;
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/fira-sans/fira-sans-v17-latin-300.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/fira-sans/fira-sans-v17-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/fira-sans/fira-sans-v17-latin-500.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/fira-sans/fira-sans-v17-latin-600.woff2') format('woff2');
 }
  
 /*
@@ -172,6 +214,8 @@ font-family: 'Josefin Sans', sans-serif;
 font-family: 'Jost', sans-serif;
 font-family: 'Poppins', sans-serif;
 font-family: 'DM Sans', sans-serif;
+font-family: 'Bebas Neue';
+font-family: 'Fira Sans';
 */
 
 /* Default CSS */
@@ -12908,12 +12952,13 @@ button:focus {
 }
 
 .search-bar select {
-    position: absolute;
-    height: 100%;
-    background: #F7B600;
-    padding: 0 10px;
-    left: 0;
-    width: 20%;
+	position: absolute;
+	height: 100%;
+	background: #F7B600;
+	padding: 0 10px;
+	left: 0;
+	width: 20%;
+	cursor: pointer;
 }
 
 .search-bar input {
@@ -16033,10 +16078,369 @@ button:focus {
 /* ====================================================================
 24. Home Page Five
 ==================================================================== */
+/** Start of Header Style Five **/
+.homepage_five,
+.homepage_five p,
+.homepage_five h1,
+.homepage_five h2,
+.homepage_five h3,
+.homepage_five h4,
+.homepage_five h5,
+.homepage_five h6,
+.homepage_five {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.homepage_five ::selection {
+    background: #FF5400;
+}
+
+.header_five a {
+    color: #FF5400;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.header_five a:hover {
+    color: #FFAC4A;
+}
+
+.header_five .header-bg {
+	background: #FF5400;
+	padding: 15px 0;
+}
+
+.h5_search_bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background: #FFF;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.h5_search_bar form {
+    width: 100%;
+    height: 100%;
+}
+
+.h5_search_bar form input {
+    width: 474px;
+    height: 100%;
+    margin: 0;
+    padding-left: 15px;
+    background: #FFF;
+    float: left;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+}
+
+.h5_search_bar form select {
+	width: 175px;
+	height: 100%;
+	margin: 0;
+	background: #FFF;
+	padding: 0 10px;
+    border-left: 1px solid #000;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+}
+
+.h5_search_bar form select option {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    background: #FFF;
+}
+
+.h5_search_bar form button {
+    font-size: 16px;
+    line-height: 40px;
+    width: 44px;
+    height: 100%;
+    margin: 0;
+    float: right;
+    text-align: center;
+    background: #000;
+    color: #FFF;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.h5_search_bar form button:hover {
+    background: #FFAC4A;
+}
+
+.header_five .menu-right .srch-btn-h4 {
+    display: none;
+}
+
+.menu-right .notify-count {
+	background: #FF5400;
+}
+
+.header_five .menu-right a {
+	color: #191C1F;
+	font-size: 24px;
+	line-height: 40px;
+}
+
+.header_five .menu-right a:hover {
+    color: #FFF;
+}
+
+.header_menu-area {
+	background: #FFF;
+	box-shadow: inset 0px -1px 0px 0px #E4E7E9;
+    padding: 25px 0;
+}
+
+.h5-main-menu li {
+    display: inline-block;
+    position: relative;
+    padding: 0 10px;
+}
+
+.h5-main-menu li a {
+    color: #5A5858;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.h5-main-menu li a i,
+.h5-main-menu .sub-menu li a i {
+    font-size: 12px;
+}
+
+.h5-main-menu li a:first-child {
+    padding-left: 0;
+}
+
+.h5-main-menu li a:last-child {
+    padding-right: 0;
+}
+
+.h5-main-menu .submenu_cols {
+	display: flex;
+    width: fit-content;
+	background: #FFF;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.h5-main-menu li:hover .submenu_cols  {
+    visibility: visible;
+    opacity: 1;
+}
+
+.h5-main-menu .sub-menu-item h3 {
+    font-size: 24px;
+    line-height: 28px;
+    padding: 0 22px;
+    padding-top: 5px;
+    text-transform: capitalize;
+}
+
+.h5-main-menu .sub-menu-item li {
+    display: block;
+}
+
+.h5-main-menu .sub-menu-item li a {
+	display: block;
+	padding: 7px 22px;
+	text-transform: capitalize;
+	width: 225px;
+    border-radius: 5px;
+}
+
+.h5-main-menu .sub-menu-item li a:hover {
+    color: #FFF;
+    background: #FF5400;
+}
+
+.h5-main-menu .menu-notification {
+    position: relative;
+}
+
+.h5-main-menu .menu-notification .notify {
+	position: absolute;
+	display: inline-flex;
+	padding: 6px 10px;
+	align-items: flex-start;
+	border-radius: 50px;
+	color: #FFF;
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 8px;
+	text-transform: capitalize;
+	top: -15px;
+	right: 0;
+}
+
+.h5-main-menu .sub-menu {
+	position: absolute;
+	display: inline-block;
+	background-color: #FFF;
+	border-radius: 5px;
+	left: 0;
+	top: 100%;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.3s;
+	-moz-transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+	z-index: 500;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.h5-main-menu .sub-menu li {
+    padding: 0;
+    margin: 0;
+}
+
+.h5-main-menu .sub-menu li a {
+	display: inline-block;
+	width: 230px;
+	padding: 10px;
+	margin: 0;
+	text-align: center;
+}
+
+.h5-main-menu .sub-menu a:hover {
+    background: #FF5400;
+    color: #FFF;
+    border-radius: 5px;
+}
+
+.h5-main-menu li:hover .sub-menu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.h5-main-menu .sub-menu > li .sub-menu {
+	left: 100%;
+	top: 0;
+    margin: 0;
+    width: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.h5-main-menu .sub-menu > li:hover .sub-menu {
+    width: 100%;
+    visibility: visible;
+    opacity: 1;
+}
+
+.header_menu-area .social-prof {
+    display: flex;
+}
+
+.header_menu-area .social-prof span {
+    color: #5A5858;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+.header_menu-area .social-prof li {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 3px;
+}
+
+.header_menu-area .social-prof li:last-child {
+    margin: 0;
+}
+
+.header_menu-area .social-prof li a {
+    color: #000;
+}
+
+.header_menu-area .social-prof li a:hover {
+    color: #FF5400;
+}
+
+.sub-menu-item .promo-image {
+    width: 245px;
+    height: 100%;
+}
+
+.sub-menu-item img {
+    width: 245px;
+    height: auto;
+}
+
+.h5-main-menu .submenu_cols-black {
+	display: flex;
+    width: fit-content;
+	background: #000;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.h5-main-menu li:hover .submenu_cols-black  {
+    visibility: visible;
+    opacity: 1;
+}
+
+.submenu_cols-black .sub-menu-item h3 {
+    color: #FFF;
+}
+
+.submenu_cols-black p {
+    color: #AEAEAE;
+}
+
+.submenu_cols-black .sub-menu-item li a {
+	color: #AEAEAE;
+    width: 200px;
+}
+
+
+/** End of Header Style Five **/
+
+
 
 /*
-font-family: 'Josefin Sans', sans-serif;
-font-family: 'Jost', sans-serif;
-font-family: 'Poppins', sans-serif;
-font-family: 'DM Sans', sans-serif;
+color---
+#FF5400
+#FFAC4A;
+
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Fira Sans', sans-serif;
 */

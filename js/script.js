@@ -1,6 +1,5 @@
 (function ($) {
     'use strict';
-
 /*============================ Global ============================*/
 //Back to Top Button
 $(function(){
@@ -2310,8 +2309,6 @@ $(function() {
   });
 });
 
-
-
 //Mobile Menu (Header - Style Four)
 $(function() {
   $('.mobile-menu-btn').on('click',function() {
@@ -2858,6 +2855,9 @@ $(function() {
     $('.rvp-sliders').slick('slickNext');
   });
 });
+
+/*============================ Home Style Five ============================*/
+
 
 
 }) (jQuery);
