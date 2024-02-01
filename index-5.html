@@ -29,7 +29,6 @@
 
   <!---- Start of Header Section (Header - Style Four) ---->
   <!-- Header Top Promo Area 2 -->
-
   
   <!-- Main Header -->
   <header class="header_five">
@@ -59,9 +58,9 @@
                 </div>
                 <div class="col-md-3 col-6 d-flex align-items-center justify-content-end">
                     <ul class="menu-right">
-                        <li><a href="login-register.html"><i class="fa-regular fa-circle-user"></i></a></li>
-                        <li><a href="wishlist.html"><i class="fa-regular fa-heart"></i></a></li>
-                        <li class="has-notification has-item"><a href="#"><i class="fa-solid fa-bag-shopping"></i><span class="notify-count">2</span></a></li>
+                        <li><a href="login-register.html"><i class="fa-solid fa-circle-user"></i></a></li>
+                        <li><a href="wishlist.html"><i class="fa-solid fa-heart"></i></a></li>
+                        <li class="has-notification"><a class="cart-view" href="#"><i class="fa-solid fa-bag-shopping"></i><span class="notify-count">2</span></a></li>
                         <li class="srch-btn-h4"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
                         <li class="mobile-menu-btn"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
                     </ul>
@@ -249,6 +248,78 @@
   </header>
 
   <!-- Mobile Menu -->
+
+  <!-- Cart View -->
+  <div class="cart-slide">
+    <div class="cart-content">
+    <div class="cart-header">
+        <h2 class="cart-title">Cart View</h2>
+        <button class="cart-close"><i class="fa-regular fa-circle-xmark"></i></button>
+    </div>
+    <div class="cart-body">
+        <ul class="cart-item-list">
+        <li class="cart-item">
+            <div class="item-img">
+            <a href="shop-details.html"><img src="image/home-one/feature-product/casual-man-dress.jpg" alt="Casual Man Dress Shirt"></a>
+            <button class="close-btn"><i class="fa-regular fa-circle-xmark"></i></button>
+            </div>
+            <div class="item-content">
+            <div class="product-rating">
+                <span class="icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                </span>
+                <span class="total-rating">(64)</span>
+            </div>
+            <h3 class="item-title"><a href="shop-details.html">Casual Man Dress Shirt</a></h3>
+            <div class="item-price">$15.00</div>
+            <div class="item-quantity"><span class="decrease qty-btn">-</span>
+                <input disabled type="number" value="3">
+                <span class="increase qty-btn">+</span>
+            </div>
+            </div>
+        </li>
+        <li class="cart-item">
+            <div class="item-img">
+            <a href="shop-details.html"><img src="image/home-one/feature-product/fashion-woman-top.jpg" alt="Fashion Woman Top"></a>
+            <button class="close-btn"><i class="fa-regular fa-circle-xmark"></i></button>
+            </div>
+            <div class="item-content">
+            <div class="product-rating">
+                <span class="icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                </span>
+                <span class="total-rating">(64)</span>
+            </div>
+            <h3 class="item-title"><a href="shop-details.html">Fashion Woman Top</a></h3>
+            <div class="item-price">$15.00</div>
+            <div class="item-quantity"><span class="decrease qty-btn">-</span>
+                <input disabled type="number" value="3">
+                <span class="increase qty-btn">+</span>
+            </div>
+            </div>
+        </li>
+        </ul>
+    </div>
+    <div class="cart-bottom">
+        <h3 class="cart-subtotal">
+            <span class="subtotal-title">Subtotal:</span>
+            <span class="subtotal-amount">$90.00</span>
+        </h3>
+        <div class="btn-group">
+            <a href="cart.html" class="button-b">View Cart</a>
+            <a href="checkout.html" class="button-a">Checkout</a>
+        </div>
+    </div>
+    </div>
+  </div>
 
   <!-- Search Box -->
   <div class="search-box">
