@@ -16104,7 +16104,10 @@ button:focus {
 }
 
 .homepage_five::-webkit-scrollbar-thumb:hover,
-.homepage_five ::-webkit-scrollbar-thumb:hover,
+.homepage_five ::-webkit-scrollbar-thumb:hover {
+    background: #FF5400;
+}
+
 .homepage_five ::selection {
     background: #FF5400;
 }
@@ -16119,8 +16122,8 @@ button:focus {
 }
 
 .header_five .header-bg {
-	background: #FF5400;
-	padding: 15px 0;
+    background: #FF5400;
+    padding: 20px 0;
 }
 
 .h5_search_bar {
@@ -16193,6 +16196,7 @@ button:focus {
 
 .header_five .menu-right .notify-count {
 	background: #FF5400;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 .header_five .menu-right a {
@@ -16211,10 +16215,17 @@ button:focus {
     padding: 25px 0;
 }
 
+.h5-main-menu-alignment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .h5-main-menu li {
     display: inline-block;
     position: relative;
-    padding: 0 10px;
+    padding: 0;
+    margin: 0 10px;
 }
 
 .h5-main-menu li a {
@@ -16456,6 +16467,7 @@ button:focus {
 }
 
 #h5_m-menu-btn a {
+    color: #13172B;
     border: 1px solid #5A5858;
     padding: 10px 20px;
 }
@@ -16488,9 +16500,11 @@ button:focus {
 }
 
 .mobile-menu-style5 .h5m-close-btn {
+    height: 40px;
+    width: 40px;
     color: #FFF;
     font-size: 40px;
-    line-height: 30px;
+    line-height: 40px;
     margin: 15px;
     cursor: pointer;
     transition: 0.3s;
@@ -16505,7 +16519,7 @@ button:focus {
 }
 
 .h5_mobile-menu {
-    width: 400px;
+    width: 300px;
     height: 100vh;
     padding: 40px 30px;
     background: #FFF;
@@ -16526,7 +16540,17 @@ button:focus {
 }
 
 .h5_mobile-menu .menu-notification .notify {
+    position: absolute;
+    display: inline-flex;
+    padding: 6px 10px;
+    align-items: flex-start;
+    border-radius: 50px;
+    color: #FFF;
     font-family: 'Fira Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 8px;
+    text-transform: capitalize;
 }
 
 .h5_mobile-menu ul li a {
@@ -16560,6 +16584,50 @@ button:focus {
 
 .h5_mobile-menu ul li .h5_is-submenu.show {
     max-height: 500px;
+}
+
+.h5_social-profiles ul {
+    display: flex;
+    gap: 10px;
+}
+
+.h5_social-profiles li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #000;
+    color: #FFF !important;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.h5_social-profiles li a:hover {
+    background: #FF5400;
+}
+
+/* Search Box*/
+.menu-right li.srch-btn-h5 {
+    display: none;
+}
+
+.homepage_five .search-result-header a {
+    color: #FF5400;
+}
+
+.homepage_five .search-result-header a:hover {
+    color: #FFAC4A;
+}
+
+.homepage_five .search-box .close-btn:hover,
+.homepage_five .pro-search-result-area .search-content .product-title a:hover,
+.homepage_five .search-box button:hover {
+    color: #FF5400;
+}
+
+.homepage_five .pro-search-result-area .search-content .product-cart a:hover {
+    background: #FF5400;
 }
 
 /* Slide Cart */
@@ -16696,31 +16764,12 @@ button:focus {
     background: #FF5400;
 }
 
-.oc-main-menu .social-profiles ul {
-    display: flex;
-    gap: 10px;
-}
-
-.oc-main-menu .social-profiles li a {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    background: #000;
-    color: #FFF;
-    font-size: 18px;
-    line-height: 40px;
-    text-align: center;
-    cursor: pointer;
-}
-
-.oc-main-menu .social-profiles li a:hover {
-    background: #FF5400;
-}
-
 .h5_off-canvas-menu .oc-close-btn {
+    height: 40px;
+    width: 40px;
     color: #FFF;
     font-size: 40px;
-    line-height: 30px;
+    line-height: 40px;
     margin: 15px;
     cursor: pointer;
     transition: 0.3s;

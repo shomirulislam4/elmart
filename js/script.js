@@ -2882,4 +2882,14 @@ $(function() {
   })
 });
 
+//Search Box
+$(function() {
+  $('.srch-btn-h5').on('click',function() {
+    $('.search-box').addClass('search-visibility');
+  })
+  $('.close-btn').on('click',function() {
+    $('.search-box').removeClass('search-visibility');
+  })
+});
+
 }) (jQuery);
