@@ -2892,4 +2892,32 @@ $(function() {
   })
 });
 
+//Hero Right Area
+$(function() {
+  const progressCircle = document.querySelector(".autoplay-progress svg");
+  const progressContent = document.querySelector(".autoplay-progress span");
+  var swiper = new Swiper(".h5_hero-right-slider", {
+    loop: true,
+    spaceBetween: 30,
+    centeredSlides: true,
+    pagination: {
+      el: ".h5_sslider-dots",
+    },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".h5_hero-slider-right-next",
+      prevEl: ".h5_hero-slider-right-prev",
+    },
+    on: {
+      autoplayTimeLeft(s, time, progress) {
+        progressCircle.style.setProperty("--progress", 1 - progress);
+        progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+      },
+    },
+  });
+});
+
 }) (jQuery);

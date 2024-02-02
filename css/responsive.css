@@ -19019,6 +19019,35 @@
     .header_five .header-bg {
         padding: 15px 0;
     }
+    .h5-main-menu .submenu_cols-black {
+        left: -300%;
+        padding: 10px;
+    }
+    .h5-main-menu .submenu_cols {
+        padding: 10px;
+    }
+    .submenu_cols-black .sub-menu-item li a {
+        width: 147px;
+        font-size: 14px;
+        padding: 3px 15px;
+    }
+    .h5-main-menu .sub-menu-item li a {
+        width: 170px;
+        font-size: 14px;
+        padding: 3px 15px;
+    }
+    .h5-main-menu .sub-menu-item h3 {
+        font-size: 22px;
+        line-height: 24px;
+        padding: 0 15px;
+    }
+    .submenu_cols-black p {
+        color: #AEAEAE;
+        font-size: 14px;
+    }
+    .submenu_cols-black .promo-image img {
+        width: 200px;
+    }
 }
 
 /* X-Large devices (large desktops, 1200px and up/ col-xl)*/
@@ -20101,6 +20130,16 @@
     .h5_search_bar form button {
         width: 41px;
     }
+    .h5-main-menu .submenu_cols-black {
+        left: -300%;
+    }
+    .submenu_cols-black .sub-menu-item li a {
+        width: 190px;
+        font-size: 16px;
+    }
+    .submenu_cols-black .promo-image img {
+        width: 245px;
+    }
 }
 
 /* XX-Large devices (larger desktops, 1400px and up/ col-xxl)*/
@@ -20291,6 +20330,9 @@
     .h5_search_bar form select {
         width: 165px;
     }
+    .h5-main-menu .submenu_cols-black {
+        left: -200%;
+    }
 }
 
 @media (min-width: 1500px) and (max-width: 1599px) {
@@ -20403,6 +20445,10 @@
     }
     .shop-content-v3 .cta-btn .shop-button-v3 {
         padding: 7px 20px;
+    }
+/*===== Home Page Five =====*/
+    .h5-main-menu .submenu_cols-black {
+        left: -200%;
     }
 }
 
