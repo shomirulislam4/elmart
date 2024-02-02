@@ -2857,7 +2857,29 @@ $(function() {
 });
 
 /*============================ Home Style Five ============================*/
+//Mobile Menu (Header - Style Five)
+$(function() {
+  $('#h5_m-menu-btn').on('click',function() {
+    $('.mobile-menu-style5').addClass('visible');
+  })
+  $('.h5m-close-btn').on('click',function() {
+    $('.mobile-menu-style5').removeClass('visible');
+  })
+  
+  //Mobile Menu - Sub Menu (Header - Style Five)
+  $(".h5_has-submenu").click(function() {
+    $(this).next(".h5_is-submenu").toggleClass("show");
+  });
+});
 
-
+//Off-canvas Menu Toggle
+$(function() {
+  $('.oc-menu-btn').on('click',function() {
+    $('.h5_off-canvas-menu').addClass('visible');
+  })
+  $('.oc-close-btn').on('click',function() {
+    $('.h5_off-canvas-menu').removeClass('visible');
+  })
+});
 
 }) (jQuery);

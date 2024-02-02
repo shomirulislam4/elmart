@@ -16079,18 +16079,32 @@ button:focus {
 24. Home Page Five
 ==================================================================== */
 /** Start of Header Style Five **/
+.homepage_five {
+    position: relative;
+}
+
 .homepage_five,
-.homepage_five p,
+.homepage_five p {
+    font-family: 'Fira Sans', sans-serif;
+}
+
 .homepage_five h1,
 .homepage_five h2,
 .homepage_five h3,
 .homepage_five h4,
 .homepage_five h5,
-.homepage_five h6,
-.homepage_five {
-    font-family: 'Fira Sans', sans-serif;
+.homepage_five h6 {
+    font-family: 'Bebas Neue', sans-serif;
 }
 
+.homepage_five::-webkit-scrollbar-thumb,
+.homepage_five ::-webkit-scrollbar-thumb {
+    background: #FF5400;
+    border-radius: 10px;
+}
+
+.homepage_five::-webkit-scrollbar-thumb:hover,
+.homepage_five ::-webkit-scrollbar-thumb:hover,
 .homepage_five ::selection {
     background: #FF5400;
 }
@@ -16212,6 +16226,11 @@ button:focus {
     text-transform: capitalize;
 }
 
+.h5-main-menu li a:hover,
+.h5-main-menu li a.active {
+    color: #FF5400;
+}
+
 .h5-main-menu li a i,
 .h5-main-menu .sub-menu li a i {
     font-size: 12px;
@@ -16288,7 +16307,7 @@ button:focus {
 	font-weight: 500;
 	line-height: 8px;
 	text-transform: capitalize;
-	top: -15px;
+	top: -18px;
 	right: 0;
 }
 
@@ -16431,12 +16450,123 @@ button:focus {
     width: 200px;
 }
 
+/* Mobile Menu (Home 5) */
+#h5_m-menu-btn {
+    display: none;
+}
+
+#h5_m-menu-btn a {
+    border: 1px solid #5A5858;
+    padding: 10px 20px;
+}
+
+#h5_m-menu-btn a:hover {
+    color: #FFF;
+    border-color: #FF5400;
+    background: #FF5400;
+}
+
+.mobile-menu-style5 {
+    position: absolute;
+    width: 0;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    display: flex;
+    overflow: hidden;
+    transition: 1s;
+    -moz-transition: 1s;
+    -webkit-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.mobile-menu-style5.visible {
+    width: 100%;
+}
+
+.mobile-menu-style5 .h5m-close-btn {
+    color: #FFF;
+    font-size: 40px;
+    line-height: 30px;
+    margin: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.mobile-menu-style5 .h5m-close-btn:hover {
+    color: #FF5400;
+}
+
+.h5_mobile-menu {
+    width: 400px;
+    height: 100vh;
+    padding: 40px 30px;
+    background: #FFF;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.h5_mobile-menu .logo {
+    margin-bottom: 10px;
+}
+
+.h5_mobile-menu .logo img {
+    height: auto;
+    width: auto;
+}
+
+.h5_mobile-menu .menu-notification .notify {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.h5_mobile-menu ul li a {
+    display: block;
+	padding: 10px 0;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+	text-transform: capitalize;
+    color: #13172B;
+}
+
+.h5_mobile-menu ul li a i {
+    font-size: 12px;
+}
+
+.h5_mobile-menu ul li a:hover {
+    color: #FF5400;
+}
+
+.h5_mobile-menu ul li .h5_is-submenu {
+    margin-left: 15px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.h5_mobile-menu ul li .h5_is-submenu.show {
+    max-height: 500px;
+}
+
 /* Slide Cart */
 .homepage_five .cart-slide .cart-header .cart-close:hover,
 .homepage_five .cart-slide .cart-item .item-img .close-btn:hover {
     color: #FF5400;
 }
-
 
 .homepage_five .button-b {
     background: #FF5400;
@@ -16458,6 +16588,151 @@ button:focus {
     color: #FFF;
 }
 
+/* Off-canvas Menu */
+.h5_off-canvas-menu {
+    position: absolute;
+    width: 0;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    display: flex;
+    overflow: hidden;
+    transition: 1s;
+    -moz-transition: 1s;
+    -webkit-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.h5_off-canvas-menu.visible {
+    width: 100%;
+}
+
+.oc-main-menu {
+    width: 450px;
+    height: 100vh;
+    background: #FFF;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.oc-main-menu .logo img {
+    height: auto;
+    width: auto;
+}
+
+.oc-main-menu .about-company p {
+    color: #13172B;
+    font-family: 'Fira Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 26px;
+}
+
+.off-canvas-menu ul li a {
+    display: block;
+	padding: 10px 0;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 500;
+	text-transform: capitalize;
+    color: #13172B;
+}
+
+.off-canvas-menu ul li a:hover {
+    color: #FF5400;
+}
+
+.oc-main-menu .title {
+    color: #13172B;
+    font-family: 'Bebas Neue', sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 32px;
+    margin-bottom: 20px;
+}
+
+.oc-newsletter form {
+    width: 100%;
+    height: 40px;
+    background: #FFF;
+    border: 1px solid #000;
+    border-radius: 50px;
+    padding: 0 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.oc-newsletter form input {
+    width: 100%;
+    height: 100%;
+}
+
+.oc-newsletter form button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 100%;
+    background: #000;
+    color: #FFF;
+    text-align: center;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    border-left: 1PX solid #000;
+}
+
+.oc-newsletter form button:hover {
+    background: #FF5400;
+}
+
+.oc-main-menu .social-profiles ul {
+    display: flex;
+    gap: 10px;
+}
+
+.oc-main-menu .social-profiles li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #000;
+    color: #FFF;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.oc-main-menu .social-profiles li a:hover {
+    background: #FF5400;
+}
+
+.h5_off-canvas-menu .oc-close-btn {
+    color: #FFF;
+    font-size: 40px;
+    line-height: 30px;
+    margin: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.h5_off-canvas-menu .oc-close-btn:hover {
+    color: #FF5400;
+}
 
 /** End of Header Style Five **/
 
