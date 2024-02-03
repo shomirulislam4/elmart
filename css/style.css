@@ -16822,10 +16822,6 @@ button:focus {
     font-weight: bold;
 }
 
-.autoplay-progress span {
-    color: #FFF;
-}
-
 .autoplay-progress svg {
     --progress: 0;
     position: absolute;
@@ -16842,15 +16838,27 @@ button:focus {
     transform: rotate(-90deg);
 }
 
+.h5_hslider-nav {
+	position: absolute;
+	width: 200px;
+	height: 40px;
+	margin: 0 auto;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 20;
+}
+
 .h5_sslider-dots {
 	position: absolute;
 	z-index: 10;
 	text-align: center;
+	bottom: 13px !important;
 }
 
 .h5_sslider-dots .swiper-pagination-bullet {
-	width: 30px;
-	height: 2px;
+	width: 40px;
+	height: 3px;
 	background: #FF5400;
 	border-radius: 0;
 	opacity: 0.4;
@@ -16863,12 +16871,31 @@ button:focus {
 }
 
 .h5_sslider-dots .swiper-pagination-bullet.swiper-pagination-bullet-active {
-	width: 30px;
-	height: 2px;
+	width: 40px;
+	height: 3px;
 	background: #FF5400;
 	border-radius: 0;
 	opacity: 1;
 }
+
+.h5_hero-slider-right-next,
+.h5_hero-slider-right-prev {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #13172B;
+    font-size: 20px;
+}
+
+.h5_hero-slider-right-prev {
+    left: 0;
+}
+
+.h5_hero-slider-right-next {
+    right: 0;
+}
+
 /** End of Hero Section (Variant 5) **/
 
 
