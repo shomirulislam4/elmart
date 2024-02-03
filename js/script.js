@@ -2906,6 +2906,7 @@ $(function() {
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
+      pauseOnMouseEnter: true,
     },
     navigation: {
       nextEl: ".h5_hero-slider-right-next",
@@ -2917,6 +2918,77 @@ $(function() {
         progressContent.textContent = `${Math.ceil(time / 1000)}s`;
       },
     },
+  });
+});
+
+//Hero Slider Right popover
+$(function () {
+  //Slider 1 Item 1
+  const button1 = $("#slider1_item1-btn")[0];
+  const popover1 = $(".slider1_content1")[0];
+
+  const popperInstance = Popper.createPopper(button1, popover1, {
+    placement: "top",
+  });
+
+  button1.addEventListener("mouseenter", function () {
+    popover1.style.display = "block";
+    popperInstance.update();
+  });
+
+  button1.addEventListener("mouseleave", function () {
+    popover1.style.display = "none";
+  });
+
+  //Slider 1 Item 2
+  const button2 = $("#slider1_item2-btn")[0];
+  const popover2 = $(".slider1_content2")[0];
+
+  const popperInstance2 = Popper.createPopper(button2, popover2, {
+    placement: "top",
+  });
+
+  button2.addEventListener("mouseenter", function () {
+    popover2.style.display = "block";
+    popperInstance2.update();
+  });
+
+  button2.addEventListener("mouseleave", function () {
+    popover2.style.display = "none";
+  });
+
+  //Slider 2 Item 1
+  const button2_1 = $("#slider2_item1-btn")[0];
+  const popover2_1 = $(".slider2_content1")[0];
+
+  const popperInstance2_1 = Popper.createPopper(button2_1, popover2_1, {
+    placement: "top",
+  });
+
+  button2_1.addEventListener("mouseenter", function () {
+    popover2_1.style.display = "block";
+    popperInstance2_1.update();
+  });
+
+  button2_1.addEventListener("mouseleave", function () {
+    popover2_1.style.display = "none";
+  });
+
+  //Slider 3 Item 1
+  const button3_1 = $("#slider3_item1-btn")[0];
+  const popover3_1 = $(".slider3_content1")[0];
+
+  const popperInstance3_1 = Popper.createPopper(button3_1, popover3_1, {
+    placement: "top",
+  });
+
+  button3_1.addEventListener("mouseenter", function () {
+    popover3_1.style.display = "block";
+    popperInstance3_1.update();
+  });
+
+  button3_1.addEventListener("mouseleave", function () {
+    popover3_1.style.display = "none";
   });
 });
 
