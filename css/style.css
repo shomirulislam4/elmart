@@ -17000,6 +17000,91 @@ button:focus {
     width: 210px;
 }
 
+/* Left Side */
+.h5_left-top-slider {
+    position: relative;
+}
+
+.h5_left-top-slider .swiper-slide {
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    width: 100%;
+    height: 450px;
+}
+
+.h5_left-top-btn-next,
+.h5_left-top-btn-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    line-height: 30px;
+    color: #FFF;
+    z-index: 10;
+    -webkit-text-stroke: 1px #ff5400;
+    width: 20px;
+    text-align: center;
+}
+
+.h5_left-top-btn-next {
+    right: 0;
+}
+
+.h5_left-top-btn-prev {
+    left: 2%;
+}
+
+.h5_left-top-slider .swiper-slide .slider1-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 30px;
+}
+
+.h5_left-top-slider .swiper-slide .slider2-content {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 30px;
+}
+
+.h5_left-top-slider .swiper-slide .slider3-content {
+    height: 100%;
+    width: 100%;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    padding-left: 50px;
+}
+
+.h5_left-top-slider .swiper-slide h2 {
+    font-size: 70px;
+    line-height: 70px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #FFF;
+}
+
+.h5_left-top-slider .swiper-slide p {
+    font-size: 20px;
+    line-height: 20px;
+    font-family: 'Fira Sans', sans-serif;
+    color: #FFF;
+}
+
+.h5_left-top-slider .swiper-slide h3 {
+    font-size: 100px;
+    line-height: 100px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #FFF;
+}
+
 /** End of Hero Section (Variant 5) **/
 
 

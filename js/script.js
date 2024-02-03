@@ -2857,6 +2857,34 @@ $(function() {
 });
 
 /*============================ Home Style Five ============================*/
+//Animate Css Works on Scroll
+$(function(){
+    function checkVisibility() {
+        $('.animate__animated').each(function(){
+            var $this = $(this),
+                top_of_element = $this.offset().top,
+                bottom_of_element = $this.offset().top + $this.outerHeight(),
+                bottom_of_screen = $(window).scrollTop() + $(window).height(),
+                top_of_screen = $(window).scrollTop(),
+                animationClass = $this.data('animation'); // Read the animation type from the data attribute
+
+            if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element) && !$this.hasClass(animationClass)){
+                // The element is visible, add the animation class
+                $this.addClass(animationClass);
+            } else {
+                // Optional: Remove the animation class if you want the animation to trigger every time it comes into view
+                // $this.removeClass(animationClass);
+            }
+        });
+    }
+
+    $(window).scroll(function() {
+        checkVisibility();
+    });
+
+    checkVisibility();
+});
+
 //Mobile Menu (Header - Style Five)
 $(function() {
   $('#h5_m-menu-btn').on('click',function() {
@@ -2989,6 +3017,17 @@ $(function () {
 
   button3_1.addEventListener("mouseleave", function () {
     popover3_1.style.display = "none";
+  });
+});
+
+//Hero Left Area Top
+$(function () {
+  var swiper = new Swiper(".h5_left-top-slider", {
+    loop: true,
+    navigation: {
+      nextEl: ".h5_left-top-btn-next",
+      prevEl: ".h5_left-top-btn-prev",
+    },
   });
 });
 
