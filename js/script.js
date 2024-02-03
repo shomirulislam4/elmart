@@ -2858,6 +2858,7 @@ $(function() {
 
 /*============================ Home Style Five ============================*/
 //Animate Css Works on Scroll
+/*
 $(function(){
     function checkVisibility() {
         $('.animate__animated').each(function(){
@@ -2883,7 +2884,7 @@ $(function(){
     });
 
     checkVisibility();
-});
+});*/
 
 //Mobile Menu (Header - Style Five)
 $(function() {
@@ -2933,7 +2934,7 @@ $(function() {
     },
     autoplay: {
       delay: 2500,
-      disableOnInteraction: false,
+      disableOnInteraction: true,
       pauseOnMouseEnter: true,
     },
     navigation: {
@@ -3021,13 +3022,81 @@ $(function () {
 });
 
 //Hero Left Area Top
-$(function () {
-  var swiper = new Swiper(".h5_left-top-slider", {
-    loop: true,
-    navigation: {
-      nextEl: ".h5_left-top-btn-next",
-      prevEl: ".h5_left-top-btn-prev",
-    },
+$(function() {
+    $('.h5_left-top-slider').each(function() {
+        var h5_left_top = new Swiper(this, {
+            loop: true,
+            navigation: {
+                nextEl: '.h5_left-top-btn-next',
+                prevEl: '.h5_left-top-btn-prev',
+            },
+            on: {
+                init: function() {
+                    animateSlide(this.slides[this.activeIndex]);
+                },
+                slideChange: function() {
+                    animateSlide(this.slides[this.activeIndex]);
+                }
+            }
+        });
+
+        function animateSlide(slide) {
+            $('#lt-ss .animate__animated').each(function() {
+                var animation = $(this).data('animation');
+                $(this).removeClass(animation);
+            });
+
+            $(slide).find('.animate__animated').each(function() {
+                var animation = $(this).data('animation');
+                $(this).addClass(animation);
+            });
+        }
+    });
+});
+
+//Hero Left Area Bottom
+$(function() {
+  $('.h5_left-bottom-slider').each(function() {
+      var h5_left_bottom = new Swiper(this, {
+        loop: true,
+        pagination: {
+          el: ".h5_left-bottom-pagination",
+          clickable: true,
+          renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + (index + 1) + "</span>";
+          },
+        },
+        on: {
+          init: function() {
+            animateSlide(this.slides[this.activeIndex]);
+          },
+          slideChange: function() {
+              updatePagination(this);
+              animateSlide(this.slides[this.activeIndex]);
+          }
+        }
+      });
+
+      function animateSlide(slide) {
+          $('#lb-ss .animate__animated').each(function() {
+              var animation = $(this).data('animation');
+              $(this).removeClass(animation);
+          });
+
+          $(slide).find('.animate__animated').each(function() {
+              var animation = $(this).data('animation');
+              $(this).addClass(animation);
+          });
+      }
+
+      function updatePagination(swiper) {
+        $('.h5_left-bottom-pagination .swiper-pagination-bullet').removeClass('swiper-pagination-bullet-active');
+
+        var activeIndex = swiper.realIndex;
+        var totalSlides = swiper.slides.length;
+
+        $('.h5_left-bottom-pagination .swiper-pagination-bullet').eq(activeIndex).addClass('swiper-pagination-bullet-active');
+    }
   });
 });
 
