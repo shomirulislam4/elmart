@@ -16793,6 +16793,9 @@ button:focus {
 /** End of Header Style Five **/
 
 /** Start of Hero Section (Variant 5) **/
+.h5_hero-section .container-fluid {
+    height: 950px;
+}
 
 /* Right Side */
 .h5_hero-section .left-area,
@@ -16801,15 +16804,20 @@ button:focus {
 }
 
 .h5_hero-right-slider {
-    height: 900px;
+    height: 950px;
     width: 100%;
     position: relative;
+    padding-bottom: 50px;
+}
+
+.h5_hero-right-slider .main-content {
+    height: 900px;
 }
 
 .autoplay-progress {
     position: absolute;
     right: 16px;
-    bottom: 16px;
+    bottom: 66px;
     z-index: 10;
     width: 50px;
     height: 50px;
@@ -16844,7 +16852,7 @@ button:focus {
 	width: 200px;
 	height: 40px;
 	margin: 0 auto;
-	bottom: 0;
+	bottom: 50px;
 	left: 50%;
 	transform: translateX(-50%);
 	z-index: 20;
@@ -16998,6 +17006,70 @@ button:focus {
     position: absolute;
     z-index: 1000;
     width: 210px;
+}
+
+.slider-prod-shop {
+    position: absolute;
+    bottom: -40px;
+    left: 5%;
+    padding: 10px;
+    height: 120px;
+    width: 300px;
+    background: #FFF;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    z-index: 20;
+    border-radius: 5px;
+}
+
+.slider-prod-shop .attention-btn {
+	position: absolute;
+	top: -20px;
+	right: -20px;
+    color: #FF5400;
+	font-size: 24px;
+	line-height: 42px;
+	height: 50px;
+	width: 50px;
+	background: #FFF;
+	border-radius: 50%;
+	text-align: center;
+	border: 5px solid #000;
+}
+
+.slider-prod-shop .image {
+	width: 80px;
+	height: 100px;
+	float: left;
+	margin-right: 10px;
+}
+
+.slider-prod-shop img {
+    height: 100%;
+    width: 100%;
+}
+
+.slider-prod-shop h4 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.slider-prod-shop p {
+	margin-bottom: 5px;
+	font-size: 18px;
+    font-weight: 500;
+}
+
+.slider-prod-shop a {
+    color: #13172B;
+    border-bottom: 1px solid #13172B;
+    margin: 0;
+    font-size: 18px;
+    font-family: "Fira Sans", sans-serif;
+}
+
+.slider-prod-shop a:hover {
+    color: #FF5400;
+    border-color: #FF5400;
 }
 
 /* Left Side - top */
@@ -17157,6 +17229,9 @@ button:focus {
 /** End of Hero Section (Variant 5) **/
 
 
+.some-section {
+    margin-top: 500px;
+}
 
 /*
 color---
