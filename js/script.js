@@ -3100,4 +3100,16 @@ $(function() {
   });
 });
 
+//Category Section
+$(function() {
+  var swiper = new Swiper(".h5_cat-wrapper", {
+    slidesPerView: 4,
+    spaceBetween: 24,
+    pagination: {
+      el: ".h5_cat-pagination",
+    },
+  });
+});
+
+
 }) (jQuery);

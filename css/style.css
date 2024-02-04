@@ -68,6 +68,7 @@
    1. Global
 ==================================================================== */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
 
 /* Jost */
 @font-face {
@@ -174,7 +175,7 @@
     font-style: normal;
     font-weight: 400;
     src: url('../fonts/bebas-neue-v14-latin-regular.woff2') format('woff2');
-  }
+}
 
 /* Fira Sans */
 @font-face {
@@ -216,6 +217,7 @@ font-family: 'Poppins', sans-serif;
 font-family: 'DM Sans', sans-serif;
 font-family: 'Bebas Neue';
 font-family: 'Fira Sans';
+font-family: 'Protest Riot', sans-serif;
 */
 
 /* Default CSS */
@@ -16078,7 +16080,6 @@ button:focus {
 /* ====================================================================
 24. Home Page Five
 ==================================================================== */
-/** Start of Header Style Five **/
 .homepage_five {
     position: relative;
 }
@@ -16117,6 +16118,23 @@ button:focus {
 	background: #FF5400;
 }
 
+.h5-button {
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 0;
+    color: #FFF;
+    background: #FF5400;
+    font-size: 18px;
+    line-height: 24px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.h5-button:hover {
+    color: #FFF;
+    border-radius: 50px;
+}
+/** Start of Header Style Five **/
 .header_five a {
     color: #FF5400;
     font-family: 'Fira Sans', sans-serif;
@@ -17144,22 +17162,6 @@ button:focus {
     color: #FFF;
 }
 
-.slider-button {
-    display: inline-block;
-    padding: 10px 30px;
-    margin: 0;
-    color: #FFF;
-    background: #FF5400;
-    font-size: 18px;
-    line-height: 24px;
-    border-radius: 5px;
-}
-
-.slider-button:hover {
-    color: #FFF;
-    border-radius: 50px;
-}
-
 /* Left Side - bottom */
 .h5_left-bottom-slider .swiper-slide {
     background-position: center;
@@ -17215,16 +17217,98 @@ button:focus {
 
 /** End of Hero Section (Variant 5) **/
 
-
-.some-section {
-    margin-top: 500px;
+/** Start of Category Section (Variant 5) **/
+.h5_category-section {
+    margin-top: 80px;
 }
+
+/* Section Title */
+.h5_section-title {
+    position: relative;
+    text-align: center;
+    height: 180px;
+    margin-bottom: 20px;
+}
+
+.h5_section-title h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    color: #ebebeb;
+    font-size: 150px;
+    font-family: 'Protest Riot', sans-serif;
+    margin: 0;
+    padding: 0;
+    z-index: -1;
+}
+
+.h5_section-title h2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    font-size: 70px;
+    line-height: 70px;
+}
+
+/* Category Section */
+.h5_cat-wrapper .swiper-slide {
+    height: 400px;
+    width: 300px;
+    position: relative;
+    background: red;
+}
+
+.h5_cat-wrapper .swiper-slide img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.h5_cat-wrapper .cat-slider-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.h5_cat-wrapper .cat-slider-content h2 {
+    color: #FFF;
+    font-size: 45px;
+    line-height: 55px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.h5_cat-wrapper .cat-slider-content p {
+    color: #FFF;
+    font-size: 20px;
+    line-height: 26px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.h5_cat-wrapper .cat-slider-content .h5-button {
+    background: #FFF;
+    color: #13172B;
+}
+
+
+
+/** End of Category Section (Variant 5) **/
 
 /*
 color---
-#FF5400
+#FF5400;
 #FFAC4A;
 
+font-family: 'Protest Riot', sans-serif;
 font-family: 'Bebas Neue', sans-serif;
 font-family: 'Fira Sans', sans-serif;
 */
