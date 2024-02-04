@@ -2934,7 +2934,7 @@ $(function() {
     },
     autoplay: {
       delay: 2500,
-      disableOnInteraction: true,
+      disableOnInteraction: false,
       pauseOnMouseEnter: true,
     },
     navigation: {
