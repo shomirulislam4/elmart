@@ -4807,12 +4807,13 @@
         top: 64%;
         transform: translateX(-50%);
     }
-    #slider1_item1-btn,
-    #slider1_item2-btn,
-    #slider2_item1-btn,
-    #slider3_item1-btn {
+    .prod-info-pop-btn {
         height: 25px;
         width: 25px;
+    }
+    .prod-info-pop-btn:hover span {
+        height: 15px;
+        width: 15px;
     }
     .slider-prod-shop {
         left: 3px;
@@ -15117,6 +15118,7 @@
     }
     .left-row-top {
         padding-right: 0;
+        padding-bottom: 0px;
     }
     .left-row-bottom {
         padding-left: 0;
