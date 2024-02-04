@@ -17250,14 +17250,19 @@ button:focus {
     bottom: 0;
     font-size: 70px;
     line-height: 70px;
+    width: 100%;
 }
 
 /* Category Section */
+.h5_cat-wrapper {
+    position: relative;
+    padding-bottom: 20px;
+}
+
 .h5_cat-wrapper .swiper-slide {
     height: 400px;
     width: 300px;
     position: relative;
-    background: red;
 }
 
 .h5_cat-wrapper .swiper-slide img {
@@ -17277,13 +17282,13 @@ button:focus {
     height: 100%;
     width: 100%;
     padding: 30px;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.3);
 }
 
 .h5_cat-wrapper .cat-slider-content h2 {
     color: #FFF;
     font-size: 45px;
-    line-height: 55px;
+    line-height: 50px;
     font-family: 'Bebas Neue', sans-serif;
 }
 
@@ -17299,7 +17304,14 @@ button:focus {
     color: #13172B;
 }
 
+.h5_cat-pagination {
+    text-align: center;
+}
 
+.h5_cat-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active,
+.h5_cat-pagination .swiper-pagination-bullet {
+    background-color: #FF5400;
+}
 
 /** End of Category Section (Variant 5) **/
 

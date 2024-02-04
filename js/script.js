@@ -3103,11 +3103,31 @@ $(function() {
 //Category Section
 $(function() {
   var swiper = new Swiper(".h5_cat-wrapper", {
-    slidesPerView: 4,
-    spaceBetween: 24,
     pagination: {
       el: ".h5_cat-pagination",
+      clickable: true,
     },
+    breakpoints: {
+      1200: {
+        slidesPerView: 4,
+        spaceBetween: 24,
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 24,
+      },
+      576: {
+        spaceBetween: 15,
+      },
+      415: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+    }
   });
 });
 
