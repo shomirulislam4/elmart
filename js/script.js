@@ -3131,5 +3131,75 @@ $(function() {
   });
 });
 
+//Popular Product (Variant 4)
+$(function() {
+  function initSlickSlider(sliderElement) {
+    $(sliderElement).slick({
+      rows: 2,
+      dots: false,
+      arrows: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 3,
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 414,
+          settings: {
+            slidesToShow: 1,
+          }
+        },
+      ]
+    });
+  }
+
+  // Initialize the slider on page load
+  initSlickSlider('.shop-product-items-v4');
+
+  // Function to destroy Slick slider instances
+  function destroySlickSlider(sliderElement) {
+    if ($(sliderElement).hasClass('slick-initialized')) {
+      $(sliderElement).slick('unslick');
+    }
+  }
+
+  // Reinitialize the slider when a tab becomes active
+  $('button[data-bs-toggle="tab"]').on('click', function (e) {
+    var targetTab = $(this).data('bs-target');
+    var sliderInTab = $(targetTab).find('.shop-product-items-v4');
+
+    // Destroy existing slider instances
+    $('.shop-product-items-v4').each(function() {
+      destroySlickSlider(this);
+    });
+
+    // If the slider exists in the targeted tab, initialize it
+    if (sliderInTab.length) {
+      initSlickSlider(sliderInTab);
+    }
+  });
+
+  // Custom Next and Previous Button
+  $('.pp-slider-prev').click(function(){
+    $('.shop-product-items-v4').slick('slickPrev');
+  });
+
+  $('.pp-slider-next').click(function(){
+    $('.shop-product-items-v4').slick('slickNext');
+  });
+});
+
 
 }) (jQuery);
