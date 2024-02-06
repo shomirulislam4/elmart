@@ -52,8 +52,9 @@
     1. Header Top Promo Area (Variant 2)
     2. Header - Style Four
     3. Hero Section (Variant 4)
-    4. categories-section
+    4. Category Section (Home 4)
     5. Featured Product (Variant 3)
+        i. Product Style (Variant 3)
     6. Trending Section
     7. Best Deals Today
     8. New Arrival Product
@@ -62,6 +63,13 @@
 22. Shop Page Style Three
 23. Shop Page Style Three (List)
 24. Home Page Five
+    1. Header Style Five
+        i. Mobile Menu (Home 5)
+        ii. Off-canvas Menu
+    2. Hero Section (Variant 5)
+    3. Category Section (Variant 5)
+    4. Popular Product (Variant 4)
+        i. Product Style (Variant 4)
 **********************************************/
 
 /* ====================================================================
@@ -15154,6 +15162,7 @@ button:focus {
     position: absolute;
     height: 2px;
     width: 0;
+    bottom: 0;
     background-color: #F7B600;
     transition: 0.3s;
 	-moz-transition: 0.3s;
@@ -15164,12 +15173,10 @@ button:focus {
 
 .best-deals-wrapper .nav-link:before {
     left: 0;
-    bottom: 0;
 }
 
 .best-deals-wrapper .nav-link:after {
     right: 0;
-    bottom: 0;
 }
 
 .best-deals-wrapper .nav-link:hover:before,
@@ -16107,7 +16114,11 @@ button:focus {
 
 .homepage_five::-webkit-scrollbar-thumb:hover,
 .homepage_five ::-webkit-scrollbar-thumb:hover {
-    background: #FF5400;
+    background: #FFAC4A;
+}
+
+.homepage_five ::-webkit-scrollbar {
+    width: 3px;
 }
 
 .homepage_five ::selection {
@@ -16128,10 +16139,29 @@ button:focus {
     line-height: 24px;
     border-radius: 5px;
     width: fit-content;
+    text-transform: capitalize;
 }
 
 .h5-button:hover {
     color: #FFF;
+    border-radius: 50px;
+}
+
+.h5-button-2 {
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 0;
+    color: #13172B;
+    background: #FFF;
+    font-size: 18px;
+    line-height: 24px;
+    border-radius: 5px;
+    width: fit-content;
+    text-transform: capitalize;
+}
+
+.h5-button-2:hover {
+    color: #13172B;
     border-radius: 50px;
 }
 /** Start of Header Style Five **/
@@ -17232,12 +17262,14 @@ button:focus {
 
 .h5_section-title h1 {
     position: absolute;
+    width: 100%;
     left: 50%;
     transform: translateX(-50%);
     top: 0;
     color: #ebebeb;
     font-size: 150px;
     font-family: 'Protest Riot', sans-serif;
+    text-align: center;
     margin: 0;
     padding: 0;
     z-index: -1;
@@ -17299,11 +17331,6 @@ button:focus {
     font-family: 'Fira Sans', sans-serif;
 }
 
-.h5_cat-wrapper .cat-slider-content .h5-button {
-    background: #FFF;
-    color: #13172B;
-}
-
 .h5_cat-pagination {
     text-align: center;
 }
@@ -17312,8 +17339,323 @@ button:focus {
 .h5_cat-pagination .swiper-pagination-bullet {
     background-color: #FF5400;
 }
-
 /** End of Category Section (Variant 5) **/
+
+/** Start of Popular Product (Variant 4) **/
+.h5_popular-product {
+    margin-top: 80px;
+}
+
+/* Tabs */
+.h5_pp-wrapper .nav-tabs {
+	border-color: #FFF;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+.h5_pp-wrapper .nav-link {
+	color: #13172B;
+    position: relative;
+    font-size: 18px;
+    transition: 0.3s;
+	-moz-transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+
+.h5_pp-wrapper .nav-link:focus,
+.h5_pp-wrapper .nav-link:hover {
+    color: #FF5400;
+	border-color: #FFF;
+    position: relative;
+}
+
+.h5_pp-wrapper .nav-link.active {
+	color: #FF5400;
+	background-color: #FFF;
+	border-color: #FFF;
+}
+
+.h5_pp-wrapper .nav-link.active:before,
+.h5_pp-wrapper .nav-link.active:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 50%;
+    background-color: #FF5400;
+    transition: 0.3s;
+	-moz-transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+
+.h5_pp-wrapper .nav-link:before,
+.h5_pp-wrapper .nav-link:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    background-color: #FF5400;
+    transition: 0.3s;
+	-moz-transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+
+.h5_pp-wrapper .nav-link:before {
+    left: 50%;
+}
+
+.h5_pp-wrapper .nav-link:after {
+    right: 50%;
+}
+
+.h5_pp-wrapper .nav-link:hover:before,
+.h5_pp-wrapper .nav-link:hover:after {
+    width: 50%;
+}
+
+/* Product Style (Variant 4) */
+.shop-cat-card-v4 {
+    background: #FFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    height: auto;
+}
+
+.shop-image-v4 {
+	width: 100%;
+	height: 334px;
+	position: relative;
+	text-align: center;
+	display: block;
+	overflow: hidden;
+}
+
+.shop-image-v4 .shop-img-wrap-v4 {
+    position: relative;
+    display: block;
+}
+
+.shop-image-v4 .shop-img-wrap-v4 .ori-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.shop-image-v4 .shop-img-wrap-v4 .ori-img-hover {
+    visibility: hidden;
+    opacity: 0;
+    left: 50%;
+    top: 50%;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    transition: 0.4s;
+    -moz-transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.shop-image-v4:hover .shop-img-wrap-v4 .ori-img-hover {
+    visibility: visible;
+    opacity: 1;
+}
+
+.shop-image-v4 .tag-discount-v4,
+.shop-image-v4 .tag-onsale,
+.shop-image-v4 .tag-hot,
+.shop-image-v4 .tag-narrival {
+    width: fit-content;
+    padding: 0 5px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    position: absolute;
+    font-family: 'Fira Sans', sans-serif;;
+    top: 15px;
+    left: 15px;
+    z-index: 5;
+    font-weight: 500;
+}
+ 
+.shop-image-v4 .tag-discount-v4 {
+    background: #F7B600;
+}
+
+.shop-image-v4 .tag-narrival {
+    background: #2639FF;
+}
+
+.shop-image-v4 .tag-onsale {
+    background: #00A01A;
+}
+
+.shop-image-v4 .tag-hot {
+    background: #FF0000;
+}
+
+.cta-btns-top {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -20%;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    justify-content: center;
+}
+
+.shop-cat-card-v4:hover .cta-btns-top {
+    bottom: 2%;
+}
+
+.shop-content-v4 {
+	width: 100%;
+    height: 230px;
+    text-align: center;
+	overflow: hidden;
+	z-index: 10;
+	padding: 20px;
+	transition: 0.3s;
+	-moz-transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.shop-info-v4 {
+    margin-bottom: 10px;
+}
+
+.shop-content-v4 h2 {
+	color: #13172B;
+	font-size: 30px;
+	line-height: 36px;
+	text-transform: capitalize;
+	transition: 0.3s;
+	-moz-transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+ 
+.shop-content-v4 h2:hover {
+    color: #FF5400;
+}
+ 
+.shop-content-v4 h3 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    font-family: 'Fira Sans', sans-serif;
+}
+ 
+.shop-content-v4 h3 > span {
+    text-decoration: line-through;
+    color: #AEAEAE;
+    font-family: 'Fira Sans', sans-serif;
+    margin-left: 5px;
+}
+
+.cta-btns-bottom {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.cta-btns-bottom .item-quantity {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+    width: 120px;
+    height: 40px;
+    padding: 7px;
+    border: 1px solid #CCC;
+    border-radius: 50px;
+}
+
+.cta-btns-bottom .item-quantity input {
+   font-size: 16px;
+   font-weight: 400;
+   color: #13172B;
+   height: auto;
+   width: 45px;
+   border: none;
+   text-align: center;
+   padding: 0;
+   font-family: 'Fira Sans', sans-serif;
+   background: transparent;
+}
+
+.cta-btns-bottom .item-quantity input[type="number"]::-webkit-inner-spin-button, 
+.cta-btns-bottom .item-quantity input[type="number"]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 0;
+    height: 0;
+    margin: 0; 
+}
+
+.cta-btns-bottom .item-quantity .qty-btn {
+    text-align: center;
+    height: 26px;
+    width: 26px;
+    line-height: 26px;
+    font-size: 18px;
+    color: #13172B;
+    background-color: #f6f7fb;
+    border-radius: 50%;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.cta-btns-bottom a {
+    display: inline-block;
+    padding: 0;
+    font-size: 16px;
+    line-height: 40px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    border: 1px solid #CCC;
+    border-radius: 50%;
+    color: #13172B;
+}
+
+.cta-btns-bottom a:hover {
+    border-color: #FF5400;
+    color: #FFF;
+    background-color: #FF5400;
+}
+
+/** End of Popular Product (Variant 5) **/
+
+.some-sec {
+    height: 400px;
+}
 
 /*
 color---
