@@ -70,6 +70,7 @@
     3. Category Section (Variant 5)
     4. Popular Product (Variant 4)
         i. Product Style (Variant 4)
+25. Shop Product Style (Variant 4)
 **********************************************/
 
 /* ====================================================================
@@ -4596,6 +4597,11 @@ button:focus {
     display: block;
     margin: 0;
     margin-right: 8px;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
 }
 
 .colors-select .color-choice:hover {
@@ -17598,11 +17604,20 @@ button:focus {
     margin-bottom: 10px;
 }
 
+.shop-info-v4 .product-review span {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.shop-info-v4 .rating-star {
+    line-height: 24px;
+}
+
 .shop-content-v4 h2 {
 	color: #13172B;
 	font-size: 30px;
 	line-height: 36px;
 	text-transform: capitalize;
+    font-family: 'Bebas Neue', sans-serif;
 	transition: 0.3s;
 	-moz-transition: 0.3s;
 	-webkit-transition: 0.3s;
@@ -17709,6 +17724,118 @@ button:focus {
 .some-sec {
     height: 400px;
 }
+
+/* ====================================================================
+25. Shop Product Style (Variant 4)
+==================================================================== */
+.spsv4,
+.spsv4 p,
+.spsv4 span,
+.spsv4 .product-sorting .sorting-results p,
+.spsv4 .product-sorting .sorting-results p span,
+.spsv4 .check-items,
+.spsv4 .tag-item {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.tag-item:hover {
+	border-color: #FF5400;
+}
+
+.tag-item:hover a {
+    color: #FF5400;
+}
+
+.spsv4 h1,
+.spsv4 h2,
+.spsv4 h3,
+.spsv4 h4,
+.spsv4 h5,
+.spsv4 h6 {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.spsv4::-webkit-scrollbar-thumb,
+.spsv4 ::-webkit-scrollbar-thumb {
+    background: #FF5400;
+    border-radius: 10px;
+}
+
+.spsv4::-webkit-scrollbar-thumb:hover,
+.spsv4 ::-webkit-scrollbar-thumb:hover {
+    background: #FFAC4A;
+}
+
+.spsv4 ::-webkit-scrollbar {
+    width: 3px;
+}
+
+.spsv4 ::selection {
+    background: #FF5400;
+}
+
+.spsv4 .check-items-wrap input[type="checkbox"] {
+    transform: translateY(8px);
+    margin-right: 0;
+}
+
+.spsv4 .check-items-wrap input[type="checkbox"]:checked {
+    border-color: #FF5400;
+    transform: translateY(8px);
+}
+
+.spsv4 .check-items-wrap input[type="checkbox"]::before {
+	top: -2px;
+    color: #FF5400;
+}
+
+.spsv4 .sorting-select .nice-select::after {
+    color: #FF5400;
+}
+
+.spsv4 .price-range-slider .progress,
+.spsv4 .sorting-select .nice-select.open .option.selected,
+.spsv4 .sorting-select .nice-select.open .option:hover,
+.spsv4 .sorting-select .nice-select .option.selected.focus {
+	background: #FF5400 !important;
+}
+
+.spsv4 .sorting-select .nice-select {
+    border-color: #CCC;
+}
+
+.spsv4 .lsb-widget-title {
+	letter-spacing: 2px;
+}
+
+.spsv4 .left-sidebar-shop,
+.spsv4 .product-sorting {
+	background: #FFF;
+	box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.spsv4 .range-input input[type="range"]::-moz-range-thumb {
+	box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.spsv4 .shop-page-navigation .page-item .page-link {
+    border-color: #FF5400;
+}
+
+.spsv4 .shop-page-navigation .page-item .page-link:focus,
+.spsv4 .shop-page-navigation .page-item .page-link:hover {
+    border-color: #FF5400;
+    background: #FF5400;
+}
+
+.spsv4 .shop-page-navigation .page-item .page-link span {
+    color: #FF5400;
+}
+
+.spsv4 .shop-page-navigation .page-item .page-link:hover span {
+    color: #FFF;
+}
+
 
 /*
 color---

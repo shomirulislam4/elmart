@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#FF497C">
 
-    <title>Shop Right Sidebar - Elmart</title>
+    <title>Shop Product Style 4 - Elmart</title>
 
     <link rel="manifest" href="site.webmanifest">
     <link rel="icon" type="image/x-icon" href="image/favicon.png">
@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
-<body class="shop-right-sidebar">
+<body class="spsv4">
     <!-- Start of Header Section -->
     <!-- Main Header -->
     <header class="header-section">
@@ -89,7 +89,6 @@
                                     <li><a href="shop-banner-right-sidebar.html">Shop Banner Rightbar</a></li>
                                     <li><a href="shop-product-style-2.html">Shop Product Style 2</a></li>
                                     <li><a href="shop-product-style-3.html">Shop Product Style 3</a></li>
-                                    <li><a href="shop-product-style-3-list.html">Shop PStyle 3 (List)</a></li>
                                     <li><a href="shop-infinite-scroll.html">Shop Infinite Scroll</a></li>
                                     <li><a href="#">Single Product Pages <i class="fa-solid fa-chevron-right"></i></a>
                                         <ul class="sub-menu">
@@ -388,11 +387,11 @@
                     <img src="image/breadcrumb/left-img.png" alt="">
                 </div>
                 <div class="col-sm-4 breadcrumb-wrap">
-                    <h2>shop Right Sidebar</h2>
+                    <h2>shop Product Style 4</h2>
                     <div class="breadcrumb">
                         <p>Home</p>
                         <span></span>
-                        <p class="current-page">Shop Right Sidebar</p>
+                        <p class="current-page">Shop Product Style 4</p>
                     </div>
                 </div>
                 <div class="col-sm-4 breadcrumb-right">
@@ -408,8 +407,183 @@
     <section class="shop-page">
     <div class="container">
         <div class="row">
+            <div class="col-lg-3 shop-page-sidebar-wrapper">
+                <div class="sidebar-mobile-close-btn"><i class="fa-solid fa-circle-xmark"></i></div>
+                <div class="shop-sidebar-mobile">
+                <div class="left-sidebar-shop">
+                    <div class="lsb-widget-1">
+                        <h2 class="lsb-widget-title">Product Categories</h2>
+                        <form action="#">
+                            <ul>
+                            <li class="check-items-wrap">
+                                <input type="checkbox" id="womensbag" name="product-category" value="womensbag">
+                                <div class="check-items">
+                                    <label for="womensbag">Male Jersey</label>
+                                    <span>19</span>
+                                </div>
+                            </li>
+                            <li class="check-items-wrap">
+                                <input type="checkbox" id="mensaccessories" name="product-category" value="mensaccessories">
+                                <div class="check-items">
+                                    <label for="mensaccessories">Female Jersey</label>
+                                    <span>10</span>
+                                </div>
+                            </li>
+                            <li class="check-items-wrap">
+                                <input type="checkbox" id="schoolbag" name="product-category" value="schoolbag">
+                                <div class="check-items">
+                                    <label for="schoolbag">Kids Jersey</label>
+                                    <span>41</span>
+                                </div>
+                            </li>
+                            <li class="check-items-wrap">
+                                <input type="checkbox" id="cap" name="product-category" value="cap">
+                                <div class="check-items">
+                                    <label for="cap">Football</label>
+                                    <span>32</span>
+                                </div>
+                            </li>
+                            <li class="check-items-wrap">
+                                <input type="checkbox" id="boots" name="product-category" value="boots">
+                                <div class="check-items">
+                                    <label for="boots">Boots</label>
+                                    <span>45</span>
+                                </div>
+                            </li>
+                            <li class="check-items-wrap">
+                                <input type="checkbox" id="boysdress" name="product-category" value="boysdress">
+                                <div class="check-items">
+                                    <label for="boysdress">Basketball</label>
+                                    <span>20</span>
+                                </div>
+                            </li>
+                            <li class="check-items-wrap">
+                                <input type="checkbox" id="womensfashion" name="product-category" value="womensfashion">
+                                <div class="check-items">
+                                    <label for="womensfashion">Gym</label>
+                                    <span>35</span>
+                                </div>
+                            </li>
+                            <li class="check-items-wrap">
+                                <input type="checkbox" id="fashionaccessories" name="product-category" value="fashionaccessories">
+                                <div class="check-items">
+                                    <label for="fashionaccessories">Others</label>
+                                    <span>25</span>
+                                </div>
+                            </li>
+                            </ul>
+                        </form>
+                    </div>
+                    <div class="lsb-widget-2">
+                        <h2 class="lsb-widget-title">Price Filter</h2>
+                        <div class="price-filter-wrap">
+                            <div class="price-range-slider">
+                                <div class="progress"></div>
+                            </div>
+                            <div class="range-input">
+                                <input type="range" class="range-min" min="0" max="1000" value="240" step="5">
+                                <input type="range" class="range-max" min="0" max="1000" value="850" step="5">
+                            </div>
+                            <div class="price-input">
+                                <p>Price:</p>
+                                <div class="field">
+                                    <span>$</span>
+                                    <input type="number" disabled class="input-min" value="240">
+                                </div>
+                                <div class="separator">-</div>
+                                <div class="field">
+                                    <span>$</span>
+                                    <input type="number" disabled class="input-max" value="850">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lsb-widget-3">
+                        <h2 class="lsb-widget-title">Brands</h2>
+                        <form action="#">
+                            <ul>
+                            <li class="check-items-wrap">
+                                <input type="checkbox" id="nike" name="nike" value="nike">
+                                <div class="check-items">
+                                    <label for="nike">Nike</label>
+                                </div>
+                            </li>
+                            <li class="check-items-wrap">
+                                <input type="checkbox" id="zara" name="zara" value="zara">
+                                <div class="check-items">
+                                    <label for="zara">Addidas</label>
+                                </div>
+                            </li>
+                            <li class="check-items-wrap">
+                                <input type="checkbox" id="denim" name="denim" value="denim">
+                                <div class="check-items">
+                                    <label for="denim">ManU</label>
+                                </div>
+                            </li>
+                            <li class="check-items-wrap">
+                                <input type="checkbox" id="madame" name="madame" value="madame">
+                                <div class="check-items">
+                                    <label for="madame">AC Milan</label>
+                                </div>
+                            </li>
+                            <li class="check-items-wrap">
+                                <input type="checkbox" id="arong" name="arong" value="arong">
+                                <div class="check-items">
+                                    <label for="arong">Arsenal</label>
+                                </div>
+                            </li>
+                            <li class="check-items-wrap">
+                                <input type="checkbox" id="maxmall" name="maxmall" value="maxmall">
+                                <div class="check-items">
+                                    <label for="maxmall">Barcelona</label>
+                                </div>
+                            </li>
+                            <li class="check-items-wrap">
+                                <input type="checkbox" id="sara" name="sara" value="sara">
+                                <div class="check-items">
+                                    <label for="sara">Kookaburra</label>
+                                </div>
+                            </li>
+                            <li class="check-items-wrap">
+                                <input type="checkbox" id="hanger" name="hanger" value="hanger">
+                                <div class="check-items">
+                                    <label for="hanger">Ar Janina</label>
+                                </div>
+                            </li>
+                            </ul>
+                        </form>
+                    </div>
+                    <div class="lsb-widget-3">
+                        <h2 class="lsb-widget-title">Colors</h2>
+                        <div class="colors-select">
+                            <a href="#"><span class="color-choice" style="background:#3577F0;border:1px solid #3577F0;"></span></a>
+                            <a href="#"><span class="color-choice" style="background:#3F1E12;border:1px solid #3F1E12;"></span></a>
+                            <a href="#"><span class="color-choice" style="background:#13172B;border:1px solid #13172B;"></span></a>
+                            <a href="#"><span class="color-choice" style="background:#FF497C;border:1px solid #FF497C;"></span></a>
+                            <a href="#"><span class="color-choice" style="background:#F6E5CF;border:1px solid #F6E5CF;"></span></a>
+                            <a href="#"><span class="color-choice" style="background:#FF497C;border:1px solid #FF5400;"></span></a>
+                            <a href="#"><span class="color-choice" style="background:#5A5858;border:1px solid #5A5858;"></span></a>
+                            <a href="#"><span class="color-choice" style="background:#FF0000;border:1px solid #FF0000;"></span></a>
+                        </div>
+                    </div>
+                    <div class="lsb-widget-3">
+                        <h2 class="lsb-widget-title">Size</h2>
+                        <div class="tag-cloud">
+                            <div class="tag-item"><a href="#">S</a></div>
+                            <div class="tag-item"><a href="#">M</a></div>
+                            <div class="tag-item"><a href="#">L</a></div>
+                            <div class="tag-item"><a href="#">XL</a></div>
+                            <div class="tag-item"><a href="#">2XL</a></div>
+                            <div class="tag-item"><a href="#">X</a></div>
+                            <div class="tag-item"><a href="#">3XL</a></div>
+                            <div class="tag-item"><a href="#">XS</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
             <div class="col-lg-9">
-                <div class="container p-0 shop-all-product-area">
+                <div class="container p-0">
                     <div class="row">
                         <div class="col-sm-12 mb-10">
                             <div class="product-sorting">
@@ -417,10 +591,6 @@
                                     <p>Showing <span>1-16 of 66 results</span></p>
                                 </div>
                                 <div class="shop-sidebar-mobile-toggle">Filters</div>
-                                <div class="grid-list-toggle">
-                                    <span class="active" id="shop-grid-btn"><i class="fa-solid fa-grip"></i></span>
-                                    <span id="shop-list-btn"><i class="fa-solid fa-list"></i></span>
-                                </div>
                                 <div class="sorting-select">
                                     <p>Sort by:</p>
                                     <select>
@@ -435,432 +605,368 @@
                         </div>
                     </div>
                     <div class="row p-0">
-                        <div class="col-lg-4 col-12 col-sm-6 shop-product-items">
-                            <div class="shop-cat-card">
-                            <div class="shop-image">
-                                <div class="tag-new">New</div>
-                                <a class="shop-img-wrap" href="shop-details.html">
-                                <img class="ori-img" id="sc-cng-img-1" src="image/home-one/shop-section/fashion-woman-top.png" alt="Fashion woman Top" title="Fashion woman Top" height="340" width="280">
-                                <img class="ori-img-hover" src="image/home-one/shop-section/fashion-woman-top-1.png" alt="Fashion woman Top" title="Fashion woman Top" height="340" width="280">
+                        <div class="col-lg-4 col-12 col-sm-6">
+                            <div class="shop-cat-card-v4">
+                              <div class="shop-image-v4">
+                                <div class="tag-discount-v4">30% Off</div>
+                                <a class="shop-img-wrap-v4" href="shop-details-style-4.html">
+                                  <img class="ori-img" id="sc-cng-img-1" src="image/home-five/popular-product/predator-elite-firm-ground-boots.png" alt="Predator Elite firm ground boots">
+                                  <img class="ori-img-hover" src="image/home-five/popular-product/predator-elite-firm-ground-boots-1.png" alt="Predator Elite firm ground boots">
                                 </a>
-                                <div class="shop-hover">
-                                <ul>
-                                    <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
-                                    <li><a class="product-img-popup" href="#shop-details-top-area"><i class="fa-solid fa-arrows-up-down-left-right"></i></a></li>
-                                    <li><a href="#"><i class="fa-solid fa-rotate"></i></a></li>
-                                </ul>
-                                <a href="#" class="shop-button">Add to Cart</a>
+                                <div class="cta-btns-top">
+                                  <a href="shop-details-style-4.html" class="h5-button">Add to Cart</a>
+                                  <a href="#" id="h5_qv-btn" class="h5-button-2">Quick View</a>
                                 </div>
-                            </div>
-                            <div class="shop-content">
-                                <div class="shop-info">
-                                <div class="product-variant">
-                                    <div class="color-1 sc-cng-img1-btn1" style="background:#FF497C;content:'';"></div>
-                                    <div class="color-2 sc-cng-img1-btn2" style="background:#FEC7B3;content:'';"></div>
-                                    <div class="color-3 sc-cng-img1-btn3" style="background:#3B3C3F;content:'';"></div>
-                                </div>
-                                <div class="prod-size-select">
-                                    <div class="tag-cloud-v2">
-                                        <div class="tag-item-v2 active"><span>M</span></div>
-                                        <div class="tag-item-v2"><span>L</span></div>
-                                        <div class="tag-item-v2"><span>XL</span></div>
-                                        <div class="tag-item-v2"><span>XXL</span></div>
-                                    </div>
-                                </div>
-                                <div class="product-review">
+                              </div>
+                              <div class="shop-content-v4">
+                                <div class="shop-info-v4">
+                                  <div class="product-review">
                                     <div class="rating-star">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <span>&nbsp;(42)</span>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star-half-stroke"></i>
+                                      <span>&nbsp;(75)</span>
                                     </div>
+                                  </div>
                                 </div>
+                                <a href="shop-details-style-4.html"><h2>Predator Elite firm ground boots</h2></a>
+                                <h3>$241.49 <span>$344.99</span></h3>
+                                <div class="cta-btns-bottom">
+                                  <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                  <div class="item-quantity">
+                                    <span class="decrease qty-btn">-</span>
+                                    <input disabled type="number" value="1">
+                                    <span class="increase qty-btn">+</span>
+                                  </div>
+                                  <a href="#"><i class="fa-solid fa-retweet"></i></a>
                                 </div>
-                                <a href="shop-details.html"><h5>Fashion woman Top</h5></a>
-                                <h3>$180</h3>
-                            </div>
+                              </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-12 col-sm-6 shop-product-items">
-                            <div class="shop-cat-card">
-                            <div class="shop-image">
-                                <a class="shop-img-wrap" href="shop-details.html">
-                                <img class="ori-img" id="sc-cng-img-2" src="image/home-one/shop-section/convert-for-man-stretching-shoe.png" alt="Convert for man stretching shoe" title="Convert for man stretching shoe" height="340" width="280">
-                                <img class="ori-img-hover" src="image/home-one/shop-section/convert-for-man-stretching-shoe-1.png" alt="Convert for man stretching shoe" title="Convert for man stretching shoe" height="340" width="280">
+          
+                        <div class="col-lg-4 col-12 col-sm-6">
+                        <div class="shop-cat-card-v4">
+                            <div class="shop-image-v4">
+                            <div class="tag-onsale">On Sale</div>
+                            <a class="shop-img-wrap-v4" href="shop-details-style-4.html">
+                                <img class="ori-img" id="sc-cng-img-1" src="image/home-five/popular-product/football-adidas-mixed-graphics.png" alt="Football Adidas Mixed Graphics">
+                                <img class="ori-img-hover" src="image/home-five/popular-product/football-adidas-mixed-graphics-1.png" alt="Football Adidas Mixed Graphics">
                             </a>
-                                <div class="shop-hover">
-                                <ul>
-                                    <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
-                                    <li><a class="product-img-popup" href="#shop-details-top-area"><i class="fa-solid fa-arrows-up-down-left-right"></i></a></li>
-                                    <li><a href="#"><i class="fa-solid fa-rotate"></i></a></li>
-                                </ul>
-                                <a href="#" class="shop-button">Add to Cart</a>
+                            <div class="cta-btns-top">
+                                <a href="shop-details-style-4.html" class="h5-button">Add to Cart</a>
+                                <a href="#" id="h5_qv-btn" class="h5-button-2">Quick View</a>
+                            </div>
+                            </div>
+                            <div class="shop-content-v4">
+                            <div class="shop-info-v4">
+                                <div class="product-review">
+                                <div class="rating-star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <span>&nbsp;(30)</span>
+                                </div>
                                 </div>
                             </div>
-                            <div class="shop-content">
-                                <div class="shop-info">
-                                <div class="product-variant">
-                                    <div class="color-1 sc-cng-img2-btn1" style="background:#C16438;content:'';"></div>
-                                    <div class="color-2 sc-cng-img2-btn2" style="background:#49181E;content:'';"></div>
-                                    <div class="color-3 sc-cng-img2-btn3" style="background:#3577F0;content:'';"></div>
+                            <a href="shop-details-style-4.html"><h2>Football Adidas Mixed Graphics</h2></a>
+                            <h3>$230</h3>
+                            <div class="cta-btns-bottom">
+                                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                <div class="item-quantity">
+                                <span class="decrease qty-btn">-</span>
+                                <input disabled type="number" value="1">
+                                <span class="increase qty-btn">+</span>
                                 </div>
-                                <div class="prod-size-select">
-                                    <div class="tag-cloud-v2">
-                                        <div class="tag-item-v2 active"><span>M</span></div>
-                                        <div class="tag-item-v2"><span>L</span></div>
-                                        <div class="tag-item-v2"><span>XL</span></div>
-                                        <div class="tag-item-v2"><span>XXL</span></div>
-                                    </div>
-                                </div>
-                                <div class="product-review">
-                                    <div class="rating-star">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <span>&nbsp;(50)</span>
-                                    </div>
-                                </div>
-                                </div>
-                                <a href="shop-details.html"><h5>Convert for man stretching shoe</h5></a>
-                                <h3>$185 <span>$205</span></h3>
+                                <a href="#"><i class="fa-solid fa-retweet"></i></a>
                             </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-12 col-sm-6 shop-product-items">
-                            <div class="shop-cat-card">
-                            <div class="shop-image">
-                                <a class="shop-img-wrap" href="shop-details.html">
-                                    <img class="ori-img" id="sc-cng-img-3" src="image/home-one/shop-section/men-cotton-sleeves-shirt.png" alt="Convert for man stretching shoe" title="Convert for man stretching shoe" height="340" width="280">
-                                    <img class="ori-img-hover" src="image/home-one/shop-section/men-cotton-sleeves-shirt-1.png" alt="Convert for man stretching shoe" title="Convert for man stretching shoe" height="340" width="280">
+                        </div>
+        
+                        <div class="col-lg-4 col-12 col-sm-6">
+                        <div class="shop-cat-card-v4">
+                            <div class="shop-image-v4">
+                            <div class="tag-hot">hot</div>
+                            <a class="shop-img-wrap-v4" href="shop-details-style-4.html">
+                                <img class="ori-img" id="sc-cng-img-1" src="image/home-five/popular-product/arsenal-23-24-authentic-home-shirt.png" alt="Arsenal 23/24 Authentic Home Shirt">
+                                <img class="ori-img-hover" src="image/home-five/popular-product/arsenal-23-24-authentic-home-shirt-1.png" alt="Arsenal 23/24 Authentic Home Shirt">
+                            </a>
+                            <div class="cta-btns-top">
+                                <a href="shop-details-style-4.html" class="h5-button">Add to Cart</a>
+                                <a href="#" id="h5_qv-btn" class="h5-button-2">Quick View</a>
+                            </div>
+                            </div>
+                            <div class="shop-content-v4">
+                            <div class="shop-info-v4">
+                                <div class="product-review">
+                                <div class="rating-star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <span>&nbsp;(127)</span>
+                                </div>
+                                </div>
+                            </div>
+                            <a href="shop-details-style-4.html"><h2>Arsenal 23/24 Authentic Home Shirt</h2></a>
+                            <h3>$140</h3>
+                            <div class="cta-btns-bottom">
+                                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                <div class="item-quantity">
+                                <span class="decrease qty-btn">-</span>
+                                <input disabled type="number" value="1">
+                                <span class="increase qty-btn">+</span>
+                                </div>
+                                <a href="#"><i class="fa-solid fa-retweet"></i></a>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+        
+                        <div class="col-lg-4 col-12 col-sm-6">
+                        <div class="shop-cat-card-v4">
+                            <div class="shop-image-v4">
+                            <div class="tag-narrival">New Arrivals</div>
+                            <a class="shop-img-wrap-v4" href="shop-details-style-4.html">
+                                <img class="ori-img" id="sc-cng-img-1" src="image/home-five/popular-product/kookaburra-unisex-youth-7-1-cricket-bat-lime-size-6.png" alt="KOOKABURRA Youth 7.1 Cricket Bat - Lime, Size 6">
+                                <img class="ori-img-hover" src="image/home-five/popular-product/kookaburra-unisex-youth-7-1-cricket-bat-lime-size-6-1.png" alt="KOOKABURRA Youth 7.1 Cricket Bat - Lime, Size 6">
+                            </a>
+                            <div class="cta-btns-top">
+                                <a href="shop-details-style-4.html" class="h5-button">Add to Cart</a>
+                                <a href="#" id="h5_qv-btn" class="h5-button-2">Quick View</a>
+                            </div>
+                            </div>
+                            <div class="shop-content-v4">
+                            <div class="shop-info-v4">
+                                <div class="product-review">
+                                <div class="rating-star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <span>&nbsp;(197)</span>
+                                </div>
+                                </div>
+                            </div>
+                            <a href="shop-details-style-4.html"><h2>KOOKABURRA Youth 7.1 Cricket Bat - Lime, Size 6</h2></a>
+                            <h3>$220</h3>
+                            <div class="cta-btns-bottom">
+                                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                <div class="item-quantity">
+                                <span class="decrease qty-btn">-</span>
+                                <input disabled type="number" value="1">
+                                <span class="increase qty-btn">+</span>
+                                </div>
+                                <a href="#"><i class="fa-solid fa-retweet"></i></a>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+        
+                        <div class="col-lg-4 col-12 col-sm-6">
+                        <div class="shop-cat-card-v4">
+                            <div class="shop-image-v4">
+                            <a class="shop-img-wrap-v4" href="shop-details-style-4.html">
+                                <img class="ori-img" id="sc-cng-img-1" src="image/home-five/popular-product/cricket-kit-full.png" alt="Cricket Kit">
+                                <img class="ori-img-hover" src="image/home-five/popular-product/cricket-kit-full-1.png" alt="Cricket Kit">
+                            </a>
+                            <div class="cta-btns-top">
+                                <a href="shop-details-style-4.html" class="h5-button">Add to Cart</a>
+                                <a href="#" id="h5_qv-btn" class="h5-button-2">Quick View</a>
+                            </div>
+                            </div>
+                            <div class="shop-content-v4">
+                            <div class="shop-info-v4">
+                                <div class="product-review">
+                                <div class="rating-star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <span>&nbsp;(200)</span>
+                                </div>
+                                </div>
+                            </div>
+                            <a href="shop-details-style-4.html"><h2>Cricket Kit (All in One)</h2></a>
+                            <h3>$250</h3>
+                            <div class="cta-btns-bottom">
+                                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                <div class="item-quantity">
+                                <span class="decrease qty-btn">-</span>
+                                <input disabled type="number" value="1">
+                                <span class="increase qty-btn">+</span>
+                                </div>
+                                <a href="#"><i class="fa-solid fa-retweet"></i></a>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+        
+                        <div class="col-lg-4 col-12 col-sm-6">
+                        <div class="shop-cat-card-v4">
+                            <div class="shop-image-v4">
+                            <a class="shop-img-wrap-v4" href="shop-details-style-4.html">
+                                <img class="ori-img" id="sc-cng-img-1" src="image/home-five/popular-product/carbonex-21-badminton-rackets.png" alt="Yonex Carbonex 21 Badminton Rackets">
+                                <img class="ori-img-hover" src="image/home-five/popular-product/carbonex-21-badminton-rackets-1.png" alt="Yonex Carbonex 21 Badminton Rackets">
+                            </a>
+                            <div class="cta-btns-top">
+                                <a href="shop-details-style-4.html" class="h5-button">Add to Cart</a>
+                                <a href="#" id="h5_qv-btn" class="h5-button-2">Quick View</a>
+                            </div>
+                            </div>
+                            <div class="shop-content-v4">
+                            <div class="shop-info-v4">
+                                <div class="product-review">
+                                <div class="rating-star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <span>&nbsp;(30)</span>
+                                </div>
+                                </div>
+                            </div>
+                            <a href="shop-details-style-4.html"><h2>Yonex Carbonex 21 Badminton Rackets</h2></a>
+                            <h3>$110</h3>
+                            <div class="cta-btns-bottom">
+                                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                <div class="item-quantity">
+                                <span class="decrease qty-btn">-</span>
+                                <input disabled type="number" value="1">
+                                <span class="increase qty-btn">+</span>
+                                </div>
+                                <a href="#"><i class="fa-solid fa-retweet"></i></a>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+        
+                        <div class="col-lg-4 col-12 col-sm-6">
+                        <div class="shop-cat-card-v4">
+                            <div class="shop-image-v4">
+                            <a class="shop-img-wrap-v4" href="shop-details-style-4.html">
+                                <img class="ori-img" id="sc-cng-img-1" src="image/home-five/popular-product/basketball-with-net.png" alt="Basketball with Net">
+                                <img class="ori-img-hover" src="image/home-five/popular-product/basketball-with-net-1.png" alt="Basketball with Net">
+                            </a>
+                            <div class="cta-btns-top">
+                                <a href="shop-details-style-4.html" class="h5-button">Add to Cart</a>
+                                <a href="#" id="h5_qv-btn" class="h5-button-2">Quick View</a>
+                            </div>
+                            </div>
+                            <div class="shop-content-v4">
+                            <div class="shop-info-v4">
+                                <div class="product-review">
+                                <div class="rating-star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <span>&nbsp;(75)</span>
+                                </div>
+                                </div>
+                            </div>
+                            <a href="shop-details-style-4.html"><h2>Basketball with Net</h2></a>
+                            <h3>$160</h3>
+                            <div class="cta-btns-bottom">
+                                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                <div class="item-quantity">
+                                <span class="decrease qty-btn">-</span>
+                                <input disabled type="number" value="1">
+                                <span class="increase qty-btn">+</span>
+                                </div>
+                                <a href="#"><i class="fa-solid fa-retweet"></i></a>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+        
+                        <div class="col-lg-4 col-12 col-sm-6">
+                        <div class="shop-cat-card-v4">
+                            <div class="shop-image-v4">
+                            <a class="shop-img-wrap-v4" href="shop-details-style-4.html">
+                                <img class="ori-img" id="sc-cng-img-1" src="image/home-five/popular-product/manu-23-24-home-custom-jersey.png" alt="Red Manchester United 2023/24 Home Custom Jersey">
+                                <img class="ori-img-hover" src="image/home-five/popular-product/manu-23-24-home-custom-jersey-1.png" alt="Red Manchester United 2023/24 Home Custom Jersey">
+                            </a>
+                            <div class="cta-btns-top">
+                                <a href="shop-details-style-4.html" class="h5-button">Add to Cart</a>
+                                <a href="#" id="h5_qv-btn" class="h5-button-2">Quick View</a>
+                            </div>
+                            </div>
+                            <div class="shop-content-v4">
+                            <div class="shop-info-v4">
+                                <div class="product-review">
+                                <div class="rating-star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <span>&nbsp;(70)</span>
+                                </div>
+                                </div>
+                            </div>
+                            <a href="shop-details-style-4.html"><h2>Red Manchester United 2023/24 Home Custom Jersey</h2></a>
+                            <h3>$134.99</h3>
+                            <div class="cta-btns-bottom">
+                                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                <div class="item-quantity">
+                                <span class="decrease qty-btn">-</span>
+                                <input disabled type="number" value="1">
+                                <span class="increase qty-btn">+</span>
+                                </div>
+                                <a href="#"><i class="fa-solid fa-retweet"></i></a>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="col-lg-4 col-12 col-sm-6">
+                            <div class="shop-cat-card-v4">
+                                <div class="shop-image-v4">
+                                <a class="shop-img-wrap-v4" href="shop-details-style-4.html">
+                                    <img class="ori-img" id="sc-cng-img-1" src="image/home-five/popular-product/kookaburra-unisex-youth-7-1-cricket-bat-lime-size-6.png" alt="KOOKABURRA Youth 7.1 Cricket Bat - Lime, Size 6">
+                                    <img class="ori-img-hover" src="image/home-five/popular-product/kookaburra-unisex-youth-7-1-cricket-bat-lime-size-6-1.png" alt="KOOKABURRA Youth 7.1 Cricket Bat - Lime, Size 6">
                                 </a>
-                                <div class="shop-hover">
-                                <ul>
-                                    <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
-                                    <li><a class="product-img-popup" href="#shop-details-top-area"><i class="fa-solid fa-arrows-up-down-left-right"></i></a></li>
-                                    <li><a href="#"><i class="fa-solid fa-rotate"></i></a></li>
-                                </ul>
-                                <a href="#" class="shop-button">Add to Cart</a>
-                                </div>
-                            </div>
-                            <div class="shop-content">
-                                <div class="shop-info">
-                                <div class="product-variant">
-                                    <div class="color-1 sc-cng-img3-btn1" style="background:#210EFF;content:'';"></div>
-                                    <div class="color-2 sc-cng-img3-btn2" style="background:#7D0225;content:'';"></div>
-                                    <div class="color-3 sc-cng-img3-btn3" style="background:#23232F;content:'';"></div>
-                                </div>
-                                <div class="prod-size-select">
-                                    <div class="tag-cloud-v2">
-                                        <div class="tag-item-v2 active"><span>M</span></div>
-                                        <div class="tag-item-v2"><span>L</span></div>
-                                        <div class="tag-item-v2"><span>XL</span></div>
-                                        <div class="tag-item-v2"><span>XXL</span></div>
-                                    </div>
-                                </div>
-                                <div class="product-review">
-                                    <div class="rating-star">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <span>&nbsp;(22)</span>
-                                    </div>
+                                <div class="cta-btns-top">
+                                    <a href="shop-details-style-4.html" class="h5-button">Add to Cart</a>
+                                    <a href="#" id="h5_qv-btn" class="h5-button-2">Quick View</a>
                                 </div>
                                 </div>
-                                <a href="shop-details.html"><h5>Men Cotton Sleeves Shirts</h5></a>
-                                <h3>$175</h3>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-12 col-sm-6 shop-product-items">
-                            <div class="shop-cat-card">
-                            <div class="shop-image">
-                                <div class="tag-discount">&#8212;25%</div>
-                                <a class="shop-img-wrap" href="shop-details.html">
-                                    <img class="ori-img" id="sc-cng-img-4" src="image/home-one/shop-section/luxury-woman-black-hand-bag.png" alt="luxury Woman Black Hand Bag" title="luxury Woman Black Hand Bag" height="340" width="280">
-                                    <img class="ori-img-hover" src="image/home-one/shop-section/luxury-woman-black-hand-bag-1.png" alt="luxury Woman Black Hand Bag" title="luxury Woman Black Hand Bag" height="340" width="280">
-                                </a>
-                                <div class="shop-hover">
-                                <ul>
-                                    <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
-                                    <li><a class="product-img-popup" href="#shop-details-top-area"><i class="fa-solid fa-arrows-up-down-left-right"></i></a></li>
-                                    <li><a href="#"><i class="fa-solid fa-rotate"></i></a></li>
-                                </ul>
-                                <a href="#" class="shop-button">Add to Cart</a>
-                                </div>
-                            </div>
-                            <div class="shop-content">
-                                <div class="shop-info">
-                                <div class="product-variant">
-                                    <div class="color-1 sc-cng-img4-btn1" style="background:#0B8700;content:'';"></div>
-                                    <div class="color-2 sc-cng-img4-btn2" style="background:#000;content:'';"></div>
-                                    <div class="color-3 sc-cng-img4-btn3" style="background:#553301;content:'';"></div>
-                                </div>
-                                <div class="prod-size-select">
-                                    <div class="tag-cloud-v2">
-                                        <div class="tag-item-v2 active"><span>M</span></div>
-                                        <div class="tag-item-v2"><span>L</span></div>
-                                        <div class="tag-item-v2"><span>XL</span></div>
-                                        <div class="tag-item-v2"><span>XXL</span></div>
-                                    </div>
-                                </div>
-                                <div class="product-review">
-                                    <div class="rating-star">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <span>&nbsp;(33)</span>
-                                    </div>
-                                </div>
-                                </div>
-                                <a href="shop-details.html"><h5>luxury Woman Black Hand Bag</h5></a>
-                                <h3>$180 <span>$220</span></h3>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-12 col-sm-6 shop-product-items">
-                            <div class="shop-cat-card">
-                            <div class="shop-image">
-                                <a class="shop-img-wrap" href="shop-details.html">
-                                    <img class="ori-img" id="sc-cng-img-5" src="image/home-one/shop-section/summer-tank-top-vest-fashionable.png" alt="Summer Tank Top Vest Fashionable" title="Summer Tank Top Vest Fashionable" height="340" width="280">
-                                    <img class="ori-img-hover" src="image/home-one/shop-section/summer-tank-top-vest-fashionable-1.png" alt="Summer Tank Top Vest Fashionable" title="Summer Tank Top Vest Fashionable" height="340" width="280">
-                                </a>
-                                <div class="shop-hover">
-                                <ul>
-                                    <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
-                                    <li><a class="product-img-popup" href="#shop-details-top-area"><i class="fa-solid fa-arrows-up-down-left-right"></i></a></li>
-                                    <li><a href="#"><i class="fa-solid fa-rotate"></i></a></li>
-                                </ul>
-                                <a href="#" class="shop-button">Add to Cart</a>
-                                </div>
-                            </div>
-                            <div class="shop-content">
-                                <div class="shop-info">
-                                <div class="product-variant">
-                                    <div class="color-1 sc-cng-img5-btn1" style="background:#342103;content:'';"></div>
-                                    <div class="color-2 sc-cng-img5-btn2" style="background:#000;content:'';"></div>
-                                    <div class="color-3 sc-cng-img5-btn3" style="background:#3577F0;content:'';"></div>
-                                </div>
-                                <div class="prod-size-select">
-                                    <div class="tag-cloud-v2">
-                                        <div class="tag-item-v2 active"><span>M</span></div>
-                                        <div class="tag-item-v2"><span>L</span></div>
-                                        <div class="tag-item-v2"><span>XL</span></div>
-                                        <div class="tag-item-v2"><span>XXL</span></div>
-                                    </div>
-                                </div>
-                                <div class="product-review">
-                                    <div class="rating-star">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <span>&nbsp;(21)</span>
-                                    </div>
-                                </div>
-                                </div>
-                                <a href="shop-details.html"><h5>Summer Tank Top Vest fashionable</h5></a>
-                                <h3>$320 <span>$400</span></h3>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-12 col-sm-6 shop-product-items">
-                            <div class="shop-cat-card">
-                            <div class="shop-image">
-                                <div class="tag-new">New</div>
-                                <a class="shop-img-wrap" href="shop-details.html">
-                                    <img class="ori-img" id="sc-cng-img-6" src="image/home-one/shop-section/short-pink-color-woman-blazer.png" alt="Short Pink color woman Blazer" title="Short Pink color woman Blazer" height="340" width="280">
-                                    <img class="ori-img-hover" src="image/home-one/shop-section/short-pink-color-woman-blazer-1.png" alt="Short Pink color woman Blazer" title="Short Pink color woman Blazer" height="340" width="280">
-                                </a>
-                                <div class="shop-hover">
-                                <ul>
-                                    <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
-                                    <li><a class="product-img-popup" href="#shop-details-top-area"><i class="fa-solid fa-arrows-up-down-left-right"></i></a></li>
-                                    <li><a href="#"><i class="fa-solid fa-rotate"></i></a></li>
-                                </ul>
-                                <a href="#" class="shop-button">Add to Cart</a>
-                                </div>
-                            </div>
-                            <div class="shop-content">
-                                <div class="shop-info">
-                                <div class="product-variant">
-                                    <div class="color-1 sc-cng-img6-btn1" style="background:#EE52F1;content:'';"></div>
-                                    <div class="color-2 sc-cng-img6-btn2" style="background:#E4B3B9;content:'';"></div>
-                                    <div class="color-3 sc-cng-img6-btn3" style="background:#775EA0;content:'';"></div>
-                                </div>
-                                <div class="prod-size-select">
-                                    <div class="tag-cloud-v2">
-                                        <div class="tag-item-v2 active"><span>M</span></div>
-                                        <div class="tag-item-v2"><span>L</span></div>
-                                        <div class="tag-item-v2"><span>XL</span></div>
-                                        <div class="tag-item-v2"><span>XXL</span></div>
-                                    </div>
-                                </div>
-                                <div class="product-review">
-                                    <div class="rating-star">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <span>&nbsp;(22)</span>
-                                    </div>
-                                </div>
-                                </div>
-                                <a href="shop-details.html"><h5>Short Pink color woman Blazer</h5></a>
-                                <h3>$150</h3>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-12 col-sm-6 shop-product-items">
-                            <div class="shop-cat-card">
-                            <div class="shop-image">
-                                <div class="tag-discount">&#8212;30%</div>
-                                <a class="shop-img-wrap" href="shop-details.html">
-                                    <img class="ori-img" id="sc-cng-img-7" src="image/home-one/shop-section/mens-rose-plus-white-shirt.png" alt="Men's Rose Plus white Shirt" title="Men's Rose Plus white Shirt" height="340" width="280">
-                                    <img class="ori-img-hover" src="image/home-one/shop-section/mens-rose-plus-white-shirt-1.png" alt="Men's Rose Plus white Shirt" title="Men's Rose Plus white Shirt" height="340" width="280">
-                                </a>
-                                <div class="shop-hover">
-                                <ul>
-                                    <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
-                                    <li><a class="product-img-popup" href="#shop-details-top-area"><i class="fa-solid fa-arrows-up-down-left-right"></i></a></li>
-                                    <li><a href="#"><i class="fa-solid fa-rotate"></i></a></li>
-                                </ul>
-                                <a href="#" class="shop-button">Add to Cart</a>
-                                </div>
-                            </div>
-                            <div class="shop-content">
-                                <div class="shop-info">
-                                <div class="product-variant">
-                                    <div class="color-1 sc-cng-img7-btn1" style="background:#EBA5B3;content:'';"></div>
-                                    <div class="color-2 sc-cng-img7-btn2" style="background:#C9C8DA;content:'';"></div>
-                                    <div class="color-3 sc-cng-img7-btn3" style="background:#85DCFA;content:'';"></div>
-                                </div>
-                                <div class="prod-size-select">
-                                    <div class="tag-cloud-v2">
-                                        <div class="tag-item-v2 active"><span>M</span></div>
-                                        <div class="tag-item-v2"><span>L</span></div>
-                                        <div class="tag-item-v2"><span>XL</span></div>
-                                        <div class="tag-item-v2"><span>XXL</span></div>
-                                    </div>
-                                </div>
-                                <div class="product-review">
-                                    <div class="rating-star">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <span>&nbsp;(33)</span>
-                                    </div>
-                                </div>
-                                </div>
-                                <a href="shop-details.html"><h5>Men's Rose Plus white Shirt</h5></a>
-                                <h3>$180 <span>$220</span></h3>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-12 col-sm-6 shop-product-items">
-                            <div class="shop-cat-card">
-                            <div class="shop-image">
-                                <a class="shop-img-wrap" href="shop-details.html">
-                                    <img class="ori-img" id="sc-cng-img-8" src="image/home-one/shop-section/suit-double-breasted-blazer.png" alt="Suit double breasted Blazer" title="Suit double breasted Blazer" height="340" width="280">
-                                    <img class="ori-img-hover" src="image/home-one/shop-section/suit-double-breasted-blazer-1.png" alt="Suit double breasted Blazer" title="Suit double breasted Blazer" height="340" width="280">
-                                </a>
-                                <div class="shop-hover">
-                                <ul>
-                                    <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
-                                    <li><a class="product-img-popup" href="#shop-details-top-area"><i class="fa-solid fa-arrows-up-down-left-right"></i></a></li>
-                                    <li><a href="#"><i class="fa-solid fa-rotate"></i></a></li>
-                                </ul>
-                                <a href="#" class="shop-button">Add to Cart</a>
-                                </div>
-                            </div>
-                            <div class="shop-content">
-                                <div class="shop-info">
-                                <div class="product-variant">
-                                    <div class="color-1 sc-cng-img8-btn1" style="background:#0D263A;content:'';"></div>
-                                    <div class="color-2 sc-cng-img8-btn2" style="background:#49181E;content:'';"></div>
-                                    <div class="color-3 sc-cng-img8-btn3" style="background:#362301;content:'';"></div>
-                                </div>
-                                <div class="prod-size-select">
-                                    <div class="tag-cloud-v2">
-                                        <div class="tag-item-v2 active"><span>M</span></div>
-                                        <div class="tag-item-v2"><span>L</span></div>
-                                        <div class="tag-item-v2"><span>XL</span></div>
-                                        <div class="tag-item-v2"><span>XXL</span></div>
-                                    </div>
-                                </div>
-                                <div class="product-review">
-                                    <div class="rating-star">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <span>&nbsp;(22)</span>
-                                    </div>
-                                </div>
-                                </div>
-                                <a href="shop-details.html"><h5>Suit double breasted Blazer</h5></a>
-                                <h3>$150</h3>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-12 col-sm-6 shop-product-items">
-                            <div class="shop-cat-card">
-                                <div class="shop-image">
-                                    <a class="shop-img-wrap" href="shop-details.html">
-                                        <img class="ori-img shop-img-9-custom" id="sc-cng-img-9" src="image/home-one/feature-product/silver-silk-shirt-tie-man.png" alt="Silver Silk Shirt + Tie Mans" title="Silver Silk Shirt + Tie Mans" height="340" width="280">
-                                        <img class="ori-img-hover shop-img-9-custom" src="image/home-one/feature-product/silver-silk-shirt-tie-man-1.png" alt="Silver Silk Shirt + Tie Mans" title="Silver Silk Shirt + Tie Mans" height="340" width="280">
-                                    </a>
-                                    <div class="shop-hover">
-                                    <ul>
-                                        <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
-                                        <li><a class="product-img-popup" href="#shop-details-top-area"><i class="fa-solid fa-arrows-up-down-left-right"></i></a></li>
-                                        <li><a href="#"><i class="fa-solid fa-rotate"></i></a></li>
-                                    </ul>
-                                    <a href="#" class="shop-button">Add to Cart</a>
-                                    </div>
-                                </div>
-                                <div class="shop-content">
-                                    <div class="shop-info">
-                                    <div class="product-variant">
-                                        <div class="color-1 sc-cng-img9-btn1" style="background:#EE52F1;content:'';"></div>
-                                        <div class="color-2 sc-cng-img9-btn2" style="background:#49181E;content:'';"></div>
-                                        <div class="color-3 sc-cng-img9-btn3" style="background:#FEBF65;content:'';"></div>
-                                    </div>
-                                    <div class="prod-size-select">
-                                        <div class="tag-cloud-v2">
-                                            <div class="tag-item-v2 active"><span>M</span></div>
-                                            <div class="tag-item-v2"><span>L</span></div>
-                                            <div class="tag-item-v2"><span>XL</span></div>
-                                            <div class="tag-item-v2"><span>XXL</span></div>
-                                        </div>
-                                    </div>
+                                <div class="shop-content-v4">
+                                <div class="shop-info-v4">
                                     <div class="product-review">
-                                        <div class="rating-star">
+                                    <div class="rating-star">
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <span>&nbsp;(22)</span>
-                                        </div>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                        <span>&nbsp;(197)</span>
                                     </div>
                                     </div>
-                                    <a href="shop-details.html"><h5>Suit double breasted Blazer</h5></a>
-                                    <h3>$150</h3>
+                                </div>
+                                <a href="shop-details-style-4.html"><h2>KOOKABURRA Youth 7.1 Cricket Bat - Lime, Size 6</h2></a>
+                                <h3>$220</h3>
+                                <div class="cta-btns-bottom">
+                                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                    <div class="item-quantity">
+                                    <span class="decrease qty-btn">-</span>
+                                    <input disabled type="number" value="1">
+                                    <span class="increase qty-btn">+</span>
+                                    </div>
+                                    <a href="#"><i class="fa-solid fa-retweet"></i></a>
                                 </div>
                                 </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -885,216 +991,6 @@
                       </li>
                     </ul>
                 </nav>
-            </div>
-            <div class="col-lg-3 shop-page-sidebar-wrapper">
-                <div class="sidebar-mobile-close-btn"><i class="fa-solid fa-circle-xmark"></i></div>
-                <div class="shop-sidebar-mobile">
-                <div class="left-sidebar-shop">
-                    <div class="lsb-widget-1">
-                        <h2 class="lsb-widget-title">Product Categories</h2>
-                        <form action="#">
-                            <ul>
-                            <li class="check-items-wrap">
-                                <input type="checkbox" id="womensbag" name="product-category" value="womensbag">
-                                <div class="check-items">
-                                    <label for="womensbag">Women's Bag</label>
-                                    <span>19</span>
-                                </div>
-                            </li>
-                            <li class="check-items-wrap">
-                                <input type="checkbox" id="mensaccessories" name="product-category" value="mensaccessories">
-                                <div class="check-items">
-                                    <label for="mensaccessories">Men's Accessories</label>
-                                    <span>10</span>
-                                </div>
-                            </li>
-                            <li class="check-items-wrap">
-                                <input type="checkbox" id="schoolbag" name="product-category" value="schoolbag">
-                                <div class="check-items">
-                                    <label for="schoolbag">School Bag</label>
-                                    <span>41</span>
-                                </div>
-                            </li>
-                            <li class="check-items-wrap">
-                                <input type="checkbox" id="cap" name="product-category" value="cap">
-                                <div class="check-items">
-                                    <label for="cap">Cap</label>
-                                    <span>32</span>
-                                </div>
-                            </li>
-                            <li class="check-items-wrap">
-                                <input type="checkbox" id="boots" name="product-category" value="boots">
-                                <div class="check-items">
-                                    <label for="boots">Boots</label>
-                                    <span>45</span>
-                                </div>
-                            </li>
-                            <li class="check-items-wrap">
-                                <input type="checkbox" id="boysdress" name="product-category" value="boysdress">
-                                <div class="check-items">
-                                    <label for="boysdress">Boy's Dress</label>
-                                    <span>20</span>
-                                </div>
-                            </li>
-                            <li class="check-items-wrap">
-                                <input type="checkbox" id="womensfashion" name="product-category" value="womensfashion">
-                                <div class="check-items">
-                                    <label for="womensfashion">Women's Fashion</label>
-                                    <span>35</span>
-                                </div>
-                            </li>
-                            <li class="check-items-wrap">
-                                <input type="checkbox" id="fashionaccessories" name="product-category" value="fashionaccessories">
-                                <div class="check-items">
-                                    <label for="fashionaccessories"> Fashion Accessories</label>
-                                    <span>25</span>
-                                </div>
-                            </li>
-                            <li class="check-items-wrap">
-                                <input type="checkbox" id="leatherbags" name="product-category" value="leatherbags">
-                                <div class="check-items">
-                                    <label for="leatherbags">Leather Bags</label>
-                                    <span>22</span>
-                                </div>
-                            </li>
-                            <li class="check-items-wrap">
-                                <input type="checkbox" id="giftforhim" name="product-category" value="giftforhim">
-                                <div class="check-items">
-                                    <label for="giftforhim">Gift for Him</label>
-                                    <span>11</span>
-                                </div>
-                            </li>
-                            <li class="check-items-wrap">
-                                <input type="checkbox" id="babyitems" name="product-category" value="babyitems">
-                                <div class="check-items">
-                                    <label for="babyitems">Baby Items</label>
-                                    <span>31</span>
-                                </div>
-                            </li>
-                            <li class="check-items-wrap">
-                                <input type="checkbox" id="makeupcorner" name="product-category" value="makeupcorner">
-                                <div class="check-items">
-                                    <label for="makeupcorner">Makeup Corner</label>
-                                    <span>08</span>
-                                </div>
-                            </li>
-                            </ul>
-                        </form>
-                    </div>
-                    <div class="lsb-widget-2">
-                        <h2 class="lsb-widget-title">Price Filter</h2>
-                        <div class="price-filter-wrap">
-                            <div class="price-range-slider">
-                                <div class="progress"></div>
-                            </div>
-                            <div class="range-input">
-                                <input type="range" class="range-min" min="0" max="150" value="29" step="5">
-                                <input type="range" class="range-max" min="0" max="150" value="125" step="5">
-                            </div>
-                            <div class="price-input">
-                                <p>Price:</p>
-                                <div class="field">
-                                    <span>$</span>
-                                    <input type="number" disabled class="input-min" value="29.00">
-                                </div>
-                                <div class="separator">-</div>
-                                <div class="field">
-                                    <span>$</span>
-                                    <input type="number" disabled class="input-max" value="125.00">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="lsb-widget-3">
-                        <h2 class="lsb-widget-title">Brands</h2>
-                        <form action="#">
-                            <ul>
-                            <li class="check-items-wrap">
-                                <input type="checkbox" id="nike" name="nike" value="nike">
-                                <div class="check-items">
-                                    <label for="nike">Nike</label>
-                                </div>
-                            </li>
-                            <li class="check-items-wrap">
-                                <input type="checkbox" id="zara" name="zara" value="zara">
-                                <div class="check-items">
-                                    <label for="zara">Zara</label>
-                                </div>
-                            </li>
-                            <li class="check-items-wrap">
-                                <input type="checkbox" id="denim" name="denim" value="denim">
-                                <div class="check-items">
-                                    <label for="denim">Denim</label>
-                                </div>
-                            </li>
-                            <li class="check-items-wrap">
-                                <input type="checkbox" id="madame" name="madame" value="madame">
-                                <div class="check-items">
-                                    <label for="madame">Madame</label>
-                                </div>
-                            </li>
-                            <li class="check-items-wrap">
-                                <input type="checkbox" id="arong" name="arong" value="arong">
-                                <div class="check-items">
-                                    <label for="arong">Arong</label>
-                                </div>
-                            </li>
-                            <li class="check-items-wrap">
-                                <input type="checkbox" id="maxmall" name="maxmall" value="maxmall">
-                                <div class="check-items">
-                                    <label for="maxmall">Max mall</label>
-                                </div>
-                            </li>
-                            <li class="check-items-wrap">
-                                <input type="checkbox" id="sara" name="sara" value="sara">
-                                <div class="check-items">
-                                    <label for="sara">Sara</label>
-                                </div>
-                            </li>
-                            <li class="check-items-wrap">
-                                <input type="checkbox" id="hanger" name="hanger" value="hanger">
-                                <div class="check-items">
-                                    <label for="hanger">Hanger</label>
-                                </div>
-                            </li>
-                            </ul>
-                        </form>
-                    </div>
-                    <div class="lsb-widget-3">
-                        <h2 class="lsb-widget-title">Colors</h2>
-                        <div class="colors-select">
-                            <a href="#"><span class="color-choice" style="background:#3577F0;border:1px solid #3577F0;"></span></a>
-                            <a href="#"><span class="color-choice" style="background:#F1511B;border:1px solid #F1511B;"></span></a>
-                            <a href="#"><span class="color-choice" style="background:#13172B;border:1px solid #13172B;"></span></a>
-                            <a href="#"><span class="color-choice" style="background:#5A5858;border:1px solid #5A5858;"></span></a>
-                            <a href="#"><span class="color-choice" style="background:#F6E5CF;border:1px solid #F6E5CF;"></span></a>
-                            <a href="#"><span class="color-choice" style="background:#FF497C;border:1px solid #FF497C;"></span></a>
-                        </div>
-                    </div>
-                    <div class="lsb-widget-3">
-                        <h2 class="lsb-widget-title">Size</h2>
-                        <div class="tag-cloud">
-                            <div class="tag-item"><a href="#">S</a></div>
-                            <div class="tag-item"><a href="#">M</a></div>
-                            <div class="tag-item"><a href="#">L</a></div>
-                            <div class="tag-item"><a href="#">XL</a></div>
-                            <div class="tag-item"><a href="#">2XL</a></div>
-                            <div class="tag-item"><a href="#">X</a></div>
-                            <div class="tag-item"><a href="#">XXL</a></div>
-                            <div class="tag-item"><a href="#">Slim Fit</a></div>
-                            <div class="tag-item"><a href="#">XS</a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="left-bar-promo">
-                    <div class="promo-close-btn"><i class="fa-solid fa-circle-xmark"></i></div>
-                    <div class="left-bar-promo-wrapper">
-                        <div class="big-sale"><img src="image/shop-page/promo-text.png" alt="Big Sale"></div>
-                        <a href="#" class="promo-button">Shop Now</a>
-                        <div class="promo-image"><img src="image/shop-page/promo-image.png" alt="Discount"></div>
-                    </div>
-                </div>
-            </div>
             </div>
         </div>
     </div>
