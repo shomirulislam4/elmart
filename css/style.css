@@ -15581,7 +15581,8 @@ button:focus {
     background: #FFD35B;
 }
 
-.shop-page-style-3 .header-top-right ul li::after {
+.shop-page-style-3 .header-top-right ul li::after,
+.shop-page-style-3 .divider {
     background: #FFD35B !important;
 }
 
@@ -15717,7 +15718,8 @@ button:focus {
     background: #FFD35B;
 }
 
-.shop-page-style-3-list .header-top-right ul li::after {
+.shop-page-style-3-list .header-top-right ul li::after,
+.shop-page-style-3-list .divider {
     background: #FFD35B !important;
 }
 
@@ -16129,6 +16131,15 @@ button:focus {
 
 .homepage_five ::selection {
     background: #FF5400;
+}
+
+.homepage_five .cursor:after {
+    background: #FF5400;
+}
+
+.homepage_five .cursor:before {
+    background: #FF55003B;
+	border-color: #FF5400;
 }
 
 .homepage_five .header-top-banner .single-product-countdown .deal-product-timer {
@@ -17728,21 +17739,96 @@ button:focus {
 /* ====================================================================
 25. Shop Product Style (Variant 4)
 ==================================================================== */
+.spsv4 ::selection {
+    background: #FF5400;
+}
+
+.spsv4 a {
+    color: #072654;
+}
+
+.spsv4 .header-top-right ul li a:hover,
+.spsv4 a:hover {
+    color: #FF5400;
+}
+
+.spsv4 #return-to-top {
+    background: #051D40;
+}
+.spsv4 #return-to-top:hover {
+    background: #FF5400;
+}
+
+.spsv4::-webkit-scrollbar-thumb,
+.spsv4 ::-webkit-scrollbar-thumb {
+    background: #FF5400;
+    border-radius: 10px;
+}
+
+.spsv4::-webkit-scrollbar-thumb:hover,
+.spsv4 ::-webkit-scrollbar-thumb:hover {
+    background: #FFD6C2;
+}
+
+.spsv4 .header-top-right ul li::after,
+.spsv4 .divider {
+    background: #FFD6C2 !important;
+}
+
+.spsv4 .menu-right .notify-count {
+	background: #FF5400;
+	font-size: 10px;
+	line-height: 15px;
+}
+
+.spsv4 .cursor:after {
+    background: #FF5400;
+}
+
+.spsv4 .cursor:before {
+    background: #FF55003B;
+	border-color: #FF5400;
+}
+
+.spsv4 .header-top-left p span,
+.spsv4 .main-menu a.active,
+.spsv4 .mobile-menu a.active,
+.spsv4 .main-menu a:hover,
+.spsv4 .menu-right a:hover,
+.spsv4 .main-menu li:hover > a,
+.spsv4 .breadcrumb .current-page,
+.spsv4 .cart-slide .cart-header .cart-close:hover,
+.spsv4 .cart-slide .cart-item .item-img .close-btn:hover,
+.spsv4 .search-box .close-btn:hover,
+.spsv4 .search-box button:hover {
+    color: #FF5400
+}
+
+.spsv4 .header-top-right .top-sub-menu a:hover,
+.spsv4 .main-menu .sub-menu a:hover,
+.spsv4 .pro-search-result-area .search-content .product-cart a:hover {
+    color: #FFF;
+    background: #FF5400;
+}
+
 .spsv4,
 .spsv4 p,
 .spsv4 span,
 .spsv4 .product-sorting .sorting-results p,
 .spsv4 .product-sorting .sorting-results p span,
 .spsv4 .check-items,
-.spsv4 .tag-item {
+.spsv4 .tag-item,
+.spsv4 .header-top-left p span,
+.spsv4 .header-top-right ul li a {
     font-family: 'Fira Sans', sans-serif;
 }
 
-.tag-item:hover {
+
+.spsv4 .tag-item:hover {
 	border-color: #FF5400;
 }
 
-.tag-item:hover a {
+.spsv4 .tag-item:hover a {
     color: #FF5400;
 }
 
@@ -17768,10 +17854,6 @@ button:focus {
 
 .spsv4 ::-webkit-scrollbar {
     width: 3px;
-}
-
-.spsv4 ::selection {
-    background: #FF5400;
 }
 
 .spsv4 .check-items-wrap input[type="checkbox"] {
@@ -17836,6 +17918,30 @@ button:focus {
     color: #FFF;
 }
 
+.homepage_five .cart-slide .cart-header .cart-close:hover,
+.homepage_five .cart-slide .cart-item .item-img .close-btn:hover {
+    color: #FF5400;
+}
+
+.spsv4 .button-b {
+    background: #FF5400;
+    color: #FFF;
+    border-color: #FF5400;
+}
+
+.spsv4 .button-b:hover {
+    color: #000;
+    background: transparent;
+}
+
+.spsv4 .button-a {
+    border-color: #FF5400;
+}
+
+.spsv4 .button-a:hover {
+    background: #FF5400;
+    color: #FFF;
+}
 
 /*
 color---
