@@ -3144,19 +3144,19 @@ $(function() {
       slidesToScroll: 1,
       responsive: [
         {
-          breakpoint: 992,
+          breakpoint: 1199,
           settings: {
             slidesToShow: 3,
           }
         },
         {
-          breakpoint: 768,
+          breakpoint: 992,
           settings: {
             slidesToShow: 2,
           }
         },
         {
-          breakpoint: 414,
+          breakpoint: 576,
           settings: {
             slidesToShow: 1,
           }
