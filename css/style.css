@@ -16151,7 +16151,7 @@ button:focus {
     display: inline-block;
     padding: 10px 30px;
     margin: 0;
-    color: #FFF;
+    color: #FFF !important;
     background: #FF5400;
     font-size: 18px;
     line-height: 24px;
@@ -16161,7 +16161,7 @@ button:focus {
 }
 
 .h5-button:hover {
-    color: #FFF;
+    color: #FFF !important;
     border-radius: 50px;
 }
 
@@ -16170,7 +16170,7 @@ button:focus {
     padding: 10px 30px;
     margin: 0;
     color: #13172B;
-    background: #FFF;
+    background: #FFF !important;
     font-size: 18px;
     line-height: 24px;
     border-radius: 5px;
@@ -16179,7 +16179,7 @@ button:focus {
 }
 
 .h5-button-2:hover {
-    color: #13172B;
+    color: #13172B !important;
     border-radius: 50px;
 }
 /** Start of Header Style Five **/
@@ -17742,10 +17742,6 @@ button:focus {
 ==================================================================== */
 .spsv4 ::selection {
     background: #FF5400;
-}
-
-.spsv4 a {
-    color: #072654;
 }
 
 .spsv4 .header-top-right ul li a:hover,
