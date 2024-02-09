@@ -3201,5 +3201,25 @@ $(function() {
   });
 });
 
+//Featured Product (Variant 5)
+$(function() {
+  var swiper = new Swiper(".h5_featured-slider", {
+    loop: true,
+    spaceBetween: 10,
+    navigation: {
+      nextEl: ".h5-fs-btn-next",
+      prevEl: ".h5-fs-btn-prev",
+    },
+    breakpoints: {
+      1200: {
+        slidesPerView: 3,
+      },
+      415: {
+        slidesPerView: 2,
+      },
+    },
+  });
+});
+
 
 }) (jQuery);

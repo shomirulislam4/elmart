@@ -17318,6 +17318,7 @@ button:focus {
     margin: 0;
     padding: 0;
     z-index: -1;
+    text-transform: capitalize;
 }
 
 .h5_section-title h2 {
@@ -18195,9 +18196,189 @@ button:focus {
 .shop-content-v5 .cta-btns-bottom .h5-button-2 i {
     margin-right: 5px;
 }
-
 /** End of Product Style 5 **/
 /*** End of Product on Sale ***/
+
+/** Start of Featured Product (Variant 5) **/
+/* Promo Left Side */
+.h5_featured-product {
+    margin-top: 80px;
+}
+
+.h5_featured-product .image-area {
+    background: url('../image/home-five/featured-product/promo-img.png') center no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.h5_featured-product .promo-text {
+    height: 100%;
+    width: 100%;
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.h5_featured-product .promo-text .promo-cat {
+    color: #FFF;
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 400;
+    font-family: 'Fira Sans', sans-serif;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.h5_featured-product .promo-text h2 {
+    color: #FFF;
+    font-size: 50px;
+    line-height: 56px;
+    font-weight: 400;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+/* Category Right Side */
+.h5_featured-product .category-card {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.h5_featured-product .category-card .category-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    height: 120px;
+    width: 100%;  
+}
+
+.h5_featured-product .category-card .content h2 {
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 400;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.h5_featured-product .category-card .image {
+    height: 100px;
+    width: 100px;
+}
+
+.h5_featured-product .category-card .image img {
+    height: 100%;
+    width: 100%;
+}
+
+.h5_featured-product .category-card .cat-btn {
+    font-size: 18px;
+    line-height: 18px;
+    color: #13172B;
+    border-bottom: 1px solid #13172B;
+    text-transform: capitalize;
+    transition: 0.3s;
+	-moz-transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+
+.h5_featured-product .category-card .cat-btn:hover {
+    color: #FF5400;
+    border-color: #FF5400;
+}
+
+/* Slider */
+.h5_featured-slider {
+	padding: 6px;
+    position: relative;
+}
+
+.h5_fp-slide .shop-cat-card-v5 {
+	width: 100% !important;
+	height: 446px !important;
+	margin: 0 auto;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.h5_fp-slide .shop-image-v5 {
+	height: 224px;
+}
+
+.h5_fp-slide .shop-cat-card-v5:hover .cta-btns-top {
+    bottom: 2%;
+}
+
+.h5_fp-slide .shop-image-v5 .cta-btns-top li a {
+	font-size: 12px;
+	line-height: 22px;
+	padding: 5px 10px;
+}
+
+.h5_fp-slide .shop-content-v5 {
+	height: 222px;
+	padding: 10px;
+}
+
+.h5_fp-slide .shop-content-v5 p {
+	margin-bottom: 7px;
+}
+
+.h5_fp-slide .shop-content-v5 h2 {
+	font-size: 26px;
+	line-height: 30px;
+}
+
+.h5_fp-slide .shop-content-v5 h3 {
+	font-size: 18px;
+	line-height: 18px;
+}
+
+.h5_fp-slide .shop-content-v5 .cta-btns-bottom .h5-button i,
+.h5_fp-slide .shop-content-v5 .cta-btns-bottom .h5-button-2 i {
+    display: none;
+}
+
+.h5_fp-slide .shop-content-v5 .cta-btns-bottom .h5-button,
+.h5_fp-slide .shop-content-v5 .cta-btns-bottom .h5-button-2 {
+	font-size: 14px;
+	padding: 7px 13px;
+}
+
+.h5-fs-btn-next,
+.h5-fs-btn-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    line-height: 30px;
+    color: #FFF;
+    z-index: 10;
+    -webkit-text-stroke: 1px #ff5400;
+    width: 20px;
+    text-align: center;
+}
+
+.h5-fs-btn-next {
+    right: 0;
+}
+
+.h5-fs-btn-prev {
+    left: 2%;
+}
+/** End of Featured Product (Variant 5) **/
 
 
 
