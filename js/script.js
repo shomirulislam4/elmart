@@ -3227,5 +3227,31 @@ $(function() {
   });
 });
 
+//Our Brands Section
+$(function() {
+  var swiper = new Swiper(".our-brands-slider", {
+    loop: true,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: ".ob-sldr-btn-next",
+      prevEl: ".ob-sldr-btn-prev",
+    },
+    breakpoints: {
+      1200: {
+        slidesPerView: 6,
+      },
+      992: {
+        slidesPerView: 4,
+      },
+      576: {
+        slidesPerView: 3,
+      },
+      200: {
+        slidesPerView: 2,
+      },
+    },
+  });
+});
+
 
 }) (jQuery);
