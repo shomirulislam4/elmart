@@ -2857,6 +2857,12 @@ $(function() {
 });
 
 /*============================ Home Style Five ============================*/
+//Shop Product Style (Variant 5)
+$(".spsv5-sidebar-toggle").on('click',function(){
+  $(".shop-s5-filter-sidebar").toggleClass("open");
+});
+
+/*============================ Home Style Five ============================*/
 //Animate Css Works on Scroll
 /*
 $(function(){
