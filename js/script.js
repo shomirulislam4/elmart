@@ -19,12 +19,12 @@ $(function(){
 
 //Preloader
 $(function(){
-      $(window).on("load",function(){
-        $('#preloader').delay(800).fadeOut(500);
-      });
-      $('.pre-close-btn').on('click', function(){
-        $('#preloader').fadeOut(500);
-      })
+  $(window).on("load",function(){
+    $('#preloader').delay(800).fadeOut(500);
+  });
+  $('.pre-close-btn').on('click', function(){
+    $('#preloader').fadeOut(500);
+  })
 });
 
 //Custom Cursor
@@ -3203,10 +3203,6 @@ $(function() {
   var swiper = new Swiper(".our-brands-slider", {
     loop: true,
     spaceBetween: 30,
-    navigation: {
-      nextEl: ".ob-sldr-btn-next",
-      prevEl: ".ob-sldr-btn-prev",
-    },
     breakpoints: {
       1200: {
         slidesPerView: 6,
@@ -3222,6 +3218,41 @@ $(function() {
       },
     },
   });
+});
+
+//Back to Top (Variant 2) - Progress
+$(function(){
+		var progressPath = document.querySelector('.back-top-progress path');
+		var pathLength = progressPath.getTotalLength();
+		progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
+		progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;
+		progressPath.style.strokeDashoffset = pathLength;
+		progressPath.getBoundingClientRect();
+		progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
+		var updateProgress = function () {
+			var scroll = $(window).scrollTop();
+			var height = $(document).height() - $(window).height();
+			var progress = pathLength - (scroll * pathLength / height);
+			progressPath.style.strokeDashoffset = progress;
+		}
+		updateProgress();
+		$(window).scroll(updateProgress);
+		var offset = 50;
+		var duration = 550;
+
+		$(window).on('scroll', function() {
+			if ($(this).scrollTop() > offset) {
+				$('.back-top-progress').addClass('active-progress');
+			} else {
+				jQuery('.back-top-progress').removeClass('active-progress');
+			}
+		});
+
+		$('.back-top-progress').on('click', function(event) {
+			event.preventDefault();
+			$('html, body').animate({scrollTop: 0}, duration);
+			return false;
+		})
 });
 
 
