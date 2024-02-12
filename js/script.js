@@ -1041,6 +1041,17 @@ $(function(){
   });
 });
 
+//Product Details Section (Variant 4)
+$(function(){
+  var swiper = new Swiper(".top-slider", {
+    loop: true,
+    navigation: {
+      nextEl: ".sp-ts-next",
+      prevEl: ".sp-ts-prev",
+    },
+  });
+});
+
 /*============================ Shop Details Slider Image ============================*/
 //Image Slider / Trending Section (Home 4)
 $(function(){
