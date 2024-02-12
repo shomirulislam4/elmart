@@ -2863,6 +2863,16 @@ $(".spsv5-sidebar-toggle").on('click',function(){
 });
 
 /*============================ Home Style Five ============================*/
+//Preloader v2
+$(function(){
+  $(window).on("load",function(){
+    $('.preloader-v3').delay(1200).fadeOut(500);
+  });
+  $('.pre-close-btn').on('click', function(){
+    $('.preloader-v3').fadeOut(500);
+  })
+});
+
 //Mobile Menu (Header - Style Five)
 $(function() {
   $('#h5_m-menu-btn').on('click',function() {

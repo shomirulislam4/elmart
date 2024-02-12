@@ -12565,7 +12565,7 @@ button:focus {
 	width: 100%;
     height: 100%;
     background: #F2F4F5;
-    z-index: 9999999;
+    z-index: 999999999;
 }
 
 #preloader-v2 .pre-close-btn {
@@ -16231,6 +16231,63 @@ button:focus {
     color: #13172B !important;
     border-radius: 50px;
 }
+
+/* Preloader (Variant 3)*/
+.preloader-v3 {
+  position: fixed;
+  z-index: 999999999999;
+  background: #FFF;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preloader-v3 .pv3-close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.pl-wrapper {
+	width: 150px;
+	height: 150px;
+}
+
+.pl-wrapper svg {
+    width: 100%;
+    height: 100%;
+}
+
+.pl-wrapper .inner-circle {
+	stroke-dasharray: 210;
+	stroke-dashoffset: 210;
+	transform-origin: 50%;
+    animation: 1s inner-circ-anim infinite alternate;
+}
+
+@keyframes inner-circ-anim {
+	0% { stroke-dashoffset: 0; transform: rotate(0deg); }
+	100% { stroke-dashoffset: 210; transform: rotate(360deg); }
+}
+
+.pl-wrapper .outer-circle {
+	stroke-dasharray: 240;
+	stroke-dashoffset: 240;
+	transform-origin: 50%;
+    animation: 1s outer-circ-anim infinite alternate 0.5s;
+}
+
+@keyframes outer-circ-anim {
+	0% { stroke-dashoffset: 0; transform: rotateY(180deg) rotate(360deg); }
+	100% { stroke-dashoffset: 240; transform: rotateY(180deg) rotate(0deg); }
+}
+
+
+
 /** Start of Header Style Five **/
 .header_five a {
     color: #FF5400;
