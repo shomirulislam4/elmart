@@ -17,6 +17,41 @@ $(function(){
   });
 });
 
+//Back to Top (Variant 2) - Progress
+$(function(){
+  var progressPath = document.querySelector('.back-top-progress path');
+  var pathLength = progressPath.getTotalLength();
+  progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
+  progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;
+  progressPath.style.strokeDashoffset = pathLength;
+  progressPath.getBoundingClientRect();
+  progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
+  var updateProgress = function () {
+    var scroll = $(window).scrollTop();
+    var height = $(document).height() - $(window).height();
+    var progress = pathLength - (scroll * pathLength / height);
+    progressPath.style.strokeDashoffset = progress;
+  }
+  updateProgress();
+  $(window).scroll(updateProgress);
+  var offset = 50;
+  var duration = 550;
+
+  $(window).on('scroll', function() {
+    if ($(this).scrollTop() > offset) {
+      $('.back-top-progress').addClass('active-progress');
+    } else {
+      jQuery('.back-top-progress').removeClass('active-progress');
+    }
+  });
+
+  $('.back-top-progress').on('click', function(event) {
+    event.preventDefault();
+    $('html, body').animate({scrollTop: 0}, duration);
+    return false;
+  })
+});
+
 //Preloader
 $(function(){
   $(window).on("load",function(){
@@ -870,7 +905,6 @@ $(function() {
 
 /*============================ Shop Details Page ============================*/
 //Item Active Class
-$(function() {
   //Product Colors
   $('.prod-colors-select').on('click','.color-choice',function(){
     $(this).addClass('active').siblings().removeClass('active');
@@ -883,7 +917,11 @@ $(function() {
   $('.prod-colors-select-v2').on('click','.color-choice-v2',function(){
     $(this).addClass('active').siblings().removeClass('active');
   });
-});
+  //Product Colors V2
+  $('.size-select').on('click','.size-item',function(){
+    $(this).addClass('active').siblings().removeClass('active');
+  });
+
 
 //Give Review Form Toggle
 $(function() {
@@ -985,6 +1023,17 @@ $(function() {
   });
 });
 
+//Image slider
+  var swiper = new Swiper(".shop-details-image-slider", {
+    slidesPerView: 4,
+    spaceBetween: 23,
+    loop: true,
+    navigation: {
+      nextEl: ".shop-dtls-img-sldr-btn-next",
+      prevEl: ".shop-dtls-img-sldr-btn-prev",
+    },
+  });
+
 //Color Compare Popup
 $(function() {
   // Open Popup
@@ -1025,19 +1074,6 @@ $(function() {
   // Toggle selected class on click
   $('.color-option img').on('click', function() {
     $(this).toggleClass('selected');
-  });
-});
-
-//Image slider
-$(function(){
-  var swiper = new Swiper(".shop-details-image-slider", {
-    slidesPerView: 4,
-    spaceBetween: 23,
-    loop: true,
-    navigation: {
-      nextEl: ".shop-dtls-img-sldr-btn-next",
-      prevEl: ".shop-dtls-img-sldr-btn-prev",
-    },
   });
 });
 
@@ -2885,7 +2921,6 @@ $(function(){
 });
 
 //Mobile Menu (Header - Style Five)
-$(function() {
   $('#h5_m-menu-btn').on('click',function() {
     $('.mobile-menu-style5').addClass('visible');
   })
@@ -2897,7 +2932,6 @@ $(function() {
   $(".h5_has-submenu").click(function() {
     $(this).next(".h5_is-submenu").toggleClass("show");
   });
-});
 
 //Off-canvas Menu Toggle
 $(function() {
@@ -3239,41 +3273,6 @@ $(function() {
       },
     },
   });
-});
-
-//Back to Top (Variant 2) - Progress
-$(function(){
-		var progressPath = document.querySelector('.back-top-progress path');
-		var pathLength = progressPath.getTotalLength();
-		progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
-		progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;
-		progressPath.style.strokeDashoffset = pathLength;
-		progressPath.getBoundingClientRect();
-		progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
-		var updateProgress = function () {
-			var scroll = $(window).scrollTop();
-			var height = $(document).height() - $(window).height();
-			var progress = pathLength - (scroll * pathLength / height);
-			progressPath.style.strokeDashoffset = progress;
-		}
-		updateProgress();
-		$(window).scroll(updateProgress);
-		var offset = 50;
-		var duration = 550;
-
-		$(window).on('scroll', function() {
-			if ($(this).scrollTop() > offset) {
-				$('.back-top-progress').addClass('active-progress');
-			} else {
-				jQuery('.back-top-progress').removeClass('active-progress');
-			}
-		});
-
-		$('.back-top-progress').on('click', function(event) {
-			event.preventDefault();
-			$('html, body').animate({scrollTop: 0}, duration);
-			return false;
-		})
 });
 
 
