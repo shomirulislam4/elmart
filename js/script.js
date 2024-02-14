@@ -2919,7 +2919,7 @@ $(function(){
   $(window).on("load",function(){
     $('.preloader-v3').delay(1200).fadeOut(500);
   });
-  $('.pre-close-btn').on('click', function(){
+  $('.pv3-close').on('click', function(){
     $('.preloader-v3').fadeOut(500);
   })
 });
