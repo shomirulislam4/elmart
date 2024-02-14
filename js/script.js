@@ -209,7 +209,7 @@ $(function() {
     },
   });
 
-  var swiper = new Swiper(".testimonial-slider", {
+  var swiper1 = new Swiper(".testimonial-slider", {
     spaceBetween: 24,
     pagination: {
       el: ".swiper-pagination",
@@ -763,7 +763,7 @@ $(function(){
   });
 
   //Testimonial Slider
-  var swiper = new Swiper(".testimonial-slider-v2", {
+  var swiper2 = new Swiper(".testimonial-slider-v2", {
     loop: true,
     pagination: {
       el: ".swiper-pagination",
@@ -905,6 +905,7 @@ $(function() {
 
 /*============================ Shop Details Page ============================*/
 //Item Active Class
+$(function() {
   //Product Colors
   $('.prod-colors-select').on('click','.color-choice',function(){
     $(this).addClass('active').siblings().removeClass('active');
@@ -921,6 +922,7 @@ $(function() {
   $('.size-select').on('click','.size-item',function(){
     $(this).addClass('active').siblings().removeClass('active');
   });
+});
 
 
 //Give Review Form Toggle
@@ -959,7 +961,7 @@ $(function() {
 
 //Shop Banner Slider (Right Sidebar)
 $(function() {
-  var swiper = new Swiper(".shop-bnr-sldr-swiper", {
+  var swiper3 = new Swiper(".shop-bnr-sldr-swiper", {
     pagination: {
       el: ".shop-bnr-sldr-pagination",
     },
@@ -1024,7 +1026,8 @@ $(function() {
 });
 
 //Image slider
-  var swiper = new Swiper(".shop-details-image-slider", {
+$(function() {
+  var swiper4 = new Swiper(".shop-details-image-slider", {
     slidesPerView: 4,
     spaceBetween: 23,
     loop: true,
@@ -1033,6 +1036,7 @@ $(function() {
       prevEl: ".shop-dtls-img-sldr-btn-prev",
     },
   });
+});
 
 //Color Compare Popup
 $(function() {
@@ -1079,7 +1083,7 @@ $(function() {
 
 //Product Details Section (Variant 4)
 $(function(){
-  var swiper = new Swiper(".top-slider", {
+  var swiper5 = new Swiper(".top-slider", {
     loop: true,
     navigation: {
       nextEl: ".sp-ts-next",
@@ -1092,7 +1096,7 @@ $(function(){
 //Image Slider / Trending Section (Home 4)
 $(function(){
   //Slider
-  var swiper = new Swiper(".trending-slider", {
+  var swiper6 = new Swiper(".trending-slider", {
     loop: true,
     navigation: {
       nextEl: ".ts-btn-next",
@@ -2117,7 +2121,7 @@ if ($('.seller-dashboard-page').length) {
 /*============================ Vendor List Page ============================*/
 //Vendor Card Inside Slider
 $(function() {
-  var swiper = new Swiper(".vendor-list-slider", {
+  var swiper7 = new Swiper(".vendor-list-slider", {
     navigation: {
       nextEl: ".vendor-list-slider-next",
       prevEl: ".vendor-list-slider-prev",
@@ -2163,7 +2167,7 @@ $(function() {
 /*============================ Home Style Three ============================*/
 //Hero Section SLider
 $(function(){
-  var swiper = new Swiper(".hero-sec-slider", {
+  var swiper8 = new Swiper(".hero-sec-slider", {
     loop: true,
     navigation: {
       nextEl: ".hero-sec-slider-next",
@@ -2386,7 +2390,7 @@ $(function() {
 //Hero Section Slider
 $(function() {
   //Main Slider
-  var swiper = new Swiper(".hero-main-slider", {
+  var swiper9 = new Swiper(".hero-main-slider", {
     slidesPerView: 1,
     loop: true,
     pagination: {
@@ -2399,7 +2403,7 @@ $(function() {
     },
   });
   //Bottom Slider
-  var swiper = new Swiper(".hero-in-bottom", {
+  var swiper10 = new Swiper(".hero-in-bottom", {
     slidesPerView: 3,
     loop: true,
     breakpoints: {
@@ -2436,7 +2440,7 @@ $(function() {
 
 //Category Section Slider
 $(function() {
-  var swiper = new Swiper(".cat-sldr-h4", {
+  var swiper11 = new Swiper(".cat-sldr-h4", {
     slidesPerView: 6,
     spaceBetween: 10,
     pagination: {
@@ -2921,17 +2925,19 @@ $(function(){
 });
 
 //Mobile Menu (Header - Style Five)
+$(function(){
   $('#h5_m-menu-btn').on('click',function() {
     $('.mobile-menu-style5').addClass('visible');
-  })
+  });
   $('.h5m-close-btn').on('click',function() {
     $('.mobile-menu-style5').removeClass('visible');
-  })
+  });
   
   //Mobile Menu - Sub Menu (Header - Style Five)
   $(".h5_has-submenu").click(function() {
     $(this).next(".h5_is-submenu").toggleClass("show");
   });
+});
 
 //Off-canvas Menu Toggle
 $(function() {
@@ -2957,7 +2963,7 @@ $(function() {
 $(function() {
   const progressCircle = document.querySelector(".autoplay-progress svg");
   const progressContent = document.querySelector(".autoplay-progress span");
-  var swiper = new Swiper(".h5_hero-right-slider", {
+  var swiper12 = new Swiper(".h5_hero-right-slider", {
     loop: true,
     spaceBetween: 30,
     centeredSlides: true,
@@ -3134,7 +3140,7 @@ $(function() {
 
 //Category Section
 $(function() {
-  var swiper = new Swiper(".h5_cat-wrapper", {
+  var swiper13 = new Swiper(".h5_cat-wrapper", {
     pagination: {
       el: ".h5_cat-pagination",
       clickable: true,
@@ -3235,7 +3241,7 @@ $(function() {
 
 //Featured Product (Variant 5)
 $(function() {
-  var swiper = new Swiper(".h5_featured-slider", {
+  var swiper14 = new Swiper(".h5_featured-slider", {
     loop: true,
     spaceBetween: 10,
     navigation: {
@@ -3255,7 +3261,7 @@ $(function() {
 
 //Our Brands Section
 $(function() {
-  var swiper = new Swiper(".our-brands-slider", {
+  var swiper15 = new Swiper(".our-brands-slider", {
     loop: true,
     spaceBetween: 30,
     breakpoints: {
