@@ -70,6 +70,12 @@
     3. Category Section (Variant 5)
     4. Popular Product (Variant 4)
         i. Product Style (Variant 4)
+    5. Promo Section (Home 5)
+    6. Product on Sale
+    7. Featured Product (Variant 5)
+    8. Our Brands Section
+    9. Back to Top (Variant 2) - Progress
+    10. Footer Section (Variant 2)
 25. Shop Product Style (Variant 4)
 26. Shop Product Style (Variant 5)
 27. Shop Details Page (Style 4)
@@ -16230,6 +16236,11 @@ button:focus {
     width: fit-content;
     text-transform: capitalize;
     text-align: center;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
 }
 
 .h5-button:hover {
@@ -16249,6 +16260,11 @@ button:focus {
     width: fit-content;
     text-transform: capitalize;
     text-align: center;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
 }
 
 .h5-button-2:hover {
@@ -16269,6 +16285,11 @@ button:focus {
     width: fit-content;
     text-transform: capitalize;
     text-align: center;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
 }
 
 .h5-button-3:hover {
@@ -18618,6 +18639,178 @@ button:focus {
     -o-transition: 0.3s;
 }
 /** End of Back to Top (Variant 2) - Progress **/
+
+/** Start of Footer Section (Variant 2) **/
+.footer-section-v2 {
+    margin-top: 80px;
+    background: #13172B;
+}
+
+.footer-top-v2 {
+    padding: 65px 0;
+    border-bottom: 1px solid #FFF;
+}
+
+.logo-footer {
+    margin-bottom: 23px;
+    width: 200px;
+}
+
+.logo-footer img {
+    width: 100%;
+    height: auto;
+}
+
+.footer-widget-v2 {
+    padding: 10px
+}
+ 
+.footer-widget-v2 h2 {
+    color: #FFF;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 26px;
+    text-transform: capitalize;
+    margin-bottom: 23px;
+}
+
+.footer-widget-v2 h3 {
+    color: #FFF;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+ 
+.footer-widget-v2 p {
+    color: #FFF;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.footer-widget-v2 .email,
+.footer-widget-v2 .phone {
+    color: #FFF;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-widget-v2 .email a,
+.footer-widget-v2 .phone a {
+    color: #FFF;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: lowercase;
+}
+
+.footer-widget-v2 .email a:hover,
+.footer-widget-v2 .phone a:hover {
+    color: #FF5400;
+}
+ 
+.footer-link-v2 li a {
+    color: #FFF;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+    line-height: 36px;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding: 2px 5px;
+}
+ 
+.footer-link-v2 li a:hover {
+    color: #FF5400;
+}
+
+.ftr-newsletter form {
+    background: #FFF;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 7px 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.ftr-newsletter form i {
+    color: #13172B;
+}
+
+.ftr-newsletter form input {
+    width: 100%;
+    height: auto;
+    margin-left: 10px;
+    color: #13172B;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.ftr-newsletter form input::placeholder {
+    color: #13172B;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Fira Sans', sans-serif;
+    text-transform: capitalize;
+}
+
+/*Footer Bottom*/
+.footer-bottom-v2 {
+    padding: 40px 10px;
+}
+
+.f2-social-links {
+    margin-bottom: 10px;
+}
+
+.f2-social-links li {
+    display: inline-block;
+    margin: 0 2px;
+}
+
+.f2-social-links li a {
+    color: #13172B;
+    display: block;
+	width: 32px;
+	height: 32px;
+	line-height: 34px;
+	text-align: center;
+	border-radius: 32px;
+	background: #FFF;
+}
+
+.f2-social-links li a:hover {
+    color: #FF5400;
+}
+ 
+.copyright-text span {
+    color: #FFF;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+    line-height: 2.33em;
+    text-align: center;
+}
+
+.copyright-text span a {
+    color: #FF5400;
+}
+
+.copyright-text span a:hover {
+    color: #FFAC4A;
+}
+
+/** End of Footer Section (Variant 2) **/
 
 /* ====================================================================
 25. Shop Product Style (Variant 4)
