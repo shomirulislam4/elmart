@@ -52,6 +52,23 @@ $(function(){
   })
 });
 
+$(function() {
+  function updateViewBox() {
+      var viewBoxValue;
+      if ($(window).width() < 289) {
+          viewBoxValue = "-1 -1 150 150";
+      } else {
+          viewBoxValue = "-1 -1 102 102";
+      }
+      $('.progression').attr('viewBox', viewBoxValue);
+  }
+
+  $(window).on('load resize', function() {
+      updateViewBox();
+  });
+});
+
+
 //Preloader
 $(function(){
   $(window).on("load",function(){
