@@ -103,6 +103,16 @@ $(function(){
   }
 });
 
+//Bootstrap "Accordion" Mobile Device Fix
+$(document).ready(function(){
+  // Override Bootstrap accordion toggle behavior for mobile devices
+  $('.accordion-toggle').on('click', function(event){
+    event.preventDefault(); // Prevent the default action
+    var target = $(this).attr('href'); // Get the target element
+    $(target).collapse('toggle'); // Toggle the collapse of the target element
+  });
+});
+
 /*============================ Home Style Two ============================*/
 //Mobile Menu
 $(function() {
