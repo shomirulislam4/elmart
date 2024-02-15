@@ -2907,10 +2907,28 @@ $(function() {
   });
 });
 
-/*============================ Home Style Five ============================*/
-//Shop Product Style (Variant 5)
+/*============================ Shop Product Style (Variant 5) ============================*/
+//Filter Sidebar
 $(".spsv5-sidebar-toggle").on('click',function(){
   $(".shop-s5-filter-sidebar").toggleClass("open");
+});
+
+//Grid Column Change
+$(function(){
+  $('.changeGrid').click(function(){
+
+    $('.changeGrid').removeClass('active');
+    $(this).addClass('active');
+
+    var columns = $(this).data('columns');
+    $('.spsv5-grid-wrapper').css('grid-template-columns', `repeat(${columns}, minmax(344px, 1fr))`);
+
+    if (columns === 1) {
+      $('.spsv5-grid-item').addClass('turn-to-list');
+    } else {
+      $('.spsv5-grid-item').removeClass('turn-to-list');
+    }
+  });
 });
 
 /*============================ Home Style Five ============================*/

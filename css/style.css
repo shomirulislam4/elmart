@@ -19260,6 +19260,23 @@ button:focus {
     width: 100%;
 }
 
+.spsv5_grid-tgl-btn {
+    display: flex;
+    gap: 10px;
+}
+
+.spsv5_grid-tgl-btn button {
+    color: #13172B;
+    display: block;
+    font: 20px;
+    background: #FFF;
+}
+
+.spsv5_grid-tgl-btn button.active,
+.spsv5_grid-tgl-btn button:hover {
+    color: #FF5400;
+}
+
 .spsv5-grid-wrapper {
 	display: grid;
 	padding: 10px;
