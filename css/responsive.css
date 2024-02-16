@@ -52,7 +52,8 @@
     .h5_featured-product,
     .our-brands-section,
     .shop-product-list-area,
-    .single-prod-img-gallery {
+    .single-prod-img-gallery,
+    .review-section-v2 {
         margin-top: 20px;
     }
     /*** Back to Top ***/
@@ -5463,7 +5464,8 @@
     .h5_featured-product,
     .our-brands-section,
     .shop-product-list-area,
-    .single-prod-img-gallery {
+    .single-prod-img-gallery,
+    .review-section-v2 {
         margin-top: 40px;
     }
     /*** Back to Top ***/
@@ -10030,7 +10032,8 @@
     .h5_featured-product,
     .our-brands-section,
     .shop-product-list-area,
-    .single-prod-img-gallery {
+    .single-prod-img-gallery,
+    .review-section-v2 {
         margin-top: 40px;
     }
     /*** Back to Top ***/
@@ -13802,7 +13805,8 @@
     .h5_featured-product,
     .our-brands-section,
     .shop-product-list-area,
-    .single-prod-img-gallery {
+    .single-prod-img-gallery,
+    .review-section-v2 {
         margin-top: 45px;
     }
     /*** Back to Top ***/
@@ -16828,7 +16832,8 @@
     .h5_featured-product,
     .our-brands-section,
     .shop-product-list-area,
-    .single-prod-img-gallery {
+    .single-prod-img-gallery,
+    .review-section-v2 {
         margin-top: 50px;
     }
     /*** Back to Top ***/
@@ -19481,6 +19486,64 @@
         font-size: 14px;
         margin-left: 18px;
     }
+    /*Review Section (Variant 2)*/
+    .review-section-v2 .title-row p {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 10px;
+    }
+    .review-section-v2 .title-row .rating-star {
+        line-height: 21px;
+    }
+    .review-section-v2 .review-sticky-sidebar .all-rating {
+        gap: 5px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .review-section-v2 .review-sticky-sidebar .rating-star {
+        line-height: 18px;
+        font-size: 12px;
+    }
+    .review-section-v2 .review-sticky-sidebar button {
+        margin-top: 10px;
+    }
+    .submitted-reviews .full-rev-wrapper {
+        margin-bottom: 20px;
+    }
+    .submitted-reviews p {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .submitted-reviews .rating-star {
+        line-height: 18px;
+        font-size: 11px;
+    }
+    .submitted-reviews .title-meta {
+        margin-bottom: 0;
+    }
+    .submitted-reviews .title-meta p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .submitted-reviews .rev-text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .submitted-reviews .user-feedback {
+        gap: 8px;
+        margin-top: 10px;
+    }
+    .submitted-reviews .user-feedback p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .submitted-reviews .user-feedback .y-n {
+        gap: 8px;
+    }
+    .submitted-reviews .user-feedback .y-n p {
+        font-size: 12px;
+        line-height: 18px;
+    }
 }
 
 /* Large devices (desktops, 992px and up/ col-lg)*/
@@ -19540,7 +19603,8 @@
     .h5_featured-product,
     .our-brands-section,
     .shop-product-list-area,
-    .single-prod-img-gallery {
+    .single-prod-img-gallery,
+    .review-section-v2 {
         margin-top: 60px;
     }
     /*** Back to Top ***/
@@ -21826,6 +21890,32 @@
     .product-desc-area .accordion-button:not(.collapsed) {
         font-size: 18px;
         padding: 10px;
+    }
+    /*Review Section (Variant 2)*/
+    .review-section-v2 .review-sticky-sidebar .all-rating {
+        gap: 8px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .review-section-v2 .review-sticky-sidebar .rating-star {
+        line-height: 20px;
+        font-size: 14px;
+    }
+    .submitted-reviews .title-meta p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .submitted-reviews .rev-text {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .submitted-reviews .user-feedback p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .submitted-reviews .user-feedback .y-n p {
+        font-size: 12px;
+        line-height: 18px;
     }
 }
 

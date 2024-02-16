@@ -79,6 +79,7 @@
 25. Shop Product Style (Variant 4)
 26. Shop Product Style (Variant 5)
 27. Shop Details Page (Style 4)
+    1. Review Section (Variant 2)
 **********************************************/
 
 /* ====================================================================
@@ -19665,6 +19666,276 @@ button:focus {
     list-style: disc;
     margin-left: 20px;
 }
+
+/** Start of Review Section (Variant 2) **/
+.review-section-v2 {
+    margin-top: 80px;
+}
+
+.review-section-v2 .title-row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #191C1F;
+}
+
+.review-section-v2 .title-row .rating-star {
+    line-height: 27px;
+    color: #13172B;
+}
+
+.review-section-v2 .title-row p {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.review-section-v2 .title-row .all-rating {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.review-section-v2 .review-sticky-sidebar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding-top: 30px;
+}
+
+.review-section-v2 .review-sticky-sidebar .all-rating {
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.review-section-v2 .review-sticky-sidebar .rating-star {
+    line-height: 24px;
+    font-size: 16px;
+    color: #13172B;
+}
+
+.review-section-v2 .review-sticky-sidebar button {
+    margin-top: 20px;
+}
+
+/* Review Form v2 */
+.main-review-area {
+    margin-top: 30px;
+}
+
+.review-form-v2 {
+    height: 0;
+    margin-bottom: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.review-form-v2.show {
+    height: 780px;
+    margin-bottom: 30px;
+}
+
+.review-form-v2 .rating-area {
+    margin-bottom: 20px;
+}
+
+.review-form-v2 .rating-wrap {
+    display: flex;
+    gap: 10px;
+}
+
+.review-form-v2 .jq-ry-container {
+	padding: 0;
+}
+
+.review-form-v2 label {
+    color: #13172B;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+    font-family: 'Fira Sans', sans-serif;
+    margin-bottom: 15px;
+}
+
+.review-form-v2 #name-email {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.review-form-v2 input {
+    color: #13172B;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #13172B;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 18px;
+    line-height: 50px;
+    font-weight: 400;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.review-form-v2 input ::placeholder {
+    font-size: 18px;
+    line-height: 50px;
+    font-weight: 400;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.review-form-v2 #name-email input {
+    color: #13172B;
+    width: 49.5%;
+}
+
+.review-form-v2 textarea {
+    color: #13172B;
+    width: 100%;
+    height: 208px;
+    border: 1px solid #13172B;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    resize: none;
+    margin-top: 15px;
+}
+
+.review-form-v2 .h5-button-3 {
+    margin-top: 15px;
+    width: 30%;
+    text-transform: uppercase;
+}
+
+.review-form-v2 p {
+    color: #13172B;
+    margin-top: 15px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.review-form-v2 p a {
+    color: #FF5400;
+}
+
+.review-form-v2 p a:hover {
+    color: #FFAC4A;
+}
+
+/* Submitted Review */
+.submitted-reviews {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.submitted-reviews .full-rev-wrapper {
+    margin-bottom: 30px;
+}
+
+.submitted-reviews p {
+    color: #13172B;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+    font-family: 'Fira Sans', sans-serif;
+    margin-bottom: 10px;
+}
+
+.submitted-reviews .rating-star {
+    color: #13172B;
+    line-height: 20px;
+}
+
+.submitted-reviews .title-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.submitted-reviews .title-meta p {
+    color: #13172B;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: 'Fira Sans', sans-serif;
+    width: 70%;
+}
+
+.submitted-reviews .title-meta .date {
+    color: #5A5858;
+    font-weight: 300;
+    width: 30%;
+    text-align: right;
+}
+
+.submitted-reviews .rev-text {
+    color: #13172B;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.submitted-reviews .user-feedback {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.submitted-reviews .user-feedback p {
+    color: #13172B;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.submitted-reviews .user-feedback .y-n {
+    display: flex;
+    gap: 10px;
+}
+
+.submitted-reviews .user-feedback .y-n p {
+    font-size: 14px;
+    line-height: 22px;
+    border-radius: 5px;
+    padding: 0 10px;
+    border: 1px solid #5A5858;
+    cursor: pointer;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.submitted-reviews .user-feedback .y-n p:hover {
+    background: #EEE;
+}
+
+.submitted-reviews .show-more-btn {
+    margin: 0 auto;
+}
+
+.submitted-reviews .show-more-btn i {
+    margin-left: 10px;
+}
+/** End of Review Section (Variant 2) **/
 
 /*
 color---

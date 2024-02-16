@@ -924,7 +924,6 @@ $(function() {
   });
 });
 
-
 //Give Review Form Toggle
 $(function() {
   $('#review').on('click',function() {
@@ -2930,6 +2929,25 @@ $(function(){
     }
   });
 });
+
+/*============================ Shop Details Page (Style 4) ============================*/
+//Review Form v2
+$(function () {
+  $(".rating-star-select").rateYo({
+    rating: 0,
+    fullStar: true,
+    starWidth: "18px",
+    ratedFill: "#13172B"
+  });
+});
+
+//Review Form v2 Toggle
+$(function () {
+  $('#review-form-v2-toggle').on('click',function() {
+    $('.review-form-v2').toggleClass('show');
+  });
+});
+
 
 /*============================ Home Style Five ============================*/
 //Preloader v2
