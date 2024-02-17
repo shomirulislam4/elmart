@@ -2916,11 +2916,8 @@ $(".spsv5-sidebar-toggle").on('click',function(){
 $(function(){
   $('.changeGrid').click(function(){
 
-    $('.changeGrid').removeClass('active');
-    $(this).addClass('active');
-
     var columns = $(this).data('columns');
-    $('.spsv5-grid-wrapper').css('grid-template-columns', `repeat(${columns}, minmax(344px, 1fr))`);
+    $('.spsv5-grid-wrapper').css('grid-template-columns', `repeat(${columns}, minmax(auto, 1fr))`);
 
     if (columns === 1) {
       $('.spsv5-grid-item').addClass('turn-to-list');

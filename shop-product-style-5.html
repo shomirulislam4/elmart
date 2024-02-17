@@ -21,6 +21,30 @@
     <link rel="stylesheet" href="css/nice-select.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+
+    <style>
+        @media (max-width: 1750px){
+            .spsv5_grid-tgl-btn :nth-child(5) {
+                display: none;
+            }
+        }
+        @media (max-width: 991px){
+            .spsv5_grid-tgl-btn :nth-child(4) {
+                display: none;
+            }
+            .spsv5_grid-tgl-btn :nth-child(3) {
+                display: none;
+            }
+        }
+        @media (max-width: 575px){
+            .spsv5_grid-tgl-btn :nth-child(2) {
+                display: none;
+            }
+            .spsv5_grid-tgl-btn :nth-child(1) {
+                display: none;
+            }
+        }
+    </style>
 </head>
 <body class="spsv5">
     <!---- Start of Header Section (Header - Style Five) ---->
@@ -559,7 +583,7 @@
                     <button class="changeGrid" data-columns="2"><i class="fa-solid fa-border-all"></i></button>
                     <button class="changeGrid" data-columns="3"><i class="fa-solid fa-grip"></i></button>
                     <button class="changeGrid" data-columns="4"><i class="fa-solid fa-table-cells"></i></button>
-                    <button class="changeGrid active" data-columns="5"><i class="fa-solid fa-border-none"></i></button>
+                    <button class="changeGrid" data-columns="auto-fit"><i class="fa-solid fa-border-none"></i></button>
                 </div>
                 <div class="sorting-select-result">
                     <div class="sorting-select">
