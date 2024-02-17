@@ -2908,8 +2908,14 @@ $(function() {
 
 /*============================ Shop Product Style (Variant 5) ============================*/
 //Filter Sidebar
-$(".spsv5-sidebar-toggle").on('click',function(){
-  $(".shop-s5-filter-sidebar").toggleClass("open");
+$(function(){
+  $(".spsv5-sidebar-toggle").on('click',function(){
+    $(".shop-s5-filter-sidebar").toggleClass("open");
+  });
+
+  $(".ss5fs-cls-btn").on('click',function(){
+    $('.shop-s5-filter-sidebar').removeClass('open');
+  });
 });
 
 //Grid Column Change
