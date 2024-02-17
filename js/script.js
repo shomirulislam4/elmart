@@ -2929,9 +2929,16 @@ $(function(){
       $('.spsv5-grid-item').addClass('turn-to-list');
     } else {
       $('.spsv5-grid-item').removeClass('turn-to-list');
-    }
+    };
+    
+    if (columns === 2) {
+      $('.spsv5-grid-item').addClass('grid-2cols');
+    } else {
+      $('.spsv5-grid-item').removeClass('grid-2cols');
+    };
   });
 });
+
 
 /*============================ Shop Details Page (Style 4) ============================*/
 //Review Form v2
