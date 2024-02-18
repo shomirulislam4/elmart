@@ -3327,5 +3327,16 @@ $(function() {
   });
 });
 
+/*============================ Home Style Six ============================*/
+//Header Promo Banner
+$(function() {
+  $('.show-hdr-ofr-btn').on('click', function(){
+    $('.h6_promo-banner').toggleClass('show');
+    $(this).toggleClass('active');
+  });
+  $('.h6pb-close-btn').on('click', function(){
+    $('.h6_promo-banner').removeClass('show');
+  });
+});
 
 }) (jQuery);
