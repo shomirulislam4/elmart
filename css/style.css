@@ -20490,11 +20490,15 @@ button:focus {
 }
 
 /* Header Bottom */
+.h6_header-bottom {
+    position: relative;
+}
+
 .h6_header-bottom .main-nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 20px 0;
+	padding: 20px 0; 
 }
 
 .right-menu-btns {
@@ -20530,7 +20534,7 @@ button:focus {
 	right: -8px;
 }
 
-/* Main Menu */
+/** Main Menu **/
 .h6_main-menu ul li {
     display: inline-block;
     margin: 0 10px;
@@ -20542,6 +20546,169 @@ button:focus {
     font-weight: 400;
     font-family: 'Figtree', sans-serif;
     text-transform: capitalize;
+}
+
+/* Mega Menu */
+.h6_mega-menu {
+    position: absolute;
+    background: #FFF;
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+    left: 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.h6_mega-menu .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.h6_main-menu ul li:hover .h6_mega-menu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.h6_mega-menu ul li {
+    display: block;
+}
+
+.h6_mega-menu ul li a {
+    display: block;
+    padding: 5px 10px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    font-family: 'Figtree', sans-serif;
+}
+
+.h6_main-menu ul li a i {
+	font-size: 12px;
+}
+
+.h6_mega-menu ul h4 {
+    display: block;
+    padding: 5px 10px;
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 600;
+    font-family: 'Arsenal', sans-serif;
+    text-transform: capitalize;
+}
+
+.h6_mega-menu .h6_megamenu-promo {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.h6_mega-menu .h6_megamenu-promo .text h4 {
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 600;
+    font-family: 'Arsenal', sans-serif;
+    text-transform: capitalize;
+}
+
+.h6_mega-menu .h6_megamenu-promo .text p {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    font-family: 'Figtree', sans-serif;
+}
+
+.h6_mega-menu .h6_megamenu-promo .image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Tiny Menu */
+.has-tiny-menu {
+    position: relative;
+}
+
+.h6_tiny-menu {
+	position: absolute;
+	display: block;
+	background-color: #FFF;
+	border-radius: 5px;
+	left: 0;
+	top: 100%;
+    visibility: hidden;
+    opacity: 0;
+	transition: 0.3s;
+	-moz-transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+	z-index: 99999;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.h6_main-menu ul li:hover .h6_tiny-menu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.h6_tiny-menu li {
+    display: block !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.h6_tiny-menu li a {
+	display: block;
+	width: 230px;
+	padding: 10px;
+	margin: 0;
+    font-size: 18px !important;
+    line-height: 24px !important;
+    font-weight: 400 !important;
+    font-family: 'Figtree', sans-serif;
+    text-transform: capitalize;
+	text-align: center;
+}
+
+.h6_tiny-menu a:hover {
+    background: var(--main-color4);
+    color: #FFF;
+    border-radius: 5px;
+}
+
+.h6_tiny-menu li:hover .h6_tiny-menu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.h6_tiny-menu > li .h6_tiny-menu {
+	left: 100%;
+	top: 0;
+    margin: 0;
+    width: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    overflow: hidden;
+}
+
+.h6_tiny-menu > li:hover .h6_tiny-menu {
+    width: 100%;
+    visibility: visible;
+    opacity: 1;
 }
 
 /* Mobile Menu (Home 5) */
