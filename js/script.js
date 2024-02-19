@@ -3336,6 +3336,7 @@ $(function() {
   });
   $('.h6pb-close-btn').on('click', function(){
     $('.h6_promo-banner').removeClass('show');
+    $('.show-hdr-ofr-btn').removeClass('active');
   });
 });
 

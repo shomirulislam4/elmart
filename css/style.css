@@ -20228,7 +20228,50 @@ button:focus {
     outline: 0;
 }
 
+/* Cart */
+.homepage_six .cart-slide {
+	background: #FFF;
+	border-radius: 0;
+}
+
+.homepage_six .cart-slide .cart-header .cart-title {
+	font-size: 28px;
+	font-weight: 600;
+}
+
+.homepage_six .button-b {
+	background: var(--main-color4);
+	border: 1px solid var(--main-color4);
+	color: #FFF !important;
+	font-family: 'Figtree', sans-serif;
+}
+
+.homepage_six .button-b:hover {
+    color: var(--main-color4) !important;
+    background: #FFF;
+}
+
+.homepage_six .button-a {
+	border: 1px solid var(--main-color4);
+	color: var(--main-color4);
+	font-family: 'Figtree', sans-serif;
+}
+
+.homepage_six .button-a:hover {
+    color: #FFF !important;
+    background: var(--main-color4);
+}
+
+.homepage_six .cart-slide .cart-item .item-img .close-btn:hover,
+.homepage_six .cart-slide .cart-header .cart-close:hover {
+    color: var(--secondary-color4);
+}
+
 /** Start of Header Style Six **/
+.header_six {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05);
+}
+
 /* Header Top */
 .h6_header-top {
     background: var(--main-color4);
@@ -20312,7 +20355,7 @@ button:focus {
 .geo-lang ul li {
     display: inline-block;
     position: relative;
-    margin: 0 10px;
+    margin-right: 20px;
     color: #FFF;
     font-size: 18px;
     font-weight: 400;
@@ -20363,7 +20406,7 @@ button:focus {
     width: 150px;
     padding: 12px 0;
     margin: 0;
-    color: #000;
+    color: var(--main-color4);
     font-size: 14px;
     font-family: 'Figtree', sans-serif;
     text-align: center;
@@ -20441,21 +20484,42 @@ button:focus {
 }
 
 /* Header Bottom */
-.h6_header-bottom {
-    text-align: end;
+.h6_header-bottom .main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
 
-.h6_header-bottom li {
+.h6_header-bottom .logo {
+    width: 200px;
+    height: auto;
+}
+
+.h6_header-bottom .logo img {
+    width: 100%;
+    height: auto;
+}
+
+.right-menu-btns {
+    text-align: right;
+}
+
+.right-menu-btns li {
     display: inline-block;
-    margin: 0 13px;
+    margin: 0 7px;
 }
 
-.h6_header-bottom li a {
+.right-menu-btns li:last-child {
+    margin-right: 0;
+}
+
+.right-menu-btns li a {
     font-size: 20px;
     position: relative;
 }
 
-.h6_header-bottom .notify-count {
+.right-menu-btns .notify-count {
 	position: absolute;
 	top: -3px;
     color: #FFF;
@@ -20469,6 +20533,21 @@ button:focus {
 	border-radius: 50%;
 	right: -8px;
 }
+
+/* Main Menu */
+.h6_main-menu ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.h6_main-menu ul li a {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: 'Figtree', sans-serif;
+    text-transform: capitalize;
+}
+
 /** End of Header Style Six **/
 
 /*
