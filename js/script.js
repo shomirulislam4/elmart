@@ -2970,7 +2970,7 @@ $(function(){
   })
 });
 
-//Mobile Menu (Header - Style Five)
+//Mobile Menu (Header Style Five)
 $(function(){
   $('#h5_m-menu-btn').on('click',function() {
     $('.mobile-menu-style5').addClass('visible');
@@ -2979,7 +2979,7 @@ $(function(){
     $('.mobile-menu-style5').removeClass('visible');
   });
   
-  //Mobile Menu - Sub Menu (Header - Style Five)
+  //Mobile Menu - Sub Menu (Header Style Five)
   $(".h5_has-submenu").click(function() {
     $(this).next(".h5_is-submenu").toggleClass("show");
   });
@@ -3337,6 +3337,24 @@ $(function() {
   $('.h6pb-close-btn').on('click', function(){
     $('.h6_promo-banner').removeClass('show');
     $('.show-hdr-ofr-btn').removeClass('active');
+  });
+});
+
+//Mobile Menu (Header Style Six)
+$(function(){
+  $('.h6_mobilemenu-btn').on('click',function() {
+    $('.mobile-menu-style6').addClass('visible');
+  });
+  $('.h6mm-close-btn').on('click',function() {
+    $('.mobile-menu-style6').removeClass('visible');
+  });
+  
+  //Mobile Sub Menu (Header Style Six)
+  $(".h6_has-submenu").click(function() {
+    $(this).next(".h6_is-submenu").toggleClass("show");
+  });
+  $(".mgl-mm").click(function() {
+    $(this).next(".m-geo-lang-submenu").toggleClass("show");
   });
 });
 

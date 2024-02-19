@@ -4758,16 +4758,16 @@
     .h5_mobile-menu,
     .oc-main-menu {
         width: 240px;
-        padding: 20px;
-        gap: 15px;
+        padding: 10px;
+        gap: 10px;
     }
     .mobile-menu-style5 .h5m-close-btn,
     .h5_off-canvas-menu .oc-close-btn {
-        height: 30px;
-        width: 30px;
-        font-size: 30px;
-        line-height: 30px;
-        margin: 10px;
+        height: 20px;
+        width: 20px;
+        font-size: 20px;
+        line-height: 20px;
+        margin: 5px;
     }
     .oc-main-menu .about-company p {
         font-size: 14px;
@@ -4776,6 +4776,12 @@
     .off-canvas-menu ul li a {
         padding: 8px 0;
         font-size: 16px;;
+    }
+    .h5_social-profiles li a {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+        line-height: 0 !important;
     }
     /*Hero Section*/
     .h5_hero-right-slider {
@@ -5286,6 +5292,10 @@
         margin: 0 auto;
         margin-bottom: 23px;
     }
+    .copyright-text span {
+        font-size: 14px;
+        line-height: 20px;
+    }
 /*===== Shop Product Style (Variant 5) =====*/
     .spsv5 .sorting-select .nice-select {
         height: 30px;
@@ -5480,6 +5490,115 @@
     }
     .submitted-reviews .customer-name {
         margin-bottom: 10px;
+    }
+/*===== Home Page Six =====*/
+    .h6-button {
+        font-size: 12px;
+        line-height: 18px;
+        padding: 7px 20px;
+    }
+    /*Header Style six*/
+    .header_six .logo {
+        max-width: 90px;
+    }
+    .h6_ht_items .wlcm-text p {
+        font-size: 14px;
+        line-height: 18px;
+        margin-right: 5px;
+    }
+    .h6_ht_items .wlcm-text .show-hdr-ofr-btn {
+        font-size: 14px;
+        padding: 0 5px;
+    }
+    .h6_mobilemenu-btn {
+        display: block;
+    }
+    .h6_ht_items {
+        justify-content: center;
+    }
+    .h6_ht_items .social-btns,
+    .h6_main-menu,
+    .geo-lang ul {
+        display: none;
+    }
+    .right-menu-btns li {
+        margin: 0 2px;
+    }
+    .right-menu-btns li a {
+        font-size: 12px;
+    }
+    .right-menu-btns .notify-count {
+        display: none;
+    }
+    .h6_promo-banner .h6pb-close-btn {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .h6_promo-banner.show {
+        height: 250px;
+    }
+    .h6_promo-banner .h6pb-close-btn {
+        font-size: 20px;
+        line-height: 20px;
+        top: 10px;
+        right: 10px;
+    }
+    .h6_promo-banner .content {
+        gap: 5px;
+    }
+    .h6_promo-banner h4 {
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 5px;
+    }
+    .h6_promo-banner h2 {
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 5px;
+    }
+    .h6_promo-banner p {
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 7px;
+    }
+    .h6_header-bottom .main-nav {
+        padding: 15px 5px;
+    }
+    .h6_mobile-menu {
+        padding: 10px;
+        gap: 5px;
+    }
+    .mobile-menu-style6 .h6mm-close-btn {
+        height: 20px;
+        width: 20px;
+        font-size: 20px;
+        line-height: 20px;
+        margin: 5px;
+    }
+    .m-geo-lang ul {
+        flex-direction: column;
+    }
+    .m-geo-lang ul li {
+        width: 100%;
+    }
+    .m-geo-lang .mgl-mm {
+        font-size: 16px;
+    }
+    .m-geo-lang .mgl-mm i {
+        font-size: 10px;
+    }
+    .h6_mobile-menu ul li a {
+        font-size: 16px;
+    }
+    .m-geo-lang .m-geo-lang-submenu li a {
+        padding: 5px 13px;
+        font-size: 16px;
+    }
+    .h6_social-profiles li a {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+        line-height: 0 !important;
     }
 }
 
@@ -9554,6 +9673,7 @@
         gap: 15px;
     }
     .mobile-menu-style5 .h5m-close-btn,
+    .mobile-menu-style6 .h6mm-close-btn,
     .h5_off-canvas-menu .oc-close-btn {
         height: 30px;
         width: 30px;
@@ -10118,6 +10238,77 @@
     }
     .submitted-reviews .customer-name {
         margin-bottom: 10px;
+    }
+/*===== Home Page Six =====*/
+    .h6-button {
+        font-size: 12px;
+        line-height: 18px;
+        padding: 7px 20px;
+    }
+    /*Header Style six*/
+    .h6_mobilemenu-btn {
+        display: block;
+    }
+    .h6_ht_items {
+        justify-content: center;
+    }
+    .h6_ht_items .social-btns,
+    .h6_main-menu,
+    .geo-lang ul {
+        display: none;
+    }
+    .right-menu-btns li {
+        display: inline-block;
+        margin: 0 5px;
+    }
+    .right-menu-btns li a {
+        font-size: 16px;
+    }
+    .right-menu-btns .notify-count {
+        display: none;
+    }
+    .h6_promo-banner .h6pb-close-btn {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .h6_promo-banner.show {
+        height: 250px;
+    }
+    .h6_promo-banner .content {
+        gap: 5px;
+    }
+    .h6_promo-banner h4 {
+        font-size: 22px;
+        line-height: 22px;
+    }
+    .h6_promo-banner h2 {
+        font-size: 40px;
+        line-height: 46px;
+    }
+    .h6_promo-banner p {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+    .h6_header-bottom .main-nav {
+        padding: 15px 5px;
+    }
+    .h6_mobile-menu {
+        padding: 20px;
+        gap: 15px;
+    }
+    .m-geo-lang .mgl-mm {
+        font-size: 16px;
+    }
+    .m-geo-lang .mgl-mm i {
+        font-size: 10px;
+    }
+    .h6_mobile-menu ul li a {
+        font-size: 16px;
+    }
+    .m-geo-lang .m-geo-lang-submenu li a {
+        padding: 5px 13px;
+        font-size: 16px;
     }
 }
 
@@ -13960,6 +14151,53 @@
     .submitted-reviews .customer-name {
         margin-bottom: 10px;
     }
+/*===== Home Page Six =====*/
+    .h6-button {
+        font-size: 12px;
+        line-height: 18px;
+        padding: 7px 20px;
+    }
+    /*Header Style six*/
+    .h6_mobilemenu-btn {
+        display: block;
+    }
+    .h6_ht_items {
+        justify-content: center;
+    }
+    .h6_ht_items .social-btns,
+    .h6_main-menu,
+    .geo-lang ul {
+        display: none;
+    }
+    .right-menu-btns li a {
+        font-size: 18px;
+    }
+    .h6_promo-banner .h6pb-close-btn {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .h6_promo-banner.show {
+        height: 250px;
+    }
+    .h6_promo-banner .content {
+        gap: 5px;
+    }
+    .h6_promo-banner h4 {
+        font-size: 22px;
+        line-height: 22px;
+    }
+    .h6_promo-banner h2 {
+        font-size: 40px;
+        line-height: 46px;
+    }
+    .h6_promo-banner p {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+    .h6_header-bottom .main-nav {
+        padding: 15px 5px;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up/ col-sm)*/
@@ -17076,6 +17314,49 @@
     .submitted-reviews .customer-name {
         margin-bottom: 20px;
     }
+/*===== Home Page Six =====*/
+    .h6-button {
+        font-size: 14px;
+        line-height: 18px;
+        padding: 8px 25px;
+    }
+    /*Header Style six*/
+    .h6_mobilemenu-btn {
+        display: block;
+    }
+    .h6_ht_items {
+        justify-content: center;
+    }
+    .h6_ht_items .social-btns,
+    .h6_main-menu,
+    .geo-lang ul {
+        display: none;
+    }
+    .h6_promo-banner .h6pb-close-btn {
+        font-size: 25px;
+        line-height: 25px;
+    }
+    .h6_promo-banner.show {
+        height: 300px;
+    }
+    .h6_promo-banner .content {
+        gap: 5px;
+    }
+    .h6_promo-banner h4 {
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .h6_promo-banner h2 {
+        font-size: 50px;
+        line-height: 55px;
+    }
+    .h6_promo-banner p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .h6_header-bottom .main-nav {
+        padding: 15px 0;
+    }
 }
 
 /* Medium devices (tablets, 768px and up/ col-md)*/
@@ -19888,6 +20169,52 @@
     .submitted-reviews .user-feedback .y-n p {
         font-size: 12px;
         line-height: 18px;
+    }
+/*===== Home Page Six =====*/
+    .h6-button {
+        font-size: 14px;
+        line-height: 18px;
+        padding: 8px 25px;
+    }
+    /*Header Style six*/
+    .h6_mobilemenu-btn {
+        display: block;
+    }
+    .h6_main-menu {
+        display: none;
+    }
+    .geo-lang ul li a {
+        font-size: 12px;
+    }
+    .geo-lang ul li i {
+        font-size: 8px;
+    }
+    .geo-lang .geo-lang-submenu {
+        left: unset;
+        right: 0;
+        transform: none;
+    }
+    .h6_promo-banner .h6pb-close-btn {
+        font-size: 25px;
+        line-height: 25px;
+    }
+    .h6_promo-banner.show {
+        height: 300px;
+    }
+    .h6_promo-banner .content {
+        gap: 5px;
+    }
+    .h6_promo-banner h4 {
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .h6_promo-banner h2 {
+        font-size: 50px;
+        line-height: 55px;
+    }
+    .h6_promo-banner p {
+        font-size: 16px;
+        line-height: 22px;
     }
 }
 

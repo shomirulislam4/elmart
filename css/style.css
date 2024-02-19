@@ -20491,20 +20491,10 @@ button:focus {
 
 /* Header Bottom */
 .h6_header-bottom .main-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
-.h6_header-bottom .logo {
-    width: 200px;
-    height: auto;
-}
-
-.h6_header-bottom .logo img {
-    width: 100%;
-    height: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0;
 }
 
 .right-menu-btns {
@@ -20552,6 +20542,200 @@ button:focus {
     font-weight: 400;
     font-family: 'Figtree', sans-serif;
     text-transform: capitalize;
+}
+
+/* Mobile Menu (Home 5) */
+.h6_mobilemenu-btn {
+    display: none;
+}
+
+.mobile-menu-style6 {
+    position: absolute;
+    width: 0;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    display: flex;
+    overflow: hidden;
+    transition: 1s;
+    -moz-transition: 1s;
+    -webkit-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.mobile-menu-style6.visible {
+    width: 100%;
+}
+
+.mobile-menu-style6 .h6mm-close-btn {
+    height: 40px;
+    width: 40px;
+    color: #FFF;
+    font-size: 40px;
+    line-height: 40px;
+    margin: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.mobile-menu-style6 .h6mm-close-btn:hover {
+    color: var(--secondary-color4);
+}
+
+.h6_mobile-menu {
+    width: 300px;
+    height: 100vh;
+    padding: 40px 30px;
+    background: #FFF;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.h6_mobile-menu .logo {
+    margin-bottom: 10px;
+}
+
+.h6_mobile-menu .logo img {
+    height: auto;
+    width: auto;
+}
+
+.h6_mobile-menu .menu-notification .notify {
+    position: absolute;
+    display: inline-flex;
+    padding: 6px 10px;
+    align-items: flex-start;
+    border-radius: 50px;
+    color: #FFF;
+    font-family: 'Figtree', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 8px;
+    text-transform: capitalize;
+}
+
+.h6_mobile-menu ul li a {
+    display: block;
+	padding: 10px 0;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+	text-transform: capitalize;
+    color: #13172B;
+}
+
+.h6_mobile-menu ul li a i {
+    font-size: 12px;
+}
+
+.h6_mobile-menu ul li a:hover {
+    color: var(--main-color4);
+}
+
+.h6_mobile-menu ul li .h6_is-submenu {
+    margin-left: 15px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.h6_mobile-menu ul li .h6_is-submenu.show {
+    max-height: 500px;
+}
+
+.m-geo-lang {
+    border-top: 1px solid #13172B;
+    padding-top: 15px;
+}
+
+.m-geo-lang ul {
+    display: flex;
+}
+
+.m-geo-lang ul li {
+    width: 49.5%;
+}
+
+.m-geo-lang .mgl-mm {
+    position: relative;
+    margin-right: 10px;
+    color: #13172B;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Figtree', sans-serif;
+    text-transform: capitalize;
+}
+
+.m-geo-lang .mgl-mm i {
+    font-size: 12px;
+}
+
+.m-geo-lang .m-geo-lang-submenu {
+    position: absolute;
+    background: #FFF;
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.m-geo-lang .m-geo-lang-submenu.show {
+    max-height: 500px;
+}
+
+.m-geo-lang .m-geo-lang-submenu li {
+    width: 100%;
+}
+
+.m-geo-lang .m-geo-lang-submenu li a {
+    display: block;
+	padding: 7px 15px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+	text-transform: capitalize;
+    color: #13172B;
+}
+
+.h6_social-profiles ul {
+    display: flex;
+    gap: 10px;
+}
+
+.h6_social-profiles li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #000;
+    color: #FFF !important;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.h6_social-profiles li a:hover {
+    background: var(--secondary-color4);
 }
 
 /** End of Header Style Six **/
