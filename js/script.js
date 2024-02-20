@@ -3358,4 +3358,22 @@ $(function(){
   });
 });
 
+//Mega Menu Slider
+$(function(){
+  var swiper = new Swiper(".mm-main-slider", {
+    loop: true,
+    slidesPerView: 2,
+    spaceBetween: 24,
+    navigation: {
+      nextEl: ".mm-sld-nav-next",
+      prevEl: ".mm-sld-nav-prev",
+    },
+    breakpoints: {
+      992: {
+        spaceBetween: 10,
+      }
+    }
+  });
+});
+
 }) (jQuery);
