@@ -3365,6 +3365,7 @@ $(function() {
     },
     pagination: {
       el: ".hrv6-sldr-dots",
+      clickable: true,
     },
   });
 });
@@ -3449,10 +3450,6 @@ $(function () {
   var button3_4 = $("#hsv6_item3_4-btn")[0];
   var popover3_4 = $("#hsv6_cont3_4")[0];
   setupPopper(button3_4, popover3_4);
-
 });
-
-
-
 
 }) (jQuery);
