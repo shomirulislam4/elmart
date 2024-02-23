@@ -3036,73 +3036,40 @@ $(function() {
 
 //Hero Slider Right popover
 $(function () {
+  function createAndSetupPopper(button, popover) {
+    var popperInstance = Popper.createPopper(button, popover, {
+      placement: "top",
+    });
+
+    button.addEventListener("mouseenter", function () {
+      popover.style.display = "block";
+      popperInstance.update();
+    });
+
+    button.addEventListener("mouseleave", function () {
+      popover.style.display = "none";
+    });
+  }
+
   //Slider 1 Item 1
-  const button1 = $("#slider1_item1-btn")[0];
-  const popover1 = $(".slider1_content1")[0];
-
-  const popperInstance = Popper.createPopper(button1, popover1, {
-    placement: "top",
-  });
-
-  button1.addEventListener("mouseenter", function () {
-    popover1.style.display = "block";
-    popperInstance.update();
-  });
-
-  button1.addEventListener("mouseleave", function () {
-    popover1.style.display = "none";
-  });
+  var button1 = $("#slider1_item1-btn")[0];
+  var popover1 = $(".slider1_content1")[0];
+  createAndSetupPopper(button1, popover1);
 
   //Slider 1 Item 2
-  const button2 = $("#slider1_item2-btn")[0];
-  const popover2 = $(".slider1_content2")[0];
-
-  const popperInstance2 = Popper.createPopper(button2, popover2, {
-    placement: "top",
-  });
-
-  button2.addEventListener("mouseenter", function () {
-    popover2.style.display = "block";
-    popperInstance2.update();
-  });
-
-  button2.addEventListener("mouseleave", function () {
-    popover2.style.display = "none";
-  });
+  var button2 = $("#slider1_item2-btn")[0];
+  var popover2 = $(".slider1_content2")[0];
+  createAndSetupPopper(button2, popover2);
 
   //Slider 2 Item 1
-  const button2_1 = $("#slider2_item1-btn")[0];
-  const popover2_1 = $(".slider2_content1")[0];
-
-  const popperInstance2_1 = Popper.createPopper(button2_1, popover2_1, {
-    placement: "top",
-  });
-
-  button2_1.addEventListener("mouseenter", function () {
-    popover2_1.style.display = "block";
-    popperInstance2_1.update();
-  });
-
-  button2_1.addEventListener("mouseleave", function () {
-    popover2_1.style.display = "none";
-  });
+  var button2_1 = $("#slider2_item1-btn")[0];
+  var popover2_1 = $(".slider2_content1")[0];
+  createAndSetupPopper(button2_1, popover2_1);
 
   //Slider 3 Item 1
-  const button3_1 = $("#slider3_item1-btn")[0];
-  const popover3_1 = $(".slider3_content1")[0];
-
-  const popperInstance3_1 = Popper.createPopper(button3_1, popover3_1, {
-    placement: "top",
-  });
-
-  button3_1.addEventListener("mouseenter", function () {
-    popover3_1.style.display = "block";
-    popperInstance3_1.update();
-  });
-
-  button3_1.addEventListener("mouseleave", function () {
-    popover3_1.style.display = "none";
-  });
+  var button3_1 = $("#slider3_item1-btn")[0];
+  var popover3_1 = $(".slider3_content1")[0];
+  createAndSetupPopper(button3_1, popover3_1);
 });
 
 //Hero Left Area Top
@@ -3400,6 +3367,89 @@ $(function() {
       el: ".hrv6-sldr-dots",
     },
   });
+});
+
+//Hero Slider Popover
+$(function () {
+  function createPopper(button, popover) {
+    return Popper.createPopper(button, popover, {
+      placement: "top",
+    });
+  }
+
+  function setupPopper(button, popover) {
+    var popperInstance = createPopper(button, popover);
+
+    button.addEventListener("mouseenter", function () {
+      popover.style.display = "block";
+      popperInstance.update();
+    });
+
+    button.addEventListener("mouseleave", function () {
+      popover.style.display = "none";
+    });
+  }
+
+  //Slider 1 button 1
+  var button1_1 = $("#hsv6_item1_1-btn")[0];
+  var popover1_1 = $("#hsv6_cont1_1")[0];
+  setupPopper(button1_1, popover1_1);
+
+  //Slider 1 button 2
+  var button1_2 = $("#hsv6_item1_2-btn")[0];
+  var popover1_2 = $("#hsv6_cont1_2")[0];
+  setupPopper(button1_2, popover1_2);
+
+  //Slider 1 button 3
+  var button1_3 = $("#hsv6_item1_3-btn")[0];
+  var popover1_3 = $("#hsv6_cont1_3")[0];
+  setupPopper(button1_3, popover1_3);
+
+  //Slider 1 button 4
+  var button1_4 = $("#hsv6_item1_4-btn")[0];
+  var popover1_4 = $("#hsv6_cont1_4")[0];
+  setupPopper(button1_4, popover1_4);
+
+  //Slider 2 button 1
+  var button2_1 = $("#hsv6_item2_1-btn")[0];
+  var popover2_1 = $("#hsv6_cont2_1")[0];
+  setupPopper(button2_1, popover2_1);
+
+  //Slider 2 button 2
+  var button2_2 = $("#hsv6_item2_2-btn")[0];
+  var popover2_2 = $("#hsv6_cont2_2")[0];
+  setupPopper(button2_2, popover2_2);
+
+  //Slider 2 button 3
+  var button2_3 = $("#hsv6_item2_3-btn")[0];
+  var popover2_3 = $("#hsv6_cont2_3")[0];
+  setupPopper(button2_3, popover2_3);
+
+  //Slider 2 button 4
+  var button2_4 = $("#hsv6_item2_4-btn")[0];
+  var popover2_4 = $("#hsv6_cont2_4")[0];
+  setupPopper(button2_4, popover2_4);
+
+  //Slider 3 button 1
+  var button3_1 = $("#hsv6_item3_1-btn")[0];
+  var popover3_1 = $("#hsv6_cont3_1")[0];
+  setupPopper(button3_1, popover3_1);
+
+  //Slider 3 button 2
+  var button3_2 = $("#hsv6_item3_2-btn")[0];
+  var popover3_2 = $("#hsv6_cont3_2")[0];
+  setupPopper(button3_2, popover3_2);
+
+  //Slider 3 button 3
+  var button3_3 = $("#hsv6_item3_3-btn")[0];
+  var popover3_3 = $("#hsv6_cont3_3")[0];
+  setupPopper(button3_3, popover3_3);
+
+  //Slider 3 button 4
+  var button3_4 = $("#hsv6_item3_4-btn")[0];
+  var popover3_4 = $("#hsv6_cont3_4")[0];
+  setupPopper(button3_4, popover3_4);
+
 });
 
 
