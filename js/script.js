@@ -3376,4 +3376,33 @@ $(function(){
   });
 });
 
+//Hero Section Text Typer
+$(function() {
+  var typed = new Typed('#text-change', {
+    strings: ['XHSGAJ 900BV', 'HSBXGD XV87', 'URJGHT WQ31'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    loop: true,
+    cursorChar: '●'
+  });
+});
+
+//Hero Slider
+$(function() {
+  var swiper = new Swiper(".hrv6-slider", {
+    loop: true,
+    spaceBetween: 0,
+    navigation: {
+      nextEl: ".hrv6-sldr-btn-next",
+      prevEl: ".hrv6-sldr-btn-prev",
+    },
+    pagination: {
+      el: ".hrv6-sldr-dots",
+    },
+  });
+});
+
+
+
+
 }) (jQuery);
