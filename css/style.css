@@ -82,6 +82,8 @@
     1. Review Section (Variant 2)
 28. Home Page Six
     1. Header Style Six
+    2. Hero Section (Variant 6)
+    3. One Product Features Section
 **********************************************/
 
 /* ====================================================================
@@ -20197,6 +20199,24 @@ button:focus {
 	border-color: var(--main-color4);
 }
 
+/* Section Title*/
+.h6_section-title h3 {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: "Fira Sans", sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.h6_section-title h2 {
+    font-size: 100px;
+    line-height: 100px;
+    font-weight: 600;
+    font-family: 'Arsenal', sans-serif;
+    text-transform: uppercase;
+}
+
 /* Swiper Dots */
 .homepage_six .swiper-pagination-bullet,
 .homepage_six .swiper-pagination-bullet.swiper-pagination-bullet-active {
@@ -21234,14 +21254,14 @@ button:focus {
     text-align: center;
     line-height: 20px;
     font-weight: 800;
-    font-family: "Fira Sans", sans-serif;
+    font-family: "Figtree", sans-serif;
 }
 
 .hsv6-popup-cont {
     display: none;
     font-size: 16px;
     line-height: 24px;
-    font-family: "Fira Sans", sans-serif;
+    font-family: "Figtree", sans-serif;
     background-color: #FFF;
     padding: 10px;
     border-radius: 5px;
@@ -21304,7 +21324,168 @@ button:focus {
 	right: 38%;
 	bottom: 38%;
 }
+
+/* Hero Section Social Media Links */
+.hero-social-links {
+    display: block;
+    position: absolute;
+    top: 20%;
+    right: 2%;
+    z-index: 10;
+}
+
+.hero-social-links li {
+    margin: 10px 0;
+}
+
+.hero-social-links li a {
+    display: block;
+    background: #FFF;
+    color: #13172B;
+    height: 40px;
+    width: 40px;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.hero-social-links li a:hover {
+    color: var(--secondary-color4);
+}
 /** End of Hero Section (Variant 6) **/
+
+/** Start of One Product Features Section **/
+.op_features-section {
+    margin-top: 80px;
+}
+
+.feature-row {
+	display: flex;
+	margin-top: 40px;
+}
+
+.feature-row .image {
+    width: 100%;
+    height: 456px;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    position: relative;
+}
+/*
+.feature-row:hover .image {
+    transform: scale(1.1);
+}
+*/
+.feature-row .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.feature-row .col-md-8 {
+    display: flex;
+    align-items: center;
+}
+
+.feature-row .right-side .content {
+    padding-left: 260px;
+    position: relative;
+}
+
+.feature-row .left-side .content {
+    position: relative;
+}
+
+.feature-row .content .icon {
+    font-size: 55px;
+    line-height: 60px;
+    margin-bottom: 10px;
+    color: var(--main-color4);
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.feature-row:hover .content .icon {
+    color: var(--secondary-color4);
+}
+
+.feature-row .content h2 {
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 600;
+    font-family: "Arsenal", sans-serif;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.feature-row .left-side .content h2 {
+    width: 70%;
+}
+
+.feature-row .right-side .content h2::before {
+    position: absolute;
+    content: '';
+    width: 500px;
+    border: 2px solid var(--main-color4);
+    height: 1px;
+    left: -520px;
+    top: 0;
+    bottom: 0; 
+    z-index: 1;
+    margin: auto;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    border-radius: 3px;
+}
+
+.feature-row:hover .right-side .content h2::before {
+    width: 260px;
+    left: -280px;
+}
+
+.feature-row .left-side .content h2::before {
+    position: absolute;
+    content: '';
+    width: 500px;
+    border: 2px solid var(--main-color4);
+    height: 1px;
+    right: -500px;
+    top: 0;
+    bottom: 0; 
+    z-index: 1;
+    margin: auto;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    border-radius: 3px;
+}
+
+.feature-row:hover .left-side .content h2::before {
+    width: 300px;
+    right: -300px;
+}
+
+.feature-row .content p {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: "Figtree", sans-serif;
+    margin-bottom: 20px;
+}
+
+/** End of One Product Features Section **/
 
 /*
 var(--main-color4)
@@ -21312,4 +21493,10 @@ var(--secondary-color4)
 
 font-family: 'Figtree', sans-serif;
 font-family: 'Arsenal', sans-serif;
+
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
 */

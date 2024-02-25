@@ -3452,4 +3452,21 @@ $(function () {
   setupPopper(button3_4, popover3_4);
 });
 
+//One Product Features Section (Column reverse on screen size)
+$(function() {
+  function adjustClass() {
+    var screenWidth = $(window).width();
+    var $myDiv = $('.opfs_col-rev');
+
+    if (screenWidth < 576) {
+      $myDiv.addClass('flex-column-reverse');
+    } else {
+      $myDiv.removeClass('flex-column-reverse');
+    }
+  }
+
+  adjustClass();
+  $(window).resize(adjustClass);
+});
+
 }) (jQuery);
