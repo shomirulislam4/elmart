@@ -84,6 +84,7 @@
     1. Header Style Six
     2. Hero Section (Variant 6)
     3. One Product Features Section
+    4. One Product Promo Section
 **********************************************/
 
 /* ====================================================================
@@ -21484,8 +21485,247 @@ button:focus {
     font-family: "Figtree", sans-serif;
     margin-bottom: 20px;
 }
-
 /** End of One Product Features Section **/
+
+/** Start of One Product Promo Section **/
+.op_promo-section {
+    margin-top: 80px;
+}
+
+.op_stroke-text {
+    font-size: 80px;
+    line-height: 80px;
+    font-weight: 600;
+    position: relative;
+    display: block;
+    color: transparent;
+    font-family: "Arsenal", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px var(--main-color4);
+    -moz-text-stroke: 2px var(--main-color4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    margin-bottom: 20px;
+}
+
+.op_promo-section:hover .op_stroke-text {
+    color: var(--main-color4);
+}
+
+.op_promo-wrapper {
+    position: relative;
+    height: 700px;
+    width: 100%;
+    background: url('../image/home-six/promo-section/img-1.jpg') center no-repeat;
+}
+
+.op_promo-wrapper::before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: #FFF;
+    opacity: 0.7;
+    z-index: 0;
+}
+
+.op_promo-wrapper .content {
+    position: absolute;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.op_promo-wrapper .icon {
+    font-size: 100px;
+    line-height: 100px;
+    color: var(--secondary-color4);
+    position: relative;
+}
+
+.op_promo-wrapper .icon::before {
+    position: absolute;
+    content: '';
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: rgba(218, 57, 51, 0.5);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: op_hw 2s infinite;
+    -webkit-animation: op_hw 2s infinite;
+}
+
+@keyframes op_hw {
+    0% {
+        height: 30px;
+        width: 30px;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        height: 180px;
+        width: 180px;
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes op_hw {
+    0% {
+        height: 30px;
+        width: 30px;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        height: 180px;
+        width: 180px;
+        opacity: 0;
+    }
+}
+
+.op_promo-wrapper p {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Figtree', sans-serif;
+}
+/** End of One Product Promo Section **/
+
+/** Start of Key Features Section **/
+.key-features-section {
+    margin-top: 80px;
+}
+
+.key-features-main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.key-features-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.key-features-list .kfl-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.key-features-list .kf-item {
+	width: fit-content;
+    height: 200px;
+	position: relative;
+	margin-top: 40px;
+	padding: 0;
+	text-align: center;
+}
+
+.kf-item .icon {
+    position: absolute;
+    font-size: 60px;
+    z-index: -1;
+    color: #CCC;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.kf-item h2 {
+    font-size: 90px;
+    line-height: 90px;
+    font-weight: 600;
+    font-family: 'Arsenal', sans-serif;
+    text-transform: uppercase;
+    pointer-events: none;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.kf-item:hover h2,
+.kf-item:hover h2 span {
+    color: var(--main-color4);
+}
+
+.kf-item h2 span {
+    font-size: 30px;
+    line-height: 30px;
+    margin-left: 5px;
+    text-transform: lowercase;
+}
+
+.kf-item p {
+    color: var(--main-color4);
+    font-size: 26px;
+    line-height: 26px;
+    text-transform: uppercase;
+    pointer-events: none;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.key-features-image {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+
+.key-features-image img {
+    height: 400px;
+    width: auto;
+    animation: kf-img 4s infinite;
+    -webkit-animation: kf-img 4s infinite;
+}
+
+@keyframes kf-img {
+    0% {
+        margin-left: -50px;
+    }
+    50% {
+        margin-left: 50px;
+    }
+    100% {
+        margin-left: -50px;
+    }
+}
+
+@-webkit-keyframes kf-img {
+    0% {
+        margin-left: -50px;
+    }
+    50% {
+        margin-left: 50px;
+    }
+    100% {
+        margin-left: -50px;
+    }
+}
+/** End of Key Features Section **/
 
 /*
 var(--main-color4)
