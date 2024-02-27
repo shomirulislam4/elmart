@@ -3469,4 +3469,16 @@ $(function() {
   $(window).resize(adjustClass);
 });
 
+//Video Popup
+$(function() {
+  $('#op_promo-video').magnificPopup({
+      disableOn: 199,
+      type: 'iframe',
+      mainClass: 'mfp-fade',
+      removalDelay: 160,
+      preloader: false,
+      fixedContentPos: false
+  });
+});
+
 }) (jQuery);
