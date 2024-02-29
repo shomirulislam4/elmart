@@ -806,7 +806,7 @@ if ( $('.sorting-select').length ) {
 
 //Product Price Filter
 $(function(){
-  const rangeInput = document.querySelectorAll(".range-input input"),
+  var rangeInput = document.querySelectorAll(".range-input input"),
   priceInput = document.querySelectorAll(".price-input input"),
   range = document.querySelector(".price-range-slider .progress");
   let priceGap = 5;
@@ -1757,8 +1757,8 @@ $(function() {
 //Order area
 $(function() {
   $('.order-prod-desc').each(function() {
-    const words = $(this).text().split(' ');
-    const truncatedText = words.slice(0, 15).join(' ');
+    var words = $(this).text().split(' ');
+    var truncatedText = words.slice(0, 15).join(' ');
     $(this).text(truncatedText + '...');
   });
 });
@@ -1957,7 +1957,7 @@ $(function() {
   let selectedColors = [];
 
   $('#colorPicker').change(function() {
-    const color = $(this).val();
+    var color = $(this).val();
     selectedColors.push(color);
     displaySelectedColors();
   });
@@ -1965,7 +1965,7 @@ $(function() {
   function displaySelectedColors() {
     $('#selectedColors').empty();
     selectedColors.forEach(color => {
-      const colorElement = `<span class="selectedColor" style="background-color: ${color}">
+      var colorElement = `<span class="selectedColor" style="background-color: ${color}">
                               <button class="deleteColor">X</button>
                             </span>`;
       $('#selectedColors').append(colorElement);
@@ -1973,7 +1973,7 @@ $(function() {
   }
 
   $(document).on('click', '.deleteColor', function() {
-    const colorIndex = $(this).parent().index();
+    var colorIndex = $(this).parent().index();
     selectedColors.splice(colorIndex, 1);
     displaySelectedColors();
   });
@@ -2239,8 +2239,8 @@ $( function() {
   //get element for mobile menu
   $("#category_select_item").on("click", function() {
     let toggle = true;
-    const toggle_close_btn = $("#toggle_close_btn");
-    const toggle_open_btn = $("#toggle_open_btn");
+    var toggle_close_btn = $("#toggle_close_btn");
+    var toggle_open_btn = $("#toggle_open_btn");
     
     if (toggle) {
       toggle_close_btn.css("display", "unset");
@@ -2254,9 +2254,9 @@ $( function() {
   });
 
   //medium screen search bar
-  const search_page_open_btn = $(".search_icon");
-  const search_page_close_btn = $(".popup_search_close");
-  const medium_search_page = $(".mobile_popup_search");
+  var search_page_open_btn = $(".search_icon");
+  var search_page_close_btn = $(".popup_search_close");
+  var medium_search_page = $(".mobile_popup_search");
 
   //medium screen search bar handling
   search_page_open_btn.on("click", function() {
@@ -3007,8 +3007,8 @@ $(function() {
 
 //Hero Right Area
 $(function() {
-  const progressCircle = document.querySelector(".autoplay-progress svg");
-  const progressContent = document.querySelector(".autoplay-progress span");
+  var progressCircle = document.querySelector(".autoplay-progress svg");
+  var progressContent = document.querySelector(".autoplay-progress span");
   var swiper12 = new Swiper(".h5_hero-right-slider", {
     loop: true,
     spaceBetween: 30,
@@ -3481,20 +3481,39 @@ $(function() {
   });
 });
 
+//Testimonial Section (Variant 3) Slider
+$(function (){
+  var swiper = new Swiper(".testimonial-v3-slider", {
+    navigation: {
+      nextEl: ".tmv3-sldr-btn-next",
+      prevEl: ".tmv3-sldr-btn-prev",
+    },
+    pagination: {
+      el: ".tmv3-sldr-pagination",
+      clickable: true,
+    },
+  });
+});
+
 /*============================ Shop Details (Style 5) ============================*/
+//Thumb & Product image slider
 $(function() {
   var thumb_swiper = new Swiper(".sds5_slider-image-thumb", {
     loop: true,
-    spaceBetween: 15,
+    spaceBetween: 10,
     slidesPerView: 4,
     direction: "vertical",
     freeMode: true,
     watchSlidesProgress: true,
+    breakpoints: {
+      1400: {
+        spaceBetween: 20,
+      }
+    }
   });
 
   var swiper2 = new Swiper(".sds5_slider-image-main", {
     loop: true,
-    spaceBetween: 20,
     navigation: {
       nextEl: ".sds5_sldr-btn-next",
       prevEl: ".sds5_sldr-btn-prev",
@@ -3504,5 +3523,30 @@ $(function() {
     },
   });
 });
+
+//Color Select
+$(function() {
+  $('.color-wrap').on('click', '.color-item', function() {
+    $(this).addClass('active').siblings().removeClass('active');
+  });
+});
+
+//Quantity Widget (Variant 2)
+$(function() {
+  var quantityDisplay = $('.quantity-display');
+
+  $('.quantity-increase').on('click', function() {
+    var currentQuantity = parseInt(quantityDisplay.text(), 10);
+    quantityDisplay.text(currentQuantity + 1);
+  });
+
+  $('.quantity-decrease').on('click', function() {
+    var currentQuantity = parseInt(quantityDisplay.text(), 10);
+    if (currentQuantity > 1) {
+      quantityDisplay.text(currentQuantity - 1);
+    }
+  });
+});
+
 
 }) (jQuery);

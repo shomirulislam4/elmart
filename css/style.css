@@ -10,7 +10,7 @@
     5. Category Promotional Secton
     6. Work Processing Section
     7. Deal of the Week Section
-    8. Testimonial Section - Style Two
+    8. Testimonial Section (Variant 2)
 3. Home Page One
     1. Header - Style One
     2. Hero Section (Variant 2)
@@ -85,6 +85,8 @@
     2. Hero Section (Variant 6)
     3. One Product Features Section
     4. One Product Promo Section
+    5. FAQ Section (Variant 2)
+    6. Testimonial Section (Variant 3)
 29. Shop Details Page (Style 5)
 **********************************************/
 
@@ -1554,7 +1556,7 @@ button:focus {
 
 /** End of Deal of the Week Section **/
 
-/** Start of Testimonial Section - Style Two **/
+/** Start of Testimonial Section (Variant 2) **/
 .testimonial-section-v2 {
     margin-top: 80px;
 }
@@ -1664,7 +1666,7 @@ button:focus {
     width: 16px;
 }
 
-/** End of Testimonial Section - Style Two **/
+/** End of Testimonial Section (Variant 2) **/
 
 /* ====================================================================
 3. Home Page Two
@@ -6358,6 +6360,7 @@ button:focus {
 	margin-bottom: 10px;
 	justify-content: unset;
     margin-bottom: 30px;
+    gap: 10px;
 }
 
 .single-product-countdown .deal-product-timer #days,
@@ -6367,7 +6370,6 @@ button:focus {
 	border: 1px solid #5A5858;
     width: 55px;
     padding: 5px 10px;
-    margin-right: 10px;
 }
 
 /* Shop Details - Ask A Question */
@@ -20308,6 +20310,15 @@ button:focus {
     color: #FFF;
 }
 
+.h6-button-2.btn-red {
+    color: var(--secondary-color4);
+    border-color: var(--secondary-color4);
+}
+
+.h6-button-2.btn-red:hover {
+    background: var(--secondary-color4);
+}
+
 /* Cart */
 .homepage_six .cart-slide {
 	background: #FFF;
@@ -21370,18 +21381,18 @@ button:focus {
 .feature-row .image {
     width: 100%;
     height: 456px;
-    transition: 0.3s;
-    -moz-transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
     position: relative;
 }
-/*
+
 .feature-row:hover .image {
     transform: scale(1.1);
 }
-*/
+
 .feature-row .image img {
     width: 100%;
     height: 100%;
@@ -21859,6 +21870,10 @@ button:focus {
     margin-top: 80px;
 }
 
+.faqsv2-spacing {
+    margin-top: 20px;
+}
+
 .faq-v2_text,
 .faq-v2_img {
     display: flex;
@@ -21899,13 +21914,141 @@ button:focus {
 }
 /** End of FAQ Section (Variant 2) **/
 
+/** Start of Testimonial Section (Variant 3) **/
+.testimonial-section-v3 {
+    margin-top: 80px;
+}
+
+.testimonial-v3-slider {
+    height: fit-content;
+    margin-top: 20px;
+    position: relative;
+}
+
+.testimonial-v3-slider .image {
+    height: 424px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.testimonial-v3-slider .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.testimonial-v3-slider .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    user-select: none;
+}
+
+.testimonial-v3-slider .content h2 {
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 600;
+    font-family: 'Arsenal', sans-serif;
+    margin-bottom: 20px;
+}
+
+.testimonial-v3-slider .content p {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: 'Figtree', sans-serif;
+}
+
+.testimonial-v3-slider .content .user-detials h3 {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 600;
+    font-family: 'Arsenal', sans-serif;
+}
+
+.testimonial-v3-slider .content .user-detials p {
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 400;
+    font-family: 'Figtree', sans-serif;
+}
+
+.tmv3-sldr-pagination {
+    text-align: center;
+}
+
+.tmv3-sldr-btn-next,
+.tmv3-sldr-btn-prev {
+    position: absolute;
+    bottom: 0;
+    color: var(--main-color4);
+    border: 2px solid var(--main-color4);
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    width: 50px;
+    background: transparent;
+    border-radius: 50%;
+    z-index: 10;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.tmv3-sldr-btn-next {
+    right: 0;
+}
+
+.tmv3-sldr-btn-prev {
+    right: 5%;
+}
+
+.tmv3-sldr-btn-next:hover,
+.tmv3-sldr-btn-prev:hover {
+    color: var(--secondary-color4);
+    border-color: var(--secondary-color4);
+}
+/** End of Testimonial Section (Variant 3) **/
+
+
+/*
+var(--main-color4)
+var(--secondary-color4)
+
+font-family: 'Figtree', sans-serif;
+font-family: 'Arsenal', sans-serif;
+
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+*/
+
 /* ====================================================================
 29. Shop Details Page (Style 5)
 ==================================================================== */
+.shop-details-style5 {
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.sds5_main-area {
+    margin-top: 50px;
+}
+
 .sds5_product-image {
     display: flex;
     height: 515px;
     position: relative;
+}
+
+.sds5_slider-image-thumb {
+    padding: 10px;
 }
 
 .sds5_slider-image-thumb .swiper-slide {
@@ -21913,7 +22056,11 @@ button:focus {
     height: 115px;
     border-radius: 5px;
     padding: 0;
-    margin: 0;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
 }
 
 .sds5_slider-image-thumb .swiper-slide img {
@@ -21922,13 +22069,14 @@ button:focus {
 }
 
 .sds5_slider-image-thumb .swiper-slide-thumb-active {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     transform: scale(1.05);
+    border-radius: 5px;
 }
 
 .sds5_thumb-slider-btn {
     position: absolute;
-    width: 120px;
+    width: 130px;
     height: 100%;
 }
 
@@ -21976,6 +22124,206 @@ button:focus {
     width: 100%;
     height: 100%;
 }
+
+/* Product Info */
+.sds5_product-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sds5_product-content h2 {
+    margin: 0;
+}
+
+.sds5_product-content h2 a {
+    color: #191C1F;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 56px;
+    font-family: 'Arsenal', sans-serif;
+    font-weight: 600;
+}
+
+.sds5_product-content h2 a:hover {
+    color: var(--secondary-color4);
+}
+
+.sds5_product-content p,
+.sds5_product-color p,
+.sds5_product-content .single-product-countdown span {
+    color: #191C1F;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: 'Figtree', sans-serif;
+    margin: 0;
+}
+
+.sds5_product-color p {
+    margin-bottom: 15px;
+    line-height: 18px;
+}
+
+.sds5_product-content .price,
+.sds5_product-content .price span {
+    color: #191C1F;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 36px;
+    font-family: 'Arsenal', sans-serif;
+    font-weight: 600;
+    margin: 0;
+}
+
+.sds5_product-content .price span {
+    color: #A4A4A4;
+    text-decoration: line-through;
+}
+
+.sds5_product-color .color-wrap {
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.sds5_product-color .color-item {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    cursor: pointer;
+}
+
+.sds5_product-color .color-item:hover,
+.sds5_product-color .color-item.active {
+    margin-top: -5px;
+}
+
+.sds5_product-color .color-item .color-name {
+    position: absolute;
+    bottom: 112%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #FFF;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 130px;
+    text-align: center;
+    z-index: 10;
+    visibility: hidden;
+}
+
+.sds5_product-color .color-item .color-name::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid var(--main-color4);
+    background: transparent;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sds5_product-color .color-item:hover .color-name {
+    visibility: visible;
+}
+
+/* Quantity Widget (Variant 2) */
+.quantity-widget {
+    text-align: center;
+    font-family: 'Figtree', sans-serif;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.quantity-controls {
+    display: flex;
+}
+
+.quantity-decrease,
+.quantity-increase {
+    cursor: pointer;
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #CCC;
+    margin: 0 2px;
+    border-radius: 5px;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    user-select: none;
+}
+
+.quantity-decrease:hover,
+.quantity-increase:hover {
+    background: var(--main-color4);
+    color: #FFF;
+}
+
+.quantity-display {
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+    padding: 0 10px;
+    pointer-events: none;
+}
+
+.sds5_product-content .single-product-countdown {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+}
+
+.sds5_product-content .deal-product-timer #days,
+.sds5_product-content .deal-product-timer #hours,
+.sds5_product-content .deal-product-timer #minutes,
+.sds5_product-content .deal-product-timer #seconds {
+    font-family: 'Figtree', sans-serif;
+    border-radius: 5px;
+}
+
+.sds5_product-content .deal-product-timer #days span,
+.sds5_product-content .deal-product-timer #hours span,
+.sds5_product-content .deal-product-timer #minutes span,
+.sds5_product-content .deal-product-timer #seconds span {
+    font-family: 'Figtree', sans-serif;
+}
+
+.sds5_product-content .single-product-countdown .deal-product-timer {
+    margin-bottom: 0;
+}
+
+.sds5_cta-btns {
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.sds5_cta-btns .h6-button-2 > i {
+    margin-right: 5px;
+}
+
 /*
 var(--main-color4)
 var(--secondary-color4)
