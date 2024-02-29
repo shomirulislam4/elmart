@@ -85,6 +85,7 @@
     2. Hero Section (Variant 6)
     3. One Product Features Section
     4. One Product Promo Section
+29. Shop Details Page (Style 5)
 **********************************************/
 
 /* ====================================================================
@@ -21665,11 +21666,6 @@ button:focus {
     -o-transition: 0.3s;
 }
 
-.kf-item:hover h2,
-.kf-item:hover h2 span {
-    color: var(--main-color4);
-}
-
 .kf-item h2 span {
     font-size: 30px;
     line-height: 30px;
@@ -21677,11 +21673,17 @@ button:focus {
     text-transform: lowercase;
 }
 
+.kf-item:hover h2,
+.kf-item:hover h2 span {
+    color: var(--main-color4);
+}
+
 .kf-item p {
     color: var(--main-color4);
     font-size: 26px;
     line-height: 26px;
     text-transform: uppercase;
+    font-family: 'Figtree', sans-serif;
     pointer-events: none;
     transition: 0.3s;
     -moz-transition: 0.3s;
@@ -21728,6 +21730,252 @@ button:focus {
 }
 /** End of Key Features Section **/
 
+/** Start of Newsletter Section (Variant 2) **/
+.newsletter-v2 {
+    margin-top: 80px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 30px;
+    background: url('../image/home-six/newsletter-section/nl-bg.svg');
+}
+
+.nlv2-wrapper img {
+    width: 100%;
+    height: auto;
+}
+
+.nlv2-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nlv2-content .title {
+    font-size: 70px;
+    line-height: 75px;
+    font-weight: 600;
+    font-family: 'Arsenal', sans-serif;
+    text-transform: capitalize;
+}
+
+.nlv2-content .title span {
+    color: #FFF;
+    animation: nlv2-anim 5s infinite;
+    -webkit-animation: nlv2-anim 5s ease infinite;
+}
+
+.nlv2-content .title span:nth-child(1) {
+    animation-delay: 0;
+}
+
+.nlv2-content .title span:nth-child(2) {
+    animation-delay: 0.15s;
+}
+
+.nlv2-content .title span:nth-child(3) {
+    animation-delay: 0.30s;
+}
+
+.nlv2-content .title span:nth-child(4) {
+    animation-delay: 0.45s;
+}
+
+.nlv2-content .title span:nth-child(5) {
+    animation-delay: 0.60s;
+}
+
+@keyframes nlv2-anim {
+    0% {
+        color: var(--secondary-color4);
+        text-shadow: 0 0 15px var(--secondary-color4);
+    }
+    100% {
+        text-shadow: 0;
+    }
+}
+
+.nlv2-content p {
+    color: #FFF;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: 'Figtree', sans-serif;
+}
+
+.nlv2-content form {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--secondary-color4);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.nlv2-content form input[type="email"] {
+    height: 100%;
+    width: 100%;
+    padding: 0 15px;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: 'Figtree', sans-serif;
+    text-transform: capitalize;
+}
+
+.nlv2-content form input[type="email"]::placeholder {
+    color: #AEAEAE;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Figtree', sans-serif;
+    text-transform: capitalize;
+}
+
+.nlv2-content form input[type="submit"] {
+    width: 200px;
+    color: #FFF;
+    background: var(--secondary-color4);
+    border-left: 1px solid var(--secondary-color4);
+    text-transform: uppercase;
+    font-size: 18px;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.nlv2-content form input[type="submit"]:hover {
+    background: #FFF;
+    border-left: 1px solid var(--secondary-color4);
+    color: var(--secondary-color4);
+}
+/** End of Newsletter Section (Variant 2) **/
+
+/** Start of FAQ Section (Variant 2) **/
+.faq-section-v2 {
+    margin-top: 80px;
+}
+
+.faq-v2_text,
+.faq-v2_img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.faq-v2_text {
+    margin-top: 20px;
+}
+
+.faq-v2_main .accordion-button {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: 'Figtree', sans-serif;
+}
+
+.faq-v2_main .accordion-button:hover,
+.faq-v2_main .accordion-button:not(.collapsed) {
+    color: var(--main-color4);
+	background-color: #FFF;
+	box-shadow: none;
+}
+
+.faq-v2_main .accordion-body {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 400;
+	font-family: 'Figtree', sans-serif;
+	padding-top: 5px;
+}
+
+.faq-v2_img img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+/** End of FAQ Section (Variant 2) **/
+
+/* ====================================================================
+29. Shop Details Page (Style 5)
+==================================================================== */
+.sds5_product-image {
+    display: flex;
+    height: 515px;
+    position: relative;
+}
+
+.sds5_slider-image-thumb .swiper-slide {
+    width: 115px;
+    height: 115px;
+    border-radius: 5px;
+    padding: 0;
+    margin: 0;
+}
+
+.sds5_slider-image-thumb .swiper-slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.sds5_slider-image-thumb .swiper-slide-thumb-active {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+}
+
+.sds5_thumb-slider-btn {
+    position: absolute;
+    width: 120px;
+    height: 100%;
+}
+
+.sds5_sldr-btn-prev,
+.sds5_sldr-btn-next {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #191C1F;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.sds5_sldr-btn-prev {
+    top: -30px;
+}
+
+.sds5_sldr-btn-next {
+    bottom: -30px;
+}
+
+.sds5_sldr-btn-prev:hover,
+.sds5_sldr-btn-next:hover {
+    background: var(--main-color4);
+    color: #FFF;
+}
+
+.sds5_slider-image-main {
+    width: 80%;
+}
+
+.sds5_slider-image-main .swiper-slide img {
+    width: 100%;
+    height: 100%;
+}
 /*
 var(--main-color4)
 var(--secondary-color4)

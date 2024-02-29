@@ -3481,4 +3481,28 @@ $(function() {
   });
 });
 
+/*============================ Shop Details (Style 5) ============================*/
+$(function() {
+  var thumb_swiper = new Swiper(".sds5_slider-image-thumb", {
+    loop: true,
+    spaceBetween: 15,
+    slidesPerView: 4,
+    direction: "vertical",
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+
+  var swiper2 = new Swiper(".sds5_slider-image-main", {
+    loop: true,
+    spaceBetween: 20,
+    navigation: {
+      nextEl: ".sds5_sldr-btn-next",
+      prevEl: ".sds5_sldr-btn-prev",
+    },
+    thumbs: {
+      swiper: thumb_swiper,
+    },
+  });
+});
+
 }) (jQuery);
