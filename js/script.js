@@ -2939,7 +2939,6 @@ $(function(){
   });
 });
 
-
 /*============================ Shop Details Page (Style 4) ============================*/
 //Review Form v2
 $(function () {
@@ -2958,6 +2957,21 @@ $(function () {
   });
 });
 
+//Column Reverse on Screen Size
+$(function() {
+  function adjustClass() {
+    var screenWidth = $(window).width();
+    var $myDiv = $('#rev-sec-col-reverse');
+    if (screenWidth < 992) {
+        $myDiv.addClass('flex-column-reverse');
+    } else {
+        $myDiv.removeClass('flex-column-reverse');
+    }
+  }
+  adjustClass();
+  $(window).resize(adjustClass);
+
+});
 
 /*============================ Home Style Five ============================*/
 //Preloader v2
@@ -3495,7 +3509,7 @@ $(function (){
   });
 });
 
-/*============================ Shop Details (Style 5) ============================*/
+/*============================ Shop Details Page (Style 5) ============================*/
 //Thumb & Product image slider
 $(function() {
   var thumb_swiper = new Swiper(".sds5_slider-image-thumb", {
@@ -3547,6 +3561,5 @@ $(function() {
     }
   });
 });
-
 
 }) (jQuery);

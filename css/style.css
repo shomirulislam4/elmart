@@ -87,7 +87,9 @@
     4. One Product Promo Section
     5. FAQ Section (Variant 2)
     6. Testimonial Section (Variant 3)
+    7. Blog Section (Variant 2)
 29. Shop Details Page (Style 5)
+    1. Breadcrumbs Section (Variant 2)
 **********************************************/
 
 /* ====================================================================
@@ -18908,7 +18910,6 @@ button:focus {
 .copyright-text span a:hover {
     color: var(--secondary-color3);
 }
-
 /** End of Footer Section (Variant 2) **/
 
 /* ====================================================================
@@ -20203,6 +20204,17 @@ button:focus {
 	border-color: var(--main-color4);
 }
 
+/* All Section top margin */
+.op_features-section,
+.op_promo-section,
+.key-features-section,
+.newsletter-v2,
+.faq-section-v2,
+.testimonial-section-v3,
+.blog-section-v2 {
+    margin-top: 150px;
+}
+
 /* Section Title*/
 .h6_section-title h3 {
     font-size: 24px;
@@ -20606,8 +20618,13 @@ button:focus {
 }
 
 .right-menu-btns li a {
+    color: var(--main-color4);
     font-size: 20px;
     position: relative;
+}
+
+.right-menu-btns li a:hover {
+    color: var(--secondary-color4);
 }
 
 .right-menu-btns .notify-count {
@@ -20632,11 +20649,16 @@ button:focus {
 }
 
 .h6_main-menu ul li a {
+    color: var(--main-color4);
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
     font-family: 'Figtree', sans-serif;
     text-transform: capitalize;
+}
+
+.h6_main-menu ul li a:hover {
+    color: var(--secondary-color4);
 }
 
 /* Mega Menu */
@@ -21369,10 +21391,6 @@ button:focus {
 /** End of Hero Section (Variant 6) **/
 
 /** Start of One Product Features Section **/
-.op_features-section {
-    margin-top: 80px;
-}
-
 .feature-row {
 	display: flex;
 	margin-top: 40px;
@@ -21500,10 +21518,6 @@ button:focus {
 /** End of One Product Features Section **/
 
 /** Start of One Product Promo Section **/
-.op_promo-section {
-    margin-top: 80px;
-}
-
 .op_stroke-text {
     font-size: 80px;
     line-height: 80px;
@@ -21620,10 +21634,6 @@ button:focus {
 /** End of One Product Promo Section **/
 
 /** Start of Key Features Section **/
-.key-features-section {
-    margin-top: 80px;
-}
-
 .key-features-main {
     width: 100%;
     display: flex;
@@ -21743,7 +21753,6 @@ button:focus {
 
 /** Start of Newsletter Section (Variant 2) **/
 .newsletter-v2 {
-    margin-top: 80px;
     height: 500px;
     display: flex;
     flex-direction: column;
@@ -21767,12 +21776,13 @@ button:focus {
     font-size: 70px;
     line-height: 75px;
     font-weight: 600;
-    font-family: 'Arsenal', sans-serif;
+    font-family: 'Figtree', sans-serif;
     text-transform: capitalize;
 }
 
 .nlv2-content .title span {
     color: #FFF;
+    font-family: 'Figtree', sans-serif;
     animation: nlv2-anim 5s infinite;
     -webkit-animation: nlv2-anim 5s ease infinite;
 }
@@ -21851,6 +21861,7 @@ button:focus {
     border-left: 1px solid var(--secondary-color4);
     text-transform: uppercase;
     font-size: 18px;
+    font-family: 'Figtree', sans-serif;
     transition: 0.3s;
     -moz-transition: 0.3s;
     -webkit-transition: 0.3s;
@@ -21866,10 +21877,6 @@ button:focus {
 /** End of Newsletter Section (Variant 2) **/
 
 /** Start of FAQ Section (Variant 2) **/
-.faq-section-v2 {
-    margin-top: 80px;
-}
-
 .faqsv2-spacing {
     margin-top: 20px;
 }
@@ -21915,10 +21922,6 @@ button:focus {
 /** End of FAQ Section (Variant 2) **/
 
 /** Start of Testimonial Section (Variant 3) **/
-.testimonial-section-v3 {
-    margin-top: 80px;
-}
-
 .testimonial-v3-slider {
     height: fit-content;
     margin-top: 20px;
@@ -22014,24 +22017,295 @@ button:focus {
 }
 /** End of Testimonial Section (Variant 3) **/
 
+.homepage_six .footer-widget-v2 h3,
+.homepage_six .footer-widget-v2 h2 {
+    font-family: 'Arsenal', sans-serif;
+    font-weight: 600;
+}
 
-/*
-var(--main-color4)
-var(--secondary-color4)
+.homepage_six .footer-widget-v2 .email a:hover,
+.homepage_six .footer-widget-v2 .phone a:hover,
+.homepage_six .footer-link-v2 li a:hover,
+.homepage_six .f2-social-links li a:hover,
+.homepage_six .copyright-text span a:hover {
+    color: var(--secondary-color4);
+}
 
-font-family: 'Figtree', sans-serif;
-font-family: 'Arsenal', sans-serif;
+.homepage_six .footer-widget-v2 p,
+.homepage_six .footer-widget-v2 .email a,
+.homepage_six .footer-widget-v2 .phone a,
+.homepage_six .footer-link-v2 li a,
+.homepage_six .ftr-newsletter form input,
+.homepage_six .ftr-newsletter form input::placeholder,
+.homepage_six .ftr-newsletter button {
+    font-family: 'Figtree', sans-serif;
+}
 
-    transition: 0.3s;
-    -moz-transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-*/
+.homepage_six .copyright-text span a {
+    color: #FFF;
+}
+
+/** Start of Blog Section (Variant 2) **/
+.blog-item-v2 {
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    margin-top: 20px;
+    height: 632px;
+}
+
+.blog-item-v2:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.blog-item-v2 .image {
+    position: relative;
+    overflow: hidden;
+}
+
+.blog-item-v2 .image img {
+    width: 100%;
+    height: auto;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.blog-item-v2:hover .image img {
+    transform: scale(1.05);
+}
+
+.blog-item-v2 .image .social-share {
+    position: absolute;
+    bottom: 10px;
+    left: -100%;
+    display: flex;
+    gap: 5px;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.blog-item-v2:hover .image .social-share {
+    left: 10px;
+}
+
+.blog-item-v2 .image .social-share li a {
+    color: #191C1F;
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    background: #FFF;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    margin: 0;
+}
+
+.blog-item-v2 .image .social-share li a:hover {
+    color: var(--secondary-color4);
+}
+
+.blog-item-v2 .content {
+    padding: 15px;
+}
+
+.blog-item-v2 .content .meta-info {
+    display: flex;
+    gap: 15px;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.blog-item-v2 .content .meta-info a {
+    color: #191C1F;
+}
+
+.blog-item-v2 .content .meta-info a:hover {
+    color: var(--secondary-color4);
+}
+
+.blog-item-v2 .content .meta-info i {
+    margin-right: 5px;
+}
+
+.blog-item-v2 .content h2 {
+    line-height: 0;
+}
+
+.blog-item-v2 .content h2 a {
+    color: #191C1F;
+    font-size: 36px;
+    line-height: 46px;
+    font-weight: 500;
+    font-family: 'Arsenal', sans-serif;
+}
+
+.blog-item-v2 .content h2 a:hover {
+    color: var(--secondary-color4);
+}
+
+.blog-item-v2 .content p {
+    color: #191C1F;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: 'Figtree', sans-serif;
+}
+/** End of Blog Section (Variant 2) **/
 
 /* ====================================================================
 29. Shop Details Page (Style 5)
 ==================================================================== */
+.sds5-page {
+    position: relative;
+}
+
+.sds5-page,
+.sds5-page p,
+.sds5-page span {
+    font-family: 'Figtree', sans-serif;
+}
+
+.sds5-page a,
+.sds5-page .review-form-v2 p a {
+    color: var(--main-color4);
+    font-family: 'Figtree', sans-serif;
+}
+
+.sds5-page a:hover,
+.sds5-page .review-form-v2 p a:hover {
+    color: var(--secondary-color4);
+}
+
+.sds5-page h1,
+.sds5-page h2,
+.sds5-page h3,
+.sds5-page h4,
+.sds5-page h5,
+.sds5-page h6 {
+    font-family: 'Arsenal', sans-serif;
+}
+
+.sds5-page::-webkit-scrollbar-thumb,
+.sds5-page ::-webkit-scrollbar-thumb {
+    background: var(--main-color4);
+    border-radius: 10px;
+}
+
+.sds5-page::-webkit-scrollbar-thumb:hover,
+.sds5-page ::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color4);
+}
+
+.sds5-page ::-webkit-scrollbar {
+    width: 3px;
+}
+
+.sds5-page ::selection {
+    background: var(--main-color4);
+}
+
+.sds5-page .cursor:after {
+    background: var(--main-color4);
+}
+
+.sds5-page .cursor:before {
+    background: #1C404C41;
+	border-color: var(--main-color4);
+}
+
+/* Cart */
+.sds5-page .cart-slide {
+	background: #FFF;
+	border-radius: 0;
+}
+
+.sds5-page .cart-slide .cart-header .cart-title {
+	font-size: 28px;
+	font-weight: 600;
+}
+
+.sds5-page .button-b {
+	background: var(--main-color4);
+	border: 1px solid var(--main-color4);
+	color: #FFF !important;
+	font-family: 'Figtree', sans-serif;
+}
+
+.sds5-page .button-b:hover {
+    color: var(--main-color4) !important;
+    background: #FFF;
+}
+
+.sds5-page .button-a {
+	border: 1px solid var(--main-color4);
+	color: var(--main-color4);
+	font-family: 'Figtree', sans-serif;
+}
+
+.sds5-page .button-a:hover {
+    color: #FFF !important;
+    background: var(--main-color4);
+}
+
+.sds5-page .cart-slide .cart-item .item-img .close-btn:hover,
+.sds5-page .cart-slide .cart-header .cart-close:hover,
+.sds5-page .search-box button:hover,
+.sds5-page .search-box .close-btn:hover {
+    color: var(--secondary-color4);
+}
+
+.sds5-page .pro-search-result-area .search-content .product-cart a:hover {
+    background: var(--secondary-color4);
+}
+
+.sds5-page .footer-widget-v2 h3,
+.sds5-page .footer-widget-v2 h2 {
+    font-family: 'Arsenal', sans-serif;
+    font-weight: 600;
+}
+
+.sds5-page .footer-widget-v2 p,
+.sds5-page .footer-widget-v2 .email a,
+.sds5-page .footer-widget-v2 .phone a,
+.sds5-page .footer-link-v2 li a,
+.sds5-page .ftr-newsletter form input,
+.sds5-page .ftr-newsletter form input::placeholder,
+.sds5-page .ftr-newsletter button {
+    font-family: 'Figtree', sans-serif;
+}
+
+
+.sds5-page .footer-widget-v2 .email a:hover,
+.sds5-page .footer-widget-v2 .phone a:hover,
+.sds5-page .footer-link-v2 li a:hover,
+.sds5-page .f2-social-links li a:hover,
+.sds5-page .copyright-text span a:hover {
+    color: var(--secondary-color4);
+}
+
+.sds5-page .copyright-text span a {
+    color: #FFF;
+}
+
+/** Start of Shop Details (Style 5) **/
+.sds5-page .footer-section-v2 {
+	margin-top: 0 !important;
+}
+
 .shop-details-style5 {
     margin-top: 80px;
     margin-bottom: 20px;
@@ -22323,7 +22597,92 @@ font-family: 'Arsenal', sans-serif;
 .sds5_cta-btns .h6-button-2 > i {
     margin-right: 5px;
 }
+/** End of Shop Details (Style 5) **/
 
+/** Start of Breadcrumbs Section (Variant 2) **/
+.breadcrumbs-section-v2 {
+    background: url('../image/breadcrumb/bg-2.svg') no-repeat center;
+    height: fit-content;
+}
+
+.breadcrumbs-section-v2 .bc-wrap {
+    background: rgba(9, 75, 99, 0.7);
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.breadcrumbs-section-v2 .page-name {
+    color: #FFF;
+    font-size: 40px;
+    line-height: 46px;
+    font-weight: 600;
+    font-family: 'Arsenal', sans-serif;
+    text-transform: capitalize;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.breadcrumbs-section-v2 .breadcrumb-v2,
+.breadcrumbs-section-v2 .breadcrumb-v2 span {
+    color: #FFF;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+    font-family: 'Figtree', sans-serif;
+    text-transform: capitalize;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+/** End of Breadcrumbs Section (Variant 2) **/
+
+/* Review Section */
+.sds5-page .review-section-v2 .title-row p,
+.sds5-page .submitted-reviews .rev-text,
+.sds5-page .submitted-reviews .user-feedback p,
+.sds5-page .review-section-v2 .review-sticky-sidebar .all-rating,
+.sds5-page .review-form-v2 label,
+.sds5-page .review-form-v2 input,
+.sds5-page .review-form-v2 input ::placeholder,
+.sds5-page .review-form-v2 textarea,
+.sds5-page .review-form-v2 .h5-button-3 {
+    font-family: 'Figtree', sans-serif;
+}
+
+.sds5-page .submitted-reviews .title-meta p {
+    font-family: 'Figtree', sans-serif;
+    font-weight: 600;
+}
+
+.sds5-page .submitted-reviews .title-meta .date {
+    font-family: 'Figtree', sans-serif;
+    font-weight: 300;
+}
+
+.full-rev-wrapper .customer-name {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.full-rev-wrapper .customer-name img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.full-rev-wrapper .customer-name p {
+    margin: 0;
+}
+
+.sds5-page .main-review-area .review-form-v2 h2,
+.sds5-page .review-section-v2 .review-sticky-sidebar h2 {
+    font-weight: 600;
+    font-family: 'Arsenal', sans-serif;
+}
 /*
 var(--main-color4)
 var(--secondary-color4)
