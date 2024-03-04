@@ -1034,7 +1034,7 @@
                     </div>
                 </div>
                 <div class="sds5_cta-btns">
-                    <a class="h6-button-2 btn-red" href="#"><i class="fa-solid fa-cart-shopping"></i> add to cart</a>
+                    <a class="h6-button-2 btn-red" id="orderform__popupbtn" href="#op__order__form"><i class="fa-solid fa-cart-shopping"></i> buy now</a>
                     <a class="h6-button-2" href="#">add to wishlist</a>
                 </div>
             </div>
@@ -1042,6 +1042,86 @@
     </div>
   </section>
   <!-- End of Shop Details (Style 5) -->
+
+  <!-- Start of Order Form Popup -->
+  <section class="order__form__popup mfp-hide" id="op__order__form">
+    <div class="container order__form__wrapper">
+    <form action="#">
+        <div class="row op__form__content">
+            <h4>Billing Details</h4>
+            <div class="col-md-6 d-flex flex-column">
+                <label for="opof__name">First Name *</label>
+                <input type="text" name="oporderform" id="opof__name" required>
+            </div>
+            <div class="col-md-6 d-flex flex-column">
+                <label for="opof__name">Last Name *</label>
+                <input type="text" name="oporderform" id="opof__name" required>
+            </div>
+            <div class="col-md-6 d-flex flex-column">
+                <label for="opof__email">Email *</label>
+                <input type="email" name="oporderform" id="opof__email" required>
+            </div>
+            <div class="col-md-6 d-flex flex-column">
+                <label for="opof__phone">Phone Number *</label>
+                <input type="tel" name="oporderform" id="opof__phone" required>
+            </div>
+            <div class="col-12 d-flex flex-column">
+                <label for="opof__address">Full Address *</label>
+                <input type="text" name="oporderform" id="opof__address">
+            </div>
+        </div>
+    </form>
+    <div class="row op__form__content">
+        <h4>Your order</h4>
+        <div class="col-lg-8 col-md-8">
+            <h5>Product</h5>
+            <div class="item">
+                <p>Headfone Bla Bla WHX5241 AS45 Wirelss<span>2</span></p>
+                <p>$200</p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4">
+            <h5>Shipping</h5>
+            <div class="item">
+                <p>home delivery</p>
+                <p>$15</p>
+            </div>
+        </div>
+    </div>
+    <div class="row op__form__content">
+        <p class="coupon__text">Have a coupon?<span id="op__CouponCode">Click here to enter your coupon code!</span></p>
+        <form action="#" class="coupon__code__input">
+            <input type="text" name="ordercouponcode" id="opof__put__coupon" placeholder="Enter your coupon code">
+            <button type="submit">apply</button>
+        </form>
+    </div>
+    <div class="row op__form__content">
+        <h4>Payment options</h4>
+        <div class="col-12">
+            <form action="#">
+                <div class="payment__item">
+                    <input type="radio" name="oporderpay" id="opof__payoptone">
+                    <label for="opof__payoptone">Bank Transfer</label>
+                </div>
+                <div class="payment__item">
+                    <input type="radio" name="oporderpay" id="opof__payopttwo">
+                    <label for="opof__payopttwo">Cash on Delivery</label>
+                </div>
+                <div class="payment__item">
+                    <input type="radio" name="oporderpay" id="opof__payoptthree" checked>
+                    <label for="opof__payoptthree">Credit/Debit Card</label>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row op__form__content">
+        <div class="col-12 text-center mt-4">
+            <a class="h6-button-2" id="op__order__placed" href="#">Place your order</a>
+        </div>
+    </div>
+    </div>
+  </section>
+  <!-- End of Order Form Popup -->
 
   <!-- Start of One Product Promo Section -->
   <section class="op_promo-section">

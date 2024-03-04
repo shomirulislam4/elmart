@@ -3509,6 +3509,23 @@ $(function (){
   });
 });
 
+//Order Form
+$(function() {
+  //Coupon Code Show/Hide
+  $('#op__CouponCode').on('click',function(){
+    $('.coupon__code__input').toggleClass('active')
+  })
+
+  //Order Form Popup
+  $('#orderform__popupbtn').magnificPopup({
+    type: 'inline',
+    midClick: true,
+    mainClass: 'mfp-fade'
+  });
+});
+
+
+
 /*============================ Shop Details Page (Style 5) ============================*/
 //Thumb & Product image slider
 $(function() {
