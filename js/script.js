@@ -3524,8 +3524,6 @@ $(function() {
   });
 });
 
-
-
 /*============================ Shop Details Page (Style 5) ============================*/
 //Thumb & Product image slider
 $(function() {
@@ -3578,5 +3576,58 @@ $(function() {
     }
   });
 });
+
+/*============================ Home Style Seven ============================*/
+//Language change drop down menu
+$(function() {
+  $('.lc__dropdown__btn').on('click',function(){
+    $('.loclang__dropdown').toggleClass('show')
+    if ($(this).hasClass('fa-globe')) {
+      $(this).removeClass('fa-globe').addClass('fa-x');
+    } else {
+      $(this).removeClass('fa-x').addClass('fa-globe');
+    }
+  });
+});
+
+//Search results
+$(function(){
+  $('#HeaderSearch').on('keyup', function(){
+      let inputValue = $(this).val().toLowerCase();
+      let resultsContainer = $('#results__container');
+      resultsContainer.empty();
+      
+      let suggestions = ['Electric Cars', 'Hybrid Cars', 'Sports Cars', 'Classic Cars', 'Car Rental', 'Car Servicing'];
+      
+      let filteredSuggestions = suggestions.filter(function(suggestion){
+          return suggestion.toLowerCase().includes(inputValue);
+      });
+      
+      if (inputValue && filteredSuggestions.length > 0) {
+          filteredSuggestions.forEach(function(suggestion){
+
+              let suggestionDiv = $('<div>').text(suggestion).click(function(){
+                  $('#HeaderSearch').val(suggestion);
+                  resultsContainer.hide();
+              });
+              resultsContainer.append(suggestionDiv);
+          });
+          resultsContainer.show();
+      } else if (inputValue) {
+          resultsContainer.append($('<div>').text('No results'));
+          resultsContainer.show();
+      } else {
+          resultsContainer.hide();
+      }
+  });
+
+  $(document).on('click', function (e) {
+      if (!$(e.target).closest('.header__search').length) {
+          $('#results__container').hide();
+      }
+  });
+});
+
+
 
 }) (jQuery);

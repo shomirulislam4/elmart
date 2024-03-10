@@ -90,6 +90,8 @@
     7. Blog Section (Variant 2)
 29. Shop Details Page (Style 5)
     1. Breadcrumbs Section (Variant 2)
+30. Home Page Seven
+    1. Header Style Seven
 **********************************************/
 
 /* ====================================================================
@@ -98,6 +100,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
 /* Jost */
 @font-face {
@@ -107,7 +110,6 @@
     font-weight: 400;
     src: url('../fonts/jost/jost-v15-latin-regular.woff2') format('woff2');
 }
-
 @font-face {
     font-display: swap;
     font-family: 'Jost';
@@ -115,7 +117,6 @@
     font-weight: 500;
     src: url('../fonts/jost/jost-v15-latin-500.woff2') format('woff2');
 }
-
 @font-face {
     font-display: swap;
     font-family: 'Jost';
@@ -123,7 +124,6 @@
     font-weight: 600;
     src: url('../fonts/jost/jost-v15-latin-600.woff2') format('woff2');
 }
-
 @font-face {
     font-display: swap;
     font-family: 'Jost';
@@ -147,7 +147,6 @@
     font-weight: 500;
     src: url('../fonts/josefin-sans/josefin-sans-v32-latin-500.woff2') format('woff2');
 }
-
 @font-face {
     font-display: swap;
     font-family: 'Josefin Sans';
@@ -155,7 +154,6 @@
     font-weight: 600;
     src: url('../fonts/josefin-sans/josefin-sans-v32-latin-600.woff2') format('woff2');
 }
-
 @font-face {
     font-display: swap;
     font-family: 'Josefin Sans';
@@ -172,7 +170,6 @@
     font-weight: 400;
     src: url('../fonts/poppins/poppins-v20-latin-regular.woff2') format('woff2');
 }
-
 @font-face {
     font-display: swap;
     font-family: 'Poppins';
@@ -180,7 +177,6 @@
     font-weight: 500;
     src: url('../fonts/poppins/poppins-v20-latin-500.woff2') format('woff2');
 }
-
 @font-face {
     font-display: swap;
     font-family: 'Poppins';
@@ -188,7 +184,6 @@
     font-weight: 600;
     src: url('../fonts/poppins/poppins-v20-latin-600.woff2') format('woff2');
 }
-
 @font-face {
     font-display: swap;
     font-family: 'Poppins';
@@ -205,7 +200,6 @@
   font-weight: 300;
   src: url('../fonts/fira-sans/fira-sans-v17-latin-300.woff2') format('woff2');
 }
-
 @font-face {
   font-display: swap;
   font-family: 'Fira Sans';
@@ -213,7 +207,6 @@
   font-weight: 400;
   src: url('../fonts/fira-sans/fira-sans-v17-latin-regular.woff2') format('woff2');
 }
-
 @font-face {
   font-display: swap;
   font-family: 'Fira Sans';
@@ -221,7 +214,6 @@
   font-weight: 500;
   src: url('../fonts/fira-sans/fira-sans-v17-latin-500.woff2') format('woff2');
 }
-
 @font-face {
   font-display: swap;
   font-family: 'Fira Sans';
@@ -318,6 +310,36 @@
   src: url('../fonts/arsenal/arsenal-v12-latin-700italic.woff2') format('woff2');
 }
 
+/* Maven Pro */
+@font-face {
+  font-display: swap;
+  font-family: 'Maven Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/maven-pro/maven-pro-v33-latin-regular.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Maven Pro';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/maven-pro/maven-pro-v33-latin-500.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Maven Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/maven-pro/maven-pro-v33-latin-600.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Maven Pro';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/maven-pro/maven-pro-v33-latin-800.woff2') format('woff2');
+}
+
 /*
 font-family: 'Josefin Sans', sans-serif;
 font-family: 'Jost', sans-serif;
@@ -331,6 +353,9 @@ font-family: 'Protest Riot', sans-serif;
 
 font-family: 'Figtree', sans-serif;
 font-family: 'Arsenal', sans-serif;
+
+font-family: "Maven Pro", sans-serif;
+font-family: "Audiowide", sans-serif;
 */
 
 /* Default CSS */
@@ -340,12 +365,18 @@ font-family: 'Arsenal', sans-serif;
     --main-color2: #F7B600;
     --main-color3: #FF5400;
     --main-color4: #094B63;
+    --main-color5: #261552;
 
     /* Secondary Color */
     --secondary-color1: #3577F0;
     --secondary-color2: #072654;
     --secondary-color3: #FFAC4A;
     --secondary-color4: #DA3933;
+    --secondary-color5: #5926DE;
+
+    /* Dark Mode */
+    --darkmode-body1: #202124;
+    --darkmode-text1: #BDC1C6;
 }
   
 
@@ -22814,12 +22845,632 @@ button:focus {
     font-weight: 600;
     font-family: 'Arsenal', sans-serif;
 }
-/*
-var(--main-color4)
-var(--secondary-color4)
 
-font-family: 'Figtree', sans-serif;
-font-family: 'Arsenal', sans-serif;
+/* ====================================================================
+30. Home Page Seven
+==================================================================== */
+.homepage__seven {
+    position: relative;
+}
+
+.homepage__seven,
+.homepage__seven p,
+.homepage__seven span {
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.homepage__seven a {
+    color: var(--main-color5);
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.homepage__seven a:hover {
+    color: var(--secondary-color5);
+}
+
+.homepage__seven h1,
+.homepage__seven h2,
+.homepage__seven h3,
+.homepage__seven h4,
+.homepage__seven h5,
+.homepage__seven h6 {
+    font-family: 'Audiowide', sans-serif;
+}
+
+.homepage__seven::-webkit-scrollbar-thumb,
+.homepage__seven ::-webkit-scrollbar-thumb {
+    background: var(--main-color5);
+    border-radius: 10px;
+}
+
+.homepage__seven::-webkit-scrollbar-thumb:hover,
+.homepage__seven ::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color5);
+}
+
+.homepage__seven ::-webkit-scrollbar {
+    width: 3px;
+}
+
+.homepage__seven ::selection {
+    background: var(--main-color5);
+}
+
+.homepage__seven .cursor:after {
+    background: var(--main-color5);
+}
+
+.homepage__seven .cursor:before {
+    background: rgba(38, 21, 82, 0.2);
+	border-color: var(--main-color5);
+}
+
+/* Buttons */
+.h7__button-a {
+    position: relative;
+    overflow: hidden;
+    font-size: 20px;
+    line-height: 42px;
+    font-weight: 500;
+    display: block;
+    width: fit-content;
+    height: 50px;
+    padding: 0 15px;
+    background: #FFF;
+    color: var(--main-color5);
+    border: 2px solid var(--main-color5);
+    border-radius: 5px;
+}
+
+.h7__button-a::before {
+    position: absolute;
+    content: '\f061';
+    font-family: 'Fontawesome';
+    background: var(--main-color5);
+    color: #FFF;
+    height: 100%;
+    width: 100%;
+    display: block;
+    top: 0;
+    left: -100%;
+    text-align: center;
+    line-height: 40px;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.h7__button-a:hover::before {
+    left: 0;
+}
+
+/** Start of Header Style Seven **/
+/* Header Top */
+.h7__header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.h7__header__top .left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.h7__header__top .left .location,
+.h7__header__top .left .phone,
+.h7__header__top .left .open__hour {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: "Maven Pro", sans-serif;
+    margin-right: 15px;
+}
+
+.h7__header__top .left .location i,
+.h7__header__top .left .phone i,
+.h7__header__top .left .open__hour i {
+    font-size: 14px;
+    margin-right: 5px;
+    color: var(--secondary-color5);
+}
+
+.h7__header__top .right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.h7__header__top .right .currency__select {
+    display: flex;
+    width: fit-content;
+}
+
+.h7__header__top .right .currency__select .currency__dropdown {
+	height: 25px;
+	margin-left: 5px;
+    background: transparent;
+    color: var(--secondary-color5);
+}
+
+.h7__header__top .right .currency__select p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: "Maven Pro", sans-serif;
+    margin: 0;
+}
+
+.h7__header__top .right .loclang__select {
+    position: relative;
+    width: 20px;
+}
+
+.h7__header__top .right .loclang__select .lc__dropdown__btn {
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.h7__header__top .right .loclang__select .loclang__dropdown {
+    position: absolute;
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: "Maven Pro", sans-serif;
+    width: fit-content;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.h7__header__top .right .loclang__select .loclang__dropdown.show {
+    top: 100%;
+    visibility: visible;
+    opacity: 1;
+}
+
+.h7__header__top .right .loclang__select .loclang__dropdown a {
+    display: block;
+    padding: 5px 15px;
+    color: #191C1F;
+    text-align: center;
+}
+
+.h7__header__top .right .loclang__select .loclang__dropdown a:hover {
+    background: var(--main-color5);
+    color: #FFF;
+}
+
+.divider__vertical {
+    height: 20px;
+    width: 1px;
+    background: #CCC;
+    display: block;
+    margin: 0 15px;
+}
+
+/* Header Middle */
+.h7__header__middle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    padding-bottom: 20px;
+}
+
+.header__search {
+    height: 50px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #CCC;
+    position: relative;
+}
+
+.header__search button {
+    font-size: 16px;
+    height: 100%;
+    width: 40px;
+    background: #FFF;
+    text-align: center;
+}
+
+.header__search input {
+    height: 100%;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Maven Pro", sans-serif;
+    padding-left: 10px;
+    padding-right: 0;
+}
+
+.header__search input::placeholder {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Maven Pro", sans-serif;
+}
+
+#results__container {
+    position: absolute;
+    width: 100%;
+    background: white;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+    display: none;
+    top: 100%;
+    left: 0;
+    border-radius: 0 0 5px 5px;
+}
+
+#results__container div {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Maven Pro", sans-serif;
+    padding: 5px 15px;
+    overflow: hidden;
+}
+
+#results__container div:hover {
+    color: var(--secondary-color5);
+}
+
+.header__cta__btns {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header__cta__btns .cta__btn {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.has__cart__menu {
+    position: relative;
+}
+
+.has__cart__menu:hover .h7__cart {
+    visibility: visible;
+    opacity: 1;
+}
+
+.h7__cart {
+    width: 400px;
+    height: 300px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    position: absolute;
+    background: #FFF;
+    z-index: 5000;
+    top: 100%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.h7__cart p {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    text-align: center;
+    font-family: "Maven Pro", sans-serif;
+}
+
+.h7__cart__subtotal {
+    border-top: 2px solid #000;
+    padding-top: 10px;
+    background: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h7__cart__subtotal p {
+    margin: 0;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: "Maven Pro", sans-serif;
+}
+
+/* Header Bottom */
+.h7__header__bottom {
+    display: block;
+    background: var(--secondary-color5);
+    padding: 10px 0;
+    height: fit-content;
+}
+
+/* Main menu */
+.h7__main__menu {
+    position: relative;
+}
+
+.h7__main__menu li {
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.h7__main__menu li:first-child {
+    margin-left: 0;
+}
+
+.h7__main__menu li:last-child {
+    margin-right: 0;
+}
+
+.h7__main__menu li a {
+    color: #FFF !important;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    position: relative;
+    text-transform: capitalize;
+    font-family: "Maven Pro", sans-serif;
+}
+
+.h7__main__menu li a::before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #FFF;
+    bottom: -5px;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.h7__main__menu li a:hover::before {
+    width: 100%;
+}
+
+/* Sub Menu */
+.h7__main__menu li .h7__megamenu__dropdown {
+    display: inline-block;
+    color: #FFF;
+    font-weight: 600;
+    background: transparent;
+    border: 2px solid var(--main-color5);
+    padding: 0 20px;
+    font-size: 20px;
+    height: 50px;
+    line-height: 42px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.h7__main__menu li:hover .h7__megamenu__dropdown {
+    background: var(--main-color5);
+}
+
+.h7__main__menu li i {
+    font-size: 14px;
+    margin-left: 8px;
+    margin-right: 0;
+    transition: transform 0.3s;
+    -moz-transition: transform 0.3s;
+    -webkit-transition: transform 0.3s;
+    -ms-transition: transform 0.3s;
+    -o-transition: transform 0.3s;
+}
+
+.h7__main__menu li:hover i {
+    transform: rotate(180deg);
+}
+
+.h7__main__menu li .h7__submenu li a::before,
+.h7__main__menu li .h7__megamenu__dropdown::before,
+.h7__main__menu li .h7__minimenu li a::before,
+.h7__main__menu li .h7__megamenu li a::before {
+    display: none;
+}
+
+.h7__main__menu li .h7__submenu {
+    padding: 0;
+    position: absolute;
+    width: 230px;
+    background: var(--main-color5);
+    left: 0;
+    border-radius: 5px;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    visibility: hidden;
+    opacity: 0;
+    z-index: 9999999;
+}
+
+.h7__main__menu li:hover .h7__submenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.h7__main__menu li .h7__submenu li {
+    display: block;
+    width: 100%;
+    margin: 0;
+}
+
+.h7__main__menu li .h7__submenu li a {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    background: transparent;
+}
+
+.h7__main__menu li .h7__submenu li a:hover {
+    background: var(--secondary-color5);
+}
+
+/* Mini Mneu */
+.h7__main__menu li .h7__minimenu {
+    position: absolute;
+    display: flex;
+    background: var(--main-color5);
+    color: #FFF;
+    padding: 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    left: 50%;
+    transform: translateX(-50%);
+    visibility: hidden;
+    opacity: 0;
+    z-index: 9999999;
+    padding-right: 150px;
+}
+
+.h7__main__menu li:hover .h7__minimenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.h7__main__menu li .h7__minimenu ul {
+    width: 250px;
+    margin: 0 10px;
+}
+
+.h7__main__menu li .h7__minimenu h4 {
+    color: #FFF;
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: 400;
+    font-family: "Audiowide", sans-serif;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #CCC;
+}
+
+.h7__main__menu li .h7__minimenu li {
+    margin: 0;
+    width: 100%;
+}
+
+.h7__main__menu li .h7__minimenu li a {
+    display: block;
+    padding: 5px 10px;
+    width: 100%;
+}
+
+.h7__main__menu li .h7__minimenu li a:hover {
+    background: var(--secondary-color5);
+}
+
+.h7__main__menu li .h7__minimenu img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+/* Mega Menu */
+.h7__main__menu .has__megamenu {
+    position: unset;
+}
+
+.h7__main__menu li .h7__megamenu {
+    position: absolute;
+    left: 0;
+    display: flex;
+    background: #FFF;
+    padding: 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    visibility: hidden;
+    opacity: 0;
+    z-index: 9999999;
+}
+
+.h7__main__menu li:hover .h7__megamenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.h7__main__menu li .h7__megamenu ul {
+    width: 250px;
+    margin: 0 12.5px;
+}
+
+.h7__main__menu li .h7__megamenu h4 {
+    color: var(--main-color5);
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: 400;
+    font-family: "Audiowide", sans-serif;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #CCC;
+}
+
+.h7__main__menu li .h7__megamenu li {
+    margin: 0;
+    width: 100%;
+}
+
+.h7__main__menu li .h7__megamenu li a {
+    color: var(--main-color5) !important;
+    display: block;
+    padding: 5px 0;
+    width: 100%;
+}
+
+.h7__main__menu li .h7__megamenu li a:hover {
+    color: var(--secondary-color5) !important;
+}
+
+
+
+/** End of Header Style Seven **/
+
+/*
+font-family: "Maven Pro", sans-serif;
+font-family: "Audiowide", sans-serif;
 
     transition: 0.3s;
     -moz-transition: 0.3s;

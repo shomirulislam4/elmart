@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#261552">
+
+    <title>Elcar - Automotive</title>
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="icon" type="image/x-icon" href="image/favicon.png">
+    <link rel="apple-touch-icon" href="image/icon.png">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/spacing.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="homepage__seven">
+    <!-- Start of Header Style Seven -->
+    <header class="header__seven">
+        <div class="container">
+            <div class="h7__header__top">
+                <div class="left">
+                    <div class="location">
+                        <i class="fa-solid fa-location-dot"></i>443 Gidlow Ln, Lancashire, UK
+                    </div>
+                    <div class="phone">
+                        <i class="fa-solid fa-phone"></i>+44 (234) 4587-441
+                    </div>
+                    <div class="open__hour">
+                        <i class="fa-regular fa-clock"></i>MON - SAT 10:00 AM - 20:00 PM
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="currency__select">
+                        <p>Currency:</p>
+                        <select class="currency__dropdown">
+                            <option value="0">$USD</option>
+                            <option value="1">€EUR</option>
+                            <option value="2">£GBP</option>
+                            <option value="3">৳BDT</option>
+                        </select>
+                    </div>
+                    <span class="divider__vertical"></span>
+                    <div class="loclang__select">
+                        <i class="lc__dropdown__btn fa-solid fa-globe"></i>
+                        <div class="loclang__dropdown">
+                            <a href="#">English</a>
+                            <a href="#">Spanish</a>
+                            <a href="#">French</a>
+                            <a href="#">Portuguese</a>
+                            <a href="#">Bengali</a>
+                        </div>
+                    </div>
+                    <span class="divider__vertical"></span>
+                    <a href="login-register.html" class="login__button">Login</a>
+                </div>
+            </div>
+            <div class="h7__header__middle">
+                <div class="logo">
+                    <a href="index-7.html"><img src="image/logo/elcar-logo.png" alt="Elcar"></a>
+                </div>
+                <form action="#" class="header__search">
+                    <input type="search" name="header__search" id="HeaderSearch" placeholder="Type 'car' to see suggested search">
+                    <button class="fa-solid fa-magnifying-glass"></button>
+                    <div id="results__container"></div>
+                </form>
+                <ul class="header__cta__btns">
+                    <li><a href="#" class="cta__btn"><i class="fa-solid fa-heart"></i></a></li>
+                    <span class="divider__vertical"></span>
+                    <li class="has__cart__menu"><a href="#" class="cta__btn"><i class="fa-brands fa-opencart"></i></a>
+                        <div class="h7__cart">
+                            <p>Cart is empty!</p>
+                            <div class="h7__cart__subtotal">
+                                <p>subtotal:</p>
+                                <p>$0.00</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="h7__header__bottom">
+            <div class="container d-flex justify-content-between">
+                <ul class="h7__main__menu">
+                    <li><a class="h7__megamenu__dropdown" href="#">All Categories<i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="h7__submenu">
+                            <li><a class="category__names" href="#">Cars</a></li>
+                            <li><a class="category__names" href="#">Engine Parts</a></li>
+                            <li><a class="category__names" href="#">Car Care Kits</a></li>
+                            <li><a class="category__names" href="#">oil & lubricants</a></li>
+                            <li><a class="category__names" href="#">tires & wheels</a></li>
+                            <li><a class="category__names" href="#">brakes & pads</a></li>
+                            <li><a class="category__names" href="#">service kits</a></li>
+                            <li><a class="category__names" href="#">suspension</a></li>
+                            <li><a class="category__names" href="#">other accessories</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Home<i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="h7__submenu">
+                            <li><a href="index.html">Homepage 1</a></li>
+                            <li><a href="index-2.html">Homepage 2</a></li>
+                            <li><a href="index-3.html">Homepage 3</a></li>
+                            <li><a href="index-4.html">Homepage 4</a></li>
+                            <li><a href="index-5.html">Homepage 5</a></li>
+                            <li><a href="index-6.html">Homepage 6</a></li>
+                            <li><a href="index-7.html">Homepage 7</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Blog<i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="h7__submenu">
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="blog-post.html">Blog Post Right Sidebar</a></li>
+                            <li><a href="blog-post-left-sidebar.html">Blog Post Left Sidebar</a></li>
+                            <li><a href="blog-post-no-sidebar.html">Blog Post No Sidebar</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Shop<i class="fa-solid fa-caret-down"></i></a>
+                        <div class="h7__minimenu">
+                            <img src="image/home-seven/header/megamenu-bg.png" alt="bg image">
+                            <ul>
+                                <h4>shop</h4>
+                                <li><a href="shop.html">Shop Left Sidebar</a></li>
+                                <li><a href="shop-right-sidebar.html">Shop Right Sidebar</a></li>
+                                <li><a href="shop-banner-left-sidebar.html">Shop Banner Leftbar</a></li>
+                                <li><a href="shop-banner-right-sidebar.html">Shop Banner Rightbar</a></li>
+                                <li><a href="shop-product-style-2.html">Shop Product Style 2</a></li>
+                                <li><a href="shop-product-style-3.html">Shop Product Style 3</a></li>
+                                <li><a href="shop-product-style-3-list.html">Shop PStyle 3 (List)</a></li>
+                                <li><a href="shop-product-style-4.html">Shop Product Style 4</a></li>
+                                <li><a href="shop-product-style-5.html">Shop Product Style 5</a></li>
+                                <li><a href="shop-infinite-scroll.html">Shop Infinite Scroll</a></li>
+                            </ul>
+                            <ul>
+                                <h4>single product</h4>
+                                <li><a href="shop-details.html">Single Product</a></li>
+                                <li><a href="shop-details-countdown.html">Product Countdown</a></li>
+                                <li><a href="shop-details-ask-question.html">Product Ask a Question</a></li>
+                                <li><a href="shop-details-size-guide.html">Product Size Guide</a></li>
+                                <li><a href="shop-details-color-compare.html">Product Color Compare</a></li>
+                                <li><a href="shop-details-product-image-slider.html">Product Image Slider</a></li>
+                                <li><a href="shop-details-slider-image.html">Product Image Slider V2</a></li>
+                                <li><a href="shop-details-sidebar.html">Product Sidebar</a></li>
+                                <li><a href="shop-details-style-4.html">Product Image Gallery</a></li>
+                                <li><a href="shop-details-style-5.html">Single Product Style 5</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">pages<i class="fa-solid fa-caret-down"></i></a>
+                        <div class="h7__minimenu">
+                            <img src="image/home-seven/header/megamenu-bg.png" alt="bg image">
+                            <ul>
+                                <h4>Some pages</h4>
+                                <li><a href="blog-post.html">Blog Post</a></li>
+                                <li><a href="faqs.html">FAQs</a></li>
+                            </ul>
+                            <ul>
+                                <h4>customer dashboard</h4>
+                                <li><a href="user-dashboard.html">User Dashboard</a></li>
+                                <li><a href="wishlist.html">Wishlist</a></li>
+                                <li><a href="cart.html">Cart</a></li>
+                                <li><a href="checkout.html">Checkout</a></li>
+                            </ul>
+                            <ul>
+                                <h4>seller dashboard</h4>
+                                <li><a href="seller-dashboard.html">Seller Dashboard</a></li>
+                                <li><a href="vendor-list.html">Vendor List</a></li>
+                                <li><a href="vendor-shop-left-Sidebar.html">Vendor Left Sidebar</a></li>
+                                <li><a href="vendor-shop-right-Sidebar.html">Vendor Right Sidebar</a></li>
+                                <li><a href="vendor-shop-banner-1.html">Vendor Banner Leftbar</a></li>
+                                <li><a href="vendor-shop-banner-2.html">Vendor Banner Rightbar</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="contact.html">contact us</a></li>
+                    <li class="has__megamenu"><a href="#">elements<i class="fa-solid fa-caret-down"></i></a>
+                        <div class="h7__megamenu">
+                            <ul>
+                                <h4>element list</h4>
+                                <li><a href="#">category Name 1</a></li>
+                                <li><a href="#">category Name 2</a></li>
+                                <li><a href="#">category Name 3</a></li>
+                                <li><a href="#">category Name 4</a></li>
+                                <li><a href="#">category Name 5</a></li>
+                                <li><a href="#">category Name 6</a></li>
+                                <li><a href="#">category Name 7</a></li>
+                                <li><a href="#">category Name 8</a></li>
+                                <li><a href="#">category Name 9</a></li>
+                                <li><a href="#">category Name 10</a></li>
+                            </ul>
+                            <ul>
+                                <h4>element list</h4>
+                                <li><a href="#">category Name 11</a></li>
+                                <li><a href="#">category Name 12</a></li>
+                                <li><a href="#">category Name 13</a></li>
+                                <li><a href="#">category Name 14</a></li>
+                                <li><a href="#">category Name 15</a></li>
+                                <li><a href="#">category Name 16</a></li>
+                                <li><a href="#">category Name 17</a></li>
+                                <li><a href="#">category Name 18</a></li>
+                                <li><a href="#">category Name 19</a></li>
+                                <li><a href="#">category Name 20</a></li>
+                            </ul>
+                            <ul>
+                                <h4>element list</h4>
+                                <li><a href="#">category Name 21</a></li>
+                                <li><a href="#">category Name 22</a></li>
+                                <li><a href="#">category Name 23</a></li>
+                                <li><a href="#">category Name 24</a></li>
+                                <li><a href="#">category Name 25</a></li>
+                                <li><a href="#">category Name 26</a></li>
+                                <li><a href="#">category Name 27</a></li>
+                                <li><a href="#">category Name 28</a></li>
+                                <li><a href="#">category Name 29</a></li>
+                                <li><a href="#">category Name 30</a></li>
+                            </ul>
+                            <ul>
+                                <h4>element list</h4>
+                                <li><a href="#">category Name 31</a></li>
+                                <li><a href="#">category Name 32</a></li>
+                                <li><a href="#">category Name 33</a></li>
+                                <li><a href="#">category Name 34</a></li>
+                                <li><a href="#">category Name 35</a></li>
+                                <li><a href="#">category Name 36</a></li>
+                                <li><a href="#">category Name 37</a></li>
+                                <li><a href="#">category Name 38</a></li>
+                                <li><a href="#">category Name 39</a></li>
+                                <li><a href="#">category Name 40</a></li>
+                            </ul>
+                            <ul>
+                                <h4>element list</h4>
+                                <li><a href="#">category Name 41</a></li>
+                                <li><a href="#">category Name 42</a></li>
+                                <li><a href="#">category Name 43</a></li>
+                                <li><a href="#">category Name 44</a></li>
+                                <li><a href="#">category Name 45</a></li>
+                                <li><a href="#">category Name 46</a></li>
+                                <li><a href="#">category Name 47</a></li>
+                                <li><a href="#">category Name 48</a></li>
+                                <li><a href="#">category Name 49</a></li>
+                                <li><a href="#">category Name 50</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <a class="h7__button-a" href="#">Book a service</a>
+            </div>
+        </div>
+    </header>
+    <!-- End of Header Style Seven -->
+
+
+
+    <!-- JS Links -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/magnific-popup.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
