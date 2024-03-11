@@ -23238,6 +23238,11 @@ button:focus {
     font-family: "Maven Pro", sans-serif;
 }
 
+.h7__main__menu li a.active {
+    position: relative;
+}
+
+.h7__main__menu li a.active::before,
 .h7__main__menu li a::before {
     position: absolute;
     content: '';
@@ -23252,6 +23257,7 @@ button:focus {
     -o-transition: 0.3s;
 }
 
+.h7__main__menu li a.active::before,
 .h7__main__menu li a:hover::before {
     width: 100%;
 }
@@ -23314,6 +23320,7 @@ button:focus {
     visibility: hidden;
     opacity: 0;
     z-index: 9999999;
+    margin-top: 3px;
 }
 
 .h7__main__menu li:hover .h7__submenu {
@@ -23372,6 +23379,7 @@ button:focus {
     opacity: 0;
     z-index: 9999999;
     padding-right: 150px;
+    margin-top: 3px;
 }
 
 .h7__main__menu li:hover .h7__minimenu {
@@ -23439,6 +23447,7 @@ button:focus {
     visibility: hidden;
     opacity: 0;
     z-index: 9999999;
+    margin-top: 3px;
 }
 
 .h7__main__menu li:hover .h7__megamenu {
