@@ -12967,7 +12967,7 @@ button:focus {
 	background: var(--main-color2);
 	border-radius: 3px;
 	padding: 0 10px;
-	width: 169px;
+	width: fit-content;
 	height: 33px;
 	margin: 0;
 }
@@ -13952,6 +13952,7 @@ button:focus {
     width: 100%;
     align-items: center;
     justify-content: space-between;
+    text-transform: capitalize;
 }
 
 .mobile-menu-wrapper .mobile-submenu a:hover {
@@ -22920,6 +22921,7 @@ button:focus {
     color: var(--main-color5);
     border: 2px solid var(--main-color5);
     border-radius: 5px;
+    text-transform: capitalize;
 }
 
 .h7__button-a::before {
@@ -22944,6 +22946,28 @@ button:focus {
 
 .h7__button-a:hover::before {
     left: 0;
+}
+
+.h7__button-b {
+    overflow: hidden;
+    font-size: 20px;
+    line-height: 42px;
+    font-weight: 500;
+    display: block;
+    width: fit-content;
+    height: 50px;
+    padding: 0 15px;
+    background: #FFF;
+    color: var(--main-color5);
+    border: 2px solid var(--main-color5);
+    border-radius: 5px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.h7__button-b:hover {
+    color: #FFF !important;
+    background: var(--main-color5);
 }
 
 /** Start of Header Style Seven **/
@@ -23023,6 +23047,7 @@ button:focus {
     font-weight: 400;
     font-family: "Maven Pro", sans-serif;
     width: fit-content;
+    background: #FFF;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     overflow: hidden;
@@ -23036,6 +23061,7 @@ button:focus {
     -webkit-transition: 0.3s;
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
+    z-index: 99999;
 }
 
 .h7__header__top .right .loclang__select .loclang__dropdown.show {
@@ -23209,6 +23235,406 @@ button:focus {
     height: fit-content;
 }
 
+.h7__header__bottom .left-side {
+    width: 15%;
+}
+
+.h7__header__bottom .right-side {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* All Categories Menu */
+.h7__has__catmenu {
+    position: relative;
+}
+
+.h7__has__catmenu .h7__catmenu__dropdown {
+    display: inline-block;
+    color: #FFF;
+    font-weight: 600;
+    background: transparent;
+    border: 2px solid var(--main-color5);
+    padding: 0 20px;
+    font-size: 20px;
+    height: 50px;
+    line-height: 42px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.h7__has__catmenu .h7__catmenu__dropdown i {
+    font-size: 14px;
+    margin-left: 8px;
+    margin-right: 0;
+    transition: transform 0.3s;
+    -moz-transition: transform 0.3s;
+    -webkit-transition: transform 0.3s;
+    -ms-transition: transform 0.3s;
+    -o-transition: transform 0.3s;
+}
+
+.h7__has__catmenu:hover .h7__catmenu__dropdown i {
+    transform: rotate(180deg);
+
+}
+
+.h7__has__catmenu:hover .h7__catmenu__dropdown {
+    color: #FFF;
+    background: var(--main-color5);
+}
+
+.h7__has__catmenu .h7__catmenu {
+    padding: 0;
+    position: absolute;
+    width: 230px;
+    background: var(--main-color5);
+    left: 0;
+    border-radius: 5px;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 999999;
+    visibility: hidden;
+    opacity: 0;
+    margin-top: 2px;
+}
+
+.h7__has__catmenu:hover .h7__catmenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.h7__has__catmenu li {
+    margin: 0;
+    width: 100%;
+}
+
+.h7__has__catmenu li .category__names {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.h7__has__catmenu li .category__names i {
+    font-size: 14px;
+    line-height: 27px;
+}
+
+.h7__has__catmenu li:hover .category__names {
+    background: var(--secondary-color5);
+    border-radius: 5px;
+}
+
+.h7__has__catmenu li .category__mega__menu {
+    position: absolute;
+    top: 0;
+    left: calc(100% + 20px);
+    width: 850px;
+    padding: 20px;
+    border-radius: 5px;
+    background: #FFF;
+    z-index: 99999;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.h7__has__catmenu li:hover .category__mega__menu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.category__mega__menu::before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    left: -20px;
+    height: 100%;
+    background: transparent;
+    top: 0;
+}
+
+.category__mega__menu .bg-image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 0 0 5px 0;
+}
+
+.category__mega__menu .bg-image img {
+    width: 100%;
+    height: auto;
+}
+
+.h7__has__catmenu li .category__mega__menu ul {
+    width: 235px;
+    margin-right: 40px;
+}
+
+.category__mega__menu li {
+    margin: 0;
+    width: 100%;
+}
+
+.category__mega__menu h4 {
+    color: var(--main-color5);
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: 400;
+    font-family: "Audiowide", sans-serif;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #CCC;
+}
+
+.category__mega__menu h4 i {
+    margin-right: 5px;
+}
+
+.category__mega__menu li a {
+    color: var(--main-color5) !important;
+    display: block;
+    padding: 5px 10px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: "Maven Pro", sans-serif;
+}
+
+.category__mega__menu li a:hover {
+    color: var(--secondary-color5) !important;
+    border-radius: 5px;
+}
+
+.category__mega__menu li a span {
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 20px;
+    font-weight: 400;
+    font-family: "Maven Pro", sans-serif;
+    background: var(--secondary-color5);
+    border-radius: 5px;
+    padding: 0 5px;
+    display: inline-block;
+    margin-left: 5px;
+    color: #FFF;
+}
+
+.header__product__category {
+    width: 185px;
+    border: 1px solid #CCC;
+    padding: 10px;
+    text-align: center;
+}
+
+.header__product__category:hover {
+    background: var(--main-color5);
+}
+
+.header__product__category .icon {
+    color: var(--main-color5);
+    font-size: 30px;
+}
+
+.header__product__category:hover .icon {
+    color: #FFF;
+}
+
+.header__product__category h5 {
+    color: var(--main-color5);
+    font-size: 20px;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+
+.header__product__category:hover h5 {
+    color: #FFF;
+}
+
+.header__product__category p {
+    color: var(--main-color5);
+    margin: 0;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: capitalize;
+}
+
+.header__product__category:hover p {
+    color: #FFF;
+}
+
+.category__mega__menu.with__flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.category__mega__menu .left-side {
+    width: 70%;
+}
+
+.category__mega__menu .left-side ul:last-child {
+    margin-right: 0;
+}
+
+.category__mega__menu .right-side {
+    width: 30%;
+}
+
+.category__mega__menu .promo__box {
+    width: 100%;
+    height: 100%;
+    background: #F5F5F5;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.category__mega__menu .promo__box .text {
+    height: 55%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.category__mega__menu .promo__box .text h4 {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: "Maven Pro", sans-serif;
+    text-align: left;
+    color: #00A01A;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.category__mega__menu .promo__box .text h3 {
+    font-size: 28px;
+    line-height: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: "Maven Pro", sans-serif;
+    color: var(--main-color5);
+    margin: 0;
+    text-align: center;
+    transform: rotate(-5deg);
+}
+
+.category__mega__menu .promo__box .text h2 {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Maven Pro", sans-serif;
+    color: var(--secondary-color5);
+    margin: 0;
+    text-align: right;
+}
+
+.category__mega__menu .promo__box .text p {
+    color: #6C6C6C;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    font-family: "Maven Pro", sans-serif;
+    margin: 0;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.category__mega__menu .promo__box .image {
+    width: 100%;
+    height: 30%;
+    position: relative;
+}
+
+.category__mega__menu .promo__box .image img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    right: -50px;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.category__mega__menu .promo__box:hover .image img {
+    right: 0;
+}
+
+.category__mega__menu .promo__box .button {
+    width: 100%;
+    height: 15%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.category__mega__menu .header__product {
+    width: 250px;
+    height: fit-content;
+    padding: 10px;
+    border: 1px solid #CCC;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.category__mega__menu .header__product img {
+    height: 230px;
+    width: 230px;
+}
+
+.category__mega__menu .header__product h3 {
+    margin: 0;
+    text-align: center;
+    font-size: 24px;
+    text-transform: capitalize;
+    font-family: "Audiowide", sans-serif;
+}
+
+.category__mega__menu .header__product .list {
+    width: 100%;
+    margin: 0;
+}
+
+.category__mega__menu .header__product .list li {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.category__mega__menu .header__product .h7__button-b {
+    font-size: 16px;
+    line-height: 26px;
+    height: 30px;
+    padding: 0 10px;
+    margin: 0 auto;
+    border-width: 1px;
+    font-weight: 400;
+}
+
 /* Main menu */
 .h7__main__menu {
     position: relative;
@@ -23263,24 +23689,6 @@ button:focus {
 }
 
 /* Sub Menu */
-.h7__main__menu li .h7__megamenu__dropdown {
-    display: inline-block;
-    color: #FFF;
-    font-weight: 600;
-    background: transparent;
-    border: 2px solid var(--main-color5);
-    padding: 0 20px;
-    font-size: 20px;
-    height: 50px;
-    line-height: 42px;
-    border-radius: 5px;
-    margin: 0;
-}
-
-.h7__main__menu li:hover .h7__megamenu__dropdown {
-    background: var(--main-color5);
-}
-
 .h7__main__menu li i {
     font-size: 14px;
     margin-left: 8px;
@@ -23297,9 +23705,10 @@ button:focus {
 }
 
 .h7__main__menu li .h7__submenu li a::before,
-.h7__main__menu li .h7__megamenu__dropdown::before,
+.h7__main__menu li .h7__catmenu__dropdown::before,
 .h7__main__menu li .h7__minimenu li a::before,
-.h7__main__menu li .h7__megamenu li a::before {
+.h7__main__menu li .h7__megamenu li a::before,
+.h7__has__catmenu li a::before {
     display: none;
 }
 
@@ -23332,6 +23741,7 @@ button:focus {
     display: block;
     width: 100%;
     margin: 0;
+    position: relative;
 }
 
 .h7__main__menu li .h7__submenu li a {
@@ -23344,19 +23754,6 @@ button:focus {
 
 .h7__main__menu li .h7__submenu li a:hover {
     background: var(--secondary-color5);
-}
-
-/* All Categories Menu */
-.h7__main__menu li .h7__submenu .category__names {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-}
-
-.h7__main__menu li:hover .h7__submenu .category__names i {
-    transform: none;
-    margin: 0;
-    line-height: 26px;
 }
 
 /* Mini Mneu */
@@ -23456,8 +23853,8 @@ button:focus {
 }
 
 .h7__main__menu li .h7__megamenu ul {
-    width: 250px;
-    margin: 0 12.5px;
+    width: 220px;
+    margin: 0 10px;
 }
 
 .h7__main__menu li .h7__megamenu h4 {
@@ -23487,8 +23884,48 @@ button:focus {
     color: var(--secondary-color5) !important;
 }
 
+.h7__header__bottom .mobile-menu-btn {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px 10px;
+    background: #FFF;
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
 
+.h7__header__bottom .mobile-menu-btn i {
+    margin-right: 7px;
+}
 
+.h7__header__bottom .mobile-menu-btn:hover {
+    background: transparent;
+    color: #FFF;
+}
+
+.homepage__seven .mobile-menu-style4 .nav-pills .nav-link.active,
+.homepage__seven .mobile-menu-style4 .nav-pills .show > .nav-link {
+	background: var(--main-color5);
+}
+
+.homepage__seven .mobile-menu-style4 .nav-pills .nav-link {
+	border: 1px solid var(--main-color5);
+    font-family: "Maven Pro", sans-serif;
+}
+
+.homepage__seven .mobile-menu-wrapper .mobile-submenu a {
+    font-family: "Maven Pro", sans-serif;
+}
+
+.homepage__seven .mobile-menu-wrapper .mobile-submenu a:hover {
+    color: var(--secondary-color5);
+}
 /** End of Header Style Seven **/
 
 /*

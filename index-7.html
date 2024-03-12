@@ -22,6 +22,38 @@
     <link rel="stylesheet" href="css/nice-select.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+
+    <style>
+        @media (min-width: 992px) {
+            .mobile-menu-btn {
+                display: none;
+            }
+        }
+
+        @media (max-width: 991px) {
+        .h7__header__middle {
+            padding: 10px 0;
+        }
+        .h7__header__top .left,
+        .h7__header__bottom .left-side,
+        .h7__main__menu {
+            display: none;
+        }
+        .h7__header__top .right {
+            justify-content: center;
+            width: 100%;
+        }
+        .h7__header__top {
+            padding-bottom: 0;
+        }
+        .h7__header__bottom {
+            padding: 5px 0;
+        }
+        .h7__header__bottom .right-side {
+            width: 100%;
+        }
+        }
+    </style>
 </head>
 <body class="homepage__seven">
     <!-- Start of Header Style Seven -->
@@ -89,21 +121,512 @@
             </div>
         </div>
         <div class="h7__header__bottom">
-            <div class="container d-flex justify-content-between">
+            <div class="container d-flex justify-content-start">
+                <div class="left-side">
+                <ul><li class="h7__has__catmenu"><a class="h7__catmenu__dropdown" href="#">All Categories<i class="fa-solid fa-caret-down"></i></a>
+                    <ul class="h7__catmenu">
+                        <li><a class="category__names" href="#">Car services<i class="fa-solid fa-chevron-right"></i></a>
+                            <div class="category__mega__menu">
+                                <div class="d-flex justify-content-between mb-20">
+                                    <a href="#" class="header__product__category">
+                                        <div class="icon">
+                                            <i class="fa-solid fa-car-tunnel"></i>
+                                        </div>
+                                        <h5>New Cars</h5>
+                                        <p>purchase new cars at an afordable cost with a discount on first puchase!</p>
+                                    </a>
+                                    <a href="#" class="header__product__category">
+                                        <div class="icon">
+                                            <i class="fa-solid fa-car"></i>
+                                        </div>
+                                        <h5>used Cars</h5>
+                                        <p>purchase used cars at an afordable cost with a discount on first puchase!</p>
+                                    </a>
+                                    <a href="#" class="header__product__category">
+                                        <div class="icon">
+                                            <i class="fa-solid fa-car-tunnel"></i>
+                                        </div>
+                                        <h5>rent a Car</h5>
+                                        <p>rent a car as long as you like without any hassle. we'll take of everything!</p>
+                                    </a>
+                                    <a href="#" class="header__product__category">
+                                        <div class="icon">
+                                            <i class="fa-solid fa-car-burst"></i>
+                                        </div>
+                                        <h5>repair Cars</h5>
+                                        <p>repaird your car at the cheapest cost. our pickup service will pick your car from any location.</p>
+                                    </a>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <a href="#" class="header__product__category">
+                                        <div class="icon">
+                                            <i class="fa-solid fa-cart-flatbed"></i>
+                                        </div>
+                                        <h5>car parts</h5>
+                                        <p>Lorem ipsum, dolor sit amet adipi sicing elit. Dolorum quia volup tatibus deserunt optio.</p>
+                                    </a>
+                                    <a href="#" class="header__product__category">
+                                        <div class="icon">
+                                            <i class="fa-solid fa-gas-pump"></i>
+                                        </div>
+                                        <h5>Oil & lubricants</h5>
+                                        <p>Lorem ipsum, dolor sit amet adipi sicing elit. Dolorum quia volup tatibus deserunt optio.</p>
+                                    </a>
+                                    <a href="#" class="header__product__category">
+                                        <div class="icon">
+                                            <i class="fa-solid fa-caravan"></i>
+                                        </div>
+                                        <h5>Other accessories</h5>
+                                        <p>Lorem ipsum, dolor sit amet adipi sicing elit. Dolorum quia volup tatibus deserunt optio.</p>
+                                    </a>
+                                    <a href="#" class="header__product__category">
+                                        <div class="icon">
+                                            <i class="fa-solid fa-car-tunnel"></i>
+                                        </div>
+                                        <h5>New Cars</h5>
+                                        <p>purchase new cars at an afordable cost with a discount on first puchase!</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a class="category__names" href="#">Engine Parts<i class="fa-solid fa-chevron-right"></i></a>
+                            <div class="category__mega__menu">
+                                <div class="bg-image"><img src="image/home-seven/header/allcat-menu-bg2.png" alt="bg image"></div>
+                                <div class="d-flex mb-20">
+                                    <ul>
+                                        <h4>Product list 1</h4>
+                                        <li><a href="#">Product name 1</a></li>
+                                        <li><a href="#">Product name 2</a></li>
+                                        <li><a href="#">Product name 3</a></li>
+                                        <li><a href="#">Product name 4</a></li>
+                                        <li><a href="#">Product name 6</a></li>
+                                        <li><a href="#">Product name 7</a></li>
+                                    </ul>
+                                    <ul>
+                                        <h4>Product list 2</h4>
+                                        <li><a href="#">Product name 1</a></li>
+                                        <li><a href="#">Product name 2</a></li>
+                                        <li><a href="#">Product name 3</a></li>
+                                        <li><a href="#">Product name 4</a></li>
+                                        <li><a href="#">Product name 6</a></li>
+                                        <li><a href="#">Product name 7</a></li>
+                                    </ul>
+                                    <ul>
+                                        <h4>Product list 3</h4>
+                                        <li><a href="#">Product name 1</a></li>
+                                        <li><a href="#">Product name 2</a></li>
+                                        <li><a href="#">Product name 3</a></li>
+                                        <li><a href="#">Product name 4</a></li>
+                                        <li><a href="#">Product name 6</a></li>
+                                        <li><a href="#">Product name 7</a></li>
+                                    </ul>
+                                </div>
+                                <div class="d-flex">
+                                    <ul>
+                                        <h4>Product list 4</h4>
+                                        <li><a href="#">Product name 1</a></li>
+                                        <li><a href="#">Product name 2</a></li>
+                                        <li><a href="#">Product name 3</a></li>
+                                        <li><a href="#">Product name 4</a></li>
+                                        <li><a href="#">Product name 6</a></li>
+                                        <li><a href="#">Product name 7</a></li>
+                                    </ul>
+                                    <ul>
+                                        <h4>Product list 5</h4>
+                                        <li><a href="#">Product name 1</a></li>
+                                        <li><a href="#">Product name 2</a></li>
+                                        <li><a href="#">Product name 3</a></li>
+                                        <li><a href="#">Product name 4</a></li>
+                                        <li><a href="#">Product name 6</a></li>
+                                        <li><a href="#">Product name 7</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a class="category__names" href="#">Car Care Kits<i class="fa-solid fa-chevron-right"></i></a>
+                            <div class="category__mega__menu">
+                                <div class="bg-image"><img src="image/home-seven/header/allcat-menu-bg.png" alt="bg image"></div>
+                                <div class="d-flex mb-20">
+                                    <ul>
+                                        <h4>List name 1</h4>
+                                        <li><a href="#">Category Item name 1</a></li>
+                                        <li><a href="#">Category Item name 2</a></li>
+                                        <li><a href="#">Category Item name 3</a></li>
+                                        <li><a href="#">Category Item name 4</a></li>
+                                        <li><a href="#">Category Item name 6</a></li>
+                                        <li><a href="#">Category Item name 7</a></li>
+                                    </ul>
+                                    <ul>
+                                        <h4>List name 2</h4>
+                                        <li><a href="#">Category Item name 1</a></li>
+                                        <li><a href="#">Category Item name 2</a></li>
+                                        <li><a href="#">Category Item name 3</a></li>
+                                        <li><a href="#">Category Item name 4</a></li>
+                                        <li><a href="#">Category Item name 6</a></li>
+                                        <li><a href="#">Category Item name 7</a></li>
+                                    </ul>
+                                    <ul>
+                                        <h4>List name 3</h4>
+                                        <li><a href="#">Category Item name 1</a></li>
+                                        <li><a href="#">Category Item name 2</a></li>
+                                        <li><a href="#">Category Item name 3</a></li>
+                                        <li><a href="#">Category Item name 4</a></li>
+                                        <li><a href="#">Category Item name 6</a></li>
+                                        <li><a href="#">Category Item name 7</a></li>
+                                    </ul>
+                                </div>
+                                <div class="d-flex">
+                                    <ul>
+                                        <h4>list name 4</h4>
+                                        <li><a href="#">Category Item name 1</a></li>
+                                        <li><a href="#">Category Item name 2</a></li>
+                                        <li><a href="#">Category Item name 3</a></li>
+                                        <li><a href="#">Category Item name 4</a></li>
+                                        <li><a href="#">Category Item name 6</a></li>
+                                        <li><a href="#">Category Item name 7</a></li>
+                                    </ul>
+                                    <ul>
+                                        <h4>list name 5</h4>
+                                        <li><a href="#">Category Item name 1</a></li>
+                                        <li><a href="#">Category Item name 2</a></li>
+                                        <li><a href="#">Category Item name 3</a></li>
+                                        <li><a href="#">Category Item name 4</a></li>
+                                        <li><a href="#">Category Item name 6</a></li>
+                                        <li><a href="#">Category Item name 7</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a class="category__names" href="#">oil & lubricants<i class="fa-solid fa-chevron-right"></i></a>
+                            <div class="category__mega__menu with__flex">
+                                <div class="left-side">
+                                <div class="d-flex mb-20">
+                                    <ul>
+                                        <h4>Product list 1</h4>
+                                        <li><a href="#">Product name 1</a></li>
+                                        <li><a href="#">Product name 2</a></li>
+                                        <li><a href="#">Product name 3</a></li>
+                                        <li><a href="#">Product name 4</a></li>
+                                        <li><a href="#">Product name 6</a></li>
+                                        <li><a href="#">Product name 7</a></li>
+                                    </ul>
+                                    <ul>
+                                        <h4>Product list 2</h4>
+                                        <li><a href="#">Product name 1</a></li>
+                                        <li><a href="#">Product name 2</a></li>
+                                        <li><a href="#">Product name 3</a></li>
+                                        <li><a href="#">Product name 4</a></li>
+                                        <li><a href="#">Product name 6</a></li>
+                                        <li><a href="#">Product name 7</a></li>
+                                    </ul>
+                                </div>
+                                <div class="d-flex">
+                                    <ul>
+                                        <h4>Product list 4</h4>
+                                        <li><a href="#">Product name 1</a></li>
+                                        <li><a href="#">Product name 2</a></li>
+                                        <li><a href="#">Product name 3</a></li>
+                                        <li><a href="#">Product name 4</a></li>
+                                        <li><a href="#">Product name 6</a></li>
+                                        <li><a href="#">Product name 7</a></li>
+                                    </ul>
+                                    <ul>
+                                        <h4>Product list 5</h4>
+                                        <li><a href="#">Product name 1</a></li>
+                                        <li><a href="#">Product name 2</a></li>
+                                        <li><a href="#">Product name 3</a></li>
+                                        <li><a href="#">Product name 4</a></li>
+                                        <li><a href="#">Product name 6</a></li>
+                                        <li><a href="#">Product name 7</a></li>
+                                    </ul>
+                                </div>
+                                </div>
+                                <div class="right-side">
+                                    <div class="promo__box">
+                                        <div class="text">
+                                            <h4>On sale</h4>
+                                            <h3>limited offer</h3>
+                                            <h2>buy</h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nemo eligendi, ullam error veritatis possimus?</p>
+                                        </div>
+                                        <div class="image">
+                                            <img src="image/home-seven/header/promo-img.png" alt="promo image">
+                                        </div>
+                                        <div class="button">
+                                            <a href="#" class="h7__button-b">shop now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a class="category__names" href="#">tires & wheels<i class="fa-solid fa-chevron-right"></i></a>
+                            <div class="category__mega__menu">
+                                <div class="bg-image"><img src="image/home-seven/header/allcat-menu-bg2.png" alt="bg image"></div>
+                                <div class="d-flex mb-20">
+                                    <ul>
+                                        <h4>Product list 1</h4>
+                                        <li><a href="#">Product name 1</a></li>
+                                        <li><a href="#">Product name 2</a></li>
+                                        <li><a href="#">Product name 3<span>on sale</span></a></li>
+                                        <li><a href="#">Product name 4</a></li>
+                                        <li><a href="#">Product name 6</a></li>
+                                        <li><a href="#">Product name 7</a></li>
+                                    </ul>
+                                    <ul>
+                                        <h4>Product list 2</h4>
+                                        <li><a href="#">Product name 1</a></li>
+                                        <li><a href="#">Product name 2</a></li>
+                                        <li><a href="#">Product name 3</a></li>
+                                        <li><a href="#">Product name 4</a></li>
+                                        <li><a href="#">Product name 6<span>30% off</span></a></li>
+                                        <li><a href="#">Product name 7</a></li>
+                                    </ul>
+                                    <ul>
+                                        <h4>Product list 3</h4>
+                                        <li><a href="#">Product name 1</a></li>
+                                        <li><a href="#">Product name 2<span>new</span></a></li>
+                                        <li><a href="#">Product name 3</a></li>
+                                        <li><a href="#">Product name 4</a></li>
+                                        <li><a href="#">Product name 6</a></li>
+                                        <li><a href="#">Product name 7</a></li>
+                                    </ul>
+                                </div>
+                                <div class="d-flex">
+                                    <ul>
+                                        <h4>Product list 4</h4>
+                                        <li><a href="#">Product name 1</a></li>
+                                        <li><a href="#">Product name 2</a></li>
+                                        <li><a href="#">Product name 3</a></li>
+                                        <li><a href="#">Product name 4<span>sale</span></a></li>
+                                        <li><a href="#">Product name 6</a></li>
+                                        <li><a href="#">Product name 7</a></li>
+                                    </ul>
+                                    <ul>
+                                        <h4>Product list 5</h4>
+                                        <li><a href="#">Product name 1</a></li>
+                                        <li><a href="#">Product name 2</a></li>
+                                        <li><a href="#">Product name 3</a></li>
+                                        <li><a href="#">Product name 4</a></li>
+                                        <li><a href="#">Product name 6</a></li>
+                                        <li><a href="#">Product name 7<span>+1 free</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a class="category__names" href="#">brakes & pads<i class="fa-solid fa-chevron-right"></i></a>
+                            <div class="category__mega__menu">
+                                <div class="bg-image"><img src="image/home-seven/header/allcat-menu-bg.png" alt="bg image"></div>
+                                <div class="d-flex mb-20">
+                                    <ul>
+                                        <h4><i class="fa-solid fa-car-side"></i>List name 1</h4>
+                                        <li><a href="#">Category Item name 1</a></li>
+                                        <li><a href="#">Category Item name 2</a></li>
+                                        <li><a href="#">Category Item name 3</a></li>
+                                        <li><a href="#">Category Item name 4</a></li>
+                                        <li><a href="#">Category Item name 6</a></li>
+                                        <li><a href="#">Category Item name 7</a></li>
+                                    </ul>
+                                    <ul>
+                                        <h4><i class="fa-solid fa-truck-ramp-box"></i>List name 2</h4>
+                                        <li><a href="#">Category Item name 1</a></li>
+                                        <li><a href="#">Category Item name 2</a></li>
+                                        <li><a href="#">Category Item name 3</a></li>
+                                        <li><a href="#">Category Item name 4</a></li>
+                                        <li><a href="#">Category Item name 6</a></li>
+                                        <li><a href="#">Category Item name 7</a></li>
+                                    </ul>
+                                    <ul>
+                                        <h4><i class="fa-solid fa-gas-pump"></i>List name 3</h4>
+                                        <li><a href="#">Category Item name 1</a></li>
+                                        <li><a href="#">Category Item name 2</a></li>
+                                        <li><a href="#">Category Item name 3</a></li>
+                                        <li><a href="#">Category Item name 4</a></li>
+                                        <li><a href="#">Category Item name 6</a></li>
+                                        <li><a href="#">Category Item name 7</a></li>
+                                    </ul>
+                                </div>
+                                <div class="d-flex">
+                                    <ul>
+                                        <h4><i class="fa-solid fa-screwdriver-wrench"></i>list name 4</h4>
+                                        <li><a href="#">Category Item name 1</a></li>
+                                        <li><a href="#">Category Item name 2</a></li>
+                                        <li><a href="#">Category Item name 3</a></li>
+                                        <li><a href="#">Category Item name 4</a></li>
+                                        <li><a href="#">Category Item name 6</a></li>
+                                        <li><a href="#">Category Item name 7</a></li>
+                                    </ul>
+                                    <ul>
+                                        <h4><i class="fa-solid fa-car-rear"></i>list name 5</h4>
+                                        <li><a href="#">Category Item name 1</a></li>
+                                        <li><a href="#">Category Item name 2</a></li>
+                                        <li><a href="#">Category Item name 3</a></li>
+                                        <li><a href="#">Category Item name 4</a></li>
+                                        <li><a href="#">Category Item name 6</a></li>
+                                        <li><a href="#">Category Item name 7</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a class="category__names" href="#">service kits<i class="fa-solid fa-chevron-right"></i></a>
+                            <div class="category__mega__menu with__flex">
+                                <div class="header__product">
+                                    <div class="image">
+                                        <img src="image/home-seven/header/prod-img-1.png" alt="product image">
+                                    </div>
+                                    <h3>service kits</h3>
+                                    <ul class="list">
+                                        <li>Air Filters</li>
+                                        <li>Cabin Air Filters</li>
+                                        <li>Oil Filters</li>
+                                        <li>Oxygen Sensors</li>
+                                        <li>PCV Valves</li>
+                                    </ul>
+                                    <a href="#" class="h7__button-b">show now</a>
+                                </div>
+                                <div class="header__product">
+                                    <div class="image">
+                                        <img src="image/home-seven/header/prod-img-2.png" alt="product image">
+                                    </div>
+                                    <h3>oil & lubricants</h3>
+                                    <ul class="list">
+                                        <li>Engine Oil</li>
+                                        <li>Motor Oil</li>
+                                        <li>Powersport</li>
+                                        <li>Racing Motor Oil</li>
+                                        <li>Synthetic</li>
+                                    </ul>
+                                    <a href="#" class="h7__button-b">show now</a>
+                                </div>
+                                <div class="header__product">
+                                    <div class="image">
+                                        <img src="image/home-seven/header/prod-img-3.png" alt="product image">
+                                    </div>
+                                    <h3>engine parts</h3>
+                                    <ul class="list">
+                                        <li>Brake Calipers</li>
+                                        <li>Brake Hoses & Lines</li>
+                                        <li>Brake Pads & Shoes</li>
+                                        <li>Brake Rotors</li>
+                                        <li>Cylinders & Kits</li>
+                                    </ul>
+                                    <a href="#" class="h7__button-b">show now</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a class="category__names" href="#">suspension<i class="fa-solid fa-chevron-right"></i></a>
+                            <div class="category__mega__menu">
+                                <div class="bg-image"><img src="image/home-seven/header/allcat-menu-bg.png" alt="bg image"></div>
+                                <div class="d-flex mb-20">
+                                    <ul>
+                                        <h4>List name 1</h4>
+                                        <li><a href="#">Category Item name 1</a></li>
+                                        <li><a href="#">Category Item name 2</a></li>
+                                        <li><a href="#">Category Item name 3</a></li>
+                                        <li><a href="#">Category Item name 4</a></li>
+                                        <li><a href="#">Category Item name 6</a></li>
+                                        <li><a href="#">Category Item name 7</a></li>
+                                    </ul>
+                                    <ul>
+                                        <h4>List name 2</h4>
+                                        <li><a href="#">Category Item name 1</a></li>
+                                        <li><a href="#">Category Item name 2</a></li>
+                                        <li><a href="#">Category Item name 3</a></li>
+                                        <li><a href="#">Category Item name 4</a></li>
+                                        <li><a href="#">Category Item name 6</a></li>
+                                        <li><a href="#">Category Item name 7</a></li>
+                                    </ul>
+                                    <ul>
+                                        <h4>List name 3</h4>
+                                        <li><a href="#">Category Item name 1</a></li>
+                                        <li><a href="#">Category Item name 2</a></li>
+                                        <li><a href="#">Category Item name 3</a></li>
+                                        <li><a href="#">Category Item name 4</a></li>
+                                        <li><a href="#">Category Item name 6</a></li>
+                                        <li><a href="#">Category Item name 7</a></li>
+                                    </ul>
+                                </div>
+                                <div class="d-flex">
+                                    <ul>
+                                        <h4>list name 4</h4>
+                                        <li><a href="#">Category Item name 1</a></li>
+                                        <li><a href="#">Category Item name 2</a></li>
+                                        <li><a href="#">Category Item name 3</a></li>
+                                        <li><a href="#">Category Item name 4</a></li>
+                                        <li><a href="#">Category Item name 6</a></li>
+                                        <li><a href="#">Category Item name 7</a></li>
+                                    </ul>
+                                    <ul>
+                                        <h4>list name 5</h4>
+                                        <li><a href="#">Category Item name 1</a></li>
+                                        <li><a href="#">Category Item name 2</a></li>
+                                        <li><a href="#">Category Item name 3</a></li>
+                                        <li><a href="#">Category Item name 4</a></li>
+                                        <li><a href="#">Category Item name 6</a></li>
+                                        <li><a href="#">Category Item name 7</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a class="category__names" href="#">other accessories<i class="fa-solid fa-chevron-right"></i></a>
+                            <div class="category__mega__menu">
+                                <div class="bg-image"><img src="image/home-seven/header/allcat-menu-bg.png" alt="bg image"></div>
+                                <div class="d-flex mb-20">
+                                    <ul>
+                                        <h4>List name 1</h4>
+                                        <li><a href="#">Category Item name 1</a></li>
+                                        <li><a href="#">Category Item name 2</a></li>
+                                        <li><a href="#">Category Item name 3</a></li>
+                                        <li><a href="#">Category Item name 4</a></li>
+                                        <li><a href="#">Category Item name 6</a></li>
+                                        <li><a href="#">Category Item name 7</a></li>
+                                    </ul>
+                                    <ul>
+                                        <h4>List name 2</h4>
+                                        <li><a href="#">Category Item name 1</a></li>
+                                        <li><a href="#">Category Item name 2</a></li>
+                                        <li><a href="#">Category Item name 3</a></li>
+                                        <li><a href="#">Category Item name 4</a></li>
+                                        <li><a href="#">Category Item name 6</a></li>
+                                        <li><a href="#">Category Item name 7</a></li>
+                                    </ul>
+                                    <ul>
+                                        <h4>List name 3</h4>
+                                        <li><a href="#">Category Item name 1</a></li>
+                                        <li><a href="#">Category Item name 2</a></li>
+                                        <li><a href="#">Category Item name 3</a></li>
+                                        <li><a href="#">Category Item name 4</a></li>
+                                        <li><a href="#">Category Item name 6</a></li>
+                                        <li><a href="#">Category Item name 7</a></li>
+                                    </ul>
+                                </div>
+                                <div class="d-flex">
+                                    <ul>
+                                        <h4>list name 4</h4>
+                                        <li><a href="#">Category Item name 1</a></li>
+                                        <li><a href="#">Category Item name 2</a></li>
+                                        <li><a href="#">Category Item name 3</a></li>
+                                        <li><a href="#">Category Item name 4</a></li>
+                                        <li><a href="#">Category Item name 6</a></li>
+                                        <li><a href="#">Category Item name 7</a></li>
+                                    </ul>
+                                    <ul>
+                                        <h4>list name 5</h4>
+                                        <li><a href="#">Category Item name 1</a></li>
+                                        <li><a href="#">Category Item name 2</a></li>
+                                        <li><a href="#">Category Item name 3</a></li>
+                                        <li><a href="#">Category Item name 4</a></li>
+                                        <li><a href="#">Category Item name 6</a></li>
+                                        <li><a href="#">Category Item name 7</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li></ul>
+                </div>
+                <div class="right-side">
+                    <div class="mobile-menu-btn"><i class="fa-solid fa-bars"></i>menu</div>
                 <ul class="h7__main__menu">
-                    <li><a class="h7__megamenu__dropdown" href="#">All Categories<i class="fa-solid fa-caret-down"></i></a>
-                        <ul class="h7__submenu">
-                            <li><a class="category__names" href="#">Cars<i class="fa-solid fa-chevron-right"></i></a></li>
-                            <li><a class="category__names" href="#">Engine Parts<i class="fa-solid fa-chevron-right"></i></a></li>
-                            <li><a class="category__names" href="#">Car Care Kits<i class="fa-solid fa-chevron-right"></i></a></li>
-                            <li><a class="category__names" href="#">oil & lubricants<i class="fa-solid fa-chevron-right"></i></a></li>
-                            <li><a class="category__names" href="#">tires & wheels<i class="fa-solid fa-chevron-right"></i></a></li>
-                            <li><a class="category__names" href="#">brakes & pads<i class="fa-solid fa-chevron-right"></i></a></li>
-                            <li><a class="category__names" href="#">service kits<i class="fa-solid fa-chevron-right"></i></a></li>
-                            <li><a class="category__names" href="#">suspension<i class="fa-solid fa-chevron-right"></i></a></li>
-                            <li><a class="category__names" href="#">other accessories<i class="fa-solid fa-chevron-right"></i></a></li>
-                        </ul>
-                    </li>
                     <li><a href="#" class="active">Home<i class="fa-solid fa-caret-down"></i></a>
                         <ul class="h7__submenu">
                             <li><a href="index.html">Homepage 1</a></li>
@@ -252,9 +775,228 @@
                     </li>
                 </ul>
                 <a class="h7__button-a" href="#">Book a service</a>
+                </div>
             </div>
         </div>
     </header>
+
+    <!-- Mobile Menu (Style Four) -->
+    <div class="mobile-menu-style4">
+        <a class="mobile-menu-4-close" href="#"><i class="fa-solid fa-square-xmark"></i></a>
+        <ul class="nav nav-pills mb-3" id="h4-mobilemenu" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="h4mm-home-tab" data-bs-toggle="pill" data-bs-target="#h4mm-home" type="button" role="tab" aria-controls="h4mm-home" aria-selected="true">Categories</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="h4mm-profile-tab" data-bs-toggle="pill" data-bs-target="#h4mm-profile" type="button" role="tab" aria-controls="h4mm-profile" aria-selected="false">Pages</button>
+        </li>
+        </ul>
+        <div class="tab-content" id="h4-mobilemenuContent">
+        <div class="tab-pane fade show active" id="h4mm-home" role="tabpanel" aria-labelledby="h4mm-home-tab" tabindex="0">
+            <ul class="mobile-menu-wrapper">
+            <li class="mobile-submenu"><a href="#">Car services<i class="fa-solid fa-chevron-down"></i></a>
+                <div class="l2m-submenu">
+                <ul>
+                    <li><a href="#">Brand One</a></li>
+                    <li><a href="#">Brand Two</a></li>
+                    <li><a href="#">Brand Three</a></li>
+                    <li><a href="#">Brand Four</a></li>
+                    <li><a href="#">Brand Five</a></li>
+                    <li><a href="#">Brand Six</a></li>
+                    <li><a href="#">Brand Seven</a></li>
+                    <li><a href="#">Brand Eight</a></li>
+                    <li><a href="#">Brand Nine</a></li>
+                    <li><a href="#">Brand Ten</a></li>
+                </ul>
+                </div>
+            </li>
+            <li class="mobile-submenu"><a href="#">Engine Parts<i class="fa-solid fa-chevron-down"></i></a>
+                <div class="l2m-submenu">
+                <ul>
+                    <li><a href="#">Brand Eleven</a></li>
+                    <li><a href="#">Brand Twelve</a></li>
+                    <li><a href="#">Brand Thirteen</a></li>
+                    <li><a href="#">Brand Fourteen</a></li>
+                    <li><a href="#">Brand Fifteen</a></li>
+                    <li><a href="#">Brand Sixteen</a></li>
+                    <li><a href="#">Brand Seventeen</a></li>
+                    <li><a href="#">Brand Eightteen</a></li>
+                    <li><a href="#">Brand Nineteen</a></li>
+                    <li><a href="#">Brand Twenty</a></li>
+                </ul>
+                </div>
+            </li>
+            <li class="mobile-submenu"><a href="#">Car Care Kits<i class="fa-solid fa-chevron-down"></i></a>
+                <div class="l2m-submenu">
+                <ul>
+                    <li><a href="#">Brand Twenty One</a></li>
+                    <li><a href="#">Brand Twenty Two</a></li>
+                    <li><a href="#">Brand Twenty Three</a></li>
+                    <li><a href="#">Brand Twenty Four</a></li>
+                    <li><a href="#">Brand Twenty Five</a></li>
+                    <li><a href="#">Brand Twenty Six</a></li>
+                    <li><a href="#">Brand Twenty Seven</a></li>
+                    <li><a href="#">Brand Twenty Eight</a></li>
+                    <li><a href="#">Brand Twenty Nine</a></li>
+                    <li><a href="#">Brand Thirty</a></li>
+                </ul>
+                </div>
+            </li>
+            <li class="mobile-submenu"><a href="#">oil & lubricants<i class="fa-solid fa-chevron-down"></i></a>
+                <div class="l2m-submenu">
+                <ul>
+                    <li><a href="#">Brand Thirty One</a></li>
+                    <li><a href="#">Brand Thirty Two</a></li>
+                    <li><a href="#">Brand Thirty Three</a></li>
+                    <li><a href="#">Brand Thirty Four</a></li>
+                    <li><a href="#">Brand Thirty Five</a></li>
+                    <li><a href="#">Brand Thirty Six</a></li>
+                    <li><a href="#">Brand Thirty Seven</a></li>
+                    <li><a href="#">Brand Thirty Eight</a></li>
+                    <li><a href="#">Brand Thirty Nine</a></li>
+                    <li><a href="#">Brand Fourty</a></li>
+                </ul>
+                </div>
+            </li>
+            <li class="mobile-submenu"><a href="#">tires & wheels<i class="fa-solid fa-chevron-down"></i></a>
+                <div class="l2m-submenu">
+                <ul>
+                    <li><a href="#">Brand Fourty One</a></li>
+                    <li><a href="#">Brand Fourty Two</a></li>
+                    <li><a href="#">Brand Fourty Three</a></li>
+                    <li><a href="#">Brand Fourty Four</a></li>
+                    <li><a href="#">Brand Fourty Five</a></li>
+                    <li><a href="#">Brand Fourty Six</a></li>
+                    <li><a href="#">Brand Fourty Seven</a></li>
+                    <li><a href="#">Brand Fourty Eight</a></li>
+                    <li><a href="#">Brand Fourty Nine</a></li>
+                    <li><a href="#">Brand Fifty</a></li>
+                </ul>
+                </div>
+            </li>
+            <li class="mobile-submenu"><a href="#">service kits<i class="fa-solid fa-chevron-down"></i></a>
+                <div class="l2m-submenu">
+                <ul>
+                    <li><a href="#">Brand Fifty One</a></li>
+                    <li><a href="#">Brand Fifty Two</a></li>
+                    <li><a href="#">Brand Fifty Three</a></li>
+                    <li><a href="#">Brand Fifty Four</a></li>
+                    <li><a href="#">Brand Fifty Five</a></li>
+                    <li><a href="#">Brand Fifty Six</a></li>
+                    <li><a href="#">Brand Fifty Seven</a></li>
+                    <li><a href="#">Brand Fifty Eight</a></li>
+                    <li><a href="#">Brand Fifty Nine</a></li>
+                    <li><a href="#">Brand Sixty</a></li>
+                </ul>
+                </div>
+            </li>
+            <li class="mobile-submenu"><a href="#">suspension<i class="fa-solid fa-chevron-down"></i></a>
+                <div class="l2m-submenu">
+                <ul>
+                    <li><a href="#">Brand Sixty One</a></li>
+                    <li><a href="#">Brand Sixty Two</a></li>
+                    <li><a href="#">Brand Sixty Three</a></li>
+                    <li><a href="#">Brand Sixty Four</a></li>
+                    <li><a href="#">Brand Sixty Five</a></li>
+                    <li><a href="#">Brand Sixty Six</a></li>
+                    <li><a href="#">Brand Sixty Seven</a></li>
+                    <li><a href="#">Brand Sixty Eight</a></li>
+                    <li><a href="#">Brand Sixty Nine</a></li>
+                    <li><a href="#">Brand Seventy</a></li>
+                </ul>
+                </div>
+            </li>
+            <li class="mobile-submenu"><a href="#">other accessories<i class="fa-solid fa-chevron-down"></i></a>
+                <div class="l2m-submenu">
+                <ul>
+                    <li><a href="#">Brand Seventy One</a></li>
+                    <li><a href="#">Brand Seventy Two</a></li>
+                    <li><a href="#">Brand Seventy Three</a></li>
+                    <li><a href="#">Brand Seventy Four</a></li>
+                    <li><a href="#">Brand Seventy Five</a></li>
+                    <li><a href="#">Brand Seventy Six</a></li>
+                    <li><a href="#">Brand Seventy Seven</a></li>
+                    <li><a href="#">Brand Seventy Eight</a></li>
+                    <li><a href="#">Brand Seventy Nine</a></li>
+                    <li><a href="#">Brand Eighty</a></li>
+                </ul>
+                </div>
+            </li>
+            </ul>
+        </div>
+        <div class="tab-pane fade" id="h4mm-profile" role="tabpanel" aria-labelledby="h4mm-profile-tab" tabindex="0">
+            <ul class="mobile-menu-wrapper">
+                <li class="mobile-submenu"><a href="#">home<i class="fa-solid fa-chevron-down"></i></a>
+                    <div class="l2m-submenu">
+                    <ul>
+                        <li><a href="index.html">Homepage 1</a></li>
+                        <li><a href="index-2.html">Homepage 2</a></li>
+                        <li><a href="index-3.html">Homepage 3</a></li>
+                        <li><a href="index-4.html">Homepage 4</a></li>
+                        <li><a href="index-5.html">Homepage 5</a></li>
+                        <li><a href="index-6.html">Homepage 6</a></li>
+                        <li><a href="index-7.html">Homepage 7</a></li>
+                    </ul>
+                    </div>
+                </li>
+                <li class="mobile-submenu"><a href="#">blog<i class="fa-solid fa-chevron-down"></i></a>
+                    <div class="l2m-submenu">
+                    <ul>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="blog-post.html">Blog Post Right Sidebar</a></li>
+                        <li><a href="blog-post-left-sidebar.html">Blog Post Left Sidebar</a></li>
+                        <li><a href="blog-post-no-sidebar.html">Blog Post No Sidebar</a></li>
+                    </ul>
+                    </div>
+                </li>
+                <li class="mobile-submenu"><a href="#">shop<i class="fa-solid fa-chevron-down"></i></a>
+                    <div class="l2m-submenu">
+                    <ul>
+                        <li><a href="shop.html">Shop Left Sidebar</a></li>
+                        <li><a href="shop-right-sidebar.html">Shop Right Sidebar</a></li>
+                        <li><a href="shop-banner-left-sidebar.html">Shop Banner Leftbar</a></li>
+                        <li><a href="shop-banner-right-sidebar.html">Shop Banner Rightbar</a></li>
+                        <li><a href="shop-product-style-2.html">Shop Product Style 2</a></li>
+                        <li><a href="shop-product-style-3.html">Shop Product Style 3</a></li>
+                        <li><a href="shop-product-style-3-list.html">Shop PStyle 3 (List)</a></li>
+                        <li><a href="shop-product-style-4.html">Shop Product Style 4</a></li>
+                        <li><a href="shop-product-style-5.html">Shop Product Style 5</a></li>
+                        <li><a href="shop-infinite-scroll.html">Shop Infinite Scroll</a></li>
+                        <li><a href="shop-details.html">Single Product</a></li>
+                        <li><a href="shop-details-countdown.html">Product Countdown</a></li>
+                        <li><a href="shop-details-ask-question.html">Product Ask a Question</a></li>
+                        <li><a href="shop-details-size-guide.html">Product Size Guide</a></li>
+                        <li><a href="shop-details-color-compare.html">Product Color Compare</a></li>
+                        <li><a href="shop-details-product-image-slider.html">Product Image Slider</a></li>
+                        <li><a href="shop-details-slider-image.html">Product Image Slider V2</a></li>
+                        <li><a href="shop-details-sidebar.html">Product Sidebar</a></li>
+                        <li><a href="shop-details-style-4.html">Product Image Gallery</a></li>
+                        <li><a href="shop-details-style-5.html">Single Product Style 5</a></li>
+                    </ul>
+                    </div>
+                </li>
+                <li class="mobile-submenu"><a href="#">pages<i class="fa-solid fa-chevron-down"></i></a>
+                    <div class="l2m-submenu">
+                    <ul>
+                        <li><a href="blog-post.html">Blog Post</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                        <li><a href="user-dashboard.html">User Dashboard</a></li>
+                        <li><a href="wishlist.html">Wishlist</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="checkout.html">Checkout</a></li>
+                        <li><a href="seller-dashboard.html">Seller Dashboard</a></li>
+                        <li><a href="vendor-list.html">Vendor List</a></li>
+                        <li><a href="vendor-shop-left-Sidebar.html">Vendor Left Sidebar</a></li>
+                        <li><a href="vendor-shop-right-Sidebar.html">Vendor Right Sidebar</a></li>
+                        <li><a href="vendor-shop-banner-1.html">Vendor Banner Leftbar</a></li>
+                        <li><a href="vendor-shop-banner-2.html">Vendor Banner Rightbar</a></li>
+                    </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </div>
     <!-- End of Header Style Seven -->
 
 
