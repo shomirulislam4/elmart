@@ -3628,6 +3628,20 @@ $(function(){
   });
 });
 
+//Search bar show/hide
+$(document).on('click', function(event) {
+  if (!$(event.target).closest('.header__search').length &&
+      !$(event.target).hasClass('has__search__btn')) {
+      $('.header__search').removeClass('show');
+  }
+});
+
+$('.has__search__btn').on('click', function(event){
+  event.stopPropagation();
+  $('.header__search').toggleClass('show');
+});
+
+
 
 
 }) (jQuery);
