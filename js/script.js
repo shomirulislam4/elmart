@@ -3578,6 +3578,7 @@ $(function() {
 });
 
 /*============================ Home Style Seven ============================*/
+
 //Language change drop down menu
 $(function() {
   $('.lc__dropdown__btn').on('click',function(){
@@ -3641,7 +3642,66 @@ $('.has__search__btn').on('click', function(event){
   $('.header__search').toggleClass('show');
 });
 
+//Car Reserve Form Popup
+$(function() {
+  //Show Hide Button
+  $('#car__rserve__button').on('click', function() {
+    $('.car__reserve__form').addClass('show');
+  });
+  $('.crf__close__btn').on('click', function() {
+    $('.car__reserve__form').removeClass('show');
+  });
 
+  //Nice Select
+  if ( $('.car__reserve__form').length ) {
+    $('#crf__location').niceSelect();
+    $('#crf__retlocation').niceSelect();
+    $('#crfTireUnits').niceSelect();
+  }
+
+  //Reserved Date
+  function updateSelectedDates() {
+    var startDate = new Date($('#crf__date').val());
+    var endDate = new Date($('#crf__retdate').val());
+    var today = new Date();
+
+    if (startDate < today) {
+        $('#crf__date').val('');
+        return;
+    }
+
+    var text = '';
+    if (startDate && endDate) {
+        if (endDate <= startDate) {
+            $('#crf__retdate').val('');
+            return;
+        }
+        text += 'From ' + startDate.toLocaleDateString() + ' To ' + endDate.toLocaleDateString();
+    } else if (startDate) {
+        text += 'From ' + startDate.toLocaleDateString() + ' To N/A';
+    } else if (endDate) {
+        text += 'From N/A To ' + endDate.toLocaleDateString();
+    } else {
+        text += 'N/A';
+    }
+    $('#selectedDates').text(text);
+    $('#selectedDates2').text(text);
+  }
+  $('#crf__date, #crf__retdate').change(updateSelectedDates);
+
+  //Reserved Time
+  $('#crf__time').change(function() {
+    var selectedTime = $(this).val();
+    $('#selectedTime').text(selectedTime);
+    $('#selectedTime2').text(selectedTime);
+  });
+  $('#crf__rettime').change(function() {
+    var selectedTime = $(this).val();
+    $('#selectedRetTime').text(selectedTime);
+    $('#selectedRetTime2').text(selectedTime);
+  });
+
+});
 
 
 }) (jQuery);

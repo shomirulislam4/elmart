@@ -770,7 +770,7 @@
                         </div>
                     </li>
                 </ul>
-                <a class="h7__button-a" href="#">Book a service</a>
+                <a class="h7__button-a" id="car__rserve__button" href="#">Book a service</a>
                 </div>
             </div>
         </div>
@@ -995,6 +995,315 @@
     </div>
     <!-- End of Header Style Seven -->
 
+    <!-- Start of Car Reserve Form Popup -->
+    <div class="car__reserve__form">
+        <div class="crf__main__wrapper container">
+        <div class="crf__header">
+            <h2>Reserve a Car</h2>
+            <div class="crf__close__btn"><i class="fa-solid fa-circle-xmark"></i></div>
+        </div>
+        <div class="crf__content__wrapper">
+            <!-- Tabs -->
+            <ul class="nav nav-pills mb-3" id="CarReserveForm" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="OrderDetails-tab" data-bs-toggle="pill" data-bs-target="#OrderDetails" type="button" role="tab" aria-controls="OrderDetails" aria-selected="true">Order Details</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="AdditionalDetails-tab" data-bs-toggle="pill" data-bs-target="#AdditionalDetails" type="button" role="tab" aria-controls="AdditionalDetails" aria-selected="false">Additional Details</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="ContactInformation-tab" data-bs-toggle="pill" data-bs-target="#ContactInformation" type="button" role="tab" aria-controls="ContactInformation" aria-selected="false">Contact Information</button>
+                </li>
+            </ul>
+
+            <!-- Contents -->
+            <div class="tab-content" id="CarReserveFormContent">
+
+                <!-- Form 1 -->
+                <div class="tab-pane fade show active" id="OrderDetails" role="tabpanel" aria-labelledby="OrderDetails-tab">
+                    <div class="car__details">
+                        <div class="image">
+                            <img src="image/home-seven/car-reserve-form/car-img.png" alt="car image">
+                        </div>
+                        <div class="info">
+                            <h3>Aston Martin DBX707 2022</h3>
+                            <div class="car__features">
+                                <span><i class="fa-solid fa-user"></i>5</span>
+                                <span><i class="fa-solid fa-suitcase"></i>7</span>
+                                <span><i class="fa-solid fa-car-side"></i>5</span>
+                                <span><i class="fa-solid fa-gauge"></i>9</span>
+                                <span><i class="fa-regular fa-compass"></i>navigation</span>
+                                <span><i class="fa-solid fa-snowflake"></i>air conditioning</span>
+                                <span><i class="fa-solid fa-gauge-high"></i>900km</span>
+                                <span><i class="fa-solid fa-gas-pump"></i>15ltr</span>
+                                <span><i class="fa-solid fa-gas-pump"></i>50km</span>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="#">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-12 full__width">
+                                        <label for="crf__location">Pick-up location</label>
+                                        <select name="CarReserveForm" id="crf__location">
+                                            <option value="selectlocation">Select a Location</option>
+                                            <option value="bedford">Bedford</option>
+                                            <option value="bristol">Bristol</option>
+                                            <option value="buckinghamshire">Buckinghamshire</option>
+                                            <option value="cambridgeshire">Cambridgeshire</option>
+                                            <option value="cumbria">Cumbria</option>
+                                            <option value="derby">Derby</option>
+                                            <option value="london">London</option>
+                                            <option value="manchester">Manchester</option>
+                                            <option value="kent">Kent</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row half__width">
+                                    <div class="col-sm-6">
+                                        <label for="crf__date">pick-up date</label>
+                                        <input type="date" name="CarReserveForm" id="crf__date" required>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="crf__time">pick-up time</label>
+                                        <input type="time" name="CarReserveForm" id="crf__time" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-12 full__width">
+                                        <label for="crf__retlocation">Return location</label>
+                                        <select name="CarReserveForm" id="crf__retlocation">
+                                            <option value="selectlocation">Select a Location</option>
+                                            <option value="bedford">Bedford</option>
+                                            <option value="bristol">Bristol</option>
+                                            <option value="buckinghamshire">Buckinghamshire</option>
+                                            <option value="cambridgeshire">Cambridgeshire</option>
+                                            <option value="cumbria">Cumbria</option>
+                                            <option value="derby">Derby</option>
+                                            <option value="london">London</option>
+                                            <option value="manchester">Manchester</option>
+                                            <option value="kent">Kent</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row half__width">
+                                    <div class="col-sm-6">
+                                        <label for="crf__retdate">pick-up date</label>
+                                        <input type="date" name="CarReserveForm" id="crf__retdate" required>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="crf__rettime">pick-up time</label>
+                                        <input type="time" name="CarReserveForm" id="crf__rettime" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="crf__pricing">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>price (per day)</p>
+                                <table>
+                                    <tbody>
+                                        <tr class="with__bg">
+                                            <td>24 hours</td>
+                                            <td class="strong">$90</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3 days</td>
+                                            <td class="strong">$80</td>
+                                        </tr>
+                                        <tr class="with__bg">
+                                            <td>7 days</td>
+                                            <td class="strong">$70</td>
+                                        </tr>
+                                        <tr>
+                                            <td>14 days</td>
+                                            <td class="strong">$60</td>
+                                        </tr>
+                                        <tr class="with__bg">
+                                            <td>30 days</td>
+                                            <td class="strong">$50</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="crf__price__check">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>Dates</td>
+                                                <td class="strong"><p id="selectedDates" style="font-weight: 500;font-size:18px;">N/A</p></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Pick-up time</td>
+                                                <td class="strong"><p id="selectedTime" style="font-weight:500;font-size:18px;">N/A</p></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Return time</td>
+                                                <td class="strong"><p id="selectedRetTime" style="font-weight:500;font-size:18px;">N/A</p></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Number of Days</td>
+                                                <td class="strong">3 days</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Price per day</td>
+                                                <td class="strong">$80</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="crf__total__sum">
+                                        <p>total</p>
+                                        <p>$240</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="h7__button-a" id="crf__nextpage__btn">Continue</a>
+                </div>
+                
+                <!-- Form 2 -->
+                <div class="tab-pane fade" id="AdditionalDetails" role="tabpanel" aria-labelledby="AdditionalDetails-tab">
+                    <div class="car__details">
+                        <div class="image">
+                            <img src="image/home-seven/car-reserve-form/car-img.png" alt="car image">
+                        </div>
+                        <div class="info">
+                            <h3>Aston Martin DBX707 2022</h3>
+                            <div class="car__features">
+                                <span><i class="fa-solid fa-user"></i>5</span>
+                                <span><i class="fa-solid fa-suitcase"></i>7</span>
+                                <span><i class="fa-solid fa-car-side"></i>5</span>
+                                <span><i class="fa-solid fa-gauge"></i>9</span>
+                                <span><i class="fa-regular fa-compass"></i>navigation</span>
+                                <span><i class="fa-solid fa-snowflake"></i>air conditioning</span>
+                                <span><i class="fa-solid fa-gauge-high"></i>900km</span>
+                                <span><i class="fa-solid fa-gas-pump"></i>15ltr</span>
+                                <span><i class="fa-solid fa-gas-pump"></i>50km</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="crf__pricing">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>Rental Details</p>
+                                <div class="crf__price__check">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>Dates</td>
+                                                <td class="strong"><p id="selectedDates2" style="font-weight: 500;font-size:18px;">N/A</p></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Pick-up time</td>
+                                                <td class="strong"><p id="selectedTime2" style="font-weight: 500;font-size:18px;">N/A</p></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Return time</td>
+                                                <td class="strong"><p id="selectedRetTime2" style="font-weight: 500;font-size:18px;">N/A</p></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Number of Days</td>
+                                                <td class="strong">3 days</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Price per day</td>
+                                                <td class="strong">$80</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="crf__total__sum">
+                                        <p>total</p>
+                                        <p>$240</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="crf__addition">
+                                    <p>Add Additional services</p>
+                                    <form action="#">
+                                        <div class="item">
+                                            <p>Insurance</p>
+                                            <input type="checkbox" name="crf__addition" id="crfInsurance"><label for="crfInsurance">$100 (One Time Pay)</label>
+                                        </div>
+                                        <div class="item">
+                                            <p>Cild Seat</p>
+                                            <input type="checkbox" name="crf__addition" id="crfChildSeat"><label for="crfChildSeat">$50</label>
+                                        </div>
+                                        <div class="item">
+                                            <p>Additional Driver</p>
+                                            <input type="checkbox" name="crf__addition" id="crfAddDriver"><label for="crfAddDriver">$90</label>
+                                        </div>
+                                        <div class="item">
+                                            <p>Seasonal Tires</p>
+                                            <div class="with__unit">
+                                                <div class="input">
+                                                    <input type="checkbox" name="crf__addition" id="crfAddDriver"><label for="crfSeasonTire">$30 (per unit)</label>
+                                                </div>
+                                                <select name="crf__addition" id="crfTireUnits">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="h7__button-a" id="crf__nextpage__btn">Continue</a>
+                </div>
+                
+                <!-- Form 3 -->
+                <div class="tab-pane fade" id="ContactInformation" role="tabpanel" aria-labelledby="ContactInformation-tab">
+                    <form action="#">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="crfFullName">Full Name</label>
+                                <input type="text" name="crf__contact__info" id="crfFullName" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="crfPhoneNumber">Phone Number</label>
+                                <input type="text" name="crf__contact__info" id="crfPhoneNumber" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="crfEmail">Email</label>
+                                <input type="email" name="crf__contact__info" id="crfEmail" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="crfFullAddress">Full Address</label>
+                                <input type="text" name="crf__contact__info" id="crfFullAddress" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <label for="crfAdditionNotes">Additional Notes (optinal)</label>
+                                <textarea name="crf__contact__info" id="crfAdditionNotes"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                    <a href="#" class="h7__button-a" id="crf__reserve__btn" row="10">Reserve Now</a>
+                    <p class="notice">By clicking "Reserve Car", I consent to be contacted by the dealer renting this car at any telephone number I provide, including, without limitation, communications sent via text message to my cell phone or communications sent using an autodialer or prerecorded message. This acknowledgement constitutes my written consent to receive such communications.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- End of Car Reserve Form Popup -->
 
 
     <!-- JS Links -->
@@ -1004,6 +1313,7 @@
     <script src="js/slick.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/magnific-popup.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/script.js"></script>
