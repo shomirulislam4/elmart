@@ -1412,7 +1412,332 @@
             </div>
         </div>
         <div class="find__vehicle">
-            
+            <div class="container find__vehicle__content">
+                <nav>
+                    <div class="nav nav-tabs" id="FindVehicleTabs" role="tablist">
+                    <button class="nav-link active" id="RentCar-tab" data-bs-toggle="tab" data-bs-target="#RentCar" type="button" role="tab" aria-controls="RentCar" aria-selected="true">Rent</button>
+                    <button class="nav-link" id="NewCar-tab" data-bs-toggle="tab" data-bs-target="#NewCar" type="button" role="tab" aria-controls="NewCar" aria-selected="false">New</button>
+                    <button class="nav-link" id="UsedCar-tab" data-bs-toggle="tab" data-bs-target="#UsedCar" type="button" role="tab" aria-controls="UsedCar" aria-selected="false">Used</button>
+                    </div>
+                </nav>
+                <div class="tab-content" id="FindVehicleTabsContent">
+                    <div class="tab-pane fade show active" id="RentCar" role="tabpanel" aria-labelledby="RentCar-tab">
+                        <form action="#">
+                            <div class="row pickup__return__info">
+                                <div class="col-md-3 d-flex flex-column">
+                                    <label for="PickUpLocation">Pick-up Location</label>
+                                    <select name="rent__car__search" id="PickUpLocation">'
+                                        <option value="selectlocation">Select a Location</option>
+                                        <option value="bedford">Bedford</option>
+                                        <option value="bristol">Bristol</option>
+                                        <option value="buckinghamshire">Buckinghamshire</option>
+                                        <option value="cambridgeshire">Cambridgeshire</option>
+                                        <option value="cumbria">Cumbria</option>
+                                        <option value="derby">Derby</option>
+                                        <option value="london">London</option>
+                                        <option value="manchester">Manchester</option>
+                                        <option value="kent">Kent</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3 d-flex flex-column">
+                                    <label for="ReturnLocation">Return Location</label>
+                                    <select name="rent__car__search" id="ReturnLocation">'
+                                        <option value="selectlocation">Select a Location</option>
+                                        <option value="bedford">Bedford</option>
+                                        <option value="bristol">Bristol</option>
+                                        <option value="buckinghamshire">Buckinghamshire</option>
+                                        <option value="cambridgeshire">Cambridgeshire</option>
+                                        <option value="cumbria">Cumbria</option>
+                                        <option value="derby">Derby</option>
+                                        <option value="london">London</option>
+                                        <option value="manchester">Manchester</option>
+                                        <option value="kent">Kent</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3 d-flex justify-content-between">
+                                    <div class="date">
+                                        <label for="PickUpDate">Pick-up Date</label>
+                                        <input type="date" name="rent__car__search" id="PickUpDate">
+                                    </div>
+                                    <div class="time">
+                                        <label for="PickUpTime">Time</label>
+                                        <input type="time" name="rent__car__search" id="PickUpTime">
+                                    </div>
+                                </div>
+                                <div class="col-md-3 d-flex justify-content-between">
+                                    <div class="date">
+                                        <label for="ReturnDate">Return Date</label>
+                                        <input type="date" name="rent__car__search" id="ReturnDate">
+                                    </div>
+                                    <div class="time">
+                                        <label for="ReturnTime">Time</label>
+                                        <input type="time" name="rent__car__search" id="ReturnTime">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="price__mileage__filter">
+                                        <p class="title">Select Price</p>
+                                        <div class="price-filter-wrap">
+                                            <div class="price-range-slider">
+                                                <div class="progress"></div>
+                                            </div>
+                                            <div class="range-input">
+                                                <input type="range" class="range-min" min="0" max="100000" value="5000" step="500">
+                                                <input type="range" class="range-max" min="0" max="100000" value="20000" step="500">
+                                            </div>
+                                            <div class="price-input">
+                                                <p>Price:</p>
+                                                <div class="field">
+                                                    <span>$</span><p class="input-min">5000.00</p>
+                                                </div>
+                                                <div class="separator">-</div>
+                                                <div class="field">
+                                                    <span>$</span><p class="input-max">20000.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="price__mileage__filter">
+                                        <p class="title">Select Mileage</p>
+                                        <div class="price-filter-wrap">
+                                            <div class="price-range-slider">
+                                                <div class="progress"></div>
+                                            </div>
+                                            <div class="range-input">
+                                                <input type="range" class="range-min" min="0" max="10000" value="500" step="500">
+                                                <input type="range" class="range-max" min="0" max="10000" value="2000" step="500">
+                                            </div>
+                                            <div class="price-input">
+                                                <p>Mileage:</p>
+                                                <div class="field">
+                                                    <p class="input-min">500.00</p><span>mi</span>
+                                                </div>
+                                                <div class="separator">-</div>
+                                                <div class="field">
+                                                    <p class="input-max">2000.00</p><span>mi</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 d-flex align-items-center justify-content-center">
+                                    <button class="h7__button-a" type="submit">Search</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="NewCar" role="tabpanel" aria-labelledby="NewCar-tab">
+                        <form action="#">
+                            <div class="row pickup__return__info">
+                                <div class="col-md-4 d-flex flex-column">
+                                    <label for="SelectMake">Select Brand</label>
+                                    <select name="used__car__search" id="NewSelectMake">'
+                                        <option value="selectmake">Select a make</option>
+                                        <option value="volkswagen">Volkswagen</option>
+                                        <option value="toyota">Toyota</option>
+                                        <option value="stellantis">Stellantis</option>
+                                        <option value="mercedesbenz">Mercedes-Benz</option>
+                                        <option value="bmw">BMW M</option>
+                                        <option value="bmw">BMW</option>
+                                        <option value="mitsubishi">Mitsubishi</option>
+                                        <option value="nissan">Nissan</option>
+                                        <option value="lamborghini">Lamborghini</option>
+                                        <option value="ferrari">Ferrari</option>
+                                        <option value="audi">Audi</option>
+                                        <option value="porsche">Porsche</option>
+                                        <option value="ford">Ford</option>
+                                        <option value="fordmustang">Ford Mustang</option>
+                                        <option value="chevroletcorvette">Chevrolet Corvette</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4 d-flex flex-column">
+                                    <label for="CarBody">Car Body</label>
+                                    <select name="used__car__search" id="NewCarBody">'
+                                        <option value="selectbody">Select a body type</option>
+                                        <option value="sedan">sedan</option>
+                                        <option value="coupe">coupe</option>
+                                        <option value="sportscar">sports car</option>
+                                        <option value="stationwagon">station wagon</option>
+                                        <option value="hatchback">hatchback</option>
+                                        <option value="convertible">convertible</option>
+                                        <option value="suv">suv</option>
+                                        <option value="minivan">minivan</option>
+                                        <option value="puckuptruck">puckup truck</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4 d-flex flex-column">
+                                    <label for="SelectYear">Select Year</label>
+                                    <select name="used__car__search" id="NewSelectYear">'
+                                        <option value="selectlocation">Select year</option>
+                                        <option value="2024">2024</option>
+                                        <option value="2023">2023</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2019">2019</option>
+                                        <option value="2018">2018</option>
+                                        <option value="2017">2017</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2015">2015</option>
+                                        <option value="2014">2014</option>
+                                        <option value="2013">2013</option>
+                                        <option value="2012">2012</option>
+                                        <option value="2011">2011</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="price__mileage__filter">
+                                        <p class="title">Select Price</p>
+                                        <div class="price-filter-wrap">
+                                            <div class="price-range-slider">
+                                                <div class="progress"></div>
+                                            </div>
+                                            <div class="range-input">
+                                                <input type="range" class="range-min" min="0" max="100000" value="5000" step="500">
+                                                <input type="range" class="range-max" min="0" max="100000" value="20000" step="500">
+                                            </div>
+                                            <div class="price-input">
+                                                <p>Price:</p>
+                                                <div class="field">
+                                                    <span>$</span><p class="input-min">5000.00</p>
+                                                </div>
+                                                <div class="separator">-</div>
+                                                <div class="field">
+                                                    <span>$</span><p class="input-max">20000.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 d-flex align-items-center justify-content-center">
+                                    <button class="h7__button-a" type="submit">Search</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="UsedCar" role="tabpanel" aria-labelledby="UsedCar-tab">
+                        <form action="#">
+                            <div class="row pickup__return__info">
+                                <div class="col-md-4 d-flex flex-column">
+                                    <label for="SelectMake">Select Brand</label>
+                                    <select name="used__car__search" id="SelectMake">'
+                                        <option value="selectmake">Select a make</option>
+                                        <option value="volkswagen">Volkswagen</option>
+                                        <option value="toyota">Toyota</option>
+                                        <option value="stellantis">Stellantis</option>
+                                        <option value="mercedesbenz">Mercedes-Benz</option>
+                                        <option value="bmw">BMW M</option>
+                                        <option value="bmw">BMW</option>
+                                        <option value="mitsubishi">Mitsubishi</option>
+                                        <option value="nissan">Nissan</option>
+                                        <option value="lamborghini">Lamborghini</option>
+                                        <option value="ferrari">Ferrari</option>
+                                        <option value="audi">Audi</option>
+                                        <option value="porsche">Porsche</option>
+                                        <option value="ford">Ford</option>
+                                        <option value="fordmustang">Ford Mustang</option>
+                                        <option value="chevroletcorvette">Chevrolet Corvette</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4 d-flex flex-column">
+                                    <label for="CarBody">Car Body</label>
+                                    <select name="used__car__search" id="CarBody">'
+                                        <option value="selectbody">Select a body type</option>
+                                        <option value="sedan">sedan</option>
+                                        <option value="coupe">coupe</option>
+                                        <option value="sportscar">sports car</option>
+                                        <option value="stationwagon">station wagon</option>
+                                        <option value="hatchback">hatchback</option>
+                                        <option value="convertible">convertible</option>
+                                        <option value="suv">suv</option>
+                                        <option value="minivan">minivan</option>
+                                        <option value="puckuptruck">puckup truck</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4 d-flex flex-column">
+                                    <label for="SelectYear">Select Year</label>
+                                    <select name="used__car__search" id="SelectYear">'
+                                        <option value="selectlocation">Select year</option>
+                                        <option value="2024">2024</option>
+                                        <option value="2023">2023</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2019">2019</option>
+                                        <option value="2018">2018</option>
+                                        <option value="2017">2017</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2015">2015</option>
+                                        <option value="2014">2014</option>
+                                        <option value="2013">2013</option>
+                                        <option value="2012">2012</option>
+                                        <option value="2011">2011</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="price__mileage__filter">
+                                        <p class="title">Select Price</p>
+                                        <div class="price-filter-wrap">
+                                            <div class="price-range-slider">
+                                                <div class="progress"></div>
+                                            </div>
+                                            <div class="range-input">
+                                                <input type="range" class="range-min" min="0" max="100000" value="5000" step="500">
+                                                <input type="range" class="range-max" min="0" max="100000" value="20000" step="500">
+                                            </div>
+                                            <div class="price-input">
+                                                <p>Price:</p>
+                                                <div class="field">
+                                                    <span>$</span><p class="input-min">5000.00</p>
+                                                </div>
+                                                <div class="separator">-</div>
+                                                <div class="field">
+                                                    <span>$</span><p class="input-max">20000.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="price__mileage__filter">
+                                        <p class="title">Select Mileage</p>
+                                        <div class="price-filter-wrap">
+                                            <div class="price-range-slider">
+                                                <div class="progress"></div>
+                                            </div>
+                                            <div class="range-input">
+                                                <input type="range" class="range-min" min="0" max="10000" value="500" step="500">
+                                                <input type="range" class="range-max" min="0" max="10000" value="2000" step="500">
+                                            </div>
+                                            <div class="price-input">
+                                                <p>Mileage:</p>
+                                                <div class="field">
+                                                    <p class="input-min">500.00</p><span>mi</span>
+                                                </div>
+                                                <div class="separator">-</div>
+                                                <div class="field">
+                                                    <p class="input-max">2000.00</p><span>mi</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 d-flex align-items-center justify-content-center">
+                                    <button class="h7__button-a" type="submit">Search</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <!-- End of Hero Section (Variant 7) -->

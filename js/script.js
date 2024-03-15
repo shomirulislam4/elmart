@@ -3804,9 +3804,48 @@ $(function () {
 
 });
 
+//Hero Car Search Select
+if ( $('.find__vehicle').length ) {
+  $('#PickUpLocation').niceSelect();
+  $('#ReturnLocation').niceSelect();
+  $('#NewSelectMake').niceSelect();
+  $('#NewCarBody').niceSelect();
+  $('#NewSelectYear').niceSelect();
+  $('#SelectMake').niceSelect();
+  $('#CarBody').niceSelect();
+  $('#SelectYear').niceSelect();
+}
 
+//Hero Car Search Price Filter
+$(function(){
+  $('.price__mileage__filter').each(function() {
+      var $this = $(this);
+      var rangeInput = $this.find(".range-input input"),
+          priceMinDisplay = $this.find(".input-min"),
+          priceMaxDisplay = $this.find(".input-max"),
+          range = $this.find(".price-range-slider .progress");
+      let priceGap = 500;
 
+      rangeInput.each(function(){
+          $(this).on("input", function(e){
+              let minVal = parseInt(rangeInput[0].value),
+                  maxVal = parseInt(rangeInput[1].value);
 
-
+              if((maxVal - minVal) < priceGap){
+                  if(e.target.className.includes("range-min")){
+                      rangeInput[0].value = maxVal - priceGap;
+                  }else{
+                      rangeInput[1].value = minVal + priceGap;
+                  }
+              }else{
+                  priceMinDisplay.text(minVal.toFixed(2));
+                  priceMaxDisplay.text(maxVal.toFixed(2));
+                  range.css("left", ((minVal / rangeInput[0].max) * 100) + "%");
+                  range.css("right", 100 - (maxVal / rangeInput[1].max) * 100 + "%");
+              }
+          });
+      });
+  });
+});
 
 }) (jQuery);

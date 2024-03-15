@@ -6298,6 +6298,9 @@
         font-size: 12px;
     }
     /*Hero Section (Variant 7)*/
+    .hero__section__v7 {
+        margin-bottom: 550px;
+    }
     .hero__section__v7 .hero__left {
         justify-content: flex-end;
     }
@@ -6328,7 +6331,7 @@
         left: 0;
         z-index: 5;
         transform: unset;
-        bottom: 0;
+        bottom: 100px;
         text-align: center;
         width: 100%;
     }
@@ -6384,6 +6387,40 @@
         top: unset;
         right: 19%;
         bottom: 22%;
+    }
+    .find__vehicle .nav-tabs {
+        gap: 2px;
+        border-bottom: none;
+    }
+    .find__vehicle .nav-tabs .nav-link {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+    .find__vehicle label {
+        font-size: 14px;
+    }
+    .find__vehicle .pickup__return__info .nice-select,
+    .find__vehicle .pickup__return__info input {
+        margin-bottom: 10px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 12px;
+        padding: 0 5px;
+    }
+    .price__mileage__filter {
+        margin-top: 5px;
+    }
+    .price__mileage__filter .price-input {
+        margin: 5px 0;
+    }
+    .price__mileage__filter .price-input p {
+        display: none;
+    }
+    .price__mileage__filter .price-input .field span,
+    .price__mileage__filter .price-input .field .input-min,
+    .price__mileage__filter .price-input .field .input-max {
+        display: block;
+        font-size: 12px;
     }
 }
 
@@ -11733,6 +11770,9 @@
         margin-top: 10px;
     }
     /*Hero Section (Variant 7)*/
+    .hero__section__v7 {
+        margin-bottom: 550px;
+    }
     .hero__section__v7 .hero__left {
         justify-content: flex-end;
     }
@@ -11760,7 +11800,7 @@
         left: 0;
         z-index: 5;
         transform: unset;
-        bottom: 10px;
+        bottom: 100px;
         text-align: center;
         width: 100%;
     }
@@ -11816,6 +11856,31 @@
         top: unset;
         right: 19%;
         bottom: 30%;
+    }
+    .find__vehicle .nav-tabs .nav-link {
+        font-size: 16px;
+    }
+    .find__vehicle .pickup__return__info .nice-select,
+    .find__vehicle .pickup__return__info input {
+        margin-bottom: 15px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 14px;
+    }
+    .price__mileage__filter {
+        margin-top: 5px;
+    }
+    .price__mileage__filter .price-input {
+        margin: 5px 0;
+    }
+    .price__mileage__filter .price-input p {
+        font-size: 14px;
+        margin-right: 2px;
+    }
+    .price__mileage__filter .price-input .field span,
+    .price__mileage__filter .price-input .field .input-min,
+    .price__mileage__filter .price-input .field .input-max {
+        font-size: 14px;
     }
 }
 
@@ -16273,6 +16338,9 @@
         margin-top: 10px;
     }
     /*Hero Section (Variant 7)*/
+    .hero__section__v7 {
+        margin-bottom: 590px;
+    }
     .hero__section__v7 .hero__left {
         justify-content: flex-end;
     }
@@ -16300,7 +16368,7 @@
         left: 0;
         z-index: 5;
         transform: unset;
-        bottom: 10px;
+        bottom: 100px;
         text-align: center;
         width: 100%;
     }
@@ -16356,6 +16424,19 @@
         top: unset;
         right: 19%;
         bottom: 31%;
+    }
+    .find__vehicle .pickup__return__info .nice-select,
+    .find__vehicle .pickup__return__info input {
+        margin-bottom: 15px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 14px;
+    }
+    .price__mileage__filter {
+        margin-top: 10px;
+    }
+    .price__mileage__filter .price-input {
+        margin: 10px 0;
     }
 }
 
@@ -20004,6 +20085,16 @@
         right: 20%;
         bottom: 32%;
     }
+    .find__vehicle .pickup__return__info .nice-select,
+    .find__vehicle .pickup__return__info input {
+        margin-bottom: 15px;
+    }
+    .price__mileage__filter {
+        margin-top: 10px;
+    }
+    .price__mileage__filter .price-input {
+        margin: 10px 0;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -23337,6 +23428,20 @@
         font-size: 12px;
         line-height: 20px;
     }
+    .find__vehicle .pickup__return__info .nice-select,
+    .find__vehicle .pickup__return__info input {
+        font-size: 14px;
+        height: 45px;
+        line-height: 45px;
+    }
+    .find__vehicle .h7__button-a {
+        padding: 0 15px;
+        font-size: 18px;
+    }
+    .find__vehicle label {
+        font-size: 12px;
+        margin-bottom: 2px;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -26193,6 +26298,10 @@
         width: 20px;
         font-size: 12px;
         line-height: 20px;
+    }
+    .find__vehicle .pickup__return__info .nice-select,
+    .find__vehicle .pickup__return__info input {
+        font-size: 14px;
     }
 }
 
