@@ -92,6 +92,8 @@
     1. Breadcrumbs Section (Variant 2)
 30. Home Page Seven
     1. Header Style Seven
+    2. Car Reserve Form Popup
+    3. Hero Section (Variant 7)
 **********************************************/
 
 /* ====================================================================
@@ -23980,6 +23982,7 @@ button:focus {
     -webkit-transition: 0.3s;
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
+    z-index: 9999999;
 }
 
 .car__reserve__form.show {
@@ -24295,8 +24298,213 @@ button:focus {
 	margin: 0;
 	margin-top: 15px;
 }
-
 /** End of Car Reserve Form Popup **/
+
+/** Start of Hero Section (Variant 7) **/
+.hero__section__v7 {
+    background: var(--main-color5);
+    width: 100%;
+    position: relative;
+}
+
+.hero__section__v7 .hero__left,
+.hero__section__v7 .hero__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    height: 750px;
+}
+
+.hero__section__v7 .hero__left h2{
+    color: #FFF;
+    font-size: 70px;
+    line-height: 76px;
+    font-weight: 500;
+    font-family: "Maven Pro", sans-serif;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.hero__section__v7 .hero__left h4{
+    color: #CCC;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 500;
+    font-family: "Maven Pro", sans-serif;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.hero__section__v7 .hero__left p {
+    color: #FFF;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: "Maven Pro", sans-serif;
+    margin: 0;
+}
+
+.hero__buttons .h7__button-a {
+    border-color: #FFF;
+}
+
+.hero__buttons .h7__button-a::before {
+    background: #FFF;
+    color: var(--main-color5);
+}
+
+.hero__section__v7 .hero__right .hero__image img {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.h7__hero__slider {
+    overflow: hidden;
+}
+
+/* Slider popup (Home 7) */
+.hsv7__pop__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--secondary-color5);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    position: absolute; 
+    cursor: pointer;
+    transition: 0.3s;
+	-moz-transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+
+.hsv7__pop__btn:hover {
+    border-color: var(--main-color5);
+}
+
+.hsv7__pop__btn span {
+    display: inline-block;
+    background: #FFF;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    font-size: 16px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 800;
+    font-family: "Maven Pro", sans-serif;
+}
+
+.hsv7__popup__cont {
+    display: none;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Maven Pro", sans-serif;
+    background-color: #FFF;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    position: absolute;
+    z-index: 30;
+    width: 210px;
+}
+
+.hsv7__popup__cont h4 {
+    font-family: "Maven Pro", sans-serif;
+}
+
+#hsv7__popbtn__item1 {
+	bottom: 46%;
+	right: 24%;
+}
+#hsv7__popbtn__item2 {
+	bottom: 23%;
+	left: 44%;
+}
+#hsv7__popbtn__item3 {
+	bottom: 26%;
+	right: 10%;
+}
+#hsv7__popbtn__item4 {
+	top: 8%;
+	left: 49%;
+}
+#hsv7__popbtn__item5 {
+	top: 9%;
+	right: 20%;
+}
+
+/* Slider Dots */
+.h7__pgination__button {
+    position: absolute;
+	right: 20px;
+	top: 50% !important;
+	transform: translateY(-50%);
+	z-index: 5;
+}
+
+.h7hs__pagination {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 40px !important;
+}
+
+.h7hs__pagination .swiper-pagination-bullet {
+	width: 30px;
+	height: 30px;
+	background: transparent;
+	opacity: 1;
+	border-radius: 50%;
+	border: 2px solid var(--secondary-color5);
+	position: relative;
+}
+
+.h7hs__pagination .swiper-pagination-bullet::before {
+	position: absolute;
+	content: '';
+	height: 18px;
+	width: 18px;
+	background: #FFF;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+    transition: 0.3s;
+	-moz-transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+
+.h7hs__pagination .swiper-pagination-bullet:hover::before {
+    height: 26px;
+	width: 26px;
+}
+
+.h7hs__pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width: 30px;
+	height: 30px;
+	background: #FFF;
+	opacity: 1;
+	border-radius: 50%;
+	border: 2px solid var(--secondary-color5);
+	position: relative;
+    transition: 0.3s;
+	-moz-transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+
+/** End of Hero Section (Variant 7) **/
 
 /*
 font-family: "Maven Pro", sans-serif;

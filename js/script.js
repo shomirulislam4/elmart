@@ -3645,7 +3645,7 @@ $('.has__search__btn').on('click', function(event){
 //Car Reserve Form Popup
 $(function() {
   //Show Hide Button
-  $('#car__rserve__button').on('click', function() {
+  $('.car__rserve__button').on('click', function() {
     $('.car__reserve__form').addClass('show');
   });
   $('.crf__close__btn').on('click', function() {
@@ -3702,6 +3702,111 @@ $(function() {
   });
 
 });
+
+//Hero Section Slider
+$(function(){
+  var swiper = new Swiper(".h7__hero__slider", {
+    loop: true,
+    spaceBetween: 20,
+    pagination: {
+      el: ".h7hs__pagination",
+      clickable: true,
+    },
+  });
+});
+
+//Hero Section Parallax Effect
+$(function() {
+  if ($(window).width() > 767) {
+    $('.hero__section__v7').each(function() {
+        $(this).data('initialPosition', { left: 0, top: 0 });
+    });
+
+    $('.hero__section__v7').on('mousemove', function(event) {
+        var moveX = (event.pageX - $(this).offset().left) / $(this).width() - 0.5;
+        var moveY = (event.pageY - $(this).offset().top) / $(this).height() - 0.5;
+
+        $(this).find('.parallax__effect').css({
+            'transform': 'translate(' + moveX * -20 + 'px, ' + moveY * -20 + 'px)'
+        });
+
+        $(this).find('.parallax__effecth4').css({
+          'transform': 'translate(' + moveX * -5 + 'px, ' + moveY * -5 + 'px)'
+        });
+        
+        $(this).find('.parallax__effecth2').css({
+          'transform': 'translate(' + moveX * -9 + 'px, ' + moveY * -9 + 'px)'
+        });
+
+        $(this).find('.parallax__effectp').css({
+          'transform': 'translate(' + moveX * -5 + 'px, ' + moveY * -5 + 'px)'
+        });
+
+        $(this).find('.parallax__effectb').css({
+          'transform': 'translate(' + moveX * -7 + 'px, ' + moveY * -7 + 'px)'
+        });
+
+    }).on('mouseleave', function() {
+        // Retrieve initial position and reset the image
+        var initialPosition = $(this).data('initialPosition');
+        $(this).find('.parallax__effect').css({
+            'transform': 'translate(0, 0)' // Resetting to (0,0) position
+        });
+    });
+  }
+});
+
+//Hero Slider Popover
+$(function () {
+  function createPopper(button, popover) {
+    return Popper.createPopper(button, popover, {
+      placement: "top",
+    });
+  }
+
+  function setupPopper(button, popover) {
+    var popperInstance = createPopper(button, popover);
+
+    button.addEventListener("mouseenter", function () {
+      popover.style.display = "block";
+      popperInstance.update();
+    });
+
+    button.addEventListener("mouseleave", function () {
+      popover.style.display = "none";
+    });
+  }
+
+  //Slider 2 button 1
+  var button2_1 = $("#hsv7__popbtn__item1")[0];
+  var popover2_1 = $("#hsv7__popcont__item1")[0];
+  setupPopper(button2_1, popover2_1);
+
+  //Slider 2 button 2
+  var button2_2 = $("#hsv7__popbtn__item2")[0];
+  var popover2_2 = $("#hsv7__popcont__item2")[0];
+  setupPopper(button2_2, popover2_2);
+
+  //Slider 2 button 3
+  var button2_3 = $("#hsv7__popbtn__item3")[0];
+  var popover2_3 = $("#hsv7__popcont__item3")[0];
+  setupPopper(button2_3, popover2_3);
+
+  //Slider 2 button 4
+  var button2_4 = $("#hsv7__popbtn__item4")[0];
+  var popover2_4 = $("#hsv7__popcont__item4")[0];
+  setupPopper(button2_4, popover2_4);
+
+  //Slider 2 button 5
+  var button2_5 = $("#hsv7__popbtn__item5")[0];
+  var popover2_5 = $("#hsv7__popcont__item5")[0];
+  setupPopper(button2_5, popover2_5);
+
+});
+
+
+
+
 
 
 }) (jQuery);
