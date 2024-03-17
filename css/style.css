@@ -23962,6 +23962,53 @@ button:focus {
 .homepage__seven .mobile-menu-wrapper .mobile-submenu a:hover {
     color: var(--secondary-color5);
 }
+
+.homepage__seven .swiper-pagination-bullet {
+	width: 30px;
+	height: 30px;
+	background: transparent;
+	opacity: 1;
+	border-radius: 50%;
+	border: 2px solid var(--secondary-color5);
+	position: relative;
+}
+
+.homepage__seven .swiper-pagination-bullet::before {
+	position: absolute;
+	content: '';
+	height: 18px;
+	width: 18px;
+	background: #FFF;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+    transition: 0.3s;
+	-moz-transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+
+.homepage__seven .swiper-pagination-bullet:hover::before {
+    height: 26px;
+	width: 26px;
+}
+
+.homepage__seven .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width: 30px;
+	height: 30px;
+	background: #FFF;
+	opacity: 1;
+	border-radius: 50%;
+	border: 2px solid var(--secondary-color5);
+	position: relative;
+    transition: 0.3s;
+	-moz-transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+}
 /** End of Header Style Seven **/
 
 /** Start of Car Reserve Form Popup **/
@@ -24461,53 +24508,6 @@ button:focus {
 	width: 40px !important;
 }
 
-.h7hs__pagination .swiper-pagination-bullet {
-	width: 30px;
-	height: 30px;
-	background: transparent;
-	opacity: 1;
-	border-radius: 50%;
-	border: 2px solid var(--secondary-color5);
-	position: relative;
-}
-
-.h7hs__pagination .swiper-pagination-bullet::before {
-	position: absolute;
-	content: '';
-	height: 18px;
-	width: 18px;
-	background: #FFF;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	border-radius: 50%;
-    transition: 0.3s;
-	-moz-transition: 0.3s;
-	-webkit-transition: 0.3s;
-	-ms-transition: 0.3s;
-	-o-transition: 0.3s;
-}
-
-.h7hs__pagination .swiper-pagination-bullet:hover::before {
-    height: 26px;
-	width: 26px;
-}
-
-.h7hs__pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    width: 30px;
-	height: 30px;
-	background: #FFF;
-	opacity: 1;
-	border-radius: 50%;
-	border: 2px solid var(--secondary-color5);
-	position: relative;
-    transition: 0.3s;
-	-moz-transition: 0.3s;
-	-webkit-transition: 0.3s;
-	-ms-transition: 0.3s;
-	-o-transition: 0.3s;
-}
-
 /** Hero Car Search Area **/
 .find__vehicle {
     width: 100%;
@@ -24709,6 +24709,128 @@ button:focus {
     margin: 0 auto;
 }
 /** End of Our Services **/
+
+/** Start of Choose Car by Make **/
+.choose__make__section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background: var(--main-color5);
+    padding: 80px 0;
+}
+
+.choose__make__section .section__title h2,
+.choose__make__section .section__title p {
+    color: #FFF;
+}
+
+.cms__slider {
+    padding: 10px 20px;
+    position: relative;
+}
+
+.cms__slider .swiper-wrapper {
+	height: fit-content;
+}
+
+.cms__slider .swiper-slide {
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 5px;
+    background: #FFF;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.cms__slider .swiper-slide:hover {
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.4);
+}
+
+.cms__slider .swiper-slide .image {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: 0;
+    padding: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.cms__slider .swiper-slide:hover .image {
+    border: 5px solid var(--secondary-color5);
+}
+
+.cms__slider .swiper-slide .image img {
+    width: 100%;
+    height: auto;
+}
+
+.cms__slider .swiper-slide h4 a {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    font-family: "Baumans", system-ui;
+    text-transform: capitalize;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.cms__slider .swiper-slide:hover h4 a {
+    color: var(--secondary-color5);
+}
+
+.cmssldr__dots {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.cmssldr__btn__prev,
+.cmssldr__btn__next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--secondary-color5);
+    background: #FFF;
+    font-size: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    z-index: 10;
+}
+
+.cmssldr__btn__prev:hover,
+.cmssldr__btn__next:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.cmssldr__btn__next {
+    right: 0;
+}
+
+.cmssldr__btn__prev {
+    left: 0;
+}
+/** End of Choose Car by Make **/
+
+
 
 /*
 font-family: "Maven Pro", sans-serif;

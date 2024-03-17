@@ -3848,4 +3848,40 @@ $(function(){
   });
 });
 
+//Choose Car by Make Slider
+$(function(){
+  var swiper = new Swiper(".cms__slider", {
+    slidesPerView: 6,
+    spaceBetween: 20,
+    pagination: {
+      el: ".cmssldr__dots",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".cmssldr__btn__next",
+      prevEl: ".cmssldr__btn__prev",
+    },
+    breakpoints: {
+      1400: {
+        slidesPerView: 6,
+      },
+      1200: {
+        slidesPerView: 5,
+      },
+      992: {
+        slidesPerView: 4,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      576: {
+        slidesPerView: 2,
+      },
+      100: {
+        slidesPerView: 1,
+      }
+    }
+  });
+});
+
 }) (jQuery);
