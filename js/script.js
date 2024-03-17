@@ -3884,4 +3884,15 @@ $(function(){
   });
 });
 
+$(function(){
+  var swiper = new Swiper(".ps6__image__slider", {
+    loop: true,
+    spaceBetween: 20,
+    navigation: {
+      nextEl: ".ps6sldr__btn__next",
+      prevEl: ".ps6sldr__btn__prev",
+    },
+  });
+});
+
 }) (jQuery);

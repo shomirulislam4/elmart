@@ -24713,7 +24713,6 @@ button:focus {
 /** Start of Choose Car by Make **/
 .choose__make__section {
     margin-top: 100px;
-    margin-bottom: 100px;
     background: var(--main-color5);
     padding: 80px 0;
 }
@@ -24830,7 +24829,216 @@ button:focus {
 }
 /** End of Choose Car by Make **/
 
+/** Start of Featured Listings **/
+.featured__car__listing {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
 
+.featured__car__listing .nav-pills {
+	padding: 10px;
+	width: fit-content;
+	height: fit-content;
+	background: #FFF;
+	border-radius: 50px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	gap: 10px;
+	margin: 0 auto;
+    margin-right: auto !important;
+    margin-bottom: 30px;
+}
+
+.featured__car__listing .nav-link {
+    display: inline-block;
+    color: var(--main-color5);
+    font-size: 16px;
+    line-height: 40px;
+    height: 40px;
+    text-align: center;
+    width: fit-content;
+    padding: 0 20px;
+    border-radius: 50px;
+}
+
+.featured__car__listing .nav-link.active,
+.featured__car__listing .nav-link:hover {
+    color: #FFF;
+    background: var(--main-color5);
+}
+
+/* Product Style Six */
+.product__style6 {
+    padding: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.product__style6 .image {
+	height: 300px;
+	overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.product__style6 .image .ps6__image__cta__btns {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+    z-index: 10;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.product__style6 .image:hover .ps6__image__cta__btns {
+    bottom: 10px;
+}
+
+.product__style6 .image .ps6__image__cta__btns a {
+    display: block;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    text-align: center;
+    color: var(--secondary-color5);
+    background: #FFF;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    padding: 0;
+}
+
+.product__style6 .image .ps6__image__cta__btns a:hover {
+    color: #FFF;
+    background: var(--secondary-color5);
+}
+
+.product__style6 .ps6__image__slider {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    position: relative;
+}
+
+.ps6sldr__btn__prev,
+.ps6sldr__btn__next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--main-color5);
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background: #FFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    z-index: 10;
+}
+
+.ps6sldr__btn__prev,
+.ps6sldr__btn__next {
+    color: #FFF;
+    background: var(--main-color5);
+}
+
+.ps6sldr__btn__prev {
+    left: -10%;
+}
+
+.ps6sldr__btn__next {
+    right: -10%;
+}
+
+.ps6sldr__btn__prev:hover,
+.ps6sldr__btn__next:hover {
+    background: var(--secondary-color5);
+}
+
+.product__style6 .image:hover .ps6sldr__btn__prev {
+    left: 5px;
+}
+
+.product__style6 .image:hover .ps6sldr__btn__next {
+    right: 5px;
+}
+
+.product__style6 .content h2 a {
+    font-size: 40px;
+    line-height: 46px;
+    font-weight: 400;
+    font-family: "Baumans", system-ui;
+    text-transform: capitalize;
+}
+
+.product__style6 .content h4 {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: "Audiowide", sans-serif;
+}
+
+.product__style6 .content .star__rating__v3 {
+    color: gold;
+}
+
+.product__style6 .content .star__rating__v3 i {
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.product__style6 .content .star__rating__v3 span {
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: capitalize;
+}
+
+.product__style6 .content .additional__info {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    margin-top: 10px;
+    border-top: 1px solid #CCC;
+}
+
+.product__style6 .content .additional__info p {
+    display: flex;
+    gap: 5px;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.product__style6 .content .additional__info p i {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.product__style6 .content .ps6__cta__btns {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+/** End of Featured Listings **/
 
 /*
 font-family: "Maven Pro", sans-serif;
