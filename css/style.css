@@ -103,6 +103,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baumans&display=swap');
 
 /* Jost */
 @font-face {
@@ -358,6 +359,7 @@ font-family: 'Arsenal', sans-serif;
 
 font-family: "Maven Pro", sans-serif;
 font-family: "Audiowide", sans-serif;
+font-family: "Baumans", system-ui;
 */
 
 /* Default CSS */
@@ -22913,7 +22915,7 @@ button:focus {
     position: relative;
     overflow: hidden;
     font-size: 20px;
-    line-height: 42px;
+    line-height: 48px;
     font-weight: 500;
     display: block;
     width: fit-content;
@@ -24508,14 +24510,14 @@ button:focus {
 
 /** Hero Car Search Area **/
 .find__vehicle {
-	width: 100%;
-	height: 200px;
-	background: transparent;
-	position: absolute;
-	bottom: -100px;
-	left: 50%;
-	transform: translateX(-50%);
-	z-index: 10;
+    width: 100%;
+    height: fit-content;
+    background: transparent;
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
 }
 
 .find__vehicle .nav-tabs {
@@ -24630,12 +24632,88 @@ button:focus {
     font-family: "Maven Pro", sans-serif;
     margin-bottom: 10px;
 }
-
 /** End of Hero Section (Variant 7) **/
+
+/** Start of Our Services **/
+.our__services {
+    margin-top: 100px;
+}
+
+.homepage__seven .section__title {
+    margin-bottom: 50px;
+}
+
+.homepage__seven .section__title h2 {
+    font-size: 60px;
+    line-height: 66px;
+    font-weight: 400;
+    font-family: "Audiowide", sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.homepage__seven .section__title p {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: "Maven Pro", sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.our__services .services__card {
+    text-align: center;
+    padding: 10px;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    border-radius: 5px;
+}
+
+.our__services .services__card:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.our__services .services__card .icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background: #DDD;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.our__services .services__card .icon img {
+    width: 100%;
+    height: auto;
+}
+
+.our__services .services__card h4 {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    font-family: "Baumans", system-ui;
+    text-transform: capitalize;
+}
+
+.our__services .services__card p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: "Maven Pro", sans-serif;
+}
+
+.our__services .services__card .h7__button-a {
+    margin: 0 auto;
+}
+/** End of Our Services **/
 
 /*
 font-family: "Maven Pro", sans-serif;
 font-family: "Audiowide", sans-serif;
+font-family: "Baumans", system-ui;
 
     transition: 0.3s;
     -moz-transition: 0.3s;
