@@ -24833,6 +24833,7 @@ button:focus {
 .featured__car__listing {
     margin-top: 100px;
     margin-bottom: 100px;
+    position: relative;
 }
 
 .featured__car__listing .nav-pills {
@@ -24873,13 +24874,20 @@ button:focus {
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
+    background: #FFF;
 }
 
 .product__style6 .image {
 	height: 300px;
+    width: 100%;
 	overflow: hidden;
     margin-bottom: 20px;
     position: relative;
+}
+
+.product__style6 .image img {
+    width: 100%;
+    height: auto;
 }
 
 .product__style6 .image .ps6__image__cta__btns {
@@ -24898,7 +24906,7 @@ button:focus {
     -o-transition: 0.5s;
 }
 
-.product__style6 .image:hover .ps6__image__cta__btns {
+.product__style6:hover .ps6__image__cta__btns {
     bottom: 10px;
 }
 
@@ -24974,12 +24982,18 @@ button:focus {
     background: var(--secondary-color5);
 }
 
-.product__style6 .image:hover .ps6sldr__btn__prev {
+.product__style6:hover .ps6sldr__btn__prev {
     left: 5px;
 }
 
-.product__style6 .image:hover .ps6sldr__btn__next {
+.product__style6:hover .ps6sldr__btn__next {
     right: 5px;
+}
+
+.product__style6 .content h2 {
+    height: 92px;
+    display: flex;
+    align-items: center;
 }
 
 .product__style6 .content h2 a {
@@ -25013,11 +25027,13 @@ button:focus {
 }
 
 .product__style6 .content .additional__info {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
-    margin-top: 10px;
-    border-top: 1px solid #CCC;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 20px;
+	margin-top: 10px;
+	border-top: 1px solid #CCC;
+	flex-wrap: wrap;
+    gap: 5px;
 }
 
 .product__style6 .content .additional__info p {
@@ -25025,6 +25041,8 @@ button:focus {
     gap: 5px;
     font-size: 14px;
     line-height: 16px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
 }
 
 .product__style6 .content .additional__info p i {
