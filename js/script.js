@@ -312,9 +312,27 @@ $(function() {
 
 //Hero-section Counter
 $(function($) {
-  $('.hero-count').counterUp({
-      delay: 10,
-      time: 1000
+  $(function() {
+    function startCountUp(element, start, end, duration) {
+        $({ Counter: start }).animate({ Counter: end }, {
+            duration: duration,
+            easing: 'swing',
+            step: function () {
+                element.text(Math.ceil(this.Counter));
+            }
+        });
+    }
+
+    $('.hero-count').each(function() {
+        var waypoint = new Waypoint({
+            element: this,
+            handler: function(direction) {
+                startCountUp($(this.element), 0, parseInt($(this.element).text()), 1000);
+                waypoint.destroy();
+            },
+            offset: 'bottom-in-view'
+        });
+    });
   });
 });
 
@@ -1681,10 +1699,26 @@ $(function() {
 });
 
 //Dashboard Area Counter
-$(function($) {
-  $('.udb-count').counterUp({
-      delay: 10,
-      time: 1000
+$(function() {
+  function startCountUp(element, start, end, duration) {
+      $({ Counter: start }).animate({ Counter: end }, {
+          duration: duration,
+          easing: 'swing',
+          step: function () {
+              element.text(Math.ceil(this.Counter));
+          }
+      });
+  }
+
+  $('.udb-count').each(function() {
+      var waypoint = new Waypoint({
+          element: this,
+          handler: function(direction) {
+              startCountUp($(this.element), 0, parseInt($(this.element).text()), 1000);
+              waypoint.destroy();
+          },
+          offset: 'bottom-in-view'
+      });
   });
 });
 
@@ -3884,6 +3918,7 @@ $(function(){
   });
 });
 
+//Product Style Six Image Slider
 $(function(){
   var swiper = new Swiper(".ps6__image__slider", {
     loop: true,
@@ -3892,6 +3927,30 @@ $(function(){
       nextEl: ".ps6sldr__btn__next",
       prevEl: ".ps6sldr__btn__prev",
     },
+  });
+});
+
+//Why Choose Us Counter Up
+$(function() {
+  function startCountUp(element, start, end, duration) {
+      $({ Counter: start }).animate({ Counter: end }, {
+          duration: duration,
+          easing: 'swing',
+          step: function () {
+              element.text(Math.ceil(this.Counter));
+          }
+      });
+  }
+
+  $('.wcu__counter').each(function() {
+      var waypoint = new Waypoint({
+          element: this,
+          handler: function(direction) {
+              startCountUp($(this.element), 0, parseInt($(this.element).text()), 1000);
+              waypoint.destroy();
+          },
+          offset: 'bottom-in-view'
+      });
   });
 });
 
