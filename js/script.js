@@ -3612,6 +3612,15 @@ $(function() {
 });
 
 /*============================ Home Style Seven ============================*/
+//Preloader v4
+$(function(){
+  $(window).on("load",function(){
+    $('.car__preloader__wrapper').delay(1000).fadeOut(500);
+  });
+  $('.car__preloader__close__btn').on('click', function(){
+    $('.car__preloader__wrapper').fadeOut(500);
+  })
+});
 
 //Language change drop down menu
 $(function() {

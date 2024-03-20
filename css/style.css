@@ -91,6 +91,7 @@
 29. Shop Details Page (Style 5)
     1. Breadcrumbs Section (Variant 2)
 30. Home Page Seven
+    0. Preloader v4
     1. Header Style Seven
     2. Car Reserve Form Popup
     3. Hero Section (Variant 7)
@@ -22980,6 +22981,223 @@ button:focus {
     color: #FFF !important;
     background: var(--main-color5);
 }
+
+/** Start of Preloader v3 **/
+.car__preloader__wrapper {
+    position: fixed;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFF;
+    z-index: 999999999;
+    width: 100vw;
+}
+
+.car__preloader__wrapper .car__preloader__close__btn {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #000;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 30px;
+    width: 30px;
+    display: block;
+    cursor: pointer;
+}
+
+.car__preloader__close__btn:hover {
+    color: var(--secondary-color5);
+}
+
+.car__preloader {
+    width: 11.7em;
+    height: 4.2em;
+    font-size: 16px;
+    color: var(--main-color5);
+    position: relative;
+}
+
+.preloader__car__design {
+    position: absolute;
+    width: inherit;
+    height: 2em;
+    background: var(--main-color5);
+    top: 1.5em;
+    border-radius: 0 5em 1em 0 / 0 4em 1em 0;
+}
+
+@keyframes run {
+    0% {
+        transform: translate(0.2em, 0.1em) rotate(0deg);
+    }
+
+    20% {
+        transform: translate(0.1em, 0.2em) rotate(1deg);
+    }
+
+    40% {
+        transform: translate(0.1em, -0.1em) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-0.1em, 0.2em) rotate(0deg);
+    }
+
+    80% {
+        transform: translate(-0.1em, 0.1em) rotate(1deg);
+    }
+
+    100% {
+        transform: translate(0.2em, 0.1em) rotate(-1deg);
+    }
+}
+
+.preloader__car__design::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -0.5em;
+    border: 0.6em solid transparent;
+    border-left-width: 0;
+    border-right-color: var(--main-color5);
+    transform-origin: left;
+    transform: rotate(-45deg);
+}
+
+.preloader__car__body {
+    position: absolute;
+    width: 7.5em;
+    height: 3.5em;
+    box-sizing: border-box;
+    border: 0.4em solid;
+    border-radius: 3em 4.5em 0 0 / 3em 4em 0 0;
+    top: -1.5em;
+    left: 1.2em;
+    color: var(--secondary-color5);
+}
+
+.preloader__car__body::before {
+    content: '';
+    position: absolute;
+    width: 3.5em;
+    height: inherit;
+    background-color: var(--main-color5);
+    border-top-left-radius: inherit;
+    left: -0.4em;
+    top: -0.4em;
+}
+
+.preloader__car__wheels::before,
+.preloader__car__wheels::after {
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    width: 2.6em;
+    height: 2.6em;
+    background-color: #FFF;
+    border-radius: 50%;
+    bottom: -1em;
+    border: 0.3em solid var(--secondary-color5);
+    background-image: 
+        linear-gradient(
+            135deg,
+            transparent 45%,
+            var(--main-color5) 46%, var(--main-color5) 54%,
+            transparent 55%
+        ),
+        linear-gradient(
+            90deg,
+            transparent 45%,
+            var(--main-color5) 46%, var(--main-color5) 54%,
+            transparent 55%
+        ),
+        linear-gradient(
+            45deg,
+            transparent 45%,
+            var(--main-color5) 46%, var(--main-color5) 54%,
+            transparent 55%
+        ),
+        linear-gradient(
+            0deg,
+            transparent 45%,
+            var(--main-color5) 46%, var(--main-color5) 54%,
+            transparent 55%
+        ),
+        radial-gradient(
+            var(--main-color5) 29%,
+            transparent 30%, transparent 50%,
+            var(--main-color5) 51%
+        );
+    animation: rotating 0.5s linear infinite;
+}
+
+.preloader__car__wheels::before {
+    left: 1.2em;
+}
+
+.preloader__car__wheels::after {
+    right: 0.8em;
+}
+
+@keyframes rotating {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+.preloader__car__strikes {
+    position: absolute;
+    width: 1em;
+    height: inherit;
+    left: -1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.preloader__car__strikes span {
+    height: 0.1em;
+    background-color: var(--main-color5);
+    animation: drift 0.2s linear infinite;
+    animation-delay: calc(var(--n) * -0.05s);
+}
+
+@keyframes drift {
+    from {
+        transform: translate(3.5em);
+    }
+
+    to {
+        transform: translate(-8em);
+        filter: opacity(0);
+    }
+}
+
+.preloader__car__strikes span:nth-child(1) {
+    --n: 1;
+}
+
+.preloader__car__strikes span:nth-child(2) {
+    --n: 2;
+}
+
+.preloader__car__strikes span:nth-child(3) {
+    --n: 3;
+}
+
+.preloader__car__strikes span:nth-child(4) {
+    --n: 4;
+}
+
+.preloader__car__strikes span:nth-child(5) {
+    --n: 5;
+}
+/** End of Preloader v3 **/
 
 /** Start of Header Style Seven **/
 /* Header Top */
