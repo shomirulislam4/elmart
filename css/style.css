@@ -94,6 +94,13 @@
     1. Header Style Seven
     2. Car Reserve Form Popup
     3. Hero Section (Variant 7)
+    4. Our Services
+    5. Choose Car by Make
+    6. Featured Listings
+    7. Consultation
+    8. Why Choose Us
+    9. Testimonial Section (Variant 4)
+    10. Footer Section (Variant 3)
 **********************************************/
 
 /* ====================================================================
@@ -25165,7 +25172,6 @@ button:focus {
 /** Start of Why Choose Us **/
 .why__choose__us {
     margin-top: 100px;
-    margin-bottom: 100px;
     background: var(--main-color5);
     padding: 60px 0;
 }
@@ -25216,6 +25222,255 @@ button:focus {
 }
 /** End of Why Choose Us **/
 
+/** Start of Testimonial Section (Variant 4) **/
+.testimonial__v3__section {
+    margin-top: 100px;
+}
+
+.testimonial__v3__slider {
+    position: relative;
+}
+
+.testimonial__v3__slider .reviewer__info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.testimonial__v3__slider .reviewer__info .image {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.testimonial__v3__slider .reviewer__info .image img {
+    height: 100%;
+    width: 100%;
+}
+
+.testimonial__v3__slider .reviewer__info .name__info h2 {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 400;
+    font-family: "Baumans", system-ui;
+}
+
+.testimonial__v3__slider .reviewer__info .name__info h4 {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    font-family: "Baumans", system-ui;
+}
+
+.testimonial__v3__slider .review__content .star__rating__v3 {
+    color: gold;
+    margin-bottom: 10px;
+}
+
+.testimonial__v3__slider .review__content p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: "Maven Pro", sans-serif;
+}
+
+.testimonial__v3__slider .tmv3__dot {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.testimonial__v3__slider .tmv3__btn__next,
+.testimonial__v3__slider .tmv3__btn__prev {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    color: #FFF;
+    background: var(--main-color5);
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.testimonial__v3__slider .tmv3__btn__next:hover,
+.testimonial__v3__slider .tmv3__btn__prev:hover {
+    background: var(--secondary-color5);
+}
+
+.testimonial__v3__slider .tmv3__btn__next {
+    right: 0;
+}
+
+.testimonial__v3__slider .tmv3__btn__prev {
+    left: 0;
+}
+
+.testimonial__v3__slider .swiper-pagination-bullet::before,
+.testimonial__v3__slider .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: var(--secondary-color5);
+}
+/** End of Testimonial Section (Variant 4) **/
+
+/** Start of Footer Section (Variant 3) **/
+.footer__v3__section {
+    margin-top: 100px;
+    padding-top: 60px;
+    background: var(--main-color5);
+}
+
+.footer__v3__section .footer__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.footer__v3__section .footer__top .logo {
+    width: 30%;
+}
+
+.footer__v3__section .footer__top .page__links {
+    width: 70%;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.footer__v3__section .footer__top .page__links a {
+    color: #FFF;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 500;
+    font-family: "Maven Pro", sans-serif;
+    text-transform: capitalize;
+}
+
+.footer__v3__section .footer__top .page__links a:hover {
+    color: var(--secondary-color5);
+}
+
+.footer__v3__section .company__info h2,
+.footer__v3__section .footer__links h2,
+.footer__v3__section .download__app h2 {
+    color: #FFF;
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 400;
+    font-family: "Audiowide", system-ui;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.footer__v3__section .company__info p,
+.footer__v3__section .download__app p {
+    color: #FFF;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: "Maven Pro", sans-serif;
+}
+
+.footer__v3__section .company__info p i {
+    margin-right: 10px;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.footer__v3__section .footer__links li a {
+    color: #FFF;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: "Maven Pro", sans-serif;
+    width: 100%;
+    text-transform: capitalize;
+    padding: 5px 0;
+    display: block;
+}
+
+.footer__v3__section .footer__links li a:hover {
+    text-decoration: underline;
+}
+
+.footer__v3__section .download__app .app__download__btn {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer__v3__section .download__app .app__download__btn a {
+    width: 200px;
+    height: 57px;
+    display: block;
+}
+
+.footer__v3__section .download__app .app__download__btn a img {
+    height: auto;
+    width: 100%;
+}
+
+.footer__v3__section .footer__bottom {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.footer__v3__section .footer__bottom .copyright {
+    color: #FFF;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: "Maven Pro", sans-serif;
+    margin: 0;
+    text-align: left;
+}
+
+.footer__v3__section .footer__bottom .copyright a {
+    color: #FFF;
+}
+
+.footer__v3__section .footer__bottom .copyright a:hover {
+    color: var(--secondary-color5);
+}
+
+.footer__v3__section .footer__bottom .footer__social__btns {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.footer__v3__section .footer__bottom .footer__social__btns li {
+    display: inline-block;
+}
+
+.footer__v3__section .footer__bottom .footer__social__btns li a {
+    display: block;
+    height: 36px;
+    width: 36px;
+    line-height: 36px;
+    font-weight: 400;
+    font-size: 16px;
+    background: #FFF;
+    color: var(--main-color5);
+    border-radius: 50%;
+    text-align: center;
+}
+
+.footer__v3__section .footer__bottom .footer__social__btns li a:hover {
+    color: #FFF;
+    background: var(--secondary-color5);
+}
+/** End of Footer Section (Variant 3) **/
 
 /*
 font-family: "Maven Pro", sans-serif;

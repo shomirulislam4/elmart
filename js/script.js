@@ -3954,4 +3954,28 @@ $(function() {
   });
 });
 
+//Testimonial Section (Variant 4)
+$(function() {
+  var swiper = new Swiper(".testimonial__v3__slider", {
+    slidesPerView: 2,
+    spaceBetween: 20,
+    navigation: {
+      nextEl: ".tmv3__btn__next",
+      prevEl: ".tmv3__btn__prev",
+    },
+    pagination: {
+      el: ".tmv3__dot",
+      clickable: true,
+    },
+    breakpoints: {
+      416: {
+        slidesPerView: 2,
+      },
+      1: {
+        slidesPerView: 1,
+      }
+    }
+  });
+});
+
 }) (jQuery);
