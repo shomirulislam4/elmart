@@ -22982,12 +22982,13 @@ button:focus {
     background: var(--main-color5);
 }
 
-/** Start of Preloader v3 **/
+/** Start of Preloader v4 **/
 .car__preloader__wrapper {
     position: fixed;
     margin: 0;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background: #FFF;
@@ -23197,7 +23198,22 @@ button:focus {
 .preloader__car__strikes span:nth-child(5) {
     --n: 5;
 }
-/** End of Preloader v3 **/
+
+.car__preloader__wrapper p {
+    font-size: 30px;
+    line-height: 30px;
+    margin-top: 30px;
+    font-weight: 500;
+}
+/** End of Preloader v4 **/
+
+/* Back to Top (Variant 3)*/
+.back__to__top__v3 {
+    position: fixed;
+    z-index: 100;
+    right: 50px;
+    bottom: 70px;
+}
 
 /** Start of Header Style Seven **/
 /* Header Top */
@@ -23364,6 +23380,30 @@ button:focus {
 
 .has__search__btn {
     display: none;
+}
+
+@media (max-width: 991px) {
+    .h7__header__middle {
+        padding: 10px 0;
+    }
+    .h7__header__top .left,
+    .h7__header__bottom .left-side,
+    .h7__main__menu {
+        display: none;
+    }
+    .h7__header__top .right {
+        justify-content: center;
+        width: 100%;
+    }
+    .h7__header__top {
+        padding-bottom: 0;
+    }
+    .h7__header__bottom {
+        padding: 5px 0;
+    }
+    .h7__header__bottom .right-side {
+        width: 100%;
+    }
 }
 
 @media (max-width: 575px) {

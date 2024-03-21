@@ -52,6 +52,33 @@ $(function(){
   })
 });
 
+//Back to Top (Variant 3) - Car
+$(function() {
+  var backToTop = $('.back__to__top__v3');
+  backToTop.hide();
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() >= 400) {
+      backToTop.fadeIn(1000);
+    } else {
+      backToTop.fadeOut(200);
+    }
+  });
+
+  backToTop.click(function() {
+    $('body,html').animate({
+      scrollTop : 0
+    }, 2000);
+
+    backToTop.animate({
+      bottom: '100%',
+      opacity: 0
+    }, 2000, function() {
+      backToTop.css({ bottom: '', opacity: '' });
+    });
+  });
+});
+
 //Preloader
 $(function(){
   $(window).on("load",function(){
@@ -3793,7 +3820,7 @@ $(function() {
         // Retrieve initial position and reset the image
         var initialPosition = $(this).data('initialPosition');
         $(this).find('.parallax__effect').css({
-            'transform': 'translate(0, 0)' // Resetting to (0,0) position
+            'transform': 'translate(0, 0)'
         });
     });
   }
