@@ -23000,7 +23000,7 @@ button:focus {
 .h7__button-b {
     overflow: hidden;
     font-size: 20px;
-    line-height: 42px;
+    line-height: 45px;
     font-weight: 500;
     display: block;
     width: fit-content;
@@ -25974,6 +25974,14 @@ button:focus {
 .review__sticky__sidebar .review__sidebar__widgets iframe {
     width: 100%;
     height: auto;
+}
+
+#OverallRatingWidget {
+    display: none;
+}
+
+#OverallRatingWidget.show {
+    display: block;
 }
 
 /* Review Form v3 */

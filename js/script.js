@@ -4037,4 +4037,15 @@ if ( $('.sds6__page').length ) {
   $('#pis6TireUnits').niceSelect();
 }
 
+//Overall Rating Sidebar Widget Show/Hide
+$(function(){
+  $("#ReviewInfoSection button").click(function(){
+      $("#OverallRatingWidget").removeClass("show");
+  });
+
+  $("#RS3Review-tab").click(function(){
+      $("#OverallRatingWidget").addClass("show");
+  });
+});
+
 }) (jQuery);
