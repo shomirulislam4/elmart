@@ -52,33 +52,6 @@ $(function(){
   })
 });
 
-//Back to Top (Variant 3) - Car
-$(function() {
-  var backToTop = $('.back__to__top__v3');
-  backToTop.hide();
-
-  $(window).scroll(function() {
-    if ($(this).scrollTop() >= 400) {
-      backToTop.fadeIn(1000);
-    } else {
-      backToTop.fadeOut(200);
-    }
-  });
-
-  backToTop.click(function() {
-    $('body,html').animate({
-      scrollTop : 0
-    }, 2000);
-
-    backToTop.animate({
-      bottom: '100%',
-      opacity: 0
-    }, 2000, function() {
-      backToTop.css({ bottom: '', opacity: '' });
-    });
-  });
-});
-
 //Preloader
 $(function(){
   $(window).on("load",function(){
@@ -4013,5 +3986,55 @@ $(function() {
     }
   });
 });
+
+//Back to Top (Variant 3) - Car
+$(function() {
+  var backToTop = $('.back__to__top__v3');
+  backToTop.hide();
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() >= 400) {
+      backToTop.fadeIn(1000);
+    } else {
+      backToTop.fadeOut(200);
+    }
+  });
+
+  backToTop.click(function() {
+    $('body,html').animate({
+      scrollTop : 0
+    }, 500);
+
+    backToTop.animate({
+      bottom: '100%',
+      opacity: 0
+    }, 2000, function() {
+      backToTop.css({ bottom: '', opacity: '' });
+    });
+  });
+});
+
+/*============================ Home Style Seven ============================*/
+//Review Form v3
+$(function () {
+  $(".ratiing__star__select").rateYo({
+    rating: 0,
+    fullStar: true,
+    starWidth: "18px",
+    ratedFill: "#261552"
+  });
+});
+
+//Review Form v3 Toggle
+$(function () {
+  $('#RevFormV3Toggle').on('click',function() {
+    $('.review__form__v3').toggleClass('show');
+  });
+});
+
+//All Select
+if ( $('.sds6__page').length ) {
+  $('#pis6TireUnits').niceSelect();
+}
 
 }) (jQuery);

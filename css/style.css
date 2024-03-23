@@ -102,6 +102,8 @@
     8. Why Choose Us
     9. Testimonial Section (Variant 4)
     10. Footer Section (Variant 3)
+31. Shop Details Page (Style 6)
+    1. Breadcrumbs Section (Variant 3)
 **********************************************/
 
 /* ====================================================================
@@ -22918,6 +22920,41 @@ button:focus {
 	border-color: var(--main-color5);
 }
 
+.homepage__seven input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #FFF;
+    margin: 0;
+    color: #5A5858;
+    width: 14px;
+    height: 14px;
+    border: 1px solid var(--secondary-color5);
+    margin-right: 6px;
+    transform: translateY(2px);
+    padding: 6px;
+    position: relative;
+    border-radius: 3px;
+}
+
+.homepage__seven input[type="checkbox"]::before {
+	content: "\f00c";
+	font-family: 'Fontawesome';
+    font-size: 11px;
+	color: #FFF;
+	text-align: center;
+	position: absolute;
+	top: -2px;
+	left: 1px;
+    width: 8px;
+	height: 8px;
+	transition: 0.1s;
+}
+
+.homepage__seven input[type="checkbox"]:checked {
+    color: #FFF;
+    background: var(--secondary-color5);
+}
+
 /* Buttons */
 .h7__button-a {
     position: relative;
@@ -22975,6 +23012,11 @@ button:focus {
     border-radius: 5px;
     text-align: center;
     text-transform: capitalize;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
 }
 
 .h7__button-b:hover {
@@ -24563,41 +24605,6 @@ button:focus {
     text-transform: capitalize;
 }
 
-.crf__addition .item input[type="checkbox"] {
-    -webkit-appearance: none;
-    appearance: none;
-    background-color: #FFF;
-    margin: 0;
-    color: #5A5858;
-    width: 14px;
-    height: 14px;
-    border: 1px solid var(--secondary-color5);
-    margin-right: 6px;
-    transform: translateY(2px);
-    padding: 6px;
-    position: relative;
-    border-radius: 3px;
-}
-
-.crf__addition .item input[type="checkbox"]::before {
-	content: "\f00c";
-	font-family: 'Fontawesome';
-    font-size: 11px;
-	color: #FFF;
-	text-align: center;
-	position: absolute;
-	top: -2px;
-	left: 1px;
-    width: 8px;
-	height: 8px;
-	transition: 0.1s;
-}
-
-.crf__addition .item input[type="checkbox"]:checked {
-    color: #FFF;
-    background: var(--secondary-color5);
-}
-
 .crf__addition .item .with__unit {
     display: flex;
     gap: 20px;
@@ -25729,6 +25736,368 @@ button:focus {
     background: var(--secondary-color5);
 }
 /** End of Footer Section (Variant 3) **/
+
+/* ====================================================================
+31. Shop Details Page (Style 6)
+==================================================================== */
+/** Start of Breadcrumbs Section (Variant 3) **/
+.breadcrumb__v3__section {
+    background: url('../image/breadcrumb/bg-3.svg') center;
+    height: fit-content;
+}
+
+.breadcrumb__v3__wrapper {
+    background: rgba(38, 21, 82, 0.7);
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.breadcrumb__v3__section h2 {
+    color: #FFF;
+    font-size: 40px;
+    line-height: 46px;
+    font-weight: 400;
+    font-family: 'Audiowide', sans-serif;
+    text-transform: capitalize;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.breadcrumb__v3__section .breadcrumb__v3,
+.breadcrumb__v3__section .breadcrumb__v3 span {
+    color: #FFF;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: 'Maven Pro', sans-serif;
+    text-transform: capitalize;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.breadcrumb__v3__section .breadcrumb__v3 span {
+    font-weight: 600;
+}
+/** End of Breadcrumbs Section (Variant 3) **/
+
+/** Start of Single Product Style 6 **/
+.product__info__style6 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.product__info__style6 .sds5_product-color p {
+    margin-bottom: 10px;
+}
+
+.product__info__style6 p {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: 'Maven Pro', sans-serif;
+    margin: 0;
+}
+
+.product__info__style6 .price {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 500;
+}
+
+.product__info__style6 h4 {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    font-family: 'Audiowide', sans-serif;
+    margin: 0;
+}
+
+.product__info__style6 .cta__buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.product__info__style6 form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.product__info__style6 form p {
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.product__info__style6 form .item .with__unit {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+/** End of Single Product Style 6 **/
+
+/** Start of Review Section (Variant 3) **/
+.review__section__v3 {
+    margin-top: 80px;
+}
+
+.review__section__v3 .title__row {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background: #FFF;
+    padding: 10px;
+    border-bottom: 1px solid #000;
+    z-index: 100;
+    margin-bottom: 10px;
+}
+
+.review__section__v3 .title__row h2 {
+    font-size: 50px;
+    line-height: 55px;
+    font-weight: 500;
+    font-family: "Baumans", system-ui;
+}
+
+.review__section__v3 .title__row .nav-pills .nav-link {
+    color: #191C1F;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: 'Maven Pro', sans-serif;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.review__section__v3 .title__row .nav-pills .nav-link:hover,
+.review__section__v3 .title__row .nav-pills .nav-link.active {
+	color: var(--secondary-color5);
+	background-color: transparent;
+}
+
+.review__section__v3 .title__row .nav-pills .nav-link::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: var(--secondary-color5);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.review__section__v3 .title__row .nav-pills .nav-link:hover::before,
+.review__section__v3 .title__row .nav-pills .nav-link.active::before {
+    width: 90%;
+}
+
+/* Specs tab */
+.review__section__v3 table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.review__section__v3 table tr {
+    border-bottom: 1px solid black;
+}
+
+.review__section__v3 table th,
+.review__section__v3 table td {
+    padding: 8px;
+    text-align: left;
+    width: 50%;
+}
+
+/* Sidebar */
+.review__sticky__sidebar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 125px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 99;
+    background: #FFF;
+}
+
+.review__sticky__sidebar .all-rating {
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: 'Maven Pro', sans-serif;
+    text-transform: capitalize;
+}
+
+.review__sticky__sidebar .rating-star {
+    line-height: 24px;
+    font-size: 16px;
+    color: #13172B;
+}
+
+.review__sticky__sidebar button {
+    margin-top: 20px;
+}
+
+.review__sticky__sidebar .review__sidebar__widgets {
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    height: fit-content;
+}
+
+.review__sticky__sidebar .review__sidebar__widgets .contact__text {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.review__sticky__sidebar .review__sidebar__widgets .contact__text i {
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.review__sticky__sidebar .review__sidebar__widgets iframe {
+    width: 100%;
+    height: auto;
+}
+
+/* Review Form v3 */
+.main__review__wrap {
+    margin-top: 30px;
+}
+
+.review__form__v3 {
+    height: 0;
+    margin-bottom: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.review__form__v3.show {
+    height: 780px;
+    margin-bottom: 30px;
+}
+
+.review__form__v3 .rating-area {
+    margin-bottom: 20px;
+}
+
+.review__form__v3 .rating__wrap {
+    display: flex;
+    gap: 10px;
+}
+
+.review__form__v3 label {
+    color: #13172B;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+    font-family: 'Maven Pro', sans-serif;
+    margin-bottom: 15px;
+}
+
+.review__form__v3 #NameEmail {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.review__form__v3 #NameEmail input {
+	color: #13172B;
+	width: 49.5%;
+}
+
+.review__form__v3 input {
+    color: #13172B;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #13172B;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 18px;
+    line-height: 50px;
+    font-weight: 400;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.review__form__v3 input ::placeholder {
+    font-size: 18px;
+    line-height: 50px;
+    font-weight: 400;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.review__form__v3 #name-email input {
+    color: #13172B;
+    width: 49.5%;
+}
+
+.review__form__v3 textarea {
+    color: #13172B;
+    width: 100%;
+    height: 208px;
+    border: 1px solid #13172B;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    resize: none;
+    margin-top: 15px;
+}
+
+.review__form__v3 .h5-button-3 {
+    margin-top: 15px;
+    width: 30%;
+    text-transform: uppercase;
+}
+
+.review__form__v3 p {
+    color: #13172B;
+    margin-top: 15px;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.review__form__v3 p a {
+    color: var(--main-color5);
+}
+
+.review__form__v3 p a:hover {
+    color: var(--secondary-color5);
+}
+
+/* Submitted Review */
+.main__review__wrap .submitted-reviews p,
+.main__review__wrap .submitted-reviews .title-meta p,
+.main__review__wrap .submitted-reviews .rev-text,
+.main__review__wrap .submitted-reviews .user-feedback p {
+    font-family: 'Maven Pro', sans-serif;
+}
+/** End of Review Section (Variant 3) **/
+
 
 /*
 font-family: "Maven Pro", sans-serif;
