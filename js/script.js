@@ -4016,7 +4016,7 @@ $(function() {
 
 /*============================ Home Style Seven ============================*/
 //Review Form v3
-$(function () {
+$(function() {
   $(".ratiing__star__select").rateYo({
     rating: 0,
     fullStar: true,
@@ -4026,7 +4026,7 @@ $(function () {
 });
 
 //Review Form v3 Toggle
-$(function () {
+$(function() {
   $('#RevFormV3Toggle').on('click',function() {
     $('.review__form__v3').toggleClass('show');
   });
@@ -4045,6 +4045,27 @@ $(function(){
 
   $("#RS3Review-tab").click(function(){
       $("#OverallRatingWidget").addClass("show");
+  });
+});
+
+//Product Iages Slider
+$(function(){
+  var sds6thumb = new Swiper(".sds6__thumb", {
+    loop: true,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+  var sds6 = new Swiper(".sds__images__slider", {
+    loop: true,
+    spaceBetween: 10,
+    navigation: {
+      nextEl: ".sds6__btn__next",
+      prevEl: ".sds6__btn__prev",
+    },
+    thumbs: {
+      swiper: sds6thumb,
+    },
   });
 });
 
