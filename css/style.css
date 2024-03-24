@@ -25920,6 +25920,7 @@ button:focus {
 
 /* Sidebar */
 .review__sticky__sidebar {
+    display: block;
     position: -webkit-sticky;
     position: sticky;
     top: 125px;
@@ -25929,6 +25930,11 @@ button:focus {
     gap: 20px;
     z-index: 99;
     background: #FFF;
+    margin-bottom: 20px;
+}
+
+.review__sticky__sidebar.hidden {
+    display: none;
 }
 
 .review__sticky__sidebar .all-rating {
@@ -25982,6 +25988,14 @@ button:focus {
 
 #OverallRatingWidget.show {
     display: block;
+}
+
+#ContactInfoWidget {
+    display: block;
+}
+
+#ContactInfoWidget.hide {
+    display: none;
 }
 
 /* Review Form v3 */
@@ -26113,10 +26127,58 @@ button:focus {
     margin: 0 auto;
 }
 
+.sds__images__slider {
+    position: relative;
+}
+
 .sds__images__slider .swiper-slide,
 .sds__images__slider .swiper-slide img {
     width: 100%;
     height: auto;
+}
+
+.sds6__slider__buttons {
+    position: absolute;
+    background: #FFF;
+    padding: 10px;
+    border-radius: 50px;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sds6__btn__next,
+.sds6__btn__prev {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    border-radius: 50%;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    color: #191C1F;
+    text-align: center;
+}
+
+.sds6__btn__next:hover,
+.sds6__btn__prev:hover {
+    background: #DDD;
+}
+
+.sds6__slider__buttons .devider__dash {
+    content: '';
+    height: 5px;
+    width: 20px;
+    border-radius: 50px;
+    background: #191C1F;
 }
 
 /* Thumb */
@@ -26124,6 +26186,21 @@ button:focus {
     width: 100%;
     height: auto;
 }
+
+.swiper-slide.swiper-slide-visible,
+.swiper-slide.swiper-slide-visible.swiper-slide-fully-visible {
+    filter: grayscale(100%);
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.swiper-slide.swiper-slide-visible.swiper-slide-fully-visible.swiper-slide-thumb-active { 
+    filter: none;
+}
+
 /** End of Product Images Slider Section **/
 
 

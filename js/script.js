@@ -4000,7 +4000,7 @@ $(function() {
     }
   });
 
-  backToTop.click(function() {
+  backToTop.on('click', function() {
     $('body,html').animate({
       scrollTop : 0
     }, 500);
@@ -4039,12 +4039,14 @@ if ( $('.sds6__page').length ) {
 
 //Overall Rating Sidebar Widget Show/Hide
 $(function(){
-  $("#ReviewInfoSection button").click(function(){
+  $("#ReviewInfoSection button").on('click', function() {
       $("#OverallRatingWidget").removeClass("show");
-  });
-
-  $("#RS3Review-tab").click(function(){
+      $("#ContactInfoWidget").removeClass("hide");
+    });
+    
+    $("#RS3Review-tab").click(function(){
       $("#OverallRatingWidget").addClass("show");
+      $("#ContactInfoWidget").addClass("hide");
   });
 });
 
@@ -4055,6 +4057,17 @@ $(function(){
     slidesPerView: 4,
     freeMode: true,
     watchSlidesProgress: true,
+    breakpoints: {
+      768: {
+        slidesPerView: 4,
+      },
+      576: {
+        slidesPerView: 3,
+      },
+      1: {
+        slidesPerView: 2,
+      },
+    }
   });
   var sds6 = new Swiper(".sds__images__slider", {
     loop: true,
@@ -4068,5 +4081,37 @@ $(function(){
     },
   });
 });
+
+//Sticky sidebar hide in overview tab when screen size <992
+$(function() {
+  function adjustClass() {
+    var screenWidth = $(window).width();
+
+    if (screenWidth < 992 && $('#RS3Overview-tab').hasClass('nav-link', 'active')) {
+      $('.review__sticky__sidebar').addClass('hidden');
+    } else {
+      $('.review__sticky__sidebar').removeClass('hidden');
+    }
+
+    if (screenWidth < 992) {
+      $('#RS3Overview-tab').on('click', function(event) {
+        $('.review__sticky__sidebar').addClass('hidden');
+      });
+    } else {
+      $('.review__sticky__sidebar').removeClass('hidden');
+    }
+  }
+
+  $('#ReviewInfoSection button').on('click', function() {
+    $('.review__sticky__sidebar').removeClass('hidden');
+  });
+
+  adjustClass();
+  $(window).resize(adjustClass);
+});
+
+
+
+
 
 }) (jQuery);
