@@ -4014,7 +4014,7 @@ $(function() {
   });
 });
 
-/*============================ Home Style Seven ============================*/
+/*============================ Shop Details 6 & Shop Page 6 ============================*/
 //Review Form v3
 $(function() {
   $(".ratiing__star__select").rateYo({
@@ -4036,6 +4036,10 @@ $(function() {
 if ( $('.sds6__page').length ) {
   $('#pis6TireUnits').niceSelect();
 }
+if ( $('.sps6__page').length ) {
+  $('#sps6sbCarType').niceSelect();
+  $('.sorting__select select').niceSelect();
+}
 
 //Overall Rating Sidebar Widget Show/Hide
 $(function(){
@@ -4044,7 +4048,7 @@ $(function(){
       $("#ContactInfoWidget").removeClass("hide");
     });
     
-    $("#RS3Review-tab").click(function(){
+    $("#RS3Review-tab").on('click',function(){
       $("#OverallRatingWidget").addClass("show");
       $("#ContactInfoWidget").addClass("hide");
   });
@@ -4110,8 +4114,30 @@ $(function() {
   $(window).resize(adjustClass);
 });
 
+//Sidebar Mileage Filter hide/show
+$(function() {
+  $('#sps6sbCarType').change(function() {
+      if ($(this).val() === 'UsedCar') {
+          $('.sps6sb__mileage').css('height', '120px');
+      } else {
+          $('.sps6sb__mileage').css('height', '0');
+      }
+  });
 
+  if ($('#sps6sbCarType').val() !== 'UsedCar') {
+      $('.sps6sb__mileage').css('height', '0');
+  }
+});
 
+//Shop style 6 sidebar filter toggle
+$(function(){
+  $('.sps6sb__toggle').on('click', function(){
+    $('.shop__v6__sidebar').toggleClass('show')
+  });
+  $('#sps6sb__close__btn').on('click', function(){
+    $('.shop__v6__sidebar').removeClass('show')
+  })
+});
 
 
 }) (jQuery);

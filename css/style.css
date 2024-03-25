@@ -26200,8 +26200,134 @@ button:focus {
 .swiper-slide.swiper-slide-visible.swiper-slide-fully-visible.swiper-slide-thumb-active { 
     filter: none;
 }
-
 /** End of Product Images Slider Section **/
+
+/* ====================================================================
+31. Shop Product Style (Variant 6)
+==================================================================== */
+.shop__page__v6 {
+    margin-top: 100px;
+}
+
+.shop__v6__sidebar {
+    width: 0;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 0;
+    background: #FFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 900;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.shop__v6__sidebar.show {
+    width: 450px;
+    padding: 30px;
+}
+
+.sps6sb__close__btn {
+    font-size: 30px;
+    line-height: 30px;
+    height: 30px;
+    width: 100%;
+    text-align: right;
+}
+
+#sps6sb__close__btn {
+    color: #191C1F;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    background: transparent;
+    height: fit-content;
+    width: fit-content;
+}
+
+#sps6sb__close__btn:hover {
+    color: var(--secondary-color5);
+}
+
+.sps6sb__widgets .nice-select,
+.sps6sb__widgets .nice-select .list {
+    width: 100%;
+}
+
+.sps6sb__widgets h2,
+.sps6sb__widgets .sps6sb__mileage h2 {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    font-family: "Audiowide", sans-serif;
+    text-transform: capitalize;
+}
+
+.sps6sb__widgets .sps6sb__mileage {
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    overflow: hidden;
+}
+
+.product__grid__v6 .top__bar {
+    margin-bottom: 20px;
+}
+
+.product__sorting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+.product__sorting p,
+.product__sorting p span,
+.sorting__select p,
+.sorting__select .nice-select .current,
+.sorting__select .nice-select .list .option {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    font-family: "Maven Pro", sans-serif;
+    margin: 0;
+}
+
+.product__sorting p span {
+    font-weight: 500;
+}
+
+.sorting__select {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sorting__select .nice-select .list .option {
+    display: flex;
+    align-items: center;
+}
+
+.sorting__select .nice-select .list .option:hover {
+    color: #FFF;
+    background: var(--secondary-color5);
+}
 
 
 /*
