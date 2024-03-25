@@ -4139,5 +4139,19 @@ $(function(){
   })
 });
 
+$(function() {
+  function adjustClass() {
+    var screenWidth = $(window).width();
+    if (screenWidth < 201) {
+        $('.checkbox__row').removeClass('col-6');
+    } else {
+      $('.checkbox__row').addClass('col-6');
+    }
+  }
+
+  adjustClass();
+  $(window).resize(adjustClass);
+});
+
 
 }) (jQuery);
