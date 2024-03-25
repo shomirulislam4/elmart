@@ -26189,8 +26189,8 @@ button:focus {
     height: auto;
 }
 
-.swiper-slide.swiper-slide-visible,
-.swiper-slide.swiper-slide-visible.swiper-slide-fully-visible {
+.sds6__thumb .swiper-slide.swiper-slide-visible,
+.sds6__thumb .swiper-slide.swiper-slide-visible.swiper-slide-fully-visible {
     filter: grayscale(100%);
     transition: 0.3s;
     -moz-transition: 0.3s;
@@ -26199,8 +26199,15 @@ button:focus {
     -o-transition: 0.3s;
 }
 
-.swiper-slide.swiper-slide-visible.swiper-slide-fully-visible.swiper-slide-thumb-active { 
+.sds6__thumb .swiper-slide.swiper-slide-visible.swiper-slide-fully-visible.swiper-slide-thumb-active { 
     filter: none;
+}
+
+.sds__images__slider .swiper-slide model-viewer {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    background: red;
 }
 /** End of Product Images Slider Section **/
 
