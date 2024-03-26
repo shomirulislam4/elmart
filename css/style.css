@@ -26245,7 +26245,7 @@ button:focus {
 .sds__images__slider model-viewer .Hotspot .HotspotAnnotation {
     display: none;
 	position: absolute;
-	top: 100%;
+	top: 125%;
 	left: 50%;
 	transform: translateX(-50%);
 	background: #FFF;
@@ -26253,6 +26253,22 @@ button:focus {
 	height: auto;
 	border-radius: 5px;
 	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.sds__images__slider model-viewer .Hotspot .HotspotAnnotation::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #FFF;
+    background: transparent;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
 }
 
 .sds__images__slider model-viewer .Hotspot:hover .HotspotAnnotation {
