@@ -4076,6 +4076,7 @@ $(function(){
   var sds6 = new Swiper(".sds__images__slider", {
     loop: true,
     spaceBetween: 10,
+    allowTouchMove: false,
     navigation: {
       nextEl: ".sds6__btn__next",
       prevEl: ".sds6__btn__prev",
