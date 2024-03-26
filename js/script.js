@@ -4015,16 +4015,6 @@ $(function() {
 });
 
 /*============================ Shop Details 6 & Shop Page 6 ============================*/
-//Review Form v3
-$(function() {
-  $(".ratiing__star__select").rateYo({
-    rating: 0,
-    fullStar: true,
-    starWidth: "18px",
-    ratedFill: "#261552"
-  });
-});
-
 //Review Form v3 Toggle
 $(function() {
   $('#RevFormV3Toggle').on('click',function() {
