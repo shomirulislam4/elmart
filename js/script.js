@@ -156,7 +156,6 @@ $(function() {
   });
 });
 
-
 //Demo Area Image Scroll
 $(function() {
   $('.demo-items img').on('mouseenter', function() {
@@ -202,5 +201,27 @@ $(function() {
     },
   });
 });
+
+//Filter Numbers Counter
+$(function () {
+  updateFilterCounts();
+
+  function updateFilterCounts() {
+      $('#allPagesCount').text('(' + $('.demo-items').length + ')');
+      $('#homeCount').text('(' + $('.home').length + ')');
+      $('#shopCount').text('(' + $('.shop').length + ')');
+      $('#singleprodCount').text('(' + $('.single-product').length + ')');
+      $('#blogCount').text('(' + $('.blog').length + ')');
+      $('#aboutCount').text('(' + $('.about').length + ')');
+      $('#contactCount').text('(' + $('.contact').length + ')');
+      $('#userCount').text('(' + $('.user').length + ')');
+      $('#vendorCount').text('(' + $('.vendor').length + ')');
+      $('#cartCount').text('(' + $('.cart').length + ')');
+      $('#checkoutCount').text('(' + $('.checkout').length + ')');
+      $('#myaccCount').text('(' + $('.my-acc').length + ')');
+      $('#othersCount').text('(' + $('.others').length + ')');
+  }
+});
+
 
 }) (jQuery);

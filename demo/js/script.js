@@ -3596,20 +3596,23 @@ $(function() {
 
 //Quantity Widget (Variant 2)
 $(function() {
-  var quantityDisplay = $('.quantity-display');
+  $('.quantity-controls').each(function() {
+    var quantityDisplay = $(this).find('.quantity-display');
 
-  $('.quantity-increase').on('click', function() {
-    var currentQuantity = parseInt(quantityDisplay.text(), 10);
-    quantityDisplay.text(currentQuantity + 1);
-  });
+    $(this).find('.quantity-increase').on('click', function() {
+      var currentQuantity = parseInt(quantityDisplay.text(), 10);
+      quantityDisplay.text(currentQuantity + 1);
+    });
 
-  $('.quantity-decrease').on('click', function() {
-    var currentQuantity = parseInt(quantityDisplay.text(), 10);
-    if (currentQuantity > 1) {
-      quantityDisplay.text(currentQuantity - 1);
-    }
+    $(this).find('.quantity-decrease').on('click', function() {
+      var currentQuantity = parseInt(quantityDisplay.text(), 10);
+      if (currentQuantity > 1) {
+        quantityDisplay.text(currentQuantity - 1);
+      }
+    });
   });
 });
+
 
 /*============================ Home Style Seven ============================*/
 //Preloader v4
@@ -4142,6 +4145,30 @@ $(function() {
 
   adjustClass();
   $(window).resize(adjustClass);
+});
+
+/*============================ Home Style Eight ============================*/
+//All Select (Nice Select Js)
+if ( $('.homepage__eight').length ) {
+  $('.currency__dropdown').niceSelect();
+}
+
+//Mega Menu Slider
+$(function(){
+  var swiper = new Swiper('.megamenu__slider__area', {
+    loop: true,
+    slidesPerView: 2,
+    spaceBetween: 24,
+    navigation: {
+      nextEl: '.megamenu__sldrnav__next',
+      prevEl: '.megamenu__sldrnav__prev',
+    },
+    breakpoints: {
+      992: {
+        spaceBetween: 10,
+      }
+    }
+  });
 });
 
 
