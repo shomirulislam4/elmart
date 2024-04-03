@@ -6812,47 +6812,142 @@
             margin-bottom: 0;
         }
     /*===== Shop Product Style (Variant 6) =====*/
-    .product__sorting {
-        flex-direction: column;
-        gap: 15px;
-    }
-    .product__sorting p,
-    .product__sorting p span,
-    .sorting__select p,
-    .sorting__select .nice-select .current,
-    .sorting__select .nice-select .list .option {
-        font-size: 12px;
-        line-height: 12px;
-    }
-    .sorting__select .nice-select .list {
-        left: unset;
-        right: 0;
-    }
-    .product__sorting .h7__button-b {
-        font-size: 12px;
-        line-height: 30px;
-        height: 35px;
-    }
-    .shop__v6__sidebar.show {
-        width: 190px;
-        padding: 10px;
-    }
-    .sps6sb__widgets h2,
-    .sps6sb__widgets .sps6sb__mileage h2 {
-        font-size: 24px;
-        line-height: 30px;
-    }
-    .sps6sb__widgets .checkbox label {
+        .product__sorting {
+            flex-direction: column;
+            gap: 15px;
+        }
+        .product__sorting p,
+        .product__sorting p span,
+        .sorting__select p,
+        .sorting__select .nice-select .current,
+        .sorting__select .nice-select .list .option {
+            font-size: 12px;
+            line-height: 12px;
+        }
+        .sorting__select .nice-select .list {
+            left: unset;
+            right: 0;
+        }
+        .product__sorting .h7__button-b {
+            font-size: 12px;
+            line-height: 30px;
+            height: 35px;
+        }
+        .shop__v6__sidebar.show {
+            width: 190px;
+            padding: 10px;
+        }
+        .sps6sb__widgets h2,
+        .sps6sb__widgets .sps6sb__mileage h2 {
+            font-size: 24px;
+            line-height: 30px;
+        }
+        .sps6sb__widgets .checkbox label {
+            font-size: 14px;
+        }
+        .sps6sb__widgets .checkbox input[type="checkbox"] {
+            margin-right: 0;
+            width: 12px;
+            height: 12px;
+            padding: 5px;
+        }
+        .sps6sb__widgets .col-6 {
+            padding: 0 5px;
+        }
+    /*===== Home Page Eight =====*/
+    .h8__button-a,
+    .hs8__card .content .h8__button-a,
+    .hs8__mini__banner .content .h8__button-a {
+        padding: 5px 15px !important;
         font-size: 14px;
+        line-height: 20px;
     }
-    .sps6sb__widgets .checkbox input[type="checkbox"] {
-        margin-right: 0;
-        width: 12px;
-        height: 12px;
-        padding: 5px;
+    /*Hero Section (Variant 8)*/
+    .hero__section__v8 {
+        margin-top: 10px;
     }
-    .sps6sb__widgets .col-6 {
-        padding: 0 5px;
+    .hs8__slider {
+        height: 200px;
+    }
+    .hs8__slider .has__bg__img img {
+        height: 100%;
+    }
+    .hero__section__v8 .bottom__row {
+        margin-top: 0;
+    }
+    .hs8__big__banner .content {
+        padding: 10px;
+        align-items: center;
+    }
+    .hs8__big__banner .content h2 {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    .hs8__big__banner .content h4 {
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .hs8__big__banner .content .price {
+        font-size: 16px;
+        line-height: 40px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .hs8__big__banner .content .price span {
+        font-size: 10px;
+        line-height: 10px;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .hs8__big__banner .content p::before {
+        height: 18px;
+    }
+    .hs8__big__banner .content p {
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    .hs8__card {
+        width: 100%;
+        height: 140px;
+        margin-top: 10px;
+    }
+    .hs8__mini__banner {
+        height: 140px;
+        margin-top: 10px;
+    }
+    .hs8__card .content,
+    .hs8__mini__banner .content {
+        align-items: center;
+    }
+    .hs8__card .content h2,
+    .hs8__mini__banner .content h2,
+    .hs8__card .content p,
+    .hs8__mini__banner .content p,
+    .hs8__card .content h3,
+    .hs8__mini__banner .content h3 {
+        text-align: center;
+    }
+    .hs8__card .content h2,
+    .hs8__mini__banner .content h2 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .hs8__card .content p,
+    .hs8__mini__banner .content p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .hs8__card .content h3,
+    .hs8__mini__banner .content h3 {
+        font-size: 18px;
+        line-height: 26px;
     }
 }
 
@@ -12695,48 +12790,140 @@
             margin-bottom: 0;
         }
     /*===== Shop Product Style (Variant 6) =====*/
-    .product__sorting {
-        flex-direction: column;
-        gap: 15px;
-    }
-    .product__sorting p,
-    .product__sorting p span,
-    .sorting__select p,
-    .sorting__select .nice-select .current,
-    .sorting__select .nice-select .list .option {
-        font-size: 14px;
-        line-height: 14px;
-    }
-    .sorting__select .nice-select .list {
-        left: unset;
-        right: 0;
-    }
-    .product__sorting .h7__button-b {
-        font-size: 14px;
-        line-height: 35px;
-        height: 40px;
-    }
-    .shop__v6__sidebar.show {
-        width: 270px;
-        padding: 15px;
-    }
-    .sps6sb__widgets h2,
-    .sps6sb__widgets .sps6sb__mileage h2 {
-        font-size: 24px;
-        line-height: 30px;
-    }
-    .sps6sb__widgets .checkbox label {
-        font-size: 14px;
-    }
-    .sps6sb__widgets .checkbox input[type="checkbox"] {
-        margin-right: 0;
-        width: 12px;
-        height: 12px;
-        padding: 5px;
-    }
-    .sps6sb__widgets .col-6 {
-        padding: 0 5px;
-    }
+        .product__sorting {
+            flex-direction: column;
+            gap: 15px;
+        }
+        .product__sorting p,
+        .product__sorting p span,
+        .sorting__select p,
+        .sorting__select .nice-select .current,
+        .sorting__select .nice-select .list .option {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .sorting__select .nice-select .list {
+            left: unset;
+            right: 0;
+        }
+        .product__sorting .h7__button-b {
+            font-size: 14px;
+            line-height: 35px;
+            height: 40px;
+        }
+        .shop__v6__sidebar.show {
+            width: 270px;
+            padding: 15px;
+        }
+        .sps6sb__widgets h2,
+        .sps6sb__widgets .sps6sb__mileage h2 {
+            font-size: 24px;
+            line-height: 30px;
+        }
+        .sps6sb__widgets .checkbox label {
+            font-size: 14px;
+        }
+        .sps6sb__widgets .checkbox input[type="checkbox"] {
+            margin-right: 0;
+            width: 12px;
+            height: 12px;
+            padding: 5px;
+        }
+        .sps6sb__widgets .col-6 {
+            padding: 0 5px;
+        }
+    /*===== Home Page Eight =====*/
+        .h8__button-a,
+        .hs8__card .content .h8__button-a,
+        .hs8__mini__banner .content .h8__button-a {
+            padding: 5px 15px !important;
+            font-size: 14px;
+            line-height: 20px;
+        }
+        /*Hero Section (Variant 8)*/
+        .hs8__slider {
+            height: 216px;
+        }
+        .hs8__slider .has__bg__img img {
+            height: 100%;
+        }
+        .hero__section__v8 .bottom__row {
+            margin-top: 0;
+        }
+        .hs8__big__banner .content {
+            padding: 10px;
+            align-items: center;
+        }
+        .hs8__big__banner .content h2 {
+            font-size: 30px;
+            line-height: 36px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .hs8__big__banner .content h4 {
+            font-size: 18px;
+            line-height: 24px;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        .hs8__big__banner .content .price {
+            font-size: 20px;
+            line-height: 40px;
+            text-align: center;
+            margin-bottom: 0;
+        }
+        .hs8__big__banner .content .price span {
+            font-size: 10px;
+            line-height: 10px;
+            text-align: center;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .hs8__big__banner .content p::before {
+            height: 24px;
+        }
+        .hs8__big__banner .content p {
+            font-size: 14px;
+            line-height: 24px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .hs8__card {
+            width: 100%;
+            height: 150px;
+            margin-top: 10px;
+        }
+        .hs8__mini__banner {
+            height: 150px;
+            margin-top: 10px;
+        }
+        .hs8__card .content,
+        .hs8__mini__banner .content {
+            align-items: center;
+        }
+        .hs8__card .content h2,
+        .hs8__mini__banner .content h2,
+        .hs8__card .content p,
+        .hs8__mini__banner .content p,
+        .hs8__card .content h3,
+        .hs8__mini__banner .content h3 {
+            text-align: center;
+        }
+        .hs8__card .content h2,
+        .hs8__mini__banner .content h2 {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        .hs8__card .content p,
+        .hs8__mini__banner .content p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .hs8__card .content h3,
+        .hs8__mini__banner .content h3 {
+            font-size: 22px;
+            line-height: 30px;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -17541,37 +17728,99 @@
             margin-bottom: 30px;
         }
     /*===== Shop Product Style (Variant 6) =====*/
-    .product__sorting {
-        flex-direction: column;
-        gap: 15px;
-    }
-    .product__sorting p,
-    .product__sorting p span,
-    .sorting__select p,
-    .sorting__select .nice-select .current,
-    .sorting__select .nice-select .list .option {
-        font-size: 16px;
-        line-height: 16px;
-    }
-    .sorting__select .nice-select .list {
-        left: unset;
-        right: 0;
-    }
-    .product__sorting .h7__button-b {
-        font-size: 16px;
-        line-height: 40px;
-        height: 45px;
-    }
-    .shop__v6__sidebar.show {
-        width: 380px;
-        padding: 30px;
-    }
-    .sps6sb__widgets .checkbox label {
-        font-size: 14px;
-    }
-    .sps6sb__widgets .checkbox input[type="checkbox"] {
-        margin-right: 0;
-    }
+        .product__sorting {
+            flex-direction: column;
+            gap: 15px;
+        }
+        .product__sorting p,
+        .product__sorting p span,
+        .sorting__select p,
+        .sorting__select .nice-select .current,
+        .sorting__select .nice-select .list .option {
+            font-size: 16px;
+            line-height: 16px;
+        }
+        .sorting__select .nice-select .list {
+            left: unset;
+            right: 0;
+        }
+        .product__sorting .h7__button-b {
+            font-size: 16px;
+            line-height: 40px;
+            height: 45px;
+        }
+        .shop__v6__sidebar.show {
+            width: 380px;
+            padding: 30px;
+        }
+        .sps6sb__widgets .checkbox label {
+            font-size: 14px;
+        }
+        .sps6sb__widgets .checkbox input[type="checkbox"] {
+            margin-right: 0;
+        }
+    /*===== Home Page Eight =====*/
+        /*Hero Section (Variant 8)*/
+        .hs8__slider {
+            height: 294px;
+        }
+        .hs8__card {
+            width: 100%;
+            margin-top: 10px;
+        }
+        .hs8__mini__banner {
+            margin-top: 10px;
+        }
+        .hero__section__v8 .bottom__row {
+            margin-top: 0;
+        }
+        .hs8__big__banner .content {
+            padding: 20px;
+            align-items: center;
+        }
+        .hs8__big__banner .content h2 {
+            font-size: 42px;
+            line-height: 48px;
+            margin-bottom: 12px;
+            text-align: center;
+        }
+        .hs8__big__banner .content h4 {
+            font-size: 26px;
+            line-height: 32px;
+            text-align: center;
+        }
+        .hs8__big__banner .content .price {
+            font-size: 30px;
+            line-height: 50px;
+            text-align: center;
+        }
+        .hs8__big__banner .content .price span {
+            line-height: 10px;
+            text-align: center;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .hs8__big__banner .content p::before {
+            height: 30px;
+        }
+        .hs8__big__banner .content p {
+            font-size: 18px;
+            line-height: 30px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .hs8__card .content,
+        .hs8__mini__banner .content {
+            align-items: center;
+        }
+        .hs8__card .content h2,
+        .hs8__mini__banner .content h2,
+        .hs8__card .content p,
+        .hs8__mini__banner .content p,
+        .hs8__card .content h3,
+        .hs8__mini__banner .content h3 {
+            text-align: center;
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -21472,33 +21721,48 @@
             padding: 0 10px;
         }
     /*===== Shop Product Style (Variant 6) =====*/
-    .product__sorting p,
-    .product__sorting p span,
-    .sorting__select p,
-    .sorting__select .nice-select .current,
-    .sorting__select .nice-select .list .option {
-        font-size: 16px;
-        line-height: 16px;
-    }
-    .sorting__select .nice-select .list {
-        left: unset;
-        right: 0;
-    }
-    .product__sorting .h7__button-b {
-        font-size: 16px;
-        line-height: 40px;
-        height: 45px;
-    }
-    .shop__v6__sidebar.show {
-        width: 380px;
-        padding: 30px;
-    }
-    .sps6sb__widgets .checkbox label {
-        font-size: 14px;
-    }
-    .sps6sb__widgets .checkbox input[type="checkbox"] {
-        margin-right: 0;
-    }
+        .product__sorting p,
+        .product__sorting p span,
+        .sorting__select p,
+        .sorting__select .nice-select .current,
+        .sorting__select .nice-select .list .option {
+            font-size: 16px;
+            line-height: 16px;
+        }
+        .sorting__select .nice-select .list {
+            left: unset;
+            right: 0;
+        }
+        .product__sorting .h7__button-b {
+            font-size: 16px;
+            line-height: 40px;
+            height: 45px;
+        }
+        .shop__v6__sidebar.show {
+            width: 380px;
+            padding: 30px;
+        }
+        .sps6sb__widgets .checkbox label {
+            font-size: 14px;
+        }
+        .sps6sb__widgets .checkbox input[type="checkbox"] {
+            margin-right: 0;
+        }
+    /*===== Home Page Eight =====*/
+        /*Hero Section (Variant 8)*/
+        .hs8__slider {
+            height: 386px;
+            margin-bottom: 10px;
+        }
+        .hs8__card {
+            width: 100%;
+        }
+        .hs8__mini__banner {
+            margin-top: 10px;
+        }
+        .hero__section__v8 .bottom__row {
+            margin-top: 10px;
+        }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -25061,33 +25325,48 @@
             justify-content: center;
         }
     /*===== Shop Product Style (Variant 6) =====*/
-    .product__sorting p,
-    .product__sorting p span,
-    .sorting__select p,
-    .sorting__select .nice-select .current,
-    .sorting__select .nice-select .list .option {
-        font-size: 16px;
-        line-height: 16px;
-    }
-    .sorting__select .nice-select .list {
-        left: unset;
-        right: 0;
-    }
-    .product__sorting .h7__button-b {
-        font-size: 16px;
-        line-height: 40px;
-        height: 45px;
-    }
-    .shop__v6__sidebar.show {
-        width: 380px;
-        padding: 30px;
-    }
-    .sps6sb__widgets .checkbox label {
-        font-size: 14px;
-    }
-    .sps6sb__widgets .checkbox input[type="checkbox"] {
-        margin-right: 0;
-    }
+        .product__sorting p,
+        .product__sorting p span,
+        .sorting__select p,
+        .sorting__select .nice-select .current,
+        .sorting__select .nice-select .list .option {
+            font-size: 16px;
+            line-height: 16px;
+        }
+        .sorting__select .nice-select .list {
+            left: unset;
+            right: 0;
+        }
+        .product__sorting .h7__button-b {
+            font-size: 16px;
+            line-height: 40px;
+            height: 45px;
+        }
+        .shop__v6__sidebar.show {
+            width: 380px;
+            padding: 30px;
+        }
+        .sps6sb__widgets .checkbox label {
+            font-size: 14px;
+        }
+        .sps6sb__widgets .checkbox input[type="checkbox"] {
+            margin-right: 0;
+        }
+    /*===== Home Page Eight =====*/
+        /*Hero Section (Variant 8)*/
+        .hs8__slider {
+            height: 520px;
+            margin-bottom: 20px;
+        }
+        .hs8__card {
+            width: 100%;
+        }
+        .hs8__mini__banner {
+            margin-top: 20px;
+        }
+        .hero__section__v8 .bottom__row {
+            margin-top: 20px;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -28156,6 +28435,56 @@
             font-size: 14px;
             line-height: 18px;
         }
+        /*Hero Section (Variant 8)*/
+        .hero__section__v8 .col-md-8 {
+            padding: 0 5px;
+        }
+        .hero__section__v8 .col-md-4 {
+            padding-left: 0;
+        }
+        .hero__section__v8 .col-md-4 .col-md-6:first-child {
+            padding-right: 3px;
+        }
+        .hero__section__v8 .col-md-4 .col-md-6:last-child {
+            padding-left: 3px;
+        }
+        .hs8__slider {
+            height: 472px;
+        }
+        .hs8__big__banner .content {
+            padding: 30px;
+        }
+        .hs8__card {
+            width: 151px;
+            height: 151px;
+        }
+        .hs8__mini__banner {
+            height: 152px;
+            margin-top: 9px;
+        }
+        .hero__section__v8 .bottom__row {
+            margin-top: 9px;
+        }
+        .hs8__card .content h2,
+        .hs8__mini__banner .content h2 {
+            font-size: 20px;
+            line-height: 26px;
+        }
+        .hs8__card .content p,
+        .hs8__mini__banner .content p {
+            font-size: 10px;
+            line-height: 20px;
+        }
+        .hs8__card .content h3,
+        .hs8__mini__banner .content h3 {
+            font-size: 20px;
+            line-height: 22px;
+        }
+        .hs8__card .content .h8__button-a,
+        .hs8__mini__banner .content .h8__button-a {
+            font-size: 12px;
+            line-height: 18px;
+        }
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -29828,6 +30157,45 @@
         }
         .h8__header__middle .search__cart__product .content {
             width: 280px;
+        }
+        /*Hero Section (Variant 8)*/
+        .hs8__slider {
+            height: 560px;
+        }
+        .hero__section__v8 .col-md-4 {
+            padding-left: 0;
+        }
+        .hero__section__v8 .col-md-4 .col-md-6:first-child {
+            padding-right: 5px;
+        }
+        .hero__section__v8 .col-md-4 .col-md-6:last-child {
+            padding-left: 5px;
+        }
+        .hs8__card {
+            width: 180px;
+            height: 180px;
+        }
+        .hs8__mini__banner {
+            height: 180px;
+            margin-top: 10px;
+        }
+        .hero__section__v8 .bottom__row {
+            margin-top: 10px;
+        }
+        .hs8__card .content h2,
+        .hs8__mini__banner .content h2 {
+            font-size: 24px;
+            line-height: 30px;
+        }
+        .hs8__card .content p,
+        .hs8__mini__banner .content p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .hs8__card .content h3,
+        .hs8__mini__banner .content h3 {
+            font-size: 26px;
+            line-height: 30px;
         }
 }
 
