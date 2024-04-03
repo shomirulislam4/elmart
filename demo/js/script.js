@@ -4171,5 +4171,14 @@ $(function(){
   });
 });
 
+//Hero Section (Variant 8) Slider
+$(function() {
+  var swiper = new Swiper(".hs8__slider", {
+    loop: true,
+    pagination: {
+      el: ".hs8__slider__dots",
+    },
+  });
+});
 
 }) (jQuery);
