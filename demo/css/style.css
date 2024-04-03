@@ -108,6 +108,7 @@
 33. Home Page Eight
     0. Preloader v5
     1. Header Style Eight
+    2. Hero Section (Variant 8)
 **********************************************/
 
 /* ====================================================================
@@ -27529,8 +27530,186 @@ button:focus {
 .homepage__eight .mobile-menu-wrapper .mobile-submenu a:hover {
     color: var(--secondary-color6);
 }
-
 /*** End of Header Style Eight ***/
+
+/** Start of Hero Section (Variant 8) **/
+.hero__section__v8 {
+    margin-top: 20px;
+}
+
+.has__bg__img {
+    position: relative;
+}
+
+.has__bg__img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    transition: 0.8s;
+    -moz-transition: 0.8s;
+    -webkit-transition: 0.8s;
+    -ms-transition: 0.8s;
+    -o-transition: 0.8s;
+}
+
+.has__bg__img:hover img {
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
+.hs8__big__banner {
+    height: 700px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.hs8__big__banner .content {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
+}
+
+.hs8__big__banner .content p::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 34px;
+    background: var(--main-color6);
+    z-index: -1;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+.hs8__big__banner .content p {
+    color: #FFF;
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 500;
+    font-family: 'Quicksand', sans-serif;
+    position: relative;
+    padding: 0 10px;
+}
+
+.hs8__big__banner .content h2 {
+    color: #FFF;
+    font-size: 60px;
+    line-height: 66px;
+    font-weight: 400;
+    font-family: 'Pacifico', cursive;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+}
+
+.hs8__big__banner .content h4 {
+    color: #FFF;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: capitalize;
+}
+
+.hs8__big__banner .content .price {
+    color: #FFF;
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 700;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: capitalize;
+    position: relative;
+    width: 100%;
+}
+
+.hs8__big__banner .content .price span {
+    position: absolute;
+    font-size: 12px;
+    line-height: 12px;
+    top: 0;
+    left: 0;
+    color: #FFF;
+}
+
+.hs8__card {
+	width: 216px;
+	height: 216px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.hs8__card .content,
+.hs8__mini__banner .content {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.hs8__mini__banner {
+    width: 100%;
+    height: 220px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.hs8__card .content h2 {
+    color: #FFF;
+    font-size: 28px;
+    line-height: 36px;
+    text-transform: capitalize;
+}
+
+.hs8__card .content p {
+    color: #FFF;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+
+.hs8__card .content h3 {
+    color: #FFF;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 500;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: capitalize;
+}
+
+.hs8__card .content .h8__button-a {
+
+}
+
+
+
+/** End of Hero Section (Variant 8) **/
+
+
 
 /*
 font-family: 'Quicksand', sans-serif;
