@@ -6855,100 +6855,199 @@
             padding: 0 5px;
         }
     /*===== Home Page Eight =====*/
-    .h8__button-a,
-    .hs8__card .content .h8__button-a,
-    .hs8__mini__banner .content .h8__button-a {
-        padding: 5px 15px !important;
-        font-size: 14px;
-        line-height: 20px;
-    }
-    /*Hero Section (Variant 8)*/
-    .hero__section__v8 {
-        margin-top: 10px;
-    }
-    .hs8__slider {
-        height: 200px;
-    }
-    .hs8__slider .has__bg__img img {
-        height: 100%;
-    }
-    .hero__section__v8 .bottom__row {
-        margin-top: 0;
-    }
-    .hs8__big__banner .content {
-        padding: 10px;
-        align-items: center;
-    }
-    .hs8__big__banner .content h2 {
-        font-size: 20px;
-        line-height: 26px;
-        margin-bottom: 5px;
-        text-align: center;
-    }
-    .hs8__big__banner .content h4 {
-        font-size: 14px;
-        line-height: 20px;
-        text-align: center;
-        margin-bottom: 5px;
-    }
-    .hs8__big__banner .content .price {
-        font-size: 16px;
-        line-height: 40px;
-        text-align: center;
-        margin-bottom: 0;
-    }
-    .hs8__big__banner .content .price span {
-        font-size: 10px;
-        line-height: 10px;
-        text-align: center;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    .hs8__big__banner .content p::before {
-        height: 18px;
-    }
-    .hs8__big__banner .content p {
-        font-size: 12px;
-        line-height: 18px;
-        margin-bottom: 5px;
-        text-align: center;
-    }
-    .hs8__card {
-        width: 100%;
-        height: 140px;
-        margin-top: 10px;
-    }
-    .hs8__mini__banner {
-        height: 140px;
-        margin-top: 10px;
-    }
-    .hs8__card .content,
-    .hs8__mini__banner .content {
-        align-items: center;
-    }
-    .hs8__card .content h2,
-    .hs8__mini__banner .content h2,
-    .hs8__card .content p,
-    .hs8__mini__banner .content p,
-    .hs8__card .content h3,
-    .hs8__mini__banner .content h3 {
-        text-align: center;
-    }
-    .hs8__card .content h2,
-    .hs8__mini__banner .content h2 {
-        font-size: 16px;
-        line-height: 22px;
-    }
-    .hs8__card .content p,
-    .hs8__mini__banner .content p {
-        font-size: 12px;
-        line-height: 18px;
-    }
-    .hs8__card .content h3,
-    .hs8__mini__banner .content h3 {
-        font-size: 18px;
-        line-height: 26px;
-    }
+        .h8__button-a,
+        .hs8__card .content .h8__button-a,
+        .hs8__mini__banner .content .h8__button-a {
+            padding: 5px 15px !important;
+            font-size: 14px;
+            line-height: 20px;
+        }
+        /*Header Style Eight*/
+        .header__eight .logo {
+            max-width: 90px;
+            max-height: 30px;
+        }
+        .h8__header__middle {
+            padding: 10px 0;
+        }
+        .h8__header__top .right .currency__select .nice-select {
+            height: 24px;
+            margin-left: 0;
+            line-height: 20px;
+            padding-left: 5px;
+            padding-right: 15px;
+        }
+        .h8__header__top .right .currency__select .nice-select::after {
+            border-color: #FFF;
+            right: 7px;
+        }
+        .h8__header__top .right .currency__select .nice-select span {
+            font-size: 12px;
+        }
+        .h8__header__top .right .loclang__select {
+            text-align: center;
+        }
+        .h8__header__top .right .loclang__select .lc__dropdown__btn {
+            font-size: 12px;
+            line-height: 20px;
+        }
+        .h8__header__top .right .divider__vertical,
+        .h8__header__top .currency__select p,
+        .h8__header__middle .cta__btns .order__track__btn,
+        .h8__header__middle .divider__vertical {
+            display: none;
+        }
+        .h8__header__top .left p,
+        .h8__header__top .right .currency__select p,
+        .h8__header__top .right .bea__vendor__btn {
+            font-size: 12px;
+            line-height: 24px;
+            margin-right: 0;
+        }
+        .h8__megamenu__hotlines span,
+        .h8__megamenu__hotlines p,
+        .h8__megamenu__hotlines p a {
+            font-size: 11px;
+            line-height: 18px;
+        }
+        .h8__mobilemenu__btn {
+            font-size: 12px;
+            line-height: 12px;
+        }
+        .h8__mobilemenu__btn i {
+            font-size: 10px;
+        }
+        .h8__cart {
+            width: 180px;
+            height: 400px;
+            padding: 10px;
+        }
+        .h8__header__middle .search__cart__product .h8__cart__prod__close {
+            height: 16px;
+            width: 16px;
+            font-size: 10px;
+            line-height: 16px;
+            left: 0;
+            top: 0;
+        }
+        .h8__header__middle .search__cart__product {
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #EEE;
+            padding-bottom: 10px;
+        }
+        .h8__header__middle .search__cart__product .content {
+            width: 185px;
+        }
+        .h8__header__middle .search__cart__product .image {
+            width: 60px;
+            height: 60px;
+        }
+        .h8__header__middle .search__cart__product h3 {
+            border: none;
+            line-height: 18px;
+            text-align: center;
+        }
+        .h8__header__middle .search__cart__product h3 a {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .h8__header__middle .search__cart__product h4 {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .h8__cart .search__cart__product .price__qty {
+            justify-content: center;
+        }
+        /*Hero Section (Variant 8)*/
+        .hero__section__v8 {
+            margin-top: 10px;
+        }
+        .hs8__slider {
+            height: 200px;
+        }
+        .hs8__slider .has__bg__img img {
+            height: 100%;
+        }
+        .hero__section__v8 .bottom__row {
+            margin-top: 0;
+        }
+        .hs8__big__banner .content {
+            padding: 10px;
+            align-items: center;
+        }
+        .hs8__big__banner .content h2 {
+            font-size: 20px;
+            line-height: 26px;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+        .hs8__big__banner .content h4 {
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        .hs8__big__banner .content .price {
+            font-size: 16px;
+            line-height: 40px;
+            text-align: center;
+            margin-bottom: 0;
+        }
+        .hs8__big__banner .content .price span {
+            font-size: 10px;
+            line-height: 10px;
+            text-align: center;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .hs8__big__banner .content p::before {
+            height: 18px;
+        }
+        .hs8__big__banner .content p {
+            font-size: 12px;
+            line-height: 18px;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+        .hs8__card {
+            width: 100%;
+            height: 140px;
+            margin-top: 10px;
+        }
+        .hs8__mini__banner {
+            height: 140px;
+            margin-top: 10px;
+        }
+        .hs8__card .content,
+        .hs8__mini__banner .content {
+            align-items: center;
+        }
+        .hs8__card .content h2,
+        .hs8__mini__banner .content h2,
+        .hs8__card .content p,
+        .hs8__mini__banner .content p,
+        .hs8__card .content h3,
+        .hs8__mini__banner .content h3 {
+            text-align: center;
+        }
+        .hs8__card .content h2,
+        .hs8__mini__banner .content h2 {
+            font-size: 16px;
+            line-height: 22px;
+        }
+        .hs8__card .content p,
+        .hs8__mini__banner .content p {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .hs8__card .content h3,
+        .hs8__mini__banner .content h3 {
+            font-size: 18px;
+            line-height: 26px;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
@@ -12840,6 +12939,60 @@
             font-size: 14px;
             line-height: 20px;
         }
+        /*Header Style Eight*/
+        .h8__header__top .currency__select p,
+        .h8__header__middle .cta__btns .order__track__btn,
+        .h8__header__middle .divider__vertical {
+            display: none;
+        }
+        .h8__header__top .left p,
+        .h8__header__top .right .currency__select p,
+        .h8__header__top .right .bea__vendor__btn {
+            font-size: 12px;
+            line-height: 24px;
+            margin-right: 5px;
+        }
+        .h8__megamenu__hotlines span, .h8__megamenu__hotlines p,
+        .h8__megamenu__hotlines p a {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .h8__cart {
+            width: 270px;
+            height: 230px;
+            padding: 10px;
+        }
+        .h8__header__middle .search__cart__product .h8__cart__prod__close {
+            height: 16px;
+            width: 16px;
+            font-size: 10px;
+            line-height: 16px;
+            left: -5px;
+            top: -5px;
+        }
+        .h8__header__middle .search__cart__product {
+            gap: 5px;
+            margin-bottom: 10px;
+        }
+        .h8__header__middle .search__cart__product .content {
+            width: 185px;
+        }
+        .h8__header__middle .search__cart__product .image {
+            width: 60px;
+            height: 60px;
+        }
+        .h8__header__middle .search__cart__product h3 {
+            border: none;
+            line-height: 18px;
+        }
+        .h8__header__middle .search__cart__product h3 a {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .h8__header__middle .search__cart__product h4 {
+            font-size: 14px;
+            line-height: 20px;
+        }
         /*Hero Section (Variant 8)*/
         .hs8__slider {
             height: 216px;
@@ -17760,6 +17913,17 @@
             margin-right: 0;
         }
     /*===== Home Page Eight =====*/
+        /*Header Style Eight*/
+        .h8__cart {
+            width: 400px;
+        }
+        .h8__header__middle .search__cart__product {
+            gap: 5px;
+            margin-bottom: 10px;
+        }
+        .h8__header__middle .search__cart__product .content {
+            width: 255px;
+        }
         /*Hero Section (Variant 8)*/
         .hs8__slider {
             height: 294px;
