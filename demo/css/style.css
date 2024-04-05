@@ -14,7 +14,7 @@
 3. Home Page One
     1. Header - Style One
     2. Hero Section (Variant 2)
-    3. Features Section
+    3. Features Section (Variant 2)
     4. Categories Section
     5. Featured Product Section
     6. Deal Product Section
@@ -83,7 +83,7 @@
 28. Home Page Six
     1. Header Style Six
     2. Hero Section (Variant 6)
-    3. One Product Features Section
+    3. One Product Features Section (Variant 3)
     4. One Product Promo Section
     5. FAQ Section (Variant 2)
     6. Testimonial Section (Variant 3)
@@ -109,6 +109,8 @@
     0. Preloader v5
     1. Header Style Eight
     2. Hero Section (Variant 8)
+    3. Features Section (Variant 4)
+    4. Categories Section (Variant 2)
 **********************************************/
 
 /* ====================================================================
@@ -119,6 +121,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baumans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
 
 /* Jost */
 @font-face {
@@ -388,7 +391,7 @@
     font-style: normal;
     font-weight: 400;
     src: url('../fonts/pacifico/pacifico-v22-latin-regular.woff2') format('woff2');
-  }
+}
 
 /*
 font-family: 'Josefin Sans', sans-serif;
@@ -410,6 +413,7 @@ font-family: "Baumans", system-ui;
 
 font-family: 'Quicksand', sans-serif;
 font-family: 'Pacifico', cursive;
+font-family: "Teko", sans-serif;
 */
 
 /* Default CSS */
@@ -26615,7 +26619,84 @@ button:focus {
 
 .h8__button-a:active {
     top: 2px;
-  }
+}
+
+/* Swiper Js Pagination */
+.homepage__eight .swiper-pagination-bullets.swiper-pagination-horizontal {
+	z-index: 99;
+	position: absolute;
+	bottom: 10px;
+	text-align: center;
+}
+
+.homepage__eight .swiper-pagination-bullet,
+.homepage__eight .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    all: unset;
+    display: inline-block;
+    color: #FFF;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    padding: 0;
+    margin: 0 4px;
+    transition: 0.6s;
+    -moz-transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+}
+
+.homepage__eight .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    color: var(--secondary-color6);
+}
+
+.homepage__eight .swiper-pagination-bullet::after,
+.homepage__eight .swiper-pagination-bullet.swiper-pagination-bullet-active::after {
+    position: absolute;
+    content: '\f5d1';
+    font-size: 18px;
+    font-family: 'Fontawesome';
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Section Title */
+.section__title__v8 {
+    position: relative;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.section__title__v8 .bg__text {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
+
+.section__title__v8 .bg__text span {
+    width: 100%;
+    display: inline-block;
+    color: #EEE;
+    font-size: 150px;
+    line-height: 124px;
+    font-weight: 700;
+    font-family: "Teko", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.section__title__v8 h2 {
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 400;
+    font-family: 'Pacifico', cursive;
+    margin: 0;
+}
 
 /*** Start of Header Style Eight ***/
 /* Top */
@@ -27726,11 +27807,64 @@ button:focus {
 }
 /** End of Hero Section (Variant 8) **/
 
+/** Start of Features Section (Variant 4) **/
+.features__section__v4 {
+    margin-top: 100px;
+}
 
+.features__items {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.features__items img {
+    max-width: 80px;
+    max-height: 80px;
+}
+
+.features__items h3 {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 500;
+    font-family: "Teko", sans-serif;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.features__items:hover h3 {
+    color: var(--secondary-color6);
+}
+
+.features__items p {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+}
+/** End of Features Section (Variant 4) **/
+
+/** Start of Categories Section (Variant 2) **/
+.categories__saection__v2 {
+    margin-top: 100px;
+    margin-bottom: 500px;
+}
+
+
+
+/** End of Categories Section (Variant 2) **/
 
 /*
 font-family: 'Quicksand', sans-serif;
 font-family: 'Pacifico', cursive;
+font-family: "Teko", sans-serif;
 
     transition: 0.3s;
     -moz-transition: 0.3s;

@@ -4177,8 +4177,23 @@ $(function() {
     loop: true,
     pagination: {
       el: ".hs8__slider__dots",
+      clickable: true,
     },
   });
+});
+
+//category section
+var swiper = new Swiper(".catsec__v2__slider", {
+  slidesPerView: 6,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: ".catsec__v2__slider__next",
+    prevEl: ".catsec__v2__slider__prev",
+  },
+  pagination: {
+    el: ".catsec__v2__slider__dots",
+    clickable: true,
+  },
 });
 
 }) (jQuery);
