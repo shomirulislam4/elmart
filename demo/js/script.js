@@ -4183,17 +4183,36 @@ $(function() {
 });
 
 //category section
-var swiper = new Swiper(".catsec__v2__slider", {
-  slidesPerView: 6,
-  spaceBetween: 20,
-  navigation: {
-    nextEl: ".catsec__v2__slider__next",
-    prevEl: ".catsec__v2__slider__prev",
-  },
-  pagination: {
-    el: ".catsec__v2__slider__dots",
-    clickable: true,
-  },
+$(function() {
+  var swiper = new Swiper(".catsec__v2__slider", {
+    slidesPerView: 6,
+    spaceBetween: 0,
+    navigation: {
+      nextEl: ".catsec__v2__slider__next",
+      prevEl: ".catsec__v2__slider__prev",
+    },
+    pagination: {
+      el: ".catsec__v2__slider__dots",
+      clickable: true,
+    },
+    breakpoints: {
+      1400: {
+        slidesPerView: 6,
+      },
+      1200: {
+        slidesPerView: 5,
+      },
+      768: {
+        slidesPerView: 4,
+      },
+      415: {
+        slidesPerView: 2,
+      },
+      0: {
+        slidesPerView: 1,
+      }
+    }
+  });
 });
 
 }) (jQuery);
