@@ -4151,6 +4151,7 @@ $(function() {
 //All Select (Nice Select Js)
 if ( $('.homepage__eight').length ) {
   $('.currency__dropdown').niceSelect();
+  $('.PS7option').niceSelect();
 }
 
 //Mega Menu Slider
