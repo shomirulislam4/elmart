@@ -26698,6 +26698,7 @@ button:focus {
     font-family: 'Pacifico', cursive;
     margin: 0;
     text-align: center;
+    text-transform: capitalize;
 }
 
 /*** Start of Header Style Eight ***/
@@ -28349,8 +28350,132 @@ button:focus {
     visibility: visible;
     opacity: 1;
 }
-
 /** End of Shop Product Style (Variant 7) **/
+
+/** Start of Promotional Section **/
+.promotional__section {
+    margin-top: 100px;
+}
+
+.promotional__section .ps__middle {
+    display: grid;
+    place-items: center;
+}
+
+.promotional__section .ps__middle img {
+    max-width: 400px;
+    max-height: 400px;
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 767px) {
+    .promotional__section .ps__middle {
+        display: none;
+    }
+}
+
+.promotional__section .ps__left__side,
+.promotional__section .ps__right__side {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.promotional__section .ps__item__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ps__left__side .ps__item__wrapper img,
+.ps__right__side .ps__item__wrapper img,
+.ps__left__side .ps__item__wrapper .bg__img__hover,
+.ps__right__side .ps__item__wrapper .bg__img__hover {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -10;
+    opacity: 0.1;
+    height: 100px;
+    width: 100px;
+}
+
+.ps__left__side .ps__item__wrapper .bg__img__hover,
+.ps__right__side .ps__item__wrapper .bg__img__hover {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s;
+    -moz-transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.ps__left__side .ps__item__wrapper:hover .bg__img__hover,
+.ps__right__side .ps__item__wrapper:hover .bg__img__hover {
+    opacity: 0.2;
+    visibility: visible;
+}
+
+.ps__left__side .ps__item__wrapper img,
+.ps__left__side .ps__item__wrapper .bg__img__hover {
+    right: -50px;
+}
+
+.ps__right__side .ps__item__wrapper img,
+.ps__right__side .ps__item__wrapper .bg__img__hover {
+    left: -50px;
+}
+
+.ps__left__side .ps__item__wrapper {
+    text-align: right;
+    align-items: flex-end;
+}
+
+.ps__right__side .ps__item__wrapper {
+    text-align: left;
+    align-items: flex-start;
+}
+
+.promotional__section .ps__item__wrapper h4 {
+    color: #191C1F;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 600;
+    font-family: "Teko", sans-serif;
+    text-transform: capitalize;
+    margin: 0;
+    transition: 0.4s;
+    -moz-transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.promotional__section .ps__item__wrapper:hover h4 {
+    color: var(--main-color6);
+}
+
+.promotional__section .ps__item__wrapper p {
+    color: #191C1F;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 5px;
+}
+
+.promotional__section .ps__item__wrapper .h8__button-a {
+    width: 100px;
+    text-align: center;
+    padding: 7px 0 !important;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+/** End of Promotional Section **/
 
 /*
 font-family: 'Quicksand', sans-serif;
