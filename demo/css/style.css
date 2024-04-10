@@ -112,6 +112,7 @@
     3. Features Section (Variant 4)
     4. Categories Section (Variant 2)
     5. Shop Product Style (Variant 7)
+    6. Testimonial Section (Variant 5)
 **********************************************/
 
 /* ====================================================================
@@ -27930,7 +27931,9 @@ button:focus {
 }
 
 .catsec__v2__slider__next,
-.catsec__v2__slider__prev {
+.catsec__v2__slider__prev,
+.tsv5__button__next,
+.tsv5__button__prev {
     color: #ED9121;
     font-size: 20px;
     line-height: 40px;
@@ -27955,7 +27958,9 @@ button:focus {
 }
 
 .catsec__v2__slider__next:hover,
-.catsec__v2__slider__prev:hover {
+.catsec__v2__slider__prev:hover,
+.tsv5__button__next:hover,
+.tsv5__button__prev:hover {
     color: #FFF;
     background: var(--secondary-color6);
 }
@@ -28474,8 +28479,110 @@ button:focus {
     font-size: 14px;
     line-height: 20px;
 }
-
 /** End of Promotional Section **/
+
+/** Start of Testimonial Section (Variant 5) **/
+.testimonial__section__v5 {
+    margin-top: 100px;
+    height: 500px;
+    width: 100%;
+    background: #FFF url('../image/home-eight/testimonial/bg.webp') center no-repeat;
+    background-size: cover;
+    position: relative;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.tsv5__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #FFF;
+    opacity: 0.9;
+}
+
+.testimonial__section__v5 .bg__img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    user-select: none;
+}
+
+.testimonial__section__v5 .bg__img2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    z-index: 9;
+    pointer-events: none;
+    user-select: none;
+}
+
+.tsv5__slider .swiper-wrapper {
+    padding-bottom: 60px;
+}
+
+.tsv5__button__next {
+    right: 18%;
+}
+
+.tsv5__button__prev {
+    left: 18%;
+}
+
+.tsv5__slider .swiper-slide {
+    display: grid;
+    place-items: center;
+    width: 100% !important;
+}
+
+.testimonial__slider__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 60%;
+}
+
+.testimonial__slider__items img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: #EEE;
+}
+
+.testimonial__slider__items h2 {
+    font-size: 50px;
+    line-height: 56px;
+    font-weight: 500;
+    font-family: "Teko", sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+.testimonial__slider__items p {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+.testimonial__slider__items h4 {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: 'Pacifico', cursive;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+/** End of Testimonial Section (Variant 5) **/
 
 /*
 font-family: 'Quicksand', sans-serif;

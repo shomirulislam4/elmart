@@ -4216,4 +4216,20 @@ $(function() {
   });
 });
 
+//Testimonial Section V5
+$(function() {
+  var swiper = new Swiper(".tsv5__slider", {
+    speed: 500,
+    loop: true,
+    pagination: {
+      el: ".tsv5__pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".tsv5__button__next",
+      prevEl: ".tsv5__button__prev",
+    },
+  });
+});
+
 }) (jQuery);
