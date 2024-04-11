@@ -88,6 +88,7 @@
     5. FAQ Section (Variant 2)
     6. Testimonial Section (Variant 3)
     7. Blog Section (Variant 2)
+    8. Newsletter Section (Variant 2)
 29. Shop Details Page (Style 5)
     1. Breadcrumbs Section (Variant 2)
 30. Home Page Seven
@@ -113,6 +114,7 @@
     4. Categories Section (Variant 2)
     5. Shop Product Style (Variant 7)
     6. Testimonial Section (Variant 5)
+    7. Newsletter Section (Variant 3)
 **********************************************/
 
 /* ====================================================================
@@ -28581,8 +28583,112 @@ button:focus {
     text-transform: capitalize;
     text-align: center;
 }
-
 /** End of Testimonial Section (Variant 5) **/
+
+/** Start of Newsletter Section (Variant 3) **/
+.newsletter__section__v3 {
+    margin-top: 100px;
+    width: 100%;
+    background: var(--secondary-color6) url('../image/home-eight/newsletter/bg.webp') center no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.newsletter__section__v3 .nsv3__background {
+    padding: 60px 0;
+    background: rgba(34, 139, 34, 0.9);
+}
+
+.newsletter__V3__wrapper .left__side {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.newsletter__V3__wrapper .left__side h4 {
+    color: #FFF;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: 'Pacifico', cursive;
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+
+.newsletter__V3__wrapper .left__side h2 {
+    color: #FFF;
+    font-size: 60px;
+    line-height: 64px;
+    font-weight: 400;
+    font-family: "Teko", sans-serif;
+    margin-bottom: 0;
+}
+
+.newsletter__V3__wrapper .left__side p {
+    color: #FFF;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 0;
+}
+
+.newsletter__V3__wrapper form {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: #FFF;
+    border-radius: 50px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.newsletter__V3__wrapper form input {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 10px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: lowercase;
+}
+
+.newsletter__V3__wrapper form button {
+    width: 150px;
+    height: 100%;
+    text-transform: capitalize;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.newsletter__V3__wrapper form button:hover {
+    color: #FFF;
+    background: var(--secondary-color6);
+}
+
+.newsletter__V3__wrapper .right__side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter__V3__wrapper .right__side img {
+    height: 450px;
+    width: auto;
+}
+
+/** End of Newsletter Section (Variant 3) **/
 
 /*
 font-family: 'Quicksand', sans-serif;
