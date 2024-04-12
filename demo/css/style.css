@@ -115,6 +115,7 @@
     5. Shop Product Style (Variant 7)
     6. Testimonial Section (Variant 5)
     7. Newsletter Section (Variant 3)
+    8. Footer Section (Variant 4)
 **********************************************/
 
 /* ====================================================================
@@ -28688,6 +28689,155 @@ button:focus {
     width: auto;
 }
 /** End of Newsletter Section (Variant 3) **/
+
+/** Start of Footer Section (Variant 4) **/
+.footer__section__v4 {
+    margin-top: 100px;
+}
+
+.footer__section__v4 .footer__top__v4 {
+    display: flex;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #DDD;
+}
+
+.footer__top__v4 .footer__widget__v4 {
+    width: 14%;
+}
+
+.footer__top__v4 .footer__widget__v4:first-child {
+    width: 23%;
+}
+
+.footer__top__v4 .footer__widget__v4:last-child {
+    width: 19%;
+}
+
+.footer__top__v4 .footer__widget__v4 .footer__logo {
+    margin-bottom: 20px;
+}
+
+.footer__top__v4 .footer__widget__v4 p {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.footer__top__v4 .footer__widget__v4 p i {
+    margin-right: 5px;
+    color: var(--main-color6);
+}
+
+.footer__top__v4 .footer__widget__v4 h3 {
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: 400;
+    font-family: 'Pacifico', cursive;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.footer__widget__v4 li {
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    color: var(--secondary-color6);
+}
+
+.footer__widget__v4 li:hover {
+    list-style: disc;
+    margin-left: 10px;
+}
+
+.footer__widget__v4 li a {
+    color: #191C1F;
+    display: block;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 500;
+    padding: 7px 0;
+    text-transform: capitalize;
+}
+
+.footer__widget__v4 .install__app {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.footer__widget__v4 .install__app img {
+    width: 100px;
+    height: auto;
+    transition: 0.4s;
+    -moz-transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.footer__widget__v4 .install__app img:hover {
+    margin-top: -10px;
+}
+
+.footer__top__v4 .footer__widget__v4 h4 {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: 'Pacifico', cursive;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+.footer__bottom__v4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__bottom__v4 {
+    padding-bottom: 50px;
+}
+
+.footer__bottom__v4 p {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500px;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 0;
+}
+
+.footer__widget__bottom .footer__social__media {
+    display: flex;
+    gap: 10px;
+}
+
+.footer__widget__bottom .footer__social__media li {
+    display: inline-block;
+}
+
+.footer__widget__bottom .footer__social__media li a {
+    display: block;
+    color: #191C1F;
+    font-size: 18px;
+    height: 36px;
+    width: 36px;
+    line-height: 36px;
+    border-radius: 50%;
+    text-align: center;
+    background: #FFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer__widget__bottom .footer__social__media li a:hover {
+    background: var(--secondary-color6);
+    color: #FFF;
+}
+
+/** End of Footer Section (Variant 4) **/
 
 /*
 font-family: 'Quicksand', sans-serif;
