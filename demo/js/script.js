@@ -4306,6 +4306,44 @@ $(function() {
   });
 });
 
+//Sale Bagde Notifications
+$(function(){
+  var items = $(".sale__badge__item");
+  var currentIndex = 0;
+  var scrollThreshold = 1080;
+  var isScrollTriggered = false;
+
+  function showNextItem() {
+    items.hide();
+    items.eq(currentIndex).fadeIn(1000);
+    currentIndex = (currentIndex + 1) % items.length;
+  }
+
+  function checkScrollPosition() {
+    if (!isScrollTriggered && $(window).scrollTop() > scrollThreshold) {
+      isScrollTriggered = true;
+      showNextItem();
+      setInterval(showNextItem, 10000);
+      items.css('left', '0');
+    }
+  }
+
+  checkScrollPosition();
+  $(window).scroll(function() {
+    checkScrollPosition();
+  });
+
+  $(".sbv2__close__btn").click(function() {
+    var item = $(this).closest(".sale__badge__item");
+    item.hide();
+  });
+});
+
+
+
+
+
+
 
 
 }) (jQuery);

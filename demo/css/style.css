@@ -27668,6 +27668,17 @@ button:focus {
 }
 
 @media (max-width:767px) {
+    .section__navigator {
+        border-radius: 0 0 5px 0;
+        left: -34px;
+    }
+    .section__navigator li a,
+    .section__navigator button {
+        font-size: 16px;
+        line-height: 34px;
+        height: 34px;
+        width: 34px;
+    }
     .section__navigator button {
         display: block;
     }
@@ -28865,6 +28876,7 @@ button:focus {
 .footer__widget__bottom .footer__social__media {
     display: flex;
     gap: 10px;
+    justify-content: flex-end;
 }
 
 .footer__widget__bottom .footer__social__media li {
@@ -28889,6 +28901,77 @@ button:focus {
     color: #FFF;
 }
 /** End of Footer Section (Variant 4) **/
+
+/** Start of Sale Badge (Variant 2) **/
+.sale__badge__v2 {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 9999;
+    height: 200px;
+}
+
+.sale__badge__v2 .sale__badge__item {
+    position: absolute;
+    background: #FFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    left: -500px;
+    bottom: 0;
+}
+
+.sale__badge__v2 .sale__badge__item .sbv2__close__btn {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 20px;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    cursor: pointer;
+}
+
+.sale__badge__v2 .sale__badge__item .sbv2__close__btn:hover {
+    color: var(--main-color6);
+}
+
+.sale__badge__v2 .sale__badge__item .image {
+    width: 100px;
+}
+
+.sale__badge__v2 .sale__badge__item .content {
+    width: 200px;
+}
+
+.sale__badge__v2 .sale__badge__item .image img {
+    width: 100%;
+    height: auto;
+}
+
+.sale__badge__v2 .sale__badge__item .content p {
+    color: #191C1F;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 5px;
+}
+
+.sale__badge__v2 .sale__badge__item .content h4 {
+    color: #191C1F;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 500;
+    font-family: "Teko", sans-serif;
+    margin-bottom: 0;
+}
+/** End of Sale Badge (Variant 2) **/
 
 /*
 font-family: 'Quicksand', sans-serif;
