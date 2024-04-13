@@ -4233,20 +4233,22 @@ $(function() {
 });
 
 //Footer v4
-$(function() {
-  function adjustClass() {
-    var screenWidth = $(window).width();
-    var $myDiv = $('.opfs_col-rev');
-
-    if (screenWidth < 576) {
-      $myDiv.addClass('flex-column-reverse');
-    } else {
-      $myDiv.removeClass('flex-column-reverse');
-    }
+$(function(){
+  function adjustColumns() {
+      if ($(window).width() < 415) {
+          $(".footer__widget__v4").removeClass("col-6");
+      } else {
+          $(".footer__widget__v4").addClass("col-6");
+      }
   }
+  
+  adjustColumns();
 
-  adjustClass();
-  $(window).resize(adjustClass);
+  $(window).resize(function(){
+      adjustColumns();
+  });
 });
+
+
 
 }) (jQuery);
