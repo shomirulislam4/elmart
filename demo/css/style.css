@@ -27632,6 +27632,10 @@ button:focus {
     border-radius: 5px;
 }
 
+.section__navigator.show {
+    left: 0;
+}
+
 .section__navigator li a {
     display: block;
     color: #191C1F;
@@ -27640,14 +27644,36 @@ button:focus {
     height: 40px;
     width: 40px;
     text-align: center;
+    border-radius: 5px;
+}
+
+.section__navigator button {
+    position: absolute;
+    left: 100%;
+    display: none;
+    color: #191C1F;
+    font-size: 20px;
+    line-height: 40px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width:767px) {
+    .section__navigator button {
+        display: block;
+    }
 }
 
 .section__navigator li a.active,
-.section__navigator li a:hover {
+.section__navigator li a:hover,
+.section__navigator button:hover {
     color: #FFF;
     background: var(--secondary-color6);
 }
-
 /*** End of Header Style Eight ***/
 
 /** Start of Hero Section (Variant 8) **/

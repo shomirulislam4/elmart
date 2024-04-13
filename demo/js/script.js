@@ -4250,8 +4250,8 @@ $(function(){
 });
 
 //Section Navigator
-
 $(function() {
+  //auto navigation
   var $navigationLinks = $('.section__navigator li a');
   var $sections = $('section');
   
@@ -4288,6 +4288,9 @@ $(function() {
       scrollTop: $targetSection.offset().top
     }, 400);
   });
+
+  //navigation bar show/hide
+  
 });
 
 
