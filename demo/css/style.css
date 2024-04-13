@@ -113,9 +113,10 @@
     3. Features Section (Variant 4)
     4. Categories Section (Variant 2)
     5. Shop Product Style (Variant 7)
-    6. Testimonial Section (Variant 5)
-    7. Newsletter Section (Variant 3)
-    8. Footer Section (Variant 4)
+    6. Deals of the Week
+    7. Testimonial Section (Variant 5)
+    8. Newsletter Section (Variant 3)
+    9. Footer Section (Variant 4)
 **********************************************/
 
 /* ====================================================================
@@ -26705,6 +26706,23 @@ button:focus {
     text-transform: capitalize;
 }
 
+/* Back to Top */
+.homepage__eight .progression {
+	background: #FFF;
+	border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.homepage__eight .back-top-progress::before {
+	color: var(--main-color6);
+}
+
+@media (min-width: 575px) and (max-width: 1599px) {
+    .homepage__eight .back-top-progress {
+        bottom: 70px;
+    }
+}
+
 /*** Start of Header Style Eight ***/
 /* Top */
 .h8__header__top {
@@ -28555,6 +28573,47 @@ button:focus {
 }
 /** End of Promotional Section **/
 
+/** Start of Deals of the Week **/
+.deals__of__the__week {
+    margin-top: 100px;
+}
+
+.deals__of__the__week .dotw__left__side,
+.deals__of__the__week .dotw__right__side {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 32.7%;
+    padding: 0;
+}
+
+.deals__of__the__week .dotw__middle__area {
+    width: 34.6%;
+    background: red;
+}
+
+.deals__of__the__week .product__style7 {
+	width: 230px;
+}
+
+.deals__of__the__week .product__style7 .image {
+	height: 143px;
+}
+
+.deals__of__the__week .product__style7 .content {
+	gap: 10px;
+	padding: 10px;
+	height: 205px;
+}
+
+.deals__of__the__week .product__style7 .content p {
+	font-size: 14px;
+	line-height: 20px;
+}
+/** End of Deals of the Week **/
+
 /** Start of Testimonial Section (Variant 5) **/
 .testimonial__section__v5 {
     margin-top: 100px;
@@ -28907,7 +28966,7 @@ button:focus {
     position: fixed;
     left: 20px;
     bottom: 20px;
-    z-index: 9999;
+    z-index: 99999;
     height: 200px;
 }
 
