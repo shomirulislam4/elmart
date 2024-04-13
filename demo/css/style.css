@@ -27629,7 +27629,12 @@ button:focus {
     z-index: 99999;
     background: #FFF;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
+    border-radius: 0 5px 5px 0;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
 }
 
 .section__navigator.show {
@@ -27648,18 +27653,18 @@ button:focus {
 }
 
 .section__navigator button {
-    position: absolute;
-    left: 100%;
-    display: none;
-    color: #191C1F;
-    font-size: 20px;
-    line-height: 40px;
-    height: 40px;
-    width: 40px;
-    text-align: center;
-    border-radius: 5px;
-    background: #FFF;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	position: absolute;
+	left: 100%;
+	display: none;
+	color: #191C1F;
+	font-size: 20px;
+	line-height: 40px;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	border-radius: 0 5px 5px 0;
+	background: #FFF;
+	box-shadow: 6px 0 10px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width:767px) {

@@ -4290,7 +4290,20 @@ $(function() {
   });
 
   //navigation bar show/hide
-  
+  $('.section__navigator__toggler').click(function() {
+    $('.section__navigator').toggleClass('show');
+  });
+
+  $(document).click(function(event) {
+      const navigator = $('.section__navigator');
+      const toggler = $('.section__navigator__toggler');
+      const isClickInsideNavigator = navigator.is(event.target) || navigator.has(event.target).length > 0;
+      const isClickInsideToggler = toggler.is(event.target) || toggler.has(event.target).length > 0;
+
+      if (!isClickInsideNavigator && !isClickInsideToggler) {
+          navigator.removeClass('show');
+      }
+  });
 });
 
 
