@@ -27619,6 +27619,35 @@ button:focus {
 .homepage__eight .mobile-menu-wrapper .mobile-submenu a:hover {
     color: var(--secondary-color6);
 }
+
+/** Section Navigator **/
+.section__navigator {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99999;
+    background: #FFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.section__navigator li a {
+    display: block;
+    color: #191C1F;
+    font-size: 20px;
+    line-height: 40px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+}
+
+.section__navigator li a.active,
+.section__navigator li a:hover {
+    color: #FFF;
+    background: var(--secondary-color6);
+}
+
 /*** End of Header Style Eight ***/
 
 /** Start of Hero Section (Variant 8) **/
@@ -28828,7 +28857,6 @@ button:focus {
     background: var(--secondary-color6);
     color: #FFF;
 }
-
 /** End of Footer Section (Variant 4) **/
 
 /*

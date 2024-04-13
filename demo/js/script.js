@@ -4249,6 +4249,47 @@ $(function(){
   });
 });
 
+//Section Navigator
+
+$(function() {
+  var $navigationLinks = $('.section__navigator li a');
+  var $sections = $('section');
+  
+  function getCurrentSection(scrolled) {
+    var currentSection;
+    $sections.each(function() {
+      var sectionTop = $(this).offset().top - 5;
+      if (scrolled >= sectionTop) {
+        currentSection = $(this);
+      }
+    });
+    return currentSection;
+  }
+  
+  function updateActiveClass() {
+    var scrolled = $(window).scrollTop();
+    var currentSection = getCurrentSection(scrolled);
+    
+    $navigationLinks.removeClass('active');
+    
+    $('.section__navigator li a[href="#' + currentSection.attr('id') + '"]').addClass('active');
+  }
+  
+  $(window).on('scroll', function() {
+    updateActiveClass();
+  });
+  
+  $('.section__navigator li a').on('click', function(e) {
+    e.preventDefault();
+    var targetId = $(this).attr('href');
+    var $targetSection = $(targetId);
+    
+    $('html, body').animate({
+      scrollTop: $targetSection.offset().top
+    }, 400);
+  });
+});
+
 
 
 }) (jQuery);
