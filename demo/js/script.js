@@ -4339,7 +4339,17 @@ $(function(){
   });
 });
 
-
+//Deal of the week slider
+$(function(){
+  var swiper = new Swiper(".dotw__middle__slider", {
+    loop: true,
+    spaceBetween: 10,
+    pagination: {
+      el: ".dotw__slider__pagination",
+      clickable: true,
+    },
+  });
+});
 
 
 
