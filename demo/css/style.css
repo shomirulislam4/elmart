@@ -28985,8 +28985,8 @@ button:focus {
 
 .sale__badge__v2 .sale__badge__item .sbv2__close__btn {
     position: absolute;
-    top: 0;
-    right: 5px;
+    top: -5px;
+    right: -5px;
     font-size: 20px;
     transition: 0.3s;
     -moz-transition: 0.3s;
@@ -28994,6 +28994,11 @@ button:focus {
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
     cursor: pointer;
+}
+
+.sale__badge__v2 .sale__badge__item .sbv2__close__btn i {
+    background: #FFF;
+    border-radius: 50%;
 }
 
 .sale__badge__v2 .sale__badge__item .sbv2__close__btn:hover {
@@ -29005,7 +29010,7 @@ button:focus {
 }
 
 .sale__badge__v2 .sale__badge__item .content {
-    width: 200px;
+    width: 250px;
 }
 
 .sale__badge__v2 .sale__badge__item .image img {
