@@ -223,5 +223,12 @@ $(function () {
   }
 });
 
+//Current year
+$(document).ready(function() {
+  var currentYear = (new Date()).getFullYear();
+  $('#currentYear').text(currentYear);
+});
+
+
 
 }) (jQuery);

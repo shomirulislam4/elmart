@@ -4156,13 +4156,15 @@ if ( $('.homepage__eight').length ) {
 
 //Newsletter Popup (Variant 3)
 $(function() {
-  $(window).on('load', function() {
-    $('.newsletter__popup__v3').addClass('show');
-    });
-    $('.nwsltrpopv3__close__btn').on('click', function() {
-        $('.newsletter__popup__v3').fadeOut();
-    });
+  setTimeout(function() {
+      $('.newsletter__popup__v3').addClass('show');
+  }, 10000); // Delaying execution by 10 seconds
+
+  $('.nwsltrpopv3__close__btn').on('click', function() {
+      $('.newsletter__popup__v3').fadeOut();
+  });
 });
+
 
 //Mega Menu Slider
 $(function(){
