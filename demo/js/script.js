@@ -4158,13 +4158,22 @@ if ( $('.homepage__eight').length ) {
 $(function() {
   setTimeout(function() {
       $('.newsletter__popup__v3').addClass('show');
-  }, 10000); // Delaying execution by 10 seconds
+  }, 20000);
 
   $('.nwsltrpopv3__close__btn').on('click', function() {
       $('.newsletter__popup__v3').fadeOut();
   });
 });
 
+//Preloader v6
+$(function(){
+  $(window).on("load",function(){
+    $('#preloader__v6').delay(3200).fadeOut(500);
+  });
+  $('.plv6__close__btn').on('click', function(){
+    $('#preloader__v6').fadeOut(500);
+  })
+});
 
 //Mega Menu Slider
 $(function(){
