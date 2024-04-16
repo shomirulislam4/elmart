@@ -4154,6 +4154,16 @@ if ( $('.homepage__eight').length ) {
   $('.PS7option').niceSelect();
 }
 
+//Newsletter Popup (Variant 3)
+$(function() {
+  $(window).on('load', function() {
+    $('.newsletter__popup__v3').addClass('show');
+    });
+    $('.nwsltrpopv3__close__btn').on('click', function() {
+        $('.newsletter__popup__v3').fadeOut();
+    });
+});
+
 //Mega Menu Slider
 $(function(){
   var swiper = new Swiper('.megamenu__slider__area', {
@@ -4350,8 +4360,6 @@ $(function(){
     },
   });
 });
-
-
 
 
 
