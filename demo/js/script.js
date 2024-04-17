@@ -4398,6 +4398,12 @@ $(function(){
   });
 });
 
+/*============================ Shop Product Style (Variant 7) ============================*/
+$(function(){
+  $('.tag__clouds button').click(function(){
+      $(this).toggleClass('active');
+  });
+});
 
 
 

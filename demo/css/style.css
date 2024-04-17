@@ -117,6 +117,7 @@
     7. Testimonial Section (Variant 5)
     8. Newsletter Section (Variant 3)
     9. Footer Section (Variant 4)
+34. Shop Product Style (Variant 7)
 **********************************************/
 
 /* ====================================================================
@@ -28373,7 +28374,8 @@ button:focus {
     flex-direction: column;
     justify-content: space-between;
     gap: 15px;
-    height: 300px;
+    min-height: 300px;
+    height: auto;
     padding: 20px;
 }
 
@@ -29467,6 +29469,172 @@ button:focus {
     color: #FFF;
 }
 /** End of Newsletter Popup (Variant 3) **/
+
+/* ====================================================================
+34. Shop Product Style (Variant 7)
+==================================================================== */
+.shop__page__seven .shop__products__v7__grid {
+	justify-content: space-between;
+	gap: 10px;
+}
+
+.shop__section__v7 .sp7__products__area .nav-tabs {
+    justify-content: flex-end;
+    gap: 15px;
+    margin-bottom: 0;
+}
+
+.shop__section__v7 .sp7__products__area h3 {
+    font-size: 38px;
+    line-height: 38px;
+    font-weight: 400;
+    font-family: "Teko", sans-serif;
+    margin: 0;
+}
+
+.shop__page__seven .product__style7 {
+	width: 256px;
+}
+
+.shop__page__seven .product__style7 .image {
+	height: 158px;
+}
+
+.shop__page__seven .product__style7 .content {
+	padding: 10px;
+}
+
+/* Sidebar */
+.shop__page__seven .sp7__sidebar__area {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-right: 0;
+}
+
+.sp7__sidebar__area .sp7__sidebar__widget {
+    padding: 30px 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.sp7__sidebar__area .sp7__sidebar__widget h3 {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: 'Pacifico', cursive;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--main-color6);
+}
+
+.sp7__sidebar__widget li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sp7__sidebar__widget li a {
+	display: block;
+	color: #191C1F;
+	font-size: 18px;
+	line-height: 26px;
+	font-weight: 500;
+	text-transform: capitalize;
+	width: 90%;
+	padding: 5px 0;
+}
+
+.sp7__sidebar__widget li:first-child a {
+    padding-top: 0;
+}
+
+.sp7__sidebar__widget li:last-child a {
+    padding-bottom: 0;
+}
+
+.sp7__sidebar__widget li a i {
+    color: var(--main-color6);
+    margin-right: 10px;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.sp7__sidebar__widget li:hover a,
+.sp7__sidebar__widget li:hover a i {
+    color: var(--secondary-color6);
+}
+
+.sp7__sidebar__widget li span {
+    display: block;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    border-radius: 50%;
+    color: #191C1F;
+    background: rgba(76, 187, 23, 0.2);
+    margin: 0;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.sp7__sidebar__widget li:hover span {
+    color: #FFF;
+    background: var(--secondary-color6);
+}
+
+.sp7__sidebar__widget .tag__clouds {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.sp7__sidebar__widget .tag__clouds button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 500;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    text-transform: capitalize;
+    border: 1px solid #AAA;
+    color: #444;
+    border-radius: 50px;
+    background: transparent;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.sp7__sidebar__widget .tag__clouds button i {
+    display: none;
+    font-size: 14px;
+}
+
+.sp7__sidebar__widget .tag__clouds button.active,
+.sp7__sidebar__widget .tag__clouds button:hover {
+    color: var(--secondary-color6);
+    border-color: var(--secondary-color6);
+}
+
+.sp7__sidebar__widget .tag__clouds button.active i {
+    display: block;
+    margin-right: 5px;
+}
 
 /*
 font-family: 'Quicksand', sans-serif;
