@@ -27348,6 +27348,22 @@ button:focus {
     justify-content: flex-end;
 }
 
+@keyframes CartShakeAnim {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+      transform: translateX(-5px);
+    }
+    20%, 40%, 60%, 80% {
+      transform: translateX(5px);
+    }
+}
+
+.cart__shake__animation {
+    animation: CartShakeAnim 1s infinite;
+}
+
 /** Main Menu **/
 .h8__header__bottom {
     position: relative;

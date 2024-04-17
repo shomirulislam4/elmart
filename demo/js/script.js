@@ -4155,13 +4155,25 @@ if ( $('.homepage__eight').length ) {
 }
 
 //Newsletter Popup (Variant 3)
-$(function() {
-  setTimeout(function() {
-      $('.newsletter__popup__v3').addClass('show');
-  }, 20000);
+$(function(){
+  var currentIndex = 0;
+  var scrollThreshold = 3600;
+  var isScrollTriggered = false;
+
+  function nwsltrv3PopupScroll() {
+    if (!isScrollTriggered && $(window).scrollTop() > scrollThreshold) {
+      isScrollTriggered = true;
+      $(".newsletter__popup__v3").addClass('show');
+    }
+  }
+
+  nwsltrv3PopupScroll();
+  $(window).scroll(function() {
+    nwsltrv3PopupScroll();
+  });
 
   $('.nwsltrpopv3__close__btn').on('click', function() {
-      $('.newsletter__popup__v3').fadeOut();
+    $('.newsletter__popup__v3').removeClass('show');
   });
 });
 
@@ -4191,6 +4203,20 @@ $(function(){
       }
     }
   });
+});
+
+//Cart Shake Animation
+$(function() {
+  function CartAnimDelay() {
+    $('#cartShakeAnimation').addClass('cart__shake__animation');
+
+    setTimeout(function() {
+      $('#cartShakeAnimation').removeClass('cart__shake__animation');
+      setTimeout(CartAnimDelay, 5000);
+    }, 1000);
+  }
+
+  CartAnimDelay();
 });
 
 //Hero Section (Variant 8) Slider
