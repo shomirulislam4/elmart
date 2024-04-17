@@ -760,33 +760,36 @@
     <section class="shop__section__v7">
         <div class="container">
             <div class="row">
-                <div class="sp7__info__bar">
-                    <div class="number__of__results">
-                        <p>Showing: 1-16 of 500 Results</p>
-                    </div>
-                    <div class="grid__change__buttons">
-                        <button class="active"><i class="fa-solid fa-grip"></i></button>
-                        <button><i class="fa-solid fa-list-ul"></i></button>
-                    </div>
-                    <div class="sorting__filter">
-                        <form action="#">
-                            <select name="sp7ProductSorting" id="sp7ProductSorting">
-                                <option value="0">Default Sorting</option>
-                                <option value="1">Sort by Price: High > Low</option>
-                                <option value="2">Sort by Price: Low > High</option>
-                                <option value="3">Sort by: Popularity</option>
-                                <option value="4">Sort by: Hot Deals</option>
-                                <option value="5">Sort by: Latest</option>
-                                <option value="6">Sort by: Discounted</option>
-                                <option value="7">Sort by: Rating</option>
-                            </select>
-                        </form>
-                        <button class="sp7__filter__button">filter</button>
+                <div class="col-12">
+                    <div class="sp7__info__bar">
+                        <div class="number__of__results">
+                            <p>Showing: 1-16 of 500 Results</p>
+                        </div>
+                        <div class="grid__change__buttons">
+                            <button class="active" id="sp7__grid__btn"><i class="fa-solid fa-grip"></i></button>
+                            <button id="sp7__list__btn"><i class="fa-solid fa-list-ul"></i></button>
+                        </div>
+                        <div class="sorting__filter">
+                            <form action="#">
+                                <select name="sp7ProductSorting" id="sp7ProductSorting">
+                                    <option value="0">Default Sorting</option>
+                                    <option value="1">Sort by Price: High > Low</option>
+                                    <option value="2">Sort by Price: Low > High</option>
+                                    <option value="3">Sort by: Popularity</option>
+                                    <option value="4">Sort by: Hot Deals</option>
+                                    <option value="5">Sort by: Latest</option>
+                                    <option value="6">Sort by: Discounted</option>
+                                    <option value="7">Sort by: Rating</option>
+                                </select>
+                            </form>
+                            <button class="sp7__filter__button">filter</button>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3 sp7__sidebar__area">
+                <div class="col-xl-3 sp7__sidebar__area">
+                    <button class="sp7__sidebar__close"><i class="fa-solid fa-xmark"></i></button>
                     <div class="sp7__sidebar__widget">
                         <h3>Categories</h3>
                         <ul>
@@ -938,56 +941,71 @@
                         <div class="sp7__filterbyrating">
                             <input type="checkbox" name="filterbyrating" id="FilterByRating1">
                             <label for="FilterByRating1">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <span>(5)</span>
                             </label>
                         </div>
                         <div class="sp7__filterbyrating">
                             <input type="checkbox" name="filterbyrating" id="FilterByRating2">
                             <label for="FilterByRating2">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <span>(12)</span>
                             </label>
                         </div>
                         <div class="sp7__filterbyrating">
                             <input type="checkbox" name="filterbyrating" id="FilterByRating3">
                             <label for="FilterByRating3">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <span>(70)</span>
                             </label>
                         </div>
                         <div class="sp7__filterbyrating">
                             <input type="checkbox" name="filterbyrating" id="FilterByRating4">
                             <label for="FilterByRating4">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <span>(113)</span>
                             </label>
                         </div>
                         <div class="sp7__filterbyrating">
                             <input type="checkbox" name="filterbyrating" id="FilterByRating5">
                             <label for="FilterByRating5">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>(300)</span>
                             </label>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-9 sp7__products__area">
+                <div class="col-xl-9 sp7__products__area">
                     <div class="row align-items-center mb-20">
                         <div class="col-md-6">
                             <h3>All Products</h3>

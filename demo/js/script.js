@@ -4212,7 +4212,7 @@ $(function() {
 
     setTimeout(function() {
       $('#cartShakeAnimation').removeClass('cart__shake__animation');
-      setTimeout(CartAnimDelay, 5000);
+      setTimeout(CartAnimDelay, 1000);
     }, 1000);
   }
 
@@ -4399,12 +4399,55 @@ $(function(){
 });
 
 /*============================ Shop Product Style (Variant 7) ============================*/
+//Sidebar Tag Cloud
 $(function(){
   $('.tag__clouds button').click(function(){
       $(this).toggleClass('active');
   });
 });
 
+//Nice Select
+if ( $('.shop__page__seven').length ) {
+  $('#sp7ProductSorting').niceSelect();
+}
+
+//Grid - list view changer
+$(function() {
+  //grid List View Toggler
+  $('#sp7__grid__btn').click(function() {
+    $('#shopSectionTabContent .product__style7').removeClass('sp7__list__view');
+  });
+  $('#sp7__list__btn').click(function() {
+      $('#shopSectionTabContent .product__style7').addClass('sp7__list__view');
+  });
+
+  //'active' class toggle
+  $('.grid__change__buttons button').click(function() {
+    $('.grid__change__buttons button').removeClass('active');
+    $(this).addClass('active');
+  });
+
+  function adjustClass() {
+    var screenWidth = $(window).width();
+    if (screenWidth <= 575) {
+      $('#shopSectionTabContent .product__style7').removeClass('sp7__list__view');
+    }
+  }
+
+  adjustClass();
+  $(window).resize(adjustClass);
+});
+
+//Sidebar show/hide
+$(function(){
+  $('.sp7__filter__button').on('click', function(){
+    $('.sp7__sidebar__area').addClass('show')
+  });
+
+  $('.sp7__sidebar__close').on('click', function(){
+    $('.sp7__sidebar__area').removeClass('show')
+  })
+});
 
 
 }) (jQuery);
