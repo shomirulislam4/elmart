@@ -760,6 +760,32 @@
     <section class="shop__section__v7">
         <div class="container">
             <div class="row">
+                <div class="sp7__info__bar">
+                    <div class="number__of__results">
+                        <p>Showing: 1-16 of 500 Results</p>
+                    </div>
+                    <div class="grid__change__buttons">
+                        <button class="active"><i class="fa-solid fa-grip"></i></button>
+                        <button><i class="fa-solid fa-list-ul"></i></button>
+                    </div>
+                    <div class="sorting__filter">
+                        <form action="#">
+                            <select name="sp7ProductSorting" id="sp7ProductSorting">
+                                <option value="0">Default Sorting</option>
+                                <option value="1">Sort by Price: High > Low</option>
+                                <option value="2">Sort by Price: Low > High</option>
+                                <option value="3">Sort by: Popularity</option>
+                                <option value="4">Sort by: Hot Deals</option>
+                                <option value="5">Sort by: Latest</option>
+                                <option value="6">Sort by: Discounted</option>
+                                <option value="7">Sort by: Rating</option>
+                            </select>
+                        </form>
+                        <button class="sp7__filter__button">filter</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-md-3 sp7__sidebar__area">
                     <div class="sp7__sidebar__widget">
                         <h3>Categories</h3>
@@ -806,13 +832,159 @@
                         </div>
                     </div>
                     <div class="sp7__sidebar__widget">
-                        <h3></h3>
+                        <h3>Filter by attribute</h3>
+                        <form action="#">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div>
+                                        <input type="checkbox" name="filterbyattribute" id="FilterByAttribute1">
+                                        <label for="FilterByAttribute1">250 grams</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="filterbyattribute" id="FilterByAttribute2">
+                                        <label for="FilterByAttribute2">500 grams</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="filterbyattribute" id="FilterByAttribute3">
+                                        <label for="FilterByAttribute3">1 kilograms</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="filterbyattribute" id="FilterByAttribute4">
+                                        <label for="FilterByAttribute4">2 kilograms</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="filterbyattribute" id="FilterByAttribute5">
+                                        <label for="FilterByAttribute5">3 kilograms</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="filterbyattribute" id="FilterByAttribute6">
+                                        <label for="FilterByAttribute6">1 unit</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="filterbyattribute" id="FilterByAttribute7">
+                                        <label for="FilterByAttribute7">3 units</label>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div>
+                                        <input type="checkbox" name="filterbyattribute" id="FilterByAttribute1.1">
+                                        <label for="FilterByAttribute1.1">100 grams</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="filterbyattribute" id="FilterByAttribute2.1">
+                                        <label for="FilterByAttribute2.1">200 grams</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="filterbyattribute" id="FilterByAttribute3.1">
+                                        <label for="FilterByAttribute3.1">4 kilograms</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="filterbyattribute" id="FilterByAttribute4.1">
+                                        <label for="FilterByAttribute4.1">5 kilograms</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="filterbyattribute" id="FilterByAttribute5.1">
+                                        <label for="FilterByAttribute5.1">7 kilograms</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="filterbyattribute" id="FilterByAttribute6.1">
+                                        <label for="FilterByAttribute6.1">5 units</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="filterbyattribute" id="FilterByAttribute7.1">
+                                        <label for="FilterByAttribute7.1">10 units</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                     <div class="sp7__sidebar__widget">
-                        <h3></h3>
+                        <h3>Select brands</h3>
+                        <div>
+                            <input type="checkbox" name="filterbybrand" id="sp7sbbrand1">
+                            <label for="sp7sbbrand1">brand 1</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="filterbybrand" id="sp7sbbrand2">
+                            <label for="sp7sbbrand2">brand 2</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="filterbybrand" id="sp7sbbrand3">
+                            <label for="sp7sbbrand3">brand 3</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="filterbybrand" id="sp7sbbrand4">
+                            <label for="sp7sbbrand4">brand 4</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="filterbybrand" id="sp7sbbrand5">
+                            <label for="sp7sbbrand5">brand 5</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="filterbybrand" id="sp7sbbrand6">
+                            <label for="sp7sbbrand6">brand 6</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="filterbybrand" id="sp7sbbrand7">
+                            <label for="sp7sbbrand7">brand 7</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="filterbybrand" id="sp7sbbrand8">
+                            <label for="sp7sbbrand8">brand 8</label>
+                        </div>
                     </div>
                     <div class="sp7__sidebar__widget">
-                        <h3></h3>
+                        <h3>Filter by rating</h3>
+                        <div class="sp7__filterbyrating">
+                            <input type="checkbox" name="filterbyrating" id="FilterByRating1">
+                            <label for="FilterByRating1">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </label>
+                        </div>
+                        <div class="sp7__filterbyrating">
+                            <input type="checkbox" name="filterbyrating" id="FilterByRating2">
+                            <label for="FilterByRating2">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </label>
+                        </div>
+                        <div class="sp7__filterbyrating">
+                            <input type="checkbox" name="filterbyrating" id="FilterByRating3">
+                            <label for="FilterByRating3">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </label>
+                        </div>
+                        <div class="sp7__filterbyrating">
+                            <input type="checkbox" name="filterbyrating" id="FilterByRating4">
+                            <label for="FilterByRating4">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </label>
+                        </div>
+                        <div class="sp7__filterbyrating">
+                            <input type="checkbox" name="filterbyrating" id="FilterByRating5">
+                            <label for="FilterByRating5">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </label>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-9 sp7__products__area">

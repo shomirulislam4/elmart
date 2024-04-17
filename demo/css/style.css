@@ -28098,7 +28098,7 @@ button:focus {
 }
 
 .catsec__v2__slider__dots.swiper-pagination-bullets.swiper-pagination-horizontal {
-    bottom: 5px
+    bottom: 0;
 }
 
 .catsec__v2__slider__next,
@@ -29526,6 +29526,7 @@ button:focus {
     padding-bottom: 20px;
     margin-bottom: 20px;
     border-bottom: 1px solid var(--main-color6);
+    text-transform: capitalize;
 }
 
 .sp7__sidebar__widget li {
@@ -29635,6 +29636,30 @@ button:focus {
     display: block;
     margin-right: 5px;
 }
+
+.sp7__sidebar__widget label {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sp7__sidebar__widget .sp7__filterbyrating label i {
+    font-size: 12px;
+}
+
+.shop__page__seven .sp7__info__bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
 
 /*
 font-family: 'Quicksand', sans-serif;
