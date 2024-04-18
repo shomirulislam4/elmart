@@ -118,6 +118,7 @@
     8. Newsletter Section (Variant 3)
     9. Footer Section (Variant 4)
 34. Shop Product Style (Variant 7)
+    1. Breadcrumbs Section (Variant 4)
 **********************************************/
 
 /* ====================================================================
@@ -26724,6 +26725,36 @@ button:focus {
     }
 }
 
+.homepage__eight .back-top-progress {
+    -webkit-animation: backtoTopAnim 3s infinite;
+    animation: backtoTopAnim 3s infinite;
+}
+
+@-webkit-keyframes backtoTopAnim {
+    0% {
+        box-shadow: 0 0 0 0.5rem rgba(34, 139, 34, 0.2),
+            0 0 0 0.75rem rgba(34, 139, 34, 0.12)
+    }
+
+    100% {
+        box-shadow: 0 0 0 0.75rem rgba(34, 139, 34, 0.08),
+            0 0 0 1.25rem rgba(34, 139, 34, 0.03)
+    }
+}
+
+@keyframes backtoTopAnim {
+    0% {
+        box-shadow: 0 0 0 0.5rem rgba(34, 139, 34, 0.2),
+            0 0 0 0.75rem rgba(34, 139, 34, 0.12)
+    }
+
+    100% {
+        box-shadow: 0 0 0 0.75rem rgba(34, 139, 34, 0.08),
+            0 0 0 1.25rem rgba(34, 139, 34, 0.03)
+    }
+}
+
+
 /* Preloader (Variant 6) */
 #preloader__v6 {
     position: fixed; 
@@ -27349,6 +27380,18 @@ button:focus {
     justify-content: flex-end;
 }
 
+@-webkit-keyframes CartShakeAnim {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+      transform: translateX(-5px);
+    }
+    20%, 40%, 60%, 80% {
+      transform: translateX(5px);
+    }
+}
+
 @keyframes CartShakeAnim {
     0%, 100% {
       transform: translateX(0);
@@ -27362,6 +27405,7 @@ button:focus {
 }
 
 .cart__shake__animation {
+    -webkit-animation: CartShakeAnim 1s infinite;
     animation: CartShakeAnim 1s infinite;
 }
 
@@ -29473,6 +29517,10 @@ button:focus {
 /* ====================================================================
 34. Shop Product Style (Variant 7)
 ==================================================================== */
+.shop__page__seven .shop__section__v7 {
+    margin-top: 0;
+}
+
 .shop__page__seven .shop__products__v7__grid {
 	justify-content: space-between;
 	gap: 10px;
@@ -29860,6 +29908,84 @@ button:focus {
 	margin-bottom: 0;
 }
 
+/* Pagination */
+.sp7__pagination__navigation {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.sp7__pagination__navigation button {
+    display: block;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #CCC;
+    color: var(--main-color6);
+    background: transparent;
+    transition: 0.4s;
+    -moz-transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.sp7__pagination__navigation button.next,
+.sp7__pagination__navigation button.prev {
+    color: #ED9121;
+}
+
+.sp7__pagination__navigation button.active,
+.sp7__pagination__navigation button:hover {
+    color: #FFF;
+    background: var(--secondary-color6);
+    border-color: var(--secondary-color6);
+}
+
+/** Start of Breadcrumbs Section (Variant 4) **/
+.breadcrumbs__section__v4 {
+    padding: 40px 0;
+}
+
+.breadcrumb__v4__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.breadcrumb__v4__wrapper a {
+    color: #191C1F;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: capitalize;
+}
+
+.breadcrumb__v4__wrapper a.current__page {
+    color: var(--main-color6);
+}
+
+.breadcrumb__v4__wrapper a.current__page:hover,
+.breadcrumb__v4__wrapper a:hover {
+    color: var(--secondary-color6);
+}
+
+.breadcrumb__v4__wrapper span {
+    color: #191C1F;
+    font-size: 12px;
+}
+
+/** End of Breadcrumbs Section (Variant 4) **/
 
 /*
 font-family: 'Quicksand', sans-serif;
