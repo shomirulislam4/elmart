@@ -120,6 +120,7 @@
     10. Footer Section (Variant 4)
 34. Shop Product Style (Variant 7)
     1. Breadcrumbs Section (Variant 4)
+35. Shop Details Page (Style 7)
 **********************************************/
 
 /* ====================================================================
@@ -30323,8 +30324,293 @@ button:focus {
         font-size: 10px;
     }
 }
-
 /** End of Breadcrumbs Section (Variant 4) **/
+
+/* ====================================================================
+35. Shop Details Page (Style 7)
+==================================================================== */
+/* Image */
+.shop__details__seven__section .sds7__product__image__slider2 {
+    width: 100%;
+    height: 516px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.shop__details__seven__section .sds7__product__image__slider2 .swiper-slide {
+    width: 100%;
+    height: 100%;
+}
+
+.shop__details__seven__section .sds7__imgsldr__btn__next,
+.shop__details__seven__section .sds7__imgsldr__btn__prev {
+    color: #ED9121;
+    font-size: 20px;
+    line-height: 40px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #FFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    z-index: 10;
+}
+
+.shop__details__seven__section .sds7__imgsldr__btn__next:hover,
+.shop__details__seven__section .sds7__imgsldr__btn__prev:hover {
+    color: #FFF;
+    background: var(--secondary-color6);
+}
+
+.shop__details__seven__section .sds7__imgsldr__btn__next {
+    right: 5px;
+}
+
+.shop__details__seven__section .sds7__imgsldr__btn__prev {
+    left: 5px;
+}
+
+.shop__details__seven__section .sds7__product__image__slider1 .swiper-slide {
+    width: 125px;
+    height: 125px;
+    opacity: 0.4;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.shop__details__seven__section .sds7__product__image__slider1 .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+.shop__details__seven__section .sds7__product__image__slider1 .swiper-slide img,
+.shop__details__seven__section .sds7__product__image__slider2 .swiper-slide img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Info */
+.divider__horizontal {
+    border-bottom: 2px solid var(--main-color6);
+}
+
+.shop__details__seven__section .single__product__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.shop__details__seven__section .single__product__content .tag {
+    background: var(--main-color6);
+    color: #FFF;
+    border-radius: 50px;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 500;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    padding: 5px 0;
+    width: 110px;
+    text-transform: capitalize;
+}
+
+.shop__details__seven__section .single__product__content h2 {
+    font-size: 60px;
+    line-height: 66px;
+    font-weight: 500;
+    font-family: "Teko", sans-serif;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.shop__details__seven__section .single__product__content .additional__info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop__details__seven__section .single__product__content .additional__info  p,
+.shop__details__seven__section .single__product__content .additional__info p a {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.shop__details__seven__section .single__product__content .additional__info  p i {
+    font-size: 14px;
+}
+
+.shop__details__seven__section .single__product__content .additional__info .stock {
+    color: var(--secondary-color6);
+}
+
+.shop__details__seven__section .single__product__content .additional__info .stock i {
+    font-size: 14px;
+    color: var(--secondary-color6);
+}
+
+.shop__details__seven__section .single__product__content p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.shop__details__seven__section .single__product__content h4 {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+    font-family: "Teko", sans-serif;
+    margin: 0;
+}
+
+.shop__details__seven__section .single__product__content .nice-select .list {
+	width: 100%;
+}
+
+.shop__details__seven__section .single__product__content .cta__buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.shop__details__seven__section .single__product__content .cta__buttons .addtocart {
+    display: block;
+    position: relative;
+    height: 50px;
+    width: 300px;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    border-radius: 50px;
+    color: #FFF;
+    background: var(--main-color6);
+    text-align: center;
+    text-transform: capitalize;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.shop__details__seven__section .single__product__content .cta__buttons .addtocart i {
+    margin-right: 10px;
+}
+
+.shop__details__seven__section .single__product__content .cta__buttons .addtocart:hover {
+    color: #FFF;
+    background: var(--secondary-color6);
+}
+
+.shop__details__seven__section .single__product__content .cta__buttons .ctas {
+    position: relative;
+    display: block;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #191C1F;
+    text-transform: capitalize;
+}
+
+.shop__details__seven__section .single__product__content .cta__buttons .ctas:hover {
+    color: var(--secondary-color6);
+}
+
+.shop__details__seven__section .single__product__content .cta__buttons .ctas span {
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 5px 0;
+    width: 150px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background: #FFF;
+    border-radius: 5px;
+    z-index: 5;
+    display: none;
+}
+
+.shop__details__seven__section .single__product__content .cta__buttons .ctas:hover span {
+    display: block;
+}
+
+.shop__details__seven__section .single__product__content .delivery__shipping,
+.shop__details__seven__section .single__product__content .product__manage__info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.shop__details__seven__section .single__product__content .delivery__shipping p,
+.shop__details__seven__section .single__product__content .delivery__shipping p span,
+.shop__details__seven__section .single__product__content .product__manage__info p,
+.shop__details__seven__section .single__product__content .product__manage__info p span,
+.shop__details__seven__section .single__product__content .product__manage__info p a {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 500;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    color: #191C1F;
+}
+
+.shop__details__seven__section .single__product__content .delivery__shipping p span,
+.shop__details__seven__section .single__product__content .product__manage__info p span,
+.shop__details__seven__section .single__product__content .product__manage__info p a {
+    margin-left: 5px;
+    color: #5A5858;
+}
+
+.shop__details__seven__section .single__product__content .delivery__shipping p i {
+    font-size: 14px;
+    margin-right: 5px;
+    color: var(--main-color6);
+}
+
+.shop__details__seven__section .single__product__content .secure__pay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--main-color6);
+    border-radius: 10px;
+    position: relative;
+    padding: 20px;
+    padding-top: 25px;
+}
+
+.shop__details__seven__section .single__product__content .secure__pay p {
+	position: absolute;
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: 500;
+	font-family: 'Quicksand', sans-serif;
+	margin: 0;
+	background: #FFF;
+	padding: 0 10px;
+	top: -10px;
+}
+
+.shop__details__seven__section .single__product__content .product__manage__info p a:hover {
+    color: var(--secondary-color6);
+}
 
 /*
 font-family: 'Quicksand', sans-serif;

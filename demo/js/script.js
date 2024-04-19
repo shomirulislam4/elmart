@@ -4152,6 +4152,7 @@ $(function() {
 if ( $('.homepage__eight').length ) {
   $('.currency__dropdown').niceSelect();
   $('.PS7option').niceSelect();
+  $('#sds7__units').niceSelect();
 }
 
 //Newsletter Popup (Variant 3)
@@ -4516,5 +4517,27 @@ $(function(){
   })
 });
 
+/*============================ Shop Details (Style 7) ============================*/
+//Product Image Slider
+$(function(){
+  var sds7sliderthumb = new Swiper(".sds7__product__image__slider1", {
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+  var sds7slidermain = new Swiper(".sds7__product__image__slider2", {
+    loop: true,
+    spaceBetween: 10,
+    navigation: {
+      nextEl: ".sds7__imgsldr__btn__next",
+      prevEl: ".sds7__imgsldr__btn__prev",
+    },
+    thumbs: {
+      swiper: sds7sliderthumb,
+    },
+  });
+});
 
 }) (jQuery);
