@@ -213,7 +213,7 @@
                     </a>
                     <span class="divider__vertical"></span>
                     <ul class="right-menu-btns">
-                        <li><a href="login-register.html"><i class="fa-solid fa-circle-user"></i></a></li>
+                        <li><a class="h8__logreg__popup__button" href="#"><i class="fa-solid fa-circle-user"></i></a></li>
                         <li><a href="wishlist.html"><i class="fa-solid fa-heart"></i></a></li>
                         <li class="has__cart__menu">
                             <a href="#"><i class="fa-solid fa-bag-shopping" id="cartShakeAnimation"></i>
@@ -2366,6 +2366,90 @@
     </div>
     <!-- End of Sale Badge (Variant 2) -->
 
+    <!-- Start of Login Register Popup -->
+    <div class="login__register__popup">
+        <div class="login__register__container">
+            <div class="topright__shape">
+                <span class="toprightshape1"></span>
+                <span class="toprightshape2"></span>
+                <span class="toprightshape3"></span>
+            </div>
+            <button class="logregpop__close__btn"><i class="fa-solid fa-x"></i></button>
+            <div class="left__side">
+                <img src="image/home-eight/login-reg-popup.webp" alt="image">
+            </div>
+            <div class="right__side user__login">
+                <div class="login__area">
+                    <h2>Welcome to <span>ElGrocer</span></h2>
+                    <p>Please enter your credentials to login to ElGrocer.</p>
+                    <form action="#">
+                        <div class="input__field">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="email" name="h8__login" id="h8__login__Email" placeholder="Email">
+                        </div>
+                        <div class="input__field h8lrpPassField">
+                            <i class="fa-solid fa-lock"></i>
+                            <input class="h8__logreg__passshowhide" type="password" name="h8__login" id="h8__login__Password" placeholder="Password">
+                            <i class="ShowPassBtn h8__pass__showhide__toggle fa-solid fa-eye"></i>
+                            <i class="HidePassBtn h8__pass__showhide__toggle fa-solid fa-eye-slash"></i>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="h8__login" id="h8__logreg__remember">
+                            <label for="h8__logreg__remember">Keep me logged in</label>
+                        </div>
+                        <button type="submit">Log in</button>
+                    </form>
+                    <a class="forgot__password" href="#">Forgot your password?</a>
+                    <a class="register__form__button" href="#">Don't have an account? Sign up.</a>
+                </div>
+
+                <div class="register__area">
+                    <h2>Sign Up to <span>ElGrocer</span></h2>
+                    <p>Please enter your info to register to ElGrocer.</p>
+                    <form action="#">
+                        <div class="input__field">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" name="h8__Register" id="h8__Register__Email" placeholder="Email">
+                        </div>
+                        <div class="input__field">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" name="h8__Register" id="h8__Register__Username" placeholder="Username">
+                        </div>
+                        <div class="input__field h8lrpPassField">
+                            <i class="fa-solid fa-lock"></i>
+                            <input class="h8__logreg__passshowhide" type="password" name="h8__Register" id="h8__Register__Password" placeholder="Password">
+                            <i class="ShowPassBtn h8__pass__showhide__toggle fa-solid fa-eye"></i>
+                            <i class="HidePassBtn h8__pass__showhide__toggle fa-solid fa-eye-slash"></i>
+                        </div>
+                        <div class="input__field Confh8lrpPassField">
+                            <i class="fa-solid fa-lock"></i>
+                            <input class="h8__logreg__confpassshowhide" type="password" name="h8__Register" id="h8__Register__ConfPassword" placeholder="Confirm Password">
+                            <i class="ConfShowPassBtn h8__confpass__showhide__toggle fa-solid fa-eye"></i>
+                            <i class="ConfHidePassBtn h8__confpass__showhide__toggle fa-solid fa-eye-slash"></i>
+                        </div>
+                        <button type="submit">Register</button>
+                    </form>
+                    <a class="login__form__button" href="#">Already have an account? Login.</a>
+                </div>
+
+                <div class="password__reset__area">
+                    <h2>Reset your <span>ElGrocer</span> password</h2>
+                    <p>Please enter your email to reset password.</p>
+                    <form action="#">
+                        <div class="input__field">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" name="h8__Reset" id="h8__Reset__Email" placeholder="Email">
+                        </div>
+                        <button type="submit">Reset</button>
+                    </form>
+                    <a class="login__form__button" href="#">Already have an account? Login.</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- End of Login Register Popup -->
+
     <!-- Start of Footer Section (Variant 4) -->
     <section class="footer__section__v4" id="FooterSectionV4">
         <div class="container">
@@ -2463,6 +2547,7 @@
     <script src="js/jquery.nice-select.min.js"></script>
     <script src="js/magnific-popup.min.js"></script>
     <script src="js/waypoint.js"></script>
+    <script src="js/popper.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/script.js"></script>
 </body>

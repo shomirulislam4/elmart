@@ -4398,6 +4398,73 @@ $(function(){
   });
 });
 
+//Login Register Popup
+$(function(){
+  //Login Register Popup
+  $('.h8__logreg__popup__button').on('click', function(){
+    $('.login__register__popup').addClass('show')
+  });
+  $('.logregpop__close__btn').on('click', function(){
+    $('.login__register__popup').removeClass('show')
+  });
+
+  /* Login Area */
+    //Input Field
+    $('.h8__pass__showhide__toggle').click(function(){
+      if('password' == $('.h8__logreg__passshowhide').attr('type')){
+          $('.h8__logreg__passshowhide').prop('type', 'text');
+      }else{
+          $('.h8__logreg__passshowhide').prop('type', 'password');
+      }
+    });
+
+    //Toggle Button
+    $('.ShowPassBtn').on('click', function(){
+      $('.h8lrpPassField').addClass('showpass')
+    });
+    $('.HidePassBtn').on('click', function(){
+      $('.h8lrpPassField').removeClass('showpass')
+    });
+
+    //Login Area Show/Hide
+    $('.login__form__button').on('click', function(){
+      $('.login__register__popup .right__side').addClass('user__login')
+      $('.login__register__popup .right__side').removeClass('user__register')
+      $('.login__register__popup .right__side').removeClass('user__reset')
+    });
+
+  /* Register Area */
+    //Input Field
+    $('.h8__confpass__showhide__toggle').click(function(){
+      if('password' == $('.h8__logreg__confpassshowhide').attr('type')){
+          $('.h8__logreg__confpassshowhide').prop('type', 'text');
+      }else{
+          $('.h8__logreg__confpassshowhide').prop('type', 'password');
+      }
+    });
+
+    //Toggle Button
+    $('.ConfShowPassBtn').on('click', function(){
+      $('.Confh8lrpPassField').addClass('showpass')
+    });
+    $('.ConfHidePassBtn').on('click', function(){
+      $('.Confh8lrpPassField').removeClass('showpass')
+    });
+
+    //Register Area Show/Hide
+    $('.register__form__button').on('click', function(){
+      $('.login__register__popup .right__side').addClass('user__register')
+      $('.login__register__popup .right__side').removeClass('user__login')
+    });
+
+  /* Reset Area */
+    $('.forgot__password').on('click', function(){
+      $('.login__register__popup .right__side').addClass('user__reset')
+      $('.login__register__popup .right__side').removeClass('user__login')
+      $('.login__register__popup .right__side').removeClass('user__register')
+    });
+});
+
 /*============================ Shop Product Style (Variant 7) ============================*/
 //Sidebar Tag Cloud
 $(function(){
