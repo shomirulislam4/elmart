@@ -7741,6 +7741,174 @@
         .breadcrumb__v4__wrapper span {
             font-size: 8px;
         }
+    /*===== Shop Details Page (Style 7) =====*/
+        .shop__details__seven__section .product__details,
+        .product__desc__specs .product__descspecs__box {
+            padding: 10px;
+        }
+        .product__desc__specs__wrapper {
+            margin-top: 20px;
+            gap: 20px;
+        }
+        .shop__details__seven .sp7__sidebar__area {
+            left: -200%;
+        }
+        .shop__details__seven__section .single__product__image {
+            padding-right: 12px;
+        }
+        .shop__details__seven__section .sds7__product__image__slider2 {
+            height: 156px;
+            margin-bottom: 10px;
+        }
+        .shop__details__seven__section .sds7__product__image__slider1 .swiper-slide {
+            width: 31.5px;
+            height: 31.5px;
+        }
+        .shop__details__seven__section .single__product__image .sds7__prod__img {
+            position: relative;
+            margin-bottom: 20px;
+            top: 0;
+        }
+        .shop__details__seven__section .single__product__content .additional__info {
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+        }
+        .shop__details__seven__section .single__product__content h2 {
+            font-size: 30px;
+            line-height: 32px;
+        }
+        .shop__details__seven__section .single__product__content h4 {
+            font-size: 26px;
+            line-height: 26px;
+        }
+        .shop__details__seven__section .single__product__content .additional__info p,
+        .shop__details__seven__section .single__product__content .additional__info p a,
+        .shop__details__seven__section .single__product__content p,
+        .product__desc__specs p,
+        .product__desc__specs td,
+        .product__desc__specs .user__reviews .item .content p {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .product__desc__specs p {
+            margin-bottom: 8px;
+        }
+        .product__desc__specs td {
+            padding: 2px 0;
+        }
+        .product__desc__specs p:last-child {
+            margin: 0;
+        }
+        .shop__details__seven__section .single__product__content .additional__info p i {
+            font-size: 12px;
+        }
+        .shop__details__seven__section .single__product__content .tag,
+        .shop__details__seven__section .single__product__content .secure__pay p {
+            font-size: 12px;
+            line-height: 12px;
+        }
+        .shop__details__seven__section .single__product__content .secure__pay img {
+            width: 100%;
+        }
+        .shop__details__seven__section .single__product__content,
+        .shop__details__seven__section .single__product__content .cta__buttons,
+        .shop__details__seven__section .single__product__content .delivery__shipping,
+        .shop__details__seven__section .single__product__content .product__manage__info,
+        .product__desc__specs .user__reviews {
+            gap: 10px;
+        }
+        .shop__details__seven__section .single__product__content .cta__buttons {
+            flex-direction: column;
+            gap: 10px;
+        }
+        .shop__details__seven__section .single__product__content .cta__buttons div {
+            justify-content: center;
+            gap: 20px;
+        }
+        .shop__details__seven__section .single__product__content .cta__buttons .h8__button-a {
+            width: 100%;
+            line-height: 34px;
+            font-size: 12px;
+            padding: 0 !important;
+            height: 34px;
+        }
+        .shop__details__seven__section .single__product__content .cta__buttons .ctas {
+            height: 34px;
+            width: 34px;
+            line-height: 34px;
+            font-size: 12px;
+        }
+        .shop__details__seven__section .single__product__content .delivery__shipping p,
+        .shop__details__seven__section .single__product__content .delivery__shipping p span,
+        .shop__details__seven__section .single__product__content .product__manage__info p,
+        .shop__details__seven__section .single__product__content .product__manage__info p span,
+        .shop__details__seven__section .single__product__content .product__manage__info p a {
+            font-size: 12px;
+            line-height: 14px;
+        }
+        .shop__details__seven__section .single__product__content .delivery__shipping p i {
+            font-size: 12px;
+        }
+        .shop__details__seven__section .single__product__content .secure__pay {
+            padding: 15px;
+            padding-top: 20px;
+            margin-top: 10px;
+        }
+        .product__desc__specs h3 {
+            font-size: 16px;
+            line-height: 22px;
+        }
+        .individual__star__ratings {
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        .individual__star__ratings .item p {
+            font-size: 12px;
+            width: 35%;
+        }
+        .individual__star__ratings .item .progress__line {
+            width: 60%;
+        }
+        .product__desc__specs .user__reviews .item .content .name {
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+        .product__desc__specs .user__reviews .item .image {
+            height: 30px;
+            width: 30px;
+        }
+        .product__desc__specs .user__reviews .item .content {
+            width: calc(100% - 40px);
+        }
+        .product__desc__specs form,
+        .product__desc__specs form .name__email {
+            flex-direction: column;
+            gap: 10px;
+        }
+        .product__desc__specs form label {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .product__desc__specs form .name__email .item {
+            width: 100%;
+        }
+        .product__desc__specs form .name__email .item input {
+            height: 40px;
+            font-size: 12px;
+            padding: 0 15px;
+        }
+        .product__desc__specs form textarea {
+            font-size: 12px;
+            height: 150px;
+        }
+        .product__desc__specs form .h8__button-a {
+            font-size: 12px;
+            width: 100%;
+        }
+        .product__desc__specs .divider__horizontal {
+            margin: 10px 0;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
@@ -14325,6 +14493,164 @@
         .breadcrumb__v4__wrapper span {
             font-size: 10px;
         }
+    /*===== Shop Details Page (Style 7) =====*/
+        .shop__details__seven__section .product__details,
+        .product__desc__specs .product__descspecs__box {
+            padding: 10px;
+        }
+        .product__desc__specs__wrapper {
+            margin-top: 20px;
+            gap: 20px;
+        }
+        .shop__details__seven .sp7__sidebar__area {
+            left: -130%;
+        }
+        .shop__details__seven__section .single__product__image {
+            padding-right: 12px;
+        }
+        .shop__details__seven__section .sds7__product__image__slider2 {
+            height: 246px;
+            margin-bottom: 10px;
+        }
+        .shop__details__seven__section .sds7__product__image__slider1 .swiper-slide {
+            width: 54px;
+            height: 54px;
+        }
+        .shop__details__seven__section .single__product__image .sds7__prod__img {
+            position: relative;
+            margin-bottom: 20px;
+            top: 0;
+        }
+        .shop__details__seven__section .single__product__content .additional__info {
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+        }
+        .shop__details__seven__section .single__product__content h2 {
+            font-size: 40px;
+            line-height: 42px;
+        }
+        .shop__details__seven__section .single__product__content .additional__info p,
+        .shop__details__seven__section .single__product__content .additional__info p a,
+        .shop__details__seven__section .single__product__content p,
+        .product__desc__specs p,
+        .product__desc__specs td,
+        .product__desc__specs .user__reviews .item .content p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .product__desc__specs p {
+            margin-bottom: 8px;
+        }
+        .product__desc__specs p:last-child {
+            margin: 0;
+        }
+        .shop__details__seven__section .single__product__content .additional__info p i {
+            font-size: 12px;
+        }
+        .shop__details__seven__section .single__product__content .tag,
+        .shop__details__seven__section .single__product__content .secure__pay p {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .shop__details__seven__section .single__product__content .secure__pay img {
+            width: 100%;
+        }
+        .shop__details__seven__section .single__product__content,
+        .shop__details__seven__section .single__product__content .cta__buttons,
+        .shop__details__seven__section .single__product__content .delivery__shipping,
+        .shop__details__seven__section .single__product__content .product__manage__info,
+        .product__desc__specs .user__reviews {
+            gap: 10px;
+        }
+        .shop__details__seven__section .single__product__content .cta__buttons {
+            flex-direction: column;
+            gap: 10px;
+        }
+        .shop__details__seven__section .single__product__content .cta__buttons div {
+            justify-content: center;
+            gap: 20px;
+        }
+        .shop__details__seven__section .single__product__content .cta__buttons .h8__button-a {
+            width: 100%;
+            line-height: 34px;
+            font-size: 14px;
+            padding: 0 !important;
+            height: 34px;
+        }
+        .shop__details__seven__section .single__product__content .cta__buttons .ctas {
+            height: 34px;
+            width: 34px;
+            line-height: 34px;
+            font-size: 14px;
+        }
+        .shop__details__seven__section .single__product__content .delivery__shipping p,
+        .shop__details__seven__section .single__product__content .delivery__shipping p span,
+        .shop__details__seven__section .single__product__content .product__manage__info p,
+        .shop__details__seven__section .single__product__content .product__manage__info p span,
+        .shop__details__seven__section .single__product__content .product__manage__info p a {
+            font-size: 14px;
+            line-height: 16px;
+        }
+        .shop__details__seven__section .single__product__content .delivery__shipping p i {
+            font-size: 12px;
+        }
+        .shop__details__seven__section .single__product__content .secure__pay {
+            padding: 15px;
+            padding-top: 20px;
+            margin-top: 10px;
+        }
+        .product__desc__specs h3 {
+            font-size: 26px;
+            line-height: 26px;
+        }
+        .individual__star__ratings {
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        .individual__star__ratings .item p {
+            font-size: 14px;
+            width: 30%;
+        }
+        .individual__star__ratings .item .progress__line {
+            width: 70%;
+        }
+        .product__desc__specs .user__reviews .item .content .name {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .product__desc__specs .user__reviews .item .image {
+            height: 40px;
+            width: 40px;
+        }
+        .product__desc__specs .user__reviews .item .content {
+            width: calc(100% - 50px);
+        }
+        .product__desc__specs form,
+        .product__desc__specs form .name__email {
+            flex-direction: column;
+            gap: 10px;
+        }
+        .product__desc__specs form label {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .product__desc__specs form .name__email .item {
+            width: 100%;
+        }
+        .product__desc__specs form .name__email .item input {
+            height: 45px;
+            font-size: 14px;
+            padding: 0 15px;
+        }
+        .product__desc__specs form textarea {
+            font-size: 14px;
+            height: 200px;
+        }
+        .product__desc__specs form .h8__button-a {
+            font-size: 14px;
+            width: 100%;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -19718,6 +20044,133 @@
         .breadcrumb__v4__wrapper span {
             font-size: 10px;
         }
+    /*===== Shop Details Page (Style 7) =====*/
+        .shop__details__seven__section .product__details {
+            padding: 10px;
+        }
+        .product__desc__specs__wrapper {
+            margin-top: 20px;
+        }
+        .shop__details__seven__section .single__product__image {
+            padding-right: 12px;
+        }
+        .shop__details__seven__section .sds7__product__image__slider2 {
+            height: 351px;
+            margin-bottom: 10px;
+        }
+        .shop__details__seven__section .sds7__product__image__slider1 .swiper-slide {
+            width: 80.25px;
+            height: 80.25px;
+        }
+        .shop__details__seven__section .single__product__image .sds7__prod__img {
+            position: relative;
+            margin-bottom: 20px;
+            top: 0;
+        }
+        .shop__details__seven__section .single__product__content {
+            gap: 10px;
+        }
+        .shop__details__seven__section .single__product__content h2 {
+            font-size: 40px;
+            line-height: 42px;
+        }
+        .shop__details__seven__section .single__product__content .additional__info p,
+        .shop__details__seven__section .single__product__content .additional__info p a,
+        .shop__details__seven__section .single__product__content p,
+        .product__desc__specs p,
+        .product__desc__specs td,
+        .product__desc__specs .user__reviews .item .content p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .product__desc__specs p {
+            margin-bottom: 8px;
+        }
+        .product__desc__specs p:last-child {
+            margin: 0;
+        }
+        .shop__details__seven__section .single__product__content .additional__info p i {
+            font-size: 12px;
+        }
+        .shop__details__seven__section .single__product__content .tag,
+        .shop__details__seven__section .single__product__content .secure__pay p {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .shop__details__seven__section .single__product__content .cta__buttons,
+        .shop__details__seven__section .single__product__content .cta__buttons div,
+        .shop__details__seven__section .single__product__content .delivery__shipping,
+        .shop__details__seven__section .single__product__content .product__manage__info,
+        .product__desc__specs .user__reviews {
+            gap: 10px;
+        }
+        .shop__details__seven__section .single__product__content .cta__buttons .h8__button-a {
+            width: 239px;
+            line-height: 34px;
+            font-size: 14px;
+            padding: 0 !important;
+            height: 34px;
+        }
+        .shop__details__seven__section .single__product__content .cta__buttons .ctas {
+            height: 34px;
+            width: 34px;
+            line-height: 34px;
+            font-size: 14px;
+        }
+        .shop__details__seven__section .single__product__content .delivery__shipping p,
+        .shop__details__seven__section .single__product__content .delivery__shipping p span,
+        .shop__details__seven__section .single__product__content .product__manage__info p,
+        .shop__details__seven__section .single__product__content .product__manage__info p span,
+        .shop__details__seven__section .single__product__content .product__manage__info p a {
+            font-size: 14px;
+            line-height: 16px;
+        }
+        .shop__details__seven__section .single__product__content .secure__pay {
+            padding: 15px;
+            padding-top: 20px;
+            margin-top: 10px;
+        }
+        .product__desc__specs h3 {
+            font-size: 26px;
+            line-height: 26px;
+        }
+        .individual__star__ratings {
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        .individual__star__ratings .item p {
+            width: 20%;
+        }
+        .individual__star__ratings .item .progress__line {
+            width: 80%;
+        }
+        .product__desc__specs .user__reviews .item .content .name {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .product__desc__specs .user__reviews .item .image {
+            height: 50px;
+            width: 50px;
+        }
+        .product__desc__specs .user__reviews .item .content {
+            width: calc(100% - 70px);
+        }
+        .product__desc__specs form,
+        .product__desc__specs form .name__email {
+            flex-direction: column;
+            gap: 10px;
+        }
+        .product__desc__specs form label {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .product__desc__specs form .name__email .item {
+            width: 100%;
+        }
+        .product__desc__specs form textarea {
+            font-size: 14px;
+            height: 200px;
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -24015,6 +24468,100 @@
             font-size: 16px;
             line-height: 22px;
         }
+    /*===== Shop Details Page (Style 7) =====*/
+        .shop__details__seven__section .single__product__image {
+            padding-right: 12px;
+        }
+        .shop__details__seven__section .sds7__product__image__slider2 {
+            height: 476px;
+            margin-bottom: 10px;
+        }
+        .shop__details__seven__section .sds7__product__image__slider1 .swiper-slide {
+            width: 111.5px;
+            height: 111.5px;
+        }
+        .shop__details__seven__section .single__product__image .sds7__prod__img {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .shop__details__seven__section .single__product__content {
+            gap: 10px;
+        }
+        .shop__details__seven__section .single__product__content h2 {
+            font-size: 50px;
+            line-height: 52px;
+        }
+        .shop__details__seven__section .single__product__content p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .shop__details__seven__section .single__product__content .cta__buttons,
+        .shop__details__seven__section .single__product__content .cta__buttons div {
+            gap: 10px;
+        }
+        .shop__details__seven__section .single__product__content .cta__buttons .h8__button-a {
+            width: 296px;
+        }
+        .shop__details__seven__section .single__product__content .delivery__shipping,
+        .shop__details__seven__section .single__product__content .product__manage__info {
+            gap: 10px;
+        }
+        .shop__details__seven__section .single__product__content .delivery__shipping p,
+        .shop__details__seven__section .single__product__content .delivery__shipping p span,
+        .shop__details__seven__section .single__product__content .product__manage__info p,
+        .shop__details__seven__section .single__product__content .product__manage__info p span,
+        .shop__details__seven__section .single__product__content .product__manage__info p a {
+            font-size: 14px;
+            line-height: 16px;
+        }
+        .shop__details__seven__section .single__product__content .secure__pay {
+            padding: 15px;
+            padding-top: 20px;
+            margin-top: 10px;
+        }
+        .product__desc__specs h3 {
+            font-size: 30px;
+            line-height: 30px;
+        }
+        .product__desc__specs p,
+        .product__desc__specs td,
+        .product__desc__specs .user__reviews .item .content p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .individual__star__ratings {
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        .individual__star__ratings .item p {
+            width: 20%;
+        }
+        .individual__star__ratings .item .progress__line {
+            width: 80%;
+        }
+        .product__desc__specs .user__reviews .item .content .name {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .product__desc__specs .user__reviews {
+            gap: 10px;
+        }
+        .product__desc__specs form,
+        .product__desc__specs form .name__email {
+            flex-direction: column;
+            gap: 10px;
+        }
+        .product__desc__specs form label {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .product__desc__specs form .name__email .item {
+            width: 100%;
+        }
+        .product__desc__specs form textarea {
+            font-size: 14px;
+            height: 200px;
+        }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -27918,6 +28465,120 @@
             font-size: 14px;
             line-height: 18px;
         }
+    /*===== Shop Details Page (Style 7) =====*/
+        .shop__details__seven__section .single__product__content .cta__buttons,
+        .shop__details__seven__section .single__product__content .cta__buttons div {
+            gap: 10px;
+        }
+        .shop__details__seven__section .single__product__content .cta__buttons .h8__button-a {
+            width: 184px;
+            line-height: 34px;
+            height: 34px;
+            font-size: 14px;
+            padding: 0 !important;
+        }
+        .shop__details__seven__section .single__product__content .cta__buttons .ctas {
+            height: 34px;
+            width: 34px;
+            line-height: 34px;
+            font-size: 16px;
+        }
+        .product__desc__specs .total__rating__number p {
+            font-size: 14px;
+        }
+        .individual__star__ratings {
+            gap: 15px;
+        }
+        .individual__star__ratings .item p {
+            font-size: 12px;
+            line-height: 12px;
+            width: 35%;
+        }
+        .individual__star__ratings .item p i {
+            margin: 0 2px;
+        }
+        .individual__star__ratings .item .progress__line {
+            height: 8px;
+            width: 60%;
+        }
+        .shop__details__seven__section .single__product__content,
+        .shop__details__seven__section .single__product__content .delivery__shipping,
+        .shop__details__seven__section .single__product__content .product__manage__info {
+            gap: 10px;
+        }
+        .shop__details__seven__section .single__product__content .secure__pay {
+            padding: 10px;
+            padding-top: 15px;
+            margin-top: 10px;
+        }
+        .shop__details__seven__section .single__product__content .secure__pay p {
+            position: absolute;
+            font-size: 14px;
+            line-height: 14px;
+            font-weight: 500;
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+            background: #FFF;
+            padding: 0 10px;
+            top: -10px;
+        }
+        .shop__details__seven__section .single__product__content .secure__pay img {
+            width: 100%;
+        }
+        .shop__details__seven__section .single__product__content .delivery__shipping p,
+        .shop__details__seven__section .single__product__content .delivery__shipping p span,
+        .shop__details__seven__section .single__product__content .product__manage__info p,
+        .shop__details__seven__section .single__product__content .product__manage__info p span,
+        .shop__details__seven__section .single__product__content .product__manage__info p a {
+            font-size: 14px;
+            line-height: 16px;
+        }
+        .shop__details__seven__section .single__product__content .delivery__shipping p i {
+            font-size: 12px;
+        }
+        .shop__details__seven__section .single__product__content p {
+            font-size: 14px;
+            line-height: 22px;
+        }
+        .shop__details__seven__section .single__product__content .additional__info p,
+        .shop__details__seven__section .single__product__content .additional__info p a {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .shop__details__seven__section .single__product__content .additional__info p i {
+            font-size: 10px;
+        }
+        .shop__details__seven__section .single__product__content h2 {
+            font-size: 40px;
+            line-height: 44px;
+        }
+        .shop__details__seven__section .single__product__content .tag {
+            font-size: 14px;
+            width: 100px;
+        }
+        .shop__details__seven__section .sds7__product__image__slider2 {
+            height: 328px;
+        }
+        .shop__details__seven__section .sds7__product__image__slider1 .swiper-slide {
+            width: 74.5px;
+            height: 74.5px;
+        }
+        .product__desc__specs .user__reviews {
+            gap: 10px;
+        }
+        .product__desc__specs .user__reviews .item .image {
+            height: 60px;
+            width: 60px;
+        }
+        .product__desc__specs .user__reviews .item .content .name {
+            font-size: 14px;
+            line-height: 18px;
+            margin-bottom: 5px;
+        }
+        .product__desc__specs .user__reviews .item .content p {
+            font-size: 14px;
+            line-height: 20px;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -31307,6 +31968,41 @@
         .shop__page__seven .product__style7:hover .image .hover__cta a:last-child {
             top: 68px;
         }
+    /*===== Shop Details Page (Style 7) =====*/
+        .shop__details__seven__section .single__product__content .cta__buttons,
+        .shop__details__seven__section .single__product__content .cta__buttons div {
+            gap: 10px;
+        }
+        .shop__details__seven__section .single__product__content .cta__buttons .h8__button-a {
+            width: 286px;
+            line-height: 40px;
+            font-size: 14px;
+            padding: 0 !important;
+            height: 40px;
+        }
+        .shop__details__seven__section .single__product__content .cta__buttons .ctas {
+            height: 40px;
+            width: 40px;
+            line-height: 40px;
+            font-size: 16px;
+        }
+        .individual__star__ratings {
+            gap: 15px;
+        }
+        .individual__star__ratings .item p {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .individual__star__ratings .item .progress__line {
+            height: 8px;
+        }
+        .shop__details__seven__section .sds7__product__image__slider2 {
+            height: 448px;
+        }
+        .shop__details__seven__section .sds7__product__image__slider1 .swiper-slide {
+            width: 104.5px;
+            height: 104.5px;
+        }
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -33194,6 +33890,35 @@
         .sp7__sidebar__widget .tag__clouds button i {
             font-size: 12px;
         }
+    /*===== Shop Details Page (Style 7) =====*/
+        .sp7__sidebar__widget .sp7__sidebar__product .content h4 {
+            font-size: 16px;
+            line-height: 22px;
+        }
+        .sp7__sidebar__widget .sp7__sidebar__product .content p {
+            font-size: 18px;
+            line-height: 18px;
+        }
+        .individual__star__ratings .item p {
+            width: 35%;
+        }
+        .individual__star__ratings .item .progress__line {
+            width: 60%;
+        }
+        .shop__details__seven__section .single__product__content .cta__buttons,
+        .shop__details__seven__section .single__product__content .cta__buttons div {
+            gap: 10px;
+        }
+        .shop__details__seven__section .single__product__content .cta__buttons .h8__button-a {
+            width: 263px;
+        }
+        .shop__details__seven__section .sds7__product__image__slider2 {
+            height: 396px;
+        }
+        .shop__details__seven__section .sds7__product__image__slider1 .swiper-slide {
+            width: 91.5px;
+            height: 91.5px;
+        }
 }
 
 /*larger desktops, 1400px and up*/
@@ -33513,6 +34238,10 @@
         }
         .shop__page__seven .product__style7 .image {
             height: 154px;
+        }
+    /*===== Shop Details Page (Style 7) =====*/
+        .shop__details__seven__section .sds7__product__image__slider2 {
+            height: 493px;
         }
 }
 

@@ -2385,11 +2385,11 @@
                     <form action="#">
                         <div class="input__field">
                             <i class="fa-solid fa-user"></i>
-                            <input type="email" name="h8__login" id="h8__login__Email" placeholder="Email">
+                            <input type="email" name="h8__login" id="h8__login__Email" placeholder="Email" required>
                         </div>
                         <div class="input__field h8lrpPassField">
                             <i class="fa-solid fa-lock"></i>
-                            <input class="h8__logreg__passshowhide" type="password" name="h8__login" id="h8__login__Password" placeholder="Password">
+                            <input class="h8__logreg__passshowhide" type="password" name="h8__login" id="h8__login__Password" placeholder="Password" required>
                             <i class="ShowPassBtn h8__pass__showhide__toggle fa-solid fa-eye"></i>
                             <i class="HidePassBtn h8__pass__showhide__toggle fa-solid fa-eye-slash"></i>
                         </div>
@@ -2409,23 +2409,51 @@
                     <form action="#">
                         <div class="input__field">
                             <i class="fa-solid fa-envelope"></i>
-                            <input type="email" name="h8__Register" id="h8__Register__Email" placeholder="Email">
+                            <input type="email" name="h8__Register" id="h8__Register__Email" placeholder="Email" required>
                         </div>
                         <div class="input__field">
                             <i class="fa-solid fa-user"></i>
-                            <input type="text" name="h8__Register" id="h8__Register__Username" placeholder="Username">
+                            <input type="text" name="h8__Register" id="h8__Register__Username" placeholder="Username" required>
                         </div>
                         <div class="input__field h8lrpPassField">
                             <i class="fa-solid fa-lock"></i>
-                            <input class="h8__logreg__passshowhide" type="password" name="h8__Register" id="h8__Register__Password" placeholder="Password">
+                            <input class="h8__logreg__passshowhide" type="password" name="h8__Register" id="h8__Register__Password" placeholder="Password" required>
                             <i class="ShowPassBtn h8__pass__showhide__toggle fa-solid fa-eye"></i>
                             <i class="HidePassBtn h8__pass__showhide__toggle fa-solid fa-eye-slash"></i>
                         </div>
                         <div class="input__field Confh8lrpPassField">
                             <i class="fa-solid fa-lock"></i>
-                            <input class="h8__logreg__confpassshowhide" type="password" name="h8__Register" id="h8__Register__ConfPassword" placeholder="Confirm Password">
+                            <input class="h8__logreg__confpassshowhide" type="password" name="h8__Register" id="h8__Register__ConfPassword" placeholder="Confirm Password" required>
                             <i class="ConfShowPassBtn h8__confpass__showhide__toggle fa-solid fa-eye"></i>
                             <i class="ConfHidePassBtn h8__confpass__showhide__toggle fa-solid fa-eye-slash"></i>
+                        </div>
+                        <div class="vendor__info__fields">
+                            <div class="input__field">
+                                <i class="fa-solid fa-shop"></i>
+                                <input type="text" name="h8__Register" id="h8__RegisterSName" placeholder="Store Name" required>
+                            </div>
+                            <div class="input__field">
+                                <i class="fa-solid fa-link"></i>
+                                <input type="url" name="h8__Register" id="h8__RegisterSURL" placeholder="Store URL" required>
+                            </div>
+                            <div class="input__field">
+                                <i class="fa-solid fa-phone"></i>
+                                <input type="tel" name="h8__Register" id="h8__RegisterSContactNumber" placeholder="Contact Number" required>
+                            </div>
+                            <div class="input__field">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <input type="text" name="h8__Register" id="h8__RegisterSAddress" placeholder="Store Address" required>
+                            </div>
+                        </div>
+                        <div class="customer__vendor__select">
+                            <div class="radio">
+                                <input type="radio" name="h8__Register" id="h8__RegisterCustomer" checked required>
+                                <label for="h8__RegisterCustomer">I'm a Customer</label>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="h8__Register" id="h8__RegisterVendor" required>
+                                <label for="h8__RegisterVendor">I'm a Vendor</label>
+                            </div>
                         </div>
                         <button type="submit">Register</button>
                     </form>
@@ -2438,7 +2466,7 @@
                     <form action="#">
                         <div class="input__field">
                             <i class="fa-solid fa-envelope"></i>
-                            <input type="email" name="h8__Reset" id="h8__Reset__Email" placeholder="Email">
+                            <input type="email" name="h8__Reset" id="h8__Reset__Email" placeholder="Email" required>
                         </div>
                         <button type="submit">Reset</button>
                     </form>
