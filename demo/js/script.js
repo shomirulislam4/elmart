@@ -4469,22 +4469,24 @@ $(function(){
 //Register Popup Vendor Register
 $(function() {
   function toggleRequiredFields(required) {
-    $('#h8__RegisterSName, #h8__RegisterSURL, #h8__RegisterSContactNumber, #h8__RegisterSAddress')
-      .prop('required', required);
+      $('#h8__RegisterSName, #h8__RegisterSURL, #h8__RegisterSContactNumber, #h8__RegisterSAddress')
+          .prop('required', required);
   }
 
   toggleRequiredFields(false);
 
   $('input[name="h8__Register"]').change(function() {
-    if ($('#h8__RegisterVendor').is(':checked')) {
-      $('.vendor__info__fields').addClass('show');
-      toggleRequiredFields(true);
-    } else {
-      $('.vendor__info__fields').removeClass('show');
-      toggleRequiredFields(false);
-    }
+      if ($('#h8__RegisterVendor').is(':checked')) {
+          $('.vendor__info__fields').slideDown().css('display', 'flex');
+          toggleRequiredFields(true);
+      } else {
+          $('.vendor__info__fields').slideUp();
+          toggleRequiredFields(false);
+      }
   });
 });
+
+
 
 /*============================ Shop Product Style (Variant 7) ============================*/
 //Sidebar Tag Cloud

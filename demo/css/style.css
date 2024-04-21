@@ -29740,7 +29740,8 @@ button:focus {
     font-family: 'Quicksand', sans-serif;
 }
 
-.login__register__popup .login__register__container form {
+.login__register__popup .login__register__container form,
+.login__register__popup .login__register__container form .vendor__info__fields {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
@@ -29866,8 +29867,7 @@ button:focus {
 .login__register__popup .login__register__container .right__side.user__login .register__area,
 .login__register__popup .login__register__container .right__side.user__register .login__area,
 .login__register__popup .login__register__container .right__side.user__login .password__reset__area,
-.login__register__popup .login__register__container .right__side.user__register .password__reset__area,
-.login__register__popup .login__register__container form .vendor__info__fields {
+.login__register__popup .login__register__container .right__side.user__register .password__reset__area {
     display: none;
 }
 
@@ -29885,20 +29885,14 @@ button:focus {
     overflow-y: auto;
 }
 
-.login__register__popup .login__register__container form .vendor__info__fields {
-	flex-direction: column;
-	gap: 20px;
-	width: 100%;
-}
-
-.login__register__popup .login__register__container form .vendor__info__fields.show {
-    display: flex;
-}
-
 .login__register__popup .customer__vendor__select {
     display: flex;
     gap: 20px;
     justify-content: center;
+}
+
+.login__register__popup .login__register__container form .vendor__info__fields {
+    display: none;
 }
 
 .login__register__popup .customer__vendor__select .radio {

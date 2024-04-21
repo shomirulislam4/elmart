@@ -7561,12 +7561,13 @@
         /*Login Register Popup*/
         .login__register__popup .login__register__container {
             width: 200px;
-            height: auto;
         }
         .login__register__popup.show .login__register__container {
             width: 400px;
         }
-        .login__register__popup .login__register__container .right__side {
+        .login__register__popup .login__register__container .right__side.user__register .register__area,
+        .login__register__popup .login__register__container .right__side.user__login .login__area,
+        .login__register__popup .login__register__container .right__side.user__reset .password__reset__area {
             padding: 40px 10px;
         }
         .login__register__popup .login__register__container h2 span,
@@ -7591,6 +7592,7 @@
         .login__register__popup .login__register__container .input__field {
             height: 40px;
             padding: 0 10px;
+            gap: 5px;
         }
         .login__register__popup .login__register__container .input__field i {
             font-size: 10px;
@@ -7608,7 +7610,8 @@
             font-size: 12px;
             margin-top: 0;
         }
-        .login__register__popup .login__register__container .checkbox label {
+        .login__register__popup .login__register__container .checkbox label,
+        .login__register__popup .customer__vendor__select .radio label {
             font-size: 12px;
         }
         .login__register__popup .login__register__container .register__form__button,
@@ -7616,6 +7619,11 @@
         .login__register__popup .login__register__container .forgot__password {
             margin-top: 10px;
             font-size: 12px;
+        }
+        .login__register__popup .customer__vendor__select {
+            gap: 10px;
+            flex-direction: column;
+            align-items: center;
         }
     /*===== Shop Product Style (Variant 7) =====*/
         .shop__page__seven .sp7__info__bar {
@@ -14350,7 +14358,9 @@
         .login__register__popup.show .login__register__container {
             width: 400px;
         }
-        .login__register__popup .login__register__container .right__side {
+        .login__register__popup .login__register__container .right__side.user__register .register__area,
+        .login__register__popup .login__register__container .right__side.user__login .login__area,
+        .login__register__popup .login__register__container .right__side.user__reset .password__reset__area {
             padding: 40px 10px;
         }
         .login__register__popup .login__register__container h2 span,
@@ -14392,7 +14402,8 @@
             font-size: 14px;
             margin-top: 0;
         }
-        .login__register__popup .login__register__container .checkbox label {
+        .login__register__popup .login__register__container .checkbox label,
+        .login__register__popup .customer__vendor__select .radio label {
             font-size: 14px;
         }
         .login__register__popup .login__register__container .register__form__button,
@@ -19916,12 +19927,15 @@
         /*Login Register Popup*/
         .login__register__popup .login__register__container {
             width: 200px;
-            height: 400px;
+            height: auto;
+            padding: 30px 10px;
         }
         .login__register__popup.show .login__register__container {
             width: 400px;
         }
-        .login__register__popup .login__register__container .right__side {
+        .login__register__popup .login__register__container .right__side.user__register .register__area,
+        .login__register__popup .login__register__container .right__side.user__login .login__area,
+        .login__register__popup .login__register__container .right__side.user__reset .password__reset__area {
             padding: 10px;
         }
         .login__register__popup .login__register__container h2 span,
@@ -19963,7 +19977,8 @@
             font-size: 14px;
             margin-top: 0;
         }
-        .login__register__popup .login__register__container .checkbox label {
+        .login__register__popup .login__register__container .checkbox label,
+        .login__register__popup .customer__vendor__select .radio label {
             font-size: 14px;
         }
         .login__register__popup .login__register__container .register__form__button,
@@ -24358,12 +24373,13 @@
         /*Login Register Popup*/
         .login__register__popup .login__register__container {
             width: 300px;
-            height: 400px;
         }
         .login__register__popup.show .login__register__container {
             width: 550px;
         }
-        .login__register__popup .login__register__container .right__side {
+        .login__register__popup .login__register__container .right__side.user__register .register__area,
+        .login__register__popup .login__register__container .right__side.user__login .login__area,
+        .login__register__popup .login__register__container .right__side.user__reset .password__reset__area {
             padding: 10px;
         }
         .login__register__popup .login__register__container h2 span,
@@ -24403,7 +24419,8 @@
             font-size: 14px;
             margin-top: 0;
         }
-        .login__register__popup .login__register__container .checkbox label {
+        .login__register__popup .login__register__container .checkbox label,
+        .login__register__popup .customer__vendor__select .radio label {
             font-size: 14px;
         }
         .login__register__popup .login__register__container .register__form__button,
@@ -28395,12 +28412,13 @@
         /*Login Register Popup*/
         .login__register__popup .login__register__container {
             width: 400px;
-            height: 500px;
         }
         .login__register__popup.show .login__register__container {
             width: 700px;
         }
-        .login__register__popup .login__register__container .right__side {
+        .login__register__popup .login__register__container .right__side.user__register .register__area,
+        .login__register__popup .login__register__container .right__side.user__login .login__area,
+        .login__register__popup .login__register__container .right__side.user__reset .password__reset__area {
             padding: 15px;
         }
         .login__register__popup .login__register__container h2 span,
