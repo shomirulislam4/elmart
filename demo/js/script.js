@@ -4220,6 +4220,27 @@ $(function() {
   CartAnimDelay();
 });
 
+//Cart (Variant 2)
+$(function(){
+  $('.cart__v2__button').on('click', function(){
+    $('.cart__v2').addClass('show')
+  });
+  $('.cart__v2__close').on('click', function(){
+    $('.cart__v2').removeClass('show')
+  });
+
+  function CartAnimDelay() {
+    $('.cart__v2__button i').addClass('cart__v2__animation');
+
+    setTimeout(function() {
+      $('.cart__v2__button i').removeClass('cart__v2__animation');
+      setTimeout(CartAnimDelay, 1500);
+    }, 1000);
+  }
+
+  CartAnimDelay();
+});
+
 //Hero Section (Variant 8) Slider
 $(function() {
   var swiper = new Swiper(".hs8__slider", {
@@ -4485,8 +4506,6 @@ $(function() {
       }
   });
 });
-
-
 
 /*============================ Shop Product Style (Variant 7) ============================*/
 //Sidebar Tag Cloud

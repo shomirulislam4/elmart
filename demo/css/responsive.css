@@ -6957,7 +6957,12 @@
             height: 400px;
             padding: 10px;
         }
-        .h8__header__middle .search__cart__product .h8__cart__prod__close {
+        .cart__v2__wrapper {
+            width: 200px;
+            padding: 10px;
+        }
+        .h8__header__middle .search__cart__product .h8__cart__prod__close,
+        .cart__v2__wrapper .search__cart__product .h8__cart__prod__close {
             height: 16px;
             width: 16px;
             font-size: 10px;
@@ -6965,7 +6970,8 @@
             left: 0;
             top: 0;
         }
-        .h8__header__middle .search__cart__product {
+        .h8__header__middle .search__cart__product,
+        .cart__v2__wrapper .search__cart__product {
             flex-direction: column;
             align-items: center;
             gap: 5px;
@@ -6973,28 +6979,39 @@
             border-bottom: 1px solid #EEE;
             padding-bottom: 10px;
         }
-        .h8__header__middle .search__cart__product .content {
+        .h8__header__middle .search__cart__product .content,
+        .cart__v2__wrapper .search__cart__product .content {
             width: 185px;
         }
-        .h8__header__middle .search__cart__product .image {
+        .h8__header__middle .search__cart__product .image,
+        .cart__v2__wrapper .search__cart__product .image {
             width: 60px;
             height: 60px;
         }
-        .h8__header__middle .search__cart__product h3 {
+        .h8__header__middle .search__cart__product h3,
+        .cart__v2__wrapper .search__cart__product h3 {
             border: none;
             line-height: 18px;
             text-align: center;
         }
-        .h8__header__middle .search__cart__product h3 a {
+        .h8__header__middle .search__cart__product h3 a,
+        .cart__v2__wrapper .search__cart__product h3 a {
             font-size: 14px;
             line-height: 14px;
         }
-        .h8__header__middle .search__cart__product h4 {
+        .h8__header__middle .search__cart__product h4,
+        .cart__v2__wrapper .search__cart__product h4 {
             font-size: 14px;
             line-height: 20px;
         }
-        .h8__cart .search__cart__product .price__qty {
+        .h8__cart .search__cart__product .price__qty,
+        .cart__v2__wrapper .search__cart__product .price__qty {
             justify-content: center;
+        }
+        .cart__v2__wrapper .cart__v2__ctas {
+            justify-content: center;
+            flex-direction: column;
+            gap: 10px;
         }
         /*Hero Section (Variant 8)*/
         .hero__section__v8 {
@@ -13866,7 +13883,12 @@
             height: 230px;
             padding: 10px;
         }
-        .h8__header__middle .search__cart__product .h8__cart__prod__close {
+        .cart__v2__wrapper {
+            width: 290px;
+            padding: 10px;
+        }
+        .h8__header__middle .search__cart__product .h8__cart__prod__close,
+        .cart__v2__wrapper .search__cart__product .h8__cart__prod__close {
             height: 16px;
             width: 16px;
             font-size: 10px;
@@ -13874,26 +13896,32 @@
             left: -5px;
             top: -5px;
         }
-        .h8__header__middle .search__cart__product {
+        .h8__header__middle .search__cart__product,
+        .cart__v2__wrapper .search__cart__product {
             gap: 5px;
             margin-bottom: 10px;
         }
-        .h8__header__middle .search__cart__product .content {
+        .h8__header__middle .search__cart__product .content,
+        .cart__v2__wrapper .search__cart__product .content {
             width: 185px;
         }
-        .h8__header__middle .search__cart__product .image {
+        .h8__header__middle .search__cart__product .image,
+        .cart__v2__wrapper .search__cart__product .image {
             width: 60px;
             height: 60px;
         }
-        .h8__header__middle .search__cart__product h3 {
+        .h8__header__middle .search__cart__product h3,
+        .cart__v2__wrapper .search__cart__product h3 {
             border: none;
             line-height: 18px;
         }
-        .h8__header__middle .search__cart__product h3 a {
+        .h8__header__middle .search__cart__product h3 a,
+        .cart__v2__wrapper .search__cart__product h3 a {
             font-size: 14px;
             line-height: 14px;
         }
-        .h8__header__middle .search__cart__product h4 {
+        .h8__header__middle .search__cart__product h4,
+        .cart__v2__wrapper .search__cart__product h4 {
             font-size: 14px;
             line-height: 20px;
         }
