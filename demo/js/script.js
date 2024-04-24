@@ -4552,13 +4552,18 @@ $(function(){
   $('.sp7__filter__button').on('click', function(){
     $('.sp7__sidebar__area').addClass('show')
   });
-
   $('.sp7__sidebar__close').on('click', function(){
     $('.sp7__sidebar__area').removeClass('show')
   })
 });
 
 /*============================ Shop Details (Style 7) ============================*/
+//All Select (Nice Select Js)
+if ( $('.cart__page__variant__2').length ) {
+  $('#CSPcsCountry').niceSelect();
+  $('#CSPcsState').niceSelect();
+}
+
 //Product Image Slider
 $(function(){
   var sds7sliderthumb = new Swiper(".sds7__product__image__slider1", {
@@ -4579,6 +4584,50 @@ $(function(){
       swiper: sds7sliderthumb,
     },
   });
+});
+
+//Cart Page Quantity Price Multiplier
+$(function() {
+  $('.quantity-controls-v2').each(function() {
+      const $decreaseBtn = $(this).find('.quantity-decrease-v2');
+      const $increaseBtn = $(this).find('.quantity-increase-v2');
+      const $display = $(this).find('.quantity-display-v2');
+      const $priceTd = $(this).closest('tr').find('.price');
+      const $totalTd = $(this).closest('tr').find('.total');
+      const price = parseFloat($priceTd.text().replace('$', ''));
+
+      const updateTotal = () => {
+          const quantity = parseInt($display.text());
+          const total = price * quantity;
+          $totalTd.text('$' + total.toFixed(2));
+      };
+
+      $decreaseBtn.on('click', () => {
+          let quantity = parseInt($display.text());
+          if (quantity > 1) {
+              quantity--;
+              $display.text(quantity);
+              updateTotal();
+          }
+      });
+
+      $increaseBtn.on('click', () => {
+          let quantity = parseInt($display.text());
+          quantity++;
+          $display.text(quantity);
+          updateTotal();
+      });
+  });
+});
+
+//Shipping Popup Button
+$(function(){
+  $('.calculate__shipping__btn').on('click', function(){
+    $('.calculate__shipping__popup').addClass('show')
+  });
+  $('.csp__close__btn').on('click', function(){
+    $('.calculate__shipping__popup').removeClass('show')
+  })
 });
 
 }) (jQuery);

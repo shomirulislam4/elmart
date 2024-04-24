@@ -121,6 +121,7 @@
 34. Shop Product Style (Variant 7)
     1. Breadcrumbs Section (Variant 4)
 35. Shop Details Page (Style 7)
+36. Cart (Variant 2)
 **********************************************/
 
 /* ====================================================================
@@ -22757,14 +22758,18 @@ button:focus {
     display: flex;
     align-items: center;
     margin: 0;
+    justify-content: center;
 }
 
-.quantity-controls {
+.quantity-controls,
+.quantity-controls-v2 {
     display: flex;
 }
 
 .quantity-decrease,
-.quantity-increase {
+.quantity-increase,
+.quantity-decrease-v2,
+.quantity-increase-v2 {
     cursor: pointer;
     text-align: center;
     font-weight: 500;
@@ -22784,12 +22789,15 @@ button:focus {
 }
 
 .quantity-decrease:hover,
-.quantity-increase:hover {
+.quantity-increase:hover,
+.quantity-decrease-v2:hover,
+.quantity-increase-v2:hover {
     background: var(--main-color4);
     color: #FFF;
 }
 
-.quantity-display {
+.quantity-display,
+.quantity-display-v2 {
     text-align: center;
     font-weight: 500;
     font-size: 20px;
@@ -27111,24 +27119,6 @@ button:focus {
     padding: 10px 20px;
 }
 
-/*
-font-family: 'Quicksand', sans-serif;
-font-family: 'Pacifico', cursive;
-font-family: "Teko", sans-serif;
-
-    transition: 0.3s;
-    -moz-transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-
-    transition: 0.4s;
-    -moz-transition: 0.4s;
-    -webkit-transition: 0.4s;
-    -ms-transition: 0.4s;
-    -o-transition: 0.4s;
-*/
-
 /*** Start of Header Style Eight ***/
 /* Top */
 .h8__header__top {
@@ -27670,7 +27660,9 @@ font-family: "Teko", sans-serif;
 }
 
 .homepage__eight .quantity-decrease,
-.homepage__eight .quantity-increase {
+.homepage__eight .quantity-increase,
+.homepage__eight .quantity-decrease-v2,
+.homepage__eight .quantity-increase-v2 {
 	font-size: 20px;
 	line-height: 17px;
 	height: 20px;
@@ -27678,12 +27670,15 @@ font-family: "Teko", sans-serif;
 }
 
 .homepage__eight .quantity-decrease:hover,
-.homepage__eight .quantity-increase:hover {
+.homepage__eight .quantity-increase:hover,
+.homepage__eight .quantity-decrease-v2:hover,
+.homepage__eight .quantity-increase-v2:hover {
     background: var(--main-color6);
     color: #FFF;
 }
 
-.homepage__eight .quantity-display {
+.homepage__eight .quantity-display,
+.homepage__eight .quantity-display-v2 {
 	font-size: 14px;
 	line-height: 20px;
 }
@@ -31309,6 +31304,447 @@ font-family: "Teko", sans-serif;
     font-family: 'Quicksand', sans-serif;
     margin: 0;
 }
+
+/* ====================================================================
+36. Cart (Variant 2)
+==================================================================== */
+.cart__page__v2 .csp__progression {
+    width: 100%;
+    position: relative;
+    height: 10px;
+    background: var(--main-color6);
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+
+.cart__page__v2 .csp__progression .filler {
+    position: absolute;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background: var(--secondary-color6);
+    border-radius: 50px;
+}
+
+.cart__page__v2 .csp__progression .filler::after {
+    content: '';
+    background-image: linear-gradient(135deg, #FFF3 0 25%, #FFF0 25% 50%, #FFF3 50% 75%, #FFF0 75% 100%);
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-size: 10px 10px;
+    -webkit-animation: cspProgress 6s linear infinite;
+    animation: cspProgress 6s linear infinite;
+}
+
+@-webkit-keyframes cspProgress {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 50% 50%;
+    }
+}
+
+@keyframes cspProgress {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 50% 50%;
+    }
+}
+
+.cart__page__v2 .csp__progression .free__shipping__icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: var(--main-color6);
+    color: #FFF;
+    display: grid;
+    place-items: center;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    z-index: 9;
+}
+
+.cart__page__v2 .cart__wrapper h2 {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 400;
+    font-family: "Teko", sans-serif;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.cart__page__v2 .cart__wrapper .csp__promo__text {
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.cart__page__v2 .cart__wrapper table {
+    width: 100%;
+}
+
+.cart__page__v2 .cart__wrapper tr {
+    border-bottom: 1px solid #5A5858;
+}
+
+.cart__page__v2 .cart__wrapper th,
+.cart__page__v2 .cart__wrapper td {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.cart__page__v2 .cart__wrapper th:first-child,
+.cart__page__v2 .cart__wrapper td:first-child {
+    text-align: left;
+}
+
+.cart__page__v2 .cart__wrapper th:last-child,
+.cart__page__v2 .cart__wrapper td:last-child {
+    text-align: right;
+}
+
+.cart__page__v2 .cart__wrapper th {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.cart__page__v2 .cart__wrapper td img {
+    height: 120px;
+    width: 120px;
+}
+
+@media (max-width: 767px) {
+    .cart__page__v2 .left__side .cart__wrapper table .heading {
+        display: none;
+    }
+    .cart__page__v2 .left__side .cart__wrapper table tr {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+        margin-bottom: 20px;
+        padding: 5px 10px !important;
+    }
+    .cart__page__v2 .left__side .cart__wrapper table td {
+        position: relative;
+        width: 100%;
+        text-align: right;
+    }
+    .cart__page__v2 .left__side .cart__wrapper table td::before {
+        content: attr(data-title) '';
+        position: absolute;
+        left: 0;
+        color: #5A5858;
+    }
+    .cart__page__v2 .left__side .cart__wrapper table td .quantity-widget {
+        justify-content: flex-end;
+    }
+}
+
+.cart__page__v2 .cart__wrapper .cpv2__close__btn {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.cart__page__v2 .cart__wrapper .cpv2__close__btn:hover {
+    color: var(--secondary-color6);
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.cart__page__v2 .cart__wrapper .cart__ctas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.cart__page__v2 .cart__wrapper .cart__ctas form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.cart__page__v2 .cart__wrapper .cart__ctas input {
+    height: 50px;
+    width: 280px;
+    padding: 0 15px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Quicksand', sans-serif;
+    border-radius: 5px;
+    border: 1px solid #CCC;
+}
+
+.cart__page__v2 .cart__wrapper .cart__ctas button {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 50px;
+    height: 50px;
+    padding: 0 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    text-transform: capitalize;
+    overflow: hidden;
+}
+
+.cart__page__v2 .cart__wrapper .cart__ctas button:hover {
+    background: var(--secondary-color6);
+    color: #FFF;
+}
+
+.cart__page__v2 .cart__wrapper .cart__ctas .cart__page__v2__update i {
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.cart__page__v2 .right__side .cart__wrapper form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.cart__page__v2 .cart__wrapper form .rate {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.cart__page__v2 .cart__wrapper form .rate  label,
+.cart__page__v2 .cart__wrapper .tcapplication label {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.cart__page__v2 .cart__wrapper form .rate input[type="radio"] {
+    margin-top: -5px;
+    margin-right: 0;
+}
+
+.cart__page__v2 .right__side .cart__wrapper .calculate__shipping {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.cart__page__v2 .right__side .cart__wrapper .calculate__shipping p {
+    font-size: 10px;
+    line-height: 14px;
+    margin-bottom: 0;
+    color: #A4A4A4;
+}
+
+.cart__page__v2 .right__side .cart__wrapper .calculate__shipping .calculate__shipping__btn {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #191C1F;
+    padding-bottom: 5px;
+    text-decoration: underline;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    cursor: pointer;
+}
+
+.cart__page__v2 .right__side .cart__wrapper .calculate__shipping .calculate__shipping__btn:hover {
+    color: var(--secondary-color6);
+}
+
+.cart__page__v2 .right__side .cart__wrapper .h8__button-a {
+    width: 100%;
+    text-align: center;
+}
+
+.cart__page__v2 .right__side .cart__wrapper {
+    position: sticky;
+    top: 0;
+    right: 0;
+}
+
+@media (max-width: 767px) {
+    .cart__page__v2 .right__side .cart__wrapper {
+        margin-top: 20px;
+    }
+    .cart__page__v2 .cart__wrapper h2 {
+        margin-bottom: 10px;
+    }
+}
+
+.cart__page__v2 .right__side .cart__wrapper .tcapplication {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+    margin-top: 20px;
+}
+
+.cart__page__v2 .right__side .cart__wrapper .tcapplication input[type="checkbox"] {
+    margin-top: -4px;
+}
+
+.cart__page__v2 .cart__wrapper .shopping.h8__button-a::after {
+    background: var(--main-color6);
+}
+
+.cart__page__v2 .cart__wrapper .shopping.h8__button-a::before {
+	background: var(--secondary-color6);
+}
+
+/** Start of Calculate Shipping Popup **/
+.calculate__shipping__popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s;
+    -moz-transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.calculate__shipping__popup.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.calculate__shipping__popup .csp__wrapper {
+    width: 500px;
+    height: auto;
+    background: #FFF;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.calculate__shipping__popup .csp__wrapper .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.calculate__shipping__popup .csp__wrapper h3 {
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 400;
+    font-family: "Teko", sans-serif;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.calculate__shipping__popup .csp__wrapper .csp__close__btn {
+    display: block;
+    height: 34px;
+    width: 34px;
+    line-height: 34px;
+    font-size: 18px;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    border-radius: 5px;
+}
+
+.calculate__shipping__popup .csp__wrapper form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.calculate__shipping__popup .csp__wrapper .nice-select {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+}
+
+.calculate__shipping__popup .csp__wrapper .nice-select .list {
+    width: 100%;
+}
+
+.calculate__shipping__popup .csp__wrapper form button {
+    height: 50px;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    text-transform: capitalize;
+}
+
+.calculate__shipping__popup .csp__wrapper form button:hover,
+.calculate__shipping__popup .csp__wrapper .csp__close__btn:hover {
+    color: #FFF;
+    background: var(--secondary-color6);
+}
+
+.calculate__shipping__popup .csp__wrapper .name p {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.calculate__shipping__popup .csp__wrapper .name p span {
+    margin-left: 5px;
+}
+/** End of Calculate Shipping Popup **/
+
+/** Start of People Also Buy **/
+.people__also__buy {
+    margin-top: 100px;
+}
+/** End of People Also Buy **/
 
 /*
 font-family: 'Quicksand', sans-serif;
