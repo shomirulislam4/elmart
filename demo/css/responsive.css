@@ -7987,6 +7987,112 @@
             font-size: 12px;
             line-height: 20px;
         }
+    /*===== Checkout (Variant 2) =====*/
+        .checkout__v2__section .shipping__details,
+        .checkout__v2__section .order__summary {
+            gap: 20px;
+        }
+        .checkout__v2__section .shipping__details .accordion-button {
+            font-size: 20px;
+            line-height: 20px;
+            padding: 10px;
+        }
+        .checkout__v2__section .accordion-body {
+            padding: 10px 5px;
+        }
+        .checkout__v2__section .order__summary .cart__summary {
+            height: 400px;
+        }
+        .checkout__v2__section .shipping__details h2,
+        .checkout__v2__section .order__summary h2 {
+            font-size: 24px;
+            line-height: 24px;
+        }
+        .checkout__v2__section .accordion-body .shipping__rate h4,
+        .checkout__v2__section .accordion-body .gift__options h4 {
+            font-size: 20px;
+            line-height: 24px;
+            margin: 0;
+        }
+        .checkout__v2__section .accordion-body .form__row,
+        .checkout__v2__section .accordion-body .form__row__third,
+        .checkout__v2__section .accordion-body form {
+            flex-direction: column;
+            gap: 10px;
+        }
+        .checkout__v2__section .accordion-body .form__row input,
+        .checkout__v2__section .accordion-body .form__row__third input,
+        .checkout__v2__section .accordion-body .form__row__third .nice-select {
+            width: 100%;
+        }
+        .checkout__v2__section .accordion-body .shipping__rate p,
+        .checkout__v2__section .accordion-body .gift__options p,
+        .checkout__v2__section .accordion-body .gift__options label {
+            font-size: 12px;
+            line-height: 16px;
+            margin-bottom: 5px;
+        }
+        .checkout__v2__section .accordion-body .gift__options label {
+            margin-bottom: 0;
+        }
+        .checkout__v2__section .accordion-body input[type="checkbox"] {
+            margin-right: 3px;
+        }
+        .checkout__v2__section .accordion-body input,
+        .checkout__v2__section .accordion-body .form__row__third .nice-select,
+        .order__summary .checkout__buttons form input {
+            height: 40px;
+            font-size: 12px;
+        }
+        .checkout__v2__section .accordion-body textarea {
+            font-size: 12px;
+        }
+        .checkout__v2__section .accordion-body .form__row__third .nice-select {
+            line-height: 40px;
+        }
+        .checkout__v2__section .accordion-body .form__row__pay label {
+            font-size: 12px;
+        }
+        .order__summary .checkout__buttons .checkoutv2__applypromo {
+            margin-bottom: 10px;
+        }
+        .order__summary .checkout__buttons .checkoutv2__promoinput.show {
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        .order__summary .cart__summary .cart__sum__items .products {
+            flex-direction: column;
+        }
+        .order__summary .cart__summary .cart__sum__items .products .image {
+            height: 70px;
+            width: 70px;
+        }
+        .order__summary .cart__summary .cart__sum__items .products .content {
+            width: 100%;
+        }
+        .order__summary .cart__summary .cart__sum__items .products .content .ptitle {
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        .order__summary .cart__summary .cart__sum__items .products .content h4,
+        .order__summary .cart__summary .cart__sum__items .products .content .price {
+            font-size: 18px;
+            line-height: 20px;
+            width: 80%;
+        }
+        .order__summary .cart__summary .cart__sum__items .products .content .price {
+            width: 20%;
+        }
+        .order__summary .cart__summary .cart__sum__items .products .content p {
+            font-size: 14px;
+            margin-bottom: 0;
+            text-align: center;
+        }
+        .order__summary .subtotal__area td {
+            font-size: 12px;
+            line-height: 12px;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
@@ -14796,6 +14902,93 @@
             font-size: 14px;
             line-height: 20px;
         }
+    /*===== Checkout (Variant 2) =====*/
+        .checkout__v2__section .shipping__details,
+        .checkout__v2__section .order__summary {
+            gap: 20px;
+        }
+        .checkout__v2__section .shipping__details .accordion-button {
+            font-size: 24px;
+            line-height: 24px;
+            padding: 12px;
+        }
+        .checkout__v2__section .accordion-body {
+            padding: 10px;
+        }
+        .checkout__v2__section .order__summary .cart__summary {
+            height: 235px;
+        }
+        .checkout__v2__section .shipping__details h2,
+        .checkout__v2__section .order__summary h2 {
+            font-size: 30px;
+            line-height: 30px;
+        }
+        .checkout__v2__section .accordion-body .shipping__rate h4,
+        .checkout__v2__section .accordion-body .gift__options h4 {
+            font-size: 26px;
+            line-height: 30px;
+            margin: 0;
+        }
+        .checkout__v2__section .accordion-body .form__row,
+        .checkout__v2__section .accordion-body .form__row__third,
+        .checkout__v2__section .accordion-body form {
+            flex-direction: column;
+            gap: 10px;
+        }
+        .checkout__v2__section .accordion-body .form__row input,
+        .checkout__v2__section .accordion-body .form__row__third input,
+        .checkout__v2__section .accordion-body .form__row__third .nice-select {
+            width: 100%;
+        }
+        .checkout__v2__section .accordion-body .shipping__rate p,
+        .checkout__v2__section .accordion-body .gift__options p,
+        .checkout__v2__section .accordion-body .gift__options label {
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 5px;
+        }
+        .checkout__v2__section .accordion-body input,
+        .checkout__v2__section .accordion-body .form__row__third .nice-select,
+        .order__summary .checkout__buttons form input {
+            height: 50px;
+            font-size: 14px;
+        }
+        .checkout__v2__section .accordion-body textarea {
+            font-size: 14px;
+        }
+        .checkout__v2__section .accordion-body .form__row__third .nice-select {
+            line-height: 50px;
+        }
+        .order__summary .checkout__buttons .checkoutv2__applypromo {
+            margin-bottom: 10px;
+        }
+        .order__summary .checkout__buttons .checkoutv2__promoinput.show {
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        .order__summary .cart__summary .cart__sum__items {
+            gap: 10px;
+        }
+        .order__summary .cart__summary .cart__sum__items .products .image {
+            height: 70px;
+            width: 70px;
+        }
+        .order__summary .cart__summary .cart__sum__items .products .content {
+            width: 186px;
+        }
+        .order__summary .cart__summary .cart__sum__items .products .content h4,
+        .order__summary .cart__summary .cart__sum__items .products .content .price {
+            font-size: 18px;
+            line-height: 20px;
+            width: 80%;
+        }
+        .order__summary .cart__summary .cart__sum__items .products .content .price {
+            width: 20%;
+        }
+        .order__summary .cart__summary .cart__sum__items .products .content p {
+            font-size: 14px;
+            margin-bottom: 0;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -20368,6 +20561,79 @@
             font-size: 14px;
             line-height: 20px;
         }
+    /*===== Checkout (Variant 2) =====*/
+        .checkout__v2__section .shipping__details,
+        .checkout__v2__section .order__summary {
+            gap: 20px;
+        }
+        .checkout__v2__section .shipping__details .accordion-button {
+            font-size: 24px;
+            line-height: 24px;
+            padding: 12px;
+        }
+        .checkout__v2__section .accordion-body {
+            padding: 10px;
+        }
+        .checkout__v2__section .shipping__details h2,
+        .checkout__v2__section .order__summary h2 {
+            font-size: 30px;
+            line-height: 30px;
+        }
+        .checkout__v2__section .accordion-body .shipping__rate h4,
+        .checkout__v2__section .accordion-body .gift__options h4 {
+            font-size: 26px;
+            line-height: 30px;
+            margin: 0;
+        }
+        .checkout__v2__section .accordion-body .form__row,
+        .checkout__v2__section .accordion-body form {
+            flex-direction: column;
+            gap: 10px;
+        }
+        .checkout__v2__section .accordion-body .form__row input {
+            width: 100%;
+        }
+        .checkout__v2__section .accordion-body .shipping__rate p,
+        .checkout__v2__section .accordion-body .gift__options p,
+        .checkout__v2__section .accordion-body .gift__options label {
+            font-size: 14px;
+            line-height: 22px;
+            margin-bottom: 5px;
+        }
+        .checkout__v2__section .accordion-body input,
+        .checkout__v2__section .accordion-body .form__row__third .nice-select,
+        .order__summary .checkout__buttons form input {
+            height: 50px;
+            font-size: 14px;
+        }
+        .checkout__v2__section .accordion-body textarea {
+            font-size: 14px;
+        }
+        .checkout__v2__section .accordion-body .form__row__third .nice-select {
+            line-height: 50px;
+        }
+        .order__summary .checkout__buttons .checkoutv2__applypromo {
+            margin-bottom: 10px;
+        }
+        .order__summary .checkout__buttons .checkoutv2__promoinput.show {
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        .order__summary .cart__summary .cart__sum__items {
+            gap: 10px;
+        }
+        .order__summary .cart__summary .cart__sum__items .products .content {
+            width: 291px;
+        }
+        .order__summary .cart__summary .cart__sum__items .products .content h4,
+        .order__summary .cart__summary .cart__sum__items .products .content .price {
+            font-size: 24px;
+            line-height: 26px;
+            width: 80%;
+        }
+        .order__summary .cart__summary .cart__sum__items .products .content .price {
+            width: 20%;
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -24798,6 +25064,52 @@
             padding: 0 10px;
             font-size: 16px;
         }
+    /*===== Checkout (Variant 2) =====*/
+        .checkout__v2__section .accordion-body {
+            padding: 10px;
+        }
+        .checkout__v2__section .shipping__details h2,
+        .checkout__v2__section .order__summary h2 {
+            font-size: 30px;
+            line-height: 30px;
+        }
+        .checkout__v2__section .accordion-body .form__row,
+        .checkout__v2__section .accordion-body form {
+            flex-direction: column;
+            gap: 10px;
+        }
+        .checkout__v2__section .accordion-body .form__row input {
+            width: 100%;
+        }
+        .checkout__v2__section .accordion-body .shipping__rate p,
+        .checkout__v2__section .accordion-body .gift__options p,
+        .checkout__v2__section .accordion-body .gift__options label {
+            font-size: 14px;
+            line-height: 22px;
+            margin-bottom: 5px;
+        }
+        .checkout__v2__section .accordion-body input,
+        .checkout__v2__section .accordion-body .form__row__third .nice-select,
+        .order__summary .checkout__buttons form input {
+            height: 50px;
+            font-size: 14px;
+        }
+        .checkout__v2__section .accordion-body textarea {
+            font-size: 14px;
+        }
+        .checkout__v2__section .accordion-body .form__row__third .nice-select {
+            line-height: 50px;
+        }
+        .order__summary .checkout__buttons .checkoutv2__applypromo {
+            margin-bottom: 10px;
+        }
+        .order__summary .checkout__buttons .checkoutv2__promoinput.show {
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        .order__summary .cart__summary .cart__sum__items .products .content {
+            width: 416px;
+        }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -28821,6 +29133,21 @@
             font-size: 14px;
             line-height: 20px;
         }
+    /*===== Checkout (Variant 2) =====*/
+        .order__summary .cart__summary .cart__sum__items .products .content {
+            width: 596px;
+        }
+        .order__summary .cart__summary .cart__sum__items .products .content h4,
+        .order__summary .cart__summary .cart__sum__items .products .content .price {
+            font-size: 28px;
+            line-height: 28px;
+        }
+        .order__summary .cart__summary .cart__sum__items .products .content h4 {
+            width: 80%;
+        }
+        .order__summary .cart__summary .cart__sum__items .products .content .price {
+            width: 20%;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -32261,6 +32588,38 @@
             font-size: 16px;
             line-height: 22px;
         }
+    /*===== Checkout (Variant 2) =====*/
+        .checkout__v2__section .shipping__details h2,
+        .checkout__v2__section .order__summary h2 {
+            font-size: 30px;
+            line-height: 30px;
+        }
+        .order__summary .cart__summary .cart__sum__items .products {
+            gap: 5px;
+        }
+        .order__summary .cart__summary .cart__sum__items .products .image {
+            height: 50px;
+            width: 50px;
+        }
+        .order__summary .cart__summary .cart__sum__items .products .content {
+            width: 181px;
+        }
+        .order__summary .cart__summary .cart__sum__items .products .content h4,
+        .order__summary .cart__summary .cart__sum__items .products .content .price {
+            font-size: 18px;
+            line-height: 22px;
+        }
+        .order__summary .cart__summary .cart__sum__items .products .content p {
+            margin: 0;
+        }
+        .order__summary .cart__summary .cart__sum__items .products .content p,
+        .order__summary .cart__summary .cart__sum__items .products .content p span {
+            font-size: 14px;
+            line-height: 16px;
+        }
+        .order__summary .checkout__buttons .h8__button-a {
+            padding: 10px !important;
+        }
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -34184,6 +34543,22 @@
             font-size: 14px;
             line-height: 20px;
         }
+    /*===== Checkout (Variant 2) =====*/
+        .order__summary .cart__summary .cart__sum__items .products .image {
+            height: 70px;
+            width: 70px;
+        }
+        .order__summary .cart__summary .cart__sum__items .products .content {
+            width: 181px;
+        }
+        .order__summary .cart__summary .cart__sum__items .products .content h4,
+        .order__summary .cart__summary .cart__sum__items .products .content .price {
+            font-size: 18px;
+            line-height: 22px;
+        }
+        .order__summary .cart__summary .cart__sum__items .products .content p {
+            margin: 0;
+        }
 }
 
 /*larger desktops, 1400px and up*/
@@ -34507,6 +34882,10 @@
     /*===== Shop Details Page (Style 7) =====*/
         .shop__details__seven__section .sds7__product__image__slider2 {
             height: 493px;
+        }
+    /*===== Checkout (Variant 2) =====*/
+        .order__summary .cart__summary .cart__sum__items .products .content {
+            width: 226px;
         }
 }
 
