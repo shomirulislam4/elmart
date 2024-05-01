@@ -768,6 +768,191 @@
     </section>
     <!-- End of Breadcrumbs Section (Variant 4) -->
 
+    <!-- Start of Checkout Section -->
+    <section class="checkout__v2__section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="shipping__details">
+                        <h2>Shipping details</h2>
+                        <div class="accordion" id="checkout__v2__accordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="COV2ShippingAddressH2">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#COV2ShippingAddressCont" aria-expanded="true" aria-controls="COV2ShippingAddressCont">
+                                    Delivery Address
+                                    </button>
+                                </h2>
+
+                                <div id="COV2ShippingAddressCont" class="accordion-collapse collapse show" aria-labelledby="COV2ShippingAddressH2" data-bs-parent="#checkout__v2__accordion">
+                                    <div class="accordion-body">
+                                        <form action="#">
+                                            <div class="form__row">
+                                                <input type="text" name="COV2ShippingDetailsForm" id="COV2ShippingDetailsFName" placeholder="First Name *" required>
+                                                <input type="text" name="COV2ShippingDetailsForm" id="COV2ShippingDetailsLName" placeholder="Last Name *" required>
+                                            </div>
+                                            <input type="text" name="COV2ShippingDetailsForm" id="COV2ShippingDetailsSAdd" placeholder="Street Address *" required>
+                                            <input type="text" name="COV2ShippingDetailsForm" id="COV2ShippingDetailsApt" placeholder="Apt/ Suite/ Unit (optional)">
+                                            <div class="form__row__third">
+                                                <input type="text" name="COV2ShippingDetailsForm" id="COV2ShippingDetailsCity" placeholder="City *" required>
+                                                <select name="COV2ShippingDetailsForm" id="COV2ShippingDetailsState" required>
+                                                    <option value="0">Select State</option>
+                                                    <option value="1">Province 1</option>
+                                                    <option value="2">Province 2</option>
+                                                    <option value="3">Province 3</option>
+                                                    <option value="4">Province 4</option>
+                                                    <option value="5">Province 5</option>
+                                                    <option value="6">Province 6</option>
+                                                    <option value="7">Province 7</option>
+                                                </select>
+                                                <input type="text" name="COV2ShippingDetailsForm" id="COV2ShippingDetailsZip" placeholder="Post Code *" required>
+                                            </div>
+                                            <div class="shipping__rate">
+                                                <h4>shipping rates</h4>
+                                                <p>Enter a shipping address to see the shipping rate for your order.</p>
+                                            </div>
+                                            <div class="gift__options">
+                                                <h4>gift options</h4>
+                                                <p>We'll hide the prices and print your personal note, if you have any. Make sure you write your message in the "additional note" form.</p>
+                                                <input type="checkbox" name="COV2ShippingDetailsForm" id="COV2ShippingDetailsGift" required>
+                                                <label for="COV2ShippingDetailsGift">This is a gift</label>
+                                            </div>
+                                            <textarea name="COV2ShippingDetailsForm" id="COV2ShippingDetailsNote" cols="30" rows="10" placeholder="Additional Note"></textarea>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="COV2ShippingContactH2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#COV2ShippingContactCont" aria-expanded="false" aria-controls="COV2ShippingContactCont">
+                                    Contact Information
+                                    </button>
+                                </h2>
+                                
+                                <div id="COV2ShippingContactCont" class="accordion-collapse collapse" aria-labelledby="COV2ShippingContactH2" data-bs-parent="#checkout__v2__accordion">
+                                    <div class="accordion-body">
+                                        <form action="#">
+                                            <input type="email" name="COV2ShippingContact" id="COV2ShippingContactEmail" placeholder="Email *" required>
+                                            <input type="tel" name="COV2ShippingContact" id="COV2ShippingContactNum" placeholder="Phone Number *" required>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="COV2ShippingPaymentH2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#COV2ShippingPaymentCont" aria-expanded="false" aria-controls="COV2ShippingPaymentCont">
+                                    Payment Options
+                                    </button>
+                                </h2>
+
+                                <div id="COV2ShippingPaymentCont" class="accordion-collapse collapse" aria-labelledby="COV2ShippingPaymentH2" data-bs-parent="#checkout__v2__accordion">
+                                    <div class="accordion-body">
+                                        <form action="#">
+                                            <div class="form__row__pay">
+                                                <input type="radio" name="COV2ShippingPay" id="COV2ShippingPayCC">
+                                                <label for="COV2ShippingPayCC">Credit/ Debit Card</label>
+                                            </div>
+                                            <div class="form__row__pay">
+                                                <input type="radio" name="COV2ShippingPay" id="COV2ShippingPayCOD">
+                                                <label for="COV2ShippingPayCOD">Cash on Delivery</label>
+                                            </div>
+                                            <div class="form__row__pay">
+                                                <input type="radio" name="COV2ShippingPay" id="COV2ShippingPayPP">
+                                                <label for="COV2ShippingPayPP">PayPal</label>
+                                            </div>
+                                            <div class="form__row__pay">
+                                                <input type="radio" name="COV2ShippingPay" id="COV2ShippingPaySK">
+                                                <label for="COV2ShippingPaySK">Skrill</label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="order__summary">
+                        <h2>order summary</h2>
+                        <div class="cart__summary">
+                            <div class="title">
+                                <h3>Your cart</h3>
+                                <h3>(2)</h3>
+                            </div>
+                            <div class="cart__sum__items">
+                                <div class="products">
+                                    <div class="image">
+                                        <img src="image/mega-menu/megamenu-products/raw-mango.jpg" alt="product image">
+                                    </div>
+                                    <div class="content">
+                                        <div class="ptitle">
+                                            <h4>Raw mango freshly picked today</h4>
+                                            <span class="price">$10.23</span>
+                                        </div>
+                                        <p>Qty:<span class="checkout__prod__qty">1</span></p>
+                                    </div>
+                                </div>
+                                <div class="products">
+                                    <div class="image">
+                                        <img src="image/mega-menu/megamenu-products/ripe-mango.jpg" alt="product image">
+                                    </div>
+                                    <div class="content">
+                                        <div class="ptitle">
+                                            <h4>ripe mango 100% organic preserved</h4>
+                                            <span class="price">$10.23</span>
+                                        </div>
+                                        <p>Qty:<span class="checkout__prod__qty">1</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="edit__cart__btn" href="cart-v2.html">edit cart</a>
+                        </div>
+                        <div class="subtotal__area">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>subtotal</td>
+                                        <td>$20.46</td>
+                                    </tr>
+                                    <tr>
+                                        <td>tax</td>
+                                        <td>$2.5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>shipping</td>
+                                        <td>$10</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2"><div class="divider__horizontal"></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>total</td>
+                                        <td>$32.96</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="checkout__buttons">
+                            <button class="checkoutv2__applypromo h8__button-a">apply a promo code</button>
+
+                            <div class="checkoutv2__promoinput">
+                                <button class="checkoutv2__promo__close h8__button-a"><i class="fa-solid fa-xmark"></i></button>
+                                <form action="#">
+                                    <input type="text" name="COV2OrderSummaryPromo" id="COV2OrderSummaryPromo" placeholder="Enter Promo Code">
+                                    <button type="submit">Apply</button>
+                                </form>
+                            </div>
+
+                            <button class="checkoutv2__placeorder h8__button-a">place order now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Start of Checkout Section -->
+
     <!-- Start of Login Register Popup -->
     <div class="login__register__popup">
         <div class="login__register__container">

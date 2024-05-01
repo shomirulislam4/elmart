@@ -1574,12 +1574,12 @@ $(function() {
 });
 
 /*============================ Cart Page ============================*/
-if ( $('.shipping-select').length ) {
+if($('.shipping-select').length){
   $('.shipping-select select').niceSelect();
 }
 
 /*============================ Checkout Page ============================*/
-if ( $('.checkout-section').length ) {
+if($('.checkout-section').length){
   $('.checkout-country').niceSelect();
   $('.checkout-city').niceSelect();
 }
@@ -1595,6 +1595,10 @@ $(function() {
     }
   });
 });
+
+if($('.checkout__v2__section').length){
+  $('#COV2ShippingDetailsState').niceSelect();
+}
 
 /*============================ Login & Register Page ============================*/
 //Login & Registration Toggle

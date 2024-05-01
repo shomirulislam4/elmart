@@ -122,6 +122,7 @@
     1. Breadcrumbs Section (Variant 4)
 35. Shop Details Page (Style 7)
 36. Cart (Variant 2)
+37. Checkout (Variant 2)
 **********************************************/
 
 /* ====================================================================
@@ -31740,11 +31741,362 @@ button:focus {
 }
 /** End of Calculate Shipping Popup **/
 
-/** Start of People Also Buy **/
+/* People Also Buy */
 .people__also__buy {
     margin-top: 100px;
 }
-/** End of People Also Buy **/
+
+/* ====================================================================
+37. Checkout (Variant 2)
+==================================================================== */
+.checkout__v2__section .shipping__details {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.checkout__v2__section .shipping__details h2,
+.checkout__v2__section .order__summary h2 {
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 400;
+    font-family: 'Pacifico', cursive;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.checkout__v2__section .shipping__details .accordion-button {
+    color: #191C1F;
+    font-size: 26px;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: "Teko", sans-serif;
+}
+
+.checkout__v2__section .shipping__details .accordion-button:not(.collapsed) {
+    color: #FFF;
+    background: var(--main-color6);
+}
+
+.checkout__v2__section .accordion-body form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.checkout__v2__section .accordion-body .form__row,
+.checkout__v2__section .accordion-body .form__row__third {
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkout__v2__section .accordion-body input,
+.checkout__v2__section .accordion-body .form__row__third .nice-select,
+.checkout__v2__section .accordion-body textarea,
+.order__summary .checkout__buttons form input {
+    width: 100%;
+    height: 60px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Quicksand', sans-serif;
+    padding: 0 10px;
+}
+
+.checkout__v2__section .accordion-body textarea {
+    height: 100px;
+    resize: none;
+    padding: 5px 10px;
+}
+
+.checkout__v2__section .accordion-body .form__row input {
+    width: 49%;
+}
+
+.checkout__v2__section .accordion-body .form__row__third input,
+.checkout__v2__section .accordion-body .form__row__third .nice-select {
+    line-height: 60px;
+    width: 32%;
+}
+
+.checkout__v2__section .accordion-body .form__row__third .nice-select .list {
+    width: 100%;
+}
+
+.checkout__v2__section .accordion-body input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #FFF;
+    margin: 0;
+    color: #5A5858;
+    width: 14px;
+    height: 14px;
+    border: 1px solid var(--secondary-color6);
+    margin-right: 6px;
+    transform: translateY(2px);
+    padding: 6px;
+    position: relative;
+    border-radius: 3px;
+}
+
+.checkout__v2__section .accordion-body input[type="checkbox"]::before {
+	content: "\f00c";
+	font-family: 'Fontawesome';
+    font-size: 11px;
+	color: #FFF;
+	text-align: center;
+	position: absolute;
+	top: -2px;
+	left: 1px;
+    width: 8px;
+	height: 8px;
+	transition: 0.1s;
+}
+
+.checkout__v2__section .accordion-body input[type="checkbox"]:checked {
+    color: #FFF;
+    background: var(--secondary-color6);
+}
+
+.checkout__v2__section .accordion-body input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #FFF;
+    margin: 0;
+    color: #5A5858;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #5A5858;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    margin-right: 5px;
+    transform: translateY(4px);
+    padding: 6px;
+}
+
+.checkout__v2__section .accordion-body input[type="radio"]::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 0.1s;
+    -moz-transition: 0.1s;
+    -webkit-transition: 0.1s;
+    -ms-transition: 0.1s;
+    -o-transition: 0.1s;
+    background-color: var(--main-color6);
+    text-align: center;
+}
+
+.checkout__v2__section .accordion-body input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+
+.checkout__v2__section .accordion-body input[type="radio"]:checked {
+    transform: scale(1);
+    border: 1px solid var(--main-color6);
+    transform: translateY(4px);
+}
+
+.checkout__v2__section .accordion-body .shipping__rate h4,
+.checkout__v2__section .accordion-body .gift__options h4 {
+    font-size: 30px;
+    line-height: 34px;
+    font-weight: 400;
+    font-family: "Teko", sans-serif;
+    text-transform: capitalize;
+}
+
+.checkout__v2__section .accordion-body .shipping__rate p,
+.checkout__v2__section .accordion-body .gift__options p,
+.checkout__v2__section .accordion-body .gift__options label {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.checkout__v2__section .accordion-body .form__row__pay {
+    display: flex;
+}
+
+/** Order Summary **/
+.order__summary {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.order__summary .cart__summary {
+	height: 290px;
+	overflow-y: auto;
+}
+
+.order__summary .cart__summary .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.order__summary .cart__summary .title h3 {
+    font-size: 30px;
+    line-height: 34px;
+    font-weight: 400;
+    font-family: "Teko", sans-serif;
+    margin: 0;
+}
+
+.order__summary .cart__summary .cart__sum__items,
+.order__summary .checkout__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.order__summary .cart__summary .cart__sum__items .products {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.order__summary .cart__summary .cart__sum__items .products .image {
+    height: 90px;
+    width: 90px;
+}
+
+.order__summary .cart__summary .cart__sum__items .products .image img {
+    height: 100%;
+    width: 100%;
+}
+
+.order__summary .cart__summary .cart__sum__items .products .content {
+    width: 236px;
+}
+
+.order__summary .cart__summary .cart__sum__items .products .content .ptitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+
+.order__summary .cart__summary .cart__sum__items .products .content h4,
+.order__summary .cart__summary .cart__sum__items .products .content .price {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: "Teko", sans-serif;
+    margin: 0;
+    text-transform: capitalize;
+    width: 75%;
+}
+
+.order__summary .cart__summary .cart__sum__items .products .content .price {
+    color: #777;
+    width: 20%;
+    text-align: right;
+}
+
+.order__summary .cart__summary .cart__sum__items .products .content p,
+.order__summary .cart__summary .cart__sum__items .products .content p span,
+.order__summary .cart__summary .edit__cart__btn {
+    color: #777;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.order__summary .cart__summary .cart__sum__items .products .content p span {
+    margin-left: 5px;
+}
+
+.order__summary .cart__summary .edit__cart__btn {
+    display: block;
+    text-transform: capitalize;
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+.order__summary .cart__summary .edit__cart__btn:hover {
+    color: var(--secondary-color6);
+}
+
+.order__summary .subtotal__area table {
+    width: 100%;
+}
+
+.order__summary .subtotal__area td {
+    width: 50%;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: capitalize;
+    padding: 5px 10px;
+}
+
+.order__summary .subtotal__area td:first-child {
+    padding-left: 0;
+}
+
+.order__summary .subtotal__area td:last-child {
+    text-align: right;
+    padding-right: 0;
+}
+
+.order__summary .checkout__buttons .checkoutv2__promoinput {
+    width: 336px;
+    text-align: right;
+    height: 0;
+    overflow: hidden;
+}
+
+.order__summary .checkout__buttons .checkoutv2__promoinput.show {
+    height: auto;
+}
+
+.order__summary .checkout__buttons form {
+    height: 60px;
+    width: 100%;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.order__summary .checkout__buttons form input {
+    width: 100%;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+}
+
+.order__summary .checkout__buttons form button {
+    font-size: 18px;
+    line-height: 60px;
+    font-weight: 500;
+    font-family: 'Quicksand', sans-serif;
+    padding: 0 10px;
+    text-transform: capitalize;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.order__summary .checkout__buttons form button:hover {
+    color: #FFF;
+    background: var(--secondary-color6);
+}
 
 /*
 font-family: 'Quicksand', sans-serif;
