@@ -32048,17 +32048,27 @@ button:focus {
     padding-right: 0;
 }
 
-.order__summary .checkout__buttons
+.order__summary .checkout__buttons {
+    display: flex;
+    flex-direction: column;
+}
 
 .order__summary .checkout__buttons .checkoutv2__promoinput {
     width: 336px;
     text-align: right;
     height: 0;
     overflow: hidden;
+    margin-bottom: 0;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
 }
 
 .order__summary .checkout__buttons .checkoutv2__promoinput.show {
-    height: auto;
+    height: 115px;
+    margin-bottom: 20px;
 }
 
 .order__summary .checkout__buttons form {
@@ -32097,6 +32107,10 @@ button:focus {
 .order__summary .checkout__buttons form button:hover {
     color: #FFF;
     background: var(--secondary-color6);
+}
+
+.order__summary .checkout__buttons .checkoutv2__applypromo {
+    margin-bottom: 20px;
 }
 
 /*

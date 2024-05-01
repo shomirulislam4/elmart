@@ -1579,6 +1579,7 @@ if($('.shipping-select').length){
 }
 
 /*============================ Checkout Page ============================*/
+//Variant 1
 if($('.checkout-section').length){
   $('.checkout-country').niceSelect();
   $('.checkout-city').niceSelect();
@@ -1596,9 +1597,19 @@ $(function() {
   });
 });
 
+//Variant 2
 if($('.checkout__v2__section').length){
   $('#COV2ShippingDetailsState').niceSelect();
 }
+
+$(function() {
+  $('.checkoutv2__applypromo').on('click', function() {
+    $('.checkoutv2__promoinput').toggleClass('show');
+  });
+  $('.checkoutv2__promo__close').on('click', function() {
+    $('.checkoutv2__promoinput').removeClass('show');
+  });
+});
 
 /*============================ Login & Register Page ============================*/
 //Login & Registration Toggle
