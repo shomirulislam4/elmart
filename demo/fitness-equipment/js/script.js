@@ -1,3 +1,4 @@
+//Custom Cursor
 $(function(){
     $("body").prepend('<div class="cursor"></div>');
     $(document).mousemove(function(e) {
