@@ -778,12 +778,14 @@ button:focus {
     top: 110%;
 }
 
-.fes__header__bottom .main__nav li .fes__megamenu::before {
+.fes__header__bottom .main__nav li .fes__megamenu::before,
+.fes__header__bottom .main__nav .has__tiny__menu .fes__tinymenu::before {
     position: absolute;
     content: '';
     width: 100%;
     height: 20px;
     bottom: 100%;
+    left: 0;
 }
 
 .fes__header__bottom .main__nav li .fes__megamenu li {
@@ -826,11 +828,98 @@ button:focus {
 }
 
 /* Tiny Menu */
-
-/*** End of Header ***/
-.fes__tinymenu {
-    display: none;
+.fes__header__bottom .main__nav .has__tiny__menu {
+    position: relative;
 }
+
+.fes__header__bottom .main__nav .has__tiny__menu .fes__tinymenu {
+	position: absolute;
+	text-align: center;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+	z-index: 999999;
+	background: #FFF;
+	border-radius: 5px;
+	top: 220%;
+	left: 0;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.4s;
+	-moz-transition: 0.4s;
+	-webkit-transition: 0.4s;
+	-ms-transition: 0.4s;
+	-o-transition: 0.4s;
+}
+
+.fes__header__bottom .main__nav .has__tiny__menu:hover .fes__tinymenu {
+    top: 190%;
+    visibility: visible;
+    opacity: 1;
+}
+
+.fes__header__bottom .main__nav .has__tiny__menu .fes__tinymenu li {
+    display: block;
+    margin: 0;
+}
+
+.fes__header__bottom .main__nav .has__tiny__menu .fes__tinymenu li a {
+    display: block;
+    padding: 10px 0;
+    border-radius: 5px;
+    text-transform: capitalize;
+    width: 250px;
+    color: var(--text-color);
+}
+
+.fes__header__bottom .main__nav .has__tiny__menu .fes__tinymenu li a:hover {
+    background: var(--secondary-color);
+    color: #FFF;
+}
+
+.fes__header__bottom .main__nav .fes__tinymenu > .has__tiny__menu .fes__tinymenu {
+    left: 95%;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s;
+    -moz-transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.fes__header__bottom .main__nav .fes__tinymenu > .has__tiny__menu:hover .fes__tinymenu {
+    left: 100%;
+    visibility: visible;
+    opacity: 1;
+}
+
+.fes__header__bottom .main__nav .fes__tinymenu > .has__tiny__menu:hover {
+    border-radius: 5px;
+    background: var(--secondary-color);
+}
+
+.fes__header__bottom .main__nav .fes__tinymenu > .has__tiny__menu:hover a,
+.fes__header__bottom .main__nav .fes__tinymenu > .has__tiny__menu:hover .fes__tinymenu a:hover {
+    color: #FFF;
+}
+
+.fes__header__bottom .main__nav .fes__tinymenu > .has__tiny__menu a i {
+    transition: 0.2s;
+    -moz-transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    transform: unset;
+}
+
+.fes__header__bottom .main__nav .fes__tinymenu > .has__tiny__menu:hover a i {
+    transform: rotate(90deg);
+}
+
+.fes__header__bottom .main__nav .fes__tinymenu > .has__tiny__menu:hover .fes__tinymenu a {
+    color: #191C1F;
+}
+/*** End of Header ***/
 
 /*
 rgba(158, 114, 195, 0.4)
