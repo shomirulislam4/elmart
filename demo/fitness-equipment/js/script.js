@@ -36,3 +36,30 @@ $(function(){
         $('.fes__right__slider__menu').removeClass('show')
     })
 })
+
+//Right Menu Currency & Language Changer
+$(function(){
+    //Language
+    $('.feslc__language p').on('click', function(){
+        $('.fes__language').addClass('show');
+        $('.feslc__language p').addClass('hide');
+        $('.feslc__language__clsbtn').removeClass('hide');
+    })
+    $('.feslc__language__clsbtn').on('click', function(){
+        $('.fes__language').removeClass('show');
+        $('.feslc__language p').removeClass('hide');
+        $('.feslc__language__clsbtn').addClass('hide');
+    })
+
+    //Currency
+    $('.feslc__currency p').on('click', function(){
+        $('.fes__currency').addClass('show');
+        $('.feslc__currency p').addClass('hide');
+        $('.feslc__currency__clsbtn').removeClass('hide');
+    })
+    $('.feslc__currency__clsbtn').on('click', function(){
+        $('.fes__currency').removeClass('show');
+        $('.feslc__currency p').removeClass('hide');
+        $('.feslc__currency__clsbtn').addClass('hide');
+    })
+})
