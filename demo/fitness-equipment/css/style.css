@@ -397,9 +397,20 @@ button:focus {
     gap: 18px;
 }
 
+.fes__header .fes__header__top .right .cart__wishlist {
+    width: 135px;
+    display: flex;
+    align-items: center;
+}
+
+.fes__header .fes__header__top .right .cart__wishlist li {
+    width: 50%;
+}
+
 .fes__header .fes__header__top .right li a {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
 }
 
 .fes__header .fes__header__top .right li a:hover {
@@ -452,8 +463,83 @@ button:focus {
     -o-transition: 0.3s;
 }
 
+.fes__header .fes__header__top .right li .fes__header__cart {
+    position: relative;
+}
+
 .fes__header .fes__header__top .right li a:hover .fes__amount::after {
     border-right-color: var(--secondary-color);
+}
+
+.fes__header .fes__header__top .right li .fes__header__cart .fes__amount {
+    animation: CartAmountMove 2s infinite;
+    -webkit-animation: CartAmountMove 2s infinite;
+}
+
+@-webkit-keyframes CartAmountMove {
+    0% {
+        margin-left: 5px;
+    }
+    50% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: 5px;
+    }
+}
+
+@keyframes CartAmountMove {
+    0% {
+        margin-left: 5px;
+    }
+    50% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: 5px;
+    }
+}
+
+.fes__header .fes__header__top .right li .fes__header__cart:before {
+    content: "";
+    position: absolute;
+    -webkit-animation: cartBGAnim 2s linear infinite;
+    animation: cartBGAnim 2s linear infinite;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    top: calc(50% - 12px);
+    left: 2px;
+    background: var(--main-color);
+    opacity: 0;
+}
+
+@keyframes cartBGAnim {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(2.5);
+    }
+}
+
+@-webkit-keyframes cartBGAnim {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    50% {
+        opacity: .15;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(2.5);
+    }
 }
 
 .vertical__seperator {
@@ -917,7 +1003,7 @@ button:focus {
 }
 
 .fes__header__bottom .main__nav .fes__tinymenu > .has__tiny__menu:hover .fes__tinymenu a {
-    color: #191C1F;
+    color: var(--text-color);
 }
 /*** End of Header ***/
 
