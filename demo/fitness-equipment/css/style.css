@@ -1011,21 +1011,34 @@ button:focus {
 }
 
 /** Cart Slider **/
-.fes__cart__slider {
+.fes__cart__slider,
+.fes__right__slider__menu {
     position: fixed;
     top: 0;
     right: 0;
     height: 100vh;
-    width: 100%;
+    width: 0;
     background: rgba(255, 255, 255, 0.09);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
     z-index: 999999;
+    overflow: hidden;
+    transition: 1s;
+    -moz-transition: 1s;
+    -webkit-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
 }
 
-.fes__cart__slider .main__cart__area {
+.fes__cart__slider.show,
+.fes__right__slider__menu.show {
+    width: 100vw;
+}
+
+.fes__cart__slider .main__cart__area,
+.fes__right__slider__menu .fes__rsm__wrapper {
     position: absolute;
     top: 0;
     right: 0;
@@ -1041,7 +1054,8 @@ button:focus {
     gap: 15px;
 }
 
-.fes__cart__slider .main__cart__area .fes__cart__closebtn {
+.fes__cart__slider .main__cart__area .fes__cart__closebtn,
+.fes__right__slider__menu .fes__rsm__wrapper .fes__rsm__closebtn {
     position: absolute;
     top: 10px;
     right: calc(100% + 10px);
@@ -1060,7 +1074,8 @@ button:focus {
     -o-transition: 0.3s;
 }
 
-.fes__cart__slider .main__cart__area .fes__cart__closebtn:hover {
+.fes__cart__slider .main__cart__area .fes__cart__closebtn:hover,
+.fes__right__slider__menu .fes__rsm__wrapper .fes__rsm__closebtn:hover {
     background: var(--secondary-color);
     color: #FFF;
 }
@@ -1072,7 +1087,8 @@ button:focus {
 }
 
 .fes__cart__slider .main__cart__area .fes__cart__header h3,
-.fes__cart__slider .main__cart__area .fes__cart__header span {
+.fes__cart__slider .main__cart__area .fes__cart__header span,
+.fes__right__slider__menu .fes__rsm__wrapper .fes__rsm__header h3 {
     color: var(--text-color);
     font-size: 30px;
     line-height: 30px;
