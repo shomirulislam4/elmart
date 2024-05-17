@@ -12,46 +12,25 @@
 ==================================================================== */
 /* Font */
 @font-face {
-  font-display: swap;
-  font-family: 'Exo';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/exo-v21-latin-regular.woff2') format('woff2');
+    font-display: swap;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/lexend-v19-latin-regular.woff2') format('woff2');
 }
 @font-face {
-  font-display: swap;
-  font-family: 'Exo';
-  font-style: italic;
-  font-weight: 400;
-  src: url('../fonts/exo-v21-latin-italic.woff2') format('woff2');
+    font-display: swap;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/lexend-v19-latin-600.woff2') format('woff2');
 }
 @font-face {
-  font-display: swap;
-  font-family: 'Exo';
-  font-style: normal;
-  font-weight: 600;
-  src: url('../fonts/exo-v21-latin-600.woff2') format('woff2');
-}
-@font-face {
-  font-display: swap;
-  font-family: 'Exo';
-  font-style: italic;
-  font-weight: 600;
-  src: url('../fonts/exo-v21-latin-600italic.woff2') format('woff2');
-}
-@font-face {
-  font-display: swap;
-  font-family: 'Exo';
-  font-style: normal;
-  font-weight: 700;
-  src: url('../fonts/exo-v21-latin-700.woff2') format('woff2');
-}
-@font-face {
-  font-display: swap;
-  font-family: 'Exo';
-  font-style: italic;
-  font-weight: 700;
-  src: url('../fonts/exo-v21-latin-700italic.woff2') format('woff2');
+    font-display: swap;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/lexend-v19-latin-700.woff2') format('woff2');
 }
 
 /* Default CSS */
@@ -80,7 +59,7 @@ html {
 }
 
 body {
-    font-family: 'Exo', sans-serif;
+    font-family: 'Lexend', sans-serif;
     color: var(--text-color);
 }
 
@@ -92,7 +71,7 @@ h5,
 h6,
 span,
 p {
-    font-family: 'Exo', sans-serif;
+    font-family: 'Lexend', sans-serif;
     color: var(--text-color);
 }
 
@@ -116,7 +95,7 @@ ul {
 }
 
 li {
-    font-family: 'Exo', sans-serif;
+    font-family: 'Lexend', sans-serif;
     list-style: none;
 }
 
@@ -143,7 +122,7 @@ button:focus {
     font-size: 16px;
     line-height: 24px;
     font-weight: 600;
-    font-family: 'Exo', sans-serif;
+    font-family: 'Lexend', sans-serif;
     padding: 10px 25px;
     text-transform: capitalize;
     background: transparent;
@@ -269,11 +248,8 @@ button:focus {
 }
 
 .cursor.hover::before {
-    width: 15px;
-    height: 15px;
-}
-
-.cursor.hover::after {
+    width: 30px;
+    height: 30px;
     background: rgba(158, 114, 195, 0.2);
 }
 
@@ -311,7 +287,7 @@ button:focus {
     font-size: 16px;
     line-height: 22px;
     font-weight: 400;
-    font-family: 'Exo', sans-serif;
+    font-family: 'Lexend', sans-serif;
     text-transform: capitalize;
     color: var(--text-color);
 }
@@ -514,7 +490,7 @@ button:focus {
     font-size: 16px;
     line-height: 16px;
     font-weight: 400;
-    font-family: 'Exo', sans-serif;
+    font-family: 'Lexend', sans-serif;
     text-transform: capitalize;
     color: #FFF;
 }
@@ -615,7 +591,7 @@ button:focus {
     font-size: 16px;
     line-height: 16px;
     font-weight: 600;
-    font-family: 'Exo', sans-serif;
+    font-family: 'Lexend', sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -753,7 +729,7 @@ button:focus {
     font-size: 16px;
     line-height: 16px;
     font-weight: 400;
-    font-family: 'Exo', sans-serif;
+    font-family: 'Lexend', sans-serif;
     text-transform: capitalize;
     color: #FFF;
 }
@@ -784,6 +760,7 @@ button:focus {
 	left: 0;
 	color: var(--text-color);
 	background: var(--main-color);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 	border-radius: 5px;
 	padding: 10px 15px;
 	transition: 0.4s;
@@ -827,7 +804,7 @@ button:focus {
     font-size: 16px;
     line-height: 16px;
     font-weight: 600;
-    font-family: 'Exo', sans-serif;
+    font-family: 'Lexend', sans-serif;
     width: 240px;
     text-align: center;
 }
@@ -836,6 +813,16 @@ button:focus {
     color: var(--secondary-color);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
     background: #FFF;
+}
+
+.fes__header__bottom .main__nav li .fes__megamenu h4 {
+    color: #FFF;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 600;
+    font-family: 'Lexend', sans-serif;
+    text-transform: capitalize;
+    text-align: center;
 }
 
 /* Tiny Menu */
@@ -855,5 +842,5 @@ rgba(115, 56, 160, 0.4)
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
 
-font-family: 'Exo', sans-serif;
+font-family: 'Lexend', sans-serif;
 */
