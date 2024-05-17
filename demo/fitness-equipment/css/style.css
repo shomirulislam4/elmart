@@ -1015,7 +1015,7 @@ button:focus {
     position: fixed;
     top: 0;
     right: 0;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     background: rgba(255, 255, 255, 0.09);
     border-radius: 16px;
@@ -1030,11 +1030,15 @@ button:focus {
     top: 0;
     right: 0;
     width: 400px;
-    height: 100%;
+    height: 100vh;
     background: #FFF;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    padding: 30px 20px;
+    padding: 20px;
     z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
 }
 
 .fes__cart__slider .main__cart__area .fes__cart__closebtn {
@@ -1059,10 +1063,6 @@ button:focus {
 .fes__cart__slider .main__cart__area .fes__cart__closebtn:hover {
     background: var(--secondary-color);
     color: #FFF;
-}
-
-.fes__cart__slider .horizontal__seperator {
-    margin: 10px 0;
 }
 
 .fes__cart__slider .main__cart__area .fes__cart__header {
@@ -1137,7 +1137,6 @@ button:focus {
 .fes__cart__slider .main__cart__area .fes__cart__cta {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
 }
 
 
