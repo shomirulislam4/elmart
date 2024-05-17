@@ -17,25 +17,34 @@ $(function(){
     });
 });
 
-//Cart Slider
+//All Sliders
 $(function(){
+    //Cart Menu
     $('.fes__header__cart').on('click', function(){
         $('.fes__cart__slider').addClass('show')
     })
     $('.fes__cart__closebtn').on('click', function(){
         $('.fes__cart__slider').removeClass('show')
     })
-})
 
-//Right Side Slider Menu
-$(function(){
+    //Right Side Slider Menu
     $('.fes__rsm__btn').on('click', function(){
         $('.fes__right__slider__menu').addClass('show')
     })
     $('.fes__rsm__closebtn').on('click', function(){
         $('.fes__right__slider__menu').removeClass('show')
     })
+
+    //Mobile Menu
+    $('.fes__mblmenu__btn').on('click', function(){
+        $('.fes__mobile__menu').addClass('show')
+    })
+    $('.fes__mblmenu__closebtn').on('click', function(){
+        $('.fes__mobile__menu').removeClass('show')
+    })
 })
+
+
 
 //Right Menu Currency & Language Changer
 $(function(){
