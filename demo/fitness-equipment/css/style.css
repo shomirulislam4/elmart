@@ -1462,19 +1462,24 @@ button:focus {
     color: #FFF;
 }
 
+.fes__mobile__menu .fes__mblmenu__wrapper .nav-pills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
 .fes__mobile__menu .fes__mblmenu__wrapper .nav-pills .nav-link.active,
 .fes__mobile__menu .fes__mblmenu__wrapper .nav-pills .show > .nav-link {
     background: var(--main-color);
     color: #FFF;
     border-radius: 3px;
-    margin: 0 5px;
 }
 
 .fes__mobile__menu .fes__mblmenu__wrapper .nav-pills .nav-link {
 	color: var(--main-color);
     border: 1px solid var(--main-color);
     border-radius: 3px;
-    margin: 0 5px;
 }
 
 .fes__mblmenu__tabs {

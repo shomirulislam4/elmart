@@ -1,5 +1,194 @@
 
-@media (max-width: 289px) {}
+@media (max-width: 289px) {
+    /*===== Home Page =====*/
+        .logo {
+            width: 140px;
+        }
+        .fes__button__a {
+            font-size: 14px;
+            line-height: 22px;
+            padding: 10px 20px;
+        }
+        /* Mega Menu */
+        .fes__header__bottom .header__search {
+            height: 30px;
+            padding: 5px;
+            width: 100px;
+        }
+        .fes__header__bottom .header__search i {
+            font-size: 10px;
+            line-height: 10px;
+        }
+        .fes__header__bottom input {
+            font-size: 12px;
+        }
+        .fes__header .fes__header__top {
+            padding: 10px 0;
+        }
+        .fes__header .fes__header__top .left {
+            display: none;
+        }
+        .fes__header .fes__header__top li,
+        .fes__header .fes__header__top li a {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .fes__header .fes__header__top li i {
+            font-size: 10px;
+            margin-right: 2px;
+        }
+        .fes__header .fes__header__top li.phone a {
+            margin-left: 2px;
+        }
+        .fes__header .fes__header__top li .phone__anim {
+            width: 16px;
+            height: 16px;
+            margin-right: 2px;
+        }
+        .fes__header .fes__header__top li .phone__anim::before,
+        .fes__header .fes__header__top li .phone__anim::after {
+            width: 16px;
+            height: 16px;
+            top: calc(50% - 9px);
+            left: calc(50% - 8px);
+        }
+        .fes__header .fes__header__top .middle {
+            justify-content: flex-start;
+            padding-right: 0;
+        }
+        .fes__header .fes__header__top .right {
+            gap: 10px;
+        }
+        .fes__header .fes__header__top .right .vertical__seperator {
+            display: none;
+        }
+        .fes__header .fes__header__top .right li a i {
+            font-size: 12px;
+        }
+        .fes__header .fes__header__top .right li:first-child {
+            margin-right: 0;
+        }
+        .fes__header .fes__header__top .right .cart__wishlist li {
+            display: flex;
+            justify-content: flex-end;
+        }
+        .fes__header .fes__header__top .right li a .fes__amount {
+            height: 16px;
+            width: 16px;
+            line-height: 16px;
+            font-size: 10px;
+        }
+        .fes__header .fes__header__top .right li .fes__header__cart .fes__amount {
+            animation: none;
+            -webkit-animation: none;
+        }
+        .fes__header .fes__header__top .right li .fes__header__cart::before {
+            width: 16px;
+            height: 16px;
+            top: calc(50% - 9px);
+            left: 0px;
+        }
+        .fes__header .fes__header__top .right .cart__wishlist {
+            width: 110px;
+        }
+        /*Right Side Menu*/
+        .fes__cart__slider .main__cart__area,
+        .fes__right__slider__menu .fes__rsm__wrapper,
+        .fes__mobile__menu .fes__mblmenu__wrapper {
+            width: 180px;
+            padding: 10px 5px;
+        }
+        .fes__cart__slider .fes__cart__closebtn,
+        .fes__right__slider__menu .fes__rsm__closebtn {
+            right: 182px;
+            height: 80px;
+            width: 16px;
+            line-height: 80px;
+            font-size: 14px;
+            border-radius: 5px;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper h4 {
+            font-size: 20px;
+            line-height: 20px;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .pages li a {
+            padding: 6px 0;
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .about__company p {
+            font-size: 12px;
+            line-height: 18px;
+            margin-bottom: 0;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .lang__currency .feslc__language,
+        .fes__right__slider__menu .fes__rsm__wrapper .lang__currency .feslc__currency {
+            height: 40px;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .lang__currency p {
+            font-size: 12px;
+            line-height: 36px;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .lang__currency i {
+            font-size: 14px;
+            line-height: 40px;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .right__menu__newsletter {
+            height: 40px;
+            border-radius: 40px;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .right__menu__newsletter input {
+            padding-left: 10px;
+            font-size: 12px;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .right__menu__newsletter button {
+            width: 50px;
+            font-size: 12px;
+        }
+        .fes__social__links li a {
+            width: 34px;
+            height: 34px;
+            font-size: 16px;
+            line-height: 34px;
+        }
+        .fes__cart__slider .main__cart__area .fes__cart__header h3{
+            font-size: 24px;
+            line-height: 24px;
+            margin-bottom: 0;
+        }
+        .fes__cart__slider .main__cart__area .fes__cart__header span {
+            font-size: 24px;
+            line-height: 26px;
+            height: 26px;
+            margin-bottom: 0;
+            font-weight: 400;
+            padding: 0 8px;
+        }
+        /*Mobile Menu*/
+        .fes__mblmenu__btn {
+            padding: 8px 5px;
+            font-size: 12px;
+            line-height: 12px;
+        }
+        .fes__mobile__menu .fes__mblmenu__wrapper .fes__mblmenu__closebtn {
+            left: 182px;
+            height: 80px;
+            width: 16px;
+            line-height: 80px;
+            font-size: 14px;
+            border-radius: 5px;
+        }
+        .fes__mblmenu__tabs {
+            font-size: 14px;
+            line-height: 24px;
+        }
+        .fes__mobile__menu .fes__mblmenu__wrapper .nav-pills .nav-link.active,
+        .fes__mobile__menu .fes__mblmenu__wrapper .nav-pills .show > .nav-link,
+        .fes__mobile__menu .fes__mblmenu__wrapper .nav-pills .nav-link {
+            padding: 5px;
+            margin: 0;
+        }
+}
 
 @media (min-width: 290px) and (max-width: 414px) {
     /*===== Home Page =====*/
