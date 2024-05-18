@@ -34,16 +34,24 @@ $(function(){
     $('.fes__rsm__closebtn').on('click', function(){
         $('.fes__right__slider__menu').removeClass('show')
     })
+})
 
-    //Mobile Menu
+//Mobile Menu
+$(function(){
+    //Mobile Menu Main Show/Hide
     $('.fes__mblmenu__btn').on('click', function(){
         $('.fes__mobile__menu').addClass('show')
     })
     $('.fes__mblmenu__closebtn').on('click', function(){
         $('.fes__mobile__menu').removeClass('show')
     })
-})
 
+    //Mobile Menu Submenu Show/hide
+    $('.mobile__submenu').on('click', function() {
+        var fessubmenu = $(this).find('.l2__submenu');
+        fessubmenu.toggleClass('show');
+      });
+})
 
 
 //Right Menu Currency & Language Changer

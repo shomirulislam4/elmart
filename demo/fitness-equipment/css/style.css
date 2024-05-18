@@ -319,6 +319,7 @@ button:focus {
 
 .fes__header .fes__header__top li.phone {
     display: inline-flex;
+    align-items: center;
 }
 
 .fes__header .fes__header__top li.phone i {
@@ -717,6 +718,8 @@ button:focus {
 	-o-transition: 0.4s;
 	opacity: 0;
 	visibility: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .mega__category__menu .categories__list li:hover .cetgory__submenu {
@@ -773,22 +776,24 @@ button:focus {
 }
 
 .mega__category__menu .cetgory__submenu .item .text h3 {
-    font-size: 24px;
-    line-height: 28px;
-    font-weight: 600;
-    text-transform: capitalize;
-    transition: 0.3s;
-    -moz-transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-    margin-bottom: 5px;
+    color: var(--text-color);
+	font-size: 20px;
+	line-height: 24px;
+	font-weight: 400;
+	text-transform: capitalize;
+	transition: 0.3s;
+	-moz-transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+	margin-bottom: 5px;
 }
 
 .mega__category__menu .cetgory__submenu .item .text p {
+    color: #999;
     font-size: 16px;
-    line-height: 21px;
-    font-weight: 600;
+    line-height: 20px;
+    font-weight: 400;
     text-transform: capitalize;
     margin: 0;
 }
@@ -1011,6 +1016,13 @@ button:focus {
     color: var(--text-color);
 }
 
+@media (max-width:991px) {
+    .fes__header__bottom .main__nav,
+    .fes__header__bottom .fes__browseall {
+        display: none;
+    }
+}
+
 /** Cart Slider **/
 .fes__cart__slider,
 .fes__right__slider__menu {
@@ -1053,13 +1065,15 @@ button:focus {
     flex-direction: column;
     justify-content: flex-start;
     gap: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
-.fes__cart__slider .main__cart__area .fes__cart__closebtn,
-.fes__right__slider__menu .fes__rsm__wrapper .fes__rsm__closebtn {
+.fes__cart__slider .fes__cart__closebtn,
+.fes__right__slider__menu .fes__rsm__closebtn {
     position: absolute;
     top: 10px;
-    right: calc(100% + 10px);
+    right: 410px;
     height: 40px;
     width: 40px;
     line-height: 40px;
@@ -1075,8 +1089,8 @@ button:focus {
     -o-transition: 0.3s;
 }
 
-.fes__cart__slider .main__cart__area .fes__cart__closebtn:hover,
-.fes__right__slider__menu .fes__rsm__wrapper .fes__rsm__closebtn:hover {
+.fes__cart__slider .fes__cart__closebtn:hover,
+.fes__right__slider__menu .fes__rsm__closebtn:hover {
     background: var(--secondary-color);
     color: #FFF;
 }
@@ -1094,6 +1108,7 @@ button:focus {
     line-height: 30px;
     font-weight: 600;
     font-family: 'Lexend', sans-serif;
+    margin-bottom: 0;
 }
 
 .fes__cart__slider .main__cart__area .fes__cart__header span {
@@ -1354,6 +1369,35 @@ button:focus {
 /*** End of Header ***/
 
 /*** Start of Mobile Menu ***/
+.fes__mblmenu__btn {
+    display: none;
+}
+
+@media (max-width:991px) {
+    .fes__mblmenu__btn {
+        display: inline-block;
+        padding: 15px;
+        font-size: 16px;
+        line-height: 16px;
+        font-weight: 400;
+        font-family: 'Lexend', sans-serif;
+        text-transform: capitalize;
+        color: #FFF;
+        border: 1px solid #FFF;
+        border-radius: 5px;
+        background: var(--main-color);
+        transition: 0.3s;
+        -moz-transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+    }
+    .fes__mblmenu__btn i {
+        font: 14px;
+        margin-right: 10px;
+    }
+}
+
 .fes__mobile__menu {
     position: fixed;
     top: 0;

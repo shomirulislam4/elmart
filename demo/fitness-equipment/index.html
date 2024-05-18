@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#00FF5B">
+    <meta name="theme-color" content="#9E72C3">
 
     <title>ElFitEquip - Fitness Equipment Store</title>
 
@@ -32,20 +32,20 @@
         <div class="container">
             <div class="fes__header__top">
                 <div class="row">
-                    <div class="col-md-4 left">
+                    <div class="col-12 col-md-5 col-lg-4 left">
                         <ul>
                             <li><i class="fa-solid fa-location-dot"></i><a href="contact.html">store location</a></li>
                             <li class="phone"><span class="phone__anim"><i class="fa-solid fa-phone-volume"></i></span>Call Us:<a href="tel:+123-456-7890">+(123)-456-7890</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-4 middle">
+                    <div class="col-4 col-md-2 col-lg-4 middle">
                         <div class="logo">
                             <a href="index.html">
                                 <img src="image/logo.png" alt="ElFitEquip Logo">
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-4 right">
+                    <div class="col-8 col-md-5 col-lg-4 right">
                         <ul class="cart__wishlist">
                             <li><a href="../wishlist.html"><i class="fa-solid fa-heart"></i><span class="fes__amount">10</span></a></li>
                             <li><a class="fes__header__cart" href="#"><i class="fa-solid fa-cart-shopping"></i><span class="fes__amount">2</span></a></li>
@@ -655,6 +655,7 @@
                     </li>
                     <li><a href="contact.html">contact us</a></li>
                 </ul>
+                <button class="fes__mblmenu__btn"><i class="fa-solid fa-bars"></i>Menu</button>
                 <form action="#" method="get" class="header__search">
                     <input type="search" name="headerSearch" id="HeaderSearch" placeholder="Enter your keywords">
                     <i class="fa-solid fa-magnifying-glass"></i>
@@ -662,11 +663,10 @@
             </div>
         </div>
     </header>
-
     <!-- Cart Slider -->
     <div class="fes__cart__slider">
+        <button class="fes__cart__closebtn"><i class="fa-solid fa-xmark"></i></button>
         <div class="main__cart__area">
-            <button class="fes__cart__closebtn"><i class="fa-solid fa-xmark"></i></button>
             <div class="fes__cart__header">
                 <h3>My Cart</h3>
                 <span class="cart__amount">2</span>
@@ -686,11 +686,10 @@
             </div>
         </div>
     </div>
-
     <!-- Right Slider Menu -->
     <div class="fes__right__slider__menu">
+        <button class="fes__rsm__closebtn"><i class="fa-solid fa-xmark"></i></button>
         <div class="fes__rsm__wrapper">
-            <button class="fes__rsm__closebtn"><i class="fa-solid fa-xmark"></i></button>
             <div class="about__company">
                 <div class="logo">
                     <img src="image/logo.png" alt="Elmart Logo">
@@ -749,12 +748,11 @@
             </ul>
         </div>
     </div>
-
     <!-- Mobile Menu -->
-    <div class="fes__mobile__menu show">
+    <div class="fes__mobile__menu">
         <div class="fes__mblmenu__wrapper">
             <button class="fes__mblmenu__closebtn"><i class="fa-solid fa-xmark"></i></button>
-            <ul class="nav nav-pills mb-3" id="FES__MobileMenuTabs" role="tablist">
+            <ul class="nav nav-pills" id="FES__MobileMenuTabs" role="tablist">
                 <li class="nav-item" role="presentation">
                   <button class="nav-link active" id="fes__mblmenu__pages-tab" data-bs-toggle="pill" data-bs-target="#fes__mblmenu__pages" type="button" role="tab" aria-controls="fes__mblmenu__pages" aria-selected="true">Pages</button>
                 </li>
@@ -919,7 +917,6 @@
               </div>
         </div>
     </div>
-
     <!-- End of Header -->
 
     <!-- JS Links -->
