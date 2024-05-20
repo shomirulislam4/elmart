@@ -53,7 +53,6 @@ $(function(){
       });
 })
 
-
 //Right Menu Currency & Language Changer
 $(function(){
     //Language
@@ -79,4 +78,19 @@ $(function(){
         $('.feslc__currency p').removeClass('hide');
         $('.feslc__currency__clsbtn').addClass('hide');
     })
+})
+
+//Hero Section Slider
+$(function(){
+    var swiper = new Swiper(".fes__heroslider", {
+        loop: true,
+        pagination: {
+            el: ".fes__heroslider__frac",
+            type: "fraction",
+        },
+        navigation: {
+            nextEl: ".fes__heroslider__btn__next",
+            prevEl: ".fes__heroslider__btn__prev",
+        },
+    });
 })
