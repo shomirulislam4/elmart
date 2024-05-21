@@ -135,6 +135,7 @@ button:focus {
     -o-transition: 0.3s;
     user-select: none;
     color: #FFF !important;
+    display: inline-block;
 }
 
 .fes__button__a::before {
@@ -162,6 +163,7 @@ button:focus {
     -webkit-transition: 0.3s;
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
+    border-radius: 5px;
 }
 
 .fes__button__a:hover::after {
@@ -260,7 +262,7 @@ button:focus {
 .vertical__seperator {
     height: 26px;
     width: 2px;
-    background: var(--secondary-color);
+    background: #FFF;
     margin: 0;
 }
 
@@ -1537,6 +1539,7 @@ button:focus {
 }
 
 .fes__heroslider .swiper-slide {
+    width: 100%;
     height: 900px;
     overflow: hidden;
     position: relative;
@@ -1561,7 +1564,7 @@ button:focus {
     z-index: 100;
     display: flex;
     align-items: flex-end;
-    border-right: 2px solid var(--text-color);
+    border-right: 2px solid #FFF;
 }
 
 .fes__heroleft__text .fes__heroleft__text__wrapper {
@@ -1625,6 +1628,19 @@ button:focus {
     line-height: 24px;
 }
 
+.fes__heroleft__text .fes__hero__nav {
+    display: flex;
+    gap: 10px;
+}
+
+.fes__heroleft__text .fes__hero__nav .fes__heroslider__btn__next,
+.fes__heroleft__text .fes__hero__nav .fes__heroslider__btn__prev {
+    font-size: 34px;
+    line-height: 34px;
+    margin: 0;
+    color: #FFF;
+}
+
 .fes__heroslider .swiper-slide .bg__black {
     height: 100%;
     width: 100%;
@@ -1633,6 +1649,41 @@ button:focus {
     left: 0;
     background: rgba(0, 0, 0, 0.4);
     z-index: 1;
+}
+
+.fes__heroslider .swiper-slide .bg__black .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+}
+
+.fes__heroslider .swiper-slide h4 {
+    color: #FFF;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: 'Lexend', sans-serif;
+    margin: 0;
+}
+
+.fes__heroslider .swiper-slide h2 {
+    color: #FFF;
+    font-size: 40px;
+    line-height: 46px;
+    font-weight: 400;
+    font-family: 'Lexend', sans-serif;
+    margin: 0;
+}
+
+.fes__heroslider .swiper-slide p {
+    color: #FFF;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    font-family: 'Lexend', sans-serif;
+    margin: 0;
 }
 
 /*** End of Hero Section ***/
