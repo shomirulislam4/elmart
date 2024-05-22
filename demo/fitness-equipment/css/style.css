@@ -1706,7 +1706,8 @@ button:focus {
 	flex-direction: column;
 	justify-content: flex-end;
 	align-items: center;
-	gap: 20px;
+	gap: 10px;
+	padding-bottom: 5px;
 }
 
 .fes__heroslider .fes__product__style .fesps__main .fesps__content h2,
@@ -1720,16 +1721,16 @@ button:focus {
 .fes__product__style {
     width: 350px;
     height: auto;
-    overflow: hidden;
 	background: #FFF;
-	border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
 }
 
+/* Image*/
 .fes__product__style .fesps__image {
     width: 100%;
-    height: 250px;
+    height: 200px;
     overflow: hidden;
-    position: relative
+    position: relative;
 }
 
 .fes__product__style .fesps__image img {
@@ -1763,17 +1764,69 @@ button:focus {
     z-index: 2;
 }
 
-.fes__product__style .fesps__content {
+/* CTAs */
+.fes__product__style .fesps__image .fesps__ctabtns {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    left: -40px;
+    top: 20px;
+    z-index: 10;
+    transition: 0.6s;
+    -moz-transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+}
+
+.fes__product__style .fesps__image .fesps__ctabtns a {
+    display: block;
+    font-size: 18px;
+    height: 34px;
+    width: 34px;
+    line-height: 34px;
+    border-radius: 50%;
+    text-align: center;
+    background: #FFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: var(--text-color);
+}
+
+.fes__product__style .fesps__image .fesps__ctabtns a:hover {
+    color: #FFF;
+    background: var(--main-color);
+}
+
+.fes__product__style:hover .fesps__image .fesps__ctabtns {
+    left: 20px;
+}
+
+/* Content */
+.fes__product__style .fesps__content {
+    position: relative;
     padding: 20px;
+    z-index: 0;
 }
 
 .fes__product__style .fesps__content .show__on__hover {
-    display: flex;
     flex-direction: column;
     gap: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s;
+    -moz-transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+}
+
+.fes__product__style:hover .fesps__content .show__on__hover {
+    display: flex;
+    max-height: 300px;
+    overflow: visible;
+    margin: 20px 0;
 }
 
 .fes__product__style .fesps__content h2,
@@ -1796,7 +1849,7 @@ button:focus {
     line-height: 24px;
     font-weight: 400;
     font-family: 'Lexend', sans-serif;
-    background: var(--secondary-color);
+    background: var(--main-color);
     color: #FFF;
     padding: 0 10px;
     border-radius: 50px;
@@ -1827,13 +1880,19 @@ button:focus {
     text-transform: capitalize;
 }
 
+.fes__product__style .fesps__content .weight__color .nice-select,
+.fes__product__style .fesps__content .weight__color .nice-select .list {
+    width: 100%;
+    text-align: center !important;
+}
+
 .fes__product__style .fesps__content .fesps__price {
     font-size: 18px;
     line-height: 18px;
     color: var(--text-color);
     font-weight: 400;
     font-family: 'Lexend', sans-serif;
-    margin: 0;
+    margin-top: 20px;
 }
 
 .fes__product__style .fesps__content .fesps__price span {
@@ -1850,6 +1909,23 @@ button:focus {
     width: 100%;
     height: 2px;
     transform: rotate(-15deg) translateY(-50%);
+}
+
+.fes__product__style .fesps__content .fes__button__a {
+    display: block;
+    text-align: center;
+    max-height: 0;
+    padding: 0;
+}
+
+.fes__product__style .fesps__content .fes__button__a i {
+    margin-right: 10px;
+}
+
+.fes__product__style:hover .fesps__content .fes__button__a {
+    max-height: 100px;
+    padding: 10px 25px;
+    margin-top: 20px;
 }
 
 /*** End of Product Style ***/
