@@ -17,7 +17,7 @@ $(function(){
     });
 });
 
-//All Sliders
+//All Sliders Menu
 $(function(){
     //Cart Menu
     $('.fes__header__cart').on('click', function(){
@@ -35,6 +35,11 @@ $(function(){
         $('.fes__right__slider__menu').removeClass('show')
     })
 })
+
+//Nice Select
+if ( $('.fitequip__store').length ) {
+    $('.fesps__select').niceSelect();
+  }
 
 //Mobile Menu
 $(function(){

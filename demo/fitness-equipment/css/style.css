@@ -3,6 +3,8 @@
 2. Home Page
    1. Header
    2. Cart
+   3. Hero Section
+   4. Product Style
 
 **********************************************/
 
@@ -357,7 +359,7 @@ button:focus {
     border-radius: 100%;
     top: calc(50% - 9px);
     left: calc(50% - 9px);
-    background-color: var(--main-color);
+    background-color: #FFF;
     opacity: 0;
 }
 
@@ -529,7 +531,7 @@ button:focus {
     border-radius: 100%;
     top: calc(50% - 12px);
     left: 2px;
-    background: var(--main-color);
+    background: #FFF;
     opacity: 0;
 }
 
@@ -1540,12 +1542,12 @@ button:focus {
 
 .fes__heroslider .swiper-slide {
     width: 100%;
-    height: 900px;
+    height: 1000px;
     overflow: hidden;
     position: relative;
 }
 
-.fes__heroslider .swiper-slide img {
+.fes__heroslider .swiper-slide .fes__bg__img {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1647,11 +1649,21 @@ button:focus {
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
 
 .fes__heroslider .swiper-slide .bg__black .container {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+.fes__heroslider .swiper-slide .bg__black .row {
+    height: 100%;
+}
+
+.fes__heroslider .swiper-slide .fes__hero__text {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -1666,15 +1678,17 @@ button:focus {
     font-weight: 400;
     font-family: 'Lexend', sans-serif;
     margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .fes__heroslider .swiper-slide h2 {
     color: #FFF;
-    font-size: 40px;
-    line-height: 46px;
-    font-weight: 400;
+    font-size: 60px;
+    line-height: 66px;
+    font-weight: 600;
     font-family: 'Lexend', sans-serif;
     margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .fes__heroslider .swiper-slide p {
@@ -1684,9 +1698,161 @@ button:focus {
     font-weight: 400;
     font-family: 'Lexend', sans-serif;
     margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+.fes__heroslider .swiper-slide .fes__hero__products {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 20px;
+}
+
+.fes__heroslider .fes__product__style .fesps__main .fesps__content h2,
+.fes__product__style .fesps__content .weight__color p {
+    text-shadow: none;
+}
 /*** End of Hero Section ***/
+
+
+/*** Start of Product Style ***/
+.fes__product__style {
+    width: 350px;
+    height: auto;
+    overflow: hidden;
+	background: #FFF;
+	border-radius: 10px;
+}
+
+.fes__product__style .fesps__image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    position: relative
+}
+
+.fes__product__style .fesps__image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.fes__product__style .fesps__image .hover__img {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.fes__product__style .fesps__image:hover .main__img {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.fes__product__style .fesps__image:hover .hover__img {
+    visibility: visible;
+    opacity: 1;
+    z-index: 2;
+}
+
+.fes__product__style .fesps__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.fes__product__style .fesps__content .show__on__hover {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.fes__product__style .fesps__content h2,
+.fes__product__style .fesps__content h2 a {
+    color: var(--text-color);
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 600;
+    font-family: 'Lexend', sans-serif;
+    margin: 0;
+}
+
+.fes__product__style .fesps__content h2 a:hover {
+    color: var(--main-color);
+}
+
+.fes__product__style .fesps__content .fesps__category {
+    width: 50%;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: 'Lexend', sans-serif;
+    background: var(--secondary-color);
+    color: #FFF;
+    padding: 0 10px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.fes__product__style .fesps__content .fesps__category svg {
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+}
+
+.fes__product__style .fesps__content .weight__color {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.fes__product__style .fesps__content .weight__color p {
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0;
+    font-weight: 400;
+    font-family: 'Lexend', sans-serif;
+    color: var(--text-color);
+    text-transform: capitalize;
+}
+
+.fes__product__style .fesps__content .fesps__price {
+    font-size: 18px;
+    line-height: 18px;
+    color: var(--text-color);
+    font-weight: 400;
+    font-family: 'Lexend', sans-serif;
+    margin: 0;
+}
+
+.fes__product__style .fesps__content .fesps__price span {
+    color: #AAA;
+    position: relative;
+}
+
+.fes__product__style .fesps__content .fesps__price span::after {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    content: '';
+    background: #AAA;
+    width: 100%;
+    height: 2px;
+    transform: rotate(-15deg) translateY(-50%);
+}
+
+/*** End of Product Style ***/
 
 /*
 rgba(158, 114, 195, 0.4)
