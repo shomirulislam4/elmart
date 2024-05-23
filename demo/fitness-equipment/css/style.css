@@ -1562,100 +1562,6 @@ button:focus {
     }
 }
 
-.fes__heroleft__text {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 150px;
-    height: 100%;
-    z-index: 100;
-    display: flex;
-    align-items: flex-end;
-    border-right: 2px solid #FFF;
-}
-
-@media (max-width:767px) {
-    .fes__heroleft__text {
-        display: none;
-    }
-}
-
-.fes__heroleft__text .fes__heroleft__text__wrapper {
-    width: 100%;
-    height: 700px;
-    text-align: center;
-    padding: 40px 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 30px;
-}
-
-.fes__heroleft__text .fes__heroslider__frac {
-    display: flex;
-    align-items: center;
-	width: 100%;
-    writing-mode: vertical-rl;
-    -webkit-writing-mode: vertical-rl;
-    transform: rotate(180deg);
-}
-
-.fes__heroleft__text .fes__heroslider__frac,
-.fes__heroleft__text .fes__heroslider__frac .swiper-pagination-current,
-.fes__heroleft__text .fes__heroslider__frac .swiper-pagination-total {
-    color: #FFF;
-    font-size: 24px;
-    line-height: 24px;
-    font-weight: 600;
-    font-family: 'Lexend', sans-serif;
-}
-
-.fes__heroleft__text .fes__heroleft__line {
-    content: '';
-    height: 230px;
-    width: 2px;
-    background: #FFF;
-}
-
-.fes__heroleft__text .text {
-	display: flex;
-	width: 100%;
-    justify-content: center;
-}
-
-.fes__heroleft__text .text h3,
-.fes__heroleft__text .text h4 {
-    color: #FFF;
-    font-size: 34px;
-    line-height: 40px;
-    font-weight: 400;
-    font-family: 'Lexend', sans-serif;
-    text-transform: capitalize;
-    margin: 0;
-    writing-mode: vertical-rl;
-    -webkit-writing-mode: vertical-rl;
-    transform: rotate(180deg);
-}
-
-.fes__heroleft__text .text h4 {
-    font-size: 18px;
-    line-height: 24px;
-}
-
-.fes__heroleft__text .fes__hero__nav {
-    display: flex;
-    gap: 10px;
-}
-
-.fes__heroleft__text .fes__hero__nav .fes__heroslider__btn__next,
-.fes__heroleft__text .fes__hero__nav .fes__heroslider__btn__prev {
-    font-size: 34px;
-    line-height: 34px;
-    margin: 0;
-    color: #FFF;
-}
-
 .fes__heroslider .swiper-slide .bg__black {
     height: 100%;
     width: 100%;
@@ -1726,6 +1632,129 @@ button:focus {
 .fes__heroslider .fes__product__style .fesps__main .fesps__content h2,
 .fes__product__style .fesps__content .fesps__variant p {
     text-shadow: none;
+}
+
+/* Hero Left Text & Slider Nav */
+.fes__heroleft__text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 150px;
+    height: 100%;
+    z-index: 100;
+    display: flex;
+    align-items: flex-end;
+    border-right: 2px solid #FFF;
+}
+
+.fes__heroleft__text .fes__heroleft__text__wrapper {
+    width: 100%;
+    height: 700px;
+    text-align: center;
+    padding: 40px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.fes__heroleft__text .fes__heroslider__frac {
+    display: flex;
+    align-items: center;
+	width: 100%;
+    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
+.fes__heroleft__text .fes__heroslider__frac,
+.fes__heroleft__text .fes__heroslider__frac .swiper-pagination-current,
+.fes__heroleft__text .fes__heroslider__frac .swiper-pagination-total {
+    color: #FFF;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 600;
+    font-family: 'Lexend', sans-serif;
+}
+
+.fes__heroleft__text .fes__heroleft__line {
+    content: '';
+    height: 230px;
+    width: 2px;
+    background: #FFF;
+}
+
+.fes__heroleft__text .text {
+	display: flex;
+	width: 100%;
+    justify-content: center;
+}
+
+.fes__heroleft__text .text h3,
+.fes__heroleft__text .text h4 {
+    color: #FFF;
+    font-size: 34px;
+    line-height: 40px;
+    font-weight: 400;
+    font-family: 'Lexend', sans-serif;
+    text-transform: capitalize;
+    margin: 0;
+    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
+.fes__heroleft__text .text h4 {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.fes__heroleft__text .fes__hero__nav {
+    display: flex;
+    gap: 10px;
+}
+
+.fes__heroslider__btn__next,
+.fes__heroslider__btn__prev {
+    font-size: 34px;
+    line-height: 34px;
+    margin: 0;
+    color: #FFF;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.fes__heroslider__btn__next.for__small__devices,
+.fes__heroslider__btn__prev.for__small__devices {
+    display: none;
+}
+
+@media (max-width:767px) {
+    .fes__heroslider__btn__next,
+    .fes__heroslider__btn__prev {
+        font-size: 30px;
+        line-height: 30px;
+    }
+}
+
+@media (max-width:991px) {
+    .fes__heroleft__text {
+        display: none;
+    }
+    .fes__heroslider__btn__next.for__small__devices,
+    .fes__heroslider__btn__prev.for__small__devices {
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 100;
+    }
+    .fes__heroslider__btn__prev.for__small__devices {
+        left: 0;
+    }
+    .fes__heroslider__btn__next.for__small__devices {
+        right: 0;
+    }
 }
 /*** End of Hero Section ***/
 
