@@ -1014,8 +1014,66 @@
 
 @media (min-width: 1400px) and (max-width: 1499px) {
     /*===== Home Page =====*/
-        /* Mega Menu */
+        /*Mega Menu*/
+        .fes__header .fes__header__top {
+            padding: 10px 0;
+        }
         .mega__category__menu .categories__list li .cetgory__submenu {
             width: 1074px;
+        }
+        /*Hero Section*/
+        .fes__heroslider .swiper-slide {
+            height: 934px;
+        }
+        .fes__heroleft__text {
+            width: 95px;
+            height: 90%;
+        }
+        .fes__heroslider .swiper-slide .fes__hero__text {
+            padding-left: 90px;
+        }
+        .fes__product__style .fesps__content .fesps__price {
+            margin-top: 10px;
+        }
+        .fes__product__style .fesps__content .show__on__hover {
+            gap: 10px;
+        }
+        .fes__product__style:hover .fesps__content .show__on__hover {
+            margin: 10px 0;
+        }
+        .fes__product__style .fesps__content .fesps__variant .nice-select .list {
+            height: 104px;
+            overflow-y: auto;
+        }
+}
+
+@media (min-width: 1500px) and (max-width: 1599px) {
+    /*===== Home Page =====*/
+        /*Hero Section*/
+        .fes__heroleft__text {
+            width: 85px;
+            height: 90%;
+        }
+        .fes__heroslider .swiper-slide .fes__hero__text {
+            padding-left: 50px;
+        }
+}
+
+@media (min-width: 1600px) and (max-width: 1699px) {
+    /*===== Home Page =====*/
+        /*Hero Section*/
+        .fes__heroleft__text {
+            width: 85px;
+        }
+        .fes__heroslider .swiper-slide .fes__hero__text {
+            padding-left: 15px;
+        }
+}
+
+@media (min-width: 1700px) and (max-width: 1799px) {
+    /*===== Home Page =====*/
+        /*Hero Section*/
+        .fes__heroleft__text {
+            width: 130px;
         }
 }

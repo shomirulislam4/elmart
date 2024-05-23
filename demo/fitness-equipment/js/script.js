@@ -88,6 +88,11 @@ $(function(){
 //Hero Section Slider
 $(function(){
     var swiper = new Swiper(".fes__heroslider", {
+        effect: 'fade',
+        fadeEffect: {
+            crossFade: true
+        },
+        speed: 1000,
         loop: true,
         pagination: {
             el: ".fes__heroslider__frac",
