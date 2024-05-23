@@ -1707,11 +1707,11 @@ button:focus {
 	justify-content: flex-end;
 	align-items: center;
 	gap: 10px;
-	padding-bottom: 5px;
+	padding-bottom: 10px;
 }
 
 .fes__heroslider .fes__product__style .fesps__main .fesps__content h2,
-.fes__product__style .fesps__content .weight__color p {
+.fes__product__style .fesps__content .fesps__variant p {
     text-shadow: none;
 }
 /*** End of Hero Section ***/
@@ -1723,6 +1723,7 @@ button:focus {
     height: auto;
 	background: #FFF;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
 }
 
 /* Image*/
@@ -1731,6 +1732,7 @@ button:focus {
     height: 200px;
     overflow: hidden;
     position: relative;
+    border-radius: 5px 5px 0 0;
 }
 
 .fes__product__style .fesps__image img {
@@ -1849,12 +1851,13 @@ button:focus {
     line-height: 24px;
     font-weight: 400;
     font-family: 'Lexend', sans-serif;
-    background: var(--main-color);
+    background: var(--text-color);
     color: #FFF;
     padding: 0 10px;
     border-radius: 50px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .fes__product__style .fesps__content .fesps__category svg {
@@ -1863,14 +1866,18 @@ button:focus {
     margin-right: 5px;
 }
 
-.fes__product__style .fesps__content .weight__color {
+.fes__product__style .fesps__content .fesps__category:hover {
+    background: var(--main-color);
+}
+
+.fes__product__style .fesps__content .fesps__variant {
     display: flex;
     gap: 10px;
     align-items: center;
     justify-content: flex-start;
 }
 
-.fes__product__style .fesps__content .weight__color p {
+.fes__product__style .fesps__content .fesps__variant p {
     font-size: 16px;
     line-height: 16px;
     margin: 0;
@@ -1880,8 +1887,8 @@ button:focus {
     text-transform: capitalize;
 }
 
-.fes__product__style .fesps__content .weight__color .nice-select,
-.fes__product__style .fesps__content .weight__color .nice-select .list {
+.fes__product__style .fesps__content .fesps__variant .nice-select,
+.fes__product__style .fesps__content .fesps__variant .nice-select .list {
     width: 100%;
     text-align: center !important;
 }
