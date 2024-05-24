@@ -1,5 +1,8 @@
 
 @media (max-width: 289px) {
+    .fes__categories__section {
+        margin-top: 30px;
+    }
     /*===== Home Page =====*/
         .logo {
             width: 140px;
@@ -8,6 +11,18 @@
             font-size: 14px;
             line-height: 22px;
             padding: 10px 20px;
+        }
+        /*Section Title*/
+        .fes__section__title {
+            margin-bottom: 20px;
+        }
+        .fes__section__title h4 {
+            font-size: 12px;
+            line-height: 12px;
+        }
+        .fes__section__title h2 {
+            font-size: 30px;
+            line-height: 30px;
         }
         /* Mega Menu */
         .fes__header__bottom .header__search {
@@ -279,9 +294,35 @@
             width: 30px;
             line-height: 30px;
         }
+        /*Categories Section*/
+        .fes__categories__section .fescs__slider .swiper-slide {
+            width: 176px;
+            height: 176px;
+        }
+        .fes__categories__section .fescs__slider .swiper-slide .text h4 {
+            font-size: 24px;
+            line-height: 24px;
+        }
+        .fes__categories__section .fescs__slider .swiper-slide .text p {
+            font-size: 10px;
+            line-height: 14px;
+        }
+        .fes__categories__section .fescs__slider .swiper-slide .text {
+            gap: 5px;
+            padding: 5px;
+            bottom: -75%;
+        }
+        .fes__categories__section .fes__button__a {
+            font-size: 12px;
+            line-height: 20px;
+            padding: 3px 20px;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
+    .fes__categories__section {
+        margin-top: 30px;
+    }
     /*===== Home Page =====*/
         .logo {
             width: 140px;
@@ -290,6 +331,18 @@
             font-size: 14px;
             line-height: 22px;
             padding: 10px 20px;
+        }
+        /*Section Title*/
+        .fes__section__title {
+            margin-bottom: 30px;
+        }
+        .fes__section__title h4 {
+            font-size: 20px;
+            line-height: 20px;
+        }
+        .fes__section__title h2 {
+            font-size: 50px;
+            line-height: 50px;
         }
         /* Mega Menu */
         .fes__header__bottom .header__search {
@@ -527,12 +580,44 @@
             width: 30px;
             line-height: 30px;
         }
+        /*Categories Section*/
+        .fes__categories__section .fescs__slider .swiper-slide {
+            width: 266px;
+            height: 266px;
+        }
+        .fes__categories__section .fescs__slider .swiper-slide .text h4 {
+            font-size: 28px;
+            line-height: 28px;
+        }
+        .fes__categories__section .fescs__slider .swiper-slide .text p {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .fes__categories__section .fescs__slider .swiper-slide .text {
+            padding-left: 15px;
+            bottom: -60%;
+        }
+        .fes__categories__section .fes__button__a {
+            font-size: 14px;
+            padding: 5px 25px;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
+    .fes__categories__section {
+        margin-top: 40px;
+    }
     /*===== Home Page =====*/
         .logo {
             width: 140px;
+        }
+        /*Section Title*/
+        .fes__section__title {
+            margin-bottom: 30px;
+        }
+        .fes__section__title h2 {
+            font-size: 50px;
+            line-height: 50px;
         }
         /* Mega Menu */
         .fes__header__bottom .header__search {
@@ -743,12 +828,62 @@
             width: 30px;
             line-height: 30px;
         }
+        /*Categories Section*/
+        .fes__categories__section .fescs__slider .swiper-slide {
+            width: 185.5px;
+            height: 185.5px;
+        }
+        .fes__categories__section .fescs__slider .swiper-slide .text {
+            height: 100%;
+            bottom: -70%;
+            gap: 5px;
+            padding: 5px;
+            padding-top: 0;
+            padding-bottom: 10px;
+        }
+        .fes__categories__section .fescs__slider .swiper-slide .text h4 {
+            font-size: 24px;
+            line-height: 28px;
+        }
+        .fes__categories__section .fescs__slider .swiper-slide .text p {
+            font-size: 10px;
+            line-height: 14px;
+        }
+        .fes__categories__section .fescs__slider__btn__next,
+        .fes__categories__section .fescs__slider__btn__prev {
+            font-size: 16px;
+            line-height: 30px;
+            height: 30px;
+            width: 30px;
+        }
+        .fes__categories__section .fescs__slider__btn__next {
+            right: 0;
+        }
+        .fes__categories__section .fescs__slider__btn__prev {
+            left: 0;
+        }
+        .fes__categories__section .fes__button__a {
+            font-size: 12px;
+            line-height: 20px;
+            padding: 5px 20px;
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
+    .fes__categories__section {
+        margin-top: 50px;
+    }
     /*===== Home Page =====*/
         .logo {
             width: 140px;
+        }
+        /*Section Title*/
+        .fes__section__title {
+            margin-bottom: 30px;
+        }
+        .fes__section__title h2 {
+            font-size: 60px;
+            line-height: 60px;
         }
         /* Mega Menu */
         .fes__header__bottom .header__search {
@@ -957,14 +1092,60 @@
             width: 30px;
             line-height: 30px;
         }
+        /*Categories Section*/
+        .fes__categories__section .fescs__slider .swiper-slide {
+            width: 248px;
+            height: 248px;
+        }
+        .fes__categories__section .fescs__slider .swiper-slide .text {
+            height: 100%;
+            bottom: -70%;
+            padding-left: 15px;
+        }
+        .fes__categories__section .fescs__slider .swiper-slide .text h4 {
+            font-size: 30px;
+            line-height: 30px;
+        }
+        .fes__categories__section .fescs__slider .swiper-slide .text p {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .fes__categories__section .fescs__slider__btn__next,
+        .fes__categories__section .fescs__slider__btn__prev {
+            font-size: 16px;
+            line-height: 30px;
+            height: 30px;
+            width: 30px;
+        }
+        .fes__categories__section .fescs__slider__btn__next {
+            right: -15px;
+        }
+        .fes__categories__section .fescs__slider__btn__prev {
+            left: -15px;
+        }
+        .fes__categories__section .fes__button__a {
+            font-size: 14px;
+            padding: 5px 25px;
+        }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+    .fes__categories__section {
+        margin-top: 60px;
+    }
     /*===== Home Page =====*/
         .logo {
             width: 140px;
         }
-        /* Mega Menu */
+        /*Section Title*/
+        .fes__section__title {
+            margin-bottom: 35px;
+        }
+        .fes__section__title h2 {
+            font-size: 60px;
+            line-height: 60px;
+        }
+        /*Mega Menu*/
         .fes__header__bottom .header__search {
             height: 40px;
             padding: 5px;
@@ -1122,14 +1303,36 @@
         .fes__heroslider .swiper-slide .bg__black .container {
             align-items: flex-end;
         }
+        /*Categories Section*/
+        .fes__categories__section .fescs__slider .swiper-slide {
+            width: 338px;
+            height: 338px;
+        }
+        .fes__categories__section .fescs__slider__btn__prev {
+            left: -20px;
+        }
+        .fes__categories__section .fescs__slider__btn__next {
+            right: -20px;
+        }
+        .fes__categories__section .fescs__slider .swiper-slide .text {
+            padding-left: 15px;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+    .fes__categories__section {
+        margin-top: 70px;
+    }
     /*===== Home Page =====*/
         .logo {
             width: 140px;
         }
-        /* Mega Menu */
+        /*Section title*/
+        .fes__section__title h2 {
+            font-size: 70px;
+            line-height: 70px;
+        }
+        /*Mega Menu*/
         .fes__header .fes__header__top {
             padding: 5px 0;
         }
@@ -1416,9 +1619,27 @@
             width: 30px;
             line-height: 30px;
         }
+        /*Categories Section*/
+        .fes__categories__section .fescs__slider .swiper-slide {
+            width: 298.667px;
+            height: 298.667px;
+        }
+        .fes__categories__section .fescs__slider .swiper-slide .text {
+            height: 100%;
+            bottom: -70%;
+        }
+        .fes__categories__section .fescs__slider__btn__next {
+            right: -10px;
+        }
+        .fes__categories__section .fescs__slider__btn__prev {
+            left: -10px;
+        }
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
+    .fes__categories__section {
+        margin-top: 80px;
+    }
     /*===== Home Page =====*/
         /* Mega Menu */
         .fes__header .fes__header__top {
@@ -1541,9 +1762,29 @@
         .fes__heroslider .fes__product__style .fesps__content .fesps__variant .nice-select .list {
             height: 104px;
         }
+        /*Categories Section*/
+        .fes__categories__section .fescs__slider .swiper-slide {
+            width: 264px;
+            height: 264px;
+        }
+        .fes__categories__section .fescs__slider .swiper-slide .text {
+            height: 100%;
+            bottom: -75%;
+            padding-left: 15px;
+        }
+        .fes__categories__section .fescs__slider .swiper-slide .text h4 {
+            font-size: 28px;
+        }
+        .fes__categories__section .fescs__slider .swiper-slide .text p {
+            font-size: 14px;
+            line-height: 18px;
+        }
 }
 
 @media (min-width: 1400px) and (max-width: 1499px) {
+    .fes__categories__section {
+        margin-top: 80px;
+    }
     /*===== Home Page =====*/
         /*Mega Menu*/
         .fes__header .fes__header__top {
@@ -1574,6 +1815,11 @@
         }
         .fes__heroslider .fes__product__style .fesps__content .fesps__variant .nice-select .list {
             height: 104px;
+        }
+        /*Categories Section*/
+        .fes__categories__section .fescs__slider .swiper-slide {
+            width: 329px;
+            height: 329px;
         }
 }
 

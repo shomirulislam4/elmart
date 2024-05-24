@@ -34,12 +34,12 @@ $(function(){
     $('.fes__rsm__closebtn').on('click', function(){
         $('.fes__right__slider__menu').removeClass('show')
     })
-})
+});
 
 //Nice Select
 if ( $('.fitequip__store').length ) {
     $('.fesps__select').niceSelect();
-  }
+}
 
 //Mobile Menu
 $(function(){
@@ -56,7 +56,7 @@ $(function(){
         var fessubmenu = $(this).find('.l2__submenu');
         fessubmenu.toggleClass('show');
       });
-})
+});
 
 //Right Menu Currency & Language Changer
 $(function(){
@@ -83,7 +83,7 @@ $(function(){
         $('.feslc__currency p').removeClass('hide');
         $('.feslc__currency__clsbtn').addClass('hide');
     })
-})
+});
 
 //Hero Section Slider
 $(function(){
@@ -103,4 +103,30 @@ $(function(){
             prevEl: ".fes__heroslider__btn__prev",
         },
     });
-})
+});
+
+//Categories Section Slider
+$(function(){
+    var swiper = new Swiper(".fescs__slider", {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        navigation: {
+            nextEl: ".fescs__slider__btn__next",
+            prevEl: ".fescs__slider__btn__prev",
+        },
+        breakpoints: {
+            1200: {
+                slidesPerView: 4,
+            },
+            992: {
+                slidesPerView: 3,
+            },
+            415: {
+                slidesPerView: 2,
+            },
+            200: {
+                slidesPerView: 1,
+            }
+        }
+    });
+});
