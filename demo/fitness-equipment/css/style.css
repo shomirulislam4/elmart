@@ -1652,12 +1652,20 @@ button:focus {
 	justify-content: flex-end;
 	align-items: center;
 	gap: 10px;
-	padding-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 .fes__heroslider .fes__product__style .fesps__main .fesps__content h2,
-.fes__product__style .fesps__content .fesps__variant p {
+.fes__heroslider .fes__product__style .fesps__content .fesps__variant p {
     text-shadow: none;
+}
+
+.fes__heroslider .fes__product__style {
+	width: 330px;
+	height: auto !important;
+    background: #FFF;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+	border-radius: 5px;
 }
 
 /* Hero Left Text & Slider Nav */
@@ -1788,9 +1796,16 @@ button:focus {
 /*** Start of Product Style ***/
 .fes__product__style {
 	width: 330px;
-	height: auto;
-	background: #FFF;
-	box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+	height: 328px !important;
+}
+
+.fes__product__style:hover {
+    z-index: 100;
+}
+
+.fes__product__style .fesps__background {
+    background: #FFF;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
 	border-radius: 5px;
 }
 
@@ -2013,7 +2028,6 @@ button:focus {
 /*** Start of Categories Section ***/
 .fes__categories__section {
     margin-top: 100px;
-    margin-bottom: 200px;
 }
 
 .fes__categories__section .container {
@@ -2218,6 +2232,42 @@ button:focus {
 /*** Start of Trending Products ***/
 .fes__trending__products {
     margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+/* Tabs Area */
+.fes__trending__products .nav-pills {
+	gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.fes__trending__products .nav-link {
+    display: inline-block;
+    color: var(--main-color);
+    font-size: 18px;
+    line-height: 40px;
+    height: 40px;
+    text-align: center;
+    width: fit-content;
+    padding: 0 25px;
+    border-radius: 50px;
+    font-family: 'Signika Negative', sans-serif;
+    text-transform: capitalize;
+}
+
+.fes__trending__products .nav-link.active,
+.fes__trending__products .nav-link:hover {
+    color: #FFF;
+    background: var(--main-color);
+}
+
+/* Content Area */
+.fes__trending__products .tab-content .tab-pane {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 
