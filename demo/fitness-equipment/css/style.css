@@ -1796,7 +1796,7 @@ button:focus {
 /*** Start of Product Style ***/
 .fes__product__style {
 	width: 330px;
-	height: 328px !important;
+	height: 328px;
 }
 
 .fes__product__style:hover {
@@ -1807,6 +1807,7 @@ button:focus {
     background: #FFF;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 	border-radius: 5px;
+    min-height: 328px;
 }
 
 /* Image*/
@@ -1982,11 +1983,16 @@ button:focus {
 	overflow-y: auto;
 }
 
+.fes__product__style .fesps__content .fesps__variant .nice-select .current,
+.fes__product__style .fesps__content .fesps__variant .nice-select .option {
+    text-transform: capitalize;
+}
+
 .fes__product__style .fesps__content .fesps__price {
     font-size: 18px;
     line-height: 18px;
     color: var(--text-color);
-    font-weight: 400;
+    font-weight: 600;
     font-family: 'Signika Negative', sans-serif;
     margin-top: 20px;
 }
