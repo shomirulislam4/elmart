@@ -127,6 +127,63 @@ $(function(){
             200: {
                 slidesPerView: 1,
             }
-        }
+        },
+    });
+});
+
+//Testimonials Section Slider
+$(function(){
+    var swiper = new Swiper(".fests__slider", {
+        loop: true,
+        slidesPerView: 3,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: ".fests__slider__next",
+            prevEl: ".fests__slider__prev",
+        },
+        breakpoints: {
+            992: {
+                slidesPerView: 3,
+            },
+            576: {
+                slidesPerView: 2,
+            },
+            200: {
+                slidesPerView: 1,
+            }
+        },
+    });
+});
+
+//Brands Section Slider
+$(function() {
+    var owl = $(".fes__brands__slider");
+    owl.owlCarousel({
+        items: 6,
+        lazyLoad: true,
+        loop: true,
+        margin: 30,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        smartSpeed: 500,
+        autoplayHoverPause: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            576: {
+                items: 4
+            },
+            768: {
+                items: 4
+            },
+            992: {
+                items: 5
+            },
+            1400: {
+                items: 6
+            }
+        },
+        dots: false,
     });
 });
