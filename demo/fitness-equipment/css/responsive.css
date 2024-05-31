@@ -436,7 +436,7 @@
             line-height: 14px;
         }
         /*Trending Products*/
-        .fes__trending__products .tab-content .tab-pane {
+        .fes__trending__products .tab-content .tab-pane.active {
             gap: 10px;
         }
         .fes__trending__products .nav-link {
@@ -813,7 +813,7 @@
             line-height: 16px;
         }
         /*Trending Products*/
-        .fes__trending__products .tab-content .tab-pane {
+        .fes__trending__products .tab-content .tab-pane.active {
             gap: 10px;
         }
         .fes__trending__products .nav-link {
@@ -825,6 +825,54 @@
         .fes__trending__products .nav-pills {
             gap: 5px;
             margin-bottom: 20px;
+        }
+        /*Testimonials*/
+        .fests__slider__next,
+        .fests__slider__prev {
+            height: 30px;
+            width: 30px;
+            line-height: 30px;
+            font-size: 14px;
+        }
+        .fests__slider__next {
+            right: 0;
+        }
+        .fests__slider__prev {
+            left: 0;
+        }
+        .fests__slider {
+            padding: 10px;
+        }
+        .fests__slider .swiper-slide {
+            gap: 15px;
+            height: 280px;
+        }
+        .fests__slider .swiper-slide svg {
+            width: 40px;
+            height: 40px;
+        }
+        .fests__slider .swiper-slide .fests__star__ratings {
+            font-size: 16px;
+            line-height: 16px;
+        }
+        .fests__slider .swiper-slide .fests__customer__info .image {
+            height: 60px;
+            width: 60px;
+        }
+        .fests__slider .swiper-slide .fests__customer__info {
+            gap: 10px;
+        }
+        .fests__slider .swiper-slide .fests__customer__info .customer__name {
+            width: 160px;
+        }
+        .fests__slider .swiper-slide .fests__text,
+        .fests__slider .swiper-slide .fests__customer__info .customer__name p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .fests__slider .swiper-slide .fests__customer__info .customer__name h4 {
+            font-size: 26px;
+            line-height: 30px;
         }
 }
 
@@ -1104,7 +1152,7 @@
             width: 301px;
         }
         /*Trending Products*/
-        .fes__trending__products .tab-content .tab-pane {
+        .fes__trending__products .tab-content .tab-pane.active {
             gap: 10px;
         }
         .fes__trending__products .nav-link {
@@ -1116,6 +1164,50 @@
         .fes__trending__products .nav-pills {
             gap: 5px;
             margin-bottom: 20px;
+        }
+        /*Testimonials*/
+        .fests__slider__next,
+        .fests__slider__prev {
+            height: 30px;
+            width: 30px;
+            line-height: 30px;
+            font-size: 14px;
+        }
+        .fests__slider__next {
+            right: 0;
+        }
+        .fests__slider__prev {
+            left: 0;
+        }
+        .fests__slider {
+            padding: 20px 10px;
+        }
+        .fests__slider .swiper-slide {
+            gap: 15px;
+            height: 294px;
+        }
+        .fests__slider .swiper-slide .fests__star__ratings {
+            font-size: 16px;
+            line-height: 16px;
+        }
+        .fests__slider .swiper-slide .fests__customer__info .image {
+            height: 80px;
+            width: 80px;
+        }
+        .fests__slider .swiper-slide .fests__customer__info {
+            gap: 10px;
+        }
+        .fests__slider .swiper-slide .fests__customer__info .customer__name {
+            width: 265px;
+        }
+        .fests__slider .swiper-slide .fests__text,
+        .fests__slider .swiper-slide .fests__customer__info .customer__name p {
+            font-size: 16px;
+            line-height: 22px;
+        }
+        .fests__slider .swiper-slide .fests__customer__info .customer__name h4 {
+            font-size: 30px;
+            line-height: 34px;
         }
 }
 
@@ -1444,7 +1536,7 @@
             line-height: 16px;
         }
         /*Trending Products*/
-        .fes__trending__products .tab-content .tab-pane {
+        .fes__trending__products .tab-content .tab-pane.active {
             gap: 10px;
         }
         .fes__trending__products .nav-link {
@@ -1456,6 +1548,13 @@
         .fes__trending__products .nav-pills {
             gap: 5px;
             margin-bottom: 20px;
+        }
+        /*Testimonials*/
+        .fests__slider__next {
+            right: -15px;
+        }
+        .fests__slider__prev {
+            left: -15px;
         }
 }
 
@@ -1654,6 +1753,47 @@
         /*Features*/
         .fes__features__item {
             margin-bottom: 20px;
+        }
+        /*Testimonials*/
+        .fests__slider__next {
+            right: -20px;
+        }
+        .fests__slider__prev {
+            left: -20px;
+        }
+        .fests__slider {
+            padding: 20px 10px;
+        }
+        .fests__slider .swiper-slide {
+            gap: 15px;
+            height: 294px;
+        }
+        .fests__slider .swiper-slide svg {
+            width: 54px;
+            height: 54px;
+        }
+        .fests__slider .swiper-slide .fests__star__ratings {
+            font-size: 16px;
+            line-height: 16px;
+        }
+        .fests__slider .swiper-slide .fests__customer__info .image {
+            height: 80px;
+            width: 80px;
+        }
+        .fests__slider .swiper-slide .fests__customer__info {
+            gap: 10px;
+        }
+        .fests__slider .swiper-slide .fests__customer__info .customer__name {
+            width: 210px;
+        }
+        .fests__slider .swiper-slide .fests__text,
+        .fests__slider .swiper-slide .fests__customer__info .customer__name p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .fests__slider .swiper-slide .fests__customer__info .customer__name h4 {
+            font-size: 30px;
+            line-height: 34px;
         }
 }
 
@@ -2007,6 +2147,45 @@
             font-size: 12px;
             line-height: 14px;
         }
+        /*Testimonials*/
+        .fests__slider__next {
+            right: -12px;
+        }
+        .fests__slider__prev {
+            left: -12px;
+        }
+        .fests__slider .swiper-slide {
+            height: 260px;
+            padding: 10px;
+            gap: 15px;
+        }
+        .fests__slider .swiper-slide svg {
+            width: 54px;
+            height: 54px;
+        }
+        .fests__slider .swiper-slide .fests__star__ratings {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        .fests__slider .swiper-slide .fests__text,
+        .fests__slider .swiper-slide .fests__customer__info .customer__name p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .fests__slider .swiper-slide .fests__customer__info {
+            gap: 10px;
+        }
+        .fests__slider .swiper-slide .fests__customer__info .image {
+            height: 70px;
+            width: 70px;
+        }
+        .fests__slider .swiper-slide .fests__customer__info .customer__name {
+            width: 186px;
+        }
+        .fests__slider .swiper-slide .fests__customer__info .customer__name h4 {
+            font-size: 30px;
+            line-height: 34px;
+        }
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -2193,8 +2372,34 @@
             line-height: 18px;
         }
         /*Trending Products*/
-        .fes__trending__products .tab-content .tab-pane {
+        .fes__trending__products .tab-content .tab-pane.active {
             gap: 10px;
+        }
+        /*Testimonials*/
+        .fests__slider__next {
+            right: -25px;
+        }
+        .fests__slider__prev {
+            left: -25px;
+        }
+        .fests__slider .swiper-slide {
+            height: 332px;
+            padding: 20px 10px;
+        }
+        .fests__slider .swiper-slide .fests__text,
+        .fests__slider .swiper-slide .fests__customer__info .customer__name p {
+            font-size: 16px;
+            line-height: 22px;
+        }
+        .fests__slider .swiper-slide .fests__customer__info {
+            gap: 15px;
+        }
+        .fests__slider .swiper-slide .fests__customer__info .image {
+            height: 80px;
+            width: 80px;
+        }
+        .fests__slider .swiper-slide .fests__customer__info .customer__name {
+            width: 211px;
         }
 }
 
@@ -2253,8 +2458,18 @@
             width: 236px;
         }
         /*Trending Products*/
-        .fes__trending__products .tab-content .tab-pane {
+        .fes__trending__products .tab-content .tab-pane.active {
             gap: 18px;
+        }
+        /*Testimonials*/
+        .fests__slider__next {
+            right: 3px;
+        }
+        .fests__slider__prev {
+            left: 3px;
+        }
+        .fests__slider .swiper-slide .fests__customer__info .customer__name {
+            width: 273px;
         }
 }
 
@@ -2267,6 +2482,13 @@
         }
         .fes__heroslider .swiper-slide .fes__hero__text {
             padding-left: 50px;
+        }
+        /*Testimonials*/
+        .fests__slider__next {
+            right: -25px;
+        }
+        .fests__slider__prev {
+            left: -25px;
         }
 }
 

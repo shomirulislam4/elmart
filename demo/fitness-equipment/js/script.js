@@ -145,8 +145,9 @@ $(function(){
             992: {
                 slidesPerView: 3,
             },
-            576: {
+            768: {
                 slidesPerView: 2,
+                spaceBetween: 20,
             },
             200: {
                 slidesPerView: 1,
