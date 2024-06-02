@@ -188,3 +188,47 @@ $(function() {
         dots: false,
     });
 });
+
+//On Sale Timer
+function makeTimer() {
+    //timer 1
+    var endTime = new Date("30 March 2025 0:00:00 UTC+0");	
+    endTime = (Date.parse(endTime) / 1000);
+    var now = new Date();
+    now = (Date.parse(now) / 1000);
+
+    var timeLeft = endTime - now;
+    var days = Math.floor(timeLeft / 86400); 
+    var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
+    var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
+    var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+
+    $("#timer #days").html(days + "<span>DAYS</span><br>");
+    $("#timer #hours").html(hours + "<span>HOURS</span><br>");
+    $("#timer #minutes").html(minutes + "<span>MIN</span><br>");
+    $("#timer #seconds").html(seconds + "<span>SECS</span><br>");		
+}
+setInterval(function() { makeTimer(); }, 1000);
+
+// On Sale Sldier
+$(function() {
+    $(".fes__pos__slider").owlCarousel({
+        items: 4,
+        loop: true,
+        margin: 20,
+        nav: false,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        onInitialized: addNumbersToDots,
+        onTranslated: addNumbersToDots
+    });
+
+    function addNumbersToDots(event) {
+        var dots = $(".owl-dot");
+        dots.each(function(index) {
+            $(this).find("span").text(index + 1);
+        });
+    }
+});

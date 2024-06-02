@@ -45,6 +45,9 @@
     /* Secondary Color */
     --secondary-color: #7338A0;
 
+    /* Section Background */
+    --section--bg: #F7F6F2;
+
     /* Text Color */
     --text-color: #13172B;
 
@@ -2430,7 +2433,6 @@ button:focus {
 /*** Start of Brands ***/
 .fes__brands__slider__section {
     margin-top: 100px;
-    margin-bottom: 200px;
 }
 
 .fes__brands__slider .item img {
@@ -2448,6 +2450,170 @@ button:focus {
     filter: grayscale(0);
 }
 /*** End of Brands ***/
+
+/*** Start of Product On Sale ***/
+.fes__product__onsale__section {
+    margin-top: 100px;
+    margin-bottom: 200px;
+    background: var(--section--bg);
+    padding-top: 100px;
+}
+
+/* Title */
+.title__with__text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.title__with__text::before {
+    position: absolute;
+    content: '';
+    background: #FFF;
+    width: 100%;
+    height: 2px;
+    bottom: -1px;
+    left: 0;
+}
+
+.title__with__text::after {
+    position: absolute;
+    content: '';
+    background: var(--main-color);
+    width: 20%;
+    height: 2px;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.title__with__text .fes__section__title {
+    width: 45%;
+    margin: 0;
+}
+
+.title__with__text .fes__section__title h4,
+.title__with__text .fes__section__title h2 {
+	text-align: right;
+}
+
+.title__with__text .fes__section__title h2,
+.title__with__text .fes__section__title h2 span {
+	font-size: 74px;
+	line-height: 74px;
+	font-family: 'Teko', sans-serif;
+}
+
+.title__with__text .fes__section__title h2 span {
+    color: var(--main-color);
+}
+
+.title__with__text .twt__vertical__line {
+    width: 2px;
+    height: 120px;
+    background: #FFF;
+}
+
+.title__with__text .twt__text {
+    width: 45%;
+}
+
+.title__with__text .twt__text p {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    font-family: 'Signika Negative', sans-serif;
+    margin: 0;
+}
+
+/* Timer */
+.fes__pos__timer {
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    margin: 40px 0;
+}
+
+.fes__pos__timer #days,
+.fes__pos__timer #hours,
+.fes__pos__timer #minutes,
+.fes__pos__timer #seconds {
+    color: var(--text-color);
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 600;
+    font-family: 'Signika Negative', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.fes__pos__timer #days span,
+.fes__pos__timer #hours span,
+.fes__pos__timer #minutes span,
+.fes__pos__timer #seconds span {
+    color: var(--main-color);
+    font-size: 16px;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+/* Slider */
+.fes__pos__slider .item {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.fes__pos__main__wrapper {
+    overflow-x: hidden;
+    padding-bottom: 100px;
+}
+
+.fes__pos__slider.owl-carousel .owl-stage-outer {
+	overflow: visible;
+}
+
+.fes__pos__slider.owl-theme .owl-nav.disabled + .owl-dots {
+	margin-top: 60px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    color: var(--text-color);
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Signika Negative', sans-serif;
+    padding: 0;
+    border-radius: 50%;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    color: #FFF;
+    background: var(--main-color);
+}
+
+/*** End of Product On Sale ***/
 
 /*
 rgba(158, 114, 195, 0.4)
