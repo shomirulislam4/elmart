@@ -236,7 +236,6 @@ $(function() {
             },
             1200: {
                 items: 4,
-                margin: 15,
             },
             1400: {
                 items: 4

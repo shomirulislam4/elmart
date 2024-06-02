@@ -526,8 +526,8 @@
         }
         .title__with__text .fes__section__title h2,
         .title__with__text .fes__section__title h2 span {
-            font-size: 50px;
-            line-height: 50px;
+            font-size: 30px;
+            line-height: 30px;
         }
         .title__with__text .fes__section__title h4,
         .title__with__text .fes__section__title h2 {
@@ -537,8 +537,8 @@
             display: none;
         }
         .title__with__text .twt__text p {
-            font-size: 14px;
-            line-height: 20px;
+            font-size: 12px;
+            line-height: 18px;
             text-align: center;
         }
         .fes__pos__slider.owl-theme .owl-nav.disabled + .owl-dots {
@@ -1471,6 +1471,13 @@
         .fes__pos__timer #seconds span {
             font-size: 14px;
         }
+        .fes__product__onsale__section .fes__product__style:hover .fesps__content .show__on__hover {
+            margin: 15px 0;
+        }
+        .fes__product__onsale__section .fes__product__style .fesps__content .fesps__price,
+        .fes__product__onsale__section .fes__product__style:hover .fesps__content .fes__button__a {
+            margin-top: 15px;
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -2145,6 +2152,13 @@
         .fes__pos__slider.owl-theme .owl-nav.disabled + .owl-dots {
             margin-top: 40px;
         }
+        .fes__product__onsale__section .fes__product__style:hover .fesps__content .show__on__hover {
+            margin: 15px 0;
+        }
+        .fes__product__onsale__section .fes__product__style .fesps__content .fesps__price,
+        .fes__product__onsale__section .fes__product__style:hover .fesps__content .fes__button__a {
+            margin-top: 15px;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -2161,9 +2175,6 @@
     }
     .fes__product__onsale__section {
         padding-top: 70px;
-    }
-    .fes__pos__main__wrapper {
-        padding-bottom: 70px;
     }
     /*===== Home Page =====*/
         .logo {
@@ -2570,6 +2581,13 @@
         .fes__pos__slider.owl-theme .owl-nav.disabled + .owl-dots {
             margin-top: 40px;
         }
+        .fes__product__onsale__section .fes__product__style:hover .fesps__content .show__on__hover {
+            margin: 15px 0;
+        }
+        .fes__product__onsale__section .fes__product__style .fesps__content .fesps__price,
+        .fes__product__onsale__section .fes__product__style:hover .fesps__content .fes__button__a {
+            margin-top: 15px;
+        }
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -2586,9 +2604,6 @@
     }
     .fes__product__onsale__section {
         padding-top: 80px;
-    }
-    .fes__pos__main__wrapper {
-        padding-bottom: 80px;
     }
     /*===== Home Page =====*/
         /* Mega Menu */
@@ -2827,9 +2842,6 @@
     }
     .fes__product__onsale__section {
         padding-top: 80px;
-    }
-    .fes__pos__main__wrapper {
-        padding-bottom: 80px;
     }
     /*===== Home Page =====*/
         /*Mega Menu*/
