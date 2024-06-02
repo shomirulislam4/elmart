@@ -2463,12 +2463,12 @@ button:focus {
 
 /* Title */
 .title__with__text {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 40px;
-    margin-bottom: 40px;
-    position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-bottom: 40px;
+	margin-bottom: 20px;
+	position: relative;
 }
 
 .title__with__text::before {
@@ -2538,7 +2538,6 @@ button:focus {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    padding: 10px;
     margin: 40px 0;
 }
 
@@ -2592,6 +2591,15 @@ button:focus {
 	margin-top: 60px;
 }
 
+.owl-theme .owl-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.owl-theme .owl-dots .owl-dot,
 .owl-theme .owl-dots .owl-dot span {
     color: var(--text-color);
     width: 30px;
@@ -2601,6 +2609,7 @@ button:focus {
     font-weight: 400;
     font-family: 'Teko', sans-serif;
     padding: 0;
+    margin: 0;
     border-radius: 50%;
     transition: 0.3s;
     -moz-transition: 0.3s;

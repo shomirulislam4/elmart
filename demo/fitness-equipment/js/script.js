@@ -170,19 +170,22 @@ $(function() {
         autoplayHoverPause: false,
         responsive: {
             0: {
-                items: 1
+                items: 1,
+            },
+            415: {
+                items: 2,
             },
             576: {
-                items: 4
+                items: 4,
             },
             768: {
-                items: 4
+                items: 4,
             },
             992: {
-                items: 5
+                items: 5,
             },
             1400: {
-                items: 6
+                items: 6,
             }
         },
         dots: false,
@@ -221,6 +224,24 @@ $(function() {
         autoplay: true,
         autoplayTimeout: 3000,
         autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            576: {
+                items: 2,
+            },
+            992: {
+                items: 3,
+            },
+            1200: {
+                items: 4,
+                margin: 15,
+            },
+            1400: {
+                items: 4
+            }
+        },
         onInitialized: addNumbersToDots,
         onTranslated: addNumbersToDots
     });
