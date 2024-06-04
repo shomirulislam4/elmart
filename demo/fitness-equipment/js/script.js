@@ -299,4 +299,41 @@ $(function () {
     var button6 = $(".fesns__info__dots.dot6")[0];
     var popover6 = $(".fesns__info__text.cont6")[0];
     createAndSetupPopper(button6, popover6);
-  });
+});
+
+//Promo Code Copy
+$(function() {
+    var clipboard = new ClipboardJS('.fesbds__copy__btn', {
+        text: function() {
+            return $('.fesbds__promo__code').text();
+        }
+    });
+
+    //Success
+    clipboard.on('success', function(e) {
+        showPopup();
+        e.clearSelection();
+    });
+
+    function showPopup() {
+        var popup = $('.fesbds__success__popuptext');
+        popup.addClass('show');
+        setTimeout(function() {
+            popup.removeClass('show');
+        }, 2000);
+    }
+
+    //Error
+    clipboard.on('error', function(e) {
+        showErrorPopup();
+        e.clearSelection();
+    });
+
+    function showErrorPopup() {
+        var popupError = $('.fesbds__error__popuptext');
+        popupError.addClass('show');
+        setTimeout(function() {
+            popupError.removeClass('show');
+        }, 2000);
+    }
+});

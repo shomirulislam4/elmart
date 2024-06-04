@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#9E72C3">
+
+    <title>ElFitEquip - Fitness Equipment Store</title>
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="icon" type="image/x-icon" href="../image/favicon.png">
+    <link rel="apple-touch-icon" href="../image/icon.png">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/fontawesome.min.css">
+    <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/spacing.css">
+    <link rel="stylesheet" href="../css/magnific-popup.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <link rel="stylesheet" href="../css/nice-select.css">
+    <link rel="stylesheet" href="../css/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl-carousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="fitequip__store">
+    <!-- Start of Header -->
+    <header class="fes__header">
+        <div class="container">
+            <div class="fes__header__top">
+                <div class="row">
+                    <div class="col-12 col-md-5 col-lg-4 left">
+                        <ul>
+                            <li><i class="fa-solid fa-location-dot"></i><a href="contact.html">store location</a></li>
+                            <li class="phone"><span class="phone__anim"><i class="fa-solid fa-phone-volume"></i></span>Call Us:<a href="tel:+123-456-7890">+(123)-456-7890</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-4 col-md-2 col-lg-4 middle">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="image/logo.png" alt="ElFitEquip Logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-8 col-md-5 col-lg-4 right">
+                        <ul class="cart__wishlist">
+                            <li><a href="../wishlist.html"><i class="fa-solid fa-heart"></i><span class="fes__amount">10</span></a></li>
+                            <li><a class="fes__header__cart" href="#"><i class="fa-solid fa-cart-shopping"></i><span class="fes__amount">2</span></a></li>
+                        </ul>
+                        <div class="vertical__seperator"></div>
+                        <ul>
+                            <li><a class="fes__rsm__btn" href="#"><i class="fa-solid fa-bars"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="fes__header__bottom">
+                <ul class="fes__browseall">
+                    <li>
+                        <a href="#"><i class="fa-solid fa-bars"></i>browse all categories<i class="fa-solid fa-chevron-down fes__arrow"></i></a>
+                        <div class="mega__category__menu">
+                            <div class="container">
+                                <ul class="categories__list">
+                                    <li>
+                                        Cardio Machines<i class="fa-solid fa-chevron-right"></i>
+                                        <div class="cetgory__submenu">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <a href="#" class="item">
+                                                        <div class="image"><img src="image/header/cross-trainers.png" alt="category img"></div>
+                                                        <div class="text">
+                                                            <h3>Cross Trainers</h3>
+                                                            <p>starts: $300</p>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="item">
+                                                        <div class="image"><img src="image/header/recline-bikes.png" alt="category img"></div>
+                                                        <div class="text">
+                                                            <h3>Recline Bikes</h3>
+                                                            <p>starts: $290</p>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="item">
+                                                        <div class="image"><img src="image/header/rowers.png" alt="category img"></div>
+                                                        <div class="text">
+                                                            <h3>Rowers</h3>
+                                                            <p>starts: $350</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a href="#" class="item">
+                                                        <div class="image"><img src="image/header/vibrating-plates.png" alt="category img"></div>
+                                                        <div class="text">
+                                                            <h3>Vibration Plates</h3>
+                                                            <p>starts: $310</p>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="item">
+                                                        <div class="image"><img src="image/header/stepper.png" alt="category img"></div>
+                                                        <div class="text">
+                                                            <h3>Steppers & Others</h3>
+                                                            <p>starts: $330</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a href="#" class="item">
+                                                        <div class="image"><img src="image/header/upright-exercise-bikes.png" alt="category img"></div>
+                                                        <div class="text">
+                                                            <h3>Upright Exercise Bikes</h3>
+                                                            <p>starts: $340</p>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="item">
+                                                        <div class="image"><img src="image/header/treadmills.png" alt="category img"></div>
+                                                        <div class="text">
+                                                            <h3>Treadmills</h3>
+                                                            <p>starts: $320</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        Weight Lifting<i class="fa-solid fa-chevron-right"></i>
+                                        <div class="cetgory__submenu">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <a href="#" class="item">
+                                                        <div class="image"><img src="image/header/dumbbell.png" alt="category img"></div>
+                                                        <div class="text">
+                                                            <h3>Dumbbells</h3>
+                                                            <p>starts: $100</p>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="item">
+                                                        <div class="image"><img src="image/header/weight-plates.png" alt="category img"></div>
+                                                        <div class="text">
+                                                            <h3>Weights Plate</h3>
+                                                            <p>starts: $100</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a href="#" class="item">
+                                                        <div class="image"><img src="image/header/barbells.png" alt="category img"></div>
+                                                        <div class="text">
+                                                            <h3>Barbells</h3>
+                                                            <p>starts: $200</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a href="#" class="item">
+                                                        <div class="image"><img src="image/header/olympic-bar.png" alt="category img"></div>
+                                                        <div class="text">
+                                                            <h3>Olympic Bars</h3>
+                                                            <p>starts: $80</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        Gym Packages<i class="fa-solid fa-chevron-right"></i>
+                                        <div class="cetgory__submenu">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <a href="#" class="item">
+                                                        <div class="image"><img src="image/header/cardio-packages.png" alt="category img"></div>
+                                                        <div class="text">
+                                                            <h3>Cardio Packages</h3>
+                                                            <p>starts: $1300</p>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="item">
+                                                        <div class="image"><img src="image/header/complete-gym-packages.png" alt="category img"></div>
+                                                        <div class="text">
+                                                            <h3>Complete Gym Packages</h3>
+                                                            <p>starts: $1400</p>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="item">
+                                                        <div class="image"><img src="image/header/eco-gym-machines.png" alt="category img"></div>
+                                                        <div class="text">
+                                                            <h3>Eco Gym Machines (The Green Gym)</h3>
+                                                            <p>starts: $1500</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a href="#" class="item">
+                                                        <div class="image"><img src="image/header/hotel-gym-equipment.png" alt="category img"></div>
+                                                        <div class="text">
+                                                            <h3>Hotel Gym Equipment</h3>
+                                                            <p>starts: $1200</p>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="item">
+                                                        <div class="image"><img src="image/header/law-enforcement-gym-quipment.png" alt="category img"></div>
+                                                        <div class="text">
+                                                            <h3>Law Enforcement Gym Equipment</h3>
+                                                            <p>starts: $1500</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a href="#" class="item">
+                                                        <div class="image"><img src="image/header/school-gym-equipment.png" alt="category img"></div>
+                                                        <div class="text">
+                                                            <h3>School Gym Equipment</h3>
+                                                            <p>starts: $1200</p>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="item">
+                                                        <div class="image"><img src="image/header/weight-bundles.png" alt="category img"></div>
+                                                        <div class="text">
+                                                            <h3>Weight Bundles</h3>
+                                                            <p>starts: $600</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        Gym Strength Equipment<i class="fa-solid fa-chevron-right"></i>
+                                        <div class="cetgory__submenu">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <a href="#" class="item">
+                                                        <div class="image"><img src="image/header/dual-purpose-gym-machines.png" alt="category img"></div>
+                                                        <div class="text">
+                                                            <h3>Dual Purpose Gym Machines</h3>
+                                                            <p>starts: $700</p>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="item">
+                                                        <div class="image"><img src="image/header/gym-bench.png" alt="category img"></div>
+                                                        <div class="text">
+                                                            <h3>Gym Benches</h3>
+                                                            <p>starts: $300</p>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="item">
+                                                        <div class="image"><img src="image/header/gym-racks.png" alt="category img"></div>
+                                                        <div class="text">
+                                                            <h3>Gym Racks</h3>
+                                                            <p>starts: $300</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a href="#" class="item">
+                                                        <div class="image"><img src="image/header/outdoor-fitness.png" alt="category img"></div>
+                                                        <div class="text">
+                                                            <h3>Outdoor Fitness</h3>
+                                                            <p>starts: $600</p>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="item">
+                                                        <div class="image"><img src="image/header/pin-select-gym-machines.png" alt="category img"></div>
+                                                        <div class="text">
+                                                            <h3>Pin Select Gym Machines</h3>
+                                                            <p>starts: $500</p>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="item">
+                                                        <div class="image"><img src="image/header/plate-loaded-gym-equipment.png" alt="category img"></div>
+                                                        <div class="text">
+                                                            <h3>Plate Loaded Gym Equipment</h3>
+                                                            <p>starts: $500</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a href="#" class="item">
+                                                        <div class="image"><img src="image/header/gym-training-rigs.png" alt="category img"></div>
+                                                        <div class="text">
+                                                            <h3>Gym Training Rigs</h3>
+                                                            <p>starts: $800</p>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="item">
+                                                        <div class="image"><img src="image/header/gym-station.png" alt="category img"></div>
+                                                        <div class="text">
+                                                            <h3>Fitness Stations</h3>
+                                                            <p>starts: $1200</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        Gym Supplies<i class="fa-solid fa-chevron-right"></i>
+                                        <div class="cetgory__submenu">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <a href="#" class="item">
+                                                        <div class="image"><img src="image/header/cardio-spares.png" alt="category img"></div>
+                                                        <div class="text">
+                                                            <h3>Cardio Spares</h3>
+                                                            <p>starts: $800</p>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="item">
+                                                        <div class="image"><img src="image/header/gym-boxing.png" alt="category img"></div>
+                                                        <div class="text">
+                                                            <h3>Gym Boxing Equipment</h3>
+                                                            <p>starts: $700</p>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="item">
+                                                        <div class="image"><img src="image/header/gym-cable-attachments.png" alt="category img"></div>
+                                                        <div class="text">
+                                                            <h3>Gym Cable Attachments</h3>
+                                                            <p>starts: $400</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a href="#" class="item">
+                                                        <div class="image"><img src="image/header/floor-gymnastics.png" alt="category img"></div>
+                                                        <div class="text">
+                                                            <h3>Gym Flooring</h3>
+                                                            <p>starts: $300</p>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="item">
+                                                        <div class="image"><img src="image/header/gym-maintenance-videos.png" alt="category img"></div>
+                                                        <div class="text">
+                                                            <h3>Gym Maintenance Videos</h3>
+                                                            <p>starts: $500</p>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="item">
+                                                        <div class="image"><img src="image/header/gym-strength-spares.png" alt="category img"></div>
+                                                        <div class="text">
+                                                            <h3>Gym Strength Spares</h3>
+                                                            <p>starts: $400</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a href="#" class="item">
+                                                        <div class="image"><img src="image/header/gym-studio-equipment.png" alt="category img"></div>
+                                                        <div class="text">
+                                                            <h3>Gym Studio Equipment</h3>
+                                                            <p>starts: $500</p>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="item">
+                                                        <div class="image"><img src="image/header/used-gym-equipment.png" alt="category img"></div>
+                                                        <div class="text">
+                                                            <h3>Used Gym Equipment</h3>
+                                                            <p>starts: $100</p>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="item">
+                                                        <div class="image"><img src="image/header/special-offers.png" alt="category img"></div>
+                                                        <div class="text">
+                                                            <h3>Special Offers</h3>
+                                                            <p>starts: $350</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        Energy Drinks<i class="fa-solid fa-chevron-right"></i>
+                                        <div class="cetgory__submenu">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <a href="#" class="item">
+                                                        <div class="image"><img src="image/header/strength-packages.png" alt="category img"></div>
+                                                        <div class="text">
+                                                            <h3>Strength Packages</h3>
+                                                            <p>starts: $500</p>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="item">
+                                                        <div class="image"><img src="image/header/energy-drinks.png" alt="category img"></div>
+                                                        <div class="text">
+                                                            <h3>Energy Drinks</h3>
+                                                            <p>starts: $10</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a href="#" class="item">
+                                                        <div class="image"><img src="image/header/protein-supplements.png" alt="category img"></div>
+                                                        <div class="text">
+                                                            <h3>Protein Supplements</h3>
+                                                            <p>starts: $50</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a href="#" class="item">
+                                                        <div class="image"><img src="image/header/workout-supplements.png" alt="category img"></div>
+                                                        <div class="text">
+                                                            <h3>Workout Supplements</h3>
+                                                            <p>starts: $200</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <div class="vertical__seperator"></div>
+                </ul>
+                <ul class="main__nav">
+                    <li><a href="index.html">Home <i class="fa-solid fa-chevron-down fes__arrow"></i></a>
+                        <div class="fes__megamenu">
+                            <div class="container d-flex justify-content-around">
+                                <ul>
+                                    <li><a href="../index.html">Homepage 1</a></li>
+                                    <li><a href="../index-2.html">Homepage 2</a></li>
+                                    <li><a href="../index-3.html">Homepage 3</a></li>
+                                    <li><a href="../index-4.html">Homepage 4</a></li>
+                                    <li><a href="../index-5.html">Homepage 5</a></li>
+                                    <li><a href="../index-6.html">Homepage 6</a></li>
+                                    <li><a href="../index-7.html">Homepage 7</a></li>
+                                    <li><a href="../index-8.html">Homepage 8</a></li>
+                                    <li><a href="../fitness-equipment/index.html">Homepage 9</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">Menu Name 1</a></li>
+                                    <li><a href="#">Menu Name 2</a></li>
+                                    <li><a href="#">Menu Name 3</a></li>
+                                    <li><a href="#">Menu Name 4</a></li>
+                                    <li><a href="#">Menu Name 5</a></li>
+                                    <li><a href="#">Menu Name 6</a></li>
+                                    <li><a href="#">Menu Name 7</a></li>
+                                    <li><a href="#">Menu Name 8</a></li>
+                                    <li><a href="#">Menu Name 9</a></li>
+                                    <li><a href="#">Menu Name 10</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">Menu Name 11</a></li>
+                                    <li><a href="#">Menu Name 12</a></li>
+                                    <li><a href="#">Menu Name 13</a></li>
+                                    <li><a href="#">Menu Name 14</a></li>
+                                    <li><a href="#">Menu Name 15</a></li>
+                                    <li><a href="#">Menu Name 16</a></li>
+                                    <li><a href="#">Menu Name 17</a></li>
+                                    <li><a href="#">Menu Name 18</a></li>
+                                    <li><a href="#">Menu Name 19</a></li>
+                                    <li><a href="#">Menu Name 20</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">Menu Name 21</a></li>
+                                    <li><a href="#">Menu Name 22</a></li>
+                                    <li><a href="#">Menu Name 23</a></li>
+                                    <li><a href="#">Menu Name 24</a></li>
+                                    <li><a href="#">Menu Name 25</a></li>
+                                    <li><a href="#">Menu Name 26</a></li>
+                                    <li><a href="#">Menu Name 27</a></li>
+                                    <li><a href="#">Menu Name 28</a></li>
+                                    <li><a href="#">Menu Name 29</a></li>
+                                    <li><a href="#">Menu Name 30</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">Menu Name 31</a></li>
+                                    <li><a href="#">Menu Name 32</a></li>
+                                    <li><a href="#">Menu Name 33</a></li>
+                                    <li><a href="#">Menu Name 34</a></li>
+                                    <li><a href="#">Menu Name 35</a></li>
+                                    <li><a href="#">Menu Name 36</a></li>
+                                    <li><a href="#">Menu Name 37</a></li>
+                                    <li><a href="#">Menu Name 38</a></li>
+                                    <li><a href="#">Menu Name 39</a></li>
+                                    <li><a href="#">Menu Name 40</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">Shop <i class="fa-solid fa-chevron-down fes__arrow"></i></a>
+                        <div class="fes__megamenu">
+                            <div class="container d-flex justify-content-around">
+                                <ul>
+                                    <h4>shop</h4>
+                                    <li><a href="../shop.html">Shop Left Sidebar</a></li>
+                                    <li><a href="../shop-right-sidebar.html">Shop Right Sidebar</a></li>
+                                    <li><a href="../shop-banner-left-sidebar.html">Shop Banner Leftbar</a></li>
+                                    <li><a href="../shop-banner-right-sidebar.html">Shop Banner Rightbar</a></li>
+                                    <li><a href="../shop-product-style-2.html">Shop Product Style 2</a></li>
+                                    <li><a href="../shop-product-style-3.html">Shop Product Style 3</a></li>
+                                    <li><a href="../shop-product-style-3-list.html">Shop PStyle 3 (List)</a></li>
+                                    <li><a href="../shop-product-style-4.html">Shop Product Style 4</a></li>
+                                    <li><a href="../shop-product-style-5.html">Shop Product Style 5</a></li>
+                                    <li><a href="../shop-infinite-scroll.html">Shop Infinite Scroll</a></li>
+                                    <li><a href="../shop-product-style-6.html">Shop Product Style 6</a></li>
+                                    <li><a href="../shop-product-style-7.html">Shop Product Style 7</a></li>
+                                </ul>
+                                <ul>
+                                    <h4>single product</h4>
+                                    <li><a href="../shop-details.html">Single Product</a></li>
+                                    <li><a href="../shop-details-countdown.html">Product Countdown</a></li>
+                                    <li><a href="../shop-details-ask-question.html">Product Ask a Question</a></li>
+                                    <li><a href="../shop-details-size-guide.html">Product Size Guide</a></li>
+                                    <li><a href="../shop-details-color-compare.html">Product Color Compare</a></li>
+                                    <li><a href="../shop-details-product-image-slider.html">Product Image Slider</a></li>
+                                    <li><a href="../shop-details-slider-image.html">Product Image Slider V2</a></li>
+                                    <li><a href="../shop-details-sidebar.html">Product Sidebar</a></li>
+                                    <li><a href="../shop-details-style-4.html">Product Image Gallery</a></li>
+                                    <li><a href="../shop-details-style-5.html">Single Product Style 5</a></li>
+                                    <li><a href="../shop-details-style-6.html">Single Product Style 6</a></li>
+                                    <li><a href="../shop-details-style-7.html">Single Product Style 7</a></li>
+                                    <li><a href="single-product.html">Single Product Style 8</a></li>
+                                </ul>
+                                <ul>
+                                    <h4>List name 3</h4>
+                                    <li><a href="#">list Name 11</a></li>
+                                    <li><a href="#">list Name 12</a></li>
+                                    <li><a href="#">list Name 13</a></li>
+                                    <li><a href="#">list Name 14</a></li>
+                                    <li><a href="#">list Name 15</a></li>
+                                    <li><a href="#">list Name 16</a></li>
+                                    <li><a href="#">list Name 17</a></li>
+                                    <li><a href="#">list Name 18</a></li>
+                                    <li><a href="#">list Name 19</a></li>
+                                    <li><a href="#">list Name 20</a></li>
+                                </ul>
+                                <ul>
+                                    <h4>List name 4</h4>
+                                    <li><a href="#">list Name 21</a></li>
+                                    <li><a href="#">list Name 22</a></li>
+                                    <li><a href="#">list Name 23</a></li>
+                                    <li><a href="#">list Name 24</a></li>
+                                    <li><a href="#">list Name 25</a></li>
+                                    <li><a href="#">list Name 26</a></li>
+                                    <li><a href="#">list Name 27</a></li>
+                                    <li><a href="#">list Name 28</a></li>
+                                    <li><a href="#">list Name 29</a></li>
+                                    <li><a href="#">list Name 30</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">Products <i class="fa-solid fa-chevron-down fes__arrow"></i></a>
+                        <div class="fes__megamenu">
+                            <div class="container d-flex justify-content-around">
+                                <ul>
+                                    <h4>product styles</h4>
+                                    <li><a href="../shop.html">Shop Left Sidebar</a></li>
+                                    <li><a href="../shop-right-sidebar.html">Shop Right Sidebar</a></li>
+                                    <li><a href="../shop-banner-left-sidebar.html">Shop Banner Leftbar</a></li>
+                                    <li><a href="../shop-banner-right-sidebar.html">Shop Banner Rightbar</a></li>
+                                    <li><a href="../shop-product-style-2.html">Shop Product Style 2</a></li>
+                                    <li><a href="../shop-product-style-3.html">Shop Product Style 3</a></li>
+                                    <li><a href="../shop-product-style-3-list.html">Shop PStyle 3 (List)</a></li>
+                                    <li><a href="../shop-product-style-4.html">Shop Product Style 4</a></li>
+                                    <li><a href="../shop-product-style-5.html">Shop Product Style 5</a></li>
+                                    <li><a href="../shop-infinite-scroll.html">Shop Infinite Scroll</a></li>
+                                    <li><a href="../shop-details-style-6.html">Single Product Style 6</a></li>
+                                    <li><a href="../shop-details-style-7.html">Single Product Style 7</a></li>
+                                </ul>
+                                <ul>
+                                    <h4>Product list</h4>
+                                    <li><a href="#">Product Name 1</a></li>
+                                    <li><a href="#">Product Name 2</a></li>
+                                    <li><a href="#">Product Name 3</a></li>
+                                    <li><a href="#">Product Name 4</a></li>
+                                    <li><a href="#">Product Name 5</a></li>
+                                    <li><a href="#">Product Name 6</a></li>
+                                    <li><a href="#">Product Name 7</a></li>
+                                    <li><a href="#">Product Name 8</a></li>
+                                    <li><a href="#">Product Name 9</a></li>
+                                    <li><a href="#">Product Name 10</a></li>
+                                </ul>
+                                <ul>
+                                    <h4>Product list</h4>
+                                    <li><a href="#">Product Name 11</a></li>
+                                    <li><a href="#">Product Name 12</a></li>
+                                    <li><a href="#">Product Name 13</a></li>
+                                    <li><a href="#">Product Name 14</a></li>
+                                    <li><a href="#">Product Name 15</a></li>
+                                    <li><a href="#">Product Name 16</a></li>
+                                    <li><a href="#">Product Name 17</a></li>
+                                    <li><a href="#">Product Name 18</a></li>
+                                    <li><a href="#">Product Name 19</a></li>
+                                    <li><a href="#">Product Name 20</a></li>
+                                </ul>
+                                <ul>
+                                    <h4>Product list</h4>
+                                    <li><a href="#">Product Name 21</a></li>
+                                    <li><a href="#">Product Name 22</a></li>
+                                    <li><a href="#">Product Name 23</a></li>
+                                    <li><a href="#">Product Name 24</a></li>
+                                    <li><a href="#">Product Name 25</a></li>
+                                    <li><a href="#">Product Name 26</a></li>
+                                    <li><a href="#">Product Name 27</a></li>
+                                    <li><a href="#">Product Name 28</a></li>
+                                    <li><a href="#">Product Name 29</a></li>
+                                    <li><a href="#">Product Name 30</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="has__tiny__menu"><a href="#">Blog <i class="fa-solid fa-chevron-down fes__arrow"></i></a>
+                        <ul class="fes__tinymenu">
+                            <li><a href="../blog.html">Blog</a></li>
+                            <li><a href="../blog-post.html">Blog Post Right Sidebar</a></li>
+                            <li><a href="../blog-post-left-sidebar.html">Blog Post Left Sidebar</a></li>
+                            <li><a href="../blog-post-no-sidebar.html">Blog Post No Sidebar</a></li>
+                            <li class="has__tiny__menu"><a href="#">More <i class="fa-solid fa-chevron-right"></i></a>
+                                <ul class="fes__tinymenu">
+                                    <li><a href="../blog-post.html">Blog Post</a></li>
+                                    <li><a href="#">More menu 1</a></li>
+                                    <li><a href="#">More menu 2</a></li>
+                                    <li><a href="#">More menu 3</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has__tiny__menu"><a href="#">Pages <i class="fa-solid fa-chevron-down fes__arrow"></i></a>
+                        <ul class="fes__tinymenu">
+                            <li class="has__tiny__menu"><a href="#">Some pages <i class="fa-solid fa-chevron-right"></i></a>
+                                <ul class="fes__tinymenu">
+                                    <li><a href="../blog-post.html">Blog Post</a></li>
+                                    <li><a href="../faqs.html">FAQs</a></li>
+                                </ul>
+                            </li>
+                            <li class="has__tiny__menu"><a href="#">customer dashboard <i class="fa-solid fa-chevron-right"></i></a>
+                                <ul class="fes__tinymenu">
+                                    <li><a href="../user-dashboard.html">User Dashboard</a></li>
+                                    <li><a href="../wishlist.html">Wishlist</a></li>
+                                    <li><a href="../cart.html">Cart</a></li>
+                                    <li><a href="../checkout.html">Checkout</a></li>
+                                </ul>
+                            </li>
+                            <li class="has__tiny__menu"><a href="#">seller dashboard <i class="fa-solid fa-chevron-right"></i></a>
+                                <ul class="fes__tinymenu">
+                                    <li><a href="../seller-dashboard.html">Seller Dashboard</a></li>
+                                    <li><a href="../vendor-list.html">Vendor List</a></li>
+                                    <li><a href="../vendor-shop-left-Sidebar.html">Vendor Left Sidebar</a></li>
+                                    <li><a href="../vendor-shop-right-Sidebar.html">Vendor Right Sidebar</a></li>
+                                    <li><a href="../vendor-shop-banner-1.html">Vendor Banner Leftbar</a></li>
+                                    <li><a href="../vendor-shop-banner-2.html">Vendor Banner Rightbar</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">contact us</a></li>
+                </ul>
+                <button class="fes__mblmenu__btn"><i class="fa-solid fa-bars"></i>Menu</button>
+                <form action="#" method="get" class="header__search">
+                    <input type="search" name="headerSearch" id="HeaderSearch" placeholder="Enter your keywords">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </form>                
+            </div>
+        </div>
+    </header>
+    <!-- Cart Slider -->
+    <div class="fes__cart__slider">
+        <button class="fes__cart__closebtn"><i class="fa-solid fa-xmark"></i></button>
+        <div class="main__cart__area">
+            <div class="fes__cart__header">
+                <h3>My Cart</h3>
+                <span class="cart__amount">2</span>
+            </div>
+            <div class="horizontal__seperator"></div>
+            <div class="fes__cart__content">
+                <p>Your Cart is Empty!</p>
+            </div>
+            <div class="horizontal__seperator"></div>
+            <div class="fes__cart__subtotal">
+                <p>Subtotal:</p>
+                <p>$600</p>
+            </div>
+            <div class="fes__cart__cta">
+                <a class="fes__button__a" href="../cart-v2.html">View Cart</a>
+                <a class="fes__button__a" href="../checkout-v2.html">Checkout</a>
+            </div>
+        </div>
+    </div>
+    <!-- Right Slider Menu -->
+    <div class="fes__right__slider__menu">
+        <button class="fes__rsm__closebtn"><i class="fa-solid fa-xmark"></i></button>
+        <div class="fes__rsm__wrapper">
+            <div class="about__company">
+                <div class="logo">
+                    <img src="image/logo.png" alt="Elmart Logo">
+                </div>
+                <p>From the day Elmart started back in 2023, to today, Elmart's mission is to provide quality product and value for modern people.</p>
+            </div>
+            <div class="lang__currency">
+                <div class="feslc__language"><p>Language</p><i class="feslc__language__clsbtn fa-solid fa-circle-xmark hide"></i>
+                    <ul class="fes__language">
+                        <li class="en"><img src="image/flags/english.png" alt="langflag">English</li>
+                        <li class="es"><img src="image/flags/spanish.png" alt="langflag">Spanish</li>
+                        <li class="fr"><img src="image/flags/french.png" alt="langflag">French</li>
+                        <li class="pt"><img src="image/flags/portuguese.png" alt="langflag">Portuguese</li>
+                        <li class="bn"><img src="image/flags/bengali.png" alt="langflag">Bengali</li>
+                        <li class="hi"><img src="image/flags/hindi.png" alt="langflag">Hindi</li>
+                    </ul>
+                </div>
+                <div class="feslc__currency"><p>Currency</p><i class="feslc__currency__clsbtn fa-solid fa-circle-xmark hide"></i>
+                    <ul class="fes__currency">
+                        <li class="usd">$USD</li>
+                        <li class="eur">€EUR</li>
+                        <li class="gbp">£GBP</li>
+                        <li class="bdt">৳BDT</li>
+                        <li class="inr">₹INR</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="horizontal__seperator"></div>
+            <h4>Account</h4>
+            <ul class="pages">
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Register</a></li>
+                <li><a href="../cart-v2.html">Cart</a></li>
+                <li><a href="../checkout-v2.html">Checkout</a></li>
+            </ul>
+            <h4>Company</h4>
+            <ul class="pages">
+                <li><a href="../wishlist.html">Wishlist</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+            <div class="horizontal__seperator"></div>
+            <h4>subscribe to Newsletter</h4>
+            <form action="#" method="post" class="right__menu__newsletter">
+                <input type="email" name="RightMenuNewsletter" id="RightMenuNewsletter" placeholder="Enter your email">
+                <button type="submit"><i class="fa-solid fa-arrow-right-long"></i></button>
+            </form>
+            <ul class="fes__social__links">
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="fes__mobile__menu">
+        <div class="fes__mblmenu__wrapper">
+            <button class="fes__mblmenu__closebtn"><i class="fa-solid fa-xmark"></i></button>
+            <ul class="nav nav-pills" id="FES__MobileMenuTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="fes__mblmenu__pages-tab" data-bs-toggle="pill" data-bs-target="#fes__mblmenu__pages" type="button" role="tab" aria-controls="fes__mblmenu__pages" aria-selected="true">Pages</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="fes__mblmenu__cate-tab" data-bs-toggle="pill" data-bs-target="#fes__mblmenu__cate" type="button" role="tab" aria-controls="fes__mblmenu__cate" aria-selected="false">Categories</button>
+                </li>
+              </ul>
+              <div class="tab-content" id="FES__MobileMenuTabsContent">
+                <div class="tab-pane fade show active" id="fes__mblmenu__pages" role="tabpanel" aria-labelledby="fes__mblmenu__pages-tab">
+                    <ul class="fes__mblmenu__tabs">
+                        <li class="mobile__submenu"><a href="#">home<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="../index.html">Homepage 1</a></li>
+                                <li><a href="../index-2.html">Homepage 2</a></li>
+                                <li><a href="../index-3.html">Homepage 3</a></li>
+                                <li><a href="../index-4.html">Homepage 4</a></li>
+                                <li><a href="../index-5.html">Homepage 5</a></li>
+                                <li><a href="../index-6.html">Homepage 6</a></li>
+                                <li><a href="../index-7.html">Homepage 7</a></li>
+                                <li><a href="../index-8.html">Homepage 8</a></li>
+                                <li><a href="index.html">Homepage 9</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile__submenu"><a href="#">shop<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="../shop.html">Shop Left Sidebar</a></li>
+                                <li><a href="../shop-right-sidebar.html">Shop Right Sidebar</a></li>
+                                <li><a href="../shop-banner-left-sidebar.html">Shop Banner Leftbar</a></li>
+                                <li><a href="../shop-banner-right-sidebar.html">Shop Banner Rightbar</a></li>
+                                <li><a href="../shop-product-style-2.html">Shop Product Style 2</a></li>
+                                <li><a href="../shop-product-style-3.html">Shop Product Style 3</a></li>
+                                <li><a href="../shop-product-style-3-list.html">Shop PStyle 3 (List)</a></li>
+                                <li><a href="../shop-product-style-4.html">Shop Product Style 4</a></li>
+                                <li><a href="../shop-product-style-5.html">Shop Product Style 5</a></li>
+                                <li><a href="../shop-infinite-scroll.html">Shop Infinite Scroll</a></li>
+                                <li><a href="../shop-product-style-6.html">Shop Product Style 6</a></li>
+                                <li><a href="../shop-product-style-7.html">Shop Product Style 7</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile__submenu"><a href="#">Products<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="../shop-details.html">Single Product</a></li>
+                                <li><a href="../shop-details-countdown.html">Product Countdown</a></li>
+                                <li><a href="../shop-details-ask-question.html">Product Ask a Question</a></li>
+                                <li><a href="../shop-details-size-guide.html">Product Size Guide</a></li>
+                                <li><a href="../shop-details-color-compare.html">Product Color Compare</a></li>
+                                <li><a href="../shop-details-product-image-slider.html">Product Image Slider</a></li>
+                                <li><a href="../shop-details-slider-image.html">Product Image Slider V2</a></li>
+                                <li><a href="../shop-details-sidebar.html">Product Sidebar</a></li>
+                                <li><a href="../shop-details-style-4.html">Product Image Gallery</a></li>
+                                <li><a href="../shop-details-style-5.html">Single Product Style 5</a></li>
+                                <li><a href="../shop-details-style-6.html">Single Product Style 6</a></li>
+                                <li><a href="../shop-details-style-7.html">Single Product Style 7</a></li>
+                                <li><a href="single-product.html">Single Product Style 8</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile__submenu"><a href="#">blog<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="../blog.html">Blog</a></li>
+                                <li><a href="../blog-post.html">Blog Post Right Sidebar</a></li>
+                                <li><a href="../blog-post-left-sidebar.html">Blog Post Left Sidebar</a></li>
+                                <li><a href="../blog-post-no-sidebar.html">Blog Post No Sidebar</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile__submenu"><a href="#">pages<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="../blog-post.html">Blog Post</a></li>
+                                <li><a href="../faqs.html">FAQs</a></li>
+                                <li><a href="../user-dashboard.html">User Dashboard</a></li>
+                                <li><a href="../wishlist.html">Wishlist</a></li>
+                                <li><a href="../cart.html">Cart</a></li>
+                                <li><a href="../checkout.html">Checkout</a></li>
+                                <li><a href="../seller-dashboard.html">Seller Dashboard</a></li>
+                                <li><a href="../vendor-list.html">Vendor List</a></li>
+                                <li><a href="../vendor-shop-left-Sidebar.html">Vendor Left Sidebar</a></li>
+                                <li><a href="../vendor-shop-right-Sidebar.html">Vendor Right Sidebar</a></li>
+                                <li><a href="../vendor-shop-banner-1.html">Vendor Banner Leftbar</a></li>
+                                <li><a href="../vendor-shop-banner-2.html">Vendor Banner Rightbar</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile__submenu"><a href="contact.html">contact us</a></li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="fes__mblmenu__cate" role="tabpanel" aria-labelledby="fes__mblmenu__cate-tab">
+                    <ul class="fes__mblmenu__tabs">
+                        <li class="mobile__submenu"><a href="#">Cardio Machines<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="#">Onions/Shallots & Garlics</a></li>
+                                <li><a href="#">Leafy Vegetables</a></li>
+                                <li><a href="#">Tomatoes</a></li>
+                                <li><a href="#">Root Vegetables</a></li>
+                                <li><a href="#">Potatoes & Yams</a></li>
+                                <li><a href="#">Zucchini & Squash</a></li>
+                                <li><a href="#">Corn & Wheat</a></li>
+                                <li><a href="#">Cucumber, carrot, radish</a></li>
+                                <li><a href="#">Mushrooms & Tofu</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile__submenu"><a href="#">Free Weights<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="#">Apples & Mangoes</a></li>
+                                <li><a href="#">Guava & Pears</a></li>
+                                <li><a href="#">strawberries & olives</a></li>
+                                <li><a href="#">dry dates</a></li>
+                                <li><a href="#">Grapes & Berries</a></li>
+                                <li><a href="#">Watermelons & Melons</a></li>
+                                <li><a href="#">papayas & pineapples</a></li>
+                                <li><a href="#">Stonefruits & Persimmons</a></li>
+                                <li><a href="#">tangerines, Oranges, Lemons</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile__submenu"><a href="#">Gym Packages<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="#">Beef</a></li>
+                                <li><a href="#">Poultry</a></li>
+                                <li><a href="#">Lamb</a></li>
+                                <li><a href="#">turkey</a></li>
+                                <li><a href="#">Deli Meat</a></li>
+                                <li><a href="#">Pre-Packaged</a></li>
+                                <li><a href="#">Exotic Meat</a></li>
+                                <li><a href="#">canned</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile__submenu"><a href="#">Gym Strength Equipment<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="#">Sweet Bread</a></li>
+                                <li><a href="#">Savory Bread</a></li>
+                                <li><a href="#">With Filling</a></li>
+                                <li><a href="#">Toast</a></li>
+                                <li><a href="#">Biscuit & Cake</a></li>
+                                <li><a href="#">Sliced Bread</a></li>
+                                <li><a href="#">Other breads</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile__submenu"><a href="#">Gym Supplies<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="#">Black tea</a></li>
+                                <li><a href="#">Green tea</a></li>
+                                <li><a href="#">White tea</a></li>
+                                <li><a href="#">Purple tea</a></li>
+                                <li><a href="#">Herbal tea</a></li>
+                                <li><a href="#">Arabica beans</a></li>
+                                <li><a href="#">Robusta beans</a></li>
+                                <li><a href="#">Liberica beans</a></li>
+                                <li><a href="#">Excelsa beans</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile__submenu"><a href="#">Energy Drinks<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="#">Candy</a></li>
+                                <li><a href="#">Chips</a></li>
+                                <li><a href="#">Crackers & Cookies</a></li>
+                                <li><a href="#">Dried Fruits</a></li>
+                                <li><a href="#">Nuts & Seeds</a></li>
+                                <li><a href="#">Seaweed</a></li>
+                                <li><a href="#">Dried Bean Curd</a></li>
+                                <li><a href="#">Dried Seafood</a></li>
+                                <li><a href="#">Jerkies</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+              </div>
+        </div>
+    </div>
+    <!-- End of Header -->
+
+    <!-- Start of Breadcrumbs -->
+    <div class="fes__breadcrumbs">
+        <div class="fesbc__bg">
+            <div class="container">
+                <div class="fesbc__content">
+                    <h2 class="page__title">Single Product Page</h2>
+                    <div class="text">
+                        <a href="index.html">Home</a>
+                        <p><i class="fa-solid fa-chevron-right"></i></p>
+                        <a href="shop.html">shop</a>
+                        <p><i class="fa-solid fa-chevron-right"></i></p>
+                        <p class="current__page">Single product</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Breadcrumbs -->
+
+
+    <!-- Start of Newsletter -->
+    <section class="fes__newsletter__section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="fesns__text">
+                        <h2>subscribe to the newsletter to get a 20% flat discount!</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptate eius pariatur? A asperiores accusantium cum reprehenderit, cupiditate earum eos officiis maxime ea quibusdam non accusamus tempora ipsum vitae quas.</p>
+                        <form action="#" method="post">
+                            <input type="email" name="fesNewsLetter" id="fesNewsLetter" placeholder="Enter Your Email Address">
+                            <button type="submit"><i class="fa-solid fa-arrow-right-long"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="fesns__image">
+                        <div class="image">
+                            <h4 class="name">Home workout package</h4>
+                            <img src="image/newsletter/newsletter-product.webp" alt="product image">
+                            <span class="fesns__info__dots dot1"></span>
+                            <h4 class="fesns__info__text cont1">Item 1</h4>
+                            <span class="fesns__info__dots dot2"></span>
+                            <h4 class="fesns__info__text cont2">Item 2</h4>
+                            <span class="fesns__info__dots dot3"></span>
+                            <h4 class="fesns__info__text cont3">Item 3</h4>
+                            <span class="fesns__info__dots dot4"></span>
+                            <h4 class="fesns__info__text cont4">Item 4</h4>
+                            <span class="fesns__info__dots dot5"></span>
+                            <h4 class="fesns__info__text cont5">Item 5</h4>
+                            <span class="fesns__info__dots dot6"></span>
+                            <h4 class="fesns__info__text cont6">Item 6</h4>
+                        </div>
+                        <a class="fes__button__a" href="#">add to cart<span class="fesns__product__price">$900</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Newsletter -->
+
+    <!-- JS Links -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/fontawesome.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
+    <script src="../js/jquery.nice-select.min.js"></script>
+    <script src="../js/magnific-popup.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/waypoint.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/clipboard.min.js"></script>
+    <script src="../js/plugins.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

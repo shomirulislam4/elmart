@@ -4,7 +4,17 @@
    1. Header
    2. Cart
    3. Hero Section
-   4. Product Style
+   4. Features
+   5. Categories Section
+   6. Trending Products
+   7. Product Style
+   8. Best Deals
+   9. Product On Sale
+   10. Testimonials
+   11. Brands
+   12. Newsletter
+   13. Footer
+3. Single Product Page
 
 **********************************************/
 
@@ -2624,13 +2634,6 @@ button:focus {
 }
 /*** End of Product On Sale ***/
 
-/*** Start of Best Deals ***/
-.fes__best__deals__section {
-    margin-top: 100px;
-}
-
-/*** End of Best Deals ***/
-
 /*** Start of Newsletter ***/
 .fes__newsletter__section {
     margin-top: 100px;
@@ -2839,6 +2842,197 @@ button:focus {
     content: ')';
 }
 /*** End of Newsletter ***/
+
+/*** Start of Best Deals ***/
+.fes__best__deals__section {
+    margin-top: 100px;
+}
+
+.fes__best__deals__section .fesbds__promotions {
+    background: var(--section--bg);
+    height: 600px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.fes__best__deals__section .fesbds__promotions h2 {
+    color: var(--main-color);
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 400;
+    font-family: 'Teko', sans-serif;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.fes__best__deals__section .fesbds__promotions h3 {
+    color: var(--secondary-color);
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 400;
+    font-family: 'Teko', sans-serif;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.fes__best__deals__section .fesbds__promotions p {
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    font-family: 'Signika Negative', sans-serif;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+/** Promo Code **/
+.fesbds__codebox {
+    width: auto;
+    display: flex;
+    align-items: center;
+    background: #FFF;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.fesbds__promo__code {
+    padding: 5px 10px;
+}
+
+.fesbds__copy__btn {
+    color: #FFF;
+    height: 100%;
+    width: 30px;
+    background: var(--text-color);
+    border-radius: 0 5px 5px 0;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.fesbds__copy__btn:hover {
+    background: var(--main-color);
+}
+
+.fesbds__success__popuptext,
+.fesbds__error__popuptext {
+    width: 160px;
+    background: var(--main-color);
+    color: #FFF;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    font-family: 'Signika Negative', sans-serif;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.fesbds__success__popuptext::after,
+.fesbds__error__popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--main-color) transparent transparent transparent;
+}
+
+.fesbds__success__popuptext.show,
+.fesbds__error__popuptext.show {
+    visibility: visible;
+    opacity: 1;
+}
+/*** End of Best Deals ***/
+
+/* ====================================================================
+   3. Single Product Page
+==================================================================== */
+/*** Start of Breadcrumbs ***/
+.fes__breadcrumbs {
+    height: 850px;
+    width: 100%;
+    background: url('../image/single-product/breadcrumb-bg.webp') no-repeat;
+    background-size: cover;
+}
+
+.fes__breadcrumbs .fesbc__bg {
+    height: 100%;
+    width: 100%;
+    padding-top: 150px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.fes__breadcrumbs .fesbc__bg .container {
+    height: 100%;
+}
+
+.fes__breadcrumbs .fesbc__bg .fesbc__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.fes__breadcrumbs .fesbc__bg .fesbc__content .page__title {
+    color: #FFF;
+    font-size: 70px;
+    line-height: 74px;
+    font-weight: 400;
+    font-family: 'Teko', sans-serif;
+    text-align: center;
+}
+
+.fes__breadcrumbs .fesbc__bg .fesbc__content .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.fes__breadcrumbs .fesbc__bg .fesbc__content .text a,
+.fes__breadcrumbs .fesbc__bg .fesbc__content .text p {
+    color: #FFF;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    font-family: 'Signika Negative', sans-serif;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.fes__breadcrumbs .fesbc__bg .fesbc__content .text .current__page,
+.fes__breadcrumbs .fesbc__bg .fesbc__content .text a:hover {
+    color: var(--main-color);
+}
+
+/*** End of Breadcrumbs ***/
 
 /*
 rgba(158, 114, 195, 0.4)
