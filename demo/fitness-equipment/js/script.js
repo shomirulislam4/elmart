@@ -252,3 +252,51 @@ $(function() {
         });
     }
 });
+
+//Newsletter Products
+$(function () {
+    function createAndSetupPopper(button, popover) {
+      var popperInstance = Popper.createPopper(button, popover, {
+        placement: "top",
+      });
+  
+      button.addEventListener("mouseenter", function () {
+        popover.style.display = "block";
+        popperInstance.update();
+      });
+  
+      button.addEventListener("mouseleave", function () {
+        popover.style.display = "none";
+      });
+    }
+  
+    //Item 1
+    var button1 = $(".fesns__info__dots.dot1")[0];
+    var popover1 = $(".fesns__info__text.cont1")[0];
+    createAndSetupPopper(button1, popover1);
+  
+    //Item 2
+    var button2 = $(".fesns__info__dots.dot2")[0];
+    var popover2 = $(".fesns__info__text.cont2")[0];
+    createAndSetupPopper(button2, popover2);
+  
+    //Item 3
+    var button3 = $(".fesns__info__dots.dot3")[0];
+    var popover3 = $(".fesns__info__text.cont3")[0];
+    createAndSetupPopper(button3, popover3);
+  
+    //Item 4
+    var button4 = $(".fesns__info__dots.dot4")[0];
+    var popover4 = $(".fesns__info__text.cont4")[0];
+    createAndSetupPopper(button4, popover4);
+
+    //Item 5
+    var button5 = $(".fesns__info__dots.dot5")[0];
+    var popover5 = $(".fesns__info__text.cont5")[0];
+    createAndSetupPopper(button5, popover5);
+
+    //Item 6
+    var button6 = $(".fesns__info__dots.dot6")[0];
+    var popover6 = $(".fesns__info__text.cont6")[0];
+    createAndSetupPopper(button6, popover6);
+  });

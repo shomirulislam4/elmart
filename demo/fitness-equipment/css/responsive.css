@@ -5,10 +5,12 @@
     .fes__brands__slider__section,
     .fes__testimonials__section,
     .fes__product__onsale__section,
-    .fes__newsletter__section {
+    .fes__newsletter__section,
+    .fes__newsletter__section .fesns__image {
         margin-top: 30px;
     }
-    .fes__trending__products {
+    .fes__trending__products,
+    .fes__newsletter__section {
         padding: 30px 0;
     }
     .fes__product__onsale__section {
@@ -577,6 +579,48 @@
         .fes__pos__timer #seconds span {
             font-size: 8px;
         }
+        /*Newsletter*/
+        .fes__newsletter__section .fesns__image .name,
+        .fes__newsletter__section .fesns__image .image img,
+        .fes__newsletter__section .fesns__image .fes__button__a {
+            width: 176px;
+        }
+        .fes__newsletter__section .fesns__text h2 {
+            font-size: 30px;
+            line-height: 30px;
+            margin-bottom: 10px;
+        }
+        .fes__newsletter__section .fesns__text p {
+            font-size: 12px;
+            line-height: 18px;
+            margin-bottom: 20px;
+        }
+        .fes__newsletter__section .fesns__text form {
+            height: 40px;
+        }
+        .fes__newsletter__section .fesns__text form input {
+            font-size: 12px;
+            padding-left: 10px;
+            padding-right: 5px;
+        }
+        .fes__newsletter__section .fesns__text form button {
+            width: 40px;
+            font-size: 16px;
+        }
+        .fes__newsletter__section .fesns__image .name {
+            font-size: 14px;
+            line-height: 30px;
+        }
+        .fes__newsletter__section .fesns__image:hover .name {
+            bottom: calc(100% + 5px);
+        }
+        .fes__newsletter__section .fesns__image .image .fesns__info__text {
+            width: 190px;
+        }
+        .fes__newsletter__section .fesns__image .fes__button__a {
+            font-size: 12px;
+            padding: 5px;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
@@ -586,10 +630,12 @@
     .fes__brands__slider__section,
     .fes__testimonials__section,
     .fes__product__onsale__section,
-    .fes__newsletter__section {
+    .fes__newsletter__section,
+    .fes__newsletter__section .fesns__image {
         margin-top: 30px;
     }
-    .fes__trending__products {
+    .fes__trending__products,
+    .fes__newsletter__section {
         padding: 30px 0;
     }
     .fes__product__onsale__section {
@@ -1079,6 +1125,38 @@
         .fes__pos__timer #seconds span {
             font-size: 12px;
         }
+        /*Newsletter*/
+        .fes__newsletter__section .fesns__image .name,
+        .fes__newsletter__section .fesns__image .image img,
+        .fes__newsletter__section .fesns__image .fes__button__a {
+            width: 266px;
+        }
+        .fes__newsletter__section .fesns__text h2 {
+            font-size: 40px;
+            line-height: 44px;
+            margin-bottom: 5px;
+        }
+        .fes__newsletter__section .fesns__text p {
+            font-size: 12px;
+            line-height: 18px;
+            margin-bottom: 20px;
+        }
+        .fes__newsletter__section .fesns__text form {
+            height: 50px;
+        }
+        .fes__newsletter__section .fesns__text form input {
+            font-size: 16px;
+            padding-left: 10px;
+            padding-right: 5px;
+        }
+        .fes__newsletter__section .fesns__text form button {
+            width: 60px;
+            font-size: 20px;
+        }
+        .fes__newsletter__section .fesns__image .name {
+            font-size: 16px;
+            line-height: 36px;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -1088,10 +1166,12 @@
     .fes__brands__slider__section,
     .fes__testimonials__section,
     .fes__product__onsale__section,
-    .fes__newsletter__section {
+    .fes__newsletter__section,
+    .fes__newsletter__section .fesns__image {
         margin-top: 40px;
     }
-    .fes__trending__products {
+    .fes__trending__products,
+    .fes__newsletter__section {
         padding: 40px 0;
     }
     .fes__product__onsale__section {
@@ -1481,6 +1561,23 @@
         .fes__product__onsale__section .fes__product__style:hover .fesps__content .fes__button__a {
             margin-top: 15px;
         }
+        /*Newsletter*/
+        .fes__newsletter__section .fesns__text h2 {
+            font-size: 50px;
+            line-height: 54px;
+            margin-bottom: 5px;
+        }
+        .fes__newsletter__section .fesns__text p {
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 20px;
+        }
+        .fes__newsletter__section .fesns__text form {
+            height: 50px;
+        }
+        .fes__newsletter__section .fesns__text form input {
+            font-size: 16px;
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -1490,10 +1587,12 @@
     .fes__brands__slider__section,
     .fes__testimonials__section,
     .fes__product__onsale__section,
-    .fes__newsletter__section {
+    .fes__newsletter__section,
+    .fes__newsletter__section .fesns__image {
         margin-top: 50px;
     }
-    .fes__trending__products {
+    .fes__trending__products,
+    .fes__newsletter__section {
         padding: 50px 0;
     }
     .fes__product__onsale__section {
@@ -1876,6 +1975,23 @@
         .fes__pos__slider.owl-theme .owl-nav.disabled + .owl-dots {
             margin-top: 40px;
         }
+        /*Newsletter*/
+        .fes__newsletter__section .fesns__text h2 {
+            font-size: 50px;
+            line-height: 54px;
+            margin-bottom: 5px;
+        }
+        .fes__newsletter__section .fesns__text p {
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 20px;
+        }
+        .fes__newsletter__section .fesns__text form {
+            height: 50px;
+        }
+        .fes__newsletter__section .fesns__text form input {
+            font-size: 16px;
+        }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1888,7 +2004,8 @@
     .fes__newsletter__section {
         margin-top: 60px;
     }
-    .fes__trending__products {
+    .fes__trending__products,
+    .fes__newsletter__section {
         padding: 60px 0;
     }
     .fes__product__onsale__section {
@@ -2164,6 +2281,27 @@
         .fes__product__onsale__section .fes__product__style:hover .fesps__content .fes__button__a {
             margin-top: 15px;
         }
+        /*Newsletter*/
+        .fes__newsletter__section .fesns__image .name,
+        .fes__newsletter__section .fesns__image .image img,
+        .fes__newsletter__section .fesns__image .fes__button__a {
+            width: 216px;
+        }
+        .fes__newsletter__section .fesns__image .image .fesns__info__dots {
+            width: 13px;
+            height: 13px;
+            border: 3px solid #FFF;
+        }
+        .fes__newsletter__section .fesns__text h2 {
+            font-size: 50px;
+            line-height: 54px;
+            margin-bottom: 5px;
+        }
+        .fes__newsletter__section .fesns__text p {
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 20px;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -2176,7 +2314,8 @@
     .fes__newsletter__section {
         margin-top: 70px;
     }
-    .fes__trending__products {
+    .fes__trending__products,
+    .fes__newsletter__section {
         padding: 70px 0;
     }
     .fes__product__onsale__section {
@@ -2593,6 +2732,12 @@
         .fes__product__onsale__section .fes__product__style .fesps__content .fesps__price,
         .fes__product__onsale__section .fes__product__style:hover .fesps__content .fes__button__a {
             margin-top: 15px;
+        }
+        /*Newsletter*/
+        .fes__newsletter__section .fesns__image .name,
+        .fes__newsletter__section .fesns__image .image img,
+        .fes__newsletter__section .fesns__image .fes__button__a {
+            width: 296px;
         }
 }
 
