@@ -37,8 +37,10 @@ $(function(){
 });
 
 //Nice Select
-if ( $('.fitequip__store').length ) {
+if ($('.fitequip__store').length) {
     $('.fesps__select').niceSelect();
+    $('#fesspVariants1').niceSelect();
+    $('#fesspVariants2').niceSelect();
 }
 
 //Mobile Menu
@@ -206,10 +208,10 @@ function makeTimer() {
     var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
     var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
 
-    $("#timer #days").html(days + "<span>DAYS</span><br>");
-    $("#timer #hours").html(hours + "<span>HOURS</span><br>");
-    $("#timer #minutes").html(minutes + "<span>MIN</span><br>");
-    $("#timer #seconds").html(seconds + "<span>SECS</span><br>");		
+    $("#timer #days").html(days + "<span>DAYS</span>");
+    $("#timer #hours").html(hours + "<span>HOURS</span>");
+    $("#timer #minutes").html(minutes + "<span>MIN</span>");
+    $("#timer #seconds").html(seconds + "<span>SECS</span>");		
 }
 setInterval(function() { makeTimer(); }, 1000);
 
