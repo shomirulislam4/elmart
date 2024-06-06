@@ -941,71 +941,196 @@
 
     <!-- Start of Single Product -->
     <section class="fes__single__product">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="fessp__product__image">
-                        <img src="image/single-product/product-image-1.webp" alt="Product Image" class="main__image">
-                        <img src="image/single-product/product-image-2.webp" alt="Product Image" class="hover__image">
+        <div class="fessp__product__info">
+            <div class="container">
+                <!-- Product Details -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="fessp__product__image">
+                            <img src="image/single-product/product-image-1.webp" alt="Product Image" class="main__image">
+                            <img src="image/single-product/product-image-2.webp" alt="Product Image" class="hover__image">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="fessp__product__details">
+                            <div class="fests__star__ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <h2>Adjustable Dumbbell Set of 2 with a workout mat for Home Gym</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem necessitatibus sint sit? Earum enim amet sequi ex at accusamus ratione?</p>
+                            <div class="countdown__timer">
+                                <p>Hurry up!</p>
+                                <div class="fes__pos__timer" id="timer">
+                                    <div id="days"></div>
+                                    <div id="hours"></div>
+                                    <div id="minutes"></div>
+                                    <div id="seconds"></div>
+                                </div>
+                            </div>
+                            <h3 class="price">$200<span>$150</span></h3>
+                            <div class="fessp__variants">
+                                <div class="fessp__options">
+                                    <label for="fesspVariants1">Weight:</label>
+                                    <select name="fesspVariants" id="fesspVariants1">
+                                        <option value="0">2.5kg</option>
+                                        <option value="1">5kg</option>
+                                        <option value="2">10kg</option>
+                                        <option value="3">15kg</option>
+                                        <option value="4">20kg</option>
+                                    </select>
+                                </div>
+                                <div class="fessp__options">
+                                    <label for="fesspVariants2">Color:</label>
+                                    <select name="fesspVariants" id="fesspVariants2">
+                                        <option value="0">black</option>
+                                        <option value="1">pink</option>
+                                        <option value="2">green</option>
+                                        <option value="3">red</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="delivery__shipping">
+                                <p><i class="fa-solid fa-truck"></i>Delivery:<span>Delivery within 24 hours.</span></p>
+                                <p><i class="fa-solid fa-box"></i>Pickup:<span>Pick it up from your doorstep.</span></p>
+                                <p><i class="fa-solid fa-truck-fast"></i>Shipping:<span>Worldwide shipping.</span></p>
+                            </div>
+                            <div class="fessp__ctas">
+                                <div class="top">
+                                    <a href="#" class="fes__button__a"><i class="fa-solid fa-box"></i>&nbsp;&nbsp;add to cart</a>
+                                    <a href="#" class="fes__button__a fessp__btn" title="Add to Wishlist"><i class="fa-solid fa-heart"></i></a>
+                                    <a href="#" class="fes__button__a fessp__btn" title="Compare Product"><i class="fa-solid fa-scale-unbalanced-flip"></i></a>
+                                </div>
+                                <div class="bottom">
+                                    <a href="#" class="fes__button__b"><i class="fa-solid fa-cart-shopping"></i>&nbsp;&nbsp;buy now</a>
+                                    <a href="#" class="fes__button__b"><i class="fa-brands fa-cc-paypal"></i>&nbsp;&nbsp;pay with paypal</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="fessp__product__details">
-                        <div class="fests__star__ratings">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                            <i class="fa-regular fa-star"></i>
+            </div>
+        </div>
+            <!-- Product Description -->
+        <div class="fessp__product__description">
+            <div class="container">
+                <div class="row">
+                    <!-- Tabs -->
+                    <div class="nav nav-pills" id="fesspTabs" role="tablist">
+                        <button class="nav-link active" id="fesspDescription-tab" data-bs-toggle="pill" data-bs-target="#fesspDescription" type="button" role="tab" aria-controls="fesspDescription" aria-selected="false">Description</button>
+
+                        <button class="nav-link" id="fesspAdditional-tab" data-bs-toggle="pill" data-bs-target="#fesspAdditional" type="button" role="tab" aria-controls="fesspAdditional" aria-selected="false">Additional info</button>
+
+                        <button class="nav-link" id="fesspReview-tab" data-bs-toggle="pill" data-bs-target="#fesspReview" type="button" role="tab" aria-controls="fesspReview" aria-selected="false">Review</button>
+                    </div>
+                    <!-- Content -->
+                    <div class="tab-content" id="fesspTabsContent">
+                        <!-- Tab 1 -->
+                        <div class="tab-pane fade show active" id="fesspDescription" role="tabpanel" aria-labelledby="fesspDescription-tab">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus libero iusto, rerum blanditiis odit nam ipsam ducimus. Quibusdam, numquam accusamus vel, velit repudiandae autem laudantium voluptate dolorum asperiores amet obcaecati sapiente, repellendus quis optio labore corrupti quod debitis officia quos ab veritatis ullam odio perferendis! Soluta deleniti expedita molestiae nulla.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quia iste quibusdam illum, vitae molestiae! Labore sequi dicta non sed dolorum, qui soluta dolor, earum aut commodi, dolores placeat quidem accusantium voluptate quod error aliquid sit! Quaerat ea vel laboriosam.</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis odit inventore eaque consequatur, ipsam porro voluptates adipisci quod reprehenderit! Rerum?</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem commodi aut, corrupti nulla laborum quas cupiditate cumque excepturi, quae at iste ratione perspiciatis earum dicta quisquam fugiat ducimus doloribus officia aliquid nisi? At, cum. Esse excepturi, unde nobis tempore rem inventore, autem consequuntur ullam est cumque vero labore, delectus at.</p>
                         </div>
-                        <h2>Adjustable Dumbbell Set of 2 with a workout mat for Home Gym</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem necessitatibus sint sit? Earum enim amet sequi ex at accusamus ratione?</p>
-                        <div class="countdown__timer">
-                            <p>Hurry up!</p>
-                            <div class="fes__pos__timer" id="timer">
-                                <div id="days"></div>
-                                <div id="hours"></div>
-                                <div id="minutes"></div>
-                                <div id="seconds"></div>
-                            </div>
+
+                        <!-- Tab 2 -->
+                        <div class="tab-pane fade" id="fesspAdditional" role="tabpanel" aria-labelledby="fesspAdditional-tab">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit atque, quo ex quis consectetur cumque doloribus aliquid sapiente quos dolores?</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo accusantium nemo aspernatur, quasi ullam labore saepe voluptas quas accusamus at temporibus iste amet deserunt asperiores! Vero aliquam pariatur officiis quos.</p>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>name</td>
+                                        <td>Dumbbells</td>
+                                    </tr>
+                                    <tr>
+                                        <td>weight</td>
+                                        <td>2.5kg ~ 20kg</td>
+                                    </tr>
+                                    <tr>
+                                        <td>color</td>
+                                        <td>black, pink, green, red</td>
+                                    </tr>
+                                    <tr>
+                                        <td>extra</td>
+                                        <td>workout mat</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bonus</td>
+                                        <td>tools to adjust weight</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                        <h3 class="price">$200<span>$150</span></h3>
-                        <div class="fessp__variants">
-                            <div class="fessp__options">
-                                <label for="fesspVariants1">Weight:</label>
-                                <select name="fesspVariants" id="fesspVariants1">
-                                    <option value="0">2.5kg</option>
-                                    <option value="1">5kg</option>
-                                    <option value="2">10kg</option>
-                                    <option value="3">15kg</option>
-                                    <option value="4">20kg</option>
-                                </select>
+
+                        <!-- Tab 3 -->
+                        <div class="tab-pane fade" id="fesspReview" role="tabpanel" aria-labelledby="fesspReview-tab">
+                            <div class="fessp__reviews">
+                                <div class="user__review">
+                                    <div class="image">
+                                        <img src="image/testimonial-section/male-2.jpg" alt="user image">
+                                    </div>
+                                    <div class="content">
+                                        <div class="fests__star__ratings">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et labore, eligendi at recusandae quidem vero perspiciatis facilis iste qui quia animi assumenda accusantium fuga sequi consequatur maxime corrupti dolores cupiditate?</p>
+                                        <div class="user__name">
+                                            <p>Paul K. Verdin</p>
+                                            <span class="vertical__seperator"></span>
+                                            <p>Vocational education teacher</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user__review">
+                                    <div class="image">
+                                        <img src="image/testimonial-section/female-1.jpg" alt="user image">
+                                    </div>
+                                    <div class="content">
+                                        <div class="fests__star__ratings">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et labore, eligendi at recusandae quidem vero perspiciatis facilis iste qui quia animi assumenda accusantium fuga sequi consequatur maxime corrupti dolores cupiditate?</p>
+                                        <div class="user__name">
+                                            <p>Helen B Lopez</p>
+                                            <span class="vertical__seperator"></span>
+                                            <p>Neonatal nurse</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user__review">
+                                    <div class="image">
+                                        <img src="image/testimonial-section/female-3.jpg" alt="user image">
+                                    </div>
+                                    <div class="content">
+                                        <div class="fests__star__ratings">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et labore, eligendi at recusandae quidem vero perspiciatis facilis iste qui quia animi assumenda accusantium fuga sequi consequatur maxime corrupti dolores cupiditate?</p>
+                                        <div class="user__name">
+                                            <p>Zara Matthews</p>
+                                            <span class="vertical__seperator"></span>
+                                            <p>Information technology trainer</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="fessp__options">
-                                <label for="fesspVariants2">Color:</label>
-                                <select name="fesspVariants" id="fesspVariants2">
-                                    <option value="0">black</option>
-                                    <option value="1">pink</option>
-                                    <option value="2">green</option>
-                                    <option value="3">red</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="delivery__shipping">
-                            <p><i class="fa-solid fa-truck"></i>Delivery:<span>Delivery within 24 hours.</span></p>
-                            <p><i class="fa-solid fa-box"></i>Pickup:<span>Pick it up from your doorstep.</span></p>
-                            <p><i class="fa-solid fa-truck-fast"></i>Shipping:<span>Worldwide shipping.</span></p>
-                        </div>
-                        <div class="fessp__ctas">
-                            <div class="top">
-                                <a href="#" class="fes__button__a"><i class="fa-solid fa-box"></i>&nbsp;&nbsp;add to cart</a>
-                                <a href="#" class="fes__button__a fessp__btn" title="Add to Wishlist"><i class="fa-solid fa-heart"></i></a>
-                                <a href="#" class="fes__button__a fessp__btn" title="Compare Product"><i class="fa-solid fa-scale-unbalanced-flip"></i></a>
-                            </div>
-                            <div class="bottom">
-                                <a href="#" class="fes__button__b"><i class="fa-solid fa-cart-shopping"></i>&nbsp;&nbsp;buy now</a>
-                                <a href="#" class="fes__button__b"><i class="fa-brands fa-cc-paypal"></i>&nbsp;&nbsp;pay with paypal</a>
-                            </div>
+                            <div class="fessp__submit__review"></div>
                         </div>
                     </div>
                 </div>
