@@ -455,15 +455,17 @@
         .fes__trending__products .tab-content .tab-pane.active {
             gap: 10px;
         }
-        .fes__trending__products .nav-link {
+        .fes__trending__products .nav-pills,
+        .fessp__product__description .nav-pills {
+            gap: 0;
+            margin-bottom: 20px;
+        }
+        .fes__trending__products .nav-link,
+        .fessp__product__description .nav-link {
             font-size: 12px;
             line-height: 30px;
             height: 30px;
             padding: 0 10px;
-        }
-        .fes__trending__products .nav-pills {
-            gap: 0;
-            margin-bottom: 20px;
         }
         /*Testimonials*/
         .fests__slider__next,
@@ -723,6 +725,55 @@
             line-height: 34px;
             padding-left: 10px;
             padding-right: 20px;
+        }
+        .fessp__product__description .nav-pills {
+            margin-bottom: 10px;
+        }
+        .fessp__product__description .tab-content .tab-pane .fessp__reviews {
+            gap: 10px;
+        }
+        .fessp__product__description .tab-content .tab-pane p {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .fessp__product__description .tab-content .tab-pane table th,
+        .fessp__product__description .tab-content .tab-pane table td {
+            font-size: 12px;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review .content {
+            gap: 5px;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review {
+            padding: 10px;
+            flex-direction: column;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review .image {
+            padding-right: 0;
+            margin-right: 0;
+            border: 0;
+            margin-bottom: 10px;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review .image img {
+            height: 50px;
+            width: 50px;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review .fests__star__ratings {
+            font-size: 10px;
+            line-height: 10px;
+            justify-content: center;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review .content .user__name {
+            gap: 5px;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review p {
+            font-size: 10px;
+            line-height: 12px;
+            text-align: center;
+        }
+        .fessp__product__description .tab-content .tab-pane .vertical__seperator {
+            display: none;
         }
 }
 
@@ -1107,13 +1158,15 @@
         .fes__trending__products .tab-content .tab-pane.active {
             gap: 10px;
         }
-        .fes__trending__products .nav-link {
+        .fes__trending__products .nav-link,
+        .fessp__product__description .nav-link {
             font-size: 16px;
             line-height: 30px;
             height: 30px;
             padding: 0 20px;
         }
-        .fes__trending__products .nav-pills {
+        .fes__trending__products .nav-pills,
+        .fessp__product__description .nav-pills {
             gap: 5px;
             margin-bottom: 20px;
         }
@@ -1343,6 +1396,55 @@
             line-height: 34px;
             padding-left: 10px;
             padding-right: 20px;
+        }
+        .fessp__product__description .nav-pills {
+            margin-bottom: 10px;
+        }
+        .fessp__product__description .tab-content .tab-pane .fessp__reviews {
+            gap: 10px;
+        }
+        .fessp__product__description .tab-content .tab-pane p {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .fessp__product__description .tab-content .tab-pane table th,
+        .fessp__product__description .tab-content .tab-pane table td {
+            font-size: 12px;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review .content {
+            gap: 5px;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review {
+            padding: 10px;
+            flex-direction: column;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review .image {
+            padding-right: 0;
+            margin-right: 0;
+            border: 0;
+            margin-bottom: 10px;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review .image img {
+            height: 70px;
+            width: 70px;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review .fests__star__ratings {
+            font-size: 12px;
+            line-height: 12px;
+            justify-content: center;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review .content .user__name {
+            gap: 0;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review p {
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+        }
+        .fessp__product__description .tab-content .tab-pane .vertical__seperator {
+            display: none;
         }
 }
 
@@ -1638,13 +1740,15 @@
         .fes__trending__products .tab-content .tab-pane.active {
             gap: 10px;
         }
-        .fes__trending__products .nav-link {
+        .fes__trending__products .nav-link,
+        .fessp__product__description .nav-link {
             font-size: 16px;
             line-height: 30px;
             height: 30px;
             padding: 0 20px;
         }
-        .fes__trending__products .nav-pills {
+        .fes__trending__products .nav-pills,
+        .fessp__product__description .nav-pills {
             gap: 5px;
             margin-bottom: 20px;
         }
@@ -1822,6 +1926,51 @@
             padding: 10px 15px;
             font-size: 14px;
             line-height: 20px;
+        }
+        .fessp__product__description .nav-pills {
+            margin-bottom: 10px;
+        }
+        .fessp__product__description .tab-content .tab-pane p {
+            font-size: 14px;
+            line-height: 22px;
+        }
+        .fessp__product__description .tab-content .tab-pane table th,
+        .fessp__product__description .tab-content .tab-pane table td {
+            font-size: 14px;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review .content {
+            gap: 5px;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review {
+            padding: 10px;
+            flex-direction: column;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review .image {
+            padding-right: 0;
+            margin-right: 0;
+            border: 0;
+            margin-bottom: 10px;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review .image img {
+            height: 70px;
+            width: 70px;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review .fests__star__ratings {
+            font-size: 12px;
+            line-height: 12px;
+            justify-content: center;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review .content .user__name {
+            gap: 10px;
+            justify-content: center;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review p {
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+        }
+        .fessp__product__description .tab-content .tab-pane .vertical__seperator {
+            height: 12px;
         }
 }
 
@@ -2169,13 +2318,15 @@
         .fes__trending__products .tab-content .tab-pane.active {
             gap: 10px;
         }
-        .fes__trending__products .nav-link {
+        .fes__trending__products .nav-link,
+        .fessp__product__description .nav-link {
             font-size: 16px;
             line-height: 30px;
             height: 30px;
             padding: 0 20px;
         }
-        .fes__trending__products .nav-pills {
+        .fes__trending__products .nav-pills,
+        .fessp__product__description .nav-pills {
             gap: 5px;
             margin-bottom: 20px;
         }
@@ -2282,6 +2433,41 @@
             padding: 10px 15px;
             font-size: 14px;
             line-height: 20px;
+        }
+        .fessp__product__description .nav-pills {
+            margin-bottom: 10px;
+        }
+        .fessp__product__description .tab-content .tab-pane p {
+            font-size: 14px;
+            line-height: 22px;
+        }
+        .fessp__product__description .tab-content .tab-pane table th,
+        .fessp__product__description .tab-content .tab-pane table td {
+            font-size: 14px;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review .content {
+            gap: 5px;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review {
+            padding: 10px;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review .image {
+            padding-right: 10px;
+            margin-right: 10px;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review .fests__star__ratings {
+            font-size: 12px;
+            line-height: 12px;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review .content .user__name {
+            gap: 10px;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review p {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .fessp__product__description .tab-content .tab-pane .vertical__seperator {
+            height: 12px;
         }
 }
 

@@ -3292,10 +3292,6 @@ button:focus {
 }
 
 /* Content Area */
-.fessp__product__description .tab-content .tab-pane.active {
-    padding: 20px;
-}
-
 .fessp__product__description .tab-content .tab-pane p {
     font-size: 16px;
     line-height: 24px;
@@ -3307,6 +3303,12 @@ button:focus {
     width: 50%;
 }
 
+@media (max-width: 1199px) {
+    .fessp__product__description .tab-content .tab-pane table {
+        width: 100%;
+    }
+}
+
 .fessp__product__description .tab-content .tab-pane table th,
 .fessp__product__description .tab-content .tab-pane table td {
     font-size: 16px;
@@ -3315,63 +3317,69 @@ button:focus {
     text-transform: capitalize;
 }
 
-.fessp__product__description .fessp__reviews {
+.fessp__product__description .tab-content .tab-pane .fessp__reviews {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.fessp__product__description .user__review {
+.fessp__product__description .tab-content .tab-pane .user__review {
     display: flex;
     align-items: center;
     background: var(--section--bg);
-    padding: 10px;
+    padding: 20px;
     border-radius: 5px;
 }
 
-.fessp__product__description .user__review .image {
+.fessp__product__description .tab-content .tab-pane .user__review .image {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 160px;
+    padding-right: 20px;
     margin-right: 20px;
     border-right: 2px solid var(--main-color);
 }
 
-.fessp__product__description .user__review .image img {
+.fessp__product__description .tab-content .tab-pane .user__review .image img {
     height: 100px;
     width: 100px;
     border-radius: 50%;
 }
 
-.fessp__product__description .user__review p {
+.fessp__product__description .tab-content .tab-pane .user__review p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: 'Signika Negative', sans-serif;
     margin: 0;
 }
-
-.fessp__product__description .user__review .image,
-.fessp__product__description .user__review .content {
+.fessp__product__description .tab-content .tab-pane .user__review .content {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.fessp__product__description .user__review .fests__star__ratings {
+.fessp__product__description .tab-content .tab-pane .user__review .fests__star__ratings {
 	font-size: 16px;
 	line-height: 16px;
 }
 
-.fessp__product__description .user__review .content .user__name {
+.fessp__product__description .tab-content .tab-pane .user__review .content .user__name {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.fessp__product__description .user__review .content .user__name p {
+.fessp__product__description .tab-content .tab-pane .user__review .content .user__name p {
+    color: #777;
+}
+
+.fessp__product__description .tab-content .tab-pane .user__review .content .user__name .name {
     color: var(--main-color);
 }
 
-.fessp__product__description .user__review .content .user__name .vertical__seperator {
+.fessp__product__description .tab-content .tab-pane .vertical__seperator {
     background: var(--main-color);
     height: 16px;
     width: 1px;
