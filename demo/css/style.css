@@ -20037,16 +20037,15 @@ button:focus {
     margin-bottom: 30px;
 }
 
-.review-form-v2 .rating-area {
+.rating-area {
     margin-bottom: 20px;
 }
-
-.review-form-v2 .rating-wrap {
+.rating-wrap {
     display: flex;
     gap: 10px;
 }
 
-.review-form-v2 .jq-ry-container {
+.jq-ry-container {
 	padding: 0;
 }
 
@@ -26065,15 +26064,6 @@ button:focus {
     margin-bottom: 30px;
 }
 
-.review__form__v3 .rating-area {
-    margin-bottom: 20px;
-}
-
-.review__form__v3 .rating__wrap {
-    display: flex;
-    gap: 10px;
-}
-
 .review__form__v3 label {
     color: #13172B;
     font-size: 18px;
@@ -30973,6 +30963,10 @@ button:focus {
     font-family: 'Quicksand', sans-serif;
 }
 
+.product__desc__specs .notice {
+    color: #AAA;
+}
+
 .product__desc__specs table {
     width: 100%;
 }
@@ -31002,6 +30996,10 @@ button:focus {
 }
 
 /* Reviews */
+.product__desc__specs .rating-area {
+    margin-bottom: 0;
+}
+
 .product__desc__specs .rating__list__side {
     display: flex;
     flex-direction: column;
@@ -31175,7 +31173,6 @@ button:focus {
 
 .product__desc__specs form .name__email {
     width: 100%;
-    
     display: flex;
     justify-content: space-between;
 }

@@ -3628,6 +3628,15 @@ $(function() {
   });
 });
 
+//Review Form
+$(function () {
+  $(".sds7__reviewrating").rateYo({
+    rating: 0,
+    fullStar: true,
+    starWidth: "18px",
+    ratedFill: "#13172B"
+  });
+});
 
 /*============================ Home Style Seven ============================*/
 //Preloader v4

@@ -339,3 +339,48 @@ $(function() {
         }, 2000);
     }
 });
+
+//Back to Top - Progress
+$(function(){
+    var progressPath = document.querySelector('.back__top__progress path');
+    var pathLength = progressPath.getTotalLength();
+    progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
+    progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;
+    progressPath.style.strokeDashoffset = pathLength;
+    progressPath.getBoundingClientRect();
+    progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
+    var updateProgress = function () {
+      var scroll = $(window).scrollTop();
+      var height = $(document).height() - $(window).height();
+      var progress = pathLength - (scroll * pathLength / height);
+      progressPath.style.strokeDashoffset = progress;
+    }
+    updateProgress();
+    $(window).scroll(updateProgress);
+    var offset = 50;
+    var duration = 550;
+  
+    $(window).on('scroll', function() {
+      if ($(this).scrollTop() > offset) {
+        $('.back__top__progress').addClass('active-progress');
+      } else {
+        jQuery('.back__top__progress').removeClass('active-progress');
+      }
+    });
+  
+    $('.back__top__progress').on('click', function(event) {
+      event.preventDefault();
+      $('html, body').animate({scrollTop: 0}, duration);
+      return false;
+    })
+});
+
+//Review Form
+$(function () {
+    $(".fessp__reviewrating").rateYo({
+      rating: 0,
+      fullStar: true,
+      starWidth: "16px",
+      ratedFill: "var(--text-color)"
+    });
+  });
