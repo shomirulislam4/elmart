@@ -1,3 +1,13 @@
+//Preloader
+$(function(){
+    $(window).on('load',function(){
+      $('.fes__preloader').delay(2000).fadeOut(500);
+    });
+    $('.fespl__close').on('click', function(){
+      $('.fes__preloader').fadeOut(500);
+    })
+});
+
 //Custom Cursor
 $(function(){
     $("body").prepend('<div class="cursor"></div>');
@@ -15,16 +25,6 @@ $(function(){
     }).mouseleave(function(){
         $('.cursor').removeClass('hover');
     });
-});
-
-//Preloader
-$(function(){
-    $(window).on('load',function(){
-      $('.fes__preloader').delay(2000).fadeOut(500);
-    });
-    $('.fespl__close').on('click', function(){
-      $('.fes__preloader').fadeOut(500);
-    })
 });
 
 //All Sliders Menu
@@ -411,4 +411,4 @@ $(function(){
     $('.tag__clouds button').click(function(){
         $(this).toggleClass('active');
     });
-  });
+});

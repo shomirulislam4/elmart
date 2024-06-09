@@ -1957,6 +1957,48 @@ input[type="radio"]:checked::before {
     z-index: 2;
 }
 
+/* Promo Tags */
+.fes__product__style .fesps__image .promo__tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: block;
+    padding: 5px 10px;
+    color: #FFF;
+    background: var(--text-color);
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 600;
+    font-family: 'Signika Negative', sans-serif;
+    margin: 0;
+    z-index: 9;
+    text-transform: capitalize;
+    border-radius: 50px;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.fes__product__style:hover .fesps__image .promo__tag.sale {
+    background: green;
+}
+
+.fes__product__style:hover .fesps__image .promo__tag.discount {
+    background: skyblue;
+}
+
+.fes__product__style:hover .fesps__image .promo__tag.hot {
+    background: red;
+}
+
+.fes__product__style:hover .fesps__image .promo__tag.popular {
+    background: cyan;
+}
+
+
+
 /* CTAs */
 .fes__product__style .fesps__image .fesps__ctabtns {
     display: flex;
@@ -4219,7 +4261,43 @@ font-family: 'Teko', sans-serif;
     padding: 0;
 }
 
+/* Pagination */
+.fesshop__pagination {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 
+.fesshop__pagination button {
+    display: block;
+    height: 50px;
+    width: 50px;
+    line-height: 44px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Signika Negative', sans-serif;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #CCC;
+    color: var(--main-color);
+    background: transparent;
+    transition: 0.4s;
+    -moz-transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    margin: 0;
+}
+
+.fesshop__pagination button.active,
+.fesshop__pagination button:hover {
+    color: #FFF;
+    background: var(--main-color);
+    border-color: var(--main-color);
+}
 
 /*
 rgba(158, 114, 195, 0.4)
