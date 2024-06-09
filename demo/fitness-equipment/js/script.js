@@ -17,6 +17,16 @@ $(function(){
     });
 });
 
+//Preloader
+$(function(){
+    $(window).on('load',function(){
+      $('.fes__preloader').delay(2000).fadeOut(500);
+    });
+    $('.fespl__close').on('click', function(){
+      $('.fes__preloader').fadeOut(500);
+    })
+});
+
 //All Sliders Menu
 $(function(){
     //Cart Menu
@@ -41,6 +51,7 @@ if ($('.fitequip__store').length) {
     $('.fesps__select').niceSelect();
     $('#fesspVariants1').niceSelect();
     $('#fesspVariants2').niceSelect();
+    $('#fesspProductSorting').niceSelect();
 }
 
 //Mobile Menu
@@ -383,4 +394,14 @@ $(function () {
       starWidth: "16px",
       ratedFill: "var(--text-color)"
     });
+});
+
+//Shop Page Filter Sidebar
+$(function(){
+    $('.fessp__filter__button').on('click', function(){
+      $('.fesshop__filter__sidebar').addClass('show')
+    });
+    $('.fesshop__sidebar__closebtn').on('click', function(){
+      $('.fesshop__filter__sidebar').removeClass('show')
+    })
   });

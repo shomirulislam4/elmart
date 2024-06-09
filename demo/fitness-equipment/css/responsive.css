@@ -857,6 +857,39 @@
         .fessp__product__description .tab-content .tab-pane .vertical__seperator {
             display: none;
         }
+        /*Review form*/
+        .fessp__submit__review {
+            padding: 10px;
+        }
+        .fessp__submit__review .rating__wrap {
+            gap: 5px;
+        }
+        .fessp__submit__review form,
+        .fessp__submit__review form .name__email {
+            flex-direction: column;
+            gap: 10px;
+        }
+        .fessp__submit__review form label {
+            font-size: 12px;
+            line-height: 16px;
+        }
+        .fessp__submit__review form .name__email .item {
+            width: 100%;
+        }
+        .fessp__submit__review form .name__email .item input {
+            height: 40px;
+            font-size: 12px;
+            padding: 0 10px;
+        }
+        .fessp__submit__review form textarea {
+            font-size: 12px;
+            height: 150px;
+        }
+        .fessp__submit__review form .fes__button__a {
+            font-size: 12px;
+            width: 100%;
+            padding: 5px;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
@@ -1601,6 +1634,39 @@
         .fessp__product__description .tab-content .tab-pane .vertical__seperator {
             display: none;
         }
+        /*Review form*/
+        .fessp__submit__review {
+            padding: 10px;
+        }
+        .fessp__submit__review .rating__wrap {
+            gap: 5px;
+        }
+        .fessp__submit__review form,
+        .fessp__submit__review form .name__email {
+            flex-direction: column;
+            gap: 10px;
+        }
+        .fessp__submit__review form label {
+            font-size: 12px;
+            line-height: 16px;
+        }
+        .fessp__submit__review form .name__email .item {
+            width: 100%;
+        }
+        .fessp__submit__review form .name__email .item input {
+            height: 45px;
+            font-size: 12px;
+            padding: 0 10px;
+        }
+        .fessp__submit__review form textarea {
+            font-size: 12px;
+            height: 150px;
+        }
+        .fessp__submit__review form .fes__button__a {
+            font-size: 12px;
+            width: 100%;
+            padding: 5px;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -2194,6 +2260,27 @@
         .fessp__product__description .tab-content .tab-pane .vertical__seperator {
             height: 12px;
         }
+        /*Review form*/
+        .fessp__submit__review form,
+        .fessp__submit__review form .name__email {
+            flex-direction: column;
+            gap: 10px;
+        }
+        .fessp__submit__review form label {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .fessp__submit__review form .name__email .item {
+            width: 100%;
+        }
+        .fessp__submit__review form textarea {
+            font-size: 14px;
+            height: 200px;
+        }
+        .fessp__submit__review form .fes__button__a {
+            font-size: 14px;
+            padding: 5px;
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -2725,6 +2812,23 @@
         }
         .fessp__product__description .tab-content .tab-pane .vertical__seperator {
             height: 12px;
+        }
+        /*Review form*/
+        .fessp__submit__review form,
+        .fessp__submit__review form .name__email {
+            flex-direction: column;
+            gap: 10px;
+        }
+        .fessp__submit__review form label {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .fessp__submit__review form .name__email .item {
+            width: 100%;
+        }
+        .fessp__submit__review form textarea {
+            font-size: 14px;
+            height: 200px;
         }
 }
 

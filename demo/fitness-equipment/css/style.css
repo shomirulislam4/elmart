@@ -15,6 +15,7 @@
    12. Newsletter
    13. Footer
 3. Single Product Page
+4. Shop Page
 
 **********************************************/
 
@@ -385,6 +386,102 @@ button:focus {
 }
 
 /* Preloader */
+.fes__preloader {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: var(--secondary-color);
+    z-index: 999999;
+}
+
+.fes__preloader .fespl__wrapper {
+    margin: auto;
+    margin-right: 1px;
+    width: 100px;
+    height: 100px;
+    display: grid;
+    gap: 0px;
+    grid-template-columns: auto auto;
+    animation: rotate 2s linear 0s infinite;
+    -webkit-animation: rotate 2s linear 0s infinite;
+}
+
+@keyframes rotate {
+    0%{rotate: 0deg; transform: scale(0.6);}
+    50%{ rotate: 100deg; transform: scale(0.4);}    
+    100%{rotate: 360deg; transform: scale(0.6);}
+}
+
+@-webkit-keyframes rotate {
+    0%{rotate: 0deg; transform: scale(0.6);}
+    50%{ rotate: 100deg; transform: scale(0.4);}    
+    100%{rotate: 360deg; transform: scale(0.6);}
+}
+
+.fes__preloader .fespl__wrapper .item1 {
+    margin: auto;
+    width: 30px;
+    height: 30px;
+    border-radius: 0%;
+    background-color: rgb(255, 255, 255);
+}
+
+.fes__preloader .fespl__wrapper .item2 {
+    margin: auto;
+    width: 30px;
+    height: 30px;
+    border-radius: 0%;
+    background-color: rgb(255, 255, 255);
+}
+
+.fes__preloader .fespl__wrapper .item3 {
+    margin: auto;
+    width: 30px;
+    height: 30px;
+    border-radius: 0%;
+    background-color: rgb(255, 255, 255);
+}
+
+.fes__preloader .fespl__wrapper .item4 {
+    margin: auto;
+    width: 30px;
+    height: 30px;
+    border-radius: 0%;
+    background-color: rgb(255, 255, 255);
+}
+
+.fes__preloader h3 {
+    margin: auto;
+    color: #FFF;
+    font-size: 50px;
+    font-family: 'Signika Negative', sans-serif;
+    margin-left: 5px;
+}
+
+.fes__preloader .fespl__close {
+    height: 38px;
+    width: 38px;
+    line-height: 34px;
+    font-size: 24px;
+    border: 2px solid #FFF;
+    color: var(--text-color);
+    text-align: center;
+    background: #FFF;
+    border-radius: 5px;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
+.fes__preloader .fespl__close:hover {
+    border-color: #000;
+}
 
 /* Custom Cursor */
 .cursor {
@@ -3363,6 +3460,7 @@ input[type="radio"]:checked::before {
     font-weight: 400;
     font-family: 'Teko', sans-serif;
     text-align: center;
+    text-transform: capitalize;
 }
 
 .fes__breadcrumbs .fesbc__bg .fesbc__content .text {
@@ -3729,7 +3827,7 @@ input[type="radio"]:checked::before {
     width: 1px;
 }
 
-/* Review Suubmit Form */
+/* Review Form */
 .fessp__submit__review {
     padding: 20px;
     background: var(--section--bg);
@@ -3824,9 +3922,114 @@ input[type="radio"]:checked::before {
 .fessp__submit__review form .save__name__checkbox label {
     text-transform: none;
     margin: 0;
+    width: 100%;
+}
+/*** End of Single Product ***/
+
+/* ====================================================================
+   4. Shop Page
+==================================================================== */
+.fes__shop__page {
+    margin-top: 100px;
 }
 
-/*** End of Single Product ***/
+/* Filter Sidebar */
+.fesshop__filter__sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 0;
+    background: rgba(255, 255, 255, 0.09);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    z-index: 999999;
+    overflow: hidden;
+    transition: 1s;
+    -moz-transition: 1s;
+    -webkit-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.fesshop__filter__sidebar.show {
+    width: 100vw;
+}
+
+.fesshop__filter__sidebar .fesshop__filter__wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 100vh;
+    background: #FFF;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.fesshop__filter__sidebar .fesshop__sidebar__closebtn {
+    position: absolute;
+    top: 10px;
+    left: calc(400px + 10px);
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    color: var(--text-color);
+    background: #FFF;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.fesshop__filter__sidebar .fesshop__sidebar__closebtn:hover {
+    background: var(--secondary-color);
+    color: #FFF;
+}
+
+
+/* Info Bar */
+.fes__shop__page .fesshop__infobar {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--section--bg);
+    border-radius: 5px;
+    position: relative;
+    z-index: 10;
+}
+
+.fes__shop__page .fesshop__infobar .number__of__results p {
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    font-family: 'Signika Negative', sans-serif;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+/* Product Area */
+.fes__shop__products {
+    margin-top: 40px;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 0;
+}
 
 /*
 rgba(158, 114, 195, 0.4)
