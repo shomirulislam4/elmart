@@ -412,3 +412,26 @@ $(function(){
         $(this).toggleClass('active');
     });
 });
+
+//Newsletter Popup (Variant 3)
+$(function(){
+    var currentIndex = 0;
+    var scrollThreshold = 3200;
+    var isScrollTriggered = false;
+  
+    function fesnwsltrPopupScroll() {
+      if (!isScrollTriggered && $(window).scrollTop() > scrollThreshold) {
+        isScrollTriggered = true;
+        $(".fes__newsletter__popup").addClass('show');
+      }
+    }
+  
+    fesnwsltrPopupScroll();
+    $(window).scroll(function() {
+      fesnwsltrPopupScroll();
+    });
+  
+    $('.fes__nwsltrpop__close__btn').on('click', function() {
+      $('.fes__newsletter__popup').removeClass('show');
+    });
+});
