@@ -404,4 +404,11 @@ $(function(){
     $('.fesshop__sidebar__closebtn').on('click', function(){
       $('.fesshop__filter__sidebar').removeClass('show')
     })
+});
+
+//Shop Page Filter Sidebar Tag Cloud
+$(function(){
+    $('.tag__clouds button').click(function(){
+        $(this).toggleClass('active');
+    });
   });

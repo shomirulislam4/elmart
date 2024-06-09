@@ -3978,7 +3978,7 @@ input[type="radio"]:checked::before {
 .fesshop__filter__sidebar .fesshop__sidebar__closebtn {
     position: absolute;
     top: 10px;
-    left: calc(400px + 10px);
+    left: 410px;
     height: 40px;
     width: 40px;
     line-height: 40px;
@@ -3999,6 +3999,183 @@ input[type="radio"]:checked::before {
     color: #FFF;
 }
 
+.fesshop__sidebar__widget {
+    padding: 30px 15px;
+    background: var(--section--bg);
+    border-radius: 5px;
+}
+
+.fesshop__sidebar__widget h3 {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: 'Teko', sans-serif;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--main-color);
+    text-transform: capitalize;
+}
+
+.fesshop__sidebar__widget li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.fesshop__sidebar__widget li a {
+	display: block;
+	color: var(--text-color);
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: 500;
+	text-transform: capitalize;
+	width: 90%;
+	padding: 10px 0;
+}
+
+.fesshop__sidebar__widget li:first-child a {
+    padding-top: 0;
+}
+
+.fesshop__sidebar__widget li:last-child a {
+    padding-bottom: 0;
+}
+
+.fesshop__sidebar__widget li a i {
+    color: var(--main-color);
+    margin-right: 10px;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.fesshop__sidebar__widget li:hover a,
+.fesshop__sidebar__widget li:hover a i {
+    color: var(--secondary-color);
+}
+
+.fesshop__sidebar__widget li span {
+    display: block;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Signika Negative', sans-serif;
+    text-align: center;
+    border-radius: 50%;
+    color: #191C1F;
+    background: rgba(115, 56, 160, 0.2);
+    margin: 0;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.fesshop__sidebar__widget li:hover span {
+    color: #FFF;
+    background: var(--secondary-color);
+}
+
+.fesshop__sidebar__widget .tag__clouds {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.fesshop__sidebar__widget .tag__clouds button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 500;
+    font-family: 'Signika Negative', sans-serif;
+    margin: 0;
+    text-transform: capitalize;
+    border: 1px solid #AAA;
+    color: #444;
+    border-radius: 50px;
+    background: transparent;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.fesshop__sidebar__widget .tag__clouds button i {
+    display: none;
+    font-size: 14px;
+}
+
+.fesshop__sidebar__widget .tag__clouds button.active,
+.fesshop__sidebar__widget .tag__clouds button:hover {
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+.fesshop__sidebar__widget .tag__clouds button.active i {
+    display: block;
+    margin-right: 5px;
+}
+
+.fesshop__sidebar__widget label {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Signika Negative', sans-serif;
+    text-transform: capitalize;
+}
+
+.fesshop__sidebar__widget .fesshop__filterbyrating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.fesshop__sidebar__widget .fesshop__filterbyrating:last-child {
+    margin: 0;
+}
+
+.fesshop__sidebar__widget .fesshop__filterbyrating label {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.fesshop__sidebar__widget .fesshop__filterbyrating label i {
+    font-size: 12px;
+}
+
+.fesshop__sidebar__widget .fesshop__filterbyrating span {
+    font-size: 14px;
+    line-height: 22px;
+    font-family: 'Signika Negative', sans-serif;
+    margin: 0;
+}
+
+.fesshop__sidebar__widget input[type="checkbox"] {
+	margin-right: 5px;
+}
+
+/*
+rgba(158, 114, 195, 0.4)
+rgba(115, 56, 160, 0.4)
+
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+
+font-family: 'Signika Negative', sans-serif;
+font-family: 'Teko', sans-serif;
+*/
 
 /* Info Bar */
 .fes__shop__page .fesshop__infobar {
@@ -4010,6 +4187,16 @@ input[type="radio"]:checked::before {
     border-radius: 5px;
     position: relative;
     z-index: 10;
+}
+
+.fes__shop__page .fesshop__infobar .nice-select {
+    height: 50px;
+    line-height: 50px;
+}
+
+.fes__shop__page .fesshop__infobar .nice-select .list {
+	left: unset;
+    right: 0;
 }
 
 .fes__shop__page .fesshop__infobar .number__of__results p {
@@ -4027,9 +4214,12 @@ input[type="radio"]:checked::before {
     margin-top: 40px;
     display: flex;
     gap: 40px;
+    justify-content: center;
     flex-wrap: wrap;
     padding: 0;
 }
+
+
 
 /*
 rgba(158, 114, 195, 0.4)

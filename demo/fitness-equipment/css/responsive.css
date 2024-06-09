@@ -25,6 +25,19 @@
     .fes__pos__main__wrapper {
         padding-bottom: 40px;
     }
+    /*Checkbox & Radio Inputs*/
+    input[type="checkbox"],
+    input[type="checkbox"]:checked,
+    input[type="radio"],
+    input[type="radio"]:checked {
+        height: 10px;
+        width: 10px;
+    }
+    input[type="checkbox"]:checked::before,
+    input[type="radio"]:checked::before {
+        height: 6px;
+        width: 6px;
+    }
     /*===== Home Page =====*/
         .logo {
             width: 140px;
@@ -712,10 +725,10 @@
     /*===== Single Product Page =====*/
         /*Breadcrumbs*/
         .fes__breadcrumbs {
-            height: 400px;
+            height: 300px;
         }
         .fes__breadcrumbs .fesbc__bg {
-            padding-top: 100px;
+            padding-top: 85px;
         }
         .fes__breadcrumbs .fesbc__bg .fesbc__content .page__title {
             font-size: 28px;
@@ -890,6 +903,86 @@
             width: 100%;
             padding: 5px;
         }
+    /*===== Shop Page =====*/
+        .fes__shop__page .fesshop__infobar {
+            flex-direction: column;
+            gap: 10px;
+        }
+        .fes__shop__page .fesshop__infobar .fes__button__a {
+            font-size: 12px;
+            line-height: 18px;
+            padding: 5px 25px;
+        }
+        .fes__shop__page .fesshop__infobar .nice-select {
+            font-size: 12px;
+            height: 34px;
+            line-height: 34px;
+            padding-left: 10px;
+            padding-right: 25px;
+        }
+        .fes__shop__page .fesshop__infobar .nice-select .list {
+            left: 50%;
+            right: unset;
+            transform: translateX(-50%);
+        }
+        .fes__shop__page .fesshop__infobar .nice-select::after {
+            right: 10px;
+        }
+        .fes__shop__page .fesshop__infobar .number__of__results p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .fes__shop__products {
+            margin-top: 20px;
+            gap: 10px;
+        }
+        .fesshop__filter__sidebar .fesshop__filter__wrapper {
+            width: 180px;
+            padding: 5px;
+        }
+        .fesshop__filter__sidebar .fesshop__sidebar__closebtn {
+            left: 182px;
+            width: 16px;
+            height: 80px;
+            line-height: 80px;
+            font-size: 14px;
+            border-radius: 5px;
+        }
+        .fesshop__sidebar__widget {
+            padding: 20px 5px;
+            border-radius: 5px;
+        }
+        .fesshop__sidebar__widget h3 {
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        .fesshop__sidebar__widget li a {
+            font-size: 12px;
+            line-height: 16px;
+        }
+        .fesshop__sidebar__widget li a i {
+            font-size: 10px;
+            margin-right: 5px;
+        }
+        .fesshop__sidebar__widget li span {
+            height: 20px;
+            width: 20px;
+            line-height: 20px;
+            font-size: 10px;
+        }
+        .fesshop__sidebar__widget label {
+            font-size: 12px;
+        }
+        .fesshop__sidebar__widget .tag__clouds {
+            gap: 5px;
+        }
+        .fesshop__sidebar__widget .tag__clouds button {
+            font-size: 12px;
+            line-height: 12px;
+        }
+        .fesshop__sidebar__widget .tag__clouds button i {
+            font-size: 10px;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
@@ -919,6 +1012,19 @@
     .fes__pos__main__wrapper {
         padding-bottom: 80px;
     }
+    /*Checkbox & Radio Inputs*/
+    input[type="checkbox"],
+    input[type="checkbox"]:checked,
+    input[type="radio"],
+    input[type="radio"]:checked {
+        height: 12px;
+        width: 12px;
+    }
+    input[type="checkbox"]:checked::before,
+    input[type="radio"]:checked::before {
+        height: 6px;
+        width: 6px;
+    }
     /*===== Home Page =====*/
         .logo {
             width: 140px;
@@ -940,7 +1046,7 @@
             font-size: 50px;
             line-height: 50px;
         }
-        /* Mega Menu */
+        /*Mega Menu*/
         .fes__header__bottom .header__search {
             height: 36px;
             padding: 5px;
@@ -1667,6 +1773,77 @@
             width: 100%;
             padding: 5px;
         }
+    /*===== Shop Page =====*/
+        .fes__shop__page .fesshop__infobar {
+            flex-direction: column;
+            gap: 10px;
+        }
+        .fes__shop__page .fesshop__infobar .fes__button__a {
+            font-size: 12px;
+            line-height: 18px;
+            padding: 5px 25px;
+        }
+        .fes__shop__page .fesshop__infobar .nice-select {
+            font-size: 12px;
+            height: 34px;
+            line-height: 34px;
+            padding-left: 10px;
+            padding-right: 25px;
+        }
+        .fes__shop__page .fesshop__infobar .nice-select .list {
+            left: 50%;
+            right: unset;
+            transform: translateX(-50%);
+        }
+        .fes__shop__page .fesshop__infobar .nice-select::after {
+            right: 10px;
+        }
+        .fes__shop__page .fesshop__infobar .number__of__results p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .fes__shop__products {
+            margin-top: 20px;
+            gap: 15px;
+        }
+        .fesshop__filter__sidebar .fesshop__filter__wrapper {
+            width: 250px;
+            padding: 5px;
+        }
+        .fesshop__filter__sidebar .fesshop__sidebar__closebtn {
+            left: 255px;
+            height: 34px;
+            width: 34px;
+            line-height: 34px;
+        }
+        .fesshop__sidebar__widget {
+            padding: 20px 5px;
+            border-radius: 5px;
+        }
+        .fesshop__sidebar__widget h3 {
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        .fesshop__sidebar__widget li a {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .fesshop__sidebar__widget li span {
+            height: 26px;
+            width: 26px;
+            line-height: 26px;
+            font-size: 10px;
+        }
+        .fesshop__sidebar__widget label {
+            font-size: 12px;
+        }
+        .fesshop__sidebar__widget .tag__clouds {
+            gap: 5px;
+        }
+        .fesshop__sidebar__widget .tag__clouds button {
+            font-size: 14px;
+            line-height: 14px;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -2281,6 +2458,58 @@
             font-size: 14px;
             padding: 5px;
         }
+    /*===== Shop Page =====*/
+        .fes__shop__page .fesshop__infobar .fes__button__a {
+            font-size: 14px;
+            line-height: 20px;
+            padding: 10px;
+        }
+        .fes__shop__page .fesshop__infobar .nice-select {
+            font-size: 12px;
+            height: 40px;
+            line-height: 40px;
+            padding-left: 5px;
+            padding-right: 15px;
+        }
+        .fes__shop__page .fesshop__infobar .nice-select .list {
+            left: 50%;
+            right: unset;
+            transform: translateX(-50%);
+        }
+        .fes__shop__page .fesshop__infobar .nice-select::after {
+            right: 7px;
+        }
+        .fes__shop__page .fesshop__infobar .number__of__results p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .fes__shop__products {
+            margin-top: 20px;
+            gap: 20px;
+        }
+        .fesshop__filter__sidebar .fesshop__filter__wrapper {
+            width: 350px;
+        }
+        .fesshop__filter__sidebar .fesshop__sidebar__closebtn {
+            left: 360px;
+        }
+        .fesshop__sidebar__widget li a {
+            font-size: 16px;
+            line-height: 16px;
+        }
+        .fesshop__sidebar__widget label {
+            font-size: 14px;
+        }
+        .fesshop__sidebar__widget .tag__clouds {
+            gap: 5px;
+        }
+        .fesshop__sidebar__widget .tag__clouds button {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .fesshop__sidebar__widget .tag__clouds button i {
+            font-size: 12px;
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -2322,7 +2551,7 @@
             font-size: 60px;
             line-height: 60px;
         }
-        /* Mega Menu */
+        /*Mega Menu*/
         .fes__header__bottom .header__search {
             height: 40px;
             padding: 5px;
@@ -2830,6 +3059,34 @@
             font-size: 14px;
             height: 200px;
         }
+    /*===== Shop Page =====*/
+        .fes__shop__products {
+            margin-top: 30px;
+            gap: 24px;
+        }
+        .fesshop__filter__sidebar .fesshop__filter__wrapper {
+            width: 350px;
+        }
+        .fesshop__filter__sidebar .fesshop__sidebar__closebtn {
+            left: 360px;
+        }
+        .fesshop__sidebar__widget li a {
+            font-size: 16px;
+            line-height: 16px;
+        }
+        .fesshop__sidebar__widget label {
+            font-size: 14px;
+        }
+        .fesshop__sidebar__widget .tag__clouds {
+            gap: 5px;
+        }
+        .fesshop__sidebar__widget .tag__clouds button {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .fesshop__sidebar__widget .tag__clouds button i {
+            font-size: 12px;
+        }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -3277,6 +3534,34 @@
             padding: 10px 15px;
             font-size: 14px;
             line-height: 20px;
+        }
+    /*===== Shop Page =====*/
+        .fes__shop__products {
+            margin-top: 30px;
+            gap: 30px;
+        }
+        .fesshop__filter__sidebar .fesshop__filter__wrapper {
+            width: 350px;
+        }
+        .fesshop__filter__sidebar .fesshop__sidebar__closebtn {
+            left: 360px;
+        }
+        .fesshop__sidebar__widget li a {
+            font-size: 16px;
+            line-height: 16px;
+        }
+        .fesshop__sidebar__widget label {
+            font-size: 14px;
+        }
+        .fesshop__sidebar__widget .tag__clouds {
+            gap: 5px;
+        }
+        .fesshop__sidebar__widget .tag__clouds button {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .fesshop__sidebar__widget .tag__clouds button i {
+            font-size: 12px;
         }
 }
 
@@ -3819,6 +4104,11 @@
         .fessp__ctas .bottom .fes__button__b {
             width: 49.4%;
         }
+    /*===== Shop Page =====*/
+        .fes__shop__products {
+            margin-top: 20px;
+            gap: 20px;
+        }
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -4092,6 +4382,11 @@
             font-size: 16px;
             line-height: 16px;
         }
+    /*===== Shop Page =====*/
+        .fes__shop__products {
+            margin-top: 20px;
+            gap: 20px;
+        }
 }
 
 @media (min-width: 1400px) and (max-width: 1499px) {
@@ -4188,6 +4483,11 @@
         /*Single Product*/
         .fessp__product__image {
             width: 676px;
+        }
+    /*===== Shop Page =====*/
+        .fes__shop__products {
+            margin-top: 30px;
+            gap: 26px;
         }
 }
 
