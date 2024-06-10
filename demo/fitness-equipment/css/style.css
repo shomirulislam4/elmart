@@ -16,6 +16,7 @@
    13. Footer
 3. Single Product Page
 4. Shop Page
+5. Contact Us Page
 
 **********************************************/
 
@@ -4460,6 +4461,130 @@ input[type="radio"]:checked::before {
     color: #FFF;
 }
 /** End of Newsletter Popup **/
+
+/* ====================================================================
+   5. Contact Us Page
+==================================================================== */
+.fes__contact__section {
+    margin-top: 100px;
+    padding: 100px 0;
+    background: var(--section--bg);
+    position: relative;
+    z-index: 0;
+}
+
+.fes__contact__section h2 {
+    font-size: 100px;
+    line-height: 100px;
+    font-weight: 400;
+    font-family: 'Teko', sans-serif;
+    text-transform: capitalize;
+}
+
+.fes__contact__section h3 {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 400;
+    font-family: 'Teko', sans-serif;
+    text-transform: capitalize;
+}
+
+.fes__contact__section form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.fes__contact__section form .item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.fes__contact__section p,
+.fes__contact__section p span,
+.fes__contact__section p a {
+    color: var(--text-color);
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.fes__contact__section form label {
+    color: var(--text-color);
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    font-family: 'Signika Negative', sans-serif;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.fes__contact__section form input {
+    height: 60px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 0 20px;
+}
+
+.fes__contact__section form textarea {
+    height: 300px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 18px;
+    resize: none;
+    padding: 20px;
+}
+
+.fes__contact__section .right__side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.fes__contact__section .right__side .horizontal__seperator {
+    margin: 30px 0;
+    height: 1px;
+}
+
+.fes__contact__section .right__side .location p,
+.fes__contact__section .right__side .contact p {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.fes__contact__section .right__side span,
+.fes__contact__section .right__side span a,
+.fes__contact__section .left__side p {
+    color: #555;
+}
+
+.fes__contact__section .right__side p span i {
+    color: #555;
+    font-size: 16px;
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+.fes__contact__section .right__side span:hover,
+.fes__contact__section .right__side span:hover i,
+.fes__contact__section .right__side span:hover a {
+    color: var(--secondary-color);
+}
+
+
+.fes__contactus__page .fes__product__onsale__section {
+    background: #FFF;
+}
+
+.fes__contactus__page .title__with__text .twt__vertical__line,
+.fes__contactus__page .title__with__text::before {
+    background: var(--section--bg);
+}
+
 
 /*
 rgba(158, 114, 195, 0.4)
