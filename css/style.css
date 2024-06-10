@@ -649,12 +649,38 @@ button:focus {
     position: relative;
 }
 
-.demo-items img {
+.demo-items figure a .free-pro-tag {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: block;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 5px 15px;
+    color: #FFF;
+    background: #FF497C;
+    border-radius: 30px;
+    text-transform: capitalize;
+    opacity: 1;
+    visibility: visible;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.demo-items figure a:hover .free-pro-tag {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.demo-items figure a img {
     width: 100%;
     transition: 2s;
 }
 
-.demo-items figure:hover img {
+.demo-items figure:hover a img {
     transform: translateY(-100%);
     transition: 10s;
 }

@@ -24,38 +24,57 @@
 /* ====================================================================
    1. Global
 ==================================================================== */
-/* Font */
+/*** Font ***/
+/* Jost */
 @font-face {
     font-display: swap;
-    font-family: 'Signika Negative';
+    font-family: 'Jost';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/signika-negative-v21-latin-regular.woff2') format('woff2');
+    src: url('../fonts/jost/jost-v15-latin-regular.woff2') format('woff2');
 }
 @font-face {
     font-display: swap;
-    font-family: 'Signika Negative';
+    font-family: 'Jost';
     font-style: normal;
     font-weight: 600;
-    src: url('../fonts/signika-negative-v21-latin-600.woff2') format('woff2');
+    src: url('../fonts/jost/jost-v15-latin-600.woff2') format('woff2');
 }
 
-/* teko */
+/* Josefin Sans */
 @font-face {
     font-display: swap;
-    font-family: 'Teko';
+    font-family: 'Josefin Sans';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/teko-v20-latin-regular.woff2') format('woff2');
+    src: url('../fonts/josefin-sans/josefin-sans-v32-latin-regular.woff2') format('woff2');
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/josefin-sans/josefin-sans-v32-latin-500.woff2') format('woff2');
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/josefin-sans/josefin-sans-v32-latin-600.woff2') format('woff2');
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/josefin-sans/josefin-sans-v32-latin-700.woff2') format('woff2');
 }
 
 /* Default CSS */
 :root {
     /* Primary Color */
-    --main-color: #9E72C3;
-
-    /* Secondary Color */
-    --secondary-color: #7338A0;
+    --main-color: #7B7E0C;
 
     /* Text Color */
     --text-color: #13172B;
@@ -70,8 +89,10 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    font-family: 'Signika Negative', sans-serif;
+body,
+span,
+p {
+    font-family: 'Jost', sans-serif;
     color: var(--text-color);
 }
 
@@ -80,15 +101,13 @@ h2,
 h3,
 h4,
 h5,
-h6,
-span,
-p {
-    font-family: 'Signika Negative', sans-serif;
+h6 {
+    font-family: 'Josefin Sans', sans-serif;
     color: var(--text-color);
 }
 
 a {
-    color: var(--secondary-color);
+    color: var(--main-color);
     transition: 0.3s;
     -moz-transition: 0.3s;
     -webkit-transition: 0.3s;
@@ -107,7 +126,7 @@ ul {
 }
 
 li {
-    font-family: 'Signika Negative', sans-serif;
+    font-family: 'Jost', sans-serif;
     list-style: none;
 }
 
@@ -129,13 +148,13 @@ button:focus {
 }
 
 /* Buttons */
-.fes__button__a,
-.fes__button__b {
+.fsnf__button__a,
+.fsnf__button__b {
     position: relative;
     font-size: 16px;
     line-height: 24px;
     font-weight: 600;
-    font-family: 'Signika Negative', sans-serif;
+    font-family: 'Jost', sans-serif;
     padding: 10px 25px;
     text-transform: capitalize;
     background: transparent;
@@ -151,8 +170,8 @@ button:focus {
     display: inline-block;
 }
 
-.fes__button__a::before,
-.fes__button__b::before {
+.fsnf__button__a::before,
+.fsnf__button__b::before {
     position: absolute;
     content: '';
     top: 0;
@@ -163,8 +182,8 @@ button:focus {
     background: #000;
 }
 
-.fes__button__a::after,
-.fes__button__b::after {
+.fsnf__button__a::after,
+.fsnf__button__b::after {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -181,28 +200,28 @@ button:focus {
     border-radius: 5px;
 }
 
-.fes__button__a:hover::after,
-.fes__button__b:hover::after {
+.fsnf__button__a:hover::after,
+.fsnf__button__b:hover::after {
     height: 100%;
     width: 100%;
     background: var(--main-color);
 }
 
-.fes__button__b::before {
+.fsnf__button__b::before {
     background: var(--main-color);
 }
 
-.fes__button__b:hover::after {
+.fsnf__button__b:hover::after {
     background: #000;
 }
 
 /* Section Title */
-.fes__section__title {
+.fsnf__section__title {
     margin-bottom: 40px;
 }
 
-.fes__section__title h4,
-.fes__section__title h2 {
+.fsnf__section__title h4,
+.fsnf__section__title h2 {
     font-size: 24px;
     line-height: 24px;
     font-weight: 400;
@@ -212,16 +231,16 @@ button:focus {
     margin: 0;
 }
 
-.fes__section__title h4 {
+.fsnf__section__title h4 {
     margin: 0;
-    color: var(--secondary-color);
-    font-family: 'Signika Negative', sans-serif;
+    color: var(--main-color);
+    font-family: 'Jost', sans-serif;
 }
 
-.fes__section__title h2 {
+.fsnf__section__title h2 {
     font-size: 80px;
     line-height: 80px;
-    font-family: 'Teko', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 /* Back to Top */
@@ -242,7 +261,7 @@ button:focus {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--secondary-color);
+    background: var(--main-color);
 }
 
 /* Preloader */
@@ -316,7 +335,7 @@ button:focus {
 .horizontal__seperator {
     height: 2px;
     width: 100%;
-    background: var(--secondary-color);
+    background: var(--main-color);
     margin: 0;
 }
 
@@ -328,13 +347,13 @@ input[type="checkbox"] {
     margin: 0;
     width: 14px;
     height: 14px;
-    border: 1px solid var(--secondary-color);
+    border: 1px solid var(--main-color);
     position: relative;
 }
 
 input[type="checkbox"]::before {
 	content: '';
-	background: var(--secondary-color);
+	background: var(--main-color);
     width: 0;
 	height: 0;
 	position: absolute;
@@ -366,14 +385,14 @@ input[type="radio"] {
     margin: 0;
     width: 14px;
     height: 14px;
-    border: 1px solid var(--secondary-color);
+    border: 1px solid var(--main-color);
     position: relative;
     border-radius: 50%;
 }
 
 input[type="radio"]::before {
 	content: '';
-	background: var(--secondary-color);
+	background: var(--main-color);
     width: 0;
 	height: 0;
 	position: absolute;
@@ -402,6 +421,298 @@ input[type="radio"]:checked::before {
    2. Home Page
 ==================================================================== */
 /*** Start of Header ***/
+.logo {
+    width: 180px;
+    height: auto;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.fsnf__header__wrapper {
+    padding: 30px 0;
+    position: relative;
+}
+
+.fsnf__mblmenu__btn {
+    display: none;
+}
+
+@media (max-width:991px) {
+    .fsnf__mblmenu__btn {
+        display: inline-block;
+        padding: 15px;
+        font-size: 16px;
+        line-height: 16px;
+        font-weight: 400;
+        font-family: 'Jost', sans-serif;
+        text-transform: capitalize;
+        color: #FFF;
+        border: 1px solid #FFF;
+        border-radius: 5px;
+        background: var(--main-color);
+        transition: 0.3s;
+        -moz-transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+    }
+    .fsnf__mblmenu__btn i {
+        font: 14px;
+        margin-right: 10px;
+    }
+}
+
+.fsnf__header__wrapper .main__nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.fsnf__header__wrapper .main__nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.fsnf__header__wrapper .main__nav li:first-child {
+    margin-left: 0;
+}
+
+.fsnf__header__wrapper .main__nav li:last-child {
+    margin-right: 0;
+}
+
+.fsnf__header__wrapper .main__nav li a {
+    display: block;
+	padding: 20px 0;
+	font-size: 20px;
+	line-height: 20px;
+	font-weight: 400;
+	font-family: 'Jost', sans-serif;
+	text-transform: uppercase;
+	color: var(--text-color);
+}
+
+.fsnf__header__wrapper .main__nav li a:hover {
+    color: var(--main-color);
+}
+
+.fsnf__header__wrapper .main__nav li a i {
+    font-size: 12px;
+    margin-left: 5px;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.fsnf__header__wrapper .main__nav li:hover a i {
+    transform: rotate(180deg);
+}
+
+.fsnf__header__wrapper .main__nav li .fsnf__megamenu {
+    width: 100%;
+	height: auto;
+	position: absolute;
+    top: 80%;
+	left: 0;
+	color: var(--text-color);
+	background: var(--main-color);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+	border-radius: 5px;
+	padding: 10px 15px;
+	transition: 0.4s;
+	-moz-transition: 0.4s;
+	-webkit-transition: 0.4s;
+	-ms-transition: 0.4s;
+	-o-transition: 0.4s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 99999;
+}
+
+.fsnf__header__wrapper .main__nav li:hover .fsnf__megamenu {
+    opacity: 1;
+    visibility: visible;
+    top: 90%;
+}
+
+.fsnf__header__wrapper .main__nav li .fsnf__megamenu::before,
+.fsnf__header__wrapper .main__nav .has__tiny__menu .fsnf__tinymenu::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 20px;
+    bottom: 100%;
+    left: 0;
+}
+
+.fsnf__header__wrapper .main__nav li .fsnf__megamenu li {
+	display: block;
+	margin: 0;
+}
+
+.fsnf__header__wrapper .main__nav li .fsnf__megamenu li a {
+    display: block;
+    padding: 10px 0;
+    color: #FFF;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 600;
+    font-family: 'Jost', sans-serif;
+    width: 240px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.fsnf__header__wrapper .main__nav li .fsnf__megamenu li a:hover {
+    color: var(--main-color);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    background: #FFF;
+}
+
+.fsnf__header__wrapper .main__nav li .fsnf__megamenu h4 {
+	color: #FFF;
+	font-size: 40px;
+	line-height: 40px;
+	font-weight: 400;
+	font-family: 'Josefin Sans', sans-serif;
+	text-transform: capitalize;
+	text-align: center;
+}
+
+/* Tiny Menu */
+.fsnf__header__wrapper .main__nav .has__tiny__menu {
+    position: relative;
+}
+
+.fsnf__header__wrapper .main__nav .has__tiny__menu .fsnf__tinymenu {
+	position: absolute;
+	text-align: center;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+	z-index: 999999;
+	background: #FFF;
+	border-radius: 5px;
+	top: 100%;
+	left: 0;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.4s;
+	-moz-transition: 0.4s;
+	-webkit-transition: 0.4s;
+	-ms-transition: 0.4s;
+	-o-transition: 0.4s;
+}
+
+.fsnf__header__wrapper .main__nav .has__tiny__menu:hover .fsnf__tinymenu {
+    top: 110%;
+    visibility: visible;
+    opacity: 1;
+}
+
+.fsnf__header__wrapper .main__nav .has__tiny__menu .fsnf__tinymenu li {
+    display: block;
+    margin: 0;
+}
+
+.fsnf__header__wrapper .main__nav .has__tiny__menu .fsnf__tinymenu li a {
+    display: block;
+    padding: 10px 0;
+    font-size: 18px;
+    line-height: 22px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    width: 250px;
+    color: var(--text-color);
+}
+
+.fsnf__header__wrapper .main__nav .has__tiny__menu .fsnf__tinymenu li a:hover {
+    background: var(--main-color);
+    color: #FFF;
+}
+
+.fsnf__header__wrapper .main__nav .fsnf__tinymenu > .has__tiny__menu .fsnf__tinymenu {
+    left: 95%;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s;
+    -moz-transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.fsnf__header__wrapper .main__nav .fsnf__tinymenu > .has__tiny__menu:hover .fsnf__tinymenu {
+    left: 100%;
+    visibility: visible;
+    opacity: 1;
+}
+
+.fsnf__header__wrapper .main__nav .fsnf__tinymenu > .has__tiny__menu:hover {
+    border-radius: 5px;
+    background: var(--main-color);
+}
+
+.fsnf__header__wrapper .main__nav .fsnf__tinymenu > .has__tiny__menu:hover a,
+.fsnf__header__wrapper .main__nav .fsnf__tinymenu > .has__tiny__menu:hover .fsnf__tinymenu a:hover {
+    color: #FFF;
+}
+
+.fsnf__header__wrapper .main__nav .fsnf__tinymenu > .has__tiny__menu a i {
+    transition: 0.2s;
+    -moz-transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    transform: unset;
+}
+
+.fsnf__header__wrapper .main__nav .fsnf__tinymenu > .has__tiny__menu:hover a i {
+    transform: rotate(90deg);
+}
+
+.fsnf__header__wrapper .main__nav .fsnf__tinymenu > .has__tiny__menu:hover .fsnf__tinymenu a {
+    color: var(--text-color);
+}
+
+@media (max-width:991px) {
+    .fsnf__header__wrapper .main__nav {
+        display: none;
+    }
+}
+
+/* Header CTA Buttons */
+.fsnf__header__wrapper .header__ctas {
+    display: flex;
+    gap: 30px;
+    height: 100%;
+    align-items: center;
+}
+
+.fsnf__header__wrapper .header__ctas li {
+    padding: 0;
+    margin: 0;
+}
+
+.fsnf__header__wrapper .header__ctas li button {
+    background: transparent;
+    height: 20px;
+    width: 20px;
+    padding: 0;
+}
+
+.fsnf__header__wrapper .header__ctas li button img {
+    width: 100%;
+}
 
 /*** End of Header ***/
 
@@ -416,6 +727,6 @@ rgba(115, 56, 160, 0.4)
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
 
-font-family: 'Signika Negative', sans-serif;
-font-family: 'Teko', sans-serif;
+font-family: 'Jost', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
 */
