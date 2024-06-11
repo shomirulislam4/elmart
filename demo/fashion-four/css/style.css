@@ -1143,6 +1143,29 @@ input[type="radio"]:checked::before {
 }
 /*** End of Mobile Menu ***/
 
+/*** Start of Hero Section ***/
+.fsnf__hero__wrapper {
+    position: relative;
+    height: 970px;
+}
+
+.fsnf__hero__wrapper img {
+    position: absolute;
+    z-index: -1;
+}
+
+.fsnf__hero__wrapper img.bg__img1 {
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+}
+
+.fsnf__hero__wrapper img.bg__img2 {
+    top: 0;
+    left: 135px;
+}
+/*** End of Hero Section ***/
+
 
 /*
 rgba(255, 80, 71, 0.4)
