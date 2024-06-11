@@ -225,10 +225,17 @@
                 </div>
                 <div class="col-lg-3">
                     <ul class="header__ctas">
-                        <li><button title="Search"><img src="image/icons/search.svg" alt="search icon"></button></li>
-                        <li><button title="Login/Register"><img src="image/icons/user.svg" alt="user icon"></button></li>
-                        <li><button title="Wishlist"><img src="image/icons/heart.svg" alt="heart icon"></button></li>
-                        <li><button title="Cart"><img src="image/icons/cart.svg" alt="cart icon"></button></li>
+                        <li>
+                            <a href="#" title="Search" class="has__search"><img src="image/icons/search.svg" alt="search icon">
+                            <form action="#" method="get" class="header__search">
+                                <input type="search" name="headerSearch" id="HeaderSearch" placeholder="Enter your keyword">
+                                <button class="submit__btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </form>
+                            </a>
+                        </li>
+                        <li><a href="#" title="Login/Register"><img src="image/icons/user.svg" alt="user icon"></a></li>
+                        <li><a href="#" title="Wishlist"><img src="image/icons/heart.svg" alt="heart icon"></a></li>
+                        <li><a href="#" title="Cart"><img src="image/icons/cart.svg" alt="cart icon"></a></li>
                     </ul>
 
                     <!----
@@ -241,6 +248,177 @@
             </div>
         </div>
     </header>
+    <!-- Mobile Menu -->
+    <div class="fsnf__mobile__menu">
+        <div class="fsnf__mblmenu__wrapper">
+            <button class="fsnf__mblmenu__closebtn"><i class="fa-solid fa-xmark"></i></button>
+            <ul class="nav nav-pills" id="fsnf__MobileMenuTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="fsnf__mblmenu__pages-tab" data-bs-toggle="pill" data-bs-target="#fsnf__mblmenu__pages" type="button" role="tab" aria-controls="fsnf__mblmenu__pages" aria-selected="true">Pages</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="fsnf__mblmenu__cate-tab" data-bs-toggle="pill" data-bs-target="#fsnf__mblmenu__cate" type="button" role="tab" aria-controls="fsnf__mblmenu__cate" aria-selected="false">Categories</button>
+                </li>
+              </ul>
+              <div class="tab-content" id="fsnf__MobileMenuTabsContent">
+                <div class="tab-pane fade show active" id="fsnf__mblmenu__pages" role="tabpanel" aria-labelledby="fsnf__mblmenu__pages-tab">
+                    <ul class="fsnf__mblmenu__tabs">
+                        <li class="mobile__submenu"><a href="#">home<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="../index.html">Homepage 1</a></li>
+                                <li><a href="../index-2.html">Homepage 2</a></li>
+                                <li><a href="../index-3.html">Homepage 3</a></li>
+                                <li><a href="../index-4.html">Homepage 4</a></li>
+                                <li><a href="../index-5.html">Homepage 5</a></li>
+                                <li><a href="../index-6.html">Homepage 6</a></li>
+                                <li><a href="../index-7.html">Homepage 7</a></li>
+                                <li><a href="../index-8.html">Homepage 8</a></li>
+                                <li><a href="../fitness-equipment/index.html">Homepage 9</a></li>
+                                <li><a href="index.html">Homepage 10</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile__submenu"><a href="#">shop<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="../shop.html">Shop Left Sidebar</a></li>
+                                <li><a href="../shop-right-sidebar.html">Shop Right Sidebar</a></li>
+                                <li><a href="../shop-banner-left-sidebar.html">Shop Banner Leftbar</a></li>
+                                <li><a href="../shop-banner-right-sidebar.html">Shop Banner Rightbar</a></li>
+                                <li><a href="../shop-product-style-2.html">Shop Product Style 2</a></li>
+                                <li><a href="../shop-product-style-3.html">Shop Product Style 3</a></li>
+                                <li><a href="../shop-product-style-3-list.html">Shop PStyle 3 (List)</a></li>
+                                <li><a href="../shop-product-style-4.html">Shop Product Style 4</a></li>
+                                <li><a href="../shop-product-style-5.html">Shop Product Style 5</a></li>
+                                <li><a href="../shop-infinite-scroll.html">Shop Infinite Scroll</a></li>
+                                <li><a href="../shop-product-style-6.html">Shop Product Style 6</a></li>
+                                <li><a href="../shop-product-style-7.html">Shop Product Style 7</a></li>
+                                <li><a href="../fitness-equipment/shop.html">Shop Product Style 8</a></li>
+                                <li><a href="shop.html">Shop Product Style 9</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile__submenu"><a href="#">Products<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="../shop-details.html">Single Product</a></li>
+                                <li><a href="../shop-details-countdown.html">Product Countdown</a></li>
+                                <li><a href="../shop-details-ask-question.html">Product Ask a Question</a></li>
+                                <li><a href="../shop-details-size-guide.html">Product Size Guide</a></li>
+                                <li><a href="../shop-details-color-compare.html">Product Color Compare</a></li>
+                                <li><a href="../shop-details-product-image-slider.html">Product Image Slider</a></li>
+                                <li><a href="../shop-details-slider-image.html">Product Image Slider V2</a></li>
+                                <li><a href="../shop-details-sidebar.html">Product Sidebar</a></li>
+                                <li><a href="../shop-details-style-4.html">Product Image Gallery</a></li>
+                                <li><a href="../shop-details-style-5.html">Single Product Style 5</a></li>
+                                <li><a href="../shop-details-style-6.html">Single Product Style 6</a></li>
+                                <li><a href="../shop-details-style-7.html">Single Product Style 7</a></li>
+                                <li><a href="../fitness-equipment/single-product.html">Single Product Style 8</a></li>
+                                <li><a href="single-product.html">Single Product Style 9</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile__submenu"><a href="#">blog<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="../blog.html">Blog</a></li>
+                                <li><a href="../blog-post.html">Blog Post Right Sidebar</a></li>
+                                <li><a href="../blog-post-left-sidebar.html">Blog Post Left Sidebar</a></li>
+                                <li><a href="../blog-post-no-sidebar.html">Blog Post No Sidebar</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile__submenu"><a href="#">pages<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="../blog-post.html">Blog Post</a></li>
+                                <li><a href="../faqs.html">FAQs</a></li>
+                                <li><a href="../user-dashboard.html">User Dashboard</a></li>
+                                <li><a href="../wishlist.html">Wishlist</a></li>
+                                <li><a href="../cart.html">Cart</a></li>
+                                <li><a href="../checkout.html">Checkout</a></li>
+                                <li><a href="../seller-dashboard.html">Seller Dashboard</a></li>
+                                <li><a href="../vendor-list.html">Vendor List</a></li>
+                                <li><a href="../vendor-shop-left-Sidebar.html">Vendor Left Sidebar</a></li>
+                                <li><a href="../vendor-shop-right-Sidebar.html">Vendor Right Sidebar</a></li>
+                                <li><a href="../vendor-shop-banner-1.html">Vendor Banner Leftbar</a></li>
+                                <li><a href="../vendor-shop-banner-2.html">Vendor Banner Rightbar</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile__submenu"><a href="contact.html">contact us</a></li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="fsnf__mblmenu__cate" role="tabpanel" aria-labelledby="fsnf__mblmenu__cate-tab">
+                    <ul class="fsnf__mblmenu__tabs">
+                        <li class="mobile__submenu"><a href="#">Men's Shirts<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="#">category 1</a></li>
+                                <li><a href="#">category 2</a></li>
+                                <li><a href="#">category 3</a></li>
+                                <li><a href="#">category 4</a></li>
+                                <li><a href="#">category 5</a></li>
+                                <li><a href="#">category 6</a></li>
+                                <li><a href="#">category 7</a></li>
+                                <li><a href="#">category 8</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile__submenu"><a href="#">Men's Shoes<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="#">category 1</a></li>
+                                <li><a href="#">category 2</a></li>
+                                <li><a href="#">category 3</a></li>
+                                <li><a href="#">category 4</a></li>
+                                <li><a href="#">category 5</a></li>
+                                <li><a href="#">category 6</a></li>
+                                <li><a href="#">category 7</a></li>
+                                <li><a href="#">category 8</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile__submenu"><a href="#">Women's Shirts<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="#">category 1</a></li>
+                                <li><a href="#">category 2</a></li>
+                                <li><a href="#">category 3</a></li>
+                                <li><a href="#">category 4</a></li>
+                                <li><a href="#">category 5</a></li>
+                                <li><a href="#">category 6</a></li>
+                                <li><a href="#">category 7</a></li>
+                                <li><a href="#">category 8</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile__submenu"><a href="#">Women's Shoes<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="#">category 1</a></li>
+                                <li><a href="#">category 2</a></li>
+                                <li><a href="#">category 3</a></li>
+                                <li><a href="#">category 4</a></li>
+                                <li><a href="#">category 5</a></li>
+                                <li><a href="#">category 6</a></li>
+                                <li><a href="#">category 7</a></li>
+                                <li><a href="#">category 8</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile__submenu"><a href="#">Winter Collections<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="#">category 1</a></li>
+                                <li><a href="#">category 2</a></li>
+                                <li><a href="#">category 3</a></li>
+                                <li><a href="#">category 4</a></li>
+                                <li><a href="#">category 5</a></li>
+                                <li><a href="#">category 6</a></li>
+                                <li><a href="#">category 7</a></li>
+                                <li><a href="#">category 8</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile__submenu"><a href="#">Summer Collections<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="#">category 1</a></li>
+                                <li><a href="#">category 2</a></li>
+                                <li><a href="#">category 3</a></li>
+                                <li><a href="#">category 4</a></li>
+                                <li><a href="#">category 5</a></li>
+                                <li><a href="#">category 6</a></li>
+                                <li><a href="#">category 7</a></li>
+                                <li><a href="#">category 8</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+              </div>
+        </div>
+    </div>
     <!-- End of Header -->
 
     <!-- JS Links -->

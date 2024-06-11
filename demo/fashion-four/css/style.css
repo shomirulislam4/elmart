@@ -2,7 +2,7 @@
 1. Global
 2. Home Page
    1. Header
-   2. Cart
+   2. Mobile Menu
    3. Hero Section
    4. Features
    5. Categories Section
@@ -435,35 +435,6 @@ input[type="radio"]:checked::before {
     position: relative;
 }
 
-.fsnf__mblmenu__btn {
-    display: none;
-}
-
-@media (max-width:991px) {
-    .fsnf__mblmenu__btn {
-        display: inline-block;
-        padding: 15px;
-        font-size: 16px;
-        line-height: 16px;
-        font-weight: 400;
-        font-family: 'Jost', sans-serif;
-        text-transform: capitalize;
-        color: #FFF;
-        border: 1px solid #FFF;
-        border-radius: 5px;
-        background: var(--main-color);
-        transition: 0.3s;
-        -moz-transition: 0.3s;
-        -webkit-transition: 0.3s;
-        -ms-transition: 0.3s;
-        -o-transition: 0.3s;
-    }
-    .fsnf__mblmenu__btn i {
-        font: 14px;
-        margin-right: 10px;
-    }
-}
-
 .fsnf__header__wrapper .main__nav {
     height: 100%;
     display: flex;
@@ -703,18 +674,231 @@ input[type="radio"]:checked::before {
     margin: 0;
 }
 
-.fsnf__header__wrapper .header__ctas li button {
+.fsnf__header__wrapper .header__ctas li a {
     background: transparent;
     height: 20px;
     width: 20px;
     padding: 0;
+    position: relative;
 }
 
-.fsnf__header__wrapper .header__ctas li button img {
+.fsnf__header__wrapper .header__ctas li a img {
     width: 100%;
 }
 
+.fsnf__header__wrapper .has__search .header__search {
+    position: absolute;
+    height: 50px;
+    width: 280px;
+    background: #FFF;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    z-index: 99999;
+    top: 100%;
+    right: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.fsnf__header__wrapper .has__search:hover .header__search {
+    visibility: visible;
+    opacity: 1;
+}
+
+.fsnf__header__wrapper .header__search input {
+    color: var(--text-color);
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    background: #FFF;
+    padding: 5px 10px;
+}
+
+.fsnf__header__wrapper .header__search input::placeholder {
+    color: #CCC;
+}
+
+.fsnf__header__wrapper .header__search .submit__btn {
+    font-size: 18px;
+    line-height: 18px;
+    height: 100%;
+    width: 40px;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    background: transparent;
+}
+
+.fsnf__header__wrapper .header__search .submit__btn:hover {
+    color: #FFF;
+    background: var(--main-color);
+}
 /*** End of Header ***/
+
+/*** Start of Mobile Menu ***/
+.fsnf__mblmenu__btn {
+    display: none;
+}
+
+@media (max-width:991px) {
+    .fsnf__mblmenu__btn {
+        display: inline-block;
+        padding: 15px;
+        font-size: 16px;
+        line-height: 16px;
+        font-weight: 400;
+        font-family: 'Jost', sans-serif;
+        text-transform: capitalize;
+        color: #FFF;
+        border: 1px solid #FFF;
+        border-radius: 5px;
+        background: var(--main-color);
+        transition: 0.3s;
+        -moz-transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+    }
+    .fsnf__mblmenu__btn i {
+        font: 14px;
+        margin-right: 10px;
+    }
+}
+
+.fsnf__mobile__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 999999;
+    overflow: hidden;
+    transition: 1s;
+    -moz-transition: 1s;
+    -webkit-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.fsnf__mobile__menu.show {
+    width: 100vw;
+}
+
+.fsnf__mobile__menu .fsnf__mblmenu__wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 100vh;
+    background: #FFF;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.fsnf__mobile__menu .fsnf__mblmenu__wrapper .fsnf__mblmenu__closebtn {
+    position: absolute;
+    top: 10px;
+    left: calc(100% + 10px);
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    color: var(--text-color);
+    background: #FFF;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.fsnf__mobile__menu .fsnf__mblmenu__wrapper .fsnf__mblmenu__closebtn:hover {
+    background: var(--main-color);
+    color: #FFF;
+}
+
+.fsnf__mobile__menu .fsnf__mblmenu__wrapper .nav-pills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.fsnf__mobile__menu .fsnf__mblmenu__wrapper .nav-pills .nav-link.active,
+.fsnf__mobile__menu .fsnf__mblmenu__wrapper .nav-pills .show > .nav-link {
+    background: var(--main-color);
+    color: #FFF;
+    border-radius: 3px;
+}
+
+.fsnf__mobile__menu .fsnf__mblmenu__wrapper .nav-pills .nav-link {
+	color: var(--main-color);
+    border: 1px solid var(--main-color);
+    border-radius: 3px;
+}
+
+.fsnf__mblmenu__tabs {
+	height: 88vh;
+	overflow: auto;
+    color: var(--text-color);
+    font-size: 16px;
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 5px;
+    padding-right: 10px;
+}
+
+.fsnf__mblmenu__tabs .mobile__submenu a {
+    display: flex;
+    width: 100%;
+    padding: 3px 0;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+
+.fsnf__mblmenu__tabs .mobile__submenu a:hover {
+    color: var(--main-color);
+}
+
+.fsnf__mblmenu__tabs .l2__submenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    -moz-transition: max-height 0.3s ease-out;
+    -webkit-transition: max-height 0.3s ease-out;
+    -ms-transition: max-height 0.3s ease-out;
+    -o-transition: max-height 0.3s ease-out;
+    margin-left: 10px;
+}
+
+.fsnf__mblmenu__tabs .l2__submenu.show {
+    max-height: 500px;
+}
+
+.fsnf__mblmenu__tabs .l2__submenu a {
+    color: #555;
+}
+/*** End of Mobile Menu ***/
 
 
 /*

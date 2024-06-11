@@ -2,18 +2,19 @@
 1. Global
 2. Home Page
    1. Header
-   2. Cart
-   3. Hero Section
-   4. Features
-   5. Categories Section
-   6. Trending Products
-   7. Product Style
-   8. Best Deals
-   9. Product On Sale
-   10. Testimonials
-   11. Brands
-   12. Newsletter
-   13. Footer
+   2. Mobile Menu
+   3. Cart
+   4. Hero Section
+   5. Features
+   6. Categories Section
+   7. Trending Products
+   8. Product Style
+   9. Best Deals
+   10. Product On Sale
+   11. Testimonials
+   12. Brands
+   13. Newsletter
+   14. Footer
 3. Single Product Page
 4. Shop Page
 5. Contact Us Page
@@ -4287,7 +4288,9 @@ input[type="radio"]:checked::before {
     left: 0;
     height: 100vh;
     width: 100vw;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(255, 255, 255, 0.09);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
     z-index: 999999;
     display: flex;
     align-items: center;
@@ -4319,6 +4322,7 @@ input[type="radio"]:checked::before {
     -webkit-transition: 0.6s;
     -ms-transition: 0.6s;
     -o-transition: 0.6s;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .fes__newsletter__popup.show .fes__newsletter__popup__wrapper {
