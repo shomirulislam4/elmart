@@ -53,10 +53,10 @@
 /* Default CSS */
 :root {
     /* Primary Color */
-    --main-color: #9E72C3;
+    --main-color: #FF4D24;
 
     /* Secondary Color */
-    --secondary-color: #7338A0;
+    --secondary-color: #FF0336;
 
     /* Section Background */
     --section--bg: #F7F6F2;
@@ -254,25 +254,25 @@ button:focus {
 
 @-webkit-keyframes backtoTopAnim {
     0% {
-        box-shadow: 0 0 0 0.5rem rgba(158, 114, 195, 0.2),
-            0 0 0 0.75rem rgba(158, 114, 195, 0.12)
+        box-shadow: 0 0 0 0.5rem rgba(255, 77, 36, 0.2),
+            0 0 0 0.75rem rgba(255, 77, 36, 0.12)
     }
 
     100% {
-        box-shadow: 0 0 0 0.75rem rgba(158, 114, 195, 0.08),
-            0 0 0 1.25rem rgba(158, 114, 195, 0.03)
+        box-shadow: 0 0 0 0.75rem rgba(255, 77, 36, 0.08),
+            0 0 0 1.25rem rgba(255, 77, 36, 0.03)
     }
 }
 
 @keyframes backtoTopAnim {
     0% {
-        box-shadow: 0 0 0 0.5rem rgba(158, 114, 195, 0.2),
-            0 0 0 0.75rem rgba(158, 114, 195, 0.12)
+        box-shadow: 0 0 0 0.5rem rgba(255, 77, 36, 0.2),
+            0 0 0 0.75rem rgba(255, 77, 36, 0.12)
     }
 
     100% {
-        box-shadow: 0 0 0 0.75rem rgba(158, 114, 195, 0.08),
-            0 0 0 1.25rem rgba(158, 114, 195, 0.03)
+        box-shadow: 0 0 0 0.75rem rgba(255, 77, 36, 0.08),
+            0 0 0 1.25rem rgba(255, 77, 36, 0.03)
     }
 }
 
@@ -531,7 +531,7 @@ button:focus {
 .cursor.hover::before {
     width: 30px;
     height: 30px;
-    background: rgba(158, 114, 195, 0.2);
+    background: rgba(255, 77, 36, 0.2);
 }
 
 @media (max-width: 991px) {
@@ -925,7 +925,7 @@ input[type="radio"]:checked::before {
 .fes__header__bottom {
     border-radius: 5px;
     padding: 5px;
-    background: var(--secondary-color);
+    background: var(--main-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1197,8 +1197,8 @@ input[type="radio"]:checked::before {
     color: #FFF;
 }
 
-.fes__header__bottom .main__nav li a:hover {
-    color: var(--main-color);
+.fes__header__bottom .main__nav li:hover  a{
+    color: #000;
 }
 
 .fes__header__bottom .main__nav li a i {
@@ -1276,7 +1276,7 @@ input[type="radio"]:checked::before {
 }
 
 .fes__header__bottom .main__nav li .fes__megamenu li a:hover {
-    color: var(--secondary-color);
+    color: var(--main-color);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
     background: #FFF;
 }
@@ -1335,7 +1335,7 @@ input[type="radio"]:checked::before {
 }
 
 .fes__header__bottom .main__nav .has__tiny__menu .fes__tinymenu li a:hover {
-    background: var(--secondary-color);
+    background: var(--main-color);
     color: #FFF;
 }
 
@@ -1359,7 +1359,7 @@ input[type="radio"]:checked::before {
 
 .fes__header__bottom .main__nav .fes__tinymenu > .has__tiny__menu:hover {
     border-radius: 5px;
-    background: var(--secondary-color);
+    background: var(--main-color);
 }
 
 .fes__header__bottom .main__nav .fes__tinymenu > .has__tiny__menu:hover a,
@@ -2445,7 +2445,7 @@ input[type="radio"]:checked::before {
     top: 0;
     left: 0;
     z-index: 0;
-    background-image: linear-gradient(to bottom, transparent, rgba(158, 114, 195, 0.8));
+    background-image: linear-gradient(to bottom, transparent, rgba(255, 77, 36, 0.8));
     visibility: hidden;
     opacity: 0;
     transition: 0.6s;
@@ -4105,7 +4105,7 @@ input[type="radio"]:checked::before {
     text-align: center;
     border-radius: 50%;
     color: #191C1F;
-    background: rgba(115, 56, 160, 0.2);
+    background: rgba(255, 3, 54, 0.2);
     margin: 0;
     transition: 0.3s;
     -moz-transition: 0.3s;
@@ -4589,8 +4589,8 @@ input[type="radio"]:checked::before {
 }
 
 /*
-rgba(158, 114, 195, 0.4)
-rgba(115, 56, 160, 0.4)
+rgba(255, 77, 36, 0.4)
+rgba(255, 3, 54, 0.4)
 
     transition: 0.3s;
     -moz-transition: 0.3s;

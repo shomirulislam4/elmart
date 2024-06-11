@@ -17,13 +17,17 @@
     }
     /*===== Home Page =====*/
         .logo {
-            width: 140px;
+            width: 55px;
         }
         /*Mobile Menu*/
         .fsnf__mblmenu__btn {
-            padding: 8px 5px;
+            padding: 5px;
             font-size: 12px;
             line-height: 12px;
+            margin: 0 auto;
+        }
+        .fsnf__header__wrapper {
+            padding: 15px 0;
         }
         .fsnf__mobile__menu .fsnf__mblmenu__wrapper {
             width: 180px;
@@ -47,6 +51,20 @@
             padding: 5px;
             margin: 0;
         }
+        .fsnf__header__wrapper .header__ctas {
+            gap: 5px;
+            height: 50%;
+        }
+        .fsnf__header__wrapper .header__ctas li a {
+            height: 12px;
+            width: 12px;
+        }
+        .fsnf__header__wrapper .col-4 {
+            padding: 0 5px;
+        }
+        .fsnf__header__wrapper .col-4.middle {
+            padding: 0;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
@@ -68,13 +86,17 @@
     }
     /*===== Home Page =====*/
         .logo {
-            width: 140px;
+            width: 80px;
         }
         /*Mobile Menu*/
         .fsnf__mblmenu__btn {
-            padding: 11px 7px;
+            padding: 5px;
             font-size: 12px;
             line-height: 12px;
+            margin: 0 auto;
+        }
+        .fsnf__header__wrapper {
+            padding: 15px 0;
         }
         .fsnf__mobile__menu .fsnf__mblmenu__wrapper {
             width: 255px;
@@ -91,6 +113,14 @@
             font-size: 14px;
             line-height: 24px;
         }
+        .fsnf__header__wrapper .header__ctas {
+            gap: 10px;
+            height: 70%;
+        }
+        .fsnf__header__wrapper .header__ctas li a {
+            height: 14px;
+            width: 14px;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -99,11 +129,15 @@
     }
     /*===== Home Page =====*/
         .logo {
-            width: 140px;
+            width: 110px;
         }
         /*Mobile Menu*/
         .fsnf__mblmenu__btn {
             padding: 10px;
+            margin: 0 auto;
+        }
+        .fsnf__header__wrapper {
+            padding: 15px 0;
         }
         .fsnf__mobile__menu .fsnf__mblmenu__wrapper {
             width: 350px;
@@ -114,6 +148,13 @@
         .fsnf__mblmenu__tabs {
             font-size: 14px;
             line-height: 24px;
+        }
+        .fsnf__header__wrapper .header__ctas {
+            gap: 15px;
+        }
+        .fsnf__header__wrapper .header__ctas li a {
+            height: 16px;
+            width: 16px;
         }
 }
 
@@ -128,6 +169,10 @@
         /*Mobile Menu*/
         .fsnf__mblmenu__btn {
             padding: 10px;
+            margin: 0 auto;
+        }
+        .fsnf__header__wrapper {
+            padding: 15px 0;
         }
         .fsnf__mobile__menu .fsnf__mblmenu__wrapper {
             width: 350px;
@@ -138,6 +183,13 @@
         .fsnf__mblmenu__tabs {
             font-size: 14px;
             line-height: 24px;
+        }
+        .fsnf__header__wrapper .header__ctas {
+            gap: 15px;
+        }
+        .fsnf__header__wrapper .header__ctas li a {
+            height: 16px;
+            width: 16px;
         }
 }
 
@@ -152,6 +204,10 @@
         /*Mobile Menu*/
         .fsnf__mblmenu__btn {
             padding: 10px;
+            margin: 0 auto;
+        }
+        .fsnf__header__wrapper {
+            padding: 20px 0;
         }
         .fsnf__mobile__menu .fsnf__mblmenu__wrapper {
             width: 350px;
@@ -162,6 +218,13 @@
         .fsnf__mblmenu__tabs {
             font-size: 14px;
             line-height: 24px;
+        }
+        .fsnf__header__wrapper .header__ctas {
+            gap: 15px;
+        }
+        .fsnf__header__wrapper .header__ctas li a {
+            height: 16px;
+            width: 16px;
         }
 }
 
@@ -181,13 +244,16 @@
             left: 360px;
         }
         /*Mega Menu*/
+        .fsnf__header__wrapper {
+            padding: 20px 0;
+        }
         .fsnf__header__wrapper .main__nav li a {
-            padding: 10px 0;
-            font-size: 14px;
-            line-height: 14px;
+            padding: 15px 0;
+            font-size: 16px;
+            line-height: 16px;
         }
         .fsnf__header__wrapper .main__nav li {
-            margin: 0 7px;
+            margin: 0 10px;
         }
         .fsnf__header__wrapper .main__nav li a i {
             font-size: 8px;
@@ -213,6 +279,13 @@
         .fsnf__header__wrapper .main__nav .has__tiny__menu .fsnf__tinymenu li a {
             width: 210px;
         }
+        .fsnf__header__wrapper .header__ctas {
+            gap: 20px;
+        }
+        .fsnf__header__wrapper .header__ctas li a {
+            height: 16px;
+            width: 16px;
+        }
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -224,9 +297,6 @@
         .fsnf__header__wrapper .main__nav li a {
             font-size: 16px;
             line-height: 16px;
-        }
-        .fsnf__header__wrapper .main__nav li {
-            margin: 0 10px;
         }
         .fsnf__header__wrapper .main__nav li a i {
             font-size: 8px;

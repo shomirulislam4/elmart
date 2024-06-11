@@ -74,7 +74,7 @@
 /* Default CSS */
 :root {
     /* Primary Color */
-    --main-color: #7B7E0C;
+    --main-color: #FF5047;
 
     /* Text Color */
     --text-color: #13172B;
@@ -315,7 +315,7 @@ button:focus {
 .cursor.hover::before {
     width: 30px;
     height: 30px;
-    background: rgba(158, 114, 195, 0.2);
+    background: rgba(255, 80, 71, 0.2);
 }
 
 @media (max-width: 991px) {
@@ -671,6 +671,7 @@ input[type="radio"]:checked::before {
     gap: 30px;
     height: 100%;
     align-items: center;
+    justify-content: flex-end;
 }
 
 .fsnf__header__wrapper .header__ctas li {
@@ -679,10 +680,12 @@ input[type="radio"]:checked::before {
 }
 
 .fsnf__header__wrapper .header__ctas li a {
+    display: block;
     background: transparent;
     height: 20px;
     width: 20px;
     padding: 0;
+    margin: 0;
     position: relative;
 }
 
@@ -756,7 +759,7 @@ input[type="radio"]:checked::before {
 
 @media (max-width:991px) {
     .fsnf__mblmenu__btn {
-        display: inline-block;
+        display: block;
         padding: 15px;
         font-size: 16px;
         line-height: 16px;
@@ -906,8 +909,7 @@ input[type="radio"]:checked::before {
 
 
 /*
-rgba(158, 114, 195, 0.4)
-rgba(115, 56, 160, 0.4)
+rgba(255, 80, 71, 0.4)
 
     transition: 0.3s;
     -moz-transition: 0.3s;
