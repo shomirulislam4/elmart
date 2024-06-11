@@ -441,13 +441,15 @@ input[type="radio"]:checked::before {
     align-items: center;
 }
 
+@media (max-width: 991px) {
+    .fsnf__header__wrapper .main__nav {
+        justify-content: center;
+    }
+}
+
 .fsnf__header__wrapper .main__nav li {
     display: inline-block;
     margin: 0 15px;
-}
-
-.fsnf__header__wrapper .main__nav li:first-child {
-    margin-left: 0;
 }
 
 .fsnf__header__wrapper .main__nav li:last-child {
@@ -558,6 +560,8 @@ input[type="radio"]:checked::before {
 	font-family: 'Josefin Sans', sans-serif;
 	text-transform: capitalize;
 	text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #FFF;
 }
 
 /* Tiny Menu */
