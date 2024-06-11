@@ -33,3 +33,22 @@ $(function(){
         fessubmenu.toggleClass('show');
       });
 });
+
+//Quantity Widget
+$(function() {
+    $('.quantity-controls').each(function() {
+      var quantityDisplay = $(this).find('.quantity-display');
+  
+      $(this).find('.quantity-increase').on('click', function() {
+        var currentQuantity = parseInt(quantityDisplay.text(), 10);
+        quantityDisplay.text(currentQuantity + 1);
+      });
+  
+      $(this).find('.quantity-decrease').on('click', function() {
+        var currentQuantity = parseInt(quantityDisplay.text(), 10);
+        if (currentQuantity > 1) {
+          quantityDisplay.text(currentQuantity - 1);
+        }
+      });
+    });
+});

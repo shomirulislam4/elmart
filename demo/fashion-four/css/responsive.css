@@ -65,6 +65,58 @@
         .fsnf__header__wrapper .col-4.middle {
             padding: 0;
         }
+        /*Cart*/
+        .fsnf__header__wrapper .header__ctas .has__cart__menu .fsnf__cart {
+            width: 190px;
+            height: 370px;
+            padding: 10px;
+        }
+        .fsnf__header__wrapper .header__ctas .fsnf__cart__product .fsnf__cart__prod__close {
+            height: 16px;
+            width: 16px;
+            font-size: 10px;
+            line-height: 16px;
+            left: 0;
+            top: 0;
+        }
+        .fsnf__header__wrapper .header__ctas .fsnf__cart__product {
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #EEE;
+            padding-bottom: 10px;
+        }
+        .fsnf__header__wrapper .header__ctas .fsnf__cart__product .content {
+            width: 185px;
+            gap: 10px;
+        }
+        .fsnf__header__wrapper .header__ctas .fsnf__cart__product .image {
+            width: 60px;
+            height: 60px;
+        }
+        .fsnf__header__wrapper .header__ctas .fsnf__cart__product h3 {
+            border: none;
+            line-height: 18px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .fsnf__header__wrapper .header__ctas .fsnf__cart__product h3 a {
+            font-size: 14px;
+            line-height: 14px;
+            text-align: center;
+        }
+        .fsnf__header__wrapper .header__ctas .fsnf__cart__product h4 {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .fsnf__header__wrapper .header__ctas .fsnf__cart__product .price__qty {
+            justify-content: center;
+        }
+        .fsnf__header__wrapper .header__ctas .fsnf__cart__subtotal p {
+            font-size: 16px;
+            line-height: 24px;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
@@ -121,6 +173,46 @@
             height: 14px;
             width: 14px;
         }
+        /*Cart*/
+        .fsnf__header__wrapper .header__ctas .has__cart__menu .fsnf__cart {
+            width: 270px;
+            height: 230px;
+            padding: 10px;
+        }
+        .fsnf__header__wrapper .header__ctas .fsnf__cart__product .fsnf__cart__prod__close {
+            height: 16px;
+            width: 16px;
+            font-size: 10px;
+            line-height: 16px;
+            left: -5px;
+            top: -5px;
+        }
+        .fsnf__header__wrapper .header__ctas .fsnf__cart__product {
+            gap: 5px;
+        }
+        .fsnf__header__wrapper .header__ctas .fsnf__cart__product .content {
+            width: 185px;
+        }
+        .fsnf__header__wrapper .header__ctas .fsnf__cart__product .image {
+            width: 60px;
+            height: 60px;
+        }
+        .fsnf__header__wrapper .header__ctas .fsnf__cart__product h3 {
+            border: none;
+            line-height: 18px;
+        }
+        .fsnf__header__wrapper .header__ctas .fsnf__cart__product h3 a {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .fsnf__header__wrapper .header__ctas .fsnf__cart__product h4 {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .fsnf__header__wrapper .header__ctas .fsnf__cart__subtotal p {
+            font-size: 18px;
+            line-height: 26px;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -155,6 +247,16 @@
         .fsnf__header__wrapper .header__ctas li a {
             height: 16px;
             width: 16px;
+        }
+        /*Cart*/
+        .fsnf__header__wrapper .header__ctas .has__cart__menu .fsnf__cart {
+            width: 400px;
+        }
+        .fsnf__header__wrapper .header__ctas .fsnf__cart__product {
+            gap: 5px;
+        }
+        .fsnf__header__wrapper .header__ctas .fsnf__cart__product .content {
+            width: 255px;
         }
 }
 
