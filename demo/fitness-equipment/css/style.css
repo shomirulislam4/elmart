@@ -925,7 +925,7 @@ input[type="radio"]:checked::before {
 .fes__header__bottom {
     border-radius: 5px;
     padding: 5px;
-    background: var(--main-color);
+    background: var(--secondary-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1063,7 +1063,7 @@ input[type="radio"]:checked::before {
 }
 
 .mega__category__menu .categories__list li:hover {
-    color: var(--secondary-color);
+    color: var(--main-color);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
     background: #FFF;
 }
@@ -1752,7 +1752,7 @@ input[type="radio"]:checked::before {
         color: #FFF;
         border: 1px solid #FFF;
         border-radius: 5px;
-        background: var(--main-color);
+        background: var(--secondary-color);
         transition: 0.3s;
         -moz-transition: 0.3s;
         -webkit-transition: 0.3s;
@@ -2191,10 +2191,23 @@ input[type="radio"]:checked::before {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1);
     width: 100%;
     height: auto;
     z-index: 0;
+    animation: fesHeroBGImageScale infinite 90s;
+}
+
+@keyframes fesHeroBGImageScale {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.5);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
 }
 
 @media (max-width:991px) {
