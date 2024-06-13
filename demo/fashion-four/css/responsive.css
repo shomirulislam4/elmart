@@ -1,5 +1,6 @@
 @media (max-width: 289px) {
-    .fsnf__contact__section {
+    .fsnf__catcol__section,
+    .fsnf__promo__section {
         margin-top: 30px;
     }
     /*Checkbox & Radio Inputs*/
@@ -18,6 +19,25 @@
     /*===== Home Page =====*/
         .logo {
             width: 55px;
+        }
+        .fsnf__button__a {
+            font-size: 14px;
+            line-height: 14px;
+            padding: 10px 25px;
+        }
+        /*Header*/
+        .fsnf__header__wrapper .has__search .header__search {
+            right: -49px;
+            height: 40px;
+            width: 188px;
+        }
+        .fsnf__header__wrapper .header__search input {
+            font-size: 14px;
+        }
+        .fsnf__header__wrapper .header__search .submit__btn {
+            font-size: 12px;
+            line-height: 12px;
+            width: 20px;
         }
         /*Mobile Menu*/
         .fsnf__mblmenu__btn {
@@ -117,10 +137,53 @@
             font-size: 16px;
             line-height: 24px;
         }
+        /*Hero Section*/
+        .fsnf__hero__wrapper {
+            height: 450px;
+        }
+        .fsnf__hero__wrapper .bg__img.bg1 {
+            top: unset;
+            transform: unset;
+            left: 0;
+            height: 30%;
+            bottom: 10px;
+        }
+        .fsnf__hero__wrapper .bg__img.bg2 {
+            top: unset;
+            left: 10px;
+            height: 32%;
+            bottom: 13px;
+        }
+        .fsnf__hero__wrapper .left__side {
+            position: absolute;
+            bottom: 0;
+            height: 162px;
+        }
+        .fsnf__hero__wrapper .left__side img {
+            width: unset;
+            height: 100%;
+        }
+        .fsnf__hero__wrapper .right__side {
+            top: 0;
+            gap: 10px;
+            position: absolute;
+            height: 300px;
+            width: 100%;
+            padding: 0 10px;
+        }
+        .fsnf__hero__wrapper .right__side h2 {
+            font-size: 32px;
+            line-height: 38px;
+        }
+        .fsnf__hero__wrapper .right__side p {
+            font-size: 12px;
+            line-height: 20px;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
-    .fsnf__contact__section {
+    .fsnf__catcol__section,
+    .fsnf__promo__section {
         margin-top: 30px;
     }
     /*Checkbox & Radio Inputs*/
@@ -139,6 +202,15 @@
     /*===== Home Page =====*/
         .logo {
             width: 80px;
+        }
+        .fsnf__button__a {
+            font-size: 16px;
+            line-height: 16px;
+            padding: 10px 25px;
+        }
+        /*Header*/
+        .fsnf__header__wrapper .has__search .header__search {
+            right: -79px;
         }
         /*Mobile Menu*/
         .fsnf__mblmenu__btn {
@@ -213,15 +285,63 @@
             font-size: 18px;
             line-height: 26px;
         }
+        /*Hero Section*/
+        .fsnf__hero__wrapper {
+            height: 520px;
+        }
+        .fsnf__hero__wrapper .bg__img.bg1 {
+            top: unset;
+            transform: unset;
+            left: 0;
+            height: 45%;
+            bottom: 10px;
+        }
+        .fsnf__hero__wrapper .bg__img.bg2 {
+            top: unset;
+            left: 20px;
+            height: 40%;
+            bottom: 25px;
+        }
+        .fsnf__hero__wrapper .left__side {
+            position: absolute;
+            bottom: 0;
+            height: 238px;
+        }
+        .fsnf__hero__wrapper .left__side img {
+            width: unset;
+            height: 100%;
+        }
+        .fsnf__hero__wrapper .right__side {
+            top: 0;
+            gap: 10px;
+            position: absolute;
+            height: 300px;
+            width: 100%;
+            padding: 0 10px;
+        }
+        .fsnf__hero__wrapper .right__side h2 {
+            font-size: 52px;
+            line-height: 58px;
+        }
+        .fsnf__hero__wrapper .right__side p {
+            font-size: 12px;
+            line-height: 20px;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
-    .fsnf__contact__section {
+    .fsnf__catcol__section,
+    .fsnf__promo__section {
         margin-top: 40px;
     }
     /*===== Home Page =====*/
         .logo {
             width: 110px;
+        }
+        .fsnf__button__a {
+            font-size: 18px;
+            line-height: 18px;
+            padding: 10px 25px;
         }
         /*Mobile Menu*/
         .fsnf__mblmenu__btn {
@@ -258,15 +378,62 @@
         .fsnf__header__wrapper .header__ctas .fsnf__cart__product .content {
             width: 255px;
         }
+        /*Hero Section*/
+        .fsnf__hero__wrapper {
+            height: 600px;
+        }
+        .fsnf__hero__wrapper .bg__img.bg1 {
+            top: unset;
+            transform: unset;
+            left: 0;
+            height: 45%;
+            bottom: 10px;
+        }
+        .fsnf__hero__wrapper .bg__img.bg2 {
+            top: unset;
+            left: 38px;
+            height: 46%;
+            bottom: 25px;
+        }
+        .fsnf__hero__wrapper .left__side {
+            position: absolute;
+            bottom: 0;
+            height: 300px;
+        }
+        .fsnf__hero__wrapper .left__side img {
+            width: unset;
+            height: 100%;
+        }
+        .fsnf__hero__wrapper .right__side {
+            top: 0;
+            gap: 15px;
+            position: absolute;
+            height: 350px;
+            width: 100%;
+            padding: 0 10px;
+        }
+        .fsnf__hero__wrapper .right__side h2 {
+            font-size: 76px;
+            line-height: 80px;
+        }
+        .fsnf__hero__wrapper .right__side p {
+            font-size: 14px;
+            line-height: 20px;
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-    .fsnf__contact__section {
+    .fsnf__catcol__section,
+    .fsnf__promo__section {
         margin-top: 50px;
     }
     /*===== Home Page =====*/
         .logo {
             width: 140px;
+        }
+        .fsnf__button__a {
+            font-size: 18px;
+            line-height: 18px;
         }
         /*Mobile Menu*/
         .fsnf__mblmenu__btn {
@@ -293,15 +460,62 @@
             height: 16px;
             width: 16px;
         }
+        /*Hero Section*/
+        .fsnf__hero__wrapper {
+            height: 700px;
+        }
+        .fsnf__hero__wrapper .bg__img.bg1 {
+            top: unset;
+            transform: unset;
+            left: 0;
+            height: 50%;
+            bottom: 30px;
+        }
+        .fsnf__hero__wrapper .bg__img.bg2 {
+            top: unset;
+            left: 38px;
+            height: 56.5%;
+            bottom: 0;
+        }
+        .fsnf__hero__wrapper .left__side {
+            position: absolute;
+            bottom: 0;
+            height: 400px;
+        }
+        .fsnf__hero__wrapper .left__side img {
+            width: unset;
+            height: 100%;
+        }
+        .fsnf__hero__wrapper .right__side {
+            top: 0;
+            gap: 20px;
+            position: absolute;
+            height: 350px;
+            width: 100%;
+            padding: 0 10px;
+        }
+        .fsnf__hero__wrapper .right__side h2 {
+            font-size: 90px;
+            line-height: 90px;
+        }
+        .fsnf__hero__wrapper .right__side p {
+            font-size: 16px;
+            line-height: 22px;
+        }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .fsnf__contact__section {
+    .fsnf__catcol__section,
+    .fsnf__promo__section {
         margin-top: 60px;
     }
     /*===== Home Page =====*/
         .logo {
             width: 140px;
+        }
+        .fsnf__button__a {
+            font-size: 20px;
+            line-height: 20px;
         }
         /*Mobile Menu*/
         .fsnf__mblmenu__btn {
@@ -328,15 +542,46 @@
             height: 16px;
             width: 16px;
         }
+        /*Hero Section*/
+        .fsnf__hero__wrapper {
+            height: 438px;
+        }
+        .fsnf__hero__wrapper .bg__img.bg1 {
+            left: 20px;
+        }
+        .fsnf__hero__wrapper .bg__img.bg2 {
+            left: 70px;
+        }
+        .fsnf__hero__wrapper .right__side {
+            gap: 20px;
+        }
+        .fsnf__hero__wrapper .right__side h2 {
+            font-size: 68px;
+            line-height: 68px;
+        }
+        .fsnf__hero__wrapper .right__side p {
+            font-size: 14px;
+            line-height: 20px;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-    .fsnf__contact__section {
+    .fsnf__catcol__section,
+    .fsnf__promo__section {
         margin-top: 70px;
     }
     /*===== Home Page =====*/
         .logo {
             width: 140px;
+        }
+        .fsnf__button__a {
+            font-size: 20px;
+            line-height: 20px;
+        }
+        .fsnf__button__b {
+            font-size: 20px;
+            line-height: 20px;
+            padding: 10px 30px;
         }
         /*Mobile Menu*/
         .fsnf__mobile__menu .fsnf__mblmenu__wrapper {
@@ -388,11 +633,75 @@
             height: 16px;
             width: 16px;
         }
+        /*Hero Section*/
+        .fsnf__hero__wrapper {
+            height: 564px;
+        }
+        .fsnf__hero__wrapper .bg__img.bg2 {
+            left: 115px;
+        }
+        .fsnf__hero__wrapper .right__side {
+            gap: 20px;
+        }
+        .fsnf__hero__wrapper .right__side h2 {
+            font-size: 86px;
+            line-height: 86px;
+        }
+        .fsnf__hero__wrapper .right__side p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        /*Category Colelction Section*/
+        .fsnf__collection__card {
+            gap: 15px;
+        }
+        .fsnf__collection__card h3 {
+            font-size: 40px;
+            line-height: 40px;
+        }
+        .fsnf__collection__card h2 {
+            font-size: 74px;
+            line-height: 74px;
+        }
+        .fsnf__collection__card h4,
+        .fsnf__collection__card h4 span {
+            font-size: 30px;
+            line-height: 30px;
+        }
+        /*Promo Section*/
+        .fsnf__collection__card {
+            height: 278px;
+            gap: 10px;
+            padding: 15px;
+        }
+        .fsnfps__text__content__area h2 {
+            font-size: 70px;
+            line-height: 76px;
+        }
+        .fsnfps__text__content__area h3,
+        .fsnfps__text__content__area h3 span {
+            font-size: 48px;
+            line-height: 48px;
+        }
+        .fsnfps__text__content__area p {
+            font-size: 26px;
+            line-height: 26px;
+        }
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
-    .fsnf__categories__section {
+    .fsnf__catcol__section,
+    .fsnf__promo__section {
         margin-top: 80px;
+    }
+    .fsnf__button__a {
+        font-size: 26px;
+        line-height: 26px;
+    }
+    .fsnf__button__b {
+        font-size: 26px;
+        line-height: 26px;
+        padding: 10px 30px;
     }
     /*===== Home Page =====*/
         /*Mega Menu*/
@@ -416,23 +725,182 @@
         .fsnf__header__wrapper .main__nav .has__tiny__menu .fsnf__tinymenu li a {
             width: 240px;
         }
+        /*Hero Section*/
+        .fsnf__hero__wrapper {
+            height: 682px;
+        }
+        .fsnf__hero__wrapper .bg__img.bg2 {
+            left: 115px;
+        }
+        .fsnf__hero__wrapper .right__side h2 {
+            font-size: 100px;
+            line-height: 100px;
+        }
+        .fsnf__hero__wrapper .right__side p {
+            font-size: 18px;
+            line-height: 24px;
+        }
+        /*Category Colelction Section*/
+        .fsnf__collection__card {
+            gap: 15px;
+        }
+        .fsnf__collection__card h3 {
+            font-size: 40px;
+            line-height: 40px;
+        }
+        .fsnf__collection__card h2 {
+            font-size: 74px;
+            line-height: 74px;
+        }
+        .fsnf__collection__card h4,
+        .fsnf__collection__card h4 span {
+            font-size: 30px;
+            line-height: 30px;
+        }
+        /*Promo Section*/
+        .fsnf__collection__card {
+            height: 278px;
+            gap: 10px;
+            padding: 15px;
+        }
+        .fsnfps__text__content__area h2 {
+            font-size: 70px;
+            line-height: 76px;
+        }
+        .fsnfps__text__content__area h3,
+        .fsnfps__text__content__area h3 span {
+            font-size: 48px;
+            line-height: 48px;
+        }
+        .fsnfps__text__content__area p {
+            font-size: 26px;
+            line-height: 26px;
+        }
 }
 
 @media (min-width: 1400px) and (max-width: 1499px) {
-    .fsnf__contact__section {
+    .fsnf__catcol__section,
+    .fsnf__promo__section {
         margin-top: 80px;
     }
+    .fsnf__button__b {
+        font-size: 26px;
+        line-height: 26px;
+        padding: 13px 30px;
+    }
     /*===== Home Page =====*/
+        /*Hero Section*/
+        .fsnf__hero__wrapper {
+            height: 796px;
+        }
+        .fsnf__hero__wrapper .bg__img.bg2 {
+            left: 115px;
+        }
+        .fsnf__hero__wrapper .right__side h2 {
+            font-size: 120px;
+            line-height: 120px;
+        }
+        /*Category Colelction Section*/
+        .fsnf__collection__card {
+            height: 327px;
+            gap: 10px;
+        }
+        .fsnf__collection__card h3 {
+            font-size: 34px;
+            line-height: 34px;
+        }
+        .fsnf__collection__card h2 {
+            font-size: 80px;
+            line-height: 80px;
+        }
+        .fsnf__collection__card h4,
+        .fsnf__collection__card h4 span {
+            font-size: 28px;
+            line-height: 28px;
+        }
 }
 
 @media (min-width: 1500px) and (max-width: 1599px) {
     /*===== Home Page =====*/
+        .fsnf__button__b {
+            font-size: 28px;
+            line-height: 28px;
+        }
+        /*Hero Section*/
+        .fsnf__hero__wrapper {
+            height: 855px;
+        }
+        .fsnf__hero__wrapper .bg__img.bg2 {
+            left: 115px;
+        }
+        /*Category Colelction Section*/
+        .fsnf__collection__card {
+            height: 351px;
+            gap: 15px;
+        }
+        .fsnf__collection__card h3 {
+            font-size: 40px;
+            line-height: 40px;
+        }
+        .fsnf__collection__card h2 {
+            font-size: 90px;
+            line-height: 90px;
+        }
+        .fsnf__collection__card h4,
+        .fsnf__collection__card h4 span {
+            font-size: 30px;
+            line-height: 30px;
+        }
 }
 
 @media (min-width: 1600px) and (max-width: 1699px) {
     /*===== Home Page =====*/
+        .fsnf__button__b {
+            font-size: 28px;
+            line-height: 28px;
+        }
+        /*Hero Section*/
+        .fsnf__hero__wrapper {
+            height: 912px;
+        }
+        /*Category Colelction Section*/
+        .fsnf__collection__card {
+            height: 375px;
+            gap: 15px;
+        }
+        .fsnf__collection__card h3 {
+            font-size: 40px;
+            line-height: 40px;
+        }
+        .fsnf__collection__card h2 {
+            font-size: 90px;
+            line-height: 90px;
+        }
+        .fsnf__collection__card h4,
+        .fsnf__collection__card h4 span {
+            font-size: 30px;
+            line-height: 30px;
+        }
 }
 
 @media (min-width: 1700px) and (max-width: 1799px) {
     /*===== Home Page =====*/
+        /*Category Colelction Section*/
+        .fsnf__collection__card {
+            height: 381px;
+            gap: 15px;
+        }
+        .fsnf__collection__card h3 {
+            font-size: 44px;
+            line-height: 44px;
+        }
+        .fsnf__collection__card h2 {
+            font-size: 90px;
+            line-height: 90px;
+        }
+        .fsnf__collection__card h4,
+        .fsnf__collection__card h4 span {
+            font-size: 34px;
+            line-height: 34px;
+        }
 }

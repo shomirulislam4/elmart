@@ -37,6 +37,13 @@
     font-display: swap;
     font-family: 'Jost';
     font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/jost/jost-v15-latin-500.woff2') format('woff2');
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Jost';
+    font-style: normal;
     font-weight: 600;
     src: url('../fonts/jost/jost-v15-latin-600.woff2') format('woff2');
 }
@@ -62,6 +69,9 @@
     /* Primary Color */
     --main-color: #FF5047;
 
+    /* Background Color */
+    --background-color: #B8E8E8;
+
     /* Text Color */
     --text-color: #000;
 }
@@ -73,17 +83,6 @@
 
 html {
     scroll-behavior: smooth;
-}
-
-@media (min-width: 1400px) {
-    .container,
-    .container-lg,
-    .container-md,
-    .container-sm,
-    .container-xl,
-    .container-xxl {
-        max-width: 1705px;
-    }
 }
 
 body,
@@ -144,6 +143,52 @@ button:focus {
     background: var(--main-color);
 }
 
+/* Container Size */
+@media (min-width: 576px) {
+    .container,
+    .container-sm {
+      max-width: 576px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container,
+    .container-md,
+    .container-sm {
+      max-width: 768px;
+    }
+  }
+
+@media (min-width: 992px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm {
+      max-width: 992px;
+    }
+  }
+
+@media (min-width: 1200px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+      max-width: 1200px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1705px;
+    }
+}
+
 /* Buttons */
 .fsnf__button__a {
     position: relative;
@@ -153,7 +198,6 @@ button:focus {
     font-family: 'Jost', sans-serif;
     padding: 13px 30px;
     text-transform: capitalize;
-    background: transparent;
     border-radius: 50px;
     overflow: hidden;
     transition: 0.3s;
@@ -164,40 +208,41 @@ button:focus {
     user-select: none;
     color: #FFF !important;
     background: #8F7777;
-    display: inline-block;
+    display: block;
+    width: fit-content;
 }
 
 .fsnf__button__a:hover {
     background: var(--main-color);
 }
 
-/* Section Title */
-.fsnf__section__title {
-    margin-bottom: 40px;
-}
-
-.fsnf__section__title h4,
-.fsnf__section__title h2 {
-    font-size: 24px;
-    line-height: 24px;
+.fsnf__button__b {
+    position: relative;
+    font-size: 30px;
+    line-height: 30px;
     font-weight: 400;
-    color: var(--text-color);
-    text-transform: capitalize;
-    text-align: center;
-    margin: 0;
-}
-
-.fsnf__section__title h4 {
-    margin: 0;
-    color: var(--main-color);
     font-family: 'Jost', sans-serif;
+    padding: 15px 30px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    user-select: none;
+    color: #FFF !important;
+    background: var(--text-color);
+    display: block;
+    width: fit-content;
 }
 
-.fsnf__section__title h2 {
-    font-size: 80px;
-    line-height: 80px;
-    font-family: 'Josefin Sans', sans-serif;
+.fsnf__button__b:hover {
+    background: var(--main-color);
 }
+
+/* Section Title */
 
 /* Back to Top */
 
@@ -1121,11 +1166,20 @@ input[type="radio"]:checked::before {
     left: 135px;
 }
 
+@media (min-width: 768px) and (max-width: 1699px) {
+    .fsnf__hero__wrapper .bg__img.bg1 {
+        height: 90%;
+    }
+    .fsnf__hero__wrapper .bg__img.bg2 {
+        height: 92%;
+    }
+}
+
 .fsnf__hero__wrapper .row {
     height: 100%;
 }
 
-/* Right Side */
+/* Left Side */
 .fsnf__hero__wrapper .left__side {
     height: 100%;
     padding: 0;
@@ -1167,6 +1221,137 @@ input[type="radio"]:checked::before {
 
 /*** End of Hero Section ***/
 
+/*** Start of Category Colelction Section ***/
+.fsnf__catcol__section {
+    margin-top: 100px;
+}
+
+.fsnf__collection__card {
+    position: relative;
+    height: 432px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+@media (min-width: 1700px) {
+    .fsnf__collection__card {
+        padding-left: 50px;
+    }
+    
+}
+
+.fsnf__collection__card .bgimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.fsnf__collection__card h3 {
+    color: var(--text-color);
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 400;
+    font-family: 'Jost', sans-serif;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.fsnf__collection__card h2 {
+    color: var(--text-color);
+    font-size: 100px;
+    line-height: 100px;
+    font-weight: 600;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: capitalize;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.fsnf__collection__card h4,
+.fsnf__collection__card h4 span {
+    color: var(--text-color);
+    font-size: 38px;
+    line-height: 38px;
+    font-weight: 400;
+    font-family: 'Jost', sans-serif;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.fsnf__collection__card h4 span {
+    color: var(--main-color);
+    font-weight: 500;
+}
+
+.fsnf__collection__card .fsnf__button__b {
+    margin-top: 10px;
+}
+/*** End of Category Colelction Section ***/
+
+/*** Start of Promo Section ***/
+.fsnf__promo__section {
+    margin-top: 100px;
+    margin-bottom: 200px;
+    position: relative;
+}
+
+.fsnf__promo__wrapper {
+    background: var(--background-color);
+}
+.fsnf__promo__wrapper .fsnfps__text__content__area {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 22px;
+	justify-content: center;
+}
+
+.fsnfps__text__content__area h2 {
+    color: var(--text-color);
+    font-size: 96px;
+    line-height: 102px;
+    font-weight: 400;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.fsnfps__text__content__area h3,
+.fsnfps__text__content__area h3 span {
+    color: var(--text-color);
+    font-size: 64px;
+    line-height: 64px;
+    font-weight: 500;
+    font-family: 'Jost', sans-serif;
+}
+
+.fsnfps__text__content__area p {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 400;
+    font-family: 'Jost', sans-serif;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.fsnf__promo__section .fsnf__button__b {
+    margin: 0 auto;
+    margin-top: -30px;
+}
+
+.fsnfps__image img {
+    width: 100%;
+}
+/*** End of Promo Section ***/
 
 /*
 rgba(255, 80, 71, 0.4)
