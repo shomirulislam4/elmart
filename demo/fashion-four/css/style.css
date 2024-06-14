@@ -1435,6 +1435,12 @@ input[type="radio"]:checked::before {
     -o-transition: 0.3s;
 }
 
+@media (max-width:1499px) {
+    .fsnffp__wrapper .nav-tabs button::after {
+        height: 2px;
+    }
+}
+
 .fsnffp__wrapper .nav-tabs button:hover::after,
 .fsnffp__wrapper .nav-tabs button.active::after {
     width: 100%;
