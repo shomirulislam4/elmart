@@ -1482,16 +1482,16 @@ input[type="radio"]:checked::before {
     height: 100%;
     transform: translate(-50%, -50%);
     z-index: 1;
+    transition: 0.6s;
+    -moz-transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
 }
 
 .fsnf__product .fsnffp__image .hover__img {
     visibility: hidden;
     opacity: 0;
-    transition: 0.3s;
-    -moz-transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
 }
 
 .fsnf__product:hover .fsnffp__image .main__img {
@@ -1516,11 +1516,11 @@ input[type="radio"]:checked::before {
     background: #FFF;
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: 0.3s;
-    -moz-transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
+    transition: 0.6s;
+    -moz-transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
     z-index: 50;
     top: 10px;
 }
@@ -1627,6 +1627,36 @@ input[type="radio"]:checked::before {
 .fsnffp__wrapper .fsnf__button__b {
     margin: 0 auto;
     margin-top: 60px;
+}
+
+.fsnf__product .product__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: 'Jost', sans-serif;
+    text-align: center;
+    height: fit-content;
+    padding: 10px;
+    width: 60%;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.fsnf__product:hover .product__title {
+    visibility: visible;
+    opacity: 1;
 }
 /*** End of Featured Products ***/
 
@@ -1902,8 +1932,10 @@ input[type="radio"]:checked::before {
     gap: 16px;
 }
 
-.fsnf__product__info p,
-.fsnf__product__info p span {
+.fsnf__product__info a,
+.fsnf__product__info .price,
+.fsnf__product__info .price span {
+    color: var(--text-color);
     font-size: 32px;
     line-height: 40px;
     font-weight: 600;
@@ -1912,13 +1944,17 @@ input[type="radio"]:checked::before {
     margin: 0;
 }
 
-.fsnf__product__info .price,
-.fsnf__product__info .price span {
+.fsnf__product__info a:hover {
+    color: var(--main-color);
+}
+
+.fsnf__product__info .price {
     font-weight: 400;
 }
 
 .fsnf__product__info .price span {
     color: #AAA;
+    font-weight: 400;
 }
 
 .fsnf__star__ratings {
