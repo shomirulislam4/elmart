@@ -52,3 +52,26 @@ $(function() {
       });
     });
 });
+
+//Testimonials
+$(function() {
+    var swiper = new Swiper('.fsnfts__slider', {
+        slidesPerView: 3,
+        spaceBetween: 60,
+        loop: true,
+        autoplay: {
+            delay: 2500,
+        },
+        breakpoints: {
+            992: {
+                slidesPerView: 3,
+            },
+            576: {
+                slidesPerView: 2,
+            },
+            200: {
+                slidesPerView: 1,
+            }
+        }
+    });
+});

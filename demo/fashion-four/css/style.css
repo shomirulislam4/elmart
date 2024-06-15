@@ -1974,6 +1974,93 @@ input[type="radio"]:checked::before {
 }
 /*** End of Best Selling Items ***/
 
+/*** Start of Testimonials Section ***/
+.fsnf__testimonials__section {
+    margin-top: 100px;
+}
+
+.fsnfts__wrapper .fsnfts__slider {
+    padding: 40px;
+}
+
+.fsnfts__wrapper .fsnfts__slider .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.fsnfts__wrapper .fsnfts__slider .swiper-slide .image__name {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.fsnfts__wrapper .fsnfts__slider .swiper-slide .image__name img {
+    height: 120px;
+    width: 120px;
+}
+
+.fsnfts__wrapper .fsnfts__slider .swiper-slide .image__name .content {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.fsnfts__wrapper .fsnfts__slider .swiper-slide .content .title__rating {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.fsnfts__wrapper .fsnfts__slider .swiper-slide .content .title__rating h2 {
+    color: var(--text-color);
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 400;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.fsnfts__wrapper .fsnfts__slider .swiper-slide .content .title__rating .ratings {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.fsnfts__wrapper .fsnfts__slider .swiper-slide .content .title__rating .ratings img {
+    height: 20px;
+    width: 20px;
+}
+
+.fsnfts__wrapper .fsnfts__slider .swiper-slide .content .title__rating .ratings span {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    font-family: 'Jost', sans-serif;
+}
+
+.fsnfts__wrapper .fsnfts__slider .swiper-slide .content .location {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    font-family: 'Jost', sans-serif;
+    margin: 0;
+}
+
+.fsnfts__wrapper .fsnfts__slider .swiper-slide .review__text p {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: 'Jost', sans-serif;
+    margin: 0;
+}
+
+/*** End of Testimonials Section ***/
+
 /*
 rgba(255, 80, 71, 0.4)
 
