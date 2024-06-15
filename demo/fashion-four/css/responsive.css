@@ -3,7 +3,8 @@
     .fsnf__promo__section,
     .fsnf__featured__product,
     .fsnf__category__section,
-    .fsnf__best__selling {
+    .fsnf__best__selling,
+    .fsnf__testimonials__section {
         margin-top: 30px;
     }
     /*Checkbox & Radio Inputs*/
@@ -372,6 +373,43 @@
             width: 30px;
             height: 30px;
         }
+        /*Testimonials Section*/
+        .fsnf__testimonials__section .fsnf__section__title {
+            margin-bottom: 0;
+        }
+        .fsnfts__wrapper .fsnfts__slider {
+            padding: 20px 10px;
+        }
+        .fsnfts__wrapper .fsnfts__slider .swiper-slide {
+            gap: 10px;
+            padding: 10px;
+        }
+        .fsnfts__wrapper .fsnfts__slider .swiper-slide .image__name img {
+            height: 40px;
+            width: 40px;
+        }
+        .fsnfts__wrapper .fsnfts__slider .swiper-slide .review__text p {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .fsnfts__wrapper .fsnfts__slider .swiper-slide .image__name,
+        .fsnfts__wrapper .fsnfts__slider .swiper-slide .content .title__rating,
+        .fsnfts__wrapper .fsnfts__slider .swiper-slide .image__name .content {
+            gap: 5px;
+        }
+        .fsnfts__wrapper .fsnfts__slider .swiper-slide .content .location,
+        .fsnfts__wrapper .fsnfts__slider .swiper-slide .content .title__rating .ratings span {
+            font-size: 12px;
+            line-height: 12px;
+        }
+        .fsnfts__wrapper .fsnfts__slider .swiper-slide .content .title__rating h2 {
+            font-size: 18px;
+            line-height: 18px;
+        }
+        .fsnfts__wrapper .fsnfts__slider .swiper-slide .content .title__rating .ratings img {
+            height: 12px;
+            width: 12px;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
@@ -379,7 +417,8 @@
     .fsnf__promo__section,
     .fsnf__featured__product,
     .fsnf__category__section,
-    .fsnf__best__selling {
+    .fsnf__best__selling,
+    .fsnf__testimonials__section {
         margin-top: 30px;
     }
     /*Checkbox & Radio Inputs*/
@@ -684,6 +723,34 @@
             width: 36px;
             height: 36px;
         }
+        /*Testimonials Section*/
+        .fsnf__testimonials__section .fsnf__section__title {
+            margin-bottom: 5px;
+        }
+        .fsnfts__wrapper .fsnfts__slider .swiper-slide {
+            gap: 10px;
+            padding: 10px;
+        }
+        .fsnfts__wrapper .fsnfts__slider .swiper-slide .image__name img {
+            height: 60px;
+            width: 60px;
+        }
+        .fsnfts__wrapper .fsnfts__slider .swiper-slide .review__text p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .fsnfts__wrapper .fsnfts__slider .swiper-slide .image__name,
+        .fsnfts__wrapper .fsnfts__slider .swiper-slide .content .title__rating {
+            gap: 10px;
+        }
+        .fsnfts__wrapper .fsnfts__slider .swiper-slide .content .location {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .fsnfts__wrapper .fsnfts__slider .swiper-slide .content .title__rating h2 {
+            font-size: 26px;
+            line-height: 26px;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -691,7 +758,8 @@
     .fsnf__promo__section,
     .fsnf__featured__product,
     .fsnf__category__section,
-    .fsnf__best__selling {
+    .fsnf__best__selling,
+    .fsnf__testimonials__section {
         margin-top: 40px;
     }
     /*===== Home Page =====*/
@@ -910,6 +978,34 @@
             font-size: 28px;
             line-height: 36px;
         }
+        /*Testimonials Section*/
+        .fsnf__testimonials__section .fsnf__section__title {
+            margin-bottom: 10px;
+        }
+        .fsnfts__wrapper .fsnfts__slider .swiper-slide {
+            gap: 10px;
+            padding: 15px;
+        }
+        .fsnfts__wrapper .fsnfts__slider .swiper-slide .image__name img {
+            height: 80px;
+            width: 80px;
+        }
+        .fsnfts__wrapper .fsnfts__slider .swiper-slide .review__text p {
+            font-size: 16px;
+            line-height: 22px;
+        }
+        .fsnfts__wrapper .fsnfts__slider .swiper-slide .image__name,
+        .fsnfts__wrapper .fsnfts__slider .swiper-slide .content .title__rating {
+            gap: 15px;
+        }
+        .fsnfts__wrapper .fsnfts__slider .swiper-slide .content .location {
+            font-size: 16px;
+            line-height: 16px;
+        }
+        .fsnfts__wrapper .fsnfts__slider .swiper-slide .content .title__rating h2 {
+            font-size: 30px;
+            line-height: 30px;
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -917,7 +1013,8 @@
     .fsnf__promo__section,
     .fsnf__featured__product,
     .fsnf__category__section,
-    .fsnf__best__selling {
+    .fsnf__best__selling,
+    .fsnf__testimonials__section {
         margin-top: 50px;
     }
     /*===== Home Page =====*/
@@ -1129,6 +1226,34 @@
             height: 22px;
             width: 22px;
         }
+        /*Testimonials Section*/
+        .fsnf__testimonials__section .fsnf__section__title {
+            margin-bottom: 15px;
+        }
+        .fsnfts__wrapper .fsnfts__slider .swiper-slide {
+            gap: 10px;
+            padding: 10px;
+        }
+        .fsnfts__wrapper .fsnfts__slider .swiper-slide .image__name img {
+            height: 70px;
+            width: 70px;
+        }
+        .fsnfts__wrapper .fsnfts__slider .swiper-slide .review__text p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .fsnfts__wrapper .fsnfts__slider .swiper-slide .image__name,
+        .fsnfts__wrapper .fsnfts__slider .swiper-slide .content .title__rating {
+            gap: 10px;
+        }
+        .fsnfts__wrapper .fsnfts__slider .swiper-slide .content .location {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .fsnfts__wrapper .fsnfts__slider .swiper-slide .content .title__rating h2 {
+            font-size: 26px;
+            line-height: 26px;
+        }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1136,7 +1261,8 @@
     .fsnf__promo__section,
     .fsnf__featured__product,
     .fsnf__category__section,
-    .fsnf__best__selling {
+    .fsnf__best__selling,
+    .fsnf__testimonials__section {
         margin-top: 60px;
     }
     /*===== Home Page =====*/
@@ -1321,6 +1447,30 @@
             height: 22px;
             width: 22px;
         }
+        /*Testimonials Section*/
+        .fsnf__testimonials__section .fsnf__section__title {
+            margin-bottom: 20px;
+        }
+        .fsnfts__wrapper .fsnfts__slider .swiper-slide .image__name img {
+            height: 80px;
+            width: 80px;
+        }
+        .fsnfts__wrapper .fsnfts__slider .swiper-slide .review__text p {
+            font-size: 16px;
+            line-height: 22px;
+        }
+        .fsnfts__wrapper .fsnfts__slider .swiper-slide .image__name,
+        .fsnfts__wrapper .fsnfts__slider .swiper-slide .content .title__rating {
+            gap: 15px;
+        }
+        .fsnfts__wrapper .fsnfts__slider .swiper-slide .content .location {
+            font-size: 16px;
+            line-height: 16px;
+        }
+        .fsnfts__wrapper .fsnfts__slider .swiper-slide .content .title__rating h2 {
+            font-size: 30px;
+            line-height: 30px;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -1328,7 +1478,8 @@
     .fsnf__promo__section,
     .fsnf__featured__product,
     .fsnf__category__section,
-    .fsnf__best__selling {
+    .fsnf__best__selling,
+    .fsnf__testimonials__section {
         margin-top: 70px;
     }
     /*===== Home Page =====*/
@@ -1526,6 +1677,30 @@
             height: 22px;
             width: 22px;
         }
+        /*Testimonials Section*/
+        .fsnf__testimonials__section .fsnf__section__title {
+            margin-bottom: 20px;
+        }
+        .fsnfts__wrapper .fsnfts__slider .swiper-slide .image__name img {
+            height: 80px;
+            width: 80px;
+        }
+        .fsnfts__wrapper .fsnfts__slider .swiper-slide .review__text p {
+            font-size: 16px;
+            line-height: 22px;
+        }
+        .fsnfts__wrapper .fsnfts__slider .swiper-slide .image__name,
+        .fsnfts__wrapper .fsnfts__slider .swiper-slide .content .title__rating {
+            gap: 15px;
+        }
+        .fsnfts__wrapper .fsnfts__slider .swiper-slide .content .location {
+            font-size: 16px;
+            line-height: 16px;
+        }
+        .fsnfts__wrapper .fsnfts__slider .swiper-slide .content .title__rating h2 {
+            font-size: 30px;
+            line-height: 30px;
+        }
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -1533,7 +1708,8 @@
     .fsnf__promo__section,
     .fsnf__featured__product,
     .fsnf__category__section,
-    .fsnf__best__selling {
+    .fsnf__best__selling,
+    .fsnf__testimonials__section {
         margin-top: 80px;
     }
     .fsnf__button__a {
@@ -1697,6 +1873,15 @@
             height: 22px;
             width: 22px;
         }
+        /*Testimonials Section*/
+        .fsnfts__wrapper .fsnfts__slider .swiper-slide .image__name img {
+            height: 100px;
+            width: 100px;
+        }
+        .fsnfts__wrapper .fsnfts__slider .swiper-slide .review__text p {
+            font-size: 18px;
+            line-height: 24px;
+        }
 }
 
 @media (min-width: 1400px) and (max-width: 1499px) {
@@ -1704,7 +1889,8 @@
     .fsnf__promo__section,
     .fsnf__featured__product,
     .fsnf__category__section,
-    .fsnf__best__selling {
+    .fsnf__best__selling,
+    .fsnf__testimonials__section {
         margin-top: 80px;
     }
     .fsnf__button__b {

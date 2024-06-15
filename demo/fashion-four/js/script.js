@@ -57,14 +57,18 @@ $(function() {
 $(function() {
     var swiper = new Swiper('.fsnfts__slider', {
         slidesPerView: 3,
-        spaceBetween: 60,
+        spaceBetween: 40,
         loop: true,
         autoplay: {
             delay: 2500,
         },
         breakpoints: {
+            1200: {
+                spaceBetween: 30,
+            },
             992: {
                 slidesPerView: 3,
+                spaceBetween: 20,
             },
             576: {
                 slidesPerView: 2,
