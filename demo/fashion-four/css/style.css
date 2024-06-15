@@ -1663,7 +1663,6 @@ input[type="radio"]:checked::before {
 /*** Start of Category Section ***/
 .fsnf__category__section {
     margin-top: 100px;
-    margin-bottom: 200px;
 }
 
 .fsnf__category__section .left__side {
@@ -1771,12 +1770,17 @@ input[type="radio"]:checked::before {
 /*** End of Category Section ***/
 
 /*** Start of Best Selling Items ***/
+.fsnf__best__selling {
+    margin-top: 100px;
+}
+
 .fsnfshop__product__lists {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 37px;
     flex-wrap: wrap;
 }
+
 /** Product Style v2 **/
 .fsnf__product__v2 {
     width: 392px;
@@ -1798,7 +1802,7 @@ input[type="radio"]:checked::before {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    height: 100%;
+    height: auto;
     z-index: 0;
 }
 
@@ -1917,6 +1921,7 @@ input[type="radio"]:checked::before {
     color: #FFF !important;
     text-transform: capitalize;
     z-index: 100;
+    display: none;
 }
 
 .fsnf__cart__button:hover {
