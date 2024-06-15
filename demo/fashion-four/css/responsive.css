@@ -1,7 +1,8 @@
 @media (max-width: 289px) {
     .fsnf__catcol__section,
     .fsnf__promo__section,
-    .fsnf__featured__product {
+    .fsnf__featured__product,
+    .fsnf__category__section {
         margin-top: 30px;
     }
     /*Checkbox & Radio Inputs*/
@@ -254,7 +255,7 @@
         .fsnf__section__title p span {
             font-size: 12px;
             line-height: 18px;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
         }
         .fsnf__section__title h2 {
             font-size: 30px;
@@ -297,12 +298,50 @@
         .fsnffp__wrapper .fsnf__button__b {
             margin-top: 30px;
         }
+        /*Category Section*/
+        .fsnf__category__section .left__side {
+            height: 200px;
+        }
+        .fsnf__category__section .left__side {
+            margin-bottom: 5px;
+        }
+        .fsnf__category__section .left__side img {
+            width: auto;
+            height: 100%;
+        }
+        .fsnf__category__section .left__side p {
+            font-size: 12px;
+            line-height: 16px;
+            padding-top: 8px;
+            padding-bottom: 4px;
+        }
+        .fsnf__category__section .right__side .large__card {
+            height: 150px;
+            margin-bottom: 5px;
+        }
+        .fsnf__category__section .right__side .small__card {
+            height: fit-content;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .fsnf__category__section .right__side .small__card .item {
+            width: 100%;
+            height: 150px;
+        }
+        .fsnf__category__section .fsnfcs__wrapper h2 {
+            font-size: 30px;
+            line-height: 36px;
+        }
+        .fsnf__category__section .col-lg-6 {
+            padding: 0 5px;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
     .fsnf__catcol__section,
     .fsnf__promo__section,
-    .fsnf__featured__product {
+    .fsnf__featured__product,
+    .fsnf__category__section {
         margin-top: 30px;
     }
     /*Checkbox & Radio Inputs*/
@@ -513,7 +552,7 @@
         .fsnf__section__title p span {
             font-size: 16px;
             line-height: 22px;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
         }
         .fsnf__section__title h2 {
             font-size: 34px;
@@ -540,12 +579,47 @@
         .fsnffp__wrapper .fsnf__button__b {
             margin-top: 35px;
         }
+        /*Category Section*/
+        .fsnf__category__section .left__side {
+            height: 280px;
+        }
+        .fsnf__category__section .left__side {
+            margin-bottom: 5px;
+        }
+        .fsnf__category__section .left__side img {
+            width: auto;
+            height: 100%;
+        }
+        .fsnf__category__section .left__side p {
+            font-size: 20px;
+            line-height: 26px;
+            padding-top: 10px;
+            padding-bottom: 6px;
+        }
+        .fsnf__category__section .right__side .large__card {
+            height: 173px;
+            margin-bottom: 5px;
+        }
+        .fsnf__category__section .right__side .small__card {
+            height: fit-content;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .fsnf__category__section .right__side .small__card .item {
+            width: 100%;
+            height: 173px;
+        }
+        .fsnf__category__section .fsnfcs__wrapper h2 {
+            font-size: 40px;
+            line-height: 46px;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
     .fsnf__catcol__section,
     .fsnf__promo__section,
-    .fsnf__featured__product {
+    .fsnf__featured__product,
+    .fsnf__category__section {
         margin-top: 40px;
     }
     /*===== Home Page =====*/
@@ -722,12 +796,35 @@
         .fsnffp__wrapper .fsnf__button__b {
             margin-top: 40px;
         }
+        /*Category Section*/
+        .fsnf__category__section .left__side,
+        .fsnf__category__section .right__side {
+            height: 351px;
+        }
+        .fsnf__category__section .left__side {
+            margin-bottom: 5px;
+        }
+        .fsnf__category__section .right__side .large__card,
+        .fsnf__category__section .right__side .small__card {
+            height: 173px;
+        }
+        .fsnf__category__section .left__side p {
+            font-size: 26px;
+            line-height: 30px;
+            padding-top: 12px;
+            padding-bottom: 6px;
+        }
+        .fsnf__category__section .fsnfcs__wrapper h2 {
+            font-size: 50px;
+            line-height: 50px;
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
     .fsnf__catcol__section,
     .fsnf__promo__section,
-    .fsnf__featured__product {
+    .fsnf__featured__product,
+    .fsnf__category__section {
         margin-top: 50px;
     }
     /*===== Home Page =====*/
@@ -893,12 +990,35 @@
         .fsnffp__wrapper .fsnf__button__b {
             margin-top: 45px;
         }
+        /*Category Section*/
+        .fsnf__category__section .left__side,
+        .fsnf__category__section .right__side {
+            height: 460px;
+        }
+        .fsnf__category__section .left__side {
+            margin-bottom: 10px;
+        }
+        .fsnf__category__section .right__side .large__card,
+        .fsnf__category__section .right__side .small__card {
+            height: 225px;
+        }
+        .fsnf__category__section .left__side p {
+            font-size: 34px;
+            line-height: 38px;
+            padding-top: 14px;
+            padding-bottom: 8px;
+        }
+        .fsnf__category__section .fsnfcs__wrapper h2 {
+            font-size: 60px;
+            line-height: 60px;
+        }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
     .fsnf__catcol__section,
     .fsnf__promo__section,
-    .fsnf__featured__product {
+    .fsnf__featured__product,
+    .fsnf__category__section {
         margin-top: 60px;
     }
     /*===== Home Page =====*/
@@ -1037,12 +1157,35 @@
         .fsnffp__wrapper .fsnf__button__b {
             margin-top: 50px;
         }
+        /*Category Section*/
+        .fsnf__category__section .left__side,
+        .fsnf__category__section .right__side {
+            height: 580px;
+        }
+        .fsnf__category__section .left__side {
+            margin-bottom: 10px;
+        }
+        .fsnf__category__section .right__side .large__card,
+        .fsnf__category__section .right__side .small__card {
+            height: 285px;
+        }
+        .fsnf__category__section .left__side p {
+            font-size: 34px;
+            line-height: 38px;
+            padding-top: 14px;
+            padding-bottom: 8px;
+        }
+        .fsnf__category__section .fsnfcs__wrapper h2 {
+            font-size: 80px;
+            line-height: 80px;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
     .fsnf__catcol__section,
     .fsnf__promo__section,
-    .fsnf__featured__product {
+    .fsnf__featured__product,
+    .fsnf__category__section {
         margin-top: 70px;
     }
     /*===== Home Page =====*/
@@ -1189,12 +1332,40 @@
         .fsnffp__wrapper .fsnf__button__b {
             margin-top: 50px;
         }
+        /*Category Section*/
+        .fsnf__category__section .left__side {
+            height: 434px;
+        }
+        .fsnf__category__section .right__side .large__card,
+        .fsnf__category__section .right__side .small__card {
+            height: 215px;
+        }
+        .fsnf__category__section .right__side .small__card .item {
+            width: 49.5%;
+        }
+        .fsnf__category__section .left__side p {
+            font-size: 30px;
+            line-height: 36px;
+            padding-top: 12px;
+            padding-bottom: 6px;
+        }
+        .fsnf__category__section .fsnfcs__wrapper h2 {
+            font-size: 60px;
+            line-height: 60px;
+        }
+        .fsnf__category__section .col-lg-6:first-child {
+            padding-right: 0;
+        }
+        .fsnf__category__section .col-lg-6:last-child {
+            padding-left: 5px;
+        }
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
     .fsnf__catcol__section,
     .fsnf__promo__section,
-    .fsnf__featured__product {
+    .fsnf__featured__product,
+    .fsnf__category__section {
         margin-top: 80px;
     }
     .fsnf__button__a {
@@ -1310,12 +1481,37 @@
         .fsnffp__wrapper .fsnf__button__b {
             margin-top: 50px;
         }
+        /*Category Section*/
+        .fsnf__category__section .left__side {
+            height: 527px;
+        }
+        .fsnf__category__section .right__side .large__card,
+        .fsnf__category__section .right__side .small__card {
+            height: 261px;
+        }
+        .fsnf__category__section .right__side .small__card .item {
+            width: 49.5%;
+        }
+        .fsnf__category__section .left__side p {
+            font-size: 34px;
+            line-height: 40px;
+            padding-top: 12px;
+            padding-bottom: 6px;
+        }
+        .fsnf__category__section .fsnfcs__wrapper h2 {
+            font-size: 70px;
+            line-height: 70px;
+        }
+        .fsnf__category__section .col-lg-6:first-child {
+            padding-right: 0;
+        }
 }
 
 @media (min-width: 1400px) and (max-width: 1499px) {
     .fsnf__catcol__section,
     .fsnf__promo__section,
-    .fsnf__featured__product {
+    .fsnf__featured__product,
+    .fsnf__category__section {
         margin-top: 80px;
     }
     .fsnf__button__b {
@@ -1374,6 +1570,27 @@
         .fsnffp__wrapper .nav-tabs button::after {
             height: 3px;
         }
+        /*Category Section*/
+        .fsnf__category__section .left__side {
+            height: 605px;
+        }
+        .fsnf__category__section .right__side .large__card,
+        .fsnf__category__section .right__side .small__card {
+            height: 300px;
+        }
+        .fsnf__category__section .right__side .small__card .item {
+            width: 49.5%;
+        }
+        .fsnf__category__section .left__side p {
+            font-size: 42px;
+            line-height: 48px;
+            padding-top: 15px;
+            padding-bottom: 8px;
+        }
+        .fsnf__category__section .fsnfcs__wrapper h2 {
+            font-size: 80px;
+            line-height: 80px;
+        }
 }
 
 @media (min-width: 1500px) and (max-width: 1599px) {
@@ -1415,6 +1632,14 @@
             font-size: 30px;
             line-height: 30px;
         }
+        /*Category Section*/
+        .fsnf__category__section .left__side {
+            height: 650px;
+        }
+        .fsnf__category__section .right__side .large__card,
+        .fsnf__category__section .right__side .small__card {
+            height: 320px;
+        }
 }
 
 @media (min-width: 1600px) and (max-width: 1699px) {
@@ -1455,6 +1680,14 @@
         .fsnffp__wrapper .nav-tabs button {
             font-size: 30px;
             line-height: 30px;
+        }
+        /*Category Section*/
+        .fsnf__category__section .left__side {
+            height: 695px;
+        }
+        .fsnf__category__section .right__side .large__card,
+        .fsnf__category__section .right__side .small__card {
+            height: 340px;
         }
 }
 

@@ -256,7 +256,7 @@ button:focus {
     font-family: 'Jost', sans-serif;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .fsnf__section__title p span {
@@ -1638,11 +1638,22 @@ input[type="radio"]:checked::before {
 
 .fsnf__category__section .left__side {
     position: relative;
-    height: 100%;
+    height: 742px;
     width: 100%;
     display: block;
     border-radius: 5px;
     overflow: hidden;
+}
+
+.fsnf__category__section .fsnfcs__bg {
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
 }
 
 .fsnf__category__section .left__side img {
@@ -1669,9 +1680,9 @@ input[type="radio"]:checked::before {
     z-index: 9;
 }
 
-.fsnf__category__section h2 {
+.fsnf__category__section .fsnfcs__wrapper h2 {
     position: absolute;
-    top: calc(50% + 40px);
+    top: 50%;
     left: 0;
     transform: translateY(-50%);
     width: 100%;
@@ -1686,6 +1697,10 @@ input[type="radio"]:checked::before {
     z-index: 10;
 }
 
+.fsnf__category__section .fsnfcs__wrapper .left__side h2 {
+    top: calc(50% + 40px);
+}
+
 /* Right Side */
 .fsnf__category__section .right__side {
     width: 100%;
@@ -1696,7 +1711,7 @@ input[type="radio"]:checked::before {
 }
 
 .fsnf__category__section .right__side .large__card{
-    height: 330px;
+    height: 363px;
     width: 100%;
     position: relative;
     border-radius: 5px;
@@ -1704,7 +1719,7 @@ input[type="radio"]:checked::before {
 }
 
 .fsnf__category__section .right__side .small__card {
-    height: 330px;
+    height: 363px;
     width: 100%;
     display: flex;
     justify-content: space-between;
