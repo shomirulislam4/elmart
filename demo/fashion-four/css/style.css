@@ -1741,6 +1741,12 @@ input[type="radio"]:checked::before {
 /*** End of Category Section ***/
 
 /*** Start of Best Selling Items ***/
+.fsnfshop__product__lists {
+    display: flex;
+    justify-content: space-between;
+    gap: 37px;
+    flex-wrap: wrap;
+}
 /** Product Style v2 **/
 .fsnf__product__v2 {
     width: 392px;
@@ -1821,6 +1827,10 @@ input[type="radio"]:checked::before {
 
 .fsnf__badge.sale {
     background: #028A0F;
+}
+
+.fsnf__badge.new {
+    background: var(--main-color);
 }
 /* Product CTA Buttons */
 .fsnf__ctas__btns {
