@@ -2322,6 +2322,11 @@ input[type="radio"]:checked::before {
     text-transform: capitalize;
 }
 
+.fsnf__breadcrumbs__section .fsnfbs__content .text p i {
+    font-size: 14px;
+    line-height: 14px;
+}
+
 .fsnf__breadcrumbs__section .fsnfbs__content .text .current__page,
 .fsnf__breadcrumbs__section .fsnfbs__content .text a:hover {
     color: var(--text-color);
@@ -2581,6 +2586,7 @@ input[type="radio"]:checked::before {
 .fsnf__shop__section .fsnfshop__infobar .nice-select .list {
 	left: unset;
     right: 0;
+    z-index: 999;
 }
 
 .fsnf__shop__section .fsnfshop__infobar .number__of__results p {
