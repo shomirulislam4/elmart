@@ -79,3 +79,18 @@ $(function() {
         }
     });
 });
+
+//Nice Select
+if ($('.fashion__four').length) {
+    $('#fsnfssProductSorting').niceSelect();
+}
+
+//Shop Page Filter Sidebar
+$(function(){
+    $('.fsnfss__filter__button').on('click', function(){
+      $('.fsnfshop__filter__sidebar').addClass('show')
+    });
+    $('.fsnfshop__sidebar__closebtn').on('click', function(){
+      $('.fsnfshop__filter__sidebar').removeClass('show')
+    })
+});
