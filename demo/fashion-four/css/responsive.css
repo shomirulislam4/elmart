@@ -589,6 +589,127 @@
             line-height: 30px;
             font-size: 12px;
         }
+    /*===== Single Product Page =====*/
+        .fsnfsp__product__description .nav-pills {
+            gap: 0;
+            margin-bottom: 10px;
+        }
+        .fsnfsp__product__description .nav-link {
+            font-size: 12px;
+            line-height: 30px;
+            height: 30px;
+            padding: 0 10px;
+        }
+        .fsnfsp__product__description .tab-content .tab-pane .fsnfsp__reviews {
+            gap: 10px;
+        }
+        .fsnfsp__product__description .tab-content .tab-pane p {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .fsnfsp__product__description .tab-content .tab-pane table th,
+        .fsnfsp__product__description .tab-content .tab-pane table td {
+            font-size: 12px;
+        }
+        .fsnfsp__product__description .tab-content .tab-pane .user__review .content {
+            gap: 5px;
+        }
+        .fsnfsp__product__description .tab-content .tab-pane .user__review {
+            padding: 10px;
+            flex-direction: column;
+        }
+        .fsnfsp__product__description .tab-content .tab-pane .user__review .image {
+            padding-right: 0;
+            margin-right: 0;
+            border: 0;
+            margin-bottom: 10px;
+        }
+        .fsnfsp__product__description .tab-content .tab-pane .user__review .image img {
+            height: 50px;
+            width: 50px;
+        }
+        .fsnfsp__product__description .tab-content .tab-pane .user__review .fests__star__ratings {
+            font-size: 10px;
+            line-height: 10px;
+            justify-content: center;
+        }
+        .fsnfsp__product__description .tab-content .tab-pane .user__review .content .user__name {
+            gap: 5px;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .fsnfsp__product__description .tab-content .tab-pane .user__review p {
+            font-size: 10px;
+            line-height: 12px;
+            text-align: center;
+        }
+        .fsnfsp__product__description .tab-content .tab-pane .vertical__seperator {
+            display: none;
+        }
+        /*Review form*/
+        .fsnfsp__submit__review {
+            padding: 10px;
+        }
+        .fsnfsp__submit__review .rating__wrap {
+            gap: 5px;
+        }
+        .fsnfsp__submit__review form,
+        .fsnfsp__submit__review form .name__email {
+            flex-direction: column;
+            gap: 10px;
+        }
+        .fsnfsp__submit__review form label {
+            font-size: 12px;
+            line-height: 16px;
+        }
+        .fsnfsp__submit__review form .name__email .item {
+            width: 100%;
+        }
+        .fsnfsp__submit__review form .name__email .item input {
+            height: 40px;
+            font-size: 12px;
+            padding: 0 10px;
+        }
+        .fsnfsp__submit__review form textarea {
+            font-size: 12px;
+            height: 150px;
+        }
+        .fsnfsp__submit__review form .fes__button__a {
+            font-size: 12px;
+            width: 100%;
+            padding: 5px;
+        }
+        /*Product Information*/
+        .product__size__choose p.item__title {
+            font-size: 12px;
+        }
+        .product__size__choose .size__item {
+            padding: 0px 14px;
+        }
+        .product__size__choose .size__item span {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .fsnfsp__product__color .color__item {
+            width: 25px;
+            height: 25px;
+        }
+        .fsnfsp__product__color .color__item .color__name {
+            bottom: 116%;
+        }
+        /*Quantity Widget*/
+        .quantity__decrease,
+        .quantity__increase {
+            font-size: 18px;
+            line-height: 25px;
+            height: 25px;
+            width: 25px;
+        }
+        .quantity__display {
+            font-size: 18px;
+            line-height: 28px;
+            padding: 0 5px;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
@@ -1104,6 +1225,127 @@
             line-height: 30px;
             font-size: 12px;
         }
+    /*===== Single Product Page =====*/
+        .fsnfsp__product__description .nav-link {
+            font-size: 16px;
+            line-height: 30px;
+            height: 30px;
+            padding: 0 20px;
+        }
+        .fsnfsp__product__description .nav-pills {
+            gap: 5px;
+            margin-bottom: 10px;
+        }
+        .fsnfsp__product__description .tab-content .tab-pane .fsnfsp__reviews {
+            gap: 10px;
+        }
+        .fsnfsp__product__description .tab-content .tab-pane p {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .fsnfsp__product__description .tab-content .tab-pane table th,
+        .fsnfsp__product__description .tab-content .tab-pane table td {
+            font-size: 12px;
+        }
+        .fsnfsp__product__description .tab-content .tab-pane .user__review .content {
+            gap: 5px;
+        }
+        .fsnfsp__product__description .tab-content .tab-pane .user__review {
+            padding: 10px;
+            flex-direction: column;
+        }
+        .fsnfsp__product__description .tab-content .tab-pane .user__review .image {
+            padding-right: 0;
+            margin-right: 0;
+            border: 0;
+            margin-bottom: 10px;
+        }
+        .fsnfsp__product__description .tab-content .tab-pane .user__review .image img {
+            height: 70px;
+            width: 70px;
+        }
+        .fsnfsp__product__description .tab-content .tab-pane .user__review .fests__star__ratings {
+            font-size: 12px;
+            line-height: 12px;
+            justify-content: center;
+        }
+        .fsnfsp__product__description .tab-content .tab-pane .user__review .content .user__name {
+            gap: 0;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .fsnfsp__product__description .tab-content .tab-pane .user__review p {
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+        }
+        .fsnfsp__product__description .tab-content .tab-pane .vertical__seperator {
+            display: none;
+        }
+        /*Review form*/
+        .fsnfsp__submit__review {
+            padding: 10px;
+        }
+        .fsnfsp__submit__review .rating__wrap {
+            gap: 5px;
+        }
+        .fsnfsp__submit__review form,
+        .fsnfsp__submit__review form .name__email {
+            flex-direction: column;
+            gap: 10px;
+        }
+        .fsnfsp__submit__review form label {
+            font-size: 12px;
+            line-height: 16px;
+        }
+        .fsnfsp__submit__review form .name__email .item {
+            width: 100%;
+        }
+        .fsnfsp__submit__review form .name__email .item input {
+            height: 45px;
+            font-size: 12px;
+            padding: 0 10px;
+        }
+        .fsnfsp__submit__review form textarea {
+            font-size: 12px;
+            height: 150px;
+        }
+        .fsnfsp__submit__review form .fes__button__a {
+            font-size: 12px;
+            width: 100%;
+            padding: 5px;
+        }
+        /*Product Information*/
+        .product__size__choose p.item__title {
+            font-size: 14px;
+        }
+        .product__size__choose .size__item {
+            padding: 3px 16px;
+        }
+        .product__size__choose .size__item span {
+            font-size: 14px;
+            line-height: 22px;
+        }
+        .fsnfsp__product__color .color__item {
+            width: 25px;
+            height: 25px;
+        }
+        .fsnfsp__product__color .color__item .color__name {
+            bottom: 116%;
+        }
+        /*Quantity Widget*/
+        .quantity__decrease,
+        .quantity__increase {
+            font-size: 18px;
+            line-height: 25px;
+            height: 25px;
+            width: 25px;
+        }
+        .quantity__display {
+            font-size: 18px;
+            line-height: 28px;
+            padding: 0 5px;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -1515,6 +1757,106 @@
             line-height: 40px;
             font-size: 14px;
         }
+    /*===== Single Product Page =====*/
+        .fsnfsp__product__description .nav-link {
+            font-size: 16px;
+            line-height: 30px;
+            height: 30px;
+            padding: 0 20px;
+        }
+        .fsnfsp__product__description .nav-pills {
+            gap: 5px;
+            margin-bottom: 10px;
+        }
+        .fsnfsp__product__description .tab-content .tab-pane p {
+            font-size: 14px;
+            line-height: 22px;
+        }
+        .fsnfsp__product__description .tab-content .tab-pane table th,
+        .fsnfsp__product__description .tab-content .tab-pane table td {
+            font-size: 14px;
+        }
+        .fsnfsp__product__description .tab-content .tab-pane .user__review .content {
+            gap: 5px;
+        }
+        .fsnfsp__product__description .tab-content .tab-pane .user__review {
+            padding: 10px;
+            flex-direction: column;
+        }
+        .fsnfsp__product__description .tab-content .tab-pane .user__review .image {
+            padding-right: 0;
+            margin-right: 0;
+            border: 0;
+            margin-bottom: 10px;
+        }
+        .fsnfsp__product__description .tab-content .tab-pane .user__review .image img {
+            height: 70px;
+            width: 70px;
+        }
+        .fsnfsp__product__description .tab-content .tab-pane .user__review .fests__star__ratings {
+            font-size: 12px;
+            line-height: 12px;
+            justify-content: center;
+        }
+        .fsnfsp__product__description .tab-content .tab-pane .user__review .content .user__name {
+            gap: 10px;
+            justify-content: center;
+        }
+        .fsnfsp__product__description .tab-content .tab-pane .user__review p {
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+        }
+        .fsnfsp__product__description .tab-content .tab-pane .vertical__seperator {
+            height: 12px;
+        }
+        /*Review form*/
+        .fsnfsp__submit__review form,
+        .fsnfsp__submit__review form .name__email {
+            flex-direction: column;
+            gap: 10px;
+        }
+        .fsnfsp__submit__review form label {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .fsnfsp__submit__review form .name__email .item {
+            width: 100%;
+        }
+        .fsnfsp__submit__review form textarea {
+            font-size: 14px;
+            height: 200px;
+        }
+        .fsnfsp__submit__review form .fes__button__a {
+            font-size: 14px;
+            padding: 5px;
+        }
+        /*Product Information*/
+        .product__size__choose p.item__title {
+            font-size: 14px;
+        }
+        .product__size__choose .size__item {
+            padding: 3px 16px;
+        }
+        .product__size__choose .size__item span {
+            font-size: 14px;
+            line-height: 22px;
+        }
+        .fsnfsp__product__color .color__item {
+            width: 30px;
+            height: 30px;
+        }
+        .fsnfsp__product__color .color__item .color__name {
+            bottom: 116%;
+        }
+        /*Quantity Widget*/
+        .quantity__decrease,
+        .quantity__increase {
+            font-size: 22px;
+            line-height: 34px;
+            height: 35px;
+            width: 35px;
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -1889,6 +2231,77 @@
             font-size: 16px;
             line-height: 16px;
         }
+    /*===== Single Product Page =====*/
+        .fsnfsp__product__description .nav-link {
+            font-size: 16px;
+            line-height: 30px;
+            height: 30px;
+            padding: 0 20px;
+        }
+        .fsnfsp__product__description .nav-pills {
+            gap: 5px;
+            margin-bottom: 10px;
+        }
+        .fsnfsp__product__description .tab-content .tab-pane p {
+            font-size: 14px;
+            line-height: 22px;
+        }
+        .fsnfsp__product__description .tab-content .tab-pane table th,
+        .fsnfsp__product__description .tab-content .tab-pane table td {
+            font-size: 14px;
+        }
+        .fsnfsp__product__description .tab-content .tab-pane .user__review .content {
+            gap: 5px;
+        }
+        .fsnfsp__product__description .tab-content .tab-pane .user__review {
+            padding: 10px;
+        }
+        .fsnfsp__product__description .tab-content .tab-pane .user__review .image {
+            padding-right: 10px;
+            margin-right: 10px;
+        }
+        .fsnfsp__product__description .tab-content .tab-pane .user__review .fests__star__ratings {
+            font-size: 12px;
+            line-height: 12px;
+        }
+        .fsnfsp__product__description .tab-content .tab-pane .user__review .content .user__name {
+            gap: 10px;
+        }
+        .fsnfsp__product__description .tab-content .tab-pane .user__review p {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .fsnfsp__product__description .tab-content .tab-pane .vertical__seperator {
+            height: 12px;
+        }
+        /*Review form*/
+        .fsnfsp__submit__review form,
+        .fsnfsp__submit__review form .name__email {
+            flex-direction: column;
+            gap: 10px;
+        }
+        .fsnfsp__submit__review form label {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .fsnfsp__submit__review form .name__email .item {
+            width: 100%;
+        }
+        .fsnfsp__submit__review form textarea {
+            font-size: 14px;
+            height: 200px;
+        }
+        /*Product Information*/
+        .product__size__choose p.item__title {
+            font-size: 14px;
+        }
+        .product__size__choose .size__item {
+            padding: 3px 16px;
+        }
+        .product__size__choose .size__item span {
+            font-size: 14px;
+            line-height: 22px;
+        }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -2219,6 +2632,25 @@
             font-size: 18px;
             line-height: 18px;
         }
+    /*===== Single Product Page =====*/
+        /*Product Information*/
+        .product__size__choose p.item__title {
+            font-size: 14px;
+        }
+        .product__size__choose .size__item {
+            padding: 3px 16px;
+        }
+        .product__size__choose .size__item span {
+            font-size: 14px;
+            line-height: 22px;
+        }
+        .fsnfsp__product__color .color__item {
+            width: 30px;
+            height: 30px;
+        }
+        .fsnfsp__product__color .color__item .color__name {
+            bottom: 116%;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -2521,6 +2953,18 @@
         .fsnf__shop__section .fsnfshop__infobar .number__of__results p {
             font-size: 20px;
             line-height: 20px;
+        }
+    /*===== Single Product Page =====*/
+        /*Product Information*/
+        .product__size__choose p.item__title {
+            font-size: 16px;
+        }
+        .product__size__choose .size__item {
+            padding: 3px 16px;
+        }
+        .product__size__choose .size__item span {
+            font-size: 14px;
+            line-height: 22px;
         }
 }
 

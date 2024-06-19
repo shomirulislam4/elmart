@@ -36,15 +36,15 @@ $(function(){
 
 //Quantity Widget
 $(function() {
-    $('.quantity-controls').each(function() {
-      var quantityDisplay = $(this).find('.quantity-display');
+    $('.quantity__controls').each(function() {
+      var quantityDisplay = $(this).find('.quantity__display');
   
-      $(this).find('.quantity-increase').on('click', function() {
+      $(this).find('.quantity__increase').on('click', function() {
         var currentQuantity = parseInt(quantityDisplay.text(), 10);
         quantityDisplay.text(currentQuantity + 1);
       });
   
-      $(this).find('.quantity-decrease').on('click', function() {
+      $(this).find('.quantity__decrease').on('click', function() {
         var currentQuantity = parseInt(quantityDisplay.text(), 10);
         if (currentQuantity > 1) {
           quantityDisplay.text(currentQuantity - 1);
@@ -85,6 +85,7 @@ if ($('.fashion__four').length) {
     $('#fsnfssProductSorting').niceSelect();
 }
 
+/*============================ Shop page ============================*/
 //Shop Page Filter Sidebar
 $(function(){
     $('.fsnfss__filter__button').on('click', function(){
@@ -93,4 +94,40 @@ $(function(){
     $('.fsnfshop__sidebar__closebtn').on('click', function(){
       $('.fsnfshop__filter__sidebar').removeClass('show')
     })
+});
+
+/*============================ Single Product page ============================*/
+//Single Product Image Slider
+$(function(){
+    var fsnfsliderthumb = new Swiper(".fsnfsp__product__image__slider1", {
+      loop: true,
+      spaceBetween: 30,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    var fsnfslidermain = new Swiper(".fsnfsp__product__image__slider2", {
+      loop: true,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".fsnfsp__imgsldr__btn__next",
+        prevEl: ".fsnfsp__imgsldr__btn__prev",
+      },
+      thumbs: {
+        swiper: fsnfsliderthumb,
+      },
+    });
+});
+
+//Item Active Class
+$(function() {
+    //Size Select
+    $('.size__select').on('click','.size__item',function(){
+      $(this).addClass('active').siblings().removeClass('active');
+    });
+
+    //Color Select
+    $('.color__wrap').on('click', '.color__item', function() {
+      $(this).addClass('active').siblings().removeClass('active');
+    });
 });
