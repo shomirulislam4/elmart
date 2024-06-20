@@ -1857,8 +1857,9 @@ input[type="radio"]:checked::before {
 }
 
 .fsnf__cart__button {
+    display: block;
     position: absolute;
-    bottom: 0;
+    bottom: -100px;
     left: 0;
     width: 100%;
     font-size: 20px;
@@ -1866,16 +1867,18 @@ input[type="radio"]:checked::before {
     font-weight: 400;
     font-family: 'Jost', sans-serif;
     text-align: center;
-    height: 50px;
     background: var(--text-color);
     color: #FFF !important;
     text-transform: capitalize;
     z-index: 100;
-    display: none;
 }
 
 .fsnf__cart__button:hover {
     background: var(--main-color);
+}
+
+.fsnf__product__v2:hover .fsnf__cart__button {
+    bottom: 0;
 }
 
 /* Product Info */
@@ -2720,13 +2723,13 @@ input[type="radio"]:checked::before {
     background: var(--main-color);
     color: #FFF;
     border-radius: 50px;
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 18px;
+    line-height: 20px;
     font-weight: 500;
     font-family: 'Jost', sans-serif;
     text-align: center;
-    padding: 5px 0;
-    width: 110px;
+    padding: 5px 20px;
+    width: fit-content;
     text-transform: capitalize;
 }
 
@@ -3089,7 +3092,7 @@ input[type="radio"]:checked::before {
     display: inline-block;
     color: #FFF;
     background: #8F7777;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 40px;
     height: 40px;
     text-align: center;
@@ -3107,8 +3110,8 @@ input[type="radio"]:checked::before {
 
 /* Content Area */
 .fsnfsp__product__description .tab-content .tab-pane p {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 28px;
     font-weight: 400;
     font-family: 'Jost', sans-serif;
 }
@@ -3125,7 +3128,7 @@ input[type="radio"]:checked::before {
 
 .fsnfsp__product__description .tab-content .tab-pane table th,
 .fsnfsp__product__description .tab-content .tab-pane table td {
-    font-size: 16px;
+    font-size: 18px;
     padding: 5px 10px;
     border: 1px solid #CCC;
     text-transform: capitalize;
@@ -3243,8 +3246,8 @@ input[type="radio"]:checked::before {
 }
 
 .fsnfsp__submit__review form label {
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 20px;
+    line-height: 20px;
     font-weight: 500;
     font-family: 'Jost', sans-serif;
     margin-bottom: 10px;
@@ -3257,10 +3260,10 @@ input[type="radio"]:checked::before {
 
 .fsnfsp__submit__review form .name__email .item input {
     width: 100%;
-    height: 50px;
+    height: 60px;
     border-radius: 50px;
     background: #FFF;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     padding: 0 20px;
 }
