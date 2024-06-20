@@ -105,6 +105,17 @@ $(function(){
       slidesPerView: 4,
       freeMode: true,
       watchSlidesProgress: true,
+      breakpoints: {
+        1700: {
+          spaceBetween: 30,
+        },
+        1400: {
+          spaceBetween: 20,
+        },
+        992: {
+          spaceBetween: 10,
+        },
+      }
     });
     var fsnfslidermain = new Swiper(".fsnfsp__product__image__slider2", {
       loop: true,
