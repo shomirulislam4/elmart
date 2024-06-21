@@ -547,6 +547,10 @@ button:focus {
 }
 
 /* Demo Sidebar */
+.demo-section .ds-sidebar {
+    position: relative;
+}
+
 .demo-search-box {
     width: 100%;
     background: #FFF;
@@ -590,6 +594,9 @@ button:focus {
 }
 
 .demo-filter {
+    position: sticky;
+    top: 80px;
+    left: 0;
     padding: 10px 20px;
     background: #FFF;
     border-radius: 5px;
