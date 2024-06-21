@@ -592,12 +592,12 @@
         }
     /*===== Single Product Page =====*/
         .fsnfsp__product__description .nav-pills {
-            gap: 0;
+            gap: 5px;
         }
         .fsnfsp__product__description .nav-link {
             font-size: 12px;
-            line-height: 30px;
-            height: 30px;
+            line-height: 24px;
+            height: 24px;
             padding: 0 10px;
         }
         .fsnfsp__product__description .tab-content .tab-pane .fsnfsp__reviews {
@@ -629,6 +629,7 @@
             width: 50px;
         }
         .fsnfsp__product__description .tab-content .tab-pane .user__review .fests__star__ratings {
+            display: flex;
             font-size: 10px;
             line-height: 10px;
             justify-content: center;
@@ -680,22 +681,145 @@
             padding: 5px;
         }
         /*Product Information*/
-        .product__size__choose p.item__title {
+        .single__product__section .fsnfsp__imgsldr__btn__next,
+        .single__product__section .fsnfsp__imgsldr__btn__prev {
+            font-size: 14px;
+            line-height: 30px;
+            height: 30px;
+            width: 30px;
+        }
+        .single__product__section .fsnfsp__imgsldr__btn__next {
+            right: 0;
+        }
+        .single__product__section .fsnfsp__imgsldr__btn__prev {
+            left: 0;
+        }
+        .single__product__section .single__product__content {
+            gap: 10px;
+        }
+        .single__product__section .single__product__content .cta__buttons {
+            gap: 10px;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .single__product__section .single__product__content .cta__buttons div {
+            gap: 10px;
+        }
+        .single__product__section .single__product__content .cta__buttons .fsnf__button__b {
+            width: 100%;
+        }
+        .single__product__section .single__product__content .cta__buttons .fsnf__button__b,
+        .single__product__section .single__product__content .cta__buttons .fsnf__button__b i {
             font-size: 12px;
+            line-height: 12px;
+        }
+        .single__product__section .single__product__content .cta__buttons .ctas {
+            height: 34px;
+            width: 34px;
+            line-height: 34px;
+            font-size: 12px;
+        }
+        .single__product__section .single__product__content .additional__info {
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .single__product__section .single__product__content .tag,
+        .single__product__section .single__product__content p,
+        .single__product__section .single__product__content .additional__info p,
+        .single__product__section .single__product__content .additional__info p a,
+        .single__product__section .single__product__content .delivery__shipping p,
+        .single__product__section .single__product__content .delivery__shipping p span,
+        .single__product__section .single__product__content .product__manage__info p,
+        .single__product__section .single__product__content .product__manage__info p span,
+        .single__product__section .single__product__content .product__manage__info p a,
+        .single__product__section .single__product__content .secure__pay p,
+        .product__size__choose .size__item span,
+        .product__size__choose p.item__title,
+        .fsnfsp__product__description .tab-content .tab-pane p,
+        .fsnfsp__product__description .tab-content .tab-pane table th,
+        .fsnfsp__product__description .tab-content .tab-pane table td {
+            font-size: 12px;
+            line-height: 12px;
+        }
+        .single__product__section .single__product__content .additional__info p i {
+            font-size: 10px;
+            line-height: 10px;
+        }
+        .single__product__section .single__product__content p,
+        .single__product__section .single__product__content .delivery__shipping p,
+        .single__product__section .single__product__content .delivery__shipping p span,
+        .single__product__section .single__product__content .product__manage__info p,
+        .single__product__section .single__product__content .product__manage__info p span,
+        .single__product__section .single__product__content .product__manage__info p a {
+            line-height: 20px;
+        }
+        .fsnfsp__product__description .tab-content .tab-pane p,
+        .fsnfsp__product__description .tab-content .tab-pane table th,
+        .fsnfsp__product__description .tab-content .tab-pane table td {
+            line-height: 22px;
         }
         .product__size__choose .size__item {
-            padding: 0px 14px;
+            padding: 3px 13px;
         }
         .product__size__choose .size__item span {
-            font-size: 12px;
+            font-size: 10px;
             line-height: 18px;
+        }
+        .single__product__section .single__product__content .delivery__shipping,
+        .single__product__section .single__product__content .product__manage__info {
+            gap: 5px;
+        }
+        .single__product__section .single__product__content .delivery__shipping p i {
+            font-size: 10px;
         }
         .fsnfsp__product__color .color__item {
             width: 25px;
             height: 25px;
         }
+        .product__size__choose .size__item span {
+            font-size: 12px;
+            line-height: 20px;
+        }
         .fsnfsp__product__color .color__item .color__name {
             bottom: 116%;
+        }
+        .single__product__section .single__product__content h2 {
+            font-size: 20px;
+            line-height: 28px;
+        }
+        .single__product__section .single__product__content h4 {
+            font-size: 18px;
+            line-height: 18px;
+        }
+        .single__product__section .fsnfsp__product__image__slider2 {
+            height: 200px;
+            border-radius: 5px;
+        }
+        .single__product__section .single__product__content .secure__pay {
+            padding: 10px;
+            padding-top: 20px;
+        }
+        .single__product__section .single__product__content .secure__pay p {
+            padding: 5px 10px;
+            top: -8px;
+        }
+        .single__product__section .single__product__content .secure__pay img {
+            width: 100%;
+        }
+        .single__product__section .single__product__image {
+            margin-bottom: 10px;
+        }
+        .single__product__section .product__details {
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .single__product__section .single__product__content .cta__buttons .ctas span {
+            left: 0;
+            right: unset;
+            font-size: 12px;
+            line-height: 12px;
+            width: 130px;
         }
         /*Quantity Widget*/
         .quantity__decrease,
@@ -1265,6 +1389,7 @@
             width: 70px;
         }
         .fsnfsp__product__description .tab-content .tab-pane .user__review .fests__star__ratings {
+            display: flex;
             font-size: 12px;
             line-height: 12px;
             justify-content: center;
@@ -1316,20 +1441,35 @@
             padding: 5px;
         }
         /*Product Information*/
-        .single__product__section .single__product__content .cta__buttons,
+        .single__product__section .single__product__content {
+            gap: 10px;
+        }
+        .single__product__section .single__product__content .cta__buttons {
+            gap: 10px;
+            flex-direction: column;
+            justify-content: center;
+        }
         .single__product__section .single__product__content .cta__buttons div {
-            gap: 5px;
+            gap: 10px;
+        }
+        .single__product__section .single__product__content .cta__buttons .fsnf__button__b {
+            width: 100%;
         }
         .single__product__section .single__product__content .cta__buttons .fsnf__button__b,
         .single__product__section .single__product__content .cta__buttons .fsnf__button__b i {
-            font-size: 16px;
+            font-size: 14px;
             line-height: 20px;
         }
         .single__product__section .single__product__content .cta__buttons .ctas {
             height: 40px;
             width: 40px;
             line-height: 40px;
-            font-size: 16px;
+            font-size: 14px;
+        }
+        .single__product__section .single__product__content .additional__info {
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
         }
         .single__product__section .single__product__content .tag,
         .single__product__section .single__product__content p,
@@ -1346,15 +1486,12 @@
         .fsnfsp__product__description .tab-content .tab-pane p,
         .fsnfsp__product__description .tab-content .tab-pane table th,
         .fsnfsp__product__description .tab-content .tab-pane table td {
-            font-size: 16px;
-            line-height: 16px;
-        }
-        .single__product__section .single__product__content .additional__info p i {
             font-size: 14px;
             line-height: 14px;
         }
-        .single__product__section .single__product__content {
-            padding: 0;
+        .single__product__section .single__product__content .additional__info p i {
+            font-size: 12px;
+            line-height: 12px;
         }
         .single__product__section .single__product__content p,
         .single__product__section .single__product__content .delivery__shipping p,
@@ -1362,26 +1499,29 @@
         .single__product__section .single__product__content .product__manage__info p,
         .single__product__section .single__product__content .product__manage__info p span,
         .single__product__section .single__product__content .product__manage__info p a {
-            line-height: 24px;
+            line-height: 22px;
         }
         .fsnfsp__product__description .tab-content .tab-pane p,
         .fsnfsp__product__description .tab-content .tab-pane table th,
         .fsnfsp__product__description .tab-content .tab-pane table td {
-            line-height: 28px;
+            line-height: 24px;
         }
         .product__size__choose .size__item {
-            padding: 3px 16px;
+            padding: 3px 13px;
         }
         .product__size__choose .size__item span {
-            font-size: 14px;
-            line-height: 22px;
+            font-size: 12px;
+            line-height: 20px;
         }
         .single__product__section .single__product__content .delivery__shipping,
         .single__product__section .single__product__content .product__manage__info {
             gap: 5px;
         }
+        .single__product__section .single__product__content .delivery__shipping p i {
+            font-size: 12px;
+        }
         .fsnfsp__product__description .nav-link {
-            font-size: 16px;
+            font-size: 14px;
             line-height: 40px;
             height: 40px;
         }
@@ -1390,44 +1530,59 @@
             height: 25px;
         }
         .product__size__choose .size__item span {
-            font-size: 16px;
-            line-height: 24px;
+            font-size: 14px;
+            line-height: 22px;
         }
         .fsnfsp__product__color .color__item .color__name {
             bottom: 116%;
         }
         .single__product__section .single__product__content h2 {
-            font-size: 44px;
-            line-height: 52px;
+            font-size: 32px;
+            line-height: 40px;
         }
         .single__product__section .single__product__content h4 {
-            font-size: 34px;
-            line-height: 34px;
+            font-size: 24px;
+            line-height: 24px;
         }
         .single__product__section .fsnfsp__product__image__slider2 {
-            height: 424px;
+            height: 296px;
+            border-radius: 5px;
         }
         .single__product__section .single__product__content .secure__pay {
-            padding: 15px;
-            padding-top: 25px;
+            padding: 10px;
+            padding-top: 15px;
         }
         .single__product__section .single__product__content .secure__pay p {
             padding: 5px 10px;
             top: -14px;
         }
+        .single__product__section .single__product__content .secure__pay img {
+            width: 100%;
+        }
         .single__product__section .single__product__image {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
+        }
+        .single__product__section .product__details {
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .single__product__section .single__product__content .cta__buttons .ctas span {
+            left: 0;
+            right: unset;
+            font-size: 14px;
+            line-height: 14px;
+            width: 130px;
         }
         /*Quantity Widget*/
         .quantity__decrease,
         .quantity__increase {
-            font-size: 18px;
+            font-size: 14px;
             line-height: 25px;
             height: 25px;
             width: 25px;
         }
         .quantity__display {
-            font-size: 18px;
+            font-size: 14px;
             line-height: 28px;
             padding: 0 5px;
         }
@@ -2022,10 +2177,14 @@
         /*Quantity Widget*/
         .quantity__decrease,
         .quantity__increase {
-            font-size: 22px;
-            line-height: 34px;
-            height: 35px;
-            width: 35px;
+            font-size: 16px;
+            line-height: 30px;
+            height: 30px;
+            width: 30px;
+        }
+        .quantity__display {
+            font-size: 16px;
+            line-height: 30px;
         }
 }
 

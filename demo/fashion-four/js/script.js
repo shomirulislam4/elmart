@@ -119,6 +119,9 @@ $(function(){
         576: {
           spaceBetween: 20,
         },
+        200: {
+          spaceBetween: 10,
+        },
       }
     });
     var fsnfslidermain = new Swiper(".fsnfsp__product__image__slider2", {
