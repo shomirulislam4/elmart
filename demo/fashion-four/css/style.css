@@ -2616,8 +2616,13 @@ input[type="radio"]:checked::before {
 
 /* Image */
 .single__product__section .single__product__image {
-    padding-right: 0;
     position: relative;
+}
+
+@media (min-width: 768px) {
+    .single__product__section .single__product__image {
+        padding-right: 0;
+    }
 }
 
 .single__product__section .single__product__image .fsnfsp__prod__img {
@@ -3050,6 +3055,7 @@ input[type="radio"]:checked::before {
     height: 40px;
     width: 40px;
     border: 1px solid #CCC;
+    background: #FFF;
     margin: 0 2px;
     border-radius: 5px;
     transition: 0.3s;
@@ -3129,7 +3135,7 @@ input[type="radio"]:checked::before {
 .fsnfsp__product__description .tab-content .tab-pane table th,
 .fsnfsp__product__description .tab-content .tab-pane table td {
     font-size: 18px;
-    padding: 5px 10px;
+    padding: 10px 15px;
     border: 1px solid #CCC;
     text-transform: capitalize;
 }
