@@ -86,6 +86,22 @@ if ($('.fashion__four').length) {
     $('#fsnfssProductSorting').niceSelect();
 }
 
+//Back to Top
+$(function(){
+  $(window).scroll(function() {
+    if ($(this).scrollTop() >= 400) {
+        $('.return__to__top').fadeIn(1000);
+    } else {
+        $('.return__to__top').fadeOut(200);
+    }
+  });
+  $('.return__to__top').on('click', function() {
+    $('body,html').animate({
+        scrollTop : 0
+    }, 500);
+  });
+});
+
 /*============================ Shop page ============================*/
 //Shop Page Filter Sidebar
 $(function(){
