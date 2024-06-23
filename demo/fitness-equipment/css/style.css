@@ -1588,29 +1588,29 @@ input[type="radio"]:checked::before {
 }
 
 /* Cart Items */
-.fsnf__cart__product {
+.fes__cart__product {
     display: flex;
     gap: 15px;
     margin-bottom: 15px;
     position: relative;
 }
 
-.fsnf__cart__product:last-child {
+.fes__cart__product:last-child {
     margin-bottom: 0;
 }
 
-.fsnf__cart__product .image {
+.fes__cart__product .image {
     width: 100px;
     height: 100px;
     overflow: hidden;
 }
 
-.fsnf__cart__product .image img {
+.fes__cart__product .image img {
     width: 100%;
     height: auto;
 }
 
-.fsnf__cart__product .content {
+.fes__cart__product .content {
 	width: 290px;
 	display: flex;
 	flex-direction: column;
@@ -1618,8 +1618,8 @@ input[type="radio"]:checked::before {
 	padding: 5px 0;
 }
 
-.fsnf__cart__product h3,
-.fsnf__cart__product h3 a {
+.fes__cart__product h3,
+.fes__cart__product h3 a {
     all: unset;
     display: block;
     color: var(--text-color);
@@ -1638,17 +1638,17 @@ input[type="radio"]:checked::before {
     -o-transition: 0.3s;
 }
 
-.fsnf__cart__product h3 a:hover {
+.fes__cart__product h3 a:hover {
     color: var(--main-color);
 }
 
-.fsnf__cart__product .price__qty {
+.fes__cart__product .price__qty {
     display: flex;
     gap: 10px;
     justify-content: flex-end;
 }
 
-.fsnf__cart__product h4 {
+.fes__cart__product h4 {
     font-size: 16px;
     line-height: 20px;
     font-weight: 400;
@@ -1660,7 +1660,7 @@ input[type="radio"]:checked::before {
     padding: 0;
 }
 
-.fsnf__cart__product .fsnf__cart__prod__close {
+.fes__cart__product .fes__cart__prod__close {
 	height: 20px;
 	width: 20px;
 	font-size: 10px;
@@ -1683,19 +1683,19 @@ input[type="radio"]:checked::before {
     -o-transition: 0.3s;
 }
 
-.fsnf__cart__product .fsnf__cart__prod__close:hover {
+.fes__cart__product .fes__cart__prod__close:hover {
     background: var(--main-color);
 }
 
-.fsnf__cart__product .quantity__decrease,
-.fsnf__cart__product .quantity__increase {
+.fes__cart__product .quantity__decrease,
+.fes__cart__product .quantity__increase {
     height: 20px;
     width: 20px;
     line-height: 20px;
     font-size: 12px;
 }
 
-.fsnf__cart__product .quantity__display {
+.fes__cart__product .quantity__display {
     font-size: 12px;
     line-height: 20px;
 }
