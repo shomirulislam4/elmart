@@ -2,6 +2,14 @@
     .fsnfsp__product__description {
         margin-top: 30px;
     }
+    .ds__button__b {
+        font-size: 14px;
+        line-height: 14px;
+        padding: 7px 13px;
+    }
+    .ds__button__b::after {
+        font-size: 10px;
+    }
     /*===== Home Page =====*/
         /*Cart Slider*/
         .ds__cart__slider .main__cart__area {
@@ -16,7 +24,7 @@
             font-size: 14px;
             border-radius: 5px;
         }
-        .ds__cart__slider .main__cart__area .ds__cart__header h3{
+        .ds__cart__slider .main__cart__area .ds__cart__header h3 {
             font-size: 24px;
             line-height: 24px;
             margin-bottom: 0;
@@ -29,17 +37,128 @@
             font-weight: 400;
             padding: 0 8px;
         }
-        .fsnfcs__openbtn {
+        /*Cart Product*/
+        .ds__cart__product .ds__cart__prod__close {
+            height: 16px;
+            width: 16px;
+            font-size: 10px;
+            line-height: 16px;
+            left: 0;
+            top: 0;
+        }
+        .ds__cart__product {
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #EEE;
+            padding-bottom: 10px;
+        }
+        .ds__cart__product .content {
+            width: 185px;
+            gap: 10px;
+        }
+        .ds__cart__product .image {
+            width: 60px;
+            height: 60px;
+        }
+        .ds__cart__product h3 {
+            border: none;
+            line-height: 18px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .ds__cart__product h3 a {
             font-size: 14px;
-            line-height: 34px;
-            height: 34px;
-            width: 34px;
+            line-height: 14px;
+            text-align: center;
+        }
+        .ds__cart__product h4 {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .ds__cart__product .price__qty {
+            justify-content: center;
+        }
+        /*Mobile Menu*/
+        .ds__mobilemenu__btn {
+            padding: 5px;
+            font-size: 10px;
+            line-height: 10px;
+            overflow: hidden;
+            height: 24px;
+        }
+        .ds__mobilemenu__btn i {
+            display: none;
+        }
+        .ds__mobile__menu .ds__mblmenu__wrapper {
+            width: 180px;
+            padding: 10px 5px;
+        }
+        .ds__mobile__menu .ds__mblmenu__wrapper .ds__mblmenu__closebtn {
+            left: 182px;
+            height: 80px;
+            width: 16px;
+            line-height: 80px;
+            font-size: 14px;
+            border-radius: 5px;
+        }
+        .ds__mblmenu__tabs {
+            font-size: 14px;
+            line-height: 24px;
+        }
+        .ds__mobile__menu .ds__mblmenu__wrapper .nav-pills .nav-link.active,
+        .ds__mobile__menu .ds__mblmenu__wrapper .nav-pills .show > .nav-link,
+        .ds__mobile__menu .ds__mblmenu__wrapper .nav-pills .nav-link {
+            padding: 5px;
+            margin: 0;
+        }
+        /*Header*/
+        .ds__header__section .container {
+            padding: 0;
+        }
+        .ds__header__section .dshs__wrapper {
+            padding: 10px 0;
+        }
+        .ds__header__section .dshs__wrapper .dshs__header__cta li a svg {
+            height: 12px;
+            width: 12px;
+        }
+        .ds__header__section .dshs__wrapper .dshs__header__cta li {
+            margin-right: 0;
+        }
+        .logo {
+            width: 90px;
+        }
+        /*Hero Section*/
+        .ds__hero__section .dshero__wrapper .content {
+            padding-top: 50px;
+            height: 400px;
+        }
+        .ds__hero__section .dshero__wrapper .content h2 {
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 10px;
+        }
+        .ds__hero__section .dshero__wrapper .content p {
+            font-size: 12px;
+            line-height: 18px;
+            width: 100%;
+            margin-bottom: 10px;
         }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
     .fsnfsp__product__description {
         margin-top: 30px;
+    }
+    .ds__button__b {
+        font-size: 14px;
+        line-height: 14px;
+        padding: 7px 13px;
+    }
+    .ds__button__b::after {
+        font-size: 10px;
     }
     /*===== Home Page =====*/
         /*Cart Slider*/
@@ -66,11 +185,87 @@
             font-weight: 400;
             padding: 0 8px;
         }
-        .fsnfcs__openbtn {
+        /*Cart Product*/
+        .ds__cart__product .ds__cart__prod__close {
+            height: 16px;
+            width: 16px;
+            font-size: 10px;
+            line-height: 16px;
+            left: -5px;
+            top: -5px;
+        }
+        .ds__cart__product {
+            gap: 5px;
+        }
+        .ds__cart__product .content {
+            width: 185px;
+        }
+        .ds__cart__product .image {
+            width: 60px;
+            height: 60px;
+        }
+        .ds__cart__product h3 {
+            border: none;
+            line-height: 18px;
+        }
+        .ds__cart__product h3 a {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .ds__cart__product h4 {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        /*Mobile Menu*/
+        .ds__mobilemenu__btn {
+            padding: 5px;
+            font-size: 12px;
+            line-height: 12px;
+        }
+        .ds__mobile__menu .ds__mblmenu__wrapper {
+            width: 255px;
+            padding: 20px 10px;
+        }
+        .ds__mobile__menu .ds__mblmenu__wrapper .ds__mblmenu__closebtn {
+            left: 257px;
+            height: 30px;
+            width: 30px;
+            line-height: 30px;
+            font-size: 14px;
+        }
+        .ds__mblmenu__tabs {
+            font-size: 14px;
+            line-height: 24px;
+        }
+        /*Header*/
+        .ds__header__section .dshs__wrapper {
+            padding: 10px 0;
+        }
+        .ds__header__section .dshs__wrapper .dshs__header__cta li a svg {
+            height: 16px;
+            width: 16px;
+        }
+        .ds__header__section .dshs__wrapper .dshs__header__cta li {
+            margin-right: 0;
+        }
+        .logo {
+            width: 120px;
+        }
+        /*Hero Section*/
+        .ds__hero__section .dshero__wrapper .content {
+            padding-top: 50px;
+            height: 500px;
+        }
+        .ds__hero__section .dshero__wrapper .content h2 {
+            font-size: 32px;
+            line-height: 42px;
+            margin-bottom: 20px;
+        }
+        .ds__hero__section .dshero__wrapper .content p {
             font-size: 16px;
-            line-height: 40px;
-            height: 40px;
-            width: 40px;
+            line-height: 22px;
+            width: 100%;
+            margin-bottom: 20px;
         }
 }
 
@@ -78,25 +273,13 @@
     .fsnfsp__product__description {
         margin-top: 40px;
     }
-    /*===== Home Page =====*/
-        /*Cart Slider*/
-        .ds__cart__slider .main__cart__area {
-            width: 350px;
-        }
-        .ds__cart__slider .ds__cart__closebtn {
-            right: 360px;
-        }
-        .fsnfcs__openbtn {
-            font-size: 16px;
-            line-height: 40px;
-            height: 40px;
-            width: 40px;
-        }
-}
-
-@media (min-width: 576px) and (max-width: 767px) {
-    .fsnfsp__product__description {
-        margin-top: 50px;
+    .ds__button__b {
+        font-size: 16px;
+        line-height: 16px;
+        padding: 7px 15px;
+    }
+    .ds__button__b::after {
+        font-size: 12px;
     }
     /*===== Home Page =====*/
         /*Cart Slider*/
@@ -105,6 +288,163 @@
         }
         .ds__cart__slider .ds__cart__closebtn {
             right: 360px;
+        }
+        /*Cart Product*/
+        .ds__cart__product {
+            gap: 5px;
+        }
+        .ds__cart__product .content {
+            width: 255px;
+        }
+        /*Mobile Menu*/
+        .ds__mobilemenu__btn {
+            padding: 5px 10px;
+        }
+        .ds__mobile__menu .ds__mblmenu__wrapper {
+            width: 350px;
+        }
+        .ds__mobile__menu .ds__mblmenu__wrapper .ds__mblmenu__closebtn {
+            left: 360px;
+        }
+        .ds__mblmenu__tabs {
+            font-size: 14px;
+            line-height: 24px;
+        }
+        /*Header*/
+        .ds__header__section .dshs__wrapper {
+            padding: 10px 0;
+        }
+        .ds__header__section .dshs__wrapper .dshs__header__cta li a svg {
+            height: 20px;
+            width: 20px;
+        }
+        .ds__header__section .dshs__wrapper .dshs__header__cta li {
+            margin-right: 0;
+        }
+        .logo {
+            width: 180px;
+        }
+        /*Hero Section*/
+        .ds__hero__section .dshero__wrapper .content {
+            padding-top: 50px;
+            height: 500px;
+        }
+        .ds__hero__section .dshero__wrapper .content h2 {
+            font-size: 32px;
+            line-height: 42px;
+            margin-bottom: 20px;
+        }
+        .ds__hero__section .dshero__wrapper .content p {
+            font-size: 16px;
+            line-height: 22px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .fsnfsp__product__description {
+        margin-top: 50px;
+    }
+    .ds__button__b {
+        font-size: 20px;
+        line-height: 20px;
+        padding: 10px 20px;
+    }
+    .ds__button__b::after {
+        font-size: 16px;
+    }
+    /*===== Home Page =====*/
+        /*Cart Slider*/
+        .ds__cart__slider .main__cart__area {
+            width: 350px;
+        }
+        .ds__cart__slider .ds__cart__closebtn {
+            right: 360px;
+        }
+        /*Mobile Menu*/
+        .ds__mobilemenu__btn {
+            padding: 10px;
+        }
+        .ds__mobile__menu .ds__mblmenu__wrapper {
+            width: 350px;
+        }
+        .ds__mobile__menu .ds__mblmenu__wrapper .ds__mblmenu__closebtn {
+            left: 360px;
+        }
+        .ds__mblmenu__tabs {
+            font-size: 14px;
+            line-height: 24px;
+        }
+        /*Header*/
+        .ds__header__section .dshs__wrapper .dshs__header__cta li a svg {
+            height: 26px;
+            width: 26px;
+        }
+        .ds__header__section .dshs__wrapper .dshs__header__cta li {
+            margin-right: 3px;
+        }
+        .logo {
+            width: 230px;
+        }
+        /*Hero Section*/
+        .ds__hero__section .dshero__wrapper .content {
+            height: 600px;
+        }
+        .ds__hero__section .dshero__wrapper .content h2 {
+            font-size: 44px;
+            line-height: 54px;
+            margin-bottom: 25px;
+        }
+        .ds__hero__section .dshero__wrapper .content p {
+            font-size: 20px;
+            line-height: 28px;
+            width: 84%;
+            margin-bottom: 30px;
+        }
+        /*Search Popup*/
+        .ds__search__popup .dssearch__wrapper form button {
+            width: 160px;
+            font-size: 16px;
+            line-height: 16px;
+            padding-right: 15px;
+        }
+        .ds__search__popup .dssearch__wrapper form .nice-select {
+            padding-left: 10px;
+            padding-right: 20px;
+            width: 200px;
+            margin-right: 10px;
+        }
+        .ds__search__popup .dssearch__wrapper form .nice-select::after {
+            right: 10px;
+        }
+        .ds__search__popup .dssearch__wrapper form button svg {
+            height: 18px;
+            width: 18px;
+        }
+        .ds__search__popup .dssearch__results .dsserach__item {
+            gap: 10px;
+            padding: 10px;
+        }
+        .ds__search__popup .dssearch__results .dsserach__item .image {
+            width: 100px;
+            height: 100px;
+        }
+        .ds__search__popup .dssearch__results .dsserach__item .content {
+            width: 386px;
+            gap: 10px;
+        }
+        .ds__search__popup .dssearch__results .dsserach__item .content .text a {
+            font-size: 20px;
+            line-height: 26px;
+        }
+        .ds__search__popup .dssearch__results .dsserach__item .content .text span {
+            font-size: 16px;
+            line-height: 26px;
+        }
+        .ds__search__popup .dssearch__results .dsserach__item .content .ctas a {
+            font-size: 14px;
+            line-height: 14px;
         }
 }
 
@@ -120,6 +460,71 @@
         .ds__cart__slider .ds__cart__closebtn {
             right: 360px;
         }
+        /*Mobile Menu*/
+        .ds__mobilemenu__btn {
+            padding: 10px;
+        }
+        .ds__mobile__menu .ds__mblmenu__wrapper {
+            width: 350px;
+        }
+        .ds__mobile__menu .ds__mblmenu__wrapper .ds__mblmenu__closebtn {
+            left: 360px;
+        }
+        .ds__mblmenu__tabs {
+            font-size: 14px;
+            line-height: 24px;
+        }
+        /*Hero Section*/
+        .ds__hero__section .dshero__wrapper .content {
+            height: 700px;
+        }
+        .ds__hero__section .dshero__wrapper .content h2 {
+            font-size: 54px;
+            margin-bottom: 30px;
+        }
+        .ds__hero__section .dshero__wrapper .content p {
+            font-size: 26px;
+            line-height: 36px;
+            width: 84%;
+            margin-bottom: 35px;
+        }
+        /*Search Popup*/
+        .ds__search__popup .dssearch__wrapper form button {
+            width: 200px;
+            font-size: 18px;
+            line-height: 18px;
+            padding-right: 20px;
+        }
+        .ds__search__popup .dssearch__wrapper form .nice-select {
+            padding-left: 15px;
+            padding-right: 30px;
+            width: 250px;
+            margin-right: 15px;
+        }
+        .ds__search__popup .dssearch__wrapper form button svg {
+            height: 24px;
+            width: 24px;
+        }
+        .ds__search__popup .dssearch__results .dsserach__item .image {
+            width: 100px;
+            height: 100px;
+        }
+        .ds__search__popup .dssearch__results .dsserach__item .content {
+            width: 551px;
+            gap: 10px;
+        }
+        .ds__search__popup .dssearch__results .dsserach__item .content .text a {
+            font-size: 30px;
+            line-height: 36px;
+        }
+        .ds__search__popup .dssearch__results .dsserach__item .content .text span {
+            font-size: 24px;
+            line-height: 36px;
+        }
+        .ds__search__popup .dssearch__results .dsserach__item .content .ctas a {
+            font-size: 16px;
+            line-height: 16px;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -134,6 +539,22 @@
         .ds__cart__slider .ds__cart__closebtn {
             right: 360px;
         }
+        /*Hero Section*/
+        .ds__hero__section .dshero__wrapper .content {
+            height: 800px;
+        }
+        .ds__hero__section .dshero__wrapper .content p {
+            font-size: 30px;
+            line-height: 38px;
+            width: 84%;
+        }
+        /*Search Popup*/
+        .ds__search__popup .dssearch__results .dsserach__item .content {
+            width: 761px;
+        }
+        .ds__search__popup .dssearch__results .dsserach__item .content .text span {
+            font-size: 34px;
+        }
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -141,6 +562,10 @@
         margin-top: 80px;
     }
     /*===== Home Page =====*/
+        /*Search Popup*/
+        .ds__search__popup .dssearch__results .dsserach__item .content {
+            width: 941px;
+        }
 }
 
 @media (min-width: 1400px) and (max-width: 1499px) {

@@ -301,7 +301,7 @@ button:focus {
 .cursor.hover::before {
     width: 30px;
     height: 30px;
-    background: rgba(255, 80, 71, 0.2);
+    background: rgba(95, 23, 6, 0.2);
 }
 
 @media (max-width: 991px) {
@@ -442,6 +442,15 @@ input[type="radio"]:checked::before {
    2. Home Page
 ==================================================================== */
 /*** Start of Header ***/
+.logo {
+    width: 280px;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
 .ds__header__section {
     position: absolute;
     top: 0;
@@ -462,6 +471,12 @@ input[type="radio"]:checked::before {
 .ds__header__section .dshs__wrapper .header__nav li {
     display: inline-block;
     position: relative;
+}
+
+@media (max-width: 991px) {
+    .ds__header__section .dshs__wrapper .header__nav {
+        display: none;
+    }
 }
 
 .ds__header__section .dshs__wrapper .header__nav li a {
@@ -529,6 +544,8 @@ input[type="radio"]:checked::before {
 .ds__header__section .dshs__wrapper .dshs__header__cta li a svg {
     stroke: #FFF;
     fill: #FFF;
+    height: 34px;
+    width: 34px;
     transition: 0.3s;
     -moz-transition: 0.3s;
     -webkit-transition: 0.3s;
@@ -770,7 +787,7 @@ input[type="radio"]:checked::before {
 	left: 0;
 	top: 0;
 	z-index: 10;
-	background: var(--secondary-color);
+	background: var(--text-color);
     cursor: pointer;
     transition: 0.3s;
     -moz-transition: 0.3s;
@@ -820,6 +837,374 @@ input[type="radio"]:checked::before {
         display: block;
     }
 }
+
+.ds__mobile__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 999999;
+    overflow: hidden;
+    transition: 1s;
+    -moz-transition: 1s;
+    -webkit-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.ds__mobile__menu.show {
+    width: 100vw;
+}
+
+.ds__mobile__menu .ds__mblmenu__wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 100vh;
+    background: #FFF;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.ds__mobile__menu .ds__mblmenu__wrapper .ds__mblmenu__closebtn {
+    position: absolute;
+    top: 10px;
+    left: calc(100% + 10px);
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    color: var(--text-color);
+    background: #FFF;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.ds__mobile__menu .ds__mblmenu__wrapper .ds__mblmenu__closebtn:hover {
+    background: var(--main-color);
+    color: #FFF;
+}
+
+.ds__mobile__menu .ds__mblmenu__wrapper .nav-pills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.ds__mobile__menu .ds__mblmenu__wrapper .nav-pills .nav-link.active,
+.ds__mobile__menu .ds__mblmenu__wrapper .nav-pills .show > .nav-link {
+    background: var(--main-color);
+    color: #FFF;
+    border-radius: 3px;
+}
+
+.ds__mobile__menu .ds__mblmenu__wrapper .nav-pills .nav-link {
+	color: var(--main-color);
+    border: 1px solid var(--main-color);
+    border-radius: 3px;
+}
+
+.ds__mblmenu__tabs {
+	height: 88vh;
+	overflow: auto;
+    color: var(--text-color);
+    font-size: 16px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 5px;
+    padding-right: 10px;
+}
+
+.ds__mblmenu__tabs .mobile__submenu a {
+    display: flex;
+    width: 100%;
+    padding: 3px 0;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+
+.ds__mblmenu__tabs .mobile__submenu a:hover {
+    color: var(--main-color);
+}
+
+.ds__mblmenu__tabs .l2__submenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    -moz-transition: max-height 0.3s ease-out;
+    -webkit-transition: max-height 0.3s ease-out;
+    -ms-transition: max-height 0.3s ease-out;
+    -o-transition: max-height 0.3s ease-out;
+    margin-left: 10px;
+}
+
+.ds__mblmenu__tabs .l2__submenu.show {
+    max-height: 500px;
+}
+
+.ds__mblmenu__tabs .l2__submenu a {
+    color: #555;
+}
+
+/** Search Popup **/
+.ds__search__popup {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 0;
+    width: 100vw;
+    background: rgba(238, 238, 238, 0.6);
+    z-index: 999999;
+    overflow: hidden;
+    transition: 1s;
+    -moz-transition: 1s;
+    -webkit-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.ds__search__popup.show {
+    height: 100vw;
+}
+
+.ds__search__popup .dssearch__wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 70vh;
+    background: var(--background-color);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    padding: 30px 0;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.ds__search__popup .ds__search__closebtn {
+    position: absolute;
+    top: 71vh;
+    right: 50%;
+    transform: translateX(-50%);
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    color: var(--text-color);
+    background: #FFF;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.ds__search__popup .ds__search__closebtn:hover{
+    background: var(--main-color);
+    color: #FFF;
+}
+
+.ds__search__popup .dssearch__wrapper form {
+    width: 100%;
+    height: 60px;
+    border-radius: 60px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    background: #FFF;
+}
+
+.ds__search__popup .dssearch__wrapper form .nice-select {
+	background-color: #FFF;
+	border-radius: 0;
+	border: none;
+	font-size: 18px;
+	font-weight: normal;
+	height: 100%;
+	line-height: 60px;
+	padding-left: 20px;
+	padding-right: 40px;
+	text-align: center !important;
+	width: 300px;
+	text-transform: capitalize;
+	font-weight: 600;
+    border-radius: 60px 0 0 60px;
+    border-right: 2px solid var(--text-color);
+    margin-right: 20px;
+}
+
+.ds__search__popup .dssearch__wrapper form .nice-select::after {
+	right: 20px;
+}
+
+.ds__search__popup .dssearch__wrapper form .nice-select .list {
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.ds__search__popup .dssearch__wrapper form .nice-select.open .list {
+	width: 100%;
+}
+
+.ds__search__popup .dssearch__wrapper form .nice-select .option {
+	line-height: 50px;
+	min-height: auto;
+	padding-left: 0;
+	padding-right: 0;
+	text-align: center;
+}
+
+.ds__search__popup .dssearch__wrapper form .nice-select .option:hover,
+.ds__search__popup .dssearch__wrapper form .nice-select .option.focus,
+.ds__search__popup .dssearch__wrapper form .nice-select .option.selected.focus {
+    color: #FFF;
+	background-color: var(--main-color);
+}
+
+.ds__search__popup .dssearch__wrapper form .nice-select .option.selected.focus {
+    color: #999;
+}
+
+.ds__search__popup .dssearch__wrapper form input {
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Urbanist', sans-serif;
+}
+
+.ds__search__popup .dssearch__wrapper form button {
+    height: 100%;
+    width: 250px;
+    background: var(--text-color);
+    color: #FFF;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 600;
+    font-family: 'Urbanist', sans-serif;
+    text-transform: capitalize;
+    padding-right: 20px;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    border-radius: 0 60px 60px 0;
+}
+
+.ds__search__popup .dssearch__wrapper form button svg {
+    stroke: #FFF;
+    fill: #FFF;
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+}
+
+.ds__search__popup .dssearch__wrapper form button:hover {
+    background: var(--main-color);
+}
+
+.ds__search__popup .dssearch__wrapper .horizontal__seperator {
+    margin: 30px 0;
+}
+
+.ds__search__popup .dssearch__wrapper .dssearch__results {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ds__search__popup .dssearch__wrapper .dssearch__results .result__text {
+    color: var(--text-color);
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 500;
+    font-family: 'Urbanist', sans-serif;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.ds__search__popup .dssearch__results .dsserach__item {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    background: #FFF;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.ds__search__popup .dssearch__results .dsserach__item .image {
+    width: 130px;
+    height: 130px;
+}
+
+.ds__search__popup .dssearch__results .dsserach__item .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.ds__search__popup .dssearch__results .dsserach__item .content {
+    width: 1121px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.ds__search__popup .dssearch__results .dsserach__item .content .text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ds__search__popup .dssearch__results .dsserach__item .content .text a,
+.ds__search__popup .dssearch__results .dsserach__item .content .text span {
+    color: var(--text-color);
+    font-size: 40px;
+    line-height: 46px;
+    font-weight: 500;
+    font-family: 'Urbanist', sans-serif;
+    margin: 0;
+    width: 89%;
+    text-transform: capitalize;
+}
+
+.ds__search__popup .dssearch__results .dsserach__item .content .text span {
+    width: 10%;
+}
+
+.ds__search__popup .dssearch__results .dsserach__item .content .ctas a {
+    color: var(--text-color);
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    font-family: 'Urbanist', sans-serif;
+    text-transform: capitalize;
+}
+
+.ds__search__popup .dssearch__results .dsserach__item .content .text a:hover,
+.ds__search__popup .dssearch__results .dsserach__item .content .ctas a:hover {
+    color: var(--main-color);
+}
 /*** End of Header ***/
 
 
@@ -827,14 +1212,16 @@ input[type="radio"]:checked::before {
 .ds__hero__section {
     width: 100%;
     position: relative;
+    overflow: hidden;
 }
 
-.ds__hero__section .bg__color {
+.ds__hero__section .bg__img {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
+    height: 100%;
 }
 
 .ds__hero__section .dshero__wrapper {
@@ -844,6 +1231,7 @@ input[type="radio"]:checked::before {
 }
 
 .ds__hero__section .dshero__wrapper .content {
+    padding-top: 100px;
 	height: 900px;
 	width: 100%;
 	display: flex;
@@ -875,7 +1263,10 @@ input[type="radio"]:checked::before {
 
 /*** End of Hero Section ***/
 
+
+
 /*
+rgba(95, 23, 6, 0.4)
 
     transition: 0.3s;
     -moz-transition: 0.3s;
