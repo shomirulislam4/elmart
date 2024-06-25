@@ -146,6 +146,12 @@
             width: 100%;
             margin-bottom: 10px;
         }
+        .ds__hero__section .dshero__info__color,
+        .ds__hero__section .dshero__wrapper .dshero__info__dots.dot1,
+        .ds__hero__section .dshero__wrapper .dshero__info__dots.dot2,
+        .ds__hero__section .dshero__wrapper .dshero__info__dots.dot3 {
+            display: none;
+        }
         /*Search Popup*/
         .ds__search__popup .dssearch__wrapper {
             padding: 20px 0;
@@ -320,7 +326,7 @@
         /*Hero Section*/
         .ds__hero__section .dshero__wrapper .content {
             padding-top: 50px;
-            height: 500px;
+            height: 450px;
         }
         .ds__hero__section .dshero__wrapper .content h2 {
             font-size: 32px;
@@ -332,6 +338,12 @@
             line-height: 22px;
             width: 100%;
             margin-bottom: 20px;
+        }
+        .ds__hero__section .dshero__info__color,
+        .ds__hero__section .dshero__wrapper .dshero__info__dots.dot1,
+        .ds__hero__section .dshero__wrapper .dshero__info__dots.dot2,
+        .ds__hero__section .dshero__wrapper .dshero__info__dots.dot3 {
+            display: none;
         }
         /*Search Popup*/
         .ds__search__popup .dssearch__wrapper {
@@ -470,6 +482,32 @@
             width: 100%;
             margin-bottom: 20px;
         }
+        .ds__hero__section .dshero__info__color .dshero__ic__dottype {
+            width: 39px;
+            height: 39px;
+        }
+        .ds__hero__section .dshero__info__color .dshero__ic__dottype::after {
+            width: 13px;
+            height: 13px;
+        }
+        .ds__hero__section .dshero__info__color {
+            bottom: 8%;
+            right: 2%;
+            gap: 15px;
+        }
+        .ds__hero__section .dshero__info__color .dshero__color__choose {
+            padding: 6px;
+            gap: 6px;
+        }
+        .ds__hero__section .dshero__info__color .dshero__color__choose .dshero__coloritem {
+            height: 18px;
+            width: 18px;
+        }
+        .ds__hero__section .dshero__wrapper .dshero__info__dots.dot1,
+        .ds__hero__section .dshero__wrapper .dshero__info__dots.dot2,
+        .ds__hero__section .dshero__wrapper .dshero__info__dots.dot3 {
+            display: none;
+        }
         /*Search Popup*/
         .ds__search__popup .dssearch__wrapper {
             padding: 20px 0;
@@ -565,7 +603,7 @@
         }
         /*Mobile Menu*/
         .ds__mobilemenu__btn {
-            padding: 10px;
+            padding: 8px;
         }
         .ds__mobile__menu .ds__mblmenu__wrapper {
             width: 350px;
@@ -578,30 +616,71 @@
             line-height: 24px;
         }
         /*Header*/
+        .logo {
+            width: 230px;
+        }
+        .ds__header__section .dshs__wrapper {
+            padding: 10px 0;
+        }
+        .ds__header__section .dshs__wrapper .dshs__header__cta li {
+            margin-right: 2px;
+        }
         .ds__header__section .dshs__wrapper .dshs__header__cta li a svg {
             height: 26px;
             width: 26px;
         }
-        .ds__header__section .dshs__wrapper .dshs__header__cta li {
-            margin-right: 3px;
-        }
-        .logo {
-            width: 230px;
-        }
         /*Hero Section*/
         .ds__hero__section .dshero__wrapper .content {
-            height: 600px;
+            height: 500px;
+            padding-top: 60px;
         }
         .ds__hero__section .dshero__wrapper .content h2 {
-            font-size: 44px;
-            line-height: 54px;
-            margin-bottom: 25px;
+            font-size: 36px;
+            line-height: 42px;
+            margin-bottom: 15px;
         }
         .ds__hero__section .dshero__wrapper .content p {
-            font-size: 20px;
-            line-height: 28px;
-            width: 84%;
-            margin-bottom: 30px;
+            font-size: 18px;
+            line-height: 24px;
+            width: 70%;
+            margin-bottom: 20px;
+        }
+        .ds__hero__section .bg__img {
+            left: 46%;
+        }
+        .ds__hero__section .dshero__wrapper .dshero__info__dots {
+            width: 29px;
+            height: 29px;
+        }
+        .ds__hero__section .dshero__wrapper .dshero__info__dots::after {
+            width: 9px;
+            height: 9px;
+        }
+        .ds__hero__section .dshero__info__color .dshero__ic__dottype {
+            width: 39px;
+            height: 39px;
+        }
+        .ds__hero__section .dshero__info__color .dshero__ic__dottype::after {
+            width: 13px;
+            height: 13px;
+        }
+        .ds__hero__section .dshero__info__color {
+            bottom: 6%;
+            right: 12%;
+            gap: 20px;
+        }
+        .ds__hero__section .dshero__info__color .dshero__color__choose {
+            padding: 6px;
+            gap: 6px;
+        }
+        .ds__hero__section .dshero__info__color .dshero__color__choose .dshero__coloritem {
+            height: 18px;
+            width: 18px;
+        }
+        .ds__hero__section .dshero__wrapper .dshero__info__dots.dot1,
+        .ds__hero__section .dshero__wrapper .dshero__info__dots.dot2,
+        .ds__hero__section .dshero__wrapper .dshero__info__dots.dot3 {
+            display: none;
         }
         /*Search Popup*/
         .ds__search__popup .dssearch__wrapper form button {
@@ -653,7 +732,28 @@
     .fsnfsp__product__description {
         margin-top: 60px;
     }
+    .ds__button__b {
+        font-size: 18px;
+        line-height: 18px;
+    }
+    .ds__button__b::after {
+        font-size: 16px;
+    }
     /*===== Home Page =====*/
+        /*Header*/
+        .ds__header__section .dshs__wrapper {
+            padding: 10px 0;
+        }
+        .logo {
+            width: 250px;
+        }
+        .ds__header__section .dshs__wrapper .dshs__header__cta li {
+            margin-right: 2px;
+        }
+        .ds__header__section .dshs__wrapper .dshs__header__cta li a svg {
+            height: 30px;
+            width: 30px;
+        }
         /*Cart Slider*/
         .ds__cart__slider .main__cart__area {
             width: 350px;
@@ -663,7 +763,7 @@
         }
         /*Mobile Menu*/
         .ds__mobilemenu__btn {
-            padding: 10px;
+            padding: 8px;
         }
         .ds__mobile__menu .ds__mblmenu__wrapper {
             width: 350px;
@@ -677,17 +777,61 @@
         }
         /*Hero Section*/
         .ds__hero__section .dshero__wrapper .content {
-            height: 700px;
+            height: 500px;
+            padding-top: 60px;
         }
         .ds__hero__section .dshero__wrapper .content h2 {
-            font-size: 54px;
-            margin-bottom: 30px;
+            font-size: 36px;
+            line-height: 42px;
+            margin-bottom: 15px;
         }
         .ds__hero__section .dshero__wrapper .content p {
-            font-size: 26px;
-            line-height: 36px;
-            width: 84%;
-            margin-bottom: 35px;
+            font-size: 18px;
+            line-height: 24px;
+            width: 70%;
+            margin-bottom: 20px;
+        }
+        .ds__hero__section .bg__img {
+            left: 46%;
+        }
+        .ds__hero__section .dshero__wrapper .dshero__info__dots {
+            width: 29px;
+            height: 29px;
+        }
+        .ds__hero__section .dshero__wrapper .dshero__info__dots::after {
+            width: 9px;
+            height: 9px;
+        }
+        .ds__hero__section .dshero__info__color .dshero__ic__dottype {
+            width: 39px;
+            height: 39px;
+        }
+        .ds__hero__section .dshero__info__color .dshero__ic__dottype::after {
+            width: 13px;
+            height: 13px;
+        }
+        .ds__hero__section .dshero__info__color {
+            bottom: 6%;
+            right: 12%;
+            gap: 20px;
+        }
+        .ds__hero__section .dshero__info__color .dshero__color__choose {
+            padding: 6px;
+            gap: 6px;
+        }
+        .ds__hero__section .dshero__info__color .dshero__color__choose .dshero__coloritem {
+            height: 18px;
+            width: 18px;
+        }
+        .ds__hero__section .dshero__wrapper .dshero__info__dots.dot1 {
+            left: 0.5%;
+        }
+        .ds__hero__section .dshero__wrapper .dshero__info__dots.dot2 {
+            right: 2.6%;
+        }
+        .ds__hero__section .dshero__wrapper .dshero__info__dots.dot3 {
+            bottom: 26%;
+            right: 0.3%;
         }
         /*Search Popup*/
         .ds__search__popup .dssearch__wrapper form button {
@@ -732,7 +876,23 @@
     .fsnfsp__product__description {
         margin-top: 70px;
     }
+    .ds__button__b {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .ds__button__b::after {
+        font-size: 18px;
+    }
     /*===== Home Page =====*/
+        /*Header*/
+        .ds__header__section .dshs__wrapper .header__nav li a {
+            font-size: 20px;
+            line-height: 20px;
+        }
+        .ds__header__section .dshs__wrapper .dshs__header__cta li a svg {
+            height: 30px;
+            width: 30px;
+        }
         /*Cart Slider*/
         .ds__cart__slider .main__cart__area {
             width: 350px;
@@ -742,12 +902,57 @@
         }
         /*Hero Section*/
         .ds__hero__section .dshero__wrapper .content {
-            height: 800px;
+            height: 600px;
+        }
+        .ds__hero__section .dshero__wrapper .content h2 {
+            font-size: 46px;
+            line-height: 56px;
+            margin-bottom: 20px;
         }
         .ds__hero__section .dshero__wrapper .content p {
-            font-size: 30px;
-            line-height: 38px;
-            width: 84%;
+            font-size: 22px;
+            line-height: 28px;
+            width: 70%;
+            margin-bottom: 25px;
+        }
+        .ds__hero__section .bg__img {
+            left: 46%;
+        }
+        .ds__hero__section .dshero__wrapper .dshero__info__dots {
+            width: 29px;
+            height: 29px;
+        }
+        .ds__hero__section .dshero__wrapper .dshero__info__dots::after {
+            width: 9px;
+            height: 9px;
+        }
+        .ds__hero__section .dshero__info__color .dshero__ic__dottype {
+            width: 39px;
+            height: 39px;
+        }
+        .ds__hero__section .dshero__info__color .dshero__ic__dottype::after {
+            width: 13px;
+            height: 13px;
+        }
+        .ds__hero__section .dshero__info__color {
+            gap: 20px;
+        }
+        .ds__hero__section .dshero__info__color .dshero__color__choose {
+            padding: 6px;
+            gap: 6px;
+        }
+        .ds__hero__section .dshero__info__color .dshero__color__choose .dshero__coloritem {
+            height: 18px;
+            width: 18px;
+        }
+        .ds__hero__section .dshero__wrapper .dshero__info__dots.dot1 {
+            left: 2.5%;
+        }
+        .ds__hero__section .dshero__wrapper .dshero__info__dots.dot2 {
+            right: 6.6%;
+        }
+        .ds__hero__section .dshero__wrapper .dshero__info__dots.dot3 {
+            right: 1.3%;
         }
         /*Search Popup*/
         .ds__search__popup .dssearch__results .dsserach__item .content {
@@ -767,6 +972,37 @@
         .ds__search__popup .dssearch__results .dsserach__item .content {
             width: 941px;
         }
+        /*Hero Section*/
+        .ds__hero__section .dshero__wrapper .content {
+            height: 700px;
+        }
+        .ds__hero__section .bg__img {
+            left: 45%;
+        }
+        .ds__hero__section .dshero__wrapper .content h2 {
+            font-size: 56px;
+            line-height: 64px;
+            margin-bottom: 32px;
+        }
+        .ds__hero__section .dshero__wrapper .content p {
+            font-size: 30px;
+            line-height: 36px;
+            margin-bottom: 35px;
+        }
+        .ds__hero__section .dshero__wrapper .dshero__info__dots.dot1 {
+            bottom: 18%;
+            left: 3%;
+        }
+        .ds__hero__section .dshero__wrapper .dshero__info__dots.dot2 {
+            right: 9%;
+        }
+        .ds__hero__section .dshero__wrapper .dshero__info__dots.dot3 {
+            right: 1.3%;
+        }
+        .ds__hero__section .dshero__info__color {
+            bottom: 10%;
+            right: 19%;
+        }
 }
 
 @media (min-width: 1400px) and (max-width: 1499px) {
@@ -774,16 +1010,78 @@
         margin-top: 80px;
     }
     /*===== Home Page =====*/
+        /*Hero Section*/
+        .ds__hero__section .dshero__wrapper .content {
+            height: 800px;
+        }
+        .ds__hero__section .dshero__wrapper .dshero__info__dots.dot1 {
+            left: 10%;
+        }
+        .ds__hero__section .dshero__wrapper .dshero__info__dots.dot2 {
+            right: 5.2%;
+        }
+        .ds__hero__section .dshero__wrapper .dshero__info__dots.dot3 {
+            right: 1.3%;
+        }
+        .ds__hero__section .dshero__info__color {
+            bottom: 10%;
+            right: 19%;
+        }
 }
 
 @media (min-width: 1500px) and (max-width: 1599px) {
     /*===== Home Page =====*/
+        /*Hero Section*/
+        .ds__hero__section .dshero__wrapper .content {
+            height: 800px;
+        }
+        .ds__hero__section .dshero__wrapper .dshero__info__dots.dot1 {
+            left: 12%;
+        }
+        .ds__hero__section .dshero__wrapper .dshero__info__dots.dot2 {
+            right: 8.3%;
+        }
+        .ds__hero__section .dshero__wrapper .dshero__info__dots.dot3 {
+            right: 1.3%;
+        }
+        .ds__hero__section .dshero__info__color {
+            bottom: 10%;
+            right: 20%;
+        }
 }
 
 @media (min-width: 1600px) and (max-width: 1699px) {
     /*===== Home Page =====*/
+        /*Hero Section*/
+        .ds__hero__section .dshero__wrapper .dshero__info__dots.dot1 {
+            left: 10%;
+        }
+        .ds__hero__section .dshero__wrapper .dshero__info__dots.dot2 {
+            right: 6%;
+        }
+        .ds__hero__section .dshero__wrapper .dshero__info__dots.dot3 {
+            right: 1.3%;
+        }
+        .ds__hero__section .dshero__info__color {
+            bottom: 10%;
+            right: 19%;
+        }
 }
 
 @media (min-width: 1700px) and (max-width: 1799px) {
     /*===== Home Page =====*/
+        /*Hero Section*/
+        .ds__hero__section .dshero__wrapper .dshero__info__dots.dot1 {
+            left: 12%;
+        }
+        .ds__hero__section .dshero__wrapper .dshero__info__dots.dot2 {
+            right: 8.6%;
+        }
+        .ds__hero__section .dshero__wrapper .dshero__info__dots.dot3 {
+            right: 3.3%;
+        }
+        .ds__hero__section .dshero__info__color {
+            bottom: 10%;
+            right: 21%;
+        }
 }
