@@ -980,7 +980,7 @@ input[type="radio"]:checked::before {
 }
 
 .ds__search__popup.show {
-    height: 100vw;
+	height: 100vh;
 }
 
 .ds__search__popup .dssearch__wrapper {
@@ -1004,7 +1004,7 @@ input[type="radio"]:checked::before {
 .ds__search__popup .ds__search__closebtn {
     position: absolute;
     top: 71vh;
-    right: 50%;
+    left: 50%;
     transform: translateX(-50%);
     height: 40px;
     width: 40px;
@@ -1199,6 +1199,7 @@ input[type="radio"]:checked::before {
     font-weight: 400;
     font-family: 'Urbanist', sans-serif;
     text-transform: capitalize;
+    display: block;
 }
 
 .ds__search__popup .dssearch__results .dsserach__item .content .text a:hover,

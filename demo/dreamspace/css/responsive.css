@@ -146,6 +146,72 @@
             width: 100%;
             margin-bottom: 10px;
         }
+        /*Search Popup*/
+        .ds__search__popup .dssearch__wrapper {
+            padding: 20px 0;
+            gap: 10px;
+        }
+        .ds__search__popup .dssearch__wrapper form {
+            height: 40px;
+        }
+        .ds__search__popup .dssearch__wrapper form .nice-select {
+            display: none;
+        }
+        .ds__search__popup .dssearch__wrapper form input {
+            font-size: 12px;
+            border-radius: 50px 0 0 50px;
+            padding-left: 15px;
+        }
+        .ds__search__popup .dssearch__wrapper form button {
+            width: 37px;
+            font-size: 8px;
+            line-height: 14px;
+            padding-right: 10px;
+            text-align: center;
+        }
+        .ds__search__popup .dssearch__wrapper form button svg {
+            height: 14px;
+            width: 14px;
+            margin: 0;
+        }
+        .ds__search__popup .dssearch__wrapper .horizontal__seperator {
+            margin: 20px 0;
+        }
+        .ds__search__popup .dssearch__wrapper .dssearch__results {
+            gap: 10px;
+        }
+        .ds__search__popup .dssearch__wrapper .dssearch__results .result__text {
+            font-size: 12px;
+            line-height: 22px;
+        }
+        .ds__search__popup .dssearch__results .dsserach__item {
+            gap: 10px;
+            padding: 10px;
+            flex-direction: column;
+        }
+        .ds__search__popup .dssearch__results .dsserach__item .image {
+            width: 110px;
+            height: 110px;
+        }
+        .ds__search__popup .dssearch__results .dsserach__item .content {
+            width: 100%;
+            gap: 10px;
+        }
+        .ds__search__popup .dssearch__results .dsserach__item .content .text a {
+            font-size: 12px;
+            line-height: 20px;
+            width: 84%;
+        }
+        .ds__search__popup .dssearch__results .dsserach__item .content .text span {
+            font-size: 12px;
+            line-height: 22px;
+            width: 15%;
+        }
+        .ds__search__popup .dssearch__results .dsserach__item .content .ctas a {
+            font-size: 12px;
+            line-height: 12px;
+            text-align: center;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
@@ -267,6 +333,70 @@
             width: 100%;
             margin-bottom: 20px;
         }
+        /*Search Popup*/
+        .ds__search__popup .dssearch__wrapper {
+            padding: 20px 0;
+            gap: 10px;
+        }
+        .ds__search__popup .dssearch__wrapper form {
+            height: 50px;
+        }
+        .ds__search__popup .dssearch__wrapper form .nice-select {
+            display: none;
+        }
+        .ds__search__popup .dssearch__wrapper form input {
+            font-size: 14px;
+            border-radius: 50px 0 0 50px;
+            padding-left: 15px;
+        }
+        .ds__search__popup .dssearch__wrapper form button {
+            width: 120px;
+            font-size: 12px;
+            line-height: 12px;
+            padding-right: 10px;
+        }
+        .ds__search__popup .dssearch__wrapper form button svg {
+            height: 14px;
+            width: 14px;
+        }
+        .ds__search__popup .dssearch__wrapper .horizontal__seperator {
+            margin: 20px 0;
+        }
+        .ds__search__popup .dssearch__wrapper .dssearch__results {
+            gap: 10px;
+        }
+        .ds__search__popup .dssearch__wrapper .dssearch__results .result__text {
+            font-size: 16px;
+            line-height: 22px;
+        }
+        .ds__search__popup .dssearch__results .dsserach__item {
+            gap: 10px;
+            padding: 10px;
+            flex-direction: column;
+        }
+        .ds__search__popup .dssearch__results .dsserach__item .image {
+            width: 110px;
+            height: 110px;
+        }
+        .ds__search__popup .dssearch__results .dsserach__item .content {
+            width: 100%;
+            gap: 10px;
+        }
+        .ds__search__popup .dssearch__results .dsserach__item .content .text a {
+            font-size: 16px;
+            line-height: 22px;
+            width: 84%;
+        }
+        .ds__search__popup .dssearch__results .dsserach__item .content .text span {
+            font-size: 16px;
+            line-height: 26px;
+            width: 15%;
+        }
+        .ds__search__popup .dssearch__results .dsserach__item .content .ctas a {
+            font-size: 14px;
+            line-height: 14px;
+            text-align: center;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -339,6 +469,77 @@
             line-height: 22px;
             width: 100%;
             margin-bottom: 20px;
+        }
+        /*Search Popup*/
+        .ds__search__popup .dssearch__wrapper {
+            padding: 20px 0;
+            gap: 10px;
+        }
+        .ds__search__popup .dssearch__wrapper form {
+            height: 50px;
+        }
+        .ds__search__popup .dssearch__wrapper form .nice-select {
+            line-height: 50px;
+            padding-left: 5px;
+            padding-right: 10px;
+            width: 150px;
+            margin-right: 5px;
+            font-size: 14px;
+        }
+        .ds__search__popup .dssearch__wrapper form .nice-select::after {
+            right: 10px;
+        }
+        .ds__search__popup .dssearch__wrapper form .nice-select .option {
+            line-height: 40px;
+            font-size: 14px;
+        }
+        .ds__search__popup .dssearch__wrapper form input {
+            font-size: 14px;
+        }
+        .ds__search__popup .dssearch__wrapper form button {
+            width: 120px;
+            font-size: 12px;
+            line-height: 12px;
+            padding-right: 10px;
+        }
+        .ds__search__popup .dssearch__wrapper form button svg {
+            height: 14px;
+            width: 14px;
+        }
+        .ds__search__popup .dssearch__wrapper .horizontal__seperator {
+            margin: 20px 0;
+        }
+        .ds__search__popup .dssearch__wrapper .dssearch__results {
+            gap: 10px;
+        }
+        .ds__search__popup .dssearch__wrapper .dssearch__results .result__text {
+            font-size: 16px;
+            line-height: 22px;
+        }
+        .ds__search__popup .dssearch__results .dsserach__item {
+            gap: 10px;
+            padding: 10px;
+            flex-direction: column;
+        }
+        .ds__search__popup .dssearch__results .dsserach__item .image {
+            width: 110px;
+            height: 110px;
+        }
+        .ds__search__popup .dssearch__results .dsserach__item .content {
+            width: 100%;
+            gap: 10px;
+        }
+        .ds__search__popup .dssearch__results .dsserach__item .content .text a {
+            font-size: 20px;
+            line-height: 26px;
+        }
+        .ds__search__popup .dssearch__results .dsserach__item .content .text span {
+            font-size: 16px;
+            line-height: 26px;
+        }
+        .ds__search__popup .dssearch__results .dsserach__item .content .ctas a {
+            font-size: 14px;
+            line-height: 14px;
         }
 }
 
