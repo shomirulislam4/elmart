@@ -135,9 +135,67 @@
             slidesPerView: 4,
             spaceBetween: 27,
             navigation: {
-            nextEl: '.dscs__wsbtn__next',
-            prevEl: '.dscs__wsbtn__prev',
+                nextEl: '.dscs__wsbtn__next',
+                prevEl: '.dscs__wsbtn__prev',
             },
+            breakpoints: {
+                1400: {
+                    spaceBetween: 27,
+                },
+                1200: {
+                    slidesPerView: 4,
+                    spaceBetween: 15,
+                },
+                992: {
+                    slidesPerView: 3,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                576: {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                },
+                0: {
+                    slidesPerView: 1,
+                }
+            }
+        });
+    });
+
+    //New Arrivals Slider
+    $(function(){
+        var swiper = new Swiper('.dsnas__wrapper__slider', {
+            loop: true,
+            slidesPerView: 4,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: '.dsnas__sldrbtn__next',
+                prevEl: '.dsnas__sldrbtn__prev',
+            },
+            breakpoints: {
+                1400: {
+                    spaceBetween: 30,
+                },
+                1200: {
+                    slidesPerView: 4,
+                    spaceBetween: 15,
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                768: {
+                    slidesPerView: 3,
+                },
+                576: {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                },
+                0: {
+                    slidesPerView: 1,
+                }
+            }
         });
     });
 

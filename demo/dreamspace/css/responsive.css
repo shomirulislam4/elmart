@@ -1,5 +1,5 @@
 @media (max-width: 289px) {
-    .fsnfsp__product__description {
+    .ds__categories__section {
         margin-top: 30px;
     }
     .ds__button__b {
@@ -218,10 +218,85 @@
             line-height: 12px;
             text-align: center;
         }
+        /*Category Section*/
+        .ds__categories__section .dscs__wrapper__slider .swiper-slide .content h2 {
+            font-size: 30px;
+            line-height: 30px;
+        }
+        .ds__categories__section .dscs__wrapper__slider .swiper-slide {
+            height: 114px;
+        }
+        /*Section Tiltle & Navigation*/
+        .dscs__titlenav {
+            padding: 0 5px;
+            margin-bottom: 15px;
+        }
+        .dscs__titlenav .dscs__title h2 {
+            font-size: 24px;
+            line-height: 32px;
+        }
+        .dscs__titlenav .dscs__nav {
+            gap: 5px;
+        }
+        .dscs__titlenav .dscs__nav .ds__navbtns {
+            height: 34px;
+            width: 34px;
+        }
+        .dscs__titlenav .dscs__nav .ds__navbtns svg {
+            height: 16px;
+            width: 16px;
+        }
+        .dscs__wrapper__slider {
+            padding: 0 5px;
+        }
+        /*New Arrivals Section*/
+        .dsnas__wrapper__slider .swiper-slide {
+            display: flex;
+            justify-content: center;
+        }
+        /*Product Style*/
+        .ds__product__style {
+            width: 200px;
+            height: 300px;
+            border-radius: 10px;
+        }
+        .ds__product__style .dsps__content__wrapper .dsps__ctabtns {
+            top: 0;
+            left: 0;
+            gap: 8px;
+        }
+        .ds__product__style .dsps__content__wrapper .dsps__info {
+            padding: 5px;
+            gap: 5px;
+        }
+        .ds__product__style .dsps__content__wrapper .dsps__info .rating__area {
+            margin-bottom: 2px;
+        }
+        .ds__product__style .dsps__content__wrapper .dsps__ctabtns a:first-child img {
+            height: 40px;
+            width: 40px;
+        }
+        .ds__product__style .dsps__content__wrapper .dsps__ctabtns a img {
+            height: 30px;
+            width: 30px;
+        }
+        .ds__product__style .dsps__content__wrapper .dsps__ctabtns a::after {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .ds__product__style .dsps__content__wrapper .dsps__info .dspds__title,
+        .ds__product__style .dsps__content__wrapper .dsps__info .dsps__price {
+            font-size: 24px;
+            line-height: 30px;
+        }
+        .ds__product__style .dsps__content__wrapper .dsps__info .dsps__desc {
+            font-size: 10px;
+            line-height: 14px;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
-    .fsnfsp__product__description {
+    .ds__categories__section {
         margin-top: 30px;
     }
     .ds__button__b {
@@ -409,10 +484,51 @@
             line-height: 14px;
             text-align: center;
         }
+        /*Category Section*/
+        .ds__categories__section .dscs__wrapper__slider .swiper-slide .content h2 {
+            font-size: 40px;
+            line-height: 40px;
+        }
+        .ds__categories__section .dscs__wrapper__slider .swiper-slide {
+            height: 168px;
+        }
+        /*Section Tiltle & Navigation*/
+        .dscs__titlenav {
+            padding: 0 5px;
+            margin-bottom: 15px;
+        }
+        .dscs__titlenav .dscs__title h2 {
+            font-size: 24px;
+            line-height: 32px;
+        }
+        .dscs__titlenav .dscs__nav {
+            gap: 5px;
+        }
+        .dscs__titlenav .dscs__nav .ds__navbtns {
+            height: 34px;
+            width: 34px;
+        }
+        .dscs__titlenav .dscs__nav .ds__navbtns svg {
+            height: 16px;
+            width: 16px;
+        }
+        .dscs__wrapper__slider {
+            padding: 0 5px;
+        }
+        /*New Arrivals Section*/
+        .dsnas__wrapper__slider .swiper-slide {
+            display: flex;
+            justify-content: center;
+        }
+        /*Product Style*/
+        .ds__product__style {
+            width: 274px;
+            height: 370px;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
-    .fsnfsp__product__description {
+    .ds__categories__section {
         margin-top: 40px;
     }
     .ds__button__b {
@@ -579,10 +695,46 @@
             font-size: 14px;
             line-height: 14px;
         }
+        /*Category Section*/
+        .ds__categories__section .dscs__wrapper__slider .swiper-slide .content h2 {
+            font-size: 40px;
+            line-height: 40px;
+        }
+        .ds__categories__section .dscs__wrapper__slider .swiper-slide {
+            height: 238px;
+        }
+        /*Section Tiltle & Navigation*/
+        .dscs__titlenav {
+            padding: 0 10px;
+            margin-bottom: 20px;
+        }
+        .dscs__titlenav .dscs__title h2 {
+            font-size: 30px;
+            line-height: 36px;
+        }
+        .dscs__titlenav .dscs__nav {
+            gap: 10px;
+        }
+        .dscs__titlenav .dscs__nav .ds__navbtns {
+            height: 46px;
+            width: 46px;
+        }
+        .dscs__titlenav .dscs__nav .ds__navbtns svg {
+            height: 24px;
+            width: 24px;
+        }
+        .dscs__wrapper__slider {
+            padding: 0 10px;
+        }
+        /*New Arrivals Section*/
+        .dsnas__wrapper__slider .swiper-slide {
+            display: flex;
+            justify-content: center;
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-    .fsnfsp__product__description {
+    .ds__categories__section {
         margin-top: 50px;
     }
     .ds__button__b {
@@ -726,10 +878,51 @@
             font-size: 14px;
             line-height: 14px;
         }
+        /*Category Section*/
+        .ds__categories__section .dscs__wrapper__slider .swiper-slide .content h2 {
+            font-size: 46px;
+            line-height: 46px;
+        }
+        .ds__categories__section .dscs__wrapper__slider .swiper-slide {
+            height: 158px;
+        }
+        /*Section Tiltle & Navigation*/
+        .dscs__titlenav .dscs__title h2 {
+            font-size: 36px;
+            line-height: 42px;
+        }
+        .dscs__titlenav .dscs__nav {
+            gap: 20px;
+        }
+        .dscs__titlenav .dscs__nav .ds__navbtns {
+            height: 46px;
+            width: 46px;
+        }
+        .dscs__titlenav .dscs__nav .ds__navbtns svg {
+            height: 24px;
+            width: 24px;
+        }
+        /*Product Style*/
+        .ds__product__style {
+            width: 265px;
+            height: 360px;
+        }
+        .ds__product__style .dsps__content__wrapper .dsps__ctabtns {
+            top: 5px;
+            left: 5px;
+            gap: 8px;
+        }
+        .ds__product__style .dsps__content__wrapper .dsps__info {
+            padding: 13px;
+            gap: 5px;
+        }
+        .ds__product__style .dsps__content__wrapper .dsps__info .rating__area {
+            margin-bottom: 6px;
+        }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .fsnfsp__product__description {
+    .ds__categories__section {
         margin-top: 60px;
     }
     .ds__button__b {
@@ -870,10 +1063,64 @@
             font-size: 16px;
             line-height: 16px;
         }
+        /*Category Section*/
+        .ds__categories__section .dscs__wrapper__slider .swiper-slide .content h2 {
+            font-size: 52px;
+            line-height: 52px;
+        }
+        /*Section Tiltle & Navigation*/
+        .dscs__titlenav {
+            margin-bottom: 24px;
+        }
+        .dscs__titlenav .dscs__title h2 {
+            font-size: 36px;
+            line-height: 42px;
+        }
+        .dscs__titlenav .dscs__nav {
+            gap: 20px;
+        }
+        .dscs__titlenav .dscs__nav .ds__navbtns {
+            height: 54px;
+            width: 54px;
+        }
+        .dscs__titlenav .dscs__nav .ds__navbtns svg {
+            height: 30px;
+            width: 30px;
+        }
+        /*Product Style*/
+        .ds__product__style {
+            width: 233px;
+            height: 330px;
+            border-radius: 10px;
+        }
+        .ds__product__style .dsps__content__wrapper .dsps__ctabtns {
+            top: 3px;
+            left: 3px;
+            gap: 8px;
+        }
+        .ds__product__style .dsps__content__wrapper .dsps__info {
+            padding: 10px;
+            gap: 5px;
+        }
+        .ds__product__style .dsps__content__wrapper .dsps__info .rating__area {
+            margin-bottom: 8px;
+        }
+        .ds__product__style .dsps__content__wrapper .dsps__ctabtns a:first-child img {
+            height: 44px;
+            width: 44px;
+        }
+        .ds__product__style .dsps__content__wrapper .dsps__ctabtns a img {
+            height: 34px;
+            width: 34px;
+        }
+        .ds__product__style .dsps__content__wrapper .dsps__ctabtns a::after {
+            font-size: 16px;
+            line-height: 16px;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-    .fsnfsp__product__description {
+    .ds__categories__section {
         margin-top: 70px;
     }
     .ds__button__b {
@@ -961,10 +1208,24 @@
         .ds__search__popup .dssearch__results .dsserach__item .content .text span {
             font-size: 34px;
         }
+        /*Category Section*/
+        .ds__categories__section .dscs__wrapper__slider .swiper-slide .content h2 {
+            font-size: 52px;
+            line-height: 52px;
+        }
+        /*Section Tiltle & Navigation*/
+        .dscs__titlenav .dscs__title h2 {
+            font-size: 40px;
+            line-height: 46px;
+        }
+        .dscs__titlenav .dscs__nav .ds__navbtns {
+            height: 62px;
+            width: 62px;
+        }
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
-    .fsnfsp__product__description {
+    .ds__categories__section {
         margin-top: 80px;
     }
     /*===== Home Page =====*/
@@ -1003,10 +1264,23 @@
             bottom: 10%;
             right: 19%;
         }
+        /*Category Section*/
+        .ds__categories__section .dscs__wrapper__slider .swiper-slide .content h2 {
+            font-size: 52px;
+            line-height: 52px;
+        }
+        .ds__categories__section .dscs__wrapper__slider .swiper-slide {
+            height: 164px;
+        }
+        /*Product Style*/
+        .ds__product__style {
+            width: 274px;
+            height: 370px;
+        }
 }
 
 @media (min-width: 1400px) and (max-width: 1499px) {
-    .fsnfsp__product__description {
+    .ds__categories__section {
         margin-top: 80px;
     }
     /*===== Home Page =====*/
