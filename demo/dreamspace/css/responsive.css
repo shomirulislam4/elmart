@@ -1,6 +1,8 @@
 @media (max-width: 289px) {
     .ds__categories__section,
-    .ds__newarrivals__section {
+    .ds__newarrivals__section,
+    .ds__faqs__section,
+    .ds__week__highlights__section {
         margin-top: 30px;
     }
     .ds__button__b {
@@ -294,11 +296,62 @@
             font-size: 10px;
             line-height: 14px;
         }
+        /*FAQs Section*/
+        .dsfaq__content .dsfaq__items__list .item .image svg {
+            height: 40px;
+            width: 40px;
+        }
+        .dsfaq__content .dsfaq__items__list .item {
+            gap: 10px;
+            padding: 10px 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .dsfaq__content .dsfaq__items__list .item .text h4 {
+            font-size: 16px;
+            line-height: 22px;
+            margin-bottom: 2px;
+            text-align: center;
+        }
+        .dsfaq__content .dsfaq__items__list .item .text p {
+            font-size: 10px;
+            line-height: 16px;
+            text-align: center;
+        }
+        .dsfaq__image {
+            width: 100%;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .dsfaq__image img {
+            width: auto;
+            height: 100%;
+        }
+        /*Highlights of the Week*/
+        .dswhl__wrapper {
+            gap: 10px;
+        }
+        .dswhl__wrapper a {
+            width: 100%;
+            height: 130px;
+        }
+        .dswhl__wrapper a img {
+            width: 100%;
+            height: 100%;
+        }
+        .dswhl__wrapper a .text h2 {
+            font-size: 20px;
+            line-height: 28px;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
     .ds__categories__section,
-    .ds__newarrivals__section {
+    .ds__newarrivals__section,
+    .ds__faqs__section,
+    .ds__week__highlights__section {
         margin-top: 30px;
     }
     .ds__button__b {
@@ -527,11 +580,58 @@
             width: 274px;
             height: 370px;
         }
+        /*FAQs Section*/
+        .dsfaq__content .dsfaq__items__list .item .image svg {
+            height: 34px;
+            width: 34px;
+        }
+        .dsfaq__content .dsfaq__items__list .item {
+            gap: 10px;
+            padding: 10px 0;
+        }
+        .dsfaq__content .dsfaq__items__list .item .text h4 {
+            font-size: 16px;
+            line-height: 22px;
+            margin-bottom: 2px;
+        }
+        .dsfaq__content .dsfaq__items__list .item .text p {
+            font-size: 10px;
+            line-height: 16px;
+        }
+        .dsfaq__image {
+            width: 100%;
+            height: 380px;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .dsfaq__image img {
+            width: auto;
+            height: 100%;
+        }
+        /*Highlights of the Week*/
+        .dswhl__wrapper {
+            gap: 10px;
+        }
+        .dswhl__wrapper a {
+            width: 100%;
+            height: 200px;
+        }
+        .dswhl__wrapper a img {
+            width: 100%;
+            height: 100%;
+        }
+        .dswhl__wrapper a .text h2 {
+            font-size: 30px;
+            line-height: 38px;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
     .ds__categories__section,
-    .ds__newarrivals__section {
+    .ds__newarrivals__section,
+    .ds__faqs__section,
+    .ds__week__highlights__section {
         margin-top: 40px;
     }
     .ds__button__b {
@@ -734,11 +834,58 @@
             display: flex;
             justify-content: center;
         }
+        /*FAQs Section*/
+        .dsfaq__content .dsfaq__items__list .item .image svg {
+            height: 40px;
+            width: 40px;
+        }
+        .dsfaq__content .dsfaq__items__list .item {
+            gap: 10px;
+            padding: 14px 0;
+        }
+        .dsfaq__content .dsfaq__items__list .item .text h4 {
+            font-size: 20px;
+            line-height: 28px;
+            margin-bottom: 2px;
+        }
+        .dsfaq__content .dsfaq__items__list .item .text p {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .dsfaq__image {
+            width: 100%;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .dsfaq__image img {
+            width: auto;
+            height: 100%;
+        }
+        /*Highlights of the Week*/
+        .dswhl__wrapper {
+            gap: 20px;
+        }
+        .dswhl__wrapper a {
+            width: 100%;
+            height: 300px;
+        }
+        .dswhl__wrapper a img {
+            width: 100%;
+            height: 100%;
+        }
+        .dswhl__wrapper a .text h2 {
+            font-size: 36px;
+            line-height: 47px;
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
     .ds__categories__section,
-    .ds__newarrivals__section {
+    .ds__newarrivals__section,
+    .ds__faqs__section,
+    .ds__week__highlights__section {
         margin-top: 50px;
     }
     .ds__button__b {
@@ -923,11 +1070,57 @@
         .ds__product__style .dsps__content__wrapper .dsps__info .rating__area {
             margin-bottom: 6px;
         }
+        /*FAQs Section*/
+        .dsfaq__content .dsfaq__items__list .item .image svg {
+            height: 45px;
+            width: 45px;
+        }
+        .dsfaq__content .dsfaq__items__list .item {
+            gap: 15px;
+            padding: 14px 0;
+        }
+        .dsfaq__content .dsfaq__items__list .item .text h4 {
+            font-size: 22px;
+            line-height: 30px;
+        }
+        .dsfaq__content .dsfaq__items__list .item .text p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .dsfaq__image {
+            width: 100%;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .dsfaq__image img {
+            width: auto;
+            height: 100%;
+        }
+        /*Highlights of the Week*/
+        .dswhl__wrapper {
+            gap: 20px;
+        }
+        .dswhl__wrapper a {
+            width: 100%;
+            height: 400px;
+        }
+        .dswhl__wrapper a img {
+            width: 100%;
+            height: 100%;
+        }
+        .dswhl__wrapper a .text h2 {
+            font-size: 46px;
+            line-height: 57px;
+        }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
     .ds__categories__section,
-    .ds__newarrivals__section {
+    .ds__newarrivals__section,
+    .ds__faqs__section,
+    .ds__week__highlights__section {
         margin-top: 60px;
     }
     .ds__button__b {
@@ -1122,11 +1315,42 @@
             font-size: 16px;
             line-height: 16px;
         }
+        /*FAQs Section*/
+        .dsfaq__content .dsfaq__items__list .item .image svg {
+            height: 40px;
+            width: 40px;
+        }
+        .dsfaq__content .dsfaq__items__list .item {
+            gap: 10px;
+            padding: 10px 0;
+        }
+        .dsfaq__content .dsfaq__items__list .item .text h4 {
+            font-size: 22px;
+            line-height: 26px;
+            margin-bottom: 2px;
+        }
+        .dsfaq__content .dsfaq__items__list .item .text p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        /*Highlights of the Week*/
+        .dswhl__wrapper {
+            gap: 10px;
+        }
+        .dswhl__wrapper a {
+            height: 275px;
+        }
+        .dswhl__wrapper a .text h2 {
+            font-size: 46px;
+            line-height: 57px;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
     .ds__categories__section,
-    .ds__newarrivals__section {
+    .ds__newarrivals__section,
+    .ds__faqs__section,
+    .ds__week__highlights__section {
         margin-top: 70px;
     }
     .ds__button__b {
@@ -1228,11 +1452,40 @@
             height: 62px;
             width: 62px;
         }
+        /*FAQs Section*/
+        .dsfaq__content .dsfaq__items__list .item .image svg {
+            height: 45px;
+            width: 45px;
+        }
+        .dsfaq__content .dsfaq__items__list .item {
+            gap: 15px;
+            padding: 14px 0;
+        }
+        .dsfaq__content .dsfaq__items__list .item .text h4 {
+            font-size: 26px;
+            line-height: 32px;
+        }
+        .dsfaq__content .dsfaq__items__list .item .text p {
+            font-size: 16px;
+        }
+        /*Highlights of the Week*/
+        .dswhl__wrapper {
+            gap: 20px;
+        }
+        .dswhl__wrapper a {
+            height: 348px;
+        }
+        .dswhl__wrapper a .text h2 {
+            font-size: 46px;
+            line-height: 57px;
+        }
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
     .ds__categories__section,
-    .ds__newarrivals__section {
+    .ds__newarrivals__section,
+    .ds__faqs__section,
+    .ds__week__highlights__section {
         margin-top: 80px;
     }
     /*===== Home Page =====*/
@@ -1284,11 +1537,21 @@
             width: 274px;
             height: 370px;
         }
+        /*FAQs Section*/
+        .dsfaq__content .dsfaq__items__list .item .text p {
+            font-size: 16px;
+        }
+        /*Highlights of the Week*/
+        .dswhl__wrapper a {
+            height: 436px;
+        }
 }
 
 @media (min-width: 1400px) and (max-width: 1499px) {
     .ds__categories__section,
-    .ds__newarrivals__section {
+    .ds__newarrivals__section,
+    .ds__faqs__section,
+    .ds__week__highlights__section {
         margin-top: 80px;
     }
     /*===== Home Page =====*/

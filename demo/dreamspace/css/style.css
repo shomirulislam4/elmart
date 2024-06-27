@@ -1804,7 +1804,7 @@ input[type="radio"]:checked::before {
 
 .dsfaq__image {
     width: 100%;
-    height: 734px;
+    height: auto;
 }
 
 .dsfaq__image img {
@@ -1823,36 +1823,26 @@ input[type="radio"]:checked::before {
     justify-content: center;
 }
 
+.ds__week__highlights__section .dscs__titlenav .dscs__title h2 {
+    text-align: center;
+}
+
 .dswhl__wrapper {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    justify-content: space-between;
 }
 
 .dswhl__wrapper a {
     position: relative;
+    width: fit-content;
     height: 506px;
 }
 
-.dswhl__wrapper a.item1 {
-    width: 518px;
-}
-
-.dswhl__wrapper a.item2 {
-    width: 740px;
-}
-
-.dswhl__wrapper a.item3 {
-    width: 848px;
-}
-
-.dswhl__wrapper a.item4 {
-    width: 410px;
-}
-
 .dswhl__wrapper a img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
 }
 
 .dswhl__wrapper a .text {
