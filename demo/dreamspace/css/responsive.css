@@ -5,6 +5,11 @@
     .ds__week__highlights__section {
         margin-top: 30px;
     }
+    .ds__button__a {
+        padding: 7px 20px;
+        font-size: 14px;
+        line-height: 20px;
+    }
     .ds__button__b {
         font-size: 14px;
         line-height: 14px;
@@ -345,6 +350,34 @@
             font-size: 20px;
             line-height: 28px;
         }
+        /*Promo Section*/
+        .dspromo__wrapper {
+            flex-direction: column;
+        }
+        .dspromo__left__side {
+            gap: 20px;
+            width: 100%;
+        }
+        .dspromo__left__side h2,
+        .dspromo__right__side .dspromo__total__clients .dspromo__item h2 {
+            font-size: 24px;
+        }
+        .dspromo__left__side p {
+            font-size: 12px;
+            line-height: 160%;
+        }
+        .dspromo__right__side {
+            width: 100%;
+            gap: 20px;
+            margin-top: 15px;
+        }
+        .dspromo__right__side .dspromo__total__clients {
+            gap: 20px;
+            justify-content: center;
+        }
+        .dspromo__right__side .dspromo__total__clients .dspromo__item p {
+            font-size: 10px;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
@@ -353,6 +386,11 @@
     .ds__faqs__section,
     .ds__week__highlights__section {
         margin-top: 30px;
+    }
+    .ds__button__a {
+        padding: 7px 20px;
+        font-size: 14px;
+        line-height: 20px;
     }
     .ds__button__b {
         font-size: 14px;
@@ -625,6 +663,34 @@
             font-size: 30px;
             line-height: 38px;
         }
+        /*Promo Section*/
+        .dspromo__wrapper {
+            flex-direction: column;
+        }
+        .dspromo__left__side {
+            gap: 20px;
+            width: 100%;
+        }
+        .dspromo__left__side h2,
+        .dspromo__right__side .dspromo__total__clients .dspromo__item h2 {
+            font-size: 24px;
+        }
+        .dspromo__left__side p {
+            font-size: 14px;
+            line-height: 160%;
+        }
+        .dspromo__right__side {
+            width: 100%;
+            gap: 20px;
+            margin-top: 15px;
+        }
+        .dspromo__right__side .dspromo__total__clients {
+            gap: 20px;
+            justify-content: center;
+        }
+        .dspromo__right__side .dspromo__total__clients .dspromo__item p {
+            font-size: 10px;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -633,6 +699,11 @@
     .ds__faqs__section,
     .ds__week__highlights__section {
         margin-top: 40px;
+    }
+    .ds__button__a {
+        padding: 10px 25px;
+        font-size: 16px;
+        line-height: 20px;
     }
     .ds__button__b {
         font-size: 16px;
@@ -879,6 +950,36 @@
             font-size: 36px;
             line-height: 47px;
         }
+        /*Promo Section*/
+        .dspromo__wrapper {
+            flex-direction: column;
+        }
+        .dspromo__left__side {
+            gap: 20px;
+            width: 100%;
+        }
+        .dspromo__left__side h2 {
+            font-size: 30px;
+        }
+        .dspromo__left__side p {
+            font-size: 16px;
+            line-height: 160%;
+        }
+        .dspromo__right__side {
+            width: 100%;
+            gap: 20px;
+            margin-top: 15px;
+        }
+        .dspromo__right__side .dspromo__total__clients {
+            gap: 20px;
+            justify-content: center;
+        }
+        .dspromo__right__side .dspromo__total__clients .dspromo__item h2 {
+            font-size: 36px;
+        }
+        .dspromo__right__side .dspromo__total__clients .dspromo__item p {
+            font-size: 16px;
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -887,6 +988,11 @@
     .ds__faqs__section,
     .ds__week__highlights__section {
         margin-top: 50px;
+    }
+    .ds__button__a {
+        padding: 10px 30px;
+        font-size: 16px;
+        line-height: 22px;
     }
     .ds__button__b {
         font-size: 20px;
@@ -1114,6 +1220,26 @@
             font-size: 46px;
             line-height: 57px;
         }
+        /*Promo Section*/
+        .dspromo__wrapper {
+            flex-direction: column;
+        }
+        .dspromo__left__side {
+            gap: 30px;
+            width: 100%;
+        }
+        .dspromo__left__side h2 {
+            font-size: 36px;
+        }
+        .dspromo__left__side p {
+            font-size: 16px;
+            line-height: 160%;
+        }
+        .dspromo__right__side {
+            width: 100%;
+            gap: 30px;
+            margin-top: 20px;
+        }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1122,6 +1248,9 @@
     .ds__faqs__section,
     .ds__week__highlights__section {
         margin-top: 60px;
+    }
+    .ds__button__a {
+        padding: 12px 32px;
     }
     .ds__button__b {
         font-size: 18px;
@@ -1344,6 +1473,34 @@
             font-size: 46px;
             line-height: 57px;
         }
+        /*Promo Section*/
+        .dspromo__left__side {
+            width: 385px;
+            gap: 30px;
+        }
+        .dspromo__left__side h2 {
+            font-size: 32px;
+        }
+        .dspromo__left__side p {
+            font-size: 16px;
+            line-height: 150%;
+        }
+        .dspromo__right__side {
+            width: 300px;
+            gap: 58px;
+        }
+        .dspromo__right__side .dspromo__total__clients {
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .dspromo__right__side .dspromo__total__clients .dspromo__item h2 {
+            font-size: 30px;
+        }
+        .dspromo__right__side .dspromo__total__clients .dspromo__item p {
+            font-size: 14px;
+            line-height: 140%;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -1473,11 +1630,33 @@
             gap: 20px;
         }
         .dswhl__wrapper a {
-            height: 348px;
+            height: 368px;
         }
         .dswhl__wrapper a .text h2 {
             font-size: 46px;
             line-height: 57px;
+        }
+        /*Promo Section*/
+        .dspromo__left__side {
+            width: 515px;
+            gap: 30px;
+        }
+        .dspromo__left__side h2 {
+            font-size: 40px;
+        }
+        .dspromo__left__side p {
+            font-size: 18px;
+            line-height: 170%;
+        }
+        .dspromo__right__side {
+            width: 405px;
+            gap: 58px;
+        }
+        .dspromo__right__side .dspromo__total__clients .dspromo__item h2 {
+            font-size: 40px;
+        }
+        .dspromo__right__side .dspromo__total__clients .dspromo__item p {
+            font-size: 18px;
         }
 }
 
@@ -1544,6 +1723,25 @@
         /*Highlights of the Week*/
         .dswhl__wrapper a {
             height: 436px;
+        }
+        /*Promo Section*/
+        .dspromo__left__side {
+            width: 605px;
+            gap: 30px;
+        }
+        .dspromo__left__side p {
+            font-size: 18px;
+            line-height: 170%;
+        }
+        .dspromo__right__side {
+            width: 495px;
+            gap: 64px;
+        }
+        .dspromo__right__side .dspromo__total__clients .dspromo__item h2 {
+            font-size: 40px;
+        }
+        .dspromo__right__side .dspromo__total__clients .dspromo__item p {
+            font-size: 18px;
         }
 }
 

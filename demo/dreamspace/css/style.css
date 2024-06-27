@@ -1816,7 +1816,6 @@ input[type="radio"]:checked::before {
 /*** Start of Highlights of the Week ***/
 .ds__week__highlights__section {
     margin-top: 100px;
-    margin-bottom: 200px;
 }
 
 .ds__week__highlights__section .dscs__titlenav {
@@ -1868,10 +1867,94 @@ input[type="radio"]:checked::before {
     margin: 0;
     text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
 }
-
-
-
 /*** End of Highlights of the Week ***/
+
+/*** Start of Promo Section ***/
+.ds__promo__section {
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+.dspromo__wrapper img {
+    width: 100%;
+}
+
+.dspromo__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Left Side */
+.dspromo__left__side {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 695px;
+}
+
+.dspromo__left__side h2 {
+    color: var(--text-color);
+    font-size: 48px;
+    line-height: 130%;
+    font-weight: 800;
+    font-family: 'Urbanist', sans-serif;
+    margin: 0;
+}
+
+.dspromo__left__side p {
+    color: #AFADB5;
+    font-size: 20px;
+    line-height: 180%;
+    font-weight: 600;
+    font-family: 'Urbanist', sans-serif;
+    margin: 0;
+}
+
+.dspromo__left__side .ds__button__a {
+    width: fit-content;
+}
+
+/* Right Side */
+.dspromo__right__side {
+    width: 576px;
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+}
+
+.dspromo__right__side .dspromo__total__clients {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: flex-end;
+}
+
+.dspromo__right__side .dspromo__total__clients .dspromo__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.dspromo__right__side .dspromo__total__clients .dspromo__item h2 {
+    color: var(--text-color);
+    font-size: 44px;
+    line-height: 130%;
+    font-weight: 700;
+    font-family: 'Urbanist', sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+.dspromo__right__side .dspromo__total__clients .dspromo__item p {
+    color: #AFADB5;
+    font-size: 20px;
+    line-height: 180%;
+    font-weight: 700;
+    font-family: 'Urbanist', sans-serif;
+    text-align: center;
+    margin: 0;
+}
+/*** End of Promo Section ***/
 
 /*
 rgba(95, 23, 6, 0.4)
