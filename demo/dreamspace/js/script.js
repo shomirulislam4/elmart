@@ -138,6 +138,10 @@
                 nextEl: '.dscs__wsbtn__next',
                 prevEl: '.dscs__wsbtn__prev',
             },
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: true,
+            },
             breakpoints: {
                 1400: {
                     spaceBetween: 27,
@@ -172,6 +176,10 @@
             navigation: {
                 nextEl: '.dsnas__sldrbtn__next',
                 prevEl: '.dsnas__sldrbtn__prev',
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: true,
             },
             breakpoints: {
                 1400: {
