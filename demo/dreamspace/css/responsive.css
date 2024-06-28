@@ -2,7 +2,8 @@
     .ds__categories__section,
     .ds__newarrivals__section,
     .ds__faqs__section,
-    .ds__week__highlights__section {
+    .ds__week__highlights__section,
+    .ds__best__seller__section {
         margin-top: 30px;
     }
     .ds__button__a {
@@ -405,13 +406,87 @@
             font-size: 8px;
             line-height: 10px;
         }
+        /*On Sale Section*/
+        .dsbs__wrapper {
+            width: 400px;
+            margin: 0 auto;
+        }
+        .dsbs__wrapper,
+        .top__cards,
+        .bottom__cards {
+            gap: 10px;
+            flex-direction: column;
+        }
+        .right__cards {
+            gap: 10px;
+            flex-direction: row;
+        }
+        .dsbs__item.item1,
+        .dsbs__item.item2,
+        .dsbs__item.item3,
+        .dsbs__item.item4,
+        .dsbs__item.item5,
+        .dsbs__item.item6,
+        .dsbs__item.item7,
+        .dsbs__item.item8 {
+            width: 100%;
+        }
+        .dsbs__item.item1 {
+            height: 149px;
+        }
+        .dsbs__item.item2 {
+            height: 147px;
+        }
+        .dsbs__item.item2 img {
+            top: -40px;
+        }
+        .dsbs__item.item4 {
+            height: 260px;
+        }
+        .dsbs__item.item4 img {
+            top: -100px;
+            height: 150%;
+        }
+        .dsbs__item.item5 {
+            height: 146px;
+        }
+        .dsbs__item.item7 {
+            height: 135px;
+        }
+        .dsbs__item.item5 img,
+        .dsbs__item.item7 img {
+            left: -54px;
+            width: 141%;
+        }
+        .dsbs__item.item3,
+        .dsbs__item.item8 {
+            height: 168px;
+        }
+        .dsbs__item.item6 {
+            height: 236px;
+        }
+        .dsbs__item svg {
+            top: 10px;
+            left: 5px;
+            height: 26px;
+            width: 26px;
+        }
+        .dsbs__item__name {
+            left: 36px;
+            font-size: 20px;
+            line-height: 26px;
+        }
+        .dsbs__item:hover .dsbs__item__name {
+            top: 10px;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
     .ds__categories__section,
     .ds__newarrivals__section,
     .ds__faqs__section,
-    .ds__week__highlights__section {
+    .ds__week__highlights__section,
+    .ds__best__seller__section {
         margin-top: 30px;
     }
     .ds__button__a {
@@ -744,13 +819,87 @@
             font-size: 10px;
             line-height: 12px;
         }
+        /*On Sale Section*/
+        .dsbs__wrapper {
+            width: 400px;
+            margin: 0 auto;
+        }
+        .dsbs__wrapper,
+        .top__cards,
+        .bottom__cards {
+            gap: 10px;
+            flex-direction: column;
+        }
+        .right__cards {
+            gap: 10px;
+            flex-direction: row;
+        }
+        .dsbs__item.item1,
+        .dsbs__item.item2,
+        .dsbs__item.item4,
+        .dsbs__item.item5,
+        .dsbs__item.item7 {
+            width: 100%;
+        }
+        .dsbs__item.item1 {
+            height: 216px;
+        }
+        .dsbs__item.item2 {
+            height: 230px;
+        }
+        .dsbs__item.item2 img {
+            top: -40px;
+        }
+        .dsbs__item.item4 {
+            height: 260px;
+        }
+        .dsbs__item.item4 img {
+            top: -100px;
+            height: 150%;
+        }
+        .dsbs__item.item5 {
+            height: 150px;
+        }
+        .dsbs__item.item7 {
+            height: 139px;
+        }
+        .dsbs__item.item3,
+        .dsbs__item.item6,
+        .dsbs__item.item8 {
+            width: 140px;
+        }
+        .dsbs__item.item3,
+        .dsbs__item.item8 {
+            height: 117px;
+        }
+        .dsbs__item.item8 {
+            margin-top: -127px;
+        }
+        .dsbs__item.item6 {
+            height: 236px;
+        }
+        .dsbs__item svg {
+            top: 10px;
+            left: 5px;
+            height: 26px;
+            width: 26px;
+        }
+        .dsbs__item__name {
+            left: 36px;
+            font-size: 20px;
+            line-height: 26px;
+        }
+        .dsbs__item:hover .dsbs__item__name {
+            top: 10px;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
     .ds__categories__section,
     .ds__newarrivals__section,
     .ds__faqs__section,
-    .ds__week__highlights__section {
+    .ds__week__highlights__section,
+    .ds__best__seller__section {
         margin-top: 40px;
     }
     .ds__button__a {
@@ -1134,7 +1283,8 @@
     .ds__categories__section,
     .ds__newarrivals__section,
     .ds__faqs__section,
-    .ds__week__highlights__section {
+    .ds__week__highlights__section,
+    .ds__best__seller__section {
         margin-top: 50px;
     }
     .ds__button__a {
@@ -1474,7 +1624,8 @@
     .ds__categories__section,
     .ds__newarrivals__section,
     .ds__faqs__section,
-    .ds__week__highlights__section {
+    .ds__week__highlights__section,
+    .ds__best__seller__section {
         margin-top: 60px;
     }
     .ds__button__a {
@@ -1815,7 +1966,8 @@
     .ds__categories__section,
     .ds__newarrivals__section,
     .ds__faqs__section,
-    .ds__week__highlights__section {
+    .ds__week__highlights__section,
+    .ds__best__seller__section {
         margin-top: 70px;
     }
     .ds__button__b {
@@ -2034,7 +2186,8 @@
     .ds__categories__section,
     .ds__newarrivals__section,
     .ds__faqs__section,
-    .ds__week__highlights__section {
+    .ds__week__highlights__section,
+    .ds__best__seller__section {
         margin-top: 80px;
     }
     /*===== Home Page =====*/
@@ -2179,7 +2332,8 @@
     .ds__categories__section,
     .ds__newarrivals__section,
     .ds__faqs__section,
-    .ds__week__highlights__section {
+    .ds__week__highlights__section,
+    .ds__best__seller__section {
         margin-top: 80px;
     }
     /*===== Home Page =====*/
