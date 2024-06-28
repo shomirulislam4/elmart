@@ -301,6 +301,11 @@
             font-size: 10px;
             line-height: 14px;
         }
+        .ds__product__style .dsps__content__wrapper .dsps__discount {
+            font-size: 18px;
+            line-height: 28px;
+            top: 10px;
+        }
         /*FAQs Section*/
         .dsfaq__content .dsfaq__items__list .item .image svg {
             height: 40px;
@@ -377,6 +382,28 @@
         }
         .dspromo__right__side .dspromo__total__clients .dspromo__item p {
             font-size: 10px;
+        }
+        /*On Sale Section*/
+        .ds__discount__section .dscs__titlenav {
+            flex-direction: column;
+        }
+        .ds__discount__section .dsds__wrapper {
+            gap: 10px;
+            padding: 0;
+        }
+        .ds__countdown__timer {
+            margin-top: 10px;
+        }
+        .ds__countdown__timer .dscdt__items .timer {
+            font-size: 24px;
+            line-height: 32px;
+        }
+        .ds__countdown__timer .dscdt__items .timer::after {
+            margin: 0 7px;
+        }
+        .ds__countdown__timer .dscdt__items span {
+            font-size: 8px;
+            line-height: 10px;
         }
 }
 
@@ -618,6 +645,10 @@
             width: 274px;
             height: 370px;
         }
+        .ds__product__style .dsps__content__wrapper .dsps__discount {
+            font-size: 22px;
+            line-height: 32px;
+        }
         /*FAQs Section*/
         .dsfaq__content .dsfaq__items__list .item .image svg {
             height: 34px;
@@ -690,6 +721,28 @@
         }
         .dspromo__right__side .dspromo__total__clients .dspromo__item p {
             font-size: 10px;
+        }
+        /*On Sale Section*/
+        .ds__discount__section .dscs__titlenav {
+            flex-direction: column;
+        }
+        .ds__discount__section .dsds__wrapper {
+            gap: 10px;
+            padding: 0;
+        }
+        .ds__countdown__timer {
+            margin-top: 10px;
+        }
+        .ds__countdown__timer .dscdt__items .timer {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        .ds__countdown__timer .dscdt__items .timer::after {
+            margin: 0 10px;
+        }
+        .ds__countdown__timer .dscdt__items span {
+            font-size: 10px;
+            line-height: 12px;
         }
 }
 
@@ -980,6 +1033,101 @@
         .dspromo__right__side .dspromo__total__clients .dspromo__item p {
             font-size: 16px;
         }
+        /*On Sale Section*/
+        .ds__discount__section .dscs__titlenav {
+            flex-direction: column;
+        }
+        .ds__discount__section .dsds__wrapper {
+            gap: 10px;
+            padding: 0;
+        }
+        .ds__countdown__timer {
+            margin-top: 20px;
+        }
+        .ds__countdown__timer .dscdt__items .timer {
+            font-size: 50px;
+            line-height: 60px;
+        }
+        .ds__countdown__timer .dscdt__items .timer::after {
+            margin: 0 10px;
+        }
+        .ds__countdown__timer .dscdt__items span {
+            font-size: 12px;
+            line-height: 15px;
+        }
+        /*On Sale Section*/
+        .dsbs__wrapper {
+            width: 400px;
+            margin: 0 auto;
+        }
+        .dsbs__wrapper,
+        .top__cards,
+        .bottom__cards {
+            gap: 10px;
+            flex-direction: column;
+        }
+        .right__cards {
+            gap: 10px;
+            flex-direction: row;
+        }
+        .dsbs__item.item1,
+        .dsbs__item.item2,
+        .dsbs__item.item4,
+        .dsbs__item.item5,
+        .dsbs__item.item7 {
+            width: 100%;
+        }
+        .dsbs__item.item1 {
+            height: 299px;
+        }
+        .dsbs__item.item2 {
+            height: 334px;
+        }
+        .dsbs__item.item2 img {
+            top: -40px;
+        }
+        .dsbs__item.item4 {
+            height: 299px;
+        }
+        .dsbs__item.item4 img {
+            top: -100px;
+            height: 150%;
+        }
+        .dsbs__item.item5 {
+            height: 208px;
+        }
+        .dsbs__item.item7 {
+            height: 192px;
+        }
+        .dsbs__item.item3,
+        .dsbs__item.item6,
+        .dsbs__item.item8 {
+            width: 195px;
+        }
+        .dsbs__item.item3,
+        .dsbs__item.item8 {
+            height: 164px;
+        }
+        .dsbs__item.item8 {
+            margin-top: -174px;
+        }
+        .dsbs__item.item6 {
+            height: 329px;
+        }
+        .dsbs__item svg {
+            top: 10px;
+            left: 5px;
+            height: 26px;
+            width: 26px;
+        }
+        .dsbs__item__name {
+            left: 36px;
+            font-size: 20px;
+            line-height: 26px;
+        }
+        .dsbs__item:hover .dsbs__item__name {
+            top: 10px;
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -1176,6 +1324,10 @@
         .ds__product__style .dsps__content__wrapper .dsps__info .rating__area {
             margin-bottom: 6px;
         }
+        .ds__product__style .dsps__content__wrapper .dsps__discount {
+            font-size: 20px;
+            line-height: 30px;
+        }
         /*FAQs Section*/
         .dsfaq__content .dsfaq__items__list .item .image svg {
             height: 45px;
@@ -1239,6 +1391,82 @@
             width: 100%;
             gap: 30px;
             margin-top: 20px;
+        }
+        /*On Sale Section*/
+        .ds__discount__section .dsds__wrapper {
+            gap: 10px;
+            padding: 0;
+        }
+        .ds__countdown__timer .dscdt__items .timer {
+            font-size: 40px;
+            line-height: 50px;
+        }
+        .ds__countdown__timer .dscdt__items .timer::after {
+            margin: 0 10px;
+        }
+        .ds__countdown__timer .dscdt__items span {
+            font-size: 12px;
+            line-height: 15px;
+        }
+        /*Best Sellers*/
+        .dsbs__wrapper,
+        .top__cards,
+        .bottom__cards {
+            gap: 10px;
+        }
+        .right__cards {
+            gap: 9px;
+            flex-direction: row;
+        }
+        .dsbs__item.item1,
+        .dsbs__item.item2 {
+            height: 220px;
+        }
+        .dsbs__item.item1 {
+            width: 295px;
+        }
+        .dsbs__item.item2 {
+            width: 235px;
+        }
+        .dsbs__item.item3,
+        .dsbs__item.item4,
+        .dsbs__item.item6,
+        .dsbs__item.item8 {
+            width: 169px;
+        }
+        .dsbs__item.item3,
+        .dsbs__item.item8 {
+            height: 141px;
+        }
+        .dsbs__item.item4 {
+            height: 360px;
+        }
+        .dsbs__item.item6 {
+            height: 285px;
+        }
+        .dsbs__item.item5,
+        .dsbs__item.item7 {
+            width: 361px;
+        }
+        .dsbs__item.item5 {
+            height: 187px;
+        }
+        .dsbs__item.item7 {
+            height: 173px;
+        }
+        .dsbs__item svg {
+            top: 10px;
+            left: 5px;
+            height: 30px;
+            width: 30px;
+        } 
+        .dsbs__item__name {
+            left: 40px;
+            font-size: 20px;
+            line-height: 26px;
+        }
+        .dsbs__item:hover .dsbs__item__name {
+            top: 10px;
         }
 }
 
@@ -1444,6 +1672,10 @@
             font-size: 16px;
             line-height: 16px;
         }
+        .ds__product__style .dsps__content__wrapper .dsps__discount {
+            font-size: 20px;
+            line-height: 30px;
+        }
         /*FAQs Section*/
         .dsfaq__content .dsfaq__items__list .item .image svg {
             height: 40px;
@@ -1500,6 +1732,82 @@
         .dspromo__right__side .dspromo__total__clients .dspromo__item p {
             font-size: 14px;
             line-height: 140%;
+        }
+        /*On Sale Section*/
+        .ds__discount__section .dsds__wrapper {
+            gap: 10px;
+            padding: 0;
+        }
+        .ds__countdown__timer .dscdt__items .timer {
+            font-size: 50px;
+            line-height: 60px;
+        }
+        .ds__countdown__timer .dscdt__items .timer::after {
+            margin: 0 10px;
+        }
+        .ds__countdown__timer .dscdt__items span {
+            font-size: 12px;
+            line-height: 15px;
+        }
+        /*Best Sellers*/
+        .dsbs__wrapper,
+        .top__cards,
+        .bottom__cards {
+            gap: 10px;
+        }
+        .right__cards {
+            gap: 9px;
+            flex-direction: row;
+        }
+        .dsbs__item.item1,
+        .dsbs__item.item2 {
+            height: 294px;
+        }
+        .dsbs__item.item1 {
+            width: 395px;
+        }
+        .dsbs__item.item2 {
+            width: 315px;
+        }
+        .dsbs__item.item3,
+        .dsbs__item.item4,
+        .dsbs__item.item6,
+        .dsbs__item.item8 {
+            width: 234px;
+        }
+        .dsbs__item.item3,
+        .dsbs__item.item8 {
+            height: 196px;
+        }
+        .dsbs__item.item4 {
+            height: 483px;
+        }
+        .dsbs__item.item6 {
+            height: 373px;
+        }
+        .dsbs__item.item5,
+        .dsbs__item.item7 {
+            width: 476px;
+        }
+        .dsbs__item.item5 {
+            height: 246px;
+        }
+        .dsbs__item.item7 {
+            height: 227px;
+        }
+        .dsbs__item svg {
+            top: 10px;
+            left: 5px;
+            height: 30px;
+            width: 30px;
+        } 
+        .dsbs__item__name {
+            left: 40px;
+            font-size: 20px;
+            line-height: 26px;
+        }
+        .dsbs__item:hover .dsbs__item__name {
+            top: 10px;
         }
 }
 
@@ -1658,6 +1966,68 @@
         .dspromo__right__side .dspromo__total__clients .dspromo__item p {
             font-size: 18px;
         }
+        /*On Sale Section*/
+        .ds__countdown__timer .dscdt__items .timer {
+            font-size: 60px;
+            line-height: 70px;
+        }
+        /*Best Sellers*/
+        .dsbs__wrapper,
+        .top__cards,
+        .bottom__cards,
+        .right__cards {
+            gap: 10px;
+        }
+        .dsbs__item.item1,
+        .dsbs__item.item2 {
+            height: 292px;
+        }
+        .dsbs__item.item1 {
+            width: 393px;
+        }
+        .dsbs__item.item2 {
+            width: 313px;
+        }
+        .dsbs__item.item3,
+        .dsbs__item.item4,
+        .dsbs__item.item6,
+        .dsbs__item.item8 {
+            width: 233px;
+        }
+        .dsbs__item.item3,
+        .dsbs__item.item8 {
+            height: 196px;
+        }
+        .dsbs__item.item4 {
+            height: 483px;
+        }
+        .dsbs__item.item6 {
+            height: 373px;
+        }
+        .dsbs__item.item5,
+        .dsbs__item.item7 {
+            width: 474px;
+        }
+        .dsbs__item.item5 {
+            height: 246px;
+        }
+        .dsbs__item.item7 {
+            height: 227px;
+        }
+        .dsbs__item svg {
+            top: 10px;
+            left: 5px;
+            height: 30px;
+            width: 30px;
+        } 
+        .dsbs__item__name {
+            left: 40px;
+            font-size: 20px;
+            line-height: 26px;
+        }
+        .dsbs__item:hover .dsbs__item__name {
+            top: 10px;
+        }
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -1742,6 +2112,66 @@
         }
         .dspromo__right__side .dspromo__total__clients .dspromo__item p {
             font-size: 18px;
+        }
+        /*On Sale Section*/
+        .ds__discount__section .dsds__wrapper {
+            gap: 15px;
+        }
+        /*Best Sellers*/
+        .dsbs__wrapper,
+        .top__cards,
+        .bottom__cards,
+        .right__cards {
+            gap: 10px;
+        }
+        .dsbs__item.item1,
+        .dsbs__item.item2 {
+            height: 351px;
+        }
+        .dsbs__item.item1 {
+            width: 471px;
+        }
+        .dsbs__item.item2 {
+            width: 376px;
+        }
+        .dsbs__item.item3,
+        .dsbs__item.item4,
+        .dsbs__item.item6,
+        .dsbs__item.item8 {
+            width: 273px;
+        }
+        .dsbs__item.item3,
+        .dsbs__item.item8 {
+            height: 230px;
+        }
+        .dsbs__item.item4 {
+            height: 579px;
+        }
+        .dsbs__item.item6 {
+            height: 461px;
+        }
+        .dsbs__item.item5,
+        .dsbs__item.item7 {
+            width: 570px;
+        }
+        .dsbs__item.item5 {
+            height: 296px;
+        }
+        .dsbs__item.item7 {
+            height: 273px;
+        }
+        .dsbs__item svg {
+            top: 10px;
+            height: 35px;
+            width: 35px;
+        } 
+        .dsbs__item__name {
+            left: 50px;
+            font-size: 26px;
+            line-height: 34px;
+        }
+        .dsbs__item:hover .dsbs__item__name {
+            top: 10px;
         }
 }
 

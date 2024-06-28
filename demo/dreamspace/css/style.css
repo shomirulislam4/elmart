@@ -1617,7 +1617,7 @@ input[type="radio"]:checked::before {
 	line-height: 18px;
 	padding: 5px 0;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-	left: 120%;
+	left: 118%;
 	top: 50%;
     transform: translateY(-50%);
 	text-transform: capitalize;
@@ -1668,6 +1668,24 @@ input[type="radio"]:checked::before {
     opacity: 1;
 }
 
+/* Sale Badge */
+.ds__product__style .dsps__content__wrapper .dsps__discount {
+    color: #FFF;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700;
+    font-family: 'Urbanist', sans-serif;
+    display: block;
+    padding: 0 5px;
+    background: var(--main-color);
+    border-radius: 10px;
+    width: fit-content;
+    position: absolute;
+    top: 13px;
+    right: 7px;
+}
+
+/* Product Info */
 .ds__product__style .dsps__content__wrapper .dsps__info {
     position: absolute;
     bottom: 0;
@@ -1732,6 +1750,15 @@ input[type="radio"]:checked::before {
     font-weight: 800;
     font-family: 'Urbanist', sans-serif;
     margin: 0;
+}
+
+.ds__product__style .dsps__content__wrapper .dsps__info .dsps__price span {
+    color: #BCB0B0;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+    font-family: 'Urbanist', sans-serif;
+    text-decoration: line-through;
 }
 /*** End of New Arrivals Section ***/
 
@@ -1958,7 +1985,6 @@ input[type="radio"]:checked::before {
 /*** Start of On Sale Section ***/
 .ds__discount__section {
     margin-top: 100px;
-    margin-bottom: 200px;
 }
 
 /* Countdown Timer */
@@ -1982,6 +2008,10 @@ input[type="radio"]:checked::before {
     width: 60%;
 }
 
+.ds__countdown__timer .dscdt__items:last-child span {
+    width: 100%;
+}
+
 .ds__countdown__timer .dscdt__items .timer {
     color: var(--text-color);
     font-size: 72px;
@@ -1999,8 +2029,148 @@ input[type="radio"]:checked::before {
     display: none;
 }
 
-
+.ds__discount__section .dsds__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
 /*** End of On Sale Section ***/
+
+/*** Start of Best Sellers ***/
+.ds__best__seller__section {
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+.dsbs__wrapper {
+    padding: 0;
+}
+
+.dsbs__wrapper,
+.top__cards,
+.bottom__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 27px;
+}
+
+.left__cards,
+.middle__cards,
+.right__cards {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.right__cards {
+    gap: 14px;
+}
+
+.dsbs__item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    display: block;
+    background: red;
+}
+
+.dsbs__item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+}
+
+.dsbs__item svg {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    height: 40px;
+    width: 40px;
+    z-index: 100;
+    stroke: #FFF;
+    will-change: transform;
+    transform: rotate(-45deg);
+    transition: 0.6s;
+    -moz-transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+}
+
+.dsbs__item:hover svg {
+    transform: rotate(0);
+}
+
+.dsbs__item__name {
+    position: absolute;
+    top: -80px;
+    left: 60px;
+    z-index: 100;
+    color: #FFF;
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 700;
+    font-family: 'Urbanist', sans-serif;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.dsbs__item:hover .dsbs__item__name {
+    top: 15px;
+}
+
+.dsbs__item.item1,
+.dsbs__item.item2 {
+    height: 388px;
+}
+
+.dsbs__item.item1 {
+    width: 520px;
+}
+
+.dsbs__item.item2 {
+    width: 416px;
+}
+
+.dsbs__item.item5 {
+    width: 632px;
+    height: 328px;
+}
+
+.dsbs__item.item7 {
+    width: 632px;
+    height: 302px;
+}
+
+.dsbs__item.item3,
+.dsbs__item.item4,
+.dsbs__item.item6,
+.dsbs__item.item8 {
+    width: 300px;
+}
+
+.dsbs__item.item3,
+.dsbs__item.item8 {
+    height: 252px;
+}
+
+.dsbs__item.item4 {
+    height: 640px;
+}
+
+.dsbs__item.item6 {
+    height: 506px;
+}
+
+
+/*** End of Best Sellers ***/
 
 /*
 rgba(95, 23, 6, 0.4)

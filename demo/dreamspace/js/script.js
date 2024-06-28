@@ -195,6 +195,7 @@
                 },
                 768: {
                     slidesPerView: 3,
+                    spaceBetween: 10,
                 },
                 576: {
                     slidesPerView: 2,
@@ -229,7 +230,6 @@
         $(".ds__countdown__timer .minutes").html(addLeadingZero(minutes));
         $(".ds__countdown__timer .seconds").html(addLeadingZero(seconds));        
     }
-    
     setInterval(function() { makeTimer(); }, 1000);
     
 
