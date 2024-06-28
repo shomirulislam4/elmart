@@ -1872,7 +1872,6 @@ input[type="radio"]:checked::before {
 /*** Start of Promo Section ***/
 .ds__promo__section {
     margin-top: 100px;
-    margin-bottom: 200px;
 }
 
 .dspromo__wrapper img {
@@ -1955,6 +1954,53 @@ input[type="radio"]:checked::before {
     margin: 0;
 }
 /*** End of Promo Section ***/
+
+/*** Start of On Sale Section ***/
+.ds__discount__section {
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+/* Countdown Timer */
+.ds__countdown__timer {
+    display: flex;
+    align-items: flex-start;
+}
+
+.ds__countdown__timer .dscdt__items {
+    display: flex;
+    flex-direction: column;
+}
+
+.ds__countdown__timer .dscdt__items span {
+    color: #594949;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 500;
+    font-family: 'Urbanist', sans-serif;
+    text-align: center;
+    width: 60%;
+}
+
+.ds__countdown__timer .dscdt__items .timer {
+    color: var(--text-color);
+    font-size: 72px;
+    line-height: 86px;
+    font-weight: 700;
+    font-family: 'Urbanist', sans-serif;
+}
+
+.ds__countdown__timer .dscdt__items .timer::after {
+    content: ':';
+    margin: 0 20px;
+}
+
+.ds__countdown__timer .dscdt__items:last-child .timer::after {
+    display: none;
+}
+
+
+/*** End of On Sale Section ***/
 
 /*
 rgba(95, 23, 6, 0.4)

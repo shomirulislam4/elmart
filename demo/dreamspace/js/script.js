@@ -207,4 +207,30 @@
         });
     });
 
+    //On Sale Timer
+    function makeTimer() {
+        var endTime = new Date("30 March 2025 0:00:00 UTC+0");    
+        endTime = (Date.parse(endTime) / 1000);
+        var now = new Date();
+        now = (Date.parse(now) / 1000);
+    
+        var timeLeft = endTime - now;
+        var days = Math.floor(timeLeft / 86400); 
+        var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
+        var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
+        var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+    
+        function addLeadingZero(num) {
+            return (num < 10 ? '0' : '') + num;
+        }
+    
+        $(".ds__countdown__timer .days").html(addLeadingZero(days));
+        $(".ds__countdown__timer .hours").html(addLeadingZero(hours));
+        $(".ds__countdown__timer .minutes").html(addLeadingZero(minutes));
+        $(".ds__countdown__timer .seconds").html(addLeadingZero(seconds));        
+    }
+    
+    setInterval(function() { makeTimer(); }, 1000);
+    
+
 }) (jQuery);
