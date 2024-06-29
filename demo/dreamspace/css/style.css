@@ -2171,7 +2171,6 @@ input[type="radio"]:checked::before {
 /*** Start of FAQs Section ***/
 .ds__faqs__section {
     margin-top: 100px;
-    margin-bottom: 200px;
 }
 
 @media (min-width: 576px) {
@@ -2226,6 +2225,170 @@ input[type="radio"]:checked::before {
 	padding-bottom: 20px;
 }
 /*** End of FAQs Section ***/
+
+/*** Start of Testimonials Section ***/
+.ds__testimonials__section {
+    margin-top: 100px;
+}
+
+.ds__testimonials__section .dscs__titlenav {
+    justify-content: center;
+}
+
+.ds__testimonials__section .dscs__titlenav .dscs__title h2 {
+    text-align: center;
+}
+
+.ds__testimonials__section .dsts__wrapper .dscs__titlenav .dscs__nav {
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 35px;
+}
+
+.dsts__wrapper {
+    padding: 0;
+    position: relative;
+    height: 722px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.dsts__wrapper .dscs__titlenav {
+	margin-bottom: 0;
+}
+
+.dsts__wrapper .left__image {
+    position: absolute;
+    height: fit-content;
+    width: fit-content;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 722px;
+}
+
+.dsts__wrapper .left__image img {
+    width: auto;
+    height: 100%;
+}
+
+.dsts__wrapper .left__image .image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.ds__testimonials__slider {
+    width: 803px;
+    height: 548px;
+	background: var(--text-color);
+	margin: 0;
+	margin-top: 40px;
+	border-radius: 10px;
+}
+
+.ds__testimonials__slider .swiper-slide {
+    padding: 96px 53px 74px 153px;
+}
+
+.ds__testimonials__slider .swiper-slide p {
+    color: #FFF;
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 700;
+    font-family: 'Urbanist', sans-serif;
+    margin-bottom: 60px;
+}
+
+.ds__testimonials__slider .swiper-slide p::before {
+    content: '"';
+    font-style: italic;
+    margin-right: 5px;
+}
+
+.ds__testimonials__slider .swiper-slide p::after {
+    content: '"';
+    font-style: italic;
+    margin-left: -2px;
+}
+
+.ds__testimonials__slider .swiper-slide .dsts__user__info {
+    display: flex;
+    gap: 15px;
+}
+
+.ds__testimonials__slider .swiper-slide .dsts__user__info .image {
+    height: 72px;
+    width: 72px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.ds__testimonials__slider .swiper-slide .dsts__user__info .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.ds__testimonials__slider .swiper-slide .dsts__user__info .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ds__testimonials__slider .swiper-slide .dsts__user__info .text h3,
+.ds__testimonials__slider .swiper-slide .dsts__user__info .text h4 {
+    color: #FFF;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+    font-family: 'Urbanist', sans-serif;
+    margin-bottom: 0;
+}
+
+.ds__testimonials__slider .swiper-slide .dsts__user__info .text h4 {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 400;
+}
+/*** End of Testimonials Section ***/
+
+/*** Start of Gallery Section ***/
+.ds__gallery__section {
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+.ds__gallery__section .dscs__titlenav {
+    justify-content: center;
+}
+
+.ds__gallery__section .dscs__titlenav .dscs__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.ds__gallery__section .dscs__titlenav .dscs__title h2 {
+    text-align: center;
+}
+
+.ds__gallery__section .dscs__titlenav .dscs__title p {
+    color: var(--text-color);
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+    font-family: 'Urbanist', sans-serif;
+    text-align: center;
+    margin: 0;
+}
+/*** End of Gallery Section ***/
 
 /*
 rgba(95, 23, 6, 0.4)

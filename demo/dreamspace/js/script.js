@@ -231,6 +231,17 @@
         $(".ds__countdown__timer .seconds").html(addLeadingZero(seconds));        
     }
     setInterval(function() { makeTimer(); }, 1000);
+
+    //Testimonials Slider
+    $(function(){
+        var swiper = new Swiper(".ds__testimonials__slider", {
+            loop: true,
+            navigation: {
+              nextEl: ".ds__testimonials__slider__next",
+              prevEl: ".ds__testimonials__slider__prev",
+            },
+        });
+    });
     
 
 }) (jQuery);

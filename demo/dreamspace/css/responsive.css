@@ -3,7 +3,9 @@
     .ds__newarrivals__section,
     .ds__features__section,
     .ds__week__highlights__section,
-    .ds__best__seller__section {
+    .ds__best__seller__section,
+    .ds__faqs__section,
+    .ds__testimonials__section {
         margin-top: 30px;
     }
     .ds__button__a {
@@ -483,16 +485,56 @@
         .dsfaq__items__header__btn {
             padding: 10px 0;
             padding-top: 8px;
-            font-size: 14px;
+            font-size: 12px;
         }
         .dsfaq__items__header__btn::after {
-            font-size: 18px;
+            font-size: 16px;
         }
         .dsfaq__items__content {
             font-size: 12px;
-            line-height: 20px;
+            line-height: 18px;
             padding-top: 5px;
-            padding-bottom: 10px;
+            padding-bottom: 8px;
+        }
+        /*Testimonials Section*/
+        .ds__testimonials__slider {
+            width: 190px;
+            height: 228px;
+            margin-top: 8px;
+        }
+        .dsts__wrapper .dscs__titlenav {
+            margin-bottom: 0;
+            z-index: 10;
+        }
+        .dsts__wrapper {
+            height: 300px;
+        }
+        .dsts__wrapper .left__image {
+            height: 200px;
+        }
+        .ds__testimonials__slider .swiper-slide {
+            padding: 12px;
+            padding-right: 6px;
+        }
+        .ds__testimonials__section .dsts__wrapper .dscs__titlenav .dscs__nav {
+            margin-top: 8px;
+        }
+        .ds__testimonials__slider .swiper-slide p {
+            font-size: 12px;
+            line-height: 18px;
+            margin-bottom: 10px;
+        }
+        .ds__testimonials__slider .swiper-slide .dsts__user__info .image {
+            height: 30px;
+            width: 30px;
+        }
+        .ds__testimonials__slider .swiper-slide .dsts__user__info .text h3 {
+            font-size: 10px;
+            line-height: 14px;
+        }
+        .ds__testimonials__slider .swiper-slide .dsts__user__info .text h4 {
+            font-size: 8px;
+            line-height: 14px;
         }
 }
 
@@ -501,7 +543,9 @@
     .ds__newarrivals__section,
     .ds__features__section,
     .ds__week__highlights__section,
-    .ds__best__seller__section {
+    .ds__best__seller__section,
+    .ds__faqs__section,
+    .ds__testimonials__section {
         margin-top: 30px;
     }
     .ds__button__a {
@@ -922,6 +966,44 @@
             padding-top: 5px;
             padding-bottom: 10px;
         }
+        /*Testimonials Section*/
+        .ds__testimonials__slider {
+            width: 250px;
+            height: 263px;
+            margin-top: 8px;
+        }
+        .dsts__wrapper .dscs__titlenav {
+            margin-bottom: 0;
+            z-index: 10;
+        }
+        .dsts__wrapper,
+        .dsts__wrapper .left__image {
+            height: 325px;
+        }
+        .ds__testimonials__slider .swiper-slide {
+            padding: 18px;
+            padding-right: 8px;
+        }
+        .ds__testimonials__section .dsts__wrapper .dscs__titlenav .dscs__nav {
+            margin-top: 8px;
+        }
+        .ds__testimonials__slider .swiper-slide p {
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 10px;
+        }
+        .ds__testimonials__slider .swiper-slide .dsts__user__info .image {
+            height: 35px;
+            width: 35px;
+        }
+        .ds__testimonials__slider .swiper-slide .dsts__user__info .text h3 {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .ds__testimonials__slider .swiper-slide .dsts__user__info .text h4 {
+            font-size: 10px;
+            line-height: 18px;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -929,7 +1011,9 @@
     .ds__newarrivals__section,
     .ds__features__section,
     .ds__week__highlights__section,
-    .ds__best__seller__section {
+    .ds__best__seller__section,
+    .ds__faqs__section,
+    .ds__testimonials__section {
         margin-top: 40px;
     }
     .ds__button__a {
@@ -1322,6 +1406,44 @@
             padding-top: 5px;
             padding-bottom: 10px;
         }
+        /*Testimonials Section*/
+        .ds__testimonials__slider {
+            width: 320px;
+            height: 315px;
+            margin-top: 30px;
+        }
+        .dsts__wrapper .dscs__titlenav {
+            margin-bottom: 0;
+            z-index: 10;
+        }
+        .dsts__wrapper,
+        .dsts__wrapper .left__image {
+            height: 435px;
+        }
+        .ds__testimonials__slider .swiper-slide {
+            padding: 20px;
+            padding-right: 10px;
+        }
+        .ds__testimonials__section .dsts__wrapper .dscs__titlenav .dscs__nav {
+            margin-top: 25px;
+        }
+        .ds__testimonials__slider .swiper-slide p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            line-height: 26px;
+        }
+        .ds__testimonials__slider .swiper-slide .dsts__user__info .image {
+            height: 45px;
+            width: 45px;
+        }
+        .ds__testimonials__slider .swiper-slide .dsts__user__info .text h3 {
+            font-size: 16px;
+            line-height: 22px;
+        }
+        .ds__testimonials__slider .swiper-slide .dsts__user__info .text h4 {
+            font-size: 12px;
+            line-height: 20px;
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -1329,7 +1451,9 @@
     .ds__newarrivals__section,
     .ds__features__section,
     .ds__week__highlights__section,
-    .ds__best__seller__section {
+    .ds__best__seller__section,
+    .ds__faqs__section,
+    .ds__testimonials__section {
         margin-top: 50px;
     }
     .ds__button__a {
@@ -1592,6 +1716,10 @@
             gap: 10px;
             padding: 0;
         }
+        .ds__discount__section .dscs__titlenav {
+            flex-direction: column;
+            gap: 20px;
+        }
         .ds__countdown__timer .dscdt__items .timer {
             font-size: 40px;
             line-height: 50px;
@@ -1678,6 +1806,40 @@
             padding-top: 5px;
             padding-bottom: 10px;
         }
+        /*Testimonials Section*/
+        .ds__testimonials__slider {
+            width: 500px;
+            height: 345px;
+            margin-top: 30px;
+        }
+        .dsts__wrapper,
+        .dsts__wrapper .left__image {
+            height: 480px;
+        }
+        .ds__testimonials__slider .swiper-slide {
+            padding: 40px;
+            padding-right: 10px;
+        }
+        .ds__testimonials__section .dsts__wrapper .dscs__titlenav .dscs__nav {
+            margin-top: 25px;
+        }
+        .ds__testimonials__slider .swiper-slide p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            line-height: 30px;
+        }
+        .ds__testimonials__slider .swiper-slide .dsts__user__info .image {
+            height: 52px;
+            width: 52px;
+        }
+        .ds__testimonials__slider .swiper-slide .dsts__user__info .text h3 {
+            font-size: 18px;
+            line-height: 26px;
+        }
+        .ds__testimonials__slider .swiper-slide .dsts__user__info .text h4 {
+            font-size: 14px;
+            line-height: 22px;
+        }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1685,7 +1847,9 @@
     .ds__newarrivals__section,
     .ds__features__section,
     .ds__week__highlights__section,
-    .ds__best__seller__section {
+    .ds__best__seller__section,
+    .ds__faqs__section,
+    .ds__testimonials__section {
         margin-top: 60px;
     }
     .ds__button__a {
@@ -2034,6 +2198,40 @@
             line-height: 26px;
             padding-bottom: 15px;
         }
+        /*Testimonials Section*/
+        .ds__testimonials__slider {
+            width: 500px;
+            height: 345px;
+            margin-top: 30px;
+        }
+        .dsts__wrapper,
+        .dsts__wrapper .left__image {
+            height: 480px;
+        }
+        .ds__testimonials__slider .swiper-slide {
+            padding: 40px;
+            padding-right: 10px;
+        }
+        .ds__testimonials__section .dsts__wrapper .dscs__titlenav .dscs__nav {
+            margin-top: 25px;
+        }
+        .ds__testimonials__slider .swiper-slide p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            line-height: 30px;
+        }
+        .ds__testimonials__slider .swiper-slide .dsts__user__info .image {
+            height: 52px;
+            width: 52px;
+        }
+        .ds__testimonials__slider .swiper-slide .dsts__user__info .text h3 {
+            font-size: 18px;
+            line-height: 26px;
+        }
+        .ds__testimonials__slider .swiper-slide .dsts__user__info .text h4 {
+            font-size: 14px;
+            line-height: 22px;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -2041,7 +2239,9 @@
     .ds__newarrivals__section,
     .ds__features__section,
     .ds__week__highlights__section,
-    .ds__best__seller__section {
+    .ds__best__seller__section,
+    .ds__faqs__section,
+    .ds__testimonials__section {
         margin-top: 70px;
     }
     .ds__button__b {
@@ -2267,6 +2467,26 @@
             font-size: 16px;
             line-height: 26px;
         }
+        /*Testimonials Section*/
+        .ds__testimonials__slider {
+            width: 750px;
+            height: 488px;
+            margin-top: 30px;
+        }
+        .dsts__wrapper,
+        .dsts__wrapper .left__image {
+            height: 642px;
+        }
+        .ds__testimonials__slider .swiper-slide {
+            padding: 80px 53px 74px 100px;
+        }
+        .ds__testimonials__section .dsts__wrapper .dscs__titlenav .dscs__nav {
+            margin-top: 25px;
+        }
+        .ds__testimonials__slider .swiper-slide p {
+            font-size: 26px;
+            margin-bottom: 50px;
+        }
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -2274,7 +2494,9 @@
     .ds__newarrivals__section,
     .ds__features__section,
     .ds__week__highlights__section,
-    .ds__best__seller__section {
+    .ds__best__seller__section,
+    .ds__faqs__section,
+    .ds__testimonials__section {
         margin-top: 80px;
     }
     /*===== Home Page =====*/
@@ -2418,6 +2640,13 @@
             font-size: 18px;
             line-height: 28px;
         }
+        /*Testimonials Section*/
+        .ds__testimonials__slider {
+            width: 780px;
+        }
+        .ds__testimonials__slider .swiper-slide {
+            padding: 96px 53px 74px 130px;
+        }
 }
 
 @media (min-width: 1400px) and (max-width: 1499px) {
@@ -2425,7 +2654,9 @@
     .ds__newarrivals__section,
     .ds__features__section,
     .ds__week__highlights__section,
-    .ds__best__seller__section {
+    .ds__best__seller__section,
+    .ds__faqs__section,
+    .ds__testimonials__section {
         margin-top: 80px;
     }
     /*===== Home Page =====*/
