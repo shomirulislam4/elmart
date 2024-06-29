@@ -1,7 +1,7 @@
 @media (max-width: 289px) {
     .ds__categories__section,
     .ds__newarrivals__section,
-    .ds__faqs__section,
+    .ds__features__section,
     .ds__week__highlights__section,
     .ds__best__seller__section {
         margin-top: 30px;
@@ -308,35 +308,35 @@
             top: 10px;
         }
         /*FAQs Section*/
-        .dsfaq__content .dsfaq__items__list .item .image svg {
+        .dsfeatures__content .dsfeatures__items__list .item .image svg {
             height: 40px;
             width: 40px;
         }
-        .dsfaq__content .dsfaq__items__list .item {
+        .dsfeatures__content .dsfeatures__items__list .item {
             gap: 10px;
             padding: 10px 0;
             display: flex;
             flex-direction: column;
         }
-        .dsfaq__content .dsfaq__items__list .item .text h4 {
+        .dsfeatures__content .dsfeatures__items__list .item .text h4 {
             font-size: 16px;
             line-height: 22px;
             margin-bottom: 2px;
             text-align: center;
         }
-        .dsfaq__content .dsfaq__items__list .item .text p {
+        .dsfeatures__content .dsfeatures__items__list .item .text p {
             font-size: 10px;
             line-height: 16px;
             text-align: center;
         }
-        .dsfaq__image {
+        .dsfeatures__image {
             width: 100%;
             height: 250px;
             display: flex;
             justify-content: center;
             margin-top: 20px;
         }
-        .dsfaq__image img {
+        .dsfeatures__image img {
             width: auto;
             height: 100%;
         }
@@ -479,12 +479,27 @@
         .dsbs__item:hover .dsbs__item__name {
             top: 10px;
         }
+        /*FAQs Section*/
+        .dsfaq__items__header__btn {
+            padding: 10px 0;
+            padding-top: 8px;
+            font-size: 14px;
+        }
+        .dsfaq__items__header__btn::after {
+            font-size: 18px;
+        }
+        .dsfaq__items__content {
+            font-size: 12px;
+            line-height: 20px;
+            padding-top: 5px;
+            padding-bottom: 10px;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
     .ds__categories__section,
     .ds__newarrivals__section,
-    .ds__faqs__section,
+    .ds__features__section,
     .ds__week__highlights__section,
     .ds__best__seller__section {
         margin-top: 30px;
@@ -725,31 +740,31 @@
             line-height: 32px;
         }
         /*FAQs Section*/
-        .dsfaq__content .dsfaq__items__list .item .image svg {
+        .dsfeatures__content .dsfeatures__items__list .item .image svg {
             height: 34px;
             width: 34px;
         }
-        .dsfaq__content .dsfaq__items__list .item {
+        .dsfeatures__content .dsfeatures__items__list .item {
             gap: 10px;
             padding: 10px 0;
         }
-        .dsfaq__content .dsfaq__items__list .item .text h4 {
+        .dsfeatures__content .dsfeatures__items__list .item .text h4 {
             font-size: 16px;
             line-height: 22px;
             margin-bottom: 2px;
         }
-        .dsfaq__content .dsfaq__items__list .item .text p {
+        .dsfeatures__content .dsfeatures__items__list .item .text p {
             font-size: 10px;
             line-height: 16px;
         }
-        .dsfaq__image {
+        .dsfeatures__image {
             width: 100%;
             height: 380px;
             display: flex;
             justify-content: center;
             margin-top: 20px;
         }
-        .dsfaq__image img {
+        .dsfeatures__image img {
             width: auto;
             height: 100%;
         }
@@ -892,12 +907,27 @@
         .dsbs__item:hover .dsbs__item__name {
             top: 10px;
         }
+        /*FAQs Section*/
+        .dsfaq__items__header__btn {
+            padding: 10px 0;
+            padding-top: 8px;
+            font-size: 14px;
+        }
+        .dsfaq__items__header__btn::after {
+            font-size: 18px;
+        }
+        .dsfaq__items__content {
+            font-size: 12px;
+            line-height: 20px;
+            padding-top: 5px;
+            padding-bottom: 10px;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
     .ds__categories__section,
     .ds__newarrivals__section,
-    .ds__faqs__section,
+    .ds__features__section,
     .ds__week__highlights__section,
     .ds__best__seller__section {
         margin-top: 40px;
@@ -1108,31 +1138,31 @@
             justify-content: center;
         }
         /*FAQs Section*/
-        .dsfaq__content .dsfaq__items__list .item .image svg {
+        .dsfeatures__content .dsfeatures__items__list .item .image svg {
             height: 40px;
             width: 40px;
         }
-        .dsfaq__content .dsfaq__items__list .item {
+        .dsfeatures__content .dsfeatures__items__list .item {
             gap: 10px;
             padding: 14px 0;
         }
-        .dsfaq__content .dsfaq__items__list .item .text h4 {
+        .dsfeatures__content .dsfeatures__items__list .item .text h4 {
             font-size: 20px;
             line-height: 28px;
             margin-bottom: 2px;
         }
-        .dsfaq__content .dsfaq__items__list .item .text p {
+        .dsfeatures__content .dsfeatures__items__list .item .text p {
             font-size: 12px;
             line-height: 18px;
         }
-        .dsfaq__image {
+        .dsfeatures__image {
             width: 100%;
             height: 400px;
             display: flex;
             justify-content: center;
             margin-top: 30px;
         }
-        .dsfaq__image img {
+        .dsfeatures__image img {
             width: auto;
             height: 100%;
         }
@@ -1277,12 +1307,27 @@
         .dsbs__item:hover .dsbs__item__name {
             top: 10px;
         }
+        /*FAQs Section*/
+        .dsfaq__items__header__btn {
+            padding: 14px 0;
+            padding-top: 12px;
+            font-size: 18px;
+        }
+        .dsfaq__items__header__btn::after {
+            font-size: 26px;
+        }
+        .dsfaq__items__content {
+            font-size: 14px;
+            line-height: 24px;
+            padding-top: 5px;
+            padding-bottom: 10px;
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
     .ds__categories__section,
     .ds__newarrivals__section,
-    .ds__faqs__section,
+    .ds__features__section,
     .ds__week__highlights__section,
     .ds__best__seller__section {
         margin-top: 50px;
@@ -1479,30 +1524,30 @@
             line-height: 30px;
         }
         /*FAQs Section*/
-        .dsfaq__content .dsfaq__items__list .item .image svg {
+        .dsfeatures__content .dsfeatures__items__list .item .image svg {
             height: 45px;
             width: 45px;
         }
-        .dsfaq__content .dsfaq__items__list .item {
+        .dsfeatures__content .dsfeatures__items__list .item {
             gap: 15px;
             padding: 14px 0;
         }
-        .dsfaq__content .dsfaq__items__list .item .text h4 {
+        .dsfeatures__content .dsfeatures__items__list .item .text h4 {
             font-size: 22px;
             line-height: 30px;
         }
-        .dsfaq__content .dsfaq__items__list .item .text p {
+        .dsfeatures__content .dsfeatures__items__list .item .text p {
             font-size: 14px;
             line-height: 20px;
         }
-        .dsfaq__image {
+        .dsfeatures__image {
             width: 100%;
             height: 400px;
             display: flex;
             justify-content: center;
             margin-top: 30px;
         }
-        .dsfaq__image img {
+        .dsfeatures__image img {
             width: auto;
             height: 100%;
         }
@@ -1618,12 +1663,27 @@
         .dsbs__item:hover .dsbs__item__name {
             top: 10px;
         }
+        /*FAQs Section*/
+        .dsfaq__items__header__btn {
+            padding: 14px 0;
+            padding-top: 12px;
+            font-size: 18px;
+        }
+        .dsfaq__items__header__btn::after {
+            font-size: 26px;
+        }
+        .dsfaq__items__content {
+            font-size: 14px;
+            line-height: 24px;
+            padding-top: 5px;
+            padding-bottom: 10px;
+        }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
     .ds__categories__section,
     .ds__newarrivals__section,
-    .ds__faqs__section,
+    .ds__features__section,
     .ds__week__highlights__section,
     .ds__best__seller__section {
         margin-top: 60px;
@@ -1828,20 +1888,20 @@
             line-height: 30px;
         }
         /*FAQs Section*/
-        .dsfaq__content .dsfaq__items__list .item .image svg {
+        .dsfeatures__content .dsfeatures__items__list .item .image svg {
             height: 40px;
             width: 40px;
         }
-        .dsfaq__content .dsfaq__items__list .item {
+        .dsfeatures__content .dsfeatures__items__list .item {
             gap: 10px;
             padding: 10px 0;
         }
-        .dsfaq__content .dsfaq__items__list .item .text h4 {
+        .dsfeatures__content .dsfeatures__items__list .item .text h4 {
             font-size: 22px;
             line-height: 26px;
             margin-bottom: 2px;
         }
-        .dsfaq__content .dsfaq__items__list .item .text p {
+        .dsfeatures__content .dsfeatures__items__list .item .text p {
             font-size: 14px;
             line-height: 20px;
         }
@@ -1960,12 +2020,26 @@
         .dsbs__item:hover .dsbs__item__name {
             top: 10px;
         }
+        /*FAQs Section*/
+        .dsfaq__items__header__btn {
+            padding: 18px 0;
+            padding-top: 16px;
+            font-size: 22px;
+        }
+        .dsfaq__items__header__btn::after {
+            font-size: 30px;
+        }
+        .dsfaq__items__content {
+            font-size: 16px;
+            line-height: 26px;
+            padding-bottom: 15px;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
     .ds__categories__section,
     .ds__newarrivals__section,
-    .ds__faqs__section,
+    .ds__features__section,
     .ds__week__highlights__section,
     .ds__best__seller__section {
         margin-top: 70px;
@@ -2070,19 +2144,19 @@
             width: 62px;
         }
         /*FAQs Section*/
-        .dsfaq__content .dsfaq__items__list .item .image svg {
+        .dsfeatures__content .dsfeatures__items__list .item .image svg {
             height: 45px;
             width: 45px;
         }
-        .dsfaq__content .dsfaq__items__list .item {
+        .dsfeatures__content .dsfeatures__items__list .item {
             gap: 15px;
             padding: 14px 0;
         }
-        .dsfaq__content .dsfaq__items__list .item .text h4 {
+        .dsfeatures__content .dsfeatures__items__list .item .text h4 {
             font-size: 26px;
             line-height: 32px;
         }
-        .dsfaq__content .dsfaq__items__list .item .text p {
+        .dsfeatures__content .dsfeatures__items__list .item .text p {
             font-size: 16px;
         }
         /*Highlights of the Week*/
@@ -2180,12 +2254,25 @@
         .dsbs__item:hover .dsbs__item__name {
             top: 10px;
         }
+        /*FAQs Section*/
+        .dsfaq__items__header__btn {
+            padding: 20px 0;
+            padding-top: 18px;
+            font-size: 24px;
+        }
+        .dsfaq__items__header__btn::after {
+            font-size: 46px;
+        }
+        .dsfaq__items__content {
+            font-size: 16px;
+            line-height: 26px;
+        }
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
     .ds__categories__section,
     .ds__newarrivals__section,
-    .ds__faqs__section,
+    .ds__features__section,
     .ds__week__highlights__section,
     .ds__best__seller__section {
         margin-top: 80px;
@@ -2240,7 +2327,7 @@
             height: 370px;
         }
         /*FAQs Section*/
-        .dsfaq__content .dsfaq__items__list .item .text p {
+        .dsfeatures__content .dsfeatures__items__list .item .text p {
             font-size: 16px;
         }
         /*Highlights of the Week*/
@@ -2326,12 +2413,17 @@
         .dsbs__item:hover .dsbs__item__name {
             top: 10px;
         }
+        /*FAQs Section*/
+        .dsfaq__items__content {
+            font-size: 18px;
+            line-height: 28px;
+        }
 }
 
 @media (min-width: 1400px) and (max-width: 1499px) {
     .ds__categories__section,
     .ds__newarrivals__section,
-    .ds__faqs__section,
+    .ds__features__section,
     .ds__week__highlights__section,
     .ds__best__seller__section {
         margin-top: 80px;

@@ -1762,30 +1762,30 @@ input[type="radio"]:checked::before {
 }
 /*** End of New Arrivals Section ***/
 
-/*** Start of FAQs Section ***/
-.ds__faqs__section {
+/*** Start of Features Section ***/
+.ds__features__section {
     margin-top: 100px;
 }
 
-.ds__faqs__section .dscs__titlenav {
+.ds__features__section .dscs__titlenav {
     margin-bottom: 20px;
 }
 
-.dsfaq__content {
+.dsfeatures__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
 }
 
-.dsfaq__content .dsfaq__items__list .item  {
+.dsfeatures__content .dsfeatures__items__list .item  {
     display: flex;
     align-items: center;
     gap: 22px;
     padding: 24px 0;
 }
 
-.dsfaq__content .dsfaq__items__list .item .image svg {
+.dsfeatures__content .dsfeatures__items__list .item .image svg {
     height: 60px;
     width: 60px;
     fill: var(--text-color);
@@ -1796,11 +1796,11 @@ input[type="radio"]:checked::before {
     -o-transition: 0.3s;
 }
 
-.dsfaq__content .dsfaq__items__list .item:hover .image svg {
+.dsfeatures__content .dsfeatures__items__list .item:hover .image svg {
     fill: var(--main-color);
 }
 
-.dsfaq__content .dsfaq__items__list .item .text h4 {
+.dsfeatures__content .dsfeatures__items__list .item .text h4 {
     color: var(--text-color);
     font-size: 30px;
     line-height: 36px;
@@ -1815,11 +1815,11 @@ input[type="radio"]:checked::before {
     -o-transition: 0.3s;
 }
 
-.dsfaq__content .dsfaq__items__list .item:hover .text h4 {
+.dsfeatures__content .dsfeatures__items__list .item:hover .text h4 {
     color: var(--main-color);
 }
 
-.dsfaq__content .dsfaq__items__list .item .text p {
+.dsfeatures__content .dsfeatures__items__list .item .text p {
     color: #6D6D6D;
     font-size: 20px;
     line-height: 24px;
@@ -1829,16 +1829,16 @@ input[type="radio"]:checked::before {
     margin: 0;
 }
 
-.dsfaq__image {
+.dsfeatures__image {
     width: 100%;
     height: auto;
 }
 
-.dsfaq__image img {
+.dsfeatures__image img {
     width: 100%;
     height: auto;
 }
-/*** End of FAQs Section ***/
+/*** End of Features Section ***/
 
 /*** Start of Highlights of the Week ***/
 .ds__week__highlights__section {
@@ -2040,7 +2040,6 @@ input[type="radio"]:checked::before {
 /*** Start of Best Sellers ***/
 .ds__best__seller__section {
     margin-top: 100px;
-    margin-bottom: 200px;
 }
 
 .dsbs__wrapper {
@@ -2167,9 +2166,66 @@ input[type="radio"]:checked::before {
 .dsbs__item.item6 {
     height: 506px;
 }
-
-
 /*** End of Best Sellers ***/
+
+/*** Start of FAQs Section ***/
+.ds__faqs__section {
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+@media (min-width: 576px) {
+    .dsfaq__wrapper {
+        padding: 0;
+    }
+}
+
+.dsfaq__items__header__btn {
+	position: relative;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding: 28px 0;
+    padding-top: 26px;
+	color: var(--text-color);
+	font-size: 30px;
+    line-height: 150%;
+    font-weight: 600;
+    font-family: 'Urbanist', sans-serif;
+	text-align: left;
+	background: transparent;
+    border-bottom: 1px solid var(--text-color);
+	transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.dsfaq__items__header__btn::after {
+	flex-shrink: 0;
+	margin-left: auto;
+	content: '+';
+    font-size: 64px;
+    line-height: 22px;
+    font-weight: 500;
+    font-family: 'Urbanist', sans-serif;
+}
+
+.dsfaq__items__header__btn:not(.collapsed)::after {
+    content: '-';
+}
+
+.dsfaq__items__content {
+    color: var(--text-color);
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: 400;
+	font-family: 'Urbanist', sans-serif;
+	padding: 10px 0;
+	padding-bottom: 20px;
+}
+/*** End of FAQs Section ***/
 
 /*
 rgba(95, 23, 6, 0.4)
