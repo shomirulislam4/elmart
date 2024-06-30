@@ -242,6 +242,82 @@
             },
         });
     });
+
+    //Galley Image Lightbox (Photoswipe)
+    $(function() {
+        var $pswp = $('.pswp')[0];
+        var imageElements = $('.dsgallery__wrapper a');
+        var items = [];
+
+        imageElements.each(function() {
+            var $link = $(this);
+            var item = {
+                src: $link.attr('href'),
+                w: 0, // Width will be dynamically set
+                h: 0, // Height will be dynamically set
+                title: $link.find('img').attr('title')
+            };
+            items.push(item);
+        });
+
+        imageElements.click(function(event) {
+            event.preventDefault();
+            var index = imageElements.index(this);
+            var options = {
+                index: index,
+                bgOpacity: 0.8,
+                showHideOpacity: true
+            };
+
+            // Preload images and set the correct dimensions
+            var gallery = new PhotoSwipe($pswp, PhotoSwipeUI_Default, items, options);
+            gallery.listen('gettingData', function(index, item) {
+                if (item.w < 1 || item.h < 1) { // If dimensions are unknown
+                    var img = new Image();
+                    img.onload = function() {
+                        item.w = this.width;
+                        item.h = this.height;
+                        gallery.invalidateCurrItems(); // Recalculate dimensions
+                        gallery.updateSize(true); // Reapply sizing
+                    };
+                    img.src = item.src; // Trigger the loading of the image
+                }
+            });
+            gallery.init();
+        });
+    });
+
+    //Blog Slider
+    $(function(){
+        var swiper = new Swiper('.dsblog__slider', {
+            loop: true,
+            slidesPerView: 3,
+            spaceBetween: 0,
+            navigation: {
+                nextEl: '.dscs__wsbtn__next',
+                prevEl: '.dscs__wsbtn__prev',
+            },
+            /*breakpoints: {
+                1200: {
+                    slidesPerView: 4,
+                    spaceBetween: 15,
+                },
+                992: {
+                    slidesPerView: 3,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                576: {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                },
+                0: {
+                    slidesPerView: 1,
+                }
+            }*/
+        });
+    });
     
 
 }) (jQuery);

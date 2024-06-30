@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="../css/spacing.css">
     <link rel="stylesheet" href="../css/animate.min.css">
     <link rel="stylesheet" href="../css/nice-select.css">
+    <link rel="stylesheet" href="../css/photoswipe/photoswipe.min.css">
+    <link rel="stylesheet" href="../css/photoswipe/default-skin.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -1366,11 +1368,195 @@
                 </div>
             </div>
             <div class="row">
+                <div class="dsgallery__wrapper">
+                    <div class="dsgallery__left__side">
+                        <a href="image/gallery/1.png" class="item1">
+                            <img src="image/gallery/1.png" alt="gallery image" title="Place where people bought our products 1.">
+                        </a>
+                        <a href="image/gallery/2.png" class="item2">
+                            <img src="image/gallery/2.png" alt="gallery image" title="Place where people bought our products 2.">
+                        </a>
+                        <a href="image/gallery/3.png" class="item3">
+                            <img src="image/gallery/3.png" alt="gallery image" title="Place where people bought our products 3.">
+                        </a>
+                        <a href="image/gallery/4.png" class="item4">
+                            <img src="image/gallery/4.png" alt="gallery image" title="Place where people bought our products 4.">
+                        </a>
+                    </div>
+                    <div class="dsgallery__right__side">
+                        <a href="image/gallery/5.png" class="item5">
+                            <img src="image/gallery/5.png" alt="gallery image" title="Place where people bought our products 5.">
+                        </a>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Image Lightbox (Photoswipe) -->
+            <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="pswp__bg"></div>
+                <div class="pswp__scroll-wrap">
+                    <div class="pswp__container">
+                        <div class="pswp__item"></div>
+                        <div class="pswp__item"></div>
+                        <div class="pswp__item"></div>
+                    </div>
+                    <div class="pswp__ui pswp__ui--hidden">
+                        <div class="pswp__top-bar">
+                            <div class="pswp__counter"></div>
+                            <button class="pswp__button pswp__button--close" title="Close (Esc)"><i class="fa-solid fa-xmark"></i></button>
+                            <button class="pswp__button pswp__button--zoom" title="Zoom in/out"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+
+                            <div class="pswp__preloader">
+                                <div class="pswp__preloader__icn">
+                                <div class="pswp__preloader__cut">
+                                    <div class="pswp__preloader__donut"></div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                            <div class="pswp__share-tooltip"></div> 
+                        </div>
+                        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </button>
+                        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                        <div class="pswp__caption">
+                            <div class="pswp__caption__center"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <!-- End of Gallery Section -->
+
+    <!-- Start of Blog Section -->
+    <section class="ds__blog__section">
+        <div class="container">
+            <div class="row">
+                <div class="dscs__titlenav">
+                    <div class="dscs__title">
+                        <h2>Latest News And Blogs</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="dsblog__wrapper">
+                    <div class="swiper dsblog__slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="dsblog__grid">
+                                    <div class="image">
+                                        <img src="image/blog-section/1.png" alt="thumbnail">
+                                    </div>
+                                    <div class="content">
+                                        <a href="blog-post.html" class="dsblog__post__title">
+                                            <h3>Transform Your Space: Top 10 Modern Furniture Trends for 2024</h3>
+                                            <span>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                                                
+                                            </span>
+                                        </a>
+                                        <p class="dsblog__post__desc">Lorem ipsum dolor sit amet consectetur. Vulputate dolor ac nec mauris at vitae urna tempus enim. Sit imperdiet neque in diam.</p>
+                                        <div class="dsblog__author__info">
+                                            <div class="image">
+                                                <img src="image/blog-section/author.png" alt="author">
+                                            </div>
+                                            <div class="content">
+                                                <p>Author Name</p>
+                                                <span class="dsblog__post__date">20 Jan 2022</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="dsblog__grid">
+                                    <div class="image">
+                                        <img src="image/blog-section/2.png" alt="thumbnail">
+                                    </div>
+                                    <div class="content">
+                                        <a href="blog-post.html" class="dsblog__post__title">
+                                            <h3>The Ultimate Guide to Choosing the Perfect Sofa for Your Room</h3>
+                                            <span>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                                                
+                                            </span>
+                                        </a>
+                                        <p class="dsblog__post__desc">Lorem ipsum dolor sit amet consectetur. Vulputate dolor ac nec mauris at vitae urna tempus enim. Sit imperdiet neque in diam.</p>
+                                        <div class="dsblog__author__info">
+                                            <div class="image">
+                                                <img src="image/blog-section/author.png" alt="author">
+                                            </div>
+                                            <div class="content">
+                                                <p>Author Name</p>
+                                                <span class="dsblog__post__date">20 Jan 2022</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="dsblog__grid">
+                                    <div class="image">
+                                        <img src="image/blog-section/3.png" alt="thumbnail">
+                                    </div>
+                                    <div class="content">
+                                        <a href="blog-post.html" class="dsblog__post__title">
+                                            <h3>Sustainable Style: Eco-Friendly Furniture Choices for a home</h3>
+                                            <span>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                                                
+                                            </span>
+                                        </a>
+                                        <p class="dsblog__post__desc">Lorem ipsum dolor sit amet consectetur. Vulputate dolor ac nec mauris at vitae urna tempus enim. Sit imperdiet neque in diam.</p>
+                                        <div class="dsblog__author__info">
+                                            <div class="image">
+                                                <img src="image/blog-section/author.png" alt="author">
+                                            </div>
+                                            <div class="content">
+                                                <p>Author Name</p>
+                                                <span class="dsblog__post__date">20 Jan 2022</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Blog Section -->
+
+    <!-- Start of Newsletter -->
+    <section class="ds__newsletter__section">
+        <div class="container">
+            <div class="dsnewsltr__wrapper">
+                <img src="image/promo-section/newsletter-bg.png" alt="newsletter background image">
+                <div class="content">
+                    <h2>STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
+                    <form action="#" method="post">
+                        <div class="input__field">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 4.125H3C2.70163 4.125 2.41548 4.24353 2.2045 4.4545C1.99353 4.66548 1.875 4.95163 1.875 5.25V18C1.875 18.4973 2.07254 18.9742 2.42417 19.3258C2.77581 19.6775 3.25272 19.875 3.75 19.875H20.25C20.7473 19.875 21.2242 19.6775 21.5758 19.3258C21.9275 18.9742 22.125 18.4973 22.125 18V5.25C22.125 4.95163 22.0065 4.66548 21.7955 4.4545C21.5845 4.24353 21.2984 4.125 21 4.125ZM12 11.9738L5.89219 6.375H18.1078L12 11.9738ZM8.69906 12L4.125 16.1925V7.8075L8.69906 12ZM10.3641 13.5262L11.2397 14.3297C11.4472 14.52 11.7185 14.6255 12 14.6255C12.2815 14.6255 12.5528 14.52 12.7603 14.3297L13.6359 13.5262L18.1078 17.625H5.89219L10.3641 13.5262ZM15.3009 12L19.875 7.8075V16.1925L15.3009 12Z" fill="black" fill-opacity="0.4"/>
+                            </svg>                                
+                            <input type="email" name="dsnewsletter" id="dsnewsltrEmail" placeholder="Enter your email address">
+                        </div>
+                        <button type="submit">Subscribe to Newsletter</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Newsletter -->
 
 
     <!-- JS Links -->
@@ -1378,6 +1564,8 @@
     <script src="../js/bootstrap.bundle.js"></script>
     <script src="../js/fontawesome.min.js"></script>
     <script src="../js/swiper-bundle.min.js"></script>
+    <script src="../js/photoswipe/photoswipe.min.js"></script>
+    <script src="../js/photoswipe/photoswipe-ui-default.min.js"></script>
     <script src="../js/jquery.nice-select.min.js"></script>
     <script src="../js/popper.min.js"></script>
     <script src="js/script.js"></script>
