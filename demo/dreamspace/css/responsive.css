@@ -5,7 +5,11 @@
     .ds__week__highlights__section,
     .ds__best__seller__section,
     .ds__faqs__section,
-    .ds__testimonials__section {
+    .ds__testimonials__section,
+    .ds__gallery__section,
+    .ds__blog__section,
+    .ds__newsletter__section,
+    .ds__footer {
         margin-top: 30px;
     }
     .ds__button__a {
@@ -590,6 +594,98 @@
             font-size: 12px;
             line-height: 20px;
         }
+        /*Blog Section*/
+        .dsblog__slider__btn__prev,
+        .dsblog__slider__btn__next {
+            height: 30px;
+            width: 30px;
+        }
+        .dsblog__slider__btn__prev svg,
+        .dsblog__slider__btn__next svg {
+            height: 15px;
+            width: 15px;
+        }
+        .dsblog__slider__btn__prev {
+            left: 0;
+        }
+        .dsblog__slider__btn__next {
+            right: 0;
+        }
+        .dsblog__slider .swiper-slide {
+            padding: 5px;
+        }
+        .dsblog__slider .dsblog__grid {
+            padding: 5px;
+            gap: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+        .dsblog__slider .dsblog__grid .image {
+            height: 104px;
+        }
+        .dsblog__slider .dsblog__grid .content .dsblog__post__title span {
+            display: none;
+        }
+        .dsblog__slider .dsblog__grid .content .dsblog__post__title h3 {
+            font-size: 14px;
+            line-height: 22px;
+            margin-bottom: 6px;
+            text-align: center;
+        }
+        .dsblog__slider .dsblog__grid .content .dsblog__post__desc {
+            font-size: 10px;
+            line-height: 16px;
+            text-align: center;
+        }
+        .dsblog__slider .dsblog__grid .content .dsblog__author__info .image {
+            height: 30px;
+            width: 30px;
+        }
+        .dsblog__slider .dsblog__grid .content .dsblog__author__info {
+            margin-top: 10px;
+            justify-content: center;
+        }
+        .dsblog__slider .dsblog__grid .content .dsblog__author__info .content p,
+        .dsblog__slider .dsblog__grid .content .dsblog__author__info .content span {
+            font-size: 10px;
+            line-height: 16px;
+        }
+        /*Newsletter Section*/
+        .dsnewsltr__wrapper {
+            height: 154px;
+        }
+        .dsnewsltr__wrapper .content {
+            padding: 10px 5px;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .dsnewsltr__wrapper img {
+            width: 100%;
+            height: 100%;
+        }
+        .dsnewsltr__wrapper .content form {
+            width: 100%;
+            gap: 10px;
+        }
+        .dsnewsltr__wrapper .content form .input__field {
+            padding: 8px 12px;
+        }
+        .dsnewsltr__wrapper .content form .input__field svg {
+            display: none;
+        }
+        .dsnewsltr__wrapper .content form .input__field input {
+            padding-left: 0;
+            font-size: 12px;
+            width: 100%;
+        }
+        .dsnewsltr__wrapper .content form button {
+            padding: 8px 0;
+            font-size: 12px;
+        }
+        .dsnewsltr__wrapper .content h2 {
+            font-size: 14px;
+            line-height: 22px;
+            text-align: center;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
@@ -599,7 +695,11 @@
     .ds__week__highlights__section,
     .ds__best__seller__section,
     .ds__faqs__section,
-    .ds__testimonials__section {
+    .ds__testimonials__section,
+    .ds__gallery__section,
+    .ds__blog__section,
+    .ds__newsletter__section,
+    .ds__footer {
         margin-top: 30px;
     }
     .ds__button__a {
@@ -1106,6 +1206,90 @@
             font-size: 14px;
             line-height: 22px;
         }
+        /*Blog Section*/
+        .dsblog__slider__btn__prev,
+        .dsblog__slider__btn__next {
+            height: 40px;
+            width: 40px;
+        }
+        .dsblog__slider__btn__prev svg,
+        .dsblog__slider__btn__next svg {
+            height: 20px;
+            width: 20px;
+        }
+        .dsblog__slider__btn__prev {
+            left: 0;
+        }
+        .dsblog__slider__btn__next {
+            right: 0;
+        }
+        .dsblog__slider .swiper-slide {
+            padding: 14px;
+        }
+        .dsblog__slider .dsblog__grid {
+            padding: 10px;
+            gap: 20px;
+            box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
+        }
+        .dsblog__slider .dsblog__grid .image {
+            height: 145px;
+        }
+        .dsblog__slider .dsblog__grid .content .dsblog__post__title span {
+            margin-left: 0;
+        }
+        .dsblog__slider .dsblog__grid .content .dsblog__post__title span svg {
+            height: 16px;
+            width: 16px;
+        }
+        .dsblog__slider .dsblog__grid .content .dsblog__post__title h3 {
+            font-size: 18px;
+            line-height: 26px;
+            margin-bottom: 8px;
+        }
+        .dsblog__slider .dsblog__grid .content .dsblog__post__desc {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .dsblog__slider .dsblog__grid .content .dsblog__author__info {
+            margin-top: 15px;
+        }
+        .dsblog__slider .dsblog__grid .content .dsblog__author__info .content p,
+        .dsblog__slider .dsblog__grid .content .dsblog__author__info .content span {
+            font-size: 12px;
+        }
+        /*Newsletter Section*/
+        .dsnewsltr__wrapper {
+            height: 197px;
+        }
+        .dsnewsltr__wrapper .content {
+            padding: 20px;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .dsnewsltr__wrapper img {
+            width: 100%;
+            height: 100%;
+        }
+        .dsnewsltr__wrapper .content form {
+            width: 100%;
+            gap: 10px;
+        }
+        .dsnewsltr__wrapper .content form .input__field {
+            padding: 8px 12px;
+        }
+        .dsnewsltr__wrapper .content form .input__field input {
+            padding-left: 5px;
+            font-size: 14px;
+        }
+        .dsnewsltr__wrapper .content form button {
+            padding: 8px 0;
+            font-size: 16px;
+        }
+        .dsnewsltr__wrapper .content h2 {
+            font-size: 18px;
+            line-height: 26px;
+            text-align: center;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -1115,7 +1299,11 @@
     .ds__week__highlights__section,
     .ds__best__seller__section,
     .ds__faqs__section,
-    .ds__testimonials__section {
+    .ds__testimonials__section,
+    .ds__gallery__section,
+    .ds__blog__section,
+    .ds__newsletter__section,
+    .ds__footer {
         margin-top: 40px;
     }
     .ds__button__a {
@@ -1596,6 +1784,82 @@
             font-size: 16px;
             line-height: 24px;
         }
+        /*Blog Section*/
+        .dsblog__slider__btn__prev,
+        .dsblog__slider__btn__next {
+            height: 40px;
+            width: 40px;
+        }
+        .dsblog__slider__btn__prev svg,
+        .dsblog__slider__btn__next svg {
+            height: 20px;
+            width: 20px;
+        }
+        .dsblog__slider__btn__prev {
+            left: 0;
+        }
+        .dsblog__slider__btn__next {
+            right: 0;
+        }
+        .dsblog__slider .swiper-slide {
+            padding: 14px;
+        }
+        .dsblog__slider .dsblog__grid {
+            padding: 20px;
+            gap: 28px;
+            box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
+        }
+        .dsblog__slider .dsblog__grid .image {
+            height: 202px;
+        }
+        .dsblog__slider .dsblog__grid .content .dsblog__post__title span {
+            margin-left: 10px;
+        }
+        .dsblog__slider .dsblog__grid .content .dsblog__post__title h3 {
+            font-size: 22px;
+            line-height: 30px;
+            margin-bottom: 8px;
+        }
+        .dsblog__slider .dsblog__grid .content .dsblog__post__desc {
+            font-size: 14px;
+            line-height: 22px;
+        }
+        .dsblog__slider .dsblog__grid .content .dsblog__author__info {
+            margin-top: 20px;
+        }
+        /*Newsletter Section*/
+        .dsnewsltr__wrapper {
+            height: 230px;
+        }
+        .dsnewsltr__wrapper .content {
+            padding: 20px;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .dsnewsltr__wrapper img {
+            width: 100%;
+            height: 100%;
+        }
+        .dsnewsltr__wrapper .content form {
+            width: 280px;
+            gap: 10px;
+        }
+        .dsnewsltr__wrapper .content form .input__field {
+            padding: 8px 12px;
+        }
+        .dsnewsltr__wrapper .content form .input__field input {
+            padding-left: 10px;
+            font-size: 16px;
+        }
+        .dsnewsltr__wrapper .content form button {
+            padding: 8px 0;
+            font-size: 18px;
+        }
+        .dsnewsltr__wrapper .content h2 {
+            font-size: 30px;
+            line-height: 40px;
+            text-align: center;
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -1605,7 +1869,11 @@
     .ds__week__highlights__section,
     .ds__best__seller__section,
     .ds__faqs__section,
-    .ds__testimonials__section {
+    .ds__testimonials__section,
+    .ds__gallery__section,
+    .ds__blog__section,
+    .ds__newsletter__section,
+    .ds__footer {
         margin-top: 50px;
     }
     .ds__button__a {
@@ -2033,6 +2301,91 @@
             font-size: 18px;
             line-height: 40px;
         }
+        /*Blog Section*/
+        .dsblog__slider__btn__prev,
+        .dsblog__slider__btn__next {
+            height: 40px;
+            width: 40px;
+        }
+        .dsblog__slider__btn__prev svg,
+        .dsblog__slider__btn__next svg {
+            height: 20px;
+            width: 20px;
+        }
+        .dsblog__slider__btn__prev {
+            left: -18px;
+        }
+        .dsblog__slider__btn__next {
+            right: -18px;
+        }
+        .dsblog__slider .swiper-slide {
+            padding: 10px;
+        }
+        .dsblog__slider .dsblog__grid {
+            padding: 10px;
+            gap: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .dsblog__slider .dsblog__grid .image {
+            height: 144px;
+        }
+        .dsblog__slider .dsblog__grid .content .dsblog__post__title span {
+            margin-left: 5px;
+        }
+        .dsblog__slider .dsblog__grid .content .dsblog__post__title span svg {
+            height: 18px;
+            width: 18px;
+        }
+        .dsblog__slider .dsblog__grid .content .dsblog__post__title h3 {
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 8px;
+        }
+        .dsblog__slider .dsblog__grid .content .dsblog__post__desc {
+            font-size: 12px;
+            line-height: 20px;
+        }
+        .dsblog__slider .dsblog__grid .content .dsblog__author__info {
+            margin-top: 20px;
+        }
+        .dsblog__slider .dsblog__grid .content .dsblog__author__info .content p,
+        .dsblog__slider .dsblog__grid .content .dsblog__author__info .content span {
+            font-size: 12px;
+            line-height: 16px;
+        }
+        /*Newsletter Section*/
+        .dsnewsltr__wrapper {
+            height: 257px;
+        }
+        .dsnewsltr__wrapper .content {
+            padding: 30px;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .dsnewsltr__wrapper img {
+            width: 100%;
+            height: 100%;
+        }
+        .dsnewsltr__wrapper .content form {
+            width: 280px;
+            gap: 12px;
+        }
+        .dsnewsltr__wrapper .content form .input__field {
+            padding: 8px 12px;
+        }
+        .dsnewsltr__wrapper .content form .input__field input {
+            padding-left: 10px;
+            font-size: 16px;
+        }
+        .dsnewsltr__wrapper .content form button {
+            padding: 8px 0;
+            font-size: 18px;
+        }
+        .dsnewsltr__wrapper .content h2 {
+            font-size: 30px;
+            line-height: 40px;
+            text-align: center;
+        }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -2042,7 +2395,11 @@
     .ds__week__highlights__section,
     .ds__best__seller__section,
     .ds__faqs__section,
-    .ds__testimonials__section {
+    .ds__testimonials__section,
+    .ds__gallery__section,
+    .ds__blog__section,
+    .ds__newsletter__section,
+    .ds__footer {
         margin-top: 60px;
     }
     .ds__button__a {
@@ -2458,6 +2815,74 @@
             font-size: 16px;
             line-height: 24px;
         }
+        /*Blog Section*/
+        .dsblog__slider__btn__prev,
+        .dsblog__slider__btn__next {
+            height: 44px;
+            width: 44px;
+        }
+        .dsblog__slider__btn__prev svg,
+        .dsblog__slider__btn__next svg {
+            height: 24px;
+            width: 24px;
+        }
+        .dsblog__slider__btn__prev {
+            left: -22px;
+        }
+        .dsblog__slider__btn__next {
+            right: -22px;
+        }
+        .dsblog__slider .swiper-slide {
+            padding: 14px;
+        }
+        .dsblog__slider .dsblog__grid {
+            padding: 20px;
+            gap: 28px;
+            box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
+        }
+        .dsblog__slider .dsblog__grid .image {
+            height: 187px;
+        }
+        .dsblog__slider .dsblog__grid .content .dsblog__post__title span {
+            margin-left: 10px;
+        }
+        .dsblog__slider .dsblog__grid .content .dsblog__post__title h3 {
+            font-size: 22px;
+            line-height: 30px;
+        }
+        .dsblog__slider .dsblog__grid .content .dsblog__author__info {
+            margin-top: 25px;
+        }
+        /*Newsletter Section*/
+        .dsnewsltr__wrapper {
+            height: 180px;
+        }
+        .dsnewsltr__wrapper .content {
+            padding: 0 34px;
+        }
+        .dsnewsltr__wrapper img {
+            width: 100%;
+            height: 100%;
+        }
+        .dsnewsltr__wrapper .content form {
+            width: 280px;
+            gap: 12px;
+        }
+        .dsnewsltr__wrapper .content form .input__field {
+            padding: 8px 12px;
+        }
+        .dsnewsltr__wrapper .content form .input__field input {
+            padding-left: 10px;
+            font-size: 16px;
+        }
+        .dsnewsltr__wrapper .content form button {
+            padding: 8px 0;
+            font-size: 18px;
+        }
+        .dsnewsltr__wrapper .content h2 {
+            font-size: 30px;
+            line-height: 40px;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -2467,7 +2892,11 @@
     .ds__week__highlights__section,
     .ds__best__seller__section,
     .ds__faqs__section,
-    .ds__testimonials__section {
+    .ds__testimonials__section,
+    .ds__gallery__section,
+    .ds__blog__section,
+    .ds__newsletter__section,
+    .ds__footer {
         margin-top: 70px;
     }
     .ds__button__b {
@@ -2736,6 +3165,48 @@
             height: 535px;
             width: 225px;
         }
+        /*Blog Section*/
+        .dsblog__slider__btn__prev,
+        .dsblog__slider__btn__next {
+            height: 54px;
+            width: 54px;
+        }
+        .dsblog__slider__btn__prev {
+            left: -34px;
+        }
+        .dsblog__slider__btn__next {
+            right: -34px;
+        }
+        .dsblog__slider .swiper-slide {
+            padding: 10px;
+        }
+        .dsblog__slider .dsblog__grid {
+            padding: 15px;
+            gap: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .dsblog__slider .dsblog__grid .image {
+            height: 174px;
+        }
+        .dsblog__slider .dsblog__grid .content .dsblog__post__title span {
+            margin-left: 10px;
+        }
+        .dsblog__slider .dsblog__grid .content .dsblog__post__title h3 {
+            font-size: 20px;
+            line-height: 28px;
+            margin-bottom: 8px;
+        }
+        .dsblog__slider .dsblog__grid .content .dsblog__post__desc {
+            font-size: 14px;
+            line-height: 22px;
+        }
+        .dsblog__slider .dsblog__grid .content .dsblog__author__info {
+            margin-top: 25px;
+        }
+        /*Newsletter Section*/
+        .dsnewsltr__wrapper {
+            height: 183px;
+        }
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -2745,7 +3216,11 @@
     .ds__week__highlights__section,
     .ds__best__seller__section,
     .ds__faqs__section,
-    .ds__testimonials__section {
+    .ds__testimonials__section,
+    .ds__gallery__section,
+    .ds__blog__section,
+    .ds__newsletter__section,
+    .ds__footer {
         margin-top: 80px;
     }
     /*===== Home Page =====*/
@@ -2919,6 +3394,40 @@
             height: 635px;
             width: 268px;
         }
+        /*Blog Section*/
+        .dsblog__slider__btn__prev,
+        .dsblog__slider__btn__next {
+            height: 54px;
+            width: 54px;
+        }
+        .dsblog__slider__btn__prev {
+            left: -34px;
+        }
+        .dsblog__slider__btn__next {
+            right: -34px;
+        }
+        .dsblog__slider .swiper-slide {
+            padding: 14px;
+        }
+        .dsblog__slider .dsblog__grid {
+            padding: 20px;
+            gap: 28px;
+            box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
+        }
+        .dsblog__slider .dsblog__grid .image {
+            height: 202px;
+        }
+        .dsblog__slider .dsblog__grid .content .dsblog__post__title span {
+            margin-left: 10px;
+        }
+        .dsblog__slider .dsblog__grid .content .dsblog__post__title h3 {
+            font-size: 22px;
+            line-height: 30px;
+        }
+        /*Newsletter Section*/
+        .dsnewsltr__wrapper {
+            height: 218px;
+        }
 }
 
 @media (min-width: 1400px) and (max-width: 1499px) {
@@ -2928,7 +3437,11 @@
     .ds__week__highlights__section,
     .ds__best__seller__section,
     .ds__faqs__section,
-    .ds__testimonials__section {
+    .ds__testimonials__section,
+    .ds__gallery__section,
+    .ds__blog__section,
+    .ds__newsletter__section,
+    .ds__footer {
         margin-top: 80px;
     }
     /*===== Home Page =====*/
@@ -2948,6 +3461,18 @@
         .ds__hero__section .dshero__info__color {
             bottom: 10%;
             right: 19%;
+        }
+        /*Blog Section*/
+        .dsblog__slider__btn__prev,
+        .dsblog__slider__btn__next {
+            height: 60px;
+            width: 60px;
+        }
+        .dsblog__slider__btn__prev {
+            left: -38px;
+        }
+        .dsblog__slider__btn__next {
+            right: -38px;
         }
 }
 
