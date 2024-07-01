@@ -366,10 +366,11 @@ input[type="checkbox"] {
     appearance: none;
     background: #FFF;
     margin: 0;
-    width: 14px;
-    height: 14px;
-    border: 1px solid var(--main-color);
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--text-color);
     position: relative;
+    display: inline-block;
 }
 
 input[type="checkbox"]::before {
@@ -389,13 +390,13 @@ input[type="checkbox"]::before {
 }
 
 input[type="checkbox"]:checked {
-    height: 14px;
-    width: 14px;
+    height: 20px;
+    width: 20px;
 }
 
 input[type="checkbox"]:checked::before {
-    height: 8px;
-    width: 8px;
+    height: 12px;
+    width: 12px;
 }
 
 /* Radio Input */
@@ -2844,6 +2845,165 @@ input[type="radio"]:checked::before {
     fill: var(--main-color);
 }
 /*** End of Footer ***/
+
+/*** Start of Newsletter Popup ***/
+.ds__newsletter__popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.ds__newsletter__popup.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.ds__newsletter__popup .ds__newsltrpop__wrapper {
+    width: 0;
+    height: 0;
+    background: var(--background-color);
+    position: relative;
+    transition: 1s;
+    -moz-transition: 1s;
+    -webkit-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.ds__newsletter__popup.show .ds__newsltrpop__wrapper {
+	width: 100%;
+	height: 633px;
+}
+
+.ds__newsletter__popup .ds__newsltrpop__wrapper img {
+    width: 100%;
+    height: auto;
+}
+
+.ds__newsletter__popup .ds__newsltrpop__wrapper .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding-right: 104px;
+}
+
+.ds__newsletter__popup .ds__newsltrpop__wrapper .content h2 {
+    color: var(--text-color);
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 800;
+    font-family: 'Urbanist', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.ds__newsletter__popup .ds__newsltrpop__wrapper .content p {
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 600;
+    font-family: 'Urbanist', sans-serif;
+    margin-bottom: 46px;
+}
+
+.ds__newsletter__popup .ds__newsltrpop__wrapper .content form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.ds__newsletter__popup .ds__newsltrpop__wrapper .content form .ds__newsltrpop__email {
+    height: 50px;
+    width: 100%;
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px;
+    font-family: 'Urbanist', sans-serif;
+}
+
+.ds__newsletter__popup .ds__newsltrpop__wrapper .content form .ds__newsltrpop__email::placeholder {
+    color: #505050;
+}
+
+.ds__newsletter__popup .ds__newsltrpop__wrapper .content form button {
+    height: 50px;
+    width: 100%;
+    color: #FFF;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 600;
+    font-family: 'Urbanist', sans-serif;
+    background: var(--text-color);
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.ds__newsletter__popup .ds__newsltrpop__wrapper .content form button:hover {
+    background: var(--main-color);
+}
+
+.ds__newsletter__popup .ds__newsltrpop__wrapper .content form .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.ds__newsletter__popup .ds__newsltrpop__wrapper .content form .checkbox label {
+    color: #667085;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: 'Urbanist', sans-serif;
+    flex: auto;
+}
+
+.ds__newsletter__popup .ds__newsltrpop__wrapper .ds__newsltrpop__close {
+    font-size: 18px;
+    line-height: 50px;
+    height: 50px;
+    width: 50px;
+    background: #FFF;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.ds__newsletter__popup .ds__newsltrpop__wrapper .ds__newsltrpop__close:hover {
+    background: var(--main-color);
+    color: #FFF;
+}
+/*** End of Newsletter Popup ***/
 
 /*
 rgba(95, 23, 6, 0.4)

@@ -310,6 +310,29 @@
             }
         });
     });
+
+    //Newsletter Popup (Variant 3)
+    $(function(){
+        var currentIndex = 0;
+        var scrollThreshold = 3200;
+        var isScrollTriggered = false;
+    
+        function fesnwsltrPopupScroll() {
+        if (!isScrollTriggered && $(window).scrollTop() > scrollThreshold) {
+            isScrollTriggered = true;
+            $(".ds__newsletter__popup").addClass('show');
+        }
+        }
+    
+        fesnwsltrPopupScroll();
+        $(window).scroll(function() {
+        fesnwsltrPopupScroll();
+        });
+    
+        $('.ds__newsltrpop__close').on('click', function() {
+        $('.ds__newsletter__popup').removeClass('show');
+        });
+    });
     
 
 }) (jQuery);

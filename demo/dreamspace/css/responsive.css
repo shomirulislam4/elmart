@@ -25,6 +25,15 @@
     .ds__button__b::after {
         font-size: 10px;
     }
+    input[type="checkbox"],
+    input[type="checkbox"]:checked {
+        width: 10px;
+        height: 10px;
+    }
+    input[type="checkbox"]:checked::before {
+        height: 4px;
+        width: 4px;
+    }
     /*===== Home Page =====*/
         /*Cart Slider*/
         .ds__cart__slider .main__cart__area {
@@ -723,6 +732,48 @@
             height: 15px;
             width: 15px;
         }
+        /*Newsletter Popup*/
+        .ds__newsletter__popup.show .ds__newsltrpop__wrapper {
+            height: 391px;
+            margin: 0 auto;
+        }
+        .ds__newsletter__popup.show .ds__newsltrpop__wrapper .col-sm-6:first-child {
+            height: fit-content;
+        }
+        .ds__newsletter__popup .ds__newsltrpop__wrapper .content {
+            padding: 10px 5px;
+        }
+        .ds__newsletter__popup .ds__newsltrpop__wrapper .content form {
+            gap: 8px;
+        }
+        .ds__newsletter__popup .ds__newsltrpop__wrapper .content h2 {
+            font-size: 24px;
+            line-height: 24px;
+            margin-bottom: 6px;
+        }
+        .ds__newsletter__popup .ds__newsltrpop__wrapper .content p {
+            font-size: 10px;
+            line-height: 130%;
+            margin-bottom: 10px;
+        }
+        .ds__newsletter__popup .ds__newsltrpop__wrapper .ds__newsltrpop__close {
+            top: -44px;
+            right: 0;
+            height: 36px;
+            width: 36px;
+            line-height: 36px;
+            font-size: 16px;
+        }
+        .ds__newsletter__popup .ds__newsltrpop__wrapper .content form .ds__newsltrpop__email,
+        .ds__newsletter__popup .ds__newsltrpop__wrapper .content form button {
+            height: 36px;
+            font-size: 12px;
+            padding: 8px;
+        }
+        .ds__newsletter__popup .ds__newsltrpop__wrapper .content form .checkbox label {
+            font-size: 10px;
+            line-height: 16px;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
@@ -751,6 +802,15 @@
     }
     .ds__button__b::after {
         font-size: 10px;
+    }
+    input[type="checkbox"],
+    input[type="checkbox"]:checked {
+        width: 12px;
+        height: 12px;
+    }
+    input[type="checkbox"]:checked::before {
+        height: 6px;
+        width: 6px;
     }
     /*===== Home Page =====*/
         /*Cart Slider*/
@@ -1364,6 +1424,48 @@
             height: 15px;
             width: 15px;
         }
+        /*Newsletter Popup*/
+        .ds__newsletter__popup.show .ds__newsltrpop__wrapper {
+            height: 500px;
+            margin: 0 auto;
+        }
+        .ds__newsletter__popup.show .ds__newsltrpop__wrapper .col-sm-6:first-child {
+            height: fit-content;
+        }
+        .ds__newsletter__popup .ds__newsltrpop__wrapper .content {
+            padding: 10px;
+        }
+        .ds__newsletter__popup .ds__newsltrpop__wrapper .content form {
+            gap: 8px;
+        }
+        .ds__newsletter__popup .ds__newsltrpop__wrapper .content h2 {
+            font-size: 35px;
+            line-height: 35px;
+            margin-bottom: 6px;
+        }
+        .ds__newsletter__popup .ds__newsltrpop__wrapper .content p {
+            font-size: 12px;
+            line-height: 135%;
+            margin-bottom: 20px;
+        }
+        .ds__newsletter__popup .ds__newsltrpop__wrapper .ds__newsltrpop__close {
+            top: -44px;
+            right: 0;
+            height: 36px;
+            width: 36px;
+            line-height: 36px;
+            font-size: 16px;
+        }
+        .ds__newsletter__popup .ds__newsltrpop__wrapper .content form .ds__newsltrpop__email,
+        .ds__newsletter__popup .ds__newsltrpop__wrapper .content form button {
+            height: 36px;
+            font-size: 12px;
+            padding: 8px;
+        }
+        .ds__newsletter__popup .ds__newsltrpop__wrapper .content form .checkbox label {
+            font-size: 12px;
+            line-height: 18px;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -1392,6 +1494,15 @@
     }
     .ds__button__b::after {
         font-size: 12px;
+    }
+    input[type="checkbox"],
+    input[type="checkbox"]:checked {
+        width: 12px;
+        height: 12px;
+    }
+    input[type="checkbox"]:checked::before {
+        height: 6px;
+        width: 6px;
     }
     /*===== Home Page =====*/
         /*Cart Slider*/
@@ -1961,6 +2072,49 @@
             height: 15px;
             width: 15px;
         }
+        /*Newsletter Popup*/
+        .ds__newsletter__popup.show .ds__newsltrpop__wrapper {
+            height: 549px;
+            width: 330px;
+            margin: 0 auto;
+        }
+        .ds__newsletter__popup.show .ds__newsltrpop__wrapper .col-sm-6:first-child {
+            height: fit-content;
+        }
+        .ds__newsletter__popup .ds__newsltrpop__wrapper .content {
+            padding: 10px;
+        }
+        .ds__newsletter__popup .ds__newsltrpop__wrapper .content form {
+            gap: 8px;
+        }
+        .ds__newsletter__popup .ds__newsltrpop__wrapper .content h2 {
+            font-size: 35px;
+            line-height: 35px;
+            margin-bottom: 6px;
+        }
+        .ds__newsletter__popup .ds__newsltrpop__wrapper .content p {
+            font-size: 12px;
+            line-height: 135%;
+            margin-bottom: 20px;
+        }
+        .ds__newsletter__popup .ds__newsltrpop__wrapper .ds__newsltrpop__close {
+            top: -44px;
+            right: 0;
+            height: 36px;
+            width: 36px;
+            line-height: 36px;
+            font-size: 16px;
+        }
+        .ds__newsletter__popup .ds__newsltrpop__wrapper .content form .ds__newsltrpop__email,
+        .ds__newsletter__popup .ds__newsltrpop__wrapper .content form button {
+            height: 36px;
+            font-size: 12px;
+            padding: 8px;
+        }
+        .ds__newsletter__popup .ds__newsltrpop__wrapper .content form .checkbox label {
+            font-size: 12px;
+            line-height: 18px;
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -1989,6 +2143,15 @@
     }
     .ds__button__b::after {
         font-size: 16px;
+    }
+    input[type="checkbox"],
+    input[type="checkbox"]:checked {
+        width: 14px;
+        height: 14px;
+    }
+    input[type="checkbox"]:checked::before {
+        height: 8px;
+        width: 8px;
     }
     /*===== Home Page =====*/
         /*Cart Slider*/
@@ -2514,6 +2677,50 @@
             height: 20px;
             width: 20px;
         }
+        /*Newsletter Popup*/
+        .ds__newsletter__popup .ds__newsltrpop__wrapper {
+            gap: 20px;
+        }
+        .ds__newsletter__popup .ds__newsltrpop__wrapper .col-sm-6:last-child {
+            padding-left: 0;
+        }
+        .ds__newsletter__popup.show .ds__newsltrpop__wrapper {
+            height: 244px;
+        }
+        .ds__newsletter__popup .ds__newsltrpop__wrapper .content {
+            padding-right: 10px;
+        }
+        .ds__newsletter__popup .ds__newsltrpop__wrapper .content form {
+            gap: 8px;
+        }
+        .ds__newsletter__popup .ds__newsltrpop__wrapper .content h2 {
+            font-size: 35px;
+            line-height: 35px;
+            margin-bottom: 6px;
+        }
+        .ds__newsletter__popup .ds__newsltrpop__wrapper .content p {
+            font-size: 12px;
+            line-height: 135%;
+            margin-bottom: 20px;
+        }
+        .ds__newsletter__popup .ds__newsltrpop__wrapper .ds__newsltrpop__close {
+            top: -44px;
+            right: 0;
+            height: 36px;
+            width: 36px;
+            line-height: 36px;
+            font-size: 16px;
+        }
+        .ds__newsletter__popup .ds__newsltrpop__wrapper .content form .ds__newsltrpop__email,
+        .ds__newsletter__popup .ds__newsltrpop__wrapper .content form button {
+            height: 36px;
+            font-size: 12px;
+            padding: 8px;
+        }
+        .ds__newsletter__popup .ds__newsltrpop__wrapper .content form .checkbox label {
+            font-size: 12px;
+            line-height: 18px;
+        }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -2539,6 +2746,15 @@
     }
     .ds__button__b::after {
         font-size: 16px;
+    }
+    input[type="checkbox"],
+    input[type="checkbox"]:checked {
+        width: 16px;
+        height: 16px;
+    }
+    input[type="checkbox"]:checked::before {
+        height: 10px;
+        width: 10px;
     }
     /*===== Home Page =====*/
         /*Header*/
@@ -3022,6 +3238,46 @@
         .ds__footer .horizontal__seperator {
             margin: 24px 0;
         }
+        /*Newsletter Popup*/
+        .ds__newsletter__popup .ds__newsltrpop__wrapper {
+            gap: 20px;
+        }
+        .ds__newsletter__popup.show .ds__newsltrpop__wrapper {
+            height: 334px;
+        }
+        .ds__newsletter__popup .ds__newsltrpop__wrapper .content {
+            padding-right: 30px;
+        }
+        .ds__newsletter__popup .ds__newsltrpop__wrapper .content form {
+            gap: 12px;
+        }
+        .ds__newsletter__popup .ds__newsltrpop__wrapper .content h2 {
+            font-size: 48px;
+            line-height: 48px;
+            margin-bottom: 10px;
+        }
+        .ds__newsletter__popup .ds__newsltrpop__wrapper .content p {
+            font-size: 14px;
+            line-height: 140%;
+            margin-bottom: 25px;
+        }
+        .ds__newsletter__popup .ds__newsltrpop__wrapper .ds__newsltrpop__close {
+            top: -50px;
+            right: 0;
+            height: 40px;
+            width: 40px;
+            line-height: 40px;
+        }
+        .ds__newsletter__popup .ds__newsltrpop__wrapper .content form .ds__newsltrpop__email,
+        .ds__newsletter__popup .ds__newsltrpop__wrapper .content form button {
+            height: 40px;
+            font-size: 14px;
+            padding: 10px;
+        }
+        .ds__newsletter__popup .ds__newsltrpop__wrapper .content form .checkbox label {
+            font-size: 14px;
+            line-height: 22px;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -3044,6 +3300,15 @@
     }
     .ds__button__b::after {
         font-size: 18px;
+    }
+    input[type="checkbox"],
+    input[type="checkbox"]:checked {
+        width: 16px;
+        height: 16px;
+    }
+    input[type="checkbox"]:checked::before {
+        height: 10px;
+        width: 10px;
     }
     /*===== Home Page =====*/
         /*Header*/
@@ -3357,6 +3622,31 @@
         .ds__footer .horizontal__seperator {
             margin: 24px 0;
         }
+        /*Newsletter Popup*/
+        .ds__newsletter__popup .ds__newsltrpop__wrapper {
+            gap: 20px;
+        }
+        .ds__newsletter__popup.show .ds__newsltrpop__wrapper {
+            height: 453px;
+        }
+        .ds__newsletter__popup .ds__newsltrpop__wrapper .content {
+            padding-right: 60px;
+        }
+        .ds__newsletter__popup .ds__newsltrpop__wrapper .content form {
+            gap: 18px;
+        }
+        .ds__newsletter__popup .ds__newsltrpop__wrapper .content h2 {
+            font-size: 50px;
+            line-height: 50px;
+            margin-bottom: 10px;
+        }
+        .ds__newsletter__popup .ds__newsltrpop__wrapper .content p {
+            margin-bottom: 30px;
+        }
+        .ds__newsletter__popup .ds__newsltrpop__wrapper .ds__newsltrpop__close {
+            top: -60px;
+            right: 0;
+        }
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -3577,6 +3867,20 @@
         /*Newsletter Section*/
         .dsnewsltr__wrapper {
             height: 218px;
+        }
+        /*Newsletter Popup*/
+        .ds__newsletter__popup .ds__newsltrpop__wrapper {
+            gap: 30px;
+        }
+        .ds__newsletter__popup.show .ds__newsltrpop__wrapper {
+            height: 543px;
+        }
+        .ds__newsletter__popup .ds__newsltrpop__wrapper .content {
+            padding-right: 90px;
+        }
+        .ds__newsletter__popup .ds__newsltrpop__wrapper .ds__newsltrpop__close {
+            top: -60px;
+            right: -30px;
         }
 }
 
