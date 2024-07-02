@@ -14,7 +14,7 @@
    11. Brands
    12. Newsletter
    13. Footer
-3. Shop Page
+3. Shop - Category Page
 4. Single Product Page
 
 **********************************************/
@@ -515,7 +515,7 @@ input[type="radio"]:checked::before {
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(238, 238, 238, 0.2);
+    background: rgba(238, 238, 238, 0.1);
     width: 100%;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
     z-index: 99999;
@@ -1761,6 +1761,30 @@ input[type="radio"]:checked::before {
     font-family: 'Urbanist', sans-serif;
     text-decoration: line-through;
 }
+
+/* Out of Stock */
+.ds__product__style.out__of__stock::after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    background: var(--main-color);
+    width: 100%;
+    z-index: 100;
+    padding: 6px 0;
+    content: 'Out of Stock';
+    color: #FFF;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    font-family: 'Urbanist', sans-serif;
+    text-align: center;
+}
+
+.ds__product__style.out__of__stock .dsps__content__wrapper .dsps__ctabtns,
+.ds__product__style.out__of__stock .dsps__content__wrapper .dsps__info {
+    display: none;
+}
 /*** End of New Arrivals Section ***/
 
 /*** Start of Features Section ***/
@@ -2888,7 +2912,7 @@ input[type="radio"]:checked::before {
 
 .ds__newsletter__popup.show .ds__newsltrpop__wrapper {
 	width: 100%;
-	height: 633px;
+	height: 632px;
 }
 
 .ds__newsletter__popup .ds__newsltrpop__wrapper img {
@@ -3004,6 +3028,439 @@ input[type="radio"]:checked::before {
     color: #FFF;
 }
 /*** End of Newsletter Popup ***/
+
+/* ====================================================================
+   3. Shop - Category Page
+==================================================================== */
+/*** Start of Breadcrumbs ***/
+.ds__breadcrumbs__section {
+    height: 486px;
+    width: 100%;
+    position: relative;
+}
+
+.ds__breadcrumbs__section .bg__image {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: auto;
+    z-index: 0;
+}
+
+.ds__breadcrumbs__section .main__content__area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.ds__breadcrumbs__section .container {
+    height: 100%;
+}
+
+.ds__breadcrumbs__section .dsbc__wrapper {
+    height: 100%;
+    width: 100%;
+    padding-top: 84px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.ds__breadcrumbs__section .dsbc__wrapper .dsbc__page__title h2 {
+    color: #FFF;
+    font-size: 60px;
+    line-height: 72px;
+    font-weight: 800;
+    font-family: 'Urbanist', sans-serif;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.ds__breadcrumbs__section .dsbc__wrapper .dsbc__page__title h4 {
+    color: #FFF;
+    font-size: 34px;
+    line-height: 41px;
+    font-weight: 500;
+    font-family: 'Urbanist', sans-serif;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.ds__breadcrumbs__section .dsbc__wrapper .dsbc__breadcrumb {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 41px;
+    left: 19px;
+}
+
+.ds__breadcrumbs__section .dsbc__wrapper .dsbc__breadcrumb a,
+.ds__breadcrumbs__section .dsbc__wrapper .dsbc__breadcrumb .current__page {
+    color: #FFF;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 500;
+    font-family: 'Urbanist', sans-serif;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.ds__breadcrumbs__section .dsbc__wrapper .dsbc__breadcrumb a:hover {
+    color: var(--main-color);
+}
+
+.ds__breadcrumbs__section .dsbc__wrapper .dsbc__breadcrumb .current__page {
+    font-weight: 700;
+}
+
+.ds__breadcrumbs__section .dsbc__wrapper .dsbc__breadcrumb a::after {
+    color: #FFF;
+    content: '•';
+    margin: 0 10px
+}
+/*** End of Breadcrumbs ***/
+
+/*** Start of Shop Section ***/
+.ds__shop__section {
+    margin-top: 100px;
+}
+
+/* Info Bar */
+.dsshop__info__bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.dsshop__info__bar .dshop__product__sort {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 86px;
+}
+
+.dsshop__info__bar .dshop__product__sort p {
+    color: var(--text-color);
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.dsshop__info__bar .dshop__product__sort .sorting__select {
+    display: flex;
+    align-items: center;
+}
+
+.dsshop__info__bar .dshop__product__sort .sorting__select label {
+    color: var(--text-color);
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.dsshop__info__bar .dshop__product__sort .sorting__select .nice-select {
+    height: 42px;
+    border: 0;
+    border-radius: 36px;
+    background: var(--text-color);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    font-family: 'Urbanist', sans-serif;
+    text-transform: capitalize;
+    padding: 9px 18px;
+    padding-right: 43px;
+}
+
+.dsshop__info__bar .dshop__product__sort .sorting__select .nice-select .current {
+    color: var(--background-color);
+}
+
+.dsshop__info__bar .dshop__product__sort .sorting__select .nice-select::after {
+	border-bottom: 2px solid var(--background-color);
+	border-right: 2px solid var(--background-color);
+	height: 11px;
+	margin-top: -7px;
+	right: 20px;
+	width: 11px;
+}
+
+.dsshop__info__bar .dsshop__product__view {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.dsshop__info__bar .dsshop__product__view .grid__btns {
+    background: transparent;
+}
+
+.dsshop__info__bar .dsshop__product__view .grid__btns svg {
+    fill: #AAA;
+    height: 27px;
+    width: 27px;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.dsshop__info__bar .dsshop__product__view .grid__btns.active svg,
+.dsshop__info__bar .dsshop__product__view .grid__btns:hover svg {
+    fill: var(--text-color);
+}
+
+/* Shop Sidebar */
+.dsshop__sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 51px;
+}
+
+.dsshop__sidebar .dsshop__sidebar__widgets {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.dsshop__sidebar .dsshop__sidebar__widgets .dsshop__sdbrwdgt__title {
+    color: var(--text-color);
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 900;
+    font-family: 'Urbanist', sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.dsshop__sidebar .dsshop__sidebar__widgets .dsshop__sdbrwdgt__title::after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    content: '';
+    background: var(--text-color);
+    height: 6px;
+    width: 117px;
+}
+
+.dsshop__sidebar .dsshop__sidebar__widgets .dsshop__sdbrwdgt__button {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	color: var(--text-color);
+	font-size: 24px;
+	line-height: 28;
+	font-weight: 900;
+	font-family: 'Urbanist', sans-serif;
+	text-align: left;
+	background: transparent;
+	border-bottom: 1px solid var(--text-color);
+    height: 46px;
+	transition: 0.3s;
+	-moz-transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+    overflow: hidden;
+}
+
+.dsshop__sidebar .dsshop__sidebar__widgets .dsshop__sdbrwdgt__button::after {
+	margin-left: auto;
+	content: '+';
+	font-weight: 500;
+	font-family: 'Urbanist', sans-serif;
+}
+
+.dsshop__sidebar .dsshop__sidebar__widgets .dsshop__sdbrwdgt__button:not(.collapsed)::after {
+    content: '-';
+}
+
+.dsshop__sidebar .dsshop__sidebar__widgets .dsshop__sdbrwdgt__body {
+    margin: 0;
+    padding: 16px 0;
+}
+
+.dsshop__sidebar .dsshop__sidebar__widgets .dsshop__sdbrwdgt__body p {
+    color: #7E7F7C;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    font-family: 'Urbanist', sans-serif;
+    margin: 0;
+}
+
+.dsshop__sidebar .dsshop__sidebar__widgets .dsshop__sdbrwdgt__body li {
+    width: 100%;
+}
+
+.dsshop__sidebar .dsshop__sidebar__widgets .dsshop__sdbrwdgt__body li a {
+    display: block;
+    color: #7E7F7C;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+    font-family: 'Urbanist', sans-serif;
+    text-transform: capitalize;
+    padding: 8px 0;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.dsshop__sidebar .dsshop__sidebar__widgets .dsshop__sdbrwdgt__body li a span {
+    color: #7E7F7C;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+    font-family: 'Urbanist', sans-serif;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.dsshop__sidebar .dsshop__sidebar__widgets .dsshop__sdbrwdgt__body li a span::before {
+    content: '(';
+}
+
+.dsshop__sidebar .dsshop__sidebar__widgets .dsshop__sdbrwdgt__body li a span::after {
+    content: ')';
+}
+
+.dsshop__sidebar .dsshop__sidebar__widgets .dsshop__sdbrwdgt__body li:first-child a {
+    padding-top: 0;
+}
+
+.dsshop__sidebar .dsshop__sidebar__widgets .dsshop__sdbrwdgt__body li:last-child a {
+    padding-bottom: 0;
+}
+
+.dsshop__sidebar .dsshop__sidebar__widgets .dsshop__sdbrwdgt__body li a.active,
+.dsshop__sidebar .dsshop__sidebar__widgets .dsshop__sdbrwdgt__body li a.active span,
+.dsshop__sidebar .dsshop__sidebar__widgets .dsshop__sdbrwdgt__body li a:hover,
+.dsshop__sidebar .dsshop__sidebar__widgets .dsshop__sdbrwdgt__body li a:hover span {
+    color: var(--text-color);
+}
+
+/* Price Filter */
+.slider__container {
+    position: relative;
+    width: 100%;
+    height: 4px;
+    background: #F6F6F6;
+}
+
+.range__input {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    appearance: none;
+    background: transparent;
+    pointer-events: none;
+}
+
+.range__input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 8px;
+    height: 8px;
+    background: var(--text-color);
+    cursor: pointer;
+    pointer-events: auto;
+    border-radius: 50%;
+    border: 0;
+}
+
+.range__input::-moz-range-thumb {
+    -moz-appearance: none;
+    appearance: none;
+    width: 8px;
+    height: 8px;
+    background: var(--text-color);
+    cursor: pointer;
+    pointer-events: auto;
+    border-radius: 50%;
+    border: 0;
+}
+
+.progress {
+    position: absolute;
+    height: 4px;
+    background: var(--text-color);
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.output__apply {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.output__apply .output {
+    padding: 8px 20px;
+    color: var(--text-color);
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+    font-family: 'Urbanist', sans-serif;
+    background: #F6F6F6;
+}
+
+.output__apply .apply {
+    padding: 8px 20px;
+    color: #FFF;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+    font-family: 'Urbanist', sans-serif;
+    text-transform: capitalize;
+    background: var(--text-color);
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.output__apply .apply:hover {
+    background: var(--main-color);
+}
+
+/* Main Product Area */
+.dsshop__products {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+/*** End of Shop Section ***/
 
 /*
 rgba(95, 23, 6, 0.4)

@@ -4,6 +4,7 @@
     //All Nice Select
     if ($('.dreamspace').length) {
         $('#dsSearchPopupCat').niceSelect();
+        $('#dsshopProductSort').niceSelect();
     }
 
     //Custom Cursor
@@ -334,5 +335,47 @@
         });
     });
     
+/*============================ Shop Page ============================*/
+    //Info Bar Grid Buttons Active Class
+    $(function() {
+        $('.dsshop__product__view').on('click','.grid__btns',function(){
+        $(this).addClass('active').siblings().removeClass('active'); });
+    });
+
+    //Product Price Filter
+    $(document).ready(function() {
+        let minPriceInput = $('#min__price');
+        let maxPriceInput = $('#max__price');
+        let minPriceOutput = $('#min__price__output');
+        let maxPriceOutput = $('#max__price__output');
+        let progress = $('.progress');
+    
+        function updatePrices() {
+            let minPrice = parseInt(minPriceInput.val());
+            let maxPrice = parseInt(maxPriceInput.val());
+            let maxRange = parseInt(minPriceInput.attr('max'));
+    
+            if (minPrice > maxPrice) {
+                [minPrice, maxPrice] = [maxPrice, minPrice];
+            }
+    
+            minPriceOutput.text('$' + minPrice);
+            maxPriceOutput.text('$' + maxPrice);
+    
+            let minPercent = (minPrice / maxRange) * 100;
+            let maxPercent = (maxPrice / maxRange) * 100;
+    
+            progress.css({
+                left: minPercent + '%',
+                right: (100 - maxPercent) + '%'
+            });
+        }
+    
+        minPriceInput.on('input', updatePrices);
+        maxPriceInput.on('input', updatePrices);
+    
+        // Initial update
+        updatePrices();
+    });   
 
 }) (jQuery);
