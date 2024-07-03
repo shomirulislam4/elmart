@@ -3037,6 +3037,7 @@ input[type="radio"]:checked::before {
     height: 486px;
     width: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .ds__breadcrumbs__section .bg__image {
@@ -3222,11 +3223,104 @@ input[type="radio"]:checked::before {
     fill: var(--text-color);
 }
 
+.sidebar__toggle {
+    display: none;
+    border: 0;
+    border-radius: 36px;
+    background: var(--text-color);
+    color: #FFF;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 9px 18px;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.sidebar__toggle span {
+    color: #FFF;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    font-family: 'Urbanist', sans-serif;
+    text-transform: capitalize;
+    margin-left: 10px;
+}
+
+.sidebar__toggle:hover {
+    background: var(--main-color);
+}
+
+@media (max-width: 1199px) {
+    .sidebar__toggle {
+        display: block;
+    }
+}
+
 /* Shop Sidebar */
-.dsshop__sidebar {
+.dsshop__sidebar .dsshop__sideabr__wrapper {
     display: flex;
     flex-direction: column;
     gap: 51px;
+    padding: 0;
+}
+
+.dsshop__sidebar .dsshop__sidebar__closebtn {
+    position: absolute;
+    top: 71vh;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    color: var(--text-color);
+    background: #FFF;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.dsshop__sidebar .dsshop__sidebar__closebtn:hover{
+    background: var(--main-color);
+    color: #FFF;
+}
+
+@media (max-width: 1199px) {
+    .dsshop__sidebar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 0;
+        width: 100vw;
+        background: rgba(238, 238, 238, 0.6);
+        z-index: 999999;
+        overflow: hidden;
+        transition: 1s;
+        -moz-transition: 1s;
+        -webkit-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+    }
+    .dsshop__sidebar.show {
+        height: 100vh;
+    }
+    .dsshop__sidebar .dsshop__sideabr__wrapper {
+        width: 100%;
+        height: 70vh;
+        background: var(--background-color);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        padding: 40px;
+        z-index: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
 }
 
 .dsshop__sidebar .dsshop__sidebar__widgets {

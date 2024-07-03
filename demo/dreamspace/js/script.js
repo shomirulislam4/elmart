@@ -376,6 +376,17 @@
     
         // Initial update
         updatePrices();
-    });   
+    });
+
+    //Sideabr Filter Popup
+    $(function(){
+        //Mobile Menu Main Show/Hide
+        $('.sidebar__toggle').on('click', function(){
+            $('.dsshop__sidebar').addClass('show')
+        })
+        $('.dsshop__sidebar__closebtn').on('click', function(){
+            $('.dsshop__sidebar').removeClass('show')
+        })
+    });
 
 }) (jQuery);
