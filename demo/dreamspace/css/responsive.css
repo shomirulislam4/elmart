@@ -774,6 +774,112 @@
             font-size: 10px;
             line-height: 16px;
         }
+    /*===== Shop - Category Page =====*/
+        /*Breadcrumbs*/
+        .ds__breadcrumbs__section {
+            height: 212px;
+        }
+        .ds__breadcrumbs__section .dsbc__wrapper {
+            padding-top: 0;
+        }
+        .ds__breadcrumbs__section .bg__image {
+            left: 0;
+            width: 420%;
+        }
+        .ds__breadcrumbs__section .dsbc__wrapper .dsbc__breadcrumb {
+            bottom: 10px;
+            left: 0;
+        }
+        .ds__breadcrumbs__section .dsbc__wrapper .dsbc__page__title h2 {
+            font-size: 26px;
+            line-height: 34px;
+        }
+        .ds__breadcrumbs__section .dsbc__wrapper .dsbc__page__title h4 {
+            font-size: 12px;
+            line-height: 20px;
+        }
+        .ds__breadcrumbs__section .dsbc__wrapper .dsbc__breadcrumb a,
+        .ds__breadcrumbs__section .dsbc__wrapper .dsbc__breadcrumb .current__page {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        /*Info Bar*/
+        .dsshop__info__bar {
+            margin-bottom: 35px;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .dsshop__info__bar .dshop__product__sort {
+            flex-direction: column;
+            gap: 15px;
+        }
+        .dsshop__info__bar .dshop__product__sort .sorting__select .nice-select,
+        .sidebar__toggle {
+            height: 36px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        .dsshop__info__bar .dshop__product__sort .sorting__select .nice-select {
+            font-size: 14px;
+            padding-right: 34px;
+        }
+        .dsshop__info__bar .dshop__product__sort .sorting__select .nice-select::after {
+            height: 8px;
+            margin-top: -5px;
+            right: 18px;
+            width: 8px;
+        }
+        .dsshop__info__bar .dshop__product__sort p,
+        .dsshop__info__bar .dshop__product__sort .sorting__select label {
+            font-size: 14px;
+            line-height: 22px;
+        }
+        .dsshop__info__bar .dsshop__product__view {
+            display: none;
+        }
+        /*Sidebar*/
+        .dsshop__sidebar {
+            padding: 0;
+        }
+        .dsshop__sidebar .dsshop__sideabr__wrapper {
+            width: 100vw;
+            padding: 5px;
+        }
+        .dsshop__sidebar .dsshop__sideabr__wrapper,
+        .dsshop__sidebar .dsshop__sidebar__widgets {
+            gap: 20px;
+        }
+        .dsshop__sidebar .dsshop__sidebar__widgets .dsshop__sdbrwdgt__title {
+            font-size: 20px;
+            line-height: 20px;
+            padding-bottom: 10px;
+        }
+        .dsshop__sidebar .dsshop__sidebar__widgets .dsshop__sdbrwdgt__title::after {
+            height: 3px;
+            width: 80px;
+        }
+        .dsshop__sidebar .dsshop__sidebar__widgets .dsshop__sdbrwdgt__button {
+            font-size: 16px;
+            line-height: 16px;
+            padding-top: 6px;
+            padding-bottom: 6px;
+        }
+        .output__apply .output,
+        .output__apply .apply {
+            font-size: 16px;
+            line-height: 16px;
+            padding: 8px 17px;
+        }
+        .dsshop__sidebar .dsshop__sidebar__widgets .dsshop__sdbrwdgt__body li a {
+            font-size: 16px;
+            line-height: 16px;
+            padding: 6px 0;
+        }
+        /*Main Product Area*/
+        .dsshop__products {
+            gap: 5px;
+            justify-content: center;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
@@ -1466,6 +1572,74 @@
             font-size: 12px;
             line-height: 18px;
         }
+    /*===== Shop - Category Page =====*/
+        /*Breadcrumbs*/
+        .ds__breadcrumbs__section {
+            height: 288px;
+        }
+        .ds__breadcrumbs__section .dsbc__wrapper {
+            padding-top: 0;
+        }
+        .ds__breadcrumbs__section .bg__image {
+            left: 12%;
+            width: 392%;
+        }
+        .ds__breadcrumbs__section .dsbc__wrapper .dsbc__breadcrumb {
+            bottom: 15px;
+            left: 5px;
+        }
+        .ds__breadcrumbs__section .dsbc__wrapper .dsbc__page__title h2 {
+            font-size: 36px;
+            line-height: 46px;
+        }
+        .ds__breadcrumbs__section .dsbc__wrapper .dsbc__page__title h4 {
+            font-size: 16px;
+            line-height: 26px;
+        }
+        .ds__breadcrumbs__section .dsbc__wrapper .dsbc__breadcrumb a,
+        .ds__breadcrumbs__section .dsbc__wrapper .dsbc__breadcrumb .current__page {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        /*Info Bar*/
+        .dsshop__info__bar {
+            margin-bottom: 35px;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .dsshop__info__bar .dshop__product__sort {
+            flex-direction: column;
+            gap: 15px;
+        }
+        .dsshop__info__bar .dshop__product__sort .sorting__select .nice-select,
+        .sidebar__toggle {
+            height: 36px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        .dsshop__info__bar .dshop__product__sort p,
+        .dsshop__info__bar .dshop__product__sort .sorting__select label {
+            font-size: 18px;
+            line-height: 26px;
+        }
+        .dsshop__info__bar .dsshop__product__view {
+            display: none;
+        }
+        /*Sidebar*/
+        .dsshop__sidebar .dsshop__sideabr__wrapper {
+            padding: 10px;
+        }
+        .output__apply .output,
+        .output__apply .apply {
+            font-size: 16px;
+            line-height: 16px;
+            padding: 8px 17px;
+        }
+        /*Main Product Area*/
+        .dsshop__products {
+            gap: 10px;
+            justify-content: center;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -2115,6 +2289,64 @@
             font-size: 12px;
             line-height: 18px;
         }
+    /*===== Shop - Category Page =====*/
+        /*Breadcrumbs*/
+        .ds__breadcrumbs__section {
+            height: 288px;
+        }
+        .ds__breadcrumbs__section .dsbc__wrapper {
+            padding-top: 0;
+        }
+        .ds__breadcrumbs__section .bg__image {
+            left: 30%;
+            width: 275%;
+        }
+        .ds__breadcrumbs__section .dsbc__wrapper .dsbc__breadcrumb {
+            bottom: 15px;
+            left: 5px;
+        }
+        .ds__breadcrumbs__section .dsbc__wrapper .dsbc__page__title h2 {
+            font-size: 36px;
+            line-height: 46px;
+        }
+        .ds__breadcrumbs__section .dsbc__wrapper .dsbc__page__title h4 {
+            font-size: 16px;
+            line-height: 26px;
+        }
+        .ds__breadcrumbs__section .dsbc__wrapper .dsbc__breadcrumb a,
+        .ds__breadcrumbs__section .dsbc__wrapper .dsbc__breadcrumb .current__page {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        /*Info Bar*/
+        .dsshop__info__bar {
+            margin-bottom: 35px;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .dsshop__info__bar .dshop__product__sort {
+            flex-direction: column;
+            gap: 15px;
+        }
+        .dsshop__info__bar .dshop__product__sort .sorting__select .nice-select,
+        .sidebar__toggle {
+            height: 36px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        .dsshop__info__bar .dshop__product__sort p,
+        .dsshop__info__bar .dshop__product__sort .sorting__select label {
+            font-size: 18px;
+            line-height: 26px;
+        }
+        .dsshop__info__bar .dsshop__product__view {
+            display: none;
+        }
+        /*Main Product Area*/
+        .dsshop__products {
+            gap: 10px;
+            justify-content: center;
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -2721,6 +2953,60 @@
             font-size: 12px;
             line-height: 18px;
         }
+    /*===== Shop - Category Page =====*/
+        /*Breadcrumbs*/
+        .ds__breadcrumbs__section {
+            height: 290px;
+        }
+        .ds__breadcrumbs__section .dsbc__wrapper {
+            padding-top: 0;
+        }
+        .ds__breadcrumbs__section .bg__image {
+            left: 30%;
+            width: 200%;
+        }
+        .ds__breadcrumbs__section .dsbc__wrapper .dsbc__breadcrumb {
+            bottom: 20px;
+            left: 10px;
+        }
+        .ds__breadcrumbs__section .dsbc__wrapper .dsbc__page__title h2 {
+            font-size: 40px;
+            line-height: 50px;
+        }
+        .ds__breadcrumbs__section .dsbc__wrapper .dsbc__page__title h4 {
+            font-size: 18px;
+            line-height: 28px;
+        }
+        .ds__breadcrumbs__section .dsbc__wrapper .dsbc__breadcrumb a,
+        .ds__breadcrumbs__section .dsbc__wrapper .dsbc__breadcrumb .current__page {
+            font-size: 16px;
+            line-height: 22px;
+        }
+        /*Info Bar*/
+        .dsshop__info__bar {
+            margin-bottom: 40px;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .dsshop__info__bar .dshop__product__sort {
+            gap: 30px;
+        }
+        .dsshop__info__bar .dshop__product__sort p,
+        .dsshop__info__bar .dshop__product__sort .sorting__select label {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        .dsshop__info__bar .dsshop__product__view .grid__btns svg {
+            height: 24px;
+            width: 24px;
+        }
+        /*Main Product Area*/
+        .ds__shop__section .col-xl-9 {
+            padding: 0;
+        }
+        .dsshop__products {
+            gap: 10px;
+        }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -3278,6 +3564,58 @@
             font-size: 14px;
             line-height: 22px;
         }
+    /*===== Shop - Category Page =====*/
+        /*Breadcrumbs*/
+        .ds__breadcrumbs__section {
+            height: 330px;
+        }
+        .ds__breadcrumbs__section .dsbc__wrapper {
+            padding-top: 0;
+        }
+        .ds__breadcrumbs__section .bg__image {
+            left: 30%;
+            width: 171%;
+        }
+        .ds__breadcrumbs__section .dsbc__wrapper .dsbc__breadcrumb {
+            bottom: 20px;
+            left: 10px;
+        }
+        .ds__breadcrumbs__section .dsbc__wrapper .dsbc__page__title h2 {
+            font-size: 44px;
+            line-height: 54px;
+        }
+        .ds__breadcrumbs__section .dsbc__wrapper .dsbc__page__title h4 {
+            font-size: 24px;
+            line-height: 34px;
+        }
+        .ds__breadcrumbs__section .dsbc__wrapper .dsbc__breadcrumb a,
+        .ds__breadcrumbs__section .dsbc__wrapper .dsbc__breadcrumb .current__page {
+            font-size: 18px;
+            line-height: 24px;
+        }
+        /*Info Bar*/
+        .dsshop__info__bar {
+            margin-bottom: 50px;
+        }
+        .dsshop__info__bar .dshop__product__sort {
+            gap: 30px;
+        }
+        .dsshop__info__bar .dshop__product__sort p,
+        .dsshop__info__bar .dshop__product__sort .sorting__select label {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        .dsshop__info__bar .dsshop__product__view .grid__btns svg {
+            height: 24px;
+            width: 24px;
+        }
+        /*Main Product Area*/
+        .ds__shop__section .col-xl-9 {
+            padding: 0;
+        }
+        .dsshop__products {
+            gap: 10px;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -3658,6 +3996,32 @@
         .ds__breadcrumbs__section .bg__image {
             left: 31%;
             width: 160%;
+        }
+        .ds__breadcrumbs__section .dsbc__wrapper .dsbc__page__title h2 {
+            font-size: 50px;
+            line-height: 62px;
+        }
+        .ds__breadcrumbs__section .dsbc__wrapper .dsbc__page__title h4 {
+            font-size: 28px;
+            line-height: 38px;
+        }
+        .ds__breadcrumbs__section .dsbc__wrapper .dsbc__breadcrumb a,
+        .ds__breadcrumbs__section .dsbc__wrapper .dsbc__breadcrumb .current__page {
+            font-size: 20px;
+            line-height: 26px;
+        }
+        /*Info Bar*/
+        .dsshop__info__bar {
+            margin-bottom: 50px;
+        }
+        .dsshop__info__bar .dshop__product__sort p,
+        .dsshop__info__bar .dshop__product__sort .sorting__select label {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        .dsshop__info__bar .dsshop__product__view .grid__btns svg {
+            height: 24px;
+            width: 24px;
         }
         /*Main Product Area*/
         .dsshop__products {
