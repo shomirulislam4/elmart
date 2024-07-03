@@ -3203,8 +3203,20 @@ input[type="radio"]:checked::before {
     justify-content: flex-end;
 }
 
+@media (max-width: 767px) {
+    .dsshop__info__bar .dsshop__product__view {
+        display: none;
+    }
+}
+
 .dsshop__info__bar .dsshop__product__view .grid__btns {
     background: transparent;
+}
+
+@media (max-width: 1199px) {
+    .dsshop__info__bar .dsshop__product__view .grid__btns:nth-child(2) {
+        display: none;
+    }
 }
 
 .dsshop__info__bar .dsshop__product__view .grid__btns svg {
@@ -3268,6 +3280,7 @@ input[type="radio"]:checked::before {
 }
 
 .dsshop__sidebar .dsshop__sidebar__closebtn {
+    display: none;
     position: absolute;
     top: 71vh;
     left: 50%;
@@ -3320,6 +3333,9 @@ input[type="radio"]:checked::before {
         z-index: 0;
         overflow-x: hidden;
         overflow-y: auto;
+    }
+    .dsshop__sidebar .dsshop__sidebar__closebtn {
+        display: block;
     }
 }
 

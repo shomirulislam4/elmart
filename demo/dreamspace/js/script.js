@@ -336,14 +336,48 @@
     });
     
 /*============================ Shop Page ============================*/
-    //Info Bar Grid Buttons Active Class
+    //Info Bar Grid Buttons
     $(function() {
-        $('.dsshop__product__view').on('click','.grid__btns',function(){
-        $(this).addClass('active').siblings().removeClass('active'); });
+        var productStyleDiv = $('.ds__product__style');
+
+        $('.3grid__view').on('click', function() {
+            productStyleDiv.removeClass('large__item list__style');
+            setActiveButton($(this));
+        });
+
+        $('.2grid__view').on('click', function() {
+            if ($(window).width() >= 1200) {
+                productStyleDiv.addClass('large__item').removeClass('list__style');
+                setActiveButton($(this));
+            }
+        });
+
+        $('.list__view').on('click', function() {
+            if ($(window).width() >= 768) {
+                productStyleDiv.addClass('list__style').removeClass('large__item');
+                setActiveButton($(this));
+            }
+        });
+
+        $(window).on('resize', function() {
+            if ($(window).width() < 1200) {
+                productStyleDiv.removeClass('large__item');
+                setActiveButton($('.3grid__view'));
+            }
+            if ($(window).width() < 768) {
+                productStyleDiv.removeClass('list__style');
+                setActiveButton($('.3grid__view'));
+            }
+        });
+
+        function setActiveButton(activeButton) {
+            $('.grid__btns').removeClass('active');
+            activeButton.addClass('active');
+        }
     });
 
     //Product Price Filter
-    $(document).ready(function() {
+    $(function() {
         let minPriceInput = $('#min__price');
         let maxPriceInput = $('#max__price');
         let minPriceOutput = $('#min__price__output');
