@@ -881,6 +881,25 @@
             gap: 5px;
             justify-content: center;
         }
+        /*Pagination*/
+        .shop__page__nav {
+            padding: 0;
+        }
+        .pagination .page__item a,
+        .pagination .page__item.prev a,
+        .pagination .page__item.next a {
+            height: 28px;
+            width: 28px;
+        }
+        .pagination .page__item a {
+            font-size: 14px;
+            line-height: 30px;
+        }
+        .pagination .page__item a svg {
+            height: 20px;
+            width: 20px;
+            stroke-width: 2;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
@@ -4326,6 +4345,11 @@
         .dsblog__slider__btn__next {
             right: -38px;
         }
+    /*===== Shop - Category Page =====*/
+        /*Breadcrumbs*/
+        .ds__breadcrumbs__section .bg__image {
+            width: 138%;
+        }
 }
 
 @media (min-width: 1500px) and (max-width: 1599px) {
@@ -4347,6 +4371,11 @@
             bottom: 10%;
             right: 20%;
         }
+    /*===== Shop - Category Page =====*/
+        /*Breadcrumbs*/
+        .ds__breadcrumbs__section .bg__image {
+            width: 129%;
+        }
 }
 
 @media (min-width: 1600px) and (max-width: 1699px) {
@@ -4364,6 +4393,11 @@
         .ds__hero__section .dshero__info__color {
             bottom: 10%;
             right: 19%;
+        }
+    /*===== Shop - Category Page =====*/
+        /*Breadcrumbs*/
+        .ds__breadcrumbs__section .bg__image {
+            width: 121%;
         }
 }
 
@@ -4383,4 +4417,16 @@
             bottom: 10%;
             right: 21%;
         }
+    /*===== Shop - Category Page =====*/
+        /*Breadcrumbs*/
+        .ds__breadcrumbs__section .bg__image {
+            width: 114%;
+        }
+}
+
+@media (min-width: 1800px) {
+    /*Breadcrumbs*/
+    .ds__breadcrumbs__section .bg__image {
+        width: 107%;
+    }
 }

@@ -3553,6 +3553,51 @@ input[type="radio"]:checked::before {
     flex-wrap: wrap;
     gap: 30px;
 }
+
+/* Pagination */
+.pagination {
+    justify-content: center;
+    padding: 0;
+    padding-top: 80px;
+    flex-wrap: wrap;
+}
+
+.pagination .page__item a {
+    display: block;
+    width: 38px;
+    height: 42px;
+    line-height: 42px;
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.pagination .page__item.prev a,
+.pagination .page__item.next a {
+    width: 38px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination .page__item a svg {
+    height: 32px;
+    width: 32px;
+    stroke: var(--text-color);
+    stroke-width: 1.5;
+}
+
+.pagination .page__item a:hover svg {
+    stroke: #FFF;
+}
+
+.pagination .page__item a.active,
+.pagination .page__item a:hover {
+    color: #FFF;
+    background: var(--main-color);
+}
 /*** End of Shop Section ***/
 
 /*
