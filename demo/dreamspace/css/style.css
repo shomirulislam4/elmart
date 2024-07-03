@@ -1785,6 +1785,73 @@ input[type="radio"]:checked::before {
 .ds__product__style.out__of__stock .dsps__content__wrapper .dsps__info {
     display: none;
 }
+
+/* Product Large Item */
+.ds__product__style.large__item {
+	width: 468px;
+	height: 631px;
+}
+
+.ds__product__style.large__item img {
+    width: 100%;
+    height: auto;
+}
+
+.ds__product__style.large__item .dsps__content__wrapper .dsps__ctabtns a {
+	position: relative;
+	height: 50px;
+	width: 50px;
+}
+
+.ds__product__style.large__item .dsps__content__wrapper .dsps__ctabtns a:first-child {
+    height: 65px;
+    width: 65px;
+}
+
+.ds__product__style.large__item .dsps__content__wrapper .dsps__ctabtns a::after {
+	font-size: 20px;
+	line-height: 22px;
+    left: 115%;
+}
+
+.ds__product__style.large__item .dsps__content__wrapper .dsps__ctabtns a:first-child::after {
+    left: 99%;
+}
+
+.ds__product__style.large__item .dsps__content__wrapper .dsps__ctabtns a:first-child::before {
+	left: 80%;
+}
+
+.ds__product__style.large__item .dsps__content__wrapper .dsps__info {
+	padding: 20px;
+	gap: 12px;
+}
+
+.ds__product__style.large__item .dsps__content__wrapper .dsps__info .rating__area,
+.ds__product__style.large__item .dsps__content__wrapper .dsps__info .rating__area span,
+.ds__product__style.large__item .dsps__content__wrapper .dsps__info .dsps__price {
+	font-size: 34px;
+	line-height: 34px;
+}
+
+.ds__product__style.large__item .dsps__content__wrapper .dsps__info .dspds__title {
+	font-size: 40px;
+	line-height: 40px;
+}
+
+.ds__product__style.large__item .dsps__content__wrapper .dsps__info .dsps__desc {
+	font-size: 18px;
+	line-height: 26px;
+}
+
+.ds__product__style.large__item .dsps__content__wrapper .dsps__discount {
+	font-size: 28px;
+	line-height: 40px;
+	padding: 4px 15px;
+	top: 15px;
+	right: 9px;
+}
+
 /*** End of New Arrivals Section ***/
 
 /*** Start of Features Section ***/
