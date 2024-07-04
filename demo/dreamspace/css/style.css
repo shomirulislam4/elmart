@@ -1580,6 +1580,11 @@ input[type="radio"]:checked::before {
     position: relative;
     border-radius: 20px;
     overflow: hidden;
+    transition: 0.6s;
+    -moz-transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
 }
 
 .ds__product__style .dsps__content__wrapper {
@@ -1852,6 +1857,52 @@ input[type="radio"]:checked::before {
 	right: 9px;
 }
 
+/* Product List Item */
+.ds__product__style.list__style {
+	width: 100%;
+}
+
+.ds__product__style.list__style .dsps__content__wrapper .dsps__info {
+	left: 300px;
+	width: auto;
+	height: 100%;
+	justify-content: center;
+}
+
+.ds__product__style.list__style .dsps__content__wrapper .dsps__ctabtns {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.ds__product__style.list__style .dsps__content__wrapper .dsps__info {
+	padding: 20px;
+	gap: 12px;
+}
+
+.ds__product__style.list__style .dsps__content__wrapper .dsps__info .rating__area,
+.ds__product__style.list__style .dsps__content__wrapper .dsps__info .rating__area span,
+.ds__product__style.list__style .dsps__content__wrapper .dsps__info .dsps__price {
+	font-size: 40px;
+	line-height: 40px;
+}
+
+.ds__product__style.list__style .dsps__content__wrapper .dsps__info .dspds__title {
+	font-size: 50px;
+	line-height: 50px;
+}
+
+.ds__product__style.list__style .dsps__content__wrapper .dsps__info .dsps__desc {
+	font-size: 22px;
+	line-height: 28px;
+}
+
+.ds__product__style.list__style .dsps__content__wrapper .dsps__discount {
+	font-size: 28px;
+	line-height: 40px;
+	padding: 4px 15px;
+	top: 15px;
+	right: 9px;
+}
 /*** End of New Arrivals Section ***/
 
 /*** Start of Features Section ***/
