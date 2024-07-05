@@ -4043,6 +4043,320 @@ input[type="radio"]:checked::before {
     font-size: 30px;
 }
 
+/** Product Description **/
+.dssp__product__descrev {
+    margin-top: 80px;
+}
+
+.dssp__product__descrev .dssp__navrev__tabs {
+    display: flex;
+    align-items: center;
+    gap: 78px;
+    position: relative;
+}
+
+.dssp__product__descrev .dssp__navrev__tabs::after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    content: '';
+    height: 4px;
+    width: 100%;
+    background: #CFC8C6;
+    border-radius: 5px;
+    z-index: 0;
+}
+
+.dssp__product__descrev .dssp__navrev__tabs .dssp__navrev__btns {
+    position: relative;
+    color: var(--text-color);
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 700;
+    font-family: 'Urbanist', sans-serif;
+    text-transform: capitalize;
+    background: transparent;
+    padding-bottom: 10px;
+}
+
+.dssp__product__descrev .dssp__navrev__tabs .dssp__navrev__btns.active {
+    color: var(--main-color);
+}
+
+.dssp__product__descrev .dssp__navrev__tabs .dssp__navrev__btns.active::after {
+    position: absolute;
+    top: calc(100% - 1px);
+    left: 0;
+    width: 100%;
+    content: '';
+    height: 6px;
+    background: var(--main-color);
+    border-radius: 6px;
+    z-index: 10;
+}
+
+.dssp__product__descrev .tab-content .tab-pane {
+    padding: 60px 0;
+}
+
+.dssp__product__descrev .tab-content .tab-pane p,
+.dssp__product__descrev .tab-content .tab-pane li {
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    font-family: 'Urbanist', sans-serif;
+    margin: 0;
+}
+
+.dssp__product__descrev .tab-content .tab-pane table {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.dssp__product__descrev .tab-content .tab-pane th,
+.dssp__product__descrev .tab-content .tab-pane td {
+    padding: 10px;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    font-family: 'Urbanist', sans-serif;
+    border: 1px solid var(--text-color);
+}
+
+.dssp__product__descrev .tab-content .tab-pane th {
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+.dssp__product__descrev .tab-content .tab-pane ul {
+    margin-top: 30px;
+}
+
+.dssp__product__descrev .tab-content .tab-pane li {
+    list-style: disc;
+    margin-left: 20px;
+    padding: 5px 0;
+}
+
+.dssp__product__descrev .tab-content .tab-pane h2 {
+    color: var(--text-color);
+    font-size: 38px;
+    line-height: 46px;
+    font-weight: 700;
+    font-family: 'Urbanist', sans-serif;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.dssp__product__descrev .dssp__reviews {
+    display: flex;
+}
+
+.dssp__product__descrev .dssp__reviews form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin-top: 22px;
+}
+
+.dssp__product__descrev .dssp__reviews form input,
+.dssp__product__descrev .dssp__reviews form .nice-select {
+    padding: 0 20px;
+    background: #FFF;
+    border: 1px solid #D0D5DD;
+    border-radius: 8px;
+    height: 55px;
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 55px;
+    font-weight: 500;
+    font-family: 'Urbanist', sans-serif;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.dssp__product__descrev .dssp__reviews form .nice-select .list {
+	margin: 0;
+	width: 100%;
+}
+
+.dssp__product__descrev .dssp__reviews form .nice-select::after {
+	border-bottom: 2px solid #667085;
+	border-right: 2px solid #667085;
+	height: 11px;
+	margin-top: -7px;
+	right: 20px;
+	width: 11px;
+}
+
+.dssp__product__descrev .dssp__reviews form .nice-select .list li {
+    list-style: none;
+    margin: 0;
+    text-align: center;
+}
+
+.dssp__product__descrev .dssp__reviews form textarea {
+    padding: 10px 20px;
+    border-radius: 8px;
+    height: 128px;
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    font-family: 'Urbanist', sans-serif;
+    resize: none;
+}
+
+.dssp__product__descrev .dssp__reviews form input::placeholder,
+.dssp__product__descrev .dssp__reviews form textarea::placeholder,
+.dssp__product__descrev .dssp__reviews form .nice-select .current {
+    color: #667085;
+}
+
+.dssp__product__descrev .dssp__reviews .review__submit__btn {
+    color: #FFF;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    font-family: 'Urbanist', sans-serif;
+    padding: 12px 0;
+    border-radius: 8px;
+    background: var(--text-color);
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.dssp__product__descrev .dssp__reviews .review__submit__btn:hover {
+    background: var(--main-color);
+}
+
+.dssp__product__descrev .dssp__reviews .vertical__seperator {
+    content: '';
+    height: 800px;
+    width: 3px;
+    background: #C0BDBB;
+    margin: 0 70px;
+}
+
+.dssp__product__descrev .dssp__reviews .left__side {
+    width: 410px;
+}
+
+.dssp__product__descrev .dssp__reviews .right__side {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 600px;
+}
+
+.dssp__product__descrev .dssp__submitted__review__item {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #6D6D6D;
+}
+
+.dssp__product__descrev .dssp__submitted__review__item:last-child {
+    border: 0;
+}
+
+.dssp__product__descrev .dssp__submitted__review__item .usernrating {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.dssp__product__descrev .dssp__submitted__review__item .usernrating .user__info {
+    display: flex;
+    gap: 20px;
+}
+
+.dssp__product__descrev .dssp__submitted__review__item .usernrating .user__info .image {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.dssp__product__descrev .dssp__submitted__review__item .usernrating .user__info .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.dssp__product__descrev .dssp__submitted__review__item .usernrating .user__info .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dssp__product__descrev .dssp__submitted__review__item .usernrating .user__info .info h4 {
+    color: var(--text-color);
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    font-family: 'Urbanist', sans-serif;
+    margin: 0;
+}
+
+.dssp__product__descrev .dssp__submitted__review__item .usernrating .user__info .info p {
+    color: #8D8D8D;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    font-family: 'Urbanist', sans-serif;
+    margin-bottom: 10px;
+}
+
+.dssp__product__descrev .dssp__submitted__review__item .usernrating .stars svg {
+    height: 20px;
+    width: 20px;
+}
+
+.dssp__product__descrev .dssp__submitted__review__item .user__review {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dssp__product__descrev .dssp__submitted__review__item .user__review h4 {
+    color: var(--text-color);
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    font-family: 'Urbanist', sans-serif;
+    margin: 0;
+}
+
+.dssp__product__descrev .dssp__submitted__review__item .user__review .dssp__user__review__text,
+.dssp__product__descrev .dssp__submitted__review__item .user__review .dssp__user__review__text .dssp__urt__toggle {
+    color: var(--text-color);
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: 'Urbanist', sans-serif;
+    margin: 0;
+}
+
+.dssp__product__descrev .dssp__submitted__review__item .user__review .dssp__user__review__text .dssp__urt__toggle {
+    font-weight: 700;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.dssp__product__descrev .dssp__submitted__review__item .user__review .dssp__user__review__text .dssp__urt__toggle:hover {
+    color: var(--main-color);
+}
+
+
 
 /*
 rgba(95, 23, 6, 0.4)
