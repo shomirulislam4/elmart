@@ -431,6 +431,29 @@
             slidesPerView: 4,
             freeMode: true,
             watchSlidesProgress: true,
+            breakpoints: {
+                1200: {
+                    spaceBetween: 30,
+                },
+                992: {
+                    spaceBetween: 10,
+                },
+                768: {
+                    spaceBetween: 10,
+                    slidesPerView: 3,
+                },
+                576: {
+                    spaceBetween: 20,
+                },
+                415: {
+                    spaceBetween: 13,
+                    slidesPerView: 3,
+                },
+                200: {
+                    spaceBetween: 10,
+                    slidesPerView: 3,
+                },
+            }
         });
         var dsspSwiper2 = new Swiper(".dssp__product__image", {
             loop: true,

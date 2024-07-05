@@ -3698,6 +3698,7 @@ input[type="radio"]:checked::before {
     height: 685px;
     border-radius: 20px;
     overflow: hidden;
+    background: red;
 }
 
 .dssp__product__info .dssp__product__image .swiper-slide img {
@@ -3725,6 +3726,12 @@ input[type="radio"]:checked::before {
     border-radius: 4px;
     overflow: hidden;
     opacity: 0.5;
+    background: red;
+}
+
+.dssp__product__info .dssp__product__image__thumb .swiper-slide img {
+    width: 100%;
+    height: auto;
 }
 
 .dssp__product__info .dssp__product__image__thumb .swiper-slide.swiper-slide-thumb-active {
@@ -3766,6 +3773,12 @@ input[type="radio"]:checked::before {
     gap: 20px;
 }
 
+@media (max-width: 1319px) {
+    .dssp__product__details {
+        padding-left: 0;
+    }
+}
+
 .dssp__product__details .dssp__title {
     color: var(--text-color);
     font-size: 42px;
@@ -3781,7 +3794,7 @@ input[type="radio"]:checked::before {
     gap: 10px;
 }
 
-.dssp__product__details .dssp__rating .star svg {
+.dssp__product__details .dssp__rating .stars svg {
     height: 25px;
     width: 25px;
 }
@@ -3806,6 +3819,7 @@ input[type="radio"]:checked::before {
     line-height: 36px;
     font-weight: 600;
     font-family: 'Urbanist', sans-serif;
+    margin: 0;
 }
 
 .dssp__product__details .dssp__desc {
@@ -3872,10 +3886,17 @@ input[type="radio"]:checked::before {
     background: var(--text-color);
 }
 
+.dssp__product__details .color__items {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
 .dssp__product__details .color__items button {
     display: inline-block;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 20px;
     font-weight: 600;
     font-family: 'Urbanist', sans-serif;
     padding: 2px 14px;

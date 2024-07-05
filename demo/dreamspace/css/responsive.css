@@ -897,6 +897,100 @@
             width: 20px;
             stroke-width: 2;
         }
+    /*===== Single Product Page =====*/
+        /*Product Info*/
+        .dssp__product__info .dssp__product__image .swiper-slide {
+            height: 190px;
+        }
+        .dssp__image__thumb__nav {
+            margin-top: 10px;
+            flex-direction: column;
+        }
+        .dssp__product__info .dssp__product__image__thumb {
+            width: 100%;
+        }
+        .dssp__product__info .dssp__product__image__thumb .swiper-slide {
+            width: 50px !important;
+            height: 54px;
+        }
+        .dssp__image__thumb__nav .dssp__prod__img__nav {
+            margin-top: 10px;
+            gap: 5px;
+        }
+        .dssp__image__thumb__nav .dssp__prod__img__nav .dssp__nav__btns {
+            padding: 2px 10px;
+            border-radius: 15px;
+        }
+        .dssp__product__details {
+            gap: 15px;
+            margin-top: 10px;
+        }
+        .dssp__product__details .dssp__title {
+            font-size: 28px;
+            line-height: 36px;
+            text-align: center;
+        }
+        .dssp__product__details .dssp__rating {
+            flex-direction: column;
+        }
+        .dssp__product__details .dssp__rating .amount p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .dssp__product__details .dssp__rating .amount span {
+            font-size: 10px;
+            line-height: 20px;
+        }
+        .dssp__product__details .dssp__rating .stars svg {
+            height: 18px;
+            width: 18px;
+        }
+        .dssp__product__details .dssp__desc {
+            font-size: 12px;
+            line-height: 20px !important;
+        }
+        .dssp__product__details span {
+            font-size: 14px;
+            line-height: 18px;
+            margin-bottom: 8px;
+        }
+        .dssp__product__details .dssp__price .price {
+            font-size: 20px;
+            line-height: 26px;
+        }
+        .dssp__product__details .dssp__size .size__items {
+            gap: 8px;
+        }
+        .dssp__product__details .color__items button {
+            font-size: 14px;
+        }
+        .dssp__product__details .dssp__share {
+            gap: 10px;
+            margin-top: 0;
+        }
+        .dssp__product__details .dssp__ctas button {
+            font-size: 14px;
+            line-height: 20px;
+            padding: 10px 0;
+            width: 100%;
+        }
+        .dssp__product__details .dssp__ctas button svg {
+            height: 16px;
+            width: 16px;
+        }
+        .dssp__product__details .dssp__ctas button.dssp__addtocart {
+            margin-bottom: 5px;
+        }
+        .dssp__product__details .quantity__controls {
+            gap: 16px;
+        }
+        .dssp__product__details .dssp__share span {
+            font-size: 20px;
+            line-height: 20px;
+        }
+        .dssp__product__details .dssp__share .share__btns a {
+            font-size: 20px;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
@@ -1655,6 +1749,87 @@
             gap: 10px;
             justify-content: center;
         }
+    /*===== Single Product Page =====*/
+        /*Product Info*/
+        .dssp__product__info .dssp__product__image .swiper-slide {
+            height: 287px;
+        }
+        .dssp__image__thumb__nav {
+            margin-top: 10px;
+        }
+        .dssp__product__info .dssp__product__image__thumb .swiper-slide {
+            width: 50px !important;
+            height: 54px;
+        }
+        .dssp__image__thumb__nav .dssp__prod__img__nav {
+            gap: 5px;
+        }
+        .dssp__image__thumb__nav .dssp__prod__img__nav .dssp__nav__btns {
+            padding: 2px 10px;
+            border-radius: 15px;
+        }
+        .dssp__product__details {
+            gap: 15px;
+            margin-top: 10px;
+        }
+        .dssp__product__details .dssp__title {
+            font-size: 32px;
+            line-height: 40px;
+        }
+        .dssp__product__details .dssp__rating {
+            flex-direction: column;
+        }
+        .dssp__product__details .dssp__rating .amount p {
+            font-size: 18px;
+            line-height: 26px;
+        }
+        .dssp__product__details .dssp__rating .amount span {
+            font-size: 14px;
+            line-height: 26px;
+        }
+        .dssp__product__details .dssp__rating .stars svg {
+            height: 22px;
+            width: 22px;
+        }
+        .dssp__product__details .dssp__desc {
+            font-size: 12px;
+            line-height: 20px !important;
+        }
+        .dssp__product__details span {
+            font-size: 14px;
+            line-height: 18px;
+            margin-bottom: 8px;
+        }
+        .dssp__product__details .dssp__price .price {
+            font-size: 24px;
+            line-height: 32px;
+        }
+        .dssp__product__details .color__items button {
+            font-size: 14px;
+        }
+        .dssp__product__details .dssp__share {
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .dssp__product__details .dssp__ctas button {
+            font-size: 16px;
+            line-height: 20px;
+            padding: 12px 20px;
+            width: 100%;
+        }
+        .dssp__product__details .dssp__ctas button.dssp__addtocart {
+            margin-bottom: 5px;
+        }
+        .dssp__product__details .quantity__controls {
+            gap: 16px;
+        }
+        .dssp__product__details .dssp__share span {
+            font-size: 20px;
+            line-height: 20px;
+        }
+        .dssp__product__details .dssp__share .share__btns a {
+            font-size: 20px;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -2360,6 +2535,70 @@
             gap: 10px;
             justify-content: center;
         }
+    /*===== Single Product Page =====*/
+        /*Product Info*/
+        .dssp__product__info .dssp__product__image .swiper-slide {
+            height: 422px;
+            border-radius: 10px;
+        }
+        .dssp__image__thumb__nav {
+            margin-top: 13px;
+        }
+        .dssp__product__details {
+            margin-top: 15px;
+            gap: 10px;
+        }
+        .dssp__product__details .dssp__title {
+            font-size: 34px;
+            line-height: 42px;
+        }
+        .dssp__product__details .dssp__rating .amount p {
+            font-size: 18px;
+            line-height: 26px;
+        }
+        .dssp__product__details .dssp__rating .amount span {
+            font-size: 14px;
+            line-height: 26px;
+        }
+        .dssp__product__details .dssp__rating .stars svg {
+            height: 22px;
+            width: 22px;
+        }
+        .dssp__product__details .dssp__desc {
+            font-size: 14px;
+            line-height: 22px !important;
+        }
+        .dssp__product__details span {
+            font-size: 14px;
+            line-height: 18px;
+            margin-bottom: 8px;
+        }
+        .dssp__product__details .dssp__price .price {
+            font-size: 26px;
+            line-height: 34px;
+        }
+        .dssp__product__details .dssp__size .size__items {
+            gap: 10px;
+        }
+        .dssp__product__details .color__items button {
+            font-size: 14px;
+        }
+        .dssp__product__details .dssp__ctas button {
+            font-size: 14px;
+            line-height: 18px;
+            padding: 12px 22px;
+        }
+        .dssp__product__details .dssp__share {
+            gap: 15px;
+            margin-top: 10px;
+        }
+        .dssp__product__details .dssp__share span {
+            font-size: 22px;
+            line-height: 22px;
+        }
+        .dssp__product__details .dssp__share .share__btns a {
+            font-size: 26px;
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -3017,6 +3256,59 @@
         .dsshop__products {
             gap: 10px;
         }
+    /*===== Single Product Page =====*/
+        /*Product Info*/
+        .dssp__product__info .dssp__product__image .swiper-slide {
+            height: 556px;
+        }
+        .dssp__image__thumb__nav {
+            margin-top: 20px;
+        }
+        .dssp__product__details {
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .dssp__product__details .dssp__title {
+            font-size: 38px;
+            line-height: 46px;
+        }
+        .dssp__product__details .dssp__rating .amount p {
+            font-size: 18px;
+            line-height: 26px;
+        }
+        .dssp__product__details .dssp__rating .amount span {
+            font-size: 14px;
+            line-height: 26px;
+        }
+        .dssp__product__details .dssp__rating .stars svg {
+            height: 22px;
+            width: 22px;
+        }
+        .dssp__product__details .dssp__desc {
+            font-size: 14px;
+            line-height: 24px !important;
+        }
+        .dssp__product__details span {
+            font-size: 14px;
+            line-height: 18px;
+            margin-bottom: 8px;
+        }
+        .dssp__product__details .dssp__price .price {
+            font-size: 26px;
+            line-height: 34px;
+        }
+        .dssp__product__details .color__items button {
+            font-size: 14px;
+        }
+        .dssp__product__details .dssp__share {
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .dssp__product__details .dssp__ctas button {
+            font-size: 16px;
+            line-height: 20px;
+            padding: 14px 24px;
+        }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -3642,6 +3934,73 @@
         .dsshop__products {
             gap: 10px;
         }
+    /*===== Single Product Page =====*/
+        /*Product Info*/
+        .dssp__product__info .dssp__product__image .swiper-slide {
+            height: 362px;
+            border-radius: 10px;
+        }
+        .dssp__product__info .dssp__product__image__thumb .swiper-slide {
+            width: 70px !important;
+            height: 76px;
+        }
+        .dssp__image__thumb__nav .dssp__prod__img__nav {
+            gap: 4px;
+        }
+        .dssp__product__details {
+            gap: 15px;
+        }
+        .dssp__product__details .dssp__title {
+            font-size: 34px;
+            line-height: 42px;
+        }
+        .dssp__product__details .dssp__rating .amount p {
+            font-size: 18px;
+            line-height: 26px;
+        }
+        .dssp__product__details .dssp__rating .amount span {
+            font-size: 14px;
+            line-height: 26px;
+        }
+        .dssp__product__details .dssp__rating .stars svg {
+            height: 22px;
+            width: 22px;
+        }
+        .dssp__product__details .dssp__desc {
+            font-size: 14px;
+            line-height: 22px !important;
+        }
+        .dssp__product__details span {
+            font-size: 14px;
+            line-height: 18px;
+            margin-bottom: 8px;
+        }
+        .dssp__product__details .dssp__price .price {
+            font-size: 26px;
+            line-height: 34px;
+        }
+        .dssp__product__details .dssp__size .size__items {
+            gap: 10px;
+        }
+        .dssp__product__details .color__items button {
+            font-size: 14px;
+        }
+        .dssp__product__details .dssp__ctas button {
+            font-size: 14px;
+            line-height: 18px;
+            padding: 12px 22px;
+        }
+        .dssp__product__details .dssp__share {
+            gap: 15px;
+            margin-top: 10px;
+        }
+        .dssp__product__details .dssp__share span {
+            font-size: 22px;
+            line-height: 22px;
+        }
+        .dssp__product__details .dssp__share .share__btns a {
+            font-size: 26px;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -4077,6 +4436,58 @@
         .dsshop__products {
             gap: 18px;
         }
+    /*===== Single Product Page =====*/
+        /*Product Info*/
+        .dssp__product__info .dssp__product__image .swiper-slide {
+            height: 491px;
+        }
+        .dssp__product__details {
+            gap: 15px;
+        }
+        .dssp__product__details .dssp__title {
+            font-size: 38px;
+            line-height: 46px;
+        }
+        .dssp__product__details .dssp__rating .amount p {
+            font-size: 18px;
+            line-height: 26px;
+        }
+        .dssp__product__details .dssp__rating .amount span {
+            font-size: 14px;
+            line-height: 26px;
+        }
+        .dssp__product__details .dssp__rating .stars svg {
+            height: 22px;
+            width: 22px;
+        }
+        .dssp__product__details .dssp__desc {
+            font-size: 14px;
+            line-height: 24px !important;
+        }
+        .dssp__product__details span {
+            font-size: 14px;
+            line-height: 18px;
+            margin-bottom: 8px;
+        }
+        .dssp__product__details .dssp__price .price {
+            font-size: 26px;
+            line-height: 34px;
+        }
+        .dssp__product__details .color__items button {
+            font-size: 14px;
+        }
+        .dssp__product__details .dssp__share {
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .dssp__product__details .dssp__ctas button {
+            font-size: 16px;
+            line-height: 20px;
+            padding: 14px 24px;
+        }
+        .dssp__image__thumb__nav .dssp__prod__img__nav {
+            gap: 4px;
+        }
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -4347,6 +4758,11 @@
         /*Main Product Area*/
         .dsshop__products {
             gap: 4px;
+        }
+    /*===== Single Product Page =====*/
+        /*Product Info*/
+        .dssp__product__info .dssp__product__image .swiper-slide {
+            height: 589px;
         }
 }
 
