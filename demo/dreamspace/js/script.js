@@ -423,4 +423,39 @@
         })
     });
 
+/*============================ Single product Page ============================*/
+    //Product Image Slider
+    $(function(){
+        var dsspSwiper = new Swiper(".dssp__product__image__thumb", {
+            spaceBetween: 30,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesProgress: true,
+        });
+        var dsspSwiper2 = new Swiper(".dssp__product__image", {
+            loop: true,
+            spaceBetween: 0,
+            navigation: {
+                nextEl: ".dssp__prod__img__next",
+                prevEl: ".dssp__prod__img__prev",
+            },
+            thumbs: {
+                swiper: dsspSwiper,
+            },
+        });
+    });
+
+    //Active Class
+    $(function(){
+        //Size
+        $('.dssp__size').on('click','.size__items button',function(){
+            $(this).addClass('active').siblings().removeClass('active');
+        });
+
+        //Color
+        $('.dssp__color').on('click','.color__items button',function(){
+            $(this).addClass('active').siblings().removeClass('active');
+        });
+    });
+
 }) (jQuery);
