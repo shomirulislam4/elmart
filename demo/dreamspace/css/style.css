@@ -3698,7 +3698,6 @@ input[type="radio"]:checked::before {
     height: 685px;
     border-radius: 20px;
     overflow: hidden;
-    background: red;
 }
 
 .dssp__product__info .dssp__product__image .swiper-slide img {
@@ -3726,7 +3725,6 @@ input[type="radio"]:checked::before {
     border-radius: 4px;
     overflow: hidden;
     opacity: 0.5;
-    background: red;
 }
 
 .dssp__product__info .dssp__product__image__thumb .swiper-slide img {
@@ -4096,22 +4094,21 @@ input[type="radio"]:checked::before {
 }
 
 .dssp__product__descrev .tab-content .tab-pane {
-    padding: 60px 0;
+    padding-top: 60px;
 }
 
 .dssp__product__descrev .tab-content .tab-pane p,
 .dssp__product__descrev .tab-content .tab-pane li {
     color: var(--text-color);
     font-size: 16px;
-    line-height: 20px;
+    line-height: 24px;
     font-weight: 600;
     font-family: 'Urbanist', sans-serif;
-    margin: 0;
 }
 
 .dssp__product__descrev .tab-content .tab-pane table {
     width: 100%;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .dssp__product__descrev .tab-content .tab-pane th,
@@ -4130,13 +4127,12 @@ input[type="radio"]:checked::before {
 }
 
 .dssp__product__descrev .tab-content .tab-pane ul {
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .dssp__product__descrev .tab-content .tab-pane li {
     list-style: disc;
     margin-left: 20px;
-    padding: 5px 0;
 }
 
 .dssp__product__descrev .tab-content .tab-pane h2 {
@@ -4205,6 +4201,8 @@ input[type="radio"]:checked::before {
     font-weight: 500;
     font-family: 'Urbanist', sans-serif;
     resize: none;
+    border: 1px solid #D0D5DD;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .dssp__product__descrev .dssp__reviews form input::placeholder,

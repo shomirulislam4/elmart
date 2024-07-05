@@ -991,6 +991,93 @@
         .dssp__product__details .dssp__share .share__btns a {
             font-size: 20px;
         }
+        /*Product Description*/
+        .dssp__product__descrev .dssp__navrev__tabs {
+            gap: 10px;
+        }
+        .dssp__product__descrev .dssp__navrev__tabs::after {
+            height: 3px;
+        } 
+        .dssp__product__descrev .dssp__navrev__tabs .dssp__navrev__btns {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .dssp__product__descrev .dssp__navrev__tabs .dssp__navrev__btns.active::after {
+            height: 5px;
+        }
+        .dssp__product__descrev .tab-content .tab-pane {
+            padding-top: 30px;
+        }
+        .dssp__product__descrev .dssp__reviews {
+            flex-direction: column;
+        }
+        .dssp__product__descrev .dssp__reviews .vertical__seperator {
+            height: 3px;
+            width: 100%;
+            margin: 20px 0;
+        }
+        .dssp__product__descrev .dssp__reviews .left__side,
+        .dssp__product__descrev .dssp__reviews .right__side {
+            width: 100%;
+        }
+        .dssp__product__descrev .tab-content .tab-pane h2 {
+            font-size: 30px;
+            line-height: 36px;
+        }
+        .dssp__product__descrev .dssp__reviews form {
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .dssp__product__descrev .dssp__reviews form input,
+        .dssp__product__descrev .dssp__reviews form .nice-select {
+            padding: 0 10px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 14px;
+        }
+        .dssp__product__descrev .dssp__reviews form textarea {
+            padding: 5px 10px;
+            font-size: 14px;
+        }
+        .dssp__product__descrev .dssp__submitted__review__item .usernrating {
+            align-items: center;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .dssp__product__descrev .dssp__submitted__review__item .usernrating .user__info .image {
+            height: 50px;
+            width: 50px;
+        }
+        .dssp__product__descrev .dssp__submitted__review__item .usernrating .user__info,
+        .dssp__product__descrev .dssp__submitted__review__item .user__review {
+            gap: 10px;
+        }
+        .dssp__product__descrev .dssp__submitted__review__item .usernrating .user__info .info p {
+            font-size: 12px;
+            line-height: 16px;
+            margin-bottom: 0;
+        }
+        .dssp__product__descrev .dssp__submitted__review__item {
+            gap: 10px;
+            padding-bottom: 20px;
+        }
+        .dssp__product__descrev .dssp__submitted__review__item .user__review h4 {
+            font-size: 18px;
+            line-height: 22px;
+            text-align: center;
+        }
+        .dssp__product__descrev .dssp__submitted__review__item .user__review .dssp__user__review__text,
+        .dssp__product__descrev .dssp__submitted__review__item .user__review .dssp__user__review__text .dssp__urt__toggle {
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+        }
+        .dssp__product__descrev .dssp__reviews .review__submit__btn {
+            font-size: 14px;
+            line-height: 20px;
+            padding: 10px 0;
+        }
+        
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
@@ -1830,6 +1917,84 @@
         .dssp__product__details .dssp__share .share__btns a {
             font-size: 20px;
         }
+        /*Product Description*/
+        .dssp__product__descrev .dssp__navrev__tabs {
+            gap: 10px;
+        }
+        .dssp__product__descrev .dssp__navrev__tabs::after {
+            height: 3px;
+        } 
+        .dssp__product__descrev .dssp__navrev__tabs .dssp__navrev__btns {
+            font-size: 16px;
+            line-height: 22px;
+        }
+        .dssp__product__descrev .dssp__navrev__tabs .dssp__navrev__btns.active::after {
+            height: 5px;
+        }
+        .dssp__product__descrev .tab-content .tab-pane {
+            padding-top: 30px;
+        }
+        .dssp__product__descrev .dssp__reviews {
+            flex-direction: column;
+        }
+        .dssp__product__descrev .dssp__reviews .vertical__seperator {
+            height: 3px;
+            width: 100%;
+            margin: 40px 0;
+        }
+        .dssp__product__descrev .dssp__reviews .left__side,
+        .dssp__product__descrev .dssp__reviews .right__side {
+            width: 100%;
+        }
+        .dssp__product__descrev .tab-content .tab-pane h2 {
+            font-size: 34px;
+            line-height: 42px;
+        }
+        .dssp__product__descrev .dssp__reviews form {
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .dssp__product__descrev .dssp__reviews form input,
+        .dssp__product__descrev .dssp__reviews form .nice-select {
+            padding: 0 10px;
+            height: 45px;
+            line-height: 45px;
+        }
+        .dssp__product__descrev .dssp__reviews form textarea {
+            padding: 5px 10px;
+        }
+        .dssp__product__descrev .dssp__submitted__review__item .usernrating {
+            align-items: center;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .dssp__product__descrev .dssp__submitted__review__item .usernrating .user__info .image {
+            height: 60px;
+            width: 60px;
+        }
+        .dssp__product__descrev .dssp__submitted__review__item .usernrating .user__info,
+        .dssp__product__descrev .dssp__submitted__review__item .user__review {
+            gap: 10px;
+        }
+        .dssp__product__descrev .dssp__submitted__review__item {
+            gap: 10px;
+            padding-bottom: 20px;
+        }
+        .dssp__product__descrev .dssp__submitted__review__item .user__review h4 {
+            font-size: 18px;
+            line-height: 22px;
+            text-align: center;
+        }
+        .dssp__product__descrev .dssp__submitted__review__item .user__review .dssp__user__review__text,
+        .dssp__product__descrev .dssp__submitted__review__item .user__review .dssp__user__review__text .dssp__urt__toggle {
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+        }
+        .dssp__product__descrev .dssp__reviews .review__submit__btn {
+            font-size: 14px;
+            line-height: 20px;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -2599,6 +2764,69 @@
         .dssp__product__details .dssp__share .share__btns a {
             font-size: 26px;
         }
+        /*Product Description*/
+        .dssp__product__descrev .dssp__navrev__tabs {
+            gap: 10px;
+        }
+        .dssp__product__descrev .dssp__navrev__tabs::after {
+            height: 3px;
+        } 
+        .dssp__product__descrev .dssp__navrev__tabs .dssp__navrev__btns {
+            font-size: 16px;
+            line-height: 22px;
+        }
+        .dssp__product__descrev .dssp__navrev__tabs .dssp__navrev__btns.active::after {
+            height: 5px;
+        }
+        .dssp__product__descrev .tab-content .tab-pane {
+            padding-top: 30px;
+        }
+        .dssp__product__descrev .dssp__reviews {
+            flex-direction: column;
+        }
+        .dssp__product__descrev .dssp__reviews .vertical__seperator {
+            height: 3px;
+            width: 100%;
+            margin: 40px 0;
+        }
+        .dssp__product__descrev .dssp__reviews .left__side,
+        .dssp__product__descrev .dssp__reviews .right__side {
+            width: 100%;
+        }
+        .dssp__product__descrev .tab-content .tab-pane h2 {
+            font-size: 34px;
+            line-height: 42px;
+        }
+        .dssp__product__descrev .dssp__reviews form {
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .dssp__product__descrev .dssp__reviews form input,
+        .dssp__product__descrev .dssp__reviews form .nice-select {
+            padding: 0 15px;
+            height: 50px;
+            line-height: 50px;
+        }
+        .dssp__product__descrev .dssp__reviews form textarea {
+            padding: 7px 15px;
+        }
+        .dssp__product__descrev .dssp__submitted__review__item .usernrating .user__info .image {
+            height: 70px;
+            width: 70px;
+        }
+        .dssp__product__descrev .dssp__submitted__review__item .usernrating .user__info,
+        .dssp__product__descrev .dssp__submitted__review__item .user__review {
+            gap: 15px;
+        }
+        .dssp__product__descrev .dssp__submitted__review__item {
+            gap: 20px;
+            padding-bottom: 20px;
+        }
+        .dssp__product__descrev .dssp__submitted__review__item .user__review .dssp__user__review__text,
+        .dssp__product__descrev .dssp__submitted__review__item .user__review .dssp__user__review__text .dssp__urt__toggle {
+            font-size: 16px;
+            line-height: 22px;
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -3309,6 +3537,29 @@
             line-height: 20px;
             padding: 14px 24px;
         }
+        /*Product Description*/
+        .dssp__product__descrev .dssp__navrev__tabs {
+            gap: 20px;
+        }
+        .dssp__product__descrev .dssp__navrev__tabs .dssp__navrev__btns {
+            font-size: 22px;
+            line-height: 28px;
+        }
+        .dssp__product__descrev .tab-content .tab-pane {
+            padding-top: 50px;
+        }
+        .dssp__product__descrev .dssp__reviews {
+            flex-direction: column;
+        }
+        .dssp__product__descrev .dssp__reviews .vertical__seperator {
+            height: 3px;
+            width: 100%;
+            margin: 40px 0;
+        }
+        .dssp__product__descrev .dssp__reviews .left__side,
+        .dssp__product__descrev .dssp__reviews .right__side {
+            width: 100%;
+        }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -4001,6 +4252,53 @@
         .dssp__product__details .dssp__share .share__btns a {
             font-size: 26px;
         }
+        /*Product Description*/
+        .dssp__product__descrev .dssp__navrev__tabs {
+            gap: 50px;
+        }
+        .dssp__product__descrev .dssp__navrev__tabs .dssp__navrev__btns {
+            font-size: 26px;
+            line-height: 32px;
+        }
+        .dssp__product__descrev .tab-content .tab-pane {
+            padding-top: 50px;
+        }
+        .dssp__product__descrev .dssp__reviews .vertical__seperator {
+            margin: 0 10px;
+            height: 700px;
+        }
+        .dssp__product__descrev .tab-content .tab-pane h2 {
+            font-size: 32px;
+            line-height: 40px;
+        }
+        .dssp__product__descrev .dssp__reviews form {
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .dssp__product__descrev .dssp__reviews form input,
+        .dssp__product__descrev .dssp__reviews form .nice-select {
+            padding: 0 15px;
+            height: 50px;
+            line-height: 50px;
+        }
+        .dssp__product__descrev .dssp__reviews form textarea {
+            padding: 7px 15px;
+        }
+        .dssp__product__descrev .dssp__submitted__review__item .user__review .dssp__user__review__text,
+        .dssp__product__descrev .dssp__submitted__review__item .user__review .dssp__user__review__text .dssp__urt__toggle {
+            font-size: 16px;
+        }
+        .dssp__product__descrev .dssp__submitted__review__item .usernrating .user__info .image {
+            height: 70px;
+            width: 70px;
+        }
+        .dssp__product__descrev .dssp__submitted__review__item {
+            gap: 20px;
+            padding-bottom: 20px;
+        }
+        .dssp__product__descrev .dssp__submitted__review__item .user__review {
+            gap: 15px;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -4488,6 +4786,28 @@
         .dssp__image__thumb__nav .dssp__prod__img__nav {
             gap: 4px;
         }
+        /*Product Description*/
+        .dssp__product__descrev .dssp__navrev__tabs {
+            gap: 70px;
+        }
+        .dssp__product__descrev .dssp__navrev__tabs .dssp__navrev__btns {
+            font-size: 28px;
+            line-height: 34px;
+        }
+        .dssp__product__descrev .dssp__reviews .vertical__seperator {
+            margin: 0 50px;
+        }
+        .dssp__product__descrev .tab-content .tab-pane h2 {
+            font-size: 34px;
+            line-height: 42px;
+        }
+        .dssp__product__descrev .dssp__reviews form input,
+        .dssp__product__descrev .dssp__reviews form .nice-select {
+            padding: 0 15px;
+        }
+        .dssp__product__descrev .dssp__reviews form textarea {
+            padding: 7px 15px;
+        }
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -4764,6 +5084,7 @@
         .dssp__product__info .dssp__product__image .swiper-slide {
             height: 589px;
         }
+        /*Product Description*/
 }
 
 @media (min-width: 1400px) and (max-width: 1499px) {
