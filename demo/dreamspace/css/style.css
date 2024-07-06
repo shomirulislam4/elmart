@@ -4354,7 +4354,26 @@ input[type="radio"]:checked::before {
     color: var(--main-color);
 }
 
+/*** Start of Similar Products Section ***/
+.ds__similarproducts__section {
+    margin-top: 100px;
+}
 
+.ds__similarproducts__section .dssimprod__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.ds__similarproducts__section .dscs__titlenav {
+    justify-content: center;
+}
+
+.ds__similarproducts__section .dscs__titlenav .dscs__title h2 {
+    text-align: center;
+}
+/*** End of Similar Products Section ***/
 
 /*
 rgba(95, 23, 6, 0.4)
