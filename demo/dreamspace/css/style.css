@@ -220,8 +220,8 @@ button:focus {
 /* Seperator */
 .vertical__seperator {
     height: 26px;
-    width: 2px;
-    background: var(--background-color);
+    width: 3px;
+    background: #C0BDBB;
     margin: 0;
 }
 
@@ -3924,8 +3924,8 @@ input[type="radio"]:checked::before {
     margin-right: 10px;
 }
 
-/* Quantity Widget */
-.dssp__product__details .quantity__widget {
+/* Start of Quantity Widget */
+.quantity__widget {
 	text-align: center;
 	font-family: 'Urbanist', sans-serif;
 	margin: 0;
@@ -3935,20 +3935,20 @@ input[type="radio"]:checked::before {
     margin-top: 5px;
 }
 
-.dssp__product__details .quantity__controls {
+.quantity__controls {
     display: flex;
     display: flex;
 	align-items: center;
     gap: 10px;
 }
 
-.dssp__product__details .quantity__controls .incdec__arr {
+.quantity__controls .incdec__arr {
     display: flex;
     flex-direction: column;
 }
 
-.dssp__product__details .quantity__decrease,
-.dssp__product__details .quantity__increase {
+.quantity__decrease,
+.quantity__increase {
     height: 20px;
     width: 20px;
     cursor: pointer;
@@ -3959,17 +3959,17 @@ input[type="radio"]:checked::before {
     align-items: flex-start;
 }
 
-.dssp__product__details .quantity__increase {
+.quantity__increase {
     align-items: flex-end;
 }
 
-.dssp__product__details .quantity__decrease svg,
-.dssp__product__details .quantity__increase svg {
+.quantity__decrease svg,
+.quantity__increase svg {
     height: 12px;
     width: 12px;
 }
 
-.dssp__product__details .quantity__display {
+.quantity__display {
     font-size: 18px;
     line-height: 18px;
     font-weight: 500;
@@ -3977,6 +3977,7 @@ input[type="radio"]:checked::before {
     pointer-events: none;
     color: var(--background-color);
 }
+/* End of Quantity Widget */
 
 .dssp__product__details .dssp__ctas {
     margin-top: 5px;
@@ -4239,10 +4240,7 @@ input[type="radio"]:checked::before {
 }
 
 .dssp__product__descrev .dssp__reviews .vertical__seperator {
-    content: '';
     height: 800px;
-    width: 3px;
-    background: #C0BDBB;
     margin: 0 70px;
 }
 
@@ -4503,6 +4501,300 @@ input[type="radio"]:checked::before {
     text-align: center;
     margin: 0;
 }
+
+/*** Start of Cart Section ***/
+.ds__cartinfoshippingcheckout__section {
+    margin-top: 100px;
+}
+
+/* Start of Quantity Widget 2 */
+.quantity__widget2 {
+	text-align: center;
+	font-family: 'Urbanist', sans-serif;
+	display: flex;
+	align-items: flex-start;
+	margin: 0;
+	justify-content: flex-start;
+    background: var(--text-color);
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.quantity__controls2 {
+    display: flex;
+}
+
+.quantity__decrease2,
+.quantity__increase2 {
+    cursor: pointer;
+    text-align: center;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    height: 40px;
+    width: 40px;
+    border-radius: 4px;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    user-select: none;
+}
+
+.quantity__decrease2:hover,
+.quantity__increase2:hover {
+    color: var(--text-color);
+    background: #FFF; 
+}
+
+.quantity__display2 {
+    color: #FFF;
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 500;
+    text-align: center;
+    width: 50px;
+    pointer-events: none;
+}
+/* End of Quantity Widget 2 */
+
+/* Product in Cart */
+.ds__products__in__cart {
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+    padding-right: 80px;
+}
+
+.ds__products__in__cart .ds__product__item {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.ds__products__in__cart .ds__product__item .image {
+    height: 247px;
+    width: 192px;
+}
+
+.ds__products__in__cart .ds__product__item .image img {
+    height: 100%;
+    width: auto;
+}
+
+.ds__products__in__cart .ds__product__item .content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: auto;
+}
+
+.ds__products__in__cart .ds__product__item .content h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+.ds__products__in__cart .ds__product__item .content h3 a {
+    color: var(--text-color);
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 700;
+    font-family: 'Urbanist', sans-serif;
+    text-transform: capitalize;
+}
+
+.ds__products__in__cart .ds__product__item .content h3 a:hover {
+    color: var(--main-color);
+}
+
+.ds__products__in__cart .ds__product__item .content h3 span {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    font-family: 'Urbanist', sans-serif;
+}
+
+.ds__products__in__cart .ds__product__item .content h3 span::before {
+    content: '$';
+}
+
+.ds__products__in__cart .ds__product__item .content .dspic__color__select {
+    display: flex;
+    gap: 16px;
+}
+
+.ds__products__in__cart .ds__product__item .content .dspic__color__select .dspic__color__item {
+    height: 39px;
+    width: 39px;
+    border: 1px solid transparent;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.ds__products__in__cart .ds__product__item .content .dspic__color__select .dspic__color__item span {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.ds__products__in__cart .ds__product__item .content .dspic__color__select .dspic__color__item.active {
+    border-color: var(--text-color);
+}
+
+.ds__products__in__cart .ds__product__item .content .quantity__cta {
+    display: flex;
+    gap: 20px;
+}
+
+.ds__products__in__cart .ds__product__item .content .quantity__cta .dspic__remove__btn {
+    color: #E14B4B;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    font-family: 'Urbanist', sans-serif;
+    background: transparent;
+    text-transform: capitalize;
+    padding: 0 8px;
+    border-radius: 4px;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.ds__products__in__cart .ds__product__item .content .quantity__cta .dspic__remove__btn:hover {
+    background: var(--main-color);
+    color: #FFF;
+}
+
+/* Product Price Info */
+.ds__product__price__info {
+    padding-left: 60px;
+    height: 100%;
+    border-left: 3px solid #C0BDBB;
+}
+
+.ds__product__price__info .dscs__titlenav.titlewithtext {
+    margin-bottom: 66px;
+}
+
+.ds__product__price__info .dscs__titlenav.titlewithtext .dscs__title h2 {
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.ds__product__price__info .dscs__titlenav.titlewithtext .dscs__title p {
+    font-size: 16px;
+    line-height: 20px;
+    color: #7E7F7C;
+}
+
+.ds__product__price__info table {
+    width: 100%;
+}
+
+.ds__product__price__info table td {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+    font-family: 'Urbanist', sans-serif;
+    text-transform: capitalize;
+    padding: 13px 0;
+}
+
+.ds__product__price__info table td:first-child {
+    color: #7E7F7C;
+}
+
+.ds__product__price__info table td:last-child {
+    color: var(--text-color);
+    font-weight: 900;
+    text-align: right;
+}
+
+.ds__product__price__info .dsppi__voucher__cta {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    margin-top: 30px;
+}
+
+.ds__product__price__info .dsppi__voucher__cta form {
+    width: 100%;
+    background: #FFF;
+    border: 1px solid #8D8D8D;
+    border-radius: 2px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+}
+
+.ds__product__price__info .dsppi__voucher__cta form input {
+    height: 100%;
+    width: 100%;
+    padding: 0 16px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Urbanist', sans-serif;
+}
+
+.ds__product__price__info .dsppi__voucher__cta form button {
+    height: 100%;
+    width: 60px;
+    background: transparent;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.ds__product__price__info .dsppi__voucher__cta form button:hover {
+    background: var(--text-color);
+}
+
+.ds__product__price__info .dsppi__voucher__cta form button svg {
+    height: 22px;
+    width: 22px;
+    stroke: var(--text-color);
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.ds__product__price__info .dsppi__voucher__cta form button:hover svg {
+    stroke: #FFF;
+}
+
+.ds__product__price__info .dsppi__voucher__cta .checkout__button {
+    background: var(--text-color);
+    color: #FFF;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    font-family: 'Urbanist', sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 16px 0;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.ds__product__price__info .dsppi__voucher__cta .checkout__button:hover {
+    background: var(--main-color);
+}
+/*** End of Cart Section ***/
 
 /*
 rgba(95, 23, 6, 0.4)

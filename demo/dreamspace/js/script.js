@@ -63,6 +63,25 @@
         });
     });
 
+    //Quantity Widget 2
+    $(function(){
+        $('.quantity__controls2').each(function() {
+        var quantityDisplay = $(this).find('.quantity__display2');
+    
+        $(this).find('.quantity__increase2').on('click', function() {
+            var currentQuantity = parseInt(quantityDisplay.text(), 10);
+            quantityDisplay.text(currentQuantity + 1);
+        });
+    
+        $(this).find('.quantity__decrease2').on('click', function() {
+            var currentQuantity = parseInt(quantityDisplay.text(), 10);
+            if (currentQuantity > 1) {
+            quantityDisplay.text(currentQuantity - 1);
+            }
+        });
+        });
+    });
+
     //Cart Menu
     $(function(){
         $('.dshs__cart__btn').on('click', function(){
@@ -501,6 +520,14 @@
                     $textContainer.html(shortText + ' <span class="dssp__urt__toggle">read more</span>');
                 }
             });
+        });
+    });
+
+/*============================ Cart, Info, Shipping, Checkout ============================*/
+    //Item Active Class
+    $(function(){
+        $('.dspic__color__select').on('click','.dspic__color__item',function(){
+            $(this).addClass('active').siblings().removeClass('active');
         });
     });
 
