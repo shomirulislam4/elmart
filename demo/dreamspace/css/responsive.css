@@ -263,8 +263,8 @@
             margin-bottom: 15px;
         }
         .dscs__titlenav .dscs__title h2 {
-            font-size: 24px;
-            line-height: 32px;
+            font-size: 20px;
+            line-height: 30px;
         }
         .dscs__titlenav .dscs__nav {
             gap: 5px;
@@ -1138,42 +1138,29 @@
             font-size: 12px;
             line-height: 18px;
         }
-    /*Product in Cart*/
-        .quantity__decrease2,
-        .quantity__increase2 {
-            font-size: 18px;
-            line-height: 30px;
-            height: 30px;
-            width: 30px;
-        }
-        .quantity__display2 {
-            font-size: 16px;
-            line-height: 30px;
-            width: 34px;
-        }
         /*Product Price Info*/
         .ds__product__price__info {
             padding-left: 0;
             border-left: 0;
             border-top: 2px solid #C0BDBB;
             padding-top: 15px;
+            margin-top: 20px;
         }
         .ds__product__price__info .dscs__titlenav.titlewithtext {
             margin-bottom: 20px;
         }
         .ds__product__price__info .dscs__titlenav.titlewithtext .dscs__title h2 {
             font-size: 20px;
-            line-height: 28px;
+            line-height: 30px;
         }
         .ds__product__price__info .dscs__titlenav.titlewithtext .dscs__title p {
             font-size: 12px;
             line-height: 18px;
         }
-        /*Cart Item*/
+        /*Product in Cart*/
         .ds__products__in__cart {
             gap: 30px;
             padding-right: 0;
-            padding-bottom: 20px;
         }
         .ds__products__in__cart .ds__product__item {
             gap: 10px;
@@ -1253,6 +1240,31 @@
             font-size: 14px;
             line-height: 24px;
             width: 30px;
+        }
+        /*Billing Information Page*/
+        .ds__billing__info__submit {
+            gap: 30px;
+        }
+        .ds__billing__shipping form {
+            gap: 10px;
+        }
+        .ds__billing__shipping form .form__row {
+            flex-direction: column;
+            gap: 5px;
+        }
+        .ds__billing__shipping form .addresses__fields {
+            gap: 5px;
+        }
+        .ds__billing__shipping form .form__row input {
+            width: 100%;
+            height: 40px;
+            padding: 0 10px;
+            font-size: 12px;
+        }
+        .ds__billing__shipping h2 {
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 7px;
         }
 }
 
@@ -2248,19 +2260,23 @@
             border-left: 0;
             border-top: 2px solid #C0BDBB;
             padding-top: 15px;
+            margin-top: 20px;
         }
         .ds__product__price__info .dscs__titlenav.titlewithtext {
             margin-bottom: 30px;
+        }
+        .ds__product__price__info .dscs__titlenav.titlewithtext .dscs__title h2 {
+            font-size: 24px;
+            line-height: 32px;
         }
         .ds__product__price__info .dscs__titlenav.titlewithtext .dscs__title p {
             font-size: 14px;
             line-height: 18px;
         }
-        /*Cart Item*/
+        /*Product in Cart*/
         .ds__products__in__cart {
             gap: 30px;
             padding-right: 0;
-            padding-bottom: 20px;
         }
         .ds__products__in__cart .ds__product__item {
             gap: 10px;
@@ -2333,7 +2349,33 @@
             font-size: 14px;
             line-height: 24px;
             width: 30px;
-        }  
+        }
+        /*Billing Information Page*/
+        .ds__billing__info__submit {
+            gap: 30px;
+        }
+        .ds__billing__shipping form {
+            gap: 15px;
+        }
+        .ds__billing__shipping form .form__row {
+            flex-direction: column;
+            gap: 10px;
+        }
+        .ds__billing__shipping form .addresses__fields {
+            gap: 10px;
+        }
+        .ds__billing__shipping form .form__row input {
+            width: 100%;
+            height: 45px;
+            padding: 0 10px;
+            font-size: 14px;
+            border-radius: 5px;
+        }
+        .ds__billing__shipping h2 {
+            font-size: 24px;
+            line-height: 32px;
+            margin-bottom: 9px;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -3214,19 +3256,23 @@
             border-left: 0;
             border-top: 2px solid #C0BDBB;
             padding-top: 20px;
+            margin-top: 30px;
         }
         .ds__product__price__info .dscs__titlenav.titlewithtext {
             margin-bottom: 30px;
+        }
+        .ds__product__price__info .dscs__titlenav.titlewithtext .dscs__title h2 {
+            font-size: 30px;
+            line-height: 36px;
         }
         .ds__product__price__info .dscs__titlenav.titlewithtext .dscs__title p {
             font-size: 14px;
             line-height: 18px;
         }
-        /*Cart Item*/
+        /*Product in Cart*/
         .ds__products__in__cart {
             gap: 30px;
             padding-right: 0;
-            padding-bottom: 30px;
         }
         .ds__products__in__cart .ds__product__item {
             gap: 10px;
@@ -3283,6 +3329,29 @@
             font-size: 16px;
             line-height: 30px;
             width: 34px;
+        }
+        /*Billing Information Page*/
+        .ds__billing__info__submit {
+            gap: 40px;
+        }
+        .ds__billing__shipping form {
+            gap: 15px;
+        }
+        .ds__billing__shipping form .form__row {
+            flex-direction: column;
+            gap: 10px;
+        }
+        .ds__billing__shipping form .addresses__fields {
+            gap: 10px;
+        }
+        .ds__billing__shipping form .form__row input {
+            width: 100%;
+            height: 45px;
+            font-size: 14px;
+        }
+        .ds__billing__shipping h2 {
+            font-size: 30px;
+            line-height: 36px;
         }
 }
 
@@ -4052,6 +4121,7 @@
             border-left: 0;
             border-top: 2px solid #C0BDBB;
             padding-top: 20px;
+            margin-top: 30px;
         }
         .ds__product__price__info .dscs__titlenav.titlewithtext {
             margin-bottom: 30px;
@@ -4060,11 +4130,10 @@
             font-size: 14px;
             line-height: 18px;
         }
-        /*Cart Item*/
+        /*Product in Cart*/
         .ds__products__in__cart {
             gap: 30px;
             padding-right: 0;
-            padding-bottom: 30px;
         }
         .ds__products__in__cart .ds__product__item {
             gap: 20px;
@@ -4097,6 +4166,14 @@
             font-size: 18px;
             line-height: 34px;
             width: 40px;
+        }
+        /*Billing Information Page*/
+        .ds__billing__info__submit {
+            gap: 40px;
+        }
+        .ds__billing__shipping form .form__row input {
+            padding: 0 10px;
+            height: 50px;
         }
 }
 
@@ -4877,7 +4954,7 @@
             font-size: 14px;
             line-height: 18px;
         }
-        /*Cart Item*/
+        /*Product in Cart*/
         .ds__products__in__cart {
             padding-right: 0;
         }
@@ -4933,6 +5010,23 @@
             font-size: 18px;
             line-height: 34px;
             width: 40px;
+        }
+        /*Billing Information Page*/
+        .ds__billing__info__submit {
+            gap: 40px;
+        }
+        .ds__billing__shipping form {
+            gap: 20px;
+        }
+        .ds__billing__shipping form .form__row {
+            flex-direction: column;
+            gap: 15px;
+        }
+        .ds__billing__shipping form .addresses__fields {
+            gap: 15px;
+        }
+        .ds__billing__shipping form .form__row input {
+            width: 100%;
         }
 }
 
@@ -5461,7 +5555,7 @@
         .ds__product__price__info .dscs__titlenav.titlewithtext {
             margin-bottom: 56px;
         }
-        /*Cart Item*/
+        /*Product in Cart*/
         .ds__products__in__cart {
             padding-right: 0;
         }
@@ -5489,6 +5583,10 @@
             font-size: 18px;
             line-height: 18px;
             padding: 12px 0;
+        }
+        /*Billing Information Page*/
+        .ds__billing__shipping form .form__row input {
+            padding: 0 10px;
         }
 }
 

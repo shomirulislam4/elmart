@@ -3060,13 +3060,13 @@ input[type="radio"]:checked::before {
     background: var(--main-color);
 }
 
-.ds__newsletter__popup .ds__newsltrpop__wrapper .content form .checkbox {
+form .checkbox {
     display: flex;
     align-items: center;
     gap: 5px;
 }
 
-.ds__newsletter__popup .ds__newsltrpop__wrapper .content form .checkbox label {
+form .checkbox label {
     color: #667085;
     font-size: 16px;
     line-height: 24px;
@@ -3167,6 +3167,7 @@ input[type="radio"]:checked::before {
 
 .ds__breadcrumbs__section .dsbc__wrapper .dsbc__breadcrumb {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     position: absolute;
     bottom: 41px;
@@ -4795,6 +4796,58 @@ input[type="radio"]:checked::before {
     background: var(--main-color);
 }
 /*** End of Cart Section ***/
+
+/*** Start of Billing Information Page ***/
+.ds__billing__info__submit {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.ds__billing__shipping h2 {
+    color: var(--text-color);
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 800;
+    font-family: 'Urbanist', sans-serif;
+    margin-bottom: 11px;
+}
+
+.ds__billing__shipping form,
+.ds__billing__shipping form .addresses__fields {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+.ds__billing__shipping form .addresses__fields {
+    gap: 17px;
+}
+
+.ds__billing__shipping form .form__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ds__billing__shipping form .form__row input {
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: 500;
+    height: 55px;
+    border-radius: 8px;
+    border: 1px solid #D0D5DD;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    width: 49%;
+}
+
+.ds__billing__shipping form .form__row.full__width input {
+    width: 100%;
+}
+
+.ds__billing__shipping form .form__row input::placeholder {
+    color: #667085;
+}
+/*** End of Billing Information Page ***/
 
 /*
 rgba(95, 23, 6, 0.4)
