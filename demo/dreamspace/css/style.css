@@ -16,6 +16,7 @@
    13. Footer
 3. Shop - Category Page
 4. Single Product Page
+5. Cart, Info, Shipping, Checkout
 
 **********************************************/
 
@@ -446,6 +447,32 @@ input[type="radio"]:checked::before {
 .dscs__titlenav .dscs__nav .ds__navbtns:hover svg {
     stroke: #FFF;
     fill: #FFF;
+}
+
+/* Title With Text */
+.dscs__titlenav.titlewithtext {
+    justify-content: center;
+}
+
+.dscs__titlenav.titlewithtext .dscs__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.dscs__titlenav.titlewithtext .dscs__title h2 {
+    text-align: center;
+}
+
+.dscs__titlenav.titlewithtext .dscs__title p {
+    color: var(--text-color);
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+    font-family: 'Urbanist', sans-serif;
+    text-align: center;
+    margin: 0;
 }
 
 /* ====================================================================
@@ -2456,31 +2483,6 @@ input[type="radio"]:checked::before {
     margin-top: 100px;
 }
 
-.ds__gallery__section .dscs__titlenav {
-    justify-content: center;
-}
-
-.ds__gallery__section .dscs__titlenav .dscs__title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-}
-
-.ds__gallery__section .dscs__titlenav .dscs__title h2 {
-    text-align: center;
-}
-
-.ds__gallery__section .dscs__titlenav .dscs__title p {
-    color: var(--text-color);
-    font-size: 18px;
-    line-height: 28px;
-    font-weight: 500;
-    font-family: 'Urbanist', sans-serif;
-    text-align: center;
-    margin: 0;
-}
-
 /* Image Lightbox */
 .pswp__counter,
 .pswp__button--close,
@@ -4397,7 +4399,6 @@ input[type="radio"]:checked::before {
 .dswcus__wrapper .dswcus__item {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     gap: 18px;
     width: 31%;
@@ -4445,8 +4446,63 @@ input[type="radio"]:checked::before {
     text-align: center;
     margin: 0;
 }
-
 /*** End of Why Choose Us Section ***/
+
+/* ====================================================================
+   5. Cart, Info, Shipping, Checkout
+==================================================================== */
+/* Checkout Process */
+.ds__checkout__process__section {
+    margin-top: 100px;
+}
+
+.ds__checkout__process__section .dscps__wrapper {
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.ds__checkout__process__section .dscps__wrapper .item {
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.ds__checkout__process__section .dscps__wrapper .item .icon svg {
+    fill: #6D6D6D;
+    height: 52px;
+    width: 52px;
+}
+
+.ds__checkout__process__section .dscps__wrapper .item.complete .icon svg {
+    fill: var(--text-color);
+}
+
+.ds__checkout__process__section .dscps__wrapper .item h3 {
+    color: var(--text-color);
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+    font-family: 'Urbanist', sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 0;
+}
+
+.ds__checkout__process__section .dscps__wrapper .item p {
+    color: #6D6D6D;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    font-family: 'Urbanist', sans-serif;
+    text-align: center;
+    margin: 0;
+}
 
 /*
 rgba(95, 23, 6, 0.4)

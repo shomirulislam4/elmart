@@ -14,7 +14,8 @@
     .ds__single__product__section,
     .dssp__product__descrev,
     .ds__similarproducts__section,
-    .ds__why__choose__us__section {
+    .ds__why__choose__us__section,
+    .ds__checkout__process__section {
         margin-top: 30px;
     }
     .ds__button__a {
@@ -583,10 +584,10 @@
         .dsgallery__right__side {
             width: 100%;
         }
-        .ds__gallery__section .dscs__titlenav .dscs__title {
+        .dscs__titlenav.titlewithtext .dscs__title {
             gap: 5px;
         }
-        .ds__gallery__section .dscs__titlenav .dscs__title p {
+        .dscs__titlenav.titlewithtext .dscs__title p {
             font-size: 12px;
             line-height: 20px;
         }
@@ -1082,7 +1083,60 @@
             line-height: 20px;
             padding: 10px 0;
         }
-        
+        .dssp__product__descrev .tab-content .tab-pane p,
+        .dssp__product__descrev .tab-content .tab-pane li {
+            font-size: 12px;
+            line-height: 20px;
+        }
+        .dssp__product__descrev .tab-content .tab-pane th,
+        .dssp__product__descrev .tab-content .tab-pane td {
+            padding: 5px;
+            font-size: 12px;
+            line-height: 20px;
+        }
+        /*Why Choose Us Section*/
+        .ds__why__choose__us__section .dswcus__wrapper {
+            gap: 30px;
+        }
+        .dswcus__wrapper .dswcus__item {
+            width: 100%;
+            gap: 10px;
+        }
+        .dswcus__wrapper .dswcus__item svg {
+            height: 35px;
+            width: 35px;
+        }
+        .dswcus__wrapper .dswcus__item h3 {
+            font-size: 16px;
+            line-height: 16px;
+        }
+        .dswcus__wrapper .dswcus__item p {
+            font-size: 10px;
+            line-height: 16px;
+        }
+    /*===== Cart, Info, Shipping, Checkout =====*/
+        /*Checkout Process*/
+        .ds__checkout__process__section .dscps__wrapper {
+            width: 100%;
+            gap: 15px;
+            padding: 0 5px;
+            padding-top: 10px;
+        }
+        .ds__checkout__process__section .dscps__wrapper .item {
+            width: 100%;
+        }
+        .ds__checkout__process__section .dscps__wrapper .item .icon svg {
+            height: 34px;
+            width: 34px;
+        }
+        .ds__checkout__process__section .dscps__wrapper .item h3 {
+            font-size: 16px;
+            line-height: 16px;
+        }
+        .ds__checkout__process__section .dscps__wrapper .item p {
+            font-size: 12px;
+            line-height: 18px;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
@@ -1101,7 +1155,8 @@
     .ds__single__product__section,
     .dssp__product__descrev,
     .ds__similarproducts__section,
-    .ds__why__choose__us__section {
+    .ds__why__choose__us__section,
+    .ds__checkout__process__section {
         margin-top: 30px;
     }
     .ds__button__a {
@@ -1598,10 +1653,10 @@
         .dsgallery__right__side {
             width: 100%;
         }
-        .ds__gallery__section .dscs__titlenav .dscs__title {
+        .dscs__titlenav.titlewithtext .dscs__title {
             gap: 5px;
         }
-        .ds__gallery__section .dscs__titlenav .dscs__title p {
+        .dscs__titlenav.titlewithtext .dscs__title p {
             font-size: 12px;
             line-height: 20px;
         }
@@ -2001,9 +2056,60 @@
             line-height: 20px;
             text-align: center;
         }
-        .dssp__product__descrev .dssp__reviews .review__submit__btn {
+        .dssp__product__descrev .dssp__reviews .review__submit__btn,
+        .dssp__product__descrev .tab-content .tab-pane p,
+        .dssp__product__descrev .tab-content .tab-pane li {
             font-size: 14px;
             line-height: 20px;
+        }
+        .dssp__product__descrev .tab-content .tab-pane th,
+        .dssp__product__descrev .tab-content .tab-pane td {
+            padding: 5px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+        /*Why Choose Us Section*/
+        .ds__why__choose__us__section .dswcus__wrapper {
+            gap: 30px;
+        }
+        .dswcus__wrapper .dswcus__item {
+            width: 100%;
+            gap: 14px;
+        }
+        .dswcus__wrapper .dswcus__item svg {
+            height: 40px;
+            width: 40px;
+        }
+        .dswcus__wrapper .dswcus__item h3 {
+            font-size: 16px;
+            line-height: 16px;
+        }
+        .dswcus__wrapper .dswcus__item p {
+            font-size: 12px;
+            line-height: 18px;
+        }
+    /*===== Cart, Info, Shipping, Checkout =====*/
+        /*Checkout Process*/
+        .ds__checkout__process__section .dscps__wrapper {
+            width: 100%;
+            gap: 20px;
+            padding: 0 5px;
+            padding-top: 10px;
+        }
+        .ds__checkout__process__section .dscps__wrapper .item {
+            width: 100%;
+        }
+        .ds__checkout__process__section .dscps__wrapper .item .icon svg {
+            height: 38px;
+            width: 38px;
+        }
+        .ds__checkout__process__section .dscps__wrapper .item h3 {
+            font-size: 18px;
+            line-height: 18px;
+        }
+        .ds__checkout__process__section .dscps__wrapper .item p {
+            font-size: 12px;
+            line-height: 18px;
         }
 }
 
@@ -2023,7 +2129,8 @@
     .ds__single__product__section,
     .dssp__product__descrev,
     .ds__similarproducts__section,
-    .ds__why__choose__us__section {
+    .ds__why__choose__us__section,
+    .ds__checkout__process__section {
         margin-top: 40px;
     }
     .ds__button__a {
@@ -2491,10 +2598,10 @@
         .dsgallery__right__side {
             width: 100%;
         }
-        .ds__gallery__section .dscs__titlenav .dscs__title {
+        .dscs__titlenav.titlewithtext .dscs__title {
             gap: 5px;
         }
-        .ds__gallery__section .dscs__titlenav .dscs__title p {
+        .dscs__titlenav.titlewithtext .dscs__title p {
             font-size: 12px;
             line-height: 20px;
         }
@@ -2842,6 +2949,40 @@
             font-size: 16px;
             line-height: 22px;
         }
+        /*Why Choose Us Section*/
+        .ds__why__choose__us__section .dswcus__wrapper {
+            gap: 30px;
+        }
+        .dswcus__wrapper .dswcus__item {
+            width: 100%;
+            gap: 14px;
+        }
+        .dswcus__wrapper .dswcus__item p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    /*===== Cart, Info, Shipping, Checkout =====*/
+        /*Checkout Process*/
+        .ds__checkout__process__section .dscps__wrapper {
+            width: 100%;
+            gap: 20px;
+            padding-top: 10px;
+        }
+        .ds__checkout__process__section .dscps__wrapper .item {
+            width: 100%;
+        }
+        .ds__checkout__process__section .dscps__wrapper .item .icon svg {
+            height: 42px;
+            width: 42px;
+        }
+        .ds__checkout__process__section .dscps__wrapper .item h3 {
+            font-size: 18px;
+            line-height: 18px;
+        }
+        .ds__checkout__process__section .dscps__wrapper .item p {
+            font-size: 12px;
+            line-height: 18px;
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -2860,7 +3001,8 @@
     .ds__single__product__section,
     .dssp__product__descrev,
     .ds__similarproducts__section,
-    .ds__why__choose__us__section {
+    .ds__why__choose__us__section,
+    .ds__checkout__process__section {
         margin-top: 50px;
     }
     .ds__button__a {
@@ -3287,10 +3429,10 @@
             transform: none;
             bottom: 100px;
         }
-        .ds__gallery__section .dscs__titlenav .dscs__title {
+        .dscs__titlenav.titlewithtext .dscs__title {
             gap: 10px;
         }
-        .ds__gallery__section .dscs__titlenav .dscs__title p {
+        .dscs__titlenav.titlewithtext .dscs__title p {
             font-size: 14px;
             line-height: 22px;
         }
@@ -3580,6 +3722,27 @@
         .dssp__product__descrev .dssp__reviews .right__side {
             width: 100%;
         }
+        /*Why Choose Us Section*/
+        .ds__why__choose__us__section .dswcus__wrapper {
+            gap: 30px;
+        }
+        .dswcus__wrapper .dswcus__item {
+            width: 46%;
+            gap: 14px;
+        }
+        .dswcus__wrapper .dswcus__item p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    /*===== Cart, Info, Shipping, Checkout =====*/
+        /*Checkout Process*/
+        .ds__checkout__process__section .dscps__wrapper {
+            width: 540px;
+            gap: 20px;
+        }
+        .ds__checkout__process__section .dscps__wrapper .item {
+            width: 48%;
+        }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -3598,7 +3761,8 @@
     .ds__single__product__section,
     .dssp__product__descrev,
     .ds__similarproducts__section,
-    .ds__why__choose__us__section {
+    .ds__why__choose__us__section,
+    .ds__checkout__process__section {
         margin-top: 60px;
     }
     .ds__button__a {
@@ -4035,7 +4199,7 @@
         .pswp__button--arrow--right {
             right: 0;
         }
-        .ds__gallery__section .dscs__titlenav .dscs__title p {
+        .dscs__titlenav.titlewithtext .dscs__title p {
             font-size: 16px;
             line-height: 24px;
         }
@@ -4324,6 +4488,26 @@
         .dssp__product__descrev .dssp__submitted__review__item .user__review {
             gap: 15px;
         }
+        /*Why Choose Us Section*/
+        .ds__why__choose__us__section .dswcus__wrapper {
+            gap: 30px;
+        }
+        .dswcus__wrapper .dswcus__item {
+            width: 46%;
+        }
+        .dswcus__wrapper .dswcus__item p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    /*===== Cart, Info, Shipping, Checkout =====*/
+        /*Checkout Process*/
+        .ds__checkout__process__section .dscps__wrapper {
+            width: 720px;
+            gap: 20px;
+        }
+        .ds__checkout__process__section .dscps__wrapper .item {
+            width: 48%;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -4342,7 +4526,8 @@
     .ds__single__product__section,
     .dssp__product__descrev,
     .ds__similarproducts__section,
-    .ds__why__choose__us__section {
+    .ds__why__choose__us__section,
+    .ds__checkout__process__section {
         margin-top: 70px;
     }
     .ds__button__b {
@@ -4837,6 +5022,10 @@
         .dssp__product__descrev .dssp__reviews form textarea {
             padding: 7px 15px;
         }
+        /*Why Choose Us Section*/
+        .ds__why__choose__us__section .dswcus__wrapper {
+            gap: 30px;
+        }
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -4854,7 +5043,8 @@
     .ds__shop__section,
     .ds__single__product__section,
     .ds__similarproducts__section,
-    .ds__why__choose__us__section {
+    .ds__why__choose__us__section,
+    .ds__checkout__process__section {
         margin-top: 80px;
     }
     /*===== Home Page =====*/
@@ -5117,7 +5307,10 @@
         .dssp__product__info .dssp__product__image .swiper-slide {
             height: 589px;
         }
-        /*Product Description*/
+        /*Why Choose Us Section*/
+        .ds__why__choose__us__section .dswcus__wrapper {
+            gap: 38px;
+        }
 }
 
 @media (min-width: 1400px) and (max-width: 1499px) {
@@ -5135,7 +5328,8 @@
     .ds__shop__section,
     .ds__single__product__section,
     .ds__similarproducts__section,
-    .ds__why__choose__us__section {
+    .ds__why__choose__us__section,
+    .ds__checkout__process__section {
         margin-top: 80px;
     }
     /*===== Home Page =====*/
