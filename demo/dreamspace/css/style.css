@@ -4700,6 +4700,7 @@ form .checkbox label {
 
 .ds__product__price__info table {
     width: 100%;
+    margin-top: 10px;
 }
 
 .ds__product__price__info table td {
@@ -4796,6 +4797,56 @@ form .checkbox label {
 
 .ds__product__price__info .dsppi__voucher__cta .checkout__button:hover {
     background: var(--main-color);
+}
+
+/* Your Orders */
+.ds__product__price__info .dsppi__your__order__list {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    margin-bottom: 26px;
+}
+
+.ds__product__price__info .dsppi__your__order__list .product__item {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.ds__product__price__info .dsppi__your__order__list .product__item .image {
+    width: 112px;
+    height: 128px;
+}
+
+.ds__product__price__info .dsppi__your__order__list .product__item .image img {
+    height: 100%;
+    width: auto;
+}
+
+.ds__product__price__info .dsppi__your__order__list .product__item .content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 18px;
+}
+
+.ds__product__price__info .dsppi__your__order__list .product__item .content h4,
+.ds__product__price__info .dsppi__your__order__list .product__item .content a {
+    color: var(--text-color);
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    font-family: 'Urbanist', sans-serif;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.ds__product__price__info .dsppi__your__order__list .product__item .content span {
+    color: #7E7F7C;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    font-family: 'Urbanist', sans-serif;
 }
 /*** End of Cart Section ***/
 
@@ -5055,7 +5106,6 @@ form .checkbox label {
 .dssps__credit__card__form .form__row.three__parts .nice-select {
     width: 31%;
 }
-
 /*** End of Shipping & Payment Page ***/
 
 /*
