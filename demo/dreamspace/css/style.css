@@ -358,14 +358,14 @@ input[type="radio"] {
     margin: 0;
     width: 14px;
     height: 14px;
-    border: 1px solid var(--main-color);
+    border: 1px solid var(--text-color);
     position: relative;
     border-radius: 50%;
 }
 
 input[type="radio"]::before {
 	content: '';
-	background: var(--main-color);
+	background: var(--text-color);
     width: 0;
 	height: 0;
 	position: absolute;
@@ -4685,12 +4685,14 @@ form .checkbox label {
     margin-bottom: 66px;
 }
 
-.ds__product__price__info .dscs__titlenav.titlewithtext .dscs__title h2 {
+.ds__product__price__info .dscs__titlenav.titlewithtext .dscs__title h2,
+.ds__shipping__payment__service .dscs__titlenav.titlewithtext .dscs__title h2 {
     font-size: 32px;
     line-height: 40px;
 }
 
-.ds__product__price__info .dscs__titlenav.titlewithtext .dscs__title p {
+.ds__product__price__info .dscs__titlenav.titlewithtext .dscs__title p,
+.ds__shipping__payment__service .dscs__titlenav.titlewithtext .dscs__title p {
     font-size: 16px;
     line-height: 20px;
     color: #7E7F7C;
@@ -4848,6 +4850,213 @@ form .checkbox label {
     color: #667085;
 }
 /*** End of Billing Information Page ***/
+
+/*** Start of Shipping & Payment Page ***/
+.ds__shipping__payment__service {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+
+.ds__shipping__payment__service .dscs__titlenav.titlewithtext {
+    justify-content: flex-start;
+    margin: 0;
+}
+
+.ds__shipping__payment__service .dscs__titlenav.titlewithtext .dscs__title {
+	align-items: flex-start;
+}
+
+.ds__shipping__payment__service .dscs__titlenav.titlewithtext .dscs__title h2,
+.ds__shipping__payment__service .dscs__titlenav.titlewithtext .dscs__title p {
+    text-align: left;
+}
+
+/* Shipping Form */
+.ds__shipping__payment__service .dssps__shipping__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ds__shipping__payment__service form .dssps__shipping__service__item,
+.ds__shipping__payment__service form .dssps__payment__option__item {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.ds__shipping__payment__service form .dssps__shipping__service__item:hover,
+.ds__shipping__payment__service form .dssps__payment__option__item:hover {
+    background: #F6F6F6;
+}
+
+.ds__shipping__payment__service form .dssps__shipping__service__item label,
+.ds__shipping__payment__service form .dssps__payment__option__item label {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    padding-left: 36px;
+    gap: 36px;
+    flex: auto;
+    width: 100%;
+}
+
+.ds__shipping__payment__service form .dssps__shipping__service__item label .name,
+.ds__shipping__payment__service form .dssps__payment__option__item label .name {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: auto;
+}
+
+.ds__shipping__payment__service form .dssps__shipping__service__item label .name h4,
+.ds__shipping__payment__service form .dssps__payment__option__item label .name h4 {
+    color: var(--text-color);
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 800;
+    font-family: 'Urbanist', sans-serif;
+    margin: 0;
+}
+
+.ds__shipping__payment__service form .dssps__shipping__service__item label .name p,
+.ds__shipping__payment__service form .dssps__payment__option__item label .name p {
+    color: #7E7F7C;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    font-family: 'Urbanist', sans-serif;
+    margin: 0;
+}
+
+.ds__shipping__payment__service form .dssps__shipping__service__item label .fee {
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    font-family: 'Urbanist', sans-serif;
+}
+
+.ds__shipping__payment__service form .dssps__shipping__service__item.active,
+.ds__shipping__payment__service form .dssps__payment__option__item.active {
+    background: var(--text-color);
+}
+
+.ds__shipping__payment__service form .dssps__shipping__service__item.active label .name h4,
+.ds__shipping__payment__service form .dssps__shipping__service__item.active label .name p,
+.ds__shipping__payment__service form .dssps__shipping__service__item.active label .fee,
+.ds__shipping__payment__service form .dssps__payment__option__item.active label .name h4,
+.ds__shipping__payment__service form .dssps__payment__option__item.active label .name p,
+.ds__shipping__payment__service form .dssps__payment__option__item.active label .name h4 {
+    color: #FFF;
+    pointer-events: none;
+}
+
+.ds__shipping__payment__service form .dssps__shipping__service__item.active input[type="radio"],
+.ds__shipping__payment__service form .dssps__payment__option__item.active input[type="radio"] {
+    background: var(--text-color);
+    border: 1px solid #FFF;
+}
+
+.ds__shipping__payment__service form .dssps__shipping__service__item.active input[type="radio"]::before,
+.ds__shipping__payment__service form .dssps__payment__option__item.active input[type="radio"]::before {
+	background: #FFF;
+}
+
+/* Payment Form */
+.ds__shipping__payment__service .dssps__payment__form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ds__shipping__payment__service form .dssps__payment__option__item {
+    width: 49%;
+}
+
+.ds__shipping__payment__service form .dssps__payment__option__item label .name h4 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ds__shipping__payment__service form .dssps__payment__option__item label .name h4 span {
+    display: flex;
+    gap: 8px;
+}
+
+/* Card Form */
+.dssps__credit__card__form {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.dssps__credit__card__form h4 {
+    color: var(--text-color);
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    font-family: 'Urbanist', sans-serif;
+    margin: 0;
+}
+
+.dssps__credit__card__form .form__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dssps__credit__card__form .form__row input,
+.dssps__credit__card__form .form__row .nice-select {
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 44px;
+    font-weight: 600;
+    font-family: 'Urbanist', sans-serif;
+    height: 44px;
+    border: 0;
+    border-bottom: 1px solid #D4D4D4;
+    border-radius: 0;
+    width: 48%;
+    padding: 0;
+    background: transparent;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.dssps__credit__card__form .form__row .nice-select,
+.dssps__credit__card__form .form__row input::placeholder {
+    color: #7E7F7C;
+}
+
+.dssps__credit__card__form .form__row .nice-select::after {
+    display: none;
+}
+
+.dssps__credit__card__form .form__row .nice-select .list {
+    width: 100%;
+    top: unset;
+    bottom: 100%;
+}
+
+.dssps__credit__card__form .form__row .nice-select .option {
+    padding: 3px 0;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.dssps__credit__card__form .form__row input:focus {
+    border-bottom-color: var(--text-color);
+}
+
+.dssps__credit__card__form .form__row.three__parts input,
+.dssps__credit__card__form .form__row.three__parts .nice-select {
+    width: 31%;
+}
+
+/*** End of Shipping & Payment Page ***/
 
 /*
 rgba(95, 23, 6, 0.4)

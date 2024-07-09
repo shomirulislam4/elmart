@@ -6,6 +6,7 @@
         $('#dsSearchPopupCat').niceSelect();
         $('#dsshopProductSort').niceSelect();
         $('#dsspReviewStarRating').niceSelect();
+        $('#dsspsCCFMonth').niceSelect();
     }
 
     //Custom Cursor
@@ -530,5 +531,22 @@
             $(this).addClass('active').siblings().removeClass('active');
         });
     });
+
+    //Shipping Active Class
+    $(function() {
+        $('input[name="dsspsShippingNameFee"]').change(function() {
+            $('.dssps__shipping__service__item').removeClass('active');
+            $(this).closest('.dssps__shipping__service__item').addClass('active');
+        });
+    });
+
+    //Payment Option Active Class
+    $(function() {
+        $('input[name="dsspsPaymentOption"]').change(function() {
+            $('.dssps__payment__option__item').removeClass('active');
+            $(this).closest('.dssps__payment__option__item').addClass('active');
+        });
+    });
+
 
 }) (jQuery);
