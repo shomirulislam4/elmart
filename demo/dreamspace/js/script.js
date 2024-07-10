@@ -548,5 +548,24 @@
         });
     });
 
+    //Edit Forms Popup
+    $(function(){
+        //Shipping
+        $('.dsssi__edit__btn').on('click', function(){
+            $('.ds__shipping__info__change').addClass('show')
+        })
+        $('.ds__shipping__change__close').on('click', function(){
+            $('.ds__shipping__info__change').removeClass('show')
+        })
+
+        //Credit Card
+        $('.dsscci__edit__btn').on('click', function(){
+            $('.ds__cc__info__change').addClass('show')
+        })
+        $('.ds__creditcard__change__close').on('click', function(){
+            $('.ds__cc__info__change').removeClass('show')
+        })
+    });
+
 
 }) (jQuery);

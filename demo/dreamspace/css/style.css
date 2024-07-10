@@ -17,6 +17,7 @@
 3. Shop - Category Page
 4. Single Product Page
 5. Cart, Info, Shipping, Checkout
+6. Wishlist Page
 
 **********************************************/
 
@@ -4903,23 +4904,28 @@ form .checkbox label {
 /*** End of Billing Information Page ***/
 
 /*** Start of Shipping & Payment Page ***/
-.ds__shipping__payment__service {
+.ds__shipping__payment__service,
+.ds__checkout__page__info {
     display: flex;
     flex-direction: column;
     gap: 72px;
 }
 
-.ds__shipping__payment__service .dscs__titlenav.titlewithtext {
+.ds__shipping__payment__service .dscs__titlenav.titlewithtext,
+.ds__checkout__page__info .dscs__titlenav.titlewithtext {
     justify-content: flex-start;
     margin: 0;
 }
 
-.ds__shipping__payment__service .dscs__titlenav.titlewithtext .dscs__title {
+.ds__shipping__payment__service .dscs__titlenav.titlewithtext .dscs__title,
+.ds__checkout__page__info .dscs__titlenav.titlewithtext .dscs__title {
 	align-items: flex-start;
 }
 
 .ds__shipping__payment__service .dscs__titlenav.titlewithtext .dscs__title h2,
-.ds__shipping__payment__service .dscs__titlenav.titlewithtext .dscs__title p {
+.ds__shipping__payment__service .dscs__titlenav.titlewithtext .dscs__title p,
+.ds__checkout__page__info .dscs__titlenav.titlewithtext .dscs__title h2,
+.ds__checkout__page__info .dscs__titlenav.titlewithtext .dscs__title p {
     text-align: left;
 }
 
@@ -4930,20 +4936,20 @@ form .checkbox label {
     gap: 20px;
 }
 
-.ds__shipping__payment__service form .dssps__shipping__service__item,
-.ds__shipping__payment__service form .dssps__payment__option__item {
+.dssps__shipping__service__item,
+.dssps__payment__option__item {
     display: flex;
     align-items: center;
     padding-left: 20px;
 }
 
-.ds__shipping__payment__service form .dssps__shipping__service__item:hover,
-.ds__shipping__payment__service form .dssps__payment__option__item:hover {
+.dssps__shipping__service__item:hover,
+.dssps__payment__option__item:hover {
     background: #F6F6F6;
 }
 
-.ds__shipping__payment__service form .dssps__shipping__service__item label,
-.ds__shipping__payment__service form .dssps__payment__option__item label {
+.dssps__shipping__service__item label,
+.dssps__payment__option__item label {
     display: flex;
     align-items: center;
     padding: 20px;
@@ -4953,16 +4959,16 @@ form .checkbox label {
     width: 100%;
 }
 
-.ds__shipping__payment__service form .dssps__shipping__service__item label .name,
-.ds__shipping__payment__service form .dssps__payment__option__item label .name {
+.dssps__shipping__service__item label .name,
+.dssps__payment__option__item label .name {
     display: flex;
     flex-direction: column;
     gap: 12px;
     flex: auto;
 }
 
-.ds__shipping__payment__service form .dssps__shipping__service__item label .name h4,
-.ds__shipping__payment__service form .dssps__payment__option__item label .name h4 {
+.dssps__shipping__service__item label .name h4,
+.dssps__payment__option__item label .name h4 {
     color: var(--text-color);
     font-size: 20px;
     line-height: 28px;
@@ -4971,8 +4977,8 @@ form .checkbox label {
     margin: 0;
 }
 
-.ds__shipping__payment__service form .dssps__shipping__service__item label .name p,
-.ds__shipping__payment__service form .dssps__payment__option__item label .name p {
+.dssps__shipping__service__item label .name p,
+.dssps__payment__option__item label .name p {
     color: #7E7F7C;
     font-size: 14px;
     line-height: 20px;
@@ -4981,7 +4987,7 @@ form .checkbox label {
     margin: 0;
 }
 
-.ds__shipping__payment__service form .dssps__shipping__service__item label .fee {
+.dssps__shipping__service__item label .fee {
     color: var(--text-color);
     font-size: 16px;
     line-height: 20px;
@@ -4989,29 +4995,29 @@ form .checkbox label {
     font-family: 'Urbanist', sans-serif;
 }
 
-.ds__shipping__payment__service form .dssps__shipping__service__item.active,
-.ds__shipping__payment__service form .dssps__payment__option__item.active {
+.dssps__shipping__service__item.active,
+.dssps__payment__option__item.active {
     background: var(--text-color);
 }
 
-.ds__shipping__payment__service form .dssps__shipping__service__item.active label .name h4,
-.ds__shipping__payment__service form .dssps__shipping__service__item.active label .name p,
-.ds__shipping__payment__service form .dssps__shipping__service__item.active label .fee,
-.ds__shipping__payment__service form .dssps__payment__option__item.active label .name h4,
-.ds__shipping__payment__service form .dssps__payment__option__item.active label .name p,
-.ds__shipping__payment__service form .dssps__payment__option__item.active label .name h4 {
+.dssps__shipping__service__item.active label .name h4,
+.dssps__shipping__service__item.active label .name p,
+.dssps__shipping__service__item.active label .fee,
+.dssps__payment__option__item.active label .name h4,
+.dssps__payment__option__item.active label .name p,
+.dssps__payment__option__item.active label .name h4 {
     color: #FFF;
     pointer-events: none;
 }
 
-.ds__shipping__payment__service form .dssps__shipping__service__item.active input[type="radio"],
-.ds__shipping__payment__service form .dssps__payment__option__item.active input[type="radio"] {
+.dssps__shipping__service__item.active input[type="radio"],
+.dssps__payment__option__item.active input[type="radio"] {
     background: var(--text-color);
     border: 1px solid #FFF;
 }
 
-.ds__shipping__payment__service form .dssps__shipping__service__item.active input[type="radio"]::before,
-.ds__shipping__payment__service form .dssps__payment__option__item.active input[type="radio"]::before {
+.dssps__shipping__service__item.active input[type="radio"]::before,
+.dssps__payment__option__item.active input[type="radio"]::before {
 	background: #FFF;
 }
 
@@ -5021,16 +5027,16 @@ form .checkbox label {
     justify-content: space-between;
 }
 
-.ds__shipping__payment__service form .dssps__payment__option__item {
+.dssps__payment__option__item {
     width: 49%;
 }
 
-.ds__shipping__payment__service form .dssps__payment__option__item label .name h4 {
+.dssps__payment__option__item label .name h4 {
     display: flex;
     justify-content: space-between;
 }
 
-.ds__shipping__payment__service form .dssps__payment__option__item label .name h4 span {
+.dssps__payment__option__item label .name h4 span {
     display: flex;
     gap: 8px;
 }
@@ -5106,7 +5112,355 @@ form .checkbox label {
 .dssps__credit__card__form .form__row.three__parts .nice-select {
     width: 31%;
 }
+
+/* Checkout Page */
+.ds__checkout__page__info .horizontal__seperator {
+    background: #C0BDBB;
+}
+
+.ds__checkout__page__info .dssps__shipping__service__item,
+.ds__checkout__page__info .dssps__shipping__service__item label {
+    padding: 0;
+}
+
+.ds__checkout__page__info .dssps__shipping__service__item:hover {
+    background: unset;
+}
+
+.ds__checkout__page__info .ds__submitted__shipping__info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background: #F6F6F6;
+    position: relative;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.ds__checkout__page__info .ds__submitted__cc__info {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: #F6F6F6;
+    position: relative;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.ds__submitted__shipping__info .ds__submitted__location {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.ds__submitted__shipping__info .ds__submitted__location h4,
+.ds__checkout__page__info .ds__submitted__cc__info h4 {
+    color: var(--text-color);
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 900;
+    font-family: 'Urbanist', sans-serif;
+    margin: 0;
+}
+
+.ds__submitted__shipping__info .ds__submitted__location p,
+.ds__checkout__page__info .ds__submitted__cc__info p {
+    color: var(--text-color);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    font-family: 'Urbanist', sans-serif;
+    margin: 0;
+}
+
+.ds__checkout__page__info .ds__submitted__shipping__info:hover,
+.ds__checkout__page__info .ds__submitted__cc__info:hover {
+    background: var(--text-color);
+}
+
+.ds__submitted__shipping__info:hover .ds__submitted__location h4,
+.ds__submitted__shipping__info:hover .ds__submitted__location p,
+.ds__submitted__shipping__info:hover .dssps__shipping__service__item label .name h4,
+.ds__submitted__shipping__info:hover .dssps__shipping__service__item label .name p,
+.ds__submitted__shipping__info:hover .dssps__shipping__service__item label .fee,
+.ds__checkout__page__info .ds__submitted__cc__info:hover h4,
+.ds__checkout__page__info .ds__submitted__cc__info:hover p {
+    color: #FFF;
+}
+
+.ds__submitted__shipping__info .dsssi__edit__btn,
+.ds__submitted__cc__info .dsscci__edit__btn  {
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-align: center;
+    background: transparent;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.ds__submitted__shipping__info .dsssi__edit__btn svg,
+.ds__submitted__cc__info .dsscci__edit__btn svg {
+    stroke: #7E7F7C;
+    height: 20px;
+    width: 20px;
+}
+
+.ds__submitted__shipping__info .dsssi__edit__btn:hover,
+.ds__submitted__cc__info .dsscci__edit__btn:hover {
+    background: var(--main-color);
+}
+
+.ds__submitted__shipping__info .dsssi__edit__btn:hover svg,
+.ds__submitted__cc__info .dsscci__edit__btn:hover svg {
+    stroke: #FFF;
+}
+
+.ds__submitted__shipping__info:hover .dsssi__edit__btn svg,
+.ds__submitted__cc__info:hover .dsscci__edit__btn svg {
+    stroke: #FFF;
+}
+
+.ds__checkout__page__info .ds__submitted__cc__info .icon svg {
+    width: 132px;
+    height: 60px;
+}
+
+.ds__checkout__page__info .ds__submitted__cc__info .content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.ds__checkout__page__info .ds__submitted__cc__info p {
+    color: #7E7F7C;
+}
+
+/* Shipping & Credit Card Info Change Popup */
+.ds__shipping__info__change,
+.ds__cc__info__change {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    width: 100%;
+    height: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: grid;
+    place-content: center;
+    overflow: hidden;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.ds__shipping__info__change.show,
+.ds__cc__info__change.show {
+    height: 100%;
+}
+
+.ds__shipping__info__change .ds__billing__shipping,
+.ds__cc__info__change .dssps__credit__card__form {
+    background: var(--background-color);
+    padding: 50px;
+    width: 80vw;
+    position: relative;
+    border-radius: 10px;
+}
+
+.ds__shipping__info__change .ds__shipping__change__close,
+.ds__cc__info__change .ds__creditcard__change__close {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+    color: var(--text-color);
+    background: var(--background-color);
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    bottom: calc(100% + 10px);
+    right: 0;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.ds__shipping__info__change .ds__shipping__change__close:hover,
+.ds__cc__info__change .ds__creditcard__change__close:hover {
+    color: var(--background-color);
+    background: var(--main-color);
+}
 /*** End of Shipping & Payment Page ***/
+
+/* ====================================================================
+   6. Wishlist Page
+==================================================================== */
+.ds__wishlist__section {
+    margin-top: 100px;
+}
+
+.ds__wishlist__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.ds__wishlist__wrapper .wishlisted__item {
+    display: flex;
+    gap: 28px;
+    padding-bottom: 30px;
+    border-bottom: 3px solid #C0BDBB;
+}
+
+.ds__wishlist__wrapper .wishlisted__item:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+.ds__wishlist__wrapper .wishlisted__item .image {
+    width: 183px;
+    height: 250px;
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.ds__wishlist__wrapper .wishlisted__item .image img {
+    height: 100%;
+    width: auto;
+}
+
+.ds__wishlist__wrapper .wishlisted__item .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 33px;
+    width: 100%;
+}
+
+.ds__wishlist__wrapper .wishlisted__item .content .ds__product__title,
+.ds__wishlist__wrapper .wishlisted__item .content .ds__product__title .price__cta {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ds__wishlist__wrapper .wishlisted__item .content .ds__product__title a {
+    width: 58%;
+}
+
+.ds__wishlist__wrapper .wishlisted__item .content .ds__product__title .price__cta {
+    width: 42%;
+}
+
+.ds__wishlist__wrapper .wishlisted__item .content .ds__product__title a,
+.ds__wishlist__wrapper .wishlisted__item .content .ds__product__title h4,
+.ds__wishlist__wrapper .wishlisted__item .ds__product__stock__status {
+    color: var(--text-color);
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 700;
+    font-family: 'Urbanist', sans-serif;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.ds__wishlist__wrapper .wishlisted__item .content .ds__product__title a:hover {
+    color: var(--main-color);
+}
+
+.ds__wishlist__wrapper .wishlisted__item .ds__wishlist__addtocart {
+    color: #FFF;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+    font-family: 'Urbanist', sans-serif;
+    background: var(--text-color);
+    padding: 10px 25px;
+    border-radius: 50px;
+    text-align: center;
+    text-transform: capitalize;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.ds__wishlist__wrapper .wishlisted__item .ds__wishlist__addtocart:hover {
+    background: var(--main-color);
+}
+
+.ds__wishlist__wrapper .wishlisted__item .ds__wishlist__addtocart svg {
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+}
+
+.ds__wishlist__wrapper .wishlisted__item .ds__product__stock__status {
+    font-size: 35px;
+    line-height: 35px;
+}
+
+.ds__wishlist__wrapper .wishlisted__item .ds__product__stock__status.in__stock {
+    color: #2E9551;
+}
+
+.ds__wishlist__wrapper .wishlisted__item .ds__product__stock__status.in__stock::after {
+    content: 'in stock';
+}
+
+.ds__wishlist__wrapper .wishlisted__item .ds__product__stock__status.out__of__stock {
+    color: #CE0000;
+}
+
+.ds__wishlist__wrapper .wishlisted__item .ds__product__stock__status.out__of__stock::after {
+    content: 'out of stock';
+}
+
+.ds__wishlist__wrapper .wishlisted__item .ds__wislist__item__remove {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    background: transparent;
+    border-radius: 5px;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.ds__wishlist__wrapper .wishlisted__item .ds__wislist__item__remove svg {
+    height: 40px;
+    width: 40px;
+    fill: var(--text-color);
+}
+
+.ds__wishlist__wrapper .wishlisted__item .ds__wislist__item__remove:hover {
+    background: var(--main-color);
+}
+
+.ds__wishlist__wrapper .wishlisted__item .ds__wislist__item__remove:hover svg {
+    fill: #FFF;
+}
+
 
 /*
 rgba(95, 23, 6, 0.4)

@@ -1153,12 +1153,14 @@
             margin-bottom: 20px;
         }
         .ds__product__price__info .dscs__titlenav.titlewithtext .dscs__title h2,
-        .ds__shipping__payment__service .dscs__titlenav.titlewithtext .dscs__title h2 {
+        .ds__shipping__payment__service .dscs__titlenav.titlewithtext .dscs__title h2,
+        .ds__checkout__page__info .dscs__titlenav.titlewithtext .dscs__title h2 {
             font-size: 20px;
             line-height: 30px;
         }
         .ds__product__price__info .dscs__titlenav.titlewithtext .dscs__title p,
-        .ds__shipping__payment__service .dscs__titlenav.titlewithtext .dscs__title p {
+        .ds__shipping__payment__service .dscs__titlenav.titlewithtext .dscs__title p,
+        .ds__checkout__page__info .dscs__titlenav.titlewithtext .dscs__title p {
             font-size: 12px;
             line-height: 18px;
         }
@@ -1288,42 +1290,43 @@
             margin-bottom: 7px;
         }
         /*Shipping & payment*/
-        .ds__shipping__payment__service {
-            gap: 40px;
+        .ds__shipping__payment__service,
+        .ds__checkout__page__info {
+            gap: 20px;
         }
-        .ds__shipping__payment__service form .dssps__shipping__service__item,
-        .ds__shipping__payment__service form .dssps__payment__option__item {
+        .dssps__shipping__service__item,
+        .dssps__payment__option__item {
             width: 100%;
             padding-left: 10px;
         }
-        .ds__shipping__payment__service form .dssps__shipping__service__item label {
+        .dssps__shipping__service__item label {
             padding: 10px;
             padding-left: 10px;
             gap: 10px;
         }
-        .ds__shipping__payment__service form .dssps__payment__option__item label {
+        .dssps__payment__option__item label {
             padding: 10px;
             padding-left: 10px;
         }
-        .ds__shipping__payment__service form .dssps__shipping__service__item label .name,
-        .ds__shipping__payment__service form .dssps__payment__option__item label .name {
+        .dssps__shipping__service__item label .name,
+        .dssps__payment__option__item label .name {
             gap: 6px;
         }
-        .ds__shipping__payment__service form .dssps__payment__option__item label .name h4 span svg {
+        .dssps__payment__option__item label .name h4 span svg {
             width: 20px;
             height: auto;
         }
-        .ds__shipping__payment__service form .dssps__shipping__service__item label .name h4,
-        .ds__shipping__payment__service form .dssps__payment__option__item label .name h4 {
+        .dssps__shipping__service__item label .name h4,
+        .dssps__payment__option__item label .name h4 {
             font-size: 14px;
             line-height: 20px;
         }
-        .ds__shipping__payment__service form .dssps__shipping__service__item label .name p,
-        .ds__shipping__payment__service form .dssps__payment__option__item label .name p {
-            font-size: 12px;
-            line-height: 18px;
+        .dssps__shipping__service__item label .name p,
+        .dssps__payment__option__item label .name p {
+            font-size: 10px;
+            line-height: 14px;
         }
-        .ds__shipping__payment__service form .dssps__shipping__service__item label .fee {
+        .dssps__shipping__service__item label .fee {
             font-size: 12px;
             line-height: 16px;
         }
@@ -1339,6 +1342,103 @@
             font-size: 12px;
             line-height: 40px;
             height: 40px;
+        }
+        /*Edit Forms Popup*/
+        .ds__checkout__page__info .ds__submitted__cc__info .icon svg {
+            width: 40px;
+            height: 19px;
+        }
+        .ds__checkout__page__info .ds__submitted__shipping__info {
+            gap: 10px;
+            padding: 10px;
+        }
+        .ds__checkout__page__info .ds__submitted__cc__info {
+            padding: 10px;
+            padding-left: 0;
+        }
+        .ds__submitted__shipping__info .ds__submitted__location h4,
+        .ds__checkout__page__info .ds__submitted__cc__info h4 {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .ds__submitted__shipping__info .ds__submitted__location p,
+        .ds__checkout__page__info .ds__submitted__cc__info p {
+            font-size: 10px;
+            line-height: 16px;
+        }
+        .ds__submitted__shipping__info .ds__submitted__location,
+        .ds__checkout__page__info .ds__submitted__cc__info .content {
+            gap: 4px;
+        }
+        .ds__submitted__shipping__info .dsssi__edit__btn,
+        .ds__submitted__cc__info .dsscci__edit__btn {
+            top: 2px;
+            right: 2px;
+        }
+        .ds__submitted__shipping__info .dsssi__edit__btn svg,
+        .ds__submitted__cc__info .dsscci__edit__btn svg {
+            height: 12px;
+            width: 12px;
+        }
+        .ds__shipping__info__change .ds__billing__shipping,
+        .ds__cc__info__change .dssps__credit__card__form {
+            padding: 20px 10px;
+            width: 100vw;
+        }
+        .ds__shipping__info__change .ds__shipping__change__close,
+        .ds__cc__info__change .ds__creditcard__change__close {
+            height: 35px;
+            width: 35px;
+            line-height: 35px;
+            font-size: 12px;
+        }
+    /*===== Wishlist Page =====*/
+        .ds__wishlist__wrapper .wishlisted__item {
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+        .ds__wishlist__wrapper .wishlisted__item .content .ds__product__title a,
+        .ds__wishlist__wrapper .wishlisted__item .content .ds__product__title h4,
+        .ds__wishlist__wrapper .wishlisted__item .ds__product__stock__status {
+            font-size: 20px;
+            line-height: 28px;
+            text-align: center;
+        }
+        .ds__wishlist__wrapper .wishlisted__item .content .ds__product__title,
+        .ds__wishlist__wrapper .wishlisted__item .content .ds__product__title .price__cta {
+            flex-direction: column;
+            gap: 10px;
+        }
+        .ds__wishlist__wrapper .wishlisted__item .content .ds__product__title a,
+        .ds__wishlist__wrapper .wishlisted__item .content .ds__product__title .price__cta {
+            width: 100%;
+        }
+        .ds__wishlist__wrapper .wishlisted__item .ds__wishlist__addtocart {
+            font-size: 12px;
+            line-height: 12px;
+            padding: 7px 20px;
+        }
+        .ds__wishlist__wrapper .wishlisted__item .ds__wishlist__addtocart svg {
+            height: 12px;
+            width: 12px;
+            margin-left: 5px;
+        }
+        .ds__wishlist__wrapper .wishlisted__item .image {
+            width: 131px;
+            height: 180px;
+        }
+        .ds__wishlist__wrapper .wishlisted__item .content {
+            gap: 10px;
+        }
+        .ds__wishlist__wrapper .wishlisted__item .ds__wislist__item__remove {
+            height: 40px;
+            width: 40px;
+            margin: 0 auto;
+        }
+        .ds__wishlist__wrapper .wishlisted__item .ds__wislist__item__remove svg {
+            height: 26px;
+            width: 26px;
         }
 }
 
@@ -2343,12 +2443,14 @@
             margin-bottom: 30px;
         }
         .ds__product__price__info .dscs__titlenav.titlewithtext .dscs__title h2,
-        .ds__shipping__payment__service .dscs__titlenav.titlewithtext .dscs__title h2 {
+        .ds__shipping__payment__service .dscs__titlenav.titlewithtext .dscs__title h2,
+        .ds__checkout__page__info .dscs__titlenav.titlewithtext .dscs__title h2 {
             font-size: 24px;
             line-height: 32px;
         }
         .ds__product__price__info .dscs__titlenav.titlewithtext .dscs__title p,
-        .ds__shipping__payment__service .dscs__titlenav.titlewithtext .dscs__title p {
+        .ds__shipping__payment__service .dscs__titlenav.titlewithtext .dscs__title p,
+        .ds__checkout__page__info .dscs__titlenav.titlewithtext .dscs__title p {
             font-size: 14px;
             line-height: 18px;
         }
@@ -2472,38 +2574,39 @@
             margin-bottom: 9px;
         }
         /*Shipping & payment*/
-        .ds__shipping__payment__service {
-            gap: 40px;
+        .ds__shipping__payment__service,
+        .ds__checkout__page__info {
+            gap: 30px;
         }
-        .ds__shipping__payment__service form .dssps__shipping__service__item,
-        .ds__shipping__payment__service form .dssps__payment__option__item {
+        .dssps__shipping__service__item,
+        .dssps__payment__option__item {
             width: 100%;
             padding-left: 10px;
         }
-        .ds__shipping__payment__service form .dssps__shipping__service__item label {
+        .dssps__shipping__service__item label {
             padding: 10px;
             padding-left: 10px;
             gap: 10px;
         }
-        .ds__shipping__payment__service form .dssps__payment__option__item label {
+        .dssps__payment__option__item label {
             padding: 10px;
             padding-left: 10px;
         }
-        .ds__shipping__payment__service form .dssps__shipping__service__item label .name,
-        .ds__shipping__payment__service form .dssps__payment__option__item label .name {
+        .dssps__shipping__service__item label .name,
+        .dssps__payment__option__item label .name {
             gap: 6px;
         }
-        .ds__shipping__payment__service form .dssps__shipping__service__item label .name h4,
-        .ds__shipping__payment__service form .dssps__payment__option__item label .name h4 {
+        .dssps__shipping__service__item label .name h4,
+        .dssps__payment__option__item label .name h4 {
             font-size: 14px;
             line-height: 20px;
         }
-        .ds__shipping__payment__service form .dssps__shipping__service__item label .name p,
-        .ds__shipping__payment__service form .dssps__payment__option__item label .name p {
+        .dssps__shipping__service__item label .name p,
+        .dssps__payment__option__item label .name p {
             font-size: 12px;
             line-height: 18px;
         }
-        .ds__shipping__payment__service form .dssps__shipping__service__item label .fee {
+        .dssps__shipping__service__item label .fee {
             font-size: 12px;
             line-height: 16px;
         }
@@ -2519,6 +2622,98 @@
             font-size: 14px;
             line-height: 40px;
             height: 40px;
+        }
+        /*Edit Forms Popup*/
+        .ds__checkout__page__info .ds__submitted__cc__info .icon svg {
+            width: 80px;
+            height: 36px;
+        }
+        .ds__checkout__page__info .ds__submitted__shipping__info {
+            gap: 15px;
+            padding: 15px;
+        }
+        .ds__checkout__page__info .ds__submitted__cc__info {
+            padding: 15px;
+        }
+        .ds__submitted__shipping__info .ds__submitted__location h4,
+        .ds__checkout__page__info .ds__submitted__cc__info h4 {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        .ds__submitted__shipping__info .ds__submitted__location p,
+        .ds__checkout__page__info .ds__submitted__cc__info p {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .ds__submitted__shipping__info .ds__submitted__location {
+            gap: 8px;
+        }
+        .ds__submitted__shipping__info .dsssi__edit__btn svg,
+        .ds__submitted__cc__info .dsscci__edit__btn svg {
+            height: 16px;
+            width: 16px;
+        }
+        .ds__shipping__info__change .ds__billing__shipping,
+        .ds__cc__info__change .dssps__credit__card__form {
+            padding: 20px 10px;
+            width: 100vw;
+        }
+        .ds__shipping__info__change .ds__shipping__change__close,
+        .ds__cc__info__change .ds__creditcard__change__close {
+            height: 40px;
+            width: 40px;
+            line-height: 40px;
+            font-size: 14px;
+        }
+    /*===== Wishlist Page =====*/
+        .ds__wishlist__wrapper .wishlisted__item {
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+        .ds__wishlist__wrapper .wishlisted__item .content .ds__product__title a,
+        .ds__wishlist__wrapper .wishlisted__item .content .ds__product__title h4,
+        .ds__wishlist__wrapper .wishlisted__item .ds__product__stock__status {
+            font-size: 24px;
+            line-height: 32px;
+        }
+        .ds__wishlist__wrapper .wishlisted__item .content .ds__product__title a,
+        .ds__wishlist__wrapper .wishlisted__item .ds__product__stock__status {
+            text-align: center;
+        }
+        .ds__wishlist__wrapper .wishlisted__item .content .ds__product__title {
+            flex-direction: column;
+            gap: 10px;
+        }
+        .ds__wishlist__wrapper .wishlisted__item .content .ds__product__title a,
+        .ds__wishlist__wrapper .wishlisted__item .content .ds__product__title .price__cta {
+            width: 100%;
+        }
+        .ds__wishlist__wrapper .wishlisted__item .ds__wishlist__addtocart {
+            font-size: 14px;
+            line-height: 14px;
+            padding: 10px 20px;
+        }
+        .ds__wishlist__wrapper .wishlisted__item .ds__wishlist__addtocart svg {
+            height: 14px;
+            width: 14px;
+            margin-left: 5px;
+        }
+        .ds__wishlist__wrapper .wishlisted__item .image {
+            width: 146px;
+            height: 200px;
+        }
+        .ds__wishlist__wrapper .wishlisted__item .content {
+            gap: 10px;
+        }
+        .ds__wishlist__wrapper .wishlisted__item .ds__wislist__item__remove {
+            height: 40px;
+            width: 40px;
+            margin: 0 auto;
+        }
+        .ds__wishlist__wrapper .wishlisted__item .ds__wislist__item__remove svg {
+            height: 26px;
+            width: 26px;
         }
 }
 
@@ -3409,12 +3604,14 @@
             margin-bottom: 30px;
         }
         .ds__product__price__info .dscs__titlenav.titlewithtext .dscs__title h2,
-        .ds__shipping__payment__service .dscs__titlenav.titlewithtext .dscs__title h2 {
+        .ds__shipping__payment__service .dscs__titlenav.titlewithtext .dscs__title h2,
+        .ds__checkout__page__info .dscs__titlenav.titlewithtext .dscs__title h2 {
             font-size: 30px;
             line-height: 36px;
         }
         .ds__product__price__info .dscs__titlenav.titlewithtext .dscs__title p,
-        .ds__shipping__payment__service .dscs__titlenav.titlewithtext .dscs__title p {
+        .ds__shipping__payment__service .dscs__titlenav.titlewithtext .dscs__title p,
+        .ds__checkout__page__info .dscs__titlenav.titlewithtext .dscs__title p {
             font-size: 14px;
             line-height: 18px;
         }
@@ -3510,28 +3707,29 @@
             line-height: 36px;
         }
         /*Shipping & payment*/
-        .ds__shipping__payment__service {
+        .ds__shipping__payment__service,
+        .ds__checkout__page__info {
             gap: 40px;
         }
-        .ds__shipping__payment__service form .dssps__shipping__service__item,
-        .ds__shipping__payment__service form .dssps__payment__option__item {
+        .dssps__shipping__service__item,
+        .dssps__payment__option__item {
             width: 100%;
             padding-left: 10px;
         }
-        .ds__shipping__payment__service form .dssps__shipping__service__item label {
+        .dssps__shipping__service__item label {
             padding: 10px;
             padding-left: 15px;
             gap: 20px;
         }
-        .ds__shipping__payment__service form .dssps__payment__option__item label {
+        .dssps__payment__option__item label {
             padding: 10px;
             padding-left: 15px;
         }
-        .ds__shipping__payment__service form .dssps__shipping__service__item label .name,
-        .ds__shipping__payment__service form .dssps__payment__option__item label .name {
+        .dssps__shipping__service__item label .name,
+        .dssps__payment__option__item label .name {
             gap: 6px;
         }
-        .ds__shipping__payment__service form .dssps__payment__option__item label .name p {
+        .dssps__payment__option__item label .name p {
             font-size: 12px;
             line-height: 18px;
         }
@@ -3547,6 +3745,81 @@
             font-size: 14px;
             line-height: 40px;
             height: 40px;
+        }
+        /*Edit Forms Popup*/
+        .ds__checkout__page__info .ds__submitted__cc__info .icon svg {
+            width: 100px;
+            height: 48px;
+        }
+        .ds__checkout__page__info .ds__submitted__shipping__info {
+            gap: 15px;
+            padding: 15px;
+        }
+        .ds__checkout__page__info .ds__submitted__cc__info {
+            padding: 15px;
+        }
+        .ds__submitted__shipping__info .ds__submitted__location {
+            gap: 8px;
+        }
+        .ds__shipping__info__change .ds__billing__shipping,
+        .ds__cc__info__change .dssps__credit__card__form {
+            padding: 30px 15px;
+            width: 90vw;
+        }
+        .ds__shipping__info__change .ds__shipping__change__close,
+        .ds__cc__info__change .ds__creditcard__change__close {
+            height: 45px;
+            width: 45px;
+            line-height: 45px;
+            font-size: 16px;
+        }
+    /*===== Wishlist Page =====*/
+        .ds__wishlist__wrapper .wishlisted__item {
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+        .ds__wishlist__wrapper .wishlisted__item .content .ds__product__title a,
+        .ds__wishlist__wrapper .wishlisted__item .content .ds__product__title h4,
+        .ds__wishlist__wrapper .wishlisted__item .ds__product__stock__status {
+            font-size: 28px;
+            line-height: 36px;
+        }
+        .ds__wishlist__wrapper .wishlisted__item .content .ds__product__title a,
+        .ds__wishlist__wrapper .wishlisted__item .ds__product__stock__status {
+            text-align: center;
+        }
+        .ds__wishlist__wrapper .wishlisted__item .content .ds__product__title {
+            flex-direction: column;
+            gap: 20px;
+        }
+        .ds__wishlist__wrapper .wishlisted__item .content .ds__product__title a,
+        .ds__wishlist__wrapper .wishlisted__item .content .ds__product__title .price__cta {
+            width: 100%;
+        }
+        .ds__wishlist__wrapper .wishlisted__item .ds__wishlist__addtocart {
+            font-size: 18px;
+            line-height: 18px;
+        }
+        .ds__wishlist__wrapper .wishlisted__item .ds__wishlist__addtocart svg {
+            height: 18px;
+            width: 18px;
+        }
+        .ds__wishlist__wrapper .wishlisted__item .image {
+            width: 160px;
+            height: 220px;
+        }
+        .ds__wishlist__wrapper .wishlisted__item .content {
+            gap: 20px;
+        }
+        .ds__wishlist__wrapper .wishlisted__item .ds__wislist__item__remove {
+            height: 42px;
+            width: 42px;
+            margin: 0 auto;
+        }
+        .ds__wishlist__wrapper .wishlisted__item .ds__wislist__item__remove svg {
+            height: 32px;
+            width: 32px;
         }
 }
 
@@ -4325,7 +4598,8 @@
             margin-bottom: 30px;
         }
         .ds__product__price__info .dscs__titlenav.titlewithtext .dscs__title p,
-        .ds__shipping__payment__service .dscs__titlenav.titlewithtext .dscs__title p {
+        .ds__shipping__payment__service .dscs__titlenav.titlewithtext .dscs__title p,
+        .ds__checkout__page__info .dscs__titlenav.titlewithtext .dscs__title p {
             font-size: 14px;
             line-height: 18px;
         }
@@ -4375,33 +4649,77 @@
             height: 50px;
         }
         /*Shipping & payment*/
-        .ds__shipping__payment__service {
+        .ds__shipping__payment__service,
+        .ds__checkout__page__info {
             gap: 40px;
         }
-        .ds__shipping__payment__service form .dssps__payment__option__item {
+        .dssps__payment__option__item {
             padding-left: 10px;
         }
-        .ds__shipping__payment__service form .dssps__payment__option__item label {
+        .dssps__payment__option__item label {
             padding: 10px;
             padding-left: 10px;
         }
-        .ds__shipping__payment__service form .dssps__payment__option__item label .name {
+        .dssps__payment__option__item label .name {
             gap: 6px;
         }
-        .ds__shipping__payment__service form .dssps__payment__option__item label .name p {
+        .dssps__payment__option__item label .name p {
             font-size: 12px;
             line-height: 18px;
         }
         .dssps__credit__card__form {
             gap: 26px;
         }
-        .ds__shipping__payment__service form .dssps__shipping__service__item {
+        .dssps__shipping__service__item {
             padding-left: 15px;
         }
-        .ds__shipping__payment__service form .dssps__shipping__service__item label {
+        .dssps__shipping__service__item label {
             padding: 15px;
             padding-left: 30px;
             gap: 30px;
+        }
+        .ds__shipping__info__change .ds__billing__shipping,
+        .ds__cc__info__change .dssps__credit__card__form {
+            padding: 30px 15px;
+            width: 90vw;
+        }
+    /*===== Wishlist Page =====*/
+        .ds__wishlist__wrapper .wishlisted__item .content .ds__product__title a,
+        .ds__wishlist__wrapper .wishlisted__item .content .ds__product__title h4,
+        .ds__wishlist__wrapper .wishlisted__item .ds__product__stock__status {
+            font-size: 28px;
+            line-height: 36px;
+        }
+        .ds__wishlist__wrapper .wishlisted__item .content .ds__product__title {
+            flex-direction: column;
+            gap: 20px;
+        }
+        .ds__wishlist__wrapper .wishlisted__item .content .ds__product__title a,
+        .ds__wishlist__wrapper .wishlisted__item .content .ds__product__title .price__cta {
+            width: 100%;
+        }
+        .ds__wishlist__wrapper .wishlisted__item .ds__wishlist__addtocart {
+            font-size: 18px;
+            line-height: 18px;
+        }
+        .ds__wishlist__wrapper .wishlisted__item .ds__wishlist__addtocart svg {
+            height: 18px;
+            width: 18px;
+        }
+        .ds__wishlist__wrapper .wishlisted__item .image {
+            width: 160px;
+            height: 220px;
+        }
+        .ds__wishlist__wrapper .wishlisted__item .content {
+            gap: 20px;
+        }
+        .ds__wishlist__wrapper .wishlisted__item .ds__wislist__item__remove {
+            height: 42px;
+            width: 42px;
+        }
+        .ds__wishlist__wrapper .wishlisted__item .ds__wislist__item__remove svg {
+            height: 32px;
+            width: 32px;
         }
 }
 
@@ -5182,7 +5500,8 @@
             margin-bottom: 40px;
         }
         .ds__product__price__info .dscs__titlenav.titlewithtext .dscs__title p,
-        .ds__shipping__payment__service .dscs__titlenav.titlewithtext .dscs__title p {
+        .ds__shipping__payment__service .dscs__titlenav.titlewithtext .dscs__title p,
+        .ds__checkout__page__info .dscs__titlenav.titlewithtext .dscs__title p {
             font-size: 14px;
             line-height: 18px;
         }
@@ -5268,44 +5587,45 @@
             width: 100%;
         }
         /*Shipping & payment*/
-        .ds__shipping__payment__service {
+        .ds__shipping__payment__service,
+        .ds__checkout__page__info {
             gap: 40px;
         }
-        .ds__shipping__payment__service form .dssps__payment__option__item {
+        .dssps__payment__option__item {
             padding-left: 10px;
         }
-        .ds__shipping__payment__service form .dssps__shipping__service__item label {
+        .dssps__shipping__service__item label {
             padding-left: 20px;
             gap: 20px;
         }
-        .ds__shipping__payment__service form .dssps__payment__option__item label {
+        .dssps__payment__option__item label {
             padding: 10px;
             padding-left: 10px;
         }
-        .ds__shipping__payment__service form .dssps__shipping__service__item label .name {
+        .dssps__shipping__service__item label .name {
             gap: 8px;
         }
-        .ds__shipping__payment__service form .dssps__payment__option__item label .name {
+        .dssps__payment__option__item label .name {
             gap: 6px;
         }
-        .ds__shipping__payment__service form .dssps__shipping__service__item label .name p,
-        .ds__shipping__payment__service form .dssps__payment__option__item label .name p {
+        .dssps__shipping__service__item label .name p,
+        .dssps__payment__option__item label .name p {
             font-size: 12px;
             line-height: 18px;
         }
-        .ds__shipping__payment__service form .dssps__payment__option__item label .name h4 span {
+        .dssps__payment__option__item label .name h4 span {
             gap: 4px;
         }
-        .ds__shipping__payment__service form .dssps__payment__option__item label .name h4 span svg {
+        .dssps__payment__option__item label .name h4 span svg {
             width: 30px;
             height: auto;
         }
-        .ds__shipping__payment__service form .dssps__shipping__service__item label .name h4,
-        .ds__shipping__payment__service form .dssps__payment__option__item label .name h4 {
+        .dssps__shipping__service__item label .name h4,
+        .dssps__payment__option__item label .name h4 {
             font-size: 16px;
             line-height: 20px;
         }
-        .ds__shipping__payment__service form .dssps__shipping__service__item label .fee {
+        .dssps__shipping__service__item label .fee {
             font-size: 12px;
             line-height: 20px;
         }
@@ -5317,6 +5637,69 @@
             font-size: 14px;
             line-height: 40px;
             height: 40px;
+        }
+        /*Edit Forms Popup*/
+        .ds__checkout__page__info .ds__submitted__cc__info .icon svg {
+            width: 100px;
+            height: 48px;
+        }
+        .ds__checkout__page__info .ds__submitted__shipping__info {
+            gap: 15px;
+            padding: 15px;
+        }
+        .ds__checkout__page__info .ds__submitted__cc__info {
+            padding: 15px;
+        }
+        .ds__submitted__shipping__info .ds__submitted__location h4,
+        .ds__checkout__page__info .ds__submitted__cc__info h4 {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        .ds__submitted__shipping__info .ds__submitted__location p,
+        .ds__checkout__page__info .ds__submitted__cc__info p {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .ds__submitted__shipping__info .ds__submitted__location {
+            gap: 8px;
+        }
+    /*===== Wishlist Page =====*/
+        .ds__wishlist__wrapper .wishlisted__item .content .ds__product__title a,
+        .ds__wishlist__wrapper .wishlisted__item .content .ds__product__title h4,
+        .ds__wishlist__wrapper .wishlisted__item .ds__product__stock__status {
+            font-size: 32px;
+            line-height: 40px;
+        }
+        .ds__wishlist__wrapper .wishlisted__item .content .ds__product__title {
+            flex-direction: column;
+            gap: 20px;
+        }
+        .ds__wishlist__wrapper .wishlisted__item .content .ds__product__title a,
+        .ds__wishlist__wrapper .wishlisted__item .content .ds__product__title .price__cta {
+            width: 100%;
+        }
+        .ds__wishlist__wrapper .wishlisted__item .ds__wishlist__addtocart {
+            font-size: 18px;
+            line-height: 18px;
+        }
+        .ds__wishlist__wrapper .wishlisted__item .ds__wishlist__addtocart svg {
+            height: 18px;
+            width: 18px;
+        }
+        .ds__wishlist__wrapper .wishlisted__item .image {
+            width: 160px;
+            height: 220px;
+        }
+        .ds__wishlist__wrapper .wishlisted__item .content {
+            gap: 23px;
+        }
+        .ds__wishlist__wrapper .wishlisted__item .ds__wislist__item__remove {
+            height: 42px;
+            width: 42px;
+        }
+        .ds__wishlist__wrapper .wishlisted__item .ds__wislist__item__remove svg {
+            height: 32px;
+            width: 32px;
         }
 }
 
@@ -5889,25 +6272,51 @@
             padding: 0 10px;
         }
         /*Shipping & payment*/
-        .ds__shipping__payment__service {
+        .ds__shipping__payment__service,
+        .ds__checkout__page__info {
             gap: 60px;
         }
-        .ds__shipping__payment__service form .dssps__payment__option__item {
+        .dssps__payment__option__item {
             padding-left: 10px;
         }
-        .ds__shipping__payment__service form .dssps__payment__option__item label {
+        .dssps__payment__option__item label {
             padding: 10px;
             padding-left: 10px;
         }
-        .ds__shipping__payment__service form .dssps__payment__option__item label .name {
+        .dssps__payment__option__item label .name {
             gap: 6px;
         }
-        .ds__shipping__payment__service form .dssps__payment__option__item label .name p {
+        .dssps__payment__option__item label .name p {
             font-size: 12px;
             line-height: 18px;
         }
         .dssps__credit__card__form {
             gap: 26px;
+        }
+    /*===== Wishlist Page =====*/
+        .ds__wishlist__wrapper .wishlisted__item .content .ds__product__title a,
+        .ds__wishlist__wrapper .wishlisted__item .content .ds__product__title h4,
+        .ds__wishlist__wrapper .wishlisted__item .ds__product__stock__status {
+            font-size: 32px;
+            line-height: 40px;
+        }
+        .ds__wishlist__wrapper .wishlisted__item .ds__wishlist__addtocart {
+            font-size: 18px;
+            line-height: 18px;
+        }
+        .ds__wishlist__wrapper .wishlisted__item .ds__wishlist__addtocart svg {
+            height: 18px;
+            width: 18px;
+        }
+        .ds__wishlist__wrapper .wishlisted__item .image {
+            width: 160px;
+            height: 220px;
+        }
+        .ds__wishlist__wrapper .wishlisted__item .content .ds__product__title a {
+            width: 54%;
+        } 
+        .ds__wishlist__wrapper .wishlisted__item .content .ds__product__title .price__cta {
+            width: 46%;
         }
 }
 
