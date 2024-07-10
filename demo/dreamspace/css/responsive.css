@@ -16,7 +16,12 @@
     .ds__similarproducts__section,
     .ds__why__choose__us__section,
     .ds__checkout__process__section,
-    .ds__cartinfoshippingcheckout__section {
+    .ds__cartinfoshippingcheckout__section,
+    .ds__wishlist__section,
+    .ds__about__us__section,
+    .ds__total__outlets__section,
+    .ds__team__section,
+    .ds__about__us__section .spacing {
         margin-top: 30px;
     }
     .ds__button__a {
@@ -1440,6 +1445,78 @@
             height: 26px;
             width: 26px;
         }
+    /*===== About Us Page =====*/
+        /*About*/
+        .ds__about__us__section p,
+        .ds__about__us__section p.top__text  {
+            font-size: 12px;
+            line-height: 20px;
+        }
+        .ds__about__us__section .image {
+            height: 138px;
+            margin-bottom: 15px;
+        }
+        .ds__about__us__section .image.img1 {
+            display: none;
+        }
+        .ds__about__us__section h4 {
+            font-size: 20px;
+            line-height: 26px;
+            margin-bottom: 10px;
+        }
+        .ds__list__with__tick li {
+            font-size: 12px;
+            line-height: 20px;
+            padding-bottom: 5px;
+        }
+        .ds__list__with__tick li::before {
+            height: 10px;
+            width: 10px;
+            margin-bottom: -2px;
+            margin-right: 5px;
+        }
+        /*Total Outlet*/
+        .ds__total__outlets__section .ds__totaloutlet__wrapper {
+            height: 360px; 
+        }
+        .ds__total__outlets__section .ds__totaloutlet__wrapper .all__items {
+            gap: 15px;
+            padding: 20px 0;
+        }
+        .ds__total__outlets__section .ds__totaloutlet__wrapper .item h2 {
+            font-size: 40px;
+            line-height: 40px;
+        }
+        .ds__total__outlets__section .ds__totaloutlet__wrapper .item p {
+            font-size: 16px;
+        }
+        /*Team Section*/
+        .ds__team__section .dsteam__wrapper {
+            justify-content: center;
+            gap: 10px;
+        }
+        .ds__team__section .dsteam__wrapper .dsteam__item {
+            height: 234px;
+            width: 176px;
+        }
+        .ds__team__section .dsteam__wrapper .dsteam__item .content {
+            padding: 10px;
+            gap: 5px;
+        }
+        .ds__team__section .dsteam__wrapper .dsteam__item .content h3 {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        .ds__team__section .dsteam__wrapper .dsteam__item .content h4 {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .ds__team__section .dsteam__wrapper .dsteam__item .content .social__profile a {
+            font-size: 14px;
+            line-height: 26px;
+            width: 26px;
+            height: 26px;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
@@ -1460,7 +1537,12 @@
     .ds__similarproducts__section,
     .ds__why__choose__us__section,
     .ds__checkout__process__section,
-    .ds__cartinfoshippingcheckout__section {
+    .ds__cartinfoshippingcheckout__section,
+    .ds__wishlist__section,
+    .ds__about__us__section,
+    .ds__total__outlets__section,
+    .ds__team__section,
+    .ds__about__us__section .spacing  {
         margin-top: 30px;
     }
     .ds__button__a {
@@ -2715,6 +2797,63 @@
             height: 26px;
             width: 26px;
         }
+    /*===== About Us Page =====*/
+        /*About*/
+        .ds__about__us__section p,
+        .ds__about__us__section p.top__text  {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .ds__about__us__section .image {
+            height: 209px;
+            margin-bottom: 15px;
+        }
+        .ds__about__us__section .image.img1 {
+            display: none;
+        }
+        .ds__about__us__section h4 {
+            font-size: 24px;
+            line-height: 30px;
+            margin-bottom: 15px;
+        }
+        .ds__list__with__tick li {
+            font-size: 14px;
+            line-height: 20px;
+            padding-bottom: 10px;
+        }
+        .ds__list__with__tick li::before {
+            height: 12px;
+            width: 12px;
+            margin-bottom: -2px;
+            margin-right: 5px;
+        }
+        /*Total Outlet*/
+        .ds__total__outlets__section .ds__totaloutlet__wrapper {
+            height: 220px;
+        }
+        .ds__total__outlets__section .ds__totaloutlet__wrapper .all__items {
+            gap: 30px;
+            padding: 20px 0;
+        }
+        .ds__total__outlets__section .ds__totaloutlet__wrapper .item h2 {
+            font-size: 40px;
+            line-height: 40px;
+        }
+        .ds__total__outlets__section .ds__totaloutlet__wrapper .item p {
+            font-size: 16px;
+        }
+        /*Team Section*/
+        .ds__team__section .dsteam__wrapper {
+            justify-content: center;
+            gap: 10px;
+        }
+        .ds__team__section .dsteam__wrapper .dsteam__item {
+            height: 336px;
+            width: 253px;
+        }
+        .ds__team__section .dsteam__wrapper .dsteam__item .content {
+            padding: 10px;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -2735,7 +2874,12 @@
     .ds__similarproducts__section,
     .ds__why__choose__us__section,
     .ds__checkout__process__section,
-    .ds__cartinfoshippingcheckout__section {
+    .ds__cartinfoshippingcheckout__section,
+    .ds__wishlist__section,
+    .ds__about__us__section,
+    .ds__total__outlets__section,
+    .ds__team__section,
+    .ds__about__us__section .spacing  {
         margin-top: 40px;
     }
     .ds__button__a {
@@ -3821,6 +3965,59 @@
             height: 32px;
             width: 32px;
         }
+    /*===== About Us Page =====*/
+        /*About*/
+        .ds__about__us__section p {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        .ds__about__us__section p.top__text {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .ds__about__us__section .image {
+            height: 307px;
+            margin-bottom: 20px;
+        }
+        .ds__about__us__section .image.img1 {
+            display: none;
+        }
+        .ds__about__us__section h4 {
+            font-size: 26px;
+            line-height: 34px;
+            margin-bottom: 20px;
+        }
+        .ds__list__with__tick li {
+            font-size: 16px;
+            line-height: 24px;
+            padding-bottom: 10px;
+        }
+        .ds__list__with__tick li::before {
+            height: 14px;
+            width: 14px;
+            margin-bottom: -2px;
+            margin-right: 5px;
+        }
+        /*Total Outlet*/
+        .ds__total__outlets__section .ds__totaloutlet__wrapper {
+            height: 250px;
+        }
+        .ds__total__outlets__section .ds__totaloutlet__wrapper .all__items {
+            gap: 30px;
+            padding: 20px 0;
+        }
+        .ds__total__outlets__section .ds__totaloutlet__wrapper .item h2 {
+            font-size: 50px;
+            line-height: 50px;
+        }
+        .ds__total__outlets__section .ds__totaloutlet__wrapper .item p {
+            font-size: 18px;
+        }
+        /*Team Section*/
+        .ds__team__section .dsteam__wrapper {
+            justify-content: center;
+            gap: 10px;
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -3841,7 +4038,12 @@
     .ds__similarproducts__section,
     .ds__why__choose__us__section,
     .ds__checkout__process__section,
-    .ds__cartinfoshippingcheckout__section {
+    .ds__cartinfoshippingcheckout__section,
+    .ds__wishlist__section,
+    .ds__about__us__section,
+    .ds__total__outlets__section,
+    .ds__team__section,
+    .ds__about__us__section .spacing  {
         margin-top: 50px;
     }
     .ds__button__a {
@@ -4721,6 +4923,64 @@
             height: 32px;
             width: 32px;
         }
+    /*===== About Us Page =====*/
+        /*About*/
+        .ds__about__us__section p {
+            font-size: 18px;
+            line-height: 26px;
+        }
+        .ds__about__us__section p.top__text {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        .ds__about__us__section .image {
+            height: 405px;
+            margin-bottom: 20px;
+        }
+        .ds__about__us__section .image.img1 {
+            display: none;
+        }
+        .ds__about__us__section h4 {
+            font-size: 28px;
+            line-height: 36px;
+            margin-bottom: 20px;
+        }
+        .ds__list__with__tick li {
+            font-size: 18px;
+            line-height: 26px;
+            padding-bottom: 10px;
+        }
+        .ds__list__with__tick li::before {
+            height: 16px;
+            width: 16px;
+            margin-bottom: -2px;
+        }
+        /*Total Outlet*/
+        .ds__total__outlets__section .ds__totaloutlet__wrapper {
+            height: 150px;
+        }
+        .ds__total__outlets__section .ds__totaloutlet__wrapper .all__items {
+            gap: 20px;
+        }
+        .ds__total__outlets__section .ds__totaloutlet__wrapper .item h2 {
+            font-size: 40px;
+            line-height: 40px;
+        }
+        .ds__total__outlets__section .ds__totaloutlet__wrapper .item p {
+            font-size: 16px;
+        }
+        /*Team Section*/
+        .ds__team__section .dsteam__wrapper {
+            justify-content: center;
+            gap: 10px;
+        }
+        .ds__team__section .dsteam__wrapper .dsteam__item {
+            height: 336px;
+            width: 253px;
+        }
+        .ds__team__section .dsteam__wrapper .dsteam__item .content {
+            padding: 10px;
+        }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -4741,7 +5001,12 @@
     .ds__similarproducts__section,
     .ds__why__choose__us__section,
     .ds__checkout__process__section,
-    .ds__cartinfoshippingcheckout__section {
+    .ds__cartinfoshippingcheckout__section,
+    .ds__wishlist__section,
+    .ds__about__us__section,
+    .ds__total__outlets__section,
+    .ds__team__section,
+    .ds__about__us__section .spacing  {
         margin-top: 60px;
     }
     .ds__button__a {
@@ -5701,6 +5966,53 @@
             height: 32px;
             width: 32px;
         }
+    /*===== About Us Page =====*/
+        /*About*/
+        .ds__about__us__section p {
+            font-size: 18px;
+            line-height: 26px;
+        }
+        .ds__about__us__section p.top__text {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        .ds__about__us__section .image {
+            height: 264px;
+        }
+        .ds__about__us__section h4 {
+            font-size: 28px;
+            line-height: 36px;
+            margin-bottom: 20px;
+        }
+        .ds__list__with__tick li {
+            font-size: 18px;
+            line-height: 26px;
+            padding-bottom: 10px;
+        }
+        .ds__list__with__tick li::before {
+            height: 16px;
+            width: 16px;
+            margin-bottom: -2px;
+        }
+        /*Total Outlet*/
+        .ds__total__outlets__section .ds__totaloutlet__wrapper {
+            height: 170px;
+        }
+        .ds__total__outlets__section .ds__totaloutlet__wrapper .all__items {
+            gap: 40px;
+        }
+        .ds__total__outlets__section .ds__totaloutlet__wrapper .item h2 {
+            font-size: 50px;
+            line-height: 50px;
+        }
+        .ds__total__outlets__section .ds__totaloutlet__wrapper .item p {
+            font-size: 18px;
+        }
+        /*Team Section*/
+        .ds__team__section .dsteam__wrapper {
+            justify-content: center;
+            gap: 20px;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -5721,7 +6033,12 @@
     .ds__similarproducts__section,
     .ds__why__choose__us__section,
     .ds__checkout__process__section,
-    .ds__cartinfoshippingcheckout__section {
+    .ds__cartinfoshippingcheckout__section,
+    .ds__wishlist__section,
+    .ds__about__us__section,
+    .ds__total__outlets__section,
+    .ds__team__section,
+    .ds__about__us__section .spacing  {
         margin-top: 70px;
     }
     .ds__button__b {
@@ -6318,6 +6635,53 @@
         .ds__wishlist__wrapper .wishlisted__item .content .ds__product__title .price__cta {
             width: 46%;
         }
+    /*===== About Us Page =====*/
+        /*About*/
+        .ds__about__us__section p {
+            font-size: 24px;
+            line-height: 34px;
+        }
+
+        .ds__about__us__section p.top__text {
+            font-size: 22px;
+            line-height: 30px;
+        }
+        .ds__about__us__section .image {
+            height: 358px;
+        }
+        .ds__about__us__section h4 {
+            font-size: 34px;
+            line-height: 44px;
+            margin-bottom: 30px;
+        }
+        .ds__list__with__tick li {
+            font-size: 24px;
+            line-height: 34px;
+            padding-bottom: 16px;
+        }
+        .ds__list__with__tick li::before {
+            height: 22px;
+            width: 22px;
+        }
+        /*Total Outlet*/
+        .ds__total__outlets__section .ds__totaloutlet__wrapper {
+            height: 200px;
+        }
+        .ds__total__outlets__section .ds__totaloutlet__wrapper .item h2 {
+            font-size: 70px;
+            line-height: 70px;
+        }
+        .ds__total__outlets__section .ds__totaloutlet__wrapper .item p {
+            font-size: 24px;
+        }
+        /*Team Section*/
+        .ds__team__section .dsteam__wrapper .dsteam__item {
+            height: 308px;
+            width: 232px;
+        }
+        .ds__team__section .dsteam__wrapper .dsteam__item .content {
+            padding: 10px;
+        }
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -6337,7 +6701,12 @@
     .ds__similarproducts__section,
     .ds__why__choose__us__section,
     .ds__checkout__process__section,
-    .ds__cartinfoshippingcheckout__section {
+    .ds__cartinfoshippingcheckout__section,
+    .ds__wishlist__section,
+    .ds__about__us__section,
+    .ds__total__outlets__section,
+    .ds__team__section,
+    .ds__about__us__section .spacing  {
         margin-top: 80px;
     }
     /*===== Home Page =====*/
@@ -6611,6 +6980,34 @@
         .ds__product__price__info {
             padding-left: 40px;
         }
+    /*===== About Us Page =====*/
+        /*About*/
+        .ds__about__us__section p {
+            font-size: 28px;
+        }
+        .ds__about__us__section p.top__text {
+            font-size: 26px;
+        }
+        .ds__about__us__section .image {
+            height: 429px;
+        }
+        .ds__about__us__section h4 {
+            margin-bottom: 40px;
+        }
+        .ds__list__with__tick li {
+            font-size: 30px;
+            line-height: 36px;
+            padding-bottom: 26px;
+        }
+        .ds__list__with__tick li::before {
+            height: 26px;
+            width: 26px;
+        }
+        /*Team Section*/
+        .ds__team__section .dsteam__wrapper .dsteam__item {
+            height: 366px;
+            width: 275px;
+        }
 }
 
 @media (min-width: 1400px) and (max-width: 1499px) {
@@ -6630,7 +7027,8 @@
     .ds__similarproducts__section,
     .ds__why__choose__us__section,
     .ds__checkout__process__section,
-    .ds__cartinfoshippingcheckout__section {
+    .ds__cartinfoshippingcheckout__section,
+    .ds__about__us__section .spacing  {
         margin-top: 80px;
     }
     /*===== Home Page =====*/
