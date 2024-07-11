@@ -18,6 +18,9 @@
 4. Single Product Page
 5. Cart, Info, Shipping, Checkout
 6. Wishlist Page
+7. About Us Page
+8. Contact Us Page
+
 
 **********************************************/
 
@@ -5461,6 +5464,9 @@ form .checkbox label {
     fill: #FFF;
 }
 
+/* ====================================================================
+   7. About Us Page
+==================================================================== */
 /*** Start of About Us Section ***/
 .ds__about__us__section {
     margin-top: 100px;
@@ -5680,6 +5686,212 @@ form .checkbox label {
 }
 /*** End of Team Section ***/
 
+/* ====================================================================
+   8. Contact Us Page
+==================================================================== */
+/*** Start of Office Location ***/
+.ds__office__location__section {
+    margin-top: 100px;
+}
+
+.dsoffice__location__map iframe {
+    width: 100%;
+    height: 420px;
+}
+
+.dsoffice__location__text {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 60px;
+    gap: 32px;
+}
+
+.dsoffice__location__text .dsol__item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    width: 30%;
+}
+
+.dsoffice__location__text .dsol__item .icon svg {
+    height: 24px;
+    width: 24px;
+    stroke: var(--text-color);
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.dsoffice__location__text .dsol__item h4 {
+    color: var(--text-color);
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    font-family: 'Urbanist', sans-serif;
+    text-align: center;
+    margin: 0;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.dsoffice__location__text .dsol__item span,
+.dsoffice__location__text .dsol__item p {
+    color: #667085;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: 'Urbanist', sans-serif;
+    text-align: center;
+    margin: 0;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.dsoffice__location__text .dsol__item p {
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.dsoffice__location__text .dsol__item:hover .icon svg {
+    stroke: var(--main-color);
+}
+.dsoffice__location__text .dsol__item:hover h4,
+.dsoffice__location__text .dsol__item:hover p {
+    color: var(--main-color);
+}
+/*** End of Office Location ***/
+
+/*** Start of Contact Us Section ***/
+.ds__contactus__section {
+    margin-top: 100px;
+}
+
+.ds__contactus__section .dscontact__wrapper .image {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.ds__contactus__section .dscontact__wrapper .image img {
+    width: 100%;
+    height: auto;
+}
+
+.ds__contactus__section .dscontact__wrapper .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding-left: 60px;
+}
+
+@media (max-width: 1199px) {
+    .ds__contactus__section .dscontact__wrapper .content {
+        padding-left: 0;
+    }
+}
+
+.ds__contactus__section .dscontact__wrapper .content h2 {
+    color: var(--text-color);
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 700;
+    font-family: 'Urbanist', sans-serif;
+    margin-bottom: 24px;
+}
+
+.ds__contactus__section .dscontact__wrapper .content p {
+    color: #667085;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    font-family: 'Urbanist', sans-serif;
+    margin-bottom: 48px;
+}
+
+.ds__contactus__section .dscontact__wrapper form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.ds__contactus__section .dscontact__wrapper form .input__field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.ds__contactus__section .dscontact__wrapper form label {
+    color: var(--text-color);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    font-family: 'Urbanist', sans-serif;
+}
+
+.ds__contactus__section .dscontact__wrapper form input {
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    font-family: 'Urbanist', sans-serif;
+    padding: 0 16px;
+    height: 48px;
+    border-radius: 8px;
+    border: 1px solid #D0D5DD;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.ds__contactus__section .dscontact__wrapper form textarea {
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    font-family: 'Urbanist', sans-serif;
+    padding: 10px 16px;
+    height: 128px;
+    border-radius: 8px;
+    border: 1px solid #D0D5DD;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    resize: none;
+}
+
+.ds__contactus__section .dscontact__wrapper form input::placeholder,
+.ds__contactus__section .dscontact__wrapper form textarea::placeholder {
+    color: #667085;
+}
+
+.ds__contactus__section .dscontact__wrapper form button {
+    color: #FFF;
+    font-size: 16px;
+    line-height: 48px;
+    font-weight: 600;
+    font-family: 'Urbanist', sans-serif;
+    background: var(--text-color);
+    height: 48px;
+    border-radius: 8px;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.ds__contactus__section .dscontact__wrapper form button:hover {
+    background: var(--main-color);
+}
+
+/*** End of Contact Us Section ***/
 
 /*
 rgba(95, 23, 6, 0.4)
