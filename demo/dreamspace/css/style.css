@@ -20,6 +20,8 @@
 6. Wishlist Page
 7. About Us Page
 8. Contact Us Page
+9. Blog Page
+10. Review Page
 
 
 **********************************************/
@@ -4265,7 +4267,7 @@ form .checkbox label {
     width: 600px;
 }
 
-.dssp__product__descrev .dssp__submitted__review__item {
+.dssp__submitted__review__item {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -4273,40 +4275,40 @@ form .checkbox label {
     border-bottom: 1px solid #6D6D6D;
 }
 
-.dssp__product__descrev .dssp__submitted__review__item:last-child {
+.dssp__submitted__review__item:last-child {
     border: 0;
 }
 
-.dssp__product__descrev .dssp__submitted__review__item .usernrating {
+.dssp__submitted__review__item .usernrating {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 }
 
-.dssp__product__descrev .dssp__submitted__review__item .usernrating .user__info {
+.dssp__submitted__review__item .usernrating .user__info {
     display: flex;
     gap: 20px;
 }
 
-.dssp__product__descrev .dssp__submitted__review__item .usernrating .user__info .image {
+.dssp__submitted__review__item .usernrating .user__info .image {
     height: 80px;
     width: 80px;
     border-radius: 50%;
     overflow: hidden;
 }
 
-.dssp__product__descrev .dssp__submitted__review__item .usernrating .user__info .image img {
+.dssp__submitted__review__item .usernrating .user__info .image img {
     width: 100%;
     height: 100%;
 }
 
-.dssp__product__descrev .dssp__submitted__review__item .usernrating .user__info .info {
+.dssp__submitted__review__item .usernrating .user__info .info {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.dssp__product__descrev .dssp__submitted__review__item .usernrating .user__info .info h4 {
+.dssp__submitted__review__item .usernrating .user__info .info h4 {
     color: var(--text-color);
     font-size: 18px;
     line-height: 22px;
@@ -4315,7 +4317,7 @@ form .checkbox label {
     margin: 0;
 }
 
-.dssp__product__descrev .dssp__submitted__review__item .usernrating .user__info .info p {
+.dssp__submitted__review__item .usernrating .user__info .info p {
     color: #8D8D8D;
     font-size: 16px;
     line-height: 20px;
@@ -4324,18 +4326,23 @@ form .checkbox label {
     margin-bottom: 10px;
 }
 
-.dssp__product__descrev .dssp__submitted__review__item .usernrating .stars svg {
+.dssp__submitted__review__item .usernrating .stars svg {
+    fill: var(--text-color);
     height: 20px;
     width: 20px;
 }
 
-.dssp__product__descrev .dssp__submitted__review__item .user__review {
+.dssp__submitted__review__item .usernrating .stars svg.empty {
+    fill: #D2CCC9;
+}
+
+.dssp__submitted__review__item .user__review {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.dssp__product__descrev .dssp__submitted__review__item .user__review h4 {
+.dssp__submitted__review__item .user__review h4 {
     color: var(--text-color);
     font-size: 20px;
     line-height: 24px;
@@ -4344,8 +4351,8 @@ form .checkbox label {
     margin: 0;
 }
 
-.dssp__product__descrev .dssp__submitted__review__item .user__review .dssp__user__review__text,
-.dssp__product__descrev .dssp__submitted__review__item .user__review .dssp__user__review__text .dssp__urt__toggle {
+.dssp__submitted__review__item .user__review .dssp__user__review__text,
+.dssp__submitted__review__item .user__review .dssp__user__review__text .dssp__urt__toggle {
     color: var(--text-color);
     font-size: 18px;
     line-height: 24px;
@@ -4354,7 +4361,7 @@ form .checkbox label {
     margin: 0;
 }
 
-.dssp__product__descrev .dssp__submitted__review__item .user__review .dssp__user__review__text .dssp__urt__toggle {
+.dssp__submitted__review__item .user__review .dssp__user__review__text .dssp__urt__toggle {
     font-weight: 700;
     transition: 0.3s;
     -moz-transition: 0.3s;
@@ -4365,7 +4372,7 @@ form .checkbox label {
     text-transform: capitalize;
 }
 
-.dssp__product__descrev .dssp__submitted__review__item .user__review .dssp__user__review__text .dssp__urt__toggle:hover {
+.dssp__submitted__review__item .user__review .dssp__user__review__text .dssp__urt__toggle:hover {
     color: var(--main-color);
 }
 
@@ -6488,6 +6495,54 @@ form .checkbox label {
     background: var(--main-color);
 }
 /*** End of Blog Post ***/
+
+/* ====================================================================
+   10. Review Page
+==================================================================== */
+.ds__review__section {
+    margin-top: 100px;
+}
+
+.ds__review__section .dsreview__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.ds__review__section .dsreview__wrapper .dssp__submitted__review__item {
+	width: 633px;
+	padding-bottom: 0;
+	border-bottom: 0;
+    background: var(--text-color);
+    padding: 10px;
+}
+
+@media (max-width: 991px) {
+    .ds__review__section .dsreview__wrapper .dssp__submitted__review__item {
+        width: 100%;
+    }
+}
+
+.ds__review__section .dssp__submitted__review__item .usernrating .user__info .info h4,
+.ds__review__section .dssp__submitted__review__item .user__review h4,
+.ds__review__section .dssp__submitted__review__item .user__review .dssp__user__review__text,
+.ds__review__section .dssp__submitted__review__item .user__review .dssp__user__review__text .dssp__urt__toggle {
+    color: #FFF;
+}
+
+.ds__review__section .dssp__submitted__review__item .user__review .dssp__user__review__text .dssp__urt__toggle:hover {
+    color: var(--main-color);
+}
+
+.ds__review__section .dssp__submitted__review__item .usernrating .stars svg {
+    fill: #FFF;
+}
+
+.ds__review__section .dssp__submitted__review__item .usernrating .stars svg.empty {
+    fill: #D2CCC9;
+}
+
 
 /*
 rgba(95, 23, 6, 0.4)
