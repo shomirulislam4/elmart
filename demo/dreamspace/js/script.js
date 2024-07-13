@@ -575,9 +575,9 @@
         var $myDiv = $('.ds__column__reverse__trigger');
         if (screenWidth < 992) {
             $myDiv.addClass('flex-column-reverse');
-        } else {
-            $myDiv.removeClass('flex-column-reverse');
-        }
+            } else {
+                $myDiv.removeClass('flex-column-reverse');
+            }
         }
         adjustClass();
         $(window).resize(adjustClass);

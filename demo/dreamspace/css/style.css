@@ -230,9 +230,9 @@ button:focus {
 }
 
 .horizontal__seperator {
-    height: 2px;
+    height: 3px;
     width: 100%;
-    background: var(--text-color);
+    background: #C0BDBB;
     margin: 0;
 }
 
@@ -6088,6 +6088,406 @@ form .checkbox label {
 .tag__cloud .tags:hover {
     background: var(--main-color);
 }
+
+/*** Start of Blog Post ***/
+.ds__blog__post__section {
+    margin-top: 100px;
+}
+
+/* Breadcrumbs */
+.blog__post__page .ds__breadcrumbs__section {
+	height: 200px;
+}
+
+.blog__post__page .ds__breadcrumbs__section .dsbc__wrapper .dsbc__breadcrumb {
+	left: 0;
+	justify-content: center;
+	width: 100%;
+}
+
+/* Sidebar */
+.blog__post__page .dsblog__sidebar {
+    border-left: 3px solid #C0BDBB;
+    padding-left: 14px;
+    height: 100%;
+}
+
+/* Blog Post Title */
+.dsblogpost__title {
+    margin-bottom: 40px;
+}
+
+.dsblogpost__title h2 {
+    color: var(--text-color);
+    font-size: 38px;
+    line-height: 46px;
+    font-weight: 700;
+    font-family: 'Urbanist', sans-serif;
+    margin-bottom: 18px;
+}
+
+.dsblogpost__title .dsblogpost__featured__image {
+    width: 100%;
+    height: 362px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.dsblogpost__title .dsblogpost__featured__image img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: auto;
+}
+
+.dsblogpost__title .ds__blogpost__metabox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.dsblogpost__title .ds__blogpost__metabox p,
+.dsblogpost__title .ds__blogpost__metabox a {
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    font-family: 'Urbanist', sans-serif;
+    margin: 0;
+}
+
+.dsblogpost__title .ds__blogpost__metabox p,
+.dsblogpost__title .ds__blogpost__metabox a:hover {
+    color: var(--main-color);
+} 
+
+/* Blog Post Body */
+.dsblogpost__body p {
+    color: var(--text-color);
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 500;
+    font-family: 'Urbanist', sans-serif;
+    margin-bottom: 20px;
+}
+
+.dsblogpost__body p.top__text {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.dsblogpost__body h5 {
+    color: var(--text-color);
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 600;
+    font-family: 'Urbanist', sans-serif;
+    margin-bottom: 8px;
+}
+
+.dsblogpost__share {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: 50px;
+}
+
+.dsblogpost__share p {
+    color: var(--text-color);
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    font-family: 'Urbanist', sans-serif;
+    margin: 0;
+}
+
+.dsblogpost__share a svg {
+    height: 30px;
+    width: 30px;
+}
+
+/* Blog Post Sidebar */
+@media (max-width: 1199px) {
+    .blog__post__page .dsblog__sidebar {
+        border-left: 0;
+        padding-left: 0;
+    }
+}
+
+/* Comment Section */
+.dsblogpost__comment__section {
+    margin-top: 100px;
+}
+
+.dsblogpost__navcomment__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.dsblogpost__post__navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dsblogpost__post__navigation .post__navs {
+    width: 49%;
+    display: flex;
+    gap: 10px;
+}
+
+.dsblogpost__post__navigation .post__navs .image {
+    overflow: hidden;
+    height: 112px;
+    width: 135px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.dsblogpost__post__navigation .post__navs .image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: 100%;
+}
+
+.dsblogpost__post__navigation .post__navs .content {
+    width: calc(100% - 145px);
+}
+
+.dsblogpost__post__navigation .post__navs .content span,
+.dsblogpost__post__navigation .post__navs .content h4 {
+    display: block;
+    color: #7E7F7C;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 600;
+    font-family: 'Urbanist', sans-serif;
+    text-align: left;
+    margin-bottom: 5px;
+    width: 100%;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.dsblogpost__post__navigation .post__navs.next .content span,
+.dsblogpost__post__navigation .post__navs.next .content h4 {
+    text-align: right;
+}
+
+.dsblogpost__post__navigation .post__navs .content span svg {
+	height: 30px;
+	width: 30px;
+	fill: #7E7F7C;
+	margin-right: 5px;
+	margin-bottom: 4px;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.dsblogpost__post__navigation .post__navs .content h4 {
+    color: var(--text-color);
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0;
+}
+
+.dsblogpost__post__navigation .post__navs:hover .content span,
+.dsblogpost__post__navigation .post__navs:hover .content h4 {
+    color: var(--main-color)
+}
+
+.dsblogpost__post__navigation .post__navs:hover .content span svg {
+    fill: var(--main-color)
+}
+
+/* Comments Area */
+.dsblogpost__navcomment__wrapper .dsblogpost__comments {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.dsblogpost__navcomment__wrapper .dsblogpost__comments h3,
+.dsblogpost__navcomment__wrapper .dsblogpost__comments h3 span {
+    color: var(--text-color);
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    font-family: 'Urbanist', sans-serif;
+}
+
+.dsblogpost__navcomment__wrapper .dsblogpost__comments h3 span {
+    margin-left: 10px;
+}
+
+.dsblogpost__navcomment__wrapper .dsblogpost__comments h3 span::before {
+    content: '(';
+}
+
+.dsblogpost__navcomment__wrapper .dsblogpost__comments h3 span::after {
+    content: ')';
+}
+
+.dsblogpost__comments .comment__item {
+    display: flex;
+    gap: 20px;
+}
+
+.dsblogpost__comments .comment__item .image {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.dsblogpost__comments .comment__item .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.dsblogpost__comments .comment__item .content {
+    width: calc(100% - 120px);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dsblogpost__comments .comment__item .content .name__n__reply {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dsblogpost__comments .comment__item .content .name__n__reply .name {
+    display: flex;
+    flex-direction: column;
+}
+
+.dsblogpost__comments .comment__item .content .name__n__reply .name h4,
+.dsblogpost__comments .comment__item .content .name__n__reply .name p {
+    color: var(--text-color);
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 700;
+    font-family: 'Urbanist', sans-serif;
+    margin: 0;
+}
+
+.dsblogpost__comments .comment__item .content .name__n__reply .name p {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.dsblogpost__comments .comment__item .content .name__n__reply .reply__button {
+    color: #FFF;
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: 600;
+    font-family: 'Urbanist', sans-serif;
+    padding: 0 20px;
+    background: var(--text-color);
+    border-radius: 50px;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.dsblogpost__comments .comment__item .content .name__n__reply .reply__button:hover {
+    background: var(--main-color);
+}
+
+.dsblogpost__comments .comment__item .content .comment__body {
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 600;
+    font-family: 'Urbanist', sans-serif;
+    margin: 0;
+}
+
+/* Comment Form */
+.dsblogpost__comment__form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.dsblogpost__comment__form h3 {
+    color: var(--text-color);
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    font-family: 'Urbanist', sans-serif;
+    margin: 0;
+}
+
+.dsblogpost__comment__form input {
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    font-family: 'Urbanist', sans-serif;
+    padding: 0 16px;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid #D0D5DD;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.dsblogpost__comment__form textarea {
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    font-family: 'Urbanist', sans-serif;
+    padding: 10px 16px;
+    height: 128px;
+    border-radius: 8px;
+    border: 1px solid #D0D5DD;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    resize: none;
+}
+
+.dsblogpost__comment__form input::placeholder,
+.dsblogpost__comment__form textarea::placeholder {
+    color: #667085;
+}
+
+.dsblogpost__comment__form button {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 50px;
+    height: 50px;
+    border-radius: 8px;
+    background: var(--text-color);
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.dsblogpost__comment__form button:hover {
+    background: var(--main-color);
+}
+/*** End of Blog Post ***/
 
 /*
 rgba(95, 23, 6, 0.4)

@@ -23,7 +23,9 @@
     .ds__team__section,
     .ds__about__us__section .spacing,
     .ds__contactus__section,
-    .ds__blog__page__section {
+    .ds__blog__page__section,
+    .ds__blog__post__section,
+    .dsblogpost__comment__section {
         margin-top: 30px;
     }
     .pagination {
@@ -1630,6 +1632,131 @@
             height: 10px;
             width: 10px;
         }
+        /*Blog Post*/
+        .blog__post__page .ds__breadcrumbs__section {
+            height: 130px;
+        }
+        .dsblogpost__title {
+            margin-bottom: 15px;
+        }
+        .dsblogpost__title h2 {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        .dsblogpost__title .dsblogpost__featured__image {
+            height: 68px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .dsblogpost__title .dsblogpost__featured__image img {
+            width: 138%;
+        }
+        .dsblogpost__title .ds__blogpost__metabox p,
+        .dsblogpost__title .ds__blogpost__metabox a {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .dsblogpost__body p,
+        .dsblogpost__body p.top__text  {
+            font-size: 12px;
+            line-height: 20px;
+            margin-bottom: 10px;
+        }
+        .dsblogpost__body h5 {
+            font-size: 14px;
+            line-height: 24px;
+            margin-bottom: 3px;
+        }
+        .dsblogpost__share {
+            margin-top: 15px;
+        }
+        .dsblogpost__navcomment__wrapper {
+            gap: 15px;
+        }
+        .dsblogpost__comments .comment__item {
+            gap: 5px;
+        }
+        .dsblogpost__comments .comment__item .image {
+            height: 50px;
+            width: 50px;
+        }
+        .dsblogpost__comments .comment__item .content {
+            width: calc(100% - 55px);
+            gap: 5px;
+        }
+        .dsblogpost__comments .comment__item .content .name__n__reply .name h4 {
+            font-size: 16px;
+            line-height: 26px;
+        }
+        .dsblogpost__comments .comment__item .content .name__n__reply .name p {
+            font-size: 12px;
+            line-height: 22px;
+        }
+        .dsblogpost__comments .comment__item .content .name__n__reply .reply__button {
+            font-size: 12px;
+            line-height: 30px;
+        }
+        .dsblogpost__post__navigation {
+            flex-direction: column;
+            gap: 15px;
+        }
+        .dsblogpost__post__navigation .post__navs {
+            width: 100%;
+        }
+        .dsblogpost__post__navigation .post__navs .image {
+            height: 70px;
+            width: 84px;
+        }
+        .dsblogpost__post__navigation .post__navs .content {
+            width: calc(100% - 94px);
+        }
+        .dsblogpost__post__navigation .post__navs .content span,
+        .dsblogpost__post__navigation .post__navs .content h4 {
+            font-size: 12px;
+            line-height: 20px;
+        }
+        .dsblogpost__post__navigation .post__navs .content span svg {
+            height: 12px;
+            width: 12px;
+        }
+        .dsblogpost__comments .comment__item .content .comment__body {
+            font-size: 12px;
+            line-height: 20px;
+        }
+        .dsblogpost__comment__form {
+            gap: 10px;
+        }
+        .dsblogpost__comment__form input {
+            font-size: 12px;
+            padding: 0 5px;
+            height: 40px;
+        }
+        .dsblogpost__comment__form textarea {
+            font-size: 12px;
+            line-height: 20px;
+            padding: 5px;
+        }
+        .dsblogpost__comment__form button {
+            font-size: 12px;
+            line-height: 40px;
+            height: 40px;
+        }
+        .dsblog__sidebar .ds__search__widget form {
+            height: 40px;
+            border-radius: 10px;
+        }
+        .dsblog__sidebar .ds__search__widget form input {
+            padding: 5px;
+            font-size: 12px;
+        }
+        .dsblog__sidebar .ds__search__widget form button {
+            width: 40px;
+            padding-right: 7px;
+        }
+        .dsblog__sidebar .ds__search__widget form button svg {
+            height: 16px;
+            width: 16px;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
@@ -1657,7 +1784,9 @@
     .ds__team__section,
     .ds__about__us__section .spacing,
     .ds__contactus__section,
-    .ds__blog__page__section  {
+    .ds__blog__page__section,
+    .ds__blog__post__section,
+    .dsblogpost__comment__section {
         margin-top: 30px;
     }
     .pagination {
@@ -3074,6 +3203,130 @@
             height: 12px;
             width: 12px;
         }
+        /*Blog Post*/
+        .blog__post__page .ds__breadcrumbs__section {
+            height: 130px;
+        }
+        .dsblogpost__title {
+            margin-bottom: 20px;
+        }
+        .dsblogpost__title h2 {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        .dsblogpost__title .dsblogpost__featured__image {
+            height: 103px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .dsblogpost__title .dsblogpost__featured__image img {
+            width: 138%;
+        }
+        .dsblogpost__title .ds__blogpost__metabox p,
+        .dsblogpost__title .ds__blogpost__metabox a {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .dsblogpost__body p,
+        .dsblogpost__body p.top__text  {
+            font-size: 14px;
+            line-height: 26px;
+            margin-bottom: 14px;
+        }
+        .dsblogpost__body h5 {
+            font-size: 16px;
+            line-height: 28px;
+            margin-bottom: 6px;
+        }
+        .dsblogpost__share {
+            margin-top: 20px;
+        }
+        .dsblogpost__navcomment__wrapper {
+            gap: 20px;
+        }
+        .dsblogpost__comments .comment__item {
+            gap: 10px;
+        }
+        .dsblogpost__comments .comment__item .image {
+            height: 50px;
+            width: 50px;
+        }
+        .dsblogpost__comments .comment__item .content {
+            width: calc(100% - 60px);
+            gap: 10px;
+        }
+        .dsblogpost__comments .comment__item .content .name__n__reply .name h4 {
+            font-size: 18px;
+            line-height: 28px;
+        }
+        .dsblogpost__comments .comment__item .content .name__n__reply .name p {
+            font-size: 14px;
+            line-height: 26px;
+        }
+        .dsblogpost__comments .comment__item .content .name__n__reply .reply__button {
+            font-size: 14px;
+            line-height: 38px;
+        }
+        .dsblogpost__post__navigation {
+            flex-direction: column;
+            gap: 20px;
+        }
+        .dsblogpost__post__navigation .post__navs {
+            width: 100%;
+        }
+        .dsblogpost__post__navigation .post__navs .image {
+            height: 70px;
+            width: 84px;
+        }
+        .dsblogpost__post__navigation .post__navs .content {
+            width: calc(100% - 94px);
+        }
+        .dsblogpost__post__navigation .post__navs .content span,
+        .dsblogpost__post__navigation .post__navs .content h4 {
+            font-size: 14px;
+            line-height: 22px;
+        }
+        .dsblogpost__post__navigation .post__navs .content span svg {
+            height: 14px;
+            width: 14px;
+        }
+        .dsblogpost__comments .comment__item .content .comment__body {
+            font-size: 14px;
+            line-height: 22px;
+        }
+        .dsblogpost__comment__form {
+            gap: 15px;
+        }
+        .dsblogpost__comment__form input {
+            font-size: 14px;
+            padding: 0 10px;
+            height: 45px;
+        }
+        .dsblogpost__comment__form textarea {
+            font-size: 14px;
+            line-height: 22px;
+            padding: 7px 10px;
+        }
+        .dsblogpost__comment__form button {
+            font-size: 14px;
+            line-height: 45px;
+            height: 45px;
+        }
+        .dsblog__sidebar .ds__search__widget form {
+            height: 45px;
+            border-radius: 15px;
+        }
+        .dsblog__sidebar .ds__search__widget form input {
+            padding: 7px;
+            font-size: 14px;
+        }
+        .dsblog__sidebar .ds__search__widget form button {
+            width: 45px;
+        }
+        .dsblog__sidebar .ds__search__widget form button svg {
+            height: 18px;
+            width: 18px;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -3101,7 +3354,9 @@
     .ds__team__section,
     .ds__about__us__section .spacing,
     .ds__contactus__section,
-    .ds__blog__page__section  {
+    .ds__blog__page__section,
+    .ds__blog__post__section,
+    .dsblogpost__comment__section {
         margin-top: 40px;
     }
     .pagination {
@@ -4286,7 +4541,7 @@
         /*Sidebar*/
         .dsblog__sidebar {
             margin-top: 30px;
-            gap: 40px;
+            gap: 30px;
         }
         .ds__recent__posts__widget .recent__posts {
             gap: 35px;
@@ -4309,6 +4564,112 @@
         .tag__cloud .tags {
             font-size: 14px;
             line-height: 22px;
+        }
+        /*Blog Post*/
+        .blog__post__page .ds__breadcrumbs__section {
+            height: 130px;
+        }
+        .dsblogpost__title {
+            margin-bottom: 20px;
+        }
+        .dsblogpost__title h2 {
+            font-size: 26px;
+            line-height: 40px;
+        }
+        .dsblogpost__title .dsblogpost__featured__image {
+            height: 200px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .dsblogpost__title .dsblogpost__featured__image img {
+            width: 138%;
+        }
+        .dsblogpost__body p {
+            font-size: 14px;
+            line-height: 26px;
+            margin-bottom: 14px;
+        }
+        .dsblogpost__body p.top__text {
+            font-size: 16px;
+        }
+        .dsblogpost__body h5 {
+            font-size: 16px;
+            line-height: 28px;
+            margin-bottom: 6px;
+        }
+        .dsblogpost__share {
+            margin-top: 20px;
+        }
+        .dsblogpost__navcomment__wrapper {
+            gap: 30px;
+        }
+        .dsblogpost__comments .comment__item {
+            gap: 10px;
+        }
+        .dsblogpost__comments .comment__item .image {
+            height: 60px;
+            width: 60px;
+        }
+        .dsblogpost__comments .comment__item .content {
+            width: calc(100% - 70px);
+            gap: 10px;
+        }
+        .dsblogpost__comments .comment__item .content .name__n__reply .name h4 {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        .dsblogpost__comments .comment__item .content .name__n__reply .name p {
+            font-size: 14px;
+            line-height: 26px;
+        }
+        .dsblogpost__comments .comment__item .content .name__n__reply .reply__button {
+            font-size: 14px;
+            line-height: 38px;
+        }
+        .dsblogpost__post__navigation {
+            flex-direction: column;
+            gap: 25px;
+        }
+        .dsblogpost__post__navigation .post__navs {
+            width: 100%;
+        }
+        .dsblogpost__post__navigation .post__navs .image {
+            height: 100px;
+            width: 121px;
+        }
+        .dsblogpost__post__navigation .post__navs .content {
+            width: calc(100% - 131px);
+        }
+        .dsblogpost__post__navigation .post__navs .content span,
+        .dsblogpost__post__navigation .post__navs .content h4 {
+            font-size: 16px;
+            line-height: 26px;
+        }
+        .dsblogpost__post__navigation .post__navs .content span svg {
+            height: 20px;
+            width: 20px;
+        }
+        .dsblogpost__comments .comment__item .content .comment__body {
+            font-size: 14px;
+            line-height: 22px;
+        }
+        .dsblogpost__comment__form {
+            gap: 15px;
+        }
+        .dsblogpost__comment__form input {
+            font-size: 14px;
+            padding: 0 10px;
+            height: 45px;
+        }
+        .dsblogpost__comment__form textarea {
+            font-size: 14px;
+            line-height: 22px;
+            padding: 7px 10px;
+        }
+        .dsblogpost__comment__form button {
+            font-size: 14px;
+            line-height: 45px;
+            height: 45px;
         }
 }
 
@@ -4337,7 +4698,9 @@
     .ds__team__section,
     .ds__about__us__section .spacing,
     .ds__contactus__section,
-    .ds__blog__page__section  {
+    .ds__blog__page__section,
+    .ds__blog__post__section,
+    .dsblogpost__comment__section {
         margin-top: 50px;
     }
     .pagination {
@@ -5339,13 +5702,75 @@
         /*Sidebar*/
         .dsblog__sidebar {
             margin-top: 30px;
-            gap: 40px;
+            gap: 30px;
         }
         .ds__recent__posts__widget .recent__posts {
             gap: 35px;
         }
         .tag__cloud {
             gap: 10px;
+        }
+        /*Blog Post*/
+        .blog__post__page .ds__breadcrumbs__section {
+            height: 130px;
+        }
+        .dsblogpost__title {
+            margin-bottom: 25px;
+        }
+        .dsblogpost__title h2 {
+            font-size: 30px;
+            line-height: 44px;
+        }
+        .dsblogpost__title .dsblogpost__featured__image {
+            height: 200px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .dsblogpost__title .dsblogpost__featured__image img {
+            width: 138%;
+        }
+        .dsblogpost__body p {
+            font-size: 16px;
+            line-height: 28px;
+            margin-bottom: 16px;
+        }
+        .dsblogpost__body p.top__text {
+            font-size: 18px;
+        }
+        .dsblogpost__body h5 {
+            line-height: 30px;
+            margin-bottom: 6px;
+        }
+        .dsblogpost__share {
+            margin-top: 30px;
+        }
+        .dsblogpost__navcomment__wrapper {
+            gap: 40px;
+        }
+        .dsblogpost__post__navigation .post__navs .content span,
+        .dsblogpost__post__navigation .post__navs .content h4,
+        .dsblogpost__comments .comment__item .content .name__n__reply .name h4 {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        .dsblogpost__comments .comment__item .content .name__n__reply .name p {
+            font-size: 14px;
+            line-height: 26px;
+        }
+        .dsblogpost__post__navigation {
+            flex-direction: column;
+            gap: 25px;
+        }
+        .dsblogpost__post__navigation .post__navs {
+            width: 100%;
+        }
+        .dsblogpost__post__navigation .post__navs .content span svg {
+            height: 24px;
+            width: 24px;
+        }
+        .dsblogpost__comments .comment__item .content .comment__body {
+            font-size: 14px;
+            line-height: 22px;
         }
 }
 
@@ -5374,7 +5799,9 @@
     .ds__team__section,
     .ds__about__us__section .spacing,
     .ds__contactus__section,
-    .ds__blog__page__section  {
+    .ds__blog__page__section,
+    .ds__blog__post__section,
+    .dsblogpost__comment__section {
         margin-top: 60px;
     }
     .pagination {
@@ -6428,6 +6855,81 @@
         .tag__cloud {
             gap: 10px;
         }
+        /*Blog Post*/
+        .dsblogpost__title .dsblogpost__featured__image {
+            height: 195px;
+            margin-bottom: 10px;
+        }
+        .dsblogpost__title {
+            margin-bottom: 20px;
+        }
+        .dsblogpost__body p {
+            font-size: 16px;
+            line-height: 26px;
+            margin-bottom: 16px;
+        }
+        .dsblogpost__body p.top__text {
+            font-size: 16px;
+        }
+        .dsblogpost__body h5 {
+            font-size: 16px;
+            line-height: 26px;
+            margin-bottom: 4px;
+        }
+        .dsblogpost__share {
+            margin-top: 30px;
+        }
+        .dsblogpost__navcomment__wrapper {
+            gap: 30px;
+        }
+        .dsblogpost__post__navigation .post__navs .content span {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        .dsblogpost__post__navigation .post__navs .content h4 {
+            font-size: 22px;
+            line-height: 32px;
+        }
+        .dsblogpost__share p {
+            font-size: 18px;
+            line-height: 22px;
+        }
+        .dsblogpost__share a svg {
+            height: 26px;
+            width: 26px;
+        }
+        .dsblogpost__navcomment__wrapper .dsblogpost__comments h3,
+        .dsblogpost__navcomment__wrapper .dsblogpost__comments h3 span,
+        .dsblogpost__comments .comment__item .content .name__n__reply .name h4 {
+            font-size: 22px;
+            line-height: 30px;
+        }
+        .dsblogpost__comments .comment__item .content .name__n__reply .name p {
+            font-size: 14px;
+            line-height: 24px;
+        }
+        .dsblogpost__post__navigation {
+            flex-direction: column;
+            gap: 30px;
+        }
+        .dsblogpost__post__navigation .post__navs {
+            width: 100%;
+        }
+        .dsblogpost__post__navigation .post__navs .content span svg {
+            height: 24px;
+            width: 24px;
+        }
+        .dsblogpost__navcomment__wrapper .dsblogpost__comments {
+            gap: 20px;
+        }
+        .dsblogpost__comments .comment__item .content .comment__body {
+            font-size: 14px;
+            line-height: 24px;
+        }
+        .dsblogpost__comments .comment__item .content .name__n__reply .reply__button {
+            font-size: 14px;
+            line-height: 38px;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -6455,7 +6957,9 @@
     .ds__team__section,
     .ds__about__us__section .spacing,
     .ds__contactus__section,
-    .ds__blog__page__section  {
+    .ds__blog__page__section,
+    .ds__blog__post__section,
+    .dsblogpost__comment__section {
         margin-top: 70px;
     }
     .pagination {
@@ -7134,10 +7638,10 @@
             gap: 40px;
         }
         .ds__recent__posts__widget .recent__posts {
-            gap: 35px;
+            gap: 30px;
         }
         .ds__recent__posts__widget .dssdbrrp__item .content {
-            width: calc(100% - 131px);
+            width: calc(100% - 118px);
         }
         .ds__recent__posts__widget .dssdbrrp__item .content p,
         .ds__recent__posts__widget .dssdbrrp__item .content a {
@@ -7145,11 +7649,64 @@
             line-height: 20px;
         }
         .ds__recent__posts__widget .dssdbrrp__item .image {
-            height: 100px;
-            width: 121px;
+            height: 90px;
+            width: 108px;
         }
         .tag__cloud {
             gap: 10px;
+        }
+        /*Blog Post*/
+        .dsblogpost__title .dsblogpost__featured__image {
+            height: 262px;
+            margin-bottom: 10px;
+        }
+        .dsblogpost__title {
+            margin-bottom: 30px;
+        }
+        .dsblogpost__body p {
+            font-size: 16px;
+            line-height: 26px;
+            margin-bottom: 16px;
+        }
+        .dsblogpost__body p.top__text {
+            font-size: 16px;
+        }
+        .dsblogpost__body h5 {
+            font-size: 16px;
+            line-height: 26px;
+            margin-bottom: 4px;
+        }
+        .dsblogpost__share {
+            margin-top: 30px;
+        }
+        .dsblogpost__navcomment__wrapper {
+            gap: 30px;
+        }
+        .dsblogpost__post__navigation .post__navs .content span {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        .dsblogpost__post__navigation .post__navs .content h4 {
+            font-size: 22px;
+            line-height: 32px;
+        }
+        .dsblogpost__share p {
+            font-size: 18px;
+            line-height: 22px;
+        }
+        .dsblogpost__share a svg {
+            height: 26px;
+            width: 26px;
+        }
+        .dsblogpost__navcomment__wrapper .dsblogpost__comments h3,
+        .dsblogpost__navcomment__wrapper .dsblogpost__comments h3 span,
+        .dsblogpost__comments .comment__item .content .name__n__reply .name h4 {
+            font-size: 22px;
+            line-height: 30px;
+        }
+        .dsblogpost__comments .comment__item .content .name__n__reply .name p {
+            font-size: 14px;
+            line-height: 24px;
         }
 }
 
@@ -7177,7 +7734,9 @@
     .ds__team__section,
     .ds__about__us__section .spacing,
     .ds__contactus__section,
-    .ds__blog__page__section  {
+    .ds__blog__page__section,
+    .ds__blog__post__section,
+    .dsblogpost__comment__section {
         margin-top: 80px;
     }
     /*===== Home Page =====*/
@@ -7495,6 +8054,10 @@
             font-size: 18px;
             line-height: 24px;
         }
+        /*Blog Post*/
+        .dsblogpost__title .dsblogpost__featured__image {
+            height: 313px;
+        }
 }
 
 @media (min-width: 1400px) and (max-width: 1499px) {
@@ -7517,7 +8080,9 @@
     .ds__cartinfoshippingcheckout__section,
     .ds__about__us__section .spacing,
     .ds__contactus__section,
-    .ds__blog__page__section  {
+    .ds__blog__page__section,
+    .ds__blog__post__section,
+    .dsblogpost__comment__section {
         margin-top: 80px;
     }
     /*===== Home Page =====*/
