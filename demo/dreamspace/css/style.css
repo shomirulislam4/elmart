@@ -22,7 +22,7 @@
 8. Contact Us Page
 9. Blog Page
 10. Review Page
-11. Privacy & Terms Pages
+12. 404, Login, and Register pages
 
 
 **********************************************/
@@ -176,6 +176,7 @@ button:focus {
     line-height: 24px;
     font-weight: 600;
     font-family: 'Urbanist', sans-serif;
+    text-transform: capitalize;
     background: var(--main-color);
     color: #FFF;
     transition: 0.3s;
@@ -6568,6 +6569,101 @@ form .checkbox label {
     font-family: 'Urbanist', sans-serif;
     margin-bottom: 24px;
 }
+
+/* ====================================================================
+   12. 404, Login, and Register pages
+==================================================================== */
+/*** Start of 404 Page Not Found ***/
+.ds__pagenotfound__section {
+    height: 973px;
+    position: relative;
+    overflow: hidden;
+}
+
+.ds__pagenotfound__section .bg__img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: auto;
+    z-index: -1;
+}
+
+.ds__pagenotfound__section .ds__pagenotfound__wrapper {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ds__pagenotfound__section .ds__pagenotfound__wrapper h4 {
+    color: #FFF;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 600;
+    font-family: 'Urbanist', sans-serif;
+    text-align: center;
+}
+
+.ds__pagenotfound__section .ds__pagenotfound__wrapper h2 {
+    color: #FFF;
+    font-size: 82px;
+    line-height: 98px;
+    font-weight: 800;
+    font-family: 'Urbanist', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.ds__pagenotfound__section .ds__pagenotfound__wrapper p {
+    color: #FFF;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    font-family: 'Urbanist', sans-serif;
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.ds__pagenotfound__section .ds__pagenotfound__wrapper .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.ds__pagenotfound__section .ds__pagenotfound__wrapper .buttons .ds__button__a:first-child {
+    color: var(--text-color);
+    background: #FFF;
+}
+
+.ds__pagenotfound__section .ds__pagenotfound__wrapper .buttons .ds__button__a:first-child:hover {
+    color: #FFF;
+    background: var(--text-color);
+}
+
+.ds__pagenotfound__section .ds__pagenotfound__wrapper .buttons .ds__button__a:first-child svg {
+    height: 20px;
+    width: 20px;
+    stroke: var(--text-color);
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.ds__pagenotfound__section .ds__pagenotfound__wrapper .buttons .ds__button__a:first-child:hover svg {
+    stroke: #FFF;
+}
+
+.ds__404__page .ds__footer {
+    margin-top: 0;
+}
+/*** End of 404 Page Not Found ***/
 
 /*
 rgba(95, 23, 6, 0.4)
