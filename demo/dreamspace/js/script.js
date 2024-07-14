@@ -583,5 +583,17 @@
         $(window).resize(adjustClass);
     });
 
+    //Product Quick View Popup
+    $(function(){
+        //Mobile Menu Main Show/Hide
+        $('.dsps__ctabtns__quickview').on('click', function(){
+            $('.ds__product__quickview__popup').addClass('show')
+        })
+        $('.ds__prod__quickview__btn').on('click', function(){
+            $('.ds__product__quickview__popup').removeClass('show')
+        })
+    });
+
+
 
 }) (jQuery);

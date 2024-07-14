@@ -1840,6 +1840,18 @@
             width: 14px;
             height: 14px;
         }
+    /*===== Product Quick View Popup =====*/
+        .ds__prod__quickview__btn {
+            height: 35px;
+            width: 35px;
+            line-height: 35px;
+            font-size: 14px;
+            top: 10px;
+        }
+        .ds__product__quickview__popup .dssp__product__info {
+            height: 90vh;
+            margin-top: 35px;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
@@ -3492,6 +3504,18 @@
             width: 16px;
             height: 16px;
         }
+        /*===== Product Quick View Popup =====*/
+            .ds__prod__quickview__btn {
+                height: 40px;
+                width: 40px;
+                line-height: 40px;
+                font-size: 16px;
+                top: 10px;
+            }
+            .ds__product__quickview__popup .dssp__product__info {
+                height: 90vh;
+                margin-top: 40px;
+            }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -4906,6 +4930,18 @@
             line-height: 44px;
             height: 44px;
         }
+    /*===== Product Quick View Popup =====*/
+        .ds__prod__quickview__btn {
+            height: 40px;
+            width: 40px;
+            line-height: 40px;
+            font-size: 16px;
+            top: 10px;
+        }
+        .ds__product__quickview__popup .dssp__product__info {
+            height: 90vh;
+            margin-top: 40px;
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -6064,6 +6100,18 @@
         }
         .dslogreg__image {
             display: none;
+        }
+    /*===== Product Quick View Popup =====*/
+        .ds__prod__quickview__btn {
+            height: 40px;
+            width: 40px;
+            line-height: 40px;
+            font-size: 16px;
+            top: 10px;
+        }
+        .ds__product__quickview__popup .dssp__product__info {
+            height: 90vh;
+            margin-top: 40px;
         }
 }
 
@@ -7269,6 +7317,13 @@
         .dslogreg__wrapper .ctas p a {
             margin-bottom: 4px;
         }
+    /*===== Product Quick View Popup =====*/
+        .ds__prod__quickview__btn {
+            height: 45px;
+            width: 45px;
+            line-height: 45px;
+            font-size: 18px;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -7610,14 +7665,19 @@
         /*Blog Section*/
         .dsblog__slider__btn__prev,
         .dsblog__slider__btn__next {
-            height: 54px;
-            width: 54px;
+            height: 42px;
+            width: 42px;
         }
         .dsblog__slider__btn__prev {
-            left: -34px;
+            left: -16px;
         }
         .dsblog__slider__btn__next {
-            right: -34px;
+            right: -16px;
+        }
+        .dsblog__slider__btn__prev svg,
+        .dsblog__slider__btn__next svg {
+            height: 24px;
+            width: 24px;
         }
         .dsblog__slider .swiper-slide {
             padding: 10px;

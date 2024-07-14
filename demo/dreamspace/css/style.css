@@ -22,8 +22,9 @@
 8. Contact Us Page
 9. Blog Page
 10. Review & Testimonials Page
+11. Privacy & Terms Pages
 12. 404, Login, and Register pages
-
+13. Product Quick View popup
 
 **********************************************/
 
@@ -1040,7 +1041,7 @@ input[type="radio"]:checked::before {
 .ds__search__popup {
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
     height: 0;
     width: 100vw;
     background: rgba(238, 238, 238, 0.6);
@@ -6834,12 +6835,73 @@ form .checkbox label {
 .dslogreg__wrapper .ctas a.forgotpass:hover {
     color: var(--main-color);
 }
-
-
-
-
-
 /*** End of Login & Register Pages ***/
+
+/* ====================================================================
+   13. Product Quick View Popup
+==================================================================== */
+.ds__product__quickview__popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 999999;
+    background: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.ds__product__quickview__popup.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.ds__product__quickview__popup .dssp__product__info {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.ds__product__quickview__popup .dssp__product__details {
+	padding-left: 0;
+}
+
+.ds__prod__quickview__btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 50px;
+    line-height: 50px;
+    width: 50px;
+    font-size: 20px;
+    color: var(--text-color);
+    background: #FFF;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.ds__prod__quickview__btn:hover {
+    color: #FFF;
+    background: var(--main-color);
+}
+
+@media (max-width: 991px) {
+    
+}
 
 
 /*
