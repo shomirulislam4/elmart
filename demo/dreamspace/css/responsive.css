@@ -26,7 +26,7 @@
     .ds__blog__page__section,
     .ds__blog__post__section,
     .dsblogpost__comment__section,
-    .ds__review__section,
+    .ds__review__testimonial__section,
     .ds__privacy__terms__section {
         margin-top: 30px;
     }
@@ -557,20 +557,20 @@
         .ds__testimonials__section .dsts__wrapper .dscs__titlenav .dscs__nav {
             margin-top: 8px;
         }
-        .ds__testimonials__slider .swiper-slide p {
+        .ds__testimonial__item p {
             font-size: 12px;
             line-height: 18px;
             margin-bottom: 10px;
         }
-        .ds__testimonials__slider .swiper-slide .dsts__user__info .image {
+        .ds__testimonial__item .dsts__user__info .image {
             height: 30px;
             width: 30px;
         }
-        .ds__testimonials__slider .swiper-slide .dsts__user__info .text h3 {
+        .ds__testimonial__item .dsts__user__info .text h3 {
             font-size: 10px;
             line-height: 14px;
         }
-        .ds__testimonials__slider .swiper-slide .dsts__user__info .text h4 {
+        .ds__testimonial__item .dsts__user__info .text h4 {
             font-size: 8px;
             line-height: 14px;
         }
@@ -1792,6 +1792,54 @@
             gap: 10px;
             flex-direction: column;
         }
+        /*Login & Register*/
+        .ds__login__register__header {
+            padding: 20px 0;
+        }
+        .ds__login__register__section {
+            margin-top: 10px;
+        }
+        .ds__login__register__section .dscs__titlenav.titlewithtext {
+            margin-bottom: 0;
+        }
+        .dslogreg__wrapper {
+            gap: 10px;
+        }
+        .dslogreg__wrapper form {
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+        .dslogreg__wrapper form .field label {
+            font-size: 12px;
+        }
+        .dslogreg__wrapper .ctas {
+            margin-top: 10px;
+        }
+        .dslogreg__wrapper .ctas p,
+        .dslogreg__wrapper .ctas p a {
+            font-size: 12px;
+            margin-bottom: 8px;
+        }
+        .dslogreg__wrapper .ctas a.forgotpass {
+            font-size: 12px;
+        }
+        .dslogreg__image {
+            display: none;
+        }
+        .dslogreg__wrapper form .field input {
+            height: 40px;
+            padding: 0 10px;
+        }
+        .dslogreg__wrapper form button,
+        .dslogreg__wrapper .ds__logreg__social {
+            font-size: 12px;
+            line-height: 36px;
+            height: 36px;
+        }
+        .dslogreg__wrapper .ds__logreg__social svg {
+            width: 14px;
+            height: 14px;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
@@ -1822,7 +1870,7 @@
     .ds__blog__page__section,
     .ds__blog__post__section,
     .dsblogpost__comment__section,
-    .ds__review__section,
+    .ds__review__testimonial__section,
     .ds__privacy__terms__section {
         margin-top: 30px;
     }
@@ -2281,20 +2329,20 @@
         .ds__testimonials__section .dsts__wrapper .dscs__titlenav .dscs__nav {
             margin-top: 8px;
         }
-        .ds__testimonials__slider .swiper-slide p {
+        .ds__testimonial__item p {
             font-size: 14px;
             line-height: 20px;
             margin-bottom: 10px;
         }
-        .ds__testimonials__slider .swiper-slide .dsts__user__info .image {
+        .ds__testimonial__item .dsts__user__info .image {
             height: 35px;
             width: 35px;
         }
-        .ds__testimonials__slider .swiper-slide .dsts__user__info .text h3 {
+        .ds__testimonial__item .dsts__user__info .text h3 {
             font-size: 12px;
             line-height: 18px;
         }
-        .ds__testimonials__slider .swiper-slide .dsts__user__info .text h4 {
+        .ds__testimonial__item .dsts__user__info .text h4 {
             font-size: 10px;
             line-height: 18px;
         }
@@ -3396,6 +3444,54 @@
         .ds__pagenotfound__section .ds__pagenotfound__wrapper .buttons {
             gap: 10px;
         }
+        /*Login & Register*/
+        .ds__login__register__header {
+            padding: 20px 0;
+        }
+        .ds__login__register__section {
+            margin-top: 10px;
+        }
+        .ds__login__register__section .dscs__titlenav.titlewithtext {
+            margin-bottom: 0;
+        }
+        .dslogreg__wrapper {
+            gap: 10px;
+        }
+        .dslogreg__wrapper form {
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+        .dslogreg__wrapper form .field label {
+            font-size: 14px;
+        }
+        .dslogreg__wrapper .ctas {
+            margin-top: 10px;
+        }
+        .dslogreg__wrapper .ctas p,
+        .dslogreg__wrapper .ctas p a {
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        .dslogreg__wrapper .ctas a.forgotpass {
+            font-size: 14px;
+        }
+        .dslogreg__image {
+            display: none;
+        }
+        .dslogreg__wrapper form .field input {
+            height: 40px;
+            padding: 0 10px;
+        }
+        .dslogreg__wrapper form button,
+        .dslogreg__wrapper .ds__logreg__social {
+            font-size: 14px;
+            line-height: 40px;
+            height: 40px;
+        }
+        .dslogreg__wrapper .ds__logreg__social svg {
+            width: 16px;
+            height: 16px;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -3426,7 +3522,7 @@
     .ds__blog__page__section,
     .ds__blog__post__section,
     .dsblogpost__comment__section,
-    .ds__review__section,
+    .ds__review__testimonial__section,
     .ds__privacy__terms__section {
         margin-top: 40px;
     }
@@ -3857,20 +3953,20 @@
         .ds__testimonials__section .dsts__wrapper .dscs__titlenav .dscs__nav {
             margin-top: 25px;
         }
-        .ds__testimonials__slider .swiper-slide p {
+        .ds__testimonial__item p {
             font-size: 16px;
             margin-bottom: 20px;
             line-height: 26px;
         }
-        .ds__testimonials__slider .swiper-slide .dsts__user__info .image {
+        .ds__testimonial__item .dsts__user__info .image {
             height: 45px;
             width: 45px;
         }
-        .ds__testimonials__slider .swiper-slide .dsts__user__info .text h3 {
+        .ds__testimonial__item .dsts__user__info .text h3 {
             font-size: 16px;
             line-height: 22px;
         }
-        .ds__testimonials__slider .swiper-slide .dsts__user__info .text h4 {
+        .ds__testimonial__item .dsts__user__info .text h4 {
             font-size: 12px;
             line-height: 20px;
         }
@@ -4774,6 +4870,42 @@
         .ds__pagenotfound__section .ds__pagenotfound__wrapper .buttons {
             gap: 15px;
         }
+        /*Login & Register*/
+        .ds__login__register__header {
+            padding: 20px 0;
+        }
+        .ds__login__register__section {
+            margin-top: 15px;
+        }
+        .ds__login__register__section .dscs__titlenav.titlewithtext {
+            margin-bottom: 0;
+        }
+        .dslogreg__wrapper {
+            gap: 10px;
+        }
+        .dslogreg__wrapper form {
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+        .dslogreg__wrapper .ctas {
+            margin-top: 10px;
+        }
+        .dslogreg__wrapper .ctas p,
+        .dslogreg__wrapper .ctas p a {
+            margin-bottom: 8px;
+        }
+        .dslogreg__image {
+            display: none;
+        }
+        .dslogreg__wrapper form .field input {
+            height: 44px;
+            padding: 0 10px;
+        }
+        .dslogreg__wrapper form button,
+        .dslogreg__wrapper .ds__logreg__social {
+            line-height: 44px;
+            height: 44px;
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -4804,7 +4936,7 @@
     .ds__blog__page__section,
     .ds__blog__post__section,
     .dsblogpost__comment__section,
-    .ds__review__section,
+    .ds__review__testimonial__section,
     .ds__privacy__terms__section {
         margin-top: 50px;
     }
@@ -5192,20 +5324,20 @@
         .ds__testimonials__section .dsts__wrapper .dscs__titlenav .dscs__nav {
             margin-top: 25px;
         }
-        .ds__testimonials__slider .swiper-slide p {
+        .ds__testimonial__item p {
             font-size: 20px;
             margin-bottom: 30px;
             line-height: 30px;
         }
-        .ds__testimonials__slider .swiper-slide .dsts__user__info .image {
+        .ds__testimonial__item .dsts__user__info .image {
             height: 52px;
             width: 52px;
         }
-        .ds__testimonials__slider .swiper-slide .dsts__user__info .text h3 {
+        .ds__testimonial__item .dsts__user__info .text h3 {
             font-size: 18px;
             line-height: 26px;
         }
-        .ds__testimonials__slider .swiper-slide .dsts__user__info .text h4 {
+        .ds__testimonial__item .dsts__user__info .text h4 {
             font-size: 14px;
             line-height: 22px;
         }
@@ -5909,6 +6041,30 @@
         .ds__pagenotfound__section .ds__pagenotfound__wrapper .buttons {
             gap: 15px;
         }
+        /*Login & Register*/
+        .ds__login__register__header {
+            padding: 26px 0;
+        }
+        .ds__login__register__section {
+            margin-top: 20px;
+        }
+        .ds__login__register__section .dscs__titlenav.titlewithtext {
+            margin-bottom: 10px;
+        }
+        .dslogreg__wrapper form {
+            gap: 18px;
+            margin-bottom: 12px;
+        }
+        .dslogreg__wrapper .ctas {
+            margin-top: 10px;
+        }
+        .dslogreg__wrapper .ctas p,
+        .dslogreg__wrapper .ctas p a {
+            margin-bottom: 8px;
+        }
+        .dslogreg__image {
+            display: none;
+        }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -5939,7 +6095,7 @@
     .ds__blog__page__section,
     .ds__blog__post__section,
     .dsblogpost__comment__section,
-    .ds__review__section,
+    .ds__review__testimonial__section,
     .ds__privacy__terms__section {
         margin-top: 60px;
     }
@@ -6337,20 +6493,20 @@
         .ds__testimonials__section .dsts__wrapper .dscs__titlenav .dscs__nav {
             margin-top: 25px;
         }
-        .ds__testimonials__slider .swiper-slide p {
+        .ds__testimonial__item p {
             font-size: 20px;
             margin-bottom: 30px;
             line-height: 30px;
         }
-        .ds__testimonials__slider .swiper-slide .dsts__user__info .image {
+        .ds__testimonial__item .dsts__user__info .image {
             height: 52px;
             width: 52px;
         }
-        .ds__testimonials__slider .swiper-slide .dsts__user__info .text h3 {
+        .ds__testimonial__item .dsts__user__info .text h3 {
             font-size: 18px;
             line-height: 26px;
         }
-        .ds__testimonials__slider .swiper-slide .dsts__user__info .text h4 {
+        .ds__testimonial__item .dsts__user__info .text h4 {
             font-size: 14px;
             line-height: 22px;
         }
@@ -7098,6 +7254,21 @@
             line-height: 28px;
             margin-bottom: 30px;
         }
+        /*Login & Register*/
+        .ds__login__register__section .dscs__titlenav.titlewithtext {
+            margin-bottom: 0;
+        }
+        .dslogreg__wrapper form {
+            gap: 10px;
+            margin-bottom: 0;
+        }
+        .dslogreg__wrapper .ctas {
+            margin-top: 0;
+        }
+        .dslogreg__wrapper .ctas p,
+        .dslogreg__wrapper .ctas p a {
+            margin-bottom: 4px;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -7128,7 +7299,7 @@
     .ds__blog__page__section,
     .ds__blog__post__section,
     .dsblogpost__comment__section,
-    .ds__review__section,
+    .ds__review__testimonial__section,
     .ds__privacy__terms__section {
         margin-top: 70px;
     }
@@ -7409,7 +7580,7 @@
         .ds__testimonials__section .dsts__wrapper .dscs__titlenav .dscs__nav {
             margin-top: 25px;
         }
-        .ds__testimonials__slider .swiper-slide p {
+        .ds__testimonial__item p {
             font-size: 26px;
             margin-bottom: 50px;
         }
@@ -7878,11 +8049,12 @@
             font-size: 14px;
             line-height: 24px;
         }
-    /*===== Review Page =====*/
-        .ds__review__section .dsreview__wrapper {
+    /*===== Review & Testimonials Page =====*/
+        .ds__review__testimonial__section .dsrevtest__wrapper {
             gap: 10px;
         }
-        .ds__review__section .dsreview__wrapper .dssp__submitted__review__item {
+        .ds__review__testimonial__section .dsrevtest__wrapper .dssp__submitted__review__item,
+        .ds__review__testimonial__section .dsrevtest__wrapper .ds__testimonial__item {
             width: 463px;
         }
     /*===== Privacy & Terms Pages =====*/
@@ -7914,6 +8086,21 @@
             line-height: 28px;
             margin-bottom: 30px;
         }
+        /*Login & Register*/
+        .ds__login__register__section .dscs__titlenav.titlewithtext {
+            margin-bottom: 10px;
+        }
+        .dslogreg__wrapper form {
+            gap: 18px;
+            margin-bottom: 12px;
+        }
+        .dslogreg__wrapper .ctas {
+            margin-top: 10px;
+        }
+        .dslogreg__wrapper .ctas p,
+        .dslogreg__wrapper .ctas p a {
+            margin-bottom: 8px;
+        }
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -7943,7 +8130,7 @@
     .ds__blog__page__section,
     .ds__blog__post__section,
     .dsblogpost__comment__section,
-    .ds__review__section,
+    .ds__review__testimonial__section,
     .ds__privacy__terms__section {
         margin-top: 80px;
     }
@@ -8266,11 +8453,12 @@
         .dsblogpost__title .dsblogpost__featured__image {
             height: 313px;
         }
-    /*===== Review Page =====*/
-        .ds__review__section .dsreview__wrapper {
+    /*===== Review & Testimonials Page =====*/
+        .ds__review__testimonial__section .dsrevtest__wrapper {
             gap: 20px;
         }
-        .ds__review__section .dsreview__wrapper .dssp__submitted__review__item {
+        .ds__review__testimonial__section .dsrevtest__wrapper .dssp__submitted__review__item,
+        .ds__review__testimonial__section .dsrevtest__wrapper .ds__testimonial__item {
             width: 548px;
         }
     /*===== Privacy & Terms Pages =====*/
@@ -8304,7 +8492,7 @@
     .ds__blog__page__section,
     .ds__blog__post__section,
     .dsblogpost__comment__section,
-    .ds__review__section,
+    .ds__review__testimonial__section,
     .ds__privacy__terms__section {
         margin-top: 80px;
     }

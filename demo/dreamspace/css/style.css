@@ -21,7 +21,7 @@
 7. About Us Page
 8. Contact Us Page
 9. Blog Page
-10. Review Page
+10. Review & Testimonials Page
 12. 404, Login, and Register pages
 
 
@@ -2425,7 +2425,7 @@ input[type="radio"]:checked::before {
     padding: 96px 53px 74px 153px;
 }
 
-.ds__testimonials__slider .swiper-slide p {
+.ds__testimonial__item p {
     color: #FFF;
     font-size: 30px;
     line-height: 35px;
@@ -2434,43 +2434,43 @@ input[type="radio"]:checked::before {
     margin-bottom: 60px;
 }
 
-.ds__testimonials__slider .swiper-slide p::before {
+.ds__testimonial__item p::before {
     content: '"';
     font-style: italic;
     margin-right: 5px;
 }
 
-.ds__testimonials__slider .swiper-slide p::after {
+.ds__testimonial__item p::after {
     content: '"';
     font-style: italic;
     margin-left: -2px;
 }
 
-.ds__testimonials__slider .swiper-slide .dsts__user__info {
+.ds__testimonial__item .dsts__user__info {
     display: flex;
     gap: 15px;
 }
 
-.ds__testimonials__slider .swiper-slide .dsts__user__info .image {
+.ds__testimonial__item .dsts__user__info .image {
     height: 72px;
     width: 72px;
     border-radius: 50%;
     overflow: hidden;
 }
 
-.ds__testimonials__slider .swiper-slide .dsts__user__info .image img {
+.ds__testimonial__item .dsts__user__info .image img {
     width: 100%;
     height: 100%;
 }
 
-.ds__testimonials__slider .swiper-slide .dsts__user__info .text {
+.ds__testimonial__item .dsts__user__info .text {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.ds__testimonials__slider .swiper-slide .dsts__user__info .text h3,
-.ds__testimonials__slider .swiper-slide .dsts__user__info .text h4 {
+.ds__testimonial__item .dsts__user__info .text h3,
+.ds__testimonial__item .dsts__user__info .text h4 {
     color: #FFF;
     font-size: 24px;
     line-height: 32px;
@@ -2479,7 +2479,7 @@ input[type="radio"]:checked::before {
     margin-bottom: 0;
 }
 
-.ds__testimonials__slider .swiper-slide .dsts__user__info .text h4 {
+.ds__testimonial__item .dsts__user__info .text h4 {
     font-size: 20px;
     line-height: 32px;
     font-weight: 400;
@@ -6499,20 +6499,22 @@ form .checkbox label {
 /*** End of Blog Post ***/
 
 /* ====================================================================
-   10. Review Page
+   10. Review & Testimonials Page
 ==================================================================== */
-.ds__review__section {
+.ds__review__testimonial__section {
     margin-top: 100px;
 }
 
-.ds__review__section .dsreview__wrapper {
+.ds__review__testimonial__section .dsrevtest__wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 30px;
 }
 
-.ds__review__section .dsreview__wrapper .dssp__submitted__review__item {
+
+.ds__review__testimonial__section .dsrevtest__wrapper .dssp__submitted__review__item,
+.ds__review__testimonial__section .dsrevtest__wrapper .ds__testimonial__item {
 	width: 633px;
 	padding-bottom: 0;
 	border-bottom: 0;
@@ -6521,27 +6523,28 @@ form .checkbox label {
 }
 
 @media (max-width: 991px) {
-    .ds__review__section .dsreview__wrapper .dssp__submitted__review__item {
+    .ds__review__testimonial__section .dsrevtest__wrapper .dssp__submitted__review__item,
+    .ds__review__testimonial__section .dsrevtest__wrapper .ds__testimonial__item {
         width: 100%;
     }
 }
 
-.ds__review__section .dssp__submitted__review__item .usernrating .user__info .info h4,
-.ds__review__section .dssp__submitted__review__item .user__review h4,
-.ds__review__section .dssp__submitted__review__item .user__review .dssp__user__review__text,
-.ds__review__section .dssp__submitted__review__item .user__review .dssp__user__review__text .dssp__urt__toggle {
+.ds__review__testimonial__section .dssp__submitted__review__item .usernrating .user__info .info h4,
+.ds__review__testimonial__section .dssp__submitted__review__item .user__review h4,
+.ds__review__testimonial__section .dssp__submitted__review__item .user__review .dssp__user__review__text,
+.ds__review__testimonial__section .dssp__submitted__review__item .user__review .dssp__user__review__text .dssp__urt__toggle {
     color: #FFF;
 }
 
-.ds__review__section .dssp__submitted__review__item .user__review .dssp__user__review__text .dssp__urt__toggle:hover {
+.ds__review__testimonial__section .dssp__submitted__review__item .user__review .dssp__user__review__text .dssp__urt__toggle:hover {
     color: var(--main-color);
 }
 
-.ds__review__section .dssp__submitted__review__item .usernrating .stars svg {
+.ds__review__testimonial__section .dssp__submitted__review__item .usernrating .stars svg {
     fill: #FFF;
 }
 
-.ds__review__section .dssp__submitted__review__item .usernrating .stars svg.empty {
+.ds__review__testimonial__section .dssp__submitted__review__item .usernrating .stars svg.empty {
     fill: #D2CCC9;
 }
 
@@ -6664,6 +6667,180 @@ form .checkbox label {
     margin-top: 0;
 }
 /*** End of 404 Page Not Found ***/
+
+/*** Start of Login & Register Pages ***/
+.ds__login__register__header {
+    padding: 34px 0;
+}
+
+.ds__login__register__section {
+    margin-top: 30px;
+}
+
+.ds__login__register__section .dscs__titlenav.titlewithtext {
+    margin-bottom: 30px;
+}
+
+.dslogreg__image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Login */
+.dslogreg__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    height: 100%;
+    width: 100%;
+}
+
+.dslogreg__wrapper form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 15px;
+}
+
+.dslogreg__wrapper form .field {
+    display: flex;
+    flex-direction: column;
+}
+
+.dslogreg__wrapper form .field label {
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 600;
+    font-family: 'Urbanist', sans-serif;
+    margin-bottom: 4px;
+}
+
+.dslogreg__wrapper form .field input {
+    width: 100%;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Urbanist', sans-serif;
+    border: 1px solid var(--text-color);
+    padding: 0 16px;
+}
+
+.dslogreg__wrapper form button {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 48px;
+    height: 48px;
+    width: 100%;
+    background: var(--text-color);
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.dslogreg__wrapper form button:hover {
+    color: var(--text-color);
+    background: #FFF;
+    box-shadow:  0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dslogreg__wrapper .ds__logreg__social {
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 48px;
+    height: 48px;
+    width: 100%;
+    background: #FFF;
+    box-shadow:  0 4px 4px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.dslogreg__wrapper .ds__logreg__social:hover {
+    color: #FFF;
+    background: var(--text-color);
+}
+
+.dslogreg__wrapper .ds__logreg__social svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--text-color);
+    margin-right: 5px;
+}
+
+.dslogreg__wrapper .ds__logreg__social.continue__with__google:hover svg #p1 {
+    fill: #4285F4;
+}
+.dslogreg__wrapper .ds__logreg__social.continue__with__google:hover svg #p2 {
+    fill: #34A853;
+}
+.dslogreg__wrapper .ds__logreg__social.continue__with__google:hover svg #p3 {
+    fill: #FBBC05;
+}
+.dslogreg__wrapper .ds__logreg__social.continue__with__google:hover svg #p4 {
+    fill: #EA4335;
+}
+
+.dslogreg__wrapper .ds__logreg__social.continue__with__apple:hover svg {
+    fill: #FFF;
+}
+
+.dslogreg__wrapper .ds__logreg__social.continue__with__facebook:hover svg {
+    fill: #1877F2;
+}
+
+.dslogreg__wrapper .ctas {
+    margin-top: 30px;
+}
+
+.dslogreg__wrapper .ctas a.forgotpass {
+    display: block;
+    width: 100%;
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 150%;
+    text-align: center;
+}
+
+.dslogreg__wrapper .ctas p,
+.dslogreg__wrapper .ctas p a {
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 600;
+    font-family: 'Urbanist', sans-serif;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.dslogreg__wrapper .ctas p a {
+    margin-bottom: 0;
+}
+
+.dslogreg__wrapper .ctas p a:hover {
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.dslogreg__wrapper .ctas a.forgotpass:hover {
+    color: var(--main-color);
+}
+
+
+
+
+
+/*** End of Login & Register Pages ***/
+
 
 /*
 rgba(95, 23, 6, 0.4)
