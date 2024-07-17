@@ -18,16 +18,6 @@ $(function(){
   });
 });
 
-//Preloader
-$(function(){
-      $(window).on("load",function(){
-        $('#preloader').delay(800).fadeOut(500);
-      });
-      $('.pre-close-btn').on('click', function(){
-        $('#preloader').fadeOut(500);
-      })
-});
-
 //Custom Cursor
 $(function(){
   $("body").prepend('<div class="cursor"></div>');
@@ -93,7 +83,7 @@ $(function() {
 //Typer
 $(function() {
   var typed = new Typed('#text-change', {
-    strings: ['Multipurpose', 'Fashion', 'Electronics', 'Men Clothing', 'Women Clothing', 'Furniture', 'Grocery'],
+    strings: ['Multipurpose', 'Fashion', 'Electronics', 'Furniture', 'Grocery'],
     typeSpeed: 50,
     backSpeed: 50,
     loop: true,
@@ -108,7 +98,6 @@ $(function() {
     layoutMode: 'fitRows'
   });
 
-  // Filter by category - set 'home' category as default
   $grid.isotope({ filter: '.home' });
 
   // Filter by category
@@ -123,7 +112,7 @@ $(function() {
     $('.demo-filter').toggleClass('show');
   })
 
-  // Search functionality
+  //Search function
   $('.demo-search-box').on('submit', function(event) {
     event.preventDefault();
 
@@ -212,8 +201,10 @@ $(function () {
       $('#shopCount').text('(' + $('.shop').length + ')');
       $('#singleprodCount').text('(' + $('.single-product').length + ')');
       $('#blogCount').text('(' + $('.blog').length + ')');
+      $('#blogPostCount').text('(' + $('.blog-post').length + ')');
       $('#aboutCount').text('(' + $('.about').length + ')');
       $('#contactCount').text('(' + $('.contact').length + ')');
+      $('#wishlistCount').text('(' + $('.wishlist').length + ')');
       $('#userCount').text('(' + $('.user').length + ')');
       $('#vendorCount').text('(' + $('.vendor').length + ')');
       $('#cartCount').text('(' + $('.cart').length + ')');
@@ -224,7 +215,7 @@ $(function () {
 });
 
 //Current year
-$(document).ready(function() {
+$(function() {
   var currentYear = (new Date()).getFullYear();
   $('#currentYear').text(currentYear);
 });

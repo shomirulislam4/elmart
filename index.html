@@ -20,13 +20,6 @@
 </head>
 
 <body>
-    <!-- Start of Preloader -->
-    <div id="preloader">
-        <div id="loader"> </div>
-        <div class="pre-close-btn"><i class="fa-solid fa-x"></i></div>
-    </div>
-    <!-- End of Preloader -->
-
     <!-- Start of Header -->
     <header class="main-header">
         <div class="container">
@@ -116,6 +109,10 @@
                             <span>Blog</span>
                             <span id="blogCount">(0)</span>
                         </li>
+                        <li data-filter=".blog-post">
+                            <span>Blog Post</span>
+                            <span id="blogPostCount">(0)</span>
+                        </li>
                         <li data-filter=".about">
                             <span>About</span>
                             <span id="aboutCount">(0)</span>
@@ -123,6 +120,10 @@
                         <li data-filter=".contact">
                             <span>Contact</span>
                             <span id="contactCount">(0)</span>
+                        </li>
+                        <li data-filter=".wishlist">
+                            <span>Wishlist</span>
+                            <span id="wishlistCount">(0)</span>
                         </li>
                         <li data-filter=".user">
                             <span>Login & Register</span>
@@ -283,6 +284,14 @@
                             <figcaption>Fashion Four</figcaption>
                             </figure>
                         </div>
+                        <div class="col-xl-4 col-sm-6 demo-items home">
+                            <figure>
+                            <a target="_blank" href="demo/dreamspace/index.html">
+                                <img src="img/demo/dreamspace/index.png" alt="DreamSpace">
+                            </a>
+                            <figcaption>DreamSpace</figcaption>
+                            </figure>
+                        </div>
                         
                         <!-- Shop Pages -->
                         <div class="col-xl-4 col-sm-6 demo-items shop">
@@ -435,6 +444,12 @@
                             <figcaption>Fashion Four Shop (Variant 2)</figcaption>
                             </figure>
                         </div>
+                        <div class="col-xl-4 col-sm-6 demo-items shop">
+                            <figure>
+                            <a target="_blank" href="demo/dreamspace/shop.html"><img src="img/demo/dreamspace/shop.png" alt="DreamSpace Shop Page"></a>
+                            <figcaption>DreamSpace Shop Page</figcaption>
+                            </figure>
+                        </div>
     
                         <!-- Single product Pages -->
                         <div class="col-xl-4 col-sm-6 demo-items single-product">
@@ -563,6 +578,18 @@
                             <figcaption>Fashion Four Single Product</figcaption>
                             </figure>
                         </div>
+                        <div class="col-xl-4 col-sm-6 demo-items single-product">
+                            <figure>
+                            <a target="_blank" href="demo/dreamspace/single-product.html"><img src="img/demo/dreamspace/single-product.png" alt="Fitness Equipment Store Single Product"></a>
+                            <figcaption>DreamSpace Single Product</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items single-product">
+                            <figure>
+                            <a target="_blank" href="demo/dreamspace/single-product-v2.html"><img src="img/demo/dreamspace/single-product-v2.png" alt="Fashion Four Single Product"></a>
+                            <figcaption>DreamSpace Single Product V2</figcaption>
+                            </figure>
+                        </div>
     
                         <!-- Blog Pages -->
                         <div class="col-xl-4 col-sm-6 demo-items blog">
@@ -573,20 +600,40 @@
                         </div>
                         <div class="col-xl-4 col-sm-6 demo-items blog">
                             <figure>
+                            <a target="_blank" href="demo/dreamspace/blog.html"><img src="img/demo/dreamspace/blog.png" alt="DreamSpace Blog"></a>
+                            <figcaption>DreamSpace Blog</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items blog">
+                            <figure>
+                            <a target="_blank" href="demo/dreamspace/blog-left-sidebar.html"><img src="img/demo/dreamspace/blog-left-sidebar.png" alt="DreamSpace Blog Left Sidebar"></a>
+                            <figcaption>DreamSpace Blog Left Sidebar</figcaption>
+                            </figure>
+                        </div>
+
+                        <!-- Blog Post Pages -->
+                        <div class="col-xl-4 col-sm-6 demo-items blog-post">
+                            <figure>
                             <a target="_blank" href="demo/blog-post.html"><img src="img/demo/blog/blog-post-right-sidebar.png" alt="Blog Post Right Sidebar"></a>
                             <figcaption>Blog Post Right Sidebar</figcaption>
                             </figure>
                         </div>
-                        <div class="col-xl-4 col-sm-6 demo-items blog">
+                        <div class="col-xl-4 col-sm-6 demo-items blog-post">
                             <figure>
                             <a target="_blank" href="demo/blog-post-left-sidebar.html"><img src="img/demo/blog/blog-post-left-sidebar.png" alt="Blog Post Left Sidebar"></a>
                             <figcaption>Blog Post Left Sidebar</figcaption>
                             </figure>
                         </div>
-                        <div class="col-xl-4 col-sm-6 demo-items blog">
+                        <div class="col-xl-4 col-sm-6 demo-items blog-post">
                             <figure>
                             <a target="_blank" href="demo/blog-post-no-sidebar.html"><img src="img/demo/blog/blog-post-no-sidebar.png" alt="Blog Post No Sidebar"></a>
                             <figcaption>Blog Post No Sidebar</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items blog-post">
+                            <figure>
+                            <a target="_blank" href="demo/dreamspace/blog-post.html"><img src="img/demo/dreamspace/blog-post.png" alt="DreamSpace Blog Post"></a>
+                            <figcaption>DreamSpace Blog Post</figcaption>
                             </figure>
                         </div>
     
@@ -607,6 +654,18 @@
                             <figure>
                             <a target="_blank" href="demo/print-on-demand/login_register.html"><img src="img/demo/home/printondemand/print-on-demand-login-register.png" alt="Customer & Login & register"></a>
                             <figcaption>Customer Login & register</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items user">
+                            <figure>
+                            <a target="_blank" href="demo/dreamspace/login.html"><img src="img/demo/dreamspace/login.png" alt="DreamSpace Login Page"></a>
+                            <figcaption>DreamSpace Login Page</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items user">
+                            <figure>
+                            <a target="_blank" href="demo/dreamspace/register.html"><img src="img/demo/dreamspace/register.png" alt="DreamSpace Register Page"></a>
+                            <figcaption>DreamSpace Register Page</figcaption>
                             </figure>
                         </div>
     
@@ -661,6 +720,12 @@
                             <figcaption>Print on Demand About</figcaption>
                             </figure>
                         </div>
+                        <div class="col-xl-4 col-sm-6 demo-items about">
+                            <figure>
+                            <a target="_blank" href="demo/dreamspace/about.html"><img src="img/demo/dreamspace/about.png" alt="DreamSpace About Us"></a>
+                            <figcaption>DreamSpace About Us</figcaption>
+                            </figure>
+                        </div>
 
                         <!-- Cart Pages -->
                         <div class="col-xl-4 col-sm-6 demo-items cart">
@@ -681,28 +746,52 @@
                             <figcaption>Multivendor Grocery Cart</figcaption>
                             </figure>
                         </div>
+                        <div class="col-xl-4 col-sm-6 demo-items cart">
+                            <figure>
+                            <a target="_blank" href="demo/dreamspace/cart.html"><img src="img/demo/dreamspace/cart.png" alt="DreamSpace Cart"></a>
+                            <figcaption>DreamSpace Cart</figcaption>
+                            </figure>
+                        </div>
 
                         <!-- Checkout Pages -->
                         <div class="col-xl-4 col-sm-6 demo-items checkout">
                             <figure>
-                            <a target="_blank" href="demo/checkout.html"><img src="img/demo/others/checkout.png" alt="Fashion Checkout"></a>
-                            <figcaption>Fashion Checkout</figcaption>
+                            <a target="_blank" href="demo/checkout.html"><img src="img/demo/others/checkout.png" alt="Fashion Checkout Page"></a>
+                            <figcaption>Fashion Checkout Page</figcaption>
                             </figure>
                         </div>
                         <div class="col-xl-4 col-sm-6 demo-items checkout">
                             <figure>
-                            <a target="_blank" href="demo/print-on-demand/checkout.html"><img src="img/demo/home/printondemand/print-on-demand-checkout.png" alt="Print on Demand Checkout"></a>
-                            <figcaption>Print on Demand Checkout</figcaption>
+                            <a target="_blank" href="demo/print-on-demand/checkout.html"><img src="img/demo/home/printondemand/print-on-demand-checkout.png" alt="Print on Demand Checkout Page"></a>
+                            <figcaption>Print on Demand Checkout Page</figcaption>
                             </figure>
                         </div>
                         <div class="col-xl-4 col-sm-6 demo-items checkout">
                             <figure>
-                            <a target="_blank" href="demo/checkout-v2.html"><img src="img/demo/home/multivendorgrocery/multivendor-grocery-checkout.png" alt="Multivendor Grocery Checkout"></a>
-                            <figcaption>Multivendor Grocery Checkout</figcaption>
+                            <a target="_blank" href="demo/checkout-v2.html"><img src="img/demo/home/multivendorgrocery/multivendor-grocery-checkout.png" alt="Multivendor Grocery Checkout Page"></a>
+                            <figcaption>Multivendor Grocery Checkout Page</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items checkout">
+                            <figure>
+                            <a target="_blank" href="demo/dreamspace/billing.html"><img src="img/demo/dreamspace/billing.png" alt="DreamSpace Billing Page"></a>
+                            <figcaption>DreamSpace Billing Page</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items checkout">
+                            <figure>
+                            <a target="_blank" href="demo/dreamspace/shipping.html"><img src="img/demo/dreamspace/shipping.png" alt="DreamSpace Shipping Page"></a>
+                            <figcaption>DreamSpace Shipping Page</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items checkout">
+                            <figure>
+                            <a target="_blank" href="demo/dreamspace/checkout.html"><img src="img/demo/dreamspace/checkout.png" alt="DreamSpace Checkout page"></a>
+                            <figcaption>DreamSpace Checkout page</figcaption>
                             </figure>
                         </div>
 
-                        <!-- MY Account Pages -->
+                        <!-- My Account Pages -->
                         <div class="col-xl-4 col-sm-6 demo-items my-acc">
                             <figure>
                             <a target="_blank" href="demo/user-dashboard.html"><img src="img/demo/user/user-dashboard.png" alt="User Dashboard"></a>
@@ -716,6 +805,40 @@
                             </figure>
                         </div>
 
+                        <!-- Contact Pages -->
+                        <div class="col-xl-4 col-sm-6 demo-items contact">
+                            <figure>
+                            <a target="_blank" href="demo/contact.html"><img src="img/demo/others/contact.png" alt="Contact Us"></a>
+                            <figcaption>Contact Us</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items contact">
+                            <figure>
+                            <a target="_blank" href="demo/fitness-equipment/contact.html"><img src="img/demo/home/fitness-equipment/contact.png" alt="Fitness Equipment Store Contact Us"></a>
+                            <figcaption>Fitness Equipment Store Contact Us</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items contact">
+                            <figure>
+                            <a target="_blank" href="demo/dreamspace/contact.html"><img src="img/demo/dreamspace/contact.png" alt="DreamSpace Contact Us"></a>
+                            <figcaption>DreamSpace Contact Us</figcaption>
+                            </figure>
+                        </div>
+
+                        <!-- Wishlist Pages -->
+                        <div class="col-xl-4 col-sm-6 demo-items wishlist">
+                            <figure>
+                            <a target="_blank" href="demo/wishlist.html"><img src="img/demo/others/wishlist.png" alt="Wishlist"></a>
+                            <figcaption>Wishlist</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items wishlist">
+                            <figure>
+                            <a target="_blank" href="demo/dreamspace/wishlist.html"><img src="img/demo/dreamspace/wishlist.png" alt="DreamSpace Wishlist"></a>
+                            <figcaption>DreamSpace Wishlist</figcaption>
+                            </figure>
+                        </div>
+
                         <!-- Other Pages -->
                         <div class="col-xl-4 col-sm-6 demo-items others">
                             <figure>
@@ -723,28 +846,40 @@
                             <figcaption>FAQs</figcaption>
                             </figure>
                         </div>
-                        <div class="col-xl-4 col-sm-6 demo-items others contact">
-                            <figure>
-                            <a target="_blank" href="demo/contact.html"><img src="img/demo/others/contact.png" alt="Contact Us"></a>
-                            <figcaption>Contact Us</figcaption>
-                            </figure>
-                        </div>
-                        <div class="col-xl-4 col-sm-6 demo-items others contact">
-                            <figure>
-                            <a target="_blank" href="demo/fitness-equipment/contact.html"><img src="img/demo/home/fitness-equipment/contact.png" alt="Fitness Equipment Store Contact Us"></a>
-                            <figcaption>Fitness Equipment Store Contact Us</figcaption>
-                            </figure>
-                        </div>
-                        <div class="col-xl-4 col-sm-6 demo-items others">
-                            <figure>
-                            <a target="_blank" href="demo/wishlist.html"><img src="img/demo/others/wishlist.png" alt="Wishlist"></a>
-                            <figcaption>Wishlist</figcaption>
-                            </figure>
-                        </div>
                         <div class="col-xl-4 col-sm-6 demo-items others">
                             <figure>
                             <a target="_blank" href="demo/order-tracking.html"><img src="img/demo/others/track-order.png" alt="Track Order"></a>
                             <figcaption>Track Order</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items others">
+                            <figure>
+                            <a target="_blank" href="demo/dreamspace/404.html"><img src="img/demo/dreamspace/404.png" alt="DreamSpace 404 Page"></a>
+                            <figcaption>DreamSpace 404 Page</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items others">
+                            <figure>
+                            <a target="_blank" href="demo/dreamspace/review.html"><img src="img/demo/dreamspace/review.png" alt="DreamSpace Reviews Page"></a>
+                            <figcaption>DreamSpace Reviews Page</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items others">
+                            <figure>
+                            <a target="_blank" href="demo/dreamspace/testimonials.html"><img src="img/demo/dreamspace/testimonials.png" alt="DreamSpace Testimonials Page"></a>
+                            <figcaption>DreamSpace Testimonials Page</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items others">
+                            <figure>
+                            <a target="_blank" href="demo/dreamspace/privacy-policy.html"><img src="img/demo/dreamspace/privacy-policy.png" alt="DreamSpace Privacy Policy Page"></a>
+                            <figcaption>DreamSpace Privacy Policy Page</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items others">
+                            <figure>
+                            <a target="_blank" href="demo/dreamspace/terms-conditions.html"><img src="img/demo/dreamspace/terms.png" alt="DreamSpace Terms & Conditions Page"></a>
+                            <figcaption>DreamSpace Terms & Conditions Page</figcaption>
                             </figure>
                         </div>
 
