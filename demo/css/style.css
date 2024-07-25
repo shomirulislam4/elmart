@@ -426,6 +426,9 @@
     /* Dark Mode */
     --darkmode-body1: #202124;
     --darkmode-text1: #BDC1C6;
+
+    /* Text Color */
+    --text-color: #13172B;
 }
 
 * {
@@ -439,7 +442,7 @@ html {
 
 body {
     font-family: 'Josefin Sans', sans-serif;
-    color: #13172B;
+    color: var(--text-color);
 }
 
 h1,
@@ -451,7 +454,7 @@ h6,
 span,
 p {
     font-family: 'Josefin Sans', sans-serif;
-    color: #13172B;
+    color: var(--text-color);
 }
 
 h2 a,
@@ -460,7 +463,7 @@ h4 a,
 h5 a,
 h1 a,
 h6 a {
-    color: #13172B;
+    color: var(--text-color);
 }
 
 a {
@@ -515,7 +518,7 @@ button:focus {
     margin: 0;
     border-radius: 50px;
     border: 1px solid var(--main-color1);
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Jost', sans-serif;
     font-size: 20px;
     font-style: normal;
@@ -558,7 +561,7 @@ button:focus {
 
 .button-b:hover {
     background: none;
-    color: #13172B;
+    color: var(--text-color);
 }
 
 .button-c {
@@ -566,7 +569,7 @@ button:focus {
     margin: 0;
     border-radius: 50px;
     border: 1px solid var(--main-color1);
-    color: #13172B;
+    color: var(--text-color);
     background: #fff;
     font-family: 'Jost', sans-serif;
     font-size: 14px;
@@ -1079,7 +1082,7 @@ button:focus {
 
 .hero-sec-top h2 {
     width: 614px;
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 60px;
     font-weight: 700;
@@ -1150,7 +1153,7 @@ button:focus {
 }
 
 .hero-revw-cont span {
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Jost', sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -1195,7 +1198,7 @@ button:focus {
 }
 
 .features-sec-cont h3 {
-	color: #13172B;
+	color: var(--text-color);
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 20px;
 	font-weight: 500;
@@ -1245,7 +1248,7 @@ button:focus {
 }
 
 .cat-card-v2 .category-title h5 {
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -1355,7 +1358,7 @@ button:focus {
 }
 
 .cat-promo-content h2 {
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Jost', sans-serif;
     font-size: 26px;
     font-style: normal;
@@ -1428,7 +1431,7 @@ button:focus {
 }
 
 .work-processing-title h4 {
-    color: #13172B;
+    color: var(--text-color);
     width: 170px;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 20px;
@@ -1568,7 +1571,7 @@ button:focus {
 }
 
 .dwl-content p {
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -1722,7 +1725,7 @@ button:focus {
 }
 
 .testimonial-author-v2 .author-identity h2 {
-    color:#13172B;
+    color:var(--text-color);
     font-family: 'Jost', sans-serif;
     font-size: 20px;
     font-weight: 600;
@@ -1783,7 +1786,7 @@ button:focus {
 }
 
 .main-menu li a {
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Jost', sans-serif;
     font-size: 18px;
     text-transform: capitalize;
@@ -1795,7 +1798,7 @@ button:focus {
 }
 
 .menu-right a {
-    color: #13172B;
+    color: var(--text-color);
     font-size: 24px;
 }
 
@@ -1940,7 +1943,7 @@ button:focus {
 
 .mobile-menu-close a {
     font-size: 32px;
-    color: #13172B;
+    color: var(--text-color);
 }
 
 .mobile-menu .logo {
@@ -1953,7 +1956,7 @@ button:focus {
 	font-weight: 400;
 	padding: 12px 20px;
 	font-family: 'Jost', sans-serif;
-	color: #13172B;
+	color: var(--text-color);
 }
 
 .mobile-menu li a i {
@@ -2015,7 +2018,7 @@ button:focus {
 	right: 0;
 	font-size: 30px;
 	margin: 5px 8px 0 0;
-	color: #13172B;
+	color: var(--text-color);
     transition: 0.3s;
 	-moz-transition: 0.3s;
     -webkit-transition: 0.3s;
@@ -2064,7 +2067,7 @@ button:focus {
     right: 0;
     height: 50px;
     width: 50px;
-    color: #13172B;
+    color: var(--text-color);
     border: 0;
     border-radius: 50px;
     transition: 0.3s;
@@ -2166,13 +2169,13 @@ button:focus {
 .pro-search-result-area .search-content .product-title {
     margin-bottom: 10px;
     font-size: 20px;
-    color: #13172B;
+    color: var(--text-color);
 }
 
 .pro-search-result-area .search-content .product-price-variant {
     font-size: 18px;
     font-weight: 600;
-    color: #13172B;
+    color: var(--text-color);
 }
 
 .pro-search-result-area .search-content .product-price-variant span {
@@ -2196,7 +2199,7 @@ button:focus {
     line-height: 40px;
     border: 1px solid #efefef;
     border-radius: 5px;
-    color: #13172B;
+    color: var(--text-color);
     font-size: 18px;
     font-weight: 500;
     transition: 0.3s;
@@ -2249,13 +2252,13 @@ button:focus {
 
 .cart-slide .cart-header .cart-title {
 	font-size: 26px;
-	color: #13172B;
+	color: var(--text-color);
 	margin-bottom: 0;
 }
 
 .cart-slide .cart-header .cart-close {
 	font-size: 40px;
-	color: #13172B;
+	color: var(--text-color);
     border: 0;
     background: none;
     transition: 0.3s;
@@ -2309,7 +2312,7 @@ button:focus {
 
 .cart-slide .cart-item .item-img .close-btn {
    font-size: 24px;
-   color: #13172B;
+   color: var(--text-color);
    border: 0;
    background: none;
    position: absolute;
@@ -2355,7 +2358,7 @@ button:focus {
 
 .cart-slide .cart-item .item-title {
 	font-size: 16px;
-	color: #13172B;
+	color: var(--text-color);
 	margin-bottom: 10px;
 	overflow: hidden;
 }
@@ -2371,7 +2374,7 @@ button:focus {
 .cart-slide .cart-item .item-price {
 	font-size: 18px;
 	font-family: 'Jost', sans-serif;
-	color: #13172B;
+	color: var(--text-color);
 }
 
 .cart-slide .cart-item .item-quantity {
@@ -2412,7 +2415,7 @@ button:focus {
    width: 26px;
    line-height: 26px;
    font-size: 18px;
-   color: #13172B;
+   color: var(--text-color);
    background-color: #f6f7fb;
    border-radius: 50%;
    transition: all .3s ease-in-out;
@@ -2431,7 +2434,7 @@ button:focus {
 	align-items: center;
 	justify-content: space-between;
 	margin: 22px 0 30px;
-	color: #13172B;
+	color: var(--text-color);
 	font-size: 20px;
 }
 
@@ -2480,7 +2483,7 @@ button:focus {
 }
 
 .log-reg-sld-heading h2 {
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Jost', sans-serif;
     font-size: 36px;
     font-weight: 600;
@@ -2491,7 +2494,7 @@ button:focus {
 
 .log-reg-sld-close {
 	font-size: 40px;
-	color: #13172B;
+	color: var(--text-color);
     border: 0;
     background: none;
     transition: 0.3s;
@@ -2542,7 +2545,7 @@ button:focus {
 }
 
 #accordionLoginRegister .accordion-button.collapsed {
-    color: #13172B;
+    color: var(--text-color);
 }
 
 #accordionLoginRegister .accordion-button.collapsed:hover {
@@ -2662,7 +2665,7 @@ button:focus {
 .log-reg-sld-divider span {
     content: '';
     height: 1px;
-    background-color: #13172B;
+    background-color: var(--text-color);
     width: 30%;
 }
 
@@ -2889,7 +2892,7 @@ button:focus {
 
 .hero-rating-counter h3,
 .hero-rating-counter h3 .hero-count {
-    color: #13172B;
+    color: var(--text-color);
     font-size: 25px;
     font-weight: 600 !important;
     line-height: 23px;
@@ -3441,7 +3444,7 @@ button:focus {
 .feature-category-button:hover {
     background: #fff;
     border: 1px solid var(--main-color1);
-    color: #13172B;
+    color: var(--text-color);
 }
 /** End of Featured Product Section **/
 
@@ -3489,7 +3492,7 @@ button:focus {
     padding: 8px 20px;
     border-radius: 50px;
     background: #E4F2FF;
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 14px;
     line-height: 24px;
@@ -3805,7 +3808,7 @@ button:focus {
 .shop-button:hover {
     background: #fff;
     border: 1px solid var(--main-color1);
-    color: #13172B;
+    color: var(--text-color);
 }
 
 .shop-image:hover .shop-button {
@@ -4068,7 +4071,7 @@ button:focus {
 }
  
 .newsletter-content form input {
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Jost', sans-serif;
     font-size: 16px;
     line-height: 14px;
@@ -4146,7 +4149,7 @@ button:focus {
 	right: 0;
 	font-size: 30px;
 	margin: 5px 8px 0 0;
-	color: #13172B;
+	color: var(--text-color);
     transition: 0.3s;
 	-moz-transition: 0.3s;
     -webkit-transition: 0.3s;
@@ -4194,7 +4197,7 @@ button:focus {
 }
 
 .nlpopup-right form input {
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Jost', sans-serif;
     font-size: 16px;
     line-height: 14px;
@@ -4234,7 +4237,7 @@ button:focus {
 
 .nlpopup-right form input[type="submit"]:hover {
     background: #FFF;
-    color: #13172B;
+    color: var(--text-color);
     border: 1px solid var(--main-color1);
 }
 
@@ -4296,7 +4299,7 @@ button:focus {
 }
  
 .footer-about-brand a {
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
     line-height: 26px;
@@ -4321,7 +4324,7 @@ button:focus {
 }
  
 .footer-link li a:hover {
-    color: #13172B;
+    color: var(--text-color);
     text-decoration-line: underline;
     margin-left: 5px;
 }
@@ -4362,7 +4365,7 @@ button:focus {
 }
 
 .social-links li a {
-    color: #13172B;
+    color: var(--text-color);
 }
 
 .social-links li a:hover {
@@ -4408,7 +4411,7 @@ button:focus {
 }
 
 .breadcrumb-wrap h2 {
-    color: #13172B;
+    color: var(--text-color);
     text-align: center;
     font-family: 'Jost', sans-serif;
     font-size: 30px;
@@ -4520,7 +4523,7 @@ button:focus {
 }
 
 .lsb-widget-title {
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Jost', sans-serif;
     font-size: 26px;
     font-weight: 600;
@@ -4691,7 +4694,7 @@ button:focus {
 }
 
 .price-input .field span {
-	color: #13172B;
+	color: var(--text-color);
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
@@ -4699,7 +4702,7 @@ button:focus {
 }
 
 .price-input .field input {
-	color: #13172B;
+	color: var(--text-color);
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
@@ -4897,7 +4900,7 @@ button:focus {
 }
 
 .promo-button {
-	color: #13172B;
+	color: var(--text-color);
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 14px;
 	font-weight: 400;
@@ -4969,7 +4972,7 @@ button:focus {
 }
 
 .product-sorting .sorting-results p span {
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -4983,7 +4986,7 @@ button:focus {
 }
 
 .sorting-select p {
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -5616,7 +5619,7 @@ button:focus {
 }
 
 .video-promo-content .content .content-item span {
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
     font-style: italic;
@@ -5640,7 +5643,7 @@ button:focus {
 }
 
 .the-ceo .ceo-info .ceo-name h3 {
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 20px;
     font-weight: 500;
@@ -5725,7 +5728,7 @@ button:focus {
 }
 
 .team-member-wrapper .member-information .member-name h3 {
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Jost', sans-serif;
     font-size: 26px;
     font-weight: 600;
@@ -5838,7 +5841,7 @@ button:focus {
 }
 
 .product-information h2 {
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Jost', sans-serif;
     font-size: 30px;
     font-style: normal;
@@ -5943,7 +5946,7 @@ button:focus {
 
 .prod-size-select h2,
 .color-selection h2 {
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 20px;
     font-weight: 500;
@@ -6081,7 +6084,7 @@ button:focus {
 }
 
 .product-other-info p {
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 14px;
     font-weight: 500;
@@ -6100,7 +6103,7 @@ button:focus {
 }
 
 .social-share {
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 20px;
     font-weight: 500;
@@ -6153,7 +6156,7 @@ button:focus {
     border-radius: 0 5px 5px 5px;
 }
 .rev-desc-wrap .tab-content h2 {
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Jost', sans-serif;
     font-size: 26px;
     font-weight: 600;
@@ -6171,7 +6174,7 @@ button:focus {
 }
 
 .rev-desc-wrap .tab-content h4 {
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 20px;
     font-weight: 400;
@@ -6238,7 +6241,7 @@ button:focus {
 }
 
 .author-info .name-rating .author-id h3 {
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 20px;
     font-weight: 500;
@@ -6314,7 +6317,7 @@ button:focus {
 }
 
 .review-reply .author-id-2nd .author-name h3 {
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 20px;
     font-weight: 500;
@@ -6348,7 +6351,7 @@ button:focus {
 }
 
 .give-review-form h2 {
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Jost', sans-serif;
     font-size: 26px;
     font-weight: 600;
@@ -6466,7 +6469,7 @@ button:focus {
 #ask-a-question-popup h2 {
     width: 100%;
     text-align: center;
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Jost', sans-serif;
     font-size: 26px;
     font-weight: 600;
@@ -6719,7 +6722,7 @@ button:focus {
 .compare-selected:hover {
     background: #FFF;
     border: 1px solid var(--main-color1);
-    color: #13172B;
+    color: var(--text-color);
 }
 
 /* Shop Details - Sidebar */
@@ -7207,7 +7210,7 @@ button:focus {
     width: 26px;
     line-height: 26px;
     font-size: 18px;
-    color: #13172B;
+    color: var(--text-color);
     background-color: #f6f7fb;
     border-radius: 50%;
     transition: all .3s ease-in-out;
@@ -7580,7 +7583,7 @@ button:focus {
 .wishlist-heading {
     border-radius: 5px;
     background: #E4F2FF;
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 20px;
     font-weight: 500;
@@ -7810,7 +7813,7 @@ button:focus {
     border-radius: 50px;
     background: #E4F2FF;
     padding: 15px 25px;
-    color: #13172B;
+    color: var(--text-color);
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 18px;
@@ -7839,7 +7842,7 @@ button:focus {
 }
 
 .sub-total-amount h4 {
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 20px;
     font-weight: 400;
@@ -7864,7 +7867,7 @@ button:focus {
 }
 
 .sub-total-inner .shipping h6 {
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -8033,7 +8036,7 @@ button:focus {
     background: #E4F2FF;
     width: 100%;
     padding: 17px 21px;
-    color: #13172B;
+    color: var(--text-color);
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 18px;
@@ -8169,7 +8172,7 @@ button:focus {
 
 .billing-details h2,
 .order-summary h2 {
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Jost', sans-serif;
     font-size: 26px;
     font-weight: 600;
@@ -8230,7 +8233,7 @@ button:focus {
     margin-bottom: 20px;
     height: 50px;
     position: relative;
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -8255,7 +8258,7 @@ button:focus {
     width: 48.3%;
     height: 50px;
     position: relative;
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -8283,7 +8286,7 @@ button:focus {
     content: '\f078';
     font-size: 10px;
     font-family: 'Fontawesome';
-    color: #13172B;
+    color: var(--text-color);
     pointer-events: none;
     position: absolute;
     right: 12px;
@@ -8388,7 +8391,7 @@ button:focus {
 }
 
 .order-summary-wrapper .title-area h4 {
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 20px;
     font-weight: 400;
@@ -8503,7 +8506,7 @@ button:focus {
 }
 
 .payment-method input[type="radio"]:checked + label {
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -8666,7 +8669,7 @@ button:focus {
 }
 
 .blog-content-area .post-body li {
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -8734,7 +8737,7 @@ button:focus {
 
 .blog-content-area .post-bottom .post-tags span,
 .blog-content-area .post-bottom .social-share span {
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 20px;
     font-weight: 400;
@@ -8803,7 +8806,7 @@ button:focus {
 .blog-post-sidebar .popular-tags h2,
 .blog-post-sidebar .post-sidebar-newsletter h2,
 .blog-post-sidebar .latest-post-widget h2 {
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Jost', sans-serif;
     font-size: 26px;
     font-weight: 600;
@@ -8904,7 +8907,7 @@ button:focus {
 }
 
 .blog-post-sidebar .latest-post-widget .post-item h3 a {
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 20px;
     font-weight: 400;
@@ -9069,7 +9072,7 @@ button:focus {
 
 .comment-form h2,
 .commented-section h2 {
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Jost', sans-serif;
     font-size: 26px;
     font-weight: 600;
@@ -9151,7 +9154,7 @@ button:focus {
 }
 
 .office-location h2 {
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Jost', sans-serif;
     font-size: 26px;
     font-weight: 600;
@@ -9188,7 +9191,7 @@ button:focus {
 }
 
 .contact-form h2 {
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Jost', sans-serif;
     font-size: 30px;
     font-weight: 600;
@@ -9303,7 +9306,7 @@ button:focus {
 
 #accordionFAQ .accordion-button.collapsed {
     border-radius: 5px;
-    color: #13172B;
+    color: var(--text-color);
 }
 
 .accordion-button:focus {
@@ -9315,7 +9318,7 @@ button:focus {
     height: 38px;
     border-radius: 50px;
     background: #FFF;
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 20px;
     font-weight: 500;
@@ -9393,7 +9396,7 @@ button:focus {
 }
 
 .faq-form-title h2 {
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Jost', sans-serif;
     font-size: 30px;
     font-weight: 600;
@@ -9434,7 +9437,7 @@ button:focus {
 }
 
 .order-tracking h2 {
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Jost', sans-serif;
     font-size: 30px;
     font-weight: 600;
@@ -9569,7 +9572,7 @@ button:focus {
 }
 
 .content-for-log-reg-visible h2 {
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Jost', sans-serif;
     font-size: 36px;
     font-weight: 600;
@@ -9579,7 +9582,7 @@ button:focus {
 }
 
 .content-for-log-reg-visible p {
-	color: #13172B;
+	color: var(--text-color);
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 14px;
 	font-weight: 400;
@@ -9607,7 +9610,7 @@ button:focus {
     display: inline-block;
     width: 150px;
     height: 50px;
-    color: #13172B;
+    color: var(--text-color);
     background: #FFF;
     font-size: 18px;
     line-height: 50px;
@@ -9661,7 +9664,7 @@ button:focus {
   }
 
 .login-page-text {
-	color: #13172B;
+	color: var(--text-color);
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
@@ -9669,7 +9672,7 @@ button:focus {
 }
 
 .log-reg-form-cont h2 {
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Jost', sans-serif;
     font-size: 36px;
     font-weight: 600;
@@ -9783,7 +9786,7 @@ button:focus {
 
 .remember-forgot-pass a {
     display: inline-block;
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -9798,7 +9801,7 @@ button:focus {
 
 .remember-forgot-pass label {
     display: inline-block;
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -9819,7 +9822,7 @@ button:focus {
 
 .log-reg-form-cont .acc-type label {
     display: inline-block;
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -9931,7 +9934,7 @@ button:focus {
 }
 
 .form-seperator {
-	color: #13172B;
+	color: var(--text-color);
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
@@ -10088,7 +10091,7 @@ button:focus {
 }
 
 .forgot-password-area h2 {
-	color: #13172B;
+	color: var(--text-color);
 	font-family: 'Jost', sans-serif;
 	font-size: 60px;
 	font-weight: 700;
@@ -10098,7 +10101,7 @@ button:focus {
 }
 
 .forgot-password-area p {
-	color: #13172B;
+	color: var(--text-color);
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 18px;
 	font-weight: 400;
@@ -10261,7 +10264,7 @@ button:focus {
     content: '\f078';
     font-size: 10px;
     font-family: 'Fontawesome';
-    color: #13172B;
+    color: var(--text-color);
     pointer-events: none;
     position: absolute;
     right: 12px;
@@ -10326,7 +10329,7 @@ button:focus {
 	right: 0;
 	height: 30px;
 	width: 30px;
-	color: #13172B;
+	color: var(--text-color);
 	font-size: 12px;
 	line-height: 34px;
 	text-align: center;
@@ -10336,7 +10339,7 @@ button:focus {
 }
 
 .user-id-snap h2 {
-    color: #13172B;
+    color: var(--text-color);
     font-size: 22px;
     line-height: 22px;
     font-family: 'Jost', sans-serif;
@@ -10345,7 +10348,7 @@ button:focus {
 }
 
 .user-id-snap p {
-    color: #13172B;
+    color: var(--text-color);
     font-size: 14px;
     line-height: 14px;
     font-family: 'Josefin Sans', sans-serif;
@@ -10354,7 +10357,7 @@ button:focus {
 
 #user-dashboard-tab .nav-link {
     height: 70px;
-    color: #13172B;
+    color: var(--text-color);
     font-size: 18px;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
@@ -10391,7 +10394,7 @@ button:focus {
 }
 
 .user-dashboard-tabContent h2 {
-    color: #13172B;
+    color: var(--text-color);
     font-size: 36px;
     line-height: 36px;
     font-family: 'Jost', sans-serif;
@@ -10411,7 +10414,7 @@ button:focus {
 
 .user-dashboard-tabContent h3 {
 	font-family: 'Jost', sans-serif;
-	color: #13172B;
+	color: var(--text-color);
 	font-size: 28px;
 	line-height: 36px;
 	font-weight: 500;
@@ -10419,7 +10422,7 @@ button:focus {
 
 .user-dashboard-tabContent h4 {
     font-family: 'Jost', sans-serif;
-	color: #13172B;
+	color: var(--text-color);
 	font-size: 24px;
 	line-height: 32px;
 	font-weight: 400;
@@ -10454,7 +10457,7 @@ button:focus {
 }
 
 .user-acc-activity .item .content p {
-    color: #13172B;
+    color: var(--text-color);
     font-size: 18px;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
@@ -10463,7 +10466,7 @@ button:focus {
 }
 
 .user-acc-activity .item .content span {
-    color: #13172B;
+    color: var(--text-color);
     font-size: 24px;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
@@ -10599,7 +10602,7 @@ button:focus {
     padding: 8px 15px;
     border: none;
     border-radius: 5px;
-    color: #13172B;
+    color: var(--text-color);
     background: #FFF;
     cursor: pointer;
 }
@@ -10689,7 +10692,7 @@ button:focus {
 #add-card-popup input[type="submit"]:hover,
 #edit-popup input[type="submit"]:hover {
     background: none;
-    color: #13172B;
+    color: var(--text-color);
 }
 
 .nice-select.credit-card-type {
@@ -10712,7 +10715,7 @@ button:focus {
     content: '\f078';
     font-size: 10px;
     font-family: 'Fontawesome';
-    color: #13172B;
+    color: var(--text-color);
     pointer-events: none;
     position: absolute;
     right: 15px;
@@ -10916,7 +10919,7 @@ button:focus {
 }
 
 .address-book .title input[type="radio"]:checked + label {
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -11032,7 +11035,7 @@ button:focus {
 #add-address-popup input[type="submit"]:hover,
 #edit-address-popup input[type="submit"]:hover {
     background: none;
-    color: #13172B;
+    color: var(--text-color);
 }
 /* Start of Address Area */
 
@@ -11048,7 +11051,7 @@ button:focus {
 .profile-area h3,
 .security-area h3 {
     font-family: 'Jost', sans-serif;
-	color: #13172B;
+	color: var(--text-color);
 	font-size: 28px;
 	line-height: 36px;
 	font-weight: 500;
@@ -11102,7 +11105,7 @@ button:focus {
 }
 
 .security-area h4 {
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 22px;
     font-weight: 400;
@@ -11246,7 +11249,7 @@ button:focus {
 	right: 0;
 	height: 30px;
 	width: 30px;
-	color: #13172B;
+	color: var(--text-color);
 	font-size: 12px;
 	line-height: 34px;
 	text-align: center;
@@ -11256,7 +11259,7 @@ button:focus {
 }
 
 .seller-id-snap h2 {
-    color: #13172B;
+    color: var(--text-color);
     font-size: 22px;
     line-height: 22px;
     font-family: 'Jost', sans-serif;
@@ -11265,7 +11268,7 @@ button:focus {
 }
 
 .seller-id-snap p {
-    color: #13172B;
+    color: var(--text-color);
     font-size: 14px;
     line-height: 14px;
     font-family: 'Josefin Sans', sans-serif;
@@ -11274,7 +11277,7 @@ button:focus {
 
 #seller-dashboard-tab .nav-link {
     height: 70px;
-    color: #13172B;
+    color: var(--text-color);
     font-size: 18px;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
@@ -11310,7 +11313,7 @@ button:focus {
 }
 
 .seller-dashboard-tabContent h2 {
-    color: #13172B;
+    color: var(--text-color);
     font-size: 36px;
     line-height: 36px;
     font-family: 'Jost', sans-serif;
@@ -11330,7 +11333,7 @@ button:focus {
 
 .seller-dashboard-tabContent h3 {
 	font-family: 'Jost', sans-serif;
-	color: #13172B;
+	color: var(--text-color);
 	font-size: 28px;
 	line-height: 36px;
 	font-weight: 500;
@@ -11338,7 +11341,7 @@ button:focus {
 
 .seller-dashboard-tabContent h4 {
     font-family: 'Jost', sans-serif;
-	color: #13172B;
+	color: var(--text-color);
 	font-size: 24px;
 	line-height: 32px;
 	font-weight: 400;
@@ -11485,7 +11488,7 @@ button:focus {
     
 .seller-product-add-btn:hover {
     background: transparent;
-    color: #13172B;
+    color: var(--text-color);
 }
 
 /* Start of Add and Edit form */
@@ -11570,7 +11573,7 @@ button:focus {
 #seller-product-add input[type="submit"]:hover,
 #seller-product-edit input[type="submit"]:hover {
     background: #FFF;
-    color: #13172B;
+    color: var(--text-color);
 }
 
 /* Product Color Select */
@@ -11707,7 +11710,7 @@ button:focus {
 }
 
 .seller-orders-heading {
-    color: #13172B;
+    color: var(--text-color);
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 18px;
 	font-weight: 400;
@@ -11885,7 +11888,7 @@ button:focus {
 
 .seller-profile-popups input[type="submit"]:hover {
     background: #FFF;
-    color: #13172B;
+    color: var(--text-color);
 }
 
 .seller-profile-popups .form-row .button-b {
@@ -11893,7 +11896,7 @@ button:focus {
 }
 
 #seller-dashboard-tab .nav-link .log-out-tab {
-	color: #13172B;
+	color: var(--text-color);
 }
 /** End of Content **/
 /*** End of Seller Dashboard Section ***/
@@ -11923,7 +11926,7 @@ button:focus {
 
 /** Start of Vendor List Card **/
 .vendor-wrap p {
-    color: #13172B;
+    color: var(--text-color);
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 20px;
 	font-weight: 400;
@@ -12077,7 +12080,7 @@ button:focus {
 }
 
 .vendor-info .store-title h3 {
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 28px;
     font-weight: 500;
@@ -12121,7 +12124,7 @@ button:focus {
 }
 
 .vendor-info .title-review h3 {
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 28px;
     font-weight: 500;
@@ -12150,7 +12153,7 @@ button:focus {
 }
 
 .vendor-social h4 {
-	color: #13172B;
+	color: var(--text-color);
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 24px;
 	font-weight: 400;
@@ -12169,7 +12172,7 @@ button:focus {
 }
 
 .vendor-shop-details-banner .vendor-info .image {
-	border: 3px solid #13172B;
+	border: 3px solid var(--text-color);
     background: #FFF;
 }
 
@@ -12213,7 +12216,7 @@ button:focus {
 
 .header-top-banner p {
     text-align: center;
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -12255,7 +12258,7 @@ button:focus {
 
 .header-top-banner .single-product-countdown span {
     margin-right: 10px;
-    color: #13172B;
+    color: var(--text-color);
 }
 
 .header-top-banner .single-product-countdown .deal-product-timer {
@@ -12447,7 +12450,7 @@ button:focus {
 }
 
 .purchase-content .info h2 {
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Jost', sans-serif;
     font-size: 18px;
     font-weight: 500;
@@ -12501,7 +12504,7 @@ button:focus {
 	right: 0;
 	font-size: 30px;
 	margin: 5px 8px 0 0;
-	color: #13172B;
+	color: var(--text-color);
     transition: 0.3s;
 	-moz-transition: 0.3s;
     -webkit-transition: 0.3s;
@@ -12603,13 +12606,13 @@ button:focus {
 .dtp-item .dtp-content .product-title {
     margin-bottom: 10px;
     font-size: 20px;
-    color: #13172B;
+    color: var(--text-color);
 }
 
 .dtp-item .dtp-content .product-price-variant {
     font-size: 18px;
     font-weight: 600;
-    color: #13172B;
+    color: var(--text-color);
 }
 
 .dtp-item .dtp-content .product-price-variant span {
@@ -12633,7 +12636,7 @@ button:focus {
     line-height: 40px;
     border: 1px solid #efefef;
     border-radius: 5px;
-    color: #13172B;
+    color: var(--text-color);
     font-size: 18px;
     font-weight: 500;
     transition: 0.3s;
@@ -13015,7 +13018,7 @@ button:focus {
 
 .header-top-banner-v2 .single-product-countdown span {
     margin-right: 10px;
-    color: #13172B;
+    color: var(--text-color);
 }
 
 .header-top-banner-v2 .single-product-countdown .deal-product-timer {
@@ -13308,13 +13311,13 @@ button:focus {
 
 .cart-on-hover .cart-header .cart-title {
 	font-size: 26px;
-	color: #13172B;
+	color: var(--text-color);
 	margin-bottom: 0;
 }
 
 .cart-on-hover .cart-header .cart-close {
 	font-size: 26px;
-	color: #13172B;
+	color: var(--text-color);
     border: 0;
     background: none;
     transition: 0.3s;
@@ -13363,7 +13366,7 @@ button:focus {
 
 .cart-on-hover .cart-item .item-img .close-btn {
    font-size: 24px;
-   color: #13172B;
+   color: var(--text-color);
    border: 0;
    background: none;
    position: absolute;
@@ -13416,7 +13419,7 @@ button:focus {
 
 .cart-on-hover .cart-item .item-title a {
     font-size: 20px;
-	color: #13172B;
+	color: var(--text-color);
     transition: 0.3s;
     -moz-transition: 0.3s;
     -webkit-transition: 0.3s;
@@ -13428,7 +13431,7 @@ button:focus {
 .cart-on-hover .cart-item .item-price {
 	font-size: 18px;
 	font-family: 'Poppins', sans-serif;
-	color: #13172B;
+	color: var(--text-color);
 }
 
 .cart-on-hover .cart-item .item-quantity {
@@ -13468,7 +13471,7 @@ button:focus {
     width: 26px;
     line-height: 26px;
     font-size: 18px;
-    color: #13172B;
+    color: var(--text-color);
     background-color: #f6f7fb;
     border-radius: 50%;
     transition: all .3s ease-in-out;
@@ -13487,7 +13490,7 @@ button:focus {
     align-items: center;
     justify-content: space-between;
     margin: 18px 0;
-    color: #13172B;
+    color: var(--text-color);
     font-size: 20px;
 }
 
@@ -13499,7 +13502,7 @@ button:focus {
 .cart-on-hover .cart-bottom .button-a {
     padding: 10px 32px;
     border: 1px solid var(--main-color2);
-    color: #13172B;
+    color: var(--text-color);
     font-size: 18px;
     line-height: 20px;
 }
@@ -13520,7 +13523,7 @@ button:focus {
 
 .cart-on-hover .cart-bottom .button-b:hover {
     background: none;
-    color: #13172B;
+    color: var(--text-color);
 }
 /* End of Cart on Hover */
 
@@ -13907,7 +13910,7 @@ button:focus {
 
 .has-l2-submenu .l2-submenu .menu-promo .promo-btn:hover {
     background: #FFF;
-    color: #13172B;
+    color: var(--text-color);
 }
 
 .has-l2-submenu .l2-submenu .menu-promo .promo-btn:hover i {
@@ -13984,7 +13987,7 @@ button:focus {
 }
 
 .mobile-menu-style4 .nav-pills .nav-link {
-	color: #13172B;
+	color: var(--text-color);
     border: 1px solid var(--main-color2);
     border-radius: 3px;
     margin: 0 5px;
@@ -13993,7 +13996,7 @@ button:focus {
 .mobile-menu-wrapper {
 	height: 89vh;
 	overflow: auto;
-    color: #13172B;
+    color: var(--text-color);
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
@@ -16436,7 +16439,7 @@ button:focus {
     display: inline-block;
     padding: 10px 30px;
     margin: 0;
-    color: #13172B;
+    color: var(--text-color);
     background: #FFF !important;
     font-size: 18px;
     line-height: 24px;
@@ -16452,7 +16455,7 @@ button:focus {
 }
 
 .h5-button-2:hover {
-    color: #13172B !important;
+    color: var(--text-color) !important;
     border-radius: 50px;
 }
 
@@ -16460,9 +16463,9 @@ button:focus {
     display: inline-block;
     padding: 9px 30px;
     margin: 0;
-    color: #13172B;
+    color: var(--text-color);
     background: #FFF !important;
-    border: 1px solid #13172B;
+    border: 1px solid var(--text-color);
     font-size: 18px;
     line-height: 24px;
     border-radius: 5px;
@@ -16477,7 +16480,7 @@ button:focus {
 }
 
 .h5-button-3:hover {
-    color: #13172B !important;
+    color: var(--text-color) !important;
     border-radius: 50px;
 }
 
@@ -16894,7 +16897,7 @@ button:focus {
 }
 
 #h5_m-menu-btn a {
-    color: #13172B;
+    color: var(--text-color);
     border: 1px solid #5A5858;
     padding: 10px 20px;
 }
@@ -16987,7 +16990,7 @@ button:focus {
     line-height: 18px;
     font-weight: 400;
 	text-transform: capitalize;
-    color: #13172B;
+    color: var(--text-color);
 }
 
 .h5_mobile-menu ul li a i {
@@ -17123,7 +17126,7 @@ button:focus {
 }
 
 .oc-main-menu .about-company p {
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Fira Sans', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
@@ -17137,7 +17140,7 @@ button:focus {
     line-height: 18px;
     font-weight: 500;
 	text-transform: capitalize;
-    color: #13172B;
+    color: var(--text-color);
 }
 
 .off-canvas-menu ul li a:hover {
@@ -17145,7 +17148,7 @@ button:focus {
 }
 
 .oc-main-menu .title {
-    color: #13172B;
+    color: var(--text-color);
     font-family: 'Bebas Neue', sans-serif;
 	font-size: 24px;
 	font-weight: 400;
@@ -17307,7 +17310,7 @@ button:focus {
     z-index: 10;
     top: 50%;
     transform: translateY(-50%);
-    color: #13172B;
+    color: var(--text-color);
     font-size: 20px;
     line-height: 30px;
     color: #FFF;
@@ -17466,8 +17469,8 @@ button:focus {
 }
 
 .slider-prod-shop a {
-    color: #13172B;
-    border-bottom: 1px solid #13172B;
+    color: var(--text-color);
+    border-bottom: 1px solid var(--text-color);
     margin: 0;
     font-size: 18px;
     font-family: "Fira Sans", sans-serif;
@@ -17613,7 +17616,7 @@ button:focus {
 
 .h5_left-bottom-slider .bottom-slider2-content h2,
 .h5_left-bottom-slider .bottom-slider2-content p {
-    color: #13172B;
+    color: var(--text-color);
 }
 
 /** End of Hero Section (Variant 5) **/
@@ -17738,7 +17741,7 @@ button:focus {
 }
 
 .h5_pp-wrapper .nav-link {
-	color: #13172B;
+	color: var(--text-color);
     position: relative;
     font-size: 18px;
     transition: 0.3s;
@@ -17979,7 +17982,7 @@ button:focus {
 }
 
 .shop-content-v4 h2 {
-	color: #13172B;
+	color: var(--text-color);
 	font-size: 30px;
 	line-height: 36px;
 	text-transform: capitalize;
@@ -18030,7 +18033,7 @@ button:focus {
 .shop-content-v4 .cta-btns-bottom .item-quantity input {
    font-size: 16px;
    font-weight: 400;
-   color: #13172B;
+   color: var(--text-color);
    height: auto;
    width: 45px;
    border: none;
@@ -18056,7 +18059,7 @@ button:focus {
     width: 26px;
     line-height: 26px;
     font-size: 18px;
-    color: #13172B;
+    color: var(--text-color);
     background-color: #f6f7fb;
     border-radius: 50%;
     transition: all .3s ease-in-out;
@@ -18076,7 +18079,7 @@ button:focus {
     text-align: center;
     border: 1px solid #CCC;
     border-radius: 50%;
-    color: #13172B;
+    color: var(--text-color);
 }
 
 .shop-content-v4 .cta-btns-bottom a:hover {
@@ -18116,7 +18119,7 @@ button:focus {
 }
 
 .h5_promo-section .content h3 {
-    color: #13172B;
+    color: var(--text-color);
 	font-size: 60px;
 	line-height: 60px;
 	font-weight: 400;
@@ -18129,7 +18132,7 @@ button:focus {
 }
 
 .h5_promo-section .content h2 {
-    color: #13172B;
+    color: var(--text-color);
 	font-size: 200px;
 	line-height: 200px;
 	font-weight: 400;
@@ -18140,7 +18143,7 @@ button:focus {
 }
 
 .h5_promo-section .content h4 {
-    color: #13172B;
+    color: var(--text-color);
     font-size: 40px;
     line-height: 50px;
     font-weight: 400;
@@ -18249,7 +18252,7 @@ button:focus {
     display: block;
     padding: 5px 0;
     text-align: center;
-    color: #13172B;
+    color: var(--text-color);
     font-size: 16px;
     font-family: 'Fira Sans', sans-serif;
     text-transform: capitalize;
@@ -18289,7 +18292,7 @@ button:focus {
     -o-transition: 0.3s;
     cursor: pointer;
     background: #FFF;
-    color: #13172B;
+    color: var(--text-color);
 }
 
 .promo-category-sidebar .size-list p:hover {
@@ -18424,7 +18427,7 @@ button:focus {
     width: auto;    
     font-size: 18px;
     line-height: 24px;
-    color: #13172B;
+    color: var(--text-color);
     border-radius: 5px;
     padding: 5px 15px;
     background: #FFF;
@@ -18462,7 +18465,7 @@ button:focus {
 }
 
 .shop-content-v5 h2 {
-	color: #13172B;
+	color: var(--text-color);
 	font-size: 30px;
 	line-height: 36px;
 	text-transform: capitalize;
@@ -18612,8 +18615,8 @@ button:focus {
 .h5_featured-product .category-card .cat-btn {
     font-size: 18px;
     line-height: 18px;
-    color: #13172B;
-    border-bottom: 1px solid #13172B;
+    color: var(--text-color);
+    border-bottom: 1px solid var(--text-color);
     text-transform: capitalize;
     transition: 0.3s;
 	-moz-transition: 0.3s;
@@ -18759,7 +18762,7 @@ button:focus {
     text-align: center;
     line-height: 46px;
     font-size: 18px;
-    color: #13172B;
+    color: var(--text-color);
     left: 0;
     top: 0;
     height: 46px;
@@ -18811,7 +18814,7 @@ button:focus {
 }
 
 .back-top-progress svg.progression path {
-    stroke: #13172B;
+    stroke: var(--text-color);
     stroke-width: 4;
     box-sizing: border-box;
     transition: 0.3s;
@@ -18825,7 +18828,7 @@ button:focus {
 /** Start of Footer Section (Variant 2) **/
 .footer-section-v2 {
     margin-top: 80px;
-    background: #13172B;
+    background: var(--text-color);
 }
 
 .footer-top-v2 {
@@ -18925,14 +18928,14 @@ button:focus {
 }
 
 .ftr-newsletter form i {
-    color: #13172B;
+    color: var(--text-color);
 }
 
 .ftr-newsletter form input {
     width: 100%;
     height: auto;
     margin-left: 10px;
-    color: #13172B;
+    color: var(--text-color);
     font-size: 16px;
     line-height: 26px;
     font-weight: 400;
@@ -18940,7 +18943,7 @@ button:focus {
 }
 
 .ftr-newsletter form input::placeholder {
-    color: #13172B;
+    color: var(--text-color);
     font-size: 16px;
     font-weight: 400;
     font-family: 'Fira Sans', sans-serif;
@@ -18966,7 +18969,7 @@ button:focus {
 }
 
 .f2-social-links li a {
-    color: #13172B;
+    color: var(--text-color);
     display: block;
 	width: 32px;
 	height: 32px;
@@ -19455,7 +19458,7 @@ button:focus {
 }
 
 .spsv5_grid-tgl-btn button {
-    color: #13172B;
+    color: var(--text-color);
     display: block;
     font: 20px;
     background: #FFF;
@@ -19748,7 +19751,7 @@ button:focus {
     font-size: 30px;
     line-height: 50px;
     background: #FFF;
-    color: #13172B;
+    color: var(--text-color);
     z-index: 10;
     width: 50px;
     height: 50px;
@@ -19898,7 +19901,7 @@ button:focus {
 	width: 26px;
 	line-height: 26px;
 	font-size: 18px;
-	color: #13172B;
+	color: var(--text-color);
 	background-color: #f6f7fb;
 	border-radius: 50%;
 	transition: all .3s ease-in-out;
@@ -19936,7 +19939,7 @@ button:focus {
 }
 
 .product-desc-area  .accordion-button.collapsed {
-    color: #13172B;
+    color: var(--text-color);
     font-size: 20px;
 }
 
@@ -19973,7 +19976,7 @@ button:focus {
 
 .review-section-v2 .title-row .rating-star {
     line-height: 27px;
-    color: #13172B;
+    color: var(--text-color);
 }
 
 .review-section-v2 .title-row p {
@@ -20009,7 +20012,7 @@ button:focus {
 .review-section-v2 .review-sticky-sidebar .rating-star {
     line-height: 24px;
     font-size: 16px;
-    color: #13172B;
+    color: var(--text-color);
 }
 
 .review-section-v2 .review-sticky-sidebar button {
@@ -20050,7 +20053,7 @@ button:focus {
 }
 
 .review-form-v2 label {
-    color: #13172B;
+    color: var(--text-color);
     font-size: 18px;
     line-height: 20px;
     font-weight: 400;
@@ -20065,10 +20068,10 @@ button:focus {
 }
 
 .review-form-v2 input {
-    color: #13172B;
+    color: var(--text-color);
     width: 100%;
     height: 50px;
-    border: 1px solid #13172B;
+    border: 1px solid var(--text-color);
     border-radius: 5px;
     padding: 0 10px;
     font-size: 18px;
@@ -20085,15 +20088,15 @@ button:focus {
 }
 
 .review-form-v2 #name-email input {
-    color: #13172B;
+    color: var(--text-color);
     width: 49.5%;
 }
 
 .review-form-v2 textarea {
-    color: #13172B;
+    color: var(--text-color);
     width: 100%;
     height: 208px;
-    border: 1px solid #13172B;
+    border: 1px solid var(--text-color);
     border-radius: 5px;
     padding: 10px;
     font-family: 'Fira Sans', sans-serif;
@@ -20111,7 +20114,7 @@ button:focus {
 }
 
 .review-form-v2 p {
-    color: #13172B;
+    color: var(--text-color);
     margin-top: 15px;
     font-family: 'Fira Sans', sans-serif;
     font-size: 18px;
@@ -20140,7 +20143,7 @@ button:focus {
 }
 
 .submitted-reviews p {
-    color: #13172B;
+    color: var(--text-color);
     font-size: 18px;
     line-height: 20px;
     font-weight: 400;
@@ -20149,7 +20152,7 @@ button:focus {
 }
 
 .submitted-reviews .rating-star {
-    color: #13172B;
+    color: var(--text-color);
     line-height: 20px;
 }
 
@@ -20160,7 +20163,7 @@ button:focus {
 }
 
 .submitted-reviews .title-meta p {
-    color: #13172B;
+    color: var(--text-color);
     font-size: 18px;
     line-height: 24px;
     font-weight: 500;
@@ -20176,7 +20179,7 @@ button:focus {
 }
 
 .submitted-reviews .rev-text {
-    color: #13172B;
+    color: var(--text-color);
     font-size: 18px;
     line-height: 26px;
     font-weight: 400;
@@ -20191,7 +20194,7 @@ button:focus {
 }
 
 .submitted-reviews .user-feedback p {
-    color: #13172B;
+    color: var(--text-color);
     font-size: 16px;
     line-height: 24px;
     font-weight: 300;
@@ -20923,7 +20926,7 @@ button:focus {
 }
 
 .mega-menu-slider-wrapper .swiper-slide .prod-header h2 {
-    color: #13172B;
+    color: var(--text-color);
 	font-size: 26px;
 	line-height: 32px;
 	font-weight: 500;
@@ -21113,7 +21116,7 @@ button:focus {
     line-height: 18px;
     font-weight: 400;
 	text-transform: capitalize;
-    color: #13172B;
+    color: var(--text-color);
 }
 
 .h6_mobile-menu ul li a i {
@@ -21140,7 +21143,7 @@ button:focus {
 }
 
 .m-geo-lang {
-    border-top: 1px solid #13172B;
+    border-top: 1px solid var(--text-color);
     padding-top: 15px;
 }
 
@@ -21155,7 +21158,7 @@ button:focus {
 .m-geo-lang .mgl-mm {
     position: relative;
     margin-right: 10px;
-    color: #13172B;
+    color: var(--text-color);
     font-size: 18px;
     font-weight: 400;
     font-family: 'Figtree', sans-serif;
@@ -21196,7 +21199,7 @@ button:focus {
     line-height: 18px;
     font-weight: 400;
 	text-transform: capitalize;
-    color: #13172B;
+    color: var(--text-color);
 }
 
 .h6_social-profiles ul {
@@ -21465,7 +21468,7 @@ button:focus {
 .hero-social-links li a {
     display: block;
     background: #FFF;
-    color: #13172B;
+    color: var(--text-color);
     height: 40px;
     width: 40px;
     font-size: 16px;
@@ -25995,7 +25998,7 @@ button:focus {
 .review__sticky__sidebar .rating-star {
     line-height: 24px;
     font-size: 16px;
-    color: #13172B;
+    color: var(--text-color);
 }
 
 .review__sticky__sidebar button {
@@ -26065,7 +26068,7 @@ button:focus {
 }
 
 .review__form__v3 label {
-    color: #13172B;
+    color: var(--text-color);
     font-size: 18px;
     line-height: 20px;
     font-weight: 400;
@@ -26080,15 +26083,15 @@ button:focus {
 }
 
 .review__form__v3 #NameEmail input {
-	color: #13172B;
+	color: var(--text-color);
 	width: 49.5%;
 }
 
 .review__form__v3 input {
-    color: #13172B;
+    color: var(--text-color);
     width: 100%;
     height: 50px;
-    border: 1px solid #13172B;
+    border: 1px solid var(--text-color);
     border-radius: 5px;
     padding: 0 10px;
     font-size: 18px;
@@ -26105,15 +26108,15 @@ button:focus {
 }
 
 .review__form__v3 #name-email input {
-    color: #13172B;
+    color: var(--text-color);
     width: 49.5%;
 }
 
 .review__form__v3 textarea {
-    color: #13172B;
+    color: var(--text-color);
     width: 100%;
     height: 208px;
-    border: 1px solid #13172B;
+    border: 1px solid var(--text-color);
     border-radius: 5px;
     padding: 10px;
     font-family: 'Maven Pro', sans-serif;
@@ -26131,7 +26134,7 @@ button:focus {
 }
 
 .review__form__v3 p {
-    color: #13172B;
+    color: var(--text-color);
     margin-top: 15px;
     font-family: 'Maven Pro', sans-serif;
     font-size: 18px;
@@ -27873,7 +27876,7 @@ button:focus {
 }
 
 .megamenu__slider .swiper-slide .prod__title h2 {
-    color: #13172B;
+    color: var(--text-color);
 	font-size: 26px;
 	line-height: 32px;
 	font-weight: 600;
@@ -32086,21 +32089,3 @@ button:focus {
 .order__summary .checkout__buttons .checkoutv2__applypromo {
     margin-bottom: 20px;
 }
-
-/*
-font-family: 'Quicksand', sans-serif;
-font-family: 'Pacifico', cursive;
-font-family: "Teko", sans-serif;
-
-    transition: 0.3s;
-    -moz-transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-
-    transition: 0.4s;
-    -moz-transition: 0.4s;
-    -webkit-transition: 0.4s;
-    -ms-transition: 0.4s;
-    -o-transition: 0.4s;
-*/

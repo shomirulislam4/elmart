@@ -118,7 +118,7 @@ $(function() {
 
     var searchTerm = $('#demosearch').val().toLowerCase();
 
-    var $captions = $('.demo-items figcaption');
+    var $captions = $('.demo-items .demo-name');
     var hasMatch = false;
 
     $captions.each(function() {
@@ -138,7 +138,7 @@ $(function() {
 
     $grid.isotope({
       filter: function() {
-        var captionText = $(this).find('figcaption').text().toLowerCase();
+        var captionText = $(this).find('.demo-name').text().toLowerCase();
         return captionText.includes(searchTerm);
       }
     });

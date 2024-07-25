@@ -342,7 +342,7 @@
         function fesnwsltrPopupScroll() {
         if (!isScrollTriggered && $(window).scrollTop() > scrollThreshold) {
             isScrollTriggered = true;
-            $(".ds__newsletter__popup").addClass('show');
+            $('.ds__newsletter__popup').addClass('show');
         }
         }
     
