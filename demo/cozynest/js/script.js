@@ -2,7 +2,7 @@
     'use strict';
 
     //All Nice Select
-    if ($('.cn__homepage').length) {
+    if ($('.cozynest').length) {
         $('#cnhstLanguage').niceSelect();
         $('#cnhstCountry').niceSelect();
     }
@@ -161,6 +161,11 @@
     });
 
 /*============================ Shop Page ============================*/
+    //Shop Nice Select
+    if ($('.cn__shoppage').length) {
+        $('#cnShopSorting').niceSelect();
+    }
+
     //Info Bar Grid Buttons
     $(function() {
         var productStyleDiv = $('.cn__product__style');
@@ -201,50 +206,14 @@
         }
     });
 
-    //Product Price Filter
-    $(function() {
-        let minPriceInput = $('#min__price');
-        let maxPriceInput = $('#max__price');
-        let minPriceOutput = $('#min__price__output');
-        let maxPriceOutput = $('#max__price__output');
-        let progress = $('.progress');
-    
-        function updatePrices() {
-            let minPrice = parseInt(minPriceInput.val());
-            let maxPrice = parseInt(maxPriceInput.val());
-            let maxRange = parseInt(minPriceInput.attr('max'));
-    
-            if (minPrice > maxPrice) {
-                [minPrice, maxPrice] = [maxPrice, minPrice];
-            }
-    
-            minPriceOutput.text('$' + minPrice);
-            maxPriceOutput.text('$' + maxPrice);
-    
-            let minPercent = (minPrice / maxRange) * 100;
-            let maxPercent = (maxPrice / maxRange) * 100;
-    
-            progress.css({
-                left: minPercent + '%',
-                right: (100 - maxPercent) + '%'
-            });
-        }
-    
-        minPriceInput.on('input', updatePrices);
-        maxPriceInput.on('input', updatePrices);
-    
-        // Initial update
-        updatePrices();
-    });
-
     //Sideabr Filter
     $(function(){
         //Mobile Menu Main Show/Hide
         $('.sidebar__toggle').on('click', function(){
-            $('.dsshop__sidebar').addClass('show')
+            $('.cnshop__sidebar').addClass('show')
         })
-        $('.dsshop__sidebar__closebtn').on('click', function(){
-            $('.dsshop__sidebar').removeClass('show')
+        $('.cnshop__sidebar__closebtn').on('click', function(){
+            $('.cnshop__sidebar').removeClass('show')
         })
     });
 

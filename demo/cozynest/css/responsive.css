@@ -17,8 +17,13 @@
         font-size: 26px;
         line-height: 34px;
     }
+    span,
     p,
-    a {
+    a,
+    li,
+    button,
+    input,
+    label {
         font-size: 12px;
         line-height: 20px;
         margin: 0;
@@ -83,21 +88,21 @@
             padding: 0 3px;
         }
         .cn__header__Section .cnhs__top li a,
-        .cn__header__Section .cnhs__top .cnhst__lang__loc .nice-select .current {
+        .nice-select .current {
             font-size: 10px;
         }
         .cn__header__Section .cnhs__top .cnhst__lang__loc {
             gap: 10px;
         }
-        .cn__header__Section .cnhs__top .cnhst__lang__loc .nice-select {
+        .nice-select {
             padding-right: 15px;
         }
-        .cn__header__Section .cnhs__top .cnhst__lang__loc .nice-select .option {
+        .nice-select .option {
             padding: 0 15px;
             font-size: 10px;
             line-height: 30px;
         }
-        .cn__header__Section .cnhs__top .cnhst__lang__loc .nice-select::after {
+        .nice-select::after {
             height: 6px;
             right: 3px;
             width: 6px;
@@ -549,6 +554,49 @@
             font-size: 10px;
             line-height: 16px;
         }
+        /*Breadcrumbs Section*/
+        .cn__breadcrumbs__section {
+            height: 300px;
+        }
+        .cn__breadcrumbs__section .left__side .cnbc__page__title {
+            font-size: 40px;
+            line-height: 50px;
+        }
+        .cn__breadcrumbs__section .left__side .cnbc__breadcrumbs a,
+        .cn__breadcrumbs__section .left__side .cnbc__breadcrumbs p {
+            font-size: 12px;
+            line-height: 20px;
+        }
+    /*===== Home Page =====*/
+        .cnshop__info__bar {
+            justify-content: center;
+            gap: 15px;
+        }
+        .cnshop__search__info,
+        .cnshop__grid__sort {
+            gap: 15px;
+        }
+        .cnshop__search__info {
+            flex-direction: column;
+        }
+        .sidebar__toggle {
+            padding: 5px 15px;
+        }
+        .sidebar__toggle span {
+            margin-left: 5px;
+        }
+        .cnshop__grid__sort .nice-select {
+            padding-bottom: 5px;
+        }
+        /*Sidebar*/
+        .cnshop__sidebar {
+            padding: 0;
+        }
+        .cnshop__sidebar .cnshop__sidebar__wrapper {
+            width: 100vw;
+            padding: 5px;
+            gap: 20px;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
@@ -570,8 +618,13 @@
         font-size: 30px;
         line-height: 38px;
     }
+    span,
     p,
-    a {
+    a,
+    li,
+    button,
+    input,
+    label {
         font-size: 12px;
         line-height: 20px;
         margin: 0;
@@ -633,21 +686,21 @@
             padding: 0 5px;
         }
         .cn__header__Section .cnhs__top li a,
-        .cn__header__Section .cnhs__top .cnhst__lang__loc .nice-select .current {
+        .nice-select .current {
             font-size: 12px;
         }
         .cn__header__Section .cnhs__top .cnhst__lang__loc {
             gap: 15px;
         }
-        .cn__header__Section .cnhs__top .cnhst__lang__loc .nice-select {
+        .nice-select {
             padding-right: 15px;
         }
-        .cn__header__Section .cnhs__top .cnhst__lang__loc .nice-select .option {
+        .nice-select .option {
             padding: 0 15px;
             font-size: 12px;
             line-height: 35px;
         }
-        .cn__header__Section .cnhs__top .cnhst__lang__loc .nice-select::after {
+        .nice-select::after {
             height: 8px;
             right: 3px;
             width: 8px;
@@ -1034,6 +1087,44 @@
             font-size: 12px;
             line-height: 18px;
         }
+        /*Breadcrumbs Section*/
+        .cn__breadcrumbs__section {
+            height: 400px;
+        }
+        .cn__breadcrumbs__section .left__side .cnbc__page__title {
+            font-size: 50px;
+            line-height: 60px;
+        }
+        .cn__breadcrumbs__section .left__side .cnbc__breadcrumbs a,
+        .cn__breadcrumbs__section .left__side .cnbc__breadcrumbs p {
+            font-size: 14px;
+            line-height: 24px;
+        }
+    /*===== Home Page =====*/
+        .cnshop__info__bar {
+            justify-content: center;
+            gap: 15px;
+        }
+        .cnshop__search__info,
+        .cnshop__grid__sort {
+            gap: 15px;
+        }
+        .cnshop__search__info {
+            flex-direction: column;
+        }
+        .sidebar__toggle {
+            padding: 5px 15px;
+        }
+        .sidebar__toggle span {
+            margin-left: 5px;
+        }
+        .cnshop__grid__sort .nice-select {
+            padding-bottom: 5px;
+        }
+        /*Sidebar*/
+        .cnshop__sidebar .cnshop__sidebar__wrapper {
+            padding: 10px;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -1055,8 +1146,13 @@
         font-size: 40px;
         line-height: 46px;
     }
+    span,
     p,
-    a {
+    a,
+    li,
+    button,
+    input,
+    label {
         font-size: 14px;
         line-height: 22px;
         margin: 0;
@@ -1113,7 +1209,7 @@
             padding: 0 5px;
         }
         .cn__header__Section .cnhs__top li a,
-        .cn__header__Section .cnhs__top .cnhst__lang__loc .nice-select .current {
+        .nice-select .current {
             font-size: 12px;
             line-height: 24px;
         }
@@ -1123,15 +1219,15 @@
         .cn__header__Section .cnhs__top .cnhst__lang__loc {
             gap: 15px;
         }
-        .cn__header__Section .cnhs__top .cnhst__lang__loc .nice-select {
+        .nice-select {
             padding-right: 15px;
         }
-        .cn__header__Section .cnhs__top .cnhst__lang__loc .nice-select .option {
+        .nice-select .option {
             padding: 0 15px;
             font-size: 12px;
             line-height: 35px;
         }
-        .cn__header__Section .cnhs__top .cnhst__lang__loc .nice-select::after {
+        .nice-select::after {
             height: 8px;
             right: 3px;
             width: 8px;
@@ -1421,6 +1517,37 @@
             font-size: 12px;
             line-height: 18px;
         }
+        /*Breadcrumbs Section*/
+        .cn__breadcrumbs__section {
+            height: 400px;
+        }
+        .cn__breadcrumbs__section .left__side .cnbc__page__title {
+            font-size: 65px;
+            line-height: 75px;
+        }
+        .cn__breadcrumbs__section .left__side .cnbc__breadcrumbs a,
+        .cn__breadcrumbs__section .left__side .cnbc__breadcrumbs p {
+            font-size: 16px;
+            line-height: 26px;
+        }
+    /*===== Home Page =====*/
+        .cnshop__info__bar {
+            justify-content: center;
+            gap: 20px;
+        }
+        .cnshop__search__info,
+        .cnshop__grid__sort {
+            gap: 20px;
+        }
+        .sidebar__toggle {
+            padding: 7px 13px;
+        }
+        .sidebar__toggle span {
+            margin-left: 5px;
+        }
+        .cnshop__grid__sort .nice-select {
+            padding-bottom: 5px;
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -1442,8 +1569,13 @@
         font-size: 44px;
         line-height: 50px;
     }
+    span,
     p,
-    a {
+    a,
+    li,
+    button,
+    input,
+    label {
         font-size: 14px;
         line-height: 22px;
         margin: 0;
@@ -1500,7 +1632,7 @@
         }
         .cn__header__Section .cnhs__top li a,
         .cn__header__Section .cnhs__top p,
-        .cn__header__Section .cnhs__top .cnhst__lang__loc .nice-select .current {
+        .nice-select .current {
             font-size: 12px;
             line-height: 24px;
         }
@@ -1510,10 +1642,10 @@
         .cn__header__Section .cnhs__top .cnhst__lang__loc {
             gap: 15px;
         }
-        .cn__header__Section .cnhs__top .cnhst__lang__loc .nice-select {
+        .nice-select {
             padding-right: 15px;
         }
-        .cn__header__Section .cnhs__top .cnhst__lang__loc .nice-select::after {
+        .nice-select::after {
             height: 8px;
             right: 3px;
             width: 8px;
@@ -1738,6 +1870,37 @@
             font-size: 12px;
             line-height: 18px;
         }
+        /*Breadcrumbs Section*/
+        .cn__breadcrumbs__section {
+            height: 450px;
+        }
+        .cn__breadcrumbs__section .left__side .cnbc__page__title {
+            font-size: 70px;
+            line-height: 80px;
+        }
+        .cn__breadcrumbs__section .left__side .cnbc__breadcrumbs a,
+        .cn__breadcrumbs__section .left__side .cnbc__breadcrumbs p {
+            font-size: 18px;
+            line-height: 28px;
+        }
+    /*===== Home Page =====*/
+        .cnshop__info__bar {
+            justify-content: center;
+            gap: 30px;
+        }
+        .cnshop__search__info,
+        .cnshop__grid__sort {
+            gap: 20px;
+        }
+        .sidebar__toggle {
+            padding: 7px 13px;
+        }
+        .sidebar__toggle span {
+            margin-left: 5px;
+        }
+        .cnshop__grid__sort .nice-select {
+            padding-bottom: 5px;
+        }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1759,10 +1922,15 @@
         font-size: 30px;
         line-height: 38px;
     }
+    span,
     p,
-    a {
-        font-size: 12px;
-        line-height: 20px;
+    a,
+    li,
+    button,
+    input,
+    label {
+        font-size: 14px;
+        line-height: 22px;
         margin: 0;
     }
     h4 {
@@ -1903,7 +2071,8 @@
         /*Best Seller Section*/
         .cn__product__wrapper,
         .cnblognews__wrapper,
-        .cninsta__wrapper {
+        .cninsta__wrapper,
+        .cnshop__wrapper {
             gap: 10px;
         }
         /*Product Style*/
@@ -2062,6 +2231,30 @@
             font-size: 14px;
             line-height: 22px;
         }
+        /*Breadcrumbs Section*/
+        .cn__breadcrumbs__section {
+            height: 450px;
+        }
+        .cn__breadcrumbs__section .left__side .cnbc__page__title {
+            font-size: 70px;
+            line-height: 80px;
+        }
+        .cn__breadcrumbs__section .left__side .cnbc__breadcrumbs a,
+        .cn__breadcrumbs__section .left__side .cnbc__breadcrumbs p {
+            font-size: 18px;
+            line-height: 28px;
+        }
+    /*===== Home Page =====*/
+        .cnshop__search__info,
+        .cnshop__grid__sort {
+            gap: 20px;
+        }
+        .sidebar__toggle {
+            padding: 7px 13px;
+        }
+        .sidebar__toggle span {
+            margin-left: 5px;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -2084,8 +2277,13 @@
         font-size: 44px;
         line-height: 55px;
     }
+    span,
     p,
-    a {
+    a,
+    li,
+    button,
+    input,
+    label {
         font-size: 14px;
         line-height: 22px;
     }
@@ -2174,7 +2372,8 @@
         /*Best Seller Section*/
         .cn__product__wrapper,
         .cnblognews__wrapper,
-        .cninsta__wrapper {
+        .cninsta__wrapper,
+        .cnshop__wrapper {
             gap: 10px;
         }
         /*Product Style*/
@@ -2297,6 +2496,24 @@
             top: -60px;
             right: 0;
         }
+        /*Breadcrumbs Section*/
+        .cn__breadcrumbs__section {
+            height: 500px;
+        }
+        .cn__breadcrumbs__section .left__side .cnbc__page__title {
+            font-size: 75px;
+            line-height: 85px;
+        }
+        .cn__breadcrumbs__section .left__side .cnbc__breadcrumbs a,
+        .cn__breadcrumbs__section .left__side .cnbc__breadcrumbs p {
+            font-size: 22px;
+            line-height: 32px;
+        }
+    /*===== Home Page =====*/
+        .cnshop__search__info,
+        .cnshop__grid__sort {
+            gap: 30px;
+        }
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -2363,7 +2580,8 @@
         /*Best Seller Section*/
         .cn__product__wrapper,
         .cnblognews__wrapper,
-        .cninsta__wrapper {
+        .cninsta__wrapper,
+        .cnshop__wrapper {
             gap: 15px;
         }
         /*Product Style*/
@@ -2434,6 +2652,19 @@
         .cn__newsletter__popup .cn__newsltrpop__wrapper .cn__newsltrpop__close {
             top: -60px;
             right: -30px;
+        }
+        /*Breadcrumbs Section*/
+        .cn__breadcrumbs__section {
+            height: 550px;
+        }
+        .cn__breadcrumbs__section .left__side .cnbc__page__title {
+            font-size: 80px;
+            line-height: 90px;
+        }
+        .cn__breadcrumbs__section .left__side .cnbc__breadcrumbs a,
+        .cn__breadcrumbs__section .left__side .cnbc__breadcrumbs p {
+            font-size: 24px;
+            line-height: 34px;
         }
 }
 
