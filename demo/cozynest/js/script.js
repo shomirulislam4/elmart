@@ -166,37 +166,37 @@
         $('#cnShopSorting').niceSelect();
     }
 
-    //Info Bar Grid Buttons
+    //Grid View Button
     $(function() {
-        var productStyleDiv = $('.cn__product__style');
+        var productStyleDiv = $('.cnshop__wrapper');
 
-        $('.3grid__view').on('click', function() {
-            productStyleDiv.removeClass('large__item list__style');
+        $('.cnshop__grid__2').on('click', function() {
+            productStyleDiv.removeClass('grid3__item grid4__item');
             setActiveButton($(this));
         });
 
-        $('.2grid__view').on('click', function() {
-            if ($(window).width() >= 1200) {
-                productStyleDiv.addClass('large__item').removeClass('list__style');
+        $('.cnshop__grid__3').on('click', function() {
+            if ($(window).width() >= 992) {
+                productStyleDiv.addClass('grid3__item').removeClass('grid4__item');
                 setActiveButton($(this));
             }
         });
 
-        $('.list__view').on('click', function() {
-            if ($(window).width() >= 768) {
-                productStyleDiv.addClass('list__style').removeClass('large__item');
+        $('.cnshop__grid__4').on('click', function() {
+            if ($(window).width() >= 1200) {
+                productStyleDiv.addClass('grid4__item').removeClass('grid3__item');
                 setActiveButton($(this));
             }
         });
 
         $(window).on('resize', function() {
             if ($(window).width() < 1200) {
-                productStyleDiv.removeClass('large__item');
-                setActiveButton($('.3grid__view'));
+                productStyleDiv.removeClass('grid3__item');
+                setActiveButton($('.cnshop__grid__2'));
             }
-            if ($(window).width() < 768) {
-                productStyleDiv.removeClass('list__style');
-                setActiveButton($('.3grid__view'));
+            if ($(window).width() < 1200) {
+                productStyleDiv.removeClass('grid4__item');
+                setActiveButton($('.cnshop__grid__2'));
             }
         });
 
