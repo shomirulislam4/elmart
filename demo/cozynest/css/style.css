@@ -2723,6 +2723,16 @@ form .checkbox label {
     line-height: 22px;
 }
 
+/* Product Item increases based on grid view */
+.cnshop__wrapper .cn__product__style.for4grid,
+.cnshop__wrapper .cn__product__style.for3grid {
+    display: none;
+}
+
+.cnshop__wrapper.grid4__item .cn__product__style.for4grid,
+.cnshop__wrapper.grid3__item .cn__product__style.for3grid {
+    display: block;
+}
 
 /*
 rgba(44, 194, 149, 0.4)
