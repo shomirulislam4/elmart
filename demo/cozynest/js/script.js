@@ -306,6 +306,13 @@
         });
     });
 
+    //Colors Select Active Class
+    $(function(){
+        $('.cnsnglprod__color__lists').on('click','span',function(){
+            $(this).addClass('active').siblings().removeClass('active');
+        });
+    });
+
 /*============================ Blog ============================*/
     //Column Reverse on Screen Size
     $(function() {
