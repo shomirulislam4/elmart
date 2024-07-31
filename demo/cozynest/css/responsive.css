@@ -2575,7 +2575,7 @@
             font-size: 22px;
             line-height: 32px;
         }
-    /*===== Home Page =====*/
+    /*===== Shop Page =====*/
         .cnshop__search__info,
         .cnshop__grid__sort {
             gap: 30px;
@@ -2606,6 +2606,21 @@
         }
         .cnshop__wrapper .cnproduct__content {
             margin-top: 15px;
+        }
+    /*===== Single Product Page =====*/
+        /*Product Info Section*/
+        .cnsnglprod__image__wrap {
+            gap: 15px;
+            height: 683px;
+        }
+        .cnsnglprod__image__wrap .cnsnglprod__image__thumb {
+            width: 164px;
+        }
+        .cnsnglprod__image__wrap .cnsnglprod__image__thumb .swiper-wrapper .swiper-slide {
+            height: 147px !important;
+        }
+        .cnsnglprod__image__wrap .cnsnglprod__image {
+            width: 468px;
         }
 }
 
