@@ -220,14 +220,14 @@
 /*============================ Single product Page ============================*/
     //Product Image Slider
     $(function(){
-        var dsspSwiper = new Swiper(".dssp__product__image__thumb", {
-            spaceBetween: 30,
+        var cnSnglProdSwiper = new Swiper(".cnsnglprod__image__thumb", {
+            direction: 'vertical',
             slidesPerView: 4,
             freeMode: true,
             watchSlidesProgress: true,
             breakpoints: {
                 1200: {
-                    spaceBetween: 30,
+                    spaceBetween: 20,
                 },
                 992: {
                     spaceBetween: 10,
@@ -249,29 +249,38 @@
                 },
             }
         });
-        var dsspSwiper2 = new Swiper(".dssp__product__image", {
+
+        var cnSnglProdSwiper2 = new Swiper(".cnsnglprod__image", {
             loop: true,
             spaceBetween: 0,
-            navigation: {
-                nextEl: ".dssp__prod__img__next",
-                prevEl: ".dssp__prod__img__prev",
-            },
             thumbs: {
-                swiper: dsspSwiper,
+                swiper: cnSnglProdSwiper,
             },
         });
-    });
 
-    //Active Class
-    $(function(){
-        //Size
-        $('.dssp__size').on('click','.size__items button',function(){
-            $(this).addClass('active').siblings().removeClass('active');
+        // Zoom functionality
+        $('.cnsnglprod__magnifying__btn').on('click', function () {
+            $('.swiper-slide-active .zoom__overlay').toggleClass('active');
         });
 
-        //Color
-        $('.dssp__color').on('click','.color__items button',function(){
-            $(this).addClass('active').siblings().removeClass('active');
+        $(document).on('mousemove', '.zoom__overlay.active', function (e) {
+            var $zoomable = $(this).siblings('img.zoomable');
+            var zoomerOffset = $(this).offset();
+            var zoomerWidth = $(this).width();
+            var zoomerHeight = $(this).height();
+
+            var x = e.pageX - zoomerOffset.left;
+            var y = e.pageY - zoomerOffset.top;
+
+            var xPercent = x / zoomerWidth * 100;
+            var yPercent = y / zoomerHeight * 100;
+
+            $zoomable.css('transform-origin', `${xPercent}% ${yPercent}%`);
+            $zoomable.css('transform', 'scale(2)');
+        });
+
+        $(document).on('mouseleave', '.zoom__overlay.active', function () {
+            $(this).siblings('img.zoomable').css('transform', 'scale(1)');
         });
     });
 
