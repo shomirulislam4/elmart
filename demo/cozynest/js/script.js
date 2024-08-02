@@ -222,9 +222,8 @@
     $(function(){
         var cnSnglProdSwiper = new Swiper(".cnsnglprod__image__thumb", {
             direction: 'vertical',
+            loop: true,
             slidesPerView: 4,
-            freeMode: true,
-            watchSlidesProgress: true,
             breakpoints: {
                 1200: {
                     spaceBetween: 20,
@@ -234,18 +233,12 @@
                 },
                 768: {
                     spaceBetween: 10,
-                    slidesPerView: 3,
                 },
                 576: {
-                    spaceBetween: 20,
-                },
-                415: {
-                    spaceBetween: 13,
-                    slidesPerView: 3,
+                    spaceBetween: 15,
                 },
                 200: {
-                    spaceBetween: 10,
-                    slidesPerView: 3,
+                    spaceBetween: 6,
                 },
             }
         });

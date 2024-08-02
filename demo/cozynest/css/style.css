@@ -526,7 +526,7 @@ input[type="radio"]:checked::before {
 }
 
 @media (max-width: 991px) {
-    .cnhst__social__links {
+    .cnhst__wrap .cnhst__social__links {
         display: none;
     }
     .cn__mobile__menu .cnhst__social__links {
@@ -540,6 +540,7 @@ input[type="radio"]:checked::before {
     font-weight: 500;
     color: #FFF;
     margin: 0;
+    padding: 0;
 }
 
 @media (max-width: 575px) {
@@ -2832,6 +2833,7 @@ form .checkbox label {
 
 .cnsnglprod__image__wrap .cnsnglprod__image .cnsnglprod__magnifying__btn svg {
     stroke: var(--text-color);
+    stroke-width: 1.5;
     height: 62px;
     width: 62px;
     transition: 0.3s;
@@ -2992,6 +2994,11 @@ form .checkbox label {
 
 .cnsnglprod__info .cnsnglprod__cta__btns .cnsnglprod__ctabtn {
     width: 167px;
+}
+
+.cnsnglprod__ratings .star__rating svg {
+    height: 16px;
+    width: 16px;
 }
 
 /*

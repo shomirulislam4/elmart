@@ -6,7 +6,8 @@
     .cn__blognews__section,
     .cn__instagram__section,
     .cn__footer,
-    .cn__shop__section {
+    .cn__shop__section,
+    .cn__singleproduct__section {
         margin-top: 20px;
     }
     .cn__promo__section,
@@ -50,6 +51,7 @@
         padding: 5px 15px;
         font-weight: 400;
         font-size: 10px;
+        line-height: 10px;
     }
     .cn__button__b {
         padding: 4px 14px;
@@ -614,6 +616,83 @@
             line-height: 28px;
             padding: 0 10px;
         }
+    /*===== Single Product Page =====*/
+        /*Product Info Section*/
+        .cnsnglprod__image__wrap {
+            gap: 5px;
+            height: 190px;
+        }
+        .cnsnglprod__image__wrap .cnsnglprod__image__thumb {
+            width: 48px;
+        }
+        .cnsnglprod__image__wrap .cnsnglprod__image__thumb .swiper-wrapper .swiper-slide {
+            height: 43px !important;
+        }
+        .cnsnglprod__image__wrap .cnsnglprod__image {
+            width: 123px;
+        }
+        .cnsnglprod__image__wrap .cnsnglprod__image .cnsnglprod__magnifying__btn {
+            bottom: 5px;
+            right: 5px;
+        }
+        .cnsnglprod__image__wrap .cnsnglprod__image .cnsnglprod__magnifying__btn svg {
+            height: 24px;
+            width: 24px;
+            stroke-width: 3;
+        }
+        .cnsnglprod__info {
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .cnsnglprod__info h2 {
+            font-size: 24px;
+            line-height: 34px;
+        }
+        .cnsnglprod__info .cnsnglprod__productmeta p {
+            margin-bottom: 6px;
+        }
+        .cnsnglprod__info .cnsnglprod__ratings {
+            flex-direction: column;
+            align-items: center;
+        }
+        .cnsnglprod__ratings .star__rating svg {
+            height: 12px;
+            width: 12px;
+        }
+        .cnsnglprod__info .cnsnglprod__addtowishlist i {
+            font-size: 12px;
+        }
+        .cnsnglprod__info .cnsnglprod__price .cnsnglprod__oldprice {
+            font-size: 14px;
+            line-height: 24px;
+        }
+        .cnsnglprod__info .cnsnglprod__price .cnsnglprod__newprice {
+            font-size: 20px;
+            line-height: 24px;
+        }
+        .cnsnglprod__info .cnsnglprod__cta__btns {
+            gap: 10px;
+        }
+        .cnsnglprod__info .cnsnglprod__price .sale__tag {
+            margin-left: 5px;
+            font-size: 12px;
+            line-height: 12px;
+            padding: 6px 12px;
+        }
+        .quantity__decrease,
+        .quantity__increase {
+            font-size: 12px;
+            line-height: 24px;
+            height: 24px;
+            width: 24px;
+        }
+        .quantity__display {
+            font-size: 12px;
+            line-height: 24px;
+        }
+        .cnsnglprod__info .cnhst__social__links li {
+            padding: 0 5px;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
@@ -623,7 +702,9 @@
     .cn__testimonials__section,
     .cn__blognews__section,
     .cn__instagram__section,
-    .cn__shop__section {
+    .cn__footer,
+    .cn__shop__section,
+    .cn__singleproduct__section {
         margin-top: 30px;
     }
     .cn__promo__section,
@@ -668,6 +749,7 @@
         padding: 10px 20px;
         font-weight: 400;
         font-size: 12px;
+        line-height: 12px;
     }
     .cn__button__b {
         padding: 9px 19px;
@@ -1157,6 +1239,78 @@
             line-height: 34px;
             padding: 0 10px;
         }
+    /*===== Single Product Page =====*/
+        /*Product Info Section*/
+        .cnsnglprod__image__wrap {
+            gap: 5px;
+            height: 277px;
+        }
+        .cnsnglprod__image__wrap .cnsnglprod__image__thumb {
+            width: 73px;
+        }
+        .cnsnglprod__image__wrap .cnsnglprod__image__thumb .swiper-wrapper .swiper-slide {
+            height: 65px !important;
+        }
+        .cnsnglprod__image__wrap .cnsnglprod__image {
+            width: 188px;
+        }
+        .cnsnglprod__image__wrap .cnsnglprod__image .cnsnglprod__magnifying__btn {
+            bottom: 10px;
+            right: 10px;
+        }
+        .cnsnglprod__image__wrap .cnsnglprod__image .cnsnglprod__magnifying__btn svg {
+            height: 30px;
+            width: 30px;
+        }
+        .cnsnglprod__info {
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .cnsnglprod__info h2 {
+            font-size: 24px;
+            line-height: 34px;
+        }
+        .cnsnglprod__info .cnsnglprod__productmeta p {
+            margin-bottom: 6px;
+        }
+        .cnsnglprod__ratings .star__rating svg {
+            height: 14px;
+            width: 14px;
+        }
+        .cnsnglprod__info .cnsnglprod__addtowishlist i {
+            font-size: 12px;
+        }
+        .cnsnglprod__info .cnsnglprod__price .cnsnglprod__oldprice {
+            font-size: 14px;
+            line-height: 24px;
+        }
+        .cnsnglprod__info .cnsnglprod__price .cnsnglprod__newprice {
+            font-size: 20px;
+            line-height: 24px;
+        }
+        .cnsnglprod__info .cnsnglprod__cta__btns {
+            gap: 10px;
+        }
+        .cnsnglprod__info .cnsnglprod__price .sale__tag {
+            margin-left: 5px;
+            font-size: 12px;
+            line-height: 12px;
+            padding: 6px 12px;
+        }
+        .quantity__decrease,
+        .quantity__increase {
+            font-size: 16px;
+            line-height: 30px;
+            height: 30px;
+            width: 30px;
+        }
+        .quantity__display {
+            font-size: 14px;
+            line-height: 30px;
+        }
+        .cnsnglprod__info .cnhst__social__links li {
+            padding: 0 7px;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -1166,7 +1320,9 @@
     .cn__testimonials__section,
     .cn__blognews__section,
     .cn__instagram__section,
-    .cn__shop__section {
+    .cn__footer,
+    .cn__shop__section,
+    .cn__singleproduct__section {
         margin-top: 40px;
     }
     .cn__promo__section,
@@ -1211,6 +1367,7 @@
         padding: 10px 25px;
         font-weight: 400;
         font-size: 12px;
+        line-height: 12px;
     }
     .cn__button__b {
         padding: 9px 24px;
@@ -1567,7 +1724,7 @@
             font-size: 16px;
             line-height: 26px;
         }
-    /*===== Home Page =====*/
+    /*===== Shop Page =====*/
         .cnshop__info__bar {
             justify-content: center;
             gap: 20px;
@@ -1595,6 +1752,58 @@
             line-height: 34px;
             padding: 0 10px;
         }
+    /*===== Single Product Page =====*/
+        /*Product Info Section*/
+        .cnsnglprod__image__wrap {
+            gap: 10px;
+            height: 401px;
+        }
+        .cnsnglprod__image__wrap .cnsnglprod__image__thumb {
+            width: 106px;
+        }
+        .cnsnglprod__image__wrap .cnsnglprod__image__thumb .swiper-wrapper .swiper-slide {
+            height: 95px !important;
+        }
+        .cnsnglprod__image__wrap .cnsnglprod__image {
+            width: 275px;
+        }
+        .cnsnglprod__image__wrap .cnsnglprod__image .cnsnglprod__magnifying__btn {
+            bottom: 15px;
+            right: 15px;
+        }
+        .cnsnglprod__image__wrap .cnsnglprod__image .cnsnglprod__magnifying__btn svg {
+            height: 40px;
+            width: 40px;
+        }
+        .cnsnglprod__info {
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .cnsnglprod__info h2 {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        .cnsnglprod__info .cnsnglprod__productmeta p {
+            margin-bottom: 6px;
+        }
+        .cnsnglprod__ratings .star__rating svg {
+            height: 14px;
+            width: 14px;
+        }
+        .cnsnglprod__info .cnsnglprod__addtowishlist i {
+            font-size: 16px;
+        }
+        .cnsnglprod__info .cnsnglprod__price .cnsnglprod__oldprice {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        .cnsnglprod__info .cnsnglprod__price .cnsnglprod__newprice {
+            font-size: 24px;
+            line-height: 30px;
+        }
+        .cnsnglprod__info .cnsnglprod__cta__btns {
+            gap: 10px;
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -1605,7 +1814,8 @@
     .cn__blognews__section,
     .cn__instagram__section,
     .cn__footer,
-    .cn__shop__section {
+    .cn__shop__section,
+    .cn__singleproduct__section {
         margin-top: 50px;
     }
     .cn__promo__section,
@@ -1648,6 +1858,7 @@
     .cn__button__b {
         padding: 10px 25px;
         font-size: 14px;
+        line-height: 14px;
         font-weight: 400;
     }
     .cn__button__b {
@@ -1935,7 +2146,7 @@
             font-size: 18px;
             line-height: 28px;
         }
-    /*===== Home Page =====*/
+    /*===== Shop Page =====*/
         .cnshop__info__bar {
             justify-content: center;
             gap: 30px;
@@ -1957,6 +2168,32 @@
         .pagination {
             padding-top: 50px;
         }
+    /*===== Single Product Page =====*/
+        /*Product Info Section*/
+        .cnsnglprod__image__wrap {
+            gap: 15px;
+            height: 532px;
+        }
+        .cnsnglprod__image__wrap .cnsnglprod__image__thumb {
+            width: 136px;
+        }
+        .cnsnglprod__image__wrap .cnsnglprod__image__thumb .swiper-wrapper .swiper-slide {
+            height: 122px !important;
+        }
+        .cnsnglprod__image__wrap .cnsnglprod__image {
+            width: 365px;
+        }
+        .cnsnglprod__info {
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .cnsnglprod__info h2 {
+            font-size: 36px;
+            line-height: 46px;
+        }
+        .cnsnglprod__info .cnsnglprod__productmeta p {
+            margin-bottom: 6px;
+        }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1967,7 +2204,8 @@
     .cn__blognews__section,
     .cn__instagram__section,
     .cn__footer,
-    .cn__shop__section {
+    .cn__shop__section,
+    .cn__singleproduct__section {
         margin-top: 60px;
     }
     .cn__promo__section,
@@ -2009,6 +2247,7 @@
     .cn__button__a,
     .cn__button__b {
         font-size: 14px;
+        line-height: 14px;
         padding: 10px 25px;
     }
     .cn__button__b {
@@ -2305,7 +2544,7 @@
             font-size: 18px;
             line-height: 28px;
         }
-    /*===== Home Page =====*/
+    /*===== Shop Page =====*/
         .cnshop__search__info,
         .cnshop__grid__sort {
             gap: 20px;
@@ -2320,6 +2559,66 @@
         .pagination {
             padding-top: 60px;
         }
+    /*===== Single Product Page =====*/
+        /*Product Info Section*/
+        .cnsnglprod__image__wrap {
+            gap: 10px;
+            height: 470px;
+        }
+        .cnsnglprod__image__wrap .cnsnglprod__image__thumb {
+            width: 124px;
+        }
+        .cnsnglprod__image__wrap .cnsnglprod__image__thumb .swiper-wrapper .swiper-slide {
+            height: 111px !important;
+        }
+        .cnsnglprod__image__wrap .cnsnglprod__image {
+            width: 322px;
+        }
+        .cnsnglprod__image__wrap .cnsnglprod__image .cnsnglprod__magnifying__btn {
+            bottom: 15px;
+            right: 15px;
+        }
+        .cnsnglprod__image__wrap .cnsnglprod__image .cnsnglprod__magnifying__btn svg {
+            height: 40px;
+            width: 40px;
+        }
+        .cnsnglprod__info {
+            gap: 10px;
+        }
+        .cnsnglprod__info h2 {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        .cnsnglprod__info .cnsnglprod__productmeta p {
+            margin-bottom: 6px;
+        }
+        .cnsnglprod__info .cnsnglprod__ratings {
+            gap: 5px;
+        }
+        .cnsnglprod__totalreview {
+            font-size: 12px;
+        }
+        .cnsnglprod__ratings .star__rating svg {
+            height: 14px;
+            width: 14px;
+        }
+        .cnsnglprod__info .cnsnglprod__addtowishlist i {
+            font-size: 16px;
+        }
+        .cnsnglprod__info .cnsnglprod__price .cnsnglprod__oldprice {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        .cnsnglprod__info .cnsnglprod__price .cnsnglprod__newprice {
+            font-size: 24px;
+            line-height: 30px;
+        }
+        .cnsnglprod__info .cnsnglprod__cta__btns {
+            gap: 10px;
+        }
+        .cnsnglprod__info .cnhst__social__links li {
+            padding: 0 7px;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -2330,7 +2629,8 @@
     .cn__blognews__section,
     .cn__instagram__section,
     .cn__footer,
-    .cn__shop__section {
+    .cn__shop__section,
+    .cn__singleproduct__section {
         margin-top: 70px;
     }
     .cn__promo__section,
@@ -2632,7 +2932,8 @@
     .cn__blognews__section,
     .cn__instagram__section,
     .cn__footer,
-    .cn__shop__section {
+    .cn__shop__section,
+    .cn__singleproduct__section {
         margin-top: 80px;
     }
     .cn__promo__section,
@@ -2838,7 +3139,8 @@
     .cn__blognews__section,
     .cn__instagram__section,
     .cn__footer,
-    .cn__shop__section {
+    .cn__shop__section,
+    .cn__singleproduct__section {
         margin-top: 90px;
     }
     /*===== Home Page =====*/
