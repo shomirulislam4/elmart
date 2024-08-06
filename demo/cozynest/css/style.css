@@ -15,6 +15,7 @@
     12. Breadcrumbs Section
 3. Shop Page
 4. Single Product Page
+5. Blog
 
 **********************************************/
 
@@ -2509,14 +2510,14 @@ form .checkbox label {
 /*** End of Info Bar ***/
 
 /*** Start of Sidebar ***/
-.cnshop__sidebar .cnshop__sidebar__wrapper {
+.cn__allpage__sidebar .cn__allpage__sidebar__wrapper {
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 0;
 }
 
-.cnshop__sidebar .cnshop__sidebar__closebtn {
+.cn__allpage__sidebar .cn__allpage__sidebar__closebtn {
     display: none;
     position: absolute;
     top: 71vh;
@@ -2537,13 +2538,13 @@ form .checkbox label {
     -o-transition: 0.3s;
 }
 
-.cnshop__sidebar .cnshop__sidebar__closebtn:hover{
+.cn__allpage__sidebar .cn__allpage__sidebar__closebtn:hover{
     background: var(--main-color);
     color: #FFF;
 }
 
 @media (max-width: 1199px) {
-    .cnshop__sidebar {
+    .cn__allpage__sidebar {
         position: fixed;
         top: 0;
         right: 0;
@@ -2558,10 +2559,10 @@ form .checkbox label {
         -ms-transition: 1s;
         -o-transition: 1s;
     }
-    .cnshop__sidebar.show {
+    .cn__allpage__sidebar.show {
         height: 100vh;
     }
-    .cnshop__sidebar .cnshop__sidebar__wrapper {
+    .cn__allpage__sidebar .cn__allpage__sidebar__wrapper {
         width: 100%;
         height: 70vh;
         background: #F4F4F4;
@@ -2571,12 +2572,12 @@ form .checkbox label {
         overflow-x: hidden;
         overflow-y: auto;
     }
-    .cnshop__sidebar .cnshop__sidebar__closebtn {
+    .cn__allpage__sidebar .cn__allpage__sidebar__closebtn {
         display: block;
     }
 }
 
-.cnshop__sidebar__wrapper .cnshop__sidebar__widgets h4 {
+.cn__allpage__sidebar__wrapper .cn__allpage__sidebar__widgets h4 {
     border-bottom: 1px solid var(--text-color);
     padding-bottom: 5px;
     margin-bottom: 15px;
@@ -2585,23 +2586,23 @@ form .checkbox label {
     font-weight: 600;
 }
 
-.cnshop__sidebar__wrapper .cnshop__sidebar__widgets .form__row,
-.cnshop__sidebar__wrapper .cnshop__sidebar__widgets label {
+.cn__allpage__sidebar__wrapper .cn__allpage__sidebar__widgets .form__row,
+.cn__allpage__sidebar__wrapper .cn__allpage__sidebar__widgets label {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.cnshop__sidebar__wrapper .cnshop__sidebar__widgets .form__row {
+.cn__allpage__sidebar__wrapper .cn__allpage__sidebar__widgets .form__row {
     padding: 5px 0;
 }
 
-.cnshop__sidebar__wrapper .cnshop__sidebar__widgets label {
+.cn__allpage__sidebar__wrapper .cn__allpage__sidebar__widgets label {
     color: #666;
     text-transform: capitalize;
 }
 
-.cnshop__sidebar__wrapper .cnshop__sidebar__color li span {
+.cn__allpage__sidebar__wrapper .cn__allpage__sidebar__color li span {
     display: block;
     height: 19px;
     width: 19px;
@@ -2613,7 +2614,7 @@ form .checkbox label {
     -o-transition: 0.3s;
 }
 
-.cnshop__sidebar__wrapper .cnshop__sidebar__color li span:hover {
+.cn__allpage__sidebar__wrapper .cn__allpage__sidebar__color li span:hover {
     height: 24px;
     width: 24px;
 }
@@ -3296,6 +3297,14 @@ form .checkbox label {
     height: auto;
 }
 /*** End of Single Product Description ***/
+
+/* ====================================================================
+   5. Blog
+==================================================================== */
+.cn__blogrightsidebarpage .cnblognews__wrapper {
+    justify-content: flex-start;
+}
+
 
 /*
 rgba(44, 194, 149, 0.4)
