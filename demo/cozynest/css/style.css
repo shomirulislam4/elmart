@@ -85,7 +85,9 @@ a,
 li,
 button,
 input,
-label {
+label,
+textarea,
+th, td {
     color: var(--text-color);
     font-size: 16px;
     line-height: 26px;
@@ -221,14 +223,14 @@ button:focus {
 .vertical__seperator {
     height: 26px;
     width: 3px;
-    background: var(--text-color);
+    background: #666;
     margin: 0;
 }
 
 .horizontal__seperator {
     height: 3px;
     width: 100%;
-    background: var(--text-color);
+    background: #666;
     margin: 0;
 }
 
@@ -621,6 +623,7 @@ input[type="radio"]:checked::before {
 .cn__header__Section .cnhs__bottom .cnhsb__wrap {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .cn__logo {
@@ -2274,6 +2277,7 @@ form .checkbox label {
 
 .cn__breadcrumbs__section .left__side .cnbc__breadcrumbs {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .cn__breadcrumbs__section .left__side .cnbc__breadcrumbs a,
@@ -3000,6 +3004,292 @@ form .checkbox label {
     height: 16px;
     width: 16px;
 }
+
+/*** Start of Single Product Description ***/
+.cnsnglprod__desc__section {
+    margin-top: 100px;
+}
+
+/* Desc Tabs */
+.cnsnglprod__navrev__tabs {
+    padding-bottom: 15px;
+    border-bottom: 3px solid #666;
+    margin-bottom: 80px;
+    display: flex;
+    gap: 120px;
+}
+
+.cnsnglprod__navrev__tabs .cnsnglprod__navrev__btns {
+    color: #666;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 500;
+    text-transform: capitalize;
+    background: transparent;
+}
+
+.cnsnglprod__navrev__tabs .cnsnglprod__navrev__btns.active {
+    color: var(--text-color);
+}
+
+/* Descriptions */
+.cnsnglprod__product__descrev .tab-pane table {
+    margin: 10px 0;
+}
+
+.cnsnglprod__product__descrev .tab-pane table,
+.cnsnglprod__product__descrev .tab-pane tbody {
+    width: 100%;
+}
+
+.cnsnglprod__product__descrev .tab-pane th,
+.cnsnglprod__product__descrev .tab-pane td {
+    border: 1px solid #666;
+    text-transform: capitalize;
+    padding: 5px 10px;
+}
+
+/* User Review Form */
+.cnsnglprod__reviews {
+    display: flex;
+}
+
+.cnsnglprod__reviews form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin-top: 22px;
+}
+
+.cnsnglprod__reviews h2 {
+    text-transform: capitalize;
+}
+
+.cnsnglprod__reviews form input,
+.cnsnglprod__reviews form .nice-select {
+    padding: 0 20px;
+    background: #FFF;
+    border: 1px solid #D0D5DD;
+    height: 55px;
+    color: var(--text-color);
+    line-height: 55px;
+}
+
+.cnsnglprod__reviews form .nice-select .list {
+	margin: 0;
+	width: 100%;
+}
+
+.cnsnglprod__reviews form .nice-select::after {
+	border-bottom: 2px solid #666;
+	border-right: 2px solid #666;
+	height: 11px;
+	margin-top: 0;
+	right: 20px;
+	width: 11px;
+    top: 40%;
+}
+
+.cnsnglprod__reviews form .nice-select .list li {
+    list-style: none;
+    margin: 0;
+    text-align: center;
+}
+
+.cnsnglprod__reviews form textarea {
+    padding: 10px 20px;
+    height: 128px;
+    color: var(--text-color);
+    resize: none;
+    border: 1px solid #D0D5DD;
+}
+
+.cnsnglprod__reviews form input::placeholder,
+.cnsnglprod__reviews form textarea::placeholder,
+.cnsnglprod__reviews form .nice-select .current {
+    color: #666;
+}
+
+.cnsnglprod__reviews .review__submit__btn {
+    color: #FFF;
+    font-weight: 600;
+    padding: 14px 0;
+    background: var(--text-color);
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.cnsnglprod__reviews .review__submit__btn:hover {
+    background: var(--main-color);
+}
+
+.cnsnglprod__reviews .vertical__seperator {
+    height: 800px;
+    margin: 0 70px;
+}
+
+.cnsnglprod__reviews .left__side {
+    width: 40%;
+}
+
+.cnsnglprod__reviews .right__side {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 60%;
+}
+
+.cnsnglprod__submitted__review__item {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #666;
+}
+
+.cnsnglprod__submitted__review__item:last-child {
+    border: 0;
+}
+
+.cnsnglprod__submitted__review__item .usernrating {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.cnsnglprod__submitted__review__item .usernrating .user__info {
+    display: flex;
+    gap: 20px;
+}
+
+.cnsnglprod__submitted__review__item .usernrating .user__info .image {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.cnsnglprod__submitted__review__item .usernrating .user__info .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.cnsnglprod__submitted__review__item .usernrating .user__info .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cnsnglprod__submitted__review__item .usernrating .user__info .info h4 {
+    color: var(--text-color);
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.cnsnglprod__submitted__review__item .usernrating .user__info .info p {
+    color: #8D8D8D;
+    margin-bottom: 0;
+}
+
+.cnsnglprod__submitted__review__item .usernrating .stars svg {
+    fill: var(--text-color);
+    height: 20px;
+    width: 20px;
+}
+
+.cnsnglprod__submitted__review__item .usernrating .stars svg.empty {
+    fill: #D2CCC9;
+}
+
+.cnsnglprod__submitted__review__item .user__review {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cnsnglprod__submitted__review__item .user__review h4 {
+    color: var(--text-color);
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.cnsnglprod__submitted__review__item .user__review .cnsnglprod__user__review__text {
+    margin: 0;
+}
+
+.cnsnglprod__submitted__review__item .user__review .cnsnglprod__user__review__text .cnsnglprod__urt__toggle {
+    font-weight: 600;
+    margin: 0;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.cnsnglprod__submitted__review__item .user__review .cnsnglprod__user__review__text .cnsnglprod__urt__toggle:hover {
+    color: var(--main-color);
+}
+
+/* FAQ Section */
+.cnfaq__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.cnsnglprod__desc__title {
+    margin-bottom: 72px;
+}
+
+.cnfaq__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.cnfaq__items__header .cnfaq__items__header__btn {
+    background: transparent;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 27px 33px;
+    border: 2px solid #666;
+}
+
+.cnfaq__items__header .cnfaq__items__header__btn::after {
+    content: '+';
+    font-size: 20px;
+}
+
+.cnfaq__items__header .cnfaq__items__header__btn:not(.collapsed)::after {
+    content: '-';
+}
+
+.cnfaq__items__content {
+    border: 2px solid #666;
+    padding: 27px 33px;
+    margin-bottom: 16px;
+}
+
+.cnfaq__image,
+.cnfaq__image img {
+    width: 100%;
+    height: auto;
+}
+/*** End of Single Product Description ***/
 
 /*
 rgba(44, 194, 149, 0.4)

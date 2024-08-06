@@ -7,7 +7,8 @@
     .cn__instagram__section,
     .cn__footer,
     .cn__shop__section,
-    .cn__singleproduct__section {
+    .cn__singleproduct__section,
+    .cnsnglprod__desc__section {
         margin-top: 20px;
     }
     .cn__promo__section,
@@ -25,10 +26,11 @@
     li,
     button,
     input,
-    label {
+    label,
+    textarea,
+    th, td {
         font-size: 12px;
         line-height: 20px;
-        margin: 0;
     }
     h4 {
         font-size: 18px;
@@ -569,6 +571,9 @@
             font-size: 40px;
             line-height: 50px;
         }
+        .cn__breadcrumbs__section .left__side .cnbc__breadcrumbs {
+            justify-content: center;
+        }
         .cn__breadcrumbs__section .left__side .cnbc__breadcrumbs a,
         .cn__breadcrumbs__section .left__side .cnbc__breadcrumbs p {
             font-size: 12px;
@@ -693,6 +698,108 @@
         .cnsnglprod__info .cnhst__social__links li {
             padding: 0 5px;
         }
+        .cnsnglprod__info .cnsnglprod__cta__btns .cnsnglprod__ctabtn {
+            width: 100%;
+        }
+        /*Single Product Description*/
+        .cnsnglprod__navrev__tabs {
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            gap: 20px;
+            border-width: 2px;
+            justify-content: center;
+        }
+        .cnsnglprod__navrev__tabs .cnsnglprod__navrev__btns {
+            font-size: 12px;
+            line-height: 20px;
+        }
+        .cnsnglprod__desc__title {
+            margin-bottom: 0;
+        }
+        .cnfaq__wrapper {
+            margin-bottom: 10px;
+        }
+        .cnfaq__items__header .cnfaq__items__header__btn,
+        .cnfaq__items__content {
+            padding: 10px;
+        }
+        .cnfaq__items__header .cnfaq__items__header__btn::after {
+            content: '+';
+            font-size: 14px;
+        }
+        .cnsnglprod__product__descrev .tab-pane th,
+        .cnsnglprod__product__descrev .tab-pane td {
+            padding: 5px;
+        }
+        /*Review Section*/
+        .cnsnglprod__reviews form {
+            gap: 12px;
+            margin-top: 12px;
+        }
+        .cnsnglprod__product__descrev .cnsnglprod__reviews {
+            flex-direction: column;
+        }
+        .cnsnglprod__product__descrev .cnsnglprod__reviews .vertical__seperator {
+            height: 2px;
+            width: 100%;
+            margin: 30px 0;
+        }
+        .cnsnglprod__product__descrev .cnsnglprod__reviews .left__side,
+        .cnsnglprod__product__descrev .cnsnglprod__reviews .right__side {
+            width: 100%;
+        }
+        .cnsnglprod__reviews .right__side {
+            gap: 15px;
+        }
+        .cnsnglprod__submitted__review__item .usernrating {
+            gap: 5px;
+            align-items: center;
+            flex-direction: column;
+        }
+        .cnsnglprod__submitted__review__item .usernrating .user__info {
+            gap: 10px;
+        }
+        .cnsnglprod__submitted__review__item .usernrating .stars svg {
+            height: 12px;
+            width: 12px;
+        }
+        .cnsnglprod__submitted__review__item .usernrating .user__info .image {
+            height: 40px;
+            width: 40px;
+        }
+        .cnsnglprod__submitted__review__item {
+            gap: 10px;
+            padding-bottom: 10px;
+        }
+        .cnsnglprod__reviews form input,
+        .cnsnglprod__reviews form .nice-select {
+            height: 40px;
+            line-height: 36px;
+            padding: 0 5px;
+        }
+        .cnsnglprod__reviews form textarea {
+            padding: 5px;
+            height: 100px;
+        }
+        .cnsnglprod__reviews form .nice-select::after {
+            height: 8px;
+            width: 8px;
+            top: 37%;
+        }
+        .cnsnglprod__reviews .review__submit__btn {
+            padding: 8px 0;
+        }
+        .cnsnglprod__submitted__review__item .usernrating .user__info .info h4 {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .cnsnglprod__submitted__review__item .user__review h4 {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        .cnsnglprod__submitted__review__item .user__review {
+            gap: 10px;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
@@ -704,7 +811,8 @@
     .cn__instagram__section,
     .cn__footer,
     .cn__shop__section,
-    .cn__singleproduct__section {
+    .cn__singleproduct__section,
+    .cnsnglprod__desc__section {
         margin-top: 30px;
     }
     .cn__promo__section,
@@ -723,10 +831,11 @@
     li,
     button,
     input,
-    label {
+    label,
+    textarea,
+    th, td {
         font-size: 12px;
         line-height: 20px;
-        margin: 0;
     }
     h4 {
         font-size: 20px;
@@ -1311,6 +1420,89 @@
         .cnsnglprod__info .cnhst__social__links li {
             padding: 0 7px;
         }
+        .cnsnglprod__info .cnsnglprod__cta__btns .cnsnglprod__ctabtn {
+            width: 100%;
+        }
+        /*Single Product Description*/
+        .cnsnglprod__navrev__tabs {
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            gap: 20px;
+            border-width: 2px;
+            justify-content: center;
+        }
+        .cnsnglprod__navrev__tabs .cnsnglprod__navrev__btns {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .cnsnglprod__desc__title {
+            margin-bottom: 30px;
+        }
+        .cnfaq__wrapper {
+            margin-bottom: 15px;
+        }
+        .cnfaq__items__header .cnfaq__items__header__btn,
+        .cnfaq__items__content {
+            padding: 10px 15px;
+        }
+        /*Review Section*/
+        .cnsnglprod__reviews form {
+            gap: 12px;
+            margin-top: 20px;
+        }
+        .cnsnglprod__product__descrev .cnsnglprod__reviews {
+            flex-direction: column;
+        }
+        .cnsnglprod__product__descrev .cnsnglprod__reviews .vertical__seperator {
+            height: 2px;
+            width: 100%;
+            margin: 30px 0;
+        }
+        .cnsnglprod__product__descrev .cnsnglprod__reviews .left__side,
+        .cnsnglprod__product__descrev .cnsnglprod__reviews .right__side {
+            width: 100%;
+        }
+        .cnsnglprod__reviews .right__side {
+            gap: 20px;
+        }
+        .cnsnglprod__submitted__review__item .usernrating .user__info {
+            gap: 10px;
+        }
+        .cnsnglprod__submitted__review__item .usernrating .stars svg {
+            height: 14px;
+            width: 14px;
+        }
+        .cnsnglprod__submitted__review__item .usernrating .user__info .image {
+            height: 50px;
+            width: 50px;
+        }
+        .cnsnglprod__submitted__review__item {
+            gap: 15px;
+            padding-bottom: 15px;
+        }
+        .cnsnglprod__reviews form input,
+        .cnsnglprod__reviews form .nice-select {
+            height: 45px;
+            line-height: 45px;
+            padding: 0 10px;
+        }
+        .cnsnglprod__reviews form textarea {
+            padding: 10px;
+        }
+        .cnsnglprod__reviews .review__submit__btn {
+            padding: 10px 0;
+        }
+        .cnsnglprod__submitted__review__item .usernrating .user__info .info h4 {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .cnsnglprod__submitted__review__item .user__review h4 {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        .cnsnglprod__submitted__review__item .user__review {
+            gap: 15px;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -1322,7 +1514,8 @@
     .cn__instagram__section,
     .cn__footer,
     .cn__shop__section,
-    .cn__singleproduct__section {
+    .cn__singleproduct__section,
+    .cnsnglprod__desc__section {
         margin-top: 40px;
     }
     .cn__promo__section,
@@ -1341,10 +1534,11 @@
     li,
     button,
     input,
-    label {
+    label,
+    textarea,
+    th, td {
         font-size: 14px;
         line-height: 22px;
-        margin: 0;
     }
     h4 {
         font-size: 22px;
@@ -1716,8 +1910,8 @@
             height: 400px;
         }
         .cn__breadcrumbs__section .left__side .cnbc__page__title {
-            font-size: 65px;
-            line-height: 75px;
+            font-size: 60px;
+            line-height: 70px;
         }
         .cn__breadcrumbs__section .left__side .cnbc__breadcrumbs a,
         .cn__breadcrumbs__section .left__side .cnbc__breadcrumbs p {
@@ -1756,7 +1950,7 @@
         /*Product Info Section*/
         .cnsnglprod__image__wrap {
             gap: 10px;
-            height: 401px;
+            height: 398px;
         }
         .cnsnglprod__image__wrap .cnsnglprod__image__thumb {
             width: 106px;
@@ -1802,7 +1996,80 @@
             line-height: 30px;
         }
         .cnsnglprod__info .cnsnglprod__cta__btns {
-            gap: 10px;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 0;
+        }
+        .cnsnglprod__info .cnsnglprod__cta__btns .cnsnglprod__ctabtn {
+            width: 49%;
+        }
+        /*Single Product Description*/
+        .cnsnglprod__navrev__tabs {
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            gap: 20px;
+            border-width: 2px;
+        }
+        .cnsnglprod__navrev__tabs .cnsnglprod__navrev__btns {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .cnsnglprod__desc__title {
+            margin-bottom: 30px;
+        }
+        .cnfaq__wrapper {
+            margin-bottom: 15px;
+        }
+        .cnfaq__items__header .cnfaq__items__header__btn,
+        .cnfaq__items__content {
+            padding: 15px 25px;
+        }
+        /*Review Section*/
+        .cnsnglprod__reviews form {
+            gap: 16px;
+            margin-top: 20px;
+        }
+        .cnsnglprod__product__descrev .cnsnglprod__reviews {
+            flex-direction: column;
+        }
+        .cnsnglprod__product__descrev .cnsnglprod__reviews .vertical__seperator {
+            height: 2px;
+            width: 100%;
+            margin: 30px 0;
+        }
+        .cnsnglprod__product__descrev .cnsnglprod__reviews .left__side,
+        .cnsnglprod__product__descrev .cnsnglprod__reviews .right__side {
+            width: 100%;
+        }
+        .cnsnglprod__submitted__review__item .usernrating .user__info .image {
+            height: 60px;
+            width: 60px;
+        }
+        .cnsnglprod__submitted__review__item {
+            gap: 20px;
+            padding-bottom: 20px;
+        }
+        .cnsnglprod__reviews form input, .cnsnglprod__reviews form .nice-select {
+            height: 50px;
+            line-height: 50px;
+        }
+        .cnsnglprod__reviews .review__submit__btn {
+            padding: 12px 0;
+        }
+        .cnsnglprod__submitted__review__item .usernrating .stars svg {
+            height: 16px;
+            width: 16px;
+        }
+        .cnsnglprod__submitted__review__item .usernrating .user__info .info h4 {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        .cnsnglprod__submitted__review__item .user__review h4 {
+            font-size: 18px;
+            line-height: 22px;
+        }
+        .cnsnglprod__submitted__review__item .user__review {
+            gap: 15px;
         }
 }
 
@@ -1815,7 +2082,8 @@
     .cn__instagram__section,
     .cn__footer,
     .cn__shop__section,
-    .cn__singleproduct__section {
+    .cn__singleproduct__section,
+    .cnsnglprod__desc__section {
         margin-top: 50px;
     }
     .cn__promo__section,
@@ -1833,10 +2101,11 @@
     li,
     button,
     input,
-    label {
+    label,
+    textarea,
+    th, td {
         font-size: 14px;
         line-height: 22px;
-        margin: 0;
     }
     h4 {
         font-size: 22px;
@@ -2194,6 +2463,70 @@
         .cnsnglprod__info .cnsnglprod__productmeta p {
             margin-bottom: 6px;
         }
+        .cnsnglprod__info .cnsnglprod__price {
+            margin-bottom: 0;
+        }
+        .cnsnglprod__info .cnsnglprod__cta__btns {
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 0;
+        }
+        .cnsnglprod__info .cnsnglprod__cta__btns .cnsnglprod__ctabtn {
+            width: 49%;
+        }
+        /*Single Product Description*/
+        .cnsnglprod__navrev__tabs {
+            padding-bottom: 10px;
+            margin-bottom: 40px;
+            gap: 40px;
+            border-width: 2px;
+        }
+        .cnsnglprod__navrev__tabs .cnsnglprod__navrev__btns {
+            font-size: 16px;
+            line-height: 22px;
+        }
+        .cnsnglprod__desc__title {
+            margin-bottom: 40px;
+        }
+        .cnfaq__wrapper {
+            margin-bottom: 15px;
+        }
+        .cnfaq__items__header .cnfaq__items__header__btn,
+        .cnfaq__items__content {
+            padding: 20px 25px;
+        }
+        /*Review Section*/
+        .cnsnglprod__reviews form {
+            gap: 16px;
+            margin-top: 20px;
+        }
+        .cnsnglprod__product__descrev .cnsnglprod__reviews {
+            flex-direction: column;
+        }
+        .cnsnglprod__product__descrev .cnsnglprod__reviews .vertical__seperator {
+            height: 2px;
+            width: 100%;
+            margin: 35px 0;
+        }
+        .cnsnglprod__product__descrev .cnsnglprod__reviews .left__side,
+        .cnsnglprod__product__descrev .cnsnglprod__reviews .right__side {
+            width: 100%;
+        }
+        .cnsnglprod__submitted__review__item .usernrating .user__info .image {
+            height: 65px;
+            width: 65px;
+        }
+        .cnsnglprod__submitted__review__item {
+            gap: 20px;
+            padding-bottom: 20px;
+        }
+        .cnsnglprod__reviews form input, .cnsnglprod__reviews form .nice-select {
+            height: 50px;
+            line-height: 50px;
+        }
+        .cnsnglprod__reviews .review__submit__btn {
+            padding: 12px 0;
+        }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -2205,7 +2538,8 @@
     .cn__instagram__section,
     .cn__footer,
     .cn__shop__section,
-    .cn__singleproduct__section {
+    .cn__singleproduct__section,
+    .cnsnglprod__desc__section {
         margin-top: 60px;
     }
     .cn__promo__section,
@@ -2223,10 +2557,11 @@
     li,
     button,
     input,
-    label {
+    label,
+    textarea,
+    th, td {
         font-size: 14px;
         line-height: 22px;
-        margin: 0;
     }
     h4 {
         font-size: 24px;
@@ -2619,6 +2954,66 @@
         .cnsnglprod__info .cnhst__social__links li {
             padding: 0 7px;
         }
+        /*Single Product Description*/
+        .cnsnglprod__navrev__tabs {
+            gap: 90px;
+            padding-bottom: 10px;
+            margin-bottom: 50px;
+            border-width: 2px;
+        }
+        .cnsnglprod__navrev__tabs .cnsnglprod__navrev__btns {
+            font-size: 16px;
+            line-height: 22px;
+        }
+        .cnfaq__items__header .cnfaq__items__header__btn,
+        .cnfaq__items__content {
+            padding: 10px;
+        }
+        .cnfaq__items__header .cnfaq__items__header__btn::after {
+            font-size: 16px;
+        }
+        .cnsnglprod__desc__title {
+            margin-bottom: 42px;
+        }
+        .cnsnglprod__reviews .vertical__seperator {
+            height: 610px;
+            margin: 0 30px;
+        }
+        .cnsnglprod__submitted__review__item {
+            gap: 15px;
+            padding-bottom: 15px;
+        }
+        .cnsnglprod__submitted__review__item .usernrating .user__info .image {
+            height: 50px;
+            width: 50px;
+        }
+        .cnsnglprod__reviews form {
+            gap: 12px;
+            margin-top: 12px;
+        }
+        .cnsnglprod__reviews form input,
+        .cnsnglprod__reviews form .nice-select {
+            padding: 0 15px;
+            height: 50px;
+            line-height: 50px;
+        }
+        .cnsnglprod__reviews form textarea {
+            padding: 10px 15px;
+        }
+        .cnsnglprod__submitted__review__item .user__review h4 {
+            font-size: 18px;
+            line-height: 22px;
+        }
+        .cnsnglprod__submitted__review__item .user__review {
+            gap: 15px;
+        }
+        .cnsnglprod__submitted__review__item .usernrating .stars svg {
+            height: 16px;
+            width: 16px;
+        }
+        .cnsnglprod__reviews .review__submit__btn {
+            padding: 12px 0;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -2630,7 +3025,8 @@
     .cn__instagram__section,
     .cn__footer,
     .cn__shop__section,
-    .cn__singleproduct__section {
+    .cn__singleproduct__section,
+    .cnsnglprod__desc__section {
         margin-top: 70px;
     }
     .cn__promo__section,
@@ -2649,7 +3045,9 @@
     li,
     button,
     input,
-    label {
+    label,
+    textarea,
+    th, td {
         font-size: 14px;
         line-height: 22px;
     }
@@ -2922,6 +3320,41 @@
         .cnsnglprod__image__wrap .cnsnglprod__image {
             width: 468px;
         }
+        /*Single Product Description*/
+        .cnsnglprod__navrev__tabs {
+            gap: 100px;
+            margin-bottom: 60px;
+        }
+        .cnfaq__items__header .cnfaq__items__header__btn,
+        .cnfaq__items__content {
+            padding: 23px 27px;
+        }
+        .cnsnglprod__desc__title {
+            margin-bottom: 52px;
+        }
+        .cnsnglprod__reviews .vertical__seperator {
+            height: 610px;
+            margin: 0 50px;
+        }
+        .cnsnglprod__submitted__review__item {
+            gap: 20px;
+            padding-bottom: 20px;
+        }
+        .cnsnglprod__submitted__review__item .usernrating .user__info .image {
+            height: 60px;
+            width: 60px;
+        }
+        .cnsnglprod__reviews form {
+            gap: 12px;
+            margin-top: 12px;
+        }
+        .cnsnglprod__reviews form input,
+        .cnsnglprod__reviews form .nice-select {
+            padding: 0 15px;
+        }
+        .cnsnglprod__submitted__review__item .user__review {
+            gap: 15px;
+        }
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -2933,7 +3366,8 @@
     .cn__instagram__section,
     .cn__footer,
     .cn__shop__section,
-    .cn__singleproduct__section {
+    .cn__singleproduct__section,
+    .cnsnglprod__desc__section {
         margin-top: 80px;
     }
     .cn__promo__section,
@@ -3129,6 +3563,17 @@
             width: 420px;
             height: 360px;
         }
+        /*Single Product Description*/
+        .cnsnglprod__navrev__tabs {
+            margin-bottom: 70px;
+        }
+        .cnsnglprod__desc__title {
+            margin-bottom: 62px;
+        }
+        .cnsnglprod__submitted__review__item .usernrating .user__info .image {
+            height: 70px;
+            width: 70px;
+        }
 }
 
 @media (min-width: 1400px) and (max-width: 1499px) {
@@ -3140,7 +3585,8 @@
     .cn__instagram__section,
     .cn__footer,
     .cn__shop__section,
-    .cn__singleproduct__section {
+    .cn__singleproduct__section,
+    .cnsnglprod__desc__section {
         margin-top: 90px;
     }
     /*===== Home Page =====*/

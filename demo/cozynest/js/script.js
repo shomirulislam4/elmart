@@ -218,6 +218,11 @@
     });
 
 /*============================ Single product Page ============================*/
+    //Shop Nice Select
+    if ($('.cn__singleproductpage').length) {
+        $('#cnsnglprodReviewStarRating').niceSelect();
+    }
+
     //Product Image Slider
     $(function(){
         var cnSnglProdSwiper = new Swiper(".cnsnglprod__image__thumb", {
@@ -279,21 +284,21 @@
 
     //Review Read More Function
     $(function() {
-        $('.dssp__user__review__text').each(function() {
+        $('.cnsnglprod__user__review__text').each(function() {
             var $textContainer = $(this);
             var fullText = $textContainer.text().trim();
             var words = fullText.split(/\s+/);
             var shortText = words.slice(0, 20).join(' ') + '...';
 
             if (words.length > 20) {
-                $textContainer.html(shortText + ' <span class="dssp__urt__toggle">read more</span>');
+                $textContainer.html(shortText + ' <span class="cnsnglprod__urt__toggle">read more</span>');
             }
 
-            $textContainer.on('click', '.dssp__urt__toggle', function() {
+            $textContainer.on('click', '.cnsnglprod__urt__toggle', function() {
                 if ($(this).text() === "read more") {
-                    $textContainer.html(fullText + ' <span class="dssp__urt__toggle">show less</span>');
+                    $textContainer.html(fullText + ' <span class="cnsnglprod__urt__toggle">show less</span>');
                 } else {
-                    $textContainer.html(shortText + ' <span class="dssp__urt__toggle">read more</span>');
+                    $textContainer.html(shortText + ' <span class="cnsnglprod__urt__toggle">read more</span>');
                 }
             });
         });
