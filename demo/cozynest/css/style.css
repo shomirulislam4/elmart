@@ -2264,13 +2264,19 @@ form .checkbox label {
     }
 }
 
+@media (min-width: 768px) {
+    .cn__breadcrumbs__section .left__side {
+        padding-right: 0;
+    }
+}
+
 .cn__breadcrumbs__section .right__side img {
     width: 100%;
 }
 
 .cn__breadcrumbs__section .left__side .cnbc__page__title {
-    font-size: 90px;
-    line-height: 100px;
+    font-size: 78px;
+    line-height: 98px;
     font-weight: 700;
     text-transform: capitalize;
 }
