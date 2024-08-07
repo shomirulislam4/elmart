@@ -801,6 +801,50 @@
         .cnsnglprod__submitted__review__item .user__review {
             gap: 10px;
         }
+    /*===== Blog Page =====*/
+        .cn__allpage__sidebar__wrapper .cn__allpage__sidebar__category2 {
+            gap: 5px;
+        }
+        .cn__allpage__sidebar__wrapper .cn__allpage__sidebar__category2 .category__item {
+            width: 100%;
+            padding: 10px;
+            font-size: 12px;
+        }
+        .cn__allpage__sidebar__wrapper .cnblog__recentposts .cn__blognews__style .content {
+            padding: 10px;
+        }
+        .cn__allpage__sidebar__wrapper .cnblog__recentposts .cn__blognews__style .content .post__snippet {
+            margin-bottom: 10px;
+        }
+        .cn__allpage__sidebar__wrapper .cnblog__recentposts .cn__blognews__style .content .blog__meta a,
+        .cn__allpage__sidebar__wrapper .cnblog__recentposts .cn__blognews__style .content .post__snippet,
+        .cn__allpage__sidebar__wrapper .cnblog__recentposts .cn__blognews__style .content .cnblognews__readmore {
+            font-size: 12px;
+            line-height: 20px;
+        }
+        .cn__allpage__sidebar__wrapper .cnblog__recentposts .cn__blognews__style .content h4 {
+            font-size: 14px;
+            line-height: 22px;
+        }
+        /*Comments*/
+        .cnblog__comments .cnblog__comment__item .user__info {
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        .cnblog__comments .cnblog__comment__item .user__info .image {
+            width: 40px;
+            height: 40px;
+        }
+        .cnblog__comments .cnblog__comment__item .user__info .name h4 {
+            font-size: 14px;
+        }
+        .cnblog__comments .cnblog__comment__item .user__info .name p {
+            font-size: 10px;
+        }
+        .cnblog__comments .cnblog__comment__item .comment__text {
+            font-size: 12px;
+            line-height: 18px;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
@@ -1504,6 +1548,42 @@
         }
         .cnsnglprod__submitted__review__item .user__review {
             gap: 15px;
+        }
+    /*===== Blog Page =====*/
+        .cn__allpage__sidebar__wrapper .cn__allpage__sidebar__category2 {
+            gap: 10px;
+        }
+        .cn__allpage__sidebar__wrapper .cn__allpage__sidebar__category2 .category__item {
+            width: 48%;
+            padding: 10px;
+        }
+        .cn__allpage__sidebar__wrapper .cnblog__recentposts .cn__blognews__style .content {
+            padding: 10px 20px;
+        }
+        .cn__allpage__sidebar__wrapper .cnblog__recentposts .cn__blognews__style .content .post__snippet {
+            margin-bottom: 10px;
+        }
+        .cn__allpage__sidebar__wrapper .cnblog__recentposts .cn__blognews__style .content .blog__meta a,
+        .cn__allpage__sidebar__wrapper .cnblog__recentposts .cn__blognews__style .content .post__snippet,
+        .cn__allpage__sidebar__wrapper .cnblog__recentposts .cn__blognews__style .content .cnblognews__readmore {
+            font-size: 14px;
+            line-height: 22px;
+        }
+        /*Comments*/
+        .cnblog__comments .cnblog__comment__item .user__info {
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        .cnblog__comments .cnblog__comment__item .user__info .image {
+            width: 60px;
+            height: 60px;
+        }
+        .cnblog__comments .cnblog__comment__item .user__info .name p {
+            font-size: 12px;
+        }
+        .cnblog__comments .cnblog__comment__item .comment__text {
+            font-size: 14px;
+            line-height: 20px;
         }
 }
 
@@ -2529,6 +2609,11 @@
         .cnsnglprod__reviews .review__submit__btn {
             padding: 12px 0;
         }
+    /*===== Blog Page =====*/
+        .cn__allpage__sidebar__wrapper .cnblog__recentposts,
+        .cn__allpage__sidebar__wrapper .cnblog__comments {
+            flex-direction: row;
+        }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -3016,6 +3101,14 @@
         .cnsnglprod__reviews .review__submit__btn {
             padding: 12px 0;
         }
+    /*===== Blog Page =====*/
+        .cn__allpage__sidebar__wrapper .cnblog__recentposts,
+        .cn__allpage__sidebar__wrapper .cnblog__comments {
+            flex-direction: row;
+        }
+        .cn__allpage__sidebar__wrapper .cn__allpage__sidebar__category2 .category__item {
+            width: 48%;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -3357,6 +3450,46 @@
         .cnsnglprod__submitted__review__item .user__review {
             gap: 15px;
         }
+    /*===== Blog Page =====*/
+        .cn__allpage__sidebar__wrapper .cn__allpage__sidebar__category2 {
+            gap: 5px;
+        }
+        .cn__allpage__sidebar__wrapper .cn__allpage__sidebar__category2 .category__item {
+            width: 48%;
+            padding: 5px;
+            font-size: 12px;
+        }
+        .cn__allpage__sidebar__wrapper .cnblog__recentposts .cn__blognews__style .content {
+            padding: 10px 20px;
+        }
+        .cn__allpage__sidebar__wrapper .cnblog__recentposts .cn__blognews__style .content .post__snippet {
+            margin-bottom: 10px;
+        }
+        .cn__allpage__sidebar__wrapper .cnblog__recentposts .cn__blognews__style .content .blog__meta a,
+        .cn__allpage__sidebar__wrapper .cnblog__recentposts .cn__blognews__style .content .post__snippet,
+        .cn__allpage__sidebar__wrapper .cnblog__recentposts .cn__blognews__style .content .cnblognews__readmore {
+            font-size: 14px;
+            line-height: 22px;
+        }
+        /*Comments*/
+        .cnblog__comments .cnblog__comment__item .user__info {
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        .cnblog__comments .cnblog__comment__item .user__info .image {
+            width: 50px;
+            height: 50px;
+        }
+        .cnblog__comments .cnblog__comment__item .user__info .name h4 {
+            font-size: 16px;
+        }
+        .cnblog__comments .cnblog__comment__item .user__info .name p {
+            font-size: 12px;
+        }
+        .cnblog__comments .cnblog__comment__item .comment__text {
+            font-size: 14px;
+            line-height: 20px;
+        }
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -3565,6 +3698,7 @@
             width: 420px;
             height: 360px;
         }
+    /*===== Single Product Page =====*/
         /*Single Product Description*/
         .cnsnglprod__navrev__tabs {
             margin-bottom: 70px;
@@ -3575,6 +3709,42 @@
         .cnsnglprod__submitted__review__item .usernrating .user__info .image {
             height: 70px;
             width: 70px;
+        }
+    /*===== Blog Page =====*/
+        .cn__allpage__sidebar__wrapper .cn__allpage__sidebar__category2 {
+            gap: 10px;
+        }
+        .cn__allpage__sidebar__wrapper .cn__allpage__sidebar__category2 .category__item {
+            width: 48%;
+            padding: 10px;
+        }
+        .cn__allpage__sidebar__wrapper .cnblog__recentposts .cn__blognews__style .content {
+            padding: 10px 20px;
+        }
+        .cn__allpage__sidebar__wrapper .cnblog__recentposts .cn__blognews__style .content .post__snippet {
+            margin-bottom: 10px;
+        }
+        .cn__allpage__sidebar__wrapper .cnblog__recentposts .cn__blognews__style .content .blog__meta a,
+        .cn__allpage__sidebar__wrapper .cnblog__recentposts .cn__blognews__style .content .post__snippet,
+        .cn__allpage__sidebar__wrapper .cnblog__recentposts .cn__blognews__style .content .cnblognews__readmore {
+            font-size: 14px;
+            line-height: 22px;
+        }
+        /*Comments*/
+        .cnblog__comments .cnblog__comment__item .user__info {
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        .cnblog__comments .cnblog__comment__item .user__info .image {
+            width: 60px;
+            height: 60px;
+        }
+        .cnblog__comments .cnblog__comment__item .user__info .name p {
+            font-size: 12px;
+        }
+        .cnblog__comments .cnblog__comment__item .comment__text {
+            font-size: 14px;
+            line-height: 20px;
         }
 }
 

@@ -2510,11 +2510,18 @@ form .checkbox label {
 /*** End of Info Bar ***/
 
 /*** Start of Sidebar ***/
-.cn__allpage__sidebar .cn__allpage__sidebar__wrapper {
+.cn__allpage__sidebar .cn__allpage__sidebar__wrapper,
+.cn__allpage__sidebar__blog .cn__allpage__sidebar__wrapper {
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 0;
+}
+
+@media (max-width: 991px) {
+    .cn__allpage__sidebar__blog {
+        margin-top: 40px;
+    }
 }
 
 .cn__allpage__sidebar .cn__allpage__sidebar__closebtn {
@@ -2584,6 +2591,7 @@ form .checkbox label {
     font-size: 18px;
     line-height: 27px;
     font-weight: 600;
+    text-transform: capitalize;
 }
 
 .cn__allpage__sidebar__wrapper .cn__allpage__sidebar__widgets .form__row,
@@ -2617,6 +2625,58 @@ form .checkbox label {
 .cn__allpage__sidebar__wrapper .cn__allpage__sidebar__color li span:hover {
     height: 24px;
     width: 24px;
+}
+
+.cn__allpage__sidebar__wrapper .cn__allpage__sidebar__category2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.cn__allpage__sidebar__wrapper .cn__allpage__sidebar__category2 .category__item {
+    display: block;
+    width: 47%;
+    padding: 15px 23px;
+    border: 1px solid #666;
+    color: #666;
+    font-size: 14px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.cn__allpage__sidebar__wrapper .cn__allpage__sidebar__category2 .category__item:hover {
+    border-color: var(--text-color);
+    color: var(--text-color);
+}
+
+.cn__allpage__sidebar__wrapper .cnblog__recentposts {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cn__allpage__sidebar__wrapper .cnblog__recentposts .cn__blognews__style {
+    width: 100%;
+}
+
+.cn__allpage__sidebar__wrapper .cnblog__recentposts .cn__blognews__style .image {
+	height: fit-content;
+}
+
+.cn__allpage__sidebar__wrapper .cnblog__recentposts .cn__blognews__style .content {
+	padding: 20px;
+}
+
+.cn__allpage__sidebar__wrapper .cnblog__recentposts .cn__blognews__style .content h4 {
+	border-bottom: 0;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+.cn__allpage__sidebar__wrapper .cnblog__recentposts .cn__blognews__style .content .post__snippet {
+	margin-top: 10px;
+	margin-bottom: 15px;
 }
 /*** End of Sidebar ***/
 
@@ -3301,10 +3361,60 @@ form .checkbox label {
 /* ====================================================================
    5. Blog
 ==================================================================== */
-.cn__blogrightsidebarpage .cnblognews__wrapper {
-    justify-content: flex-start;
+@media (min-width: 576px) {
+    .cn__blogrightsidebarpage .cnblognews__wrapper {
+        justify-content: flex-start;
+    }
+    .cn__blogrightsidebarpage .cn__blognews__section .col-lg-9 {
+        padding: 0;
+    }
 }
 
+/*** Start of Comments ***/
+.cn__allpage__sidebar__wrapper .cnblog__comments {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cnblog__comments .cnblog__comment__item .user__info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cnblog__comments .cnblog__comment__item .user__info .image {
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.cnblog__comments .cnblog__comment__item .user__info .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.cnblog__comments .cnblog__comment__item .user__info .name h4 {
+    border: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.cnblog__comments .cnblog__comment__item .user__info .name p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.cnblog__comments .cnblog__comment__item .comment__text {
+    color: #666;
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 0;
+}
+
+/*** End of Comments ***/
 
 /*
 rgba(44, 194, 149, 0.4)
