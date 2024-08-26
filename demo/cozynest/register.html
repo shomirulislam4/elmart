@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#2CC295">
+
+    <title>Register - Cozy Nest</title>
+
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="icon" type="image/x-icon" href="../image/favicon.png">
+    <link rel="apple-touch-icon" href="../image/icon.png">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/fontawesome.min.css">
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/spacing.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <link rel="stylesheet" href="../css/nice-select.css">
+    <link rel="stylesheet" href="../css/photoswipe/photoswipe.min.css">
+    <link rel="stylesheet" href="../css/photoswipe/default-skin.min.css">
+    <link rel="stylesheet" href="../css/magnific-popup.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="cozynest cn__logregpage">
+    <!-- Start of Header -->
+    <header class="cn__header__Section">
+        <div class="cnhs__top">
+            <div class="container">
+                <div class="cnhst__wrap">
+                    <ul class="cnhst__left__links">
+                        <li><a href="shipping-policy.html">shipping</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="track-order.html">track your order</a></li>
+                    </ul>
+                    <p>20% off on your first order</p>
+                    <ul class="cnhst__social__links">
+                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                    </ul>
+                    <div class="cnhst__lang__loc">
+                        <select name="cnhst__language" id="cnhstLanguage">
+                            <option value="english">en</option>
+                            <option value="bengali">bn</option>
+                            <option value="hindi">hi</option>
+                            <option value="french">fr</option>
+                            <option value="spanish">es</option>
+                            <option value="portuguese">pt</option>
+                        </select>
+                        <select name="cnhst__country" id="cnhstCountry">
+                            <option value="" disabled selected>country</option>
+                            <option value="uk">United Kingdom</option>
+                            <option value="us">United States</option>
+                            <option value="bd">bangladesh</option>
+                            <option value="in">india</option>
+                            <option value="fr">france</option>
+                            <option value="br">brazil</option>
+                            <option value="cn">china</option>
+                            <option value="ru">russia</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cnhs__bottom">
+            <div class="container">
+                <div class="cnhsb__wrap">
+                    <a href="index.html" class="cn__logo">
+                        <img src="image/logo.png" alt="CozyNest Logo">
+                    </a>
+                    <ul class="cn__main__menu">
+                        <li class="cnmm__has__submenu"><a href="#">home<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="cnmm__submenu">
+                                <li><a href="index.html">homepage 1</a></li>
+                                <li><a href="index-2.html">homepage 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="cnmm__has__submenu"><a href="#">shop<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="cnmm__submenu">
+                                <li><a href="shop.html">shop</a></li>
+                                <li><a href="single-product.html">single product</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about-us.html">about us</a></li>
+                        <li class="cnmm__has__submenu"><a href="#">blog<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="cnmm__submenu">
+                                <li><a href="blog.html">blog</a></li>
+                                <li><a href="blog-right-sidebar.html">blog right sidebar</a></li>
+                                <li><a href="blog-post.html">blog post</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact-us.html">contact us</a></li>
+                        <li class="cnmm__has__submenu"><a href="#">pages<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="cnmm__submenu">
+                                <li><a href="cart.html">cart</a></li>
+                                <li><a href="login.html">login</a></li>
+                                <li><a href="register.html">register</a></li>
+                                <li><a href="404.html">Error Page</a></li>
+                                <li><a href="shipping-policy.html">shipping policy</a></li>
+                                <li><a href="terms-conditions.html">terms & conditions</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button class="cn__mobilemenu__btn"><i class="fa-solid fa-bars"></i> Menu</button>
+                    <ul class="cnhsb__cta__buttons">
+                        <li><a href="javascript:" class="cnhsb__search__btn"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                        <li><a href="../dreamspace/wishlist.html"><i class="fa-regular fa-heart"></i></a></li>
+                        <li><a href="login.html"><i class="fa-regular fa-user"></i></a></li>
+                        <li><a href="javascript:" class="cnhsb__cart__btn"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Cart Slider -->
+    <div class="cn__cart__slider">
+        <button class="cn__cart__closebtn"><i class="fa-solid fa-xmark"></i></button>
+        <div class="main__cart__area">
+            <div class="cn__cart__header">
+                <h3>My Cart</h3>
+                <span>2</span>
+            </div>
+            <div class="horizontal__seperator"></div>
+            <div class="cn__cart__content">
+                <div class="cn__cart__product">
+                    <div class="cn__cart__prod__close"><i class="fa-solid fa-x"></i></div>
+                    <div class="image">
+                        <img src="image/products/product-1.png" alt="product image">
+                    </div>
+                    <div class="content">
+                        <h3><a href="#">A modern wooden chair</a></h3>
+                        <div class="price__qty">
+                            <h4>$389.48</h4>
+                            <div class="quantity__widget">
+                                <div class="quantity__controls">
+                                    <div class="quantity__decrease">-</div>
+                                    <div class="quantity__display">1</div>
+                                    <div class="quantity__increase">+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cn__cart__product">
+                    <div class="cn__cart__prod__close"><i class="fa-solid fa-x"></i></div>
+                    <div class="image">
+                        <img src="image/products/product-2.png" alt="product image">
+                    </div>
+                    <div class="content">
+                        <h3><a href="#">modern style bookshelf made of wood</a></h3>
+                        <div class="price__qty">
+                            <h4>$350.51</h4>
+                            <div class="quantity__widget">
+                                <div class="quantity__controls">
+                                    <div class="quantity__decrease">-</div>
+                                    <div class="quantity__display">1</div>
+                                    <div class="quantity__increase">+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="horizontal__seperator"></div>
+            <div class="cn__cart__subtotal">
+                <p>Subtotal:</p>
+                <p>$739.99</p>
+            </div>
+            <div class="cn__cart__cta">
+                <a class="cn__button__a" href="cart.html">View Cart</a>
+                <a class="cn__button__a" href="../checkout.html">Checkout</a>
+            </div>
+        </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="cn__mobile__menu">
+        <div class="cn__mblmenu__wrapper">
+            <button class="cn__mblmenu__closebtn"><i class="fa-solid fa-xmark"></i></button>
+            <ul class="nav nav-pills" id="cn__MobileMenuTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="cn__mblmenu__pages-tab" data-bs-toggle="pill" data-bs-target="#cn__mblmenu__pages" type="button" role="tab" aria-controls="cn__mblmenu__pages" aria-selected="true">Pages</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="cn__mblmenu__cate-tab" data-bs-toggle="pill" data-bs-target="#cn__mblmenu__cate" type="button" role="tab" aria-controls="cn__mblmenu__cate" aria-selected="false">Categories</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="cn__MobileMenuTabsContent">
+                <div class="tab-pane fade show active" id="cn__mblmenu__pages" role="tabpanel" aria-labelledby="cn__mblmenu__pages-tab">
+                    <ul class="cn__mblmenu__tabs">
+                        <li class="mobile__submenu"><a href="#">home<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="index.html">homepage 1</a></li>
+                                <li><a href="index-2.html">homepage 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile__submenu"><a href="#">shop<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="shop.html">shop</a></li>
+                                <li><a href="single-product.html">single product</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about-us.html">about us</a></li>
+                        <li class="mobile__submenu"><a href="#">blog<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="blog.html">blog</a></li>
+                                <li><a href="blog-right-sidebar.html">blog right sidebar</a></li>
+                                <li><a href="blog-post.html">blog post</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact-us.html">contact us</a></li>
+                        <li class="mobile__submenu"><a href="#">pages<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="cart.html">cart</a></li>
+                                <li><a href="login.html">login</a></li>
+                                <li><a href="register.html">register</a></li>
+                                <li><a href="404.html">Error Page</a></li>
+                                <li><a href="shipping-policy.html">shipping policy</a></li>
+                                <li><a href="terms-conditions.html">terms & conditions</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="cn__mblmenu__cate" role="tabpanel" aria-labelledby="cn__mblmenu__cate-tab">
+                    <ul class="cn__mblmenu__tabs">
+                        <li class="mobile__submenu"><a href="#">sofa<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="#">category 1</a></li>
+                                <li><a href="#">category 2</a></li>
+                                <li><a href="#">category 3</a></li>
+                                <li><a href="#">category 4</a></li>
+                                <li><a href="#">category 5</a></li>
+                                <li><a href="#">category 6</a></li>
+                                <li><a href="#">category 7</a></li>
+                                <li><a href="#">category 8</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile__submenu"><a href="#">chair<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="#">category 1</a></li>
+                                <li><a href="#">category 2</a></li>
+                                <li><a href="#">category 3</a></li>
+                                <li><a href="#">category 4</a></li>
+                                <li><a href="#">category 5</a></li>
+                                <li><a href="#">category 6</a></li>
+                                <li><a href="#">category 7</a></li>
+                                <li><a href="#">category 8</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile__submenu"><a href="#">table<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="#">category 1</a></li>
+                                <li><a href="#">category 2</a></li>
+                                <li><a href="#">category 3</a></li>
+                                <li><a href="#">category 4</a></li>
+                                <li><a href="#">category 5</a></li>
+                                <li><a href="#">category 6</a></li>
+                                <li><a href="#">category 7</a></li>
+                                <li><a href="#">category 8</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile__submenu"><a href="#">bed<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="#">category 1</a></li>
+                                <li><a href="#">category 2</a></li>
+                                <li><a href="#">category 3</a></li>
+                                <li><a href="#">category 4</a></li>
+                                <li><a href="#">category 5</a></li>
+                                <li><a href="#">category 6</a></li>
+                                <li><a href="#">category 7</a></li>
+                                <li><a href="#">category 8</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile__submenu"><a href="#">bookcase<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="#">category 1</a></li>
+                                <li><a href="#">category 2</a></li>
+                                <li><a href="#">category 3</a></li>
+                                <li><a href="#">category 4</a></li>
+                                <li><a href="#">category 5</a></li>
+                                <li><a href="#">category 6</a></li>
+                                <li><a href="#">category 7</a></li>
+                                <li><a href="#">category 8</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile__submenu"><a href="#">dresser<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="#">category 1</a></li>
+                                <li><a href="#">category 2</a></li>
+                                <li><a href="#">category 3</a></li>
+                                <li><a href="#">category 4</a></li>
+                                <li><a href="#">category 5</a></li>
+                                <li><a href="#">category 6</a></li>
+                                <li><a href="#">category 7</a></li>
+                                <li><a href="#">category 8</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile__submenu"><a href="#">wardrobe<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="#">category 1</a></li>
+                                <li><a href="#">category 2</a></li>
+                                <li><a href="#">category 3</a></li>
+                                <li><a href="#">category 4</a></li>
+                                <li><a href="#">category 5</a></li>
+                                <li><a href="#">category 6</a></li>
+                                <li><a href="#">category 7</a></li>
+                                <li><a href="#">category 8</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="cnhst__social__links">
+                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Search Box -->
+    <div class="cn__search__popup">
+        <div class="cnsearch__wrapper">
+            <div class="cnsearch__close__btn"><i class="fa-regular fa-circle-xmark"></i></div>
+            <form action="#"><input type="search" placeholder="Search what you're looking for...">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <div class="cnsearch__prod__result__area">
+                <div class="cnsearch__result__header">
+                    <h6>15 Results Found</h6>
+                    <a href="shop.html">View All</a>
+                </div>
+                <div class="cnsearch__search__result">
+                    <div class="search-product">
+                        <div class="search__product__img">
+                            <a href="single-product.html">
+                                <img src="image/home-four/hero-section/computer-mouse.png" alt="product image">
+                            </a>
+                        </div>
+                        <div class="search__content">
+                            <div class="product__rating">
+                                <span class="rating__icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                            </span>
+                                <span class="total__rating">(<span>50+</span> Reviews)</span>
+                            </div>
+                            <h5 class="product__title"><a href="single-product.html">A modern wooden chair</a></h5>
+                            <div class="product__price__variant">
+                                <h4>$389.48 <span>$450.00</span></h4>
+                            </div>
+                            <div class="product__cart">
+                                <a href="cart.html" class="cart-btn"><i class="fa-solid fa-bag-shopping"></i></a>
+                                <a href="../dreamspace/wishlist.html" class="cart-btn"><i class="fa-regular fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search-product">
+                        <div class="search__product__img">
+                            <a href="single-product.html">
+                                <img src="image/home-four/hero-section/mobile-accessories.png" alt="product image">
+                            </a>
+                        </div>
+                        <div class="search__content">
+                            <div class="product__rating">
+                                <span class="rating__icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                                <span class="total__rating">(<span>30+</span> Reviews)</span>
+                            </div>
+                            <h5 class="product__title"><a href="single-product.html">modern style bookshelf made of wood</a></h5>
+                            <div class="product__price__variant">
+                                <h4>$350.51 <span>$380.00</span></h4>
+                            </div>
+                            <div class="product__cart">
+                                <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+                                <a href="../dreamspace/wishlist.html"><i class="fa-regular fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Header -->
+
+    <!-- Start of Breadcrumbs Section -->
+    <section class="cn__breadcrumbs__section">
+        <div class="container">
+            <div class="row cnbc__wrapper">
+                <div class="col-md-6 left__side">
+                    <h1 class="cnbc__page__title">Register</h1>
+                    <div class="cnbc__breadcrumbs">
+                        <a href="index.html">home</a>
+                        <p class="current__page">Register</p>
+                    </div>
+                </div>
+                <div class="col-md-6 right__side">
+                    <img src="image/breadcrumb/cart-breadcrumb.png" alt="breadcrumb image">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Breadcrumbs Section -->
+
+    <!-- Start of Login-Register Section -->
+    <section class="cn__logreg__section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="cnlogreg__form">
+                        <h4>Register</h4>
+                        <form action="#">
+                            <div class="form__row">
+                                <label for="cnLoginFormName">Your Name*</label>
+                                <input type="email" name="cnRegisterForm" id="cnRegisterFormName" required>
+                            </div>
+                            <div class="form__row">
+                                <label for="cnLoginFormEmail">Your Email Address*</label>
+                                <input type="email" name="cnRegisterForm" id="cnRegisterFormEmail" required>
+                            </div>
+                            <div class="form__row">
+                                <label for="cnLoginFormPass">Password*</label>
+                                <input type="password" name="cnRegisterForm" id="cnRegisterFormPass" required>
+                            </div>
+                            <div class="form__row">
+                                <label for="cnLoginFormConfPass">Confirm Password*</label>
+                                <input type="password" name="cnRegisterForm" id="cnRegisterFormConfPass" required>
+                            </div>
+                            <div class="cnlogreg__form__buttons">
+                                <button type="submit" class="cnlogreg__login__btn cn__button__a">Register</button>
+                                <button class="cnlogreg__social__fb cn__button__b">
+                                    <svg width="" height="" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_240_1313)">
+                                        <path d="M23 11.5001C23 5.14878 17.8513 5.72205e-05 11.5 5.72205e-05C5.14872 5.72205e-05 0 5.14878 0 11.5001C0 17.24 4.20538 21.9976 9.70312 22.8604V14.8243H6.7832V11.5001H9.70312V8.96646C9.70312 6.08428 11.42 4.49224 14.0468 4.49224C15.305 4.49224 16.6211 4.71685 16.6211 4.71685V7.54693H15.171C13.7424 7.54693 13.2969 8.4334 13.2969 9.34284V11.5001H16.4863L15.9765 14.8243H13.2969V22.8604C18.7946 21.9976 23 17.24 23 11.5001Z" fill="#1877F2"/>
+                                        <path d="M15.9765 14.8242L16.4863 11.5H13.2969V9.34278C13.2969 8.43334 13.7424 7.54688 15.171 7.54688H16.6211V4.7168C16.6211 4.7168 15.305 4.49219 14.0468 4.49219C11.42 4.49219 9.70313 6.08422 9.70313 8.96641V11.5H6.7832V14.8242H9.70313V22.8603C10.2886 22.9522 10.8887 23 11.5 23C12.1113 23 12.7114 22.9522 13.2969 22.8603V14.8242H15.9765Z" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_240_1313">
+                                        <rect width="23" height="23" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>                                        
+                                    Continue with Facebook
+                                </button>
+                                <button class="cnlogreg__social__ggl cn__button__b">
+                                    <svg width="" height="" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21.56 11.25C21.56 10.47 21.49 9.72 21.36 9H11V13.255H16.92C16.665 14.63 15.89 15.795 14.725 16.575V19.335H18.28C20.36 17.42 21.56 14.6 21.56 11.25Z" fill="#4285F4"/>
+                                        <path d="M11.0019 22.0001C13.9719 22.0001 16.4619 21.0151 18.2819 19.3351L14.7269 16.5751C13.7419 17.2351 12.4819 17.6251 11.0019 17.6251C8.13688 17.6251 5.71187 15.6901 4.84687 13.0901H1.17188V15.9401C2.98187 19.5351 6.70187 22.0001 11.0019 22.0001Z" fill="#34A853"/>
+                                        <path d="M4.845 13.0901C4.625 12.4301 4.5 11.7251 4.5 11.0001C4.5 10.2751 4.625 9.57006 4.845 8.91006V6.06006H1.17C0.4 7.59292 -0.000678626 9.28467 8.62786e-07 11.0001C8.62786e-07 12.7751 0.425001 14.4551 1.17 15.9401L4.845 13.0901Z" fill="#FBBC05"/>
+                                        <path d="M11.0019 4.375C12.6169 4.375 14.0669 4.93 15.2069 6.02L18.3619 2.865C16.4569 1.09 13.9669 0 11.0019 0C6.70187 0 2.98187 2.465 1.17188 6.06L4.84687 8.91C5.71187 6.31 8.13688 4.375 11.0019 4.375Z" fill="#EA4335"/>
+                                    </svg>      
+                                    Continue with Google                                  
+                                </button>
+                                <a href="login.html">Already have an account? <span>Login</span>!</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="image">
+                        <img src="image/register-page.png" alt="image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Login-Register Section -->
+
+    <!-- Start of Footer -->
+    <section class="cn__footer">
+        <div class="container">
+            <div class="row cnfooter__top">
+                <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+                    <a href="index.html" class="cn__logo">
+                        <img src="image/logo-white.png" alt="CozyNest Logo">
+                    </a>
+                    <p>12 Main, Pt. London</p>
+                    <ul class="cnfooter__menu">
+                        <li><a href="tel:+441234567890">+44 1234 5678 90</a></li>
+                        <li><a href="mailto:support@example.com" class="email">support@example.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+                    <h5>about us</h5>
+                    <ul class="cnfooter__menu">
+                        <li><a href="blog.html">furniture blog & tips</a></li>
+                        <li><a href="#">working with us</a></li>
+                        <li><a href="#">be our partner</a></li>
+                        <li><a href="about-us.html">our mission</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4 mb-sm-0">
+                    <h5>support</h5>
+                    <ul class="cnfooter__menu">
+                        <li><a href="contact-us.html">customer support</a></li>
+                        <li><a href="terms-conditions.html">terms & conditions</a></li>
+                        <li><a href="#">contact channels</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h5>Subscribe now</h5>
+                    <p>Don't miss an update</p>
+                    <form action="#">
+                        <input type="email" name="cnfooter__newsletter" id="cnfooterNewsletter">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row cnfooter__bottom">
+                <div class="col-12">
+                    <p class="cn__copyright">&copy; <script>document.write(new Date().getFullYear())</script> <a href="index.html">Cozy Nest</a>. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Footer -->
+
+    <!-- JS Links -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/fontawesome.min.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
+    <script src="../js/photoswipe/photoswipe.min.js"></script>
+    <script src="../js/photoswipe/photoswipe-ui-default.min.js"></script>
+    <script src="../js/jquery.nice-select.min.js"></script>
+    <script src="../js/magnific-popup.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

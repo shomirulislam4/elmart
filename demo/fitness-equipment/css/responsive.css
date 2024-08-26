@@ -1,0 +1,5030 @@
+@media (max-width: 289px) {
+    .fes__categories__section,
+    .fes__features,
+    .fes__trending__products,
+    .fes__brands__slider__section,
+    .fes__testimonials__section,
+    .fes__product__onsale__section,
+    .fes__newsletter__section,
+    .fes__newsletter__section .fesns__image,
+    .fes__best__deals__section,
+    .fes__single__product,
+    .fessp__product__description,
+    .fes__footer__section,
+    .fes__shop__page,
+    .fes__contact__section,
+    .fes__contact__section {
+        margin-top: 30px;
+    }
+    .fes__trending__products,
+    .fes__newsletter__section,
+    .fessp__product__info,
+    .fes__contact__section {
+        padding: 30px 0;
+    }
+    .fes__product__onsale__section,
+    .fes__footer__section {
+        padding-top: 30px;
+    }
+    .fes__pos__main__wrapper {
+        padding-bottom: 40px;
+    }
+    /*Checkbox & Radio Inputs*/
+    input[type="checkbox"],
+    input[type="checkbox"]:checked,
+    input[type="radio"],
+    input[type="radio"]:checked {
+        height: 10px;
+        width: 10px;
+    }
+    input[type="checkbox"]:checked::before,
+    input[type="radio"]:checked::before {
+        height: 6px;
+        width: 6px;
+    }
+    /*===== Home Page =====*/
+        .logo {
+            width: 140px;
+        }
+        .fes__button__a {
+            font-size: 14px;
+            line-height: 22px;
+            padding: 10px 20px;
+        }
+        /*Section Title*/
+        .fes__section__title {
+            margin-bottom: 20px;
+        }
+        .fes__section__title h4 {
+            font-size: 12px;
+            line-height: 12px;
+        }
+        .fes__section__title h2 {
+            font-size: 30px;
+            line-height: 30px;
+        }
+        /* Mega Menu */
+        .fes__header__bottom .header__search {
+            height: 30px;
+            padding: 5px;
+            width: 100px;
+        }
+        .fes__header__bottom .header__search i {
+            font-size: 10px;
+            line-height: 10px;
+        }
+        .fes__header__bottom input {
+            font-size: 12px;
+        }
+        .fes__header .fes__header__top {
+            padding: 10px 0;
+        }
+        .fes__header .fes__header__top .left {
+            display: none;
+        }
+        .fes__header .fes__header__top li,
+        .fes__header .fes__header__top li a {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .fes__header .fes__header__top li i {
+            font-size: 10px;
+            margin-right: 2px;
+        }
+        .fes__header .fes__header__top li.phone a {
+            margin-left: 2px;
+        }
+        .fes__header .fes__header__top li .phone__anim {
+            width: 16px;
+            height: 16px;
+            margin-right: 2px;
+        }
+        .fes__header .fes__header__top li .phone__anim::before,
+        .fes__header .fes__header__top li .phone__anim::after {
+            width: 16px;
+            height: 16px;
+            top: calc(50% - 9px);
+            left: calc(50% - 8px);
+        }
+        .fes__header .fes__header__top .middle {
+            justify-content: flex-start;
+            padding-right: 0;
+        }
+        .fes__header .fes__header__top .right {
+            gap: 10px;
+        }
+        .fes__header .fes__header__top .right .vertical__seperator {
+            display: none;
+        }
+        .fes__header .fes__header__top .right li a i {
+            font-size: 12px;
+        }
+        .fes__header .fes__header__top .right li:first-child {
+            margin-right: 0;
+        }
+        .fes__header .fes__header__top .right .cart__wishlist li {
+            display: flex;
+            justify-content: flex-end;
+        }
+        .fes__header .fes__header__top .right li a .fes__amount {
+            height: 16px;
+            width: 16px;
+            line-height: 16px;
+            font-size: 10px;
+        }
+        .fes__header .fes__header__top .right li .fes__header__cart .fes__amount {
+            animation: none;
+            -webkit-animation: none;
+        }
+        .fes__header .fes__header__top .right li .fes__header__cart::before {
+            width: 16px;
+            height: 16px;
+            top: calc(50% - 9px);
+            left: 0px;
+        }
+        .fes__header .fes__header__top .right .cart__wishlist {
+            width: 110px;
+        }
+        /*Right Side Menu*/
+        .fes__cart__slider .main__cart__area,
+        .fes__right__slider__menu .fes__rsm__wrapper,
+        .fes__mobile__menu .fes__mblmenu__wrapper {
+            width: 180px;
+            padding: 10px 5px;
+        }
+        .fes__cart__slider .fes__cart__closebtn,
+        .fes__right__slider__menu .fes__rsm__closebtn {
+            right: 182px;
+            height: 80px;
+            width: 16px;
+            line-height: 80px;
+            font-size: 14px;
+            border-radius: 5px;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper h4 {
+            font-size: 20px;
+            line-height: 20px;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .pages li a {
+            padding: 6px 0;
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .about__company p {
+            font-size: 12px;
+            line-height: 18px;
+            margin-bottom: 0;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .lang__currency .feslc__language,
+        .fes__right__slider__menu .fes__rsm__wrapper .lang__currency .feslc__currency {
+            height: 40px;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .lang__currency p {
+            font-size: 12px;
+            line-height: 36px;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .lang__currency i {
+            font-size: 14px;
+            line-height: 40px;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .right__menu__newsletter {
+            height: 40px;
+            border-radius: 40px;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .right__menu__newsletter input {
+            padding-left: 10px;
+            font-size: 12px;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .right__menu__newsletter button {
+            width: 50px;
+            font-size: 12px;
+        }
+        .fes__social__links li a {
+            width: 34px;
+            height: 34px;
+            font-size: 16px;
+            line-height: 34px;
+        }
+        .fes__cart__slider .main__cart__area .fes__cart__header h3{
+            font-size: 24px;
+            line-height: 24px;
+            margin-bottom: 0;
+        }
+        .fes__cart__slider .main__cart__area .fes__cart__header span {
+            font-size: 24px;
+            line-height: 26px;
+            height: 26px;
+            margin-bottom: 0;
+            font-weight: 400;
+            padding: 0 8px;
+        }
+        /*Cart Items*/
+        .fes__cart__product .fes__cart__prod__close {
+            height: 16px;
+            width: 16px;
+            font-size: 10px;
+            line-height: 16px;
+        }
+        .fes__cart__product {
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #EEE;
+            padding-bottom: 10px;
+        }
+        .fes__cart__product .content {
+            width: 185px;
+            gap: 10px;
+        }
+        .fes__cart__product .image {
+            width: 60px;
+            height: 60px;
+        }
+        .fes__cart__product h3 {
+            border: none;
+            line-height: 18px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .fes__cart__product h3 a {
+            font-size: 14px;
+            line-height: 14px;
+            text-align: center;
+        }
+        .fes__cart__product h4 {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .fes__cart__product .price__qty {
+            justify-content: center;
+        }
+        /*Mobile Menu*/
+        .fes__mblmenu__btn {
+            padding: 8px 5px;
+            font-size: 12px;
+            line-height: 12px;
+        }
+        .fes__mobile__menu .fes__mblmenu__wrapper .fes__mblmenu__closebtn {
+            left: 182px;
+            height: 80px;
+            width: 16px;
+            line-height: 80px;
+            font-size: 14px;
+            border-radius: 5px;
+        }
+        .fes__mblmenu__tabs {
+            font-size: 14px;
+            line-height: 24px;
+        }
+        .fes__mobile__menu .fes__mblmenu__wrapper .nav-pills .nav-link.active,
+        .fes__mobile__menu .fes__mblmenu__wrapper .nav-pills .show > .nav-link,
+        .fes__mobile__menu .fes__mblmenu__wrapper .nav-pills .nav-link {
+            padding: 5px;
+            margin: 0;
+        }
+        /*Product Style*/
+        .fes__product__style {
+            width: 266px;
+            height: 190px;
+        }
+        .fes__product__style .fesps__background {
+            min-height: 190px;
+        }
+        .fes__product__style .fesps__image {
+            height: 106.6px;
+        }
+        .fes__product__style .fesps__content {
+            padding: 10px;
+        }
+        .fes__product__style .fesps__content h2,
+        .fes__product__style .fesps__content h2 a {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .fes__product__style .fesps__content .fesps__category {
+            width: 100%;
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .fes__product__style .fesps__content .fesps__category svg {
+            height: 14px;
+            width: 14px;
+        }
+        .fes__product__style .fesps__content .show__on__hover {
+            gap: 10px;
+        }
+        .fes__product__style:hover .fesps__content .show__on__hover {
+            margin: 10px 0;
+        }
+        .fes__product__style .fesps__content .fesps__price,
+        .fes__product__style:hover .fesps__content .fes__button__a {
+            margin-top: 10px;
+        }
+        .fes__product__style .fesps__content .fesps__price {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .fes__product__style .fesps__content .fes__button__a {
+            font-size: 12px;
+            line-height: 14px;
+        }
+        .fes__product__style:hover .fesps__content .fes__button__a {
+            padding: 6px 15px;
+        }
+        .fes__product__style .fesps__content .fesps__variant {
+            gap: 5px;
+        }
+        .fes__product__style .fesps__content .fesps__variant p {
+            font-size: 12px;
+            line-height: 12px;
+        }
+        .fes__product__style .fesps__content .fesps__variant .nice-select {
+            height: 30px;
+            line-height: 30px;
+            padding-left: 4px;
+            padding-right: 10px;
+        }
+        .fes__product__style:hover .fesps__image .fesps__ctabtns {
+            left: 10px;
+        }
+        .fes__product__style .fesps__image .fesps__ctabtns {
+            gap: 5px;
+            top: 10px;
+        }
+        .fes__product__style .fesps__image .fesps__ctabtns a {
+            font-size: 12px;
+            height: 24px;
+            width: 24px;
+            line-height: 24px;
+        }
+        /*Hero Section*/
+        .fes__heroslider .swiper-slide {
+            height: 770px;
+        }
+        .fes__heroslider .swiper-slide .fes__hero__products {
+            height: 410px;
+            padding: 5px;
+            gap: 5px;
+        }
+        .fes__heroslider .swiper-slide .fes__hero__text {
+            gap: 10px;
+            justify-content: flex-end;
+            padding-bottom: 10px;
+        }
+        .fes__heroslider .swiper-slide .fes__hero__text h2 {
+            font-size: 20px;
+            line-height: 26px;
+        }
+        .fes__heroslider .swiper-slide .fes__hero__text p {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .fes__heroslider .swiper-slide .fes__hero__text h4 {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .fes__heroslider .swiper-slide .bg__black .row {
+            height: auto;
+        }
+        .fes__heroslider .swiper-slide .bg__black .container {
+            align-items: flex-end;
+        }
+        .fes__heroslider .fes__product__style .fesps__content .fesps__category {
+            width: 100%;
+            font-size: 12px;
+            line-height: 20px;
+        }
+        .fes__heroslider .fes__product__style .fesps__content .fesps__variant p {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .fes__heroslider .fes__product__style {
+            width: 190px;
+        }
+        .fes__heroslider .fes__product__style .fesps__image {
+            height: 115px;
+        }
+        .fes__heroslider .fes__product__style .fesps__content {
+            padding: 5px;
+        }
+        .fes__heroslider .fes__product__style .fesps__content h2,
+        .fes__heroslider .fes__product__style .fesps__content h2 a {
+            font-size: 16px;
+            line-height: 22px;
+        }
+        .fes__heroslider .fes__product__style .fesps__content .fesps__price {
+            margin-top: 10px;
+            font-size: 16px;
+            line-height: 16px;
+        }
+        .fes__heroslider .fes__product__style .fesps__content .show__on__hover {
+            gap: 10px;
+        }
+        .fes__heroslider .fes__product__style .fesps__content .fesps__variant .nice-select {
+            height: 30px;
+            line-height: 30px;
+        }
+        .fes__heroslider .fes__product__style:hover .fesps__content .show__on__hover {
+            margin: 10px 0;
+        }
+        .fes__heroslider .fes__product__style .fesps__content .fesps__variant .nice-select .list {
+            height: 102px;
+        }
+        .fes__heroslider .fes__product__style:hover .fesps__content .fes__button__a {
+            margin-top: 10px;
+            font-size: 12px;
+            line-height: 12px;
+        }
+        .fes__heroslider .fes__product__style:hover .fesps__image .fesps__ctabtns {
+            left: 10px;
+        }
+        .fes__heroslider .fes__product__style .fesps__image .fesps__ctabtns {
+            gap: 5px;
+            top: 10px;
+        }
+        .fes__heroslider .fes__product__style .fesps__image .fesps__ctabtns a {
+            font-size: 16px;
+            height: 30px;
+            width: 30px;
+            line-height: 30px;
+        }
+        /*Categories Section*/
+        .fes__categories__section .fescs__slider .swiper-slide {
+            width: 176px;
+            height: 176px;
+        }
+        .fes__categories__section .fescs__slider .swiper-slide .text h4 {
+            font-size: 24px;
+            line-height: 24px;
+        }
+        .fes__categories__section .fescs__slider .swiper-slide .text p {
+            font-size: 10px;
+            line-height: 14px;
+        }
+        .fes__categories__section .fescs__slider .swiper-slide .text {
+            gap: 5px;
+            padding: 5px;
+            bottom: -75%;
+        }
+        .fes__categories__section .fescs__slider__btn__next,
+        .fes__categories__section .fescs__slider__btn__prev {
+            font-size: 14px;
+            line-height: 25px;
+            height: 25px;
+            width: 25px;
+            top: calc(50% + 35px);
+        }
+        .fes__categories__section .fescs__slider__btn__next {
+            right: 0;
+        }
+        .fes__categories__section .fescs__slider__btn__prev {
+            left: 0;
+        }
+        .fes__categories__section .fes__button__a {
+            font-size: 12px;
+            line-height: 20px;
+            padding: 3px 20px;
+        }
+        /*Features*/
+        .fes__features__item {
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+        .fes__features__item .image {
+            height: 55px;
+            width: 55px;
+            border-width: 3px;
+        }
+        .fes__features__item .text {
+            width: 100%;
+            text-align: center;
+        }
+        .fes__features__item .image i {
+            font-size: 30px;
+        }
+        .fes__features__item .text h4 {
+            font-size: 24px;
+            line-height: 24px;
+        }
+        .fes__features__item .text p {
+            font-size: 12px;
+            line-height: 14px;
+        }
+        /*Trending Products*/
+        .fes__trending__products .tab-content .tab-pane.active {
+            gap: 10px;
+        }
+        .fes__trending__products .nav-pills,
+        .fessp__product__description .nav-pills {
+            gap: 0;
+            margin-bottom: 20px;
+        }
+        .fes__trending__products .nav-link,
+        .fessp__product__description .nav-link {
+            font-size: 12px;
+            line-height: 30px;
+            height: 30px;
+            padding: 0 10px;
+        }
+        /*Testimonials*/
+        .fests__slider__next,
+        .fests__slider__prev {
+            height: 25px;
+            width: 25px;
+            line-height: 25px;
+            font-size: 14px;
+        }
+        .fests__slider__next {
+            right: 0;
+        }
+        .fests__slider__prev {
+            left: 0;
+        }
+        .fests__slider {
+            padding: 10px;
+        }
+        .fests__slider .swiper-slide {
+            gap: 10px;
+            height: 240px;
+            padding: 10px;
+        }
+        .fests__slider .swiper-slide svg {
+            width: 30px;
+            height: 30px;
+        }
+        .fests__slider .swiper-slide .fests__star__ratings {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .fests__slider .swiper-slide .fests__customer__info .image {
+            height: 40px;
+            width: 40px;
+        }
+        .fests__slider .swiper-slide .fests__customer__info {
+            gap: 10px;
+        }
+        .fests__slider .swiper-slide .fests__customer__info .customer__name {
+            width: 160px;
+        }
+        .fests__slider .swiper-slide .fests__text,
+        .fests__slider .swiper-slide .fests__customer__info .customer__name p {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .fests__slider .swiper-slide .fests__customer__info .customer__name h4 {
+            font-size: 20px;
+            line-height: 24px;
+        }
+        /*Product On Sale*/
+        .fes__product__onsale__section .fes__product__style .fesps__background {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .fes__pos__timer {
+            margin: 20px 0;
+        }
+        .title__with__text {
+            padding-bottom: 20px;
+            margin-bottom: 15px;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .title__with__text .fes__section__title,
+        .title__with__text .twt__text {
+            width: 100%;
+        }
+        .title__with__text .fes__section__title h2,
+        .title__with__text .fes__section__title h2 span {
+            font-size: 30px;
+            line-height: 30px;
+        }
+        .title__with__text .fes__section__title h4,
+        .title__with__text .fes__section__title h2 {
+            text-align: center;
+        }
+        .title__with__text .twt__vertical__line {
+            display: none;
+        }
+        .title__with__text .twt__text p {
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+        }
+        .fes__pos__slider.owl-theme .owl-nav.disabled + .owl-dots {
+            margin-top: 30px;
+        }
+        .owl-theme .owl-dots {
+            gap: 5px;
+        }
+        .owl-theme .owl-dots .owl-dot,
+        .owl-theme .owl-dots .owl-dot span {
+            width: 20px;
+            height: 20px;
+            line-height: 24px;
+            font-size: 14px;
+        }
+        .fes__pos__timer {
+            gap: 5px;
+            margin: 10px 0;
+        }
+        .fes__pos__slider .item {
+            padding-top: 10px;
+        }
+        .fes__pos__timer #days,
+        .fes__pos__timer #hours,
+        .fes__pos__timer #minutes,
+        .fes__pos__timer #seconds {
+            font-size: 16px;
+            line-height: 16px;
+            width: 40px;
+            height: 40px;
+        }
+        .fes__pos__timer #days span,
+        .fes__pos__timer #hours span,
+        .fes__pos__timer #minutes span,
+        .fes__pos__timer #seconds span {
+            font-size: 8px;
+        }
+        /*Newsletter*/
+        .fes__newsletter__section .fesns__image .name,
+        .fes__newsletter__section .fesns__image .image img,
+        .fes__newsletter__section .fesns__image .fes__button__a {
+            width: 176px;
+        }
+        .fes__newsletter__section .fesns__text h2 {
+            font-size: 30px;
+            line-height: 30px;
+            margin-bottom: 10px;
+        }
+        .fes__newsletter__section .fesns__text p {
+            font-size: 12px;
+            line-height: 18px;
+            margin-bottom: 20px;
+        }
+        .fes__newsletter__section .fesns__text form {
+            height: 40px;
+        }
+        .fes__newsletter__section .fesns__text form input {
+            font-size: 12px;
+            padding-left: 10px;
+            padding-right: 5px;
+        }
+        .fes__newsletter__section .fesns__text form button {
+            width: 40px;
+            font-size: 16px;
+        }
+        .fes__newsletter__section .fesns__image .name {
+            font-size: 14px;
+            line-height: 30px;
+        }
+        .fes__newsletter__section .fesns__image:hover .name {
+            bottom: calc(100% + 5px);
+        }
+        .fes__newsletter__section .fesns__image .image .fesns__info__text {
+            width: 190px;
+        }
+        .fes__newsletter__section .fesns__image .fes__button__a {
+            font-size: 12px;
+            padding: 5px;
+        }
+        /*Best Deals*/
+        .fes__best__deals__section .fesbds__promotions {
+            height: 200px;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .fes__best__deals__section .fessp__product__image {
+            width: 176px;
+            height: 164px;
+        }
+        .fes__best__deals__section .fesbds__promotions h2 {
+            font-size: 34px;
+            line-height: 34px;
+        }
+        .fes__best__deals__section .fesbds__promotions h3 {
+            font-size: 20px;
+            line-height: 20px;
+        }
+        .fes__best__deals__section .fesbds__promotions p {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .fes__best__deals__section .fessp__product__details .price {
+            font-size: 20px;
+            line-height: 20px;
+        }
+        .fes__best__deals__section .fessp__ctas .top .fes__button__a.fessp__btn {
+            padding: 5px;
+            font-size: 9px;
+            line-height: 16px;
+        }
+        /*Footer*/
+        .fes__about__company {
+            align-items: center;
+        }
+        .fes__about__company .info {
+            gap: 7px;
+        }
+        .fes__footer__section h4 {
+            font-size: 26px;
+            line-height: 26px;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        .fes__footer__section p {
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+        }
+        .fesfooter__widget li a {
+            padding: 5px 0;
+            font-size: 12px;
+            line-height: 12px;
+            text-align: center;
+        }
+        .fesfooter__widget .fes__social__media {
+            display: flex;
+            gap: 5px;
+            justify-content: center;
+        }
+        .fesfooter__widget .fes__social__media .fes__button__a {
+            height: 24px;
+            width: 24px;
+            line-height: 24px;
+            font-size: 12px;
+        }
+        .fes__footer__section .fesfooter__bottom .fesfooter__securepay__options {
+            font-size: 20px;
+            gap: 3px;
+        }
+        .fesfooter__top .topright {
+            margin-top: 20px;
+        }
+        .fes__footer__section .fesfooter__bottom .copyright {
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        .fes__footer__section .fesfooter__bottom .fesfooter__securepay__options {
+            justify-content: center;
+        }
+    /*===== Single Product Page =====*/
+        /*Breadcrumbs*/
+        .fes__breadcrumbs {
+            height: 300px;
+        }
+        .fes__breadcrumbs .fesbc__bg {
+            padding-top: 85px;
+        }
+        .fes__breadcrumbs .fesbc__bg .fesbc__content .page__title {
+            font-size: 28px;
+            line-height: 28px;
+            margin: 0;
+        }
+        .fes__breadcrumbs .fesbc__bg .fesbc__content .text {
+            gap: 5px;
+        }
+        .fes__breadcrumbs .fesbc__bg .fesbc__content .text a,
+        .fes__breadcrumbs .fesbc__bg .fesbc__content .text p{
+            font-size: 12px;
+            line-height: 12px;
+        }
+        .fes__breadcrumbs .fesbc__bg .fesbc__content .text p i {
+            font-size: 8px;
+            line-height: 8px;
+        }
+        /*Single Product*/
+        .fessp__product__image {
+            width: 176px;
+            height: 176px;
+        }
+        .fessp__product__details {
+            gap: 10px;
+        }
+        .fessp__product__details .fests__star__ratings {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .fessp__product__details h2 {
+            font-size: 24px;
+            line-height: 28px;
+        }
+        .fessp__product__details .countdown__timer p,
+        .fessp__variants .fessp__options label {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .delivery__shipping {
+            gap: 5px;
+        }
+        .fessp__product__details p,
+        .delivery__shipping p span,
+        .delivery__shipping p i {
+            font-size: 10px;
+            line-height: 16px;
+        }
+        .fessp__product__details .fes__pos__timer {
+            gap: 5px;
+        }
+        .fessp__product__details .fes__pos__timer #days,
+        .fessp__product__details .fes__pos__timer #hours,
+        .fessp__product__details .fes__pos__timer #minutes,
+        .fessp__product__details .fes__pos__timer #seconds {
+            font-size: 12px;
+            line-height: 12px;
+            width: 36px;
+            height: 36px;
+        }
+        .fessp__product__details .fes__pos__timer #days span,
+        .fessp__product__details .fes__pos__timer #hours span,
+        .fessp__product__details .fes__pos__timer #minutes span,
+        .fessp__product__details .fes__pos__timer #seconds span {
+            font-size: 8px;
+        }
+        .fessp__product__details .price {
+            font-size: 20px;
+            line-height: 20px;
+        }
+        .fessp__ctas .top .fes__button__a {
+            width: 58%;
+            padding: 5px;
+            font-size: 9px;
+            line-height: 16px;
+        }
+        .fessp__ctas .top .fes__button__a.fessp__btn {
+            width: 20%;
+        }
+        .fessp__ctas .bottom .fes__button__b {
+            width: 49.4%;
+            padding: 5px;
+            font-size: 9px;
+            line-height: 16px;
+        }
+        .fessp__variants .fessp__options .nice-select {
+            height: 34px;
+            font-size: 12px;
+            line-height: 34px;
+            padding-left: 10px;
+            padding-right: 20px;
+        }
+        .fessp__product__description .nav-pills {
+            margin-bottom: 10px;
+        }
+        .fessp__product__description .tab-content .tab-pane .fessp__reviews {
+            gap: 10px;
+        }
+        .fessp__product__description .tab-content .tab-pane p {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .fessp__product__description .tab-content .tab-pane table th,
+        .fessp__product__description .tab-content .tab-pane table td {
+            font-size: 12px;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review .content {
+            gap: 5px;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review {
+            padding: 10px;
+            flex-direction: column;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review .image {
+            padding-right: 0;
+            margin-right: 0;
+            border: 0;
+            margin-bottom: 10px;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review .image img {
+            height: 50px;
+            width: 50px;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review .fests__star__ratings {
+            font-size: 10px;
+            line-height: 10px;
+            justify-content: center;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review .content .user__name {
+            gap: 5px;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review p {
+            font-size: 10px;
+            line-height: 12px;
+            text-align: center;
+        }
+        .fessp__product__description .tab-content .tab-pane .vertical__seperator {
+            display: none;
+        }
+        /*Review form*/
+        .fessp__submit__review {
+            padding: 10px;
+        }
+        .fessp__submit__review .rating__wrap {
+            gap: 5px;
+        }
+        .fessp__submit__review form,
+        .fessp__submit__review form .name__email {
+            flex-direction: column;
+            gap: 10px;
+        }
+        .fessp__submit__review form label {
+            font-size: 12px;
+            line-height: 16px;
+        }
+        .fessp__submit__review form .name__email .item {
+            width: 100%;
+        }
+        .fessp__submit__review form .name__email .item input {
+            height: 40px;
+            font-size: 12px;
+            padding: 0 10px;
+        }
+        .fessp__submit__review form textarea {
+            font-size: 12px;
+            height: 150px;
+        }
+        .fessp__submit__review form .fes__button__a {
+            font-size: 12px;
+            width: 100%;
+            padding: 5px;
+        }
+    /*===== Shop Page =====*/
+        .fes__shop__page .fesshop__infobar {
+            flex-direction: column;
+            gap: 10px;
+        }
+        .fes__shop__page .fesshop__infobar .fes__button__a {
+            font-size: 12px;
+            line-height: 18px;
+            padding: 5px 25px;
+        }
+        .fes__shop__page .fesshop__infobar .nice-select {
+            font-size: 12px;
+            height: 34px;
+            line-height: 34px;
+            padding-left: 10px;
+            padding-right: 25px;
+        }
+        .fes__shop__page .fesshop__infobar .nice-select .list {
+            left: 50%;
+            right: unset;
+            transform: translateX(-50%);
+        }
+        .fes__shop__page .fesshop__infobar .nice-select::after {
+            right: 10px;
+        }
+        .fes__shop__page .fesshop__infobar .number__of__results p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .fes__shop__products {
+            margin-top: 20px;
+            gap: 10px;
+        }
+        .fesshop__filter__sidebar .fesshop__filter__wrapper {
+            width: 180px;
+            padding: 5px;
+        }
+        .fesshop__filter__sidebar .fesshop__sidebar__closebtn {
+            left: 182px;
+            width: 16px;
+            height: 80px;
+            line-height: 80px;
+            font-size: 14px;
+            border-radius: 5px;
+        }
+        .fesshop__sidebar__widget {
+            padding: 20px 5px;
+            border-radius: 5px;
+        }
+        .fesshop__sidebar__widget h3 {
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        .fesshop__sidebar__widget li a {
+            font-size: 12px;
+            line-height: 16px;
+        }
+        .fesshop__sidebar__widget li a i {
+            font-size: 10px;
+            margin-right: 5px;
+        }
+        .fesshop__sidebar__widget li span {
+            height: 20px;
+            width: 20px;
+            line-height: 20px;
+            font-size: 10px;
+        }
+        .fesshop__sidebar__widget label {
+            font-size: 12px;
+        }
+        .fesshop__sidebar__widget .tag__clouds {
+            gap: 5px;
+        }
+        .fesshop__sidebar__widget .tag__clouds button {
+            font-size: 12px;
+            line-height: 12px;
+        }
+        .fesshop__sidebar__widget .tag__clouds button i {
+            font-size: 10px;
+        }
+        /*pagination*/
+        .fesshop__pagination {
+            margin-top: 20px;
+            gap: 6px;
+        }
+        .fesshop__pagination button {
+            height: 30px;
+            width: 30px;
+            line-height: 30px;
+            font-size: 12px;
+        }
+        /*Newsletter Popup*/
+        .fes__newsletter__popup .fes__newsletter__popup__wrapper {
+            width: 100px;
+            height: auto;
+        }
+        .fes__newsletter__popup.show .fes__newsletter__popup__wrapper {
+            width: 200px;
+        }
+        .fes__newsletter__popup .fes__newsletter__popup__wrapper .right__side {
+            padding: 20px 10px;
+        }
+        .fes__newsletter__popup .fes__newsletter__popup__wrapper h2 {
+            font-size: 30px;
+            line-height: 36px;
+            text-align: center;
+        }
+        .fes__newsletter__popup .fes__newsletter__popup__wrapper p {
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+        }
+        .fes__newsletter__popup .fes__newsletter__popup__wrapper form {
+            height: 40px;
+        }
+        .fes__newsletter__popup .fes__newsletter__popup__wrapper form input {
+            padding: 0 10px;
+            font-size: 12px;
+            padding-right: 5px;
+        }
+        .fes__newsletter__popup .fes__nwsltrpop__close__btn {
+            top: -35px;
+            right: 0;
+        }
+        .fes__newsletter__popup .fes__newsletter__popup__wrapper form button {
+            width: 40px;
+            font-size: 14px;
+        }
+    /*===== Contact Us Page =====*/
+        .fes__contact__section .right__side {
+            margin-top: 20px;
+        }
+        .fes__contact__section h2 {
+            font-size: 50px;
+            line-height: 50px;
+        }
+        .fes__contact__section h3 {
+            font-size: 24px;
+            line-height: 24px;
+        }
+        .fes__contact__section p,
+        .fes__contact__section p span,
+        .fes__contact__section p a {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .fes__contact__section form label {
+            font-size: 12px;
+            line-height: 12px;
+        }
+        .fes__contact__section .right__side p span i {
+            font-size: 12px;
+            margin-left: 5px;
+        }
+        .fes__contact__section form input {
+            height: 50px;
+            font-size: 12px;
+            padding: 0 10px;
+        }
+        .fes__contact__section form textarea {
+            font-size: 12px;
+            height: 200px;
+            padding: 10px;
+        }
+        .fes__contact__section .right__side .horizontal__seperator {
+            margin: 15px 0;
+        }
+        .fes__contact__section .fes__button__b {
+            font-size: 12px;
+            line-height: 18px;
+            padding: 5px 10px;
+        }
+        
+}
+
+@media (min-width: 290px) and (max-width: 414px) {
+    .fes__categories__section,
+    .fes__features,
+    .fes__trending__products,
+    .fes__brands__slider__section,
+    .fes__testimonials__section,
+    .fes__product__onsale__section,
+    .fes__newsletter__section,
+    .fes__newsletter__section .fesns__image,
+    .fes__best__deals__section,
+    .fes__single__product,
+    .fessp__product__description,
+    .fes__footer__section,
+    .fes__shop__page,
+    .fes__contact__section,
+    .fes__contact__section {
+        margin-top: 30px;
+    }
+    .fes__trending__products,
+    .fes__newsletter__section,
+    .fessp__product__info,
+    .fes__contact__section {
+        padding: 30px 0;
+    }
+    .fes__product__onsale__section,
+    .fes__footer__section {
+        padding-top: 30px;
+    }
+    .fes__pos__main__wrapper {
+        padding-bottom: 80px;
+    }
+    /*Checkbox & Radio Inputs*/
+    input[type="checkbox"],
+    input[type="checkbox"]:checked,
+    input[type="radio"],
+    input[type="radio"]:checked {
+        height: 12px;
+        width: 12px;
+    }
+    input[type="checkbox"]:checked::before,
+    input[type="radio"]:checked::before {
+        height: 6px;
+        width: 6px;
+    }
+    /*===== Home Page =====*/
+        .logo {
+            width: 140px;
+        }
+        .fes__button__a {
+            font-size: 14px;
+            line-height: 22px;
+            padding: 10px 20px;
+        }
+        /*Section Title*/
+        .fes__section__title {
+            margin-bottom: 30px;
+        }
+        .fes__section__title h4 {
+            font-size: 20px;
+            line-height: 20px;
+        }
+        .fes__section__title h2 {
+            font-size: 50px;
+            line-height: 50px;
+        }
+        /*Mega Menu*/
+        .fes__header__bottom .header__search {
+            height: 36px;
+            padding: 5px;
+            width: 180px;
+        }
+        .fes__header__bottom .header__search i {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .fes__header__bottom input {
+            font-size: 12px;
+        }
+        .fes__header .fes__header__top {
+            padding: 10px 0;
+            padding-top: 0px;
+        }
+        .fes__header .fes__header__top .left {
+            justify-content: center;
+            margin-bottom: 5px;
+        }
+        .fes__header .fes__header__top li,
+        .fes__header .fes__header__top li a {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .fes__header .fes__header__top li i {
+            font-size: 10px;
+            margin-right: 2px;
+        }
+        .fes__header .fes__header__top li.phone a {
+            margin-left: 2px;
+        }
+        .fes__header .fes__header__top li .phone__anim {
+            width: 16px;
+            height: 16px;
+            margin-right: 2px;
+        }
+        .fes__header .fes__header__top li .phone__anim::before,
+        .fes__header .fes__header__top li .phone__anim::after {
+            width: 16px;
+            height: 16px;
+            top: calc(50% - 9px);
+            left: calc(50% - 8px);
+        }
+        .fes__header .fes__header__top .middle {
+            justify-content: flex-start;
+            padding-right: 0;
+        }
+        .fes__header .fes__header__top .right {
+            gap: 10px;
+        }
+        .fes__header .fes__header__top .right li a i {
+            font-size: 16px;
+        }
+        .fes__header .fes__header__top .right li:first-child {
+            margin-right: 0;
+        }
+        .fes__header .fes__header__top .right li a .fes__amount {
+            height: 20px;
+            width: 20px;
+            line-height: 20px;
+            font-size: 12px;
+        }
+        .fes__header .fes__header__top .right li .fes__header__cart::before {
+            width: 16px;
+            height: 16px;
+            top: calc(50% - 9px);
+            left: 0px;
+        }
+        .fes__header .fes__header__top .right .cart__wishlist {
+            width: 110px;
+        }
+        /*Right Side Menu*/
+        .fes__cart__slider .main__cart__area,
+        .fes__right__slider__menu .fes__rsm__wrapper,
+        .fes__mobile__menu .fes__mblmenu__wrapper {
+            width: 255px;
+            padding: 20px 10px;
+        }
+        .fes__cart__slider .fes__cart__closebtn,
+        .fes__right__slider__menu .fes__rsm__closebtn {
+            right: 257px;
+            height: 30px;
+            width: 30px;
+            line-height: 30px;
+            font-size: 14px;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .pages li a {
+            padding: 8px 0;
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .about__company p {
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 0;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .lang__currency .feslc__language,
+        .fes__right__slider__menu .fes__rsm__wrapper .lang__currency .feslc__currency {
+            height: 40px;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .lang__currency p {
+            font-size: 16px;
+            line-height: 36px;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .lang__currency i {
+            font-size: 16px;
+            line-height: 40px;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .right__menu__newsletter {
+            height: 50px;
+            border-radius: 50px;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .right__menu__newsletter button {
+            width: 60px;
+            font-size: 16px;
+        }
+        .fes__social__links li a {
+            width: 34px;
+            height: 34px;
+            font-size: 16px;
+            line-height: 34px;
+        }
+        .fes__cart__slider .main__cart__area .fes__cart__header h3{
+            font-size: 24px;
+            line-height: 24px;
+            margin-bottom: 0;
+        }
+        .fes__cart__slider .main__cart__area .fes__cart__header span {
+            font-size: 24px;
+            line-height: 26px;
+            height: 26px;
+            margin-bottom: 0;
+            font-weight: 400;
+            padding: 0 8px;
+        }
+        /*Cart Items*/
+        .fes__cart__product .fes__cart__prod__close {
+            height: 16px;
+            width: 16px;
+            font-size: 10px;
+            line-height: 16px;
+        }
+        .fes__cart__product {
+            gap: 5px;
+        }
+        .fes__cart__product .content {
+            width: 185px;
+        }
+        .fes__cart__product .image {
+            width: 60px;
+            height: 60px;
+        }
+        .fes__cart__product h3 {
+            border: none;
+            line-height: 18px;
+        }
+        .fes__cart__product h3 a {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .fes__cart__product h4 {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        /*Mobile Menu*/
+        .fes__mblmenu__btn {
+            padding: 11px 7px;
+            font-size: 12px;
+            line-height: 12px;
+        }
+        .fes__mobile__menu .fes__mblmenu__wrapper .fes__mblmenu__closebtn {
+            left: 257px;
+            height: 30px;
+            width: 30px;
+            line-height: 30px;
+            font-size: 14px;
+        }
+        .fes__mblmenu__tabs {
+            font-size: 14px;
+            line-height: 24px;
+        }
+        /*Product Style*/
+        .fes__product__style {
+            width: 266px;
+            height: 270px;
+        }
+        .fes__product__style .fesps__background {
+            min-height: 270px;
+        }
+        .fes__product__style .fesps__image {
+            height: 160px;
+        }
+        .fes__product__style .fesps__content h2,
+        .fes__product__style .fesps__content h2 a {
+            font-size: 20px;
+            line-height: 26px;
+        }
+        .fes__product__style .fesps__content .fesps__category {
+            width: 100%;
+        }
+        .fes__product__style .fesps__content .show__on__hover {
+            gap: 10px;
+        }
+        .fes__product__style:hover .fesps__content .show__on__hover {
+            margin: 10px 0;
+        }
+        .fes__product__style .fesps__content .fesps__price,
+        .fes__product__style:hover .fesps__content .fes__button__a {
+            margin-top: 10px;
+        }
+        .fes__product__style .fesps__content .fes__button__a {
+            font-size: 14px;
+            line-height: 16px;
+        }
+        .fes__product__style .fesps__content .fesps__variant .nice-select {
+            height: 34px;
+            line-height: 34px;
+            padding-left: 8px;
+            padding-right: 18px;
+        }
+        /*Hero Section*/
+        .fes__heroslider .swiper-slide {
+            height: 910px;
+        }
+        .fes__heroslider .swiper-slide .fes__hero__products {
+            height: 530px;
+        }
+        .fes__heroslider .swiper-slide .fes__hero__text {
+            gap: 10px;
+            justify-content: flex-end;
+            padding-bottom: 10px;
+        }
+        .fes__heroslider .swiper-slide .fes__hero__text h2 {
+            font-size: 28px;
+            line-height: 34px;
+        }
+        .fes__heroslider .swiper-slide .fes__hero__text p {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .fes__heroslider .swiper-slide .fes__hero__text h4 {
+            font-size: 18px;
+            line-height: 18px;
+        }
+        .fes__heroslider .swiper-slide .bg__black .row {
+            height: auto;
+        }
+        .fes__heroslider .swiper-slide .bg__black .container {
+            align-items: flex-end;
+        }
+        .fes__heroslider .fes__product__style .fesps__content .fesps__category {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .fes__heroslider .fes__product__style {
+            width: 253px;
+        }
+        .fes__heroslider .fes__product__style .fesps__image {
+            height: 148px;
+        }
+        .fes__heroslider .fes__product__style .fesps__content h2,
+        .fes__heroslider .fes__product__style .fesps__content h2 a {
+            font-size: 20px;
+            line-height: 24px;
+        }
+        .fes__heroslider .fes__product__style .fesps__content .fesps__price {
+            margin-top: 10px;
+            font-size: 16px;
+            line-height: 16px;
+        }
+        .fes__heroslider .fes__product__style .fesps__content .show__on__hover {
+            gap: 10px;
+        }
+        .fes__heroslider .fes__product__style .fesps__content .fesps__variant .nice-select {
+            height: 30px;
+            line-height: 30px;
+        }
+        .fes__heroslider .fes__product__style:hover .fesps__content .show__on__hover {
+            margin: 10px 0;
+        }
+        .fes__heroslider .fes__product__style .fesps__content .fesps__variant .nice-select .list {
+            height: 102px;
+        }
+        .fes__heroslider .fes__product__style:hover .fesps__content .fes__button__a {
+            margin-top: 10px;
+            font-size: 12px;
+            line-height: 12px;
+        }
+        .fes__heroslider .fes__product__style:hover .fesps__image .fesps__ctabtns {
+            left: 10px;
+        }
+        .fes__heroslider .fes__product__style .fesps__image .fesps__ctabtns {
+            gap: 5px;
+            top: 10px;
+        }
+        .fes__heroslider .fes__product__style .fesps__image .fesps__ctabtns a {
+            font-size: 16px;
+            height: 30px;
+            width: 30px;
+            line-height: 30px;
+        }
+        /*Categories Section*/
+        .fes__categories__section .fescs__slider .swiper-slide {
+            width: 266px;
+            height: 266px;
+        }
+        .fes__categories__section .fescs__slider .swiper-slide .text h4 {
+            font-size: 28px;
+            line-height: 28px;
+        }
+        .fes__categories__section .fescs__slider .swiper-slide .text p {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .fes__categories__section .fescs__slider .swiper-slide .text {
+            padding-left: 15px;
+            bottom: -60%;
+        }
+        .fes__categories__section .fescs__slider__btn__next,
+        .fes__categories__section .fescs__slider__btn__prev {
+            font-size: 16px;
+            line-height: 30px;
+            height: 30px;
+            width: 30px;
+        }
+        .fes__categories__section .fescs__slider__btn__next {
+            right: 2px;
+        }
+        .fes__categories__section .fescs__slider__btn__prev {
+            left: 2px;
+        }
+        .fes__categories__section .fes__button__a {
+            font-size: 14px;
+            padding: 5px 25px;
+        }
+        /*Features*/
+        .fes__features__item {
+            margin-bottom: 20px;
+        }
+        .fes__features__item .image {
+            height: 70px;
+            width: 70px;
+            border-width: 3px;
+        }
+        .fes__features__item .text {
+            width: 186px;
+        }
+        .fes__features__item .image i {
+            font-size: 40px;
+        }
+        .fes__features__item .text h4 {
+            font-size: 28px;
+            line-height: 28px;
+        }
+        .fes__features__item .text p {
+            font-size: 12px;
+            line-height: 16px;
+        }
+        /*Trending Products*/
+        .fes__trending__products .tab-content .tab-pane.active {
+            gap: 10px;
+        }
+        .fes__trending__products .nav-link,
+        .fessp__product__description .nav-link {
+            font-size: 16px;
+            line-height: 30px;
+            height: 30px;
+            padding: 0 20px;
+        }
+        .fes__trending__products .nav-pills,
+        .fessp__product__description .nav-pills {
+            gap: 5px;
+            margin-bottom: 20px;
+        }
+        /*Testimonials*/
+        .fests__slider__next,
+        .fests__slider__prev {
+            height: 30px;
+            width: 30px;
+            line-height: 30px;
+            font-size: 14px;
+        }
+        .fests__slider__next {
+            right: 0;
+        }
+        .fests__slider__prev {
+            left: 0;
+        }
+        .fests__slider {
+            padding: 10px;
+        }
+        .fests__slider .swiper-slide {
+            gap: 15px;
+            height: 280px;
+        }
+        .fests__slider .swiper-slide svg {
+            width: 40px;
+            height: 40px;
+        }
+        .fests__slider .swiper-slide .fests__star__ratings {
+            font-size: 16px;
+            line-height: 16px;
+        }
+        .fests__slider .swiper-slide .fests__customer__info .image {
+            height: 60px;
+            width: 60px;
+        }
+        .fests__slider .swiper-slide .fests__customer__info {
+            gap: 10px;
+        }
+        .fests__slider .swiper-slide .fests__customer__info .customer__name {
+            width: 160px;
+        }
+        .fests__slider .swiper-slide .fests__text,
+        .fests__slider .swiper-slide .fests__customer__info .customer__name p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .fests__slider .swiper-slide .fests__customer__info .customer__name h4 {
+            font-size: 26px;
+            line-height: 30px;
+        }
+        /*Product On Sale*/
+        .fes__product__onsale__section .fes__product__style .fesps__background {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .fes__pos__timer {
+            margin: 20px 0;
+        }
+        .title__with__text {
+            padding-bottom: 20px;
+            margin-bottom: 15px;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .title__with__text .fes__section__title,
+        .title__with__text .twt__text {
+            width: 100%;
+        }
+        .title__with__text .fes__section__title h2,
+        .title__with__text .fes__section__title h2 span {
+            font-size: 50px;
+            line-height: 50px;
+        }
+        .title__with__text .fes__section__title h4,
+        .title__with__text .fes__section__title h2 {
+            text-align: center;
+        }
+        .title__with__text .twt__vertical__line {
+            display: none;
+        }
+        .title__with__text .twt__text p {
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+        }
+        .fes__pos__slider.owl-theme .owl-nav.disabled + .owl-dots {
+            margin-top: 30px;
+        }
+        .owl-theme .owl-dots {
+            gap: 10px;
+        }
+        .owl-theme .owl-dots .owl-dot,
+        .owl-theme .owl-dots .owl-dot span {
+            width: 24px;
+            height: 24px;
+            line-height: 28px;
+            font-size: 16px;
+        }
+        .fes__pos__timer {
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .fes__pos__timer #days,
+        .fes__pos__timer #hours,
+        .fes__pos__timer #minutes,
+        .fes__pos__timer #seconds {
+            font-size: 20px;
+            line-height: 20px;
+            width: 54px;
+            height: 54px;
+        }
+        .fes__pos__timer #days span,
+        .fes__pos__timer #hours span,
+        .fes__pos__timer #minutes span,
+        .fes__pos__timer #seconds span {
+            font-size: 12px;
+        }
+        /*Newsletter*/
+        .fes__newsletter__section .fesns__image .name,
+        .fes__newsletter__section .fesns__image .image img,
+        .fes__newsletter__section .fesns__image .fes__button__a {
+            width: 266px;
+        }
+        .fes__newsletter__section .fesns__text h2 {
+            font-size: 40px;
+            line-height: 44px;
+            margin-bottom: 5px;
+        }
+        .fes__newsletter__section .fesns__text p {
+            font-size: 12px;
+            line-height: 18px;
+            margin-bottom: 20px;
+        }
+        .fes__newsletter__section .fesns__text form {
+            height: 50px;
+        }
+        .fes__newsletter__section .fesns__text form input {
+            font-size: 16px;
+            padding-left: 10px;
+            padding-right: 5px;
+        }
+        .fes__newsletter__section .fesns__text form button {
+            width: 60px;
+            font-size: 20px;
+        }
+        .fes__newsletter__section .fesns__image .name {
+            font-size: 16px;
+            line-height: 36px;
+        }
+        /*Best Deals*/
+        .fes__best__deals__section .fesbds__promotions {
+            height: 200px;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .fes__best__deals__section .fessp__product__image {
+            width: 266px;
+            height: 246px;
+        }
+        .fes__best__deals__section .fesbds__promotions h2 {
+            font-size: 34px;
+            line-height: 34px;
+        }
+        .fes__best__deals__section .fesbds__promotions h3 {
+            font-size: 20px;
+            line-height: 20px;
+        }
+        .fes__best__deals__section .fesbds__promotions p {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        /*Footer*/
+        .fes__about__company {
+            align-items: center;
+        }
+        .fes__about__company .info {
+            gap: 7px;
+        }
+        .fes__footer__section h4 {
+            font-size: 26px;
+            line-height: 26px;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        .fes__footer__section p {
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+        }
+        .fesfooter__widget li a {
+            padding: 5px 0;
+            font-size: 12px;
+            line-height: 12px;
+            text-align: center;
+        }
+        .fesfooter__widget .fes__social__media {
+            display: flex;
+            gap: 5px;
+            justify-content: center;
+        }
+        .fesfooter__widget .fes__social__media .fes__button__a {
+            height: 24px;
+            width: 24px;
+            line-height: 24px;
+            font-size: 12px;
+        }
+        .fes__footer__section .fesfooter__bottom .fesfooter__securepay__options {
+            font-size: 20px;
+            gap: 3px;
+        }
+        .fesfooter__top .topright {
+            margin-top: 20px;
+        }
+        .fes__footer__section .fesfooter__bottom .copyright {
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        .fes__footer__section .fesfooter__bottom .fesfooter__securepay__options {
+            justify-content: center;
+        }
+    /*===== Single Product Page =====*/
+        /*Breadcrumbs*/
+        .fes__breadcrumbs {
+            height: 400px;
+        }
+        .fes__breadcrumbs .fesbc__bg {
+            padding-top: 100px;
+        }
+        .fes__breadcrumbs .fesbc__bg .fesbc__content .page__title {
+            font-size: 34px;
+            line-height: 34px;
+            margin: 0;
+        }
+        .fes__breadcrumbs .fesbc__bg .fesbc__content .text a,
+        .fes__breadcrumbs .fesbc__bg .fesbc__content .text p{
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .fes__breadcrumbs .fesbc__bg .fesbc__content .text p i {
+            font-size: 10px;
+            line-height: 10px;
+        }
+        /*Single Product*/
+        .fessp__product__image {
+            width: 266px;
+            height: 250px;
+        }
+        .fessp__product__details {
+            gap: 10px;
+        }
+        .fessp__product__details .fests__star__ratings {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .fessp__product__details h2 {
+            font-size: 24px;
+            line-height: 28px;
+        }
+        .fessp__product__details p,
+        .delivery__shipping p span,
+        .delivery__shipping p i,
+        .fessp__product__details .countdown__timer p,
+        .fessp__variants .fessp__options label {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .fessp__product__details .fes__pos__timer #days,
+        .fessp__product__details .fes__pos__timer #hours,
+        .fessp__product__details .fes__pos__timer #minutes,
+        .fessp__product__details .fes__pos__timer #seconds {
+            font-size: 14px;
+            line-height: 14px;
+            width: 40px;
+            height: 40px;
+        }
+        .fessp__product__details .price {
+            font-size: 20px;
+            line-height: 20px;
+        }
+        .fessp__ctas .top .fes__button__a {
+            width: 68%;
+            padding: 10px;
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .fessp__ctas .top .fes__button__a.fessp__btn {
+            width: 15%;
+        }
+        .fessp__ctas .bottom .fes__button__b {
+            width: 49.4%;
+            padding: 10px;
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .fessp__variants .fessp__options .nice-select {
+            height: 34px;
+            font-size: 12px;
+            line-height: 34px;
+            padding-left: 10px;
+            padding-right: 20px;
+        }
+        .fessp__product__description .nav-pills {
+            margin-bottom: 10px;
+        }
+        .fessp__product__description .tab-content .tab-pane .fessp__reviews {
+            gap: 10px;
+        }
+        .fessp__product__description .tab-content .tab-pane p {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .fessp__product__description .tab-content .tab-pane table th,
+        .fessp__product__description .tab-content .tab-pane table td {
+            font-size: 12px;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review .content {
+            gap: 5px;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review {
+            padding: 10px;
+            flex-direction: column;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review .image {
+            padding-right: 0;
+            margin-right: 0;
+            border: 0;
+            margin-bottom: 10px;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review .image img {
+            height: 70px;
+            width: 70px;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review .fests__star__ratings {
+            font-size: 12px;
+            line-height: 12px;
+            justify-content: center;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review .content .user__name {
+            gap: 0;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review p {
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+        }
+        .fessp__product__description .tab-content .tab-pane .vertical__seperator {
+            display: none;
+        }
+        /*Review form*/
+        .fessp__submit__review {
+            padding: 10px;
+        }
+        .fessp__submit__review .rating__wrap {
+            gap: 5px;
+        }
+        .fessp__submit__review form,
+        .fessp__submit__review form .name__email {
+            flex-direction: column;
+            gap: 10px;
+        }
+        .fessp__submit__review form label {
+            font-size: 12px;
+            line-height: 16px;
+        }
+        .fessp__submit__review form .name__email .item {
+            width: 100%;
+        }
+        .fessp__submit__review form .name__email .item input {
+            height: 45px;
+            font-size: 12px;
+            padding: 0 10px;
+        }
+        .fessp__submit__review form textarea {
+            font-size: 12px;
+            height: 150px;
+        }
+        .fessp__submit__review form .fes__button__a {
+            font-size: 12px;
+            width: 100%;
+            padding: 5px;
+        }
+    /*===== Shop Page =====*/
+        .fes__shop__page .fesshop__infobar {
+            flex-direction: column;
+            gap: 10px;
+        }
+        .fes__shop__page .fesshop__infobar .fes__button__a {
+            font-size: 12px;
+            line-height: 18px;
+            padding: 5px 25px;
+        }
+        .fes__shop__page .fesshop__infobar .nice-select {
+            font-size: 12px;
+            height: 34px;
+            line-height: 34px;
+            padding-left: 10px;
+            padding-right: 25px;
+        }
+        .fes__shop__page .fesshop__infobar .nice-select .list {
+            left: 50%;
+            right: unset;
+            transform: translateX(-50%);
+        }
+        .fes__shop__page .fesshop__infobar .nice-select::after {
+            right: 10px;
+        }
+        .fes__shop__page .fesshop__infobar .number__of__results p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .fes__shop__products {
+            margin-top: 20px;
+            gap: 15px;
+        }
+        .fesshop__filter__sidebar .fesshop__filter__wrapper {
+            width: 250px;
+            padding: 5px;
+        }
+        .fesshop__filter__sidebar .fesshop__sidebar__closebtn {
+            left: 255px;
+            height: 34px;
+            width: 34px;
+            line-height: 34px;
+        }
+        .fesshop__sidebar__widget {
+            padding: 20px 5px;
+            border-radius: 5px;
+        }
+        .fesshop__sidebar__widget h3 {
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        .fesshop__sidebar__widget li a {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .fesshop__sidebar__widget li span {
+            height: 26px;
+            width: 26px;
+            line-height: 26px;
+            font-size: 10px;
+        }
+        .fesshop__sidebar__widget label {
+            font-size: 12px;
+        }
+        .fesshop__sidebar__widget .tag__clouds {
+            gap: 5px;
+        }
+        .fesshop__sidebar__widget .tag__clouds button {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        /*pagination*/
+        .fesshop__pagination {
+            margin-top: 20px;
+            gap: 6px;
+        }
+        .fesshop__pagination button {
+            height: 30px;
+            width: 30px;
+            line-height: 30px;
+            font-size: 12px;
+        }
+        /*Newsletter Popup*/
+        .fes__newsletter__popup .fes__newsletter__popup__wrapper {
+            width: 200px;
+            height: auto;
+        }
+        .fes__newsletter__popup.show .fes__newsletter__popup__wrapper {
+            width: 400px;
+        }
+        .fes__newsletter__popup .fes__newsletter__popup__wrapper .right__side {
+            padding: 40px 10px;
+        }
+        .fes__newsletter__popup .fes__newsletter__popup__wrapper h2 {
+            font-size: 46px;
+            line-height: 50px;
+            text-align: center;
+        }
+        .fes__newsletter__popup .fes__newsletter__popup__wrapper p {
+            font-size: 14px;
+            line-height: 22px;
+            text-align: center;
+        }
+        .fes__newsletter__popup .fes__newsletter__popup__wrapper form {
+            height: 50px;
+        }
+        .fes__newsletter__popup .fes__nwsltrpop__close__btn {
+            top: -35px;
+            right: 0;
+        }
+        .fes__newsletter__popup .fes__newsletter__popup__wrapper form input {
+            padding: 0 10px;
+            font-size: 14px;
+            padding-right: 5px;
+        }
+    /*===== Contact Us Page =====*/
+        .fes__contact__section .right__side {
+            margin-top: 20px;
+        }
+        .fes__contact__section h2 {
+            font-size: 60px;
+            line-height: 60px;
+        }
+        .fes__contact__section h3 {
+            font-size: 28px;
+            line-height: 28px;
+        }
+        .fes__contact__section p,
+        .fes__contact__section p span,
+        .fes__contact__section p a {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .fes__contact__section form label {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .fes__contact__section .right__side p span i {
+            font-size: 12px;
+            margin-left: 5px;
+        }
+        .fes__contact__section form input {
+            height: 50px;
+            font-size: 14px;
+            padding: 0 15px;
+        }
+        .fes__contact__section form textarea {
+            font-size: 14px;
+            height: 200px;
+            padding: 15px;
+        }
+        .fes__contact__section .right__side .horizontal__seperator {
+            margin: 20px 0;
+        }
+        .fes__contact__section .fes__button__b {
+            font-size: 14px;
+            line-height: 20px;
+            padding: 7px 10px;
+        }
+}
+
+@media (min-width: 415px) and (max-width: 575px) {
+    .fes__categories__section,
+    .fes__features,
+    .fes__trending__products,
+    .fes__brands__slider__section,
+    .fes__testimonials__section,
+    .fes__product__onsale__section,
+    .fes__newsletter__section,
+    .fes__newsletter__section .fesns__image,
+    .fes__best__deals__section,
+    .fes__single__product,
+    .fessp__product__description,
+    .fes__footer__section,
+    .fes__shop__page,
+    .fes__contact__section,
+    .fes__contact__section {
+        margin-top: 40px;
+    }
+    .fes__trending__products,
+    .fes__newsletter__section,
+    .fessp__product__info,
+    .fes__contact__section {
+        padding: 40px 0;
+    }
+    .fes__product__onsale__section,
+    .fes__footer__section {
+        padding-top: 40px;
+    }
+    /*===== Home Page =====*/
+        .logo {
+            width: 140px;
+        }
+        /*Section Title*/
+        .fes__section__title {
+            margin-bottom: 30px;
+        }
+        .fes__section__title h2 {
+            font-size: 50px;
+            line-height: 50px;
+        }
+        /* Mega Menu */
+        .fes__header__bottom .header__search {
+            height: 40px;
+            padding: 5px;
+        }
+        .fes__header__bottom .header__search i {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .fes__header__bottom input {
+            font-size: 14px;
+        }
+        .fes__header .fes__header__top {
+            padding: 10px 0;
+            padding-top: 0px;
+        }
+        .fes__header .fes__header__top .left {
+            justify-content: center;
+            margin-bottom: 5px;
+        }
+        .fes__header .fes__header__top li,
+        .fes__header .fes__header__top li a {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .fes__header .fes__header__top li i {
+            font-size: 10px;
+            margin-right: 2px;
+        }
+        .fes__header .fes__header__top li.phone a {
+            margin-left: 2px;
+        }
+        .fes__header .fes__header__top li .phone__anim {
+            width: 16px;
+            height: 16px;
+            margin-right: 2px;
+        }
+        .fes__header .fes__header__top li .phone__anim::before,
+        .fes__header .fes__header__top li .phone__anim::after {
+            width: 16px;
+            height: 16px;
+            top: calc(50% - 9px);
+            left: calc(50% - 8px);
+        }
+        .fes__header .fes__header__top .middle {
+            justify-content: flex-start;
+        }
+        .fes__header .fes__header__top .right li a i {
+            font-size: 16px;
+        }
+        .fes__header .fes__header__top .right {
+            gap: 15px;
+        }
+        .fes__header .fes__header__top .right li a .fes__amount {
+            height: 20px;
+            width: 20px;
+            line-height: 20px;
+            font-size: 12px;
+        }
+        .fes__header .fes__header__top .right li .fes__header__cart::before {
+            width: 16px;
+            height: 16px;
+            top: calc(50% - 9px);
+            left: 0px;
+        }
+        .fes__header .fes__header__top .right .cart__wishlist {
+            width: 110px;
+        }
+        /*Right Side Menu*/
+        .fes__cart__slider .main__cart__area,
+        .fes__right__slider__menu .fes__rsm__wrapper {
+            width: 350px;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .pages li a {
+            padding: 8px 0;
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .about__company p {
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 0;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .lang__currency .feslc__language,
+        .fes__right__slider__menu .fes__rsm__wrapper .lang__currency .feslc__currency {
+            height: 40px;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .lang__currency p {
+            font-size: 16px;
+            line-height: 36px;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .lang__currency i {
+            font-size: 16px;
+            line-height: 40px;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .right__menu__newsletter {
+            height: 50px;
+            border-radius: 50px;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .right__menu__newsletter button {
+            width: 60px;
+            font-size: 16px;
+        }
+        .fes__social__links li a {
+            width: 34px;
+            height: 34px;
+            font-size: 16px;
+            line-height: 34px;
+        }
+        .fes__cart__slider .fes__cart__closebtn,
+        .fes__right__slider__menu .fes__rsm__closebtn {
+            right: 360px;
+        }
+        /*Cart Items*/
+        .fes__cart__product {
+            gap: 5px;
+        }
+        .fes__cart__product .content {
+            width: 255px;
+        }
+        /*Mobile Menu*/
+        .fes__mblmenu__btn {
+            padding: 10px;
+        }
+        .fes__mobile__menu .fes__mblmenu__wrapper {
+            width: 350px;
+        }
+        .fes__mobile__menu .fes__mblmenu__wrapper .fes__mblmenu__closebtn {
+            left: 360px;
+        }
+        .fes__mblmenu__tabs {
+            font-size: 14px;
+            line-height: 24px;
+        }
+        /*Hero Section*/
+        .fes__heroslider .swiper-slide {
+            height: 850px;
+        }
+        .fes__heroslider .swiper-slide .fes__hero__products {
+            height: 530px;
+        }
+        .fes__heroslider .swiper-slide .fes__hero__text {
+            gap: 10px;
+            justify-content: flex-end;
+            padding-bottom: 10px;
+        }
+        .fes__heroslider .swiper-slide .fes__hero__text h2 {
+            font-size: 28px;
+            line-height: 34px;
+        }
+        .fes__heroslider .swiper-slide .fes__hero__text p {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .fes__heroslider .swiper-slide .fes__hero__text h4 {
+            font-size: 18px;
+            line-height: 18px;
+        }
+        .fes__heroslider .swiper-slide .bg__black .row {
+            height: auto;
+        }
+        .fes__heroslider .swiper-slide .bg__black .container {
+            align-items: flex-end;
+        }
+        .fes__heroslider .fes__product__style .fesps__content .fesps__category {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .fes__heroslider .fes__product__style {
+            width: 253px;
+        }
+        .fes__heroslider .fes__product__style .fesps__image {
+            height: 148px;
+        }
+        .fes__heroslider .fes__product__style .fesps__content h2,
+        .fes__heroslider .fes__product__style .fesps__content h2 a {
+            font-size: 20px;
+            line-height: 24px;
+        }
+        .fes__heroslider .fes__product__style .fesps__content .fesps__price {
+            margin-top: 10px;
+            font-size: 16px;
+            line-height: 16px;
+        }
+        .fes__heroslider .fes__product__style .fesps__content .show__on__hover {
+            gap: 10px;
+        }
+        .fes__heroslider .fes__product__style .fesps__content .fesps__variant .nice-select {
+            height: 30px;
+            line-height: 30px;
+        }
+        .fes__heroslider .fes__product__style:hover .fesps__content .show__on__hover {
+            margin: 10px 0;
+        }
+        .fes__heroslider .fes__product__style .fesps__content .fesps__variant .nice-select .list {
+            height: 102px;
+        }
+        .fes__heroslider .fes__product__style:hover .fesps__content .fes__button__a {
+            margin-top: 10px;
+            font-size: 12px;
+            line-height: 12px;
+        }
+        .fes__heroslider .fes__product__style:hover .fesps__image .fesps__ctabtns {
+            left: 10px;
+        }
+        .fes__heroslider .fes__product__style .fesps__image .fesps__ctabtns {
+            gap: 5px;
+            top: 10px;
+        }
+        .fes__heroslider .fes__product__style .fesps__image .fesps__ctabtns a {
+            font-size: 16px;
+            height: 30px;
+            width: 30px;
+            line-height: 30px;
+        }
+        /*Categories Section*/
+        .fes__categories__section .fescs__slider .swiper-slide {
+            width: 185.5px;
+            height: 185.5px;
+        }
+        .fes__categories__section .fescs__slider .swiper-slide .text {
+            height: 100%;
+            bottom: -70%;
+            gap: 5px;
+            padding: 5px;
+            padding-top: 0;
+            padding-bottom: 10px;
+        }
+        .fes__categories__section .fescs__slider .swiper-slide .text h4 {
+            font-size: 24px;
+            line-height: 28px;
+        }
+        .fes__categories__section .fescs__slider .swiper-slide .text p {
+            font-size: 10px;
+            line-height: 14px;
+        }
+        .fes__categories__section .fescs__slider__btn__next,
+        .fes__categories__section .fescs__slider__btn__prev {
+            font-size: 16px;
+            line-height: 30px;
+            height: 30px;
+            width: 30px;
+        }
+        .fes__categories__section .fescs__slider__btn__next {
+            right: 0;
+        }
+        .fes__categories__section .fescs__slider__btn__prev {
+            left: 0;
+        }
+        .fes__categories__section .fes__button__a {
+            font-size: 12px;
+            line-height: 20px;
+            padding: 5px 20px;
+        }
+        /*Features*/
+        .fes__features__item {
+            margin-bottom: 20px;
+        }
+        .fes__features__item .text {
+            width: 301px;
+        }
+        /*Trending Products*/
+        .fes__trending__products .tab-content .tab-pane.active {
+            gap: 10px;
+        }
+        .fes__trending__products .nav-link,
+        .fessp__product__description .nav-link {
+            font-size: 16px;
+            line-height: 30px;
+            height: 30px;
+            padding: 0 20px;
+        }
+        .fes__trending__products .nav-pills,
+        .fessp__product__description .nav-pills {
+            gap: 5px;
+            margin-bottom: 20px;
+        }
+        /*Testimonials*/
+        .fests__slider__next,
+        .fests__slider__prev {
+            height: 30px;
+            width: 30px;
+            line-height: 30px;
+            font-size: 14px;
+        }
+        .fests__slider__next {
+            right: 0;
+        }
+        .fests__slider__prev {
+            left: 0;
+        }
+        .fests__slider {
+            padding: 20px 10px;
+        }
+        .fests__slider .swiper-slide {
+            gap: 15px;
+            height: 294px;
+        }
+        .fests__slider .swiper-slide .fests__star__ratings {
+            font-size: 16px;
+            line-height: 16px;
+        }
+        .fests__slider .swiper-slide .fests__customer__info .image {
+            height: 80px;
+            width: 80px;
+        }
+        .fests__slider .swiper-slide .fests__customer__info {
+            gap: 10px;
+        }
+        .fests__slider .swiper-slide .fests__customer__info .customer__name {
+            width: 265px;
+        }
+        .fests__slider .swiper-slide .fests__text,
+        .fests__slider .swiper-slide .fests__customer__info .customer__name p {
+            font-size: 16px;
+            line-height: 22px;
+        }
+        .fests__slider .swiper-slide .fests__customer__info .customer__name h4 {
+            font-size: 30px;
+            line-height: 34px;
+        }
+        /*Product On Sale*/
+        .fes__product__onsale__section .fes__product__style .fesps__background {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .fes__pos__timer {
+            margin: 20px 0;
+        }
+        .title__with__text {
+            padding-bottom: 20px;
+            margin-bottom: 15px;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .title__with__text .fes__section__title,
+        .title__with__text .twt__text {
+            width: 100%;
+        }
+        .title__with__text .fes__section__title h2,
+        .title__with__text .fes__section__title h2 span {
+            font-size: 50px;
+            line-height: 50px;
+        }
+        .title__with__text .fes__section__title h4,
+        .title__with__text .fes__section__title h2 {
+            text-align: center;
+        }
+        .title__with__text .twt__vertical__line {
+            display: none;
+        }
+        .title__with__text .twt__text p {
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+        }
+        .fes__pos__slider.owl-theme .owl-nav.disabled + .owl-dots {
+            margin-top: 40px;
+        }
+        .fes__pos__timer #days,
+        .fes__pos__timer #hours,
+        .fes__pos__timer #minutes,
+        .fes__pos__timer #seconds {
+            font-size: 24px;
+            line-height: 24px;
+            width: 60px;
+            height: 60px;
+        }
+        .fes__pos__timer #days span,
+        .fes__pos__timer #hours span,
+        .fes__pos__timer #minutes span,
+        .fes__pos__timer #seconds span {
+            font-size: 14px;
+        }
+        .fes__product__onsale__section .fes__product__style:hover .fesps__content .show__on__hover {
+            margin: 15px 0;
+        }
+        .fes__product__onsale__section .fes__product__style .fesps__content .fesps__price,
+        .fes__product__onsale__section .fes__product__style:hover .fesps__content .fes__button__a {
+            margin-top: 15px;
+        }
+        /*Newsletter*/
+        .fes__newsletter__section .fesns__text h2 {
+            font-size: 50px;
+            line-height: 54px;
+            margin-bottom: 5px;
+        }
+        .fes__newsletter__section .fesns__text p {
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 20px;
+        }
+        .fes__newsletter__section .fesns__text form {
+            height: 50px;
+        }
+        .fes__newsletter__section .fesns__text form input {
+            font-size: 16px;
+        }
+        /*Best Deals*/
+        .fes__best__deals__section .fesbds__promotions {
+            height: 200px;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .fes__best__deals__section .fessp__product__image {
+            width: 390px;
+            height: 355px;
+        }
+        .fes__best__deals__section .fesbds__promotions h2 {
+            font-size: 50px;
+            line-height: 50px;
+        }
+        .fes__best__deals__section .fesbds__promotions h3 {
+            font-size: 30px;
+            line-height: 30px;
+        }
+        .fes__best__deals__section .fesbds__promotions p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        /*Footer*/
+        .fes__about__company {
+            align-items: center;
+        }
+        .fes__footer__section h4 {
+            font-size: 30px;
+            line-height: 30px;
+            text-align: center;
+        }
+        .fes__footer__section p {
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+        }
+        .fesfooter__widget li a {
+            font-size: 14px;
+            line-height: 14px;
+            text-align: center;
+        }
+        .fesfooter__widget .fes__social__media {
+            display: flex;
+            gap: 5px;
+            justify-content: center;
+        }
+        .fesfooter__widget .fes__social__media .fes__button__a {
+            height: 34px;
+            width: 34px;
+            line-height: 34px;
+            font-size: 16px;
+        }
+        .fes__footer__section .fesfooter__bottom .fesfooter__securepay__options {
+            font-size: 24px;
+        }
+        .fesfooter__top .topright {
+            margin-top: 20px;
+        }
+        .fes__footer__section .fesfooter__bottom .copyright {
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        .fes__footer__section .fesfooter__bottom .fesfooter__securepay__options {
+            justify-content: center;
+        }
+    /*===== Single Product Page =====*/
+        /*Breadcrumbs*/
+        .fes__breadcrumbs {
+            height: 500px;
+        }
+        .fes__breadcrumbs .fesbc__bg {
+            padding-top: 118px;
+        }
+        .fes__breadcrumbs .fesbc__bg .fesbc__content .page__title {
+            font-size: 44px;
+            line-height: 44px;
+        }
+        /*Single Product*/
+        .fessp__product__image {
+            width: 391px;
+            height: 360px;
+        }
+        .fessp__product__details {
+            gap: 15px;
+        }
+        .fessp__product__details .fests__star__ratings {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .fessp__product__details h2 {
+            font-size: 34px;
+            line-height: 38px;
+        }
+        .fessp__product__details p,
+        .delivery__shipping p span,
+        .delivery__shipping p i,
+        .fessp__product__details .countdown__timer p,
+        .fessp__variants .fessp__options label {
+            font-size: 14px;
+            line-height: 18px;
+        }
+        .fessp__product__details .price {
+            font-size: 24px;
+            line-height: 24px;
+        }
+        .fessp__ctas .top .fes__button__a {
+            width: 68%;
+            padding: 10px 15px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .fessp__ctas .top .fes__button__a.fessp__btn {
+            width: 15%;
+        }
+        .fessp__ctas .bottom .fes__button__b {
+            width: 49.4%;
+            padding: 10px 15px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .fessp__product__description .nav-pills {
+            margin-bottom: 10px;
+        }
+        .fessp__product__description .tab-content .tab-pane p {
+            font-size: 14px;
+            line-height: 22px;
+        }
+        .fessp__product__description .tab-content .tab-pane table th,
+        .fessp__product__description .tab-content .tab-pane table td {
+            font-size: 14px;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review .content {
+            gap: 5px;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review {
+            padding: 10px;
+            flex-direction: column;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review .image {
+            padding-right: 0;
+            margin-right: 0;
+            border: 0;
+            margin-bottom: 10px;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review .image img {
+            height: 70px;
+            width: 70px;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review .fests__star__ratings {
+            font-size: 12px;
+            line-height: 12px;
+            justify-content: center;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review .content .user__name {
+            gap: 10px;
+            justify-content: center;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review p {
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+        }
+        .fessp__product__description .tab-content .tab-pane .vertical__seperator {
+            height: 12px;
+        }
+        /*Review form*/
+        .fessp__submit__review form,
+        .fessp__submit__review form .name__email {
+            flex-direction: column;
+            gap: 10px;
+        }
+        .fessp__submit__review form label {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .fessp__submit__review form .name__email .item {
+            width: 100%;
+        }
+        .fessp__submit__review form textarea {
+            font-size: 14px;
+            height: 200px;
+        }
+        .fessp__submit__review form .fes__button__a {
+            font-size: 14px;
+            padding: 5px;
+        }
+    /*===== Shop Page =====*/
+        .fes__shop__page .fesshop__infobar .fes__button__a {
+            font-size: 14px;
+            line-height: 20px;
+            padding: 10px;
+        }
+        .fes__shop__page .fesshop__infobar .nice-select {
+            font-size: 12px;
+            height: 40px;
+            line-height: 40px;
+            padding-left: 5px;
+            padding-right: 15px;
+        }
+        .fes__shop__page .fesshop__infobar .nice-select .list {
+            left: 50%;
+            right: unset;
+            transform: translateX(-50%);
+        }
+        .fes__shop__page .fesshop__infobar .nice-select::after {
+            right: 7px;
+        }
+        .fes__shop__page .fesshop__infobar .number__of__results p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .fes__shop__products {
+            margin-top: 20px;
+            gap: 20px;
+        }
+        .fesshop__filter__sidebar .fesshop__filter__wrapper {
+            width: 350px;
+        }
+        .fesshop__filter__sidebar .fesshop__sidebar__closebtn {
+            left: 360px;
+        }
+        .fesshop__sidebar__widget li a {
+            font-size: 16px;
+            line-height: 16px;
+        }
+        .fesshop__sidebar__widget label {
+            font-size: 14px;
+        }
+        .fesshop__sidebar__widget .tag__clouds {
+            gap: 5px;
+        }
+        .fesshop__sidebar__widget .tag__clouds button {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .fesshop__sidebar__widget .tag__clouds button i {
+            font-size: 12px;
+        }
+        /*pagination*/
+        .fesshop__pagination {
+            margin-top: 20px;
+            gap: 10px;
+        }
+        .fesshop__pagination button {
+            height: 40px;
+            width: 40px;
+            line-height: 40px;
+            font-size: 14px;
+        }
+        /*Newsletter Popup*/
+        .fes__newsletter__popup .fes__newsletter__popup__wrapper {
+            width: 200px;
+            height: 400px;
+        }
+        .fes__newsletter__popup.show .fes__newsletter__popup__wrapper {
+            width: 400px;
+        }
+        .fes__newsletter__popup .fes__newsletter__popup__wrapper .right__side {
+            padding: 10px;
+        }
+        .fes__newsletter__popup .fes__newsletter__popup__wrapper h2 {
+            font-size: 46px;
+            line-height: 50px;
+            text-align: center;
+        }
+        .fes__newsletter__popup .fes__newsletter__popup__wrapper p {
+            font-size: 14px;
+            line-height: 22px;
+            text-align: center;
+        }
+        .fes__newsletter__popup .fes__newsletter__popup__wrapper form {
+            height: 50px;
+        }
+        .fes__newsletter__popup .fes__nwsltrpop__close__btn {
+            top: -35px;
+            right: 0;
+        }
+    /*===== Contact Us Page =====*/
+        .fes__contact__section .right__side {
+            margin-top: 20px;
+        }
+        .fes__contact__section h2 {
+            font-size: 80px;
+            line-height: 80px;
+        }
+        .fes__contact__section h3 {
+            font-size: 36px;
+            line-height: 36px;
+        }
+        .fes__contact__section p,
+        .fes__contact__section p span,
+        .fes__contact__section p a {
+            font-size: 16px;
+            line-height: 22px;
+        }
+        .fes__contact__section form label {
+            font-size: 16px;
+            line-height: 16px;
+        }
+        .fes__contact__section form textarea {
+            font-size: 16px;
+            height: 200px;
+            padding: 15px;
+        }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .fes__categories__section,
+    .fes__features,
+    .fes__trending__products,
+    .fes__brands__slider__section,
+    .fes__testimonials__section,
+    .fes__product__onsale__section,
+    .fes__newsletter__section,
+    .fes__newsletter__section .fesns__image,
+    .fes__best__deals__section,
+    .fes__single__product,
+    .fessp__product__description,
+    .fes__footer__section,
+    .fes__shop__page,
+    .fes__contact__section,
+    .fes__contact__section {
+        margin-top: 50px;
+    }
+    .fes__trending__products,
+    .fes__newsletter__section,
+    .fessp__product__info,
+    .fes__contact__section {
+        padding: 50px 0;
+    }
+    .fes__product__onsale__section,
+    .fes__footer__section {
+        padding-top: 50px;
+    }
+    .fes__pos__main__wrapper {
+        padding-bottom: 70px;
+    }
+    /*===== Home Page =====*/
+        .logo {
+            width: 140px;
+        }
+        /*Section Title*/
+        .fes__section__title {
+            margin-bottom: 30px;
+        }
+        .fes__section__title h2 {
+            font-size: 60px;
+            line-height: 60px;
+        }
+        /*Mega Menu*/
+        .fes__header__bottom .header__search {
+            height: 40px;
+            padding: 5px;
+        }
+        .fes__header__bottom .header__search i {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .fes__header__bottom input {
+            font-size: 14px;
+        }
+        .fes__header .fes__header__top {
+            padding: 10px 0;
+            padding-top: 0px;
+        }
+        .fes__header .fes__header__top .left {
+            justify-content: center;
+            margin-bottom: 5px;
+        }
+        .fes__header .fes__header__top li i {
+            font-size: 10px;
+            margin-right: 2px;
+        }
+        .fes__header .fes__header__top li.phone a {
+            margin-left: 2px;
+        }
+        .fes__header .fes__header__top li .phone__anim {
+            width: 16px;
+            height: 16px;
+            margin-right: 2px;
+        }
+        .fes__header .fes__header__top li .phone__anim::before,
+        .fes__header .fes__header__top li .phone__anim::after {
+            width: 16px;
+            height: 16px;
+            top: calc(50% - 9px);
+            left: calc(50% - 8px);
+        }
+        .fes__header .fes__header__top .middle {
+            justify-content: flex-start;
+        }
+        .fes__header .fes__header__top .right li a i {
+            font-size: 16px;
+        }
+        .fes__header .fes__header__top .right {
+            gap: 15px;
+        }
+        .fes__header .fes__header__top .right li a .fes__amount {
+            height: 20px;
+            width: 20px;
+            line-height: 20px;
+            font-size: 12px;
+        }
+        .fes__header .fes__header__top .right li .fes__header__cart::before {
+            width: 16px;
+            height: 16px;
+            top: calc(50% - 9px);
+            left: 0px;
+        }
+        .fes__header .fes__header__top .right .cart__wishlist {
+            width: 110px;
+        }
+        /*Right Side Menu*/
+        .fes__cart__slider .main__cart__area,
+        .fes__right__slider__menu .fes__rsm__wrapper {
+            width: 350px;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .pages li a {
+            padding: 8px 0;
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .about__company p {
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 0;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .lang__currency .feslc__language,
+        .fes__right__slider__menu .fes__rsm__wrapper .lang__currency .feslc__currency {
+            height: 40px;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .lang__currency p {
+            font-size: 16px;
+            line-height: 36px;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .lang__currency i {
+            font-size: 16px;
+            line-height: 40px;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .right__menu__newsletter {
+            height: 50px;
+            border-radius: 50px;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .right__menu__newsletter button {
+            width: 60px;
+            font-size: 16px;
+        }
+        .fes__social__links li a {
+            width: 34px;
+            height: 34px;
+            font-size: 16px;
+            line-height: 34px;
+        }
+        .fes__cart__slider .fes__cart__closebtn,
+        .fes__right__slider__menu .fes__rsm__closebtn {
+            right: 360px;
+        }
+        /*Mobile Menu*/
+        .fes__mblmenu__btn {
+            padding: 10px;
+        }
+        .fes__mobile__menu .fes__mblmenu__wrapper {
+            width: 350px;
+        }
+        .fes__mobile__menu .fes__mblmenu__wrapper .fes__mblmenu__closebtn {
+            left: 360px;
+        }
+        .fes__mblmenu__tabs {
+            font-size: 14px;
+            line-height: 24px;
+        }
+        /*Product Style*/
+        .fes__product__style {
+            width: 252px;
+            height: 291px;
+        }
+        .fes__product__style .fesps__background {
+            min-height: 291px;
+        }
+        .fes__product__style .fesps__image {
+            height: 180.6px;
+        }
+        .fes__product__style .fesps__content h2,
+        .fes__product__style .fesps__content h2 a {
+            font-size: 20px;
+            line-height: 26px;
+        }
+        .fes__product__style .fesps__content .fesps__category {
+            width: 100%;
+        }
+        .fes__product__style .fesps__content .show__on__hover {
+            gap: 10px;
+        }
+        .fes__product__style:hover .fesps__content .show__on__hover {
+            margin: 10px 0;
+        }
+        .fes__product__style .fesps__content .fesps__price,
+        .fes__product__style:hover .fesps__content .fes__button__a {
+            margin-top: 10px;
+        }
+        .fes__product__style .fesps__content .fes__button__a {
+            font-size: 14px;
+            line-height: 16px;
+        }
+        .fes__product__style .fesps__content .fesps__variant .nice-select {
+            height: 34px;
+            line-height: 34px;
+            padding-left: 8px;
+            padding-right: 18px;
+        }
+        /*Hero Section*/
+        .fes__heroslider .swiper-slide {
+            height: 670px;
+        }
+        .fes__heroslider .swiper-slide .fes__hero__products {
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-end;
+            height: 265px;
+        }
+        .fes__heroslider .swiper-slide .fes__hero__text {
+            gap: 10px;
+            justify-content: flex-end;
+            padding-bottom: 20px;
+        }
+        .fes__heroslider .swiper-slide .fes__hero__text h2 {
+            font-size: 40px;
+            line-height: 46px;
+        }
+        .fes__heroslider .swiper-slide .fes__hero__text p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .fes__heroslider .swiper-slide .fes__hero__text h4 {
+            font-size: 20px;
+            line-height: 26px;
+        }
+        .fes__heroslider .swiper-slide .bg__black .row {
+            height: auto;
+        }
+        .fes__heroslider .swiper-slide .bg__black .container {
+            align-items: flex-end;
+        }
+        .fes__heroslider .fes__product__style .fesps__content .fesps__category {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .fes__heroslider .fes__product__style {
+            width: 253px;
+        }
+        .fes__heroslider .fes__product__style .fesps__image {
+            height: 148px;
+        }
+        .fes__heroslider .fes__product__style .fesps__content h2,
+        .fes__heroslider .fes__product__style .fesps__content h2 a {
+            font-size: 20px;
+            line-height: 24px;
+        }
+        .fes__heroslider .fes__product__style .fesps__content .fesps__price {
+            margin-top: 10px;
+            font-size: 16px;
+            line-height: 16px;
+        }
+        .fes__heroslider .fes__product__style .fesps__content .show__on__hover {
+            gap: 10px;
+        }
+        .fes__heroslider .fes__product__style .fesps__content .fesps__variant .nice-select {
+            height: 30px;
+            line-height: 30px;
+        }
+        .fes__heroslider .fes__product__style:hover .fesps__content .show__on__hover {
+            margin: 10px 0;
+        }
+        .fes__heroslider .fes__product__style .fesps__content .fesps__variant .nice-select .list {
+            height: 102px;
+        }
+        .fes__heroslider .fes__product__style:hover .fesps__content .fes__button__a {
+            margin-top: 10px;
+            font-size: 12px;
+            line-height: 12px;
+        }
+        .fes__heroslider .fes__product__style:hover .fesps__image .fesps__ctabtns {
+            left: 10px;
+        }
+        .fes__heroslider .fes__product__style .fesps__image .fesps__ctabtns {
+            gap: 5px;
+            top: 10px;
+        }
+        .fes__heroslider .fes__product__style .fesps__image .fesps__ctabtns a {
+            font-size: 16px;
+            height: 30px;
+            width: 30px;
+            line-height: 30px;
+        }
+        /*Categories Section*/
+        .fes__categories__section .fescs__slider .swiper-slide {
+            width: 248px;
+            height: 248px;
+        }
+        .fes__categories__section .fescs__slider .swiper-slide .text {
+            height: 100%;
+            bottom: -70%;
+            padding-left: 15px;
+        }
+        .fes__categories__section .fescs__slider .swiper-slide .text h4 {
+            font-size: 30px;
+            line-height: 30px;
+        }
+        .fes__categories__section .fescs__slider .swiper-slide .text p {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .fes__categories__section .fescs__slider__btn__next,
+        .fes__categories__section .fescs__slider__btn__prev {
+            font-size: 16px;
+            line-height: 30px;
+            height: 30px;
+            width: 30px;
+        }
+        .fes__categories__section .fescs__slider__btn__next {
+            right: -15px;
+        }
+        .fes__categories__section .fescs__slider__btn__prev {
+            left: -15px;
+        }
+        .fes__categories__section .fes__button__a {
+            font-size: 14px;
+            padding: 5px 25px;
+        }
+        /*Features*/
+        .fes__features__item {
+            margin-bottom: 20px;
+        }
+        .fes__features__item .image {
+            height: 70px;
+            width: 70px;
+            border-width: 3px;
+        }
+        .fes__features__item .text {
+            width: 166px;
+        }
+        .fes__features__item .image i {
+            font-size: 40px;
+        }
+        .fes__features__item .text h4 {
+            font-size: 26px;
+            line-height: 26px;
+        }
+        .fes__features__item .text p {
+            font-size: 12px;
+            line-height: 16px;
+        }
+        /*Trending Products*/
+        .fes__trending__products .tab-content .tab-pane.active {
+            gap: 10px;
+        }
+        .fes__trending__products .nav-link,
+        .fessp__product__description .nav-link {
+            font-size: 16px;
+            line-height: 30px;
+            height: 30px;
+            padding: 0 20px;
+        }
+        .fes__trending__products .nav-pills,
+        .fessp__product__description .nav-pills {
+            gap: 5px;
+            margin-bottom: 20px;
+        }
+        /*Testimonials*/
+        .fests__slider__next {
+            right: -15px;
+        }
+        .fests__slider__prev {
+            left: -15px;
+        }
+        /*Product On Sale*/
+        .fes__product__onsale__section .fes__product__style .fesps__background {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .fes__pos__timer {
+            margin: 20px 0;
+        }
+        .title__with__text {
+            padding-bottom: 25px;
+            margin-bottom: 15px;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .title__with__text .fes__section__title,
+        .title__with__text .twt__text {
+            width: 100%;
+        }
+        .title__with__text .fes__section__title h2,
+        .title__with__text .fes__section__title h2 span {
+            font-size: 60px;
+            line-height: 60px;
+        }
+        .title__with__text .fes__section__title h4,
+        .title__with__text .fes__section__title h2 {
+            text-align: center;
+        }
+        .title__with__text .twt__vertical__line {
+            display: none;
+        }
+        .title__with__text .twt__text p {
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+        }
+        .fes__pos__slider.owl-theme .owl-nav.disabled + .owl-dots {
+            margin-top: 40px;
+        }
+        /*Newsletter*/
+        .fes__newsletter__section .fesns__text h2 {
+            font-size: 50px;
+            line-height: 54px;
+            margin-bottom: 5px;
+        }
+        .fes__newsletter__section .fesns__text p {
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 20px;
+        }
+        .fes__newsletter__section .fesns__text form {
+            height: 50px;
+        }
+        .fes__newsletter__section .fesns__text form input {
+            font-size: 16px;
+        }
+        /*Best Deals*/
+        .fes__best__deals__section .fesbds__promotions {
+            height: 200px;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .fes__best__deals__section .fessp__product__image {
+            width: 515px;
+            height: 465px;
+        }
+        .fes__best__deals__section .fesbds__promotions h2 {
+            font-size: 50px;
+            line-height: 50px;
+        }
+        .fes__best__deals__section .fesbds__promotions h3 {
+            font-size: 30px;
+            line-height: 30px;
+        }
+        .fes__best__deals__section .fesbds__promotions p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        /*Footer*/
+        .fesfooter__top .topright {
+            margin-top: 20px;
+        }
+        .fes__footer__section .fesfooter__bottom .copyright {
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        .fes__footer__section .fesfooter__bottom .fesfooter__securepay__options {
+            justify-content: center;
+        }
+    /*===== Single Product Page =====*/
+        /*Breadcrumbs*/
+        .fes__breadcrumbs {
+            height: 550px;
+        }
+        .fes__breadcrumbs .fesbc__bg {
+            padding-top: 115px;
+        }
+        .fes__breadcrumbs .fesbc__bg .fesbc__content .page__title {
+            font-size: 50px;
+            line-height: 50px;
+        }
+        /*Single Product*/
+        .fessp__product__image {
+            width: 516px;
+            height: 475px;
+        }
+        .fessp__product__details {
+            gap: 15px;
+        }
+        .fessp__product__details .fests__star__ratings {
+            font-size: 16px;
+            line-height: 16px;
+        }
+        .fessp__product__details h2 {
+            font-size: 44px;
+            line-height: 48px;
+        }
+        .fessp__ctas .top .fes__button__a {
+            width: 70%;
+            padding: 10px 15px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .fessp__ctas .top .fes__button__a.fessp__btn {
+            width: 14%;
+        }
+        .fessp__ctas .bottom .fes__button__b {
+            width: 49.4%;
+            padding: 10px 15px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .fessp__product__description .nav-pills {
+            margin-bottom: 10px;
+        }
+        .fessp__product__description .tab-content .tab-pane p {
+            font-size: 14px;
+            line-height: 22px;
+        }
+        .fessp__product__description .tab-content .tab-pane table th,
+        .fessp__product__description .tab-content .tab-pane table td {
+            font-size: 14px;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review .content {
+            gap: 5px;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review {
+            padding: 10px;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review .image {
+            padding-right: 10px;
+            margin-right: 10px;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review .fests__star__ratings {
+            font-size: 12px;
+            line-height: 12px;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review .content .user__name {
+            gap: 10px;
+        }
+        .fessp__product__description .tab-content .tab-pane .user__review p {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .fessp__product__description .tab-content .tab-pane .vertical__seperator {
+            height: 12px;
+        }
+        /*Review form*/
+        .fessp__submit__review form,
+        .fessp__submit__review form .name__email {
+            flex-direction: column;
+            gap: 10px;
+        }
+        .fessp__submit__review form label {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .fessp__submit__review form .name__email .item {
+            width: 100%;
+        }
+        .fessp__submit__review form textarea {
+            font-size: 14px;
+            height: 200px;
+        }
+    /*===== Shop Page =====*/
+        .fes__shop__products {
+            margin-top: 30px;
+            gap: 24px;
+        }
+        .fesshop__filter__sidebar .fesshop__filter__wrapper {
+            width: 350px;
+        }
+        .fesshop__filter__sidebar .fesshop__sidebar__closebtn {
+            left: 360px;
+        }
+        .fesshop__sidebar__widget li a {
+            font-size: 16px;
+            line-height: 16px;
+        }
+        .fesshop__sidebar__widget label {
+            font-size: 14px;
+        }
+        .fesshop__sidebar__widget .tag__clouds {
+            gap: 5px;
+        }
+        .fesshop__sidebar__widget .tag__clouds button {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .fesshop__sidebar__widget .tag__clouds button i {
+            font-size: 12px;
+        }
+        /*Newsletter Popup*/
+        .fes__newsletter__popup .fes__newsletter__popup__wrapper {
+            width: 300px;
+            height: 400px;
+        }
+        .fes__newsletter__popup.show .fes__newsletter__popup__wrapper {
+            width: 550px;
+        }
+        .fes__newsletter__popup .fes__newsletter__popup__wrapper .right__side {
+            padding: 10px;
+        }
+        .fes__newsletter__popup .fes__newsletter__popup__wrapper h2 {
+            font-size: 30px;
+            line-height: 36px;
+        }
+        .fes__newsletter__popup .fes__newsletter__popup__wrapper p {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .fes__newsletter__popup .fes__newsletter__popup__wrapper form {
+            height: 50px;
+        }
+        .fes__newsletter__popup .fes__newsletter__popup__wrapper form input {
+            padding: 0 15px;
+            font-size: 14px;
+            padding-right: 5px;
+        }
+        .fes__newsletter__popup .fes__nwsltrpop__close__btn {
+            top: -35px;
+            right: 0;
+        }
+    /*===== Contact Us Page =====*/
+        .fes__contact__section .right__side {
+            margin-top: 20px;
+        }
+        .fes__contact__section h2 {
+            font-size: 80px;
+            line-height: 80px;
+        }
+        .fes__contact__section h3 {
+            font-size: 36px;
+            line-height: 36px;
+        }
+        .fes__contact__section p,
+        .fes__contact__section p span,
+        .fes__contact__section p a {
+            font-size: 16px;
+            line-height: 22px;
+        }
+        .fes__contact__section form label {
+            font-size: 16px;
+            line-height: 16px;
+        }
+        .fes__contact__section .right__side p span i {
+            font-size: 14px;
+        }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .fes__categories__section,
+    .fes__features,
+    .fes__trending__products,
+    .fes__brands__slider__section,
+    .fes__testimonials__section,
+    .fes__product__onsale__section,
+    .fes__newsletter__section,
+    .fes__best__deals__section,
+    .fes__single__product,
+    .fessp__product__description,
+    .fes__footer__section,
+    .fes__shop__page,
+    .fes__contact__section,
+    .fes__contact__section {
+        margin-top: 60px;
+    }
+    .fes__trending__products,
+    .fes__newsletter__section,
+    .fessp__product__info,
+    .fes__contact__section {
+        padding: 60px 0;
+    }
+    .fes__product__onsale__section,
+    .fes__footer__section {
+        padding-top: 60px;
+    }
+    /*===== Home Page =====*/
+        .logo {
+            width: 140px;
+        }
+        /*Section Title*/
+        .fes__section__title {
+            margin-bottom: 35px;
+        }
+        .fes__section__title h2 {
+            font-size: 60px;
+            line-height: 60px;
+        }
+        /*Mega Menu*/
+        .fes__header__bottom .header__search {
+            height: 40px;
+            padding: 5px;
+        }
+        .fes__header__bottom .header__search i {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .fes__header__bottom input {
+            font-size: 14px;
+        }
+        .fes__header .fes__header__top {
+            padding: 5px 0;
+        }
+        .fes__header .fes__header__top li,
+        .fes__header .fes__header__top li a {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .fes__header .fes__header__top li:first-child {
+            margin-right: 5px;
+        }
+        .fes__header .fes__header__top li i {
+            font-size: 10px;
+            margin-right: 2px;
+        }
+        .fes__header .fes__header__top li.phone a {
+            margin-left: 2px;
+        }
+        .fes__header .fes__header__top li .phone__anim {
+            width: 16px;
+            height: 16px;
+            margin-right: 2px;
+        }
+        .fes__header .fes__header__top li .phone__anim::before,
+        .fes__header .fes__header__top li .phone__anim::after {
+            width: 16px;
+            height: 16px;
+            top: calc(50% - 9px);
+            left: calc(50% - 8px);
+        }
+        .fes__header .fes__header__top .middle {
+            padding: 0;
+        }
+        .fes__header .fes__header__top .right li a i {
+            font-size: 16px;
+        }
+        .fes__header .fes__header__top .right {
+            gap: 15px;
+        }
+        .fes__header .fes__header__top .right li a .fes__amount {
+            height: 20px;
+            width: 20px;
+            line-height: 20px;
+            font-size: 12px;
+        }
+        .fes__header .fes__header__top .right li .fes__header__cart::before {
+            width: 16px;
+            height: 16px;
+            top: calc(50% - 9px);
+            left: 0px;
+        }
+        .fes__header .fes__header__top .right .cart__wishlist {
+            width: 110px;
+        }
+        /*Right Side Menu*/
+        .fes__cart__slider .main__cart__area,
+        .fes__right__slider__menu .fes__rsm__wrapper {
+            width: 350px;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .pages li a {
+            padding: 8px 0;
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .about__company p {
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 0;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .lang__currency .feslc__language,
+        .fes__right__slider__menu .fes__rsm__wrapper .lang__currency .feslc__currency {
+            height: 40px;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .lang__currency p {
+            font-size: 16px;
+            line-height: 36px;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .lang__currency i {
+            font-size: 16px;
+            line-height: 40px;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .right__menu__newsletter {
+            height: 50px;
+            border-radius: 50px;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .right__menu__newsletter button {
+            width: 60px;
+            font-size: 16px;
+        }
+        .fes__social__links li a {
+            width: 34px;
+            height: 34px;
+            font-size: 16px;
+            line-height: 34px;
+        }
+        .fes__cart__slider .fes__cart__closebtn,
+        .fes__right__slider__menu .fes__rsm__closebtn {
+            right: 360px;
+        }
+        /*Mobile Menu*/
+        .fes__mblmenu__btn {
+            padding: 10px;
+        }
+        .fes__mobile__menu .fes__mblmenu__wrapper {
+            width: 350px;
+        }
+        .fes__mobile__menu .fes__mblmenu__wrapper .fes__mblmenu__closebtn {
+            left: 360px;
+        }
+        .fes__mblmenu__tabs {
+            font-size: 14px;
+            line-height: 24px;
+        }
+        /*Hero Section*/
+        .fes__heroslider .swiper-slide {
+            height: 670px;
+        }
+        .fes__heroslider .swiper-slide .fes__hero__products {
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-end;
+            height: 340px;
+        }
+        .fes__heroslider .swiper-slide .fes__hero__text {
+            gap: 10px;
+            justify-content: flex-end;
+            padding-bottom: 20px;
+        }
+        .fes__heroslider .swiper-slide .fes__hero__text h2 {
+            font-size: 40px;
+            line-height: 46px;
+        }
+        .fes__heroslider .swiper-slide .fes__hero__text p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .fes__heroslider .swiper-slide .fes__hero__text h4 {
+            font-size: 20px;
+            line-height: 26px;
+        }
+        .fes__heroslider .swiper-slide .bg__black .row {
+            height: auto;
+        }
+        .fes__heroslider .swiper-slide .bg__black .container {
+            align-items: flex-end;
+        }
+        /*Categories Section*/
+        .fes__categories__section .fescs__slider .swiper-slide {
+            width: 338px;
+            height: 338px;
+        }
+        .fes__categories__section .fescs__slider__btn__prev {
+            left: -20px;
+        }
+        .fes__categories__section .fescs__slider__btn__next {
+            right: -20px;
+        }
+        .fes__categories__section .fescs__slider .swiper-slide .text {
+            padding-left: 15px;
+        }
+        /*Features*/
+        .fes__features__item {
+            margin-bottom: 20px;
+        }
+        /*Testimonials*/
+        .fests__slider__next {
+            right: -20px;
+        }
+        .fests__slider__prev {
+            left: -20px;
+        }
+        .fests__slider {
+            padding: 20px 10px;
+        }
+        .fests__slider .swiper-slide {
+            gap: 15px;
+            height: 294px;
+        }
+        .fests__slider .swiper-slide svg {
+            width: 54px;
+            height: 54px;
+        }
+        .fests__slider .swiper-slide .fests__star__ratings {
+            font-size: 16px;
+            line-height: 16px;
+        }
+        .fests__slider .swiper-slide .fests__customer__info .image {
+            height: 80px;
+            width: 80px;
+        }
+        .fests__slider .swiper-slide .fests__customer__info {
+            gap: 10px;
+        }
+        .fests__slider .swiper-slide .fests__customer__info .customer__name {
+            width: 210px;
+        }
+        .fests__slider .swiper-slide .fests__text,
+        .fests__slider .swiper-slide .fests__customer__info .customer__name p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .fests__slider .swiper-slide .fests__customer__info .customer__name h4 {
+            font-size: 30px;
+            line-height: 34px;
+        }
+        /*Product On Sale*/
+        .fes__pos__timer {
+            margin: 20px 0;
+        }
+        .title__with__text {
+            padding-bottom: 25px;
+            margin-bottom: 15px;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .title__with__text .fes__section__title,
+        .title__with__text .twt__text {
+            width: 100%;
+        }
+        .title__with__text .fes__section__title h2,
+        .title__with__text .fes__section__title h2 span {
+            font-size: 60px;
+            line-height: 60px;
+        }
+        .title__with__text .fes__section__title h4,
+        .title__with__text .fes__section__title h2 {
+            text-align: center;
+        }
+        .title__with__text .twt__vertical__line {
+            display: none;
+        }
+        .title__with__text .twt__text p {
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+        }
+        .fes__pos__slider.owl-theme .owl-nav.disabled + .owl-dots {
+            margin-top: 40px;
+        }
+        .fes__product__onsale__section .fes__product__style:hover .fesps__content .show__on__hover {
+            margin: 15px 0;
+        }
+        .fes__product__onsale__section .fes__product__style .fesps__content .fesps__price,
+        .fes__product__onsale__section .fes__product__style:hover .fesps__content .fes__button__a {
+            margin-top: 15px;
+        }
+        /*Newsletter*/
+        .fes__newsletter__section .fesns__image .name,
+        .fes__newsletter__section .fesns__image .image img,
+        .fes__newsletter__section .fesns__image .fes__button__a {
+            width: 216px;
+        }
+        .fes__newsletter__section .fesns__image .image .fesns__info__dots {
+            width: 13px;
+            height: 13px;
+            border: 3px solid #FFF;
+        }
+        .fes__newsletter__section .fesns__text h2 {
+            font-size: 50px;
+            line-height: 54px;
+            margin-bottom: 5px;
+        }
+        .fes__newsletter__section .fesns__text p {
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 20px;
+        }
+        /*Best Deals*/
+        .fes__best__deals__section .fesbds__promotions {
+            height: 500px;
+            gap: 20px;
+        }
+        .fes__best__deals__section .fesbds__promotions h2 {
+            font-size: 40px;
+            line-height: 40px;
+        }
+        .fes__best__deals__section .fesbds__promotions h3 {
+            font-size: 24px;
+            line-height: 24px;
+        }
+        .fes__best__deals__section .fessp__product__image {
+            width: 246px;
+            height: 240px;
+        }
+        .fes__best__deals__section .fessp__product__details {
+            gap: 10px;
+        }
+        .fes__best__deals__section .fessp__product__details h2,
+        .fes__best__deals__section .fessp__product__details h2 a {
+            font-size: 32px;
+            line-height: 36px;
+        }
+        .fes__best__deals__section .fesbds__promotions p,
+        .fes__best__deals__section .fessp__product__details p {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .fes__best__deals__section .fessp__product__details .price {
+            font-size: 18px;
+            line-height: 18px;
+        }
+        .fes__best__deals__section .fessp__product__details .countdown__timer p,
+        .fes__best__deals__section .fessp__variants .fessp__options label {
+            font-size: 12px;
+            line-height: 22px;
+        }
+        .fes__best__deals__section .fessp__ctas .top .fes__button__a {
+            width: 68%;
+            padding: 10px;
+            font-size: 12px;
+            line-height: 16px;
+        }
+        .fes__best__deals__section .fessp__ctas .bottom .fes__button__b {
+            padding: 10px;
+            font-size: 12px;
+            line-height: 16px;
+        }
+        /*Footer*/
+        .fes__about__company .info {
+            gap: 7px;
+        }
+        .fes__footer__section h4 {
+            font-size: 26px;
+            line-height: 26px;
+        }
+        .fes__footer__section p {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .fesfooter__widget li a {
+            padding: 5px 0;
+            font-size: 12px;
+            line-height: 12px;
+        }
+        .fesfooter__widget .fes__social__media .fes__button__a {
+            height: 24px;
+            width: 24px;
+            line-height: 24px;
+            font-size: 12px;
+        }
+        .fes__footer__section .fesfooter__bottom .fesfooter__securepay__options {
+            font-size: 24px;
+            gap: 5px;
+        }
+    /*===== Single Product Page =====*/
+        /*Breadcrumbs*/
+        .fes__breadcrumbs {
+            height: 500px;
+        }
+        .fes__breadcrumbs .fesbc__bg {
+            padding-top: 90px;
+        }
+        .fes__breadcrumbs .fesbc__bg .fesbc__content .page__title {
+            font-size: 50px;
+            line-height: 50px;
+        }
+        /*Single Product*/
+        .fessp__product__image {
+            width: 336px;
+            height: 336px;
+        }
+        .fessp__product__details {
+            gap: 15px;
+        }
+        .fessp__product__details .fests__star__ratings {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .fessp__product__details h2 {
+            font-size: 34px;
+            line-height: 38px;
+        }
+        .fessp__product__details p,
+        .delivery__shipping p span,
+        .delivery__shipping p i,
+        .fessp__product__details .countdown__timer p,
+        .fessp__variants .fessp__options label {
+            font-size: 14px;
+            line-height: 18px;
+        }
+        .fessp__product__details .price {
+            font-size: 24px;
+            line-height: 24px;
+        }
+        .fessp__ctas .top .fes__button__a {
+            width: 68%;
+            padding: 10px 15px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .fessp__ctas .top .fes__button__a.fessp__btn {
+            width: 15%;
+        }
+        .fessp__ctas .bottom .fes__button__b {
+            width: 49.4%;
+            padding: 10px 15px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+    /*===== Shop Page =====*/
+        .fes__shop__products {
+            margin-top: 30px;
+            gap: 30px;
+        }
+        .fesshop__filter__sidebar .fesshop__filter__wrapper {
+            width: 350px;
+        }
+        .fesshop__filter__sidebar .fesshop__sidebar__closebtn {
+            left: 360px;
+        }
+        .fesshop__sidebar__widget li a {
+            font-size: 16px;
+            line-height: 16px;
+        }
+        .fesshop__sidebar__widget label {
+            font-size: 14px;
+        }
+        .fesshop__sidebar__widget .tag__clouds {
+            gap: 5px;
+        }
+        .fesshop__sidebar__widget .tag__clouds button {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .fesshop__sidebar__widget .tag__clouds button i {
+            font-size: 12px;
+        }
+        /*Newsletter Popup*/
+        .fes__newsletter__popup .fes__newsletter__popup__wrapper {
+            width: 400px;
+            height: 500px;
+        }
+        .fes__newsletter__popup.show .fes__newsletter__popup__wrapper {
+            width: 700px;
+        }
+        .fes__newsletter__popup .fes__newsletter__popup__wrapper .right__side {
+            padding: 15px;
+        }
+        .fes__newsletter__popup .fes__newsletter__popup__wrapper h2 {
+            font-size: 40px;
+            line-height: 46px;
+        }
+        .fes__newsletter__popup .fes__newsletter__popup__wrapper p {
+            font-size: 14px;
+            line-height: 22px;
+        }
+        .fes__newsletter__popup .fes__newsletter__popup__wrapper form {
+            height: 50px;
+        }
+    /*===== Contact Us Page =====*/
+        .fes__contact__section h2 {
+            font-size: 70px;
+            line-height: 70px;
+        }
+        .fes__contact__section h3 {
+            font-size: 30px;
+            line-height: 30px;
+        }
+        .fes__contact__section p,
+        .fes__contact__section p span,
+        .fes__contact__section p a {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .fes__contact__section form label {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .fes__contact__section .right__side p span i {
+            font-size: 12px;
+            margin-left: 5px;
+        }
+        .fes__contact__section form input {
+            height: 50px;
+            font-size: 14px;
+            padding: 0 15px;
+        }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .fes__categories__section,
+    .fes__features,
+    .fes__trending__products,
+    .fes__brands__slider__section,
+    .fes__testimonials__section,
+    .fes__product__onsale__section,
+    .fes__newsletter__section,
+    .fes__best__deals__section,
+    .fes__single__product,
+    .fessp__product__description,
+    .fes__footer__section,
+    .fes__shop__page,
+    .fes__contact__section,
+    .fes__contact__section {
+        margin-top: 70px;
+    }
+    .fes__trending__products,
+    .fes__newsletter__section,
+    .fessp__product__info,
+    .fes__contact__section {
+        padding: 70px 0;
+    }
+    .fes__product__onsale__section,
+    .fes__footer__section {
+        padding-top: 70px;
+    }
+    /*===== Home Page =====*/
+        .logo {
+            width: 140px;
+        }
+        /*Section title*/
+        .fes__section__title h2 {
+            font-size: 70px;
+            line-height: 70px;
+        }
+        /*Mega Menu*/
+        .fes__header .fes__header__top {
+            padding: 5px 0;
+        }
+        .fes__header__bottom .main__nav li a {
+            padding: 10px 0;
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .fes__header__bottom .main__nav li {
+            margin: 0 7px;
+        }
+        .fes__header__bottom .main__nav li a i {
+            font-size: 8px;
+            margin-left: 0;
+        }
+        .fes__header__bottom .fes__browseall {
+            gap: 0;
+        }
+        .fes__header__bottom .fes__browseall li a {
+            gap: 10px;
+            font-size: 14px;
+            line-height: 14px;
+            padding: 10px;
+        }
+        .fes__header__bottom .fes__browseall li a i.fes__arrow {
+            font-size: 8px;
+        }
+        .fes__header__bottom .fes__browseall li a i {
+            font-size: 14px;
+        }
+        .mega__category__menu .categories__list {
+            padding: 10px 0;
+            width: 190px;
+        }
+        .mega__category__menu .categories__list li {
+            font-size: 12px;
+            line-height: 12px;
+            width: 200px;
+            padding: 10px;
+            padding-right: 20px;
+        }
+        .mega__category__menu .categories__list li .cetgory__submenu {
+            width: 719px;
+            left: 212px;
+            height: 202px;
+            padding: 10px;
+        }
+        .mega__category__menu .categories__list li:hover .cetgory__submenu {
+            top: 5px;
+        }
+        .mega__category__menu .cetgory__submenu .item {
+            margin-bottom: 9px;
+        }
+        .mega__category__menu .cetgory__submenu .item .image {
+            width: 50px;
+            height: 50px;
+        }
+        .mega__category__menu .cetgory__submenu .item .text {
+            width: 167px;
+        }
+        .mega__category__menu .cetgory__submenu .item .text h3 {
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 0;
+        }
+        .mega__category__menu .cetgory__submenu .item .text p {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .fes__header__bottom .main__nav li .fes__megamenu h4 {
+            font-size: 22px;
+            line-height: 22px;
+            font-weight: 400;
+        }
+        .fes__header__bottom .main__nav li .fes__megamenu li a {
+            font-size: 12px;
+            line-height: 12px;
+            width: 184px;
+        }
+        .fes__header__bottom .main__nav .has__tiny__menu .fes__tinymenu {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .fes__header__bottom .main__nav .fes__tinymenu > .has__tiny__menu .fes__tinymenu {
+            transform: unset;
+        }
+        .fes__header__bottom .main__nav .has__tiny__menu .fes__tinymenu li a {
+            width: 210px;
+        }
+        .fes__header__bottom .header__search {
+            width: 200px;
+            height: 40px;
+            padding: 5px;
+        }
+        .fes__header__bottom .header__search i {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .fes__header__bottom input {
+            font-size: 14px;
+        }
+        .fes__header .fes__header__top li, .fes__header .fes__header__top li a {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .fes__header .fes__header__top li i {
+            font-size: 12px;
+            margin-right: 5px;
+        }
+        .fes__header .fes__header__top li .phone__anim {
+            width: 18px;
+            height: 18px;
+            margin-right: 5px;
+        }
+        .fes__header .fes__header__top .right li a i {
+            font-size: 16px;
+        }
+        .fes__header .fes__header__top .right {
+            gap: 15px;
+        }
+        .fes__header .fes__header__top .right li a .fes__amount {
+            height: 20px;
+            width: 20px;
+            line-height: 20px;
+            font-size: 12px;
+        }
+        .fes__header .fes__header__top .right .cart__wishlist {
+            width: 110px;
+        }
+        /*Right Side Menu*/
+        .fes__cart__slider .main__cart__area,
+        .fes__right__slider__menu .fes__rsm__wrapper {
+            width: 350px;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .pages li a {
+            padding: 8px 0;
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .about__company p {
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 0;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .lang__currency .feslc__language,
+        .fes__right__slider__menu .fes__rsm__wrapper .lang__currency .feslc__currency {
+            height: 40px;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .lang__currency p {
+            font-size: 16px;
+            line-height: 36px;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .lang__currency i {
+            font-size: 16px;
+            line-height: 40px;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .right__menu__newsletter {
+            height: 50px;
+            border-radius: 50px;
+        }
+        .fes__right__slider__menu .fes__rsm__wrapper .right__menu__newsletter button {
+            width: 60px;
+            font-size: 16px;
+        }
+        .fes__social__links li a {
+            width: 34px;
+            height: 34px;
+            font-size: 16px;
+            line-height: 34px;
+        }
+        .fes__cart__slider .fes__cart__closebtn,
+        .fes__right__slider__menu .fes__rsm__closebtn {
+            right: 360px;
+        }
+        /*Mobile Menu*/
+        .fes__mobile__menu .fes__mblmenu__wrapper {
+            width: 350px;
+        }
+        .fes__mobile__menu .fes__mblmenu__wrapper .fes__mblmenu__closebtn {
+            left: 360px;
+        }
+        /*Product Style*/
+        .fes__product__style {
+            width: 298px;
+            height: 309px;
+        }
+        .fes__product__style .fesps__background {
+            min-height: 309px;
+        }
+        .fes__product__style .fesps__image {
+            height: 180.6px;
+        }
+        /*Hero Section*/
+        .fes__heroleft__text {
+            width: 95px;
+            height: 90%;
+        }
+        .fes__heroleft__text .fes__heroleft__text__wrapper {
+            padding: 20px 10px;
+            gap: 15px;
+        }
+        .fes__heroleft__text .fes__heroleft__line {
+            height: 140px;
+        }
+        .fes__heroleft__text .text h3,
+        .fes__heroleft__text .text h4 {
+            font-size: 30px;
+            line-height: 36px;
+        }
+
+        .fes__heroleft__text .text h4 {
+            font-size: 16px;
+            line-height: 22px;
+        }
+        .fes__heroslider .swiper-slide {
+            height: 662px;
+        }
+        .fes__heroslider .swiper-slide .fes__hero__text {
+            gap: 15px;
+            padding-left: 75px;
+        }
+        .fes__heroslider .swiper-slide .fes__hero__text h2 {
+            font-size: 40px;
+            line-height: 46px;
+        }
+        .fes__heroslider .swiper-slide .fes__hero__text h4 {
+            font-size: 20px;
+            line-height: 26px;
+        }
+        .fes__heroslider .swiper-slide .fes__hero__text p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .fes__heroleft__text .fes__hero__nav {
+            gap: 5px;
+        }
+        .fes__heroleft__text .fes__hero__nav .fes__heroslider__btn__next,
+        .fes__heroleft__text .fes__hero__nav .fes__heroslider__btn__prev {
+            font-size: 30px;
+            line-height: 30px;
+        }
+        .fes__heroslider .swiper-slide .fes__hero__products {
+            padding-bottom: 5px;
+            gap: 5px;
+        }
+        .fes__heroslider .fes__product__style .fesps__content .fesps__category {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .fes__heroslider .fes__product__style {
+            width: 260px;
+        }
+        .fes__heroslider .fes__product__style .fesps__image {
+            height: 148px;
+        }
+        .fes__heroslider .fes__product__style .fesps__content h2,
+        .fes__heroslider .fes__product__style .fesps__content h2 a {
+            font-size: 20px;
+            line-height: 24px;
+        }
+        .fes__heroslider .fes__product__style .fesps__content .fesps__price {
+            margin-top: 10px;
+            font-size: 16px;
+            line-height: 16px;
+        }
+        .fes__heroslider .fes__product__style .fesps__content .show__on__hover {
+            gap: 10px;
+        }
+        .fes__heroslider .fes__product__style .fesps__content .fesps__variant .nice-select {
+            height: 30px;
+            line-height: 30px;
+        }
+        .fes__heroslider .fes__product__style:hover .fesps__content .show__on__hover {
+            margin: 10px 0;
+        }
+        .fes__heroslider .fes__product__style .fesps__content .fesps__variant .nice-select .list {
+            height: 102px;
+        }
+        .fes__heroslider .fes__product__style:hover .fesps__content .fes__button__a {
+            margin-top: 10px;
+            font-size: 12px;
+            line-height: 12px;
+        }
+        .fes__heroslider .fes__product__style:hover .fesps__image .fesps__ctabtns {
+            left: 10px;
+        }
+        .fes__heroslider .fes__product__style .fesps__image .fesps__ctabtns {
+            gap: 5px;
+            top: 10px;
+        }
+        .fes__heroslider .fes__product__style .fesps__image .fesps__ctabtns a {
+            font-size: 16px;
+            height: 30px;
+            width: 30px;
+            line-height: 30px;
+        }
+        /*Categories Section*/
+        .fes__categories__section .fescs__slider .swiper-slide {
+            width: 298.667px;
+            height: 298.667px;
+        }
+        .fes__categories__section .fescs__slider .swiper-slide .text {
+            height: 100%;
+            bottom: -70%;
+        }
+        .fes__categories__section .fescs__slider__btn__next {
+            right: -10px;
+        }
+        .fes__categories__section .fescs__slider__btn__prev {
+            left: -10px;
+        }
+        /*Features*/
+        .fes__features__item .image {
+            height: 55px;
+            width: 55px;
+            border-width: 3px;
+        }
+        .fes__features__item .text {
+            width: 151px;
+        }
+        .fes__features__item .image i {
+            font-size: 30px;
+        }
+        .fes__features__item .text h4 {
+            font-size: 24px;
+            line-height: 24px;
+        }
+        .fes__features__item .text p {
+            font-size: 12px;
+            line-height: 14px;
+        }
+        /*Testimonials*/
+        .fests__slider__next {
+            right: -12px;
+        }
+        .fests__slider__prev {
+            left: -12px;
+        }
+        .fests__slider .swiper-slide {
+            height: 260px;
+            padding: 10px;
+            gap: 15px;
+        }
+        .fests__slider .swiper-slide svg {
+            width: 54px;
+            height: 54px;
+        }
+        .fests__slider .swiper-slide .fests__star__ratings {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        .fests__slider .swiper-slide .fests__text,
+        .fests__slider .swiper-slide .fests__customer__info .customer__name p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .fests__slider .swiper-slide .fests__customer__info {
+            gap: 10px;
+        }
+        .fests__slider .swiper-slide .fests__customer__info .image {
+            height: 70px;
+            width: 70px;
+        }
+        .fests__slider .swiper-slide .fests__customer__info .customer__name {
+            width: 186px;
+        }
+        .fests__slider .swiper-slide .fests__customer__info .customer__name h4 {
+            font-size: 30px;
+            line-height: 34px;
+        }
+        /*Product On Sale*/
+        .fes__pos__timer {
+            margin: 30px 0;
+        }
+        .title__with__text {
+            padding-bottom: 25px;
+            margin-bottom: 15px;
+        }
+        .title__with__text .fes__section__title,
+        .title__with__text .twt__text {
+            width: 47%;
+        }
+        .title__with__text .fes__section__title h2,
+        .title__with__text .fes__section__title h2 span {
+            font-size: 50px;
+            line-height: 50px;
+        }
+        .title__with__text .twt__text p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .fes__pos__slider.owl-theme .owl-nav.disabled + .owl-dots {
+            margin-top: 40px;
+        }
+        .fes__product__onsale__section .fes__product__style:hover .fesps__content .show__on__hover {
+            margin: 15px 0;
+        }
+        .fes__product__onsale__section .fes__product__style .fesps__content .fesps__price,
+        .fes__product__onsale__section .fes__product__style:hover .fesps__content .fes__button__a {
+            margin-top: 15px;
+        }
+        /*Newsletter*/
+        .fes__newsletter__section .fesns__image .name,
+        .fes__newsletter__section .fesns__image .image img,
+        .fes__newsletter__section .fesns__image .fes__button__a {
+            width: 296px;
+        }
+        /*Best Deals*/
+        .fes__best__deals__section .fesbds__promotions {
+            height: 500px;
+            gap: 20px;
+        }
+        .fes__best__deals__section .fesbds__promotions h2 {
+            font-size: 50px;
+            line-height: 50px;
+        }
+        .fes__best__deals__section .fesbds__promotions h3 {
+            font-size: 30px;
+            line-height: 30px;
+        }
+        .fes__best__deals__section .fessp__product__image {
+            width: 336px;
+            height: 310px;
+        }
+        .fes__best__deals__section .fessp__product__details h2,
+        .fes__best__deals__section .fessp__product__details h2 a {
+            font-size: 32px;
+            line-height: 36px;
+        }
+        .fes__best__deals__section .fesbds__promotions p,
+        .fes__best__deals__section .fessp__product__details p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .fes__best__deals__section .fessp__product__details .price {
+            font-size: 20px;
+            line-height: 20px;
+        }
+        .fes__best__deals__section .fessp__product__details .countdown__timer p,
+        .fes__best__deals__section .fessp__variants .fessp__options label {
+            font-size: 14px;
+            line-height: 24px;
+        }
+        /*Footer*/
+        .fes__footer__section h4 {
+            font-size: 30px;
+            line-height: 30px;
+        }
+        .fes__footer__section p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .fesfooter__widget li a {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .fesfooter__widget .fes__social__media .fes__button__a {
+            height: 34px;
+            width: 34px;
+            line-height: 34px;
+            font-size: 16px;
+        }
+        .fes__footer__section .fesfooter__bottom .fesfooter__securepay__options {
+            font-size: 24px;
+        }
+    /*===== Single Product Page =====*/
+        /*Breadcrumbs*/
+        .fes__breadcrumbs {
+            height: 550px;
+        }
+        .fes__breadcrumbs .fesbc__bg {
+            padding-top: 95px;
+        }
+        .fes__breadcrumbs .fesbc__bg .fesbc__content .page__title {
+            font-size: 54px;
+            line-height: 54px;
+        }
+        /*Single Product*/
+        .fessp__product__image {
+            width: 456px;
+            height: 456px;
+        }
+        .fessp__product__details {
+            gap: 15px;
+        }
+        .fessp__product__details .fests__star__ratings {
+            font-size: 16px;
+            line-height: 16px;
+        }
+        .fessp__product__details h2 {
+            font-size: 40px;
+            line-height: 44px;
+        }
+        .fessp__product__details .price {
+            font-size: 24px;
+            line-height: 24px;
+        }
+        .fessp__ctas .top .fes__button__a {
+            width: 68%;
+        }
+        .fessp__ctas .top .fes__button__a.fessp__btn {
+            width: 15%;
+        }
+        .fessp__ctas .bottom .fes__button__b {
+            width: 49.4%;
+        }
+    /*===== Shop Page =====*/
+        .fes__shop__products {
+            margin-top: 20px;
+            gap: 20px;
+        }
+    /*===== Contact Us Page =====*/
+        .fes__contact__section h2 {
+            font-size: 80px;
+            line-height: 80px;
+        }
+        .fes__contact__section h3 {
+            font-size: 36px;
+            line-height: 36px;
+        }
+        .fes__contact__section p,
+        .fes__contact__section p span,
+        .fes__contact__section p a {
+            font-size: 16px;
+            line-height: 22px;
+        }
+        .fes__contact__section form label {
+            font-size: 16px;
+            line-height: 16px;
+        }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .fes__categories__section,
+    .fes__features,
+    .fes__trending__products,
+    .fes__brands__slider__section,
+    .fes__testimonials__section,
+    .fes__product__onsale__section,
+    .fes__newsletter__section,
+    .fes__best__deals__section,
+    .fes__single__product,
+    .fessp__product__description,
+    .fes__footer__section,
+    .fes__shop__page,
+    .fes__contact__section,
+    .fes__contact__section {
+        margin-top: 80px;
+    }
+    .fes__trending__products,
+    .fessp__product__info,
+    .fes__contact__section {
+        padding: 80px 0;
+    }
+    .fes__product__onsale__section,
+    .fes__footer__section {
+        padding-top: 80px;
+    }
+    /*===== Home Page =====*/
+        /*Mega Menu*/
+        .fes__header .fes__header__top {
+            padding: 7px 0;
+        }
+        .fes__header__bottom .main__nav li a {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .fes__header__bottom .main__nav li {
+            margin: 0 10px;
+        }
+        .fes__header__bottom .main__nav li a i {
+            font-size: 8px;
+            margin-left: 2px;
+        }
+        .fes__header__bottom .fes__browseall li a {
+            gap: 15px;
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .fes__header__bottom .fes__browseall li a i.fes__arrow {
+            font-size: 8px;
+        }
+        .fes__header__bottom .fes__browseall li a i {
+            font-size: 14px;
+        }
+        .mega__category__menu .categories__list {
+            padding: 10px 0;
+            width: 250px;
+        }
+        .mega__category__menu .categories__list li {
+            font-size: 14px;
+            line-height: 14px;
+            width: 260px;
+        }
+        .mega__category__menu .categories__list li .cetgory__submenu {
+            width: 835px;
+            left: 272px;
+            height: 264px;
+        }
+        .mega__category__menu .cetgory__submenu .item .image {
+            width: 55px;
+            height: 55px;
+        }
+        .mega__category__menu .cetgory__submenu .item .text {
+            width: 197px;
+        }
+        .mega__category__menu .cetgory__submenu .item .text h3 {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        .mega__category__menu .cetgory__submenu .item .text p {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .fes__header__bottom .main__nav li .fes__megamenu h4 {
+            font-size: 24px;
+            line-height: 24px;
+        }
+        .fes__header__bottom .main__nav li .fes__megamenu li a {
+            font-size: 14px;
+            line-height: 14px;
+            width: 216px;
+        }
+        .fes__header__bottom .main__nav .has__tiny__menu .fes__tinymenu li a {
+            width: 240px;
+        }
+        .fes__header .fes__header__top li, .fes__header .fes__header__top li a {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        /*Product Style*/
+        .fes__product__style {
+            width: 270px;
+            height: 292px;
+        }
+        .fes__product__style .fesps__background {
+            min-height: 292px;
+        }
+        .fes__product__style .fesps__image {
+            height: 163.6px;
+        }
+        /*Hero Section*/
+        .fes__heroslider .swiper-slide {
+            height: 800px;
+        }
+        .fes__heroleft__text {
+            width: 95px;
+            height: 90%;
+        }
+        .fes__heroleft__text .fes__heroleft__text__wrapper {
+            padding: 20px 10px;
+            gap: 20px;
+        }
+        .fes__heroleft__text .fes__heroleft__line {
+            height: 200px;
+        }
+        .fes__heroslider .swiper-slide .fes__hero__products {
+            padding-bottom: 5px;
+            gap: 5px;
+        }
+        .fes__heroslider .swiper-slide .fes__hero__text {
+            padding-left: 70px;
+        }
+        .fes__heroslider .fes__product__style {
+            width: 260px;
+        }
+        .fes__heroslider .fes__product__style .fesps__image {
+            height: 148px;
+        }
+        .fes__heroslider .fes__product__style .fesps__content h2,
+        .fes__heroslider .fes__product__style .fesps__content h2 a {
+            font-size: 20px;
+            line-height: 26px;
+        }
+        .fes__heroslider .fes__product__style .fesps__content .fesps__price {
+            margin-top: 10px;
+            font-size: 16px;
+            line-height: 16px;
+        }
+        .fes__heroslider .fes__product__style .fesps__content .show__on__hover {
+            gap: 10px;
+        }
+        .fes__heroslider .fes__product__style:hover .fesps__content .show__on__hover {
+            margin: 10px 0;
+        }
+        .fes__heroslider .fes__product__style .fesps__content .fesps__variant .nice-select .list {
+            height: 104px;
+        }
+        /*Categories Section*/
+        .fes__categories__section .fescs__slider .swiper-slide {
+            width: 264px;
+            height: 264px;
+        }
+        .fes__categories__section .fescs__slider .swiper-slide .text {
+            height: 100%;
+            bottom: -75%;
+            padding-left: 15px;
+        }
+        .fes__categories__section .fescs__slider .swiper-slide .text h4 {
+            font-size: 28px;
+        }
+        .fes__categories__section .fescs__slider .swiper-slide .text p {
+            font-size: 14px;
+            line-height: 18px;
+        }
+        .fes__categories__section .fescs__slider__btn__prev {
+            left: -25px;
+        }
+        .fes__categories__section .fescs__slider__btn__next {
+            right: -25px;
+        }
+        /*Features*/
+        .fes__features__item .image {
+            height: 65px;
+            width: 65px;
+            border-width: 3px;
+        }
+        .fes__features__item .text {
+            width: 186px;
+        }
+        .fes__features__item .image i {
+            font-size: 34px;
+        }
+        .fes__features__item .text h4 {
+            font-size: 30px;
+            line-height: 30px;
+        }
+        .fes__features__item .text p {
+            line-height: 18px;
+        }
+        /*Trending Products*/
+        .fes__trending__products .tab-content .tab-pane.active {
+            gap: 10px;
+        }
+        /*Testimonials*/
+        .fests__slider__next {
+            right: -25px;
+        }
+        .fests__slider__prev {
+            left: -25px;
+        }
+        .fests__slider .swiper-slide {
+            height: 332px;
+            padding: 20px 10px;
+        }
+        .fests__slider .swiper-slide .fests__text,
+        .fests__slider .swiper-slide .fests__customer__info .customer__name p {
+            font-size: 16px;
+            line-height: 22px;
+        }
+        .fests__slider .swiper-slide .fests__customer__info {
+            gap: 15px;
+        }
+        .fests__slider .swiper-slide .fests__customer__info .image {
+            height: 80px;
+            width: 80px;
+        }
+        .fests__slider .swiper-slide .fests__customer__info .customer__name {
+            width: 211px;
+        }
+        /*Product On Sale*/
+        .fes__pos__timer {
+            margin: 30px 0;
+        }
+        .title__with__text .fes__section__title,
+        .title__with__text .twt__text {
+            width: 46%;
+        }
+        .title__with__text .fes__section__title h2,
+        .title__with__text .fes__section__title h2 span {
+            font-size: 60px;
+            line-height: 60px;
+        }
+        .fes__pos__slider.owl-theme .owl-nav.disabled + .owl-dots {
+            margin-top: 50px;
+        }
+        /*Best Deals*/
+        .fes__best__deals__section .fessp__product__image {
+            width: 403px;
+            height: 370px;
+        }
+        .fes__best__deals__section .fessp__product__details h2,
+        .fes__best__deals__section .fessp__product__details h2 a {
+            font-size: 40px;
+            line-height: 40px;
+        }
+    /*===== Single Product Page =====*/
+        /*Breadcrumbs*/
+        .fes__breadcrumbs {
+            height: 650px;
+        }
+        .fes__breadcrumbs .fesbc__bg {
+            padding-top: 115px;
+        }
+        .fes__breadcrumbs .fesbc__bg .fesbc__content .page__title {
+            font-size: 60px;
+            line-height: 60px;
+        }
+        /*Single Product*/
+        .fessp__product__image {
+            width: 546px;
+            height: 546px;
+        }
+        .fessp__product__details .fests__star__ratings {
+            font-size: 16px;
+            line-height: 16px;
+        }
+    /*===== Shop Page =====*/
+        .fes__shop__products {
+            margin-top: 20px;
+            gap: 20px;
+        }
+    /*===== Contact Us Page =====*/
+        .fes__contact__section h2 {
+            font-size: 80px;
+            line-height: 80px;
+        }
+        .fes__contact__section h3 {
+            font-size: 36px;
+            line-height: 36px;
+        }
+        .fes__contact__section p,
+        .fes__contact__section p span,
+        .fes__contact__section p a {
+            font-size: 16px;
+            line-height: 22px;
+        }
+        .fes__contact__section form label {
+            font-size: 16px;
+            line-height: 16px;
+        }
+}
+
+@media (min-width: 1400px) and (max-width: 1499px) {
+    .fes__categories__section,
+    .fes__features,
+    .fes__trending__products,
+    .fes__brands__slider__section,
+    .fes__testimonials__section,
+    .fes__product__onsale__section,
+    .fes__newsletter__section,
+    .fes__best__deals__section,
+    .fes__single__product,
+    .fes__footer__section,
+    .fes__shop__page,
+    .fes__contact__section,
+    .fes__contact__section {
+        margin-top: 80px;
+    }
+    .fes__trending__products,
+    .fessp__product__info,
+    .fes__contact__section {
+        padding: 80px 0;
+    }
+    .fes__product__onsale__section,
+    .fes__footer__section {
+        padding-top: 80px;
+    }
+    /*===== Home Page =====*/
+        /*Mega Menu*/
+        .fes__header .fes__header__top {
+            padding: 10px 0;
+        }
+        .mega__category__menu .categories__list li .cetgory__submenu {
+            width: 1074px;
+        }
+        /*Hero Section*/
+        .fes__heroslider .swiper-slide {
+            height: 934px;
+        }
+        .fes__heroleft__text {
+            width: 95px;
+            height: 90%;
+        }
+        .fes__heroslider .swiper-slide .fes__hero__text {
+            padding-left: 90px;
+        }
+        .fes__heroslider .fes__product__style .fesps__content .fesps__price {
+            margin-top: 10px;
+        }
+        .fes__heroslider .fes__product__style .fesps__content .show__on__hover {
+            gap: 10px;
+        }
+        .fes__heroslider .fes__product__style:hover .fesps__content .show__on__hover {
+            margin: 10px 0;
+        }
+        .fes__heroslider .fes__product__style .fesps__content .fesps__variant .nice-select .list {
+            height: 104px;
+        }
+        /*Categories Section*/
+        .fes__categories__section .fescs__slider .swiper-slide {
+            width: 329px;
+            height: 329px;
+        }
+        .fes__categories__section .fescs__slider__btn__prev {
+            left: 5px;
+        }
+        .fes__categories__section .fescs__slider__btn__next {
+            right: 5px;
+        }
+        /*Features*/
+        .fes__features__item .text {
+            width: 236px;
+        }
+        /*Trending Products*/
+        .fes__trending__products .tab-content .tab-pane.active {
+            gap: 18px;
+        }
+        /*Testimonials*/
+        .fests__slider__next {
+            right: 3px;
+        }
+        .fests__slider__prev {
+            left: 3px;
+        }
+        .fests__slider .swiper-slide .fests__customer__info .customer__name {
+            width: 273px;
+        }
+        /*Product On Sale*/
+        .title__with__text .fes__section__title h2,
+        .title__with__text .fes__section__title h2 span {
+            font-size: 72px;
+            line-height: 72px;
+        }
+        .fes__pos__slider.owl-theme .owl-nav.disabled + .owl-dots {
+            margin-top: 50px;
+        }
+    /*===== Single Product Page =====*/
+        /*Single Product*/
+        .fessp__product__image {
+            width: 676px;
+        }
+    /*===== Shop Page =====*/
+        .fes__shop__products {
+            margin-top: 30px;
+            gap: 26px;
+        }
+}
+
+@media (min-width: 1500px) and (max-width: 1599px) {
+    /*===== Home Page =====*/
+        /*Hero Section*/
+        .fes__heroleft__text {
+            width: 85px;
+            height: 90%;
+        }
+        .fes__heroslider .swiper-slide .fes__hero__text {
+            padding-left: 50px;
+        }
+        /*Testimonials*/
+        .fests__slider__next {
+            right: -25px;
+        }
+        .fests__slider__prev {
+            left: -25px;
+        }
+}
+
+@media (min-width: 1600px) and (max-width: 1699px) {
+    /*===== Home Page =====*/
+        /*Hero Section*/
+        .fes__heroleft__text {
+            width: 85px;
+        }
+        .fes__heroslider .swiper-slide .fes__hero__text {
+            padding-left: 15px;
+        }
+}
+
+@media (min-width: 1700px) and (max-width: 1799px) {
+    /*===== Home Page =====*/
+        /*Hero Section*/
+        .fes__heroleft__text {
+            width: 130px;
+        }
+}

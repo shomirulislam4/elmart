@@ -1,0 +1,1544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#FF5400">
+
+    <title>Elmart - Multipurpose eCommerce HTML5 Template</title>
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/icon.png">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!-- Start of Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 col-6">
+                    <div class="logo">
+                        <a href="index.html"><img src="img/logo-full-white.png" alt="Elmart Logo"></a>
+                    </div>
+                </div>
+                <div class="col-sm-9 col-6 navigation-bar">
+                    <nav>
+                        <ul class="nav-items desktop-menu">
+                            <li><a class="active" href="#hero-section"><i class="fa-brands fa-slack"></i> Overview</a></li>
+                            <li><a href="#demo-section"><i class="fa-regular fa-window-restore"></i> Demo</a></li>
+                            <li><a href="#features"><i class="fa-solid fa-list-ul"></i> Features</a></li>
+                            <li><a href="#core"><i class="fa-solid fa-database"></i> Core</a></li>
+                        </ul>
+                    </nav>
+                    <a class="buy-btn button-a" href="#">Buy Theme</a>
+                    <div class="mobile-menu-toggle">
+                        <a href="#"><i class="fa-solid fa-bars"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End of Header -->
+
+    <!-- Start of Hero Section -->
+    <section id="hero-section">
+        <div class="container">
+            <div class="row hero-wrapper">
+                <div class="col-md-6 hero-content left-side">
+                    <div class="content">
+                        <h2>The Best</h2>
+                        <span id="text-change"></span>
+                        <h2>eCommerce template!</h2>
+                        <p>Elmart: an advanced, modern, and responsive multipurpose eCommerce HTML template.</p>
+                        <div class="cta-btn">
+                            <a href="#" class="hero-btn button-a">Buy Theme</a>
+                            <a href="#demo-section" class="hero-btn button-b">View Demos</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 hero-content right-side">
+                    <img src="img/website-mockup.gif" alt="Website Demo">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Hero Section -->
+
+    <!-- Start of Demo Section -->
+    <section id="demo-section">
+        <div class="container demo-wrap">
+            <div class="row">
+                <div class="section-title text-center">
+                    <h2>Demos & Prebuilt Pages</h2>
+                    <p>Discover everything you need effortlessly, from shops and products to profiles, payments, blogs, vendors, and much more - all seamlessly pre-built for Elmart.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-3 col-md-4 col-12 ds-sidebar">
+                    <form class="demo-search-box">
+                        <input type="text" id="demosearch" placeholder="Search...">
+                        <button class="demo-search-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                    <button class="show-btn">Categories</button>
+                    <div class="demo-filter">
+                        <li class="active" data-filter=".home">
+                            <span>All Demos</span>
+                            <span id="homeCount">(0)</span>
+                        </li>
+                        <li data-filter="*">
+                            <span>All Pages</span>
+                            <span id="allPagesCount">(0)</span>
+                        </li>
+                        <li data-filter=".shop">
+                            <span>Shop</span>
+                            <span id="shopCount">(0)</span>
+                        </li>
+                        <li data-filter=".single-product">
+                            <span>Single Product</span>
+                            <span id="singleprodCount">(0)</span>
+                        </li>
+                        <li data-filter=".blog">
+                            <span>Blog</span>
+                            <span id="blogCount">(0)</span>
+                        </li>
+                        <li data-filter=".blog-post">
+                            <span>Blog Post</span>
+                            <span id="blogPostCount">(0)</span>
+                        </li>
+                        <li data-filter=".about">
+                            <span>About</span>
+                            <span id="aboutCount">(0)</span>
+                        </li>
+                        <li data-filter=".contact">
+                            <span>Contact</span>
+                            <span id="contactCount">(0)</span>
+                        </li>
+                        <li data-filter=".wishlist">
+                            <span>Wishlist</span>
+                            <span id="wishlistCount">(0)</span>
+                        </li>
+                        <li data-filter=".user">
+                            <span>Login & Register</span>
+                            <span id="userCount">(0)</span>
+                        </li>
+                        <li data-filter=".vendor">
+                            <span>Vendor</span>
+                            <span id="vendorCount">(0)</span>
+                        </li>
+                        <li data-filter=".cart">
+                            <span>Cart</span>
+                            <span id="cartCount">(0)</span>
+                        </li>
+                        <li data-filter=".checkout">
+                            <span>Checkout</span>
+                            <span id="checkoutCount">(0)</span>
+                        </li>
+                        <li data-filter=".my-acc">
+                            <span>My Account</span>
+                            <span id="myaccCount">(0)</span>
+                        </li>
+                        <li data-filter=".others">
+                            <span>Others</span>
+                            <span id="othersCount">(0)</span>
+                        </li>
+                    </div>
+                </div>
+                <div class="col-xl-9 col-md-8 col-12">
+                    <div class="row demo-contents">
+                        <div class="col-xl-4 col-sm-6 demo-items home">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/index.html">
+                                    <img src="img/demo/home/home1.png" alt="Homepage 1">
+                                </a>
+                                <div class="demo-name">Fashion & Clothing: Home One</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items home">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/index-2.html">
+                                    <img src="img/demo/home/home2.png" alt="Homepage 2">
+                                    <span class="free-pro-tag">free</span>
+                                </a>
+                                <div class="demo-name">Fashion & Clothing: Home Two</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items home">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/index-3.html">
+                                    <img src="img/demo/home/home3.png" alt="Homepage 3">
+                                </a>
+                                <div class="demo-name">Fashion & Clothing: Home Three</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items home">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/index-4.html">
+                                    <img src="img/demo/home/techngadgetshop/techngadgetshop-home.png" alt="Tech & Gadgets">
+                                </a>
+                                <div class="demo-name">Tech & Gadgets: Home</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items home">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/index-5.html">
+                                    <img src="img/demo/home/sportsshop/sportsshop-home.png" alt="Sports Shop">
+                                </a>
+                                <div class="demo-name">Sports Shop: Home</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items home">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/index-6.html">
+                                    <img src="img/demo/home/oneproductstore/oneproductstore-home.png" alt="One Product Store">
+                                </a>
+                                <div class="demo-name">One Product Store: Home</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items home">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/organic-store/index.html">
+                                    <img src="img/demo/home/organicstore/organicstore-home.png" alt="Organic Store">
+                                    <span class="free-pro-tag">free</span>
+                                </a>
+                                <div class="demo-name">Organic Store: Home</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items home">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/restaurant/index.html">
+                                    <img src="img/demo/home/restaurant/restaurant-home.png" alt="Restaurant">
+                                </a>
+                                <div class="demo-name">Restaurant: Home</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items home">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/pet-care/index.html">
+                                    <img src="img/demo/home/petcare/petcare-home.png" alt="Pet Care">
+                                </a>
+                                <div class="demo-name">Pet Care: Home</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items home">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/furniture-shop/index.html">
+                                    <img src="img/demo/home/furnitureshop/furnitureshop-home.png" alt="Furniture Shop">
+                                </a>
+                                <div class="demo-name">Furniture Shop: Home</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items home">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/index-7.html">
+                                    <img src="img/demo/home/carshop/carshop-home.png" alt="Car Shop">
+                                </a>
+                                <div class="demo-name">Car Shop: Home</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items home">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/beautyshop/index.html">
+                                    <img src="img/demo/home/beautyshop/beautyshop-home.png" alt="Beauty Shop">
+                                    <span class="free-pro-tag">free</span>
+                                </a>
+                                <div class="demo-name">Beauty Shop: Home</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items home">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/print-on-demand/index.html">
+                                    <img src="img/demo/home/printondemand/print-on-demand-home.png" alt="Print on Demand">
+                                </a>
+                                <div class="demo-name">Print on Demand: Home</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items home">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/index-8.html">
+                                    <img src="img/demo/home/multivendorgrocery/multivendor-grocery-home.png" alt="Multivendor Grocery">
+                                </a>
+                                <div class="demo-name">Multivendor Grocery: Home</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items home">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/fitness-equipment/index.html">
+                                    <img src="img/demo/home/fitness-equipment/homepage.png" alt="Fitness Equipment Store">
+                                </a>
+                                <div class="demo-name">Fitness Equipment Store: Home</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items home">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/fashion-four/index.html">
+                                    <img src="img/demo/home/fashionfour/homepage.png" alt="Fashion Four">
+                                </a>
+                                <div class="demo-name">Fashion Four: Home</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items home">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/dreamspace/index.html">
+                                    <img src="img/demo/dreamspace/index.png" alt="DreamSpace">
+                                </a>
+                                <div class="demo-name">DreamSpace: Home</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items home">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/cozynest/index.html">
+                                    <img src="img/demo/cozynest/home.png" alt="Cozy Nest">
+                                </a>
+                                <div class="demo-name">Cozy Nest: Home</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items home">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/cozynest/index-2.html">
+                                    <img src="img/demo/cozynest/home2.png" alt="Cozy Nest">
+                                </a>
+                                <div class="demo-name">Cozy Nest: Home Two</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Shop Pages -->
+                        <div class="col-xl-4 col-sm-6 demo-items shop">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/shop.html">
+                                    <img src="img/demo/shop/shop-leftbar.png" alt="Shop Left Sidebar">
+                                </a>
+                                <div class="demo-name">Shop Left Sidebar (2 Styles)</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items shop">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/shop-right-sidebar.html">
+                                    <img src="img/demo/shop/shop-rightbar.png" alt="shop Right Sidebar">
+                                </a>
+                                <div class="demo-name">Shop Right Sidebar (2 Styles)</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items shop">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/shop-banner-left-sidebar.html">
+                                    <img src="img/demo/shop/shop-banner-leftbar.png" alt="shop Banner Left Sidebar">
+                                </a>
+                                <div class="demo-name">Shop Banner Left Sidebar (2 Styles)</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items shop">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/shop-banner-right-sidebar.html">
+                                    <img src="img/demo/shop/shop-banner-rightbar.png" alt="shop Banner Right Sidebar">
+                                </a>
+                                <div class="demo-name">Shop Banner Right Sidebar (2 Styles)</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items shop">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/shop-product-style-2.html">
+                                    <img src="img/demo/shop/shop-product-style2.png" alt="shop Product Style 2">
+                                </a>
+                                <div class="demo-name">Shop Product Style 2</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items shop">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/shop-infinite-scroll.html">
+                                    <img src="img/demo/shop/shop-infinite-scroll.png" alt="shop Infinite Scroll">
+                                </a>
+                                <div class="demo-name">Shop Infinite Scroll (2 Styles)</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items shop">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/shop-product-style-3.html">
+                                    <img src="img/demo/home/techngadgetshop/techngadgetshop-shop1.png" alt="Tech & Gadget Shop 1">
+                                </a>
+                                <div class="demo-name">Tech & Gadget: Shop Page One</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items shop">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/shop-product-style-3-list.html">
+                                    <img src="img/demo/home/techngadgetshop/techngadgetshop-shop2.png" alt="Tech & Gadget Shop 2">
+                                </a>
+                                <div class="demo-name">Tech & Gadget: Shop Page Two</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items shop">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/shop-product-style-4.html">
+                                    <img src="img/demo/home/sportsshop/sportsshop-shoppage1.png" alt="Sports Shop Page 1">
+                                </a>
+                                <div class="demo-name">Sports Shop: Shop Page One</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items shop">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/shop-product-style-5.html">
+                                    <img src="img/demo/home/sportsshop/sportsshop-shoppage2.png" alt="Sports Shop Page 2">
+                                </a>
+                                <div class="demo-name">Sports Shop: Shop Page Two</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items shop">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/organic-store/shop.html">
+                                    <img src="img/demo/home/organicstore/organicstore-shop.png" alt="Organic Store Shop">
+                                </a>
+                                <div class="demo-name">Organic Store: Shop Page</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items shop">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/restaurant/shop.html">
+                                    <img src="img/demo/home/restaurant/restaurant-shop.png" alt="Restaurant Shop">
+                                </a>
+                                <div class="demo-name">Restaurant: Shop Page</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items shop">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/pet-care/shop.html">
+                                    <img src="img/demo/home/petcare/petcare-shop.png" alt="Pet Care Shop">
+                                </a>
+                                <div class="demo-name">Pet Care: Shop Page</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items shop">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/furniture-shop/shop.html">
+                                    <img src="img/demo/home/furnitureshop/furnitureshop-shop.png" alt="Furniture Shop">
+                                </a>
+                                <div class="demo-name">Furniture Shop: Shop Page</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items shop">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/shop-product-style-6.html">
+                                    <img src="img/demo/home/carshop/carshop-shop.png" alt="Car Shop">
+                                </a>
+                                <div class="demo-name">Car Shop: Shop Page</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items shop">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/beautyshop/shop.html">
+                                    <img src="img/demo/home/beautyshop/beautyshop-shop.png" alt="Beauty Shop">
+                                </a>
+                                <div class="demo-name">Beauty Shop: Shop Page</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items shop">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/print-on-demand/shop.html">
+                                    <img src="img/demo/home/printondemand/print-on-demand-shop.png" alt="Print on Demand Shop">
+                                </a>
+                                <div class="demo-name">Print on Demand: Shop Page</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items shop">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/print-on-demand/shop_load_pagin.html">
+                                    <img src="img/demo/home/printondemand/print-on-demand-shop-infinite-load.png" alt="Print on Demand Shop Infinite Load">
+                                </a>
+                                <div class="demo-name">Print on Demand: Shop Page Infinite Load</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items shop">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/print-on-demand/shop_noSidebar.html">
+                                    <img src="img/demo/home/printondemand/print-on-demand-shop-no-sidebar.png" alt="Print on Demand Shop No Sidebar">
+                                </a>
+                                <div class="demo-name">Print on Demand: Shop Page No Sidebar</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items shop">
+                            <div class="demo-item-card">
+                            <a target="_blank" href="demo/print-on-demand/shop_rightSideBar.html">
+                                <img src="img/demo/home/printondemand/print-on-demand-shop-right-sidebar.png" alt="Print on Demand Shop Right Sidebar">
+                            </a>
+                            <div class="demo-name">Print on Demand: Shop Page Right Sidebar</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items shop">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/shop-product-style-7.html">
+                                    <img src="img/demo/home/multivendorgrocery/multivendor-grocery-shop.png" alt="Multivendor Grocery Shop Page">
+                                </a>
+                                <div class="demo-name">Multivendor Grocery: Shop Page</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items shop">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/fitness-equipment/shop.html">
+                                    <img src="img/demo/home/fitness-equipment/shop.png" alt="Fitness Equipment Store Shop Page">
+                                </a>
+                                <div class="demo-name">Fitness Equipment Store: Shop Page</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items shop">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/fashion-four/shop.html">
+                                    <img src="img/demo/home/fashionfour/shop.png" alt="Fashion Four Shop Page">
+                                </a>
+                                <div class="demo-name">Fashion Four: Shop Page</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items shop">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/fashion-four/shop-v2.html">
+                                    <img src="img/demo/home/fashionfour/shop-v2.png" alt="Fashion Four Shop Page">
+                                </a>
+                                <div class="demo-name">Fashion Four: Shop Page Two</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items shop">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/dreamspace/shop.html">
+                                    <img src="img/demo/dreamspace/shop.png" alt="DreamSpace Shop Page">
+                                </a>
+                                <div class="demo-name">DreamSpace: Shop Page</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items shop">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/cozynest/shop.html">
+                                    <img src="img/demo/cozynest/shop.png" alt="Cozy Nest Shop Page">
+                                </a>
+                                <div class="demo-name">Cozy Nest: Shop Page</div>
+                            </div>
+                        </div>
+    
+                        <!-- Single product Pages -->
+                        <div class="col-xl-4 col-sm-6 demo-items single-product">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/shop-details.html"><img src="img/demo/single-product/single-prod-default.png" alt="Single Product Default"></a>
+                                <div class="demo-name">Single Product Default</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items single-product">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/shop-details-countdown.html"><img src="img/demo/single-product/single-prod-countdown.png" alt="Single Product with Countdown"></a>
+                                <div class="demo-name">Single Product with Countdown</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items single-product">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/shop-details-ask-question.html"><img src="img/demo/single-product/single-prod-ask-question.png" alt="Single Product Ask a Question"></a>
+                                <div class="demo-name">Single Product Ask a Question</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items single-product">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/shop-details-size-guide.html"><img src="img/demo/single-product/single-prod-size-guide.png" alt="Single Product Size Guide"></a>
+                                <div class="demo-name">Single Product Size Guide</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items single-product">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/shop-details-color-compare.html"><img src="img/demo/single-product/single-prod-color-compare.png" alt="Single Product Color Compare"></a>
+                                <div class="demo-name">Single Product Color Compare</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items single-product">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/shop-details-product-image-slider.html"><img src="img/demo/single-product/single-prod-image-slider.png" alt="Single Product Image Slider"></a>
+                                <div class="demo-name">Single Product Image Slider</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items single-product">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/shop-details-sidebar.html"><img src="img/demo/single-product/single-prod-sidebar.png" alt="Single Product with Sidebar"></a>
+                                <div class="demo-name">Single Product with Sidebar (both side)</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items single-product">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/shop-details-slider-image.html"><img src="img/demo/home/techngadgetshop/techngadgetshop-singleproduct.png" alt="Tech & Gadget Single Product"></a>
+                                <div class="demo-name">Tech & Gadget: Single Product</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items single-product">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/shop-details-style-4.html"><img src="img/demo/home/sportsshop/sportsshop-singleproduct.png" alt="Sports Shop Single Product"></a>
+                                <div class="demo-name">Sports Shop: Single Product</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items single-product">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/shop-details-style-5.html"><img src="img/demo/home/oneproductstore/oneproductstore-singleproduct.png" alt="One Product Store Single Product"></a>
+                                <div class="demo-name">One Product Store: Single Product</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items single-product">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/organic-store/product01.html"><img src="img/demo/home/organicstore/organicstore-singleproduct1.png" alt="Organic Store Single Product 1"></a>
+                                <div class="demo-name">Organic Store: Single Product One</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items single-product">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/organic-store/product.html"><img src="img/demo/home/organicstore/organicstore-singleproduct2.png" alt="Organic Store Single Product 2"></a>
+                                <div class="demo-name">Organic Store: Single Product Two</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items single-product">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/restaurant/product.html"><img src="img/demo/home/restaurant/restaurant-product.png" alt="Restaurant Single Product"></a>
+                                <div class="demo-name">Restaurant: Single Product</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items single-product">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/pet-care/product.html"><img src="img/demo/home/petcare/petcare-singleproduct.png" alt="Pet Care Single Product"></a>
+                                <div class="demo-name">Pet Care: Single Product</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items single-product">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/furniture-shop/product.html"><img src="img/demo/home/furnitureshop/furnitureshop-product.png" alt="Furniture Single Product"></a>
+                                <div class="demo-name">Furniture: Single Product</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items single-product">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/shop-details-style-6.html"><img src="img/demo/home/carshop/carshop-single.png" alt="Car Shop Single Product"></a>
+                                <div class="demo-name">Car Shop: Single Product</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items single-product">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/beautyshop/product.html"><img src="img/demo/home/beautyshop/beautyshop-single-product.png" alt="Beauty Shop Single Product"></a>
+                                <div class="demo-name">Beauty Shop: Single Product</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items single-product">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/print-on-demand/product.html"><img src="img/demo/home/printondemand/print-on-demand-single-product.png" alt="Print on Demand Single Product"></a>
+                                <div class="demo-name">Print on Demand: Single Product</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items single-product">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/shop-details-style-7.html"><img src="img/demo/home/multivendorgrocery/multivendor-grocery-single-page.png" alt="Multivendor Grocery Single Product"></a>
+                                <div class="demo-name">Multivendor Grocery: Single Product</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items single-product">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/fitness-equipment/single-product.html"><img src="img/demo/home/fitness-equipment/single-product.png" alt="Fitness Equipment Store Single Product"></a>
+                                <div class="demo-name">Fitness Equipment Store: Single Product</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items single-product">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/fashion-four/single-product.html"><img src="img/demo/home/fashionfour/single-product.png" alt="Fashion Four Single Product"></a>
+                                <div class="demo-name">Fashion Four: Single Product</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items single-product">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/dreamspace/single-product.html"><img src="img/demo/dreamspace/single-product.png" alt="DreamSpace Single Product"></a>
+                                <div class="demo-name">DreamSpace: Single Product</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items single-product">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/dreamspace/single-product-v2.html"><img src="img/demo/dreamspace/single-product-v2.png" alt="DreamSpace Single Product"></a>
+                                <div class="demo-name">DreamSpace: Single Product Two</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items single-product">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/cozynest/single-product.html"><img src="img/demo/cozynest/single-product.png" alt="Cozy Nest Single Product"></a>
+                                <div class="demo-name">Cozy Nest: Single Product</div>
+                            </div>
+                        </div>
+    
+                        <!-- Blog Pages -->
+                        <div class="col-xl-4 col-sm-6 demo-items blog">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/blog.html">
+                                    <img src="img/demo/blog/blog-no-sidebar.png" alt="Blog No Sidebar">
+                                </a>
+                                <div class="demo-name">Blog No Sidebar</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items blog">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/dreamspace/blog.html">
+                                    <img src="img/demo/dreamspace/blog.png" alt="DreamSpace Blog">
+                                </a>
+                                <div class="demo-name">DreamSpace: Blog</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items blog">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/dreamspace/blog-left-sidebar.html">
+                                    <img src="img/demo/dreamspace/blog-left-sidebar.png" alt="DreamSpace Blog Left Sidebar">
+                                </a>
+                                <div class="demo-name">DreamSpace: Blog Left Sidebar</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items blog">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/cozynest/blog.html">
+                                    <img src="img/demo/cozynest/blog.png" alt="Cozy Nest Blog">
+                                </a>
+                                <div class="demo-name">Cozy Nest: Blog</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items blog">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/cozynest/blog-right-sidebar.html">
+                                    <img src="img/demo/cozynest/blog-right-sidebar.png" alt="Cozy Nest Blog Right Sidebar">
+                                </a>
+                                <div class="demo-name">Cozy Nest: Blog Right Sidebar</div>
+                            </div>
+                        </div>
+
+                        <!-- Blog Post Pages -->
+                        <div class="col-xl-4 col-sm-6 demo-items blog-post">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/blog-post.html">
+                                    <img src="img/demo/blog/blog-post-right-sidebar.png" alt="Blog Post Right Sidebar">
+                                </a>
+                                <div class="demo-name">Blog Post Right Sidebar</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items blog-post">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/blog-post-left-sidebar.html">
+                                    <img src="img/demo/blog/blog-post-left-sidebar.png" alt="Blog Post Left Sidebar">
+                                </a>
+                                <div class="demo-name">Blog Post Left Sidebar</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items blog-post">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/blog-post-no-sidebar.html">
+                                    <img src="img/demo/blog/blog-post-no-sidebar.png" alt="Blog Post No Sidebar">
+                                </a>
+                                <div class="demo-name">Blog Post No Sidebar</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items blog-post">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/dreamspace/blog-post.html">
+                                    <img src="img/demo/dreamspace/blog-post.png" alt="DreamSpace Blog Post">
+                                </a>
+                                <div class="demo-name">DreamSpace: Blog Post</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items blog-post">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/cozynest/blog-post.html">
+                                    <img src="img/demo/cozynest/blog-post.png" alt="Cozy Nest Blog Post">
+                                </a>
+                                <div class="demo-name">Cozy Nest: Blog Post</div>
+                            </div>
+                        </div>
+    
+                        <!-- Login & Register Pages -->
+                        <div class="col-xl-4 col-sm-6 demo-items user">
+                            <div class="demo-item-card">
+                            <a target="_blank" href="demo/login-register.html">
+                                <img src="img/demo/user/user-vendor-login.png" alt="User & Vendor Login">
+                            </a>
+                            <div class="demo-name">User & Vendor Login</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items user">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/login-register.html">
+                                    <img src="img/demo/user/user-register.png" alt="User & Vendor Register">
+                                </a>
+                                <div class="demo-name">User & Vendor Register</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items user">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/print-on-demand/login_register.html">
+                                    <img src="img/demo/home/printondemand/print-on-demand-login-register.png" alt="Customer & Login & register">
+                                </a>
+                                <div class="demo-name">Customer Login & register</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items user">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/dreamspace/login.html">
+                                    <img src="img/demo/dreamspace/login.png" alt="DreamSpace Login Page">
+                                </a>
+                                <div class="demo-name">DreamSpace: Login Page</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items user">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/dreamspace/register.html">
+                                    <img src="img/demo/dreamspace/register.png" alt="DreamSpace Register Page">
+                                </a>
+                                <div class="demo-name">DreamSpace: Register Page</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items user">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/cozynest/login.html">
+                                    <img src="img/demo/cozynest/login.png" alt="DreamSpace Login Page">
+                                </a>
+                                <div class="demo-name">Cozy Nest: Login Page</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items user">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/cozynest/register.html">
+                                    <img src="img/demo/cozynest/register.png" alt="DreamSpace Register Page">
+                                </a>
+                                <div class="demo-name">Cozy Nest: Register Page</div>
+                            </div>
+                        </div>
+    
+                        <!-- Vendor Pages -->
+                        <div class="col-xl-4 col-sm-6 demo-items vendor">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/login-register.html">
+                                    <img src="img/demo/vendor/vendor-register.png" alt="Vendor Register">
+                                </a>
+                                <div class="demo-name">Vendor Register</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items vendor">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/vendor-list.html">
+                                    <img src="img/demo/vendor/vendor-list.png" alt="Vendor List">
+                                </a>
+                                <div class="demo-name">Vendor List (2 Styles)</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items vendor">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/vendor-shop-left-Sidebar.html">
+                                    <img src="img/demo/vendor/vendor-shop-left-sidebar.png" alt="Vendor Shop Left Sidebar">
+                                </a>
+                                <div class="demo-name">Vendor Shop Leftbar (2 Styles)</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items vendor">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/vendor-shop-right-Sidebar.html">
+                                    <img src="img/demo/vendor/vendor-shop-right-sidebar.png" alt="Vendor Shop Right Sidebar">
+                                </a>
+                                <div class="demo-name">Vendor Shop Rightbar (2 Styles)</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items vendor">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/vendor-shop-banner-1.html">
+                                    <img src="img/demo/vendor/vendor-shop-banner-left-sidebar.png" alt="Vendor Shop Banner Left Sidebar">
+                                </a>
+                                <div class="demo-name">Vendor Shop Banner Leftbar (2 Styles)</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items vendor">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/vendor-shop-banner-2.html">
+                                    <img src="img/demo/vendor/vendor-shop-banner-right-sidebar.png" alt="Vendor Shop Banner Right Sidebar">
+                                </a>
+                                <div class="demo-name">Vendor Shop Banner Rightbar (2 Styles)</div>
+                            </div>
+                        </div>
+
+                        <!-- About us Pages-->
+                        <div class="col-xl-4 col-sm-6 demo-items about">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/about.html">
+                                    <img src="img/demo/others/about.png" alt="About Us">
+                                </a>
+                                <div class="demo-name">About Us</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items about">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/print-on-demand/about_us.html">
+                                    <img src="img/demo/home/printondemand/print-on-demand-about.png" alt="About Us">
+                                </a>
+                                <div class="demo-name">Print on Demand: About Us</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items about">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/dreamspace/about.html">
+                                    <img src="img/demo/dreamspace/about.png" alt="DreamSpace About Us">
+                                </a>
+                                <div class="demo-name">DreamSpace: About Us</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items about">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/cozynest/about.html">
+                                    <img src="img/demo/cozynest/about.png" alt="Cozy Nest About Us">
+                                </a>
+                                <div class="demo-name">Cozy Nest: About Us</div>
+                            </div>
+                        </div>
+
+                        <!-- Cart Pages -->
+                        <div class="col-xl-4 col-sm-6 demo-items cart">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/cart.html">
+                                    <img src="img/demo/others/cart.png" alt="Cart">
+                                </a>
+                                <div class="demo-name">Cart</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items cart">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/print-on-demand/cart.html">
+                                    <img src="img/demo/home/printondemand/print-on-demand-cart.png" alt="Print on Demand Cart">
+                                </a>
+                                <div class="demo-name">Print on Demand: Cart</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items cart">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/cart-v2.html">
+                                    <img src="img/demo/home/multivendorgrocery/multivendor-grocery-cart.png" alt="Multivendor Grocery Cart">
+                                </a>
+                                <div class="demo-name">Multivendor Grocery: Cart</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items cart">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/dreamspace/cart.html">
+                                    <img src="img/demo/dreamspace/cart.png" alt="DreamSpace Cart">
+                                </a>
+                                <div class="demo-name">DreamSpace: Cart</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items cart">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/cozynest/cart.html">
+                                    <img src="img/demo/cozynest/cart.png" alt="Cozy Nest Cart">
+                                </a>
+                                <div class="demo-name">Cozy Nest: Cart</div>
+                            </div>
+                        </div>
+
+                        <!-- Checkout Pages -->
+                        <div class="col-xl-4 col-sm-6 demo-items checkout">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/checkout.html">
+                                    <img src="img/demo/others/checkout.png" alt="Checkout Page">
+                                </a>
+                                <div class="demo-name">Checkout Page</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items checkout">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/print-on-demand/checkout.html">
+                                    <img src="img/demo/home/printondemand/print-on-demand-checkout.png" alt="Print on Demand Checkout Page">
+                                </a>
+                                <div class="demo-name">Print on Demand: Checkout Page</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items checkout">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/checkout-v2.html">
+                                    <img src="img/demo/home/multivendorgrocery/multivendor-grocery-checkout.png" alt="Multivendor Grocery Checkout Page">
+                                </a>
+                                <div class="demo-name">Multivendor Grocery: Checkout Page</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items checkout">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/dreamspace/billing.html">
+                                    <img src="img/demo/dreamspace/billing.png" alt="DreamSpace Billing Page">
+                                </a>
+                                <div class="demo-name">DreamSpace: Billing Page</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items checkout">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/dreamspace/shipping.html">
+                                    <img src="img/demo/dreamspace/shipping.png" alt="DreamSpace Shipping Page">
+                                </a>
+                                <div class="demo-name">DreamSpace: Shipping Page</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items checkout">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/dreamspace/checkout.html">
+                                    <img src="img/demo/dreamspace/checkout.png" alt="DreamSpace Checkout page">
+                                </a>
+                                <div class="demo-name">DreamSpace: Checkout page</div>
+                            </div>
+                        </div>
+
+                        <!-- My Account Pages -->
+                        <div class="col-xl-4 col-sm-6 demo-items my-acc">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/user-dashboard.html">
+                                    <img src="img/demo/user/user-dashboard.png" alt="User Dashboard">
+                                </a>
+                                <div class="demo-name">User Dashboard</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items my-acc">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/print-on-demand/my_account.html">
+                                    <img src="img/demo/home/printondemand/print-on-demand-myaccount.png" alt="Print on Demand Dashboard">
+                                </a>
+                                <div class="demo-name">Print on Demand: Dashboard</div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Pages -->
+                        <div class="col-xl-4 col-sm-6 demo-items contact">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/contact.html">
+                                    <img src="img/demo/others/contact.png" alt="Contact Us">
+                                </a>
+                                <div class="demo-name">Contact Us</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items contact">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/fitness-equipment/contact.html">
+                                    <img src="img/demo/home/fitness-equipment/contact.png" alt="Fitness Equipment Store Contact Us">
+                                </a>
+                                <div class="demo-name">Fitness Equipment Store: Contact Us</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items contact">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/dreamspace/contact.html">
+                                    <img src="img/demo/dreamspace/contact.png" alt="DreamSpace Contact Us">
+                                </a>
+                                <div class="demo-name">DreamSpace: Contact Us</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items contact">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/cozynest/contact.html">
+                                    <img src="img/demo/cozynest/contact.png" alt="Cozy Nest Contact Us">
+                                </a>
+                                <div class="demo-name">Cozy Nest: Contact Us</div>
+                            </div>
+                        </div>
+
+                        <!-- Wishlist Pages -->
+                        <div class="col-xl-4 col-sm-6 demo-items wishlist">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/wishlist.html">
+                                    <img src="img/demo/others/wishlist.png" alt="Wishlist">
+                                </a>
+                                <div class="demo-name">Wishlist</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items wishlist">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/dreamspace/wishlist.html">
+                                    <img src="img/demo/dreamspace/wishlist.png" alt="DreamSpace Wishlist">
+                                </a>
+                                <div class="demo-name">DreamSpace: Wishlist</div>
+                            </div>
+                        </div>
+
+                        <!-- Other Pages -->
+                        <div class="col-xl-4 col-sm-6 demo-items others">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/faqs.html">
+                                    <img src="img/demo/others/faq.png" alt="FAQs">
+                                </a>
+                                <div class="demo-name">FAQs</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items others">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/order-tracking.html">
+                                    <img src="img/demo/others/track-order.png" alt="Track Order">
+                                </a>
+                                <div class="demo-name">Track Order</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items others">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/dreamspace/404.html">
+                                    <img src="img/demo/dreamspace/404.png" alt="DreamSpace 404 Page">
+                                </a>
+                                <div class="demo-name">DreamSpace: 404 Page</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items others">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/dreamspace/review.html">
+                                    <img src="img/demo/dreamspace/review.png" alt="DreamSpace Reviews Page">
+                                </a>
+                                <div class="demo-name">DreamSpace: Reviews Page</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items others">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/dreamspace/testimonials.html">
+                                    <img src="img/demo/dreamspace/testimonials.png" alt="DreamSpace Testimonials Page">
+                                </a>
+                                <div class="demo-name">DreamSpace: Testimonials Page</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items others">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/dreamspace/privacy-policy.html">
+                                    <img src="img/demo/dreamspace/privacy-policy.png" alt="DreamSpace Privacy Policy Page">
+                                </a>
+                                <div class="demo-name">DreamSpace: Privacy Policy Page</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items others">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/dreamspace/terms-conditions.html">
+                                    <img src="img/demo/dreamspace/terms.png" alt="DreamSpace Terms & Conditions Page">
+                                </a>
+                                <div class="demo-name">DreamSpace: Terms & Conditions Page</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items others">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/cozynest/faq.html">
+                                    <img src="img/demo/cozynest/faq.png" alt="Cozy Nest FAQs">
+                                </a>
+                                <div class="demo-name">Cozy Nest: FAQs</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items others">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/cozynest/404.html">
+                                    <img src="img/demo/cozynest/404.png" alt="Cozy Nest 404 Page">
+                                </a>
+                                <div class="demo-name">Cozy Nest: 404 Page</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items others">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/cozynest/track-order.html">
+                                    <img src="img/demo/cozynest/track-order.png" alt="Cozy Nest Order Tracking Page">
+                                </a>
+                                <div class="demo-name">Cozy Nest: Order Tracking Page</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items others">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/cozynest/shipping-policy.html">
+                                    <img src="img/demo/cozynest/shipping-policy.png" alt="Cozy Nest Shipping Policy Page">
+                                </a>
+                                <div class="demo-name">Cozy Nest: Shipping Policy Page</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 demo-items others">
+                            <div class="demo-item-card">
+                                <a target="_blank" href="demo/cozynest/terms-conditions.html">
+                                    <img src="img/demo/cozynest/terms-conditions.png" alt="Cozy Nest Terms & Conditions Page">
+                                </a>
+                                <div class="demo-name">Cozy Nest: Terms & Conditions Page</div>
+                            </div>
+                        </div>
+
+                        <!-- Coming Soon Image -->
+                        <div class="col-xl-4 col-sm-6 demo-items home">
+                            <div class="demo-item-card">
+                                <a href="#">
+                                    <img src="img/demo/home/coming-soon.png" alt="Coming Soon">
+                                </a>
+                                <div class="demo-name">Coming Soon</div>
+                            </div>
+                        </div>
+
+                        <div class="no-results-message" style="display: none;">
+                            <h4>No item found.</a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Demo Section -->
+
+    <!-- Start of Features Section -->
+    <section id="features">
+        <div class="container">
+            <div class="row">
+                <div class="section-title text-center">
+                    <h2>Features</h2>
+                    <p>Shop, product, profile, payment, checkout, blog, vendor, and many more pages are already included in Elmart. Lightweight and easy to customize, unique, modern, responsive and up to date with the latest trends! We developed this template to make your marketplace development easier.</p>
+                </div>
+            </div>
+            <div class="row swiper features-images">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide feature-items">
+                        <div class="demo-item-card">
+                            <img src="img/features/cart-quick-view-sidebar.png" alt="Cart Quick View Slider">
+                            <div class="demo-name">Cart Quick View Slider</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide feature-items">
+                        <div class="demo-item-card">
+                            <img src="img/features/change-currency.png" alt="Change Currency">
+                            <div class="demo-name">Change Currency</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide feature-items">
+                        <div class="demo-item-card">
+                            <img src="img/features/change-language.png" alt="Change Language">
+                            <div class="demo-name">Change Language</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide feature-items">
+                        <div class="demo-item-card">
+                            <img src="img/features/custom-scroll-bar.png" alt="Custom Scrollbar">
+                            <div class="demo-name">Custom Scrollbar</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide feature-items">
+                        <div class="demo-item-card">
+                            <img src="img/features/email-subscription-popup.png" alt="Email Subscription (Popup)">
+                            <div class="demo-name">Email Subscription (Popup)</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide feature-items">
+                        <div class="demo-item-card">
+                            <img src="img/features/header-top-promo-banner.png" alt="Header Promo (Top)">
+                            <div class="demo-name">Header Promo (Top)</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide feature-items">
+                        <div class="demo-item-card">
+                            <img src="img/features/login-registration-slider.png" alt="Login & Registration Slider">
+                            <div class="demo-name">Login & Registration Slider</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide feature-items">
+                        <div class="demo-item-card">
+                            <img src="img/features/mega-custom-search-popup.png" alt="Custom Search (Popup)">
+                            <div class="demo-name">Custom Search (Popup)</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide feature-items">
+                        <div class="demo-item-card">
+                            <img src="img/features/mega-menu.png" alt="Mega Menu">
+                            <div class="demo-name">Mega Menu</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide feature-items">
+                        <div class="demo-item-card">
+                            <img src="img/features/product-quick-view.png" alt="Product Quick View">
+                            <div class="demo-name">Product Quick View</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide feature-items">
+                        <div class="demo-item-card">
+                            <img src="img/features/product-sorting.png" alt="Product Sorting">
+                            <div class="demo-name">Product Sorting</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide feature-items">
+                        <div class="demo-item-card">
+                            <img src="img/features/sales-notification-bottom-left.png" alt="Sales Notification (Bottom Left)">
+                            <div class="demo-name">Sales Notification (Bottom Left)</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide feature-items">
+                        <div class="demo-item-card">
+                            <img src="img/features/shop-filter-sidebar.png" alt="Shop Filter Sidebar">
+                            <div class="demo-name">Shop Filter Sidebar</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide feature-items">
+                        <div class="demo-item-card">
+                            <img src="img/features/unique-preloader.png" alt="Preloader">
+                            <div class="demo-name">Preloader</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide feature-items">
+                        <div class="demo-item-card">
+                            <img src="img/features/custom-cursor.png" alt="Custom Cursor">
+                            <div class="demo-name">Custom Cursor</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"><i class="fa-solid fa-circle-chevron-right"></i></div>
+                <div class="swiper-button-prev"><i class="fa-solid fa-circle-chevron-left"></i></div>
+            </div>
+            <div class="row list-of-features">
+                <div class="section-title text-center">
+                    <h2>What we offer</h2>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Features</th>
+                            <th>Other Themes</th>
+                            <th>Our Theme</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Advanced Mega Menu</td>
+                            <td><i class="paid-icon fa-solid fa-circle-dollar-to-slot"></i>PAID</td>
+                            <td><i class="free-icon fa-solid fa-circle-check"></i>FREE</td>
+                        </tr>
+                        <tr class="with-bg">
+                            <td>Product Filtering</td>
+                            <td><i class="paid-icon fa-solid fa-circle-dollar-to-slot"></i>PAID</td>
+                            <td><i class="free-icon fa-solid fa-circle-check"></i>FREE</td>
+                        </tr>
+                        <tr>
+                            <td>Countdown Timer</td>
+                            <td><i class="paid-icon fa-solid fa-circle-dollar-to-slot"></i>PAID</td>
+                            <td><i class="free-icon fa-solid fa-circle-check"></i>FREE</td>
+                        </tr>
+                        <tr class="with-bg">
+                            <td>Quick Shop/ View</td>
+                            <td><i class="paid-icon fa-solid fa-circle-xmark"></i>N/A</td>
+                            <td><i class="free-icon fa-solid fa-circle-check"></i>FREE</td>
+                        </tr>
+                        <tr>
+                            <td>Size Chart</td>
+                            <td><i class="paid-icon fa-solid fa-circle-dollar-to-slot"></i>PAID</td>
+                            <td><i class="free-icon fa-solid fa-circle-check"></i>FREE</td>
+                        </tr>
+                        <tr class="with-bg">
+                            <td>Wishlist</td>
+                            <td><i class="free-icon fa-solid fa-circle-check"></i>FREE</td>
+                            <td><i class="free-icon fa-solid fa-circle-check"></i>FREE</td>
+                        </tr>
+                        <tr>
+                            <td>Quick Cart View</td>
+                            <td><i class="free-icon fa-solid fa-circle-check"></i>FREE</td>
+                            <td><i class="free-icon fa-solid fa-circle-check"></i>FREE</td>
+                        </tr>
+                        <tr class="with-bg">
+                            <td>Advanced Custom Search</td>
+                            <td><i class="paid-icon fa-solid fa-circle-xmark"></i>N/A</td>
+                            <td><i class="free-icon fa-solid fa-circle-check"></i>FREE</td>
+                        </tr>
+                        <tr>
+                            <td>Custom Scrollbar</td>
+                            <td><i class="paid-icon fa-solid fa-circle-xmark"></i>N/A</td>
+                            <td><i class="free-icon fa-solid fa-circle-check"></i>FREE</td>
+                        </tr>
+                        <tr class="with-bg">
+                            <td>Custom Cursor</td>
+                            <td><i class="paid-icon fa-solid fa-circle-xmark"></i>N/A</td>
+                            <td><i class="free-icon fa-solid fa-circle-check"></i>FREE</td>
+                        </tr>
+                        <tr>
+                            <td>Sales Notifications</td>
+                            <td><i class="paid-icon fa-solid fa-circle-dollar-to-slot"></i>PAID</td>
+                            <td><i class="free-icon fa-solid fa-circle-check"></i>FREE</td>
+                        </tr>
+                        <tr class="with-bg">
+                            <td>Login & Register Slider</td>
+                            <td><i class="free-icon fa-solid fa-circle-check"></i>FREE</td>
+                            <td><i class="free-icon fa-solid fa-circle-check"></i>FREE</td>
+                        </tr>
+                        <tr>
+                            <td>Email Subscription Popup</td>
+                            <td><i class="paid-icon fa-solid fa-circle-xmark"></i>N/A</td>
+                            <td><i class="free-icon fa-solid fa-circle-check"></i>FREE</td>
+                        </tr>
+                        <tr class="with-bg">
+                            <td>User Dashboard</td>
+                            <td><i class="paid-icon fa-solid fa-circle-xmark"></i>N/A</td>
+                            <td><i class="free-icon fa-solid fa-circle-check"></i>FREE</td>
+                        </tr>
+                        <tr>
+                            <td>Vendor Dashboard</td>
+                            <td><i class="paid-icon fa-solid fa-circle-xmark"></i>N/A</td>
+                            <td><i class="free-icon fa-solid fa-circle-check"></i>FREE</td>
+                        </tr>
+                        <tr class="with-bg">
+                            <td>Multiple Variations</td>
+                            <td><i class="paid-icon fa-solid fa-circle-xmark"></i>N/A</td>
+                            <td><i class="free-icon fa-solid fa-circle-check"></i>FREE</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <!-- End of Features Section -->
+    
+    <!-- Start of Core Section -->
+    <section id="core">
+        <div class="container core-wrap">
+            <div class="row">
+                <div class="section-title text-center">
+                    <h2>Core Structures</h2>
+                    <p>We used HTML5, CSS3, jQuery, and jQuery plugins. Elmart is fully SEO-optimized, W3 validated, and easily customizable. The full structure of codes is commented on appropriately with well-documentation for ease of customization.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-sm-4 col-6 core-items">
+                    <div class="demo-item-card">
+                        <img src="img/core/html.png" alt="HTML5">
+                        <div class="demo-name">HTML5</div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 core-items">
+                    <div class="demo-item-card">
+                        <img src="img/core/css.png" alt="CSS3">
+                        <div class="demo-name">CSS3</div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 core-items">
+                    <div class="demo-item-card">
+                        <img src="img/core/bootstrap.png" alt="Bootstrap">
+                        <div class="demo-name">Bootstrap</div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 core-items">
+                    <div class="demo-item-card">
+                        <img src="img/core/js.png" alt="JavaScript">
+                        <div class="demo-name">JavaScript</div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 core-items">
+                    <div class="demo-item-card">
+                        <img src="img/core/jquery.png" alt="jQuery">
+                        <div class="demo-name">jQuery</div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 core-items">
+                    <div class="demo-item-card">
+                        <img src="img/core/isotope.png" alt="Isotope">
+                        <div class="demo-name">Isotope JS</div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 core-items">
+                    <div class="demo-item-card">
+                        <img src="img/core/swiper.png" alt="Swiper">
+                        <div class="demo-name">Swiper JS</div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 core-items">
+                    <div class="demo-item-card">
+                        <img src="img/core/slick.png" alt="Slick">
+                        <div class="demo-name">Slick JS</div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 core-items">
+                    <div class="demo-item-card">
+                        <img src="img/core/owl-carousel-logo.png" alt="Owl Carousel">
+                        <div class="demo-name">Owl Carousel</div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 core-items">
+                    <div class="demo-item-card">
+                        <img src="img/core/animate-style.png" alt="Animate.style">
+                        <div class="demo-name">Animate.style</div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 core-items">
+                    <div class="demo-item-card">
+                        <img src="img/core/magnific-popup.png" alt="Magnific Popup">
+                        <div class="demo-name">Magnific Popup JS</div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 core-items">
+                    <div class="demo-item-card">
+                        <img src="img/core/photoswipe.png" alt="Photoswipe JS">
+                        <div class="demo-name">Photoswipe JS</div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 core-items">
+                    <div class="demo-item-card">
+                        <img src="img/core/popper.png" alt="Popper JS">
+                        <div class="demo-name">Popper JS</div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 core-items">
+                    <div class="demo-item-card">
+                        <img src="img/core/clipboard.png" alt="Clipboard JS">
+                        <div class="demo-name">Clipboard JS</div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 core-items">
+                    <div class="demo-item-card">
+                        <img src="img/core/responsive.png" alt="Responsive">
+                        <div class="demo-name">Responsive</div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 core-items">
+                    <div class="demo-item-card">
+                        <img src="img/core/w3c-logo.png" alt="W3C Validated">
+                        <div class="demo-name">W3C Validated</div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 core-items">
+                    <div class="demo-item-card">
+                        <img src="img/core/seo.png" alt="SEO Optimized">
+                        <div class="demo-name">SEO Optimized</div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 core-items">
+                    <div class="demo-item-card">
+                        <img src="img/core/documentation.png" alt="Well Documentation">
+                        <div class="demo-name">Well Documentation</div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 core-items">
+                    <div class="demo-item-card">
+                        <img src="img/core/browsers.png" alt="Popular Browsers Compatible">
+                        <div class="demo-name">Popular Browsers Compatible</div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 core-items">
+                    <div class="demo-item-card">
+                        <img src="img/core/fontawesome.png" alt="Fontawesome">
+                        <div class="demo-name">Fontawesome Free</div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 core-items">
+                    <div class="demo-item-card">
+                        <img src="img/core/google-fonts.png" alt="Google Fonts">
+                        <div class="demo-name">Google Fonts</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Core Section -->
+
+    <!-- Start of Footer Section -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p>&copy; <span id="currentYear"></span> Elmart. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End of Footer Section -->
+
+    <!-- Back to Top -->
+    <a href="javascript:" id="return-to-top"><i class="fa-solid fa-arrow-up-long"></i></a>
+
+    <!-- JS Links -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/typed.umd.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
