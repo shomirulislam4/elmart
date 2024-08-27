@@ -1,23 +1,846 @@
 @media (max-width: 289px) {
-
+    .elbp__sale__countdown__section {
+        margin-top: 20px;
+    }
+    h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    h2 {
+        font-size: 26px;
+        line-height: 34px;
+    }
+    h3 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+    h4 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    span,
+    p,
+    a,
+    li,
+    button,
+    input,
+    label,
+    textarea,
+    th, td,
+    blockquote {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    input[type="checkbox"],
+    input[type="checkbox"]:checked,
+    input[type="radio"],
+    input[type="radio"]:checked  {
+        width: 10px;
+        height: 10px;
+    }
+    input[type="checkbox"]:checked::before,
+    input[type="radio"]:checked::before {
+        height: 4px;
+        width: 4px;
+    }
+    .elbp__button__a {
+        padding: 10px 20px;
+        font-size: 12px;
+        line-height: 12px;
+    }
+    .elbp__button__b {
+        padding: 9px 19px;
+        font-size: 12px;
+        line-height: 12px;
+    }
+    /*===== Home Page =====*/
+        /*Header*/
+        .elbp__header__section .container {
+            padding: 0;
+        }
+        .elbp__header__section .header__top {
+            flex-direction: column;
+            padding: 8px 0;
+            padding-bottom: 4px;
+        }
+        .elbp__header__section .header__top p {
+            text-align: center;
+        }
+        .elbp__header__section .header__top p,
+        .elbp__header__section .header__top p span {
+            font-size: 11px;
+            line-height: 20px;
+        }
+        .elbp__header__section .header__top .headertop__ctas {
+            gap: 8px;
+        }
+        .elbp__header__section .header__top .headertop__ctas .nice-select span,
+        .elbp__header__section .header__top .headertop__ctas .nice-select li {
+            font-size: 12px;
+            line-height: 22px;
+        }
+        .elbp__header__section .header__top .headertop__ctas a {
+            display: none;
+        }
+        .elbp__header__section .header__top .headertop__ctas .nice-select {
+            height: 30px;
+            line-height: 30px;
+        }
+        .elbp__header__section .header__bottom .logo {
+            width: 80px;
+        }
+        .elbp__mmenu__btn {
+            font-size: 10px;
+            padding: 0 5px;
+        }
+        .elbp__mmenu__btn i {
+            display: none;
+        }
+        .elbp__header__section .header__bottom .headerbottom__ctas {
+            gap: 5px;
+        }
+        .elbp__header__section .header__bottom .headerbottom__ctas a svg {
+            height: 12px;
+            width: 12px;
+        }
+        /*Search Popup*/
+        .elbp__search__popup form {
+            height: 40px;
+            margin: 15px 0;
+        }
+        .elbp__search__popup input {
+            font-size: 14px;
+        }
+        .elbpsearch__prod__result__area .elbpsearch__result__header {
+            margin-bottom: 15px;
+        }
+        .elbpsearch__wrapper {
+            width: 95vw;
+            padding: 25px 10px;
+        }
+        .elbp__search__popup .elbpsearch__close__btn {
+            font-size: 20px;
+        }
+        .elbpsearch__result__header,
+        .elbpsearch__result__header h6 {
+            font-size: 13px;
+        }
+        .elbpsearch__prod__result__area .search__content .product__rating {
+            margin: 0 auto 10px auto;
+            flex-direction: column;
+        }
+        .elbpsearch__prod__result__area .search__content .product__title a,
+        .elbpsearch__prod__result__area .search__content .product__price__variant h4 {
+            font-size: 12px;
+        }
+        .elbpsearch__prod__result__area .search__content .product__rating .total__rating {
+            margin-left: 0;
+            margin-top: 8px;
+        }
+        .elbpsearch__prod__result__area .search__content .product__rating .rating__icon,
+        .elbpsearch__prod__result__area .search__content .product__rating .total__rating,
+        .elbpsearch__prod__result__area .search__content .product__rating .total__rating span {
+            font-size: 14px;
+        }
+        .elbpsearch__prod__result__area .elbpsearch__search__result .search-product {
+            padding: 20px 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        .search__product__img {
+            margin-bottom: 25px;
+        }
+        .elbpsearch__prod__result__area .search__product__img a {
+            margin-right: 10px;
+        }
+        .elbpsearch__prod__result__area .search__content {
+            padding-right: 0;
+            text-align: center;
+        }
+        .elbpsearch__prod__result__area .search__content .product__cart {
+            all: unset;
+            display: flex;
+            position: relative;
+            justify-content: center;
+        }
+        .elbpsearch__prod__result__area .search__content .product__cart a {
+            height: 35px;
+            width: 35px;
+            line-height: 35px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        /*Mobile Menu*/
+        .elbp__mobilemenu__btn {
+            padding: 5px;
+            font-size: 10px;
+            line-height: 10px;
+            overflow: hidden;
+            height: 24px;
+        }
+        .elbp__mobilemenu__btn i {
+            display: none;
+        }
+        .elbp__mobile__menu .elbp__mblmenu__wrapper {
+            width: 180px;
+            padding: 10px 5px;
+        }
+        .elbp__mobile__menu .elbp__mblmenu__wrapper .elbp__mblmenu__closebtn {
+            left: 182px;
+            height: 80px;
+            width: 16px;
+            line-height: 80px;
+            font-size: 14px;
+            border-radius: 5px;
+        }
+        .elbp__mblmenu__tabs {
+            font-size: 14px;
+            line-height: 24px;
+        }
+        .elbp__mobile__menu .elbp__mblmenu__wrapper .nav-pills .nav-link.active,
+        .elbp__mobile__menu .elbp__mblmenu__wrapper .nav-pills .show > .nav-link,
+        .elbp__mobile__menu .elbp__mblmenu__wrapper .nav-pills .nav-link {
+            padding: 5px;
+            margin: 0;
+        }
+        /*Cart Slider*/
+        .elbp__cart__slider .main__cart__area {
+            width: 180px;
+            padding: 10px 5px;
+        }
+        .elbp__cart__slider .elbp__cart__closebtn{
+            right: 182px;
+            height: 80px;
+            width: 16px;
+            line-height: 80px;
+            font-size: 14px;
+            border-radius: 5px;
+        }
+        .elbp__cart__slider .main__cart__area .elbp__cart__header h3 {
+            font-size: 20px;
+            line-height: 20px;
+            margin-bottom: 0;
+        }
+        .elbp__cart__slider .main__cart__area .elbp__cart__header span {
+            font-size: 20px;
+            line-height: 22px;
+            height: 22px;
+            margin-bottom: 0;
+            font-weight: 400;
+            padding: 0 8px;
+        }
+        .elbp__cart__slider .main__cart__area .elbp__cart__cta {
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+        }
+        .elbp__cart__product .content {
+            width: 100%;
+        }
+        .elbp__cart__product {
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+            flex-direction: column;
+        }
+        .elbp__cart__product a {
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+        }
+        .elbp__cart__product .price__qty {
+            justify-content: center;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
-
+    .elbp__sale__countdown__section {
+        margin-top: 30px;
+    }
+    h1 {
+        font-size: 44px;
+        line-height: 54px;
+    }
+    h2 {
+        font-size: 30px;
+        line-height: 38px;
+    }
+    h3 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    h4 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    span,
+    p,
+    a,
+    li,
+    button,
+    input,
+    label,
+    textarea,
+    th, td,
+    blockquote {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    input[type="checkbox"],
+    input[type="checkbox"]:checked,
+    input[type="radio"],
+    input[type="radio"]:checked {
+        width: 12px;
+        height: 12px;
+    }
+    input[type="checkbox"]:checked::before,
+    input[type="radio"]:checked::before {
+        height: 6px;
+        width: 6px;
+    }
+    .elbp__button__a {
+        padding: 10px 20px;
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .elbp__button__b {
+        padding: 9px 19px;
+        font-size: 14px;
+        line-height: 14px;
+    }
+    /*===== Home Page =====*/
+        /*Header*/
+        .elbp__header__section .header__top {
+            flex-direction: column;
+            padding: 8px 0;
+            padding-bottom: 4px;
+        }
+        .elbp__header__section .header__top p,
+        .elbp__header__section .header__top p span {
+            font-size: 11px;
+            line-height: 20px;
+        }
+        .elbp__header__section .header__top .headertop__ctas {
+            gap: 8px;
+        }
+        .elbp__header__section .header__top .headertop__ctas a,
+        .elbp__header__section .header__top .headertop__ctas .nice-select span,
+        .elbp__header__section .header__top .headertop__ctas .nice-select li {
+            font-size: 12px;
+            line-height: 22px;
+        }
+        .elbp__header__section .header__top .headertop__ctas .nice-select {
+            height: 30px;
+            line-height: 30px;
+        }
+        .elbp__header__section .header__bottom .logo {
+            width: 100px;
+        }
+        .elbp__mmenu__btn {
+            padding: 2px 5px;
+        }
+        .elbp__mmenu__btn i {
+            display: none;
+        }
+        .elbp__header__section .header__bottom .headerbottom__ctas {
+            gap: 10px;
+        }
+        .elbp__header__section .header__bottom .headerbottom__ctas a svg {
+            height: 16px;
+            width: 16px;
+        }
+        /*Search Popup*/
+        .elbpsearch__wrapper {
+            width: 90vw;
+            padding: 25px;
+        }
+        .elbpsearch__prod__result__area .search__content .product__rating {
+            margin: 0 auto 10px auto;
+        }
+        .elbp__search__popup .elbpsearch__close__btn {
+            font-size: 20px;
+        }
+        .elbpsearch__prod__result__area .elbpsearch__search__result .search-product {
+            padding: 20px 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        .search__product__img {
+            margin-bottom: 25px;
+        }
+        .elbpsearch__prod__result__area .search__product__img a {
+            margin-right: 10px;
+        }
+        .elbpsearch__prod__result__area .search__content {
+            padding-right: 0;
+            text-align: center;
+        }
+        .elbpsearch__prod__result__area .search__content .product__cart {
+            all: unset;
+            display: flex;
+            position: relative;
+            justify-content: center;
+        }
+        .elbpsearch__prod__result__area .search__content .product__cart a {
+            margin-right: 10px;
+        }
+        /*Mobile Menu*/
+        .elbp__mobilemenu__btn {
+            padding: 5px;
+            font-size: 12px;
+            line-height: 12px;
+        }
+        .elbp__mobile__menu .elbp__mblmenu__wrapper {
+            width: 255px;
+            padding: 20px 10px;
+        }
+        .elbp__mobile__menu .elbp__mblmenu__wrapper .elbp__mblmenu__closebtn {
+            left: 257px;
+            height: 30px;
+            width: 30px;
+            line-height: 30px;
+            font-size: 14px;
+        }
+        .elbp__mblmenu__tabs {
+            font-size: 14px;
+            line-height: 24px;
+        }
+        /*Cart Slider*/
+        .elbp__cart__slider .main__cart__area {
+            width: 255px;
+            padding: 20px 10px;
+        }
+        .elbp__cart__slider .elbp__cart__closebtn {
+            right: 257px;
+            height: 30px;
+            width: 30px;
+            line-height: 30px;
+            font-size: 14px;
+        }
+        .elbp__cart__slider .main__cart__area .elbp__cart__header h3{
+            font-size: 24px;
+            line-height: 24px;
+            margin-bottom: 0;
+        }
+        .elbp__cart__slider .main__cart__area .elbp__cart__header span {
+            font-size: 24px;
+            line-height: 26px;
+            height: 26px;
+            margin-bottom: 0;
+            font-weight: 400;
+            padding: 0 8px;
+        }
+        .elbp__cart__product .image {
+            width: 80px;
+            height: 80px;
+        }
+        .elbp__cart__product a,
+        .elbp__cart__product h4 {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .elbp__cart__product .content {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
-
+    .elbp__sale__countdown__section {
+        margin-top: 40px;
+    }
+    h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    h2 {
+        font-size: 40px;
+        line-height: 46px;
+    }
+    h3 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    h4 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    span,
+    p,
+    a,
+    li,
+    button,
+    input,
+    label,
+    textarea,
+    th, td,
+    blockquote {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    input[type="checkbox"],
+    input[type="checkbox"]:checked,
+    input[type="radio"],
+    input[type="radio"]:checked  {
+        width: 12px;
+        height: 12px;
+    }
+    input[type="checkbox"]:checked::before,
+    input[type="radio"]:checked::before {
+        height: 6px;
+        width: 6px;
+    }
+    .elbp__button__a {
+        padding: 13px 30px;
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .elbp__button__b {
+        padding: 12px 29px;
+        font-size: 14px;
+        line-height: 14px;
+    }
+    /*===== Home Page =====*/
+        /*Header*/
+        .elbp__header__section .header__top {
+            flex-direction: column;
+        }
+        .elbp__header__section .header__bottom .headerbottom__ctas {
+            gap: 15px;
+        }
+        .elbp__header__section .header__bottom .headerbottom__ctas a svg {
+            height: 20px;
+            width: 20px;
+        }
+        .elbp__header__section .header__top .headertop__ctas .nice-select {
+            height: 32px;
+            line-height: 30px;
+        }
+        /*Search Popup*/
+        .elbpsearch__wrapper {
+            width: 80vw;
+            padding: 25px;
+        }
+        .elbp__search__popup .elbpsearch__close__btn {
+            font-size: 20px;
+        }
+        .elbpsearch__prod__result__area .elbpsearch__search__result .search-product {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        .search__product__img {
+            margin-bottom: 15px;
+        }
+        .elbpsearch__prod__result__area .search__product__img a {
+            margin-right: 10px;
+        }
+        .elbpsearch__prod__result__area .search__content .product__title a,
+        .elbpsearch__prod__result__area .search__content .product__price__variant h4 {
+            font-size: 16px;
+        }
+        .elbpsearch__prod__result__area .search__content .product__rating .rating__icon,
+        .elbpsearch__prod__result__area .search__content .product__rating .total__rating,
+        .elbpsearch__prod__result__area .search__content .product__rating .total__rating span {
+            font-size: 12px;
+        }
+        /*Mobile Menu*/
+        .elbp__mobilemenu__btn {
+            padding: 5px 10px;
+        }
+        .elbp__mobile__menu .elbp__mblmenu__wrapper {
+            width: 350px;
+        }
+        .elbp__mobile__menu .elbp__mblmenu__wrapper .elbp__mblmenu__closebtn {
+            left: 360px;
+        }
+        .elbp__mblmenu__tabs {
+            font-size: 14px;
+            line-height: 24px;
+        }
+        /*Cart Slider*/
+        .elbp__cart__slider .main__cart__area {
+            width: 350px;
+        }
+        .elbp__cart__slider .elbp__cart__closebtn {
+            right: 360px;
+        }
+        .elbp__cart__product .image {
+            width: 90px;
+            height: 90px;
+        }
+        .elbp__cart__product {
+            gap: 10px;
+        }
+        .elbp__cart__product a {
+            font-size: 16px;
+            line-height: 22px;
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-
+    .elbp__sale__countdown__section {
+        margin-top: 50px;
+    }
+    h1 {
+        font-size: 60px;
+        line-height: 70px;
+    }
+    h2 {
+        font-size: 44px;
+        line-height: 50px;
+    }
+    h3 {
+        font-size: 32px;
+        line-height: 38px;
+    }
+    h4 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    span,
+    p,
+    a,
+    li,
+    button,
+    input,
+    label,
+    textarea,
+    th, td,
+    blockquote {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    input[type="checkbox"],
+    input[type="checkbox"]:checked,
+    input[type="radio"],
+    input[type="radio"]:checked  {
+        width: 14px;
+        height: 14px;
+    }
+    input[type="checkbox"]:checked::before,
+    input[type="radio"]:checked::before {
+        height: 8px;
+        width: 8px;
+    }
+    .elbp__button__a {
+        padding: 14px 35px;
+    }
+    .elbp__button__b {
+        padding: 13px 34px;
+    }
+    /*===== Home Page =====*/
+        /*Header*/
+        .elbp__header__section .header__top {
+            flex-direction: column;
+        }
+        .elbp__header__section .header__bottom .headerbottom__ctas {
+            gap: 20px;
+        }
+        .elbp__header__section .header__bottom .headerbottom__ctas a svg {
+            height: 20px;
+            width: 20px;
+        }
+        /*Search Popup*/
+        .elbpsearch__wrapper {
+            width: 80vw;
+            padding: 25px;
+        }
+        .elbp__search__popup .elbpsearch__close__btn {
+            font-size: 20px;
+        }
+        .elbpsearch__prod__result__area .elbpsearch__search__result .search-product {
+            padding: 15px;
+        }
+        .elbpsearch__prod__result__area .search__product__img a {
+            margin-right: 15px;
+        }
+        .elbpsearch__prod__result__area .search__content .product__title a,
+        .elbpsearch__prod__result__area .search__content .product__price__variant h4 {
+            font-size: 16px;
+        }
+        .elbpsearch__prod__result__area .search__content .product__rating .rating__icon,
+        .elbpsearch__prod__result__area .search__content .product__rating .total__rating,
+        .elbpsearch__prod__result__area .search__content .product__rating .total__rating span {
+            font-size: 12px;
+        }
+        /*Mobile Menu*/
+        .elbp__mobilemenu__btn {
+            padding: 8px;
+        }
+        .elbp__mobile__menu .elbp__mblmenu__wrapper {
+            width: 350px;
+        }
+        .elbp__mobile__menu .elbp__mblmenu__wrapper .elbp__mblmenu__closebtn {
+            left: 360px;
+        }
+        .elbp__mblmenu__tabs {
+            font-size: 14px;
+            line-height: 24px;
+        }
+        /*Cart Slider*/
+        .elbp__cart__slider .main__cart__area {
+            width: 350px;
+        }
+        .elbp__cart__slider .elbp__cart__closebtn {
+            right: 360px;
+        }
+        .elbp__cart__product {
+            gap: 10px;
+        }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-
+    .elbp__sale__countdown__section {
+        margin-top: 60px;
+    }
+    h1 {
+        font-size: 52px;
+        line-height: 62px;
+    }
+    h2 {
+        font-size: 30px;
+        line-height: 38px;
+    }
+    h3 {
+        font-size: 27px;
+        line-height: 34px;
+    }
+    h4 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    span,
+    p,
+    a,
+    li,
+    button,
+    input,
+    label,
+    textarea,
+    th, td,
+    blockquote {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    input[type="checkbox"],
+    input[type="checkbox"]:checked,
+    input[type="radio"],
+    input[type="radio"]:checked  {
+        width: 16px;
+        height: 16px;
+    }
+    input[type="checkbox"]:checked::before,
+    input[type="radio"]:checked::before {
+        height: 10px;
+        width: 10px;
+    }
+    /*===== Home Page =====*/
+        /*Header*/
+        /*Search Popup*/
+        .elbpsearch__wrapper {
+            width: 75vw;
+        }
+        .elbpsearch__prod__result__area .elbpsearch__search__result .search-product {
+            padding: 20px;
+        }
+        .elbpsearch__prod__result__area .search__product__img a {
+            margin-right: 20px;
+        }
+        /*Mobile Menu*/
+        .elbp__mobile__menu .elbp__mblmenu__wrapper {
+            width: 350px;
+        }
+        .elbp__mobile__menu .elbp__mblmenu__wrapper .elbp__mblmenu__closebtn {
+            left: 360px;
+        }
+        .elbp__mblmenu__tabs {
+            font-size: 14px;
+            line-height: 24px;
+        }
+        /*Cart Slider*/
+        .elbp__cart__product {
+            gap: 10px;
+        }
+        .elbp__cart__slider .main__cart__area {
+            width: 350px;
+        }
+        .elbp__cart__slider .elbp__cart__closebtn {
+            right: 360px;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1139px) {
+    .elbp__sale__countdown__section {
+        margin-top: 70px;
+    }
+    h1 {
+        font-size: 56px;
+        line-height: 66px;
+    }
+    h2 {
+        font-size: 44px;
+        line-height: 55px;
+    }
+    h3 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    h4 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    span,
+    p,
+    a,
+    li,
+    button,
+    input,
+    label,
+    textarea,
+    th, td,
+    blockquote {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    input[type="checkbox"],
+    input[type="checkbox"]:checked,
+    input[type="radio"],
+    input[type="radio"]:checked  {
+        width: 16px;
+        height: 16px;
+    }
+    input[type="checkbox"]:checked::before,
+    input[type="radio"]:checked::before {
+        height: 10px;
+        width: 10px;
+    }
+    /*===== Home Page =====*/
+        /*Header*/
+        .elbp__header__section .header__top {
+            padding: 10px 0;
+        }
+        .elbp__header__section .header__bottom {
+            padding-top: 13px;
+        }
+        .elbp__header__section .header__bottom .elbp__main__nav li {
+            padding: 0 11px;
+        }
+        .elbp__header__section .header__bottom .headerbottom__ctas {
+            gap: 20px;
+        }
+        /*Search Popup*/
+        .elbpsearch__wrapper {
+            width: 70vw;
+        }
+}
 
+@media (min-width: 1200px) and (max-width: 1499px) {
+    /*===== Home Page =====*/
+        /*Header*/
+        /*Search Popup*/
+        .elbpsearch__wrapper {
+            width: 60vw;
+        }
 }

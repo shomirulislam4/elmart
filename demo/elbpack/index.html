@@ -7,19 +7,19 @@
 
     <title>ELBPack - Backpack Shop</title>
 
-    <link rel="manifest" href="../site.webmanifest">
-    <link rel="icon" type="image/x-icon" href="../image/favicon.png">
-    <link rel="apple-touch-icon" href="../image/icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="icon" type="image/x-icon" href="image/favicon.png">
+    <link rel="apple-touch-icon" href="image/icon.png">
 
     <!-- CSS Links -->
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="../css/fontawesome.min.css">
-    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="../css/spacing.css">
-    <link rel="stylesheet" href="../css/animate.min.css">
-    <link rel="stylesheet" href="../css/nice-select.css">
-    <link rel="stylesheet" href="../css/photoswipe/photoswipe.min.css">
-    <link rel="stylesheet" href="../css/photoswipe/default-skin.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/spacing.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/photoswipe/photoswipe.min.css">
+    <link rel="stylesheet" href="css/photoswipe/default-skin.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -72,10 +72,23 @@
                             <li><a href="single-product.html">Single Product</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">collection</a></li>
-                    <li><a href="blog.html">blog</a></li>
+                    <li><a href="#">collection</a>
+                        <ul class="elbp__submenu">
+                            <li><a href="cart.html">cart</a></li>
+                            <li><a href="login.html">login</a></li>
+                            <li><a href="register.html">register</a></li>
+                            <li><a href="404.html">Error Page</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="blog.html">blog</a>
+                        <ul class="elbp__submenu">
+                            <li><a href="blog.html">blog</a></li>
+                            <li><a href="blog-post.html">blog post</a></li>
+                        </ul>
+                    </li>
                     <li><a href="contact.html">contact</a></li>
                 </ul>
+                <button class="elbp__mmenu__btn"><i class="fa-solid fa-bars"></i> Menu</button>
                 <div class="headerbottom__ctas">
                     <a href="javascript:" class="elbp__search__button">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -105,18 +118,265 @@
             </div>
         </div>
     </header>
+    <!-- Mobile Menu -->
+    <div class="elbp__mobile__menu">
+        <div class="elbp__mblmenu__wrapper">
+            <button class="elbp__mblmenu__closebtn"><i class="fa-solid fa-xmark"></i></button>
+            <ul class="nav nav-pills" id="elbp__MobileMenuTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="elbp__mblmenu__pages-tab" data-bs-toggle="pill" data-bs-target="#elbp__mblmenu__pages" type="button" role="tab" aria-controls="elbp__mblmenu__pages" aria-selected="true">Pages</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="elbp__mblmenu__cate-tab" data-bs-toggle="pill" data-bs-target="#elbp__mblmenu__cate" type="button" role="tab" aria-controls="elbp__mblmenu__cate" aria-selected="false">Categories</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="elbp__MobileMenuTabsContent">
+                <div class="tab-pane fade show active" id="elbp__mblmenu__pages" role="tabpanel" aria-labelledby="elbp__mblmenu__pages-tab">
+                    <ul class="elbp__mblmenu__tabs">
+                        <li class="mobile__submenu"><a href="#">home<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="index.html">homepage 1</a></li>
+                                <li><a href="index-2.html">homepage 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile__submenu"><a href="#">shop<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="shop.html">shop</a></li>
+                                <li><a href="single-product.html">single product</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about-us.html">about us</a></li>
+                        <li class="mobile__submenu"><a href="#">blog<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="blog.html">blog</a></li>
+                                <li><a href="blog-post.html">blog post</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact-us.html">contact us</a></li>
+                        <li class="mobile__submenu"><a href="#">pages<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="cart.html">cart</a></li>
+                                <li><a href="login.html">login</a></li>
+                                <li><a href="register.html">register</a></li>
+                                <li><a href="404.html">Error Page</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="elbp__mblmenu__cate" role="tabpanel" aria-labelledby="elbp__mblmenu__cate-tab">
+                    <ul class="elbp__mblmenu__tabs">
+                        <li class="mobile__submenu"><a href="#">Hand bag<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="#">category 1</a></li>
+                                <li><a href="#">category 2</a></li>
+                                <li><a href="#">category 3</a></li>
+                                <li><a href="#">category 4</a></li>
+                                <li><a href="#">category 5</a></li>
+                                <li><a href="#">category 6</a></li>
+                                <li><a href="#">category 7</a></li>
+                                <li><a href="#">category 8</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile__submenu"><a href="#">luggage<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="#">category 1</a></li>
+                                <li><a href="#">category 2</a></li>
+                                <li><a href="#">category 3</a></li>
+                                <li><a href="#">category 4</a></li>
+                                <li><a href="#">category 5</a></li>
+                                <li><a href="#">category 6</a></li>
+                                <li><a href="#">category 7</a></li>
+                                <li><a href="#">category 8</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile__submenu"><a href="#">Backpack<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="#">category 1</a></li>
+                                <li><a href="#">category 2</a></li>
+                                <li><a href="#">category 3</a></li>
+                                <li><a href="#">category 4</a></li>
+                                <li><a href="#">category 5</a></li>
+                                <li><a href="#">category 6</a></li>
+                                <li><a href="#">category 7</a></li>
+                                <li><a href="#">category 8</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile__submenu"><a href="#">ladies bag<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="#">category 1</a></li>
+                                <li><a href="#">category 2</a></li>
+                                <li><a href="#">category 3</a></li>
+                                <li><a href="#">category 4</a></li>
+                                <li><a href="#">category 5</a></li>
+                                <li><a href="#">category 6</a></li>
+                                <li><a href="#">category 7</a></li>
+                                <li><a href="#">category 8</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile__submenu"><a href="#">travel bag<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="#">category 1</a></li>
+                                <li><a href="#">category 2</a></li>
+                                <li><a href="#">category 3</a></li>
+                                <li><a href="#">category 4</a></li>
+                                <li><a href="#">category 5</a></li>
+                                <li><a href="#">category 6</a></li>
+                                <li><a href="#">category 7</a></li>
+                                <li><a href="#">category 8</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="elbpht__social__links">
+                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Search Box -->
+    <div class="elbp__search__popup">
+        <div class="elbpsearch__wrapper">
+            <div class="elbpsearch__close__btn"><i class="fa-regular fa-circle-xmark"></i></div>
+            <form action="#"><input type="search" placeholder="Search what you're looking for...">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <div class="elbpsearch__prod__result__area">
+                <div class="elbpsearch__result__header">
+                    <h6>2 Results Found</h6>
+                    <a href="shop.html">View All</a>
+                </div>
+                <div class="elbpsearch__search__result">
+                    <div class="search-product">
+                        <div class="search__product__img">
+                            <a href="single-product.html">
+                                <img src="image/products/product-1.png" alt="product image">
+                            </a>
+                        </div>
+                        <div class="search__content">
+                            <div class="product__rating">
+                                <span class="rating__icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                            </span>
+                                <span class="total__rating">(<span>50+</span> Reviews)</span>
+                            </div>
+                            <h5 class="product__title"><a href="single-product.html">Grayish Leather Backpack</a></h5>
+                            <div class="product__price__variant">
+                                <h4>$120.00 <span>$150.00</span></h4>
+                            </div>
+                            <div class="product__cart">
+                                <a href="cart.html" class="cart-btn"><i class="fa-solid fa-bag-shopping"></i></a>
+                                <a href="wishlist.html" class="cart-btn"><i class="fa-regular fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search-product">
+                        <div class="search__product__img">
+                            <a href="single-product.html">
+                                <img src="image/products/product-2.png" alt="product image">
+                            </a>
+                        </div>
+                        <div class="search__content">
+                            <div class="product__rating">
+                                <span class="rating__icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                                <span class="total__rating">(<span>30+</span> Reviews)</span>
+                            </div>
+                            <h5 class="product__title"><a href="single-product.html">Grayish Lea Backpack</a></h5>
+                            <div class="product__price__variant">
+                                <h4>$120.00 <span>$150.00</span></h4>
+                            </div>
+                            <div class="product__cart">
+                                <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+                                <a href="wishlist.html"><i class="fa-regular fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Cart Slider -->
+    <div class="elbp__cart__slider">
+        <button class="elbp__cart__closebtn"><i class="fa-solid fa-xmark"></i></button>
+        <div class="main__cart__area">
+            <div class="elbp__cart__header">
+                <h3>My Cart</h3>
+                <span>2</span>
+            </div>
+            <div class="horizontal__seperator"></div>
+            <div class="elbp__cart__content">
+                <div class="elbp__cart__product">
+                    <div class="elbp__cart__prod__close"><i class="fa-solid fa-x"></i></div>
+                    <div class="image">
+                        <img src="image/products/product-1.png" alt="product image">
+                    </div>
+                    <div class="content">
+                        <a href="#">Grayish Leather Backpack</a>
+                        <div class="price__qty">
+                            <h4>$120.00</h4>
+                            <div class="quantity__widget">
+                                <div class="quantity__controls">
+                                    <div class="quantity__decrease">-</div>
+                                    <div class="quantity__display">1</div>
+                                    <div class="quantity__increase">+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="elbp__cart__product">
+                    <div class="elbp__cart__prod__close"><i class="fa-solid fa-x"></i></div>
+                    <div class="image">
+                        <img src="image/products/product-2.png" alt="product image">
+                    </div>
+                    <div class="content">
+                        <a href="#">Grayish Lea Backpack</a>
+                        <div class="price__qty">
+                            <h4>$120.00</h4>
+                            <div class="quantity__widget">
+                                <div class="quantity__controls">
+                                    <div class="quantity__decrease">-</div>
+                                    <div class="quantity__display">1</div>
+                                    <div class="quantity__increase">+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="horizontal__seperator"></div>
+            <div class="elbp__cart__subtotal">
+                <p>Subtotal:</p>
+                <p>$240.00</p>
+            </div>
+            <div class="elbp__cart__cta">
+                <a class="elbp__button__a" href="cart.html">View Cart</a>
+                <a class="elbp__button__b" href="checkout.html">Checkout</a>
+            </div>
+        </div>
+    </div>
     <!-- End of Header Section -->
 
-
     <!-- JS Links -->
-    <script src="../js/jquery.min.js"></script>
-    <script src="../js/bootstrap.bundle.js"></script>
-    <script src="../js/fontawesome.min.js"></script>
-    <script src="../js/swiper-bundle.min.js"></script>
-    <script src="../js/photoswipe/photoswipe.min.js"></script>
-    <script src="../js/photoswipe/photoswipe-ui-default.min.js"></script>
-    <script src="../js/jquery.nice-select.min.js"></script>
-    <script src="../js/popper.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/photoswipe/photoswipe.min.js"></script>
+    <script src="js/photoswipe/photoswipe-ui-default.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/popper.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
