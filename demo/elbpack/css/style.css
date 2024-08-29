@@ -37,6 +37,13 @@
 @font-face {
     font-display: swap;
     font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 500;
+    src: url('../fonts/poppins/poppins-v21-latin-500italic.woff2') format('woff2');
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
     src: url('../fonts/poppins/poppins-v21-latin-600.woff2') format('woff2');
@@ -222,10 +229,11 @@ button:focus {
 /* Buttons */
 .elbp__button__a {
     display: block;
-    padding: 15px 40px;
-    font-size: 16px;
-    line-height: 16px;
-    font-weight: 600;
+    padding: 15px 32px;
+    border-radius: 8px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
     text-align: center;
     font-family: 'Poppins', sans-serif;
     text-transform: capitalize;
@@ -240,10 +248,11 @@ button:focus {
 
 .elbp__button__b {
     display: block;
-    padding: 14px 39px;
-    font-size: 16px;
-    line-height: 16px;
-    font-weight: 600;
+    padding: 14px 31px;
+    border-radius: 8px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
     text-align: center;
     font-family: 'Poppins', sans-serif;
     text-transform: capitalize;
@@ -556,8 +565,8 @@ input[type="radio"]:checked::before {
 .elbp__header__section .header__top .headertop__ctas .nice-select .list {
     background: rgba(232, 225, 217, 0.20);
     border-radius: 10px;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
     box-shadow: 0 0 0 1px rgba(255, 255, 255, 1);
 }
 
@@ -654,8 +663,8 @@ input[type="radio"]:checked::before {
     left: 0;
     background: rgba(232, 225, 217, 0.20);
     border-radius: 10px;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
     box-shadow: 0 0 0 1px rgba(255, 255, 255, 1);
     visibility: hidden;
     opacity: 0;
@@ -683,6 +692,14 @@ input[type="radio"]:checked::before {
     text-align: center;
 }
 
+.elbp__homepage .elbp__header__section {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+}
+
 /** Mobile Menu **/
 .elbp__mmenu__btn {
     display: none;
@@ -695,8 +712,8 @@ input[type="radio"]:checked::before {
     height: 100vh;
     width: 0;
     background: rgba(232, 225, 217, 0.20);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
     box-shadow: 0 0 0 1px rgba(255, 255, 255, 1);
     z-index: 999999;
     overflow: hidden;
@@ -855,8 +872,8 @@ input[type="radio"]:checked::before {
     left: 0;
     top: 0;
     background: rgba(232, 225, 217, 0.20);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
     overflow: hidden;
     visibility: hidden;
     display: flex;
@@ -1096,8 +1113,8 @@ input[type="radio"]:checked::before {
     height: 100vh;
     width: 0;
     background: rgba(232, 225, 217, 0.20);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
     z-index: 999999;
     overflow: hidden;
     transition: 1s;
@@ -1324,8 +1341,131 @@ input[type="radio"]:checked::before {
     font-size: 12px;
     line-height: 20px;
 }
-
 /*** End of Header Section ***/
+
+/*** Start of Hero Section ***/
+.elbp__hero__section {
+    width: 100%;
+    height: 786px;
+    position: relative;
+}
+
+.elbp__hero__section .elbphs__bg__colors {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.elbp__hero__section .elbphs__bg__colors .left {
+    position: relative;
+}
+
+.elbp__hero__section .elbphs__bg__colors .left .img1,
+.elbp__hero__section .elbphs__bg__colors .left .img2 {
+    position: absolute;
+}
+
+.elbp__hero__section .elbphs__bg__colors .left .img1 {
+    top: 189px;
+    right: 427px;
+}
+
+.elbp__hero__section .elbphs__bg__colors .left .img2 {
+    bottom: 121px;
+    right: 220px;
+}
+
+.elbp__hero__section .elbphs__bg__colors div {
+    width: 50%;
+    height: 100%;
+}
+
+.elbp__hero__section .elbphs__bg__colors div.right {
+    background: var(--background-color);
+}
+
+@media (max-width: 1440px) {
+    .elbp__hero__section .elbphs__bg__colors div.right {
+        width: 711px;
+    }
+}
+
+.elbp__hero__section .container {
+    height: 100%;
+}
+
+.elbp__hero__section .elbphs__bg__colors div.right,
+.elbp__hero__wrapper {
+    padding-top: 122px;
+    height: 100%;
+}
+
+.elbp__hero__wrapper .col-md-6 {
+    padding: 0;
+}
+
+.elbp__hero__wrapper .content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.elbp__hero__wrapper .content h4 {
+    color: var(--main-color);
+    font-size: 14px;
+    line-height: 100%;
+    font-weight: 500;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0;
+}
+
+.elbp__hero__wrapper .content h2 {
+    margin-bottom: 20px;
+}
+
+.elbp__hero__wrapper .content h2,
+.elbp__hero__wrapper .content h2 span {
+    font-size: 72px;
+    line-height: 72px;
+    font-weight: 400;
+    font-family: 'StretchPro', sans-serif;
+}
+
+.elbp__hero__wrapper .content h2 span {
+    color: var(--main-color);
+}
+
+.elbp__hero__wrapper .content p {
+    color: #73777D;
+    width: 80%;
+    margin-bottom: 32px;
+}
+
+.elbp__hero__wrapper .content .elbp__button__a {
+    position: relative;
+}
+
+.elbp__hero__wrapper .content .elbp__button__a::after {
+	position: absolute;
+	content: '';
+	background: url('../image/hero/arrow-left.png') no-repeat;
+    background-size: cover;
+	bottom: 0;
+	left: calc(100% + 32px);
+    width: 72px;
+    height: 72px;
+    transform: rotate(-147deg);
+}
+/*** End of Hero Section ***/
+
+
+
 
 /**
 font-family: 'Poppins', sans-serif;
