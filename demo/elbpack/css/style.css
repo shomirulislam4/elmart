@@ -1348,6 +1348,7 @@ input[type="radio"]:checked::before {
     width: 100%;
     height: 786px;
     position: relative;
+    overflow: hidden;
 }
 
 .elbp__hero__section .elbphs__bg__colors {
@@ -1360,38 +1361,53 @@ input[type="radio"]:checked::before {
     z-index: -1;
 }
 
-.elbp__hero__section .elbphs__bg__colors .left {
-    position: relative;
-}
-
-.elbp__hero__section .elbphs__bg__colors .left .img1,
-.elbp__hero__section .elbphs__bg__colors .left .img2 {
-    position: absolute;
-}
-
-.elbp__hero__section .elbphs__bg__colors .left .img1 {
-    top: 189px;
-    right: 427px;
-}
-
-.elbp__hero__section .elbphs__bg__colors .left .img2 {
-    bottom: 121px;
-    right: 220px;
-}
-
 .elbp__hero__section .elbphs__bg__colors div {
     width: 50%;
     height: 100%;
 }
 
-.elbp__hero__section .elbphs__bg__colors div.right {
-    background: var(--background-color);
+.elbp__hero__section .elbphs__bg__colors div.left {
+    position: relative;
 }
 
-@media (max-width: 1440px) {
-    .elbp__hero__section .elbphs__bg__colors div.right {
-        width: 711px;
+.elbp__hero__section .elbphs__bg__colors div.left .img1,
+.elbp__hero__section .elbphs__bg__colors div.left .img2 {
+    position: absolute;
+}
+
+.elbp__hero__section .elbphs__bg__colors div.left .img1 {
+    top: 189px;
+    right: 427px;
+}
+
+.elbp__hero__section .elbphs__bg__colors div.left .img2 {
+    bottom: 121px;
+    right: 220px;
+}
+
+.elbp__hero__section .elbphs__bg__colors div.right {
+    background: var(--background-color);
+    position: relative;
+    z-index: 0;
+}
+
+.elbp__hero__section .elbphs__bg__colors div.right .img2 {
+    width: 100%;
+}
+
+@media (min-width: 1400px) {
+    .elbp__hero__section .elbphs__bg__colors div.right .img2 {
+        width: auto;
+        height: 100%;
     }
+}
+
+.elbp__hero__section .elbphs__bg__colors div.right .img1 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 711px;
+    z-index: -1;
 }
 
 .elbp__hero__section .container {
@@ -1461,6 +1477,96 @@ input[type="radio"]:checked::before {
     width: 72px;
     height: 72px;
     transform: rotate(-147deg);
+}
+
+.elbp__hero__wrapper .content__right {
+    position: relative;
+}
+
+.elbp__hero__wrapper .content__right h5 {
+    margin-bottom: 0;
+    color: #9A7353;
+}
+
+.elbp__hero__wrapper .content__right h5.strong {
+    font-weight: 600;
+    color: #875233;
+}
+
+.elbp__hero__wrapper .content__right p {
+    margin-bottom: 0;
+}
+
+.elbp__hero__wrapper .content__right .text__wrap__1 {
+    position: absolute;
+    width: 140px;
+    height: 93px;
+    background: rgba(234, 220, 209, 0.50);
+    border-radius: 10px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 1);
+    top: 112px;
+    left: 410px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 18px;
+    padding-right: 15px;
+}
+
+.elbp__hero__wrapper .content__right .text__wrap__1 .strong {
+    font-size: 20px;
+}
+
+.elbp__hero__wrapper .content__right .text__wrap__2 {
+    position: absolute;
+    width: 218px;
+    height: 98px;
+    background: rgba(234, 220, 209, 0.50);
+    border-radius: 10px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 1);
+    bottom: 99px;
+    left: 313px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 4px;
+}
+
+.elbp__hero__wrapper .content__right .text__wrap__2::before {
+    position: absolute;
+	content: '';
+	background: url('../image/hero/arrow.png') no-repeat;
+    background-size: contain;
+	bottom: 0;
+	right: calc(100% + 7px);
+    width: 125px;
+    height: 120px;
+    transform: rotate(-49deg);
+}
+
+.elbp__hero__wrapper .content__right .text__wrap__2 .strong {
+    margin-bottom: 8px;
+}
+
+.elbp__hero__wrapper .content__right .text__wrap__2 p {
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.elbp__hero__wrapper .content__right .text__wrap__3 {
+    position: absolute;
+    bottom: 84px;
+    left: 131px;
+}
+
+.elbp__hero__wrapper .content__right .text__wrap__3 .strong {
+    font-weight: 600;
+    font-size: 22px;
 }
 /*** End of Hero Section ***/
 

@@ -251,6 +251,108 @@
         .elbp__cart__product .price__qty {
             justify-content: center;
         }
+        /*Hero Section*/
+        .elbp__hero__section {
+            height: 620px;
+        }
+        .elbp__hero__section .elbphs__bg__colors {
+            flex-direction: column;
+        }
+        .elbp__hero__section .elbphs__bg__colors div {
+            width: 100%;
+        }
+        .elbp__hero__section .elbphs__bg__colors div.left {
+            position: relative;
+            height: 60% !important;
+        }
+        .elbp__hero__section .elbphs__bg__colors div.left .img1 {
+            top: 126px;
+            right: 76px;
+            width: 27px;
+        }
+        .elbp__hero__section .elbphs__bg__colors div.left .img2 {
+            bottom: 22px;
+            right: 7px;
+            width: 27px;
+        }
+        .elbp__hero__section .elbphs__bg__colors div.right .img1 {
+            bottom: unset;
+            top: 0;
+        }
+        .elbp__hero__wrapper {
+            padding-top: 114px;
+        }
+        .elbp__hero__wrapper .content {
+            height: 54%;
+        }
+        .elbp__hero__wrapper .content h2,
+        .elbp__hero__wrapper .content h2 span {
+            font-size: 25px;
+            line-height: 27px;
+        }
+        .elbp__hero__wrapper .content h2 {
+            margin-bottom: 10px;
+        }
+        .elbp__hero__wrapper .content p {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .elbp__hero__wrapper .content .elbp__button__a::after {
+            left: calc(100% + 11px);
+            width: 47px;
+            height: 49px;
+        }
+        .elbp__hero__section .elbphs__bg__colors div.right {
+            padding-top: 0;
+            height: 40% !important;
+        }
+        .elbp__hero__wrapper .content__right {
+            padding-top: 0;
+            height: 46%;
+        }
+        .elbp__hero__wrapper .content__right .text__wrap__1 {
+            top: 26px;
+            left: 113px;
+            padding-left: 10px;
+            padding-right: 8px;
+            width: 74px;
+            height: 62px;
+        }
+        .elbp__hero__wrapper .content__right .text__wrap__1 .strong {
+            font-size: 14px;
+        }
+        .elbp__hero__wrapper .content__right .text__wrap__1 h5,
+        .elbp__hero__wrapper .content__right .text__wrap__3 h5 {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .elbp__hero__wrapper .content__right .text__wrap__2 {
+            left: 44px;
+            width: 147px;
+            height: 64px;
+            padding-left: 10px;
+            bottom: 51px;
+        }
+        .elbp__hero__wrapper .content__right .text__wrap__2 .strong {
+            margin-bottom: 0;
+            font-size: 14px;
+        }
+        .elbp__hero__wrapper .content__right .text__wrap__2::before {
+            right: calc(100% + 0px);
+            width: 80px;
+            height: 67px;
+        }
+        .elbp__hero__wrapper .content__right .text__wrap__2 p {
+            font-size: 10px;
+            line-height: 140%;
+        }
+        .elbp__hero__wrapper .content__right .text__wrap__3 {
+            bottom: 0;
+            left: 34px;
+        }
+        .elbp__hero__wrapper .content__right .text__wrap__3 .strong {
+            font-size: 16px;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
@@ -444,6 +546,103 @@
             flex-direction: column;
             gap: 10px;
         }
+        /*Hero Section*/
+        .elbp__hero__section {
+            height: 700px;
+        }
+        .elbp__hero__section .elbphs__bg__colors {
+            flex-direction: column;
+        }
+        .elbp__hero__section .elbphs__bg__colors div {
+            width: 100%;
+        }
+        .elbp__hero__section .elbphs__bg__colors div.left {
+            position: relative;
+            height: 60% !important;
+        }
+        .elbp__hero__section .elbphs__bg__colors div.left .img1 {
+            top: 115px;
+            right: 153px;
+            width: 27px;
+        }
+        .elbp__hero__section .elbphs__bg__colors div.left .img2 {
+            bottom: 65px;
+            right: 32px;
+            width: 27px;
+        }
+        .elbp__hero__section .elbphs__bg__colors div.right .img1 {
+            bottom: unset;
+            top: 0;
+        }
+        .elbp__hero__wrapper .content {
+            height: 54%;
+        }
+        .elbp__hero__wrapper .content h2,
+        .elbp__hero__wrapper .content h2 span {
+            font-size: 37px;
+            line-height: 39px;
+        }
+        .elbp__hero__wrapper .content .elbp__button__a::after {
+            left: calc(100% + 22px);
+        }
+        .elbp__hero__section .elbphs__bg__colors div.right {
+            padding-top: 0;
+            height: 40% !important;
+        }
+        .elbp__hero__wrapper .content__right {
+            padding-top: 0;
+            height: 46%;
+        }
+        .elbp__hero__wrapper {
+            padding-top: 98px;
+        }
+        .elbp__hero__wrapper .content p {
+            width: 65%;
+            margin-bottom: 20px;
+        }
+        .elbp__hero__wrapper .content__right .text__wrap__1 {
+            top: 50px;
+            left: 175px;
+            padding-left: 10px;
+            padding-right: 8px;
+            width: 90px;
+            height: 65px;
+        }
+        .elbp__hero__wrapper .content__right .text__wrap__1 .strong {
+            font-size: 14px;
+        }
+        .elbp__hero__wrapper .content__right .text__wrap__1 h5,
+        .elbp__hero__wrapper .content__right .text__wrap__3 h5 {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .elbp__hero__wrapper .content__right .text__wrap__2 {
+            left: 130px;
+            width: 152px;
+            height: 64px;
+            padding-left: 10px;
+            bottom: 32px;
+        }
+        .elbp__hero__wrapper .content__right .text__wrap__2 .strong {
+            margin-bottom: 0;
+            font-size: 14px;
+        }
+        .elbp__hero__wrapper .content__right .text__wrap__2::before {
+            right: calc(100% + 0px);
+            width: 80px;
+            height: 67px;
+        }
+        .elbp__hero__wrapper .content__right .text__wrap__2 p {
+            font-size: 10px;
+            line-height: 140%;
+        }
+        .elbp__hero__wrapper .content__right .text__wrap__3 {
+            bottom: 0;
+            left: 34px;
+        }
+        .elbp__hero__wrapper .content__right .text__wrap__3 .strong {
+            font-size: 16px;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -577,6 +776,94 @@
             font-size: 16px;
             line-height: 22px;
         }
+        /*Hero Section*/
+        .elbp__hero__section {
+            height: 1000px;
+        }
+        .elbp__hero__section .elbphs__bg__colors {
+            flex-direction: column;
+        }
+        .elbp__hero__section .elbphs__bg__colors div {
+            width: 100%;
+            height: 50% !important;
+        }
+        .elbp__hero__section .elbphs__bg__colors div.left .img1 {
+            top: 167px;
+            right: 227px;
+            width: 38px;
+        }
+        .elbp__hero__section .elbphs__bg__colors div.left .img2 {
+            bottom: 65px;
+            right: 65px;
+            width: 38px;
+        }
+        .elbp__hero__section .elbphs__bg__colors div.right .img1 {
+            bottom: unset;
+            top: 0;
+        }
+        .elbp__hero__wrapper .content {
+            height: 44%;
+        }
+        .elbp__hero__wrapper .content h2,
+        .elbp__hero__wrapper .content h2 span {
+            font-size: 52px;
+            line-height: 54px;
+        }
+        .elbp__hero__wrapper .content .elbp__button__a::after {
+            left: calc(100% + 22px);
+        }
+        .elbp__hero__section .elbphs__bg__colors div.right,
+        .elbp__hero__wrapper .content__right {
+            padding-top: 0;
+            height: 56%;
+        }
+        .elbp__hero__wrapper {
+            padding-top: 115px;
+        }
+        .elbp__hero__wrapper .content p {
+            width: 65%;
+            margin-bottom: 20px;
+        }
+        .elbp__hero__wrapper .content__right .text__wrap__1 {
+            top: 70px;
+            left: 255px;
+            padding-left: 10px;
+            padding-right: 8px;
+            width: 105px;
+            height: 66px;
+        }
+        .elbp__hero__wrapper .content__right .text__wrap__1 .strong {
+            font-size: 16px;
+        }
+        .elbp__hero__wrapper .content__right .text__wrap__1 h5,
+        .elbp__hero__wrapper .content__right .text__wrap__3 h5 {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .elbp__hero__wrapper .content__right .text__wrap__2 {
+            left: 185px;
+            width: 170px;
+            height: 70px;
+            padding-left: 12px;
+        }
+        .elbp__hero__wrapper .content__right .text__wrap__2 .strong {
+            margin-bottom: 0;
+            font-size: 16px;
+        }
+        .elbp__hero__wrapper .content__right .text__wrap__2::before {
+            right: calc(100% + 0px);
+        }
+        .elbp__hero__wrapper .content__right .text__wrap__2 p {
+            font-size: 10px;
+            line-height: 140%;
+        }
+        .elbp__hero__wrapper .content__right .text__wrap__3 {
+            bottom: 94px;
+            left: 63px;
+        }
+        .elbp__hero__wrapper .content__right .text__wrap__3 .strong {
+            font-size: 18px;
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -689,6 +976,61 @@
         .elbp__cart__product {
             gap: 10px;
         }
+        /*Hero Section*/
+        .elbp__hero__section {
+            height: 1144px;
+        }
+        .elbp__hero__section .elbphs__bg__colors {
+            flex-direction: column;
+        }
+        .elbp__hero__section .elbphs__bg__colors div {
+            width: 100%;
+            height: 50% !important;
+        }
+        .elbp__hero__section .elbphs__bg__colors div.left .img1 {
+            top: 167px;
+            right: 227px;
+            width: 38px;
+        }
+        .elbp__hero__section .elbphs__bg__colors div.left .img2 {
+            bottom: 65px;
+            right: 65px;
+            width: 38px;
+        }
+        .elbp__hero__wrapper .content {
+            height: 44%;
+        }
+        .elbp__hero__wrapper .content h2,
+        .elbp__hero__wrapper .content h2 span {
+            font-size: 68px;
+            line-height: 70px;
+        }
+        .elbp__hero__wrapper .content .elbp__button__a::after {
+            left: calc(100% + 22px);
+        }
+        .elbp__hero__section .elbphs__bg__colors div.right,
+        .elbp__hero__wrapper .content__right {
+            padding-top: 0;
+            height: 56%;
+        }
+        .elbp__hero__wrapper {
+            padding-top: 126px;
+        }
+        .elbp__hero__wrapper .content p {
+            width: 65%;
+        }
+        .elbp__hero__wrapper .content__right .text__wrap__1 {
+            top: 103px;
+            left: 349px;
+        }
+        .elbp__hero__wrapper .content__right .text__wrap__2 {
+            bottom: 67px;
+            left: 262px;
+        }
+        .elbp__hero__wrapper .content__right .text__wrap__3 {
+            bottom: 52px;
+            left: 76px;
+        }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -769,6 +1111,79 @@
         .elbp__cart__slider .elbp__cart__closebtn {
             right: 360px;
         }
+        /*Hero Section*/
+        .elbp__hero__section {
+            height: 572px;
+        }
+        .elbp__hero__section .elbphs__bg__colors div.left .img1 {
+            top: 167px;
+            right: 227px;
+            width: 38px;
+        }
+        .elbp__hero__section .elbphs__bg__colors div.left .img2 {
+            bottom: 65px;
+            right: 65px;
+            width: 38px;
+        }
+        .elbp__hero__wrapper .content h2,
+        .elbp__hero__wrapper .content h2 span {
+            font-size: 45px;
+            line-height: 47px;
+        }
+        .elbp__hero__wrapper .content h4 {
+            font-size: 12px;
+        }
+        .elbp__hero__wrapper .content .elbp__button__a::after {
+            left: calc(100% + 22px);
+        }
+        .elbp__hero__section .elbphs__bg__colors div.right,
+        .elbp__hero__wrapper {
+            padding-top: 108px;
+        }
+        .elbp__hero__wrapper .content p {
+            width: 75%;
+            margin-bottom: 26px;
+        }
+        .elbp__hero__wrapper .content__right .text__wrap__1 {
+            top: 70px;
+            left: 255px;
+            padding-left: 10px;
+            padding-right: 8px;
+            width: 105px;
+            height: 66px;
+        }
+        .elbp__hero__wrapper .content__right .text__wrap__1 .strong {
+            font-size: 16px;
+        }
+        .elbp__hero__wrapper .content__right .text__wrap__1 h5,
+        .elbp__hero__wrapper .content__right .text__wrap__3 h5 {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .elbp__hero__wrapper .content__right .text__wrap__2 {
+            left: 185px;
+            width: 170px;
+            height: 70px;
+            padding-left: 12px;
+        }
+        .elbp__hero__wrapper .content__right .text__wrap__2 .strong {
+            margin-bottom: 0;
+            font-size: 16px;
+        }
+        .elbp__hero__wrapper .content__right .text__wrap__2::before {
+            right: calc(100% + 0px);
+        }
+        .elbp__hero__wrapper .content__right .text__wrap__2 p {
+            font-size: 10px;
+            line-height: 140%;
+        }
+        .elbp__hero__wrapper .content__right .text__wrap__3 {
+            bottom: 94px;
+            left: 63px;
+        }
+        .elbp__hero__wrapper .content__right .text__wrap__3 .strong {
+            font-size: 18px;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1139px) {
@@ -833,6 +1248,48 @@
         /*Search Popup*/
         .elbpsearch__wrapper {
             width: 70vw;
+        }
+        /*Hero Section*/
+        .elbp__hero__section {
+            height: 667px;
+        }
+        .elbp__hero__section .elbphs__bg__colors div.left .img1 {
+            top: 167px;
+            right: 330px;
+        }
+        .elbp__hero__section .elbphs__bg__colors div.left .img2 {
+            bottom: 85px;
+            right: 135px;
+        }
+        .elbp__hero__wrapper .content h2,
+        .elbp__hero__wrapper .content h2 span {
+            font-size: 60px;
+            line-height: 62px;
+        }
+        .elbp__hero__wrapper .content .elbp__button__a::after {
+            left: calc(100% + 22px);
+        }
+        .elbp__hero__section .elbphs__bg__colors div.right,
+        .elbp__hero__wrapper {
+            padding-top: 108px;
+        }
+        .elbp__hero__wrapper .content p {
+            width: 75%;
+            margin-bottom: 26px;
+        }
+        .elbp__hero__wrapper .content__right .text__wrap__1 {
+            top: 85px;
+            left: 322px;
+        }
+        .elbp__hero__wrapper .content__right .text__wrap__2 {
+            left: 240px;
+        }
+        .elbp__hero__wrapper .content__right .text__wrap__2::before {
+            right: calc(100% + 0px);
+        }
+        .elbp__hero__wrapper .content__right .text__wrap__3 {
+            bottom: 86px;
+            left: 88px;
         }
 }
 
