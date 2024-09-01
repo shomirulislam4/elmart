@@ -1,12 +1,13 @@
 @media (max-width: 289px) {
-    .elbp__sale__countdown__section {
+    .elbp__trending__products__section {
         margin-top: 20px;
     }
     h1 {
         font-size: 40px;
         line-height: 50px;
     }
-    h2 {
+    h2,
+    h2 span {
         font-size: 26px;
         line-height: 34px;
     }
@@ -353,17 +354,58 @@
         .elbp__hero__wrapper .content__right .text__wrap__3 .strong {
             font-size: 16px;
         }
+        /*Trending Products Section*/
+        .elbp__trendprod__wrapper {
+            padding: 0 10px;
+        }
+        .elbp__product__style {
+            width: 180px !important;
+        }
+        .elbp__product__style .image {
+            height: 174px;
+        }
+        .elbp__product__style .image .main__image {
+            height: 80%;
+        }
+        .elbp__slider__nav .elbp__slider {
+            height: 35px;
+            width: 35px;
+            line-height: 32px;
+        }
+        .elbp__slider__nav .elbp__slider svg {
+            height: 20px;
+            width: 20px;
+        }
+        .elbp__trenprod__wrapper .elbp__slider__nav {
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -22px;
+        }
+        .elbp__slider__nav {
+            gap: 12px;
+        }
+        .elbp__section__title {
+            margin-bottom: 25px;
+        }
+        .elbp__trending__products__section .bg__star__img {
+            bottom: 0;
+            left: 150px;
+        }
+        .elbp__trending__products__section {
+            height: 440px;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
-    .elbp__sale__countdown__section {
+    .elbp__trending__products__section {
         margin-top: 30px;
     }
     h1 {
         font-size: 44px;
         line-height: 54px;
     }
-    h2 {
+    h2,
+    h2 span {
         font-size: 30px;
         line-height: 38px;
     }
@@ -643,17 +685,55 @@
         .elbp__hero__wrapper .content__right .text__wrap__3 .strong {
             font-size: 16px;
         }
+        /*Trending Products Section*/
+        .elbp__trendprod__wrapper {
+            padding: 0 10px;
+        }
+        .elbp__product__style {
+            width: 270px !important;
+        }
+        .elbp__product__style .image {
+            height: 261px;
+        }
+        .elbp__product__style .image .main__image {
+            height: 80%;
+        }
+        .elbp__slider__nav .elbp__slider {
+            height: 40px;
+            width: 40px;
+            line-height: 38px;
+        }
+        .elbp__slider__nav .elbp__slider svg {
+            height: 20px;
+            width: 20px;
+        }
+        .elbp__trenprod__wrapper .elbp__slider__nav {
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -30px;
+        }
+        .elbp__slider__nav {
+            gap: 12px;
+        }
+        .elbp__section__title {
+            margin-bottom: 25px;
+        }
+        .elbp__trending__products__section .bg__star__img {
+            bottom: 0;
+            left: 229px;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
-    .elbp__sale__countdown__section {
+    .elbp__trending__products__section {
         margin-top: 40px;
     }
     h1 {
         font-size: 50px;
         line-height: 60px;
     }
-    h2 {
+    h2,
+    h2 span {
         font-size: 40px;
         line-height: 46px;
     }
@@ -864,18 +944,56 @@
         .elbp__hero__wrapper .content__right .text__wrap__3 .strong {
             font-size: 18px;
         }
+        /*Trending Products Section*/
+        .elbp__trendprod__wrapper {
+            padding: 0 10px;
+        }
+        .elbp__product__style {
+            width: 395px !important;
+        }
+        .elbp__product__style .image {
+            height: 382px;
+        }
+        .elbp__product__style .image .main__image {
+            height: 80%;
+        }
+        .elbp__slider__nav .elbp__slider {
+            height: 40px;
+            width: 40px;
+            line-height: 38px;
+        }
+        .elbp__slider__nav .elbp__slider svg {
+            height: 20px;
+            width: 20px;
+        }
+        .elbp__trenprod__wrapper .elbp__slider__nav {
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -22px;
+        }
+        .elbp__slider__nav {
+            gap: 12px;
+        }
+        .elbp__section__title {
+            margin-bottom: 25px;
+        }
+        .elbp__trending__products__section .bg__star__img {
+            bottom: 0;
+            left: 340px;
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-    .elbp__sale__countdown__section {
+    .elbp__trending__products__section {
         margin-top: 50px;
     }
     h1 {
         font-size: 60px;
         line-height: 70px;
     }
-    h2 {
-        font-size: 44px;
+    h2,
+    h2 span {
+        font-size: 40px;
         line-height: 50px;
     }
     h3 {
@@ -1031,19 +1149,49 @@
             bottom: 52px;
             left: 76px;
         }
+        /*Trending Products Section*/
+        .elbp__product__style {
+            width: 265px !important;
+        }
+        .elbp__product__style .image {
+            height: 256px;
+        }
+        .elbp__slider__nav .elbp__slider {
+            height: 42px;
+            width: 42px;
+            line-height: 40px;
+        }
+        .elbp__trenprod__wrapper .elbp__slider__nav {
+            bottom: calc(100% + 30px);
+        }
+        .elbp__slider__nav {
+            gap: 12px;
+        }
+        .elbp__trendprod__wrapper .elbp__section__title {
+            width: 82%;
+            text-align: left;
+        }
+        .elbp__section__title {
+            margin-bottom: 30px;
+        }
+        .elbp__trending__products__section .bg__star__img {
+            bottom: 0;
+            left: 266px;
+        }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .elbp__sale__countdown__section {
+    .elbp__trending__products__section {
         margin-top: 60px;
     }
     h1 {
         font-size: 52px;
         line-height: 62px;
     }
-    h2 {
-        font-size: 30px;
-        line-height: 38px;
+    h2,
+    h2 span {
+        font-size: 38px;
+        line-height: 48px;
     }
     h3 {
         font-size: 27px;
@@ -1184,19 +1332,45 @@
         .elbp__hero__wrapper .content__right .text__wrap__3 .strong {
             font-size: 18px;
         }
+        /*Trending Products Section*/
+        .elbp__product__style {
+            width: 233px !important;
+        }
+        .elbp__product__style .image {
+            height: 225px;
+        }
+        .elbp__slider__nav .elbp__slider {
+            height: 48px;
+            width: 48px;
+            line-height: 46px;
+        }
+        .elbp__section__title {
+            margin-bottom: 35px;
+        }
+        .elbp__trenprod__wrapper .elbp__slider__nav {
+            bottom: calc(100% + 35px);
+        }
+        .elbp__trendprod__wrapper .elbp__section__title {
+            width: 82%;
+            text-align: left;
+        }
+        .elbp__trending__products__section .bg__star__img {
+            bottom: 0;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1139px) {
-    .elbp__sale__countdown__section {
+    .elbp__trending__products__section {
         margin-top: 70px;
     }
     h1 {
         font-size: 56px;
         line-height: 66px;
     }
-    h2 {
+    h2,
+    h2 span {
         font-size: 44px;
-        line-height: 55px;
+        line-height: 54px;
     }
     h3 {
         font-size: 32px;
@@ -1291,11 +1465,17 @@
             bottom: 86px;
             left: 88px;
         }
+        /*Trending Products Section*/
+        .elbp__product__style {
+            width: 304px !important;
+        }
+        .elbp__product__style .image {
+            height: 294px;
+        }
 }
 
 @media (min-width: 1200px) and (max-width: 1499px) {
     /*===== Home Page =====*/
-        /*Header*/
         /*Search Popup*/
         .elbpsearch__wrapper {
             width: 60vw;

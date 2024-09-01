@@ -83,6 +83,38 @@
         });
     });
 
+    //Trending Product Slider
+    $(function(){
+        var swiper = new Swiper(".elbp__trendprod__slider", {
+            loop: true,
+            slidesPerView: 4,
+            spaceBetween: 24,
+            navigation: {
+                prevEl: "#elbp__trendprodslide__prev",
+                nextEl: "#elbp__trendprodslide__next",
+            },
+            breakpoints: {
+                200: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                },
+                576: {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                },
+                992: {
+                    slidesPerView: 3,
+                },
+                1140: {
+                    slidesPerView: 4,
+                }
+            },
+        });
+    });
 
 
 }) (jQuery);
