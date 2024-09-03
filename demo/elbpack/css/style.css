@@ -137,7 +137,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+h2 span {
     color: var(--text-color);
     font-weight: 500;
     font-family: 'ClashDisplay', sans-serif;
@@ -159,13 +160,13 @@ h2 span {
 }
 
 h3 {
-    font-size: 38px;
-    line-height: 46px;
+    font-size: 44px;
+    line-height: 52px;
 }
 
 h4 {
-    font-size: 28px;
-    line-height: 36px;
+    font-size: 32px;
+    line-height: 38px;
 }
 
 h5 {
@@ -258,7 +259,7 @@ button:focus {
 
 .elbp__button__b {
     display: block;
-    padding: 14px 31px;
+    padding: 15px 32px;
     border-radius: 8px;
     font-size: 18px;
     line-height: 18px;
@@ -266,15 +267,16 @@ button:focus {
     text-align: center;
     font-family: 'Poppins', sans-serif;
     text-transform: capitalize;
-    color: var(--bg-black);
-    background: var(--background-color);
-    border: 1px solid var(--text-color);
+    color: #F8F8F8 !important;
+    background: var(--main-color);
+    border: 1px solid var(--main-color);
     width: fit-content;
 }
 
 .elbp__button__b:hover {
-    color: var(--main-color);
-    border-color: var(--main-color);
+    color: var(--bg-black) !important;
+    border-color: var(--bg-black);
+    background: var(--background-color);
 }
 
 /* Scrollbar */
@@ -510,7 +512,6 @@ input[type="radio"]:checked::before {
     text-align: center;
     margin-bottom: 50px;
 }
-
 
 /* ====================================================================
    2. Home Page
@@ -853,6 +854,7 @@ input[type="radio"]:checked::before {
 
 @media (max-width: 991px) {
     .elbp__header__section .header__bottom .elbp__main__nav,
+    .elbp__header__section .header__top .vertical__seperator.last,
     .elbp__header__section .header__top .headertop__ctas .elbpht__social__links {
         display: none;
     }
@@ -1424,8 +1426,13 @@ input[type="radio"]:checked::before {
     z-index: -1;
 }
 
+.elbp__hero__slider,
 .elbp__hero__section .container {
     height: 100%;
+}
+
+.elbp__hero__slider .swiper-slide {
+    padding-left: 12px;
 }
 
 .elbp__hero__section .elbphs__bg__colors div.right,
@@ -1480,8 +1487,7 @@ input[type="radio"]:checked::before {
 .elbp__hero__wrapper .content .elbp__button__a::after {
 	position: absolute;
 	content: '';
-	background: url('../image/hero/arrow-left.png') no-repeat;
-    background-size: cover;
+	background: url('../image/hero/arrow-left.png') no-repeat cover;
 	bottom: 0;
 	left: calc(100% + 32px);
     width: 72px;
@@ -1550,8 +1556,7 @@ input[type="radio"]:checked::before {
 .elbp__hero__wrapper .content__right .text__wrap__2::before {
     position: absolute;
 	content: '';
-	background: url('../image/hero/arrow.png') no-repeat;
-    background-size: contain;
+	background: url('../image/hero/arrow.png') no-repeat contain;
 	bottom: 0;
 	right: calc(100% + 7px);
     width: 125px;
@@ -1577,6 +1582,52 @@ input[type="radio"]:checked::before {
 .elbp__hero__wrapper .content__right .text__wrap__3 .strong {
     font-weight: 600;
     font-size: 22px;
+}
+
+/* Hero Slider Nav Dots */
+.elbp__hero__section .container {
+	position: relative;
+	padding: 0;
+}
+
+.elbp__slider__dots {
+    position: absolute;
+    z-index: 999999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content !important;
+    height: fit-content !important;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.elbp__slider__dots::after {
+    content: '';
+    margin-top: 0;
+    height: 30px;
+    width: 2px;
+    background: #D1C1AF;
+}
+
+.elbp__slider__dots.elbphero__slider__dots {
+    left: -28px !important;
+    top: 262px !important;
+}
+
+.swiper-pagination-bullet {
+    pointer-events: none;
+    height: 8px;
+    width: 8px;
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+    background: #C5B6A5;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #B0A293;
 }
 
 /* Sale Text Slider */
@@ -1637,11 +1688,9 @@ input[type="radio"]:checked::before {
 
 /*** Start of Trending Products Section ***/
 .elbp__trending__products__section {
-    background: url('../image/trending-product-bg.png') no-repeat;
-    background-size: cover;
+    background: url('../image/trending-product-bg.png') no-repeat cover;
     height: 547px;
     margin-top: 100px;
-    margin-bottom: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1817,7 +1866,7 @@ input[type="radio"]:checked::before {
 .elbp__slider__nav .elbp__slider {
     height: 54px;
     width: 54px;
-    line-height: 54px;
+    line-height: 52px;
     border-radius: 50%;
 }
 
@@ -1842,8 +1891,125 @@ input[type="radio"]:checked::before {
 .elbp__slider__nav .elbp__slider.next:hover {
     background: var(--main-color);
 }
-
 /*** End of Trending Products Section ***/
+
+/*** Start of New Collection Section ***/
+.elbp__new__collection__section {
+    margin-top: 100px;
+    padding: 78px 0;
+    margin-bottom: 200px;
+    background: var(--background-color);
+    position: relative;
+    z-index: 0;
+}
+
+.elbp__new__collection__section .main__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.elbp__newcollection__wrapper {
+    position: relative;
+}
+
+.elbp__newcollection__wrapper .elbp__section__title {
+    text-align: left;
+}
+
+.elbp__newcollection__wrapper .elbp__section__title h2,
+.elbp__newcollection__wrapper .elbp__section__title h2 span {
+    font-size: 64px;
+    line-height: 70px
+}
+
+.elbp__newcollection__wrapper .elbp__slider__nav {
+	margin-left: auto;
+	margin-top: -34px;
+}
+
+.elbp__newcollection__wrapper .elbp__slider__nav .elbp__slider.prev {
+    background: #E5DCD1;
+    box-shadow: inset 0 0 1px #BFBAB4;
+}
+
+.elbp__newcollection__wrapper .elbp__slider__nav .elbp__slider.prev:hover {
+    background: var(--main-color);
+}
+
+.elbp__newcollection__wrapper .promo__card {
+    background: #E5DCD1;
+    border-radius: 12px;
+    margin-top: 23px;
+    height: fit-content;
+    padding: 10px 11px;
+    position: relative;
+}
+
+.elbp__newcollection__wrapper .promo__card .card__bg__img {
+    display: block;
+    margin-left: auto;
+}
+
+.elbp__newcollection__wrapper .promo__card .content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.elbp__newcollection__wrapper .promo__card .content h2 {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    height: 100%;
+    text-align: center;
+    margin: 0;
+    margin-left: 32px;
+    color: #D0C5B8;
+    font-size: 44px;
+    line-height: 100%;
+    font-weight: 600;
+}
+
+.elbp__newcollection__wrapper .promo__card .content .prod__img {
+    position: absolute;
+    left: 125px;
+    top: -42px;
+    height: 100%;
+}
+
+.elbp__newcollection__wrapper .right__side .promo__card .content h2 {
+    font-size: 54px;
+}
+
+.elbp__newcollection__wrapper .right__side .promo__card .content .prod__img {
+    left: 70px;
+    top: -87px;
+}
+
+.elbp__newcollection__wrapper p {
+    margin-top: 24px;
+    color: #7D838A;
+}
+
+.elbp__slider__dots.elbnewcoll__slider__dots {
+	left: 1535px !important;
+	top: 224px !important;
+}
+
+.elbp__newcollection__wrapper .right__side {
+    position: relative;
+}
+
+.elbp__newcollection__wrapper .right__side .main__bg2 {
+    position: absolute;
+    top: -39px;
+    right: -53px;
+    z-index: -1;
+}
+/*** End of New Collection Section ***/
 
 
 

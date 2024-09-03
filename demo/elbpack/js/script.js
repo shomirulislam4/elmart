@@ -83,6 +83,17 @@
         });
     });
 
+    //Hero Slider
+    $(function(){
+        var swiper = new Swiper(".elbp__hero__slider", {
+            loop: true,
+            spaceBetween: 20,
+            pagination: {
+                el: ".elbphero__slider__dots",
+            }
+        });
+    });
+
     //Trending Product Slider
     $(function(){
         var swiper = new Swiper(".elbp__trendprod__slider", {
@@ -112,6 +123,21 @@
                 1140: {
                     slidesPerView: 4,
                 }
+            },
+        });
+    });
+
+    //Hero Slider
+    $(function(){
+        var swiper = new Swiper(".elbp__newcollection__slider", {
+            loop: true,
+            spaceBetween: 20,
+            pagination: {
+                el: ".elbnewcoll__slider__dots",
+            },
+            navigation: {
+                prevEl: "#elbp__newcolslide__prev",
+                nextEl: "#elbp__newcolslide__next",
             },
         });
     });
