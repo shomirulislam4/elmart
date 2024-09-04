@@ -127,7 +127,7 @@
         });
     });
 
-    //Hero Slider
+    //New Collection Slider
     $(function(){
         var swiper = new Swiper(".elbp__newcollection__slider", {
             loop: true,
@@ -138,6 +138,18 @@
             navigation: {
                 prevEl: "#elbp__newcolslide__prev",
                 nextEl: "#elbp__newcolslide__next",
+            },
+        });
+    });
+
+    //Best Seller Slider
+    $(function(){
+        var swiper = new Swiper(".elbp__bestseller__slider", {
+            loop: true,
+            spaceBetween: 0,
+            navigation: {
+                prevEl: "#elbp__bestsellerslide__prev",
+                nextEl: "#elbp__bestsellerslide__next",
             },
         });
     });

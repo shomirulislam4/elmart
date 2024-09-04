@@ -1725,7 +1725,6 @@ input[type="radio"]:checked::before {
 .elbp__product__style {
     height: fit-content;
     width: 267px !important;
-    margin-bottom: 24px;
     flex-grow: 0;
     flex-shrink: 0;
 }
@@ -1747,6 +1746,7 @@ input[type="radio"]:checked::before {
     z-index: 0;
     margin-top: 20px;
     margin-left: -20px;
+    z-index: 2;
 }
 
 .elbp__product__style .image .cta__buttons {
@@ -1757,6 +1757,7 @@ input[type="radio"]:checked::before {
     top: 50%;
     transform: translateY(-50%);
     left: -100px;
+    z-index: 2;
     transition: 0.5s;
     -moz-transition: 0.5s;
     -webkit-transition: 0.5s;
@@ -1799,6 +1800,7 @@ input[type="radio"]:checked::before {
     left: 50%;
     transform: translateX(-50%);
     bottom: -30px;
+    z-index: 2;
     transition: 0.5s;
     -moz-transition: 0.5s;
     -webkit-transition: 0.5s;
@@ -2058,8 +2060,70 @@ input[type="radio"]:checked::before {
 }
 
 .elbp__bestseller__section .elbp__section__title h2 span:first-child {
+    position: relative;
     color: var(--background-color);
-    text-decoration: underline;
+}
+
+.elbp__bestseller__section .elbp__section__title h2 span:first-child::after {
+    content: '';
+    height: 2px;
+    width: 100%;
+    border-radius: 2px;
+    background: var(--background-color);
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+}
+
+.elbp__bestseller__slider {
+	padding: 0;
+	margin: 0;
+}
+
+.elbp__bestseller__products .left__side {
+	display: flex;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+	gap: 24px;
+	padding-left: 0;
+}
+
+.elbp__bestseller__products .right__side {
+    padding-right: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.elbp__product__style.big {
+    position: relative;
+    width: 100% !important;
+}
+
+.elbp__product__style.big .image {
+    height: 610px;
+}
+
+.elbp__product__style.big .product__bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.elbp__product__style.big .image .main__image {
+	transform: rotate(10.65deg) translate(-50%, -50%);
+	top: 56%;
+	left: 41%;
+}
+
+.elbp__bestseller__wrapper .container {
+    padding: 0;
+}
+
+.elbp__bestseller__wrapper .elbp__slider__nav {
+    margin-left: auto;
+    margin-top: -81px;
+    margin-bottom: 20px;
 }
 /*** End of Best Seller Section ***/
 
