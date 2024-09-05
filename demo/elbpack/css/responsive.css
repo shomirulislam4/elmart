@@ -453,6 +453,67 @@
             padding-left: 5px;
             padding-right: 15px;
         }
+        /*Best Seller Section*/
+        .elbp__bestseller__wrapper {
+            padding-top: 10px;
+        }
+        .elbp__bestseller__products .left__side {
+            gap: 10px;
+            justify-content: center;
+        }
+        .elbp__bestseller__products .left__side .elbp__product__style .image .cta__buttons,
+        .elbp__product__style.big .image .cta__buttons {
+            gap: 8px;
+        }
+        .elbp__bestseller__products .left__side .elbp__product__style .image .cta__buttons a,
+        .elbp__product__style.big .image .cta__buttons a {
+            width: 32px;
+            height: 30px;
+            line-height: 30px;
+        }
+        .elbp__bestseller__products .left__side .elbp__product__style:hover .image .cta__buttons,
+        .elbp__product__style.big:hover .image .cta__buttons {
+            left: 6px;
+        }
+        .elbp__bestseller__products .left__side .elbp__product__style:hover .image .elbpprod__color__option,
+        .elbp__product__style.big:hover .image .elbpprod__color__option {
+            bottom: 5px;
+            gap: 10px;
+        }
+        .elbp__bestseller__products .right__side {
+            margin-top: 10px;
+            justify-content: center;
+        }
+        .elbp__product__style.big .image {
+            height: 174px;
+        }
+        .elbp__bestseller__wrapper .bgtop__shape {
+            height: 56px;
+            width: 202px;
+        }
+        .elbp__bestseller__wrapper .bgtop__shape::after {
+            width: 210px;
+            right: -43px;
+            top: -40px;
+        }
+        .elbp__bestseller__wrapper .container {
+            padding-bottom: 55px;
+        }
+        .elbp__bestseller__wrapper .elbp__slider__nav {
+            margin: 0;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .elbp__product__style.big .image .main__image {
+            top: 48%;
+            left: 53%;
+        }
+        .elbp__product__style.big .image:hover .main__image {
+            top: 52%;
+            left: 51%;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
@@ -841,6 +902,40 @@
             padding-left: 5px;
             padding-right: 15px;
         }
+        /*Best Seller Section*/
+        .elbp__bestseller__wrapper {
+            padding-top: 15px;
+        }
+        .elbp__bestseller__products .left__side {
+            gap: 15px;
+            justify-content: center;
+        }
+        .elbp__bestseller__products .right__side {
+            margin-top: 15px;
+            justify-content: center;
+        }
+        .elbp__product__style.big .image {
+            height: 261px;
+        }
+        .elbp__bestseller__wrapper .bgtop__shape {
+            height: 73px;
+            width: 286px;
+        }
+        .elbp__bestseller__wrapper .bgtop__shape::after {
+            width: 210px;
+            right: -43px;
+            top: -40px;
+        }
+        .elbp__bestseller__wrapper .container {
+            padding-bottom: 55px;
+        }
+        .elbp__bestseller__wrapper .elbp__slider__nav {
+            margin: 0;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -1155,6 +1250,40 @@
             padding-left: 5px;
             padding-right: 20px;
         }
+        /*Best Seller Section*/
+        .elbp__bestseller__wrapper {
+            padding-top: 20px;
+        }
+        .elbp__bestseller__products .left__side {
+            gap: 20px;
+            justify-content: center;
+        }
+        .elbp__bestseller__products .right__side {
+            margin-top: 20px;
+            justify-content: center;
+        }
+        .elbp__product__style.big .image {
+            height: 395px;
+        }
+        .elbp__bestseller__wrapper .bgtop__shape {
+            height: 104px;
+            width: 408px;
+        }
+        .elbp__bestseller__wrapper .bgtop__shape::after {
+            width: 210px;
+            right: -43px;
+            top: -44px;
+        }
+        .elbp__bestseller__wrapper .container {
+            padding-bottom: 55px;
+        }
+        .elbp__bestseller__wrapper .elbp__slider__nav {
+            margin: 0;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -1390,6 +1519,39 @@
         .elbp__newcollection__wrapper .right__side .main__bg2 {
             top: -24px;
             right: -24px;
+        }
+        /*Best Seller Section*/
+        .elbp__bestseller__products .left__side {
+            gap: 10px;
+            justify-content: center;
+        }
+        .elbp__bestseller__products .right__side {
+            margin-top: 10px;
+            justify-content: center;
+        }
+        .elbp__product__style.big .image {
+            height: calc(650px - 70px);
+        }
+        .elbp__product__style.big .product__info .elbpprod__title {
+            font-size: 18px;
+            line-height: 28px;
+        }
+        .elbp__bestseller__wrapper .bgtop__shape {
+            height: 113px;
+            width: 570px;
+        }
+        .elbp__bestseller__wrapper .bgtop__shape::after {
+            top: -70px;
+        }
+        .elbp__bestseller__wrapper .container {
+            padding-bottom: 50px;
+        }
+        .elbp__bestseller__wrapper .elbp__slider__nav {
+            margin: 0;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
         }
 }
 
@@ -1627,6 +1789,56 @@
             top: -24px;
             right: -24px;
         }
+        /*Best Seller Section*/
+        .elbp__bestseller__products .left__side {
+            gap: 7px;
+        }
+        .elbp__bestseller__products .left__side .elbp__product__style {
+            width: 176px !important;
+        }
+        .elbp__bestseller__products .left__side .elbp__product__style .image {
+            height: 170px;
+        }
+        .elbp__product__style.big .image {
+            height: calc(100% - 58px);
+        }
+        .elbp__bestseller__products .left__side .elbp__product__style .product__info .elbpprod__price,
+        .elbp__product__style.big .product__info .elbpprod__price {
+            font-size: 16px;
+        }
+        .elbp__bestseller__products .left__side .elbp__product__style .image .main__image,
+        .elbp__product__style.big .image .main__image {
+            margin-top: 10px;
+            margin-left: -15px;
+            height: 80%;
+            width: 80%;
+        }
+        .elbp__bestseller__products .left__side .elbp__product__style .product__info .elbpprod__title {
+            font-size: 12px;
+        }
+        .elbp__bestseller__products .left__side .elbp__product__style .image .cta__buttons {
+            gap: 8px;
+        }
+        .elbp__bestseller__products .left__side .elbp__product__style .image .cta__buttons a {
+            width: 32px;
+            height: 30px;
+            line-height: 30px;
+        }
+        .elbp__product__style.big .image .main__image {
+            top: 57%;
+            left: 48%;
+        }
+        .elbp__product__style.big .image:hover .main__image {
+            left: 57%;
+            top: 52%;
+        }
+        .elbp__bestseller__wrapper .bgtop__shape {
+            height: 150px;
+            width: 760px;
+        }
+        .elbp__bestseller__wrapper .bgtop__shape::after {
+            top: -72px;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1139px) {
@@ -1784,6 +1996,23 @@
         .elbp__newcollection__wrapper .promo__card .content .prod__img {
             left: 171px;
             top: -32px;
+        }
+        /*Best Seller Section*/
+        .elbp__bestseller__products .left__side {
+            gap: 14px;
+        }
+        .elbp__bestseller__products .left__side .elbp__product__style {
+            width: 233px !important;
+        }
+        .elbp__bestseller__products .left__side .elbp__product__style .image {
+            height: 225px;
+        }
+        .elbp__product__style.big .image {
+            height: calc(100% - 64px);
+        }
+        .elbp__bestseller__wrapper .bgtop__shape {
+            height: 200px;
+            width: 989px;
         }
 }
 
