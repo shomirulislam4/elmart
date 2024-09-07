@@ -3,6 +3,10 @@
 2. Home Page
     1. Header
     2. Hero Section
+    3. Trending Products Section
+    4. New Collection Section
+    5. Best Seller Section
+    6. Flash Deals Section
 
 
 **********************************************/
@@ -223,6 +227,10 @@ button:focus {
 .elbpack {
     position: relative;
     background: #E8E1D9;
+}
+
+section {
+    margin-top: 100px;
 }
 
 /* Container Size */
@@ -1690,7 +1698,6 @@ input[type="radio"]:checked::before {
 .elbp__trending__products__section {
     background: url('../image/trending-product-bg.png') no-repeat cover;
     height: 547px;
-    margin-top: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1715,11 +1722,14 @@ input[type="radio"]:checked::before {
 .elbp__products__grid {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
     gap: 24px;
+    padding: 0;
 }
 
 .elbp__trendprod__wrapper .elbp__products__grid {
     gap: 0;
+    flex-wrap: nowrap;
 }
 
 .elbp__product__style {
@@ -1908,7 +1918,6 @@ input[type="radio"]:checked::before {
 
 /*** Start of New Collection Section ***/
 .elbp__new__collection__section {
-    margin-top: 100px;
     padding: 78px 0;
     background: var(--background-color);
     position: relative;
@@ -2028,8 +2037,6 @@ input[type="radio"]:checked::before {
 
 /*** Start of Best Seller Section ***/
 .elbp__bestseller__section {
-    margin-top: 100px;
-    margin-bottom: 200px;
     position: relative;
 }
 
@@ -2037,6 +2044,14 @@ input[type="radio"]:checked::before {
     position: absolute;
     right: 383px;
     top: -55px;
+    z-index: -1;
+}
+
+.elbp__bestseller__section .bottomstarimg {
+    position: absolute;
+    right: 260px;
+    bottom: -65px;
+    z-index: -1;
 }
 
 .elbp__bestseller__wrapper {
@@ -2164,6 +2179,185 @@ input[type="radio"]:checked::before {
     }
 }
 /*** End of Best Seller Section ***/
+
+/*** Start of Flash Deals Section ***/
+.elbp__flashdeals__section {
+    position: relative;
+    height: 583px;
+    background: var(--bg-black);
+}
+
+.elbp__flashdeals__section .elbpfds__bgtext {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 115px;
+    line-height: 100%;
+    font-weight: 600;
+    color: transparent;
+    background-image: linear-gradient(180deg, #494744, #313131);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 0;
+}
+
+.elbp__flashdeals__section .elbpfds__bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--background-color);
+    width: 37.5%;
+    height: 100%;
+    z-index: 0;
+}
+
+/* Product Info */
+.elbp__singleprod__wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+@media (min-width: 767px) {
+    .elbp__singleprod__wrapper .row .col-md-5 {
+        padding-right: 0;
+    }
+    .elbp__singleprod__wrapper .row .col-md-7 {
+        padding-left: 0;
+    }
+}
+
+.elbp__singleprod__wrapper .elbp__singleprod__info {
+    padding-top: 115px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.elbp__singleprod__wrapper .elbp__singleprod__info .elbp__singleprod__title,
+.elbp__singleprod__wrapper .elbp__singleprod__info .elbp__singleprod__desc,
+.elbp__singleprod__wrapper .elbp__singleprod__info .elbp__singleprod__dcprice,
+.elbp__singleprod__wrapper .elbp__singleprod__info .elbp__singleprod__dcprice .elbp__singleprod__ogprice {
+    color: var(--background-color);
+    margin: 0;
+}
+
+.elbp__singleprod__wrapper .elbp__singleprod__info .elbp__singleprod__title {
+    text-transform: uppercase;
+}
+
+.elbp__singleprod__wrapper .elbp__singleprod__info .elbp__singleprod__dcprice .elbp__singleprod__ogprice {
+    text-decoration: line-through;
+}
+
+.elbp__singleprod__wrapper .elbp__singleprod__info .elbp__button__b {
+    margin-top: 10px;
+}
+
+/** Countdown Timer **/
+.elbp__countdown__timer {
+    display: flex;
+    gap: 9px;
+}
+
+.elbp__countdown__timer .elbpct__items {
+    flex-shrink: 0;
+    flex-grow: 0;
+    width: 109px;
+    height: 70px;
+    border-radius: 8px;
+    background: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.elbp__countdown__timer .elbpct__items p,
+.elbp__countdown__timer .elbpct__items span {
+    color: #000;
+    margin: 0;
+}
+
+/* Product Image */
+.elbp__singleprod__wrapper .elbp__singleprod__image {
+    display: flex;
+    justify-content: space-between;
+    width: 532px;
+    align-items: center;
+    margin-left: auto;
+    height: 100%;
+    padding-top: 55px;
+}
+
+.elbp__singleprod__image .elbp__big__image {
+    width: 70%;
+    flex-shrink: 0;
+    flex-grow: 0;
+    display: flex;
+    align-items: center;
+}
+
+.elbp__singleprod__image .elbp__big__image img {
+    width: 100%;
+    height: auto;
+    transform: rotate(7deg);
+}
+
+.elbp__singleprod__image .elbp__small__images {
+    width: 28%;
+    height: 100%;
+    flex-shrink: 0;
+    flex-grow: 0;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.elbp__singleprod__image .elbp__small__images img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+@media (max-width: 767px) {
+    .elbp__flashdeals__section .elbpfds__bg {
+        top: unset;
+        bottom: 0;
+        width: 100%;
+        height: 54%;
+    }
+    .elbp__singleprod__wrapper .elbp__singleprod__image {
+        width: 100%;
+        margin: 0;
+    }
+}
+/*** End of Flash Deals Section ***/
+
+/*** Start of New Arrival Section ***/
+.elbp__newarrival__section {
+    margin-bottom: 200px;
+    height: 1027px;
+    position: relative;
+}
+
+.elbp__newarrival__section .elbpna__bg__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+
+/*** End of New Arrival Section ***/
+
+
 
 /**
 font-family: 'Poppins', sans-serif;

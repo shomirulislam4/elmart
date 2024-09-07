@@ -1,6 +1,5 @@
 @media (max-width: 289px) {
-    .elbp__trending__products__section,
-    .elbp__new__collection__section {
+    section {
         margin-top: 20px;
     }
     .elbp__new__collection__section {
@@ -514,11 +513,42 @@
             top: 52%;
             left: 51%;
         }
+        .elbp__bestseller__section .topstarimg {
+            right: 18px;
+        }
+        .elbp__bestseller__section .bottomstarimg {
+            right: 20px;
+            bottom: 0;
+        }
+        /*Flash Deals Section*/
+        .elbp__flashdeals__section {
+            height: 620px;
+        }
+        .elbp__flashdeals__section .elbpfds__bg {
+            height: 36%;
+        }
+        .elbp__flashdeals__section .elbpfds__bgtext {
+            font-size: 27px;
+        }
+        .elbp__singleprod__wrapper .elbp__singleprod__info {
+            padding-top: 27px;
+            gap: 15px;
+        }
+        .elbp__countdown__timer {
+            gap: 7px;
+            flex-wrap: wrap;
+        }
+        .elbp__countdown__timer .elbpct__items {
+            width: 63px;
+            height: 26px;
+        }
+        .elbp__singleprod__wrapper .elbp__singleprod__image {
+            padding-top: 22px;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
-    .elbp__trending__products__section,
-    .elbp__new__collection__section {
+    section {
         margin-top: 30px;
     }
     .elbp__new__collection__section {
@@ -936,11 +966,41 @@
             left: 50%;
             transform: translateX(-50%);
         }
+        .elbp__bestseller__section .topstarimg {
+            right: 28px;
+        }
+        .elbp__bestseller__section .bottomstarimg {
+            right: 40px;
+            bottom: -16px;
+        }
+        /*Flash Deals Section*/
+        .elbp__flashdeals__section {
+            height: 660px;
+        }
+        .elbp__flashdeals__section .elbpfds__bg {
+            height: 47%;
+        }
+        .elbp__flashdeals__section .elbpfds__bgtext {
+            font-size: 40px;
+        }
+        .elbp__singleprod__wrapper .elbp__singleprod__info {
+            padding-top: 40px;
+            gap: 15px;
+        }
+        .elbp__countdown__timer {
+            gap: 5px;
+        }
+        .elbp__countdown__timer .elbpct__items {
+            width: 63px;
+            height: 26px;
+        }
+        .elbp__singleprod__wrapper .elbp__singleprod__image {
+            padding-top: 42px;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
-    .elbp__trending__products__section,
-    .elbp__new__collection__section {
+    section {
         margin-top: 40px;
     }
     .elbp__new__collection__section {
@@ -1284,11 +1344,35 @@
             left: 50%;
             transform: translateX(-50%);
         }
+        .elbp__bestseller__section .bottomstarimg {
+            right: 100px;
+            bottom: -22px;
+        }
+        /*Flash Deals Section*/
+        .elbp__flashdeals__section {
+            height: 836px;
+        }
+        .elbp__flashdeals__section .elbpfds__bg {
+            height: 50%;
+        }
+        .elbp__flashdeals__section .elbpfds__bgtext {
+            font-size: 58px;
+        }
+        .elbp__singleprod__wrapper .elbp__singleprod__info {
+            padding-top: 66px;
+            gap: 22px;
+        }
+        .elbp__countdown__timer .elbpct__items {
+            width: 90px;
+            height: 50px;
+        }
+        .elbp__singleprod__wrapper .elbp__singleprod__image {
+            padding-top: 42px;
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-    .elbp__trending__products__section,
-    .elbp__new__collection__section {
+    section {
         margin-top: 50px;
     }
     .elbp__new__collection__section {
@@ -1553,11 +1637,32 @@
             left: 50%;
             transform: translateX(-50%);
         }
+        .elbp__bestseller__section .bottomstarimg {
+            right: 113px;
+            bottom: -22px;
+        }
+        /*Flash Deals Section*/
+        .elbp__flashdeals__section {
+            height: 970px;
+        }
+        .elbp__flashdeals__section .elbpfds__bg {
+            height: 54%;
+        }
+        .elbp__flashdeals__section .elbpfds__bgtext {
+            font-size: 78px;
+        }
+        .elbp__singleprod__wrapper .elbp__singleprod__info {
+            padding-top: 66px;
+            gap: 22px;
+        }
+        .elbp__countdown__timer .elbpct__items {
+            width: 98px;
+            height: 60px;
+        }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .elbp__trending__products__section,
-    .elbp__new__collection__section {
+    section {
         margin-top: 60px;
     }
     .elbp__new__collection__section {
@@ -1839,11 +1944,44 @@
         .elbp__bestseller__wrapper .bgtop__shape::after {
             top: -72px;
         }
+        .elbp__bestseller__section .bottomstarimg {
+            bottom: -50px;
+        }
+        /*Flash Deals Section*/
+        .elbp__flashdeals__section {
+            height: 444px;
+        }
+        .elbp__flashdeals__section .elbpfds__bgtext {
+            font-size: 65px;
+        }
+        .elbp__countdown__timer .elbpct__items {
+            width: 90px;
+            height: 50px;
+        }
+        .elbp__singleprod__wrapper .elbp__singleprod__info {
+            padding-top: 62px;
+            gap: 20px;
+        }
+        .elbp__singleprod__wrapper .elbp__singleprod__image {
+            padding-top: 38px;
+            width: 408px;
+        }
+        .elbp__countdown__timer {
+            gap: 2px;
+        }
+        .elbp__countdown__timer .elbpct__items {
+            width: 70px;
+            height: 30px;
+            border-radius: 5px;
+        }
+        .elbp__countdown__timer .elbpct__items p,
+        .elbp__countdown__timer .elbpct__items span {
+            font-size: 12px;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1139px) {
-    .elbp__trending__products__section,
-    .elbp__new__collection__section {
+    section {
         margin-top: 70px;
     }
     .elbp__new__collection__section {
@@ -2014,12 +2152,29 @@
             height: 200px;
             width: 989px;
         }
+        /*Flash Deals Section*/
+        .elbp__flashdeals__section {
+            height: 546px;
+        }
+        .elbp__flashdeals__section .elbpfds__bgtext {
+            font-size: 85px;
+        }
+        .elbp__countdown__timer .elbpct__items {
+            width: 90px;
+            height: 50px;
+        }
+        .elbp__singleprod__wrapper .elbp__singleprod__info {
+            padding-top: 72px;
+            gap: 28px;
+        }
+        .elbp__singleprod__wrapper .elbp__singleprod__image {
+            padding-top: 44px;
+        }
 }
 
 @media (min-width: 1140px) and (max-width: 1199px) {
     /*===== Home Page =====*/
-        .elbp__trending__products__section,
-        .elbp__new__collection__section {
+        section {
             margin-top: 80px;
         }
         /*Hero Section*/
@@ -2044,6 +2199,10 @@
         }
         .elbp__newcollection__wrapper .right__side .main__bg2 {
             right: 0;
+        }
+        /*Best Seller Section*/
+        .elbp__bestseller__section .bottomstarimg {
+            bottom: -46px;
         }
 }
 
