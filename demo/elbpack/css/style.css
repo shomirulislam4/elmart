@@ -284,8 +284,30 @@ section {
 .elbp__button__b:hover {
     color: var(--bg-black) !important;
     border-color: var(--bg-black);
-    background: var(--background-color);
+    background: transparent;
 }
+
+.elbp__button__c {
+    display: block;
+    padding: 15px 32px;
+    border-radius: 8px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    color: var(--main-color);
+    background: transparent;
+    border: 1px solid var(--main-color);
+    width: fit-content;
+}
+
+.elbp__button__c:hover {
+    color: #F8F8F8;
+    background: var(--main-color);
+}
+
 
 /* Scrollbar */
 ::-webkit-scrollbar {
@@ -1727,9 +1749,19 @@ input[type="radio"]:checked::before {
     padding: 0;
 }
 
+@media (max-width: 767px) {
+    .elbp__products__grid {
+        justify-content: center;
+    }
+}
+
 .elbp__trendprod__wrapper .elbp__products__grid {
     gap: 0;
     flex-wrap: nowrap;
+}
+
+.elbp__trendprod__wrapper .elbp__product__style {
+    margin-bottom: 0;
 }
 
 .elbp__product__style {
@@ -2341,12 +2373,21 @@ input[type="radio"]:checked::before {
 
 /*** Start of New Arrival Section ***/
 .elbp__newarrival__section {
-    margin-bottom: 200px;
     height: 1027px;
     position: relative;
 }
 
-.elbp__newarrival__section .elbpna__bg__img {
+.elbp__newarrival__section .main__bg {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.elbp__newarrival__section .main__bg  .elbpna__bg__img {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -2354,8 +2395,162 @@ input[type="radio"]:checked::before {
     z-index: -1;
 }
 
+.elbp__newarrival__section .elbpna__bg__img2 {
+    position: absolute;
+    left: 0;
+    bottom: -195px;
+    z-index: -1;
+}
 
+@media (min-width: 1140px) {
+    .elbp__products__grid .elbp__product__style {
+        margin-bottom: 46px;
+    }
+}
+
+@media (max-width: 991px) {
+    .elbp__products__grid {
+        gap: 10px;
+    }
+    .elbp__products__grid .elbp__product__style {
+        margin-bottom: 10px;
+    }
+    .elbp__newarrival__section {
+        height: fit-content;
+    }
+}
+
+.elbp__newarrival__section .elbp__button__c {
+    margin: 0 auto;
+    margin-top: 30px;
+}
 /*** End of New Arrival Section ***/
+
+/*** Start of Promo Section ***/
+.elbp__promo__section {
+    margin-bottom: 200px;
+    position: relative;
+}
+
+.elbp__promo__section .bg__img1 {
+    position: absolute;
+    right: 0;
+    bottom: 80px;
+    z-index: -1;
+}
+
+.elbp__promo__section .bg__img2 {
+    position: absolute;
+    left: 261px;
+    bottom: 0;
+    z-index: -1;
+}
+
+.elbp__promo__section .bg__img3 {
+    position: absolute;
+    left: 572px;
+    bottom: -103px;
+    z-index: -1;
+}
+
+.elbp__promo__item {
+    border-radius: 12px;
+    background: var(--background-color);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.elbp__promo__left .elbp__promo__item {
+    margin-right: auto;
+    width: 548px;
+    height: 575px;
+    padding: 0 52px;
+    padding-bottom: 55px;
+}
+
+.elbp__promo__right .elbp__promo__item {
+    margin-left: auto;
+    width: 513px;
+    height: 553px;
+    padding: 0 53px;
+    padding-bottom: 55px;
+}
+
+@media (min-width: 767px) {
+    .elbp__promo__left,
+    .elbp__promo__right {
+        padding: 0;
+    }
+}
+
+.elbp__promo__item .promo__text {
+    background: var(--main-color);
+    color: #F8F8F8;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    font-size: 30px;
+    line-height: 100%;
+    font-weight: 600;
+    font-family: 'ClashDisplay', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.elbp__promo__left .elbp__promo__item .promo__text {
+    top: 43px;
+    left: 94px;
+}
+
+.elbp__promo__right .elbp__promo__item .promo__text {
+    top: 112px;
+    right: 40px;
+}
+
+.elbp__promo__item .side__text {
+    writing-mode: vertical-rl;
+    position: absolute;
+    left: 52px;
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
+    margin: 0;
+}
+
+.elbp__promo__left .elbp__promo__item img {
+    transform: rotate(14deg);
+    margin-left: 20px;
+    margin-top: -10px;
+}
+
+.elbp__promo__right .elbp__promo__item img {
+    transform: rotate(10deg);
+    margin-left: 10px;
+}
+
+.elbp__promo__item h4 {
+    font-weight: 600;
+    padding-right: 20px;
+}
+
+.elbp__promo__section h1 {
+    font-size: 72px;
+    line-height: 100%;
+    -webkit-text-stroke: 2px #A19C96;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: 16px;
+}
+/*** End of Promo Section ***/
 
 
 
