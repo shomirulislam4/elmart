@@ -2,7 +2,8 @@
     section {
         margin-top: 20px;
     }
-    .elbp__new__collection__section {
+    .elbp__new__collection__section,
+    .elbp__testimonials__section {
         padding: 20px 0;
     }
     h1 {
@@ -596,13 +597,54 @@
             font-size: 14px;
             line-height: 20px;
         }
+        /*Testimonials Section*/
+        .elbp__testimonials__wrapper .elbp__testimonial__image {
+            display: none;
+        }
+        .elbp__testimonial__main {
+            padding: 15px;
+            width: 100%;
+            height: 300px;
+        }
+        .elbp__testimonial__main .title {
+            margin-bottom: 8px;
+        }
+        .elbptm__slider .review__text,
+        .elbptm__slider .review__date {
+            font-size: 12px;
+        }
+        .elbptm__slider .user {
+            margin-top: 14px;
+            align-items: flex-start;
+            gap: 8px;
+            flex-direction: column;
+        }
+        .elbptm__slider .elbptm__slider__nav {
+            margin-top: 12px;
+            gap: 15px;
+        }
+        .elbptm__slider .elbptm__slider__nav .elbptm__slider svg {
+            height: 20px;
+            width: 20px;
+        }
+        .elbp__testimonials__section .bg__image.three {
+            right: 20px;
+        }
+        .elbp__testimonials__wrapper {
+            padding-top: 0;
+        }
+        .star__rating svg {
+            height: 12px;
+            width: 12px;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
     section {
         margin-top: 30px;
     }
-    .elbp__new__collection__section {
+    .elbp__new__collection__section,
+    .elbp__testimonials__section {
         padding: 30px 0;
     }
     h1 {
@@ -1095,13 +1137,51 @@
             font-size: 39px;
             margin-right: 3px;
         }
+        /*Testimonials Section*/
+        .elbp__testimonials__wrapper .elbp__testimonial__image {
+            display: none;
+        }
+        .elbp__testimonial__main {
+            padding: 15px;
+            width: 100%;
+            height: 245px;
+        }
+        .elbp__testimonial__main .title {
+            margin-bottom: 8px;
+        }
+        .elbptm__slider .review__text,
+        .elbptm__slider .review__date {
+            font-size: 12px;
+        }
+        .elbptm__slider .user {
+            margin-top: 14px;
+        }
+        .elbptm__slider .elbptm__slider__nav {
+            margin-top: 12px;
+            gap: 15px;
+        }
+        .elbptm__slider .elbptm__slider__nav .elbptm__slider svg {
+            height: 20px;
+            width: 20px;
+        }
+        .elbp__testimonials__section .bg__image.three {
+            right: 20px;
+        }
+        .elbp__testimonials__wrapper {
+            padding-top: 0;
+        }
+        .star__rating svg {
+            height: 12px;
+            width: 12px;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
     section {
         margin-top: 40px;
     }
-    .elbp__new__collection__section {
+    .elbp__new__collection__section,
+    .elbp__testimonials__section {
         padding: 40px 0;
     }
     h1 {
@@ -1511,13 +1591,48 @@
         .elbp__promo__section h1 {
             font-size: 54px;
         }
+        /*Testimonials Section*/
+        .elbp__testimonials__wrapper .elbp__testimonial__image {
+            display: none;
+        }
+        .elbp__testimonial__main {
+            padding: 20px;
+            padding-left: 20px;
+            width: 100%;
+            height: 260px;
+        }
+        .elbp__testimonial__main .title {
+            margin-bottom: 8px;
+        }
+        .elbptm__slider .review__text,
+        .elbptm__slider .review__date {
+            font-size: 14px;
+        }
+        .elbptm__slider .user {
+            margin-top: 16px;
+        }
+        .elbptm__slider .elbptm__slider__nav {
+            margin-top: 14px;
+            gap: 15px;
+        }
+        .elbptm__slider .elbptm__slider__nav .elbptm__slider svg {
+            height: 20px;
+            width: 20px;
+        }
+        .elbp__testimonials__section .bg__image.three {
+            right: 20px;
+        }
+        .elbp__testimonials__wrapper {
+            padding-top: 0;
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
     section {
         margin-top: 50px;
     }
-    .elbp__new__collection__section {
+    .elbp__new__collection__section,
+    .elbp__testimonials__section {
         padding: 50px 0;
     }
     h1 {
@@ -1824,13 +1939,51 @@
         .elbp__promo__left .elbp__promo__item img {
             margin-left: 90px;
         }
+        /*Testimonials Section*/
+        .elbp__testimonials__wrapper .elbp__testimonial__image {
+            width: 200px;
+            height: 203px;
+        }
+        .elbp__testimonial__main {
+            padding: 21px;
+            padding-left: 125px;
+            width: 430px;
+            height: 285px;
+        }
+        .elbptm__slider .user {
+            margin-top: 28px;
+        }
+        .elbptm__slider .elbptm__slider__nav {
+            margin-top: 20px;
+        }
+        .elbp__testimonial__main .title {
+            margin-bottom: 10px;
+        }
+        .elbptm__slider .review__text, .elbptm__slider .review__date {
+            font-size: 14px;
+        }
+        .elbp__testimonials__section .bg__image.three {
+            right: 85px;
+        }
+        .elbp__testimonials__wrapper {
+            padding-top: 63px;
+        }
+        .elbptm__slider .elbptm__slider__nav .elbptm__slider svg {
+            height: 24px;
+            width: 24px;
+        }
+        .elbp__testimonials__section .bg__image.two,
+        .elbp__testimonials__section .bg__image.one {
+            height: 100%;
+        }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
     section {
         margin-top: 60px;
     }
-    .elbp__new__collection__section {
+    .elbp__new__collection__section,
+    .elbp__testimonials__section {
         padding: 60px 0;
     }
     h1 {
@@ -2200,13 +2353,51 @@
         .elbp__promo__section .bg__img2 {
             left: 178px;
         }
+        /*Testimonials Section*/
+        .elbp__testimonials__wrapper .elbp__testimonial__image {
+            width: 300px;
+            height: 305px;
+        }
+        .elbp__testimonial__main {
+            padding: 31px;
+            padding-left: 150px;
+            width: 533px;
+            height: 310px;
+        }
+        .elbptm__slider .user {
+            margin-top: 28px;
+        }
+        .elbptm__slider .elbptm__slider__nav {
+            margin-top: 20px;
+        }
+        .elbp__testimonial__main .title {
+            margin-bottom: 10px;
+        }
+        .elbptm__slider .review__text, .elbptm__slider .review__date {
+            font-size: 14px;
+        }
+        .elbp__testimonials__section .bg__image.three {
+            right: 85px;
+        }
+        .elbp__testimonials__wrapper {
+            padding-top: 73px;
+        }
+        .elbptm__slider .elbptm__slider__nav .elbptm__slider svg {
+            height: 24px;
+            width: 24px;
+        }
+        .elbp__testimonials__section .bg__image.two,
+        .elbp__testimonials__section .bg__image.one {
+            height: 100%;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1139px) {
     section {
         margin-top: 70px;
     }
-    .elbp__new__collection__section {
+    .elbp__new__collection__section,
+    .elbp__testimonials__section {
         padding: 70px 0;
     }
     h1 {
@@ -2441,6 +2632,17 @@
         }
         .elbp__promo__section .bg__img2 {
             left: 178px;
+        }
+        /*Testimonials Section*/
+        .elbp__testimonials__wrapper .elbp__testimonial__image {
+            width: 380px;
+            height: 386px;
+        }
+        .elbp__testimonial__main {
+            padding: 51px;
+            padding-left: 150px;
+            width: 670px;
+            height: 390px;
         }
 }
 

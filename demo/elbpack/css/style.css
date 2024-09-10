@@ -2428,7 +2428,6 @@ input[type="radio"]:checked::before {
 
 /*** Start of Promo Section ***/
 .elbp__promo__section {
-    margin-bottom: 200px;
     position: relative;
 }
 
@@ -2554,7 +2553,122 @@ input[type="radio"]:checked::before {
 /*** End of Promo Section ***/
 
 /*** Start of Testimonials Section ***/
+.elbp__testimonials__section {
+    margin-bottom: 200px;
+    padding: 78px 0;
+    position: relative;
+    background: var(--bg-black);
+    z-index: 0;
+    overflow: hidden;
+}
 
+.elbp__testimonials__section .bg__image {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.elbp__testimonials__section .bg__image.one {
+    right: 0;
+}
+
+.elbp__testimonials__section .bg__image.two {
+    left: 0;
+}
+
+.elbp__testimonials__section .bg__image.three {
+    right: 225px;
+}
+
+.star__rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 3px;
+}
+
+.star__rating svg {
+    height: 14px;
+    width: 14px;
+}
+
+.elbp__testimonials__wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 83px;
+}
+
+.elbp__testimonials__wrapper .elbp__testimonial__image {
+    width: 434px;
+    height: 441px;
+    border-radius: 12px;
+    overflow: hidden;
+    flex-shrink: 0;
+    flex-grow: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.elbp__testimonials__wrapper .elbp__testimonial__image img {
+    height: 100%;
+    width: 100%;
+}
+
+.elbp__testimonial__main {
+    background: var(--background-color);
+    padding: 71px;
+    padding-left: 200px;
+    border-radius: 12px;
+    width: 765px;
+    height: 445px;
+    margin-left: auto;
+}
+
+.elbp__testimonial__main .title {
+    margin-bottom: 18px;
+}
+
+.elbptm__slider .review__text,
+.elbptm__slider .review__date {
+    font-size: 16px;
+    line-height: 150%;
+    color: #7A746D;
+    margin-bottom: 0;
+}
+
+.elbptm__slider .user {
+    display: flex;
+    align-items: flex-end;
+    gap: 26px;
+    margin-top: 55px;
+}
+
+.elbptm__slider .user .left .name {
+    margin-bottom: 0;
+}
+
+.elbptm__slider .elbptm__slider__nav {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.elbptm__slider .elbptm__slider__nav .elbptm__slider {
+    background: transparent;
+}
+
+.elbptm__slider .elbptm__slider__nav .elbptm__slider svg {
+    fill: #7A746D;
+    height: 30px;
+    width: 30px;
+}
+
+.elbptm__slider .elbptm__slider__nav .elbptm__slider:hover svg {
+    fill: var(--main-color);
+}
 
 /*** End of Testimonials Section ***/
 

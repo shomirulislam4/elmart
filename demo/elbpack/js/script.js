@@ -178,6 +178,18 @@
         }
         setInterval(function() { makeTimer(); }, 1000);
 
+        //Testimonials Slider
+        $(function(){
+            var swiper = new Swiper(".elbptm__slider", {
+                loop: true,
+                spaceBetween: 0,
+                navigation: {
+                    prevEl: ".elbptm__slider.prev",
+                    nextEl: ".elbptm__slider.next",
+                },
+            });
+        });
+
     /*============================ Single Product Page ============================*/
         //Single Product Image
         $(document).ready(function(){
