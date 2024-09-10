@@ -553,6 +553,49 @@
         .elbp__newarrival__section .elbp__button__c {
             margin-top: 10px;
         }
+        /*Promo Section*/
+        .elbp__promo__left .elbp__promo__item,
+        .elbp__promo__right .elbp__promo__item {
+            width: 100%;
+            height: 193px;
+            padding: 0 10px;
+            padding-bottom: 5px;
+        }
+        .elbp__promo__item img {
+            width: 70%;
+        }
+        .elbp__promo__right {
+            margin-top: 10px;
+        }
+        .elbp__promo__left .elbp__promo__item img {
+            margin-left: 30px;
+            margin-top: 0;
+        }
+        .elbp__promo__item .promo__text {
+            height: 50px;
+            width: 50px;
+            font-size: 14px;
+        }
+        .elbp__promo__left .elbp__promo__item .promo__text {
+            top: 16px;
+            left: 55px;
+        }
+        .elbp__promo__right .elbp__promo__item .promo__text {
+            top: 30px;
+            right: 9px;
+        }
+        .elbp__promo__item .side__text {
+            left: 10px;
+            font-size: 10px;
+        }
+        .elbp__promo__section h1 {
+            font-size: 26px;
+            margin-right: 0;
+        }
+        .elbp__promo__item h4 {
+            font-size: 14px;
+            line-height: 20px;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
@@ -822,7 +865,7 @@
             line-height: 18px;
         }
         .elbp__hero__wrapper .content__right .text__wrap__2 {
-            left: 130px;
+            left: 120px;
             width: 152px;
             height: 64px;
             padding-left: 10px;
@@ -1012,6 +1055,45 @@
         }
         .elbp__newarrival__section .elbp__button__c {
             margin-top: 15px;
+        }
+        /*Promo Section*/
+        .elbp__promo__left .elbp__promo__item,
+        .elbp__promo__right .elbp__promo__item {
+            width: 100%;
+            height: 270px;
+            padding: 0 20px;
+            padding-bottom: 15px;
+        }
+        .elbp__promo__item img {
+            width: 70%;
+        }
+        .elbp__promo__right {
+            margin-top: 20px;
+        }
+        .elbp__promo__left .elbp__promo__item img {
+            margin-left: 90px;
+            margin-top: 0;
+        }
+        .elbp__promo__item .promo__text {
+            height: 80px;
+            width: 80px;
+            font-size: 20px;
+        }
+        .elbp__promo__left .elbp__promo__item .promo__text {
+            top: 16px;
+            left: 55px;
+        }
+        .elbp__promo__right .elbp__promo__item .promo__text {
+            top: 30px;
+            right: 9px;
+        }
+        .elbp__promo__item .side__text {
+            left: 20px;
+            font-size: 10px;
+        }
+        .elbp__promo__section h1 {
+            font-size: 39px;
+            margin-right: 3px;
         }
 }
 
@@ -1425,6 +1507,9 @@
         }
         .elbp__promo__item .side__text {
             left: 30px;
+        }
+        .elbp__promo__section h1 {
+            font-size: 54px;
         }
 }
 
