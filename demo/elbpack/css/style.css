@@ -543,6 +543,30 @@ input[type="radio"]:checked::before {
     margin-bottom: 50px;
 }
 
+.elbp__section__title.with__text {
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.elbp__section__title.with__text h2 {
+    width: 40%;
+    font-weight: 600;
+}
+
+.elbp__section__title.with__text h2 span {
+    font-weight: 600;
+}
+
+.elbp__section__title.with__text .text {
+    width: 50%;
+    border-left: 2px solid #B4ABA4;
+    padding-left: 20px;
+    color: #7C7872;
+    margin: 0;
+}
+
 /* ====================================================================
    2. Home Page
 ==================================================================== */
@@ -1395,6 +1419,7 @@ input[type="radio"]:checked::before {
     height: 786px;
     position: relative;
     overflow: hidden;
+    margin-top: 0 !important;
 }
 
 .elbp__hero__section .elbphs__bg__colors {
@@ -2554,7 +2579,6 @@ input[type="radio"]:checked::before {
 
 /*** Start of Testimonials Section ***/
 .elbp__testimonials__section {
-    margin-bottom: 200px;
     padding: 78px 0;
     position: relative;
     background: var(--bg-black);
@@ -2669,8 +2693,19 @@ input[type="radio"]:checked::before {
 .elbptm__slider .elbptm__slider__nav .elbptm__slider:hover svg {
     fill: var(--main-color);
 }
-
 /*** End of Testimonials Section ***/
+
+/*** Start of Categories Section ***/
+.elbp__categories__section {
+    margin-bottom: 200px;
+    position: relative;
+}
+
+
+
+
+/*** End of Categories Section ***/
+
 
 
 /**
