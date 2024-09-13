@@ -190,6 +190,35 @@
             });
         });
 
+        //Categories Slider
+        $(function() {
+            var swiper = new Swiper(".elbpcat__slider", {
+                loop: true,
+                spaceBetween: 0,
+                navigation: {
+                    prevEl: "#elbp__catslide__prev",
+                    nextEl: "#elbp__catslide__next",
+                },
+                pagination: false,
+                on: {
+                    init: function() {
+                        $('.elbp__categories__name a').eq(this.realIndex).addClass('active');
+                    },
+                    slideChange: function() {
+                        $('.elbp__categories__name a').removeClass('active');
+                        $('.elbp__categories__name a').eq(this.realIndex).addClass('active');
+                    }
+                }
+            });
+
+            $('.elbp__categories__name a').on('click', function() {
+                let index = $(this).index();
+                swiper.slideToLoop(index);
+            });
+        });
+        
+        
+
     /*============================ Single Product Page ============================*/
         //Single Product Image
         $(document).ready(function(){
