@@ -1782,6 +1782,7 @@ input[type="radio"]:checked::before {
 
 .elbp__trendprod__wrapper .elbp__products__grid {
     gap: 0;
+    justify-content: flex-start;
     flex-wrap: nowrap;
 }
 
@@ -2454,6 +2455,7 @@ input[type="radio"]:checked::before {
 /*** Start of Promo Section ***/
 .elbp__promo__section {
     position: relative;
+    overflow: hidden;
 }
 
 .elbp__promo__section .bg__img1 {
@@ -2697,8 +2699,8 @@ input[type="radio"]:checked::before {
 
 /*** Start of Categories Section ***/
 .elbp__categories__section {
-    margin-bottom: 200px;
     position: relative;
+    overflow: hidden;
 }
 
 .elbp__categories__section .bg__image {
@@ -2840,6 +2842,11 @@ input[type="radio"]:checked::before {
     color: var(--bg-black);
 }
 
+.elbp__categories__name a:hover h4,
+.elbp__categories__name a:hover.active h4 {
+    color: var(--main-color);
+}
+
 .elbp__categories__name a::after {
     position: absolute;
     right: 0;
@@ -2854,11 +2861,22 @@ input[type="radio"]:checked::before {
     line-height: 38px;
     font-family: 'Poppins', sans-serif;
     z-index: 1;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
 }
 
 .elbp__categories__name a.active::after {
     background: var(--bg-black);
     color: var(--bg-black);
+}
+
+.elbp__categories__name a:hover::after,
+.elbp__categories__name a:hover.active::after {
+    background: var(--main-color);
+    color: var(--main-color);
 }
 
 .elbp__categories__name a:nth-child(1)::after {
@@ -2873,12 +2891,12 @@ input[type="radio"]:checked::before {
     content: '\00a0\00a0\00a0 03';
 }
 
-.elbp__categories__name h4 {
+.elbp__categories__name a h4 {
     position: relative;
     display: inline-block;
 }
 
-.elbp__categories__name h4::before {
+.elbp__categories__name a h4::before {
     content: '';
     position: absolute;
     top: 100%;
@@ -2897,10 +2915,92 @@ input[type="radio"]:checked::before {
     background: var(--bg-black);
 }
 
-
+.elbp__categories__name a:hover h4::before,
+.elbp__categories__name a:hover.active h4::before {
+    background: var(--main-color);
+}
 /*** End of Categories Section ***/
 
+/*** Start of Newsletter Section ***/
+.elbp__newsletter__section {
+    margin-bottom: 200px;
+}
 
+.elbp__newsletter__section .container {
+    padding: 0;
+}
+
+.elbp__newsletter__wrapper {
+    background: var(--background-color);
+    border-radius: 12px;
+    height: 352px;
+    width: 100%;
+    padding: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.elbp__newsletter__wrapper h1 {
+    color: var(--background-color);
+	font-size: 144px;
+	line-height: 100%;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	top: -95px;
+	left: 0;
+	z-index: -1;
+}
+
+.elbp__newsletter__wrapper .side__text {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    height: 100%;
+    text-align: center;
+    margin: 0;
+    margin-left: 69px;
+    color: #C3B9AC;
+    font-size: 44px;
+    line-height: 100%;
+    font-weight: 600;
+}
+
+.elbp__newsletter__wrapper img {
+    margin-top: -13px;
+    height: 100%;
+}
+
+.elbp__newsletter__wrapper .content {
+    width: 392px;
+    height: 166px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.elbp__newsletter__wrapper .content form {
+    display: flex;
+    gap: 16px;
+}
+
+.elbp__newsletter__wrapper .content form input {
+    font-size: 15px;
+    height: 50px;
+    width: 256px;
+    border-radius: 8px;
+    padding: 0 24px;
+    background: #EDE4D9;
+}
+
+.elbp__newsletter__wrapper .content form .elbp__button__b:hover {
+    background: #EDE4D9;
+    border-color: #EDE4D9;
+}
+
+/*** End of Newsletter Section ***/
 
 /**
 font-family: 'Poppins', sans-serif;

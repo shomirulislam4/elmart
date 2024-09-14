@@ -707,6 +707,37 @@
         .elbp__categories__name a h4 {
             font-size: 14px;
         }
+        /*Newsletter Section*/
+        .elbp__newsletter__wrapper .content {
+            height: 152px;
+            width: 100%;
+            padding: 0 5px;
+        }
+        .elbp__newsletter__wrapper {
+            height: 200px;
+        }
+        .elbp__newsletter__wrapper .side__text,
+        .elbp__newsletter__wrapper img {
+            display: none;
+        }
+        .elbp__newsletter__wrapper h1 {
+            font-size: 30px;
+            top: -18px;
+        }
+        .elbp__newsletter__wrapper .content form {
+            gap: 5px;
+        }
+        .elbp__newsletter__wrapper .content form input {
+            height: 36px;
+            width: 128px;
+            padding: 0 10px;
+            font-size: 10px;
+        }
+        .elbp__newsletter__wrapper .content form .elbp__button__b {
+            padding: 0 10px;
+            font-size: 10px;
+            line-height: 10px;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
@@ -1301,6 +1332,40 @@
             font-size: 14px;
             line-height: 30px;
         }
+        /*Newsletter Section*/
+        .elbp__newsletter__wrapper .side__text {
+            margin-left: 10px;
+            font-size: 24px;
+        }
+        .elbp__newsletter__wrapper .content {
+            height: 120px;
+            width: 100%;
+            padding-left: 10px;
+        }
+        .elbp__newsletter__wrapper {
+            height: 200px;
+        }
+        .elbp__newsletter__wrapper img {
+            display: none;
+        }
+        .elbp__newsletter__wrapper h1 {
+            font-size: 48px;
+            top: -30px;
+        }
+        .elbp__newsletter__wrapper .content form {
+            gap: 5px;
+        }
+        .elbp__newsletter__wrapper .content form input {
+            height: 40px;
+            width: 165px;
+            padding: 0 10px;
+            font-size: 12px;
+        }
+        .elbp__newsletter__wrapper .content form .elbp__button__b {
+            padding: 0 13px;
+            font-size: 12px;
+            line-height: 12px;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -1806,6 +1871,45 @@
             font-size: 16px;
             line-height: 32px;
         }
+        .elbp__categories__section .bg__image.three {
+            left: 109px;
+        }
+        .elbp__categories__section .bg__image.four {
+            right: 80px;
+        }
+        /*Newsletter Section*/
+        .elbp__newsletter__wrapper .side__text {
+            margin-left: 20px;
+            font-size: 30px;
+        }
+        .elbp__newsletter__wrapper .content {
+            height: 136px;
+            width: 100%;
+            padding-left: 20px;
+        }
+        .elbp__newsletter__wrapper {
+            height: 220px;
+        }
+        .elbp__newsletter__wrapper img {
+            display: none;
+        }
+        .elbp__newsletter__wrapper h1 {
+            font-size: 70px;
+            top: -45px;
+        }
+        .elbp__newsletter__wrapper .content form {
+            gap: 10px;
+        }
+        .elbp__newsletter__wrapper .content form input {
+            height: 46px;
+            width: 210px;
+            padding: 0 14px;
+        }
+        .elbp__newsletter__wrapper .content form .elbp__button__b {
+            padding: 0 20px;
+            font-size: 14px;
+            line-height: 14px;
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -2183,6 +2287,29 @@
         .elbp__categories__name::after,
         .elbp__categories__name a::after {
             right: 30px;
+        }
+        /*Newsletter Section*/
+        .elbp__newsletter__wrapper .side__text {
+            margin-left: 30px;
+            font-size: 34px;
+        }
+        .elbp__newsletter__wrapper .content {
+            height: 146px;
+            width: 100%;
+            padding-left: 35px;
+        }
+        .elbp__newsletter__wrapper {
+            height: 240px;
+        }
+        .elbp__newsletter__wrapper img {
+            display: none;
+        }
+        .elbp__newsletter__wrapper h1 {
+            font-size: 70px;
+            top: -45px;
+        }
+        .elbp__newsletter__wrapper .content form {
+            gap: 10px;
         }
 }
 
@@ -2633,6 +2760,38 @@
         .elbp__categories__name a:nth-child(3)::after {
             content: '\00a0\00a0 03';
         }
+        /*Newsletter Section*/
+        .elbp__newsletter__wrapper .side__text {
+            margin-left: 25px;
+            font-size: 40px;
+        }
+        .elbp__newsletter__wrapper .content {
+            height: 146px;
+            width: 302px;
+        }
+        .elbp__newsletter__wrapper {
+            height: 270px;
+        }
+        .elbp__newsletter__wrapper img {
+            margin-top: 0;
+        }
+        .elbp__newsletter__wrapper h1 {
+            font-size: 100px;
+            top: -65px;
+        }
+        .elbp__newsletter__wrapper .content form {
+            gap: 10px;
+        }
+        .elbp__newsletter__wrapper .content form input {
+            height: 46px;
+            width: 200px;
+            padding: 0 14px;
+        }
+        .elbp__newsletter__wrapper .content form .elbp__button__b {
+            padding: 0 20px;
+            font-size: 14px;
+            line-height: 14px;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1139px) {
@@ -2916,6 +3075,23 @@
         }
         .elbp__categories__name a:nth-child(3)::after {
             content: '\00a0\00a0 03';
+        }
+        /*Newsletter Section*/
+        .elbp__newsletter__wrapper .side__text {
+            margin-left: 35px;
+        }
+        .elbp__newsletter__wrapper .content {
+            height: 135px;
+        }
+        .elbp__newsletter__wrapper {
+            height: 320px;
+        }
+        .elbp__newsletter__wrapper img {
+            margin-top: 0;
+        }
+        .elbp__newsletter__wrapper h1 {
+            font-size: 116px;
+            top: -75px;
         }
 }
 
