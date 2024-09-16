@@ -2922,10 +2922,6 @@ input[type="radio"]:checked::before {
 /*** End of Categories Section ***/
 
 /*** Start of Newsletter Section ***/
-.elbp__newsletter__section {
-    margin-bottom: 200px;
-}
-
 .elbp__newsletter__section .container {
     padding: 0;
 }
@@ -2999,8 +2995,44 @@ input[type="radio"]:checked::before {
     background: #EDE4D9;
     border-color: #EDE4D9;
 }
-
 /*** End of Newsletter Section ***/
+
+/*** Start of Footer ***/
+.elbp__footer__section {
+    background: var(--bg-black);
+}
+
+.elbp__footer__wrapper .top {
+    padding: 78px 0;
+}
+
+.elbp__footer__wrapper .bottom {
+    background: var(--background-color);
+    padding: 16px;
+}
+
+.elbp__footer__section p,
+.elbp__footer__section p a,
+.elbp__footer__section a,
+.elbp__footer__section .elbp__widget__title {
+    color: #F8F8F8;
+}
+
+.elbp__footer__section p a {
+    display: inline-block;
+}
+
+.elbp__footer__section p a:hover,
+.elbp__footer__section a:hover {
+    color: var(--main-color);
+}
+
+.elbp__footer__widget li a {
+    display: block;
+    padding: 5px 0;
+}
+
+/*** End of Footer ***/
 
 /**
 font-family: 'Poppins', sans-serif;
