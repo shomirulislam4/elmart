@@ -3013,9 +3013,15 @@ input[type="radio"]:checked::before {
 
 .elbp__footer__section p,
 .elbp__footer__section p a,
-.elbp__footer__section a,
+.elbp__footer__section a {
+    color: #F8F8F8;
+    font-size: 15px;
+}
+
 .elbp__footer__section .elbp__widget__title {
     color: #F8F8F8;
+    font-size: 24px;
+    margin-bottom: 12px;
 }
 
 .elbp__footer__section p a {
@@ -3025,6 +3031,7 @@ input[type="radio"]:checked::before {
 .elbp__footer__widget li a {
     display: block;
     padding: 5px 0;
+    text-transform: capitalize;
 }
 
 .elbp__footer__section .bottom .elbp__copyright {
@@ -3042,6 +3049,34 @@ input[type="radio"]:checked::before {
 .elbp__footer__section .bottom .elbp__copyright a:hover {
     color: var(--main-color);
 }
+
+.elbp__footer__wrapper .logo {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.elbp__footer__wrapper .logo img {
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    .elbp__footer__section p,
+    .elbp__footer__section p a,
+    .elbp__footer__section a,
+    .elbp__footer__section .elbp__widget__title {
+        text-align: center;
+    }
+    .elbp__footer__wrapper .logo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .elbp__footer__section .elbpht__social__links {
+        text-align: center;
+    }
+}
+
+
 
 /*** End of Footer ***/
 
