@@ -750,6 +750,46 @@
         .elbp__footer__section a {
             font-size: 12px;
         }
+    /*===== About Us Page =====*/
+        /*Breadcrumbs Section*/
+        .elbp__bc__wrapper a {
+            margin-right: 24px;
+        }
+        .elbp__bc__wrapper a::after {
+            width: 24px;
+            height: 24px;
+        }
+        /*About Us Section*/
+        .elbp__au__wrapper .top,
+        .elbp__au__wrapper .bottom {
+            height: fit-content;
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .elbp__au__wrapper .bottom {
+            flex-direction: column-reverse;
+        }
+        .elbp__au__wrapper .image1,
+        .elbp__au__wrapper .image2,
+        .elbp__au__wrapper .content {
+            width: 100%;
+        }
+        .elbp__au__wrapper .image1,
+        .elbp__au__wrapper .image2 {
+            height: auto;
+        }
+        .elbp__au__wrapper .content {
+            padding: 15px;
+        }
+        .elbp__about__section .bg__fixed__img.two {
+            top: 0;
+            left: 139px;
+        }
+        .elbp__about__section .bg__fixed__img.one {
+            left: -40px;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
@@ -1390,6 +1430,43 @@
         .elbp__footer__section a {
             font-size: 14px;
         }
+    /*===== About Us Page =====*/
+        /*Breadcrumbs Section*/
+        .elbp__bc__wrapper a {
+            margin-right: 24px;
+        }
+        .elbp__bc__wrapper a::after {
+            width: 24px;
+            height: 24px;
+        }
+        /*About Us Section*/
+        .elbp__au__wrapper .top,
+        .elbp__au__wrapper .bottom {
+            height: fit-content;
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .elbp__au__wrapper .bottom {
+            flex-direction: column-reverse;
+        }
+        .elbp__au__wrapper .image1,
+        .elbp__au__wrapper .image2,
+        .elbp__au__wrapper .content {
+            width: 100%;
+        }
+        .elbp__au__wrapper .image1,
+        .elbp__au__wrapper .image2 {
+            height: auto;
+        }
+        .elbp__au__wrapper .content {
+            padding: 15px;
+        }
+        .elbp__about__section .bg__fixed__img.two {
+            top: 0;
+            left: 233px;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -1934,6 +2011,43 @@
             font-size: 14px;
             line-height: 14px;
         }
+    /*===== About Us Page =====*/
+        /*Breadcrumbs Section*/
+        .elbp__bc__wrapper a {
+            margin-right: 24px;
+        }
+        .elbp__bc__wrapper a::after {
+            width: 24px;
+            height: 24px;
+        }
+        /*About Us Section*/
+        .elbp__au__wrapper .top,
+        .elbp__au__wrapper .bottom {
+            height: fit-content;
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .elbp__au__wrapper .bottom {
+            flex-direction: column-reverse;
+        }
+        .elbp__au__wrapper .image1,
+        .elbp__au__wrapper .image2,
+        .elbp__au__wrapper .content {
+            width: 100%;
+        }
+        .elbp__au__wrapper .image1,
+        .elbp__au__wrapper .image2 {
+            height: auto;
+        }
+        .elbp__au__wrapper .content {
+            padding: 20px;
+        }
+        .elbp__about__section .bg__fixed__img.two {
+            top: 6px;
+            left: 366px;
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -2334,6 +2448,43 @@
         }
         .elbp__newsletter__wrapper .content form {
             gap: 10px;
+        }
+    /*===== About Us Page =====*/
+        /*Breadcrumbs Section*/
+        .elbp__bc__wrapper a {
+            margin-right: 24px;
+        }
+        .elbp__bc__wrapper a::after {
+            width: 24px;
+            height: 24px;
+        }
+        /*About Us Section*/
+        .elbp__au__wrapper .top {
+            height: 372px;
+        }
+        .elbp__au__wrapper .bottom {
+            height: 364px;
+        }
+        .elbp__au__wrapper .image1,
+        .elbp__au__wrapper .image2,
+        .elbp__au__wrapper .content {
+            width: 50%;
+        }
+        .elbp__au__wrapper .image1 {
+            height: 232px;
+        }
+        .elbp__au__wrapper .image2 {
+            height: 225px
+        }
+        .elbp__au__wrapper .left__side .content {
+            width: 100%;
+        }
+        .elbp__au__wrapper .content {
+            padding: 20px;
+        }
+        .elbp__about__section .bg__fixed__img.two {
+            top: 13px;
+            left: 318px;
         }
 }
 
@@ -2816,6 +2967,33 @@
             font-size: 14px;
             line-height: 14px;
         }
+    /*===== About Us Page =====*/
+        /*Breadcrumbs Section*/
+        .elbp__bc__wrapper a {
+            margin-right: 24px;
+        }
+        .elbp__bc__wrapper a::after {
+            width: 24px;
+            height: 24px;
+        }
+        /*About Us Section*/
+        .elbp__au__wrapper .top {
+            height: 308px;
+        }
+        .elbp__au__wrapper .bottom {
+            height: 300px;
+        }
+        .elbp__au__wrapper .image1,
+        .elbp__au__wrapper .image2,
+        .elbp__au__wrapper .content {
+            width: 50%;
+        }
+        .elbp__au__wrapper .left__side .content {
+            width: 100%;
+        }
+        .elbp__au__wrapper .content {
+            padding: 20px;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1139px) {
@@ -3117,6 +3295,30 @@
             font-size: 116px;
             top: -75px;
         }
+    /*===== About Us Page =====*/
+        /*Breadcrumbs Section*/
+        .elbp__bc__wrapper a {
+            margin-right: 24px;
+        }
+        .elbp__bc__wrapper a::after {
+            width: 24px;
+            height: 24px;
+        }
+        /*About Us Section*/
+        .elbp__au__wrapper .top {
+            height: 399px;
+        }
+        .elbp__au__wrapper .image1,
+        .elbp__au__wrapper .image2,
+        .elbp__au__wrapper .content {
+            width: 50%;
+        }
+        .elbp__au__wrapper .left__side .content {
+            width: 100%;
+        }
+        .elbp__au__wrapper .bottom {
+            height: 388px;
+        }
 }
 
 @media (min-width: 1140px) and (max-width: 1199px) {
@@ -3150,6 +3352,20 @@
         /*Best Seller Section*/
         .elbp__bestseller__section .bottomstarimg {
             bottom: -46px;
+        }
+    /*===== About Us Page =====*/
+        /*About Us Section*/
+        .elbp__au__wrapper .top {
+            height: 458px;
+        }
+        .elbp__au__wrapper .image1 {
+            width: 569px;
+        }
+        .elbp__au__wrapper .image2 {
+            width: 570px;
+        }
+        .elbp__au__wrapper .bottom {
+            height: 448px;
         }
 }
 

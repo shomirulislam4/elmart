@@ -22,7 +22,7 @@
 
     /*============================ Home Page ============================*/
         //All Nice Select
-        if ($('.elbp__homepage').length) {
+        if ($('.elbp__header__section').length) {
             $('#elbphtLanguage').niceSelect();
             $('#elbphtCurrency').niceSelect();
         }
@@ -216,7 +216,6 @@
                 swiper.slideToLoop(index);
             });
         });
-        
         
 
     /*============================ Single Product Page ============================*/
