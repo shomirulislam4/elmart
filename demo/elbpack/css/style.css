@@ -575,6 +575,17 @@ input[type="radio"]:checked::before {
     margin: 0;
 }
 
+.elbp__section__title.with__subtitle {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.elbp__section__title.with__subtitle .subtitle {
+    font-size: 14px;
+    color: #B4ABA4;
+    margin: 0;
+}
+
 /* ====================================================================
    2. Home Page
 ==================================================================== */
@@ -3265,9 +3276,140 @@ input[type="radio"]:checked::before {
     z-index: 1;
     cursor: pointer;
 }
-
 /*** End of Video Promo Section ***/
 
+/*** Start of Brands Section ***/
+.elbp__brands__section {
+    background: var(--background-color);
+    padding: 60px 0;
+}
+
+.elbp__brands__section .wrapper {
+    display: flex;
+    gap: 112px;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.elbp__brands__section .wrapper img {
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: fit-content;
+}
+/*** End of Brands Section ***/
+
+/*** Start of Testimonials Section V2 ***/
+.elbp__testimonials__v2__section {
+    position: relative;
+    overflow: hidden;
+}
+
+.elbp__testimonials__v2__section .bg__img,
+.elbp__testimonials__v2__section .bg__img {
+    position: absolute;
+    z-index: -1;
+}
+
+.elbp__testimonials__v2__section .bg__img.one {
+    top: 0;
+    right: 0;
+}
+
+.elbp__testimonials__v2__section .bg__img.two {
+    top: 42px;
+    left: 739px;
+}
+
+.elbp__testimonials__v2__section .title__area .left__side {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.elbp__testimonials__v2__section .content__area {
+    background: var(--background-color);
+    border-radius: 12px;
+    display: flex;
+    padding: 0;
+    margin-top: 32px;
+}
+
+.elbp__testimonials__v2__section .content__area .image {
+    width: 469px;
+    height: 447px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    padding: 0;
+    position: relative;
+}
+
+.elbp__testimonials__v2__section .content__area .image .quote__icon {
+    height: 74px;
+    width: 74px;
+    border-radius: 50%;
+    background: var(--background-color);
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: -37px;
+    right: -37px;
+}
+
+.elbp__testimonials__v2__section .content__area .image .quote__icon img {
+    height: 52px;
+    width: 52px;
+}
+
+.elbp__testimonials__v2__section .content__area .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px 0 0 12px;
+}
+
+.elbp__testimonialsv2__slider {
+    width: calc(100% - 469px);
+    position: relative;
+}
+
+.elbp__testimonialsv2__slider .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 82px 88px 58px 70px;
+}
+
+.elbp__testimonialsv2__slider p,
+.elbp__testimonialsv2__slider .nav__info .elbp__slider__fraction,
+.elbp__testimonialsv2__slider .nav__info .elbp__slider__fraction span {
+    color: #5A5855;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.elbp__testimonialsv2__slider .elbptv2__review {
+    margin-bottom: 34px;
+}
+
+.elbp__testimonialsv2__slider .elbptv2__review::before,
+.elbp__testimonialsv2__slider .elbptv2__review::after {
+    content: '“';
+}
+
+.elbp__testimonialsv2__slider .elbptv2__user__name,
+.elbp__testimonialsv2__slider .elbptv2__occupation {
+    margin: 0;
+}
+
+.elbp__testimonialsv2__slider .nav__info {
+    position: absolute;
+    width: 100%;
+    bottom: 69px;
+    text-align: right;
+    right: 88px;
+}
+/*** End of Testimonials Section V2 ***/
 
 /**
 font-family: 'Poppins', sans-serif;

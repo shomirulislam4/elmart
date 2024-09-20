@@ -229,6 +229,21 @@
                 fixedContentPos: false
             });
         });
+
+        //Terstimonials V2 Slider
+        $(function(){
+            var swiper = new Swiper(".elbp__testimonialsv2__slider", {
+                loop: true,
+                navigation: {
+                    nextEl: "#elbp__testimonialsV2__next",
+                    prevEl: "#elbp__testimonialsV2__prev",
+                },
+                pagination: {
+                    el: "#elbp__testimonialsV2__fraction",
+                    type: "fraction",
+                },
+            });
+        });
         
 
     /*============================ Single Product Page ============================*/
