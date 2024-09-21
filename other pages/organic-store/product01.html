@@ -1,0 +1,1931 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product-01 | E-Mart</title>
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/mega_menu.css">
+    <link rel="stylesheet" href="css/accordion_menu.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+
+<body>
+    <!--ask question popup-->
+    <div class="user_question_popup">
+        <div class="popup_bg"></div>
+        <div class="user_form_area">
+            <div class="form_close_btn">
+                <a href="#"><i class="fa-solid fa-x"></i></a>
+            </div>
+            <div class="form_title">
+
+                <h3><i class="fa-solid fa-file-circle-question me-2"></i> Ask a Question About This Product</h3>
+            </div>
+            <form id="user_question_form">
+                <div class="form_group">
+                    <label for="fullName"></label>
+                    <input type="text" id="fullName" placeholder="Enter your name" required>
+                </div>
+                <div class="form_group">
+                    <label for="userEmail"></label>
+                    <input type="email" id="userEmail" placeholder="Enter your email" required>
+                </div>
+                <div class="form_group">
+                    <label for="topic"></label>
+                    <select name="topic_select" id="topic" required>
+                        <option value="" disabled selected>Select Topic</option>
+                        <option value="">How does it fit?</option>
+                        <option value="">How do you wash it?</option>
+                        <option value="">How you can get delivered?</option>
+                        <option value="">Have any guarantee of product</option>
+                    </select>
+                </div>
+                <div class="form_group">
+                    <label for="message"></label>
+                    <textarea id="message" placeholder="Write your messgae..." required></textarea>
+                </div>
+                <div class="form_group d-flex justify-content-center ">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--header section start here-->
+    <!-- page bottom menu -->
+    <div class="page_bottom_menu  justify-content-between align-content-center flex-wrap">
+        <a class="p_btm_item col-3 p-3" href="#"><i class="fa-solid fa-house"></i></a>
+        <a class="p_btm_item col-3 p-3" href="#"><i class="fa-regular fa-heart"></i> </a>
+        <a class="p_btm_item col-3 p-3" href="#"><i class="fa-solid fa-user"></i></a>
+        <a class="p_btm_item col-3 p-3" href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+    </div>
+    <header id="header">
+        <!--signup and sign in page popup start-->
+        <div class="user_popup_container">
+            <div class="container-xxl">
+                <div class="user_join_popup">
+                    <div class="page_wrapper ">
+                        <div class="row">
+                            <span id="user_popup_close"><i class="fa-solid fa-x"></i></span>
+                            <div class="col-12 col-md-6">
+                                <div
+                                    class="position-relative popup_from d-flex justify-content-center align-items-center">
+                                    <form id="signup_from" 
+                                        class="signup_form_box">
+                                        <h2>Create Your Account</h2>
+                                        <div class="social_site">
+                                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                            <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                                        </div>
+                                        <div class="d-flex justify-content-center ">
+                                            <span>or use your email address</span>
+                                        </div>
+                                        <div class="input_box">
+                                            <label for="YourName"></label>
+                                            <input type="text" name="name" id="YourName" placeholder="Your full name"
+                                                required>
+                                        </div>
+                                        <div class="input_box">
+                                            <label for="input_email"></label>
+                                            <input type="email" name="email" id="input_email" placeholder="Your email"
+                                                required>
+                                        </div>
+                                        <div class="input_box">
+                                            <label for="Password"></label>
+                                            <input type="password" name="Password" id="Password"
+                                                placeholder="New Password" required>
+                                        </div>
+                                        <div class="cdt_div">
+                                            <div class="checkbox_ctn">
+                                                <label for="checkbox_input"></label>
+                                                <input type="checkbox" name="checkbox" id="checkbox_input">
+                                                <span>Remember me</span>
+                                            </div>
+                                            <a href="#">forgot password?</a>
+                                        </div>
+                                        <div class="login_btn">
+                                            <button type="submit">SIGN UP</button>
+                                        </div>
+                                        <div class="page_links">
+                                            <a href="#">Privacy Policy</a>
+                                            <a href="#">Terms & Conditions</a>
+                                        </div>
+                                    </form>
+                                    <div class="login_form_box" id="login_from">
+                                        <div class="from_title">
+                                            <h2>Login</h2>
+                                            <p>Enter your Email and Password to login.</p>
+                                        </div>
+                                        <form id="login_form_area" class="login_form">
+                                            <input type="email" name="email" id="loginEmail" placeholder="Email">
+                                            <input type="password" name="password" id="loginPassword"
+                                                placeholder="password">
+                                            <div class="optional_items mb-5">
+                                                <div class="remember_field">
+                                                    <input type="checkbox" name="remember" id="remember">
+                                                    <label for="remember">Remember me</label>
+
+                                                </div>
+                                                <div class="forget_item">
+                                                    <a href="#">Forget your email?</a>
+                                                </div>
+                                            </div>
+                                            <button type="submit">Login</button>
+                                        </form>
+                                        <span class="or_devider">Or</span>
+                                        <div class="login_other_way">
+                                            <div class="single_way">
+                                                <div class="social-login">
+                                                    <i class="fa-brands fa-google"></i>
+                                                </div>
+                                                <span>Connect with google</span>
+                                            </div>
+                                            <div class="single_way">
+                                                <div class="social-login">
+                                                    <i class="fa-brands fa-facebook-f"></i>
+                                                </div>
+                                                <span>Connect with facebook</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 pe-0">
+                                <div class="msg_box_container">
+                                    <div class="msg_box d-flex flex-column ">
+                                        <div class="cir_photo">
+                                            <img src=" img/profile_sml.jpg" alt="profile picture">
+                                        </div>
+                                        <h3 id="user_msg">Wellcome Back!</h3>
+                                        <p>Login here by filling you're username and password or use your favorite
+                                            social network account
+                                            to
+                                            enter to the site</p>
+                                        <div class="signup-login_buttons">
+                                            <button id="login_btn" type="submit">LOGIN</button>
+                                            <button id="signup_btn" type="submit">SIGN UP</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--signup and sign in page popup end-->
+        <!--mobile search page-->
+        <div class="mobile_popup_search">
+            <div class="popup_search_wrapper">
+                <a href="#" class="popup_search_close"><i class="fa-solid fa-x"></i></a>
+                <form id="mobile_search_form"
+                    class="mobile_search-bar">
+                    <input type="search" name="s" id="search_input" placeholder="Search for product" required>
+                    <select class="category_items ps-0">
+                        <option value="">All Category</option>
+                        <option value="">Clock</option>
+                        <option value="">Lighting</option>
+                        <option value="">Furniture</option>
+                        <option value="">Toy</option>
+                        <option value="">Fashion</option>
+                        <option value="">Others</option>
+                    </select>
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <div class="popular_category">
+                    <h3>Most Popular Category</h3>
+                    <div class="popular_category_wrapper d-flex flex-wrap ">
+                        <a href="#" class="popular_category_title">
+                            <span>Furniture</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                        <a href="#" class="popular_category_title">
+                            <span>Accessories</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                        <a href="#" class="popular_category_title">
+                            <span>Laptop</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                        <a href="#" class="popular_category_title">
+                            <span>LED Signage</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                        <a href="#" class="popular_category_title">
+                            <span>Sound Device</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                        <a href="#" class="popular_category_title">
+                            <span>Family</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                        <a href="#" class="popular_category_title">
+                            <span>Tablet</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                        <a href="#" class="popular_category_title">
+                            <span>Toys</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                        <a href="#" class="popular_category_title">
+                            <span>Cricket</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                        <a href="#" class="popular_category_title">
+                            <span>Badminton</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                        <a href="#" class="popular_category_title">
+                            <span>Computer</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                        <a href="#" class="popular_category_title">
+                            <span>Air Condition</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid container-xl">
+            <!--top header section start here-->
+            <div class="top_header d-flex justify-content-between align-items-center ">
+                <div class="logo">
+                    <a class="navbar-brand" href="index.html"><img class="img-fluid" src="img/logo.png" alt=" img/logo.png">
+                    </a>
+                </div>
+                <form id="main_search_bar_form"
+                    class="main_search_bar d-none d-lg-flex align-content-center">
+                    <div class="category_area">
+                        <select class="category_items ps-0">
+                            <option value="">All Category</option>
+                            <option value="">Clock</option>
+                            <option value="">Lighting</option>
+                            <option value="">Furniture</option>
+                            <option value="">Toy</option>
+                            <option value="">Fashion</option>
+                            <option value="">Others</option>
+                        </select>
+                        <div class="select_icon">
+                            <i class="toggle_open fa-solid fa-caret-down"></i>
+                            <i style="display: none;" class="toggle_close fa-solid fa-caret-up"></i>
+                        </div>
+                    </div>
+                    <div class="search_input">
+                        <label for="searchField"></label>
+                        <input type="text" name="searchField" id="searchField" placeholder="Enter search keyword.."
+                            required>
+                        <button type="submit"> <i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </form>
+                <div class="woocommerce_area">
+                    <ul class="woocommerce_options align-items-center  justify-content-end mb-0  ps-0">
+                        <li class="list-unstyled me-3 search_icon d-unset d-lg-none"><a href="#"><i
+                                    class="fa-solid fa-magnifying-glass"></i></a>
+                        </li>
+                        <li class="list-unstyled me-3"><a id="user_join_icon" href="#"><i
+                                    class="fa-solid fa-user"></i></a></li>
+                        <li id="product_item" class="list-unstyled me-3"><a href="#"><i
+                                    class="fa-solid fa-bag-shopping"></i></a>
+                        </li>
+                        <li class="list-unstyled me-3"><span>£</span>0.00</li>
+                        <li class="list-unstyled me-3"><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
+                        <li class="list-unstyled product_like_list"><a href="#"><i class="fa-regular fa-heart"></i> </a>
+                        </li>
+                        <li class="list-unstyled">
+                            <button class="offcanvas_icon btn d-block d-lg-none" type="button"
+                                data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                                aria-controls="offcanvasExample">
+                                <img src=" img/bars-solid.svg" alt=" img/bars-solid.svg">
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample">
+                        <div class="offcanvas_close_btn ">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body pt-5">
+                            <form
+                                class="main_search_bar mobile_search_bar d-flex d-lg-none align-content-center p-0 pb-3">
+                                <div class="search_input mobile mobile_sm">
+                                    <label for="searchField"></label>
+                                    <input type="text" name="searchField" id="offcanvas_searchField"
+                                        placeholder="Enter search keyword.." required>
+                                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                </div>
+                            </form>
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item col-6" role="presentation">
+                                    <button class="nav-link active menu_tab" id="pills-home-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                        aria-selected="true">Menu</button>
+                                </li>
+                                <li class="nav-item col-6" role="presentation">
+                                    <button class="nav-link menu_tab" id="pills-profile-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-profile" type="button" role="tab"
+                                        aria-controls="pills-profile" aria-selected="false">Categories</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                    aria-labelledby="pills-home-tab" tabindex="0">
+                                    <ul class="accordion-menu">
+                                        <li>
+                                            <div class="dropdownlink">
+                                                <i class="fa fa-road" aria-hidden="true"></i>
+                                                <a href=" index.html">Home</a>
+                                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                            </div>
+                                            <ul class="submenuItems">
+                                                <li><a href="#">Home 1</a></li>
+                                                <li><a href="#">Home 2</a></li>
+                                                <li><a href="#">Home 3</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="dropdownlink">
+                                                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                                <a href="#">Blog</a>
+                                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                            </div>
+                                            <ul class="submenuItems">
+                                                <li><a href="#">Blog 1</a></li>
+                                                <li><a href="#">Blog 2</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="dropdownlink">
+                                                <i class="fa fa-quote-left" aria-hidden="true"></i>
+                                                <a href="  shop.html">Shop</a>
+                                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                            </div>
+                                            <ul class="submenuItems">
+                                                <li class="sub">
+                                                    <div class="dropdownlink">
+                                                        <a href="#">Fantasy 1</a>
+                                                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                                    </div>
+                                                    <ul class="submenuItems">
+                                                        <li><a href="#">Fantasy 2</a></li>
+                                                        <li><a href="#">Fantasy 3</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">Fantasy 2</a></li>
+                                                <li><a href="#">Fantasy 3</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="dropdownlink">
+                                                <i class="fa fa-motorcycle" aria-hidden="true"></i>
+                                                <a href="#">Product Pages</a>
+                                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                            </div>
+                                            <ul class="submenuItems">
+                                                <li>
+                                                    <a href=" product01.html" target="_blank">Product page-01</a>
+                                                </li>
+                                                <li>
+                                                    <a href=" product.html" target="_blank">Product page-02</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="dropdownlink">
+                                                <i class="fa fa-motorcycle" aria-hidden="true"></i>
+                                                <a href="#">Contact Us</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                    aria-labelledby="pills-profile-tab" tabindex="0">
+                                    <ul class="accordion-menu">
+                                        <li>
+                                            <div class="dropdownlink"><i class="fa fa-road" aria-hidden="true"></i>
+                                                <a href="#">Category one</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="dropdownlink"><i class="fa fa-paper-plane"
+                                                    aria-hidden="true"></i>
+                                                <a href="#">Category two</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="dropdownlink"><i class="fa fa-quote-left"
+                                                    aria-hidden="true"></i>
+                                                <a href="#">Category</a>
+                                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                            </div>
+                                            <ul class="submenuItems">
+                                                <li>
+                                                    <div class="dropdownlink">
+                                                        <a href="#">Category 1</a>
+                                                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                                    </div>
+                                                    <ul class="submenuItems">
+                                                        <li><a href="#">Category 2</a></li>
+                                                        <li><a href="#">Category 3</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">Category</a></li>
+                                                <li><a href="#">Category</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="dropdownlink"><i class="fa fa-motorcycle"
+                                                    aria-hidden="true"></i>
+                                                <a href="#">Elements</a>
+                                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                            </div>
+                                            <ul class="submenuItems">
+                                                <li><a href="#">Elements 1</a></li>
+                                                <li><a href="#">Elements 2</a></li>
+                                                <li><a href="#">Elements 3</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="dropdownlink">
+                                                <i class="fa fa-motorcycle" aria-hidden="true"></i>
+                                                <a href="#">Contact Us</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="dropdownlink"><i class="fa fa-motorcycle"
+                                                    aria-hidden="true"></i>
+                                                <a href="#">Category title</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="dropdownlink"><i class="fa fa-motorcycle"
+                                                    aria-hidden="true"></i>
+                                                <a href="#">Category title</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="dropdownlink"><i class="fa fa-motorcycle"
+                                                    aria-hidden="true"></i>
+                                                <a href="#">Category title</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- product cart message-->
+                <div class="product_msg">
+                    <span>No products in the cart.</span>
+                </div>
+            </div>
+            <!--top header section end here-->
+            <nav class="navbar navbar-expand-lg justify-content-between ">
+                <!-- vertical category start -->
+                <div class=" vertical_category d-none d-lg-flex ">
+                    <div class="vertical_category_wrapper ">
+                        <div class="v_category_handler d-flex justify-content-between align-items-center ">
+                            <i class="fa-solid fa-list mb-0 pb-0 "></i>
+                            <span class="v_category_title">PRODUCT CATEGORIES</span>
+                            <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                        <ul id="category_list" class="v_category_items ps-0 ">
+                            <li>
+                                <div class="category_title">
+                                    <img src=" img/telephone.png" alt="telephone.png" class="img-fluid me-2">
+                                    <span>Electronic</span>
+                                    <div class="product_mega_menu product_menu">
+                                        <div class="product_mega_menu_wrapper d-flex justify-content-between  p-3">
+                                            <div class="row flex-wrap ">
+                                                <div class="col-3">
+                                                    <div class="menu_inner_item">
+                                                        <h4>Armchairs</h4>
+                                                        <ul class="ps-0 ">
+                                                            <li><a href="#">Super Chir</a></li>
+                                                            <li><a href="#">Sofa Chir</a></li>
+                                                            <li><a href="#">Reading Chir</a></li>
+                                                            <li><a href="#">Primaum Chir</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="menu_inner_item">
+                                                        <h4>Computer</h4>
+                                                        <ul class="ps-0 ">
+                                                            <li><a href="#">Super Chir</a></li>
+                                                            <li><a href="#">Sofa Chir</a></li>
+                                                            <li><a href="#">Reading Chir</a></li>
+                                                            <li><a href="#">Primaum Chir</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="menu_inner_item">
+                                                        <h4>Technology</h4>
+                                                        <ul class="ps-0 ">
+                                                            <li><a href="#">Footstone</a></li>
+                                                            <li><a href="#">Trolleys</a></li>
+                                                            <li><a href="#">Shoe cabinate</a></li>
+                                                            <li><a href="#">product demo</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="menu_inner_item">
+                                                        <h4>Armchairs</h4>
+                                                        <ul class="ps-0 ">
+                                                            <li><a href="#">Super Chir</a></li>
+                                                            <li><a href="#">Sofa Chir</a></li>
+                                                            <li><a href="#">Reading Chir</a></li>
+                                                            <li><a href="#">Primaum Chir</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="menu_inner_item">
+                                                        <h4>Technology</h4>
+                                                        <ul class="ps-0 ">
+                                                            <li><a href="#">Footstone</a></li>
+                                                            <li><a href="#">Trolleys</a></li>
+                                                            <li><a href="#">Shoe cabinate</a></li>
+                                                            <li><a href="#">product demo</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="menu_inner_item">
+                                                        <h4>Telephone</h4>
+                                                        <ul class="ps-0 ">
+                                                            <li><a href="#">Footstone</a></li>
+                                                            <li><a href="#">Trolleys</a></li>
+                                                            <li><a href="#">Shoe cabinate</a></li>
+                                                            <li><a href="#">product demo</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="menu_inner_item">
+                                                        <h4>Armchairs</h4>
+                                                        <ul class="ps-0 ">
+                                                            <li><a href="#">Super Chir</a></li>
+                                                            <li><a href="#">Sofa Chir</a></li>
+                                                            <li><a href="#">Reading Chir</a></li>
+                                                            <li><a href="#">Primaum Chir</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="menu_inner_item">
+                                                        <h4>Technology</h4>
+                                                        <ul class="ps-0 ">
+                                                            <li><a href="#">Footstone</a></li>
+                                                            <li><a href="#">Trolleys</a></li>
+                                                            <li><a href="#">Shoe cabinate</a></li>
+                                                            <li><a href="#">product demo</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </li>
+                            <li>
+                                <div class="category_title">
+                                    <img src=" img/sofa.png" alt=" img/sofa.png" class="img-fluid me-2">
+                                    <span>Furniture</span>
+                                    <div class="product_mega_menu product_menu">
+                                        <div class="product_mega_menu_wrapper d-flex justify-content-between  p-3">
+                                            <div class="row flex-wrap ">
+                                                <div class="col-3">
+                                                    <div class="menu_inner_item">
+                                                        <h4>Electronic Device</h4>
+                                                        <ul class="ps-0 ">
+                                                            <li><a href="#">Small Sofas</a></li>
+                                                            <li><a href="#">Armchairs</a></li>
+                                                            <li><a href="#">Easy Chir</a></li>
+                                                            <li><a href="#">Day Beds</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="menu_inner_item">
+                                                        <h4>Armchairs</h4>
+                                                        <ul class="ps-0 ">
+                                                            <li><a href="#">Super Chir</a></li>
+                                                            <li><a href="#">Sofa Chir</a></li>
+                                                            <li><a href="#">Reading Chir</a></li>
+                                                            <li><a href="#">Primaum Chir</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="menu_inner_item">
+                                                        <h4>Technology</h4>
+                                                        <ul class="ps-0 ">
+                                                            <li><a href="#">Footstone</a></li>
+                                                            <li><a href="#">Trolleys</a></li>
+                                                            <li><a href="#">Shoe cabinate</a></li>
+                                                            <li><a href="#">product demo</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="menu_inner_item">
+                                                        <h4>Armchairs</h4>
+                                                        <ul class="ps-0 ">
+                                                            <li><a href="#">Super Chir</a></li>
+                                                            <li><a href="#">Sofa Chir</a></li>
+                                                            <li><a href="#">Reading Chir</a></li>
+                                                            <li><a href="#">Primaum Chir</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="menu_inner_item">
+                                                        <h4>Armchairs</h4>
+                                                        <ul class="ps-0 ">
+                                                            <li><a href="#">Super Chir</a></li>
+                                                            <li><a href="#">Sofa Chir</a></li>
+                                                            <li><a href="#">Reading Chir</a></li>
+                                                            <li><a href="#">Primaum Chir</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="menu_inner_item">
+                                                        <h4>Technology</h4>
+                                                        <ul class="menu_inner_item ps-0 ">
+                                                            <li><a href="#">Footstone</a></li>
+                                                            <li><a href="#">Trolleys</a></li>
+                                                            <li><a href="#">Shoe cabinate</a></li>
+                                                            <li><a href="#">product demo</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="menu_inner_item">
+                                                        <img src=" img/product_ads.jpg" alt=" img/product_ads.jpg"
+                                                            class="img-fluid">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </li>
+                            <li>
+                                <div class="category_title">
+                                    <img src=" img/computer.png" alt=" img/computer.png" class="img-fluid me-2">
+                                    <span>Computer</span>
+                                    <div class="product_mega_menu product_menu">
+                                        <div class="product_mega_menu_wrapper d-flex justify-content-between  p-3">
+                                            <div class="row flex-wrap ">
+                                                <div class="col-3">
+                                                    <div class="menu_inner_item">
+                                                        <h4>Computer</h4>
+                                                        <ul class="ps-0 ">
+                                                            <li><a href="#">Small Sofas</a></li>
+                                                            <li><a href="#">Armchairs</a></li>
+                                                            <li><a href="#">Easy Chir</a></li>
+                                                            <li><a href="#">Day Beds</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="menu_inner_item">
+                                                        <h4>Tables</h4>
+                                                        <ul class="ps-0 ">
+                                                            <li><a href="#">Footstone</a></li>
+                                                            <li><a href="#">Trolleys</a></li>
+                                                            <li><a href="#">Shoe cabinate</a></li>
+                                                            <li><a href="#">product demo</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="menu_inner_item">
+                                                        <h4>Furniture</h4>
+                                                        <ul class="ps-0 ">
+                                                            <li><a href="#">Tablet Device</a></li>
+                                                            <li><a href="#">Gaming</a></li>
+                                                            <li><a href="#">Play online</a></li>
+                                                            <li><a href="#">Play Ground</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="menu_inner_item">
+                                                        <h4>Armchairs</h4>
+                                                        <ul class="menu_inner_item ps-0 ">
+                                                            <li><a href="#">Super Chir</a></li>
+                                                            <li><a href="#">Sofa Chir</a></li>
+                                                            <li><a href="#">Reading Chir</a></li>
+                                                            <li><a href="#">Primum Chir</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="menu_inner_item">
+                                                        <h4>Electronic Device</h4>
+                                                        <ul class="ps-0 ">
+                                                            <li><a href="#">Small Sofas</a></li>
+                                                            <li><a href="#">Armchairs</a></li>
+                                                            <li><a href="#">Easy Chir</a></li>
+                                                            <li><a href="#">Day Beds</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="menu_inner_item">
+                                                        <h4>Technology</h4>
+                                                        <ul class="ps-0 ">
+                                                            <li><a href="#">Footstone</a></li>
+                                                            <li><a href="#">Trolleys</a></li>
+                                                            <li><a href="#">Shoe cabinate</a></li>
+                                                            <li><a href="#">product demo</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="menu_inner_item">
+                                                        <img src="img/product_anunc.jpg" alt=" img/product_anunc.png"
+                                                            class="img-fluid">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </li>
+                            <li>
+                                <div class="category_title">
+                                    <img src="img/gardening-tools.png" alt=" img/gardening-tools.png"
+                                        class="img-fluid me-2">
+                                    <span>Farming Tools</span>
+                                    <div class="product_mega_menu product_menu">
+                                        <div class="product_mega_menu_wrapper d-flex justify-content-between  p-3">
+                                            <div class="row flex-wrap ">
+                                                <div class="col-3">
+                                                    <div class="menu_inner_item">
+                                                        <h4>Armchairs</h4>
+                                                        <ul class="ps-0 ">
+                                                            <li><a href="#">Super Chir</a></li>
+                                                            <li><a href="#">Sofa Chir</a></li>
+                                                            <li><a href="#">Reading Chir</a></li>
+                                                            <li><a href="#">Primaum Chir</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="menu_inner_item">
+                                                        <h4>Electronic Device</h4>
+                                                        <ul class="ps-0 ">
+                                                            <li><a href="#">Small Sofas</a></li>
+                                                            <li><a href="#">Armchairs</a></li>
+                                                            <li><a href="#">Easy Chir</a></li>
+                                                            <li><a href="#">Day Beds</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="menu_inner_item">
+                                                        <h4>Technology</h4>
+                                                        <ul class=" ps-0 ">
+                                                            <li><a href="#">Footstone</a></li>
+                                                            <li><a href="#">Trolleys</a></li>
+                                                            <li><a href="#">Shoe cabinate</a></li>
+                                                            <li><a href="#">product demo</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="menu_inner_item">
+                                                        <h4>Armchairs</h4>
+                                                        <ul class="ps-0 ">
+                                                            <li><a href="#">Super Chir</a></li>
+                                                            <li><a href="#">Sofa Chir</a></li>
+                                                            <li><a href="#">Reading Chir</a></li>
+                                                            <li><a href="#">Primaum Chir</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="menu_inner_item">
+                                                        <h4>Electronic Device</h4>
+                                                        <ul class="ps-0 ">
+                                                            <li><a href="#">Small Sofas</a></li>
+                                                            <li><a href="#">Armchairs</a></li>
+                                                            <li><a href="#">Easy Chir</a></li>
+                                                            <li><a href="#">Day Beds</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="menu_inner_item">
+                                                        <img src="img/product_anunc.jpg" alt=" img/product_anunc.png"
+                                                            class="img-fluid">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </li>
+                            <li>
+                                <div class="category_title">
+                                    <img src=" img/technology.png" alt=" img/technology.png" class="img-fluid me-2">
+                                    <span>Instruments</span>
+                                    <div class="product_mega_menu product_menu">
+                                        <div class="product_mega_menu_wrapper d-flex justify-content-between  p-3">
+                                            <div class="row flex-wrap ">
+                                                <div class="col-3">
+                                                    <div class="menu_inner_item">
+                                                        <h4>Technology</h4>
+                                                        <ul class="ps-0 ">
+                                                            <li><a href="#">Footstone</a></li>
+                                                            <li><a href="#">Trolleys</a></li>
+                                                            <li><a href="#">Shoe cabinate</a></li>
+                                                            <li><a href="#">product demo</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="menu_inner_item">
+                                                        <h4>Armchairs</h4>
+                                                        <ul class="ps-0 ">
+                                                            <li><a href="#">Super Chir</a></li>
+                                                            <li><a href="#">Sofa Chir</a></li>
+                                                            <li><a href="#">Reading Chir</a></li>
+                                                            <li><a href="#">Primaum Chir</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="menu_inner_item">
+                                                        <h4>Electronic Device</h4>
+                                                        <ul class="ps-0 ">
+                                                            <li><a href="#">Small Sofas</a></li>
+                                                            <li><a href="#">Armchairs</a></li>
+                                                            <li><a href="#">Easy Chir</a></li>
+                                                            <li><a href="#">Day Beds</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="menu_inner_item">
+                                                        <h4>Armchairs</h4>
+                                                        <ul class="ps-0 ">
+                                                            <li><a href="#">Super Chir</a></li>
+                                                            <li><a href="#">Sofa Chir</a></li>
+                                                            <li><a href="#">Reading Chir</a></li>
+                                                            <li><a href="#">Primaum Chir</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="menu_inner_item">
+                                                        <h4>Technology</h4>
+                                                        <ul class="ps-0 ">
+                                                            <li><a href="#">Footstone</a></li>
+                                                            <li><a href="#">Trolleys</a></li>
+                                                            <li><a href="#">Shoe cabinate</a></li>
+                                                            <li><a href="#">product demo</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="menu_inner_item">
+                                                        <h4>Armchairs</h4>
+                                                        <ul class="ps-0 ">
+                                                            <li><a href="#">Super Chir</a></li>
+                                                            <li><a href="#">Sofa Chir</a></li>
+                                                            <li><a href="#">Reading Chir</a></li>
+                                                            <li><a href="#">Primaum Chir</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="menu_inner_item">
+                                                        <img src=" img/product_anunc.jpg" alt=" img/product_anunc.png"
+                                                            class="img-fluid">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- desktop menu start here -->
+                <ul id="desktop_menu" class="navbar-nav navbar-light menu-main">
+                    <li class="nav-item "><a class="nav-link" href="#">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">BLOG</a></li>
+                    <li class="nav-item menu-item-has-children">
+                        <a href="  shop.html" class="nav-link">SHOP <i class="fa fa-angle-down"></i></a>
+                        <div class="sub-menu mega-menu mega-menu-column-4 ">
+                            <div class="list-item">
+                                <h4 class="title">SHOP LAYOUT</h4>
+                                <ul class="ps-0 mt-3">
+                                    <li><a class="new_" href=" product01.html">Product page-01</a></li>
+                                    <li><a class="new_" href=" product.html" target="_blank">Product page-02</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                </ul>
+                            </div>
+                            <div class="list-item">
+                                <h4 class="title">PRODUCT PAGES</h4>
+                                <ul class="ps-0 mt-3">
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                    <li><a class="sale" href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Sticky Gallery No Sidebar </a></li>
+                                </ul>
+                            </div>
+                            <div class="list-item">
+                                <h4 class="title">PRODUCT FEATURES</h4>
+                                <ul class="ps-0 mt-3">
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Sticky Gallery No Sidebart</a></li>
+                                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                    <li><a class="sale" href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                </ul>
+                            </div>
+                            <div class="list-item">
+                                <h4 class="title">WOOCOMMERCE</h4>
+                                <ul class="ps-0 mt-3">
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a class="sale" href="#">Sticky Gallery No Sidebar</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                </ul>
+                            </div>
+                            <div class="list-item">
+                                <h4 class="title">SHOP PAGES</h4>
+                                <ul class="ps-0 mt-3">
+                                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Sticky Gallery No </a></li>
+                                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item menu-item-has-children">
+                        <a href="#" class="nav-link">PAGES <i class="fa fa-angle-down"></i></a>
+                        <div class="sub-menu mega-menu mega-menu-column-4 row">
+                            <div class="list-item col-3">
+                                <h4 class="title">BASIC PAGES</h4>
+                                <ul class="ps-0 mt-3">
+                                    <li><a href=" product01.html" class="new_" target="_blank">Product
+                                            Page-01</a></li>
+                                    <li><a href=" product.html" class="new_" target="_blank">Product
+                                            Page-02</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                </ul>
+                            </div>
+                            <div class="list-item col-3">
+                                <h4 class="title">INFORMATION PAGES</h4>
+                                <ul class="ps-0 mt-3">
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Sticky Gallery No Sidebar </a></li>
+                                </ul>
+                            </div>
+                            <div class="list-item col-3">
+                                <h4 class="title">ADDITIONAL PAGE</h4>
+                                <ul class="ps-0 mt-3">
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                </ul>
+                            </div>
+                            <div class="list-item col-3">
+                                <h4 class="title">PORTFOLIO</h4>
+                                <ul class="ps-0 mt-3">
+                                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Sticky Gallery No </a></li>
+                                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item menu-item-has-children">
+                        <a href="#" class="nav-link">ELEMENTS <i class="fa fa-angle-down"></i></a>
+                        <div class="sub-menu mega-menu mega-menu-column-4 row">
+                            <div class="list-item col-3">
+                                <h4 class="title">CIYA ELEMENTS 01</h4>
+                                <ul class="ps-0 mt-3">
+                                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a class="sale" href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a class="hot_sale" href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                </ul>
+                            </div>
+                            <div class="list-item col-3">
+                                <h4 class="title">CIYA ELEMENTS 02</h4>
+                                <ul class="ps-0 mt-3">
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a class="hot_sale" href="#">Sticky Gallery No Sidebar</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Sticky Gallery No Sidebar </a></li>
+                                </ul>
+                            </div>
+                            <div class="list-item col-3">
+                                <h4 class="title">CIYA ELEMENTS 03</h4>
+                                <ul class="ps-0 mt-3">
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                </ul>
+                            </div>
+                            <div class="list-item col-3">
+                                <h4 class="title">CIYA ELEMENTS 04</h4>
+                                <ul class="ps-0 mt-3">
+                                    <li><a class="new_" href="#">Sticky Gallery No Sidebar</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Product List</a></li>
+                                    <li><a href="#">Sticky Gallery No </a></li>
+                                    <li><a href="#">Sticky Gallery No Sidebar</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">CONTACT US</a></li>
+                </ul>
+                <!-- desktop menu end here -->
+                <div class="link_menu d-none d-lg-flex align-items-center  justify-content-end  ">
+                    <ul class="d-flex justify-content-between align-items-center   ps-0 mb-0 ">
+                        <li class="list-unstyled me-3"><a href="#">New Arrivals</a></li>
+                        <li class="list-unstyled me-3"><a href="#">Super Sale</a></li>
+                        <li class="list-unstyled "><a href="#">Outlet</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section id="single_product_page">
+        <div class="container-fluid container-xl">
+            <div class="breadcrumb_items breadcrumb ">
+                <ul class="ps-0 ">
+                    <li class="list-unstyled breadcrumb-item ">Shop</li>
+                    <li class="list-unstyled breadcrumb-item">Cetegory 01</li>
+                    <li class="list-unstyled breadcrumb-item">Product 01</li>
+                </ul>
+            </div>
+            <div class="about_product">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="product_slider d-flex align-items-center justify-content-center ">
+                            <div class="product_page_image d-flex align-items-center justify-content-between ">
+                                <div class="themb_img_area">
+                                    <div class="them_img active_img">
+                                        <img src=" img/4g.png" alt="">
+                                    </div>
+                                    <div class="them_img">
+                                        <img src=" img/4i.png" alt="">
+                                    </div>
+                                    <div class="them_img">
+                                        <img src=" img/4j.png" alt="">
+                                    </div>
+                                    <div class="them_img">
+                                        <img src=" img/4k.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="img_box">
+                                    <img class="img-fluid main_image" src=" img/4g.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="product_page_wrapper">
+                            <div class="product_page_details">
+                                <a href="#">Modern category</a>
+                                <h3>Modern Patek Philippe Watch</h3>
+                                <div class="review_price d-flex flex-wrap  ">
+                                    <span class="price me-4">$199</span>
+                                    <div class="review_short_info d-flex align-items-center ">
+                                        <div class="review_star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <span class="total_review">(12)</span>
+                                        </div>
+                                        <a href="#Review" class="user_review">Write a Review</a>
+                                    </div>
+                                </div>
+                                <strong><span><i class="fa-solid fa-check"></i></span> In Stock</strong>
+
+                                <div class="view_bottom">
+                                    <div class="cart_count d-flex">
+                                        <input type="number" min="1" value="1">
+                                    </div>
+                                    <div class="cart_button d-flex align-items-center justify-content-center ">
+                                        <span><i class="fa-solid fa-cart-plus"></i></span>
+                                        <button class="d-none d-sm-flex ">Add To Cart</button>
+                                    </div>
+                                    <div class="popup__option">
+                                        <span><i class="fa-solid fa-bag-shopping"></i></span><a href="#"
+                                            class="d-none d-sm-grid ">Buy Now</a>
+                                    </div>
+                                    <div class="popup__option popup__option2 question_button">
+                                        <a href="#"><i class="fa-solid fa-question"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="woo_share my-3 ">
+                                <div class="row align-items-center ">
+                                    <div class="col-12 col-lg-7">
+                                        <div class="wishlist_compare mb-4 mb-lg-0 d-flex align-items-center">
+                                            <a class="me-4" href=""><i class="fa-regular fa-heart"></i>Add To
+                                                Wishlist</a>
+                                            <a href=""><i class="fa-solid fa-shuffle"></i> Compare</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-5 justify-content-start justify-content-lg-end  ">
+                                        <div
+                                            class="social_box d-flex align-items-center justify-content-start justify-content-lg-end ">
+                                            <span class="me-2">Share: </span>
+                                            <div class="social_links d-flex align-items-center ">
+                                                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                                                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                                                <a href=""><i class="fa-brands fa-telegram"></i></a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="offer_area  mb-4 mb-lg-0">
+                                <span class="mb-3 d-block ">Last chance! Sales end in</span>
+                                <div class="offer_timer">
+                                    <div class="row align-items-center">
+                                        <div class="col-12 col-lg-6">
+                                            <div class="timer d-flex align-items-center mb-4 mb-lg-0 ">
+                                                <div class="timer_box me-2">
+                                                    <b class="day">05</b><span>Days</span>
+                                                </div>
+                                                <div class="timer_box me-2">
+                                                    <b class="hours">09</b><span>Hr</span>
+                                                </div>
+                                                <div class="timer_box me-2">
+                                                    <b class="minutes">50</b><span>min</span>
+                                                </div>
+                                                <div class="timer_box">
+                                                    <b class="second">38</b><span>sec</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <div class="product_qty">
+                                                <div class="qty_title d-flex justify-content-between  ">
+                                                    <p>Ordered: <b class="sold_product_number">10</b></p>
+                                                    <p>Items available: <b class="sold_product_number">250</b></p>
+                                                </div>
+                                                <div class="qty_progress">
+                                                    <div class="stroked"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="checkout_systems">
+                                <div class="chekout_title">
+                                    <span>Guaranteed Safe Checkout</span>
+                                </div>
+                                <div class="checkout_img">
+                                    <img src=" img/checkout_methods.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product_details_tabs">
+                <div class="tab_container d-flex justify-content-center ">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="Description-tab" data-bs-toggle="tab"
+                                data-bs-target="#Description" type="button" role="tab" aria-controls="Description"
+                                aria-selected="true">Description</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="Additional-tab" data-bs-toggle="tab"
+                                data-bs-target="#Additional" type="button" role="tab" aria-controls="Additional"
+                                aria-selected="false">Additional
+                                Info</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="Review-tab" data-bs-toggle="tab" data-bs-target="#Review"
+                                type="button" role="tab" aria-controls="Review" aria-selected="false">Review</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="shop_delivary-tab" data-bs-toggle="tab"
+                                data-bs-target="#shop_delivary" type="button" role="tab" aria-controls="shop_delivary"
+                                aria-selected="false">Shipping & Delivery</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="Description" role="tabpanel"
+                        aria-labelledby="Description-tab" tabindex="0">
+                        <div class="description_tab">
+                            <div class="row">
+                                <div class="col-12 col-md-7">
+                                    <div class="product_description">
+                                        <h3>Modern Patek Philippe Watch</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet officiis quae
+                                            nulla
+                                            assumenda. Tempora, exercitationem animi, blanditiis harum quas optio
+                                            asperiores
+                                            assumenda laudantium totam perferendis perspiciatis, ipsa voluptas magnam
+                                            unde.There are
+                                            many variations of passages of Lorem Ipsum available, but the majority have
+                                            suffered
+                                            alteration in some form, by injected humour, or randomised words which don't
+                                            look even
+                                            slightly believable.
+                                        </p>
+                                        <ul class="ps-0">
+                                            <li class="list-unstyled d-flex gap-2"><span class="check_icon d-block ">
+                                                    <i class="fa-solid fa-check"></i>
+                                                </span><span class="item_info">
+                                                    warrants its products to be free from defects in materials or
+                                                    workmanship for a period of 2 years
+                                                </span></li>
+                                            <li class="list-unstyled d-flex gap-2">
+                                                <div class="check_icon ">
+                                                    <i class="fa-solid fa-check"></i>
+                                                </div>
+                                                <div class="item_info">
+                                                    The warranty is granted to the end-user and applies to products
+                                                    which
+                                                    are purchased, installed, and the purposes
+                                                </div>
+                                            </li>
+                                            <li class="list-unstyled d-flex gap-2">
+                                                <div class="check_icon ">
+                                                    <i class="fa-solid fa-check"></i>
+                                                </div>
+                                                <div class="item_info">
+                                                    During the warranty period, SHAD will repair or replace, at no
+                                                    charge, a
+                                                    product that is defective in materials
+                                                </div>
+                                            </li>
+                                            <li class="list-unstyled d-flex gap-2">
+                                                <div class="check_icon ">
+                                                    <i class="fa-solid fa-check"></i>
+                                                </div>
+                                                <div class="item_info">
+                                                    We would love to know what you like or dislike about the
+                                                    productBatch
+                                                    Import and Export of catalog
+                                                </div>
+                                            </li>
+                                            <li class="list-unstyled d-flex gap-2">
+                                                <div class="check_icon ">
+                                                    <i class="fa-solid fa-check"></i>
+                                                </div>
+                                                <div class="item_info">
+                                                    Component at its discretion and reserves the right to substitute an
+                                                    equivalent product under the terms
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there
+                                            isn't
+                                            anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                                            generators on
+                                            the Internet tend to repeat predefined chunks as necessary, making this the
+                                            first true
+                                            generator on the Internet. It uses a dictionary of over 200 Latin words,
+                                            combined with a
+                                            handful of model sentence structures, to generate Lorem Ipsum which looks
+                                            reasonable.
+                                            The generated Lorem Ipsum is therefore always free from repetition, injected
+                                            humour, or
+                                            non-characteristic words etc </p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-5">
+                                    <div class="product_details_image">
+                                        <img src=" img/4g.png" alt="">
+                                        <img src=" img/4h.png" alt="">
+                                        <img src=" img/4i.png" alt="">
+                                        <img src=" img/4j.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="Additional" role="tabpanel" aria-labelledby="Additional-tab"
+                        tabindex="0">
+                        <div class="product_details_table">
+                            <table>
+                                <tr>
+                                    <td>Brand</td>
+                                    <td>Patek Philippe</td>
+                                </tr>
+                                <tr>
+                                    <td>Country</td>
+                                    <td>Japan</td>
+                                </tr>
+                                <tr>
+                                    <td>Color</td>
+                                    <td>Black, Blue</td>
+                                </tr>
+                                <tr>
+                                    <td>Model</td>
+                                    <td>SW-23k Patek</td>
+                                </tr>
+                                <tr>
+                                    <td>Material</td>
+                                    <td>Stainless Steel</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="Review" role="tabpanel" aria-labelledby="Review-tab" tabindex="0">
+                        <div class="review_tab">
+                            <h3>Customer Reviews</h3>
+                            <div class="review_slider">
+                                <div class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide d-flex justify-content-center ">
+                                            <div class="single_review">
+                                                <p class="customer_review_title">Look great very ease to wear and
+                                                    comfortable!</p>
+                                                <div class="row">
+                                                    <div class="col-12 col-md-5">
+                                                        <div class="review_box d-table ">
+                                                            <div class="category_review d-table-row  ">
+                                                                <span class="d-table-cell pe-3">Quality</span>
+                                                                <div class="review_star ms-3 d-table-cell">
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="category_review d-table-row  ">
+                                                                <span class="d-table-cell pe-3">Value</span>
+                                                                <div class="review_star ms-3 d-table-cell">
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="category_review d-table-row  ">
+                                                                <span class="d-table-cell pe-3">Price</span>
+                                                                <div class="review_star ms-3 d-table-cell">
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-7">
+                                                        <div class="review_guid">
+                                                            <div class="review_guid_content">
+                                                                <p>We would love to know what you like or dislike about
+                                                                    the product. Share your opinion on product quality,
+                                                                    appearance, installation, and other characteristics.
+                                                                </p>
+                                                            </div>
+                                                            <div class="review_info d-flex justify-content-between ">
+                                                                <p><i class="fa-solid fa-user"></i> <span
+                                                                        class="reviewer_name">khayrul</span></p>
+                                                                <p><i class="fa-solid fa-calendar-days"></i> <span
+                                                                        class="review_date">12/29/2023</span></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide d-flex justify-content-center ">
+                                            <div class="single_review">
+                                                <p class="customer_review_title">Look great very ease to wear and
+                                                    comfortable!</p>
+                                                <div class="row">
+                                                    <div class="col-12 col-md-5">
+                                                        <div class="review_box d-table ">
+                                                            <div class="category_review d-table-row  ">
+                                                                <span class="d-table-cell pe-3">Quality</span>
+                                                                <div class="review_star ms-3 d-table-cell">
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="category_review d-table-row  ">
+                                                                <span class="d-table-cell pe-3">Value</span>
+                                                                <div class="review_star ms-3 d-table-cell">
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="category_review d-table-row  ">
+                                                                <span class="d-table-cell pe-3">Price</span>
+                                                                <div class="review_star ms-3 d-table-cell">
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-7">
+                                                        <div class="review_guid">
+                                                            <div class="review_guid_content">
+                                                                <p>We would love to know what you like or dislike about
+                                                                    the product. Share your opinion on product quality,
+                                                                    appearance, installation, and other characteristics.
+                                                                </p>
+                                                            </div>
+                                                            <div class="review_info d-flex justify-content-between ">
+                                                                <p><i class="fa-solid fa-user"></i> <span
+                                                                        class="reviewer_name">khayrul</span></p>
+                                                                <p><i class="fa-solid fa-calendar-days"></i> <span
+                                                                        class="review_date">12/29/2023</span></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide d-flex justify-content-center ">
+                                            <div class="single_review">
+                                                <p class="customer_review_title">Look great very ease to wear and
+                                                    comfortable!</p>
+                                                <div class="row">
+                                                    <div class="col-12 col-md-5">
+                                                        <div class="review_box d-table ">
+                                                            <div class="category_review d-table-row  ">
+                                                                <span class="d-table-cell pe-3">Quality</span>
+                                                                <div class="review_star ms-3 d-table-cell">
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="category_review d-table-row  ">
+                                                                <span class="d-table-cell pe-3">Value</span>
+                                                                <div class="review_star ms-3 d-table-cell">
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="category_review d-table-row  ">
+                                                                <span class="d-table-cell pe-3">Price</span>
+                                                                <div class="review_star ms-3 d-table-cell">
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-7">
+                                                        <div class="review_guid">
+                                                            <div class="review_guid_content">
+                                                                <p>We would love to know what you like or dislike about
+                                                                    the product. Share your opinion on product quality,
+                                                                    appearance, installation, and other characteristics.
+                                                                </p>
+                                                            </div>
+                                                            <div class="review_info d-flex justify-content-between ">
+                                                                <p><i class="fa-solid fa-user"></i> <span
+                                                                        class="reviewer_name">khayrul</span></p>
+                                                                <p><i class="fa-solid fa-calendar-days"></i> <span
+                                                                        class="review_date">12/29/2023</span></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide d-flex justify-content-center ">
+                                            <div class="single_review">
+                                                <p class="customer_review_title">Look great very ease to wear and
+                                                    comfortable!</p>
+                                                <div class="row">
+                                                    <div class="col-12 col-md-5">
+                                                        <div class="review_box d-table ">
+                                                            <div class="category_review d-table-row  ">
+                                                                <span class="d-table-cell pe-3">Quality</span>
+                                                                <div class="review_star ms-3 d-table-cell">
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="category_review d-table-row  ">
+                                                                <span class="d-table-cell pe-3">Value</span>
+                                                                <div class="review_star ms-3 d-table-cell">
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="category_review d-table-row  ">
+                                                                <span class="d-table-cell pe-3">Price</span>
+                                                                <div class="review_star ms-3 d-table-cell">
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-7">
+                                                        <div class="review_guid">
+                                                            <div class="review_guid_content">
+                                                                <p>We would love to know what you like or dislike about
+                                                                    the product. Share your opinion on product quality,
+                                                                    appearance, installation, and other characteristics.
+                                                                </p>
+                                                            </div>
+                                                            <div class="review_info d-flex justify-content-between ">
+                                                                <p><i class="fa-solid fa-user"></i> <span
+                                                                        class="reviewer_name">khayrul</span></p>
+                                                                <p><i class="fa-solid fa-calendar-days"></i> <span
+                                                                        class="review_date">12/29/2023</span></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                            <div class="review_add_area">
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <div class="left_side">
+                                            <div class="review_total">
+                                                <h1 class="mb-0 ">5</h1>
+                                                <div>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <p><span class="rating_count">5 </span>reviews</p>
+                                            </div>
+                                            <div class="rating_details">
+                                                <div class="rating_box">
+                                                    <div class="rating_star">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <div class="rating_progress">
+                                                    </div>
+                                                    <div class="rating_number">10</div>
+                                                </div>
+                                                <div class="rating_box">
+                                                    <div class="rating_star">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-regular fa-star"></i>
+                                                    </div>
+                                                    <div class="rating_progress">
+                                                    </div>
+                                                    <div class="rating_number">03</div>
+                                                </div>
+                                                <div class="rating_box">
+                                                    <div class="rating_star">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-regular fa-star"></i>
+                                                        <i class="fa-regular fa-star"></i>
+                                                    </div>
+                                                    <div class="rating_progress">
+                                                    </div>
+                                                    <div class="rating_number">00</div>
+                                                </div>
+                                                <div class="rating_box">
+                                                    <div class="rating_star">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-regular fa-star"></i>
+                                                        <i class="fa-regular fa-star"></i>
+                                                        <i class="fa-regular fa-star"></i>
+                                                    </div>
+                                                    <div class="rating_progress">
+                                                    </div>
+                                                    <div class="rating_number">00</div>
+                                                </div>
+                                                <div class="rating_box">
+                                                    <div class="rating_star">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-regular fa-star"></i>
+                                                        <i class="fa-regular fa-star"></i>
+                                                        <i class="fa-regular fa-star"></i>
+                                                        <i class="fa-regular fa-star"></i>
+                                                    </div>
+                                                    <div class="rating_progress">
+                                                    </div>
+                                                    <div class="rating_number">00</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="right_side">
+                                            <h3>Add Your Review</h3>
+                                            <div class="review_star_container">
+                                                <div class="rating_star_item ">
+                                                    <span>Quality</span>
+                                                    <div class="user_rating_star">
+                                                        <i class="fa-regular fa-star"></i>
+                                                        <i class="fa-regular fa-star"></i>
+                                                        <i class="fa-regular fa-star"></i>
+                                                        <i class="fa-regular fa-star"></i>
+                                                        <i class="fa-regular fa-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="rating_star_item ">
+                                                    <span>Value</span>
+                                                    <div class="user_rating_star">
+                                                        <i class="fa-regular fa-star"></i>
+                                                        <i class="fa-regular fa-star"></i>
+                                                        <i class="fa-regular fa-star"></i>
+                                                        <i class="fa-regular fa-star"></i>
+                                                        <i class="fa-regular fa-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="rating_star_item ">
+                                                    <span>Price</span>
+                                                    <div class="user_rating_star">
+                                                        <i class="fa-regular fa-star"></i>
+                                                        <i class="fa-regular fa-star"></i>
+                                                        <i class="fa-regular fa-star"></i>
+                                                        <i class="fa-regular fa-star"></i>
+                                                        <i class="fa-regular fa-star"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <form id="customer_form">
+                                                <div class="customer_box mb-3">
+                                                    <label for="name">Your Name</label>
+                                                    <input type="text" name="name" id="name" required>
+                                                </div>
+                                                <div class="customer_box mb-3">
+                                                    <label for="review">Your Review:</label>
+                                                    <textarea name="review" id="review" rows="5"
+                                                        required></textarea>
+                                                </div>
+                                                <div class="customer_box mb-3">
+                                                    <label for="email">Your Email:</label>
+                                                    <input type="email" name="email" id="email" required>
+                                                </div>
+                                                <div class="customer_agreed_checkbox customer_box mb-3">
+                                                    <input type="checkbox" name="checkbox" id="checkbox" required>
+                                                    <label for="checkbox">Save my name, email, and website in this
+                                                        browser for the next time I comment.</label>
+                                                </div>
+                                                <div class="customer_data_submit">
+                                                    <button type="submit">Submit</button>
+                                                </div>
+                                            </form>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="shop_delivary" role="tabpanel" aria-labelledby="shop_delivary-tab"
+                        tabindex="0">
+                        <div class="about_product_brand">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <div class="about_info">
+                                        <h3>Modern Men's Brand Watch</h3>
+                                        <p>There are many variations of passages of Lorem Ipsum available, but the
+                                            majority
+                                            have suffered alteration in some form, by injected humour, or randomised
+                                            words
+                                            which don't look even slightly believable. If you are going to use a passage
+                                            of
+                                            Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
+                                            the
+                                            middle of text. All the Lorem Ipsum generators on the Internet tend to
+                                            repeat
+                                            predefined chunks as necessary, making this the first true generator on the
+                                            Internet. It uses a dictionary of over 200 Latin words, combined with a
+                                            handful
+                                            of model sentence structures, to generate Lorem Ipsum which looks
+                                            reasonable.
+                                            The generated Lorem Ipsum is therefore always free from repetition, injected
+                                            humour, or non-characteristic words etc.</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="brand_img d-flex justify-content-between ">
+                                        <img src=" img/ship1.png" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--*************footer_section start here**************-->
+    <footer id="footer_section" class="pt-3 pb-0">
+        <div class="container-fluid container">
+            <div class="footer-wrapper">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="single_footer_item mb-5 mb-lg-0">
+                            <div class="footer_logo mb-4">
+                                <img class="img-fluid" src=" img/logo.png" alt=" img/logo.png">
+                            </div>
+                            <div class="summary_info mb-4">
+                                <p>Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                            </div>
+                            <div class="f_social_links d-flex justify-content-start mt-5">
+                                <a class="me-2" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a class="me-2" href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a class="me-2" href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a class="me-2" href="#"><i class="fa-brands fa-pinterest"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="single_footer_item  mb-5 mb-lg-0">
+                            <h5 class="mb-4">Useful Links</h5>
+                            <ul>
+                                <li class="list-unstyled">Home</li>
+                                <li class="list-unstyled">About Us</li>
+                                <li class="list-unstyled">Stores Locator</li>
+                                <li class="list-unstyled">Shop</li>
+                                <li class="list-unstyled">Contact Us</li>
+                                <li class="list-unstyled">Privacy Policy</li>
+                                <li class="list-unstyled">Terms & Conditions</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="single_footer_item  mb-5 mb-lg-0">
+                            <h5 class="mb-4">Product Tags</h5>
+                            <div class="d-flex flex-wrap">
+                                <a href="#" class="me-2 mb-2">ACCESSORIES</a>
+                                <a href="#" class="me-2 mb-2">BLACK</a>
+                                <a href="#" class="me-2 mb-2">KIDS</a>
+                                <a href="#" class="me-2 mb-2">LOOK</a>
+                                <a href="#" class="me-2 mb-2">MAN</a>
+                                <a href="#" class="me-2 mb-2">NEW</a>
+                                <a href="#" class="me-2 mb-2">WOMAN</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="single_footer_item  mb-5 mb-lg-0">
+                            <p class="mb-4"> Ciya Shop is an enchanting and easy to use e-Commerce WP theme
+                                that allows you to sell your products in a dynamic way.</p>
+                            <div class="address">
+                                <div class="address_item_box d-flex align-items-start  ">
+                                    <i class="fa-solid fa-location-dot me-3 mt-2"></i>
+                                    <p class="mb-2"> organic store Ltd, 2nd floor, abc shopping market, abc,
+                                        bangladesh</p>
+                                </div>
+                                <div class="address_item_box d-flex align-items-center  ">
+                                    <i class="fa-regular fa-envelope me-3"></i>
+                                    <p class="mb-2">support@ciyashop.com</p>
+                                </div>
+                                <div class="address_item_box d-flex align-items-center  ">
+                                    <i class="fa-solid fa-phone me-3"></i>
+                                    <p class="mb-2"> +222-232-2342</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--copy right section stat here-->
+        <div class="copyright_section py-3 d-flex flex-column  justify-content-center align-items-center mb-5 mb-sm-0">
+            <p class="mb-2">© Copyright <b id="currentYear"></b> E-mart All Rights Reserved.</p>
+            <p class="mb-0">Developed by <span>Khayrul islam</span></p>
+        </div>
+        <!--copy right section end here-->
+    </footer>
+    <!--*************footer_section end here**************-->
+    <!--script files here-->
+    <script src="js/all.min.js"></script>
+    <script src=" js/jquery-3.7.1.min.js"></script>
+    <script src=" js/swiper-bundle.min.js"></script>
+    <script src=" js/accordion_menu.js"></script>
+    <script src=" js/bootstrap.js"></script>
+    <script src=" js/popper.min.js"></script>
+    <script src=" js/product.js"></script>
+</body>
+
+</html>
