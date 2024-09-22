@@ -4,7 +4,8 @@
     }
     .elbp__new__collection__section,
     .elbp__testimonials__section,
-    .elbp__brands__section {
+    .elbp__brands__section,
+    .elbp__footer__section .top {
         padding: 20px 0;
     }
     h1 {
@@ -891,7 +892,8 @@
     }
     .elbp__new__collection__section,
     .elbp__testimonials__section,
-    .elbp__brands__section {
+    .elbp__brands__section,
+    .elbp__footer__section .top {
         padding: 30px 0;
     }
     h1 {
@@ -1646,7 +1648,7 @@
     .elbp__new__collection__section,
     .elbp__testimonials__section,
     .elbp__brands__section,
-    .elbp__brands__section {
+    .elbp__footer__section .top {
         padding: 40px 0;
     }
     h1 {
@@ -2299,7 +2301,8 @@
     }
     .elbp__new__collection__section,
     .elbp__testimonials__section,
-    .elbp__brands__section {
+    .elbp__brands__section,
+    .elbp__footer__section .top {
         padding: 50px 0;
     }
     h1 {
@@ -2794,7 +2797,8 @@
         margin-top: 60px;
     }
     .elbp__new__collection__section,
-    .elbp__testimonials__section {
+    .elbp__testimonials__section,
+    .elbp__footer__section .top {
         padding: 60px 0;
     }
     h1 {
@@ -3362,7 +3366,8 @@
         margin-top: 70px;
     }
     .elbp__new__collection__section,
-    .elbp__testimonials__section {
+    .elbp__testimonials__section,
+    .elbp__footer__section .top {
         padding: 70px 0;
     }
     h1 {
@@ -3655,6 +3660,26 @@
         .elbp__newsletter__wrapper h1 {
             font-size: 116px;
             top: -75px;
+        }
+        /*Footer V2*/
+        .elbp__footer__section.v2 .elbp__footer__wrapper {
+            padding-top: 60px;
+        }
+        .elbp__footer__section.v2::after {
+            top: 60px;
+        }
+        .elbp__footer__section.v2 .container::after {
+            height: calc(100% - 60px);
+        }
+        .elbp__footer__section.v2 .elbp__footer__widget.one {
+            padding: 45px 0 25px 40px;
+        }
+        .elbp__footer__section.v2 .elbp__footer__widget.two {
+            padding-left: 28px;
+            width: 80%;
+        }
+        .elbp__footer__section.v2 .elbp__footer__widget.three {
+            padding-left: 37px;
         }
     /*===== About Us Page =====*/
         /*Breadcrumbs Section*/
