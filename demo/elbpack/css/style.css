@@ -446,11 +446,12 @@ section {
 input[type="checkbox"] {
     -webkit-appearance: none;
     appearance: none;
-    background: #FFF;
+    background: transparent;
     margin: 0;
     width: 20px;
     height: 20px;
     border: 1px solid var(--text-color);
+    border-radius: 2px;
     position: relative;
     display: inline-block;
     transition: 0.3s;
@@ -491,11 +492,12 @@ input[type="checkbox"]:checked::before {
 input[type="radio"] {
     -webkit-appearance: none;
     appearance: none;
-    background: #FFF;
+    background: transparent;
     margin: 0;
     width: 20px;
     height: 20px;
     border: 1px solid var(--text-color);
+    border-radius: 2px;
     position: relative;
     border-radius: 50%;
 }
@@ -3697,6 +3699,12 @@ input[type="radio"]:checked::before {
 /* ====================================================================
    3. Shop
 ==================================================================== */
+.form__row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
 /*** Start of Shop Section ***/
 .elbp__shop__sidebar {
     display: flex;
@@ -3712,26 +3720,136 @@ input[type="radio"]:checked::before {
     border-bottom: 1px solid #C7C3BF;
 }
 
-.elbp__shop__sidebar .elbpshop__sidebar__widgets .category__list {
+.elbp__shop__sidebar .elbpshop__sidebar__widgets .categtag__list,
+.elbpshop__sidebar__widgets form {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-.elbp__shop__sidebar .elbpshop__sidebar__widgets .category__list a {
+.elbp__shop__sidebar .elbpshop__sidebar__widgets .categtag__list a {
     display: flex;
     justify-content: space-between;
 }
 
-.elbp__shop__sidebar .elbpshop__sidebar__widgets .category__list a svg {
+.elbp__shop__sidebar .elbpshop__sidebar__widgets .categtag__list a svg {
     stroke: var(--text-color);
     border: 1px solid var(--text-color);
     border-radius: 30px;
 }
 
-.elbp__shop__sidebar .elbpshop__sidebar__widgets .category__list a:hover svg {
+.elbp__shop__sidebar .elbpshop__sidebar__widgets .categtag__list a:hover svg {
     stroke: var(--main-color);
     border-color: var(--main-color);
+}
+
+/*Price Filter*/
+/*
+
+
+.range-input input[type="range"]::-webkit-slider-thumb {
+    height: 100%;
+    width: 10px;
+    border: 0;
+    border-radius: 4px;
+    background: #EAE3DB;
+    -webkit-appearance: none;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.range-input input[type="range"]::-moz-range-thumb {
+    height: 100%;
+    width: 10px;
+    border: 0;
+    border-radius: 4px;
+    background: #EAE3DB;
+    -moz-appearance: none;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    cursor: pointer;
+}*/
+
+.price-input {
+    width: 100%;
+    display: flex;
+    margin: 15px 0;
+    justify-content: space-between;
+}
+
+.price-input .field{
+    display: flex;
+    align-items: center;
+}
+
+.price-input .field input {
+	width: 50px;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+}
+
+.price-input .field input[type="number"]::-webkit-outer-spin-button,
+.price-input .field input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+.price-range-slider {
+    height: 36px;
+    position: relative;
+    background: var(--bg-black);
+    border-radius: 6px;
+}
+
+.price-range-slider .progress {
+	height: 100%;
+	left: 19%;
+	right: 17%;
+	position: absolute;
+	border-radius: 5px;
+	background: var(--background-color);
+}
+
+.range-input {
+    position: relative;
+}
+
+.range-input input {
+    position: absolute;
+    width: 100%;
+    height: 36px;
+    bottom: 0;
+    background: none;
+    pointer-events: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.range-input input[type="range"]::-webkit-slider-thumb {
+    height: 36px;
+    width: 10px;
+    border: 0;
+    border-radius: 5px;
+    background: #EAE3DB;
+    pointer-events: auto;
+    -webkit-appearance: none;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.range-input input[type="range"]::-moz-range-thumb {
+    height: 36px;
+    width: 10px;
+    border: 0;
+    border-radius: 5px;
+    background: #EAE3DB;
+    pointer-events: auto;
+    -moz-appearance: none;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    cursor: pointer;
 }
 /*** End of Shop Section ***/
 
