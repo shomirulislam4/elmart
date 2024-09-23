@@ -722,6 +722,31 @@ input[type="radio"]:checked::before {
     fill: var(--main-color);
 }
 
+.elbp__header__section .header__bottom .headerbottom__ctas .tag {
+	position: absolute;
+	top: -5px;
+	right: -5px;
+	text-align: center;
+    color: #F8F8F8;
+    font-weight: 600;
+	font-size: 9px;
+	line-height: 18px;
+	height: 18px;
+	width: 18px;
+	border-radius: 50%;
+	background: var(--main-color);
+}
+
+@media (max-width: 767px) {
+    .elbp__header__section .header__bottom .headerbottom__ctas .tag {
+        top: -4px;
+        right: -4px;
+        font-size: 7px;
+        line-height: 14px;
+        height: 14px;
+        width: 14px;
+    }
+}
 /* Main Menu */
 .elbp__header__section .header__bottom .elbp__main__nav li {
     display: inline-block;
@@ -3669,7 +3694,46 @@ input[type="radio"]:checked::before {
 }
 /*** End of Features Section ***/
 
+/* ====================================================================
+   3. Shop
+==================================================================== */
+/*** Start of Shop Section ***/
+.elbp__shop__sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
 
+.elbp__shop__sidebar .elbpshop__sidebar__widgets h4 {
+    font-size: 24px;
+	line-height: 30px;
+    padding-bottom: 16px;
+    margin-bottom: 26px;
+    border-bottom: 1px solid #C7C3BF;
+}
+
+.elbp__shop__sidebar .elbpshop__sidebar__widgets .category__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.elbp__shop__sidebar .elbpshop__sidebar__widgets .category__list a {
+    display: flex;
+    justify-content: space-between;
+}
+
+.elbp__shop__sidebar .elbpshop__sidebar__widgets .category__list a svg {
+    stroke: var(--text-color);
+    border: 1px solid var(--text-color);
+    border-radius: 30px;
+}
+
+.elbp__shop__sidebar .elbpshop__sidebar__widgets .category__list a:hover svg {
+    stroke: var(--main-color);
+    border-color: var(--main-color);
+}
+/*** End of Shop Section ***/
 
 
 /**
