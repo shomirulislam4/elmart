@@ -308,5 +308,19 @@
             $('#elbpshop__sort').niceSelect();
             $('#elbpshop__prodamount').niceSelect();
         }
+
+        //Shop List And Gird View
+        $(function () {
+            $('.elbpshop__grid__button').click(function () {
+                $('.elbp__products__grid .elbp__product__style').toggleClass('grid__view');
+    
+                var icon = $(this).find('.icon');
+                if (icon.hasClass('fa-list-ul')) {
+                    icon.removeClass('fa-list-ul').addClass('fa-microsoft');
+                } else {
+                    icon.removeClass('fa-microsoft').addClass('fa-list-ul');
+                }
+            });
+        });
           
 }) (jQuery);
