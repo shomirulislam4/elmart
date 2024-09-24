@@ -3744,31 +3744,6 @@ input[type="radio"]:checked::before {
 }
 
 /*Price Filter*/
-/*
-
-
-.range-input input[type="range"]::-webkit-slider-thumb {
-    height: 100%;
-    width: 10px;
-    border: 0;
-    border-radius: 4px;
-    background: #EAE3DB;
-    -webkit-appearance: none;
-    box-shadow: 0 0 6px rgba(0,0,0,0.2);
-    cursor: pointer;
-}
-
-.range-input input[type="range"]::-moz-range-thumb {
-    height: 100%;
-    width: 10px;
-    border: 0;
-    border-radius: 4px;
-    background: #EAE3DB;
-    -moz-appearance: none;
-    box-shadow: 0 0 6px rgba(0,0,0,0.2);
-    cursor: pointer;
-}*/
-
 .price-input {
     width: 100%;
     display: flex;
@@ -3850,6 +3825,60 @@ input[type="radio"]:checked::before {
     -moz-appearance: none;
     box-shadow: 0 0 6px rgba(0,0,0,0.2);
     cursor: pointer;
+}
+
+/* Shop Content */
+@media (min-width: 1140px) {
+    .elbp__products__grid.elbp__shop .elbp__product__style {
+        margin-bottom: 0;
+    }
+}
+
+.elbp__products__grid.elbp__shop {
+    gap: 15px;
+}
+
+.elbpshop__filter__bar {
+    padding: 10px;
+    border: 1px solid #C7C3BF;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.elbpshop__filter__bar p {
+    margin: 0;
+}
+
+.elbpshop__filter__bar .elbpshop__grid__button {
+    background: transparent;
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+.elbpshop__filter__bar .elbpshop__grid__button:hover {
+    color: var(--main-color);
+}
+
+.elbpshop__filter__bar .nice-select {
+	background-color: var(--background-color);
+	border-radius: 50px;
+	border: 0;
+	height: 40px;
+	text-align: center !important;
+    padding-left: 17px;
+    padding-right: 31px;
+}
+
+.elbpshop__filter__bar .nice-select::after {
+	border-bottom: 1px solid #7D7A73;
+	border-right: 1px solid #7D7A73;
+	height: 8px;
+	margin-top: -7px;
+	right: 17px;
+	width: 8px;
 }
 /*** End of Shop Section ***/
 

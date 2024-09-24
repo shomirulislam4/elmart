@@ -301,6 +301,12 @@
                   });
                 });
             });
-          });
+        });
+
+        //All Nice Select
+        if ($('.elbp__shop__section').length) {
+            $('#elbpshop__sort').niceSelect();
+            $('#elbpshop__prodamount').niceSelect();
+        }
           
 }) (jQuery);
