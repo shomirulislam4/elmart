@@ -106,6 +106,7 @@
 
     /* Text Color */
     --text-color: #4A4540;
+    --white-text: #F8F8F8;
 
     /* Other Colors */
     --input-color: #7C8992;
@@ -265,7 +266,7 @@ section {
     font-family: 'Poppins', sans-serif;
     text-transform: capitalize;
     background: var(--bg-black);
-    color: #F8F8F8 !important;
+    color: var(--white-text) !important;
     width: fit-content;
 }
 
@@ -283,7 +284,7 @@ section {
     text-align: center;
     font-family: 'Poppins', sans-serif;
     text-transform: capitalize;
-    color: #F8F8F8 !important;
+    color: var(--white-text) !important;
     background: var(--main-color);
     border: 1px solid var(--main-color);
     width: fit-content;
@@ -312,7 +313,7 @@ section {
 }
 
 .elbp__button__c:hover {
-    color: #F8F8F8;
+    color: var(--white-text);
     background: var(--main-color);
 }
 
@@ -729,7 +730,7 @@ input[type="radio"]:checked::before {
 	top: -5px;
 	right: -5px;
 	text-align: center;
-    color: #F8F8F8;
+    color: var(--white-text);
     font-weight: 600;
 	font-size: 9px;
 	line-height: 18px;
@@ -1954,6 +1955,29 @@ input[type="radio"]:checked::before {
     transform: scale(1.5);
 }
 
+.elbp__product__style .image .elbpprod__sale__tags {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.elbp__product__style .image .elbpprod__sale__tags .item {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    text-align: center;
+    font-family: 'ClashDisplay', sans-serif;
+    color: var(--text-color);
+    background: #F0E5D8;
+    border-radius: 50%;
+}
+
 .elbp__product__style .product__info {
     margin-top: 12px;
     flex-shrink: 0;
@@ -1969,6 +1993,11 @@ input[type="radio"]:checked::before {
     line-height: 100%;
     font-weight: 600;
     margin: 0;
+}
+
+.elbp__product__style .product__info .elbpprod__price span {
+    color: var(--main-color);
+    text-decoration: line-through;
 }
 
 .elbp__trenprod__wrapper {
@@ -2011,7 +2040,7 @@ input[type="radio"]:checked::before {
 
 .elbp__slider__nav .elbp__slider.prev:hover svg,
 .elbp__slider__nav .elbp__slider.next svg {
-    fill: #F8F8F8;
+    fill: var(--white-text);
 }
 
 .elbp__slider__nav .elbp__slider.prev:hover,
@@ -2560,7 +2589,7 @@ input[type="radio"]:checked::before {
 
 .elbp__promo__item .promo__text {
     background: var(--main-color);
-    color: #F8F8F8;
+    color: var(--white-text);
     height: 120px;
     width: 120px;
     border-radius: 50%;
@@ -3060,12 +3089,12 @@ input[type="radio"]:checked::before {
 .elbp__footer__section p,
 .elbp__footer__section p a,
 .elbp__footer__section a {
-    color: #F8F8F8;
+    color: var(--white-text);
     font-size: 15px;
 }
 
 .elbp__footer__section .elbp__widget__title {
-    color: #F8F8F8;
+    color: var(--white-text);
     font-size: 24px;
     margin-bottom: 12px;
 }
@@ -3274,11 +3303,11 @@ input[type="radio"]:checked::before {
     height: 100%;
     display: flex;
     align-items: center;
-    color: #F8F8F8;
+    color: var(--white-text);
 }
 
 .elbp__bc__wrapper a {
-    color: #F8F8F8;
+    color: var(--white-text);
     position: relative;
     margin-right: 30px;
 }
@@ -3392,7 +3421,7 @@ input[type="radio"]:checked::before {
 
 .elbp__au__wrapper .content h4,
 .elbp__au__wrapper .content p {
-    color: #F8F8F8;
+    color: var(--white-text);
 }
 
 .elbp__au__wrapper .content p:last-child {
@@ -3829,12 +3858,12 @@ input[type="radio"]:checked::before {
 
 /* Shop Content */
 @media (min-width: 1140px) {
-    .elbp__products__grid.elbp__shop .elbp__product__style {
+    .elbp__shop__products .elbp__products__grid .elbp__product__style {
         margin-bottom: 0;
     }
 }
 
-.elbp__products__grid.elbp__shop {
+.elbp__shop__products .elbp__products__grid {
     gap: 15px;
 }
 
@@ -3879,6 +3908,41 @@ input[type="radio"]:checked::before {
 	margin-top: -7px;
 	right: 17px;
 	width: 8px;
+}
+
+.elbpshop__pagination {
+    display: flex;
+    justify-content: center;
+    gap: 115px;
+    align-items: center;
+}
+
+.elbpshop__pagination .page__link svg {
+    stroke: var(--text-color);
+}
+
+.elbpshop__pagination .page__link:hover svg {
+    stroke: var(--main-color);
+}
+
+.elbpshop__pagination .page__numbers {
+    display: flex;
+    gap: 2px;
+}
+
+.elbpshop__pagination .page__numbers .page__link {
+    color: var(--text-color);
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.elbpshop__pagination .page__numbers .page__link.active,
+.elbpshop__pagination .page__numbers .page__link:hover {
+    background: var(--bg-black);
+    color: var(--white-text);
 }
 /*** End of Shop Section ***/
 
