@@ -621,8 +621,8 @@ input[type="radio"]:checked::before {
 }
 
 .elbp__header__section .header__top .headertop__ctas a,
-.elbp__header__section .header__top .headertop__ctas .nice-select span,
-.elbp__header__section .header__top .headertop__ctas .nice-select li {
+.nice-select span,
+.nice-select li {
     color: var(--text-color);
     font-size: 14px;
     line-height: 24px;
@@ -653,15 +653,15 @@ input[type="radio"]:checked::before {
 	width: 6px;
 }
 
-.elbp__header__section .header__top .headertop__ctas .nice-select .list {
+.nice-select .list {
     background: rgba(232, 225, 217, 0.20);
     border-radius: 10px;
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
     box-shadow: 0 0 0 1px rgba(255, 255, 255, 1);
 }
 
-.elbp__header__section .header__top .headertop__ctas .nice-select li {
+.nice-select li {
     line-height: 40px;
     padding: 0 10px;
     text-align: center;
@@ -3735,10 +3735,75 @@ input[type="radio"]:checked::before {
 }
 
 /*** Start of Shop Section ***/
-.elbp__shop__sidebar {
+.elbp__shop__sidebar .elbpshop__mobile__menu {
     display: flex;
     flex-direction: column;
     gap: 60px;
+}
+
+.elbp__shop__sidebar .elbpshop__mobile__menu .elbpshop__sidebar__closebtn {
+    display: none;
+}
+
+@media (max-width: 1139px) {
+    .elbp__shop__sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 0;
+        background: rgba(232, 225, 217, 0.20);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        box-shadow: 0 0 0 1px rgba(255, 255, 255, 1);
+        z-index: 999999;
+        overflow: hidden;
+        transition: 1s;
+        -moz-transition: 1s;
+        -webkit-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+    }
+    .elbp__shop__sidebar.show {
+        width: 100vw;
+    }
+    .elbp__shop__sidebar .elbpshop__mobile__menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 400px;
+        height: 100vh;
+        background: var(--background-color);
+        padding: 20px;
+        z-index: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 15px;
+    }
+    .elbp__shop__sidebar .elbpshop__mobile__menu .elbpshop__sidebar__closebtn {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: calc(100% + 10px);
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        font-size: 18px;
+        color: var(--text-color);
+        background: var(--background-color);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        border-radius: 50%;
+        transition: 0.3s;
+        -moz-transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+    }
+    .elbp__shop__sidebar .elbpshop__mobile__menu .elbpshop__sidebar__closebtn:hover {
+        background: var(--main-color);
+        color: var(--background-color);
+    }
 }
 
 .elbp__shop__sidebar .elbpshop__sidebar__widgets h4 {
@@ -3865,6 +3930,7 @@ input[type="radio"]:checked::before {
 
 .elbp__shop__products .elbp__products__grid {
     gap: 15px;
+    justify-content: space-between;
 }
 
 .elbpshop__filter__bar {
@@ -3883,12 +3949,71 @@ input[type="radio"]:checked::before {
 
 .elbpshop__filter__bar .elbpshop__grid__button {
     background: transparent;
-    font-size: 20px;
     padding: 0 10px;
 }
 
 .elbpshop__filter__bar .elbpshop__grid__button:hover {
     color: var(--main-color);
+}
+
+.elbpshop__filter__bar .srting,
+.elbpshop__filter__bar .number__of__products {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.elbpshop__filter__btn {
+    display: none;
+}
+
+@media (max-width: 1139px) {
+    .price-range-slider .progress {
+        background: #E8E1D9;
+    }
+    .elbp__shop__sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 0;
+        background: rgba(232, 225, 217, 0.20);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        box-shadow: 0 0 0 1px rgba(255, 255, 255, 1);
+        z-index: 999999;
+        overflow: hidden;
+        transition: 1s;
+        -moz-transition: 1s;
+        -webkit-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+    }
+    .elbp__shop__sidebar.show {
+        width: 100vw;
+    }
+    .elbpshop__filter__btn {
+        display: block;
+        background: var(--background-color);
+        height: 36px;
+        line-height: 36px;
+        padding: 0 17px;
+        border-radius: 50px;
+    }
+    .elbpshop__filter__btn span {
+        transition: 0.3s;
+        -moz-transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+    }
+    .elbpshop__filter__btn:hover {
+        background: var(--main-color);
+        color: var(--white-text);
+    }
+    .elbpshop__filter__btn:hover span {
+        color: var(--white-text);
+    }
 }
 
 .elbpshop__filter__bar .nice-select {

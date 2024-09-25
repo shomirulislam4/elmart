@@ -322,5 +322,16 @@
                 }
             });
         });
+
+        //Shop Sidebar
+        $(function(){
+            //Mobile Menu Main Show/Hide
+            $('.elbpshop__filter__btn').on('click', function(){
+                $('.elbp__shop__sidebar').addClass('show')
+            })
+            $('.elbpshop__sidebar__closebtn').on('click', function(){
+                $('.elbp__shop__sidebar').removeClass('show')
+            })
+        });
           
 }) (jQuery);
