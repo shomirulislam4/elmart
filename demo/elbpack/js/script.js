@@ -247,8 +247,8 @@
         
 
     /*============================ Shop & Single Product Page ============================*/
-        //Single Product Image
-        $(document).ready(function(){
+        //Single Product Image (Homepage)
+        $(function(){
             $('.elbpsmalimage').click(function() {
                 var bigImageSrc = $('#elbpbigImage').attr('src');
                 var smallImageSrc = $(this).attr('src');
@@ -257,6 +257,19 @@
                 $(this).attr('src', bigImageSrc);
             });
         });
+
+        //Single Product Image (Single Product)
+        $(function() {
+            $('.elbpsmalimage').click(function() {
+                var bigImageSrc = $('#elbpbigImage .image img').attr('src');
+                var smallImageSrc = $(this).find('img').attr('src');
+                
+                $('#elbpbigImage .image img').attr('src', smallImageSrc);
+                $(this).find('img').attr('src', bigImageSrc);
+            });
+        });
+        
+        
 
         //Price Filter
         $(function(){

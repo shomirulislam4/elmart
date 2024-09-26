@@ -533,18 +533,18 @@ input[type="radio"]:checked::before {
 
 /* Seperator */
 .vertical__seperator {
-    display: inline-block;
+    display: block;
     height: 18px;
     width: 1px;
-    background: #DBE3E9;
+    background: #D3CDC4;
     margin: 0;
 }
 
 .horizontal__seperator {
-    display: inline-block;
+    display: block;
     height: 1px;
     width: 100%;
-    background: #DBE3E9;
+    background: #D3CDC4;
     margin: 0;
 }
 
@@ -4109,6 +4109,292 @@ input[type="radio"]:checked::before {
     color: var(--white-text);
 }
 /*** End of Shop Section ***/
+
+/*** Start of Single Product Info ***/
+.elbp__single__prodcut .back__to__shop {
+    width: fit-content;
+    margin-bottom: 24px;
+}
+
+.elbp__single__prodcut .back__to__shop svg {
+    stroke: var(--text-color);
+}
+
+.elbp__single__prodcut .back__to__shop:hover svg {
+    stroke: var(--main-color);
+}
+
+/* Product Image */
+.elbp__single__prodcut .elbp__big__image {
+    background: var(--background-color);
+    width: 100%;
+    height: 582px;
+    border-radius: 12px;
+}
+
+.elbp__single__prodcut .elbp__big__image .image {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+}
+
+.elbp__single__prodcut .elbp__big__image .image img {
+    transform: none;
+}
+
+.elbp__single__prodcut .elbp__singleprod__image {
+    width: 597px;
+}
+
+.elbp__single__prodcut .elbp__small__images {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 195px;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.elbp__single__prodcut .elbp__small__images .image {
+    width: 189px;
+    height: 100%;
+    background: var(--background-color);
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 20px;
+    flex-shrink: 0;
+}
+
+.elbp__single__prodcut .elbp__small__images .image img {
+    width: auto;
+    height: 100%;
+}
+
+/* Product Info */
+.elbp__singleprod__info {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 0;
+}
+
+.elbp__singleprod__info .elbpsp__title__category,
+.elbp__singleprod__info .elbpsp__price__review {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.elbp__singleprod__info .elbpsp__category__name {
+    font-size: 13px;
+    line-height: 150%;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #8A8781;
+    font-weight: 300;
+}
+
+.elbp__singleprod__info .elbpsp__title {
+	font-size: 40px;
+	line-height: 48px;
+	font-weight: 600;
+    margin-bottom: 0;
+}
+
+.elbp__singleprod__info .elbpsp__feats span {
+    font-size: 16px;
+    color: #8A8781;
+    position: relative;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+.elbp__singleprod__info .elbpsp__feats span::after {
+    content: url("data:image/svg+xml,%3Csvg width='4' height='4' viewBox='0 0 4 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='2' cy='2' r='2' fill='%238A8781'/%3E%3C/svg%3E");
+    position: absolute;
+    left: 100%;
+    top: -25%;
+}
+
+.elbp__singleprod__info .elbpsp__feats span:last-child::after {
+    display: none;
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.elbp__singleprod__info .elbpsp__price {
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.elbp__singleprod__info .elbpsp__status {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+
+.elbp__singleprod__info p,
+.elbp__singleprod__info span {
+    margin-bottom: 0;
+    color: #5A5855;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.elbp__singleprod__info .elbpsp__status .elbpsp__stock_status {
+    color: var(--main-color);
+}
+
+.elbp__singleprod__info .elbpsp__status .elbpsp__stock_status svg {
+    stroke: var(--main-color);
+    margin-top: -2px;
+}
+
+.elbp__singleprod__info .elbpsp__totalreviews,
+.elbp__singleprod__info .elbpsp__totalreviews .review {
+    display: flex;
+    align-items: center;
+}
+
+.elbp__singleprod__info .elbpsp__totalreviews .review {
+    gap: 10px;
+    position: relative;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+.elbp__singleprod__info .elbpsp__totalreviews .review::after {
+    position: absolute;
+    content: '';
+    background: #5A5855;
+    height: 12px;
+    width: 1px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.elbp__singleprod__info  .elbpsp__qty_cta_btns .top {
+    margin-top: 13px;
+    margin-bottom: 24px;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.elbp__singleprod__info .quantity__widget {
+    height: 58px;
+    padding: 14px;
+    border-radius: 50px;
+    border: 0;
+    background: var(--background-color);
+}
+
+.elbp__singleprod__info .quantity__widget .quantity__controls {
+    gap: 10px;
+}
+
+.elbp__singleprod__info .quantity__widget .quantity__decrease,
+.elbp__singleprod__info .quantity__widget .quantity__increase {
+    background: var(--bg-black);
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    color: var(--white-text);
+}
+
+.elbp__singleprod__info .quantity__widget .quantity__decrease:hover,
+.elbp__singleprod__info .quantity__widget .quantity__increase:hover {
+    background: var(--main-color);
+}
+
+.elbp__singleprod__info .quantity__widget .quantity__display {
+    line-height: 30px;
+}
+
+.elbp__singleprod__info .elbpsp__qty_cta_btns .bottom {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.elbp__singleprod__info .elbp__button__a {
+    border-radius: 50px;
+    padding: 20px 50px;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.elbp__singleprod__info .elbp__button__b {
+    border-radius: 50px;
+    padding: 20px 113px;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.elbp__singleprod__info .elbpsp__ctabutton {
+    height: 58px;
+    width: 58px;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    background: var(--background-color);
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.elbp__singleprod__info .elbpsp__ctabutton svg {
+    fill: #7B746F;
+    height: 26px;
+    width: 26px;
+}
+
+.elbp__singleprod__info .elbpsp__ctabutton:hover {
+    background: var(--main-color);
+}
+
+.elbp__singleprod__info .elbpsp__ctabutton:hover svg {
+    fill: var(--white-text);
+}
+
+.elbp__singleprod__info .elbpsp__coupon_extrainfo .elbpsp__coupon_offer {
+    height: 116px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.elbp__singleprod__info .elbpsp__coupon_extrainfo .elbpsp__coupon_offer .left {
+    background: url("data:image/svg+xml,%3Csvg width='161' height='116' viewBox='0 0 161 116' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1.01123 17.0848C3.98016 7.20099 13.1492 0 24 0H137C150.255 0 161 10.7452 161 24V92C161 105.255 150.255 116 137 116H24C13.1492 116 3.98016 108.799 1.01123 98.9152C3.84344 98.4344 6 95.9691 6 93C6 89.6863 3.31372 87 0 87V85C3.31372 85 6 82.3137 6 79C6 75.6863 3.31372 73 0 73V71C3.31372 71 6 68.3137 6 65C6 61.6863 3.31372 59 0 59V57C3.31372 57 6 54.3137 6 51C6 47.6863 3.31372 45 0 45V43C3.31372 43 6 40.3137 6 37C6 33.6863 3.31372 31 0 31V29C3.31372 29 6 26.3137 6 23C6 20.0309 3.84344 17.5656 1.01123 17.0848Z' fill='%23313131'/%3E%3C/svg%3E%0A") no-repeat left;
+    background-size: contain;
+    height: 100%;
+    width: 161px;
+    padding: 20px;
+    padding-left: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+}
+
+.elbp__singleprod__info .elbpsp__coupon_extrainfo .elbpsp__coupon_offer .right {
+    background: url("data:image/svg+xml,%3Csvg width='260' height='116' viewBox='0 0 260 116' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 24C0 10.7452 10.7452 0 24 0H236C246.851 0 256.02 7.20099 258.989 17.0848C256.157 17.5656 254 20.0309 254 23C254 26.3137 256.686 29 260 29V31C256.686 31 254 33.6863 254 37C254 40.3137 256.686 43 260 43V45C256.686 45 254 47.6863 254 51C254 54.3137 256.686 57 260 57V59C256.686 59 254 61.6863 254 65C254 68.3137 256.686 71 260 71V73C256.686 73 254 75.6863 254 79C254 82.3137 256.686 85 260 85V87C256.686 87 254 89.6863 254 93C254 95.9691 256.157 98.4344 258.989 98.9152C256.02 108.799 246.851 116 236 116H24C10.7452 116 0 105.255 0 92V24Z' fill='%23313131'/%3E%3C/svg%3E%0A") no-repeat left;
+    background-size: contain;
+    height: 100%;
+    width: 260px;
+    padding: 18px;
+}
+
+.elbp__singleprod__info .elbpsp__coupon_extrainfo .elbpsp__coupon_offer .left p {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--white-text);
+    text-align: center;
+}
+
+/*** End of Single Product Info ***/
 
 
 /**
