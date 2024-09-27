@@ -4110,6 +4110,9 @@ input[type="radio"]:checked::before {
 }
 /*** End of Shop Section ***/
 
+/* ====================================================================
+   3. Single Product
+==================================================================== */
 /*** Start of Single Product Info ***/
 .elbp__single__prodcut .back__to__shop {
     width: fit-content;
@@ -4125,6 +4128,16 @@ input[type="radio"]:checked::before {
 }
 
 /* Product Image */
+.elbp__single__prodcut .elbp__singleprod__image {
+    width: 597px;
+}
+
+@media (max-width: 1139px) {
+    .elbp__single__prodcut .elbp__singleprod__image {
+        width: 100%;
+    }
+}
+
 .elbp__single__prodcut .elbp__big__image {
     background: var(--background-color);
     width: 100%;
@@ -4141,10 +4154,6 @@ input[type="radio"]:checked::before {
 
 .elbp__single__prodcut .elbp__big__image .image img {
     transform: none;
-}
-
-.elbp__single__prodcut .elbp__singleprod__image {
-    width: 597px;
 }
 
 .elbp__single__prodcut .elbp__small__images {
@@ -4176,7 +4185,12 @@ input[type="radio"]:checked::before {
     display: flex;
     flex-direction: column;
     gap: 32px;
-    padding: 0;
+}
+
+@media (min-width: 768px) {
+    .elbp__singleprod__info {
+        padding: 0;
+    }
 }
 
 .elbp__singleprod__info .elbpsp__title__category,
@@ -4204,10 +4218,13 @@ input[type="radio"]:checked::before {
 
 .elbp__singleprod__info .elbpsp__feats span {
     font-size: 16px;
+    line-height: 100%;
     color: #8A8781;
     position: relative;
     padding-right: 10px;
     margin-right: 10px;
+    width: auto;
+    display: inline-block;
 }
 
 .elbp__singleprod__info .elbpsp__feats span::after {
@@ -4217,10 +4234,13 @@ input[type="radio"]:checked::before {
     top: -25%;
 }
 
-.elbp__singleprod__info .elbpsp__feats span:last-child::after {
-    display: none;
+.elbp__singleprod__info .elbpsp__feats span:last-child {
     padding-right: 0;
     margin-right: 0;
+}
+
+.elbp__singleprod__info .elbpsp__feats span:last-child::after {
+    display: none;
 }
 
 .elbp__singleprod__info .elbpsp__price {
@@ -4284,7 +4304,6 @@ input[type="radio"]:checked::before {
 }
 
 .elbp__singleprod__info .quantity__widget {
-    height: 58px;
     padding: 14px;
     border-radius: 50px;
     border: 0;
@@ -4359,10 +4378,18 @@ input[type="radio"]:checked::before {
     fill: var(--white-text);
 }
 
+.elbp__singleprod__info .elbpsp__coupon_extrainfo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .elbp__singleprod__info .elbpsp__coupon_extrainfo .elbpsp__coupon_offer {
     height: 116px;
     display: flex;
     align-items: flex-start;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 .elbp__singleprod__info .elbpsp__coupon_extrainfo .elbpsp__coupon_offer .left {
@@ -4384,7 +4411,13 @@ input[type="radio"]:checked::before {
     background-size: contain;
     height: 100%;
     width: 260px;
-    padding: 18px;
+    padding: 18px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .elbp__singleprod__info .elbpsp__coupon_extrainfo .elbpsp__coupon_offer .left p {
@@ -4394,6 +4427,36 @@ input[type="radio"]:checked::before {
     text-align: center;
 }
 
+.elbp__singleprod__info .elbpsp__coupon_extrainfo .elbpsp__coupon_offer .right h5 {
+    font-weight: 600;
+    color: var(--white-text);
+    letter-spacing: 3px;
+    margin: 0;
+    text-align: center;
+}
+
+.elbp__singleprod__info .elbpsp__coupon_extrainfo .elbpsp__coupon_offer .right p {
+    text-transform: uppercase;
+    color: var(--white-text);
+    text-align: center;
+    font-weight: 500;
+}
+
+.elbp__singleprod__info .elbpsp__coupon_extrainfo .elbpsp__coupon_offer .right p span {
+    color: var(--main-color);
+    font-weight: 500;
+}
+
+.elbp__singleprod__info .elbpsp__coupon_extrainfo .checkout__options,
+.elbp__singleprod__info .elbpsp__coupon_extrainfo .checkout__options .images {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.elbp__singleprod__info .elbpsp__coupon_extrainfo p i {
+    margin-right: 10px;
+}
 /*** End of Single Product Info ***/
 
 
