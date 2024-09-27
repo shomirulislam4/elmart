@@ -935,6 +935,135 @@
             line-height: 30px;
             border-radius: 6px;
         }
+    /*===== Single Product Page =====*/
+        .elbp__single__prodcut .elbp__big__image {
+            height: 260px;
+        }
+        .elbp__single__prodcut .elbp__small__images {
+            height: 57px;
+            gap: 5px;
+            margin-top: 5px;
+        }
+        .elbp__single__prodcut .elbp__small__images .image {
+            width: 55px;
+            padding: 5px;
+        }
+        .elbp__singleprod__info {
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .elbp__singleprod__info .elbpsp__category__name {
+            font-size: 7px;
+        }
+        .elbp__singleprod__info .elbpsp__title {
+            font-size: 22px;
+            line-height: 28px;
+        }
+        .elbp__singleprod__info .elbpsp__feats {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .elbp__singleprod__info .elbpsp__feats span {
+            padding-right: 5px;
+            margin-right: 5px;
+        }
+        .elbp__singleprod__info .elbpsp__qty_cta_btns .top {
+            margin-top: 4px;
+            margin-bottom: 10px;
+            gap: 10px;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .elbp__singleprod__info .elbpsp__qty_cta_btns .bottom {
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .elbp__singleprod__info .elbpsp__status {
+            align-items: flex-start;
+            gap: 6px;
+            flex-direction: column;
+        }
+        .elbp__singleprod__info .elbpsp__coupon_extrainfo .checkout__options {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 5px;
+        }
+        .elbp__singleprod__info .elbpsp__coupon_extrainfo .checkout__options .images {
+            gap: 6px;
+        }
+        .elbp__singleprod__info .elbpsp__feats span::after {
+            top: -2px;
+        }
+        .elbp__singleprod__info .elbpsp__feats span,
+        .elbp__singleprod__info p,
+        .elbp__singleprod__info span {
+            font-size: 12px;
+        }
+        .elbp__singleprod__info .quantity__widget {
+            padding: 5px;
+        }
+        .elbp__singleprod__info .quantity__widget .quantity__decrease,
+        .elbp__singleprod__info .quantity__widget .quantity__increase {
+            height: 26px;
+            width: 26px;
+            line-height: 26px;
+        }
+        .elbp__singleprod__info .elbp__button__a {
+            padding: 13px 42px;
+        }
+        .elbp__singleprod__info .elbp__button__b {
+            padding: 12px 51px;
+        }
+        .elbp__singleprod__info .elbpsp__ctabutton {
+            height: 40px;
+            width: 40px;
+        }
+        .elbp__singleprod__info .elbpsp__coupon_extrainfo {
+            gap: 10px;
+        }
+        .elbp__singleprod__info .elbpsp__coupon_extrainfo .elbpsp__coupon_offer {
+            height: 50px;
+            margin: 0;
+        }
+        .elbp__singleprod__info .elbpsp__coupon_extrainfo .elbpsp__coupon_offer .left {
+            width: 113px;
+            padding: 0;
+            padding-left: 5px;
+            gap: 2px;
+        }
+        .elbp__singleprod__info .elbpsp__coupon_extrainfo .elbpsp__coupon_offer .left p {
+            font-size: 8px;
+        }
+        .elbp__singleprod__info .elbpsp__coupon_extrainfo .elbpsp__coupon_offer .right h5 {
+            font-size: 8px;
+            line-height: 12px;
+            width: 90%;
+        }
+        .elbp__singleprod__info .elbpsp__coupon_extrainfo .elbpsp__coupon_offer .right {
+            width: 187px;
+            padding: 0;
+            padding-right: 5px;
+            gap: 4px;
+            margin-left: -2px;
+        }
+        .elbp__singleprod__info .elbpsp__coupon_extrainfo .elbpsp__coupon_offer .right p,
+        .elbp__singleprod__info .elbpsp__coupon_extrainfo .elbpsp__coupon_offer .right p span {
+            font-size: 8px;
+            line-height: 12px;
+        }
+        .elbp__singleprod__info .elbpsp__totalreviews .elbpsp__totalsold,
+        .elbp__singleprod__info .elbpsp__totalreviews .review::after {
+            display: none;
+        }
+        .elbp__singleprod__info .elbpsp__totalreviews .review {
+            gap: 5px;
+            padding-right: 0;
+            margin-right: 0;
+        }
+        .star__rating {
+            gap: 2px;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
@@ -1727,6 +1856,102 @@
             width: 30px;
             line-height: 30px;
             border-radius: 6px;
+        }
+    /*===== Single Product Page =====*/
+        .elbp__single__prodcut .elbp__big__image {
+            height: 360px;
+        }
+        .elbp__single__prodcut .elbp__small__images {
+            height: 88px;
+            gap: 5px;
+            margin-top: 5px;
+        }
+        .elbp__single__prodcut .elbp__small__images .image {
+            width: 85px;
+            padding: 10px;
+        }
+        .elbp__singleprod__info {
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .elbp__singleprod__info .elbpsp__category__name {
+            font-size: 9px;
+        }
+        .elbp__singleprod__info .elbpsp__title {
+            font-size: 32px;
+            line-height: 38px;
+        }
+        .elbp__singleprod__info .elbpsp__feats span {
+            padding-right: 5px;
+            margin-right: 5px;
+        }
+        .elbp__singleprod__info .elbpsp__qty_cta_btns .top {
+            margin-top: 6px;
+            margin-bottom: 14px;
+            gap: 14px;
+        }
+        .elbp__singleprod__info .elbp__button__b {
+            padding: 20px 89px;
+        }
+        .elbp__singleprod__info .elbpsp__qty_cta_btns .bottom {
+            gap: 10px;
+        }
+        .elbp__singleprod__info .elbpsp__coupon_extrainfo .checkout__options {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 5px;
+        }
+        .elbp__singleprod__info .elbpsp__coupon_extrainfo .checkout__options .images {
+            gap: 12px;
+        }
+        .elbp__singleprod__info .elbpsp__feats span::after {
+            top: -2px;
+        }
+        .elbp__singleprod__info .elbpsp__feats span,
+        .elbp__singleprod__info p,
+        .elbp__singleprod__info span {
+            font-size: 12px;
+        }
+        .elbp__singleprod__info .quantity__widget {
+            padding: 5px;
+        }
+        .elbp__singleprod__info .quantity__widget .quantity__decrease,
+        .elbp__singleprod__info .quantity__widget .quantity__increase {
+            height: 26px;
+            width: 26px;
+            line-height: 26px;
+        }
+        .elbp__singleprod__info .elbp__button__a {
+            padding: 13px 42px;
+        }
+        .elbp__singleprod__info .elbp__button__b {
+            padding: 12px 25px;
+        }
+        .elbp__singleprod__info .elbpsp__ctabutton {
+            height: 40px;
+            width: 40px;
+        }
+        .elbp__singleprod__info .elbpsp__coupon_extrainfo .elbpsp__coupon_offer {
+            height: 76px;
+            margin: 0;
+        }
+        .elbp__singleprod__info .elbpsp__coupon_extrainfo .elbpsp__coupon_offer .left {
+            width: 113px;
+            padding: 0;
+            padding-left: 5px;
+            gap: 2px;
+        }
+        .elbp__singleprod__info .elbpsp__coupon_extrainfo .elbpsp__coupon_offer .right h5 {
+            font-size: 14px;
+            line-height: 18px;
+            width: 80%;
+        }
+        .elbp__singleprod__info .elbpsp__coupon_extrainfo .elbpsp__coupon_offer .right {
+            width: 187px;
+            padding: 0;
+            padding-right: 5px;
+            gap: 4px;
+            margin-left: -2px;
         }
 }
 
