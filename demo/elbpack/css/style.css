@@ -4116,6 +4116,7 @@ input[type="radio"]:checked::before {
 /*** Start of Single Product Info ***/
 .elbp__single__prodcut .bg__image {
     position: absolute;
+    z-index: -1;
 }
 
 .elbp__single__prodcut .bg__image.one {
@@ -4477,6 +4478,7 @@ input[type="radio"]:checked::before {
 /*** Start of Single Product Description ***/
 .elbpsp__description .bg__image {
     position: absolute;
+    z-index: -1;
 }
 
 .elbpsp__description .bg__image.one {
@@ -4553,8 +4555,39 @@ input[type="radio"]:checked::before {
 .elbpsp__description .wrapper .tab-content h5 {
     font-weight: 600;
 }
-
 /*** End of Single Product Description ***/
+
+/*** Start of Single Product Review Form ***/
+.elbpsp__review .wrapper .title {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.elbpsp__review .wrapper .title .top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.elbpsp__review .elbp__button__b {
+    display: block;
+    border-radius: 50px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.elbpsp__review .wrapper .title .bottom,
+.elbpsp__review .wrapper .title .bottom .filter__selections {
+    display: flex;
+    justify-content: space-between;
+    gap: 59px;
+}
+
+.elbpsp__review .wrapper .title .bottom .filter__selections {
+    gap: 34px;
+}
+
+/*** End of Single Product Review Form ***/
 
 
 /**
