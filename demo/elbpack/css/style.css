@@ -667,6 +667,10 @@ input[type="radio"]:checked::before {
     text-align: center;
 }
 
+.nice-select .option {
+    font-weight: 500;
+}
+
 .elbpht__social__links li {
     display: inline-block;
     padding: 0 11px;
@@ -4558,11 +4562,14 @@ input[type="radio"]:checked::before {
 /*** End of Single Product Description ***/
 
 /*** Start of Single Product Review Form ***/
+.elbpsp__review {
+    padding-bottom: 100px;
+}
+
 .elbpsp__review .wrapper .title {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    margin-bottom: 100px;
 }
 
 .elbpsp__review .wrapper .title .top {
@@ -4754,8 +4761,14 @@ input[type="radio"]:checked::before {
 .elbp__review__form .rf__wrapper form textarea {
     height: 100%;
 }
-
 /*** End of Single Product Review Form ***/
+
+/*** Start of Related Products Section ***/
+.elbp__section__title {
+    text-align: left;
+}
+/*** End of Related Products Section ***/
+
 
 
 /**
