@@ -1001,11 +1001,11 @@
         .elbp__singleprod__info span {
             font-size: 12px;
         }
-        .elbp__singleprod__info .quantity__widget {
+        .quantity__widget.v2 {
             padding: 5px;
         }
-        .elbp__singleprod__info .quantity__widget .quantity__decrease,
-        .elbp__singleprod__info .quantity__widget .quantity__increase {
+        .quantity__widget.v2 .quantity__decrease,
+        .quantity__widget.v2 .quantity__increase {
             height: 26px;
             width: 26px;
             line-height: 26px;
@@ -1190,6 +1190,43 @@
         }
         .elbp__submitted__review .elbp__user__review .star__rating {
             gap: 3px;
+        }
+    /*===== Cart Page =====*/
+        .elbp__cartprod__list {
+            gap: 15px;
+        }
+        .elbp__cartprod__list .item {
+            flex-direction: column;
+            gap: 6px;
+        }
+        .elbp__cartprod__list .item .image {
+            width: 100%;
+            height: 180px;
+        }
+        .elbp__cartprod__list .item .text {
+            gap: 10px;
+            padding: 6px 0;
+        }
+        .elbp__cartprod__list .item .text h4 {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .elbp__cartprod__list .item .text .title button {
+            height: 24px;
+            width: 24px;
+            line-height: 16px;
+        }
+        .elbp__cartprod__list .item .text .title button svg {
+            height: 18px;
+            width: 18px;
+        }
+        .elbp__cart__subtotal {
+            margin-top: 5px;
+            gap: 15px;
+            padding: 10px 5px;
+        }
+        .elbp__cart__subtotal .elbp__button__c {
+            padding: 9px 14px;
         }
 }
 
@@ -2040,11 +2077,11 @@
         .elbp__singleprod__info span {
             font-size: 12px;
         }
-        .elbp__singleprod__info .quantity__widget {
+        .quantity__widget.v2 {
             padding: 5px;
         }
-        .elbp__singleprod__info .quantity__widget .quantity__decrease,
-        .elbp__singleprod__info .quantity__widget .quantity__increase {
+        .quantity__widget.v2 .quantity__decrease,
+        .quantity__widget.v2 .quantity__increase {
             height: 26px;
             width: 26px;
             line-height: 26px;
@@ -2196,6 +2233,40 @@
         }
         .elbp__submitted__review .elbp__user__review .star__rating {
             gap: 3px;
+        }
+    /*===== Cart Page =====*/
+        .elbp__cartprod__list {
+            gap: 20px;
+        }
+        .elbp__cartprod__list .item {
+            flex-direction: column;
+            gap: 6px;
+        }
+        .elbp__cartprod__list .item .image {
+            width: 100%;
+            height: 180px;
+        }
+        .elbp__cartprod__list .item .text {
+            gap: 14px;
+            padding: 6px 0;
+        }
+        .elbp__cartprod__list .item .text h4 {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        .elbp__cartprod__list .item .text .title button {
+            height: 24px;
+            width: 24px;
+            line-height: 16px;
+        }
+        .elbp__cartprod__list .item .text .title button svg {
+            height: 18px;
+            width: 18px;
+        }
+        .elbp__cart__subtotal {
+            margin-top: 15px;
+            gap: 20px;
+            padding: 20px;
         }
 }
 
@@ -2934,7 +3005,7 @@
         .elbp__singleprod__info span {
             font-size: 14px;
         }
-        .elbp__singleprod__info .quantity__widget {
+        .quantity__widget.v2 {
             padding: 10px;
         }
         .elbp__singleprod__info .elbp__button__a {
@@ -3058,6 +3129,38 @@
         .elbpsp__review .elbp__button__b {
             font-size: 14px;
             line-height: 14px;
+        }
+    /*===== Cart Page =====*/
+        .elbp__cartprod__list {
+            gap: 28px;
+        }
+        .elbp__cartprod__list .item {
+            gap: 16px;
+        }
+        .elbp__cartprod__list .item .image {
+            width: 180px;
+            height: 180px;
+        }
+        .elbp__cartprod__list .item .text {
+            gap: 14px;
+            padding: 6px 0;
+        }
+        .elbp__cartprod__list .item .text h4 {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        .elbp__cartprod__list .item .text .title button {
+            height: 24px;
+            width: 24px;
+            line-height: 16px;
+        }
+        .elbp__cartprod__list .item .text .title button svg {
+            height: 18px;
+            width: 18px;
+        }
+        .elbp__cart__subtotal {
+            gap: 20px;
+            padding: 20px;
         }
 }
 
@@ -3691,6 +3794,28 @@
         .elbpsp__review .elbp__button__b {
             font-size: 16px;
             line-height: 16px;
+        }
+    /*===== Cart Page =====*/
+        .elbp__cartprod__list {
+            gap: 38px;
+        }
+        .elbp__cartprod__list .item {
+            gap: 16px;
+        }
+        .elbp__cartprod__list .item .image {
+            width: 216px;
+            height: 208px;
+        }
+        .elbp__cartprod__list .item .text {
+            gap: 14px;
+            padding: 6px 0;
+        }
+        .elbp__cartprod__list .item .text h4 {
+            font-size: 20px;
+            line-height: 28px;
+        }
+        .elbp__cart__subtotal {
+            gap: 20px;
         }
 }
 
@@ -4328,7 +4453,7 @@
         .elbp__singleprod__info span {
             font-size: 14px;
         }
-        .elbp__singleprod__info .quantity__widget {
+        .quantity__widget.v2 {
             padding: 10px;
         }
         .elbp__singleprod__info .elbp__button__a {

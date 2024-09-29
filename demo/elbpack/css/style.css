@@ -15,6 +15,9 @@
     12. Footer
 3. About Us
     1. Breadcrumbs Section
+4. Shop Page
+5. Single Product
+6. Cart Page
 
 
 **********************************************/
@@ -383,6 +386,37 @@ section {
     line-height: 34px;
     padding: 0 10px;
     pointer-events: none;
+}
+
+.quantity__widget.v2 {
+    padding: 14px;
+    border-radius: 50px;
+    border: 0;
+    background: var(--background-color);
+}
+
+.quantity__widget.v2 .quantity__controls {
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity__widget.v2 .quantity__decrease,
+.quantity__widget.v2 .quantity__increase {
+    background: var(--bg-black);
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    color: var(--white-text);
+}
+
+.quantity__widget.v2 .quantity__decrease:hover,
+.quantity__widget.v2 .quantity__increase:hover {
+    background: var(--main-color);
+}
+
+.quantity__widget.v2 .quantity__display {
+    line-height: 30px;
 }
 
 /* Custom Cursor */
@@ -3758,7 +3792,7 @@ input[type="radio"]:checked::before {
 /*** End of Features Section ***/
 
 /* ====================================================================
-   3. Shop
+   4. Shop Page
 ==================================================================== */
 .form__row {
     display: flex;
@@ -4119,7 +4153,7 @@ input[type="radio"]:checked::before {
 /*** End of Shop Section ***/
 
 /* ====================================================================
-   3. Single Product
+   5. Single Product
 ==================================================================== */
 /*** Start of Single Product Info ***/
 .elbp__single__prodcut .bg__image {
@@ -4324,37 +4358,6 @@ input[type="radio"]:checked::before {
     display: flex;
     gap: 24px;
     align-items: center;
-}
-
-.elbp__singleprod__info .quantity__widget {
-    padding: 14px;
-    border-radius: 50px;
-    border: 0;
-    background: var(--background-color);
-}
-
-.elbp__singleprod__info .quantity__widget .quantity__controls {
-    align-items: center;
-    gap: 10px;
-}
-
-.elbp__singleprod__info .quantity__widget .quantity__decrease,
-.elbp__singleprod__info .quantity__widget .quantity__increase {
-    background: var(--bg-black);
-    border-radius: 50%;
-    height: 30px;
-    width: 30px;
-    line-height: 30px;
-    color: var(--white-text);
-}
-
-.elbp__singleprod__info .quantity__widget .quantity__decrease:hover,
-.elbp__singleprod__info .quantity__widget .quantity__increase:hover {
-    background: var(--main-color);
-}
-
-.elbp__singleprod__info .quantity__widget .quantity__display {
-    line-height: 30px;
 }
 
 .elbp__singleprod__info .elbpsp__qty_cta_btns .bottom {
@@ -4780,7 +4783,138 @@ input[type="radio"]:checked::before {
 }
 /*** End of Related Products Section ***/
 
+/* ====================================================================
+   6. Cart Page
+==================================================================== */
+.elbp__cartprod__list {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
 
+.elbp__cartprod__list .item {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+.elbp__cartprod__list .item .image {
+    width: 316px;
+    height: 308px;
+    border-radius: 12px;
+    background: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.elbp__cartprod__list .item .image img {
+    height: 90%;
+    transform: rotate(15deg);
+}
+
+.elbp__cartprod__list .item .text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 36px;
+    padding: 12px 0;
+}
+
+.elbp__cartprod__list .item .text .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.elbp__cartprod__list .item .text h4 {
+    font-weight: 600;
+    color: var(--bg-black);
+    font-size: 24px;
+    line-height: 30px;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    margin: 0;
+}
+
+.elbp__cartprod__list .item .text .product__title h4:hover {
+    color: var(--main-color);
+}
+
+.elbp__cartprod__list .item .text .title button {
+    background: var(--background-color);
+    border-radius: 4px;
+    height: 32px;
+    width: 32px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.elbp__cartprod__list .item .text .title button svg {
+    stroke: var(--text-color);
+}
+
+.elbp__cartprod__list .item .text .title button:hover svg {
+    stroke: var(--white-text);
+}
+
+.elbp__cartprod__list .item .text .title button:hover {
+    background: var(--main-color);
+}
+
+/* Subtotal Area */
+.elbp__cart__subtotal {
+    background: var(--bg-black);
+    border-radius: 12px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+@media (max-width: 991px) {
+    .elbp__cart__subtotal {
+        margin-top: 20px;
+    }
+}
+
+.elbp__cart__subtotal .item {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.elbp__cart__subtotal p,
+.elbp__cart__subtotal span {
+    color: #E8E1D9;
+    margin: 0;
+}
+
+.elbp__cart__subtotal .horizontal__seperator {
+    background: #5A5752;
+}
+
+.elbp__cart__subtotal p.subtotal {
+    font-weight: 600;
+}
+
+.elbp__cart__subtotal .elbp__button__c {
+    width: 100%;
+    color: #E8E1D9;
+    border-color: #E8E1D9;
+}
+
+.elbp__cart__subtotal .elbp__button__c:hover {
+    background: #E8E1D9;
+    color: var(--bg-black);
+}
 
 /**
 font-family: 'Poppins', sans-serif;
