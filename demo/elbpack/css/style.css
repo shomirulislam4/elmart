@@ -4562,11 +4562,16 @@ input[type="radio"]:checked::before {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    margin-bottom: 100px;
 }
 
 .elbpsp__review .wrapper .title .top {
     display: flex;
     justify-content: space-between;
+}
+
+.elbpsp__review .wrapper .title .top h3 {
+    margin-bottom: 0;
 }
 
 .elbpsp__review .elbp__button__b {
@@ -4585,6 +4590,169 @@ input[type="radio"]:checked::before {
 
 .elbpsp__review .wrapper .title .bottom .filter__selections {
     gap: 34px;
+}
+
+.elbpsp__review .wrapper .title .bottom form,
+.elbpsp__review .wrapper .title .bottom .nice-select {
+    background: var(--background-color);
+    border-radius: 50px;
+    width: 100%;
+}
+
+.elbpsp__review .wrapper .title .bottom form {
+    display: flex;
+    align-items: center;
+    padding: 13px 32px;
+    padding-right: 0;
+    gap: 12px;
+}
+
+.elbpsp__review .wrapper .title .bottom form input {
+    background: transparent;
+    padding-right: 32px;
+    width: 100%;
+}
+
+.elbpsp__review .wrapper .title .bottom form input::placeholder {
+    color: #787572;
+}
+
+.elbpsp__review .wrapper .title .bottom .nice-select {
+    height: 56px;
+    line-height: 56px;
+    padding-left: 17px;
+    padding-right: 41px;
+    color: #787572;
+    border: 0;
+}
+
+.elbpsp__review .wrapper .title .bottom .nice-select::after {
+	border-color: #787572;
+	height: 9px;
+	margin-top: -5px;
+	right: 22px;
+	width: 9px;
+}
+
+.elbpsp__review .wrapper .title .bottom .nice-select.elbpReviewFilterTiming {
+    width: 152px;
+}
+
+.elbpsp__review .wrapper .title .bottom .nice-select.elbpReviewFilterRating {
+    width: 130px;
+}
+
+.elbp__submitted__review {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-items: flex-start;
+}
+
+.elbp__submitted__review .elbp__user__review {
+    width: 100%;
+}
+
+.elbp__submitted__review .elbp__user__review .elbpur__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.elbp__submitted__review .elbp__user__review .elbpur__top .name__image {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.elbp__submitted__review .elbp__user__review .elbpur__top img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.elbp__submitted__review .elbp__user__review .elbpur__top .text p {
+    margin: 0;
+    line-height: 150%;
+}
+
+.elbp__submitted__review .elbp__user__review .elbpur__top .text .userfullname {
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 3px;
+    color: var(--bg-black);
+}
+
+.elbp__submitted__review .elbp__user__review .elbpur__top .text .reviewsubmitdate {
+    font-size: 14px;
+    color: #5A5855;
+}
+
+.elbp__submitted__review .elbp__user__review .elbpur__bottom {
+    padding-left: 76px;
+}
+
+.elbpsp__review p {
+    font-size: 16px;
+    line-height: 150%;
+    color: #5A5855;
+    margin-bottom: 4px;
+}
+
+/* Review Form */
+.elbp__review__form .rf__wrapper h3 {
+    margin-bottom: 16px;
+}
+
+.elbp__review__form .rf__wrapper h5 {
+    font-size: 22px;
+    line-height: 150%;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 30px;
+}
+
+.jq-ry-normal-group {
+    opacity: 1;
+}
+
+.elbp__review__form .rf__wrapper form {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 48px;
+}
+
+.elbp__review__form .rf__wrapper form .fields {
+    display: flex;
+    gap: 24px;
+}
+
+.elbp__review__form .rf__wrapper form .left,
+.elbp__review__form .rf__wrapper form .right {
+    width: 100%;
+}
+
+.elbp__review__form .rf__wrapper form .left {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+
+.elbp__review__form .rf__wrapper form input,
+.elbp__review__form .rf__wrapper form textarea {
+    border-radius: 8px;
+    background: var(--background-color);
+    padding: 21px 32px;
+    resize: none;
+    width: 100%;
+}
+
+.elbp__review__form .rf__wrapper form input {
+    height: 68px;
+}
+
+.elbp__review__form .rf__wrapper form textarea {
+    height: 100%;
 }
 
 /*** End of Single Product Review Form ***/

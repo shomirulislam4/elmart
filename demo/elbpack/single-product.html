@@ -20,10 +20,11 @@
     <link rel="stylesheet" href="css/nice-select.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/rateyo.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
-<body class="elbpack elbp__aboutpage">
+<body class="elbpack elbp__singleprodpage">
     <!-- Start of Header Section -->
     <header class="elbp__header__section">
         <div class="container">
@@ -572,7 +573,7 @@
     <!-- End of Single Product Description -->
 
     <!-- Start of Single Product Review Form -->
-    <section class="elbpsp__review position-relative">
+    <section class="elbpsp__review">
         <div class="container wrapper">
             <div class="title">
                 <div class="top">
@@ -586,17 +587,17 @@
                             <path d="M13.4623 22.8751C11.6007 22.8751 9.78088 22.323 8.233 21.2888C6.68513 20.2545 5.4787 18.7845 4.76629 17.0646C4.05388 15.3447 3.86748 13.4521 4.23067 11.6263C4.59385 9.80042 5.4903 8.12327 6.80667 6.80691C8.12303 5.49055 9.80018 4.5941 11.626 4.23091C13.4519 3.86773 15.3444 4.05413 17.0643 4.76654C18.7842 5.47895 20.2543 6.68537 21.2885 8.23325C22.3228 9.78113 22.8748 11.6009 22.8748 13.4626C22.8748 14.6986 22.6313 15.9226 22.1583 17.0646C21.6853 18.2065 20.992 19.2442 20.118 20.1182C19.2439 20.9922 18.2063 21.6855 17.0643 22.1586C15.9223 22.6316 14.6984 22.8751 13.4623 22.8751ZM13.4623 5.93755C11.9789 5.93755 10.5289 6.37742 9.29553 7.20153C8.06216 8.02564 7.10087 9.19698 6.53321 10.5674C5.96555 11.9379 5.81703 13.4459 6.10642 14.9007C6.39581 16.3556 7.11011 17.692 8.15901 18.7409C9.2079 19.7897 10.5443 20.5041 11.9991 20.7934C13.454 21.0828 14.962 20.9343 16.3324 20.3666C17.7029 19.799 18.8742 18.8377 19.6983 17.6043C20.5224 16.371 20.9623 14.9209 20.9623 13.4376C20.9623 11.4484 20.1721 9.54078 18.7656 8.13425C17.3591 6.72773 15.4514 5.93755 13.4623 5.93755Z" fill="#787572"/>
                             <path d="M25.0004 25.9375C24.8773 25.938 24.7552 25.914 24.6415 25.8668C24.5277 25.8196 24.4245 25.7501 24.3379 25.6625L19.1754 20.5C19.0098 20.3222 18.9197 20.0872 18.924 19.8443C18.9283 19.6014 19.0266 19.3697 19.1984 19.1979C19.3702 19.0262 19.6019 18.9278 19.8448 18.9235C20.0877 18.9192 20.3227 19.0094 20.5004 19.175L25.6629 24.3375C25.8385 24.5132 25.9371 24.7515 25.9371 25C25.9371 25.2484 25.8385 25.4867 25.6629 25.6625C25.5764 25.7501 25.4732 25.8196 25.3594 25.8668C25.2457 25.914 25.1236 25.938 25.0004 25.9375Z" fill="#787572"/>
                         </svg>
-                        <input type="search" name="elbpReviewSearch" id="elbpReviewSearch">
+                        <input type="search" name="elbpReviewSearch" id="elbpReviewSearch" placeholder="Search">
                     </form>
                     <div class="filter__selections">
-                        <select name="elbpReviewFilterTiming" id="elbpReviewFilterTiming">
+                        <select name="elbpReviewFilterTiming" class="elbpReviewFilterTiming">
                             <option value="mostrecent">Most Recent</option>
                             <option value="mostpopular">Most Popular</option>
                             <option value="oldest">Oldest</option>
                             <option value="positive">Positive</option>
                             <option value="critical">Critical</option>
                         </select>
-                        <select name="elbpReviewFilterRating" id="elbpReviewFilterRating">
+                        <select name="elbpReviewFilterRating" class="elbpReviewFilterRating">
                             <option value="allrating">All Rating</option>
                             <option value="5">5</option>
                             <option value="4">4</option>
@@ -611,7 +612,7 @@
                 <div class="elbp__user__review">
                     <div class="elbpur__top">
                         <div class="name__image">
-                            <img src="" alt="image">
+                            <img src="image/shop/user.png" alt="image">
                             <div class="text">
                                 <p class="userfullname">Mohammed Bonny</p>
                                 <p class="reviewsubmitdate">29 September 2024</p>
@@ -639,8 +640,60 @@
                         <p class="submittedreviewtext">This leather backpack is awesome, highly recommended! you can buy it without worry.</p>
                     </div>
                 </div>
+                <div class="elbp__user__review">
+                    <div class="elbpur__top">
+                        <div class="name__image">
+                            <img src="image/shop/user.png" alt="image">
+                            <div class="text">
+                                <p class="userfullname">Shomirul Islam</p>
+                                <p class="reviewsubmitdate">29 September 2024</p>
+                            </div>
+                        </div>
+                        <div class="star__rating">
+                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.10465 12.7692L4.13798 8.34165L0.702148 5.36499L5.22798 4.97332L7.00048 0.797485L8.77298 4.97249L13.298 5.36415L9.86215 8.34082L10.8963 12.7683L7.00048 10.4183L3.10465 12.7692Z" fill="#F2A50E"/>
+                            </svg>
+                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.10465 12.7692L4.13798 8.34165L0.702148 5.36499L5.22798 4.97332L7.00048 0.797485L8.77298 4.97249L13.298 5.36415L9.86215 8.34082L10.8963 12.7683L7.00048 10.4183L3.10465 12.7692Z" fill="#F2A50E"/>
+                            </svg>
+                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.10465 12.7692L4.13798 8.34165L0.702148 5.36499L5.22798 4.97332L7.00048 0.797485L8.77298 4.97249L13.298 5.36415L9.86215 8.34082L10.8963 12.7683L7.00048 10.4183L3.10465 12.7692Z" fill="#F2A50E"/>
+                            </svg>
+                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.10465 12.7692L4.13798 8.34165L0.702148 5.36499L5.22798 4.97332L7.00048 0.797485L8.77298 4.97249L13.298 5.36415L9.86215 8.34082L10.8963 12.7683L7.00048 10.4183L3.10465 12.7692Z" fill="#F2A50E"/>
+                            </svg>
+                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.10465 12.7692L4.13798 8.34165L0.702148 5.36499L5.22798 4.97332L7.00048 0.797485L8.77298 4.97249L13.298 5.36415L9.86215 8.34082L10.8963 12.7683L7.00048 10.4183L3.10465 12.7692Z" fill="#F2A50E"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="elbpur__bottom">
+                        <p class="submittedreviewtext">This leather backpack is awesome, highly recommended! you can buy it without worry.</p>
+                    </div>
+                </div>
             </section>
         </div>
+        <section class="elbp__review__form position-relative">
+            <div class="container rf__wrapper">
+                <h3>Add a review</h3>
+                <p>Your email address will not be published.</p>
+                <p>Required fields are marked <span style="color:var(--main-color)">*</span></p>
+                <h5>Your Rating</h5>
+                <div id="rateYo"></div>
+                <form action="#">
+                    <div class="fields">
+                        <div class="left">
+                            <input type="text" name="elbpReviewSubmissionForm" id="elbpRSFName" placeholder="Name*" required>
+                            <input type="email" name="elbpReviewSubmissionForm" id="elbpRSFEmail" placeholder="Email*" required>
+                        </div>
+                        <div class="right">
+                            <textarea name="elbpReviewSubmissionForm" id="elbpRSFReview" placeholder="Your Review*" required></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="elbp__button__b">Submit</button>
+                </form>
+            </div>
+        </section>
     </section>
     <!-- End of Single Product Review Form -->
 
@@ -723,6 +776,7 @@
     <script src="js/magnific-popup.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/rateyo.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
