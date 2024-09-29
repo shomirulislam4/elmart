@@ -653,6 +653,10 @@ input[type="radio"]:checked::before {
 	width: 6px;
 }
 
+.elbp__header__section .header__top .headertop__ctas .nice-select .list {
+    width: fit-content;
+}
+
 .nice-select .list {
     background: rgba(232, 225, 217, 0.20);
     border-radius: 10px;
@@ -4573,12 +4577,15 @@ input[type="radio"]:checked::before {
 }
 
 .elbpsp__review .wrapper .title .top {
-    display: flex;
-    justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .elbpsp__review .wrapper .title .top h3 {
-    margin-bottom: 0;
+	line-height: 34px;
+	margin-bottom: 0;
+	height: 34px;
 }
 
 .elbpsp__review .elbp__button__b {
@@ -4631,6 +4638,10 @@ input[type="radio"]:checked::before {
     padding-right: 41px;
     color: #787572;
     border: 0;
+}
+
+.elbpsp__review .wrapper .title .bottom .nice-select .list {
+    width: 100%;
 }
 
 .elbpsp__review .wrapper .title .bottom .nice-select::after {

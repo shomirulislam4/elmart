@@ -1100,6 +1100,97 @@
         .elbpsp__description .bg__image.one {
             top: -18px;
         }
+        /*Single Product Review Form*/
+        .elbpsp__review {
+            padding-bottom: 20px;
+        }
+        .elbpsp__review .wrapper .title .top,
+        .elbpsp__review .wrapper .title .bottom,
+        .elbpsp__review .wrapper .title .bottom .filter__selections,
+        .elbp__submitted__review .elbp__user__review .elbpur__top,
+        .elbp__submitted__review .elbp__user__review .elbpur__top .name__image {
+            flex-direction: column;
+        }
+        .elbpsp__review .wrapper .title .bottom,
+        .elbpsp__review .wrapper .title .bottom .filter__selections {
+            gap: 10px;
+        }
+        .elbpsp__review .wrapper .title .bottom form {
+            padding: 10px;
+            gap: 4px;
+        }
+        .elbpsp__review .wrapper .title .bottom form input {
+            padding-right: 5px;
+        }
+        .elbpsp__review .wrapper .title .bottom .nice-select {
+            width: 100% !important;
+            height: 45px;
+            line-height: 45px;
+        }
+        .elbp__submitted__review {
+            gap: 15px;
+        }
+        .elbp__review__form .rf__wrapper form {
+            margin-top: 20px;
+            gap: 15px;
+        }
+        .elbp__review__form .rf__wrapper h3 {
+            margin-bottom: 12px;
+        }
+        .elbp__review__form .rf__wrapper h5 {
+            font-size: 14px;
+            margin-top: 18px;
+        }
+        .elbp__review__form .rf__wrapper form .fields {
+            flex-direction: column;
+        }
+        .elbp__review__form .rf__wrapper form .fields,
+        .elbp__review__form .rf__wrapper form .left {
+            gap: 10px;
+        }
+        .elbp__review__form .rf__wrapper form input {
+            height: 50px;
+        }
+        .elbpsp__review p {
+            font-size: 12px;
+        }
+        .elbp__review__form .rf__wrapper form input,
+        .elbp__review__form .rf__wrapper form textarea {
+            font-size: 14px;
+            padding: 10px 15px;
+        }
+        .elbp__review__form .rf__wrapper form textarea {
+            height: 100px;
+        }
+        .jq-ry-group svg {
+            height: 22px;
+            width: 22px;
+        }
+        .elbpsp__review .elbp__button__b {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .elbp__submitted__review .elbp__user__review .elbpur__top .name__image {
+            gap: 10px;
+        }
+        .elbp__submitted__review .elbp__user__review .elbpur__top img {
+            height: 50px;
+            width: 50px;
+        }
+        .elbp__submitted__review .elbp__user__review .elbpur__top .text .userfullname {
+            font-size: 13px;
+        }
+        .elbp__submitted__review .elbp__user__review .elbpur__top .text .reviewsubmitdate {
+            font-size: 12px;
+        }
+        .elbp__submitted__review .elbp__user__review .elbpur__bottom {
+            padding-left: 0;
+            text-align: center;
+            margin-top: 5px;
+        }
+        .elbp__submitted__review .elbp__user__review .star__rating {
+            gap: 3px;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
@@ -2024,6 +2115,88 @@
         .elbpsp__description .bg__image.one {
             top: -18px;
         }
+        /*Single Product Review Form*/
+        .elbpsp__review {
+            padding-bottom: 30px;
+        }
+        .elbpsp__review .wrapper .title .bottom {
+            flex-direction: column;
+        }
+        .elbpsp__review .wrapper .title .bottom,
+        .elbpsp__review .wrapper .title .bottom .filter__selections {
+            gap: 10px;
+        }
+        .elbpsp__review .wrapper .title .bottom form {
+            padding: 10px;
+            gap: 8px;
+        }
+        .elbpsp__review .wrapper .title .bottom .nice-select {
+            width: 100% !important;
+            height: 45px;
+            line-height: 45px;
+        }
+        .elbp__submitted__review {
+            gap: 15px;
+        }
+        .elbp__review__form .rf__wrapper form {
+            margin-top: 20px;
+            gap: 15px;
+        }
+        .elbp__review__form .rf__wrapper h3 {
+            margin-bottom: 12px;
+        }
+        .elbp__review__form .rf__wrapper h5 {
+            font-size: 14px;
+            margin-top: 18px;
+        }
+        .elbp__review__form .rf__wrapper form .fields {
+            flex-direction: column;
+        }
+        .elbp__review__form .rf__wrapper form .fields,
+        .elbp__review__form .rf__wrapper form .left {
+            gap: 10px;
+        }
+        .elbp__review__form .rf__wrapper form input {
+            height: 50px;
+        }
+        .elbpsp__review p {
+            font-size: 12px;
+        }
+        .elbp__review__form .rf__wrapper form input,
+        .elbp__review__form .rf__wrapper form textarea {
+            font-size: 14px;
+            padding: 10px 15px;
+        }
+        .elbp__review__form .rf__wrapper form textarea {
+            height: 100px;
+        }
+        .jq-ry-group svg {
+            height: 22px;
+            width: 22px;
+        }
+        .elbpsp__review .elbp__button__b {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .elbp__submitted__review .elbp__user__review .elbpur__top .name__image {
+            gap: 10px;
+        }
+        .elbp__submitted__review .elbp__user__review .elbpur__top img {
+            height: 50px;
+            width: 50px;
+        }
+        .elbp__submitted__review .elbp__user__review .elbpur__top .text .userfullname {
+            font-size: 13px;
+        }
+        .elbp__submitted__review .elbp__user__review .elbpur__top .text .reviewsubmitdate {
+            font-size: 12px;
+        }
+        .elbp__submitted__review .elbp__user__review .elbpur__bottom {
+            padding-left: 59px;
+        }
+        .elbp__submitted__review .elbp__user__review .star__rating {
+            gap: 3px;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -2824,6 +2997,68 @@
         .elbpsp__description .bg__image.three {
             top: 235px;
         }
+        /*Single Product Review Form*/
+        .elbpsp__review {
+            padding-bottom: 40px;
+        }
+        .elbpsp__review .wrapper .title .bottom {
+            flex-direction: column;
+        }
+        .elbpsp__review .wrapper .title .bottom,
+        .elbpsp__review .wrapper .title .bottom .filter__selections {
+            gap: 10px;
+        }
+        .elbpsp__review .wrapper .title .bottom form {
+            padding: 10px 32px;
+        }
+        .elbpsp__review .wrapper .title .bottom .nice-select {
+            width: 100% !important;
+            height: 50px;
+            line-height: 50px;
+        }
+        .elbp__submitted__review {
+            gap: 20px;
+        }
+        .elbp__review__form .rf__wrapper form {
+            margin-top: 24px;
+            gap: 20px;
+        }
+        .elbp__review__form .rf__wrapper h3 {
+            margin-bottom: 12px;
+        }
+        .elbp__review__form .rf__wrapper h5 {
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        .elbp__review__form .rf__wrapper form .fields {
+            flex-direction: column;
+        }
+        .elbp__review__form .rf__wrapper form .fields,
+        .elbp__review__form .rf__wrapper form .left {
+            gap: 10px;
+        }
+        .elbp__review__form .rf__wrapper form input {
+            height: 50px;
+        }
+        .elbpsp__review p {
+            font-size: 14px;
+        }
+        .elbp__review__form .rf__wrapper form input,
+        .elbp__review__form .rf__wrapper form textarea {
+            font-size: 14px;
+            padding: 10px 15px;
+        }
+        .elbp__review__form .rf__wrapper form textarea {
+            height: 120px;
+        }
+        .jq-ry-group svg {
+            height: 22px;
+            width: 22px;
+        }
+        .elbpsp__review .elbp__button__b {
+            font-size: 14px;
+            line-height: 14px;
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -3400,6 +3635,62 @@
         }
         .elbpsp__description .bg__image.two {
             right: 49px;
+        }
+        /*Single Product Review Form*/
+        .elbpsp__review {
+            padding-bottom: 50px;
+        }
+        .elbpsp__review .wrapper .title .bottom {
+            flex-direction: column;
+        }
+        .elbpsp__review .wrapper .title .bottom,
+        .elbpsp__review .wrapper .title .bottom .filter__selections {
+            gap: 10px;
+        }
+        .elbpsp__review .wrapper .title .bottom form {
+            padding: 10px 32px;
+        }
+        .elbpsp__review .wrapper .title .bottom .nice-select {
+            width: 100% !important;
+            height: 50px;
+            line-height: 50px;
+        }
+        .elbp__submitted__review {
+            gap: 24px;
+        }
+        .elbp__review__form .rf__wrapper form {
+            margin-top: 24px;
+            gap: 20px;
+        }
+        .elbp__review__form .rf__wrapper h3 {
+            margin-bottom: 12px;
+        }
+        .elbp__review__form .rf__wrapper h5 {
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        .elbp__review__form .rf__wrapper form .fields,
+        .elbp__review__form .rf__wrapper form .left {
+            gap: 10px;
+        }
+        .elbp__review__form .rf__wrapper form input {
+            height: 55px;
+        }
+        .elbpsp__review p {
+            font-size: 14px;
+        }
+        .elbp__review__form .rf__wrapper form input,
+        .elbp__review__form .rf__wrapper form textarea {
+            font-size: 14px;
+            padding: 14px 20px;
+        }
+        .jq-ry-group svg {
+            height: 26px;
+            width: 26px;
+        }
+        .elbpsp__review .elbp__button__b {
+            font-size: 16px;
+            line-height: 16px;
         }
 }
 
@@ -4100,6 +4391,39 @@
         .elbpsp__description .bg__image.three {
             top: 235px;
         }
+        /*Single Product Review Form*/
+        .elbpsp__review {
+            padding-bottom: 60px;
+        }
+        .elbpsp__review .wrapper .title .bottom,
+        .elbpsp__review .wrapper .title .bottom .filter__selections {
+            gap: 20px;
+        }
+        .elbpsp__review .wrapper .title .bottom form {
+            padding: 10px 32px;
+        }
+        .elbpsp__review .wrapper .title .bottom .nice-select {
+            height: 50px;
+            line-height: 50px;
+        }
+        .elbp__submitted__review {
+            gap: 30px;
+        }
+        .elbp__review__form .rf__wrapper form {
+            margin-top: 30px;
+            gap: 24px;
+        }
+        .elbp__review__form .rf__wrapper h5 {
+            font-size: 18px;
+            margin-top: 24px;
+        }
+        .elbp__review__form .rf__wrapper form .fields,
+        .elbp__review__form .rf__wrapper form .left {
+            gap: 10px;
+        }
+        .elbp__review__form .rf__wrapper form input {
+            height: 60px;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1139px) {
@@ -4530,6 +4854,20 @@
         .elbpsp__description .bg__image.three {
             top: 235px;
         }
+        /*Single Product Review Form*/
+        .elbpsp__review {
+            padding-bottom: 70px;
+        }
+        .elbpsp__review .wrapper .title .bottom,
+        .elbpsp__review .wrapper .title .bottom .filter__selections {
+            gap: 24px;
+        }
+        .elbp__submitted__review {
+            gap: 38px;
+        }
+        .elbp__review__form .rf__wrapper form {
+            margin-top: 38px;
+        }
 }
 
 @media (min-width: 1140px) and (max-width: 1199px) {
@@ -4577,6 +4915,11 @@
         }
         .elbp__au__wrapper .bottom {
             height: 448px;
+        }
+    /*===== Single Product Page =====*/
+        /*Single Product Review Form*/
+        .elbpsp__review {
+            padding-bottom: 80px;
         }
 }
 
