@@ -18,6 +18,7 @@
 4. Shop Page
 5. Single Product
 6. Cart Page
+7. Checkout Page
 
 
 **********************************************/
@@ -4721,6 +4722,22 @@ input[type="radio"]:checked::before {
 }
 
 /* Review Form */
+.elbp__review__form {
+    max-height: 0;
+    overflow: hidden;
+    margin-top: 0;
+    transition: 0.6s;
+    -moz-transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+}
+
+.elbp__review__form.show {
+    margin-top: 100px;
+    max-height: 700px;
+}
+
 .elbp__review__form .rf__wrapper h3 {
     margin-bottom: 16px;
 }
@@ -4870,7 +4887,7 @@ input[type="radio"]:checked::before {
 }
 
 /* Subtotal Area */
-.elbp__cart__subtotal {
+.elbpccp__cart__subtotal {
     background: var(--bg-black);
     border-radius: 12px;
     padding: 28px;
@@ -4880,41 +4897,124 @@ input[type="radio"]:checked::before {
 }
 
 @media (max-width: 991px) {
-    .elbp__cart__subtotal {
+    .elbpccp__cart__subtotal {
         margin-top: 20px;
     }
 }
 
-.elbp__cart__subtotal .item {
+.elbpccp__cart__subtotal .info__item {
     display: flex;
     justify-content: space-between;
     gap: 24px;
 }
 
-.elbp__cart__subtotal p,
-.elbp__cart__subtotal span {
+.elbpccp__cart__subtotal p,
+.elbpccp__cart__subtotal span {
     color: #E8E1D9;
     margin: 0;
 }
 
-.elbp__cart__subtotal .horizontal__seperator {
+.elbpccp__cart__subtotal .subtotal P,
+.elbpccp__cart__subtotal .subtotal span {
+    font-weight: 500;
+}
+
+.elbpccp__cart__subtotal .horizontal__seperator {
     background: #5A5752;
 }
 
-.elbp__cart__subtotal p.subtotal {
+.elbpccp__cart__subtotal p.subtotal {
     font-weight: 600;
 }
 
-.elbp__cart__subtotal .elbp__button__c {
+.elbpccp__cart__subtotal .elbp__button__c {
     width: 100%;
     color: #E8E1D9;
     border-color: #E8E1D9;
 }
 
-.elbp__cart__subtotal .elbp__button__c:hover {
+.elbpccp__cart__subtotal .elbp__button__c:hover {
     background: #E8E1D9;
     color: var(--bg-black);
 }
+
+/* ====================================================================
+   7. Checkout Page
+==================================================================== */
+/* Subtotal Area */
+.elbp__checkout__section .elbpccp__cart__subtotal {
+	padding: 20px;
+    height: 100%;
+}
+
+.elbpccp__cart__subtotal .elbp__checkoutprod__list {
+	flex: auto;
+	gap: 15px;
+	display: flex;
+	flex-direction: column;
+}
+
+.elbp__checkoutprod__list .item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 8px;
+}
+
+.elbp__checkoutprod__list .item .image {
+    background: transparent;
+    height: 90px;
+    width: 100px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.elbp__checkoutprod__list .item .image img {
+    height: 100%;
+}
+
+.elbp__checkoutprod__list .item .text {
+    width: 100%;
+}
+
+.elbp__checkoutprod__list .item .quantity__widget.v2 {
+    flex-shrink: 0;
+    flex-grow: 0;
+    height: fit-content;
+    padding: 6px;
+}
+
+.elbp__checkoutprod__list .quantity__widget.v2 .quantity__decrease,
+.elbp__checkoutprod__list .quantity__widget.v2 .quantity__increase {
+	height: 24px;
+	width: 24px;
+	line-height: 24px;
+    font-size: 14px;
+}
+
+.elbp__checkoutprod__list .quantity__widget.v2 .quantity__controls {
+	gap: 5px;
+}
+
+.elbp__checkoutprod__list .quantity__widget.v2 .quantity__display {
+	line-height: 24px;
+	padding: 0 4px;
+}
+
+.elbp__checkoutprod__list .item p,
+.elbp__checkoutprod__list .item a {
+    font-size: 16px;
+    color: #E8E1D9;
+}
+
+.elbp__checkoutprod__list .item .productcode {
+    color: #9B948D;
+}
+
+/* */
 
 /**
 font-family: 'Poppins', sans-serif;

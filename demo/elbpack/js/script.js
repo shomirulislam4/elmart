@@ -364,6 +364,13 @@
               }
             });
         });
+
+        //Review Form Show/Hide
+        $(function(){
+            $('#elbpReviewFormToggle').on('click', function(){
+                $('.elbp__review__form').toggleClass('show')
+            })
+        });
                  
           
           

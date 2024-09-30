@@ -1,5 +1,6 @@
 @media (max-width: 289px) {
-    section {
+    section,
+    .elbp__review__form.show {
         margin-top: 20px;
     }
     .elbp__new__collection__section,
@@ -1195,28 +1196,28 @@
         .elbp__cartprod__list {
             gap: 15px;
         }
-        .elbp__cartprod__list .item {
+        .elbp__cartprod__list .info__item {
             flex-direction: column;
             gap: 6px;
         }
-        .elbp__cartprod__list .item .image {
+        .elbp__cartprod__list .info__item .image {
             width: 100%;
             height: 180px;
         }
-        .elbp__cartprod__list .item .text {
+        .elbp__cartprod__list .info__item .text {
             gap: 10px;
             padding: 6px 0;
         }
-        .elbp__cartprod__list .item .text h4 {
+        .elbp__cartprod__list .info__item .text h4 {
             font-size: 14px;
             line-height: 20px;
         }
-        .elbp__cartprod__list .item .text .title button {
+        .elbp__cartprod__list .info__item .text .title button {
             height: 24px;
             width: 24px;
             line-height: 16px;
         }
-        .elbp__cartprod__list .item .text .title button svg {
+        .elbp__cartprod__list .info__item .text .title button svg {
             height: 18px;
             width: 18px;
         }
@@ -1231,7 +1232,8 @@
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
-    section {
+    section,
+    .elbp__review__form.show {
         margin-top: 30px;
     }
     .elbp__new__collection__section,
@@ -2238,28 +2240,28 @@
         .elbp__cartprod__list {
             gap: 20px;
         }
-        .elbp__cartprod__list .item {
+        .elbp__cartprod__list .info__item {
             flex-direction: column;
             gap: 6px;
         }
-        .elbp__cartprod__list .item .image {
+        .elbp__cartprod__list .info__item .image {
             width: 100%;
             height: 180px;
         }
-        .elbp__cartprod__list .item .text {
+        .elbp__cartprod__list .info__item .text {
             gap: 14px;
             padding: 6px 0;
         }
-        .elbp__cartprod__list .item .text h4 {
+        .elbp__cartprod__list .info__item .text h4 {
             font-size: 16px;
             line-height: 24px;
         }
-        .elbp__cartprod__list .item .text .title button {
+        .elbp__cartprod__list .info__item .text .title button {
             height: 24px;
             width: 24px;
             line-height: 16px;
         }
-        .elbp__cartprod__list .item .text .title button svg {
+        .elbp__cartprod__list .info__item .text .title button svg {
             height: 18px;
             width: 18px;
         }
@@ -2271,7 +2273,8 @@
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
-    section {
+    section,
+    .elbp__review__form.show {
         margin-top: 40px;
     }
     .elbp__new__collection__section,
@@ -3134,27 +3137,27 @@
         .elbp__cartprod__list {
             gap: 28px;
         }
-        .elbp__cartprod__list .item {
+        .elbp__cartprod__list .info__item {
             gap: 16px;
         }
-        .elbp__cartprod__list .item .image {
+        .elbp__cartprod__list .info__item .image {
             width: 180px;
             height: 180px;
         }
-        .elbp__cartprod__list .item .text {
+        .elbp__cartprod__list .info__item .text {
             gap: 14px;
             padding: 6px 0;
         }
-        .elbp__cartprod__list .item .text h4 {
+        .elbp__cartprod__list .info__item .text h4 {
             font-size: 16px;
             line-height: 24px;
         }
-        .elbp__cartprod__list .item .text .title button {
+        .elbp__cartprod__list .info__item .text .title button {
             height: 24px;
             width: 24px;
             line-height: 16px;
         }
-        .elbp__cartprod__list .item .text .title button svg {
+        .elbp__cartprod__list .info__item .text .title button svg {
             height: 18px;
             width: 18px;
         }
@@ -3165,7 +3168,8 @@
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-    section {
+    section,
+    .elbp__review__form.show {
         margin-top: 50px;
     }
     .elbp__new__collection__section,
@@ -3799,18 +3803,18 @@
         .elbp__cartprod__list {
             gap: 38px;
         }
-        .elbp__cartprod__list .item {
+        .elbp__cartprod__list .info__item {
             gap: 16px;
         }
-        .elbp__cartprod__list .item .image {
+        .elbp__cartprod__list .info__item .image {
             width: 216px;
             height: 208px;
         }
-        .elbp__cartprod__list .item .text {
+        .elbp__cartprod__list .info__item .text {
             gap: 14px;
             padding: 6px 0;
         }
-        .elbp__cartprod__list .item .text h4 {
+        .elbp__cartprod__list .info__item .text h4 {
             font-size: 20px;
             line-height: 28px;
         }
@@ -3820,7 +3824,8 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    section {
+    section,
+    .elbp__review__form.show {
         margin-top: 60px;
     }
     .elbp__new__collection__section,
@@ -4552,7 +4557,8 @@
 }
 
 @media (min-width: 992px) and (max-width: 1139px) {
-    section {
+    section,
+    .elbp__review__form.show {
         margin-top: 70px;
     }
     .elbp__new__collection__section,
@@ -4997,7 +5003,8 @@
 
 @media (min-width: 1140px) and (max-width: 1199px) {
     /*===== Home Page =====*/
-        section {
+        section,
+        .elbp__review__form.show {
             margin-top: 80px;
         }
         /*Hero Section*/
