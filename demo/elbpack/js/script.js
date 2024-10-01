@@ -371,6 +371,12 @@
                 $('.elbp__review__form').toggleClass('show')
             })
         });
+
+    /*============================ Other Pages ============================*/
+        //Checkout Nice Select
+        if ($('.elbp__checkoutpage').length) {
+            $('#elbpcpDeliveryInfoPhoneCC').niceSelect();
+        }
                  
           
           

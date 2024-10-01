@@ -5014,7 +5014,100 @@ input[type="radio"]:checked::before {
     color: #9B948D;
 }
 
-/* */
+/* Checkout Form */
+.elbp__checkout__section form {
+    background: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding: 40px 32px;
+    border-radius: 8px;
+}
+
+.elbp__checkout__section h5 {
+    font-size: 20px;
+    margin-bottom: 28px;
+}
+
+.elbp__checkout__section input,
+.elbp__checkout__section label,
+.elbpcp__delivery__information .phone input {
+    font-size: 16px;
+    line-height: 150%;
+    color: #807871;
+    margin: 0;
+}
+
+.elbp__checkout__section label {
+    color: var(--bg-black);
+}
+
+.elbpcp__delivery__information .phone,
+.elbp__checkout__section input,
+.elbpcp__delivery__information .phone input {
+    width: 100%;
+    height: 48px;
+    border-radius: 8px;
+    color: #807871;
+    background: #EDE4D9;
+    padding: 0 12px;
+}
+
+.elbpcp__delivery__information {
+    margin-bottom: 32px;
+}
+
+.elbp__checkout__section .form__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.elbp__checkout__section .with__label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 48.5%;
+}
+
+.elbp__checkout__section .with__label.full {
+    width: 100%;
+}
+
+.elbpcp__delivery__information .phone {
+    display: flex;
+}
+
+.elbpcp__delivery__information .phone .nice-select {
+    height: 48px;
+    line-height: 48px;
+    padding-left: 0;
+    padding-right: 8px;
+    background: transparent;
+    border: 0; 
+}
+
+.elbpcp__delivery__information .phone .nice-select span {
+    color: #807871;
+    font-weight: 500;
+}
+
+.elbpcp__delivery__information .phone .nice-select::after {
+	border-bottom: 0;
+	border-right: 1px solid #807871;
+	height: 14px;
+	margin-top: 0;
+	right: 0;
+	transform: translateY(-50%);
+	width: 0;
+}
+
+.elbpcp__delivery__information .phone input {
+    border-radius: 0;
+    background: transparent;
+}
+
+
+
 
 /**
 font-family: 'Poppins', sans-serif;
