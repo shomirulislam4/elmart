@@ -1229,6 +1229,67 @@
         .elbp__cart__subtotal .elbp__button__c {
             padding: 9px 14px;
         }
+    /*===== Checkout Page =====*/
+        .elbpccp__cart__subtotal {
+            margin-top: 10px;
+        }
+        .elbp__checkout__section form {
+            gap: 12px;
+            padding: 15px 10px;
+        }
+        .elbp__checkout__section h5 {
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        .elbpcp__delivery__information {
+            margin-bottom: 10px;
+        }
+        .elbp__checkout__address__info .si {
+            gap: 6px;
+        }
+        .elbp__checkout__address__info input[type="checkbox"] {
+            margin-top: 7px;
+        }
+        .elbp__checkout__section input:not([type="checkbox"]),
+        .elbp__checkout__section label,
+        .elbpcp__delivery__information .phone input {
+            font-size: 12px;
+        }
+        .elbpcp__delivery__information .phone,
+        .elbp__checkout__section input:not([type="checkbox"]),
+        .elbpcp__delivery__information .phone input {
+            height: 40px;
+        }
+        .elbp__checkout__section .form__row {
+            flex-direction: column;
+            gap: 10px;
+        }
+        .elbp__checkout__section .with__label {
+            gap: 6px;
+            width: 100%;
+        }
+        .elbpcp__delivery__information .phone .nice-select {
+            height: 40px;
+            line-height: 40px;
+        }
+        .elbp__checkout__section .elbpccp__cart__subtotal {
+            padding: 10px;
+        }
+        .elbp__checkoutprod__list .item {
+            flex-direction: column;
+        }
+        .elbp__checkoutprod__list .item p,
+        .elbp__checkoutprod__list .item a {
+            font-size: 12px;
+            text-align: center;
+        }
+        .elbp__checkoutprod__list .item .image {
+            height: 60px;
+            width: 60px;
+        }
+        .elbpccp__cart__subtotal .elbp__checkoutprod__list {
+            gap: 10px;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
@@ -2270,6 +2331,77 @@
             gap: 20px;
             padding: 20px;
         }
+    /*===== Checkout Page =====*/
+        .elbp__checkout__section form {
+            gap: 20px;
+            padding: 20px 15px;
+        }
+        .elbp__checkout__section h5 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .elbpcp__delivery__information {
+            margin-bottom: 20px;
+        }
+        .elbp__checkout__address__info input[type="checkbox"] {
+            margin-top: 7px;
+        }
+        .elbp__checkout__section input:not([type="checkbox"]),
+        .elbp__checkout__section label,
+        .elbpcp__delivery__information .phone input {
+            font-size: 14px;
+        }
+        .elbpcp__delivery__information .phone,
+        .elbp__checkout__section input:not([type="checkbox"]),
+        .elbpcp__delivery__information .phone input {
+            height: 40px;
+        }
+        .elbp__checkout__section .form__row {
+            flex-direction: column;
+            gap: 12px;
+        }
+        .elbp__checkout__section .with__label {
+            gap: 6px;
+            width: 100%;
+        }
+        .elbpcp__delivery__information .phone .nice-select {
+            height: 40px;
+            line-height: 40px;
+        }
+        .elbp__checkout__section .elbpccp__cart__subtotal {
+            padding: 10px;
+        }
+        .elbp__checkoutprod__list .item .quantity__widget.v2 {
+            padding: 4px;
+        }
+        .elbp__checkoutprod__list .quantity__widget.v2 .quantity__decrease,
+        .elbp__checkoutprod__list .quantity__widget.v2 .quantity__increase {
+            height: 20px;
+            width: 20px;
+            line-height: 20px;
+            font-size: 12px;
+        }
+        .elbp__checkoutprod__list .quantity__widget.v2 .quantity__controls {
+            gap: 2px;
+        }
+        .elbp__checkoutprod__list .quantity__widget.v2 .quantity__display {
+            line-height: 20px;
+            font-size: 14px;
+        }
+        .elbp__checkoutprod__list .item {
+            gap: 4px;
+        }
+        .elbp__checkoutprod__list .item p,
+        .elbp__checkoutprod__list .item a {
+            font-size: 12px;
+        }
+        .elbp__checkoutprod__list .item .image {
+            height: 60px;
+            width: 60px;
+        }
+        .elbpccp__cart__subtotal .elbp__checkoutprod__list {
+            gap: 10px;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -3165,6 +3297,43 @@
             gap: 20px;
             padding: 20px;
         }
+    /*===== Checkout Page =====*/
+        .elbp__checkout__section form {
+            gap: 20px;
+            padding: 28px 20px;
+        }
+        .elbp__checkout__section h5 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .elbpcp__delivery__information {
+            margin-bottom: 20px;
+        }
+        .elbp__checkout__address__info input[type="checkbox"] {
+            margin-top: 7px;
+        }
+        .elbp__checkout__section input:not([type="checkbox"]),
+        .elbp__checkout__section label,
+        .elbpcp__delivery__information .phone input {
+            font-size: 14px;
+        }
+        .elbpcp__delivery__information .phone,
+        .elbp__checkout__section input:not([type="checkbox"]),
+        .elbpcp__delivery__information .phone input {
+            height: 40px;
+        }
+        .elbp__checkout__section .form__row {
+            flex-direction: column;
+            gap: 12px;
+        }
+        .elbp__checkout__section .with__label {
+            gap: 6px;
+            width: 100%;
+        }
+        .elbpcp__delivery__information .phone .nice-select {
+            height: 40px;
+            line-height: 40px;
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -3820,6 +3989,21 @@
         }
         .elbp__cart__subtotal {
             gap: 20px;
+        }
+    /*===== Checkout Page =====*/
+        .elbp__checkout__section form {
+            gap: 20px;
+            padding: 28px 20px;
+        }
+        .elbp__checkout__section h5 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .elbpcp__delivery__information {
+            margin-bottom: 24px;
+        }
+        .elbp__checkout__address__info input[type="checkbox"] {
+            margin-top: 6px;
         }
 }
 
@@ -4554,6 +4738,10 @@
         .elbp__review__form .rf__wrapper form input {
             height: 60px;
         }
+    /*===== Checkout Page =====*/
+        .elbp__checkout__address__info input[type="checkbox"] {
+            margin-top: 6px;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1139px) {
@@ -4998,6 +5186,11 @@
         }
         .elbp__review__form .rf__wrapper form {
             margin-top: 38px;
+        }
+    /*===== Checkout Page =====*/
+        .elbp__checkout__section form {
+            gap: 20px;
+            padding: 28px 20px;
         }
 }
 

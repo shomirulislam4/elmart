@@ -5029,7 +5029,7 @@ input[type="radio"]:checked::before {
     margin-bottom: 28px;
 }
 
-.elbp__checkout__section input,
+.elbp__checkout__section input:not([type="checkbox"]),
 .elbp__checkout__section label,
 .elbpcp__delivery__information .phone input {
     font-size: 16px;
@@ -5043,7 +5043,7 @@ input[type="radio"]:checked::before {
 }
 
 .elbpcp__delivery__information .phone,
-.elbp__checkout__section input,
+.elbp__checkout__section input:not([type="checkbox"]),
 .elbpcp__delivery__information .phone input {
     width: 100%;
     height: 48px;
@@ -5077,6 +5077,10 @@ input[type="radio"]:checked::before {
     display: flex;
 }
 
+.elbpcp__delivery__information .phone input {
+    padding-right: 0;
+}
+
 .elbpcp__delivery__information .phone .nice-select {
     height: 48px;
     line-height: 48px;
@@ -5106,7 +5110,15 @@ input[type="radio"]:checked::before {
     background: transparent;
 }
 
+.elbp__checkout__address__info .si {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
 
+.elbp__checkout__address__info input[type="checkbox"] {
+    margin-top: 4px;
+}
 
 
 /**
