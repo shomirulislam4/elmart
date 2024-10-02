@@ -3473,12 +3473,6 @@ input[type="radio"]:checked::before {
     flex-grow: 0;
 }
 
-@media (max-width: 767px) {
-    .elbp__newsletter__popup .wrapper .image {
-      display: none;
-    }
-  }
-
 .elbp__newsletter__popup .wrapper .image img {
     width: 100%;
     height: auto;
@@ -3559,12 +3553,21 @@ input[type="radio"]:checked::before {
 }
 
 .elbp__newsletter__popup .wrapper .content .title,
-.elbp__newsletter__popup .wrapper form {
+.elbp__newsletter__popup .wrapper form,
+.elbp__newsletter__popup .wrapper .content .social__media {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
+@media (max-width: 767px) {
+    .elbp__newsletter__popup .wrapper .image {
+      display: none;
+    }
+    .elbp__newsletter__popup .wrapper .content .social__media {
+        gap: 0;
+    }
+}
 /*** End of Newsletter Popup ***/
 
 
