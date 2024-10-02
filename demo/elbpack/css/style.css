@@ -624,6 +624,23 @@ input[type="radio"]:checked::before {
     margin: 0;
 }
 
+/* Post & Pages Markup */
+.elbp__post__page li {
+    padding: 16px 0;
+    margin-left: 23px;
+    list-style: disc;
+}
+
+.elbp__post__page h2,
+.elbp__post__page h3,
+.elbp__post__page h4 {
+    margin-bottom: 24px;
+}
+
+.elbp__post__page ul {
+    margin-bottom: 30px;
+}
+
 /* ====================================================================
    2. Home Page
 ==================================================================== */
@@ -4549,20 +4566,6 @@ input[type="radio"]:checked::before {
     padding-top: 124px;
 }
 
-.elbpsp__description .wrapper .tab-content li {
-    padding: 16px 0;
-    margin-left: 23px;
-    list-style: disc;
-}
-
-.elbpsp__description .wrapper .tab-content h3 {
-    margin-bottom: 24px;
-}
-
-.elbpsp__description .wrapper .tab-content h5 {
-    margin-top: 30px;
-}
-
 .elbpsp__description .wrapper .tab-content h3,
 .elbpsp__description .wrapper .tab-content h5 {
     font-weight: 600;
@@ -4803,6 +4806,14 @@ input[type="radio"]:checked::before {
 /* ====================================================================
    6. Cart Page
 ==================================================================== */
+.elbp__cart__section .bg__img,
+.elbp__checkout__section .bg__img {
+    position: absolute;
+    bottom: 291px;
+    right: 0;
+    z-index: -1;
+}
+
 .elbp__cartprod__list {
     display: flex;
     flex-direction: column;
@@ -5118,6 +5129,61 @@ input[type="radio"]:checked::before {
 
 .elbp__checkout__address__info input[type="checkbox"] {
     margin-top: 4px;
+}
+
+/* ====================================================================
+   8. 404, Privacy, and Terms Page
+==================================================================== */
+.privacypolicy__termsconditions__section {
+    position: relative;
+    overflow: hidden;
+}
+
+.privacypolicy__termsconditions__section .bg__img {
+    position: absolute;
+    z-index: -1;
+}
+
+.privacypolicy__termsconditions__section .bg__img.one {
+    top: 0;
+    left: 0;
+}
+
+.privacypolicy__termsconditions__section .bg__img.two {
+    left: 44%;
+    top: 0;
+}
+
+.privacypolicy__termsconditions__section .bg__img.three {
+    top: 145px;
+    right: 48px;
+}
+
+.privacypolicy__termsconditions__section .bg__img.four {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.privacypolicy__termsconditions__section .bg__img.five {
+    right: 164px;
+    bottom: 325px;
+}
+
+.privacypolicy__termsconditions__section .bg__img.six {
+    left: 66;
+    top: 70%;
+}
+
+
+/* 404 Page Section */
+.elbp__404__section {
+    margin-top: 0;
+}
+
+.elbp__404__section .wrapper img {
+    width: 100%;
+    height: auto;
 }
 
 
