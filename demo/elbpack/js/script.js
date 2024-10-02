@@ -217,6 +217,29 @@
             });
         });
 
+        //Newsletter Popup (Variant 3)
+        $(function(){
+            var currentIndex = 0;
+            var scrollThreshold = 2000;
+            var isScrollTriggered = false;
+        
+            function fesnwsltrPopupScroll() {
+            if (!isScrollTriggered && $(window).scrollTop() > scrollThreshold) {
+                isScrollTriggered = true;
+                $('.elbp__newsletter__popup').addClass('show');
+            }
+            }
+        
+            fesnwsltrPopupScroll();
+            $(window).scroll(function() {
+            fesnwsltrPopupScroll();
+            });
+        
+            $('.elbp__nwltrpop__close').on('click', function() {
+            $('.elbp__newsletter__popup').removeClass('show');
+            });
+        });
+
     /*============================ About Us Page ============================*/
         //Video Popup
         $(function(){

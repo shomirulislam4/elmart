@@ -13,6 +13,7 @@
     10. Categories Section
     11. Newsletter Section
     12. Footer
+    13. Newsletter Popup
 3. About Us
     1. Breadcrumbs Section
 4. Shop Page
@@ -490,6 +491,8 @@ input[type="checkbox"] {
     border-radius: 2px;
     position: relative;
     display: inline-block;
+    flex-shrink: 0;
+    flex-grow: 0;
     transition: 0.3s;
     -moz-transition: 0.3s;
     -webkit-transition: 0.3s;
@@ -536,6 +539,8 @@ input[type="radio"] {
     border-radius: 2px;
     position: relative;
     border-radius: 50%;
+    flex-shrink: 0;
+    flex-grow: 0;
 }
 
 input[type="radio"]::before {
@@ -3366,6 +3371,201 @@ input[type="radio"]:checked::before {
     fill: var(--main-color);
 }
 /*** End of Footer V2 ***/
+
+/*** Start of Newsletter Popup ***/
+.elbp__newsletter__popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    background: rgba(232, 225, 217, 0.20);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 1);
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-content: center;
+    overflow: hidden;
+    visibility: hidden;
+    transition: none;
+    transform: scale(0);
+}
+
+.elbp__newsletter__popup.show {
+    visibility: visible;
+    transform: scale(1);
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.elbp__nwltrpop__close {
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    background: transparent;
+}
+
+.elbp__nwltrpop__close i {
+    transform: rotate(-135deg);
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.elbp__nwltrpop__close:hover i {
+    transform: rotate(0deg);
+}
+
+.elbp__newsletter__popup .wrapper {
+    width: 1125px;
+    height: 648px;
+    display: flex;
+    justify-content: space-between;
+    background: var(--background-color);
+}
+
+@media (max-width: 1139px) {
+    .elbp__newsletter__popup .wrapper {
+        width: 95%;
+        height: 600px;
+        margin: 0 auto;
+    }
+}
+
+.elbp__newsletter__popup .wrapper p,
+.elbp__newsletter__popup .wrapper form .field input,
+.elbp__newsletter__popup .wrapper form .elbp__button__a {
+    color: #756960;
+    font-size: 15px;
+    line-height: 150%;
+}
+
+.elbp__newsletter__popup .wrapper p {
+    margin: 0;
+}
+
+.elbp__newsletter__popup .wrapper label {
+    font-size: 13px;
+    color: #756960;
+    text-align: left;
+}
+
+.elbp__newsletter__popup .wrapper .horizontal__seperator {
+    flex-shrink: 0;
+    background: #C9C1B7;
+}
+
+.elbp__newsletter__popup .wrapper .image {
+    padding: 0;
+    width: 544px;
+    height: 100%;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+@media (max-width: 767px) {
+    .elbp__newsletter__popup .wrapper .image {
+      display: none;
+    }
+  }
+
+.elbp__newsletter__popup .wrapper .image img {
+    width: 100%;
+    height: auto;
+}
+
+.elbp__newsletter__popup .wrapper .content {
+    padding: 83px 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 48px;
+}
+
+.elbp__newsletter__popup .wrapper .content h2,
+.elbp__newsletter__popup .wrapper .content h5 {
+    margin: 0;
+    font-weight: 600;
+    color: #756960;
+}
+
+.elbp__newsletter__popup .wrapper .content h5 {
+    font-size: 24px;
+}
+
+.elbp__newsletter__popup .wrapper form .field {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+    border-radius: 12px;
+    background: #EDE4D9;
+}
+
+.elbp__newsletter__popup .wrapper form .field input {
+    width: 100%;
+    background: transparent;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.elbp__newsletter__popup .wrapper form .field input,
+.elbp__newsletter__popup .wrapper form .field input::placeholder {
+    color: var(--text-color);
+}
+
+.elbp__newsletter__popup .wrapper form .terms__accept {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.elbp__newsletter__popup .wrapper form .terms__accept input[type="checkbox"],
+.elbp__newsletter__popup .wrapper form .terms__accept input[type="checkbox"]:checked {
+	width: 14px;
+	height: 14px;
+}
+
+.elbp__newsletter__popup .wrapper form .terms__accept input[type="checkbox"] {
+    border-color: #756960;
+    margin-top: 4px;
+}
+
+.elbp__newsletter__popup .wrapper form .terms__accept input[type="checkbox"]:checked {
+    border-color: var(--main-color);
+}
+
+.elbp__newsletter__popup .wrapper form .terms__accept input[type="checkbox"]:checked::before {
+    height: 8px;
+    width: 8px;
+}
+
+.elbp__newsletter__popup .wrapper form .elbp__button__a {
+    color: #DACFC2 !important;
+    padding: 13px 40px;
+}
+
+.elbp__newsletter__popup .wrapper form .elbp__button__a:hover {
+    color: var(--white-text) !important;
+}
+
+.elbp__newsletter__popup .wrapper .content .title,
+.elbp__newsletter__popup .wrapper form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/*** End of Newsletter Popup ***/
 
 
 /* ====================================================================
