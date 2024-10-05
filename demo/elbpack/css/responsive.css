@@ -813,12 +813,16 @@
         }
     /*===== About Us Page =====*/
         /*Breadcrumbs Section*/
+        .elbp__breadcrumbs__section {
+            height: 50px;
+        }
         .elbp__bc__wrapper a {
-            margin-right: 24px;
+            margin-right: 20px;
         }
         .elbp__bc__wrapper a::after {
-            width: 24px;
-            height: 24px;
+            top: 1px;
+            width: 20px;
+            height: 20px;
         }
         /*About Us Section*/
         .elbp__au__wrapper .top,
@@ -1434,6 +1438,35 @@
         .elbp__order__tracking .bg__img.one {
             top: -20px;
             left: 157px;
+        }
+        /*FAQ Section*/
+        .elbp__faq__section .tab-content .tab-pane {
+            padding: 10px;
+        }
+        .accordion {
+            gap: 6px;
+        }
+        .accordion-item:first-of-type .accordion-button,
+        .accordion-item:last-of-type .accordion-button.collapsed,
+        .accordion-item .accordion-button,
+        .accordion-item .accordion-button:not(.collapsed),
+        .accordion-item .accordion-collapse,
+        .accordion-item:last-of-type .accordion-collapse {
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .accordion-button::after {
+            font-size: 14px;
+        }
+        .elbp__faq__section .elbpfaq__navtab {
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-direction: column;
+        }
+        .elbp__faq__section .elbpfaq__navtab .elbp__button__c {
+            padding: 10px;
+            line-height: 20px;
+            border-radius: 12px;
         }
 }
 
@@ -2679,6 +2712,35 @@
             top: -30px;
             left: 240px;
         }
+        /*FAQ Section*/
+        .elbp__faq__section .tab-content .tab-pane {
+            padding: 15px;
+        }
+        .accordion {
+            gap: 6px;
+        }
+        .accordion-item:first-of-type .accordion-button,
+        .accordion-item:last-of-type .accordion-button.collapsed,
+        .accordion-item .accordion-button,
+        .accordion-item .accordion-button:not(.collapsed),
+        .accordion-item .accordion-collapse,
+        .accordion-item:last-of-type .accordion-collapse {
+            padding: 15px;
+            border-radius: 12px;
+        }
+        .accordion-button::after {
+            font-size: 16px;
+        }
+        .elbp__faq__section .elbpfaq__navtab {
+            gap: 10px;
+            margin-bottom: 30px;
+            flex-direction: column;
+        }
+        .elbp__faq__section .elbpfaq__navtab .elbp__button__c {
+            padding: 12px 35px;
+            line-height: 20px;
+            border-radius: 12px;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -3706,6 +3768,34 @@
             top: -39px;
             left: 325px;
         }
+        /*FAQ Section*/
+        .elbp__faq__section .tab-content .tab-pane {
+            padding: 15px;
+        }
+        .accordion {
+            gap: 6px;
+        }
+        .accordion-item:first-of-type .accordion-button,
+        .accordion-item:last-of-type .accordion-button.collapsed,
+        .accordion-item .accordion-button,
+        .accordion-item .accordion-button:not(.collapsed),
+        .accordion-item .accordion-collapse,
+        .accordion-item:last-of-type .accordion-collapse {
+            padding: 15px;
+            border-radius: 12px;
+        }
+        .accordion-button::after {
+            font-size: 16px;
+        }
+        .elbp__faq__section .elbpfaq__navtab {
+            gap: 8px;
+            margin-bottom: 40px;
+        }
+        .elbp__faq__section .elbpfaq__navtab .elbp__button__c {
+            padding: 11px 20px;
+            line-height: 20px;
+            border-radius: 12px;
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -3765,10 +3855,12 @@
     }
     .elbp__button__a {
         padding: 14px 35px;
+        font-size: 16px;
     }
     .elbp__button__b,
     .elbp__button__c {
         padding: 13px 34px;
+        font-size: 16px;
     }
     /*===== Home Page =====*/
         /*Header*/
@@ -4465,6 +4557,28 @@
         }
         .elbp__order__tracking .bg__img.one {
             top: -44px;
+        }
+        /*FAQ Section*/
+        .elbp__faq__section .tab-content .tab-pane {
+            padding: 60px;
+        }
+        .accordion {
+            gap: 10px;
+        }
+        .accordion-item:first-of-type .accordion-button,
+        .accordion-item:last-of-type .accordion-button.collapsed,
+        .accordion-item .accordion-button,
+        .accordion-item .accordion-button:not(.collapsed),
+        .accordion-item .accordion-collapse,
+        .accordion-item:last-of-type .accordion-collapse {
+            padding: 20px 35px;
+            border-radius: 16px;
+        }
+        .accordion-button::after {
+            font-size: 20px;
+        }
+        .elbp__faq__section .elbpfaq__navtab .elbp__button__c {
+            padding: 11px 20px;
         }
 }
 
@@ -5272,6 +5386,22 @@
         .elbp__order__tracking .bg__img.one {
             top: -50px;
         }
+        /*FAQ Section*/
+        .elbp__faq__section .tab-content .tab-pane {
+            padding: 80px;
+        }
+        .accordion {
+            gap: 10px;
+        }
+        .accordion-item:first-of-type .accordion-button,
+        .accordion-item:last-of-type .accordion-button.collapsed,
+        .accordion-item .accordion-button,
+        .accordion-item .accordion-button:not(.collapsed),
+        .accordion-item .accordion-collapse,
+        .accordion-item:last-of-type .accordion-collapse {
+            padding: 20px 35px;
+            border-radius: 16px;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1139px) {
@@ -5747,6 +5877,10 @@
         }
         .elbp__order__tracking .wrapper .right__side .content {
             gap: 40px;
+        }
+        /*FAQ Section*/
+        .elbp__faq__section .tab-content .tab-pane {
+            padding: 80px 120px;
         }
 }
 

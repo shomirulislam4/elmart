@@ -5652,6 +5652,7 @@ input[type="radio"]:checked::before {
 .elbp__faq__section {
     position: relative;
     padding-bottom: 200px;
+    overflow: hidden;
 }
 
 .elbp__faq__section .bg__img {
@@ -5683,7 +5684,6 @@ input[type="radio"]:checked::before {
     bottom: 103px;
     right: 164px;
 }
-
 
 .elbp__faq__section .elbpfaq__navtab {
     display: flex;
@@ -5741,15 +5741,15 @@ input[type="radio"]:checked::before {
 }
 
 .accordion-item .accordion-button:not(.collapsed) {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
 }
 
 .accordion-item:last-of-type .accordion-collapse,
 .accordion-item .accordion-collapse {
-    padding-top: 0;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+    padding-top: 0 !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
 }
 
 .accordion-body {
