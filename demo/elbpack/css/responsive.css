@@ -35,7 +35,9 @@
     label,
     textarea,
     th, td,
-    blockquote {
+    blockquote,
+    .accordion-item .accordion-button,
+    .accordion-body {
         font-size: 12px;
         line-height: 20px;
     }
@@ -1313,7 +1315,7 @@
             flex-direction: column;
             gap: 10px;
         }
-        .elbp__checkout__section .with__label {
+        .with__label {
             gap: 6px;
             width: 100%;
         }
@@ -1338,6 +1340,100 @@
         }
         .elbpccp__cart__subtotal .elbp__checkoutprod__list {
             gap: 10px;
+        }
+    /*===== 404, Privacy, Terms, Tracker, FAQ, Login, and Register Page =====*/
+        .elbp__logreg__section .wrapper img {
+            width: 200%;
+        }
+        .elbp__logreg__section .wrapper .content {
+            padding: 30px 0;
+            gap: 14px;
+            width: 160px;
+        }
+        .elbp__logreg__section .wrapper form .logreg__form__row {
+            gap: 5px;
+            padding: 0 10px;
+        }
+        .elbp__logreg__section .wrapper form .logreg__form__row svg {
+            height: 20px;
+            width: 20px;
+        }
+        .elbp__logreg__section .wrapper form .extra__cta .remember {
+            gap: 6px;
+        }
+        .elbp__logreg__section .wrapper form .extra__cta .remember input[type="checkbox"] {
+            margin-top: 4px;
+        }
+        .elbp__logreg__section .wrapper form .extra__cta .remember input[type="checkbox"],
+        .elbp__logreg__section .wrapper form .extra__cta .remember input[type="checkbox"]:checked {
+            width: 12px;
+            height: 12px;
+        }
+        .elbp__logreg__section .wrapper form .extra__cta .remember input[type="checkbox"]:checked::before {
+            height: 6px;
+            width: 6px;
+        }
+        .elbp__logreg__section .wrapper form,
+        .elbp__logreg__section .wrapper .content .social__logreg {
+            gap: 8px;
+        }
+        .elbp__logreg__section .wrapper form .extra__cta,
+        .elbp__logreg__section .wrapper .content .dont___have__acc {
+            margin-top: 0;
+            flex-direction: column;
+            gap: 4px;
+        }
+        .elbp__logreg__section .wrapper form button {
+            margin-top: 6px;
+        }
+        .elbp__logreg__section .wrapper form .logreg__form__row,
+        .elbp__logreg__section .wrapper form button,
+        .elbp__logreg__section .wrapper .content .social__logreg .social__logreg__btn,
+        .elbp__order__tracking .wrapper .right__side .content form input,
+        .elbp__order__tracking .wrapper .right__side .content form .elbp__button__a {
+            height: 40px;
+        }
+        .elbp__logreg__section .wrapper .content .social__logreg .social__logreg__btn {
+            gap: 5px;
+        }
+        .elbp__logreg__section .wrapper .content .social__logreg .social__logreg__btn svg {
+            height: 12px;
+            width: 12px;
+        }
+        .elbp__logreg__section .wrapper form .logreg__form__row input,
+        .elbp__logreg__section .wrapper form .logreg__form__row input::placeholder,
+        .elbp__logreg__section .wrapper .content .social__logreg .social__logreg__btn,
+        .elbp__logreg__section .wrapper form button,
+        .elbp__logreg__section .wrapper .content .dont___have__acc span,
+        .elbp__logreg__section .wrapper .content .dont___have__acc a,
+        .elbp__logreg__section .wrapper form .extra__cta .remember label,
+        .elbp__logreg__section .wrapper form .extra__cta a,
+        .elbp__order__tracking .wrapper .right__side .content form label,
+        .elbp__order__tracking .wrapper .right__side .content form .elbp__button__a,
+        .elbp__order__tracking .wrapper .right__side .content form input {
+            font-size: 10px;
+        }
+        /*Order Tracker*/
+        .elbp__order__tracking,
+        .elbp__faq__section {
+            padding-bottom: 80px;
+        }
+        .elbp__order__tracking .wrapper .left__side .image {
+            height: 200px;
+        }
+        .elbp__order__tracking .wrapper .right__side .content {
+            margin-top: 10px;
+            gap: 10px;
+        }
+        .elbp__order__tracking .wrapper .right__side .content form {
+            gap: 6px;
+        }
+        .elbp__order__tracking .wrapper .right__side .content form .elbp__button__a {
+            margin-top: 4px;
+        }
+        .elbp__order__tracking .bg__img.one {
+            top: -20px;
+            left: 157px;
         }
 }
 
@@ -1378,7 +1474,9 @@
     label,
     textarea,
     th, td,
-    blockquote {
+    blockquote,
+    .accordion-item .accordion-button,
+    .accordion-body {
         font-size: 12px;
         line-height: 20px;
     }
@@ -2016,6 +2114,9 @@
         }
     /*===== About Us Page =====*/
         /*Breadcrumbs Section*/
+        .elbp__breadcrumbs__section {
+            height: 60px;
+        }
         .elbp__bc__wrapper a {
             margin-right: 24px;
         }
@@ -2442,7 +2543,7 @@
             flex-direction: column;
             gap: 12px;
         }
-        .elbp__checkout__section .with__label {
+        .with__label {
             gap: 6px;
             width: 100%;
         }
@@ -2484,6 +2585,100 @@
         .elbpccp__cart__subtotal .elbp__checkoutprod__list {
             gap: 10px;
         }
+    /*===== 404, Privacy, Terms, Tracker, FAQ, Login, and Register Page =====*/
+        .elbp__logreg__section .wrapper img {
+            width: 150%;
+        }
+        .elbp__logreg__section .wrapper .content {
+            padding: 30px 0;
+            gap: 18px;
+            width: 250px;
+        }
+        .elbp__logreg__section .wrapper form .logreg__form__row {
+            gap: 10px;
+            padding: 0 18px;
+        }
+        .elbp__logreg__section .wrapper form .logreg__form__row svg {
+            height: 20px;
+            width: 20px;
+        }
+        .elbp__logreg__section .wrapper form .extra__cta .remember {
+            gap: 6px;
+        }
+        .elbp__logreg__section .wrapper form .extra__cta .remember input[type="checkbox"] {
+            margin-top: 4px;
+        }
+        .elbp__logreg__section .wrapper form .extra__cta .remember input[type="checkbox"],
+        .elbp__logreg__section .wrapper form .extra__cta .remember input[type="checkbox"]:checked {
+            width: 12px;
+            height: 12px;
+        }
+        .elbp__logreg__section .wrapper form .extra__cta .remember input[type="checkbox"]:checked::before {
+            height: 6px;
+            width: 6px;
+        }
+        .elbp__logreg__section .wrapper form,
+        .elbp__logreg__section .wrapper .content .social__logreg {
+            gap: 12px;
+        }
+        .elbp__logreg__section .wrapper form .extra__cta {
+            margin-top: -5px;
+            flex-direction: column;
+            gap: 4px;
+        }
+        .elbp__logreg__section .wrapper form button {
+            margin-top: 6px;
+        }
+        .elbp__logreg__section .wrapper form .logreg__form__row,
+        .elbp__logreg__section .wrapper form button,
+        .elbp__logreg__section .wrapper .content .social__logreg .social__logreg__btn,
+        .elbp__order__tracking .wrapper .right__side .content form input,
+        .elbp__order__tracking .wrapper .right__side .content form .elbp__button__a {
+            height: 50px;
+        }
+        .elbp__logreg__section .wrapper .content .social__logreg .social__logreg__btn svg {
+            height: 16px;
+            width: 16px;
+        }
+        .elbp__logreg__section .wrapper form .logreg__form__row input,
+        .elbp__logreg__section .wrapper form .logreg__form__row input::placeholder,
+        .elbp__logreg__section .wrapper .content .social__logreg .social__logreg__btn,
+        .elbp__logreg__section .wrapper form button,
+        .elbp__logreg__section .wrapper .content .dont___have__acc span,
+        .elbp__logreg__section .wrapper .content .dont___have__acc a,
+        .elbp__logreg__section .wrapper form .extra__cta .remember label,
+        .elbp__logreg__section .wrapper form .extra__cta a,
+        .elbp__order__tracking .wrapper .right__side .content form label,
+        .elbp__order__tracking .wrapper .right__side .content form .elbp__button__a,
+        .elbp__order__tracking .wrapper .right__side .content form input {
+            font-size: 12px;
+        }
+        .elbp__logreg__section .wrapper .content .dont___have__acc {
+            flex-direction: column;
+            gap: 4px;
+        }
+        /*Order Tracker*/
+        .elbp__order__tracking,
+        .elbp__faq__section {
+            padding-bottom: 100px;
+        }
+        .elbp__order__tracking .wrapper .left__side .image {
+            height: 300px;
+        }
+        .elbp__order__tracking .wrapper .right__side .content {
+            margin-top: 10px;
+            gap: 20px;
+        }
+        .elbp__order__tracking .wrapper .right__side .content form {
+            gap: 12px;
+        }
+        .elbp__order__tracking .wrapper .right__side .content form .elbp__button__a {
+            margin-top: 10px;
+        }
+        .elbp__order__tracking .bg__img.one {
+            top: -30px;
+            left: 240px;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -2523,7 +2718,9 @@
     label,
     textarea,
     th, td,
-    blockquote {
+    blockquote,
+    .accordion-item .accordion-button,
+    .accordion-body {
         font-size: 14px;
         line-height: 22px;
     }
@@ -3436,13 +3633,78 @@
             flex-direction: column;
             gap: 12px;
         }
-        .elbp__checkout__section .with__label {
+        .with__label {
             gap: 6px;
             width: 100%;
         }
         .elbpcp__delivery__information .phone .nice-select {
             height: 40px;
             line-height: 40px;
+        }
+    /*===== 404, Privacy, Terms, Tracker, FAQ, Login, and Register Page =====*/
+        .elbp__logreg__section .wrapper img {
+            width: 150%;
+        }
+        .elbp__logreg__section .wrapper .content {
+            padding: 40px 0;
+            gap: 24px;
+            width: 370px;
+        }
+        .elbp__logreg__section .wrapper form .logreg__form__row {
+            gap: 10px;
+            padding: 0 22px;
+        }
+        .elbp__logreg__section .wrapper form .extra__cta .remember input[type="checkbox"] {
+            margin-top: 4px;
+        }
+        .elbp__logreg__section .wrapper form,
+        .elbp__logreg__section .wrapper .content .social__logreg {
+            gap: 12px;
+        }
+        .elbp__logreg__section .wrapper form .extra__cta {
+            margin-top: -5px;
+        }
+        .elbp__logreg__section .wrapper form .logreg__form__row,
+        .elbp__logreg__section .wrapper form button,
+        .elbp__logreg__section .wrapper .content .social__logreg .social__logreg__btn,
+        .elbp__order__tracking .wrapper .right__side .content form input,
+        .elbp__order__tracking .wrapper .right__side .content form .elbp__button__a {
+            height: 55px;
+        }
+        .elbp__logreg__section .wrapper .content .social__logreg .social__logreg__btn svg {
+            height: 20px;
+            width: 20px;
+        }
+        .elbp__logreg__section .wrapper form .logreg__form__row input,
+        .elbp__logreg__section .wrapper form .logreg__form__row input::placeholder,
+        .elbp__logreg__section .wrapper .content .social__logreg .social__logreg__btn,
+        .elbp__logreg__section .wrapper form button,
+        .elbp__logreg__section .wrapper .content .dont___have__acc span,
+        .elbp__logreg__section .wrapper .content .dont___have__acc a,
+        .elbp__order__tracking .wrapper .right__side .content form label,
+        .elbp__order__tracking .wrapper .right__side .content form .elbp__button__a,
+        .elbp__order__tracking .wrapper .right__side .content form input,
+        .elbp__order__tracking .wrapper .right__side .content form .elbp__button__a {
+            font-size: 14px;
+        }
+        /*Order Tracker*/
+        .elbp__order__tracking,
+        .elbp__faq__section {
+            padding-bottom: 120px;
+        }
+        .elbp__order__tracking .wrapper .right__side .content {
+            margin-top: 15px;
+            gap: 24px;
+        }
+        .elbp__order__tracking .wrapper .right__side .content form {
+            gap: 16px;
+        }
+        .elbp__order__tracking .wrapper .right__side .content form .elbp__button__a {
+            margin-top: 10px;
+        }
+        .elbp__order__tracking .bg__img.one {
+            top: -39px;
+            left: 325px;
         }
 }
 
@@ -3483,7 +3745,9 @@
     label,
     textarea,
     th, td,
-    blockquote {
+    blockquote,
+    .accordion-item .accordion-button,
+    .accordion-body {
         font-size: 14px;
         line-height: 22px;
     }
@@ -4143,6 +4407,65 @@
         .elbp__checkout__address__info input[type="checkbox"] {
             margin-top: 6px;
         }
+    /*===== 404, Privacy, Terms, Tracker, FAQ, Login, and Register Page =====*/
+        .elbp__logreg__section .wrapper img {
+            width: 150%;
+        }
+        .elbp__logreg__section .wrapper .content {
+            padding: 40px 0;
+            gap: 24px;
+            width: 480px;
+        }
+        .elbp__logreg__section .wrapper form .extra__cta .remember input[type="checkbox"] {
+            margin-top: 4px;
+        }
+        .elbp__logreg__section .wrapper form,
+        .elbp__logreg__section .wrapper .content .social__logreg {
+            gap: 12px;
+        }
+        .elbp__logreg__section .wrapper form .extra__cta {
+            margin-top: -7px;
+        }
+        .elbp__logreg__section .wrapper form .logreg__form__row,
+        .elbp__logreg__section .wrapper form button,
+        .elbp__logreg__section .wrapper .content .social__logreg .social__logreg__btn,
+        .elbp__order__tracking .wrapper .right__side .content form input,
+        .elbp__order__tracking .wrapper .right__side .content form .elbp__button__a {
+            height: 55px;
+        }
+        .elbp__logreg__section .wrapper .content .social__logreg .social__logreg__btn svg {
+            height: 20px;
+            width: 20px;
+        }
+        .elbp__logreg__section .wrapper form .logreg__form__row input,
+        .elbp__logreg__section .wrapper form .logreg__form__row input::placeholder,
+        .elbp__logreg__section .wrapper .content .social__logreg .social__logreg__btn,
+        .elbp__logreg__section .wrapper form button,
+        .elbp__logreg__section .wrapper .content .dont___have__acc span,
+        .elbp__logreg__section .wrapper .content .dont___have__acc a,
+        .elbp__order__tracking .wrapper .right__side .content form label,
+        .elbp__order__tracking .wrapper .right__side .content form .elbp__button__a,
+        .elbp__order__tracking .wrapper .right__side .content form input  {
+            font-size: 14px;
+        }
+        /*Order Tracker*/
+        .elbp__order__tracking,
+        .elbp__faq__section {
+            padding-bottom: 140px;
+        }
+        .elbp__order__tracking .wrapper .right__side .content {
+            margin-top: 20px;
+            gap: 30px;
+        }
+        .elbp__order__tracking .wrapper .right__side .content form {
+            gap: 20px;
+        }
+        .elbp__order__tracking .wrapper .right__side .content form .elbp__button__a {
+            margin-top: 12px;
+        }
+        .elbp__order__tracking .bg__img.one {
+            top: -44px;
+        }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -4181,7 +4504,9 @@
     label,
     textarea,
     th, td,
-    blockquote {
+    blockquote,
+    .accordion-item .accordion-button,
+    .accordion-body {
         font-size: 14px;
         line-height: 22px;
     }
@@ -4908,6 +5233,45 @@
         .elbp__checkout__address__info input[type="checkbox"] {
             margin-top: 6px;
         }
+    /*===== 404, Privacy, Terms, Tracker, FAQ, Login, and Register Page =====*/
+        .elbp__logreg__section .wrapper .content {
+            padding: 40px 0;
+            gap: 24px;
+        }
+        .elbp__logreg__section .wrapper form .extra__cta .remember input[type="checkbox"] {
+            margin-top: 4px;
+        }
+        .elbp__logreg__section .wrapper form {
+            gap: 16px;
+        }
+        .elbp__logreg__section .wrapper form .extra__cta {
+            margin-top: -7px;
+        }
+        .elbp__logreg__section .wrapper form .logreg__form__row,
+        .elbp__logreg__section .wrapper form button,
+        .elbp__logreg__section .wrapper .content .social__logreg .social__logreg__btn,
+        .elbp__order__tracking .wrapper .right__side .content form input,
+        .elbp__order__tracking .wrapper .right__side .content form .elbp__button__a {
+            height: 60px;
+        }
+        .elbp__logreg__section .wrapper .content .social__logreg .social__logreg__btn svg {
+            height: 24px;
+            width: 24px;
+        }
+        /*Order Tracker*/
+        .elbp__order__tracking,
+        .elbp__faq__section {
+            padding-bottom: 160px;
+        }
+        .elbp__order__tracking .wrapper .right__side .content {
+            gap: 30px;
+        }
+        .elbp__order__tracking .wrapper .right__side .content form .elbp__button__a {
+            margin-top: 12px;
+        }
+        .elbp__order__tracking .bg__img.one {
+            top: -50px;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1139px) {
@@ -4946,7 +5310,9 @@
     label,
     textarea,
     th, td,
-    blockquote {
+    blockquote,
+    .accordion-item .accordion-button,
+    .accordion-body {
         font-size: 14px;
         line-height: 22px;
     }
@@ -5368,6 +5734,19 @@
         .elbp__checkout__section form {
             gap: 20px;
             padding: 28px 20px;
+        }
+    /*===== 404, Privacy, Terms, Tracker, FAQ, Login, and Register Page =====*/
+        .elbp__logreg__section .wrapper .content {
+            padding: 70px 0;
+            gap: 44px;
+        }
+        /*Order Tracker*/
+        .elbp__order__tracking,
+        .elbp__faq__section {
+            padding-bottom: 180px;
+        }
+        .elbp__order__tracking .wrapper .right__side .content {
+            gap: 40px;
         }
 }
 

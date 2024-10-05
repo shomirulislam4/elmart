@@ -20,6 +20,7 @@
 5. Single Product
 6. Cart Page
 7. Checkout Page
+8. 404, Privacy, Terms, Tracker, FAQ, Login, and Register Page
 
 
 **********************************************/
@@ -138,7 +139,9 @@ input,
 label,
 textarea,
 th, td,
-blockquote {
+blockquote,
+.accordion-item .accordion-button,
+.accordion-body {
     color: var(--text-color);
     font-size: 18px;
     line-height: 28px;
@@ -855,6 +858,7 @@ input[type="radio"]:checked::before {
     -webkit-transition: 0.3s;
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
+    z-index: 999999;
 }
 
 .elbp__header__section .header__bottom .elbp__main__nav li:hover .elbp__submenu {
@@ -3517,28 +3521,34 @@ input[type="radio"]:checked::before {
     color: var(--text-color);
 }
 
-.elbp__newsletter__popup .wrapper form .terms__accept {
+.elbp__newsletter__popup .wrapper form .terms__accept,
+.elbp__logreg__section .wrapper form .extra__cta .remember {
     display: flex;
     align-items: flex-start;
     gap: 10px;
 }
 
 .elbp__newsletter__popup .wrapper form .terms__accept input[type="checkbox"],
-.elbp__newsletter__popup .wrapper form .terms__accept input[type="checkbox"]:checked {
+.elbp__newsletter__popup .wrapper form .terms__accept input[type="checkbox"]:checked,
+.elbp__logreg__section .wrapper form .extra__cta .remember input[type="checkbox"],
+.elbp__logreg__section .wrapper form .extra__cta .remember input[type="checkbox"]:checked {
 	width: 14px;
 	height: 14px;
 }
 
-.elbp__newsletter__popup .wrapper form .terms__accept input[type="checkbox"] {
+.elbp__newsletter__popup .wrapper form .terms__accept input[type="checkbox"],
+.elbp__logreg__section .wrapper form .extra__cta .remember input[type="checkbox"] {
     border-color: #756960;
-    margin-top: 4px;
+    margin-top: 7px;
 }
 
-.elbp__newsletter__popup .wrapper form .terms__accept input[type="checkbox"]:checked {
+.elbp__newsletter__popup .wrapper form .terms__accept input[type="checkbox"]:checked,
+.elbp__logreg__section .wrapper form .extra__cta .remember input[type="checkbox"]:checked {
     border-color: var(--main-color);
 }
 
-.elbp__newsletter__popup .wrapper form .terms__accept input[type="checkbox"]:checked::before {
+.elbp__newsletter__popup .wrapper form .terms__accept input[type="checkbox"]:checked::before,
+.elbp__logreg__section .wrapper form .extra__cta .remember input[type="checkbox"]:checked::before {
     height: 8px;
     width: 8px;
 }
@@ -3569,7 +3579,6 @@ input[type="radio"]:checked::before {
     }
 }
 /*** End of Newsletter Popup ***/
-
 
 /* ====================================================================
    3. About Us
@@ -5277,14 +5286,14 @@ input[type="radio"]:checked::before {
     justify-content: space-between;
 }
 
-.elbp__checkout__section .with__label {
+.with__label {
     display: flex;
     flex-direction: column;
     gap: 8px;
     width: 48.5%;
 }
 
-.elbp__checkout__section .with__label.full {
+.with__label.full {
     width: 100%;
 }
 
@@ -5336,7 +5345,7 @@ input[type="radio"]:checked::before {
 }
 
 /* ====================================================================
-   8. 404, Privacy, and Terms Page
+   8. 404, Privacy, Terms, Tracker, FAQ, Login, and Register Page
 ==================================================================== */
 .privacypolicy__termsconditions__section {
     position: relative;
@@ -5388,6 +5397,379 @@ input[type="radio"]:checked::before {
     width: 100%;
     height: auto;
 }
+
+/*** Start of Login & register Section ***/
+.elbp__logreg__section .wrapper {
+    width: 100%;
+    background: var(--background-color);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.elbp__logreg__section .wrapper img {
+    flex-shrink: 0;
+    flex-grow: 0;
+    width: 100%;
+}
+
+.elbp__logreg__section .wrapper .content {
+    width: 634px;
+    height: 100%;
+    padding: 95px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+}
+
+.elbp__logreg__section .wrapper .content .title {
+    text-align: center;
+}
+
+.elbp__logreg__section .wrapper .content .title p {
+    margin: 0;
+}
+
+.elbp__logreg__section .wrapper form {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.elbp__logreg__section .wrapper form .logreg__form__row,
+.elbp__logreg__section .wrapper form button,
+.elbp__logreg__section .wrapper .content .social__logreg .social__logreg__btn,
+.elbp__order__tracking .wrapper .right__side .content form input,
+.elbp__order__tracking .wrapper .right__side .content form .elbp__button__a {
+    height: 65px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.elbp__logreg__section .wrapper form .logreg__form__row {
+    gap: 14px;
+    background: #EDE4D9;
+    padding: 0 32px;
+}
+
+.elbp__logreg__section .wrapper form .logreg__form__row svg {
+    height: 24px;
+    width: 24px;
+}
+
+.elbp__logreg__section .wrapper form .logreg__form__row input {
+    width: 100%;
+    background: transparent;
+}
+
+.elbp__logreg__section .wrapper form .logreg__form__row input,
+.elbp__logreg__section .wrapper form .logreg__form__row input::placeholder,
+.elbp__logreg__section .wrapper .content .social__logreg .social__logreg__btn,
+.elbp__logreg__section .wrapper form button,
+.elbp__logreg__section .wrapper .content .dont___have__acc span,
+.elbp__logreg__section .wrapper .content .dont___have__acc a,
+.elbp__order__tracking .wrapper .right__side .content form label,
+.elbp__order__tracking .wrapper .right__side .content form .elbp__button__a,
+.elbp__order__tracking .wrapper .right__side .content form input {
+    color: #5A5855;
+    font-size: 16px;
+}
+
+.elbp__logreg__section .wrapper form .extra__cta .remember label,
+.elbp__logreg__section .wrapper form .extra__cta a {
+    font-size: 14px;
+}
+
+.elbp__logreg__section .wrapper form button {
+    text-align: center;
+    justify-content: center;
+    color: var(--white-text);
+    margin-top: 13px;
+}
+
+.elbp__logreg__section .wrapper form .extra__cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -17px;
+}
+
+.elbp__logreg__section .wrapper .content .divider,
+.elbp__logreg__section .wrapper .content .dont___have__acc {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.elbp__logreg__section .wrapper .content .divider span {
+    color: #5A5855;
+}
+
+.elbp__logreg__section .wrapper .content .divider .horizontal__seperator {
+    background: #B9B9B9;
+}
+
+.elbp__logreg__section .wrapper .content .social__logreg {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.elbp__logreg__section .wrapper .content .social__logreg .social__logreg__btn {
+    box-shadow: inset 0 0 0 2px #A9A39C;
+    justify-content: center;
+    background: transparent;
+    gap: 12px;
+}
+
+.elbp__logreg__section .wrapper .content .social__logreg .social__logreg__btn svg {
+    height: 30px;
+    width: 30px;
+}
+
+.elbp__logreg__section .wrapper .content .social__logreg .social__logreg__btn:hover {
+    background: var(--bg-black);
+    box-shadow: inset 0 0 0 2px var(--bg-black);
+    color: var(--white-text);
+}
+
+.elbp__logreg__section .wrapper .content .dont___have__acc {
+    justify-content: center;
+}
+
+.elbp__logreg__section .wrapper .content .dont___have__acc a {
+    color: var(--bg-black);
+    text-decoration: underline;
+}
+
+.elbp__logreg__section .wrapper .content .dont___have__acc a:hover {
+    color: var(--main-color);
+}
+/*** End of Login & register Section ***/
+
+/*** Start of Order Tracking Form ***/
+.elbp__order__tracking {
+    position: relative;
+    padding-bottom: 200px;
+}
+
+@media (min-width: 1141px) {
+    .elbp__order__tracking {
+        margin-top: 131px;
+    }
+}
+
+.elbp__order__tracking .bg__img {
+    position: absolute;
+    z-index: -1;
+}
+
+.elbp__order__tracking .bg__img.one {
+    top: -74px;
+    left: 502px;
+}
+
+.elbp__order__tracking .bg__img.two {
+    right: 94px;
+    bottom: 110px;
+}
+
+.elbp__order__tracking .bg__img.three {
+    right: 0;
+    bottom: -196px;
+}
+
+.elbp__order__tracking .wrapper .left__side .image {
+    width: 100%;
+    height: 400px;
+    background: var(--background-color) url('../image/otherpages/traker-bg1.png') no-repeat center;
+    background-size: contain;
+    border-radius: 8px;
+    position: relative;
+}
+
+.elbp__order__tracking .wrapper .left__side .image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(30deg);
+    height: 140%;
+}
+
+.elbp__order__tracking .wrapper .right__side .content {
+    width: 90%;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 47px;
+}
+
+@media (max-width: 767px) {
+    .elbp__order__tracking .wrapper .left__side .image img {
+        height: 100%;
+    }
+    .elbp__order__tracking .wrapper .right__side .content {
+        width: 100%;
+    }
+}
+
+.elbp__order__tracking .wrapper .right__side .content h2 {
+    color: var(--bg-black);
+    font-weight: 600;
+}
+
+.elbp__order__tracking .wrapper .right__side .content p {
+    color: #8E8B85;
+    margin: 0;
+}
+
+.elbp__order__tracking .wrapper .right__side .content form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.elbp__order__tracking .wrapper .right__side .content form input {
+    padding: 0 25px;
+    background: #D7CFC6;
+}
+
+.elbp__order__tracking .wrapper .right__side .content form input::placeholder {
+    color: #837F7B;
+}
+
+.elbp__order__tracking .wrapper .right__side .content form .elbp__button__a {
+    justify-content: center;
+    margin-top: 16px;
+}
+/*** End of Order Tracking Form ***/
+
+/*** Start of FAQ Section ***/
+.elbp__faq__section {
+    position: relative;
+    padding-bottom: 200px;
+}
+
+.elbp__faq__section .bg__img {
+    position: absolute;
+    z-index: -1;
+}
+
+.elbp__faq__section .bg__img.one {
+    top: 0;
+    left: 0;
+}
+
+.elbp__faq__section .bg__img.two {
+    top: -40px;
+    right: 543px;
+}
+
+.elbp__faq__section .bg__img.three {
+    top: 71px;
+    right: 150px;
+}
+
+.elbp__faq__section .bg__img.four {
+    left: 66px;
+    bottom: 226px;
+}
+
+.elbp__faq__section .bg__img.five {
+    bottom: 103px;
+    right: 164px;
+}
+
+
+.elbp__faq__section .elbpfaq__navtab {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+.elbp__faq__section .elbpfaq__navtab .nav__link {
+    border-radius: 50px;
+    color: var(--text-color);
+    border-color: var(--text-color);
+}
+
+.elbp__faq__section .elbpfaq__navtab .nav__link.active,
+.elbp__faq__section .elbpfaq__navtab .nav__link:hover {
+    background: var(--text-color);
+    color: var(--white-text);
+}
+
+.elbp__faq__section .tab-content .tab-pane {
+    background: var(--background-color);
+    padding: 80px 150px;
+    border-radius: 8px;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.accordion-item {
+    background: transparent;
+    border: 0;
+}
+
+.accordion-item .accordion-button:focus {
+    display: none;
+}
+
+.accordion-item:first-of-type .accordion-button,
+.accordion-item:last-of-type .accordion-button.collapsed,
+.accordion-item .accordion-button,
+.accordion-item .accordion-button:not(.collapsed),
+.accordion-item .accordion-collapse,
+.accordion-item:last-of-type .accordion-collapse {
+    padding: 35px 50px;
+    background: #EDE4D9;
+    border-radius: 20px;
+    border: 0;
+    box-shadow: none;
+    color: #5A5855;
+}
+
+.accordion-item .accordion-button:not(.collapsed) {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.accordion-item:last-of-type .accordion-collapse,
+.accordion-item .accordion-collapse {
+    padding-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.accordion-body {
+    color: #777572;
+    padding: 0;
+}
+
+.accordion-button::after {
+	all: unset;
+    margin-left: auto;
+	content: '+';
+    font-size: 24px;
+    transition: var(--bs-accordion-btn-icon-transition);
+}
+
+.accordion-button:not(.collapsed)::after {
+	background-image: none;
+    content: '-';
+}
+/*** End of FAQ Section ***/
 
 
 /**

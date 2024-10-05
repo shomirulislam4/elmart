@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#FF3F25">
+
+    <title>Order Tracking - ELBPack</title>
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="icon" type="image/x-icon" href="image/favicon.png">
+    <link rel="apple-touch-icon" href="image/icon.png">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/spacing.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="elbpack elbp__ordertracking__page">
+    <!-- Start of Header Section -->
+    <header class="elbp__header__section">
+        <div class="container">
+            <div class="header__top">
+                <p>FREE SHIPPING world wide for all orders over <span>$200</span></p>
+                <div class="headertop__ctas">
+                    <a href="track-order.html">Track Your Order</a>
+                    <span class="vertical__seperator"></span>
+                    <select name="elbpht__language" id="elbphtLanguage">
+                        <option value="english">english</option>
+                        <option value="bengali">bengali</option>
+                        <option value="hindi">hindi</option>
+                        <option value="french">french</option>
+                        <option value="spanish">spanish</option>
+                        <option value="portuguese">portuguese</option>
+                    </select>
+                    <span class="vertical__seperator"></span>
+                    <select name="elbpht__Currency" id="elbphtCurrency">
+                        <option value="usd">US Dollar</option>
+                        <option value="bdt">BD Taka</option>
+                        <option value="eur">Euro</option>
+                        <option value="inr">IN Rupee</option>
+                    </select>
+                    <span class="vertical__seperator last"></span>
+                    <ul class="elbpht__social__links">
+                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <a href="index.html" class="logo">
+                    <img src="image/logo.png" alt="ELBPack Logo">
+                </a>
+                <ul class="elbp__main__nav">
+                    <li><a href="#">home</a>
+                        <ul class="elbp__submenu">
+                            <li><a href="index.html">Homepage</a></li>
+                            <li><a href="index-2.html">Homepage 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">shop</a>
+                        <ul class="elbp__submenu">
+                            <li><a href="shop.html">shop</a></li>
+                            <li><a href="shop-v2.html">shop V2</a></li>
+                            <li><a href="single-product.html">Single Product</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">collection</a>
+                        <ul class="elbp__submenu">
+                            <li><a href="cart.html">cart</a></li>
+                            <li><a href="login.html">login</a></li>
+                            <li><a href="register.html">register</a></li>
+                            <li><a href="forgot-password.html">Forgot Password</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="404.html">Error Page</a></li>
+                            <li><a href="privacy-policy.html">Privacy & Policy</a></li>
+                            <li><a href="terms-conditions.html">Terms & Condition</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="blog.html">blog</a>
+                        <ul class="elbp__submenu">
+                            <li><a href="blog.html">blog</a></li>
+                            <li><a href="blog-post.html">blog post</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+                <button class="elbp__mmenu__btn"><i class="fa-solid fa-bars"></i> Menu</button>
+                <div class="headerbottom__ctas">
+                    <a href="javascript:" class="elbp__search__button">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 17L21 21M3 11C3 13.1217 3.84285 15.1566 5.34315 16.6569C6.84344 18.1571 8.87827 19 11 19C13.1217 19 15.1566 18.1571 16.6569 16.6569C18.1571 15.1566 19 13.1217 19 11C19 8.87827 18.1571 6.84344 16.6569 5.34315C15.1566 3.84285 13.1217 3 11 3C8.87827 3 6.84344 3.84285 5.34315 5.34315C3.84285 6.84344 3 8.87827 3 11Z" stroke="" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="login.html">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 18C4 16.9391 4.42143 15.9217 5.17157 15.1716C5.92172 14.4214 6.93913 14 8 14H16C17.0609 14 18.0783 14.4214 18.8284 15.1716C19.5786 15.9217 20 16.9391 20 18C20 18.5304 19.7893 19.0391 19.4142 19.4142C19.0391 19.7893 18.5304 20 18 20H6C5.46957 20 4.96086 19.7893 4.58579 19.4142C4.21071 19.0391 4 18.5304 4 18Z" stroke="" stroke-width="1.875" stroke-linejoin="round"/>
+                            <path d="M12 10C13.6569 10 15 8.65685 15 7C15 5.34315 13.6569 4 12 4C10.3431 4 9 5.34315 9 7C9 8.65685 10.3431 10 12 10Z" stroke="" stroke-width="1.875"/>
+                        </svg>
+                    </a>
+                    <a href="wishlist.html" class="position-relative">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.6875 3.75C14.7516 3.75 13.0566 4.5825 12 5.98969C10.9434 4.5825 9.24844 3.75 7.3125 3.75C5.77146 3.75174 4.29404 4.36468 3.20436 5.45436C2.11468 6.54404 1.50174 8.02146 1.5 9.5625C1.5 16.125 11.2303 21.4369 11.6447 21.6562C11.7539 21.715 11.876 21.7458 12 21.7458C12.124 21.7458 12.2461 21.715 12.3553 21.6562C12.7697 21.4369 22.5 16.125 22.5 9.5625C22.4983 8.02146 21.8853 6.54404 20.7956 5.45436C19.706 4.36468 18.2285 3.75174 16.6875 3.75ZM12 20.1375C10.2881 19.14 3 14.5959 3 9.5625C3.00149 8.41921 3.45632 7.32317 4.26475 6.51475C5.07317 5.70632 6.16921 5.25149 7.3125 5.25C9.13594 5.25 10.6669 6.22125 11.3062 7.78125C11.3628 7.91881 11.4589 8.03646 11.5824 8.11926C11.7059 8.20206 11.8513 8.24627 12 8.24627C12.1487 8.24627 12.2941 8.20206 12.4176 8.11926C12.5411 8.03646 12.6372 7.91881 12.6937 7.78125C13.3331 6.21844 14.8641 5.25 16.6875 5.25C17.8308 5.25149 18.9268 5.70632 19.7353 6.51475C20.5437 7.32317 20.9985 8.41921 21 9.5625C21 14.5884 13.71 19.1391 12 20.1375Z" fill=""/>
+                        </svg>
+                        <div class="tag wishlist__item__amount">03</div>
+                    </a>
+                    <a href="javascript:" class="elbp__cart__button position-relative">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.25 20.25C8.66421 20.25 9 19.9142 9 19.5C9 19.0858 8.66421 18.75 8.25 18.75C7.83579 18.75 7.5 19.0858 7.5 19.5C7.5 19.9142 7.83579 20.25 8.25 20.25Z" stroke="" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M18.75 20.25C19.1642 20.25 19.5 19.9142 19.5 19.5C19.5 19.0858 19.1642 18.75 18.75 18.75C18.3358 18.75 18 19.0858 18 19.5C18 19.9142 18.3358 20.25 18.75 20.25Z" stroke="" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2.25 3.75H5.25L7.5 16.5H19.5" stroke="" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7.5 13.5H19.1925C19.2792 13.5001 19.3633 13.4701 19.4304 13.4151C19.4975 13.3601 19.5434 13.2836 19.5605 13.1986L20.9105 6.44859C20.9214 6.39417 20.92 6.338 20.9066 6.28414C20.8931 6.23029 20.8679 6.18009 20.8327 6.13717C20.7975 6.09426 20.7532 6.05969 20.703 6.03597C20.6528 6.01225 20.598 5.99996 20.5425 6H6" stroke="" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <div class="tag cart__item__amount">03</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Mobile Menu -->
+    <div class="elbp__mobile__menu">
+        <div class="elbp__mblmenu__wrapper">
+            <button class="elbp__mblmenu__closebtn"><i class="fa-solid fa-xmark"></i></button>
+            <ul class="nav nav-pills" id="elbp__MobileMenuTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="elbp__mblmenu__pages-tab" data-bs-toggle="pill" data-bs-target="#elbp__mblmenu__pages" type="button" role="tab" aria-controls="elbp__mblmenu__pages" aria-selected="true">Pages</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="elbp__mblmenu__cate-tab" data-bs-toggle="pill" data-bs-target="#elbp__mblmenu__cate" type="button" role="tab" aria-controls="elbp__mblmenu__cate" aria-selected="false">Categories</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="elbp__MobileMenuTabsContent">
+                <div class="tab-pane fade show active" id="elbp__mblmenu__pages" role="tabpanel" aria-labelledby="elbp__mblmenu__pages-tab">
+                    <ul class="elbp__mblmenu__tabs">
+                        <li class="mobile__submenu"><a href="#">home<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="index.html">homepage 1</a></li>
+                                <li><a href="index-2.html">homepage 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile__submenu"><a href="#">shop<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="shop.html">shop</a></li>
+                                <li><a href="shop-v2.html">shop V2</a></li>
+                                <li><a href="single-product.html">single product</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about-us.html">about us</a></li>
+                        <li class="mobile__submenu"><a href="#">blog<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="blog.html">blog</a></li>
+                                <li><a href="blog-post.html">blog post</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact-us.html">contact us</a></li>
+                        <li class="mobile__submenu"><a href="#">pages<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="cart.html">cart</a></li>
+                                <li><a href="login.html">login</a></li>
+                                <li><a href="register.html">register</a></li>
+                                <li><a href="forgot-password.html">Forgot Password</a></li>
+                                <li><a href="faq.html">FAQ</a></li>
+                                <li><a href="404.html">Error Page</a></li>
+                                <li><a href="privacy-policy.html">Privacy & Policy</a></li>
+                                <li><a href="terms-conditions.html">Terms & Condition</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="elbp__mblmenu__cate" role="tabpanel" aria-labelledby="elbp__mblmenu__cate-tab">
+                    <ul class="elbp__mblmenu__tabs">
+                        <li class="mobile__submenu"><a href="#">Hand bag<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="#">category 1</a></li>
+                                <li><a href="#">category 2</a></li>
+                                <li><a href="#">category 3</a></li>
+                                <li><a href="#">category 4</a></li>
+                                <li><a href="#">category 5</a></li>
+                                <li><a href="#">category 6</a></li>
+                                <li><a href="#">category 7</a></li>
+                                <li><a href="#">category 8</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile__submenu"><a href="#">luggage<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="#">category 1</a></li>
+                                <li><a href="#">category 2</a></li>
+                                <li><a href="#">category 3</a></li>
+                                <li><a href="#">category 4</a></li>
+                                <li><a href="#">category 5</a></li>
+                                <li><a href="#">category 6</a></li>
+                                <li><a href="#">category 7</a></li>
+                                <li><a href="#">category 8</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile__submenu"><a href="#">Backpack<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="#">category 1</a></li>
+                                <li><a href="#">category 2</a></li>
+                                <li><a href="#">category 3</a></li>
+                                <li><a href="#">category 4</a></li>
+                                <li><a href="#">category 5</a></li>
+                                <li><a href="#">category 6</a></li>
+                                <li><a href="#">category 7</a></li>
+                                <li><a href="#">category 8</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile__submenu"><a href="#">ladies bag<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="#">category 1</a></li>
+                                <li><a href="#">category 2</a></li>
+                                <li><a href="#">category 3</a></li>
+                                <li><a href="#">category 4</a></li>
+                                <li><a href="#">category 5</a></li>
+                                <li><a href="#">category 6</a></li>
+                                <li><a href="#">category 7</a></li>
+                                <li><a href="#">category 8</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile__submenu"><a href="#">travel bag<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="l2__submenu">
+                                <li><a href="#">category 1</a></li>
+                                <li><a href="#">category 2</a></li>
+                                <li><a href="#">category 3</a></li>
+                                <li><a href="#">category 4</a></li>
+                                <li><a href="#">category 5</a></li>
+                                <li><a href="#">category 6</a></li>
+                                <li><a href="#">category 7</a></li>
+                                <li><a href="#">category 8</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="elbpht__social__links">
+                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Search Box -->
+    <div class="elbp__search__popup">
+        <div class="elbpsearch__wrapper">
+            <div class="elbpsearch__close__btn"><i class="fa-regular fa-circle-xmark"></i></div>
+            <form action="#"><input type="search" placeholder="Search what you're looking for...">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <div class="elbpsearch__prod__result__area">
+                <div class="elbpsearch__result__header">
+                    <h6>2 Results Found</h6>
+                    <a href="shop.html">View All</a>
+                </div>
+                <div class="elbpsearch__search__result">
+                    <div class="search-product">
+                        <div class="search__product__img">
+                            <a href="single-product.html">
+                                <img src="image/products/product-1.png" alt="product image">
+                            </a>
+                        </div>
+                        <div class="search__content">
+                            <div class="product__rating">
+                                <span class="rating__icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                            </span>
+                                <span class="total__rating">(<span>50+</span> Reviews)</span>
+                            </div>
+                            <h5 class="product__title"><a href="single-product.html">Grayish Leather Backpack</a></h5>
+                            <div class="product__price__variant">
+                                <h4>$120.00 <span>$150.00</span></h4>
+                            </div>
+                            <div class="product__cart">
+                                <a href="cart.html" class="cart-btn"><i class="fa-solid fa-bag-shopping"></i></a>
+                                <a href="wishlist.html" class="cart-btn"><i class="fa-regular fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search-product">
+                        <div class="search__product__img">
+                            <a href="single-product.html">
+                                <img src="image/products/product-2.png" alt="product image">
+                            </a>
+                        </div>
+                        <div class="search__content">
+                            <div class="product__rating">
+                                <span class="rating__icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                                <span class="total__rating">(<span>30+</span> Reviews)</span>
+                            </div>
+                            <h5 class="product__title"><a href="single-product.html">Grayish Lea Backpack</a></h5>
+                            <div class="product__price__variant">
+                                <h4>$120.00 <span>$150.00</span></h4>
+                            </div>
+                            <div class="product__cart">
+                                <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+                                <a href="wishlist.html"><i class="fa-regular fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Cart Slider -->
+    <div class="elbp__cart__slider">
+        <button class="elbp__cart__closebtn"><i class="fa-solid fa-xmark"></i></button>
+        <div class="main__cart__area">
+            <div class="elbp__cart__header">
+                <h3>My Cart</h3>
+                <span>2</span>
+            </div>
+            <div class="horizontal__seperator"></div>
+            <div class="elbp__cart__content">
+                <div class="elbp__cart__product">
+                    <div class="elbp__cart__prod__close"><i class="fa-solid fa-x"></i></div>
+                    <div class="image">
+                        <img src="image/products/product-1.png" alt="product image">
+                    </div>
+                    <div class="content">
+                        <a href="#">Grayish Leather Backpack</a>
+                        <div class="price__qty">
+                            <h4>$120.00</h4>
+                            <div class="quantity__widget">
+                                <div class="quantity__controls">
+                                    <div class="quantity__decrease">-</div>
+                                    <div class="quantity__display">1</div>
+                                    <div class="quantity__increase">+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="elbp__cart__product">
+                    <div class="elbp__cart__prod__close"><i class="fa-solid fa-x"></i></div>
+                    <div class="image">
+                        <img src="image/products/product-2.png" alt="product image">
+                    </div>
+                    <div class="content">
+                        <a href="#">Grayish Lea Backpack</a>
+                        <div class="price__qty">
+                            <h4>$120.00</h4>
+                            <div class="quantity__widget">
+                                <div class="quantity__controls">
+                                    <div class="quantity__decrease">-</div>
+                                    <div class="quantity__display">1</div>
+                                    <div class="quantity__increase">+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="horizontal__seperator"></div>
+            <div class="elbp__cart__subtotal">
+                <p>Subtotal:</p>
+                <p>$240.00</p>
+            </div>
+            <div class="elbp__cart__cta">
+                <a class="elbp__button__a" href="cart.html">View Cart</a>
+                <a class="elbp__button__b" href="checkout.html">Checkout</a>
+            </div>
+        </div>
+    </div>
+    <!-- End of Header Section -->
+
+    <!-- Start of Breadcrumbs Section -->
+    <section class="elbp__breadcrumbs__section">
+        <div class="container elbp__bc__wrapper">
+            <a href="index.html">Home</a>
+            <p class="current__page">Order Tracking</p>
+        </div>
+    </section>
+    <!-- End of Breadcrumbs Section -->
+
+    <!-- Start of Order Tracking Form -->
+    <section class="elbp__order__tracking">
+        <img src="image/otherpages/traker-bg2.png" alt="bg image" class="bg__img one">
+        <img src="image/otherpages/traker-bg3.png" alt="bg image" class="bg__img two">
+        <img src="image/otherpages/traker-bg4.png" alt="bg image" class="bg__img three">
+        <div class="container wrapper">
+            <div class="row">
+                <div class="col-md-6 left__side">
+                    <div class="image">
+                        <img src="image/otherpages/traker-image.png" alt="image">
+                    </div>
+                </div>
+                <div class="col-md-6 right__side">
+                    <div class="content">
+                        <div class="title">
+                            <h2>Tracking Form</h2>
+                            <p>Enter your details to track the status of your order.</p>
+                        </div>
+                        <form action="#">
+                            <div class="with__label full">
+                                <label for="elbpOrderTrackingID">Order ID</label>
+                                <input type="text" name="elbpOrderTracking" id="elbpOrderTrackingID" placeholder="Enter Order ID">
+                            </div>
+                            <div class="with__label full">
+                                <label for="elbpOrderTrackingEmail">Billing Email</label>
+                                <input type="email" name="elbpOrderTracking" id="elbpOrderTrackingEmail" placeholder="Enter Email Address">
+                            </div>
+                            <button type="submit" class="elbp__button__a">track now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Order Tracking Form -->
+
+    <!-- Start of Footer -->
+    <section class="elbp__footer__section v2">
+        <div class="container position-relative">
+            <div class="elbp__footer__wrapper">
+                <div class="row top">
+                    <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 p-lg-0">
+                        <div class="about">
+                            <div class="logo">
+                                <img src="image/logo.png" alt="logo">
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            <form action="#">
+                                <div class="d-flex">
+                                    <input type="email" name="footerNewsLetter" id="footerNewsLetter">
+                                    <button type="submit">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15 4.79995C20.64 4.79995 25.2 9.35995 25.2 15C25.2 20.64 20.64 25.2 15 25.2C9.36001 25.1999 4.80001 20.6399 4.80001 14.9999C4.80001 9.35995 9.36001 4.79995 15 4.79995ZM15 24C19.98 24 24 19.98 24 15C24 10.02 19.98 5.99995 15 5.99995C10.02 5.99995 6.00001 10.0199 6.00001 14.9999C6.00001 19.9799 10.02 23.9999 15 24Z" fill=""/>
+                                            <path d="M14.82 9.18007L20.64 15.0001L14.82 20.8201L13.98 19.9801L18.96 15.0001L13.98 10.0201L14.82 9.18007Z" fill=""/>
+                                            <path d="M19.8 15.6001L9.59999 15.6001L9.59999 14.4001L19.8 14.4001L19.8 15.6001Z" fill=""/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <label for="footerNewsLetter">Email</label>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 p-lg-0">
+                        <div class="elbp__footer__widget one">
+                            <h5 class="elbp__widget__title">Quick Links</h5>
+                            <ul class="elbp__footer__links">
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">store location</a></li>
+                                <li><a href="#">order tracking</a></li>
+                                <li><a href="#">privacy policy</a></li>
+                                <li><a href="#">terms of use</a></li>
+                                <li><a href="#">shipping policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-4 mb-md-0 p-lg-0 d-flex flex-column justify-content-end">
+                        <div class="elbp__footer__widget two">
+                            <h5 class="elbp__widget__title">Support</h5>
+                            <ul class="elbp__footer__links">
+                                <li><p class="m-0">12 Main Pt., London, England, UK</p></li>
+                                <li><a href="mailto:main@example.com">mail@example.com</a></li>
+                                <li><a href="about.html">About us</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 p-lg-0">
+                        <div class="elbp__footer__widget three">
+                            <h5 class="elbp__widget__title">Follow Us</h5>
+                            <p>Lorem ipsum dolor sit amet, consec tetur adipiscing elit.</p>
+                            <ul class="elbpht__social__links">
+                                <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <p class="elbp__copyright">&copy; <script>document.write(new Date().getFullYear())</script> <a href="index.html">ELBPack</a>. All rights reserved.</p>
+        </div>
+    </section>
+    <!-- End of Footer -->
+
+    <!-- JS Links -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

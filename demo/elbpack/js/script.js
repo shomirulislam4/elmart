@@ -267,7 +267,6 @@
                 },
             });
         });
-        
 
     /*============================ Shop & Single Product Page ============================*/
         //All Nice Select (Shop Page)
@@ -400,7 +399,5 @@
         if ($('.elbp__checkoutpage').length) {
             $('#elbpcpDeliveryInfoPhoneCC').niceSelect();
         }
-                 
-          
-          
+
 }) (jQuery);
