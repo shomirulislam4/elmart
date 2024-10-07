@@ -21,6 +21,7 @@
 6. Cart Page
 7. Checkout Page
 8. 404, Privacy, Terms, Tracker, FAQ, Login, and Register Page
+9. Contact Us
 
 
 **********************************************/
@@ -5770,6 +5771,178 @@ input[type="radio"]:checked::before {
     content: '-';
 }
 /*** End of FAQ Section ***/
+
+/* ====================================================================
+   9. Contact Us
+==================================================================== */
+.elbp__contact__section {
+    margin-top: 0;
+}
+
+@media (min-width: 1440px) {
+    .elbp__contact__section .container-fluid {
+        width: 1440px;
+    }
+}
+
+.elbp__contact__section .wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    height: 100%;
+}
+
+.elbp__contact__section .wrapper h2 {
+    color: var(--bg-black);
+    margin: 0;
+}
+
+.elbp__contact__section .wrapper p {
+    margin: 0;
+}
+
+.elbp__contact__section .wrapper .infoarea {
+    display: flex;
+    align-items: flex-start;
+}
+
+.elbp__contact__section .wrapper .content {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    z-index: 0;
+}
+
+.elbp__contact__section .wrapper .content .bg__img {
+    position: absolute;
+    z-index: -1;
+}
+
+.elbp__contact__section .wrapper .top .content .bg__img.one {
+    top: 57px;
+    right: 193px;
+}
+
+.elbp__contact__section .wrapper .top .content .bg__img.two {
+    right: 50px;
+    bottom: 45px;
+}
+
+.elbp__contact__section .wrapper .bottom .content .bg__img.three {
+    top: 37px;
+    right: 99px;
+}
+
+.elbp__contact__section .wrapper .top .content .bg__img.four {
+    top: 99px;
+    left: 142px;
+}
+
+.elbp__contact__section .wrapper .top .content .bg__img.five {
+    top: 115px;
+    right: 0;
+}
+
+.elbp__contact__section .wrapper .bottom .content .bg__img.six {
+    top: 115px;
+    left: 203px;
+}
+
+.elbp__contact__section .wrapper .bottom .content .bg__img.seven {
+    top: 193px;
+    left: 0;
+}
+
+.elbp__contact__section .wrapper .bottom .content .bg__img.eight {
+    top: 644px;
+    right: 107px;
+}
+
+.elbp__contact__section .wrapper .infoarea.top .content.left__side {
+    padding: 78px 0;
+    padding-left: 150px;
+    background: var(--background-color);
+}
+
+.elbp__contact__section .wrapper .infoarea.bottom .content.right__side {
+    padding: 63px 150px;
+    background: var(--background-color);
+}
+
+.elbp__contact__section .wrapper .infoarea.top .content.left__side .text,
+.elbp__contact__section .wrapper .infoarea.bottom .content.right__side .text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.elbp__contact__section .wrapper .info__row {
+    display: flex;
+    gap: 12px;
+}
+
+.elbp__contact__section .wrapper .info__row .icon {
+    width: 54px;
+    height: 50px;
+    border-radius: 12px;
+    background: var(--bg-black);
+    display: grid;
+    place-content: center;
+}
+
+.elbp__contact__section .wrapper .info__row .irtext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.elbp__contact__section .wrapper .info__row .irtext span {
+    font-size: 14px;
+    line-height: 150%;
+    color: #75706C;
+}
+
+.elbp__contact__section .wrapper .info__row .irtext p,
+.elbp__contact__section .wrapper .content form input,
+.elbp__contact__section .wrapper .content form textarea {
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.elbp__contact__section .wrapper .content form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.elbp__contact__section .wrapper .content form input,
+.elbp__contact__section .wrapper .content form textarea {
+    background: #EDE4D9;
+    height: 50px;
+    width: 100%;
+    border-radius: 8px;
+    padding: 0 15px;
+}
+
+.elbp__contact__section .wrapper .content form textarea {
+    height: 120px;
+    padding: 10px 15px;
+}
+
+.elbp__contact__section .wrapper .infoarea.top .content.right__side {
+    height: 652px;
+}
+
+.elbp__contact__section .wrapper .infoarea.bottom .content.left__side {
+    height: 766px;
+}
+
+.elbp__contact__section .wrapper .infoarea.top .content.right__side,
+.elbp__contact__section .wrapper .infoarea.bottom .content.left__side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 /**
