@@ -400,4 +400,14 @@
             $('#elbpcpDeliveryInfoPhoneCC').niceSelect();
         }
 
+        //Blog Page Top Slider
+        $(function(){
+            var swiper = new Swiper(".elbp__blog__slider", {
+                loop: true,
+                navigation: {
+                    nextEl: ".elbp__blog__slider__btn",
+                },
+            });
+        });
+
 }) (jQuery);

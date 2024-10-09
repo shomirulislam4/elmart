@@ -21,7 +21,8 @@
 6. Cart Page
 7. Checkout Page
 8. 404, Privacy, Terms, Tracker, FAQ, Login, and Register Page
-9. Contact Us
+9. Contact Us Page
+10. Blog Page
 
 
 **********************************************/
@@ -5773,7 +5774,7 @@ input[type="radio"]:checked::before {
 /*** End of FAQ Section ***/
 
 /* ====================================================================
-   9. Contact Us
+   9. Contact Us Page
 ==================================================================== */
 .elbp__contact__section {
     margin-top: 0;
@@ -5811,6 +5812,19 @@ input[type="radio"]:checked::before {
     width: 50%;
     height: 100%;
     z-index: 0;
+}
+
+@media (max-width: 767px) {
+    .elbp__contact__section .wrapper .infoarea {
+        display: flex;
+        flex-direction: column;
+    }
+    .elbp__contact__section .wrapper .infoarea.bottom {
+        flex-direction: column-reverse;
+    }
+    .elbp__contact__section .wrapper .content {
+        width: 100%;
+    }
 }
 
 .elbp__contact__section .wrapper .content .bg__img {
@@ -5888,6 +5902,7 @@ input[type="radio"]:checked::before {
     background: var(--bg-black);
     display: grid;
     place-content: center;
+    flex-shrink: 0;
 }
 
 .elbp__contact__section .wrapper .info__row .irtext {
@@ -5942,6 +5957,200 @@ input[type="radio"]:checked::before {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+}
+
+/* Office Location */
+.elbp__office__location .wrapper h2 {
+    margin-top: -70px;
+    font-size: 150px;
+    line-height: 100%;
+    font-weight: 600;
+    color: #E0D8CF;
+    margin-bottom: 0;
+}
+
+.elbp__office__location .wrapper iframe {
+    width: 100%;
+    height: 560px;
+    border-radius: 12px;
+    border: 1px solid #B0ABA5;
+}
+
+/* ====================================================================
+   10. Blog Page
+==================================================================== */
+.elbp__blog__top__section {
+    position: relative;
+}
+
+.elbp__blog__top__section .bg__image {
+    position: absolute;
+    z-index: -1;
+}
+
+.elbp__blog__top__section .bg__image.one {
+    right: 0;
+    bottom: 0;
+}
+
+.elbp__blog__top__section .bg__image.two {
+    width: 50px;
+}
+
+.elbp__blog__top__section .wrapper {
+    display: flex;
+    position: relative;
+}
+
+.elbp__blog__top__section .wrapper .image {
+    width: 627px;
+    height: 405px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 12px;
+}
+
+.elbp__blog__top__section .wrapper .image img {
+    width: 100%;
+}
+
+.elbp__blog__top__section .wrapper .content {
+    width: 643px;
+    height: 495px;
+    border-radius: 12px;
+    background: var(--background-color);
+    padding: 70px 54px;
+    padding-right: 171px;
+    position: relative;
+    z-index: 0;
+}
+
+.elbp__blog__top__section .wrapper .content .elbp__blog__slider,
+.elbp__blog__top__section .wrapper .content .elbp__blog__slider .swiper-wrapper,
+.elbp__blog__top__section .wrapper .content .elbp__blog__slider .swiper-slide {
+    height: 100%;
+    width: 100%;
+}
+
+.elbp__blog__top__section .wrapper .content .elbp__blog__slider .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.elbp__blog__top__section .wrapper .content .bg__image {
+    top: 31px;
+    left: 257px;
+}
+
+.elbp__blog__top__section .wrapper .content .meta__info a {
+    font-size: 14px;
+    line-height: 100%;
+    font-weight: 600;
+    color: var(--main-color);
+    position: relative;
+    padding-right: 10px;
+    margin-right: 10px;
+    width: auto;
+    display: inline-block;
+}
+
+.elbp__blog__top__section .wrapper .content .meta__info a:hover {
+    text-decoration: underline;
+}
+
+.elbp__blog__top__section .wrapper .content .meta__info a::after {
+	content: url("data:image/svg+xml,%3Csvg width='4' height='4' viewBox='0 0 4 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='2' cy='2' r='2' fill='%238A8781'/%3E%3C/svg%3E");
+	position: absolute;
+	left: 100%;
+	top: -8%;
+}
+
+.elbp__blog__top__section .wrapper .content .meta__info span {
+    color: #696661;
+    font-size: 13px;
+}
+
+.elbp__blog__top__section .wrapper .content h4 {
+    font-size: 26px;
+    line-height: 130%;
+    font-weight: 600;
+    color: var(--bg-black);
+}
+
+.elbp__blog__top__section .wrapper .content p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #797570;
+    max-width: 278px;
+    margin-bottom: 0;
+}
+
+.elbp__blog__top__section .wrapper .content .author__info {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.elbp__blog__top__section .wrapper .content .author__info img {
+    height: 43px;
+    width: 43px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.elbp__blog__top__section .wrapper .content .author__info p,
+.elbp__blog__top__section .wrapper .content .next__btn p {
+    color: var(--bg-black);
+    font-size: 15px;
+    line-height: 100%;
+}
+
+.elbp__blog__top__section .wrapper .content .author__info span {
+    color: #A39B9A;
+    font-size: 14px;
+    line-height: 100%;
+}
+
+.elbp__blog__top__section .wrapper .content .next__btn {
+    position: absolute;
+    right: 171px;
+    bottom: 77px;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    gap: 5px;
+    z-index: 99999;
+}
+
+.elbp__blog__top__section .wrapper .content .next__btn p {
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    user-select: none;
+}
+
+
+.elbp__blog__top__section .wrapper .content .next__btn svg {
+    height: 30px;
+    width: 30px;
+    fill: var(--bg-black);
+}
+
+.elbp__blog__top__section .wrapper .content .next__btn:hover p {
+    color: var(--main-color);
+}
+
+.elbp__blog__top__section .wrapper .content .next__btn:hover svg {
+    fill: var(--main-color);
 }
 
 
