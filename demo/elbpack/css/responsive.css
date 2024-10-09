@@ -6323,7 +6323,7 @@
     /*===== Blog Page =====*/
         .elbp__blog__top__section .wrapper .content {
             width: 550px;
-            height: 447px;
+            height: 404px;
             padding: 50px 34px;
             padding-right: 152px;
         }
@@ -6332,10 +6332,18 @@
             height: 340px;
         }
         .elbp__blog__top__section .wrapper .content p {
+            font-size: 14px;
+            line-height: 22px;
             max-width: 100%;
         }
         .elbp__blog__top__section .wrapper .content .next__btn {
             right: 151px;
+        }
+        .elbp__blog__top__section .wrapper .content .elbp__blog__slider .swiper-slide {
+            gap: 24px;
+        }
+        .elbp__blog__top__section .wrapper .content .author__info {
+            margin-top: 14px;
         }
 }
 
