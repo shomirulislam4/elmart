@@ -3,6 +3,9 @@
     .elbp__review__form.show {
         margin-top: 20px;
     }
+    .elbp__blogpage .elbp__newsletter__section {
+        margin-top: 40px;
+    }
     .elbp__new__collection__section,
     .elbp__testimonials__section,
     .elbp__brands__section,
@@ -1598,7 +1601,8 @@
         .elbp__blog__top__section .wrapper .content .next__btn p {
             font-size: 12px;
         }
-        .elbp__blog__top__section .wrapper .content .author__info span {
+        .elbp__blog__top__section .wrapper .content .author__info span,
+        .elbpblog__topnews__item .author__info span {
             font-size: 10px;
         }
         .elbp__blog__top__section .wrapper .content .author__info img,
@@ -1636,12 +1640,51 @@
         .elbpblog__topnews__item .image .category {
             padding: 4px 14px;
         }
+        /*Category Tab Section*/
+        .elbp__post__grid__section .bg__img.one {
+            left: 0;
+            top: 0;
+        }
+        .elbp__post__grid__section .bg__img.three {
+            left: 125px;
+            bottom: 22%;
+        }
+        .elbp__post__grid__section .bg__img.four {
+            right: 10px;
+            bottom: -5px;
+        }
+        .elbp__post__grid__section .wrapper .elbpblog__tabs {
+            flex-direction: column;
+            gap: 15px;
+        }
+        .elbp__post__grid__section .wrapper .nav {
+            gap: 8px;
+            width: 100%;
+        }
+        .elbp__post__grid__section .wrapper .nav h5 {
+            font-size: 20px;
+            margin-bottom: 4px;
+            text-align: center;
+        }
+        .elbp__post__grid__section .wrapper .nav__link {
+            font-size: 14px;
+            text-align: center;
+        }
+        .elbp__post__grid__section .elbpblog__topnews__item {
+            width: 176px;
+        }
+        .elbp__post__grid__section .elbpblog__topnews__item .image {
+            height: 145px;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
     section,
     .elbp__review__form.show {
         margin-top: 30px;
+    }
+    .elbp__blogpage .elbp__newsletter__section {
+        margin-top: 60px;
     }
     .elbp__new__collection__section,
     .elbp__testimonials__section,
@@ -3018,8 +3061,8 @@
             gap: 10px;
         }
         .elbp__blog__top__section .wrapper .content .bg__img {
-            top: 17px;
-            left: 302px;
+            top: 12px;
+            left: 216px;
         }
         .elbp__blog__top__section .wrapper .content p,
         .elbpblog__topnews__item .author__info p,
@@ -3035,7 +3078,8 @@
         .elbp__blog__top__section .wrapper .content .next__btn p {
             font-size: 14px;
         }
-        .elbp__blog__top__section .wrapper .content .author__info span {
+        .elbp__blog__top__section .wrapper .content .author__info span,
+        .elbpblog__topnews__item .author__info span {
             font-size: 12px;
         }
         .elbp__blog__top__section .wrapper .content .author__info .info,
@@ -3063,12 +3107,55 @@
         .elbpblog__topnews__item .image .category {
             padding: 4px 14px;
         }
+        /*Category Tab Section*/
+        .elbp__post__grid__section .bg__img.one {
+            left: 13%;
+            top: -5px;
+        }
+        .elbp__post__grid__section .bg__img.three {
+            left: 200px;
+            bottom: 21%;
+        }
+        .elbp__post__grid__section .bg__img.four {
+            right: 50px;
+            bottom: -5px;
+        }
+        .elbp__post__grid__section .wrapper .elbpblog__tabs {
+            flex-direction: column;
+            gap: 20px;
+        }
+        .elbp__post__grid__section .wrapper .nav {
+            gap: 8px;
+            width: 100%;
+        }
+        .elbp__post__grid__section .wrapper .nav h5 {
+            font-size: 20px;
+            margin-bottom: 4px;
+            text-align: center;
+        }
+        .elbp__post__grid__section .wrapper .nav__link {
+            font-size: 14px;
+            text-align: center;
+        }
+        .elbp__post__grid__section .elbpblog__topnews__item {
+            width: 266px;
+        }
+        .elbp__post__grid__section .elbpblog__topnews__item .image {
+            height: 219px;
+        }
+        .elbpblog__topnews__item .title {
+            font-size: 16px;
+            line-height: 24px;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
     section,
     .elbp__review__form.show {
         margin-top: 40px;
+    }
+    .elbp__blogpage .elbp__newsletter__section {
+        margin-top: 80px;
     }
     .elbp__new__collection__section,
     .elbp__testimonials__section,
@@ -4243,12 +4330,44 @@
             bottom: -30px;
             right: 41px;
         }
+        /*Category Tab Section*/
+        .elbp__post__grid__section .bg__img.one {
+            left: 16%;
+            top: -25px;
+        }
+        .elbp__post__grid__section .bg__img.three {
+            left: 56px;
+        }
+        .elbp__post__grid__section .bg__img.four {
+            right: 79px;
+            bottom: -8px;
+        }
+        .elbp__post__grid__section .wrapper .nav {
+            gap: 8px;
+            width: 130px;
+        }
+        .elbp__post__grid__section .wrapper .nav h5 {
+            font-size: 20px;
+            margin-bottom: 4px;
+        }
+        .elbp__post__grid__section .wrapper .nav__link {
+            font-size: 14px;
+        }
+        .elbp__post__grid__section .elbpblog__topnews__item {
+            width: 261px;
+        }
+        .elbp__post__grid__section .elbpblog__topnews__item .image {
+            height: 215px;
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
     section,
     .elbp__review__form.show {
         margin-top: 50px;
+    }
+    .elbp__blogpage .elbp__newsletter__section {
+        margin-top: 100px;
     }
     .elbp__new__collection__section,
     .elbp__testimonials__section,
@@ -5130,12 +5249,26 @@
             bottom: -35px;
             right: 51px;
         }
+        /*Category Tab Section*/
+        .elbp__post__grid__section .elbpblog__topnews__item {
+            width: 366px;
+        }
+        .elbp__post__grid__section .elbpblog__topnews__item .image {
+            height: 302px;
+        }
+        .elbpblog__topnews__item .title {
+            font-size: 18px;
+            line-height: 26px;
+        }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
     section,
     .elbp__review__form.show {
         margin-top: 60px;
+    }
+    .elbp__blogpage .elbp__newsletter__section {
+        margin-top: 120px;
     }
     .elbp__new__collection__section,
     .elbp__testimonials__section,
@@ -6078,12 +6211,38 @@
             bottom: -40px;
             right: 61px;
         }
+        /*Category Tab Section*/
+        .elbp__post__grid__section .bg__img.one {
+            left: 30%;
+            top: -55px;
+        }
+        .elbp__post__grid__section .bg__img.three {
+            left: 100px;
+        }
+        .elbp__post__grid__section .bg__img.four {
+            bottom: -20px;
+        }
+        .elbp__post__grid__section .wrapper {
+            padding: 0;
+        }
+        .elbp__post__grid__section .wrapper .tab-pane .elbpblog__items {
+            gap: 15px;
+        }
+        .elbp__post__grid__section .elbpblog__topnews__item {
+            width: 277px;
+        }
+        .elbp__post__grid__section .elbpblog__topnews__item .image {
+            height: 228px;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1139px) {
     section,
     .elbp__review__form.show {
         margin-top: 70px;
+    }
+    .elbp__blogpage .elbp__newsletter__section {
+        margin-top: 140px;
     }
     .elbp__new__collection__section,
     .elbp__testimonials__section,
@@ -6647,6 +6806,24 @@
             bottom: -45px;
             right: 71px;
         }
+        /*Category Tab Section*/
+        .elbp__post__grid__section .bg__img.three {
+            left: 105px;
+            bottom: 22%;
+        }
+        .elbp__post__grid__section .bg__img.four {
+            right: 75px;
+            bottom: -24px;
+        }
+        .elbp__post__grid__section .wrapper .tab-pane .elbpblog__items {
+            gap: 15px;
+        }
+        .elbp__post__grid__section .elbpblog__topnews__item {
+            width: 252px;
+        }
+        .elbp__post__grid__section .elbpblog__topnews__item .image {
+            height: 208px;
+        }
 }
 
 @media (min-width: 1140px) and (max-width: 1199px) {
@@ -6654,6 +6831,9 @@
         section,
         .elbp__review__form.show {
             margin-top: 80px;
+        }
+        .elbp__blogpage .elbp__newsletter__section {
+            margin-top: 160px;
         }
         /*Hero Section*/
         .elbp__hero__section .container {
@@ -6726,6 +6906,10 @@
         /*Top News Section*/
         .elbp__blog__topnews__section .bg__img.one {
             bottom: -50px;
+        }
+        /*Category Tab Section*/
+        .elbp__post__grid__section .wrapper .nav h5 {
+            font-size: 20px;
         }
 }
 
