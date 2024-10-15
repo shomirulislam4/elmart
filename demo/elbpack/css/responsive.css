@@ -1,9 +1,11 @@
 @media (max-width: 289px) {
     section,
-    .elbp__review__form.show {
+    .elbp__review__form.show,
+    .elbpbp__blogpost__body__section .wrapper .text__with__image {
         margin-top: 20px;
     }
-    .elbp__blogpage .elbp__newsletter__section {
+    .elbp__newsletter__section,
+    .elbpbp__blogpost__body__section .wrapper {
         margin-top: 40px;
     }
     .elbp__new__collection__section,
@@ -1589,6 +1591,7 @@
         }
         .elbp__blog__top__section .wrapper .content p,
         .elbpblog__topnews__item .author__info p,
+        .elbpbp__title__fimage__section .wrapper .author__info p,
         .elbpblog__topnews__item .image .category {
             font-size: 12px;
             line-height: 18px;
@@ -1602,16 +1605,19 @@
             font-size: 12px;
         }
         .elbp__blog__top__section .wrapper .content .author__info span,
-        .elbpblog__topnews__item .author__info span {
+        .elbpblog__topnews__item .author__info span,
+        .elbpbp__title__fimage__section .wrapper .author__info span {
             font-size: 10px;
         }
         .elbp__blog__top__section .wrapper .content .author__info img,
-        .elbpblog__topnews__item .author__info img {
+        .elbpblog__topnews__item .author__info img,
+        .elbpbp__title__fimage__section .wrapper .author__info img {
             height: 32px;
             width: 32px;
         }
         .elbp__blog__top__section .wrapper .content .author__info .info,
-        .elbpblog__topnews__item .author__info .info {
+        .elbpblog__topnews__item .author__info .info,
+        .elbpbp__title__fimage__section .wrapper .author__info .info {
             gap: 4px;
         }
         .elbp__blog__top__section .wrapper .content .meta__info a {
@@ -1676,14 +1682,87 @@
         .elbp__post__grid__section .elbpblog__topnews__item .image {
             height: 145px;
         }
+        /*Blog Post*/
+        .elbpbp__title__fimage__section .wrapper .elbpbp__featured__image {
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        .elbpbp__title__fimage__section .wrapper .elbpbp__featured__image img {
+            width: 160%;
+        }
+        .elbpbp__title__fimage__section .wrapper .elbpbp__post__title {
+            margin-bottom: 15px;
+        }
+        .elbpbp__blogpost__body__section .wrapper .text__with__image {
+            flex-direction: column;
+            gap: 15px;
+        }
+        .elbpbp__blogpost__body__section .wrapper .text__with__image .image.one {
+            width: 266px;
+            height: 231px;
+        }
+        .elbpbp__blogpost__body__section .wrapper .text__with__image .image.two {
+            width: 266px;
+            height: 225px;
+        }
+        .elbpbp__blogpost__body__section .bg__text {
+            font-size: 45px;
+            top: -35px;
+        }
+        .elbpbp__blogpost__body__section h2,
+        .elbpbp__blogpost__body__section h3,
+        .elbpbp__blogpost__body__section h4,
+        .elbpbp__blogpost__body__section h5,
+        .elbpbp__blogpost__body__section h6,
+        .elbpbp__blogpost__body__section p,
+        .elbpbp__blogpost__body__section li {
+            margin-bottom: 12px;
+        }
+        .elbpbp__blogpost__body__section .wrapper li {
+            margin-left: 16px;
+        }
+        .elbpbp__title__fimage__section .wrapper .author__info {
+            gap: 10px;
+        }
+        .elbpbp__title__fimage__section .wrapper .author__and__date {
+            align-items: center;
+            flex-direction: column-reverse;
+        }
+        .elbpbp__title__fimage__section .wrapper .author__and__date .elbpbp__post__date {
+            margin-bottom: 8px;
+        }
+        .elbpbp__blogpost__body__section .bg__img.one {
+            top: 15px;
+        }
+        .elbpbp__blogpost__body__section .bg__img.two {
+            top: 23%;
+            right: 8px;
+        }
+        .elbpbp__blogpost__body__section .bg__img.three {
+            top: 38%;
+            left: 134px;
+        }
+        .elbpbp__blogpost__body__section .bg__img.four {
+            bottom: 4%;
+            right: 14px;
+        }
+        .elbpbp__blogpost__body__section .bg__img.five {
+            bottom: 8%;
+        }
+        /*Latest Posts Section*/
+        .elbpbp__latestposts__section .swiper-slide .elbpblog__topnews__item .image {
+            height: 165px;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
     section,
-    .elbp__review__form.show {
+    .elbp__review__form.show,
+    .elbpbp__blogpost__body__section .wrapper .text__with__image {
         margin-top: 30px;
     }
-    .elbp__blogpage .elbp__newsletter__section {
+    .elbp__newsletter__section,
+    .elbpbp__blogpost__body__section .wrapper {
         margin-top: 60px;
     }
     .elbp__new__collection__section,
@@ -3066,6 +3145,7 @@
         }
         .elbp__blog__top__section .wrapper .content p,
         .elbpblog__topnews__item .author__info p,
+        .elbpbp__title__fimage__section .wrapper .author__info p,
         .elbpblog__topnews__item .image .category {
             font-size: 14px;
             line-height: 22px;
@@ -3079,11 +3159,13 @@
             font-size: 14px;
         }
         .elbp__blog__top__section .wrapper .content .author__info span,
-        .elbpblog__topnews__item .author__info span {
+        .elbpblog__topnews__item .author__info span,
+        .elbpbp__title__fimage__section .wrapper .author__info span {
             font-size: 12px;
         }
         .elbp__blog__top__section .wrapper .content .author__info .info,
-        .elbpblog__topnews__item .author__info .info {
+        .elbpblog__topnews__item .author__info .info,
+        .elbpbp__title__fimage__section .wrapper .author__info .info {
             gap: 6px;
         }
         /*Top News Section*/
@@ -3147,14 +3229,96 @@
             font-size: 16px;
             line-height: 24px;
         }
+        /*Blog Post*/
+        .elbpbp__title__fimage__section .wrapper .elbpbp__featured__image {
+            height: 94px;
+        }
+        .elbpbp__title__fimage__section .wrapper .elbpbp__post__title {
+            margin-bottom: 15px;
+        }
+        .elbpbp__blogpost__body__section .wrapper .text__with__image {
+            flex-direction: column;
+            gap: 15px;
+        }
+        .elbpbp__blogpost__body__section .wrapper .text__with__image .image.one {
+            width: 266px;
+            height: 231px;
+        }
+        .elbpbp__blogpost__body__section .wrapper .text__with__image .image.two {
+            width: 266px;
+            height: 225px;
+        }
+        .elbpbp__blogpost__body__section .bg__text {
+            font-size: 45px;
+            top: -35px;
+        }
+        .elbpbp__blogpost__body__section h2,
+        .elbpbp__blogpost__body__section h3,
+        .elbpbp__blogpost__body__section h4,
+        .elbpbp__blogpost__body__section h5,
+        .elbpbp__blogpost__body__section h6,
+        .elbpbp__blogpost__body__section p,
+        .elbpbp__blogpost__body__section li {
+            margin-bottom: 12px;
+        }
+        .elbpbp__blogpost__body__section .wrapper li {
+            margin-left: 16px;
+        }
+        .elbpbp__title__fimage__section .wrapper .author__info {
+            gap: 10px;
+        }
+        .elbpbp__blogpost__body__section .bg__img.one {
+            top: 15px;
+        }
+        .elbpbp__blogpost__body__section .bg__img.two {
+            top: 23%;
+            right: 8px;
+        }
+        .elbpbp__blogpost__body__section .bg__img.three {
+            top: 38%;
+            left: 176px;
+        }
+        .elbpbp__blogpost__body__section .bg__img.four {
+            bottom: 6%;
+            right: 14px;
+        }
+        .elbpbp__blogpost__body__section .bg__img.five {
+            bottom: 8%;
+        }
+        /*Latest Posts Section*/
+        .elbpbp__latestposts__section .swiper-slide {
+            padding: 0 12px;
+        }
+        .elbpbp__latestposts__section .swiper-slide .elbpblog__topnews__item .image {
+            border-radius: 16px;
+            height: 219px;
+        }
+        .elbp__slider__nav .elbp__slider {
+            height: 42px;
+            width: 42px;
+            line-height: 40px;
+        }
+        .elbp__slider__nav .elbp__slider svg {
+            height: 24px;
+            width: 24px;
+        }
+        .elbpbp__latestposts__section .swiper-slide .elbpblog__topnews__item .title {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        .elbpbp__latestposts__section .elbp__slider__nav {
+            top: 30%;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
     section,
-    .elbp__review__form.show {
+    .elbp__review__form.show,
+    .elbpbp__blogpost__body__section .wrapper .text__with__image {
         margin-top: 40px;
     }
-    .elbp__blogpage .elbp__newsletter__section {
+    .elbp__newsletter__section,
+    .elbpbp__blogpost__body__section .wrapper {
         margin-top: 80px;
     }
     .elbp__new__collection__section,
@@ -4303,6 +4467,7 @@
         }
         .elbp__blog__top__section .wrapper .content p,
         .elbpblog__topnews__item .author__info p,
+        .elbpbp__title__fimage__section .wrapper .author__info p,
         .elbpblog__topnews__item .image .category {
             font-size: 14px;
             line-height: 22px;
@@ -4312,7 +4477,8 @@
             font-size: 24px;
         }
         .elbp__blog__top__section .wrapper .content .author__info .info,
-        .elbpblog__topnews__item .author__info .info {
+        .elbpblog__topnews__item .author__info .info,
+        .elbpbp__title__fimage__section .wrapper .author__info .info {
             gap: 6px;
         }
         /*Top News Section*/
@@ -4359,14 +4525,90 @@
         .elbp__post__grid__section .elbpblog__topnews__item .image {
             height: 215px;
         }
+        /*Blog Post*/
+        .elbpbp__title__fimage__section .wrapper .elbpbp__featured__image {
+            height: 139px;
+        }
+        .elbpbp__title__fimage__section .wrapper .elbpbp__post__title {
+            margin-bottom: 15px;
+        }
+        .elbpbp__blogpost__body__section .wrapper .text__with__image {
+            flex-direction: column;
+            gap: 20px;
+        }
+        .elbpbp__blogpost__body__section .wrapper .text__with__image .image.one {
+            width: 391px;
+            height: 340px;
+        }
+        .elbpbp__blogpost__body__section .wrapper .text__with__image .image.two {
+            width: 391px;
+            height: 331px;
+        }
+        .elbpbp__blogpost__body__section .bg__text {
+            font-size: 66px;
+            top: -50px;
+        }
+        .elbpbp__blogpost__body__section h2,
+        .elbpbp__blogpost__body__section h3,
+        .elbpbp__blogpost__body__section h4,
+        .elbpbp__blogpost__body__section h5,
+        .elbpbp__blogpost__body__section h6,
+        .elbpbp__blogpost__body__section p,
+        .elbpbp__blogpost__body__section li {
+            margin-bottom: 16px;
+        }
+        .elbpbp__blogpost__body__section .wrapper li {
+            margin-left: 20px;
+        }
+        .elbpbp__blogpost__body__section .bg__img.one {
+            top: 15px;
+        }
+        .elbpbp__blogpost__body__section .bg__img.two {
+            top: 18%;
+            right: 119px;
+        }
+        .elbpbp__blogpost__body__section .bg__img.three {
+            top: 32%;
+            left: 176px;
+        }
+        .elbpbp__blogpost__body__section .bg__img.four,
+        .elbpbp__blogpost__body__section .bg__img.five {
+            bottom: 6%;
+        }
+        /*Latest Posts Section*/
+        .elbpbp__latestposts__section .swiper-slide {
+            padding: 0 20px;
+        }
+        .elbpbp__latestposts__section .swiper-slide .elbpblog__topnews__item .image {
+            border-radius: 16px;
+            height: 309px;
+        }
+        .elbp__slider__nav .elbp__slider {
+            height: 42px;
+            width: 42px;
+            line-height: 40px;
+        }
+        .elbp__slider__nav .elbp__slider svg {
+            height: 24px;
+            width: 24px;
+        }
+        .elbpbp__latestposts__section .swiper-slide .elbpblog__topnews__item .title {
+            font-size: 18px;
+            line-height: 24px;
+        }
+        .elbpbp__latestposts__section .elbp__slider__nav {
+            top: 35%;
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
     section,
-    .elbp__review__form.show {
+    .elbp__review__form.show,
+    .elbpbp__blogpost__body__section .wrapper .text__with__image {
         margin-top: 50px;
     }
-    .elbp__blogpage .elbp__newsletter__section {
+    .elbp__newsletter__section,
+    .elbpbp__blogpost__body__section .wrapper {
         margin-top: 100px;
     }
     .elbp__new__collection__section,
@@ -5235,7 +5477,8 @@
             bottom: 50px;
         }
         .elbp__blog__top__section .wrapper .content .author__info .info,
-        .elbpblog__topnews__item .author__info .info {
+        .elbpblog__topnews__item .author__info .info,
+        .elbpbp__title__fimage__section .wrapper .author__info .info {
             gap: 6px;
         }
         /*Top News Section*/
@@ -5260,14 +5503,78 @@
             font-size: 18px;
             line-height: 26px;
         }
+        /*Blog Post*/
+        .elbpbp__title__fimage__section .wrapper .elbpbp__featured__image {
+            height: 183px;
+        }
+        .elbpbp__title__fimage__section .wrapper .elbpbp__post__title {
+            margin-bottom: 15px;
+        }
+        .elbpbp__blogpost__body__section .wrapper .text__with__image {
+            flex-direction: column;
+            gap: 20px;
+        }
+        .elbpbp__blogpost__body__section .wrapper .text__with__image .image.one {
+            width: 516px;
+            height: 448px;
+        }
+        .elbpbp__blogpost__body__section .wrapper .text__with__image .image.two {
+            width: 516px;
+            height: 437px;
+        }
+        .elbpbp__blogpost__body__section .bg__text {
+            font-size: 90px;
+            top: -70px;
+        }
+        .elbpbp__blogpost__body__section h2,
+        .elbpbp__blogpost__body__section h3,
+        .elbpbp__blogpost__body__section h4,
+        .elbpbp__blogpost__body__section h5,
+        .elbpbp__blogpost__body__section h6,
+        .elbpbp__blogpost__body__section p,
+        .elbpbp__blogpost__body__section li {
+            margin-bottom: 16px;
+        }
+        .elbpbp__blogpost__body__section .wrapper li {
+            margin-left: 20px;
+        }
+        .elbpbp__blogpost__body__section .bg__img.one {
+            top: 15px;
+        }
+        .elbpbp__blogpost__body__section .bg__img.three {
+            top: 26%;
+        }
+        .elbpbp__blogpost__body__section .bg__img.four,
+        .elbpbp__blogpost__body__section .bg__img.five {
+            bottom: 6%;
+        }
+        /*Latest Posts Section*/
+        .elbpbp__latestposts__section .swiper-slide .elbpblog__topnews__item .image {
+            height: 217px;
+        }
+        .elbp__slider__nav .elbp__slider {
+            height: 46px;
+            width: 46px;
+            line-height: 44px;
+        }
+        .elbp__slider__nav .elbp__slider svg {
+            height: 26px;
+            width: 26px;
+        }
+        .elbpbp__latestposts__section .elbp__slider__nav {
+            width: calc(100% + 30px);
+            left: -15px;
+        }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
     section,
-    .elbp__review__form.show {
+    .elbp__review__form.show,
+    .elbpbp__blogpost__body__section .wrapper .text__with__image {
         margin-top: 60px;
     }
-    .elbp__blogpage .elbp__newsletter__section {
+    .elbp__newsletter__section,
+    .elbpbp__blogpost__body__section .wrapper {
         margin-top: 120px;
     }
     .elbp__new__collection__section,
@@ -6177,6 +6484,7 @@
         }
         .elbp__blog__top__section .wrapper .content p,
         .elbpblog__topnews__item .author__info p,
+        .elbpbp__title__fimage__section .wrapper .author__info p,
         .elbpblog__topnews__item .image .category {
             font-size: 14px;
             line-height: 22px;
@@ -6193,7 +6501,8 @@
             margin-top: 10px;
         }
         .elbp__blog__top__section .wrapper .content .author__info .info,
-        .elbpblog__topnews__item .author__info .info {
+        .elbpblog__topnews__item .author__info .info,
+        .elbpbp__title__fimage__section .wrapper .author__info .info {
             gap: 8px;
         }
         /*Top News Section*/
@@ -6234,14 +6543,74 @@
         .elbp__post__grid__section .elbpblog__topnews__item .image {
             height: 228px;
         }
+        /*Blog Post*/
+        .elbpbp__title__fimage__section .wrapper .elbpbp__featured__image {
+            height: 247px;
+        }
+        .elbpbp__title__fimage__section .wrapper .elbpbp__post__title {
+            margin-bottom: 20px;
+        }
+        .elbpbp__blogpost__body__section .wrapper .text__with__image .image.one {
+            width: 300px;
+            height: 260px;
+        }
+        .elbpbp__blogpost__body__section .wrapper .text__with__image .image.two {
+            width: 320px;
+            height: 271px;
+        }
+        .elbpbp__blogpost__body__section .bg__text {
+            font-size: 110px;
+            top: -80px;
+        }
+        .elbpbp__blogpost__body__section h2,
+        .elbpbp__blogpost__body__section h3,
+        .elbpbp__blogpost__body__section h4,
+        .elbpbp__blogpost__body__section h5,
+        .elbpbp__blogpost__body__section h6,
+        .elbpbp__blogpost__body__section p,
+        .elbpbp__blogpost__body__section li {
+            margin-bottom: 16px;
+        }
+        .elbpbp__blogpost__body__section .wrapper .text__with__image {
+            gap: 24px;
+        }
+        .elbpbp__blogpost__body__section .wrapper li {
+            margin-left: 20px;
+        }
+        .elbpbp__blogpost__body__section .bg__img.three {
+            top: 14%;
+        }
+        /*Latest Posts Section*/
+        .elbpbp__latestposts__section .swiper-slide .elbpblog__topnews__item .image {
+            height: 190px;
+        }
+        .elbpbp__latestposts__section .swiper-slide .elbpblog__topnews__item .title {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        .elbp__slider__nav .elbp__slider {
+            height: 46px;
+            width: 46px;
+            line-height: 44px;
+        }
+        .elbp__slider__nav .elbp__slider svg {
+            height: 26px;
+            width: 26px;
+        }
+        .elbpbp__latestposts__section .elbp__slider__nav {
+            width: calc(100% + 46px);
+            left: -23px;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1139px) {
     section,
-    .elbp__review__form.show {
+    .elbp__review__form.show,
+    .elbpbp__blogpost__body__section .wrapper .text__with__image {
         margin-top: 70px;
     }
-    .elbp__blogpage .elbp__newsletter__section {
+    .elbp__newsletter__section,
+    .elbpbp__blogpost__body__section .wrapper {
         margin-top: 140px;
     }
     .elbp__new__collection__section,
@@ -6780,6 +7149,7 @@
         }
         .elbp__blog__top__section .wrapper .content p,
         .elbpblog__topnews__item .author__info p,
+        .elbpbp__title__fimage__section .wrapper .author__info p,
         .elbpblog__topnews__item .image .category {
             font-size: 14px;
             line-height: 22px;
@@ -6823,6 +7193,47 @@
         }
         .elbp__post__grid__section .elbpblog__topnews__item .image {
             height: 208px;
+            gap: 36px;
+        }
+        /*Blog Post*/
+        .elbpbp__blogpost__body__section .wrapper .text__with__image .image.one {
+            width: 350px;
+            height: 304px;
+        }
+        .elbpbp__blogpost__body__section .wrapper .text__with__image .image.two {
+            width: 390px;
+            height: 330px;
+        }
+        .elbpbp__blogpost__body__section .bg__text {
+            font-size: 120px;
+            top: -90px;
+        }
+        .elbpbp__title__fimage__section .wrapper .elbpbp__featured__image {
+            height: 332px;
+        }
+        .elbpbp__blogpost__body__section .bg__img.three {
+            top: 56%;
+        }
+        /*Latest Posts Section*/
+        .elbpbp__latestposts__section .swiper-slide .elbpblog__topnews__item .image {
+            height: 255px;
+        }
+        .elbpbp__latestposts__section .swiper-slide .elbpblog__topnews__item .title {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        .elbp__slider__nav .elbp__slider {
+            height: 46px;
+            width: 46px;
+            line-height: 44px;
+        }
+        .elbp__slider__nav .elbp__slider svg {
+            height: 26px;
+            width: 26px;
+        }
+        .elbpbp__latestposts__section .elbp__slider__nav {
+            width: calc(100% + 30px);
+            left: -15px;
         }
 }
 
@@ -6832,7 +7243,8 @@
         .elbp__review__form.show {
             margin-top: 80px;
         }
-        .elbp__blogpage .elbp__newsletter__section {
+        .elbp__newsletter__section,
+        .elbpbp__blogpost__body__section .wrapper {
             margin-top: 160px;
         }
         /*Hero Section*/
@@ -6910,6 +7322,10 @@
         /*Category Tab Section*/
         .elbp__post__grid__section .wrapper .nav h5 {
             font-size: 20px;
+        }
+        /*Blog Post*/
+        .elbpbp__blogpost__body__section .wrapper .text__with__image {
+            margin-top: 100px;
         }
 }
 

@@ -410,4 +410,28 @@
             });
         });
 
+        //Latest Posts Slider
+        $(function(){
+            var swiper = new Swiper(".elbpbp__lpslider", {
+                loop: true,
+                slidesPerView: 3,
+                spaceBetween: 15,
+                navigation: {
+                    nextEl: "#elbp__blogpostslide__next",
+                    prevEl: "#elbp__blogpostslide__prev",
+                },
+                breakpoints: {
+                    200: {
+                        slidesPerView: 1,
+                    },
+                    576: {
+                        slidesPerView: 2,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                    }
+                }
+            });
+        });
+
 }) (jQuery);
