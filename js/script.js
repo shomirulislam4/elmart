@@ -206,10 +206,14 @@ $(function () {
       $('#contactCount').text('(' + $('.contact').length + ')');
       $('#wishlistCount').text('(' + $('.wishlist').length + ')');
       $('#userCount').text('(' + $('.user').length + ')');
+      $('#forgotpassCount').text('(' + $('.forgot-pass').length + ')');
       $('#vendorCount').text('(' + $('.vendor').length + ')');
       $('#cartCount').text('(' + $('.cart').length + ')');
       $('#checkoutCount').text('(' + $('.checkout').length + ')');
       $('#myaccCount').text('(' + $('.my-acc').length + ')');
+      $('#faqsCount').text('(' + $('.faqs').length + ')');
+      $('#errorpageCount').text('(' + $('.error-page').length + ')');
+      $('#ordertrackingCount').text('(' + $('.order-tracking').length + ')');
       $('#othersCount').text('(' + $('.others').length + ')');
   }
 });
