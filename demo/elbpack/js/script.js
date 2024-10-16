@@ -337,10 +337,15 @@
         });
 
         //Shop List And Gird View
-        $(function(){
+        $(function() {
             $('.elbpshop__grid__button').click(function () {
+                if ($(window).width() < 576) {
+                    $('.elbp__products__grid .elbp__product__style').removeClass('list__view');
+                    return;
+                }
+        
                 $('.elbp__products__grid .elbp__product__style').toggleClass('list__view');
-    
+
                 var icon = $(this).find('.icon');
                 if (icon.hasClass('fa-list-ul')) {
                     icon.removeClass('fa-list-ul').addClass('fa-table-cells');
@@ -348,7 +353,14 @@
                     icon.removeClass('fa-table-cells').addClass('fa-list-ul');
                 }
             });
+            
+            $(window).resize(function () {
+                if ($(window).width() < 576) {
+                    $('.elbp__products__grid .elbp__product__style').removeClass('list__view');
+                }
+            });
         });
+        
 
         //Shop Sidebar
         $(function(){
@@ -380,6 +392,35 @@
             $('#elbpReviewFormToggle').on('click', function(){
                 $('.elbp__review__form').toggleClass('show')
             })
+        });
+
+        //Category Section Slider (Shop V2)
+        $(function(){
+            var swiper = new Swiper(".elbpshop__cat__slider", {
+                loop: true,
+                slidesPerView: 7,
+                spaceBetween: 10,
+                breakpoints: {
+                    200: {
+                        slidesPerView: 1,
+                    },
+                    290: {
+                        slidesPerView: 2,
+                    },
+                    415: {
+                        slidesPerView: 3,
+                    },
+                    576: {
+                        slidesPerView: 4,
+                    },
+                    768: {
+                        slidesPerView: 5,
+                    },
+                    992: {
+                        slidesPerView: 7,
+                    }
+                }
+            });
         });
 
     /*============================ Other Pages ============================*/
