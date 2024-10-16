@@ -525,6 +525,40 @@ button:focus {
     width: 3px;
 }
 
+.scroll-hint {
+    position: sticky;
+    bottom: -10px;
+    padding-bottom: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    opacity: 1;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
+}
+
+.scroll-hint span,
+.scroll-hint i {
+    font-size: 10px;
+}
+
+.scroll-hint i {
+    margin-top: -10px;
+    color: #AAA;
+}
+
+.scroll-hint.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
 .demo-filter li {
     display: flex;
     justify-content: space-between;
