@@ -241,18 +241,6 @@
         });
 
     /*============================ About Us Page ============================*/
-        //Video Popup
-        $(function(){
-            $('.elbpvp__play__btn').magnificPopup({
-                disableOn: 199,
-                type: 'iframe',
-                mainClass: 'mfp-fade',
-                removalDelay: 160,
-                preloader: false,
-                fixedContentPos: false
-            });
-        });
-
         //Terstimonials V2 Slider
         $(function(){
             var swiper = new Swiper(".elbp__testimonialsv2__slider", {
