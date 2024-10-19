@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#FF3F25">
 
-    <title>Your Cart - ELBPack</title>
+    <title>Blog V2 - ELBPack</title>
 
     <link rel="manifest" href="site.webmanifest">
     <link rel="icon" type="image/x-icon" href="image/favicon.png">
@@ -18,12 +18,11 @@
     <link rel="stylesheet" href="css/spacing.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/nice-select.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
-<body class="elbpack elbp__cartpage">
+<body class="elbpack elbp__blogpage">
     <!-- Start of Header Section -->
     <header class="elbp__header__section">
         <div class="container">
@@ -84,6 +83,8 @@
                         <ul class="elbp__submenu">
                             <li><a href="blog.html">blog</a></li>
                             <li><a href="blog-post.html">blog post</a></li>
+                            <li><a href="blog-v2.html">blog v2</a></li>
+                            <li><a href="blog-post-v2.html">blog post v2</a></li>
                         </ul>
                     </li>
                     <li><a href="contact.html">contact</a></li>
@@ -148,6 +149,8 @@
                             <ul class="l2__submenu">
                                 <li><a href="blog.html">blog</a></li>
                                 <li><a href="blog-post.html">blog post</a></li>
+                                <li><a href="blog-v2.html">blog v2</a></li>
+                                <li><a href="blog-post-v2.html">blog post v2</a></li>
                             </ul>
                         </li>
                         <li><a href="contact-us.html">contact us</a></li>
@@ -374,129 +377,121 @@
     <section class="elbp__breadcrumbs__section">
         <div class="container elbp__bc__wrapper">
             <a href="index.html">Home</a>
-            <a href="shop.html">Shop</a>
-            <p class="current__page">Your Cart</p>
+            <p class="current__page">Blog v2</p>
         </div>
     </section>
     <!-- End of Breadcrumbs Section -->
 
-    <!-- Start of Cart Section -->
-    <section class="elbp__cart__section position-relative">
-        <img src="image/shop/cart-bg1.png" alt="bg" class="bg__img">
-        <div class="container wrapper">
+    <!-- Start of Blog V2 Section -->
+    <section class="elbp__blogv2__section">
+        <div class="container">
             <div class="row">
-                <div class="col-lg-8">
-                    <div class="elbp__cartprod__list">
-                        <div class="info__item">
-                            <div class="image">
-                                <img src="image/products/product-17.png" alt="image">
-                            </div>
-                            <div class="text">
-                                <div class="title">
-                                    <a href="single-product.html" class="product__title"><h4>Vintage Leather Backpack</h4></a>
-                                    <button class="remove">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M5.46995 6.01501V18.529C5.46981 18.8864 5.5401 19.2403 5.6768 19.5704C5.8135 19.9006 6.01392 20.2006 6.26661 20.4533C6.51931 20.706 6.81932 20.9065 7.14951 21.0432C7.47969 21.1798 7.83358 21.2501 8.19095 21.25H15.8089C16.5303 21.25 17.2222 20.9634 17.7323 20.4533C18.2424 19.9432 18.5289 19.2514 18.5289 18.53V6.01401M3.29395 6.01501H20.7059" stroke="" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M8.73535 6.015V4.382C8.73509 4.16753 8.77716 3.95511 8.85914 3.75692C8.94113 3.55873 9.06142 3.37867 9.21312 3.22706C9.36482 3.07545 9.54496 2.95527 9.74319 2.87341C9.94143 2.79154 10.1539 2.74961 10.3684 2.75H13.6324C13.8468 2.74961 14.0593 2.79154 14.2575 2.87341C14.4558 2.95527 14.6359 3.07545 14.7876 3.22706C14.9393 3.37867 15.0596 3.55873 15.1416 3.75692C15.2236 3.95511 15.2656 4.16753 15.2654 4.382V6.015M9.82435 16.992V11.553M14.1774 16.992V11.553" stroke="" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                    </button>
+                <div class="col-lg-4">
+                    <div class="elbpblog__sidebar">
+                        <form action="#">
+                            <input type="search" name="elbpBlogv2Search" id="elbpBlogv2Search" placeholder="Search here...">
+                            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                        <div class="elbpblog__sidebar__widgets">
+                            <p class="elbpblog__sdbrwdgt__title">Categories</p>
+                            <div class="elbpblog__sdbr__ctaegories">
+                                <div class="item">
+                                    <a href="#">Fashion</a>
+                                    <span>20</span>
                                 </div>
-                                <h4 class="price">$120.00</h4>
-                                <div class="quantity__widget v2">
-                                    <div class="quantity__controls">
-                                        <div class="quantity__decrease">-</div>
-                                        <div class="quantity__display">1</div>
-                                        <div class="quantity__increase">+</div>
+                                <div class="item">
+                                    <a href="#">Trends</a>
+                                    <span>08</span>
+                                </div>
+                                <div class="item">
+                                    <a href="#">Leather</a>
+                                    <span>12</span>
+                                </div>
+                                <div class="item">
+                                    <a href="#">Travel</a>
+                                    <span>05</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elbpblog__sidebar__widgets">
+                            <p class="elbpblog__sdbrwdgt__title">Top Posts</p>
+                            <div class="elbpblog__sdbr__topposts">
+                                <div class="item">
+                                    <div class="image">
+                                        <img src="image/blog/blog-img1.png" alt="post image">
+                                    </div>
+                                    <div class="content">
+                                        <a href="#" class="elbpblog__sdbr__topposttitle">Top 10 Leather Backpack in this year...</a>
+                                        <span class="elbpblog__sdbr__toppostdate">October 19, 2024</span>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="image">
+                                        <img src="image/blog/blog-img2.png" alt="post image">
+                                    </div>
+                                    <div class="content">
+                                        <a href="#" class="elbpblog__sdbr__topposttitle">Top 10 Leather Backpack in this year...</a>
+                                        <span class="elbpblog__sdbr__toppostdate">October 18, 2024</span>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="image">
+                                        <img src="image/blog/blog-img3.png" alt="post image">
+                                    </div>
+                                    <div class="content">
+                                        <a href="#" class="elbpblog__sdbr__topposttitle">Top 10 Leather Backpack in this year...</a>
+                                        <span class="elbpblog__sdbr__toppostdate">October 17, 2024</span>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="image">
+                                        <img src="image/blog/blog-img4.png" alt="post image">
+                                    </div>
+                                    <div class="content">
+                                        <a href="#" class="elbpblog__sdbr__topposttitle">Top 10 Leather Backpack in this year...</a>
+                                        <span class="elbpblog__sdbr__toppostdate">October 16, 2024</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="horizontal__seperator"></div>
-                        <div class="info__item">
-                            <div class="image">
-                                <img src="image/products/product-19.png" alt="image">
-                            </div>
-                            <div class="text">
-                                <div class="title">
-                                    <a href="single-product.html" class="product__title"><h4>Full grain Backpack</h4></a>
-                                    <button class="remove">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M5.46995 6.01501V18.529C5.46981 18.8864 5.5401 19.2403 5.6768 19.5704C5.8135 19.9006 6.01392 20.2006 6.26661 20.4533C6.51931 20.706 6.81932 20.9065 7.14951 21.0432C7.47969 21.1798 7.83358 21.2501 8.19095 21.25H15.8089C16.5303 21.25 17.2222 20.9634 17.7323 20.4533C18.2424 19.9432 18.5289 19.2514 18.5289 18.53V6.01401M3.29395 6.01501H20.7059" stroke="" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M8.73535 6.015V4.382C8.73509 4.16753 8.77716 3.95511 8.85914 3.75692C8.94113 3.55873 9.06142 3.37867 9.21312 3.22706C9.36482 3.07545 9.54496 2.95527 9.74319 2.87341C9.94143 2.79154 10.1539 2.74961 10.3684 2.75H13.6324C13.8468 2.74961 14.0593 2.79154 14.2575 2.87341C14.4558 2.95527 14.6359 3.07545 14.7876 3.22706C14.9393 3.37867 15.0596 3.55873 15.1416 3.75692C15.2236 3.95511 15.2656 4.16753 15.2654 4.382V6.015M9.82435 16.992V11.553M14.1774 16.992V11.553" stroke="" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                    </button>
-                                </div>
-                                <h4 class="price">$120.00</h4>
-                                <div class="quantity__widget v2">
-                                    <div class="quantity__controls">
-                                        <div class="quantity__decrease">-</div>
-                                        <div class="quantity__display">1</div>
-                                        <div class="quantity__increase">+</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="horizontal__seperator"></div>
-                        <div class="info__item">
-                            <div class="image">
-                                <img src="image/products/product-22.png" alt="image">
-                            </div>
-                            <div class="text">
-                                <div class="title">
-                                    <a href="single-product.html" class="product__title"><h4>Top Grain Backpack</h4></a>
-                                    <button class="remove">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M5.46995 6.01501V18.529C5.46981 18.8864 5.5401 19.2403 5.6768 19.5704C5.8135 19.9006 6.01392 20.2006 6.26661 20.4533C6.51931 20.706 6.81932 20.9065 7.14951 21.0432C7.47969 21.1798 7.83358 21.2501 8.19095 21.25H15.8089C16.5303 21.25 17.2222 20.9634 17.7323 20.4533C18.2424 19.9432 18.5289 19.2514 18.5289 18.53V6.01401M3.29395 6.01501H20.7059" stroke="" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M8.73535 6.015V4.382C8.73509 4.16753 8.77716 3.95511 8.85914 3.75692C8.94113 3.55873 9.06142 3.37867 9.21312 3.22706C9.36482 3.07545 9.54496 2.95527 9.74319 2.87341C9.94143 2.79154 10.1539 2.74961 10.3684 2.75H13.6324C13.8468 2.74961 14.0593 2.79154 14.2575 2.87341C14.4558 2.95527 14.6359 3.07545 14.7876 3.22706C14.9393 3.37867 15.0596 3.55873 15.1416 3.75692C15.2236 3.95511 15.2656 4.16753 15.2654 4.382V6.015M9.82435 16.992V11.553M14.1774 16.992V11.553" stroke="" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                    </button>
-                                </div>
-                                <h4 class="price">$120.00</h4>
-                                <div class="quantity__widget v2">
-                                    <div class="quantity__controls">
-                                        <div class="quantity__decrease">-</div>
-                                        <div class="quantity__display">1</div>
-                                        <div class="quantity__increase">+</div>
-                                    </div>
-                                </div>
+                        <div class="elbpblog__sidebar__widgets">
+                            <p class="elbpblog__sdbrwdgt__title">Popular Tags</p>
+                            <div class="elbpblog__sdbr__tags">
+                                <button class="elbpblog__sdbr__tagitem">Top-grain</button>
+                                <button class="elbpblog__sdbr__tagitem">Full-Grain</button>
+                                <button class="elbpblog__sdbr__tagitem">Leather</button>
+                                <button class="elbpblog__sdbr__tagitem">Backpack</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="elbpccp__cart__subtotal">
+                <div class="col-lg-8">
 
-                        <div class="info__item">
-                            <p>Vintage Leather Backpack</p> <span>$120.00</span>
-                        </div>
-                        <div class="info__item">
-                            <p>Full grain Backpack</p> <span>$120.00</span>
-                        </div>
-                        <div class="info__item">
-                            <p>Top Grain Backpack</p> <span>$120.00</span>
-                        </div>
-
-                        <div class="horizontal__seperator"></div>
-
-                        <div class="info__item">
-                            <p>Sales Tax</p> <span>+10%</span>
-                        </div>
-
-                        <div class="horizontal__seperator"></div>
-
-                        <div class="info__item subtotal">
-                            <p>Total</p> <span>$414.00</span>
-                        </div>
-                        <a href="checkout.html" class="elbp__button__c">Proceed To Checkout</a>
-                    </div>
                 </div>
             </div>
         </div>
-        <section class="continue__button">
-            <a href="shop-v2.html" class="elbp__button__a mx-auto">Continue Shopping</a>
-        </section>
     </section>
-    <!-- End of Cart Section -->
+    <!-- End of Blog V2 Section -->
+
+    <!-- Start of Newsletter Section -->
+    <section class="elbp__newsletter__section">
+        <div class="container">
+            <div class="elbp__newsletter__wrapper">
+                <h1>Join&nbsp;&nbsp;Now</h1>
+                <h2 class="side__text">BACKPACK</h2>
+                <img src="image/newsletter.png" alt="image">
+                <div class="content">
+                    <h4>Join Newsletters Now</h4>
+                    <p>Stay Updated On Sales, New Items And More</p>
+                    <form action="#">
+                        <input type="email" name="elbpNewsletter" id="elbpNewsletter" placeholder="Enter Your Email">
+                        <button type="submit" class="elbp__button__b">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Newsletter Section -->
 
     <!-- Start of Footer -->
     <section class="elbp__footer__section v2">
@@ -574,7 +569,6 @@
     <script src="js/fontawesome.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/magnific-popup.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
