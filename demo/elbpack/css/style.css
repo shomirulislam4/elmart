@@ -23,6 +23,7 @@
 8. 404, Privacy, Terms, Tracker, FAQ, Login, and Register Page
 9. Contact Us Page
 10. Blog Page
+11. Home Page 2
 
 
 **********************************************/
@@ -7118,9 +7119,69 @@ blockquote::after {
 .elbpblogv2__grid .elbpblogv2__item .content .author__readmore .elbpblogv2__readmore:hover {
     color: var(--main-color);
 }
-
-
 /*** End of Blog V2 ***/
+
+/* ====================================================================
+   11. Home Page 2
+==================================================================== */
+.elbp__header__section .header__bottom {
+	padding-top: 41px;
+}
+
+/*** Start of Hero Section V2 ***/
+.elbp__herov2__section .bg__img {
+    position: absolute;
+    z-index: -1;
+    top: -40px;
+    left: 45%;
+}
+
+.elbp__herov2__section .wrapper .top {
+    height: 528px;
+}
+
+.elbp__herov2__section .wrapper .top .image {
+    width: 100%;
+    height: 100%;
+}
+
+.elbp__herov2__section .wrapper .top .image img {
+    width: 100%;
+}
+
+.elbp__herov2__section .wrapper .top .content h2,
+.elbp__herov2__section .wrapper .top .content h2 span {
+    font-size: 78px;
+    line-height: 100%;
+    font-family: 'StretchPro', sans-serif;
+}
+
+.elbp__herov2__section .wrapper .top .content h2 {
+    color: var(--bg-black);
+    margin-bottom: 40px;
+}
+
+.elbp__herov2__section .wrapper .top .content h2 span {
+    color: var(--main-color);
+}
+
+.elbp__herov2__section .wrapper .top .content p {
+    color: #5A5855;
+    margin-bottom: 37px;
+}
+
+.elbp__herov2__section .wrapper .top .content .elbp__button__a {
+    border-radius: 50px;
+    color: #E8E1D9;
+}
+
+.elbp__herov2__section .wrapper .top .content .elbp__button__a svg {
+    fill: #E8E1D9;
+    height: 24px;
+    width: 24px;
+}
+/*** End of Hero Section V2 ***/
+
 
 /**
 font-family: 'Poppins', sans-serif;
