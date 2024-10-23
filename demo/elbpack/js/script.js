@@ -463,4 +463,41 @@
             });
         });
 
+    /*============================ Home Page 2 ============================*/
+        //Hero Product Slider
+        $(function(){
+            var swiper = new Swiper(".elbp__herov2__slider", {
+                loop: true,
+                slidesPerView: 3,
+                spaceBetween: 17,
+                navigation: {
+                    prevEl: "#elbphv2__sldr__btn__prev",
+                    nextEl: "#elbphv2__sldr__btn__next",
+                },
+                breakpoints: {
+                    200: {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                    },
+                    415: {
+                        slidesPerView: 2,
+                        spaceBetween: 10,
+                    },
+                    576: {
+                        spaceBetween: 17,
+                    },
+                    768: {
+                        spaceBetween: 10,
+                    },
+                    992: {
+                        slidesPerView: 3,
+                        spaceBetween: 10,
+                    },
+                    1140 : {
+                        spaceBetween: 17,
+                    }
+                }
+            });
+        });
+
 }) (jQuery);
