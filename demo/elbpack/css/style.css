@@ -7374,6 +7374,63 @@ blockquote::after {
 }
 /*** End of Hero Section V2 ***/
 
+/*** Start of Promo Section ***/
+.elbp__promov2__section .wrapper .big__card {
+    position: relative;
+    height: 438px;
+    background: var(--background-color);
+    border-radius: 12px;
+}
+
+.elbp__promov2__section .wrapper .big__card .text,
+.elbp__promov2__section .wrapper .big__card .image {
+    width: 50%;
+    height: 100%;
+}
+
+.elbp__promov2__section .wrapper .big__card .text {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    padding-top: 100px;
+    position: relative;
+}
+
+.elbp__promov2__section .wrapper .big__card .text .bg__img {
+    position: absolute;
+    bottom: 18px;
+    left: -1px;
+}
+
+.elbp__promov2__section .wrapper .big__card .text span {
+    font-size: 16px;
+    line-height: 100%;
+    margin-bottom: 4px;
+}
+
+.elbp__promov2__section .wrapper .big__card .text h4 {
+    color: var(--bg-black);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.elbp__promov2__section .wrapper .big__card .text a {
+    color: var(--main-color);
+}
+
+.elbp__promov2__section .wrapper .big__card .text a svg {
+    fill: var(--main-color);
+}
+
+.elbp__promov2__section .wrapper .big__card .text a:hover {
+    color: var(--text-color);
+}
+
+.elbp__promov2__section .wrapper .big__card .text a:hover svg {
+    fill: var(--text-color);
+}
+
+/*** End of Promo Section ***/
 
 /**
 font-family: 'Poppins', sans-serif;
