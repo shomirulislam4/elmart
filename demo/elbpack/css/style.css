@@ -7380,6 +7380,9 @@ blockquote::after {
     height: 438px;
     background: var(--background-color);
     border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
 }
 
 .elbp__promov2__section .wrapper .big__card .text,
@@ -7428,6 +7431,17 @@ blockquote::after {
 
 .elbp__promov2__section .wrapper .big__card .text a:hover svg {
     fill: var(--text-color);
+}
+
+.elbp__promov2__section .wrapper .big__card .image {
+    background: var(--bg-black);
+}
+
+.elbp__promov2__section .wrapper .big__card .image img {
+    width: 100%;
+    transform: rotate(21deg);
+    margin-left: -38px;
+    margin-top: 15px;
 }
 
 /*** End of Promo Section ***/
