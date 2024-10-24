@@ -1941,6 +1941,104 @@
             height: 20px;
             width: 20px;
         }
+        /*Promo Section*/
+        .elbp__promov2__section .wrapper,
+        .elbp__promov2__section .wrapper .right__side {
+            gap: 10px;
+            flex-direction: column;
+        }
+        .elbp__promov2__section .wrapper .left__side,
+        .elbp__promov2__section .wrapper .right__side {
+            width: 100%;
+        }
+        .elbp__promov2__section .wrapper .big__card {
+            height: 224px;
+            flex-direction: column;
+        }
+        .elbp__promov2__section .wrapper a svg {
+            height: 20px;
+            width: 20px;
+        }
+        .elbp__promov2__section .wrapper .big__card .text {
+            padding: 10px;
+        }
+        .elbp__promov2__section .wrapper .big__card .text,
+        .elbp__promov2__section .wrapper .big__card .image {
+            width: 100%;
+            height: 50%;
+        }
+        .elbp__promov2__section .wrapper .big__card .text span {
+            font-size: 12px;
+        }
+        .elbp__promov2__section .wrapper .big__card .text h4 {
+            font-size: 16px;
+            line-height: 22px;
+            margin-bottom: 5px;
+        }
+        .elbp__promov2__section .wrapper .big__card .image img {
+            margin: 0;
+            height: 90%;
+            width: auto;
+            margin-left: 30%;
+        }
+        .small__card span {
+            font-size: 10px;
+            line-height: 16px;
+        }
+        .small__card.two .content .text a {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .small__card.one {
+            height: 90px;
+        }
+        .small__card.one .main__image {
+            left: 10px;
+            height: 80px;
+            width: 54px;
+        }
+        .small__card.one .main__image .text {
+            padding: 0 5px;
+        }
+        .small__card.one .bg__img {
+            right: 40px;
+            width: 50%;
+        }
+        .small__card.one .bag__image {
+            right: -20px;
+            top: -20px;
+            height: 130%;
+        }
+        .small__card.two {
+            height: 110px;
+            padding: 10px;
+        }
+        .small__card.two .content {
+            padding-left: 6px;
+        }
+        .small__card.two .content img {
+            display: none;
+        }
+        .small__card.two p {
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 6px;
+        }
+        /*Popular Products Section*/
+        .elbph2__popular__products {
+            padding: 30px 0;
+        }
+        .elbph2__title h4 {
+            font-size: 26px;
+            line-height: 34px;
+            text-align: center;
+        }
+        .elbph2__title {
+            align-items: center;
+            margin-bottom: 25px;
+            flex-direction: column;
+            gap: 10px;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
@@ -3645,6 +3743,99 @@
             height: 22px;
             width: 22px;
         }
+        /*Promo Section*/
+        .elbp__promov2__section .wrapper,
+        .elbp__promov2__section .wrapper .right__side {
+            gap: 15px;
+            flex-direction: column;
+        }
+        .elbp__promov2__section .wrapper .left__side,
+        .elbp__promov2__section .wrapper .right__side {
+            width: 100%;
+        }
+        .elbp__promov2__section .wrapper .big__card {
+            height: 270px;
+            flex-direction: column;
+        }
+        .elbp__promov2__section .wrapper .big__card .text {
+            padding: 20px;
+        }
+        .elbp__promov2__section .wrapper .big__card .text,
+        .elbp__promov2__section .wrapper .big__card .image {
+            width: 100%;
+            height: 50%;
+        }
+        .elbp__promov2__section .wrapper .big__card .text span {
+            font-size: 14px;
+        }
+        .elbp__promov2__section .wrapper .big__card .text h4 {
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 16px;
+        }
+        .elbp__promov2__section .wrapper .big__card .image img {
+            margin: 0;
+            height: 90%;
+            width: auto;
+            margin-left: 30%;
+        }
+        .small__card span,
+        .small__card.two .content .text a {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .small__card.one {
+            height: 130px;
+        }
+        .small__card.one .main__image {
+            left: 30px;
+            height: 112px;
+            width: 74px;
+        }
+        .small__card.one .main__image .text {
+            padding: 0 10px;
+        }
+        .small__card.one .bg__img {
+            right: 40px;
+            width: 50%;
+        }
+        .small__card.one .bag__image {
+            right: -27px;
+            top: -27px;
+            height: 130%;
+        }
+        .small__card.two {
+            height: 150px;
+            padding: 15px;
+        }
+        .small__card.two .content {
+            padding-left: 12px;
+        }
+        .small__card.two .content img {
+            height: 91%;
+            top: 0;
+            right: -22px;
+        }
+        .small__card.two p {
+            font-size: 16px;
+            line-height: 22px;
+            margin-bottom: 8px;
+        }
+        /*Popular Products Section*/
+        .elbph2__popular__products {
+            padding: 40px 0;
+        }
+        .elbph2__title h4 {
+            font-size: 28px;
+            line-height: 36px;
+            text-align: center;
+        }
+        .elbph2__title {
+            align-items: center;
+            margin-bottom: 30px;
+            flex-direction: column;
+            gap: 10px;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -5038,7 +5229,7 @@
         }
         .elbp__product__style__v3 .image {
             width: 100%;
-            height: 196px;
+            height: 192px;
         }
         .elbp__product__style__v3 .content {
             padding-bottom: 10px;
@@ -5061,6 +5252,54 @@
         .elbp__product__style__v3 .content .elbp__product__style__v3__buy svg {
             height: 22px;
             width: 22px;
+        }
+        /*Promo Section*/
+        .elbp__promov2__section .wrapper,
+        .elbp__promov2__section .wrapper .right__side {
+            gap: 20px;
+            flex-direction: column;
+        }
+        .elbp__promov2__section .wrapper .left__side,
+        .elbp__promov2__section .wrapper .right__side {
+            width: 100%;
+        }
+        .elbp__promov2__section .wrapper .big__card {
+            height: 270px;
+        }
+        .elbp__promov2__section .wrapper .big__card .text {
+            padding: 20px;
+            padding-top: 60px;
+        }
+        .elbp__promov2__section .wrapper .big__card .text span {
+            font-size: 14px;
+        }
+        .elbp__promov2__section .wrapper .big__card .text h4 {
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 16px;
+        }
+        .small__card.two p {
+            font-size: 18px;
+            line-height: 24px;
+        }
+        .small__card span,
+        .small__card.two .content .text a {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .elbp__promov2__section .wrapper .big__card .image img {
+            margin-left: -24px;
+        }
+        /*Popular Products Section*/
+        .elbph2__title h4 {
+            font-size: 32px;
+            line-height: 48px;
+        }
+        .elbph2__title {
+            align-items: center;
+            margin-bottom: 30px;
+            flex-direction: column;
+            gap: 10px;
         }
 }
 
@@ -6123,7 +6362,7 @@
         }
         .elbp__product__style__v3 .image {
             width: 100%;
-            height: 255px;
+            height: 162px;
         }
         .elbp__product__style__v3 .content {
             padding-bottom: 15px;
@@ -6137,6 +6376,41 @@
         }
         .elbp__herov2__section .wrapper .bottom .right__side .elbp__herov2__product__info p {
             max-width: 100%;
+        }
+        .elbp__product__style__v3 .content .elbp__product__style__v3__buy {
+            height: 40px;
+            width: 40px;
+        }
+        .elbp__product__style__v3 .content .elbp__product__style__v3__buy svg {
+            height: 26px;
+            width: 26px;
+        }
+        /*Promo Section*/
+        .elbp__promov2__section .wrapper,
+        .elbp__promov2__section .wrapper .right__side {
+            gap: 20px;
+            flex-direction: column;
+        }
+        .elbp__promov2__section .wrapper .left__side,
+        .elbp__promov2__section .wrapper .right__side {
+            width: 100%;
+        }
+        .elbp__promov2__section .wrapper .big__card {
+            height: 350px;
+        }
+        .small__card.two p {
+            font-size: 18px;
+            line-height: 24px;
+        }
+        .small__card span,
+        .small__card.two .content .text a {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        /*Popular Products Section*/
+        .elbph2__title h4 {
+            font-size: 32px;
+            line-height: 48px;
         }
 }
 
@@ -7224,10 +7498,74 @@
             right: -32px;
         }
         .elbp__product__style__v3 .image {
-            height: 202px;
+            height: 149px;
         }
         .elbp__product__style__v3 .content .elbp__product__style__v3__price {
             font-size: 16px;
+        }
+        .elbp__product__style__v3 .content .elbp__product__style__v3__buy {
+            height: 42px;
+            width: 42px;
+        }
+        .elbp__product__style__v3 .content .elbp__product__style__v3__buy svg {
+            height: 28px;
+            width: 28px;
+        }
+        /*Promo Section*/
+        .elbp__promov2__section .wrapper,
+        .elbp__promov2__section .wrapper .right__side {
+            gap: 15px;
+        }
+        .small__card.two p {
+            margin-bottom: 10px;
+        }
+        .elbp__promov2__section .wrapper .big__card {
+            height: 429px;
+        }
+        .elbp__promov2__section .wrapper .big__card .text {
+            padding: 20px;
+            padding-top: 60px;
+        }
+        .elbp__promov2__section .wrapper .big__card .text h4 {
+            font-size: 21px;
+            line-height: 27px;
+            margin-bottom: 15px;
+        }
+        .elbp__promov2__section .wrapper .big__card .image img {
+            margin-left: -26px;
+        }
+        .small__card.one .main__image {
+            left: 28px;
+            height: 100px;
+            width: 66px;
+        }
+        .small__card.one .main__image .text {
+            padding: 0 10px;
+        }
+        .small__card.one {
+            height: 130px;
+        }
+        .small__card.two {
+            height: 140px;
+            padding: 11px 10px;
+            padding-bottom: 10px;
+        }
+        .small__card span,
+        .small__card.two .content .text a {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .elbp__promov2__section .wrapper a svg {
+            height: 20px;
+            width: 20px;
+        }
+        .elbp__promov2__section .wrapper .big__card {
+            height: 285px;
+        }
+        /*Popular Products Section*/
+        .elbph2__title h4 {
+            font-size: 36px;
+            line-height: 42px;
         }
 }
 
@@ -7957,6 +8295,17 @@
         }
         .small__card.one .main__image {
             left: 28px;
+        }
+        /*Popular Products Section*/
+        .elbp__product__style__v3.with__title .content {
+            gap: 10px;
+        }
+        .elbp__product__style__v3__title {
+            margin-bottom: 0;
+            font-size: 18px;
+        }
+        .elbp__product__style__v3.with__title .content .elbp__product__style__v3__buy {
+            margin-top: 5px;
         }
 }
 

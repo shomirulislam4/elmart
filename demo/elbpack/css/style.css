@@ -7237,7 +7237,7 @@ blockquote::after {
 
 .elbp__product__style__v3 .image {
     height: 237px;
-    width: 237px;
+    width: 100%;
     margin: 0;
     margin-top: -20px;
     margin-bottom: 10px;
@@ -7396,6 +7396,7 @@ blockquote::after {
     display: flex;
     justify-content: space-between;
     overflow: hidden;
+    z-index: 0;
 }
 
 .elbp__promov2__section .wrapper .big__card .text,
@@ -7416,6 +7417,7 @@ blockquote::after {
     position: absolute;
     bottom: 18px;
     left: -1px;
+    z-index: -1;
 }
 
 .elbp__promov2__section .wrapper .big__card .text span {
@@ -7551,6 +7553,7 @@ blockquote::after {
     display: flex;
     justify-content: space-between;
     padding-left: 19px;
+    border-radius: 6px;
 }
 
 .small__card.two .content .text {
@@ -7567,6 +7570,73 @@ blockquote::after {
     transform: rotate(15deg);
 }
 /*** End of Promo Section ***/
+
+/*** Start of Popular Products Section ***/
+.elbph2__popular__products {
+    background: var(--bg-black);
+    padding: 54px 0;
+}
+
+.elbp__product__style__v3.with__title {
+    height: 10%;
+    padding-top: 13px;
+}
+
+.elbp__product__style__v3.with__title .image {
+	margin-top: 0;
+}
+
+.elbp__product__style__v3__title {
+    margin-bottom: 0;
+}
+
+.elbp__product__style__v3.with__title .content {
+	gap: 5px;
+}
+
+.elbp__product__style__v3.with__title .content .elbp__product__style__v3__buy {
+	background: var(--bg-black);
+	margin-top: 10px;
+}
+
+.elbp__product__style__v3.with__title .content .elbp__product__style__v3__buy svg {
+    stroke: var(--white-text);
+}
+
+.elbp__product__style__v3.with__title .content .elbp__product__style__v3__buy:hover {
+    background: var(--main-color);
+}
+
+/* Section Title */
+.elbph2__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 46px;
+}
+
+.elbph2__title h4 {
+    color: var(--background-color);
+    font-size: 40px;
+    line-height: 46px;
+    font-weight: 600;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.elbph2__title .elbp__slider__nav .elbp__slider.next {
+    background: var(--main-color);
+}
+
+.elbph2__title .elbp__slider__nav .elbp__slider.next:hover {
+	background: var(--background-color);
+}
+
+.elbph2__title .elbp__slider__nav .elbp__slider.next:hover svg {
+    fill: var(--text-color);
+}
+
+/*** End of Popular Products Section ***/
 
 /**
 font-family: 'Poppins', sans-serif;

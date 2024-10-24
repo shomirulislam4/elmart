@@ -500,4 +500,35 @@
             });
         });
 
+        //Popular Products Slider
+        $(function(){
+            var swiper = new Swiper(".elbph2__popularprod__slider", {
+                loop: true,
+                slidesPerView: 4,
+                spaceBetween: 22,
+                navigation: {
+                    prevEl: "#elbph2__popularprod__prev",
+                    nextEl: "#elbph2__popularprod__next",
+                },
+                breakpoints: {
+                    200: {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                    },
+                    415: {
+                        slidesPerView: 2,
+                        spaceBetween: 10,
+                    },
+                    576: {
+                        slidesPerView: 3,
+                    },
+                    992: {
+                    },
+                    1140 : {
+                        spaceBetween: 22,
+                    }
+                }
+            });
+        });
+
 }) (jQuery);
