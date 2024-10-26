@@ -1319,7 +1319,7 @@ input[type="radio"]:checked::before {
 }
 
 .elbp__cart__slider .main__cart__area {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     width: 400px;
@@ -7432,19 +7432,23 @@ blockquote::after {
     margin-bottom: 20px;
 }
 
-.elbp__promov2__section .wrapper a {
+.elbp__promov2__section .wrapper a,
+.elbph2__categories__section .text a {
     color: var(--main-color);
 }
 
-.elbp__promov2__section .wrapper a svg {
+.elbp__promov2__section .wrapper a svg,
+.elbph2__categories__section .text a svg {
     fill: var(--main-color);
 }
 
-.elbp__promov2__section .wrapper a:hover {
+.elbp__promov2__section .wrapper a:hover,
+.elbph2__categories__section .text a:hover {
     color: var(--text-color);
 }
 
-.elbp__promov2__section .wrapper a:hover svg {
+.elbp__promov2__section .wrapper a:hover svg,
+.elbph2__categories__section .text a:hover svg {
     fill: var(--text-color);
 }
 
@@ -7636,8 +7640,255 @@ blockquote::after {
 .elbph2__title .elbp__slider__nav .elbp__slider.next:hover svg {
     fill: var(--text-color);
 }
-
 /*** End of Popular Products Section ***/
+
+/*** Start of Categories Section ***/
+.elbph2__categories__section {
+    overflow: hidden;
+}
+
+.elbph2__categories__section .bg__img {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+@media (max-width: 1139px) {
+    .elbph2__categories__section .bg__img {
+        height: 100%;
+    }
+}
+
+@media (min-width: 415px) {
+    .elbph2__categories__section .wrapper {
+        padding: 0;
+    }
+}
+
+.elbph2__categories__section .text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 24px;
+}
+
+.elbph2__categories__section .text h3 {
+    font-weight: 600;
+    color: var(--bg-black);
+}
+
+.elbph2__categories__section .text h3 span {
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--bg-black);
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.elbph2__categories__section .text h3,
+.elbph2__categories__section .text p {
+    margin: 0;
+}
+
+.elbph2__categories__section .text a {
+    font-weight: 500;
+}
+
+.elbph2__categories__section .category {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+    .elbph2__categories__section .text {
+        padding: 0;
+    }
+    .elbph2__categories__section .category {
+        padding-right: 0;
+    }
+}
+
+.elbph2__categories__section .category .item {
+    width: 248px;
+    height: 376px;
+    background: var(--background-color);
+    border-radius: 124px;
+    display: flex;
+}
+
+.elbph2__categories__section .category .item .content {
+	writing-mode: vertical-rl;
+	text-orientation: sideways;
+	transform: rotate(180deg);
+	text-align: center;
+	margin-left: 6px;
+}
+
+.elbph2__categories__section .category .item .content span {
+    color: var(--main-color);
+    font-size: 13px;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+
+.elbph2__categories__section .category .item .content p {
+    margin: 0;
+    color: var(--bg-black);
+    line-height: 100%;
+}
+
+.elbph2__categories__section .category .item .image {
+    background: #E5DCD1;
+    width: 165px;
+    height: 273px;
+    border-radius: 120px;
+    margin: auto 12px auto auto;
+    padding: 10px;
+    display: grid;
+    place-content: center;
+}
+
+.elbph2__categories__section .category .item .image img {
+    width: 100%;
+}
+/*** End of Categories Section ***/
+
+/*** Start of Latest Products Grid ***/
+.elbp__homepage2 .elbp__section__title h2 {
+    color: var(--bg-black);
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.elbp__homepage2 .elbp__section__title h2 span {
+    font-weight: 600;
+}
+
+.elbph2__latest__products__section .elbp__section__title h2 span {
+    position: relative;
+}
+
+.elbph2__latest__products__section .elbp__section__title h2 span::after {
+    position: absolute;
+    height: 2px;
+    width: 1440px;
+    content: '';
+    background: #CDC3B8;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 70%;
+}
+
+.elbph2__latest__products__section {
+    overflow: hidden;
+}
+
+.elbph2__latest__products__section .wrapper {
+    padding: 0;
+}
+
+.elbph2__latest__products__section .product__grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+/* Product Style 4 */
+.elbp__product__style__v4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 50%;
+    background: var(--background-color);
+    width: 368px;
+    height: 357px;
+    position: relative;
+    padding-top: 25px;
+    padding-bottom: 45px;
+}
+
+.elbp__product__style__v4 .content {
+    display: flex;
+    flex-direction: column;
+}
+
+.elbp__product__style__v4 h5 {
+    font-size: 28px;
+    line-height: 100%;
+    margin-bottom: 0;
+}
+
+.elbp__product__style__v4 a h5 {
+    color: var(--bg-black);
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.elbp__product__style__v4 a:hover h5 {
+    color: var(--main-color);
+}
+
+.elbp__product__style__v4 span {
+    color: #8B7B68;
+    font-family: 'ClashDisplay', sans-serif;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+.elbp__product__style__v4 .elbpsv4__price {
+    color: var(--main-color);
+    font-weight: 500;
+    text-align: center;
+}
+
+.elbp__product__style__v4 img {
+    height: 189px;
+    width: 189px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(15deg);
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.elbp__product__style__v4:hover img {
+    transform: translate(-50%, -50%) rotate(-15deg);
+}
+
+.elbp__product__style__v4 .elbpsv4__buy__btn {
+	position: absolute;
+	bottom: 0;
+	right: 75px;
+	height: 45px;
+	width: 45px;
+	border: 1px solid var(--white-text);
+	border-radius: 50%;
+	background: var(--bg-black);
+}
+
+.elbp__product__style__v4 .elbpsv4__buy__btn svg {
+    stroke: var(--white-text);
+}
+
+.elbp__product__style__v4 .elbpsv4__buy__btn:hover {
+    background: var(--main-color);
+}
+
+/*** End of Latest Products Grid ***/
 
 /**
 font-family: 'Poppins', sans-serif;
