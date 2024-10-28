@@ -594,12 +594,13 @@ input[type="radio"]:checked::before {
     margin: 0;
 }
 
-/* Section Title */
+/** Section Title **/
 .elbp__section__title {
     text-align: center;
     margin-bottom: 50px;
 }
 
+/*With Text*/
 .elbp__section__title.with__text {
     display: flex;
     text-align: left;
@@ -624,6 +625,7 @@ input[type="radio"]:checked::before {
     margin: 0;
 }
 
+/*With Subtitle*/
 .elbp__section__title.with__subtitle {
     text-align: left;
     margin-bottom: 20px;
@@ -633,6 +635,34 @@ input[type="radio"]:checked::before {
     font-size: 14px;
     color: #B4ABA4;
     margin: 0;
+}
+
+/*With Line*/
+.elbp__section__title.with__line h2 {
+    color: var(--bg-black);
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.elbp__section__title.with__line h2 span {
+    font-weight: 600;
+}
+
+.elbp__section__title.with__line h2 span {
+    position: relative;
+}
+
+.elbp__section__title.with__line h2 span::after {
+    position: absolute;
+    height: 2px;
+    width: 1440px;
+    content: '';
+    background: #CDC3B8;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 100%;
 }
 
 /* Post & Pages Markup */
@@ -7433,22 +7463,26 @@ blockquote::after {
 }
 
 .elbp__promov2__section .wrapper a,
-.elbph2__categories__section .text a {
+.elbph2__categories__section .text a,
+.elbph2__flash__sale__card .content a {
     color: var(--main-color);
 }
 
 .elbp__promov2__section .wrapper a svg,
-.elbph2__categories__section .text a svg {
+.elbph2__categories__section .text a svg,
+.elbph2__flash__sale__card .content a svg {
     fill: var(--main-color);
 }
 
 .elbp__promov2__section .wrapper a:hover,
-.elbph2__categories__section .text a:hover {
+.elbph2__categories__section .text a:hover,
+.elbph2__flash__sale__card .content a:hover {
     color: var(--text-color);
 }
 
 .elbp__promov2__section .wrapper a:hover svg,
-.elbph2__categories__section .text a:hover svg {
+.elbph2__categories__section .text a:hover svg,
+.elbph2__flash__sale__card .content a:hover svg {
     fill: var(--text-color);
 }
 
@@ -7758,35 +7792,15 @@ blockquote::after {
 /*** End of Categories Section ***/
 
 /*** Start of Latest Products Grid ***/
-.elbp__homepage2 .elbp__section__title h2 {
-    color: var(--bg-black);
-    font-weight: 600;
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
-}
-
-.elbp__homepage2 .elbp__section__title h2 span {
-    font-weight: 600;
-}
-
-.elbph2__latest__products__section .elbp__section__title h2 span {
-    position: relative;
-}
-
-.elbph2__latest__products__section .elbp__section__title h2 span::after {
+.elbph2__latest__products__section .bg__img {
     position: absolute;
-    height: 2px;
-    width: 1440px;
-    content: '';
-    background: #CDC3B8;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 70%;
+    z-index: -1;
+    right: 0;
+    bottom: -170px;
 }
 
-.elbph2__latest__products__section {
-    overflow: hidden;
+.elbph2__latest__products__section .elbp__section__title.with__line h2 span::after {
+    left: 70%;
 }
 
 .elbph2__latest__products__section .wrapper {
@@ -7887,8 +7901,119 @@ blockquote::after {
 .elbp__product__style__v4 .elbpsv4__buy__btn:hover {
     background: var(--main-color);
 }
-
 /*** End of Latest Products Grid ***/
+
+/*** Start of Flash Sale ***/
+.elbph2__flash__sale__section {
+    position: relative;
+}
+
+.elbph2__flash__sale__section .elbp__section__title.with__line h2 span::after {
+    left: 90%;
+}
+
+.elbph2__flash__sale__card {
+    background: var(--background-color);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 58px;
+    overflow: hidden;
+    height: 497px;
+    width: 100%;
+}
+
+.elbph2__flash__sale__card .image {
+    background: var(--bg-black);
+    border-radius: 58px;
+    position: relative;
+    height: 100%;
+    width: 536px;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.elbph2__flash__sale__card .image .background__image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 90%;
+    width: 90%;
+    z-index: 1;
+}
+
+.elbph2__flash__sale__card .image .promo__image1 {
+    position: absolute;
+    left: 14px;
+    top: 9px;
+    transform: rotate(10deg);
+    height: 80%;
+    width: auto;
+    z-index: 2;
+}
+
+.elbph2__flash__sale__card .image .promo__image2 {
+    position: absolute;
+    bottom: 41px;
+    right: 0;
+    z-index: 3;
+    transform: rotate(-15deg);
+}
+
+.elbph2__flash__sale__card .content {
+    width: 100%;
+    height: 100%;
+    padding-left: 54px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.elbph2__flash__sale__card .content h3 {
+    color: var(--bg-black);
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 100%;
+    margin-bottom: 16px;
+}
+
+.elbph2__flash__sale__card .content .desc {
+    color: #6C655D;
+    font-size: 24px;
+    line-height: 100%;
+    margin-bottom: 0;
+}
+
+/* Countdown Timer */
+.elbp__countdown__timer {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+    margin-top: 42px;
+    margin-bottom: 59px;
+}
+
+.elbp__countdown__timer p {
+    height: 70px;
+    width: 109px;
+    background: #F2E7DA;
+    border-radius: 8px;
+    margin-bottom: 0;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.elbp__countdown__timer p,
+.elbp__countdown__timer p span {
+    color: #5F584F;
+}
+
+.elbph2__flash__sale__card .content a {
+    font-weight: 500;
+}
+/*** End of Flash Sale ***/
 
 /**
 font-family: 'Poppins', sans-serif;
