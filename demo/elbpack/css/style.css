@@ -7909,7 +7909,11 @@ blockquote::after {
 }
 
 .elbph2__flash__sale__section .elbp__section__title.with__line h2 span::after {
-    left: 90%;
+    left: 94%;
+}
+
+.elbph2__flash__sale__section .elbp__section__title.with__line h2 span {
+    color: var(--bg-black);
 }
 
 .elbph2__flash__sale__card {
@@ -7953,11 +7957,12 @@ blockquote::after {
 }
 
 .elbph2__flash__sale__card .image .promo__image2 {
-    position: absolute;
-    bottom: 41px;
-    right: 0;
-    z-index: 3;
-    transform: rotate(-15deg);
+	position: absolute;
+	bottom: 41px;
+	right: 0;
+	z-index: 3;
+	transform: rotate(-15deg);
+	height: 67%;
 }
 
 .elbph2__flash__sale__card .content {
