@@ -532,24 +532,62 @@
         });
 
         //On Sale Timer
-    function makeTimer() {
-        //timer 1
-        var endTime = new Date("30 March 2025 0:00:00 UTC+0");	
-        endTime = (Date.parse(endTime) / 1000);
-        var now = new Date();
-        now = (Date.parse(now) / 1000);
+        function makeTimer() {
+            //timer 1
+            var endTime = new Date("30 March 2025 0:00:00 UTC+0");	
+            endTime = (Date.parse(endTime) / 1000);
+            var now = new Date();
+            now = (Date.parse(now) / 1000);
 
-        var timeLeft = endTime - now;
-        var days = Math.floor(timeLeft / 86400); 
-        var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
-        var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
-        var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+            var timeLeft = endTime - now;
+            var days = Math.floor(timeLeft / 86400); 
+            var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
+            var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
+            var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
 
-        $("#timer #days").html(days + "<span>Days</span>");
-        $("#timer #hours").html(hours + "<span>Hours</span>");
-        $("#timer #minutes").html(minutes + "<span>Mint</span>");
-        $("#timer #seconds").html(seconds + "<span>Secs</span>");		
-    }
-    setInterval(function() { makeTimer(); }, 1000);
+            $("#timer #days").html(days + "<span>Days</span>");
+            $("#timer #hours").html(hours + "<span>Hours</span>");
+            $("#timer #minutes").html(minutes + "<span>Mint</span>");
+            $("#timer #seconds").html(seconds + "<span>Secs</span>");		
+        }
+        setInterval(function() { makeTimer(); }, 1000);
+
+        //Hero Product Slider
+        $(function(){
+            var swiper = new Swiper(".elbph2__na__slider", {
+                loop: true,
+                slidesPerView: 3,
+                spaceBetween: 17,
+                navigation: {
+                    prevEl: "#elbph2__naslider__prev",
+                    nextEl: "#elbph2__naslider__next",
+                },
+                breakpoints: {
+                    200: {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                    },
+                    415: {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                    },
+                    576: {
+                        slidesPerView: 2,
+                        spaceBetween: 17,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 10,
+                    },
+                    992: {
+                        slidesPerView: 3,
+                        spaceBetween: 10,
+                    },
+                    1140 : {
+                        spaceBetween: 17,
+                    }
+                }
+            });
+        });
 
 }) (jQuery);
