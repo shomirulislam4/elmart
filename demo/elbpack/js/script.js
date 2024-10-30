@@ -552,7 +552,7 @@
         }
         setInterval(function() { makeTimer(); }, 1000);
 
-        //Hero Product Slider
+        //New Arrivals Slider
         $(function(){
             var swiper = new Swiper(".elbph2__na__slider", {
                 loop: true,
@@ -573,7 +573,45 @@
                     },
                     576: {
                         slidesPerView: 2,
+                        spaceBetween: 10,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 10,
+                    },
+                    992: {
+                        slidesPerView: 3,
+                        spaceBetween: 10,
+                    },
+                    1140 : {
                         spaceBetween: 17,
+                    }
+                }
+            });
+        });
+
+        //Blog V2 Slider
+        $(function(){
+            var swiper = new Swiper(".elbph2__blogslider", {
+                loop: true,
+                slidesPerView: 3,
+                spaceBetween: 17,
+                navigation: {
+                    prevEl: "#elbph2__blogslider__prev",
+                    nextEl: "#elbph2__blogslider__next",
+                },
+                breakpoints: {
+                    200: {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                    },
+                    415: {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                    },
+                    576: {
+                        slidesPerView: 2,
+                        spaceBetween: 10,
                     },
                     768: {
                         slidesPerView: 2,
