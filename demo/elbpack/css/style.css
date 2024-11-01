@@ -8121,7 +8121,21 @@ blockquote::after {
     width: 55%;
     background: var(--background-color);
     border-radius: 12px;
-    z-index: -1;
+    z-index: 0;
+}
+
+.elbph2__newsletter__section .image::after {
+	content: '';
+	position: absolute;
+	left: 22%;
+	bottom: 12%;
+	background: #BDA07E77;
+	height: 250px;
+	width: 250px;
+	box-shadow: 0 0 79px #BDA07E;
+	border-radius: 50%;
+	z-index: 10;
+	opacity: 0.5;
 }
 
 .elbph2__newsletter__section .wrapper {
@@ -8129,6 +8143,22 @@ blockquote::after {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    position: relative;
+}
+
+.elbph2__newsletter__section .wrapper .newsletter__img {
+    position: absolute;
+    z-index: 10;
+}
+
+.elbph2__newsletter__section .wrapper .newsletter__img.one {
+	left: -46px;
+	top: -26px;
+}
+
+.elbph2__newsletter__section .wrapper .newsletter__img.two {
+    left: 0;
+    bottom: 0;
 }
 
 .elbph2__newsletter__section .wrapper .content {
@@ -8188,7 +8218,137 @@ blockquote::after {
     background: #CFB79B;
 }
 
+@media (max-width: 767px) {
+    .elbph2__newsletter__section .image,
+    .elbph2__newsletter__section .wrapper .newsletter__img.one,
+    .elbph2__newsletter__section .wrapper .newsletter__img.two {
+        display: none;
+    }
+    .elbph2__newsletter__section .wrapper .content {
+        width: 100%;
+        height: fit-content;
+    }
+    .elbph2__newsletter__section .wrapper {
+        height: fit-content;
+    }
+    
+}
 /*** End of Newsletter V2 Section ***/
+
+/*** Start of Footer V3 Section ***/
+/* Top */
+.elbp__footer__section.v3 .top {
+    background: var(--background-color);
+    padding: 58px 61px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.elbp__footer__section.v3 .top .item {
+	width: 287px;
+    height: 104px;
+	display: flex;
+	gap: 12px;
+	align-items: center;
+	position: relative;
+}
+
+.elbp__footer__section.v3 .top .item::after {
+    position: absolute;
+    content: '';
+    background: #B2A89D;
+    width: 1px;
+    height: 100%;
+    right: 0;
+    top: 0;
+    z-index: 100;
+}
+
+.elbp__footer__section.v3 .top .item:last-child::after {
+    display: none;
+}
+
+.elbp__footer__section.v3 .top .item .icon {
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.elbp__footer__section.v3 .top .item .icon svg {
+    fill: #70665C;
+    height: 30px;
+    width: 30px;
+}
+
+.elbp__footer__section.v3 .top .item .icon.three svg {
+    fill: none;
+    stroke: #70665C;
+}
+
+.elbp__footer__section.v3 .top .item .content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.elbp__footer__section.v3 .top .item .content p {
+    color: #70665C;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0;
+}
+
+.elbp__footer__section.v3 .top .item .content span {
+    color: #70665C;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+/* Bottom */
+.elbp__footer__section.v3 .bottom {
+    background: var(--bg-black);
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.elbp__footer__section.v3 .bottom .elbp__footer__widget h2,
+.elbp__footer__section.v3 .bottom .elbp__footer__widget h5,
+.elbp__footer__section.v3 .bottom .elbp__footer__widget a,
+.elbp__footer__section.v3 .bottom .elbp__footer__widget p {
+    color: #D8CBBC;
+}
+
+.elbp__footer__section.v3 .bottom .elbp__footer__widget.about a {
+    display: flex;
+    gap: 10px;
+}
+
+.elbp__footer__section.v3 .bottom .elbp__footer__widget.about a svg {
+    fill: #D8CBBC;
+}
+
+.elbp__footer__section.v3 .bottom .elbp__footer__widget a:hover svg {
+    fill: var(--main-color)
+}
+
+.elbp__footer__section.v3 .bottom .elbp__footer__widget h2 {
+    font-weight: 600;
+    margin-bottom: 34px;
+}
+
+.elbp__footer__section.v3 .bottom .elbpht__social__links li a {
+    color: #FFF;
+	font-size: 24px;
+}
+
+.elbp__footer__section.v3 .bottom .elbp__footer__widget.about a:hover,
+.elbp__footer__section.v3 .bottom .elbpht__social__links li a:hover {
+    color: var(--main-color);
+}
+
+
+/*** End of Footer V3 Section ***/
 
 /**
 font-family: 'Poppins', sans-serif;
