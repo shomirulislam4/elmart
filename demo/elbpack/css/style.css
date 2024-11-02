@@ -3284,11 +3284,11 @@ input[type="radio"]:checked::before {
 .elbp__footer__section .bottom .elbp__copyright {
     text-align: center;
     margin: 0;
-    color: var(--text-color);
+    color: var(--bg-black);
 }
 
 .elbp__footer__section .bottom .elbp__copyright a {
-    color: var(--text-color);
+    color:var(--bg-black);
 }
 
 .elbp__footer__section p a:hover,
@@ -8236,25 +8236,25 @@ blockquote::after {
 /*** End of Newsletter V2 Section ***/
 
 /*** Start of Footer V3 Section ***/
-/* Top */
-.elbp__footer__section.v3 .top {
+/* Extra */
+.elbp__footer__section.v3 .extra {
     background: var(--background-color);
     padding: 58px 61px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 12px;
 }
 
-.elbp__footer__section.v3 .top .item {
+.elbp__footer__section.v3 .extra .item {
 	width: 287px;
     height: 104px;
 	display: flex;
 	gap: 12px;
-	align-items: center;
 	position: relative;
 }
 
-.elbp__footer__section.v3 .top .item::after {
+.elbp__footer__section.v3 .extra .item::after {
     position: absolute;
     content: '';
     background: #B2A89D;
@@ -8265,89 +8265,125 @@ blockquote::after {
     z-index: 100;
 }
 
-.elbp__footer__section.v3 .top .item:last-child::after {
+.elbp__footer__section.v3 .extra .item:last-child::after {
     display: none;
 }
 
-.elbp__footer__section.v3 .top .item .icon {
+.elbp__footer__section.v3 .extra .item .icon {
     flex-shrink: 0;
     flex-grow: 0;
 }
 
-.elbp__footer__section.v3 .top .item .icon svg {
+.elbp__footer__section.v3 .extra .item .icon svg {
     fill: #70665C;
     height: 30px;
     width: 30px;
 }
 
-.elbp__footer__section.v3 .top .item .icon.three svg {
+.elbp__footer__section.v3 .extra .item .icon.three svg {
     fill: none;
     stroke: #70665C;
 }
 
-.elbp__footer__section.v3 .top .item .content {
+.elbp__footer__section.v3 .extra .item .content {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.elbp__footer__section.v3 .top .item .content p {
+.elbp__footer__section.v3 .extra .item .content p {
     color: #70665C;
     font-weight: 500;
     font-size: 18px;
     margin: 0;
 }
 
-.elbp__footer__section.v3 .top .item .content span {
+.elbp__footer__section.v3 .extra .item .content span {
     color: #70665C;
     font-size: 14px;
     line-height: 20px;
 }
 
-/* Bottom */
-.elbp__footer__section.v3 .bottom {
-    background: var(--bg-black);
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 100px;
+@media (max-width: 991px) {
+    .elbp__footer__section.v3 .extra .item {
+        height: 100%;
+    }
+    .elbp__footer__section.v3 .extra .item::after {
+        display: none;
+    }
+    .elbp__footer__section.v3 .extra {
+        padding: 38px;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .elbp__footer__section.v3 .top .elbp__footer__widget.about {
+        padding-left: 0;
+    }
 }
 
-.elbp__footer__section.v3 .bottom .elbp__footer__widget h2,
-.elbp__footer__section.v3 .bottom .elbp__footer__widget h5,
-.elbp__footer__section.v3 .bottom .elbp__footer__widget a,
-.elbp__footer__section.v3 .bottom .elbp__footer__widget p {
+/* Top */
+.elbp__footer__section.v3 .top {
+	padding-top: 61px;
+}
+
+.elbp__footer__section.v3 .top .elbp__footer__widget h2,
+.elbp__footer__section.v3 .top .elbp__footer__widget h5,
+.elbp__footer__section.v3 .top .elbp__footer__widget a,
+.elbp__footer__section.v3 .top .elbp__footer__widget p {
     color: #D8CBBC;
 }
 
-.elbp__footer__section.v3 .bottom .elbp__footer__widget.about a {
+.elbp__footer__section.v3 .top .elbp__footer__widget.about {
+    padding-left: 10px;
+}
+
+.elbp__footer__section.v3 .top .elbp__footer__widget.about a {
     display: flex;
     gap: 10px;
 }
 
-.elbp__footer__section.v3 .bottom .elbp__footer__widget.about a svg {
+.elbp__footer__section.v3 .top .elbp__footer__widget.about a svg {
     fill: #D8CBBC;
 }
 
-.elbp__footer__section.v3 .bottom .elbp__footer__widget a:hover svg {
+.elbp__footer__section.v3 .top .elbp__footer__widget a:hover svg {
     fill: var(--main-color)
 }
 
-.elbp__footer__section.v3 .bottom .elbp__footer__widget h2 {
+.elbp__footer__section.v3 .top .elbp__footer__widget h2 {
     font-weight: 600;
     margin-bottom: 34px;
 }
 
-.elbp__footer__section.v3 .bottom .elbpht__social__links li a {
+.elbp__footer__section.v3 .top .elbpht__social__links li a {
     color: #FFF;
 	font-size: 24px;
 }
 
-.elbp__footer__section.v3 .bottom .elbp__footer__widget.about a:hover,
-.elbp__footer__section.v3 .bottom .elbpht__social__links li a:hover {
+.elbp__footer__section.v3 .top .elbp__footer__widget li a:hover,
+.elbp__footer__section.v3 .top .elbp__footer__widget.about a:hover,
+.elbp__footer__section.v3 .top .elbpht__social__links li a:hover {
     color: var(--main-color);
 }
 
-
+@media (max-width: 767px) {
+    .elbp__footer__section.v3 .top .elbp__footer__widget.about {
+        text-align: center;
+    }
+    .elbp__footer__section.v3 .top .elbp__footer__widget h2 {
+        margin-bottom: 10px;
+    }
+    .elbp__footer__section.v3 .top .elbp__footer__widget.about a {
+        justify-content: center;
+    }
+    .elbp__footer__section.v3 .extra .item {
+        width: 100%;
+    }
+    .elbp__footer__section.v3 .extra .item .content {
+        gap: 8px;
+        align-items: flex-start;
+    }
+}
 /*** End of Footer V3 Section ***/
 
 /**
