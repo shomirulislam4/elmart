@@ -628,4 +628,18 @@
             });
         });
 
+    /*============================ Checkout 2 ============================*/
+       $(function(){
+            $('#elbp__co__shipping__method').on('click', function(){
+                $('.elbpcp__shipping__method').addClass('open')
+            })
+            $('#elbp__co__payment__method').on('click', function(){
+                $('.elbpcp__payment__method').addClass('open')
+            })
+            $('#elbp__co__additional__notes').on('click', function(){
+                $('.elbpcp__additional__notes').addClass('open')
+            })
+       });
+
+
 }) (jQuery);

@@ -551,7 +551,7 @@ input[type="radio"] {
 
 input[type="radio"]::before {
 	content: '';
-	background: var(--text-color);
+	background: transparent;
     width: 0;
 	height: 0;
 	position: absolute;
@@ -575,6 +575,7 @@ input[type="radio"]:checked {
 input[type="radio"]:checked::before {
     height: 12px;
     width: 12px;
+    background: var(--main-color);
 }
 
 /* Seperator */
@@ -5409,9 +5410,10 @@ input[type="radio"]:checked::before {
     margin-bottom: 28px;
 }
 
-.elbp__checkout__section input:not([type="checkbox"]),
+.elbp__checkout__section input:not([type="checkbox"],[type="radio"]),
 .elbp__checkout__section label,
-.elbpcp__delivery__information .phone input {
+.elbpcp__delivery__information .phone input,
+.elbp__checkout__section textarea {
     font-size: 16px;
     line-height: 150%;
     color: #807871;
@@ -5423,14 +5425,21 @@ input[type="radio"]:checked::before {
 }
 
 .elbpcp__delivery__information .phone,
-.elbp__checkout__section input:not([type="checkbox"]),
-.elbpcp__delivery__information .phone input {
+.elbp__checkout__section input:not([type="checkbox"],[type="radio"]),
+.elbpcp__delivery__information .phone input,
+.elbp__checkout__section textarea {
     width: 100%;
     height: 48px;
     border-radius: 8px;
     color: #807871;
     background: #EDE4D9;
     padding: 0 12px;
+}
+
+.elbp__checkout__section textarea {
+    height: 200px;
+    padding: 12px;
+    resize: none;
 }
 
 .elbpcp__delivery__information {
@@ -5449,8 +5458,15 @@ input[type="radio"]:checked::before {
     width: 48.5%;
 }
 
-.with__label.full {
+.with__label.full,
+.with__label__cbr {
     width: 100%;
+}
+
+.with__label__cbr {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .elbpcp__delivery__information .phone {
@@ -5498,6 +5514,115 @@ input[type="radio"]:checked::before {
 
 .elbp__checkout__address__info input[type="checkbox"] {
     margin-top: 4px;
+}
+
+/*** Variant 2 ***/
+.elbp__checkout__section.v2 form {
+    padding: 34px 32px;
+    margin-left: auto;
+    width: calc(100% - 60px);
+    position: relative;
+}
+
+.elbp__checkout__section.v2 form::before {
+    position: absolute;
+    top: 32px;
+    right: calc(100% + 17px);
+    content: '';
+    border: 1px solid #81786F;
+    border-radius: 50%;
+    color: #81786F;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 43px;
+    font-family: 'ClashDisplay', sans-serif;
+    text-align: center;
+    width: 43px;
+    height: 43px;
+}
+
+.elbp__checkout__section.v2 form.open::before {
+    border-color: var(--bg-black);
+    background: var(--bg-black);
+    color: var(--white-text);
+}
+
+.elbp__checkout__section.v2 form::after {
+	position: absolute;
+	top: 89px;
+	right: calc(100% + 38px);
+	content: '';
+	background: #81786F;
+	width: 1px;
+	height: 62%;
+}
+
+.elbp__checkout__section.v2 form.open::after {
+    height: calc(100% - 38px);
+}
+
+.elbp__checkout__section.v2 form:last-child::after {
+    display: none;
+}
+
+.elbp__checkout__section.v2 form:not(.elbpcp__delivery__information) {
+    max-height: 94px;
+    transition: 2s;
+    -moz-transition: 2s;
+    -webkit-transition: 2s;
+    -ms-transition: 2s;
+    -o-transition: 2s;
+}
+
+.elbp__checkout__section.v2 form .inner {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.elbp__checkout__section.v2 form:not(.elbpcp__delivery__information) .inner {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.elbp__checkout__section.v2 form.open:not(.elbpcp__delivery__information),
+.elbp__checkout__section.v2 form.open .inner {
+    max-height: 100%;
+}
+
+.elbp__checkout__section.v2 .elbp__button__a {
+    padding: 16px 25px;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.elbp__checkout__section.v2 .left__side {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.elbp__checkout__section.v2 .elbpcp__delivery__information {
+    margin-bottom: 0;
+}
+
+.elbp__checkout__section.v2 h5 {
+    color: var(--bg-black);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.elbp__checkout__section.v2 .elbpcp__delivery__information::before {
+    content: '1';
+}
+.elbp__checkout__section.v2 .elbpcp__shipping__method::before {
+    content: '2';
+}
+.elbp__checkout__section.v2 .elbpcp__payment__method::before {
+    content: '3';
+}
+.elbp__checkout__section.v2 .elbpcp__additional__notes::before {
+    content: '4';
 }
 
 /* ====================================================================
