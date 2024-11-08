@@ -42,7 +42,7 @@
             $('.els__search__button').on('click',function() {
                 $('.els__search__popup').addClass('show');
             })
-            $('.elbpsearch__close__btn').on('click',function() {
+            $('.elssearch__close__btn').on('click',function() {
                 $('.els__search__popup').removeClass('show');
             })
         });
@@ -136,8 +136,7 @@
     /*============================ Shop & Single Product Page ============================*/
         //All Nice Select (Shop Page)
         if ($('.els__shop__section').length) {
-            $('#elbpshop__sort').niceSelect();
-            $('#elbpshop__prodamount').niceSelect();
+            $('#').niceSelect();
         }
 
         //Price Filter
@@ -184,46 +183,21 @@
                 });
             });
         });
-
-        //Shop List And Gird View
-        $(function() {
-            $('.elbpshop__grid__button').click(function () {
-                if ($(window).width() < 576) {
-                    $('.els__products__grid .els__product__style').removeClass('list__view');
-                    return;
-                }
-        
-                $('.els__products__grid .els__product__style').toggleClass('list__view');
-
-                var icon = $(this).find('.icon');
-                if (icon.hasClass('fa-list-ul')) {
-                    icon.removeClass('fa-list-ul').addClass('fa-table-cells');
-                } else {
-                    icon.removeClass('fa-table-cells').addClass('fa-list-ul');
-                }
-            });
-            
-            $(window).resize(function () {
-                if ($(window).width() < 576) {
-                    $('.els__products__grid .els__product__style').removeClass('list__view');
-                }
-            });
-        });
         
         //Shop Sidebar
         $(function(){
             //Mobile Menu Main Show/Hide
-            $('.elbpshop__filter__btn').on('click', function(){
+            $('.elsshop__filter__btn').on('click', function(){
                 $('.els__shop__sidebar').addClass('show')
             })
-            $('.elbpshop__sidebar__closebtn').on('click', function(){
+            $('.elsshop__sidebar__closebtn').on('click', function(){
                 $('.els__shop__sidebar').removeClass('show')
             })
         });
 
         //Review Form Show/Hide
         $(function(){
-            $('#elbpReviewFormToggle').on('click', function(){
+            $('#elsReviewFormToggle').on('click', function(){
                 $('.els__review__form').toggleClass('show')
             })
         });

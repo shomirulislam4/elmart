@@ -29,7 +29,199 @@
         height: 4px !important;
         width: 4px !important;
     }
+    .medium__text {
+        font-size: 11px;
+        line-height: 17px;
+    }
     /*===== Home Page =====*/
+        /*Header*/
+        .els__header__section .container {
+            padding: 0;
+        }
+        .els__header__section .top {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-bottom: 5px;
+            gap: 5px;
+            flex-direction: column;
+        }
+        .els__header__section .top .promo__discount {
+            flex-direction: column;
+        }
+        .els__header__section .top .right__side {
+            gap: 5px;
+            flex-direction: column;
+        }
+        .els__header__section .top .right__side .nice-select .option,
+        .els__header__section .top .right__side .nice-select .current {
+            font-size: 13px;
+        }
+        .social__links li a {
+            padding: 0 4px;
+            font-size: 13px;
+        }
+        .nice-select .list {
+            left: unset;
+            right: 0;
+        }
+        .els__header__section .top .right__side .nice-select::after {
+            height: 6px;
+            margin-top: -5px;
+            width: 6px;
+        }
+        .els__header__section .bottom .logo {
+            width: 70px;
+        }
+        .els__header__section .bottom .right__side li {
+            padding: 0 2px;
+        }
+        .els__header__section .bottom .right__side li span {
+            display: none;
+        }
+        .els__header__section .bottom .right__side li svg {
+            height: 12px;
+            width: 12px;
+        }
+        .els__mmenu__btn i {
+            display: none;
+        }
+        .els__mmenu__btn {
+            padding: 3px 5px;
+            margin-left: 1px;
+        }
+        .btm__left__side .els__main__menu {
+            width: 176px;
+            padding: 15px 10px;
+        }
+        .btm__left__side .els__main__menu li a {
+            font-size: 12px;
+        }
+        .btm__left__side .els__main__menu .submenu.show {
+            padding-top: 10px;
+        }
+        .btm__left__side .els__mblmenu__closebtn {
+            left: calc(100% + 2px);
+            height: 60px;
+            width: 24px;
+            line-height: 60px;
+            font-size: 16px;
+            border-radius: 4px;
+        }
+        /*Search Popup*/
+        .elbp__search__popup form {
+            height: 40px;
+            margin: 15px 0;
+        }
+        .elbp__search__popup input {
+            font-size: 14px;
+        }
+        .elbpsearch__prod__result__area .elbpsearch__result__header {
+            margin-bottom: 15px;
+        }
+        .elbpsearch__wrapper {
+            width: 95vw;
+            padding: 25px 10px;
+        }
+        .elbp__search__popup .elbpsearch__close__btn {
+            font-size: 20px;
+        }
+        .elbpsearch__result__header,
+        .elbpsearch__result__header h6 {
+            font-size: 13px;
+        }
+        .elbpsearch__prod__result__area .search__content .product__rating {
+            margin: 0 auto 10px auto;
+            flex-direction: column;
+        }
+        .elbpsearch__prod__result__area .search__content .product__title a,
+        .elbpsearch__prod__result__area .search__content .product__price__variant h4 {
+            font-size: 12px;
+        }
+        .elbpsearch__prod__result__area .search__content .product__rating .total__rating {
+            margin-left: 0;
+            margin-top: 8px;
+        }
+        .elbpsearch__prod__result__area .search__content .product__rating .rating__icon,
+        .elbpsearch__prod__result__area .search__content .product__rating .total__rating,
+        .elbpsearch__prod__result__area .search__content .product__rating .total__rating span {
+            font-size: 14px;
+        }
+        .elbpsearch__prod__result__area .elbpsearch__search__result .search-product {
+            padding: 20px 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        .search__product__img {
+            margin-bottom: 25px;
+        }
+        .elbpsearch__prod__result__area .search__product__img a {
+            margin-right: 10px;
+        }
+        .elbpsearch__prod__result__area .search__content {
+            padding-right: 0;
+            text-align: center;
+        }
+        .elbpsearch__prod__result__area .search__content .product__cart {
+            all: unset;
+            display: flex;
+            position: relative;
+            justify-content: center;
+        }
+        .elbpsearch__prod__result__area .search__content .product__cart a {
+            height: 35px;
+            width: 35px;
+            line-height: 35px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        /*Cart Slider*/
+        .elbp__cart__slider .main__cart__area {
+            width: 180px;
+            padding: 10px 5px;
+        }
+        .elbp__cart__slider .elbp__cart__closebtn{
+            right: 182px;
+            height: 80px;
+            width: 16px;
+            line-height: 80px;
+            font-size: 14px;
+            border-radius: 5px;
+        }
+        .elbp__cart__slider .main__cart__area .elbp__cart__header h3 {
+            font-size: 20px;
+            line-height: 20px;
+            margin-bottom: 0;
+        }
+        .elbp__cart__slider .main__cart__area .elbp__cart__header span {
+            font-size: 20px;
+            line-height: 22px;
+            height: 22px;
+            margin-bottom: 0;
+            font-weight: 400;
+            padding: 0 8px;
+        }
+        .elbp__cart__slider .main__cart__area .elbp__cart__cta {
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+        }
+        .elbp__cart__product .content {
+            width: 100%;
+        }
+        .elbp__cart__product {
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+            flex-direction: column;
+        }
+        .elbp__cart__product a {
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+        }
+        .elbp__cart__product .price__qty {
+            justify-content: center;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
@@ -63,7 +255,145 @@
         height: 6px !important;
         width: 6px !important;
     }
+    .medium__text {
+        font-size: 13px;
+        line-height: 19px;
+    }
     /*===== Home Page =====*/
+        /*Header*/
+        .els__header__section .top {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-bottom: 5px;
+            gap: 5px;
+            flex-direction: column;
+        }
+        .els__header__section .top .right__side .nice-select .option,
+        .els__header__section .top .right__side .nice-select .current {
+            font-size: 13px;
+        }
+        .social__links li a {
+            padding: 0 4px;
+            font-size: 13px;
+        }
+        .nice-select .list {
+            left: unset;
+            right: 0;
+        }
+        .els__header__section .bottom .logo {
+            width: 80px;
+        }
+        .els__header__section .top .right__side {
+            gap: 20px;
+        }
+        .els__header__section .bottom .right__side li {
+            padding: 0 4px;
+        }
+        .els__header__section .bottom .right__side li span {
+            display: none;
+        }
+        .els__header__section .bottom .right__side li svg {
+            height: 13px;
+            width: 13px;
+        }
+        .els__mmenu__btn i {
+            display: none;
+        }
+        .els__mmenu__btn {
+            padding: 3px 10px;
+        }
+        .btm__left__side .els__main__menu {
+            width: 255px;
+            padding: 20px 15px;
+        }
+        .btm__left__side .els__main__menu li a {
+            font-size: 14px;
+        }
+        .btm__left__side .els__main__menu .submenu.show {
+            padding-top: 10px;
+        }
+        .btm__left__side .els__mblmenu__closebtn {
+            left: calc(100% + 4px);
+            height: 60px;
+            width: 24px;
+            line-height: 60px;
+            font-size: 16px;
+            border-radius: 8px;
+        }
+        /*Search Popup*/
+        .elbpsearch__wrapper {
+            width: 90vw;
+            padding: 25px;
+        }
+        .elbpsearch__prod__result__area .search__content .product__rating {
+            margin: 0 auto 10px auto;
+        }
+        .elbp__search__popup .elbpsearch__close__btn {
+            font-size: 20px;
+        }
+        .elbpsearch__prod__result__area .elbpsearch__search__result .search-product {
+            padding: 20px 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        .search__product__img {
+            margin-bottom: 25px;
+        }
+        .elbpsearch__prod__result__area .search__product__img a {
+            margin-right: 10px;
+        }
+        .elbpsearch__prod__result__area .search__content {
+            padding-right: 0;
+            text-align: center;
+        }
+        .elbpsearch__prod__result__area .search__content .product__cart {
+            all: unset;
+            display: flex;
+            position: relative;
+            justify-content: center;
+        }
+        .elbpsearch__prod__result__area .search__content .product__cart a {
+            margin-right: 10px;
+        }
+        /*Cart Slider*/
+        .elbp__cart__slider .main__cart__area {
+            width: 255px;
+            padding: 20px 10px;
+        }
+        .elbp__cart__slider .elbp__cart__closebtn {
+            right: 257px;
+            height: 30px;
+            width: 30px;
+            line-height: 30px;
+            font-size: 14px;
+        }
+        .elbp__cart__slider .main__cart__area .elbp__cart__header h3{
+            font-size: 24px;
+            line-height: 24px;
+            margin-bottom: 0;
+        }
+        .elbp__cart__slider .main__cart__area .elbp__cart__header span {
+            font-size: 24px;
+            line-height: 26px;
+            height: 26px;
+            margin-bottom: 0;
+            font-weight: 400;
+            padding: 0 8px;
+        }
+        .elbp__cart__product .image {
+            width: 80px;
+            height: 80px;
+        }
+        .elbp__cart__product a,
+        .elbp__cart__product h4 {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .elbp__cart__product .content {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -97,7 +427,101 @@
         height: 6px !important;
         width: 6px !important;
     }
+    .medium__text {
+        font-size: 13px;
+        line-height: 19px;
+    }
     /*===== Home Page =====*/
+        /*Header*/
+        .els__header__section .top {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-bottom: 5px;
+            gap: 5px;
+            flex-direction: column;
+        }
+        .els__header__section .top .right__side .nice-select .option,
+        .els__header__section .top .right__side .nice-select .current {
+            font-size: 13px;
+        }
+        .social__links li a {
+            padding: 0 4px;
+            font-size: 13px;
+        }
+        .nice-select .list {
+            left: unset;
+            right: 0;
+        }
+        .els__header__section .bottom .logo {
+            width: 100px;
+        }
+        .els__header__section .bottom .right__side li {
+            gap: 4px;
+            padding: 0 4px;
+        }
+        .els__header__section .bottom .right__side li span {
+            display: none;
+        }
+        .els__header__section .bottom .right__side li svg {
+            height: 15px;
+            width: 15px;
+        }
+        .btm__left__side .els__main__menu {
+            width: 350px;
+            padding: 20px;
+        }
+        .btm__left__side .els__main__menu li a {
+            font-size: 14px;
+        }
+        .btm__left__side .els__main__menu .submenu.show {
+            padding-top: 10px;
+        }
+        /*Search Popup*/
+        .elbpsearch__wrapper {
+            width: 80vw;
+            padding: 25px;
+        }
+        .elbp__search__popup .elbpsearch__close__btn {
+            font-size: 20px;
+        }
+        .elbpsearch__prod__result__area .elbpsearch__search__result .search-product {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        .search__product__img {
+            margin-bottom: 15px;
+        }
+        .elbpsearch__prod__result__area .search__product__img a {
+            margin-right: 10px;
+        }
+        .elbpsearch__prod__result__area .search__content .product__title a,
+        .elbpsearch__prod__result__area .search__content .product__price__variant h4 {
+            font-size: 16px;
+        }
+        .elbpsearch__prod__result__area .search__content .product__rating .rating__icon,
+        .elbpsearch__prod__result__area .search__content .product__rating .total__rating,
+        .elbpsearch__prod__result__area .search__content .product__rating .total__rating span {
+            font-size: 12px;
+        }
+        /*Cart Slider*/
+        .elbp__cart__slider .main__cart__area {
+            width: 350px;
+        }
+        .elbp__cart__slider .elbp__cart__closebtn {
+            right: 360px;
+        }
+        .elbp__cart__product .image {
+            width: 90px;
+            height: 90px;
+        }
+        .elbp__cart__product {
+            gap: 10px;
+        }
+        .elbp__cart__product a {
+            font-size: 16px;
+            line-height: 22px;
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -131,7 +555,80 @@
         height: 8px !important;
         width: 8px !important;
     }
+    .medium__text {
+        font-size: 13px;
+        line-height: 19px;
+    }
     /*===== Home Page =====*/
+        /*Header*/
+        .els__header__section .top {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .els__header__section .top .right__side .nice-select .option,
+        .els__header__section .top .right__side .nice-select .current {
+            font-size: 13px;
+        }
+        .social__links li a {
+            padding: 0 4px;
+            font-size: 13px;
+        }
+        .nice-select .list {
+            left: unset;
+            right: 0;
+        }
+        .els__header__section .bottom .logo {
+            width: 100px;
+        }
+        .els__header__section .bottom .right__side li {
+            gap: 4px;
+            padding: 0 4px;
+        }
+        .els__header__section .bottom .right__side li svg {
+            height: 13px;
+            width: 13px;
+        }
+        .btm__left__side .els__main__menu li a {
+            font-size: 14px;
+        }
+        .btm__left__side .els__main__menu .submenu.show {
+            padding-top: 10px;
+        }
+        /*Search Popup*/
+        .elbpsearch__wrapper {
+            width: 80vw;
+            padding: 25px;
+        }
+        .elbp__search__popup .elbpsearch__close__btn {
+            font-size: 20px;
+        }
+        .elbpsearch__prod__result__area .elbpsearch__search__result .search-product {
+            padding: 15px;
+        }
+        .elbpsearch__prod__result__area .search__product__img a {
+            margin-right: 15px;
+        }
+        .elbpsearch__prod__result__area .search__content .product__title a,
+        .elbpsearch__prod__result__area .search__content .product__price__variant h4 {
+            font-size: 16px;
+        }
+        .elbpsearch__prod__result__area .search__content .product__rating .rating__icon,
+        .elbpsearch__prod__result__area .search__content .product__rating .total__rating,
+        .elbpsearch__prod__result__area .search__content .product__rating .total__rating span {
+            font-size: 12px;
+        }
+        /*Cart Slider*/
+        .elbp__cart__slider .main__cart__area {
+            width: 350px;
+        }
+        .elbp__cart__slider .elbp__cart__closebtn {
+            right: 360px;
+        }
+        .elbp__cart__product {
+            gap: 10px;
+        }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -165,10 +662,57 @@
         height: 10px !important;
         width: 10px !important;
     }
+    .medium__text {
+        font-size: 13px;
+        line-height: 19px;
+    }
     /*===== Home Page =====*/
+        /*Header*/
+        .els__header__section .top .right__side {
+            gap: 15px;
+        }
+        .els__header__section .top .right__side .nice-select .option,
+        .els__header__section .top .right__side .nice-select .current {
+            font-size: 13px;
+        }
+        .social__links li a {
+            padding: 0 4px;
+            font-size: 13px;
+        }
+        .nice-select .list {
+            left: unset;
+            right: 0;
+        }
+        .els__header__section .bottom .right__side li {
+            gap: 6px;
+        }
+        .els__header__section .bottom .right__side li svg {
+            height: 13px;
+            width: 13px;
+        }
+        /*Search Popup*/
+        .elbpsearch__wrapper {
+            width: 75vw;
+        }
+        .elbpsearch__prod__result__area .elbpsearch__search__result .search-product {
+            padding: 20px;
+        }
+        .elbpsearch__prod__result__area .search__product__img a {
+            margin-right: 20px;
+        }
+        /*Cart Slider*/
+        .elbp__cart__product {
+            gap: 10px;
+        }
+        .elbp__cart__slider .main__cart__area {
+            width: 350px;
+        }
+        .elbp__cart__slider .elbp__cart__closebtn {
+            right: 360px;
+        }
 }
 
-@media (min-width: 992px) and (max-width: 1139px) {
+@media (min-width: 992px) and (max-width: 1199px) {
     section {
         margin-top: 70px;
     }
@@ -199,11 +743,34 @@
         height: 10px !important;
         width: 10px !important;
     }
+    .medium__text {
+        font-size: 15px;
+        line-height: 22px;
+    }
     /*===== Home Page =====*/
+        /*Header*/
+        .els__header__section .top .right__side .nice-select .option,
+        .els__header__section .top .right__side .nice-select .current {
+            font-size: 15px;
+        }
+        .social__links li a {
+            padding: 0 7px;
+            font-size: 15px;
+        }
+        .nice-select.open .list {
+            left: unset;
+            right: 0;
+        }
+        .els__main__menu li a {
+            padding: 0 13px;
+        }
+        /*Search Popup*/
+        .elbpsearch__wrapper {
+            width: 70vw;
+        }
 }
 
-@media (min-width: 1140px) and (max-width: 1199px) {
-    /*===== Home Page =====*/
+@media (min-width: 1200px) and (max-width: 1299px) {
         section {
             margin-top: 80px;
         }
