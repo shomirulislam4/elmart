@@ -22,45 +22,45 @@
 
     /*============================ Home Page ============================*/
         //All Nice Select
-        if ($('.elbp__header__section').length) {
-            $('#elbphtLanguage').niceSelect();
-            $('#elbphtCurrency').niceSelect();
+        if ($('.els__header__section').length) {
+            $('#elsLanguageSelect').niceSelect();
+            $('#elsCurrencySelect').niceSelect();
         }
 
         //Cart Slider
         $(function(){
-            $('.elbp__cart__button').on('click', function(){
-                $('.elbp__cart__slider').addClass('show')
+            $('.els__cart__button').on('click', function(){
+                $('.els__cart__slider').addClass('show')
             })
-            $('.elbp__cart__closebtn').on('click', function(){
-                $('.elbp__cart__slider').removeClass('show')
+            $('.els__cart__closebtn').on('click', function(){
+                $('.els__cart__slider').removeClass('show')
             })
         });
 
         //Search Popup
         $(function(){
-            $('.elbp__search__button').on('click',function() {
-                $('.elbp__search__popup').addClass('show');
+            $('.els__search__button').on('click',function() {
+                $('.els__search__popup').addClass('show');
             })
             $('.elbpsearch__close__btn').on('click',function() {
-                $('.elbp__search__popup').removeClass('show');
+                $('.els__search__popup').removeClass('show');
             })
         });
 
         //Mobile Menu
         $(function(){
             //Mobile Menu Main Show/Hide
-            $('.elbp__mmenu__btn').on('click', function(){
-                $('.elbp__mobile__menu').addClass('show')
+            $('.els__mmenu__btn').on('click', function(){
+                $('.btm__left__side').addClass('show')
             })
-            $('.elbp__mblmenu__closebtn').on('click', function(){
-                $('.elbp__mobile__menu').removeClass('show')
+            $('.els__mblmenu__closebtn').on('click', function(){
+                $('.btm__left__side').removeClass('show')
             })
 
             //Mobile Menu Submenu Show/hide
-            $('.mobile__submenu').on('click', function() {
-                var fessubmenu = $(this).find('.l2__submenu');
-                fessubmenu.toggleClass('show');
+            $('.has__submenu').on('click', function() {
+                var submenu = $(this).find('.submenu');
+                submenu.toggleClass('show');
             });
         });
 
@@ -100,10 +100,10 @@
                 return (num < 10 ? '0' : '') + num;
             }
         
-            $(".elbp__countdown__timer .days").html(addLeadingZero(days));
-            $(".elbp__countdown__timer .hours").html(addLeadingZero(hours));
-            $(".elbp__countdown__timer .minutes").html(addLeadingZero(minutes));
-            $(".elbp__countdown__timer .seconds").html(addLeadingZero(seconds));        
+            $(".els__countdown__timer .days").html(addLeadingZero(days));
+            $(".els__countdown__timer .hours").html(addLeadingZero(hours));
+            $(".els__countdown__timer .minutes").html(addLeadingZero(minutes));
+            $(".els__countdown__timer .seconds").html(addLeadingZero(seconds));        
         }
         setInterval(function() {makeTimer();}, 1000);
         
@@ -116,7 +116,7 @@
             function fesnwsltrPopupScroll() {
             if (!isScrollTriggered && $(window).scrollTop() > scrollThreshold) {
                 isScrollTriggered = true;
-                $('.elbp__newsletter__popup').addClass('show');
+                $('.els__newsletter__popup').addClass('show');
             }
             }
         
@@ -125,8 +125,8 @@
             fesnwsltrPopupScroll();
             });
         
-            $('.elbp__nwltrpop__close').on('click', function() {
-            $('.elbp__newsletter__popup').removeClass('show');
+            $('.els__nwltrpop__close').on('click', function() {
+            $('.els__newsletter__popup').removeClass('show');
             });
         });
 
@@ -135,7 +135,7 @@
 
     /*============================ Shop & Single Product Page ============================*/
         //All Nice Select (Shop Page)
-        if ($('.elbp__shop__section').length) {
+        if ($('.els__shop__section').length) {
             $('#elbpshop__sort').niceSelect();
             $('#elbpshop__prodamount').niceSelect();
         }
@@ -189,11 +189,11 @@
         $(function() {
             $('.elbpshop__grid__button').click(function () {
                 if ($(window).width() < 576) {
-                    $('.elbp__products__grid .elbp__product__style').removeClass('list__view');
+                    $('.els__products__grid .els__product__style').removeClass('list__view');
                     return;
                 }
         
-                $('.elbp__products__grid .elbp__product__style').toggleClass('list__view');
+                $('.els__products__grid .els__product__style').toggleClass('list__view');
 
                 var icon = $(this).find('.icon');
                 if (icon.hasClass('fa-list-ul')) {
@@ -205,7 +205,7 @@
             
             $(window).resize(function () {
                 if ($(window).width() < 576) {
-                    $('.elbp__products__grid .elbp__product__style').removeClass('list__view');
+                    $('.els__products__grid .els__product__style').removeClass('list__view');
                 }
             });
         });
@@ -214,17 +214,17 @@
         $(function(){
             //Mobile Menu Main Show/Hide
             $('.elbpshop__filter__btn').on('click', function(){
-                $('.elbp__shop__sidebar').addClass('show')
+                $('.els__shop__sidebar').addClass('show')
             })
             $('.elbpshop__sidebar__closebtn').on('click', function(){
-                $('.elbp__shop__sidebar').removeClass('show')
+                $('.els__shop__sidebar').removeClass('show')
             })
         });
 
         //Review Form Show/Hide
         $(function(){
             $('#elbpReviewFormToggle').on('click', function(){
-                $('.elbp__review__form').toggleClass('show')
+                $('.els__review__form').toggleClass('show')
             })
         });
 
