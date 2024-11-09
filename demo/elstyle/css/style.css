@@ -101,7 +101,6 @@ p,
 a,
 li,
 button,
-input,
 label,
 textarea,
 th, td,
@@ -115,7 +114,8 @@ th, td,
 }
 
 .medium__text,
-.small__text {
+.small__text,
+input {
     color: var(--text-color);
     font-size: 16px;
     line-height: 24px;
@@ -158,7 +158,7 @@ h1 {
 }
 
 h2 {
-    font-size: 38px;
+    font-size: 46px;
     line-height: 120%;
 }
 
@@ -174,6 +174,11 @@ h4 {
 
 h5 {
     font-size: 20px;
+    line-height: 120%;
+}
+
+h6 {
+    font-size: 18px;
     line-height: 120%;
 }
 
@@ -259,7 +264,7 @@ section {
 
 .els__button__b {
     display: block;
-    padding: 20px 32px;
+    padding: 19px 31px;
     border-radius: 8px;
     font-size: 16px;
     line-height: 16px;
@@ -456,14 +461,32 @@ section {
     }
 }
 
+/* Input Style */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input {
+    height: 46px;
+    background: white;
+    padding: 0 19px;
+    font-size: 16px;
+    color: var(--text-color);
+    border-radius: 8px;
+    box-shadow: 0 0 0 1px var(--text-color);
+    width: 100%;
+}
+
 /* Checkbox Input */
 input[type="checkbox"] {
     -webkit-appearance: none;
     appearance: none;
     background: transparent;
     margin: 0;
-    width: 20px;
-    height: 20px;
+    width: 20px !important;
+    height: 20px !important;
     border: 1px solid var(--text-color);
     border-radius: 2px;
     position: relative;
@@ -494,14 +517,14 @@ input[type="checkbox"]::before {
 }
 
 input[type="checkbox"]:checked {
-    height: 20px;
-    width: 20px;
+    height: 20px !important;
+    width: 20px !important;
     border-color: var(--main-color);
 }
 
 input[type="checkbox"]:checked::before {
-    height: 12px;
-    width: 12px;
+    height: 12px !important;
+    width: 12px !important;
 }
 
 /* Radio Input */
@@ -510,8 +533,8 @@ input[type="radio"] {
     appearance: none;
     background: transparent;
     margin: 0;
-    width: 20px;
-    height: 20px;
+    width: 20px !important;
+    height: 20px !important;
     border: 1px solid var(--text-color);
     border-radius: 2px;
     position: relative;
@@ -538,8 +561,8 @@ input[type="radio"]::before {
 }
 
 input[type="radio"]:checked {
-    height: 20px;
-    width: 20px;
+    height: 20px !important;
+    width: 20px !important;
     border-color: var(--main-color);
 }
 
@@ -568,91 +591,7 @@ input[type="radio"]:checked::before {
 
 /** Section Title **/
 .els__section__title {
-    text-align: center;
     margin-bottom: 50px;
-}
-
-/*With Text*/
-.els__section__title.with__text {
-    display: flex;
-    text-align: left;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.els__section__title.with__text h2 {
-    width: 40%;
-    font-weight: 600;
-}
-
-.els__section__title.with__text h2 span {
-    font-weight: 600;
-}
-
-.els__section__title.with__text .text {
-    width: 50%;
-    border-left: 2px solid #B4ABA4;
-    padding-left: 20px;
-    color: #7C7872;
-    margin: 0;
-}
-
-/*With Subtitle*/
-.els__section__title.with__subtitle {
-    text-align: left;
-    margin-bottom: 20px;
-}
-
-.els__section__title.with__subtitle .subtitle {
-    font-size: 14px;
-    color: #B4ABA4;
-    margin: 0;
-}
-
-/*With Line*/
-.els__section__title.with__line h2 {
-    color: var(--bg-black);
-    font-weight: 600;
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
-}
-
-.els__section__title.with__line h2 span {
-    font-weight: 600;
-}
-
-.els__section__title.with__line h2 span {
-    position: relative;
-}
-
-.els__section__title.with__line h2 span::after {
-    position: absolute;
-    height: 2px;
-    width: 1440px;
-    content: '';
-    background: #CDC3B8;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 100%;
-}
-
-/* Post & Pages Markup */
-.els__post__page li {
-    padding: 16px 0;
-    margin-left: 23px;
-    list-style: disc;
-}
-
-.els__post__page p,
-.els__post__page h2,
-.els__post__page h3,
-.els__post__page h4 {
-    margin-bottom: 24px;
-}
-
-.els__post__page ul {
-    margin-bottom: 30px;
 }
 
 /* ====================================================================
@@ -795,7 +734,7 @@ input[type="radio"]:checked::before {
 
     .els__main__menu li .submenu {
         display: none;
-        width: 150px;
+        width: 180px;
         height: fit-content;
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
         position: absolute;
@@ -825,6 +764,11 @@ input[type="radio"]:checked::before {
 
     .els__main__menu li .submenu li:hover {
         background: var(--main-color);
+        transition: 0.3s;
+        -moz-transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
     }
 
     .els__main__menu li .submenu li:hover a {
@@ -1061,7 +1005,8 @@ input[type="radio"]:checked::before {
     padding: 40px;
     border-radius: 10px;
     position: relative;
-    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
  
 .els__search__popup form {
@@ -1244,6 +1189,32 @@ input[type="radio"]:checked::before {
 .elssearch__prod__result__area .search__content .product__cart a:hover {
     color: #DBE3E9;
     background: var(--main-color);
+}
+
+/** Login Popup **/
+.elslogin__wrapper {
+    width: 500px;
+    height: fit-content;
+}
+
+.elslogin__wrapper form {
+    align-items: center;
+}
+
+.elslogin__wrapper form h3 {
+    margin: 0;
+}
+
+.elslogin__wrapper .elslogin__login__wrap,
+.elslogin__wrapper .elslogin__register__wrap,
+.elslogin__wrapper .elslogin__forgopass__wrap {
+    display: none;
+}
+
+.elslogin__wrapper .elslogin__login__wrap.show,
+.elslogin__wrapper .elslogin__register__wrap.show,
+.elslogin__wrapper .elslogin__forgopass__wrap.show {
+    display: flex;
 }
 
 /** Cart Slider **/

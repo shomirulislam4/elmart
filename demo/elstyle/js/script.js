@@ -64,6 +64,34 @@
             });
         });
 
+        //Login Popup
+        $(function(){
+            //main
+            $('.els__login__button').on('click',function() {
+                $('.els__login__popup').addClass('show');
+            });
+            $('.elslogin__closebtn').on('click',function() {
+                $('.els__login__popup').removeClass('show');
+            });
+
+            //form
+            $('.elslogin__idnthvacc').on('click', function () {
+                $('.elslogin__register__wrap').addClass('show');
+                $('.elslogin__login__wrap').removeClass('show')
+                $('.elslogin__forgopass__wrap').removeClass('show')
+            });
+            $('.elslogin__ialrdyhvacc').on('click', function () {
+                $('.elslogin__login__wrap').addClass('show');
+                $('.elslogin__register__wrap').removeClass('show')
+                $('.elslogin__forgopass__wrap').removeClass('show')
+            });
+            $('.elslogin__forgopass').on('click', function () {
+                $('.elslogin__forgopass__wrap').addClass('show');
+                $('.elslogin__login__wrap').removeClass('show')
+                $('.elslogin__register__wrap').removeClass('show')
+            });
+        });
+
         //Quantity Widget
         $(function(){
             $('.quantity__controls').each(function() {

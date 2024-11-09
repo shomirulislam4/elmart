@@ -29,9 +29,40 @@
         height: 4px !important;
         width: 4px !important;
     }
-    .medium__text {
+    .medium__text,
+    input {
         font-size: 11px;
         line-height: 17px;
+    }
+    input {
+        padding: 0 8px;
+        height: 40px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 22px;
+    }
+    h4 {
+        font-size: 16px;
+    }
+    h5 {
+        font-size: 12px;
+    }
+    .els__button__a {
+        padding: 10px 22px;
+        font-size: 12px;
+    }
+    .els__button__b {
+        padding: 9px 21px;
+        font-size: 12px;
+    }
+    form {
+        gap: 10px;
     }
     /*===== Home Page =====*/
         /*Header*/
@@ -122,7 +153,8 @@
             width: 95vw;
             padding: 25px 10px;
         }
-        .elbp__search__popup .elbpsearch__close__btn {
+        .elbp__search__popup .elbpsearch__close__btn,
+        .els__login__popup .elslogin__closebtn {
             font-size: 20px;
         }
         .elbpsearch__result__header,
@@ -222,6 +254,11 @@
         .elbp__cart__product .price__qty {
             justify-content: center;
         }
+        /*Login Popup*/
+        .elslogin__wrapper {
+            width: 180px;
+            padding: 20px 10px;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
@@ -240,7 +277,7 @@
     blockquote,
     .accordion-item .accordion-button,
     .accordion-body {
-        font-size: 12px;
+        font-size: 13px;
         line-height: 20px;
     }
     input[type="checkbox"],
@@ -255,9 +292,39 @@
         height: 6px !important;
         width: 6px !important;
     }
-    .medium__text {
+    .medium__text,
+    input {
         font-size: 13px;
         line-height: 19px;
+    }
+    input {
+        padding: 0 12px;
+    }
+    h1 {
+        font-size: 42px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    h5 {
+        font-size: 14px;
+    }
+    .els__button__a {
+        padding: 12px 25px;
+        font-size: 13px;
+    }
+    .els__button__b {
+        padding: 11px 24px;
+        font-size: 13px;
+    }
+    form {
+        gap: 10px;
     }
     /*===== Home Page =====*/
         /*Header*/
@@ -328,7 +395,8 @@
         .elbpsearch__prod__result__area .search__content .product__rating {
             margin: 0 auto 10px auto;
         }
-        .elbp__search__popup .elbpsearch__close__btn {
+        .elbp__search__popup .elbpsearch__close__btn,
+        .els__login__popup .elslogin__closebtn {
             font-size: 20px;
         }
         .elbpsearch__prod__result__area .elbpsearch__search__result .search-product {
@@ -394,6 +462,11 @@
             flex-direction: column;
             gap: 10px;
         }
+        /*Login Popup*/
+        .elslogin__wrapper {
+            width: 270px;
+            padding: 25px 20px;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -427,9 +500,39 @@
         height: 6px !important;
         width: 6px !important;
     }
-    .medium__text {
+    .medium__text,
+    input {
         font-size: 13px;
         line-height: 19px;
+    }
+    input {
+        padding: 0 15px;
+    }
+    h1 {
+        font-size: 45px;
+    }
+    h2 {
+        font-size: 34px;
+    }
+    h3 {
+        font-size: 26px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    h5 {
+        font-size: 15px;
+    }
+    .els__button__a {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+    .els__button__b {
+        padding: 11px 24px;
+        font-size: 14px;
+    }
+    form {
+        gap: 10px;
     }
     /*===== Home Page =====*/
         /*Header*/
@@ -481,7 +584,8 @@
             width: 80vw;
             padding: 25px;
         }
-        .elbp__search__popup .elbpsearch__close__btn {
+        .elbp__search__popup .elbpsearch__close__btn,
+        .els__login__popup .elslogin__closebtn {
             font-size: 20px;
         }
         .elbpsearch__prod__result__area .elbpsearch__search__result .search-product {
@@ -522,6 +626,11 @@
             font-size: 16px;
             line-height: 22px;
         }
+        /*Login Popup*/
+        .elslogin__wrapper {
+            width: 385px;
+            padding: 30px 25px;
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -555,9 +664,36 @@
         height: 8px !important;
         width: 8px !important;
     }
-    .medium__text {
+    .medium__text,
+    input {
         font-size: 13px;
         line-height: 19px;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    h2 {
+        font-size: 38px;
+    }
+    h3 {
+        font-size: 28px;
+    }
+    h4 {
+        font-size: 22px;
+    }
+    h5 {
+        font-size: 18px;
+    }
+    .els__button__a {
+        padding: 14px 28px;
+        font-size: 14px;
+    }
+    .els__button__b {
+        padding: 13px 27px;
+        font-size: 14px;
+    }
+    form {
+        gap: 14px;
     }
     /*===== Home Page =====*/
         /*Header*/
@@ -601,7 +737,8 @@
             width: 80vw;
             padding: 25px;
         }
-        .elbp__search__popup .elbpsearch__close__btn {
+        .elbp__search__popup .elbpsearch__close__btn,
+        .els__login__popup .elslogin__closebtn {
             font-size: 20px;
         }
         .elbpsearch__prod__result__area .elbpsearch__search__result .search-product {
@@ -647,7 +784,7 @@
     blockquote,
     .accordion-item .accordion-button,
     .accordion-body {
-        font-size: 14px;
+        font-size: 15px;
         line-height: 22px;
     }
     input[type="checkbox"],
@@ -662,9 +799,33 @@
         height: 10px !important;
         width: 10px !important;
     }
-    .medium__text {
+    .medium__text,
+    input {
         font-size: 13px;
         line-height: 19px;
+    }
+    form {
+        gap: 15px;
+    }
+    h1 {
+        font-size: 55px;
+    }
+    h2 {
+        font-size: 42px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    .els__button__a {
+        padding: 16px 30px;
+        font-size: 15px;
+    }
+    .els__button__b {
+        padding: 15px 29px;
+        font-size: 15px;
+    }
+    form {
+        gap: 18px;
     }
     /*===== Home Page =====*/
         /*Header*/
@@ -728,8 +889,8 @@
     blockquote,
     .accordion-item .accordion-button,
     .accordion-body {
-        font-size: 14px;
-        line-height: 22px;
+        font-size: 16px;
+        line-height: 24px;
     }
     input[type="checkbox"],
     input[type="checkbox"]:checked,
@@ -743,9 +904,19 @@
         height: 10px !important;
         width: 10px !important;
     }
-    .medium__text {
+    .medium__text,
+    input {
         font-size: 15px;
         line-height: 22px;
+    }
+    h1 {
+        font-size: 60px;
+    }
+    .els__button__a {
+        padding: 18px 32px;
+    }
+    .els__button__b {
+        padding: 17px 31px;
     }
     /*===== Home Page =====*/
         /*Header*/
@@ -771,7 +942,7 @@
 }
 
 @media (min-width: 1200px) and (max-width: 1299px) {
-        section {
-            margin-top: 80px;
-        }
+    section {
+        margin-top: 80px;
+    }
 }

@@ -244,9 +244,42 @@
         </div>
     </div>
     <!-- Login Popup -->
-     <div class="els__login__popup show">
+     <div class="els__login__popup">
          <div class="elslogin__wrapper">
             <button class="elslogin__closebtn"><i class="fa-regular fa-circle-xmark"></i></button>
+
+            <form class="elslogin__login__wrap show">
+                <h3 class="fw-bold">Sign In</h3>
+                <p class="medium__text text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, ex!</p>
+                <input type="email" name="elsloginLogin" id="elsloginLoginEmail" placeholder="Email">
+                <input type="password" name="elsloginLogin" id="elsloginLoginPass" placeholder="Password">
+                <button type="submit" class="els__button__a with__arrow">Sign In</button>
+                <div class="links text-center">
+                    <a href="javascript:void(0);" class="elslogin__idnthvacc">I don't have an account</a>
+                    <a href="javascript:void(0);" class="elslogin__forgopass">Forgot Password?</a>
+                </div>
+            </form>
+
+            <form action="#" class="elslogin__register__wrap">
+                <h3 class="fw-bold">Sign Up</h3>
+                <p class="medium__text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quae magni, harum sed ipsum dolores.</p>
+                <input type="email" name="elsloginRegister" id="elsloginRegisterEmail" placeholder="Email">
+                <input type="password" name="elsloginRegister" id="elsloginRegisterPass" placeholder="Password">
+                <button type="submit" class="els__button__a with__arrow">Sign up</button>
+                <div class="links text-center">
+                    <a href="javascript:void(0);" class="elslogin__ialrdyhvacc">I already have an account</a>
+                </div>
+            </form>
+
+            <form action="#" class="elslogin__forgopass__wrap">
+                <h3 class="fw-bold">Forgot Password</h3>
+                <p class="medium__text text-center">Please, enter the email address associated with your account.</p>
+                <input type="email" name="elsloginForgoPass" id="elsloginForgoPassEmail" placeholder="Email">
+                <button type="submit" class="els__button__a with__arrow">Reset</button>
+                <div class="links text-center">
+                    <a href="javascript:void(0);" class="elslogin__ialrdyhvacc">Return to login</a>
+                </div>
+            </form>
 
         </div>
      </div>
