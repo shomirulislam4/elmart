@@ -42,7 +42,7 @@
         font-size: 40px;
     }
     h2 {
-        font-size: 30px;
+        font-size: 26px;
     }
     h3 {
         font-size: 22px;
@@ -259,6 +259,34 @@
             width: 180px;
             padding: 20px 10px;
         }
+        /*Hero Section*/
+        .els__hero__section .wrapper .bg__img.one {
+            bottom: 90%;
+            right: 0;
+        }
+        .els__hero__section .wrapper .bg__img.two {
+            top: 128px;
+            left: 56%;
+        }
+        .els__hero__slider .swiper-slide .cat__img {
+            width: 176px;
+            height: 221px;
+        }
+        .els__hero__slider .els__slider__btn {
+            height: 45px;
+            width: 45px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .els__hero__section .content {
+            gap: 14px;
+        }
+        .els__hero__section .content h2 {
+            font-size: 22px;
+        }
+        .els__hero__slider {
+            margin-top: 15px;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
@@ -304,7 +332,7 @@
         font-size: 42px;
     }
     h2 {
-        font-size: 32px;
+        font-size: 28px;
     }
     h3 {
         font-size: 24px;
@@ -467,6 +495,31 @@
             width: 270px;
             padding: 25px 20px;
         }
+        /*Hero Section*/
+        .els__hero__section .wrapper .bg__img.one {
+            bottom: 95%;
+            right: 25px;
+        }
+        .els__hero__section .wrapper .bg__img.two {
+            top: 80px;
+            left: 50%;
+        }
+        .els__hero__slider .swiper-slide .cat__img {
+            width: 266px;
+            height: 334px;
+        }
+        .els__hero__slider .els__slider__btn {
+            height: 50px;
+            width: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .els__hero__section .content {
+            gap: 14px;
+        }
+        .els__hero__slider {
+            margin-top: 15px;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -512,7 +565,7 @@
         font-size: 45px;
     }
     h2 {
-        font-size: 34px;
+        font-size: 30px;
     }
     h3 {
         font-size: 26px;
@@ -631,6 +684,33 @@
             width: 385px;
             padding: 30px 25px;
         }
+        /*Hero Section*/
+        .els__hero__section .wrapper .bg__img.one {
+            bottom: 95%;
+            right: 25px;
+        }
+        .els__hero__section .wrapper .bg__img.two {
+            top: 100px;
+            left: 25px;
+        }
+        .els__hero__slider .swiper-wrapper {
+            padding-bottom: 20px;
+        }
+        .els__hero__slider .swiper-slide .cat__img {
+            width: 190px;
+            height: 238px;
+        }
+        .els__hero__slider .els__slider__btn {
+            height: 50px;
+            width: 50px;
+            left: 152px;
+        }
+        .els__hero__section .content {
+            gap: 16px;
+        }
+        .els__hero__slider {
+            margin-top: 20px;
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -673,7 +753,7 @@
         font-size: 50px;
     }
     h2 {
-        font-size: 38px;
+        font-size: 32px;
     }
     h3 {
         font-size: 28px;
@@ -766,6 +846,30 @@
         .elbp__cart__product {
             gap: 10px;
         }
+        /*Hero Section*/
+        .els__hero__section .wrapper .bg__img.one {
+            bottom: 98%;
+            right: 100px;
+        }
+        .els__hero__section .wrapper .bg__img.two {
+            top: 70px;
+            left: 25px;
+        }
+        .els__hero__slider .swiper-slide .cat__img {
+            width: 253px;
+            height: 317px;
+        }
+        .els__hero__slider .els__slider__btn {
+            height: 63px;
+            width: 63px;
+            left: 200px;
+        }
+        .els__hero__section .content {
+            gap: 18px;
+        }
+        .els__hero__slider {
+            margin-top: 20px;
+        }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -811,7 +915,7 @@
         font-size: 55px;
     }
     h2 {
-        font-size: 42px;
+        font-size: 34px;
     }
     h3 {
         font-size: 30px;
@@ -871,6 +975,34 @@
         .elbp__cart__slider .elbp__cart__closebtn {
             right: 360px;
         }
+        /*Hero Section*/
+        .els__hero__section .wrapper .bg__img.one {
+            bottom: 100%;
+            right: 170px;
+        }
+        .els__hero__section .wrapper .bg__img.two {
+            top: -20px;
+            left: 160px;
+        }
+        .els__hero__section .content {
+            gap: 18px;
+        }
+        .els__hero__section .content h2 {
+            font-size: 28px;
+        }
+        .els__hero__slider .swiper-slide .cat__img {
+            width: 223px;
+            height: 280px;
+        }
+        .els__hero__slider .els__slider__btn {
+            height: 53px;
+            width: 53px;
+            left: 180px;
+        }
+        .els__hero__slider .els__slider__btn svg {
+            height: 12px;
+            width: 27px;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -920,6 +1052,10 @@
     }
     /*===== Home Page =====*/
         /*Header*/
+        .els__header__section .top {
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
         .els__header__section .top .right__side .nice-select .option,
         .els__header__section .top .right__side .nice-select .current {
             font-size: 15px;
@@ -938,6 +1074,24 @@
         /*Search Popup*/
         .elbpsearch__wrapper {
             width: 70vw;
+        }
+        /*Hero Section*/
+        .els__hero__section .wrapper .bg__img.one {
+            bottom: calc(100% + 5px);
+            right: 186px;
+        }
+        .els__hero__section .wrapper .bg__img.two {
+            top: 10px;
+            left: 225px;
+        }
+        .els__hero__slider .swiper-slide .cat__img {
+            width: 309px;
+            height: 388px;
+        }
+        .els__hero__slider .els__slider__btn {
+            height: 63px;
+            width: 63px;
+            left: 256px;
         }
 }
 

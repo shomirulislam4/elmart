@@ -158,7 +158,7 @@ h1 {
 }
 
 h2 {
-    font-size: 46px;
+    font-size: 38px;
     line-height: 120%;
 }
 
@@ -303,6 +303,25 @@ section {
     margin-left: 5px;
     height: 6px;
     width: 14px;
+}
+
+/** Slider Buttons **/
+.els__slider__btn {
+    display: grid;
+    place-content: center;
+    background: var(--text-color);
+    border-radius: 50%;
+    height: 46px;
+    width: 46px;
+}
+
+.els__slider__btn:hover {
+    background: var(--main-color);
+}
+
+.els__slider__btn svg {
+    height: 8px;
+    width: 15px;
 }
 
 /* Scrollbar */
@@ -724,7 +743,7 @@ input[type="radio"]:checked::before {
         padding-left: 0;
     }
 
-    .els__main__menu li:last-child a {
+    .els__main__menu li:nth-last-child(2) a {
         padding-right: 0;
     }
 
@@ -1454,3 +1473,94 @@ input[type="radio"]:checked::before {
     line-height: 20px;
 }
 /*** End of Header Section ***/
+
+/*** Start of Hero Section ***/
+.bg__img {
+    position: absolute;
+    z-index: -1;
+}
+
+.els__hero__section .wrapper {
+    position: relative;
+}
+
+.els__hero__section .wrapper .bg__img.one {
+    bottom: calc(100% + 14px);
+    right: 257px;
+}
+
+.els__hero__section .wrapper .bg__img.two {
+    top: 40px;
+    left: 292px;
+}
+
+
+.els__hero__section .content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    height: 100%;
+}
+
+@media (min-width: 768px) {
+    .els__hero__section .content {
+        max-width: 304px;
+    }
+}
+
+.els__hero__section .content h2 {
+    margin: 0;
+}
+
+.els__hero__section .content p {
+    color: var(--secondary-color);
+    margin: 0;
+}
+
+@media (min-width: 992px) {
+    .els__hero__section .col-lg-8 {
+        padding-right: 0;
+    }
+}
+
+.els__hero__slider .swiper-slide .cat__img {
+    border-radius: 16px;
+    overflow: hidden;
+    width: 380px;
+    height: 477px;
+}
+
+.els__hero__slider .swiper-slide .cat__img img {
+    width: 100%;
+    height: auto;
+}
+
+.els__hero__slider .swiper-wrapper {
+	padding-bottom: 25px;
+}
+
+.els__hero__slider .els__slider__btn {
+	height: 73px;
+	width: 73px;
+	border: 5px solid white;
+	position: absolute;
+	bottom: 0;
+	left: 321px;
+	z-index: 99;
+}
+
+.els__hero__slider .els__slider__btn svg {
+    height: 12px;
+    width: 27px;
+}
+
+@media (max-width: 991px) {
+    .els__hero__slider .els__slider__btn svg {
+        height: 10px;
+        width: 22px;
+    }
+}
+
+
+/*** End of Hero Section ***/

@@ -110,6 +110,30 @@
             });
             });
         });
+
+        //Hero Slider
+        $(function(){
+            var swiper = new Swiper(".els__hero__slider", {
+                loop: true,
+                slidesPerView: 2,
+                spaceBetween: 20,
+                navigation: {
+                  nextEl: "#els__heroslider__next",
+                },
+                breakpoints: {
+                    1200: {
+                        spaceBetween: 20,
+                    },
+                    415: {
+                        spaceBetween: 10,
+                    },
+                    200: {
+                        slidesPerView: 1,
+                        spaceBetween: 5,
+                    }
+                }
+            });
+        })
         
         //On Sale Timer
         function makeTimer() {
