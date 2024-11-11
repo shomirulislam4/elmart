@@ -279,17 +279,34 @@
             width: 176px;
             height: 221px;
         }
-        .els__hero__slider .els__slider__btn {
-            height: 45px;
-            width: 45px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
         .els__hero__section .content {
             gap: 14px;
         }
         .els__hero__section .content h2 {
             font-size: 22px;
+        }
+        .els__hero__slider .els__slider__btn {
+            height: 45px;
+            width: 45px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-width: 5px;
+        }
+        .els__hero__slider .els__slider__btn::after {
+            width: 13px;
+            height: 13px;
+            top: 2px;
+            right: -17px;
+            box-shadow: 0 7px 0 var(--background-color);
+            transform: rotate(33deg);
+        }
+        .els__hero__slider .els__slider__btn::before {
+            width: 13px;
+            height: 13px;
+            top: 2px;
+            left: -17px;
+            box-shadow: 0 7px 0 var(--background-color);
+            transform: rotate(-33deg);
         }
         .els__hero__slider {
             margin-top: 15px;
@@ -553,6 +570,22 @@
         .els__hero__section .content {
             gap: 14px;
         }
+        .els__hero__slider .els__slider__btn::after {
+            width: 13px;
+            height: 13px;
+            top: 5px;
+            right: -19px;
+            box-shadow: 0 6px 0 var(--background-color);
+            transform: rotate(33deg);
+        }
+        .els__hero__slider .els__slider__btn::before {
+            width: 13px;
+            height: 13px;
+            top: 5px;
+            left: -19px;
+            box-shadow: 0 6px 0 var(--background-color);
+            transform: rotate(-33deg);
+        }
         .els__hero__slider {
             margin-top: 15px;
         }
@@ -764,13 +797,30 @@
             width: 190px;
             height: 238px;
         }
+        .els__hero__section .content {
+            gap: 16px;
+        }
         .els__hero__slider .els__slider__btn {
             height: 50px;
             width: 50px;
             left: 152px;
+            border-width: 5px;
         }
-        .els__hero__section .content {
-            gap: 16px;
+        .els__hero__slider .els__slider__btn::after {
+            width: 10px;
+            height: 10px;
+            top: -14px;
+            right: 6.6px;
+            box-shadow: 5px 0 0 var(--background-color);
+            transform: rotate(62deg);
+        }
+        .els__hero__slider .els__slider__btn::before {
+            width: 10px;
+            height: 10px;
+            top: 15px;
+            left: -15.5px;
+            box-shadow: 5px 0 0 var(--background-color);
+            transform: rotate(43deg);
         }
         .els__hero__slider {
             margin-top: 20px;
@@ -958,6 +1008,23 @@
             height: 63px;
             width: 63px;
             left: 200px;
+            border-width: 5px;
+        }
+        .els__hero__slider .els__slider__btn::after {
+            width: 12px;
+            height: 12px;
+            top: -14px;
+            right: 4.6px;
+            box-shadow: 7px 0 0 var(--background-color);
+            transform: rotate(62deg);
+        }
+        .els__hero__slider .els__slider__btn::before {
+            width: 12px;
+            height: 12px;
+            top: 21px;
+            left: -17.5px;
+            box-shadow: 7px 0 0 var(--background-color);
+            transform: rotate(49deg);
         }
         .els__hero__section .content {
             gap: 18px;
@@ -1121,6 +1188,23 @@
             height: 53px;
             width: 53px;
             left: 180px;
+            border-width: 5px;
+        }
+        .els__hero__slider .els__slider__btn::after {
+            width: 16px;
+            height: 16px;
+            top: -20px;
+            right: 5px;
+            box-shadow: 8px 0 0 var(--background-color);
+            transform: rotate(53deg);
+        }
+        .els__hero__slider .els__slider__btn::before {
+            width: 15px;
+            height: 15px;
+            top: 8px;
+            left: -20px;
+            box-shadow: 7px 0 0 var(--background-color);
+            transform: rotate(58deg);
         }
         .els__hero__slider .els__slider__btn svg {
             height: 12px;
@@ -1237,9 +1321,25 @@
             height: 388px;
         }
         .els__hero__slider .els__slider__btn {
-            height: 63px;
-            width: 63px;
-            left: 256px;
+            height: 60px;
+            width: 60px;
+            left: 254px;
+        }
+        .els__hero__slider .els__slider__btn::after {
+            width: 10px;
+            height: 13px;
+            top: -13.7px;
+            right: -1.5px;
+            box-shadow: 0 9px 0 var(--background-color);
+            transform: rotate(-19deg);
+        }
+        .els__hero__slider .els__slider__btn::before {
+            width: 14px;
+            height: 14px;
+            top: 13.6px;
+            left: -21px;
+            box-shadow: 8px 0 0 var(--background-color);
+            transform: rotate(45deg);
         }
         /*Categories Section*/
         .els__categories__section .els__category__item .image, .els__categories__section .els__categories__more {
