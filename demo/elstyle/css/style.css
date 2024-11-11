@@ -242,7 +242,8 @@ section {
 }
 
 /* Buttons */
-.els__button__a {
+.els__button__a,
+.els__button__c {
     display: block;
     padding: 20px 32px;
     border-radius: 8px;
@@ -258,7 +259,14 @@ section {
     text-decoration: none;
 }
 
-.els__button__a:hover {
+.els__button__c {
+    background: white;
+    color: var(--text-color) !important;
+}
+
+.els__button__a:hover,
+.els__button__c:hover {
+    color: #FFF !important;
     background: var(--main-color);
 }
 
@@ -286,16 +294,9 @@ section {
 }
 
 .els__button__a.with__arrow,
-.els__button__b.with__arrow {
+.els__button__b.with__arrow,
+.els__button__c.with__arrow {
     position: relative;
-}
-
-.els__button__a.with__arrow::after,
-.els__button__b.with__arrow:hover::after {
-    content: url("data:image/svg+xml,%3Csvg width='15' height='8' viewBox='0 0 15 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 3.92334H9.03571' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M11.179 1.24487L13.9341 3.99998L11.179 6.75503V1.24487Z' fill='white' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-    margin-left: 5px;
-    height: 6px;
-    width: 14px;
 }
 
 .els__button__b.with__arrow::after {
@@ -304,6 +305,23 @@ section {
     height: 6px;
     width: 14px;
 }
+
+.els__button__c.with__arrow::after {
+    content: url("data:image/svg+xml,%3Csvg width='15' height='8' viewBox='0 0 15 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 3.92334H9.03571' stroke='black' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M11.179 1.24487L13.9341 3.99998L11.179 6.75503V1.24487Z' fill='black' stroke='black' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    margin-left: 5px;
+    height: 6px;
+    width: 14px;
+}
+
+.els__button__a.with__arrow::after,
+.els__button__b.with__arrow:hover::after,
+.els__button__c.with__arrow:hover::after {
+    content: url("data:image/svg+xml,%3Csvg width='15' height='8' viewBox='0 0 15 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 3.92334H9.03571' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M11.179 1.24487L13.9341 3.99998L11.179 6.75503V1.24487Z' fill='white' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    margin-left: 5px;
+    height: 6px;
+    width: 14px;
+}
+
 
 /** Slider Buttons **/
 .els__slider__btn {
@@ -610,7 +628,14 @@ input[type="radio"]:checked::before {
 
 /** Section Title **/
 .els__section__title {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.els__section__title h2 {
+    margin: 0;
 }
 
 /* ====================================================================
@@ -1561,6 +1586,96 @@ input[type="radio"]:checked::before {
         width: 22px;
     }
 }
-
-
 /*** End of Hero Section ***/
+
+/*** of Categories Section ***/
+.els__categories__section .els__categories__grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.els__categories__section .els__category__item .image,
+.els__categories__section .els__categories__more {
+    width: 278px;
+    height: 282px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.els__categories__section .els__category__item {
+    text-decoration: none;
+    position: relative;
+    margin-bottom: 48px;
+}
+
+.els__categories__section .els__category__item .image img {
+    width: 100%;
+}
+
+.els__categories__section .els__category__item .category__name {
+	width: 175px;
+	height: 75px;
+	line-height: 75px;
+	text-align: center;
+	border-radius: 8px;
+	box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    background: white;
+    margin: 0;
+    position: absolute;
+    bottom: -42px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.els__categories__section .els__category__item:hover .category__name {
+    color: white;
+    background: var(--main-color);
+}
+
+.els__categories__section .els__categories__more {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.els__categories__section .els__categories__more h3,
+.els__categories__section .els__categories__more p {
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+.els__categories__section .els__categories__more img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.els__categories__section .els__categories__more .els__button__c {
+	padding: 12px 18px;
+	font-size: 14px;
+	line-height: 14px;
+}
+/*** of Categories Section ***/
+
+
+/*
+
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+
+*/

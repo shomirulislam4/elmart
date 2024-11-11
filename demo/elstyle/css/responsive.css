@@ -34,6 +34,10 @@
         font-size: 11px;
         line-height: 17px;
     }
+    .small__text {
+        font-size: 10px;
+        line-height: 17px;
+    }
     input {
         padding: 0 8px;
         height: 40px;
@@ -63,6 +67,9 @@
     }
     form {
         gap: 10px;
+    }
+    .els__section__title {
+        margin-bottom: 20px;
     }
     /*===== Home Page =====*/
         /*Header*/
@@ -265,8 +272,8 @@
             right: 0;
         }
         .els__hero__section .wrapper .bg__img.two {
-            top: 128px;
-            left: 56%;
+            top: 113px;
+            left: 45%;
         }
         .els__hero__slider .swiper-slide .cat__img {
             width: 176px;
@@ -286,6 +293,28 @@
         }
         .els__hero__slider {
             margin-top: 15px;
+        }
+        /*Categories Section*/
+        .els__categories__section .els__categories__grid {
+            flex-wrap: wrap;
+        }
+        .els__categories__section .els__category__item .image,
+        .els__categories__section .els__categories__more {
+            width: 176px;
+            height: 179px;
+            border-radius: 8px;
+        }
+        .els__categories__section .els__category__item .category__name {
+            width: 130px;
+            height: 45px;
+            line-height: 45px;
+            bottom: -22px;
+        }
+        .els__categories__section .els__category__item {
+            margin-bottom: 28px;
+        }
+        .els__categories__section .els__categories__more {
+            gap: 10px;
         }
 }
 
@@ -325,6 +354,10 @@
         font-size: 13px;
         line-height: 19px;
     }
+    .small__text {
+        font-size: 11px;
+        line-height: 18px;
+    }
     input {
         padding: 0 12px;
     }
@@ -353,6 +386,9 @@
     }
     form {
         gap: 10px;
+    }
+    .els__section__title {
+        margin-bottom: 20px;
     }
     /*===== Home Page =====*/
         /*Header*/
@@ -520,6 +556,27 @@
         .els__hero__slider {
             margin-top: 15px;
         }
+        /*Categories Section*/
+        .els__categories__section .els__categories__grid {
+            flex-wrap: wrap;
+        }
+        .els__categories__section .els__category__item .image,
+        .els__categories__section .els__categories__more {
+            width: 266px;
+            height: 270px;
+        }
+        .els__categories__section .els__category__item .category__name {
+            width: 150px;
+            height: 55px;
+            line-height: 55px;
+            bottom: -24px;
+        }
+        .els__categories__section .els__category__item {
+            margin-bottom: 35px;
+        }
+        .els__categories__section .els__categories__more {
+            gap: 20px;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -558,6 +615,10 @@
         font-size: 13px;
         line-height: 19px;
     }
+    .small__text {
+        font-size: 11px;
+        line-height: 18px;
+    }
     input {
         padding: 0 15px;
     }
@@ -586,6 +647,9 @@
     }
     form {
         gap: 10px;
+    }
+    .els__section__title {
+        margin-bottom: 25px;
     }
     /*===== Home Page =====*/
         /*Header*/
@@ -711,6 +775,30 @@
         .els__hero__slider {
             margin-top: 20px;
         }
+        /*Categories Section*/
+        .els__categories__section .els__categories__grid {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 5px;
+        }
+        .els__categories__section .els__category__item .image,
+        .els__categories__section .els__categories__more {
+            width: 193px;
+            height: 196px;
+            border-radius: 8px;
+        }
+        .els__categories__section .els__category__item .category__name {
+            width: 140px;
+            height: 50px;
+            line-height: 50px;
+            bottom: -24px;
+        }
+        .els__categories__section .els__category__item {
+            margin-bottom: 25px;
+        }
+        .els__categories__section .els__categories__more {
+            gap: 15px;
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -749,6 +837,10 @@
         font-size: 13px;
         line-height: 19px;
     }
+    .small__text {
+        font-size: 12px;
+        line-height: 18px;
+    }
     h1 {
         font-size: 50px;
     }
@@ -774,6 +866,9 @@
     }
     form {
         gap: 14px;
+    }
+    .els__section__title {
+        margin-bottom: 30px;
     }
     /*===== Home Page =====*/
         /*Header*/
@@ -870,6 +965,27 @@
         .els__hero__slider {
             margin-top: 20px;
         }
+        /*Categories Section*/
+        .els__categories__section .els__categories__grid {
+            flex-wrap: wrap;
+        }
+        .els__categories__section .els__category__item .image,
+        .els__categories__section .els__categories__more {
+            width: 255px;
+            height: 258px;
+        }
+        .els__categories__section .els__category__item .category__name {
+            width: 175px;
+            height: 60px;
+            line-height: 60px;
+            bottom: -30px;
+        }
+        .els__categories__section .els__category__item {
+            margin-bottom: 40px;
+        }
+        .els__categories__section .els__categories__more {
+            gap: 20px;
+        }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -908,6 +1024,10 @@
         font-size: 13px;
         line-height: 19px;
     }
+    .small__text {
+        font-size: 12px;
+        line-height: 18px;
+    }
     form {
         gap: 15px;
     }
@@ -930,6 +1050,9 @@
     }
     form {
         gap: 18px;
+    }
+    .els__section__title {
+        margin-bottom: 40px;
     }
     /*===== Home Page =====*/
         /*Header*/
@@ -1003,6 +1126,28 @@
             height: 12px;
             width: 27px;
         }
+        /*Categories Section*/
+        .els__categories__section .els__category__item .image,
+        .els__categories__section .els__categories__more {
+            width: 170px;
+            height: 172px;
+        }
+        .els__categories__section .els__category__item {
+            margin-bottom: 30px;
+        }
+        .els__categories__section .els__category__item .category__name {
+            width: 130px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 14px;
+            bottom: -25px;
+        }
+        .els__categories__section .els__categories__more {
+            gap: 14px;
+        }
+        .els__categories__section .els__categories__more h3 {
+            font-size: 24px;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -1050,6 +1195,9 @@
     .els__button__b {
         padding: 17px 31px;
     }
+    .els__section__title {
+        margin-bottom: 50px;
+    }
     /*===== Home Page =====*/
         /*Header*/
         .els__header__section .top {
@@ -1092,6 +1240,24 @@
             height: 63px;
             width: 63px;
             left: 256px;
+        }
+        /*Categories Section*/
+        .els__categories__section .els__category__item .image, .els__categories__section .els__categories__more {
+            width: 228px;
+            height: 231px;
+        }
+        .els__categories__section .els__category__item .category__name {
+            width: 150px;
+            height: 60px;
+            line-height: 60px;
+            font-size: 16px;
+            bottom: -30px;
+        }
+        .els__categories__section .els__categories__more {
+            gap: 20px;
+        }
+        .els__categories__section .els__category__item {
+            margin-bottom: 36px;
         }
 }
 
