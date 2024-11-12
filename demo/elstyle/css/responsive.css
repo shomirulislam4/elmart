@@ -1053,6 +1053,46 @@
         .els__categories__section .els__categories__more {
             gap: 20px;
         }
+        /*Promo Section*/
+        .els__promo__section .wrapper {
+            gap: 15px;
+            flex-direction: column;
+        }
+        .els__promo__section .left__side,
+        .els__promo__section .right__side {
+            width: 100%;
+            gap: 15px;
+        }
+        .els__promo__section .left__side {
+            column-gap: 10px;
+        }
+        .els__promo__section .left__side .item {
+            height: 336px;
+        }
+        .els__promo__section .right__side .item {
+            height: 260px;
+        }
+        .els__promo__section .left__side .item.large .bg__shape {
+            width: 260px;
+            height: 260px;
+        }
+        .els__promo__section .left__side .item.large .bg__shape img.one {
+            top: 0;
+            left: 148px;
+            width: 145px;
+            height: 140px;
+        }
+        .els__promo__section .left__side .item.large .bg__shape img.two {
+            top: 164px;
+            width: 73px;
+            height: 110px;
+        }
+        .els__promo__section .left__side .item.small {
+            width: 222px;
+        }
+        .els__promo__section .left__side .item.big {
+            width: 308px;
+        }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1232,6 +1272,57 @@
         .els__categories__section .els__categories__more h3 {
             font-size: 24px;
         }
+        /*Promo Section*/
+        .els__promo__section .wrapper,
+        .els__promo__section .right__side,
+        .els__promo__section .left__side {
+            gap: 15px;
+        }
+        .els__promo__section .right__side .item,
+        .els__promo__section .left__side .item {
+            height: 256px;
+        }
+        .els__promo__section .left__side {
+            width: 412px;
+        }
+        .els__promo__section .right__side {
+            width: 292px;
+        }
+        .els__promo__section .left__side {
+            column-gap: 10px;
+        }
+        .els__promo__section .right__side .item .content {
+            padding: 30px;
+        }
+        .els__promo__section .left__side .item.small .content {
+            padding: 20px;
+        }
+        .els__promo__section .left__side .item.small {
+            width: 168px;
+        }
+        .els__promo__section .left__side .item.big {
+            width: 234px;
+        }
+        .els__promo__section .left__side .item.large .bg__shape {
+            width: 210px;
+            height: 210px;
+        }
+        .els__promo__section .left__side .item.large .bg__shape img.one {
+            top: 0;
+            left: 121px;
+            width: 121px;
+            height: 116px;
+        }
+        .els__promo__section .left__side .item.large .bg__shape img.two {
+            left: 92%;
+            top: 131px;
+            width: 56px;
+            height: 89px;
+        }
+        .els__promo__section .left__side .item.large .content {
+            padding: 30px;
+            padding-top: 100px;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -1358,6 +1449,50 @@
         }
         .els__categories__section .els__category__item {
             margin-bottom: 36px;
+        }
+        /*Promo Section*/
+        .els__promo__section .wrapper,
+        .els__promo__section .right__side,
+        .els__promo__section .left__side {
+            gap: 20px;
+        }
+        .els__promo__section .right__side .item,
+        .els__promo__section .left__side .item {
+            height: 344px;
+        }
+        .els__promo__section .left__side {
+            width: 548px;
+        }
+        .els__promo__section .right__side {
+            width: 386px;
+        }
+        .els__promo__section .left__side {
+            column-gap: 14px;
+        }
+        .els__promo__section .left__side .item.small {
+            width: 226px;
+        }
+        .els__promo__section .left__side .item.big {
+            width: 308px;
+        }
+        .els__promo__section .left__side .item.large .bg__shape {
+            width: 260px;
+            height: 260px;
+        }
+        .els__promo__section .left__side .item.large .bg__shape img.one {
+            top: 0;
+            left: 148px;
+            width: 145px;
+            height: 140px;
+        }
+        .els__promo__section .left__side .item.large .bg__shape img.two {
+            top: 164px;
+            width: 73px;
+            height: 110px;
+        }
+        .els__promo__section .left__side .item.large .content {
+            padding: 40px;
+            padding-top: 150px;
         }
 }
 
