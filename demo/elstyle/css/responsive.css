@@ -333,6 +333,60 @@
         .els__categories__section .els__categories__more {
             gap: 10px;
         }
+        /*Promo Section*/
+        .els__promo__section .wrapper {
+            gap: 5px;
+            flex-direction: column;
+        }
+        .els__promo__section .left__side,
+        .els__promo__section .right__side {
+            width: 100%;
+            gap: 5px;
+        }
+        .els__promo__section .left__side .item,
+        .els__promo__section .right__side .item {
+            height: 180px;
+            border-radius: 8px;
+        }
+        .els__promo__section .left__side .item.large img {
+            width: auto;
+            height: 100%;
+        }
+        .els__promo__section .left__side .item.large .content {
+            padding: 24px;
+        }
+        .els__promo__section .left__side .item.large .content p {
+            margin-bottom: 12px;
+        }
+        .els__promo__section .left__side .item.large .bg__shape {
+            width: 180px;
+            height: 180px;
+            bottom: 0;
+        }
+        .els__promo__section .left__side .item.large .bg__shape img.one {
+            top: 0;
+            left: 100px;
+            width: 100px;
+            height: 90px;
+        }
+        .els__promo__section .left__side .item.large .bg__shape img.two {
+            left: 93%;
+            top: 106px;
+            width: 43px;
+            height: 70px;
+        }
+        .els__promo__section .right__side .item .content,
+        .els__promo__section .left__side .item.small .content {
+            gap: 10px;
+            padding: 20px;
+        }
+        .els__promo__section .left__side .item.small,
+        .els__promo__section .left__side .item.big {
+            width: 100%;
+        }
+        .els__promo__section .left__side .item.big .content {
+            gap: 10px;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
@@ -610,6 +664,56 @@
         .els__categories__section .els__categories__more {
             gap: 20px;
         }
+        /*Promo Section*/
+        .els__promo__section .wrapper {
+            gap: 10px;
+            flex-direction: column;
+        }
+        .els__promo__section .left__side,
+        .els__promo__section .right__side {
+            width: 100%;
+            gap: 10px;
+        }
+        .els__promo__section .left__side .item,
+        .els__promo__section .right__side .item {
+            height: 180px;
+            border-radius: 8px;
+        }
+        .els__promo__section .left__side .item.large .content {
+            padding: 24px;
+        }
+        .els__promo__section .left__side .item.large .content p {
+            margin-bottom: 12px;
+        }
+        .els__promo__section .left__side .item.large .bg__shape {
+            width: 180px;
+            height: 180px;
+            bottom: 0;
+        }
+        .els__promo__section .left__side .item.large .bg__shape img.one {
+            top: 0;
+            left: 100px;
+            width: 100px;
+            height: 90px;
+        }
+        .els__promo__section .left__side .item.large .bg__shape img.two {
+            left: 93%;
+            top: 106px;
+            width: 43px;
+            height: 70px;
+        }
+        .els__promo__section .right__side .item .content,
+        .els__promo__section .left__side .item.small .content {
+            gap: 15px;
+            padding: 20px;
+        }
+        .els__promo__section .left__side .item.small,
+        .els__promo__section .left__side .item.big {
+            width: 100%;
+        }
+        .els__promo__section .left__side .item.big .content {
+            gap: 12px;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -848,6 +952,62 @@
         }
         .els__categories__section .els__categories__more {
             gap: 15px;
+        }
+        /*Promo Section*/
+        .els__promo__section .wrapper {
+            gap: 10px;
+            flex-direction: column;
+        }
+        .els__promo__section .left__side,
+        .els__promo__section .right__side {
+            width: 100%;
+            gap: 10px;
+        }
+        .els__promo__section .left__side {
+            column-gap: 5px;
+        }
+        .els__promo__section .left__side .item {
+            height: 258px;
+            border-radius: 8px;
+        }
+        .els__promo__section .right__side .item {
+            height: 260px;
+            border-radius: 8px;
+        }
+        .els__promo__section .left__side .item.large .content {
+            padding: 30px;
+            padding-top: 100px;
+        }
+        .els__promo__section .left__side .item.large .content p {
+            margin-bottom: 14px;
+        }
+        .els__promo__section .left__side .item.large .bg__shape {
+            width: 180px;
+            height: 180px;
+            bottom: 0;
+        }
+        .els__promo__section .left__side .item.large .bg__shape img.one {
+            top: 0;
+            left: 100px;
+            width: 100px;
+            height: 90px;
+        }
+        .els__promo__section .left__side .item.large .bg__shape img.two {
+            left: 93%;
+            top: 106px;
+            width: 43px;
+            height: 70px;
+        }
+        .els__promo__section .right__side .item .content,
+        .els__promo__section .left__side .item.small .content {
+            gap: 15px;
+            padding: 20px;
+        }
+        .els__promo__section .left__side .item.small {
+            width: 170px;
+        }
+        .els__promo__section .left__side .item.big {
+            width: 239px;
         }
 }
 
