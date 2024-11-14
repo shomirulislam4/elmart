@@ -275,6 +275,10 @@
             top: 113px;
             left: 45%;
         }
+        .els__hero__slider .swiper-slide {
+            display: flex;
+            justify-content: center;
+        }
         .els__hero__slider .swiper-slide .cat__img {
             width: 176px;
             height: 221px;
@@ -314,6 +318,7 @@
         /*Categories Section*/
         .els__categories__section .els__categories__grid {
             flex-wrap: wrap;
+            justify-content: center;
         }
         .els__categories__section .els__category__item .image,
         .els__categories__section .els__categories__more {
@@ -343,8 +348,15 @@
             width: 100%;
             gap: 5px;
         }
+        .els__promo__section .left__side {
+            justify-content: center;
+        }
+        .els__promo__section .right__side {
+            align-items: center;
+        }
         .els__promo__section .left__side .item,
         .els__promo__section .right__side .item {
+            width: 200px;
             height: 180px;
             border-radius: 8px;
         }
@@ -382,7 +394,7 @@
         }
         .els__promo__section .left__side .item.small,
         .els__promo__section .left__side .item.big {
-            width: 100%;
+            width: 200px;
         }
         .els__promo__section .left__side .item.big .content {
             gap: 10px;
@@ -403,6 +415,7 @@
         }
         .els__products__grid {
             row-gap: 15px;
+            justify-content: center;
         }
         .els__produt__style {
             gap: 10px;
@@ -468,12 +481,14 @@
         }
         .els__countdown__section .wrapper {
             width: 100%;
+            align-items: center;
         }
         .els__countdown__section {
             height: 298px;
         }
         .els__countdown__section .wrapper h3 {
             margin-bottom: 14px;
+            text-align: center;
         }
         .els__countdown__timer {
             gap: 3px;
@@ -507,8 +522,17 @@
             font-size: 11px;
             line-height: 15px;
         }
-        .els__fashionmodels__section .top .image,
+        .els__fashionmodels__section .top .image {
+            width: 100%;
+            height: 196px;
+            position: relative;
+            overflow: hidden;
+        }
         .els__fashionmodels__section .top .image img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             width: 100%;
             height: auto;
         }
@@ -754,6 +778,10 @@
             top: 80px;
             left: 50%;
         }
+        .els__hero__slider .swiper-slide {
+            display: flex;
+            justify-content: center;
+        }
         .els__hero__slider .swiper-slide .cat__img {
             width: 266px;
             height: 334px;
@@ -789,6 +817,7 @@
         /*Categories Section*/
         .els__categories__section .els__categories__grid {
             flex-wrap: wrap;
+            justify-content: center;
         }
         .els__categories__section .els__category__item .image,
         .els__categories__section .els__categories__more {
@@ -817,9 +846,16 @@
             width: 100%;
             gap: 10px;
         }
+        .els__promo__section .left__side {
+            justify-content: center;
+        }
+        .els__promo__section .right__side {
+            align-items: center;
+        }
         .els__promo__section .left__side .item,
         .els__promo__section .right__side .item {
             height: 180px;
+            width: 290px;
             border-radius: 8px;
         }
         .els__promo__section .left__side .item.large .content {
@@ -852,7 +888,7 @@
         }
         .els__promo__section .left__side .item.small,
         .els__promo__section .left__side .item.big {
-            width: 100%;
+            width: 290px;
         }
         .els__promo__section .left__side .item.big .content {
             gap: 12px;
@@ -873,6 +909,7 @@
         }
         .els__products__grid {
             row-gap: 20px;
+            justify-content: center;
         }
         .els__produt__style {
             gap: 15px;
@@ -920,12 +957,14 @@
         /*Countdown Section*/
         .els__countdown__section .wrapper {
             width: 100%;
+            align-items: center;
         }
         .els__countdown__section {
             height: 298px;
         }
         .els__countdown__section .wrapper h3 {
             margin-bottom: 14px;
+            text-align: center;
         }
         .els__countdown__timer {
             gap: 5px;
@@ -955,10 +994,23 @@
             font-size: 11px;
             line-height: 15px;
         }
-        .els__fashionmodels__section .top .image,
+        .els__fashionmodels__section .top .image {
+            position: relative;
+            overflow: hidden;
+            height: 284px;
+            width: 100%;
+        }
         .els__fashionmodels__section .top .image img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             width: 100%;
             height: auto;
+        }
+        .els__fashionmodels__slider .swiper-slide {
+            display: flex;
+            justify-content: center;
         }
         .els__fashionmodels__slider .els__fashionmodel__info {
             width: 203px;

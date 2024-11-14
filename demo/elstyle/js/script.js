@@ -204,6 +204,7 @@
                         spaceBetween: 10,
                     },
                     415: {
+                        slidesPerView: 2,
                         spaceBetween: 10,
                     },
                     200: {
