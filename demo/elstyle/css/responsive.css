@@ -487,6 +487,49 @@
         .els__countdown__timer h2 {
             font-size: 22px;
         }
+        /*Fashion Models Section*/
+        .els__fashionmodels__section {
+            padding-bottom: 155px;
+        }
+        .els__fashionmodels__section .top {
+            height: 410px;
+            flex-direction: column;
+        }
+        .els__fashionmodels__section .top .text {
+            padding-top: 20px;
+            max-width: 190px;
+        }
+        .els__fashionmodels__section .top .text h2 {
+            font-size: 22px;
+            margin-bottom: 8px;
+        }
+        .els__fashionmodels__section .top .text p {
+            font-size: 11px;
+            line-height: 15px;
+        }
+        .els__fashionmodels__section .top .image,
+        .els__fashionmodels__section .top .image img {
+            width: 100%;
+            height: auto;
+        }
+        .els__fashionmodels__slider {
+            right: 0;
+        }
+        .els__fashionmodels__slider .swiper-slide {
+            display: flex;
+            justify-content: center;
+        }
+        .els__fashionmodels__slider .els__fashionmodel__info {
+            width: 195px;
+            height: 222px;
+            border-radius: 8px;
+        }
+        .els__fashionmodels__slider .els__fashionmodel__info .content {
+            padding: 12px 0;
+            width: 130px !important;
+            border-radius: 12px;
+            bottom: 10px;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
@@ -892,6 +935,42 @@
             width: 90px;
             height: 98px;
         }
+        /*Fashion Models Section*/
+        .els__fashionmodels__section {
+            padding-bottom: 160px;
+        }
+        .els__fashionmodels__section .top {
+            height: 470px;
+            flex-direction: column;
+        }
+        .els__fashionmodels__section .top .text {
+            padding-top: 20px;
+            max-width: 220px;
+        }
+        .els__fashionmodels__section .top .text h2 {
+            font-size: 22px;
+            margin-bottom: 8px;
+        }
+        .els__fashionmodels__section .top .text p {
+            font-size: 11px;
+            line-height: 15px;
+        }
+        .els__fashionmodels__section .top .image,
+        .els__fashionmodels__section .top .image img {
+            width: 100%;
+            height: auto;
+        }
+        .els__fashionmodels__slider .els__fashionmodel__info {
+            width: 203px;
+            height: 231px;
+            border-radius: 10px;
+        }
+        .els__fashionmodels__slider .els__fashionmodel__info .content {
+            padding: 12px 0;
+            width: 130px !important;
+            border-radius: 12px;
+            bottom: 10px;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -1261,6 +1340,30 @@
             width: 90px;
             height: 98px;
         }
+        /*Fashion Models Section*/
+        .els__fashionmodels__section {
+            padding-bottom: 160px;
+        }
+        .els__fashionmodels__section .top {
+            height: 190px;
+        }
+        .els__fashionmodels__section .top .text {
+            padding-top: 18px;
+            max-width: 200px;
+        }
+        .els__fashionmodels__section .top .text h2 {
+            font-size: 22px;
+            margin-bottom: 8px;
+        }
+        .els__fashionmodels__section .top .text p {
+            font-size: 11px;
+            line-height: 15px;
+        }
+        .els__fashionmodels__slider .els__fashionmodel__info {
+            width: 203px;
+            height: 231px;
+            border-radius: 10px;
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -1553,9 +1656,6 @@
             width: 16px;
         }
         /*Countdown Section*/
-        .els__countdown__section .wrapper {
-            width: 100%;
-        }
         .els__countdown__section {
             height: 358px;
         }
@@ -1569,6 +1669,24 @@
         .els__countdown__timer .elbpct__items {
             width: 100px;
             height: 108px;
+        }
+        /*Fashion Models Section*/
+        .els__fashionmodels__section {
+            padding-bottom: 200px;
+        }
+        .els__fashionmodels__section .top {
+            height: 260px;
+        }
+        .els__fashionmodels__section .top .text {
+            padding-top: 30px;
+        }
+        .els__fashionmodels__section .top .text h2 {
+            margin-bottom: 10px;
+        }
+        .els__fashionmodels__slider .els__fashionmodel__info {
+            width: 283px;
+            height: 322px;
+            border-radius: 10px;
         }
 }
 
@@ -1850,6 +1968,24 @@
             width: 100px;
             height: 108px;
         }
+        /*Fashion Models Section*/
+        .els__fashionmodels__section {
+            padding-bottom: 80px;
+        }
+        .els__fashionmodels__section .top {
+            height: 368px;
+        }
+        .els__fashionmodels__section .top .text {
+            padding-top: 35px;
+        }
+        .els__fashionmodels__section .top .text h2 {
+            margin-bottom: 14px;
+        }
+        .els__fashionmodels__slider .els__fashionmodel__info {
+            width: 249px;
+            height: 283px;
+            border-radius: 10px;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -2039,5 +2175,47 @@
 @media (min-width: 1200px) and (max-width: 1299px) {
     section {
         margin-top: 80px;
+    }
+    /*Fashion Models Section*/
+    .els__fashionmodels__slider .els__fashionmodel__info {
+        width: 391px;
+        height: 445px;
+    }
+}
+
+/* Full Width Containers */
+@media (min-width: 992px) and (max-width: 1099px) {
+    /*Fashion Models Section*/
+    .els__fashionmodels__section {
+        padding-bottom: 90px;
+    }
+    .els__fashionmodels__section .top {
+        height: 500px;
+    }
+    .els__fashionmodels__section .top .text {
+        padding-top: 50px;
+    }
+    .els__fashionmodels__section .top .text h2 {
+        margin-bottom: 18px;
+    }
+    .els__fashionmodels__slider .els__fashionmodel__info {
+        width: 325px;
+        height: 370px;
+    }
+}
+
+@media (min-width: 1100px) and (max-width: 1199px) {
+    /*Fashion Models Section*/
+    .els__fashionmodels__slider .els__fashionmodel__info {
+        width: 360px;
+        height: 410px;
+    }
+}
+
+@media (min-width: 1300px) and (max-width: 1394px) {
+    /*Fashion Models Section*/
+    .els__fashionmodels__slider .els__fashionmodel__info {
+        width: 423px;
+        height: 482px;
     }
 }

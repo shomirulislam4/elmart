@@ -182,6 +182,38 @@
             });
         });
 
+        //Fashion Models Slider
+        $(function(){
+            var swiper = new Swiper(".els__fashionmodels__slider", {
+                loop: true,
+                slidesPerView: 3,
+                spaceBetween: 24,
+                breakpoints: {
+                    1395: {
+                        spaceBetween: 24,
+                    },
+                    1200: {
+                        spaceBetween: 15,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 10,
+                    },
+                    576: {
+                        slidesPerView: 2,
+                        spaceBetween: 10,
+                    },
+                    415: {
+                        spaceBetween: 10,
+                    },
+                    200: {
+                        slidesPerView: 1,
+                        spaceBetween: 5,
+                    }
+                }
+            });
+        })
+
     /*============================ About Us Page ============================*/
 
 

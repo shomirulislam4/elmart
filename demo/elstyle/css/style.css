@@ -2158,6 +2158,118 @@ width: 120px;
 }
 /*** End of New Arrivals Section ***/
 
+/*** Start of Fashion Models Section ***/
+.els__fashionmodels__section {
+    height: fit-content;
+    padding-bottom: 144px;
+    position: relative;
+    overflow: hidden;
+}
+
+.els__fashionmodels__section .wrapper {
+    padding: 0;
+}
+
+.els__fashionmodels__section .top {
+    display: flex;
+    align-items: flex-start;
+    height: 656px;
+    background: var(--text-color);
+}
+
+.els__fashionmodels__section .top .image,
+.els__fashionmodels__section .top .image img {
+    height: 100%;
+}
+
+.els__fashionmodels__section .top .text {
+    max-width: 368px;
+    margin: 0 auto;
+    padding-top: 120px;
+}
+
+.els__fashionmodels__section .top .text h2,
+.els__fashionmodels__section .top .text p {
+    color: var(--background-color);
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.els__fashionmodels__section .top .text h2 {
+    margin-bottom: 24px;
+}
+
+.els__fashionmodels__slider {
+    padding: 0;
+    max-width: 1395px !important;
+    position: absolute;
+    bottom: 0;
+    right: -39px;
+}
+
+.els__fashionmodels__slider .els__fashionmodel__info {
+    width: 449px;
+    height: 513px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 16px;
+}
+
+.els__fashionmodels__slider .els__fashionmodel__info img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.els__fashionmodels__slider .els__fashionmodel__info .content {
+    padding: 24px 0;
+    background: var(--primary-color);
+    border-radius: 16px;
+    height: fit-content;
+    width: 173px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 40px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.els__fashionmodels__slider .els__fashionmodel__info:hover .content {
+    visibility: visible;
+    opacity: 1;
+}
+
+.els__fashionmodels__slider .els__fashionmodel__info .content p,
+.els__fashionmodels__slider .els__fashionmodel__info .content .social__links li a {
+    color: var(--background-color);
+    text-align: center;
+    margin: 0;
+}
+
+.els__fashionmodels__slider .els__fashionmodel__info .content .social__links {
+    text-align: center;
+}
+
+.els__fashionmodels__slider .els__fashionmodel__info .content .social__links li a {
+    padding: 0 5px;
+}
+
+.els__fashionmodels__slider .els__fashionmodel__info .content .social__links li a:hover {
+    color: var(--main-color);
+}
+/*** End of Fashion Models Section ***/
+
 /*
 
     transition: 0.3s;
