@@ -8146,7 +8146,7 @@ blockquote::after {
 }
 
 /* Countdown Timer */
-.elbp__countdown__timer {
+.elbp__countdown__timer.v2 {
     display: flex;
     gap: 9px;
     align-items: center;
@@ -8154,7 +8154,7 @@ blockquote::after {
     margin-bottom: 59px;
 }
 
-.elbp__countdown__timer p {
+.elbp__countdown__timer.v2 p {
     height: 70px;
     width: 109px;
     background: #F2E7DA;
@@ -8166,8 +8166,8 @@ blockquote::after {
     align-items: center;
 }
 
-.elbp__countdown__timer p,
-.elbp__countdown__timer p span {
+.elbp__countdown__timer.v2 p,
+.elbp__countdown__timer.v2 p span {
     color: #5F584F;
 }
 
@@ -8480,6 +8480,7 @@ blockquote::after {
 /* Top */
 .elbp__footer__section.v3 .top {
 	padding-top: 61px;
+    overflow: hidden;
 }
 
 .elbp__footer__section.v3 .top .elbp__footer__widget h2,

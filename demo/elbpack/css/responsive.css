@@ -390,6 +390,9 @@
         .elbp__trendprod__wrapper {
             padding: 0 10px;
         }
+        .swiper-slide.elbp__product__style {
+            width: 100% !important;
+        }
         .elbp__product__style {
             width: 180px !important;
         }
@@ -564,7 +567,13 @@
             width: 63px;
             height: 26px;
         }
+        .elbp__singleprod__wrapper .container,
+        .elbp__singleprod__wrapper .row {
+            height: 100%;
+        }
         .elbp__singleprod__wrapper .elbp__singleprod__image {
+            width: 176px;
+            margin: 0 auto;
             padding-top: 22px;
         }
         /*New Arrival Section*/
@@ -578,7 +587,7 @@
         .elbp__promo__left .elbp__promo__item,
         .elbp__promo__right .elbp__promo__item {
             width: 100%;
-            height: 193px;
+            height: fit-content;
             padding: 0 10px;
             padding-bottom: 5px;
         }
@@ -658,6 +667,13 @@
             width: 12px;
         }
         /*Categories Section*/
+        .elbp__categories__section .container {
+            padding: 0;
+        }
+        .elbp__categories__wrapper {
+            width: 200px;
+            margin: 0 auto;
+        }
         .elbp__section__title.with__text {
             flex-direction: column;
             text-align: center;
@@ -1991,7 +2007,7 @@
             height: 20px;
             width: 20px;
         }
-        /*Promo Section*/
+        /*Promo Section V2*/
         .elbp__promov2__section .wrapper,
         .elbp__promov2__section .wrapper .right__side {
             gap: 10px;
@@ -2091,7 +2107,7 @@
             flex-direction: column;
             gap: 10px;
         }
-        /*Categories Section*/
+        /*Categories Section V2*/
         .elbph2__categories__section .text {
             gap: 8px;
             margin-bottom: 10px;
@@ -2171,13 +2187,13 @@
         .elbph2__flash__sale__card .content .desc {
             font-size: 12px;
         }
-        .elbp__countdown__timer {
+        .elbp__countdown__timer.v2 {
             margin-top: 18px;
             margin-bottom: 10px;
             gap: 5px;
             justify-content: center;
         }
-        .elbp__countdown__timer p {
+        .elbp__countdown__timer.v2 p {
             height: 59px;
             width: 59px;
             flex-direction: column;
@@ -2582,6 +2598,9 @@
         .elbp__trendprod__wrapper {
             padding: 0 10px;
         }
+        .swiper-slide.elbp__product__style {
+            width: 100% !important;
+        }
         .elbp__product__style {
             width: 270px !important;
         }
@@ -2711,6 +2730,10 @@
         .elbp__flashdeals__section .elbpfds__bgtext {
             font-size: 40px;
         }
+        .elbp__singleprod__wrapper .container,
+        .elbp__singleprod__wrapper .row {
+            height: 100%;
+        }
         .elbp__singleprod__wrapper .elbp__singleprod__info {
             padding-top: 40px;
             gap: 15px;
@@ -2723,6 +2746,8 @@
             height: 26px;
         }
         .elbp__singleprod__wrapper .elbp__singleprod__image {
+            width: 266px;
+            margin: 0 auto;
             padding-top: 42px;
         }
         /*New Arrival Section*/
@@ -2736,7 +2761,7 @@
         .elbp__promo__left .elbp__promo__item,
         .elbp__promo__right .elbp__promo__item {
             width: 100%;
-            height: 270px;
+            height: fit-content;
             padding: 0 20px;
             padding-bottom: 15px;
         }
@@ -2809,6 +2834,13 @@
             width: 12px;
         }
         /*Categories Section*/
+        .elbp__categories__section .container {
+            padding: 0;
+        }
+        .elbp__categories__wrapper {
+            width: 290px;
+            margin: 0 auto;
+        }
         .elbp__section__title.with__text h2,
         .elbp__section__title.with__text .text {
             width: 50%;
@@ -4110,7 +4142,7 @@
             flex-direction: column;
             gap: 10px;
         }
-        /*Categories Section*/
+        /*Categories Section V2*/
         .elbph2__categories__section .text {
             gap: 12px;
             margin-bottom: 15px;
@@ -4172,12 +4204,12 @@
         .elbph2__flash__sale__card .content .desc {
             font-size: 18px;
         }
-        .elbp__countdown__timer {
+        .elbp__countdown__timer.v2 {
             margin-top: 24px;
             margin-bottom: 20px;
             gap: 3px;
         }
-        .elbp__countdown__timer p {
+        .elbp__countdown__timer.v2 p {
             height: 59px;
             width: 59px;
             flex-direction: column;
@@ -4489,8 +4521,11 @@
         .elbp__trendprod__wrapper {
             padding: 0 10px;
         }
+        .swiper-slide.elbp__product__style {
+            width: 100% !important;
+        }
         .elbp__product__style {
-            width: 395px !important;
+            width: 391px !important;
         }
         .elbp__product__style .image {
             height: 382px;
@@ -4621,6 +4656,8 @@
         }
         .elbp__singleprod__wrapper .elbp__singleprod__image {
             padding-top: 42px;
+            width: 391px;
+            margin: 0 auto;
         }
         /*New Arrival Section*/
         .elbp__newarrival__section .elbpna__bg__img2 {
@@ -4632,11 +4669,15 @@
         /*Promo Section*/
         .elbp__promo__left .elbp__promo__item {
             width: 100%;
-            height: 421px;
+            padding: 0 40px;
+            height: fit-content;
+            padding-bottom: 15px;
         }
         .elbp__promo__right .elbp__promo__item {
             width: 100%;
-            height: 410px;
+            height: fit-content;
+            padding: 0 30px;
+            padding-bottom: 25px;
         }
         .elbp__promo__item img {
             width: 80%;
@@ -4646,14 +4687,6 @@
         }
         .elbp__promo__left .elbp__promo__item img {
             margin-left: 90px;
-        }
-        .elbp__promo__left .elbp__promo__item {
-            padding: 0 40px;
-            padding-bottom: 15px;
-        }
-        .elbp__promo__right .elbp__promo__item {
-            padding: 0 30px;
-            padding-bottom: 25px;
         }
         .elbp__promo__item .promo__text {
             height: 100px;
@@ -4700,6 +4733,10 @@
             padding-top: 0;
         }
         /*Categories Section*/
+        .elbp__categories__wrapper {
+            width: 415px;
+            margin: 0 auto;
+        }
         .elbp__section__title.with__text h2,
         .elbp__section__title.with__text .text {
             width: 50%;
@@ -5723,7 +5760,7 @@
             flex-direction: column;
             gap: 10px;
         }
-        /*Categories Section*/
+        /*Categories Section V2*/
         .elbph2__categories__section .text {
             gap: 12px;
             margin-bottom: 20px;
@@ -5767,12 +5804,12 @@
         .elbph2__flash__sale__card .content {
             padding: 30px 20px;
         }
-        .elbp__countdown__timer {
+        .elbp__countdown__timer.v2 {
             margin-top: 36px;
             margin-bottom: 36px;
             gap: 5px;
         }
-        .elbp__countdown__timer p {
+        .elbp__countdown__timer.v2 p {
             height: 54px;
             width: 84px;
         }
@@ -6936,7 +6973,7 @@
             font-size: 32px;
             line-height: 48px;
         }
-        /*Categories Section*/
+        /*Categories Section V2*/
         .elbph2__categories__section .text {
             gap: 12px;
             margin-bottom: 20px;
@@ -7004,7 +7041,7 @@
         .elbph2__flash__sale__card .content {
             padding: 30px;
         }
-        .elbp__countdown__timer {
+        .elbp__countdown__timer.v2 {
             margin-top: 36px;
             margin-bottom: 36px;
         }
@@ -8183,7 +8220,7 @@
             font-size: 36px;
             line-height: 42px;
         }
-        /*Categories Section*/
+        /*Categories Section V2*/
         .elbph2__categories__section .text {
             gap: 16px;
         }
@@ -8233,12 +8270,12 @@
         .elbph2__flash__sale__card .content {
             padding-left: 16px;
         }
-        .elbp__countdown__timer p {
+        .elbp__countdown__timer.v2 p {
             height: 48px;
             width: 87px;
             gap: 3px;
         }
-        .elbp__countdown__timer {
+        .elbp__countdown__timer.v2 {
             margin-top: 34px;
             margin-bottom: 34px;
         }
@@ -9032,7 +9069,7 @@
         .elbp__product__style__v3.with__title .content .elbp__product__style__v3__buy {
             margin-top: 5px;
         }
-        /*Categories Section*/
+        /*Categories Section V2*/
         .elbph2__categories__section .text {
             gap: 18px;
         }
@@ -9083,11 +9120,11 @@
         .elbph2__flash__sale__card .content {
             padding-left: 24px;
         }
-        .elbp__countdown__timer p {
+        .elbp__countdown__timer.v2 p {
             height: 62px;
             width: 102px;
         }
-        .elbp__countdown__timer {
+        .elbp__countdown__timer.v2 {
             margin-top: 38px;
             margin-bottom: 38px;
         }
@@ -9222,7 +9259,7 @@
         .elbp__herov2__section .wrapper .bottom .left__side .elbp__herov2__slider__btn.next {
             right: -12px;
         }
-        /*Categories Section*/
+        /*Categories Section V2*/
         .elbph2__categories__section .wrapper {
             padding: 0 12px;
         }

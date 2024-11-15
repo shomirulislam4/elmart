@@ -155,7 +155,7 @@
         });
         
         //On Sale Timer
-        function makeTimer() {
+        function makeTimerOne() {
             var endTime = new Date("30 March 2025 0:00:00 UTC+0");    
             endTime = (Date.parse(endTime) / 1000);
             var now = new Date();
@@ -176,7 +176,7 @@
             $(".elbp__countdown__timer .minutes").html(addLeadingZero(minutes));
             $(".elbp__countdown__timer .seconds").html(addLeadingZero(seconds));        
         }
-        setInterval(function() {makeTimer();}, 1000);
+        setInterval(function() {makeTimerOne();}, 1000);
 
         //Testimonials Slider
         $(function(){
@@ -532,8 +532,7 @@
         });
 
         //On Sale Timer
-        function makeTimer() {
-            //timer 1
+        function makeTimerTwo() {
             var endTime = new Date("30 March 2025 0:00:00 UTC+0");	
             endTime = (Date.parse(endTime) / 1000);
             var now = new Date();
@@ -548,9 +547,9 @@
             $("#timer #days").html(days + "<span>Days</span>");
             $("#timer #hours").html(hours + "<span>Hours</span>");
             $("#timer #minutes").html(minutes + "<span>Mint</span>");
-            $("#timer #seconds").html(seconds + "<span>Secs</span>");		
+            $("#timer #seconds").html(seconds + "<span>Secs</span>");
         }
-        setInterval(function() { makeTimer(); }, 1000);
+        setInterval(function() { makeTimerTwo(); }, 1000);
 
         //New Arrivals Slider
         $(function(){
