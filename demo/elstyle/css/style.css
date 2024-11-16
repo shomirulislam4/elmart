@@ -2270,6 +2270,119 @@ width: 120px;
 }
 /*** End of Fashion Models Section ***/
 
+/*** Start of Blog Section ***/
+.els__blog__section .els__section__title h2 {
+    font-weight: 700;
+}
+
+.els__blog__grid {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+/* Blog Item */
+.blog__item__style {
+    width: 379px;
+    height: fit-content;
+    padding: 24px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.blog__item__style .image {
+    height: 279px;
+    width: 331px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.blog__item__style .image img {
+    width: 100%;
+    height: auto;
+}
+
+.blog__item__style .content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 224px;
+    margin: 0 auto;
+}
+
+.blog__item__style .content p,
+.blog__item__style .content a {
+    margin: 0;
+    text-decoration: none;
+}
+
+.blog__item__style .content .elsblog__meta__info {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.blog__item__style .content .elsblog__meta__info .elsblog__author {
+    display: flex;
+    gap: 3px;
+}
+
+.blog__item__style .content .elsblog__meta__info p,
+.blog__item__style .content .elsblog__meta__info a {
+    color: var(--secondary-color);
+}
+
+.blog__item__style .content .elsblog__posttitle,
+.blog__item__style .content .elsblog__snippet {
+    text-align: center;
+}
+
+.blog__item__style .content .elsblog__posttitle {
+    font-weight: 600;
+}
+
+.blog__item__style .content .elsblog__snippet {
+    color: var(--secondary-color);
+    font-weight: 400;
+}
+
+.blog__item__style .content .els__button__a {
+    margin: 0 auto;
+    padding: 12px 20px;
+}
+/*** End of Blog Section ***/
+
+/*** Start of Promo Section V2 ***/
+.els__promov2__section .wrapper {
+    position: relative;
+    height: 533px;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 159px;
+}
+
+.els__promov2__section .wrapper .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.els__promov2__section .wrapper h2 {
+    margin-bottom: 0;
+}
+
+.els__promov2__section .wrapper .els__button__a {
+    padding: 12px 20px;
+}
+
+/*** End of Promo Section V2 ***/
+
 /*
 
     transition: 0.3s;
