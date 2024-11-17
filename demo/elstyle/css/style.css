@@ -2446,13 +2446,161 @@ width: 120px;
 
 /*** End of Instagram Section ***/
 
+/*** Start of Footer Section ***/
+/* Extra */
+.els__footer__section .extra {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.els__footer__section .extra .card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 116px;
+    gap: 30px;
+    border: 0;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.els__footer__section .extra .card.one svg {
+    width: 39px;
+    height: 43px;
+}
+
+.els__footer__section .extra .card.two svg {
+    width: 46px;
+    height: 32px;
+}
+
+.els__footer__section .extra .card.three svg {
+    width: 34px;
+    height: 40px;
+}
+
+.els__footer__section .extra .card h5 {
+    text-transform: capitalize;
+    margin-bottom: 4px;
+    color: var(--primary-color);
+}
+
+.els__footer__section .extra .card p {
+    color: var(--secondary-color);
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    text-transform: capitalize;
+}
+
+.els__footer__section .wrapper {
+    background: var(--primary-color);
+    margin-top: -57px;
+}
+
+/* Top */
+.els__footer__section .top {
+    padding-top: 140px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #80808052;
+}
+
+.els__footer__section .logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 34px;
+}
+
+.els__footer__section .logo img {
+    width: 100%;
+    height: auto;
+}
+
+.els__footer__section .wrapper p,
+.els__footer__section .wrapper a,
+.els__footer__section .wrapper li,
+.els__footer__section .wrapper h5 {
+    color: #FFF;
+    text-decoration: none;
+    list-style: none;
+}
+
+.els__footer__section ul {
+    padding-left: 0;
+}
+
+.els__footer__section .about p,
+.els__footer__section .wrapper a {
+    line-height: 40px;
+    margin: 0;
+}
+
+.els__footer__section .wrapper a:hover {
+    color: var(--main-color);
+}
+
+.els__footer__section .wrapper h5 {
+    margin-bottom: 38px;
+}
+
+.els__footer__section .newsletter form {
+    width: 100%;
+    height: 46px;
+    display: flex;
+    background: var(--background-color);
+    border-radius: 8px;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    gap: 0;
+}
+
+.els__footer__section .newsletter form input {
+    all: unset;
+    width: 100%;
+    padding: 0 10px 0 19px;
+    font-size: 14px;
+}
+
+.els__footer__section .newsletter form button {
+    background: var(--redorng-color);
+    color: var(--background-color);
+    width: 110px;
+    height: 100%;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.els__footer__section .newsletter form button:hover {
+    background: var(--primary-color);
+}
+
+/* Bottom */
+.els__footer__section .bottom {
+    padding: 27px 0;
+}
+
+.els__footer__section .els__copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.els__footer__section .els__copyright,
+.els__footer__section .els__copyright a {
+    margin: 0;
+}
+
+/*** End of Footer Section ***/
+
 
 /*
-
     transition: 0.3s;
     -moz-transition: 0.3s;
     -webkit-transition: 0.3s;
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
-
 */
