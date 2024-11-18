@@ -221,8 +221,38 @@
     /*============================ Shop & Single Product Page ============================*/
         //All Nice Select (Shop Page)
         if ($('.els__shop__section').length) {
-            $('#').niceSelect();
+            $('#elsshop__sort').niceSelect();
+            $('#elsshop__prodamount').niceSelect();
         }
+
+        //Category Section Slider (Shop V2)
+        $(function(){
+            var swiper = new Swiper(".elsshop__cat__slider", {
+                loop: true,
+                slidesPerView: 7,
+                spaceBetween: 0,
+                breakpoints: {
+                    200: {
+                        slidesPerView: 1,
+                    },
+                    290: {
+                        slidesPerView: 2,
+                    },
+                    415: {
+                        slidesPerView: 3,
+                    },
+                    576: {
+                        slidesPerView: 4,
+                    },
+                    768: {
+                        slidesPerView: 5,
+                    },
+                    992: {
+                        slidesPerView: 7,
+                    }
+                }
+            });
+        });
 
         //Price Filter
         $(function(){

@@ -360,7 +360,6 @@
                 }
             });
         });
-        
 
         //Shop Sidebar
         $(function(){

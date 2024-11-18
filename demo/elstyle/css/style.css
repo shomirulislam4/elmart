@@ -2,7 +2,19 @@
 1. Global
 2. Home Page
     1. Header
-
+    2. Hero Section
+    3. Categories Section
+    4. Promo Section
+    5. Best Seller Section
+    6. Countdown Section
+    7. New Arrivals Section
+    8. Fashion Models Section
+    9. Blog Section
+    10. Promo Section V2
+    11. Instagram Section
+    12. Footer Section
+    13. Testimonials Section
+3. Shop Page
 
 
 **********************************************/
@@ -534,6 +546,7 @@ input[type="checkbox"] {
     display: inline-block;
     flex-shrink: 0;
     flex-grow: 0;
+    padding: 0;
     transition: 0.3s;
     -moz-transition: 0.3s;
     -webkit-transition: 0.3s;
@@ -582,6 +595,12 @@ input[type="radio"] {
     border-radius: 50%;
     flex-shrink: 0;
     flex-grow: 0;
+    padding: 0;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
 }
 
 input[type="radio"]::before {
@@ -1914,13 +1933,13 @@ input[type="radio"]:checked::before {
 }
 
 /** Product Style **/
-.els__produt__style {
+.els__product__style {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.els__produt__style .image {
+.els__product__style .image {
     width: 379px;
     height: 498px;
     border-radius: 16px;
@@ -1928,11 +1947,11 @@ input[type="radio"]:checked::before {
     position: relative;
 }
 
-.els__produt__style .image img {
+.els__product__style .image img {
     width: 100%;
 }
 
-.els__produt__style .image .elsps__tag {
+.els__product__style .image .elsps__tag {
     padding: 5px 10px;
     border-radius: 4px;
     background: var(--primary-color);
@@ -1941,10 +1960,10 @@ input[type="radio"]:checked::before {
     position: absolute;
     top: 30px;
     left: 42px;
-    z-index: 10;
+    z-index: 0;
 }
 
-.els__produt__style .image .elsps__addtocart {
+.els__product__style .image .elsps__addtocart {
     position: absolute;
     bottom: 40px;
     left: 50%;
@@ -1958,12 +1977,12 @@ input[type="radio"]:checked::before {
     width: 144px;
 }
 
-.els__produt__style .image button svg {
+.els__product__style .image button svg {
     height: 16px;
     width: 16px;
 }
 
-.els__produt__style .image .elsps__cta__buttons {
+.els__product__style .image .elsps__cta__buttons {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -1978,11 +1997,11 @@ input[type="radio"]:checked::before {
     -o-transition: 0.6s;
 }
 
-.els__produt__style:hover .image .elsps__cta__buttons {
+.els__product__style:hover .image .elsps__cta__buttons {
     right: 31px;
 }
 
-.els__produt__style .image .elsps__cta__buttons button {
+.els__product__style .image .elsps__cta__buttons button {
     background: var(--primary-color);
     border-radius: 4px;
     display: flex;
@@ -1992,7 +2011,7 @@ input[type="radio"]:checked::before {
     position: relative;
 }
 
-.els__produt__style .image .elsps__cta__buttons button span {
+.els__product__style .image .elsps__cta__buttons button span {
     position: absolute;
     right: calc(100% + 15px);
     top: 50%;
@@ -2013,12 +2032,12 @@ input[type="radio"]:checked::before {
     -o-transition: 0.3s;
 }
 
-.els__produt__style .image .elsps__cta__buttons button:hover span {
+.els__product__style .image .elsps__cta__buttons button:hover span {
 	visibility: visible;
 	opacity: 1;
 }
 
-.els__produt__style .image .elsps__cta__buttons button span::after {
+.els__product__style .image .elsps__cta__buttons button span::after {
     content: '';
     position: absolute;
     border-width: 10px;
@@ -2029,7 +2048,7 @@ input[type="radio"]:checked::before {
     transform: translateY(-50%);
 }
 
-.els__produt__style .image button:hover {
+.els__product__style .image button:hover {
     background: var(--main-color);
 }
 
@@ -2047,7 +2066,7 @@ input[type="radio"]:checked::before {
     width: 16px;
 }
 
-.els__produt__style .content .elsps__title {
+.els__product__style .content .elsps__title {
     text-decoration: none;
     font-size: 20px;
     line-height: 26px;
@@ -2055,32 +2074,32 @@ input[type="radio"]:checked::before {
     margin-bottom: 6px;
 }
 
-.els__produt__style .content .elsps__price {
+.els__product__style .content .elsps__price {
     margin-bottom: 10px;
 }
 
-.els__produt__style .content .elsps__price span {
+.els__product__style .content .elsps__price span {
     color: var(--secondary-color);
     text-decoration: line-through;
     margin-left: 10px;
 }
 
-.els__produt__style .content .elsps__colors {
+.els__product__style .content .elsps__colors {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 8px;
 }
 
-.els__produt__style .content .elsps__colors span {
+.els__product__style .content .elsps__colors span {
     height: 20px;
     width: 20px;
     border-radius: 50%;
     cursor: pointer;
 }
 
-.els__produt__style .content .elsps__colors span.active,
-.els__produt__style .content .elsps__colors span:hover {
+.els__product__style .content .elsps__colors span.active,
+.els__product__style .content .elsps__colors span:hover {
     box-shadow: inset 0 0 0 3px rgba(255, 255, 255, 0.6);
 }
 
@@ -2134,7 +2153,7 @@ input[type="radio"]:checked::before {
     margin-bottom: 48px;
 }
 
-.els__countdown__timer .elbpct__items {
+.els__countdown__timer .elsct__items {
 width: 120px;
     height: 128px;
     background: var(--primary-color);
@@ -2593,9 +2612,465 @@ width: 120px;
 .els__footer__section .els__copyright a {
     margin: 0;
 }
-
 /*** End of Footer Section ***/
 
+/* ====================================================================
+   3. Shop Page
+==================================================================== */
+/*** Start of Breadcrumbs Section ***/
+.els__breadcrumbs__section .els__breadcrumbs {
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    padding: 14px 24px;
+    background: #5840BA30;
+}
+
+.els__breadcrumbs__section .els__breadcrumbs a,
+.els__breadcrumbs__section .els__breadcrumbs p {
+    margin: 0;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.els__breadcrumbs__section .els__breadcrumbs a {
+    margin-right: 10px;
+    position: relative;
+}
+
+.els__breadcrumbs__section .els__breadcrumbs a:hover::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: calc(100% - 20px);
+    border-bottom: 1px solid var(--main-color);
+    z-index: 10;
+}
+
+.els__breadcrumbs__section .els__breadcrumbs a::after {
+    content: '\f054';
+    font-family: 'Fontawesome';
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.els__breadcrumbs__section .els__breadcrumbs .current__page {
+    color: var(--primary-color);
+}
+/*** End of Breadcrumbs Section ***/
+
+/*Price Filter*/
+.price-input {
+    width: 100%;
+    display: flex;
+    margin: 15px 0;
+    justify-content: space-between;
+}
+
+.price-input .field{
+    display: flex;
+    align-items: center;
+}
+
+.price-input .field input {
+	width: 50px;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+}
+
+.price-input .field input[type="number"]::-webkit-outer-spin-button,
+.price-input .field input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+.price-range-slider {
+    height: 36px;
+    position: relative;
+    background: var(--bg-black);
+    border-radius: 6px;
+}
+
+.price-range-slider .progress {
+	height: 100%;
+	left: 19%;
+	right: 17%;
+	position: absolute;
+	border-radius: 5px;
+	background: var(--background-color);
+}
+
+.range-input {
+    position: relative;
+}
+
+.range-input input {
+    position: absolute;
+    width: 100%;
+    height: 36px;
+    bottom: 0;
+    background: none;
+    pointer-events: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.range-input input[type="range"]::-webkit-slider-thumb {
+    height: 36px;
+    width: 10px;
+    border: 0;
+    border-radius: 5px;
+    background: #EAE3DB;
+    pointer-events: auto;
+    -webkit-appearance: none;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.range-input input[type="range"]::-moz-range-thumb {
+    height: 36px;
+    width: 10px;
+    border: 0;
+    border-radius: 5px;
+    background: #EAE3DB;
+    pointer-events: auto;
+    -moz-appearance: none;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+/*** Start of Shop Section ***/
+.els__shop__section .elsshop__cat__slider .swiper-slide {
+    padding: 10px;
+}
+
+.els__shop__section .elsshop__cat__slider a {
+    background: #FFF;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.05);
+    height: 140px;
+    width: 100%;
+}
+
+.els__shop__section .elsshop__cat__slider a img {
+    height: 80px;
+    width: 80px;
+}
+
+/* Filter Bar */
+.elsshop__filter__bar {
+    padding: 10px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.05);
+    background: #FFF;
+}
+
+.elsshop__filter__bar p {
+    margin: 0;
+}
+
+.elsshop__filter__bar .elsshop__grid__button {
+    background: transparent;
+    padding: 0 10px;
+}
+
+@media (max-width: 575px) {
+    .elsshop__filter__bar .elsshop__grid__button {
+        display: none;
+    }
+}
+
+.elsshop__filter__bar .elsshop__grid__button:hover {
+    color: var(--main-color);
+}
+
+.elsshop__filter__bar .srting,
+.elsshop__filter__bar .number__of__products {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.elsshop__filter__btn {
+    display: none;
+}
+
+/* Sidebar */
+.els__shop__sidebar .elsshop__mobile__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.els__shop__sidebar .elsshop__mobile__menu .elsshop__sidebar__closebtn {
+    display: none;
+}
+
+.els__shop__sidebar .elsshop__sidebar__widgets .elsshop__sidebar__search {
+    flex-direction: row;
+    gap: 0;
+    background: #FFF;
+    height: 60px;
+    border-radius: 50px;
+    align-items: center;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.05);
+}
+
+.els__shop__sidebar .elsshop__sidebar__widgets .elsshop__sidebar__search input {
+    width: 100%;
+    padding: 0 20px;
+    padding-right: 5px;
+    background: transparent;
+    box-shadow: none;
+    color: var(--primary-color);
+}
+
+.els__shop__sidebar .elsshop__sidebar__widgets .elsshop__sidebar__search input::placeholder {
+    color: #827B72;
+}
+
+.els__shop__sidebar .elsshop__sidebar__widgets .elsshop__sidebar__search button {
+    height: 100%;
+    width: 50px;
+    text-align: left;
+    color: var(--primary-color);
+    background: transparent;
+}
+
+@media (max-width: 1139px) {
+    .els__shop__sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 0;
+        background: rgba(232, 225, 217, 0.20);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        box-shadow: 0 0 0 1px rgba(255, 255, 255, 1);
+        z-index: 999999;
+        overflow: hidden;
+        transition: 1s;
+        -moz-transition: 1s;
+        -webkit-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+    }
+    .els__shop__sidebar.show {
+        width: 100vw;
+    }
+    .els__shop__sidebar .elsshop__mobile__menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 400px;
+        height: 100vh;
+        background: var(--background-color);
+        padding: 20px;
+        z-index: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 15px;
+    }
+    .els__shop__sidebar .elsshop__mobile__menu .elsshop__sidebar__closebtn {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: calc(100% + 10px);
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        font-size: 18px;
+        color: var(--text-color);
+        background: var(--background-color);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        border-radius: 50%;
+        transition: 0.3s;
+        -moz-transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+    }
+    .els__shop__sidebar .elsshop__mobile__menu .elsshop__sidebar__closebtn:hover {
+        background: var(--main-color);
+        color: var(--background-color);
+    }
+    .els__shop__sidebar .elsshop__sidebar__widgets .elsshop__sidebar__search {
+        height: 50px;
+        background: #E8E1D9;
+    }
+}
+
+.els__shop__sidebar .elsshop__sidebar__widgets h4 {
+    font-size: 24px;
+	line-height: 30px;
+    padding-bottom: 16px;
+    margin-bottom: 26px;
+    border-bottom: 1px solid #C7C3BF;
+}
+
+.els__shop__sidebar .elsshop__sidebar__widgets .categtag__list,
+.elsshop__sidebar__widgets form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.els__shop__sidebar .elsshop__sidebar__widgets .categtag__list a {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    text-decoration: none;
+}
+
+.els__shop__sidebar .elsshop__sidebar__widgets .categtag__list a:hover {
+    text-decoration: underline;
+}
+
+.els__shop__sidebar .elsshop__sidebar__widgets .categtag__list a svg {
+    stroke: var(--text-color);
+    border: 1px solid var(--text-color);
+    border-radius: 30px;
+}
+
+.els__shop__sidebar .elsshop__sidebar__widgets .categtag__list a:hover svg {
+    stroke: var(--main-color);
+    border-color: var(--main-color);
+}
+
+.els__shop__sidebar .elsshop__sidebar__widgets .form__row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+@media (max-width: 1139px) {
+    .price-range-slider .progress {
+        background: #E8E1D9;
+    }
+    .els__shop__sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 0;
+        background: rgba(232, 225, 217, 0.20);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        box-shadow: 0 0 0 1px rgba(255, 255, 255, 1);
+        z-index: 999999;
+        overflow: hidden;
+        transition: 1s;
+        -moz-transition: 1s;
+        -webkit-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+    }
+    .els__shop__sidebar.show {
+        width: 100vw;
+    }
+    .elsshop__filter__btn {
+        display: block;
+        background: var(--primary-color);
+        height: 36px;
+        line-height: 36px;
+        padding: 0 17px;
+        border-radius: 50px;
+    }
+    .elsshop__filter__btn span {
+        color: var(--background-color);
+        transition: 0.3s;
+        -moz-transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+    }
+    .elsshop__filter__btn:hover {
+        background: var(--main-color);
+        color: var(--background-color);
+    }
+    .elsshop__filter__btn:hover span {
+        color: var(--background-color);
+    }
+}
+
+.elsshop__filter__bar .nice-select {
+	background-color: var(--background-color);
+	border-radius: 50px;
+	border: 0;
+	height: 40px;
+	text-align: center !important;
+    padding-left: 17px;
+    padding-right: 31px;
+}
+
+.elsshop__filter__bar .nice-select::after {
+	border-bottom: 1px solid #7D7A73;
+	border-right: 1px solid #7D7A73;
+	height: 8px;
+	margin-top: -7px;
+	right: 17px;
+	width: 8px;
+}
+
+.els__shop__section .els__products__grid {
+    padding-left: 30px;
+}
+
+/* Pagination */
+.elsshop__pagination {
+    display: flex;
+    justify-content: center;
+    gap: 115px;
+    align-items: center;
+}
+
+.elsshop__pagination a {
+    text-decoration: none;
+}
+
+.elsshop__pagination .page__link svg {
+    stroke: var(--text-color);
+}
+
+.elsshop__pagination .page__link:hover svg {
+    stroke: var(--main-color);
+}
+
+.elsshop__pagination .page__numbers {
+    display: flex;
+    gap: 2px;
+}
+
+.elsshop__pagination .page__numbers .page__link {
+    color: var(--text-color);
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.elsshop__pagination .page__numbers .page__link.active,
+.elsshop__pagination .page__numbers .page__link:hover {
+    background: var(--main-color);
+    color: var(--background-color);
+}
+/*** End of Shop Section ***/
 
 /*
     transition: 0.3s;
