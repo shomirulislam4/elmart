@@ -1,6 +1,7 @@
 @media (max-width: 289px) {
     section,
-    .els__breadcrumbs__section {
+    .els__breadcrumbs__section,
+    .els__shop__section .wrapper {
         margin-top: 20px;
     }
     span,
@@ -128,7 +129,8 @@
             padding: 3px 5px;
             margin-left: 1px;
         }
-        .btm__left__side .els__main__menu {
+        .btm__left__side .els__main__menu,
+        .els__shop__sidebar .elsshop__mobile__menu {
             width: 176px;
             padding: 15px 10px;
         }
@@ -138,7 +140,8 @@
         .btm__left__side .els__main__menu .submenu.show {
             padding-top: 10px;
         }
-        .btm__left__side .els__mblmenu__closebtn {
+        .btm__left__side .els__mblmenu__closebtn,
+        .els__shop__sidebar .elsshop__sidebar__closebtn {
             left: calc(100% + 2px);
             height: 60px;
             width: 24px;
@@ -692,11 +695,26 @@
             flex-wrap: wrap;
             justify-content: center;
         }
+        /*Sidebar*/
+        .els__shop__sidebar .elsshop__sidebar__closebtn {
+            left: calc(176px + 2px);
+        }
+        .els__shop__sidebar .elsshop__sidebar__widgets h4 {
+            font-size: 18px;
+            line-height: 24px;
+            padding-bottom: 14px;
+            margin-bottom: 20px;
+        }
+        .els__shop__sidebar .elsshop__sidebar__widgets .categtag__list,
+        .elsshop__sidebar__widgets form {
+            gap: 8px;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
     section,
-    .els__breadcrumbs__section {
+    .els__breadcrumbs__section,
+    .els__shop__section .wrapper {
         margin-top: 30px;
     }
     span,
@@ -810,7 +828,8 @@
         .els__mmenu__btn {
             padding: 3px 10px;
         }
-        .btm__left__side .els__main__menu {
+        .btm__left__side .els__main__menu,
+        .els__shop__sidebar .elsshop__mobile__menu {
             width: 255px;
             padding: 20px 15px;
         }
@@ -820,7 +839,8 @@
         .btm__left__side .els__main__menu .submenu.show {
             padding-top: 10px;
         }
-        .btm__left__side .els__mblmenu__closebtn {
+        .btm__left__side .els__mblmenu__closebtn,
+        .els__shop__sidebar .elsshop__sidebar__closebtn {
             left: calc(100% + 4px);
             height: 60px;
             width: 24px;
@@ -1274,6 +1294,10 @@
             gap: 10px;
             flex-direction: column;
         }
+        /*Sidebar*/
+        .els__shop__sidebar .elsshop__sidebar__closebtn {
+            left: calc(255px + 4px);
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -1383,7 +1407,8 @@
             height: 15px;
             width: 15px;
         }
-        .btm__left__side .els__main__menu {
+        .btm__left__side .els__main__menu,
+        .els__shop__sidebar .elsshop__mobile__menu {
             width: 350px;
             padding: 20px;
         }
@@ -1757,6 +1782,10 @@
             height: 36px;
             width: 36px;
             line-height: 36px;
+        }
+        /*Sidebar*/
+        .els__shop__sidebar .elsshop__sidebar__closebtn {
+            left: calc(350px + 10px);
         }
 }
 
@@ -2185,6 +2214,11 @@
         }
         .elsshop__pagination {
             gap: 50px;
+        }
+        /*Sidebar*/
+        .els__shop__sidebar .elsshop__sidebar__widgets .categtag__list,
+        .elsshop__sidebar__widgets form {
+            gap: 10px;
         }
 }
 

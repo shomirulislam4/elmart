@@ -2754,6 +2754,10 @@ width: 120px;
 }
 
 /*** Start of Shop Section ***/
+.els__shop__section .wrapper {
+    margin-top: 40px;
+}
+
 .els__shop__section .elsshop__cat__slider .swiper-slide {
     padding: 10px;
 }
@@ -2823,7 +2827,7 @@ width: 120px;
     gap: 60px;
 }
 
-.els__shop__sidebar .elsshop__mobile__menu .elsshop__sidebar__closebtn {
+.els__shop__sidebar .elsshop__sidebar__closebtn {
     display: none;
 }
 
@@ -2893,12 +2897,14 @@ width: 120px;
         flex-direction: column;
         justify-content: flex-start;
         gap: 15px;
+        overflow-x: hidden;
+        overflow-y: auto;
     }
-    .els__shop__sidebar .elsshop__mobile__menu .elsshop__sidebar__closebtn {
+    .els__shop__sidebar .elsshop__sidebar__closebtn {
         display: block;
         position: absolute;
         top: 10px;
-        left: calc(100% + 10px);
+        left: calc(400px + 10px);
         height: 40px;
         width: 40px;
         line-height: 40px;
@@ -2913,13 +2919,23 @@ width: 120px;
         -ms-transition: 0.3s;
         -o-transition: 0.3s;
     }
-    .els__shop__sidebar .elsshop__mobile__menu .elsshop__sidebar__closebtn:hover {
+    .els__shop__sidebar .elsshop__sidebar__closebtn:hover {
         background: var(--main-color);
         color: var(--background-color);
     }
     .els__shop__sidebar .elsshop__sidebar__widgets .elsshop__sidebar__search {
         height: 50px;
-        background: #E8E1D9;
+    }
+    .price-range-slider .progress {
+        height: 100%;
+        left: 21%;
+        right: 18%;
+        position: absolute;
+        border-radius: 5px;
+        background: var(--main-color);
+    }
+    .elsshop__sidebar__widgets {
+        margin-bottom: 20px;
     }
 }
 
