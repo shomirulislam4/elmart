@@ -1,5 +1,6 @@
 @media (max-width: 289px) {
-    section {
+    section,
+    .els__breadcrumbs__section {
         margin-top: 20px;
     }
     span,
@@ -645,10 +646,57 @@
         .els__footer__section .bottom {
             padding: 17px 0;
         }
+    /*===== Shop Page =====*/
+        .els__breadcrumbs__section .els__breadcrumbs {
+            padding: 14px;
+            margin-right: 5px;
+        }
+        .els__breadcrumbs__section .els__breadcrumbs a::after {
+            margin-left: 5px;
+            font-size: 10px;
+        }
+        .els__shop__section .elsshop__cat__slider .swiper-slide {
+            padding: 5px;
+        }
+        /*Shop Section*/
+        .els__shop__section .elsshop__cat__slider a {
+            height: 100px;
+        }
+        .els__shop__section .elsshop__cat__slider a img {
+            height: 70px;
+            width: 70px;
+        }
+        .elsshop__filter__bar {
+            flex-direction: column;
+            gap: 10px;
+            border-radius: 25px;
+        }
+        .elsshop__filter__bar .srting,
+        .elsshop__filter__bar .number__of__products {
+            gap: 5px;
+        }
+        .elsshop__pagination {
+            gap: 10px;
+            flex-direction: column;
+        }
+        .elsshop__pagination .page__numbers .page__link {
+            height: 30px;
+            width: 30px;
+            line-height: 30px;
+        }
+        .elsshop__pagination .page__link svg {
+            height: 15px;
+            width: 15px;
+        }
+        .elsshop__pagination .page__numbers {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
-    section {
+    section,
+    .els__breadcrumbs__section {
         margin-top: 30px;
     }
     span,
@@ -1194,6 +1242,38 @@
         .els__footer__section .bottom {
             padding: 20px 0;
         }
+    /*===== Shop Page =====*/
+        .els__breadcrumbs__section .els__breadcrumbs {
+            padding: 14px;
+            margin-right: 5px;
+        }
+        .els__breadcrumbs__section .els__breadcrumbs a::after {
+            margin-left: 5px;
+            font-size: 10px;
+        }
+        .els__shop__section .elsshop__cat__slider .swiper-slide {
+            padding: 5px;
+        }
+        /*Shop Section*/
+        .els__shop__section .elsshop__cat__slider .swiper-slide {
+            padding: 5px;
+        }
+        .els__shop__section .elsshop__cat__slider a {
+            height: 100px;
+        }
+        .els__shop__section .elsshop__cat__slider a img {
+            height: 70px;
+            width: 70px;
+        }
+        .elsshop__filter__bar {
+            flex-direction: column;
+            gap: 10px;
+            border-radius: 20px;
+        }
+        .elsshop__pagination {
+            gap: 10px;
+            flex-direction: column;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -1653,6 +1733,31 @@
         .els__footer__section .wrapper h5 {
             text-align: center;
         }
+    /*===== Shop Page =====*/
+        .els__shop__section .elsshop__cat__slider .swiper-slide {
+            padding: 5px;
+        }
+        .els__shop__section .elsshop__cat__slider a {
+            height: 100px;
+        }
+        .els__shop__section .elsshop__cat__slider a img {
+            height: 70px;
+            width: 70px;
+        }
+        .elsshop__filter__bar {
+            flex-direction: column;
+            gap: 10px;
+            border-radius: 25px;
+        }
+        .elsshop__pagination {
+            gap: 10px;
+            flex-direction: column;
+        }
+        .elsshop__pagination .page__numbers .page__link {
+            height: 36px;
+            width: 36px;
+            line-height: 36px;
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -2059,6 +2164,27 @@
         .els__footer__section .logo {
             width: 140px;
             margin-bottom: 28px;
+        }
+        /*===== Shop Page =====*/
+        .els__shop__section .elsshop__cat__slider .swiper-slide {
+            padding: 5px;
+        }
+        .els__shop__section .elsshop__cat__slider a {
+            height: 100px;
+        }
+        .els__shop__section .elsshop__cat__slider a img {
+            height: 70px;
+            width: 70px;
+        }
+        .elsshop__filter__btn {
+            padding: 0 10px;
+        }
+        .elsshop__filter__bar .srting,
+        .elsshop__filter__bar .number__of__products {
+            gap: 5px;
+        }
+        .elsshop__pagination {
+            gap: 50px;
         }
 }
 
@@ -2633,7 +2759,7 @@
         }
         .els__footer__section .newsletter form button {
             width: 70px;
-        }
+        }     
 }
 
 @media (min-width: 1200px) and (max-width: 1299px) {
