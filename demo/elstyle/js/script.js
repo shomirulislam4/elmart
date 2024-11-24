@@ -216,43 +216,38 @@
         });
 
         //Testimonials Slider
-        $(document).ready(function(){
-            $('.els__testimonials__slider.one').slick({
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                infinite: true,
-                dots: false,
-                arrows: false,
-                asNavFor: '.els__testimonials__slider.two',
-                responsive: [
-                    {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 1,
-                        rows: 1
+        $(function () {
+            var swipers = [];
+        
+            $(".els__testimonials__slider").each(function (index, element) {
+                var swiper = new Swiper(element, {
+                    loop: true,
+                    slidesPerView: 3,
+                    spaceBetween: 0,
+                    pagination: {
+                        el: ".els__testimonialsslider__dots",
+                    },
+                    breakpoints: {
+                        992: {
+                            slidesPerView: 3,
+                        },
+                        576: {
+                            slidesPerView: 2,
+                        },
+                        200: {
+                            slidesPerView: 1,
+                        }
                     }
-                    }
-                ]
-            });
-            $('.els__testimonials__slider.two').slick({
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                infinite: true,
-                dots: true,
-                arrows: false,
-                asNavFor: '.els__testimonials__slider.one',
-                responsive: [
-                    {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 1,
-                        rows: 1
-                    }
-                    }
-                ]
-            });
-        });              
+                });
 
+                swipers.push(swiper);
+            });
+        
+            swipers.forEach(function (swiper, index) {
+                swiper.controller.control = swipers.filter((_, i) => i !== index);
+            });
+        });
+        
     /*============================ About Us Page ============================*/
 
 
