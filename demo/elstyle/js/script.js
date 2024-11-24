@@ -213,7 +213,45 @@
                     }
                 }
             });
-        })
+        });
+
+        //Testimonials Slider
+        $(document).ready(function(){
+            $('.els__testimonials__slider.one').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: false,
+                arrows: false,
+                asNavFor: '.els__testimonials__slider.two',
+                responsive: [
+                    {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        rows: 1
+                    }
+                    }
+                ]
+            });
+            $('.els__testimonials__slider.two').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true,
+                arrows: false,
+                asNavFor: '.els__testimonials__slider.one',
+                responsive: [
+                    {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        rows: 1
+                    }
+                    }
+                ]
+            });
+        });              
 
     /*============================ About Us Page ============================*/
 
