@@ -15,6 +15,7 @@
     12. Footer Section
     13. Testimonials Section
 3. Shop Page
+    1. Breadcrumbs
 
 
 **********************************************/
@@ -2614,6 +2615,124 @@ width: 120px;
 }
 /*** End of Footer Section ***/
 
+/*** Start of Testimonials Section ***/
+.swiper-pagination-bullets {
+	position: absolute;
+	bottom: 0 !important;
+	top: unset !important;
+	display: flex;
+	justify-content: center;
+	z-index: 100;
+}
+
+.swiper-pagination-bullet {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 13px;
+    height: 13px;
+    color: transparent;
+    background: var(--secondary-color);
+    border-radius: 50%;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: transparent;
+    box-shadow: inset 0 0 0 2px var(--text-color);
+    position: relative;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active::after {
+    height: 6px;
+    width: 6px;
+    background: var(--text-color);
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.els__testimonials__section {
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 60px;
+}
+
+.els__testimonials__section .container {
+    padding: 0;
+}
+
+.els__testimonials__section .bottom {
+    margin-right: 150px;
+}
+
+/* Testimonials */
+.els__testimonials__section .swiper-slide {
+    padding: 5px 15px 15px 6px;
+}
+
+.els__testimonials__item {
+	height: 286px;
+	width: 100% !important;
+	border-radius: 8px;
+	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+	display: flex !important;
+	flex-direction: column;
+	gap: 24px;
+	padding: 53px 50px;
+	box-sizing: border-box;
+	flex-shrink: 0;
+	flex-grow: 0;
+    background: var(--background-color);
+    overflow: hidden;
+}
+
+.els__testimonials__item p {
+    margin: 0;
+}
+
+.els__testimonials__item .author {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.els__testimonials__item .author .image {
+    height: 98px;
+    width: 98px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #EEE;
+}
+
+.els__testimonials__item .author .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.els__testimonials__item .author .author__name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.els__testimonials__item .author .author__name .username {
+    font-weight: 600;
+}
+
+.els__testimonials__item .author .author__name .userposition {
+    color: var(--secondary-color);
+}
+
+.els__testimonials__item .review {
+    color: var(--secondary-color);
+}
+/*** End of Testimonials Section ***/
+
 /* ====================================================================
    3. Shop Page
 ==================================================================== */
@@ -3101,124 +3220,12 @@ width: 120px;
 }
 /*** End of Shop Section ***/
 
-/*** Start of Testimonials Section ***/
-.swiper-pagination-bullets {
-	position: absolute;
-	bottom: 0 !important;
-	top: unset !important;
-	display: flex;
-	justify-content: center;
-	z-index: 100;
-}
+/* ====================================================================
+   3. Blog Page
+==================================================================== */
 
-.swiper-pagination-bullet {
-    font-size: 0;
-    line-height: 0;
-    display: block;
-    width: 13px;
-    height: 13px;
-    color: transparent;
-    background: var(--secondary-color);
-    border-radius: 50%;
-}
 
-.swiper-pagination-bullet.swiper-pagination-bullet-active {
-    background: transparent;
-    box-shadow: inset 0 0 0 2px var(--text-color);
-    position: relative;
-}
 
-.swiper-pagination-bullet.swiper-pagination-bullet-active::after {
-    height: 6px;
-    width: 6px;
-    background: var(--text-color);
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-}
-
-.els__testimonials__section {
-	position: relative;
-	overflow: hidden;
-	padding-bottom: 60px;
-}
-
-.els__testimonials__section .container {
-    padding: 0;
-}
-
-.els__testimonials__section .bottom {
-    margin-right: 150px;
-}
-
-/* Testimonials */
-.els__testimonials__section .swiper-slide {
-    padding: 5px 15px 15px 6px;
-}
-
-.els__testimonials__item {
-	height: 286px;
-	width: 100% !important;
-	border-radius: 8px;
-	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
-	display: flex !important;
-	flex-direction: column;
-	gap: 24px;
-	padding: 53px 50px;
-	box-sizing: border-box;
-	flex-shrink: 0;
-	flex-grow: 0;
-    background: var(--background-color);
-    overflow: hidden;
-}
-
-.els__testimonials__item p {
-    margin: 0;
-}
-
-.els__testimonials__item .author {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-
-.els__testimonials__item .author .image {
-    height: 98px;
-    width: 98px;
-    border-radius: 50%;
-    overflow: hidden;
-    flex-shrink: 0;
-    flex-grow: 0;
-    border: 1px solid #EEE;
-}
-
-.els__testimonials__item .author .image img {
-    width: 100%;
-    height: 100%;
-}
-
-.els__testimonials__item .author .author__name {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.els__testimonials__item .author .author__name .username {
-    font-weight: 600;
-}
-
-.els__testimonials__item .author .author__name .userposition {
-    color: var(--secondary-color);
-}
-
-.els__testimonials__item .review {
-    color: var(--secondary-color);
-}
-
-/*** End of Testimonials Section ***/
 
 /*
     transition: 0.3s;
