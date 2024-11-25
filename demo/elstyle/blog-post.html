@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#5840BA">
+
+    <title>Blog - ELStyle</title>
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="icon" type="image/x-icon" href="image/favicon.png">
+    <link rel="apple-touch-icon" href="image/icon.png">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/spacing.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="elstyle els__homepage">
+    <!-- Start of Header Section -->
+    <header class="els__header__section">
+        <div class="container">
+            <div class="top d-flex align-items-center justify-content-between">
+                <p class="promo__text medium__text">The summer product is live</p>
+                <p class="promo__discount medium__text">20% Off in your first order <a href="shop.html" class="medium__text">Shop Now</a></p>
+                <div class="right__side d-flex align-items-center justify-content-end">
+                    <ul class="social__links">
+                        <li><a href="#" title="X"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#" title="YouTube"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="#" title="Pinterest"><i class="fa-brands fa-pinterest"></i></a></li>
+                    </ul>
+                    <select name="elsLanguageSelect" id="elsLanguageSelect">
+                        <option value="en">English</option>
+                        <option value="bn">Bangla</option>
+                        <option value="ur">Urdu</option>
+                        <option value="es">Spanish</option>
+                        <option value="vi">Vietnamese</option>
+                    </select>
+                    <select name="elsCurrencySelect" id="elsCurrencySelect">
+                        <option value="usd">USD</option>
+                        <option value="bdt">BDT</option>
+                        <option value="pkr">PKR</option>
+                        <option value="eur">EUR</option>
+                        <option value="vnd">VND</option>
+                    </select>
+                </div>
+            </div>
+            <div class="bottom d-flex align-items-center justify-content-between">
+                <div class="btm__left__side">
+                    <ul class="els__main__menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="has__submenu"><a href="#">Shop <i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="submenu">
+                                <li><a href="shop.html">shop</a></li>
+                                <li><a href="single-product.html">single product</a></li>
+                            </ul>
+                        </li>
+                        <li class="has__submenu"><a href="#">pages <i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="submenu">
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="blog-post.html">Blog Post</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">contact us</a></li>
+                        <button class="els__mblmenu__closebtn"><i class="fa-solid fa-xmark"></i></button>
+                    </ul>
+                </div>
+                <button class="els__mmenu__btn">
+                    Menu <i class="fa-solid fa-bars"></i>
+                </button>
+                <a href="index.html" class="logo">
+                    <img src="image/logo.png" alt="elstyle logo">
+                </a>
+                <div class="right__side d-flex align-items-center justify-content-end">
+                    <ul>
+                        <li class="els__search__button"><span>Search</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.7441 10.3432C12.7125 9.02177 13.1462 7.3834 12.9585 5.75589C12.7708 4.12838 11.9755 2.63176 10.7318 1.56544C9.48799 0.49912 7.88746 -0.0582551 6.25038 0.00482458C4.6133 0.0679042 3.0604 0.746787 1.90236 1.90565C0.744326 3.06452 0.0665552 4.6179 0.00464701 6.25503C-0.0572612 7.89215 0.501259 9.49229 1.56847 10.7353C2.63568 11.9783 4.13287 12.7725 5.76051 12.9591C7.38815 13.1456 9.02621 12.7107 10.347 11.7414H10.346C10.376 11.7814 10.408 11.8194 10.444 11.8564L14.2944 15.7068C14.4819 15.8944 14.7363 15.9999 15.0016 16C15.2669 16.0001 15.5214 15.8948 15.709 15.7073C15.8967 15.5197 16.0022 15.2653 16.0023 15C16.0023 14.7348 15.897 14.4803 15.7095 14.2926L11.8591 10.4422C11.8234 10.406 11.7849 10.3736 11.7441 10.3432ZM12.0021 6.49882C12.0021 7.22116 11.8599 7.93643 11.5834 8.60379C11.307 9.27115 10.9018 9.87753 10.3911 10.3883C9.88028 10.8991 9.2739 11.3043 8.60654 11.5807C7.93918 11.8571 7.22391 11.9994 6.50157 11.9994C5.77922 11.9994 5.06395 11.8571 4.39659 11.5807C3.72923 11.3043 3.12285 10.8991 2.61208 10.3883C2.1013 9.87753 1.69614 9.27115 1.41971 8.60379C1.14328 7.93643 1.001 7.22116 1.001 6.49882C1.001 5.03998 1.58052 3.64089 2.61208 2.60933C3.64364 1.57777 5.04273 0.998251 6.50157 0.998251C7.96041 0.998251 9.3595 1.57777 10.3911 2.60933C11.4226 3.64089 12.0021 5.03998 12.0021 6.49882Z" fill=""/>
+                            </svg>
+                        </li>
+                        <li class="els__cart__button"><span>Cart</span>
+                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.14351 7.02096C2.14351 7.02096 2.14351 7.02096 2.14351 7.02096L1.07685 13.421C1.02743 13.7174 1.17029 14.0841 1.5175 14.4129C1.86217 14.7394 2.31421 14.9333 2.6841 14.9333H13.3508C13.7207 14.9333 14.1727 14.7394 14.5174 14.4129C14.8646 14.0841 15.0075 13.7174 14.958 13.421L13.8914 7.02096C13.8202 6.59408 13.6027 6.15721 13.2964 5.8328C12.9901 5.50848 12.6329 5.33327 12.2841 5.33327H3.75077C3.40196 5.33327 3.04482 5.50848 2.73852 5.8328C2.43214 6.1572 2.21467 6.59408 2.14351 7.02096ZM1.96304 5.1004C2.41229 4.62472 3.03292 4.2666 3.75077 4.2666H12.2841C13.002 4.2666 13.6226 4.62472 14.0718 5.1004C14.521 5.576 14.8369 6.20579 14.9435 6.84559L16.0102 13.2456C16.1386 14.0163 15.7482 14.7164 15.2509 15.1874C14.7511 15.6607 14.0475 15.9999 13.3508 15.9999H2.6841C1.98733 15.9999 1.28377 15.6607 0.783977 15.1874C0.286714 14.7164 -0.10376 14.0163 0.0246927 13.2456L1.09136 6.84559C1.198 6.2058 1.51387 5.576 1.96304 5.1004Z" fill=""/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.81703 3.1875C5.11158 3.1875 5.35036 3.42628 5.35036 3.72083V6.93324C5.35036 7.22779 5.11158 7.46657 4.81703 7.46657C4.52247 7.46657 4.28369 7.22779 4.28369 6.93324V3.72083C4.28369 3.42628 4.52247 3.1875 4.81703 3.1875Z" fill=""/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.2172 3.19995C11.5117 3.19995 11.7505 3.43873 11.7505 3.73328V6.93329C11.7505 7.22784 11.5117 7.46662 11.2172 7.46662C10.9226 7.46662 10.6838 7.22784 10.6838 6.93329V3.73328C10.6838 3.43873 10.9226 3.19995 11.2172 3.19995Z" fill=""/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.223145 12.2211C0.223145 11.9265 0.461926 11.6877 0.756478 11.6877H15.2778C15.5724 11.6877 15.8112 11.9265 15.8112 12.2211C15.8112 12.5156 15.5724 12.7544 15.2778 12.7544H0.756478C0.461926 12.7544 0.223145 12.5156 0.223145 12.2211Z" fill=""/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.15656 0.498511C6.72221 0.171931 7.36387 0 8.01703 0C8.67019 0 9.31184 0.171931 9.87749 0.498511L9.8775 0.498514C11.0329 1.16563 11.7504 2.48106 11.7504 3.73333C11.7504 4.02788 11.5116 4.26666 11.217 4.26666C10.9225 4.26666 10.6837 4.02788 10.6837 3.73333C10.6837 2.85226 10.1611 1.89395 9.34415 1.42227C8.94066 1.18931 8.48295 1.06667 8.01703 1.06667C7.55111 1.06667 7.09339 1.18931 6.68989 1.42227L6.68989 1.42228C5.87289 1.89395 5.35036 2.85224 5.35036 3.73333C5.35036 4.02788 5.11158 4.26666 4.81703 4.26666C4.52247 4.26666 4.28369 4.02788 4.28369 3.73333C4.28369 2.48108 5.00103 1.16563 6.15656 0.498511Z" fill=""/>
+                                <path d="M0.0170898 14.9333H5.35043V16H0.0170898V14.9333Z" fill=""/>
+                            </svg>
+                        </li>
+                        <li><span>favourite</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.4737 0C12.7114 0 13.7511 0.463768 14.5928 1.3913C15.4344 2.31884 15.8553 3.45098 15.8553 4.78772C15.8553 5.44246 15.7315 6.10401 15.4839 6.77238C15.2364 7.44075 14.9641 8.0341 14.667 8.55243C14.37 9.07076 13.8687 9.73913 13.1632 10.5575C12.4577 11.376 11.8636 12.0375 11.3809 12.5422C10.8982 13.0469 10.1246 13.8176 9.06015 14.8542L7.90906 16L6.75798 14.8951C5.71829 13.8312 4.9509 13.0469 4.45581 12.5422C3.96072 12.0375 3.36042 11.376 2.65492 10.5575C1.94942 9.73913 1.44814 9.07076 1.15108 8.55243C0.85403 8.0341 0.587919 7.44075 0.352752 6.77238C0.117584 6.10401 0 5.44246 0 4.78772C0 3.45098 0.420827 2.31884 1.26248 1.3913C2.10413 0.463768 3.13144 0 4.34442 0C5.78018 0 6.96839 0.613811 7.90906 1.84143C8.84974 0.613811 10.038 0 11.4737 0ZM7.98333 13.5857C9.1963 12.3853 10.0813 11.4919 10.6382 10.9054C11.1952 10.3188 11.8079 9.61637 12.4763 8.79795C13.1446 7.97954 13.6088 7.26343 13.8687 6.64962C14.1286 6.03581 14.2586 5.41517 14.2586 4.78772C14.2586 3.91475 13.9925 3.19182 13.4603 2.61893C12.928 2.04604 12.2659 1.75959 11.4737 1.75959C10.8796 1.75959 10.3164 1.95055 9.78422 2.33248C9.252 2.71441 8.87449 3.20546 8.6517 3.80563H7.16643C6.96839 3.20546 6.60326 2.71441 6.07104 2.33248C5.53882 1.95055 4.96328 1.75959 4.34442 1.75959C3.55227 1.75959 2.89628 2.04604 2.37643 2.61893C1.85659 3.19182 1.59667 3.91475 1.59667 4.78772C1.59667 5.41517 1.72044 6.03581 1.96798 6.64962C2.21553 7.26343 2.67968 7.97954 3.36042 8.79795C4.04117 9.61637 4.66004 10.3188 5.21701 10.9054C5.77399 11.4919 6.64658 12.3853 7.8348 13.5857L7.90906 13.6675L7.98333 13.5857Z" fill=""/>
+                            </svg>
+                        </li>
+                        <li class="els__login__button"><span>sign in</span>
+                            <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.71436 1.14286C6.27945 1.14286 6.83185 1.31043 7.3017 1.62437C7.77155 1.93832 8.13776 2.38454 8.35401 2.90662C8.57026 3.42869 8.62684 4.00317 8.5166 4.5574C8.40636 5.11163 8.13424 5.62073 7.73466 6.02031C7.33508 6.41988 6.82599 6.692 6.27176 6.80224C5.71753 6.91249 5.14305 6.85591 4.62098 6.63966C4.0989 6.42341 3.65268 6.0572 3.33873 5.58734C3.02478 5.11749 2.85721 4.56509 2.85721 4C2.85721 3.24224 3.15823 2.51551 3.69405 1.97969C4.22987 1.44388 4.9566 1.14286 5.71436 1.14286ZM5.71436 0C4.92323 0 4.14987 0.234596 3.49208 0.674122C2.83428 1.11365 2.32159 1.73836 2.01884 2.46927C1.71609 3.20017 1.63688 4.00444 1.79122 4.78036C1.94556 5.55629 2.32652 6.26902 2.88593 6.82843C3.44534 7.38784 4.15807 7.7688 4.934 7.92314C5.70992 8.07748 6.51419 7.99827 7.24509 7.69552C7.97599 7.39277 8.60071 6.88008 9.04024 6.22228C9.47976 5.56448 9.71436 4.79113 9.71436 4C9.71436 2.93913 9.29293 1.92172 8.54278 1.17157C7.79264 0.421427 6.77522 0 5.71436 0Z" fill=""/>
+                                <path d="M11.4286 16H10.2857V13.1428C10.2857 12.7676 10.2118 12.3961 10.0682 12.0494C9.92464 11.7028 9.71419 11.3878 9.44888 11.1225C9.18357 10.8572 8.8686 10.6468 8.52195 10.5032C8.17531 10.3596 7.80378 10.2857 7.42857 10.2857H4C3.24224 10.2857 2.51551 10.5867 1.97969 11.1225C1.44388 11.6583 1.14286 12.3851 1.14286 13.1428V16H0V13.1428C0 12.082 0.421428 11.0645 1.17157 10.3144C1.92172 9.56425 2.93913 9.14282 4 9.14282H7.42857C8.48944 9.14282 9.50685 9.56425 10.257 10.3144C11.0071 11.0645 11.4286 12.082 11.4286 13.1428V16Z" fill=""/>
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Search Box -->
+    <div class="els__search__popup">
+        <div class="elssearch__wrapper">
+            <button class="elssearch__close__btn"><i class="fa-regular fa-circle-xmark"></i></button>
+            <form action="#"><input type="search" placeholder="Search what you're looking for...">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <div class="elssearch__prod__result__area">
+                <div class="elssearch__result__header">
+                    <h6>2 Results Found</h6>
+                    <a href="shop.html">View All</a>
+                </div>
+                <div class="elssearch__search__result">
+                    <div class="search-product">
+                        <div class="search__product__img">
+                            <a href="single-product.html">
+                                <img src="image/products/product-1.png" alt="product image">
+                            </a>
+                        </div>
+                        <div class="search__content">
+                            <div class="product__rating">
+                                <span class="rating__icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                            </span>
+                                <span class="total__rating">(<span>50+</span> Reviews)</span>
+                            </div>
+                            <h5 class="product__title"><a href="single-product.html">Grayish Leather Backpack</a></h5>
+                            <div class="product__price__variant">
+                                <h4>$120.00 <span>$150.00</span></h4>
+                            </div>
+                            <div class="product__cart">
+                                <a href="cart.html" class="cart-btn"><i class="fa-solid fa-bag-shopping"></i></a>
+                                <a href="wishlist.html" class="cart-btn"><i class="fa-regular fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search-product">
+                        <div class="search__product__img">
+                            <a href="single-product.html">
+                                <img src="image/products/product-2.png" alt="product image">
+                            </a>
+                        </div>
+                        <div class="search__content">
+                            <div class="product__rating">
+                                <span class="rating__icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                                <span class="total__rating">(<span>30+</span> Reviews)</span>
+                            </div>
+                            <h5 class="product__title"><a href="single-product.html">Grayish Lea Backpack</a></h5>
+                            <div class="product__price__variant">
+                                <h4>$120.00 <span>$150.00</span></h4>
+                            </div>
+                            <div class="product__cart">
+                                <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+                                <a href="wishlist.html"><i class="fa-regular fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Cart Slider -->
+    <div class="els__cart__slider">
+        <button class="els__cart__closebtn"><i class="fa-solid fa-xmark"></i></button>
+        <div class="main__cart__area">
+            <div class="els__cart__header">
+                <h3>My Cart</h3>
+                <span>2</span>
+            </div>
+            <div class="horizontal__seperator"></div>
+            <div class="els__cart__content">
+                <div class="els__cart__product">
+                    <div class="els__cart__prod__close"><i class="fa-solid fa-x"></i></div>
+                    <div class="image">
+                        <img src="image/promo/left-img2.png" alt="product image">
+                    </div>
+                    <div class="content">
+                        <a href="#">Grayish Leather Backpack</a>
+                        <div class="price__qty">
+                            <h4>$120.00</h4>
+                            <div class="quantity__widget">
+                                <div class="quantity__controls">
+                                    <div class="quantity__decrease">-</div>
+                                    <div class="quantity__display">1</div>
+                                    <div class="quantity__increase">+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="els__cart__product">
+                    <div class="els__cart__prod__close"><i class="fa-solid fa-x"></i></div>
+                    <div class="image">
+                        <img src="image/promo/left-img3.png" alt="product image">
+                    </div>
+                    <div class="content">
+                        <a href="#">Grayish Lea Backpack</a>
+                        <div class="price__qty">
+                            <h4>$120.00</h4>
+                            <div class="quantity__widget">
+                                <div class="quantity__controls">
+                                    <div class="quantity__decrease">-</div>
+                                    <div class="quantity__display">1</div>
+                                    <div class="quantity__increase">+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="horizontal__seperator"></div>
+            <div class="els__cart__subtotal">
+                <p>Subtotal:</p>
+                <p>$240.00</p>
+            </div>
+            <div class="els__cart__cta">
+                <a class="els__button__a" href="cart.html">View Cart</a>
+                <a class="els__button__b" href="checkout.html">Checkout</a>
+            </div>
+        </div>
+    </div>
+    <!-- Login Popup -->
+    <div class="els__login__popup">
+        <div class="elslogin__wrapper">
+            <button class="elslogin__closebtn"><i class="fa-regular fa-circle-xmark"></i></button>
+
+            <form class="elslogin__login__wrap show">
+                <h3 class="fw-bold">Sign In</h3>
+                <p class="medium__text text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, ex!</p>
+                <input type="email" name="elsloginLogin" id="elsloginLoginEmail" placeholder="Email">
+                <input type="password" name="elsloginLogin" id="elsloginLoginPass" placeholder="Password">
+                <button type="submit" class="els__button__a with__arrow">Sign In</button>
+                <div class="links text-center">
+                    <a href="javascript:void(0);" class="elslogin__idnthvacc">I don't have an account</a>
+                    <a href="javascript:void(0);" class="elslogin__forgopass">Forgot Password?</a>
+                </div>
+            </form>
+
+            <form action="#" class="elslogin__register__wrap">
+                <h3 class="fw-bold">Sign Up</h3>
+                <p class="medium__text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quae magni, harum sed ipsum dolores.</p>
+                <input type="email" name="elsloginRegister" id="elsloginRegisterEmail" placeholder="Email">
+                <input type="password" name="elsloginRegister" id="elsloginRegisterPass" placeholder="Password">
+                <button type="submit" class="els__button__a with__arrow">Sign up</button>
+                <div class="links text-center">
+                    <a href="javascript:void(0);" class="elslogin__ialrdyhvacc">I already have an account</a>
+                </div>
+            </form>
+
+            <form action="#" class="elslogin__forgopass__wrap">
+                <h3 class="fw-bold">Forgot Password</h3>
+                <p class="medium__text text-center">Please, enter the email address associated with your account.</p>
+                <input type="email" name="elsloginForgoPass" id="elsloginForgoPassEmail" placeholder="Email">
+                <button type="submit" class="els__button__a with__arrow">Reset</button>
+                <div class="links text-center">
+                    <a href="javascript:void(0);" class="elslogin__ialrdyhvacc">Return to login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- End of Header Section -->
+
+    <!-- Start of Breadcrumbs Section -->
+    <section class="els__breadcrumbs__section">
+        <div class="container wrapper">
+            <div class="els__breadcrumbs">
+                <a href="index.html">home</a>
+                <a href="blog.html">blog</a>
+                <p class="current__page">blog post</p>
+            </div>
+        </div>
+    </section>
+    <!-- End of Breadcrumbs Section -->
+
+    <!-- Start of Blog Post -->
+    <section class="els__blogpost__section">
+        <div class="container wrapper">
+            <div class="els__blogpost__feattitle">
+                <div class="image">
+                    <img src="image/blog/featured.webp" alt="featured image">
+                </div>
+                <h1 class="els__blogpost__title">Lorem ipsum dolor sit amet consec tetur adipis icing elit</h1>
+                <div class="els__blogpost__metainfo">
+                    <span class="elsblp__date"><i class="fa-regular fa-calendar-days"></i> 25 November 2024</span>
+                    <a href="#" class="elsbp__author"><i class="fa-regular fa-user"></i> Shomirul Islam</a>
+                    <a href="#" class="elsbp__category"><i class="fa-regular fa-folder-open"></i> Fashion Guide</a>
+                    <span class="elsbp__comments"><i class="fa-regular fa-comment"></i> 11 Comments</span>
+                </div>
+            </div>
+            <div class="els__blogpost__body">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, fugit ratione reprehenderit fugiat id quaerat? Ipsum dolorem culpa quas recusandae iusto natus perspiciatis, ducimus, quam, nesciunt voluptatum neque dolor quis.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus maiores excepturi tempora veritatis provident quidem veniam optio consectetur delectus beatae suscipit perferendis consequuntur necessitatibus vitae neque labore minima, earum nihil?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa veritatis? Nobis veniam vel minus est ab reiciendis doloribus ducimus magnam quae commodi.</p>
+                <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, id.</h2>
+                <div class="image">
+                    <img src="image/blog/image.webp" alt="image">
+                    <span class="small__text">Caption: Image One</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum possimus aperiam ea officia inventore neque facere necessitatibus sit perspiciatis dicta. Rem, delectus recusandae perspiciatis cumque aliquam esse libero sint voluptatem?</p>
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores accusamus at non obcaecati ratione? Voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, pariatur?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur sit cupiditate et? Error aperiam quibusdam maiores iure sint similique, eius inventore repellendus nemo provident, ipsam modi voluptatum quia eaque esse.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nisi totam accusantium, quibusdam cumque illum est inventore culpa consequatur veritatis in sunt rerum ab eos dicta alias voluptatem incidunt recusandae? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sapiente doloribus minus cumque amet voluptates aperiam recusandae ea error, rerum saepe. Ea, impedit?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, dolor accusantium earum fugit id, accusamus dolores repellendus aut rerum ullam deleniti doloremque odit neque quibusdam possimus doloribus temporibus distinctio optio maiores fuga magni ratione.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem corporis nesciunt quaerat cupiditate, eveniet expedita quia? Quisquam voluptate consequuntur architecto ipsum esse, nobis quia iure eius autem eveniet? Veniam temporibus dignissimos vero quis corporis?</p>
+                <div class="image">
+                    <img src="image/blog/image2.webp" alt="image">
+                    <span class="small__text">Caption: Image Two</span>
+                </div>
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores voluptatem optio earum animi totam neque enim id eligendi consectetur dolor! Dolor doloribus officia aut ex distinctio recusandae veritatis rerum quos!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus similique repellat magnam temporibus cum facilis, nobis fuga perspiciatis, possimus a fugit non vitae. Laboriosam consequatur odio alias eius molestias expedita mollitia nisi beatae accusantium unde nostrum provident, nulla perspiciatis nobis velit porro exercitationem, quidem quibusdam officiis earum modi ipsa libero!</p>
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, aperiam cupiditate ad molestias incidunt libero soluta est ut odio ullam sed, exercitationem eveniet, doloribus eos! Incidunt dignissimos, obcaecati amet vero nihil eligendi minus sapiente id aliquam vel repudiandae! Velit, illum!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni corporis quos laudantium aspernatur ipsam maxime, ullam aut quod inventore fuga doloremque quas.</p>
+            </div>
+            <section>
+                <form action="#" class="els__blogpost__comment">
+                    <h2>Comments</h2>
+                    <span class="small__text">Your email address will not be published. Required fields are marked *</span>
+                    <div class="form__row">
+                        <div class="with__label">
+                            <label for="elsBlogPostCommentName" class="medium__text">Your Name</label>
+                            <input type="text" name="elsBlogPostComment" id="elsBlogPostCommentName">
+                        </div>
+                        <div class="with__label">
+                            <label for="elsBlogPostCommentEmail" class="medium__text">Your Email *</label>
+                            <input type="email" name="elsBlogPostComment" id="elsBlogPostCommentEmail" required>
+                        </div>
+                    </div>
+                    <div class="with__label">
+                        <label for="elsBlogPostCommentComment" class="medium__text">Your Comment *</label>
+                        <textarea name="elsBlogPostComment" id="elsBlogPostCommentComment" required></textarea>
+                    </div>
+                    <button type="submit" class="els__button__a">Submit</button>
+                </form>
+            </section>
+        </div>
+    </section>
+    <!-- End of Blog Post -->
+
+    <!-- Start of Footer Section -->
+    <section class="els__footer__section">
+        <div class="extra">
+            <div class="card one">
+                <svg width="39" height="44" viewBox="0 0 39 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M28.8259 33.8696C28.3579 33.8696 27.978 34.2495 27.978 34.7175C27.978 35.1855 28.3579 35.5653 28.8259 35.5653C29.2939 35.5653 29.6737 35.1855 29.6737 34.7175C29.6737 34.2495 29.2939 33.8696 28.8259 33.8696Z" fill="#262626"/>
+                    <path d="M30.9136 31.1282L26.8839 29.7852L25.4372 26.8919C26.7405 25.5654 27.6454 23.8102 27.9505 21.9795L28.131 20.8981H29.6739C31.0764 20.8981 32.2174 19.7571 32.2174 18.3546V13.0133C32.2174 6.00092 26.5124 0.295898 19.5 0.295898C12.4697 0.295898 6.78261 5.98456 6.78261 13.0133V18.3546C6.78261 19.4598 7.49148 20.4023 8.47826 20.7522V21.7459C8.47826 23.1484 9.61927 24.2894 11.0217 24.2894H11.7663C12.1328 25.0876 12.6117 25.8291 13.1884 26.4915C13.3088 26.6293 13.4333 26.7634 13.562 26.8935L12.1161 29.7852L8.08631 31.1283C3.4008 32.6907 0 37.6232 0 42.8568C0 43.325 0.379572 43.7046 0.847826 43.7046H38.1522C38.6203 43.7046 39 43.325 39 42.8568C39 37.6232 35.5993 32.6907 30.9136 31.1282ZM30.5217 18.3546C30.5217 18.8221 30.1414 19.2024 29.6739 19.2024H28.38C28.5955 17.5331 28.7391 15.7566 28.7968 14.0069C28.7985 13.9576 28.7999 13.9096 28.8014 13.8611H30.5217V18.3546ZM9.32609 19.2024C8.8586 19.2024 8.47826 18.8221 8.47826 18.3546V13.8611H10.1992C10.202 13.9495 10.2049 14.0384 10.2083 14.1278L10.2086 14.1369V14.1377C10.2679 15.8394 10.4097 17.5698 10.6203 19.2023H9.32609V19.2024ZM11.0217 22.5937C10.5542 22.5937 10.1739 22.2134 10.1739 21.7459V20.8981H10.869L11.0494 21.9798C11.0841 22.1859 11.126 22.3906 11.175 22.5937H11.0217ZM10.1754 12.1655H8.51048C8.9399 6.48325 13.682 1.99155 19.5 1.99155C25.2922 1.99155 30.0551 6.48266 30.4894 12.1655H28.8247C28.7637 7.48317 24.9508 3.6872 20.2589 3.6872H18.7413C14.0495 3.6872 10.2363 7.48317 10.1754 12.1655ZM18.7412 5.38285H20.2588C24.0578 5.38285 27.1326 8.49022 27.1304 12.285C27.1304 12.5518 27.1283 12.7841 27.1238 12.9955L27.1237 13.0038L26.0633 12.8523C23.1824 12.4409 20.4622 11.0808 18.4038 9.02249C18.2448 8.86351 18.0292 8.77419 17.8043 8.77416C15.5274 8.77416 13.3478 9.81156 11.907 11.5642C12.2621 8.11192 15.1806 5.38285 18.7412 5.38285ZM12.9327 22.5937C12.5083 21.1818 12.0227 17.0275 11.9153 14.3653L13.0564 12.8438C14.1044 11.4469 15.7349 10.579 17.4693 10.4794C19.7514 12.6512 22.7037 14.0854 25.8235 14.5308L27.0717 14.7092C26.9883 16.4799 26.8178 18.2568 26.5735 19.8909L26.5732 19.8926C26.4956 20.418 26.4344 20.7561 26.278 21.7005C25.829 24.3937 23.8195 26.829 21.1667 27.4923C20.0724 27.7648 18.928 27.7648 17.8337 27.4923C16.1773 27.0782 14.6585 25.9321 13.6783 24.2894H15.4067C15.7567 25.2762 16.699 25.985 17.8043 25.985H19.5C20.9053 25.985 22.0435 24.8469 22.0435 23.4416C22.0435 22.0391 20.9025 20.8981 19.5 20.8981H17.8043C16.6744 20.8981 15.746 21.6279 15.4053 22.5937H12.9327ZM17.733 29.2081C18.314 29.3308 18.9062 29.3929 19.5 29.3933C19.9638 29.3933 20.4278 29.3545 20.8864 29.2792L19.3883 30.8635L17.733 29.2081ZM18.2227 32.0961L15.5336 34.9399C14.7927 33.5217 14.1583 32.0504 13.6354 30.5382L14.6453 28.5185L18.2227 32.0961ZM24.211 28.2313L25.3644 30.5381C24.8416 32.0508 24.207 33.5225 23.466 34.9411L20.5878 32.0629L24.211 28.2313ZM16.9565 23.4416C16.9565 22.9735 17.3362 22.5937 17.8043 22.5937H19.5C19.9675 22.5937 20.3478 22.9741 20.3478 23.4416C20.3478 23.9097 19.9681 24.2894 19.5 24.2894H17.8043C17.3369 24.2894 16.9565 23.909 16.9565 23.4416ZM1.72957 42.0089C2.06556 37.8089 4.86076 33.9913 8.62256 32.7369L12.1914 31.5475C12.8461 33.3575 13.6534 35.1087 14.6046 36.782L14.6093 36.7906L14.6094 36.7907C15.3085 38.0191 16.0836 39.2027 16.9301 40.3346L17.9731 42.0089H1.72957ZM19.5 41.2532L18.3502 39.4072C18.3373 39.3865 18.3236 39.3664 18.309 39.3469C17.6221 38.4301 16.9844 37.4775 16.3987 36.493L19.4223 33.2955L22.6082 36.4815C22.0207 37.47 21.3808 38.4265 20.6912 39.3468C20.6497 39.4021 20.7086 39.3149 19.5 41.2532ZM21.0269 42.0089L22.0698 40.3347C22.9229 39.1941 23.7034 38.0011 24.4068 36.7626C24.411 36.7551 24.415 36.7475 24.4193 36.74L24.4208 36.7373C25.3611 35.0775 26.1598 33.3415 26.8086 31.5475L30.3774 32.7369C34.1392 33.9913 36.9344 37.8089 37.2704 42.0089H21.0269Z" fill="#262626"/>
+                    <path d="M34.7224 38.578C34.1558 37.4438 33.3259 36.4363 32.3223 35.6642C31.9512 35.3786 31.4189 35.4481 31.1334 35.8192C30.8479 36.1904 30.9173 36.7227 31.2884 37.0082C32.0899 37.6248 32.7528 38.4297 33.2054 39.3358C33.4151 39.7553 33.9246 39.9242 34.3428 39.7153C34.7616 39.5061 34.9316 38.9969 34.7224 38.578Z" fill="#262626"/>
+                </svg>
+                <div class="text">
+                    <h5>Customer service</h5>
+                    <p class="small__text">available 24/7</p>
+                </div>
+            </div>
+            <div class="card two">
+                <svg width="46" height="32" viewBox="0 0 46 32" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="46" height="32" fill="url(#pattern0_203_141)"/>
+                    <defs>
+                    <pattern id="pattern0_203_141" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_203_141" transform="matrix(0.0078125 0 0 0.0111607 0 -0.214286)"/>
+                    </pattern>
+                    <image id="image0_203_141" width="128" height="128" xlink:href="data:image/png;base64,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"/>
+                    </defs>
+                    </svg>
+                    
+                <div class="text">
+                    <h5>Easy Shipping</h5>
+                    <p class="small__text">Fast shipping</p>
+                </div>
+            </div>
+            <div class="card three">
+                <svg width="35" height="40" viewBox="0 0 35 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.0823 2.95623C9.8276 2.95623 3.92556 8.85827 3.92556 16.1129C3.92556 23.3674 9.8276 29.2696 17.0823 29.2696C24.3369 29.2696 30.239 23.3675 30.239 16.1129C30.239 8.85835 24.3369 2.95623 17.0823 2.95623ZM17.0823 27.7009C10.6925 27.7009 5.49419 22.5026 5.49419 16.1129C5.49419 9.72329 10.6925 4.52486 17.0823 4.52486C23.472 4.52486 28.6703 9.72321 28.6703 16.1129C28.6703 22.5025 23.472 27.7009 17.0823 27.7009ZM34.0594 33.6976L29.6916 26.1324C31.8834 23.3798 33.1951 19.8969 33.1951 16.1129C33.1951 7.22823 25.967 0 17.0823 0C8.19756 0 0.969406 7.22823 0.969406 16.1129C0.969406 19.8968 2.28117 23.3797 4.47293 26.1323L0.105092 33.6975C0.0257553 33.8349 -0.0100424 33.9931 0.00242597 34.1513C0.0148944 34.3095 0.0750426 34.4601 0.174929 34.5834C0.274815 34.7067 0.409741 34.7968 0.561891 34.8418C0.714042 34.8868 0.876262 34.8846 1.02713 34.8354L7.48681 32.7326L8.8956 39.3783C8.9285 39.5335 9.0077 39.6751 9.12275 39.7843C9.23779 39.8936 9.38326 39.9654 9.53996 39.9902C9.69667 40.0151 9.85722 39.9918 10.0004 39.9236C10.1436 39.8553 10.2628 39.7452 10.3421 39.6077L14.7056 32.05C16.2815 32.2842 17.8832 32.2842 19.459 32.05L23.8225 39.6078C23.9018 39.7452 24.021 39.8553 24.1642 39.9236C24.3074 39.9919 24.4679 40.0152 24.6246 39.9903C24.7813 39.9655 24.9268 39.8937 25.0419 39.7844C25.1569 39.6751 25.2361 39.5335 25.269 39.3783L26.6778 32.7327L33.1375 34.8355C33.2883 34.8847 33.4506 34.8869 33.6027 34.8419C33.7549 34.7969 33.8898 34.7068 33.9897 34.5835C34.0896 34.4602 34.1497 34.3096 34.1622 34.1514C34.1746 33.9932 34.1388 33.8349 34.0594 33.6976ZM10.006 37.0526L8.84046 31.5543C8.81763 31.4467 8.77243 31.3451 8.7078 31.2561C8.64317 31.1671 8.56055 31.0927 8.46531 31.0377C8.37007 30.9828 8.26433 30.9484 8.15495 30.9369C8.04557 30.9255 7.93501 30.9371 7.83042 30.9711L2.48595 32.7109L5.56831 27.3722C7.59913 29.4486 10.1845 30.9802 13.083 31.7232L10.006 37.0526ZM2.53803 16.1129C2.53803 8.09317 9.06258 1.56863 17.0823 1.56863C25.1019 1.56863 31.6265 8.09317 31.6265 16.1129C31.6265 24.1325 25.1019 30.657 17.0823 30.657C9.06258 30.657 2.53803 24.1325 2.53803 16.1129ZM26.334 30.9712C26.2294 30.9372 26.1189 30.9256 26.0095 30.937C25.9001 30.9485 25.7944 30.9829 25.6991 31.0379C25.6039 31.0928 25.5213 31.1672 25.4567 31.2562C25.392 31.3452 25.3468 31.4468 25.324 31.5543L24.1584 37.0527L21.0814 31.7233C23.9799 30.9803 26.5652 29.4487 28.5961 27.3723L31.6785 32.711L26.334 30.9712ZM26.5492 13.9126C26.5007 13.7632 26.4084 13.6318 26.2844 13.5355C26.1603 13.4391 26.0102 13.3823 25.8534 13.3722L19.9825 12.9966L17.8111 7.52925C17.7531 7.38326 17.6527 7.25803 17.5227 7.16981C17.3927 7.08158 17.2393 7.03441 17.0822 7.03441C16.9251 7.03441 16.7716 7.08158 16.6417 7.16981C16.5117 7.25803 16.4112 7.38326 16.3532 7.52925L14.1819 12.9966L8.31097 13.3722C8.15425 13.3823 8.00417 13.4392 7.88016 13.5356C7.75614 13.6319 7.6639 13.7633 7.61537 13.9127C7.56684 14.062 7.56425 14.2225 7.60795 14.3733C7.65165 14.5242 7.73961 14.6584 7.86046 14.7587L12.3893 18.5133L10.9323 24.2128C10.8934 24.365 10.9011 24.5253 10.9544 24.6731C11.0077 24.8208 11.1041 24.9492 11.2312 25.0415C11.3583 25.1338 11.5101 25.1859 11.6672 25.1909C11.8242 25.1959 11.979 25.1537 12.1118 25.0696L17.0823 21.9229L22.0526 25.0697C22.1781 25.1492 22.3236 25.1914 22.4721 25.1914C22.5917 25.1913 22.7096 25.164 22.817 25.1114C22.9243 25.0589 23.0182 24.9825 23.0915 24.8881C23.1649 24.7937 23.2156 24.6837 23.24 24.5667C23.2643 24.4497 23.2616 24.3287 23.2321 24.2129L21.775 18.5134L26.3039 14.7588C26.4248 14.6585 26.5128 14.5243 26.5566 14.3734C26.6003 14.2225 26.5978 14.062 26.5492 13.9126ZM20.3916 17.6227C20.2772 17.7175 20.1922 17.8428 20.1462 17.9841C20.1003 18.1254 20.0955 18.2768 20.1323 18.4207L21.2232 22.6879L17.5019 20.3318C17.3764 20.2524 17.2309 20.2102 17.0823 20.2102C16.9338 20.2102 16.7883 20.2524 16.6628 20.3318L12.9415 22.6879L14.0324 18.4207C14.0692 18.2768 14.0643 18.1254 14.0184 17.9841C13.9725 17.8428 13.8874 17.7175 13.7731 17.6227L10.3823 14.8115L14.7779 14.5303C14.9261 14.5208 15.0686 14.4694 15.1888 14.3821C15.3089 14.2948 15.4019 14.1751 15.4567 14.0371L17.0823 9.9436L18.708 14.0371C18.7628 14.1751 18.8557 14.2948 18.9759 14.3821C19.0961 14.4694 19.2386 14.5208 19.3868 14.5303L23.7824 14.8115L20.3916 17.6227Z" fill="#262626"/>
+                </svg>
+                <div class="text">
+                    <h5>Special Discount</h5>
+                    <p class="small__text">amazing discounts</p>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="container">
+                <div class="top row">
+                    <div class="col-md-3 col-sm-6 mb-md-0 mb-4">
+                        <div class="logo">
+                            <img src="image/logo.png" alt="logo">
+                        </div>
+                        <div class="about">
+                            <p class="medium__text">12 Main Pt. London</p>
+                            <a href="tel:+44123456789" class="medium__text">+44 1234 5678</a>
+                            <a href="mailto:support@example.com" class="medium__text">support@example.com</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-md-0 mb-2">
+                        <h5>About Us</h5>
+                        <ul>
+                            <li><a href="#" class="medium__text">About us</a></li>
+                            <li><a href="#" class="medium__text">Working With Us</a></li>
+                            <li><a href="shop.html" class="medium__text">Shop</a></li>
+                            <li><a href="#" class="medium__text">Our mission</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-sm-0 mb-2">
+                        <h5>Support</h5>
+                        <ul>
+                            <li><a href="#" class="medium__text">Customer Support</a></li>
+                            <li><a href="#" class="medium__text">Privacy & Policy</a></li>
+                            <li><a href="#" class="medium__text">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6 p-md-0 mb-sm-0 mb-2">
+                        <h5>Subscribe Now</h5>
+                        <div class="newsletter">
+                            <p class="medium__text">Don't miss To Get Update</p>
+                            <form action="#">
+                                <input type="email" name="elsFooterNewsletter" id="elsFooterNewsletter" placeholder="support@example.com">
+                                <button type="submit">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <p class="els__copyright small__text">&copy;<script>document.write(new Date().getFullYear())</script>&nbsp; <a href="index.html" class="small__text">ELStyle</a>. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Footer Section -->
+
+    <!-- JS Links -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -9,9 +9,7 @@
     a,
     li,
     button,
-    input,
     label,
-    textarea,
     th, td,
     blockquote,
     .accordion-item .accordion-button,
@@ -32,7 +30,8 @@
         width: 4px !important;
     }
     .medium__text,
-    input {
+    input,
+    textarea {
         font-size: 11px;
         line-height: 17px;
     }
@@ -43,6 +42,10 @@
     input {
         padding: 0 8px;
         height: 40px;
+    }
+    textarea {
+        padding: 8px 12px;
+        height: 120px;
     }
     h1 {
         font-size: 40px;
@@ -68,6 +71,10 @@
         font-size: 12px;
     }
     form {
+        gap: 10px;
+    }
+    .form__row {
+        flex-direction: column;
         gap: 10px;
     }
     .els__section__title {
@@ -736,6 +743,28 @@
         .elsshop__sidebar__widgets form {
             gap: 8px;
         }
+    /*===== Blog Page =====*/
+        .els__blogpost__feattitle .els__blogpost__title {
+            font-size: 28px;
+        }
+        .els__blogpost__body .image img {
+            width: 100%;
+        }
+        .els__blogpost__feattitle {
+            gap: 16px;
+        }
+        .els__blogpost__body h2,
+        .els__blogpost__body h3,
+        .els__blogpost__body h4,
+        .els__blogpost__body h5,
+        .els__blogpost__body h6,
+        .els__blogpost__body .image,
+        .els__blogpost__feattitle .els__blogpost__metainfo {
+            margin-bottom: 14px;
+        }
+        .els__blogpost__feattitle .els__blogpost__metainfo {
+            row-gap: 5px;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
@@ -749,9 +778,7 @@
     a,
     li,
     button,
-    input,
     label,
-    textarea,
     th, td,
     blockquote,
     .accordion-item .accordion-button,
@@ -772,7 +799,8 @@
         width: 6px !important;
     }
     .medium__text,
-    input {
+    input,
+    textarea {
         font-size: 13px;
         line-height: 19px;
     }
@@ -782,6 +810,10 @@
     }
     input {
         padding: 0 12px;
+    }
+    textarea {
+        padding: 8px 12px;
+        height: 150px;
     }
     h1 {
         font-size: 42px;
@@ -807,6 +839,10 @@
         font-size: 13px;
     }
     form {
+        gap: 10px;
+    }
+    .form__row {
+        flex-direction: column;
         gap: 10px;
     }
     .els__section__title {
@@ -1348,6 +1384,28 @@
         .els__shop__sidebar .elsshop__sidebar__closebtn {
             left: calc(255px + 4px);
         }
+    /*===== Blog Page =====*/
+        .els__blogpost__feattitle .els__blogpost__title {
+            font-size: 30px;
+        }
+        .els__blogpost__body .image img {
+            width: 100%;
+        }
+        .els__blogpost__feattitle {
+            gap: 18px;
+        }
+        .els__blogpost__body h2,
+        .els__blogpost__body h3,
+        .els__blogpost__body h4,
+        .els__blogpost__body h5,
+        .els__blogpost__body h6,
+        .els__blogpost__body .image,
+        .els__blogpost__feattitle .els__blogpost__metainfo {
+            margin-bottom: 16px;
+        }
+        .els__blogpost__feattitle .els__blogpost__metainfo {
+            row-gap: 5px;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -1359,9 +1417,7 @@
     a,
     li,
     button,
-    input,
     label,
-    textarea,
     th, td,
     blockquote,
     .accordion-item .accordion-button,
@@ -1382,7 +1438,8 @@
         width: 6px !important;
     }
     .medium__text,
-    input {
+    input,
+    textarea {
         font-size: 13px;
         line-height: 19px;
     }
@@ -1392,6 +1449,9 @@
     }
     input {
         padding: 0 15px;
+    }
+    textarea {
+        padding: 10px 15px;
     }
     h1 {
         font-size: 45px;
@@ -1417,6 +1477,9 @@
         font-size: 14px;
     }
     form {
+        gap: 10px;
+    }
+    .form__row {
         gap: 10px;
     }
     .els__section__title {
@@ -1864,6 +1927,28 @@
         .els__shop__sidebar .elsshop__sidebar__closebtn {
             left: calc(350px + 10px);
         }
+    /*===== Blog Page =====*/
+        .els__blogpost__feattitle .els__blogpost__title {
+            font-size: 36px;
+        }
+        .els__blogpost__body .image img {
+            width: 100%;
+        }
+        .els__blogpost__feattitle {
+            gap: 18px;
+        }
+        .els__blogpost__body h2,
+        .els__blogpost__body h3,
+        .els__blogpost__body h4,
+        .els__blogpost__body h5,
+        .els__blogpost__body h6,
+        .els__blogpost__body .image,
+        .els__blogpost__feattitle .els__blogpost__metainfo {
+            margin-bottom: 16px;
+        }
+        .els__blogpost__feattitle .els__blogpost__metainfo {
+            row-gap: 5px;
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -1875,9 +1960,7 @@
     a,
     li,
     button,
-    input,
     label,
-    textarea,
     th, td,
     blockquote,
     .accordion-item .accordion-button,
@@ -1898,7 +1981,8 @@
         width: 8px !important;
     }
     .medium__text,
-    input {
+    input,
+    textarea {
         font-size: 13px;
         line-height: 19px;
     }
@@ -2320,6 +2404,25 @@
         .elsshop__sidebar__widgets form {
             gap: 10px;
         }
+    /*===== Blog Page =====*/
+        .els__blogpost__feattitle .els__blogpost__title {
+            font-size: 40px;
+        }
+        .els__blogpost__body .image img {
+            width: 100%;
+        }
+        .els__blogpost__feattitle {
+            gap: 20px;
+        }
+        .els__blogpost__body h2,
+        .els__blogpost__body h3,
+        .els__blogpost__body h4,
+        .els__blogpost__body h5,
+        .els__blogpost__body h6,
+        .els__blogpost__body .image,
+        .els__blogpost__feattitle .els__blogpost__metainfo {
+            margin-bottom: 18px;
+        }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -2331,9 +2434,7 @@
     a,
     li,
     button,
-    input,
     label,
-    textarea,
     th, td,
     blockquote,
     .accordion-item .accordion-button,
@@ -2354,16 +2455,14 @@
         width: 10px !important;
     }
     .medium__text,
-    input {
+    input,
+    textarea {
         font-size: 13px;
         line-height: 19px;
     }
     .small__text {
         font-size: 12px;
         line-height: 18px;
-    }
-    form {
-        gap: 15px;
     }
     h1 {
         font-size: 55px;
@@ -2695,6 +2794,13 @@
             height: 68px;
             width: 68px;
         }
+    /*===== Blog Page =====*/
+        .els__blogpost__feattitle .els__blogpost__title {
+            font-size: 50px;
+        }
+        .els__blogpost__body .image img {
+            width: 70%;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -2706,9 +2812,7 @@
     a,
     li,
     button,
-    input,
     label,
-    textarea,
     th, td,
     blockquote,
     .accordion-item .accordion-button,
@@ -2729,7 +2833,8 @@
         width: 10px !important;
     }
     .medium__text,
-    input {
+    input,
+    textarea {
         font-size: 15px;
         line-height: 22px;
     }

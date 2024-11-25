@@ -522,7 +522,8 @@ form {
     gap: 20px;
 }
 
-input {
+input,
+textarea {
     height: 46px;
     background: var(--background-color);
     padding: 0 19px;
@@ -531,6 +532,24 @@ input {
     border-radius: 8px;
     box-shadow: 0 0 0 1px var(--text-color);
     width: 100%;
+}
+
+textarea {
+    padding: 10px 19px;
+    height: 200px;
+}
+
+.form__row {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.with__label {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 /* Checkbox Input */
@@ -3223,7 +3242,71 @@ width: 120px;
 /* ====================================================================
    3. Blog Page
 ==================================================================== */
+/*** Start of Blog Post ***/
+.els__blogpost__feattitle {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
 
+.els__blogpost__feattitle .image {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.els__blogpost__feattitle .image img {
+    width: 100%;
+    height: auto;
+}
+
+.els__blogpost__feattitle .els__blogpost__title {
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.els__blogpost__feattitle .els__blogpost__metainfo {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+
+.els__blogpost__feattitle a {
+    text-decoration: none;
+}
+
+/* Post Body */
+.els__blogpost__body h2,
+.els__blogpost__body h3,
+.els__blogpost__body h4,
+.els__blogpost__body h5,
+.els__blogpost__body h6 {
+    margin-bottom: 24px;
+}
+
+.els__blogpost__body .image {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.els__blogpost__body .image span {
+    color: var(--secondary-color);
+    font-style: italic;
+}
+
+/* Comment */
+.els__blogpost__comment {
+    width: 100%;
+}
+
+
+/*** End of Blog Post ***/
 
 
 
