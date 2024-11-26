@@ -258,7 +258,7 @@
             $('#elsshop__prodamount').niceSelect();
         }
 
-        //Category Section Slider (Shop V2)
+        //Category Section Slider
         $(function(){
             var swiper = new Swiper(".elsshop__cat__slider", {
                 loop: true,
@@ -341,6 +341,53 @@
             $('.elsshop__sidebar__closebtn').on('click', function(){
                 $('.els__shop__sidebar').removeClass('show')
             })
+        });
+
+        //Single Product Active Toggle
+        $(function() {
+            //Size
+            $('.elssp__size__item').on('click', function() {
+                $('.elssp__size__item').removeClass('active');
+                $(this).addClass('active');
+            });
+
+            //Color
+            $('.elssp__color__item').on('click', function() {
+                $('.elssp__color__item').removeClass('active');
+                $(this).addClass('active');
+            });
+        });
+
+        //Single Product Image Slider
+        $(function(){
+            var swiper = new Swiper(".elssp__smallimage__slider", {
+                spaceBetween: 5,
+                pagination: {
+                    el: ".elssp__slidercontrols__pagination",
+                    type: "fraction",
+                    formatFractionCurrent: (number) => {
+                        return number < 10 ? '0' + number : number;
+                    },
+                    formatFractionTotal: (number) => {
+                        return number < 10 ? '0' + number : number;
+                    },
+                },
+                scrollbar: {
+                    el: ".elssp__slidercontrols__scrollbar",
+                },
+                breakpoints: {
+                    992: {
+                        slidesPerView: 2,
+                    },
+                },
+            });
+            var swiper2 = new Swiper(".elssp__mainimage__slider", {
+                loop: true,
+                allowTouchMove: false,
+                thumbs: {
+                  swiper: swiper,
+                },
+            });
         });
 
         //Review Form Show/Hide

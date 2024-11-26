@@ -157,46 +157,53 @@
             border-radius: 4px;
         }
         /*Search Popup*/
-        .elbp__search__popup form {
+        .els__search__popup form {
             height: 40px;
             margin: 15px 0;
         }
-        .elbp__search__popup input {
+        .els__search__popup input {
             font-size: 14px;
         }
-        .elbpsearch__prod__result__area .elbpsearch__result__header {
+        .elssearch__prod__result__area .elssearch__result__header {
             margin-bottom: 15px;
         }
-        .elbpsearch__wrapper {
+        .elssearch__wrapper {
             width: 95vw;
             padding: 25px 10px;
         }
-        .elbp__search__popup .elbpsearch__close__btn,
+        .els__search__popup .elssearch__close__btn {
+            margin: 0;
+        }
+        .els__search__popup .elssearch__close__btn,
         .els__login__popup .elslogin__closebtn {
             font-size: 20px;
         }
-        .elbpsearch__result__header,
-        .elbpsearch__result__header h6 {
+        .els__search__popup button {
+            height: 42px;
+            width: 34px;
+        }
+        .elssearch__result__header,
+        .elssearch__result__header h6 {
             font-size: 13px;
         }
-        .elbpsearch__prod__result__area .search__content .product__rating {
+        .elssearch__prod__result__area .search__content .product__rating {
             margin: 0 auto 10px auto;
             flex-direction: column;
         }
-        .elbpsearch__prod__result__area .search__content .product__title a,
-        .elbpsearch__prod__result__area .search__content .product__price__variant h4 {
+        .elssearch__prod__result__area .search__content .product__title a,
+        .elssearch__prod__result__area .search__content .product__price__variant h4 {
             font-size: 12px;
         }
-        .elbpsearch__prod__result__area .search__content .product__rating .total__rating {
+        .elssearch__prod__result__area .search__content .product__rating .total__rating {
             margin-left: 0;
             margin-top: 8px;
         }
-        .elbpsearch__prod__result__area .search__content .product__rating .rating__icon,
-        .elbpsearch__prod__result__area .search__content .product__rating .total__rating,
-        .elbpsearch__prod__result__area .search__content .product__rating .total__rating span {
+        .elssearch__prod__result__area .search__content .product__rating .rating__icon,
+        .elssearch__prod__result__area .search__content .product__rating .total__rating,
+        .elssearch__prod__result__area .search__content .product__rating .total__rating span {
             font-size: 14px;
         }
-        .elbpsearch__prod__result__area .elbpsearch__search__result .search-product {
+        .elssearch__prod__result__area .elssearch__search__result .search-product {
             padding: 20px 10px;
             display: flex;
             flex-direction: column;
@@ -204,20 +211,20 @@
         .search__product__img {
             margin-bottom: 25px;
         }
-        .elbpsearch__prod__result__area .search__product__img a {
+        .elssearch__prod__result__area .search__product__img a {
             margin-right: 10px;
         }
-        .elbpsearch__prod__result__area .search__content {
+        .elssearch__prod__result__area .search__content {
             padding-right: 0;
             text-align: center;
         }
-        .elbpsearch__prod__result__area .search__content .product__cart {
+        .elssearch__prod__result__area .search__content .product__cart {
             all: unset;
             display: flex;
             position: relative;
             justify-content: center;
         }
-        .elbpsearch__prod__result__area .search__content .product__cart a {
+        .elssearch__prod__result__area .search__content .product__cart a {
             height: 35px;
             width: 35px;
             line-height: 35px;
@@ -225,11 +232,11 @@
             margin-right: 10px;
         }
         /*Cart Slider*/
-        .elbp__cart__slider .main__cart__area {
+        .els__cart__slider .main__cart__area {
             width: 180px;
             padding: 10px 5px;
         }
-        .elbp__cart__slider .elbp__cart__closebtn{
+        .els__cart__slider .els__cart__closebtn{
             right: 182px;
             height: 80px;
             width: 16px;
@@ -237,12 +244,12 @@
             font-size: 14px;
             border-radius: 5px;
         }
-        .elbp__cart__slider .main__cart__area .elbp__cart__header h3 {
+        .els__cart__slider .main__cart__area .els__cart__header h3 {
             font-size: 20px;
             line-height: 20px;
             margin-bottom: 0;
         }
-        .elbp__cart__slider .main__cart__area .elbp__cart__header span {
+        .els__cart__slider .main__cart__area .els__cart__header span {
             font-size: 20px;
             line-height: 22px;
             height: 22px;
@@ -250,26 +257,26 @@
             font-weight: 400;
             padding: 0 8px;
         }
-        .elbp__cart__slider .main__cart__area .elbp__cart__cta {
+        .els__cart__slider .main__cart__area .els__cart__cta {
             flex-direction: column;
             align-items: center;
             gap: 5px;
         }
-        .elbp__cart__product .content {
+        .els__cart__product .content {
             width: 100%;
         }
-        .elbp__cart__product {
+        .els__cart__product {
             align-items: center;
             gap: 10px;
             margin-bottom: 10px;
             flex-direction: column;
         }
-        .elbp__cart__product a {
+        .els__cart__product a {
             font-size: 14px;
             line-height: 20px;
             text-align: center;
         }
-        .elbp__cart__product .price__qty {
+        .els__cart__product .price__qty {
             justify-content: center;
         }
         /*Login Popup*/
@@ -506,7 +513,7 @@
             margin-bottom: 20px;
             justify-content: space-between;
         }
-        .els__countdown__timer .elbpct__items {
+        .els__countdown__timer .elsct__items {
             width: 61px;
             height: 72px;
         }
@@ -912,18 +919,23 @@
             border-radius: 8px;
         }
         /*Search Popup*/
-        .elbpsearch__wrapper {
+        .elssearch__wrapper {
             width: 90vw;
             padding: 25px;
         }
-        .elbpsearch__prod__result__area .search__content .product__rating {
+        .elssearch__prod__result__area .search__content .product__rating {
             margin: 0 auto 10px auto;
         }
-        .elbp__search__popup .elbpsearch__close__btn,
+        .els__search__popup .elssearch__close__btn {
+            margin: 0;
+            height: 35px;
+            width: 35px;
+        }
+        .els__search__popup .elssearch__close__btn,
         .els__login__popup .elslogin__closebtn {
             font-size: 20px;
         }
-        .elbpsearch__prod__result__area .elbpsearch__search__result .search-product {
+        .elssearch__prod__result__area .elssearch__search__result .search-product {
             padding: 20px 10px;
             display: flex;
             flex-direction: column;
@@ -931,40 +943,40 @@
         .search__product__img {
             margin-bottom: 25px;
         }
-        .elbpsearch__prod__result__area .search__product__img a {
+        .elssearch__prod__result__area .search__product__img a {
             margin-right: 10px;
         }
-        .elbpsearch__prod__result__area .search__content {
+        .elssearch__prod__result__area .search__content {
             padding-right: 0;
             text-align: center;
         }
-        .elbpsearch__prod__result__area .search__content .product__cart {
+        .elssearch__prod__result__area .search__content .product__cart {
             all: unset;
             display: flex;
             position: relative;
             justify-content: center;
         }
-        .elbpsearch__prod__result__area .search__content .product__cart a {
+        .elssearch__prod__result__area .search__content .product__cart a {
             margin-right: 10px;
         }
         /*Cart Slider*/
-        .elbp__cart__slider .main__cart__area {
+        .els__cart__slider .main__cart__area {
             width: 255px;
             padding: 20px 10px;
         }
-        .elbp__cart__slider .elbp__cart__closebtn {
+        .els__cart__slider .els__cart__closebtn {
             right: 257px;
             height: 30px;
             width: 30px;
             line-height: 30px;
             font-size: 14px;
         }
-        .elbp__cart__slider .main__cart__area .elbp__cart__header h3{
+        .els__cart__slider .main__cart__area .els__cart__header h3{
             font-size: 24px;
             line-height: 24px;
             margin-bottom: 0;
         }
-        .elbp__cart__slider .main__cart__area .elbp__cart__header span {
+        .els__cart__slider .main__cart__area .els__cart__header span {
             font-size: 24px;
             line-height: 26px;
             height: 26px;
@@ -972,16 +984,16 @@
             font-weight: 400;
             padding: 0 8px;
         }
-        .elbp__cart__product .image {
+        .els__cart__product .image {
             width: 80px;
             height: 80px;
         }
-        .elbp__cart__product a,
-        .elbp__cart__product h4 {
+        .els__cart__product a,
+        .els__cart__product h4 {
             font-size: 14px;
             line-height: 20px;
         }
-        .elbp__cart__product .content {
+        .els__cart__product .content {
             display: flex;
             flex-direction: column;
             gap: 10px;
@@ -1192,7 +1204,7 @@
             gap: 5px;
             margin-bottom: 20px;
         }
-        .els__countdown__timer .elbpct__items {
+        .els__countdown__timer .elsct__items {
             width: 90px;
             height: 98px;
         }
@@ -1532,15 +1544,20 @@
             padding-top: 10px;
         }
         /*Search Popup*/
-        .elbpsearch__wrapper {
+        .elssearch__wrapper {
             width: 80vw;
             padding: 25px;
         }
-        .elbp__search__popup .elbpsearch__close__btn,
+        .els__search__popup .elssearch__close__btn {
+            margin: 0;
+            height: 35px;
+            width: 35px;
+        }
+        .els__search__popup .elssearch__close__btn,
         .els__login__popup .elslogin__closebtn {
             font-size: 20px;
         }
-        .elbpsearch__prod__result__area .elbpsearch__search__result .search-product {
+        .elssearch__prod__result__area .elssearch__search__result .search-product {
             padding: 10px;
             display: flex;
             flex-direction: column;
@@ -1548,33 +1565,33 @@
         .search__product__img {
             margin-bottom: 15px;
         }
-        .elbpsearch__prod__result__area .search__product__img a {
+        .elssearch__prod__result__area .search__product__img a {
             margin-right: 10px;
         }
-        .elbpsearch__prod__result__area .search__content .product__title a,
-        .elbpsearch__prod__result__area .search__content .product__price__variant h4 {
+        .elssearch__prod__result__area .search__content .product__title a,
+        .elssearch__prod__result__area .search__content .product__price__variant h4 {
             font-size: 16px;
         }
-        .elbpsearch__prod__result__area .search__content .product__rating .rating__icon,
-        .elbpsearch__prod__result__area .search__content .product__rating .total__rating,
-        .elbpsearch__prod__result__area .search__content .product__rating .total__rating span {
+        .elssearch__prod__result__area .search__content .product__rating .rating__icon,
+        .elssearch__prod__result__area .search__content .product__rating .total__rating,
+        .elssearch__prod__result__area .search__content .product__rating .total__rating span {
             font-size: 12px;
         }
         /*Cart Slider*/
-        .elbp__cart__slider .main__cart__area {
+        .els__cart__slider .main__cart__area {
             width: 350px;
         }
-        .elbp__cart__slider .elbp__cart__closebtn {
+        .els__cart__slider .els__cart__closebtn {
             right: 360px;
         }
-        .elbp__cart__product .image {
+        .els__cart__product .image {
             width: 90px;
             height: 90px;
         }
-        .elbp__cart__product {
+        .els__cart__product {
             gap: 10px;
         }
-        .elbp__cart__product a {
+        .els__cart__product a {
             font-size: 16px;
             line-height: 22px;
         }
@@ -1777,7 +1794,7 @@
             gap: 10px;
             margin-bottom: 20px;
         }
-        .els__countdown__timer .elbpct__items {
+        .els__countdown__timer .elsct__items {
             width: 90px;
             height: 98px;
         }
@@ -2057,37 +2074,42 @@
             padding-top: 10px;
         }
         /*Search Popup*/
-        .elbpsearch__wrapper {
+        .elssearch__wrapper {
             width: 80vw;
             padding: 25px;
         }
-        .elbp__search__popup .elbpsearch__close__btn,
+        .els__search__popup .elssearch__close__btn {
+            margin: 0;
+            height: 35px;
+            width: 35px;
+        }
+        .els__search__popup .elssearch__close__btn,
         .els__login__popup .elslogin__closebtn {
             font-size: 20px;
         }
-        .elbpsearch__prod__result__area .elbpsearch__search__result .search-product {
+        .elssearch__prod__result__area .elssearch__search__result .search-product {
             padding: 15px;
         }
-        .elbpsearch__prod__result__area .search__product__img a {
+        .elssearch__prod__result__area .search__product__img a {
             margin-right: 15px;
         }
-        .elbpsearch__prod__result__area .search__content .product__title a,
-        .elbpsearch__prod__result__area .search__content .product__price__variant h4 {
+        .elssearch__prod__result__area .search__content .product__title a,
+        .elssearch__prod__result__area .search__content .product__price__variant h4 {
             font-size: 16px;
         }
-        .elbpsearch__prod__result__area .search__content .product__rating .rating__icon,
-        .elbpsearch__prod__result__area .search__content .product__rating .total__rating,
-        .elbpsearch__prod__result__area .search__content .product__rating .total__rating span {
+        .elssearch__prod__result__area .search__content .product__rating .rating__icon,
+        .elssearch__prod__result__area .search__content .product__rating .total__rating,
+        .elssearch__prod__result__area .search__content .product__rating .total__rating span {
             font-size: 12px;
         }
         /*Cart Slider*/
-        .elbp__cart__slider .main__cart__area {
+        .els__cart__slider .main__cart__area {
             width: 350px;
         }
-        .elbp__cart__slider .elbp__cart__closebtn {
+        .els__cart__slider .els__cart__closebtn {
             right: 360px;
         }
-        .elbp__cart__product {
+        .els__cart__product {
             gap: 10px;
         }
         /*Hero Section*/
@@ -2250,7 +2272,7 @@
             gap: 10px;
             margin-bottom: 28px;
         }
-        .els__countdown__timer .elbpct__items {
+        .els__countdown__timer .elsct__items {
             width: 100px;
             height: 108px;
         }
@@ -2512,23 +2534,23 @@
             width: 13px;
         }
         /*Search Popup*/
-        .elbpsearch__wrapper {
+        .elssearch__wrapper {
             width: 75vw;
         }
-        .elbpsearch__prod__result__area .elbpsearch__search__result .search-product {
+        .elssearch__prod__result__area .elssearch__search__result .search-product {
             padding: 20px;
         }
-        .elbpsearch__prod__result__area .search__product__img a {
+        .elssearch__prod__result__area .search__product__img a {
             margin-right: 20px;
         }
         /*Cart Slider*/
-        .elbp__cart__product {
+        .els__cart__product {
             gap: 10px;
         }
-        .elbp__cart__slider .main__cart__area {
+        .els__cart__slider .main__cart__area {
             width: 350px;
         }
-        .elbp__cart__slider .elbp__cart__closebtn {
+        .els__cart__slider .els__cart__closebtn {
             right: 360px;
         }
         /*Hero Section*/
@@ -2695,7 +2717,7 @@
             gap: 10px;
             margin-bottom: 28px;
         }
-        .els__countdown__timer .elbpct__items {
+        .els__countdown__timer .elsct__items {
             width: 100px;
             height: 108px;
         }
@@ -2872,7 +2894,7 @@
             padding: 0 13px;
         }
         /*Search Popup*/
-        .elbpsearch__wrapper {
+        .elssearch__wrapper {
             width: 70vw;
         }
         /*Hero Section*/
