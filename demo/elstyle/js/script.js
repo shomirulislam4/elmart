@@ -257,6 +257,10 @@
             $('#elsshop__sort').niceSelect();
             $('#elsshop__prodamount').niceSelect();
         }
+        if ($('.els__singleproductpage').length) {
+            $('.elsReviewFilterTiming').niceSelect();
+            $('.elsReviewFilterRating').niceSelect();
+        }
 
         //Category Section Slider
         $(function(){
