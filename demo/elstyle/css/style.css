@@ -3459,10 +3459,30 @@ width: 120px;
     color: var(--main-color);
 }
 
+@media (max-width: 1199px) {
+    .elssp__productinfo .elssp__addtocart {
+        padding-right: 15px;
+    }
+    .elssp__productinfo .cta__buttons {
+        gap: 10px;
+    }
+}
+
 /* Product Main Image */
 .elssp__mainimage__slider {
-    height: 490px;
-    width: 400px;
+	display: flex;
+	align-items: flex-end;
+	height: 100%;
+}
+
+.elssp__mainimage__slider .swiper-slide {
+    display: flex;
+    align-items: flex-end;
+}
+
+.elssp__mainimage__slider .swiper-slide img {
+    width: 100%;
+    height: auto;
 }
 
 /* Product Slider Image */
@@ -3531,6 +3551,15 @@ width: 120px;
 .elssp__slidercontrols__scrollbar .swiper-scrollbar-drag {
     background: var(--primary-color);
 }
+
+@media (max-width: 1199px) {
+    .elssp__productimageslider {
+        padding-left: 0;
+    }
+    .elssp__smallimage__slider {
+        height: fit-content;
+    }
+}
 /*** End of Single Product Section ***/
 
 /** Product Description **/
@@ -3577,7 +3606,7 @@ table th {
     font-weight: 700;
 }
 
-/** Review Form **/
+/** Review Area **/
 .elssp__review .wrapper .title {
     display: flex;
     flex-direction: column;
@@ -3740,6 +3769,11 @@ table th {
 
 .els__review__form.show {
     max-height: 600px;
+}
+
+.jq-ry-container {
+	padding: 0;
+	margin-bottom: 15px;
 }
 
 /*
