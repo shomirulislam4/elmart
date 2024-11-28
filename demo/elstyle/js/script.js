@@ -366,6 +366,7 @@
         $(function(){
             var swiper = new Swiper(".elssp__smallimage__slider", {
                 spaceBetween: 5,
+                slidesPerView: 2,
                 pagination: {
                     el: ".elssp__slidercontrols__pagination",
                     type: "fraction",
@@ -378,11 +379,6 @@
                 },
                 scrollbar: {
                     el: ".elssp__slidercontrols__scrollbar",
-                },
-                breakpoints: {
-                    992: {
-                        slidesPerView: 2,
-                    },
                 },
             });
             var swiper2 = new Swiper(".elssp__mainimage__slider", {
