@@ -124,7 +124,7 @@
     });
   });
 
-  /*============================ Shop page ============================*/
+/*============================ Shop page ============================*/
   //Shop Page Filter Sidebar
   $(function(){
       $('.fsnfss__filter__button').on('click', function(){
@@ -135,7 +135,7 @@
       })
   });
 
-  /*============================ Single Product page ============================*/
+/*============================ Single Product page ============================*/
   //Single Product Image Slider
   $(function(){
       var fsnfsliderthumb = new Swiper(".fsnfsp__product__image__slider1", {
