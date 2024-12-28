@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#FF5400">
+
+    <title>Checkout - Elmart</title>
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="icon" type="image/x-icon" href="image/favicon.png">
+    <link rel="apple-touch-icon" href="image/icon.png">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/spacing.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="checkout-page">
+    <!---- Start of Header Section (Header - Style Five) ---->
+    <!-- Header Top Promo Area 2 -->
+    <div class="header-top-banner">
+        <p>Use the promo code <strong>OFF50</strong> to get a flat $50 discount!</p>
+        <span class="htb-close-btn"><i class="fa-solid fa-xmark"></i></span>
+        <div class="single-product-countdown">
+        <span>Offer ends in:</span>
+        <div class="deal-product-timer" id="timer4">
+            <div id="days"></div>
+            <div id="hours"></div>
+            <div id="minutes"></div>
+            <div id="seconds"></div>
+            </div>
+        </div>
+        <a href="shop.html" class="htb-btn h5-button-3">Show Now</a>
+    </div>
+    <!-- Main Header -->
+    <header class="header_five">
+        <div class="header-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-4 d-flex align-items-center">
+                        <div class="logo">
+                            <a href="index.html"><img src="image/logo/logo-full-white.png" alt="Elmart Logo"></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-7 col-1 d-flex align-items-center justify-content-center">
+                        <div class="h5_search_bar">
+                            <form action="#">
+                                <input name="search" id="search" type="search" placeholder="Search...">
+                                <select name="search">
+                                    <option value="0">All Category</option>
+                                    <option value="1">Soccer</option>
+                                    <option value="2">Cricket</option>
+                                    <option value="3">Baseball</option>
+                                    <option value="4">Basketball</option>
+                                    <option value="5">Hockey</option>
+                                </select>
+                                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-2 col-7 d-flex align-items-center justify-content-end">
+                        <ul class="menu-right">
+                            <li><a href="#"><i class="fa-solid fa-circle-user"></i></a></li>
+                            <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                            <li class="has-notification"><a class="cart-view" href="#"><i class="fa-solid fa-bag-shopping"></i><span class="notify-count">2</span></a></li>
+                            <li class="srch-btn-h5"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                            <li class="oc-menu-btn"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_menu-area">
+        <div class="container">
+            <div class="row">
+            <div class="col-12 h5-main-menu-alignment">
+                <div class="h5-main-menu">
+                <ul>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a class="menu-notification" href="#">Pages <i class="fa-solid fa-chevron-down"></i><span style="background:#FFAC4A;" class="notify">new</span></a>
+                    <div class="submenu_cols">
+                        <div class="sub-menu-item">
+                        <h3>About Company</h3>
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Order Tracking</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms Of Use</a></li>
+                        </ul>
+                        </div>
+                        <div class="sub-menu-item">
+                        <h3>Our Blog</h3>
+                        <ul>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Post Right Sidebar</a></li>
+                            <li><a href="#">Post Left Sidebar</a></li>
+                            <li><a href="#">Post No Sidebar</a></li>
+                            <li><a href="#">Returns & Refunds</a></li>
+                            <li><a href="#">Collections & Delivery</a></li>
+                        </ul>
+                        </div>
+                        <div class="sub-menu-item">
+                        <h3>Other Pages</h3>
+                        <ul>
+                            <li><a href="#">User Dashboard</a></li>
+                            <li><a href="#">wishlist</a></li>
+                            <li><a href="cart.html">Cart</a></li>
+                            <li><a href="checkout.html">Checkout</a></li>
+                            <li><a href="#">Seller Dashboard</a></li>
+                        </ul>
+                        </div>
+                    </div>
+                    </li>
+                    <li class="menu-notification">
+                    <a href="#">Shop <i class="fa-solid fa-chevron-down"></i><span style="background:#FF5400;" class="notify">Hot</span></a>
+                    <ul class="sub-menu">
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="shop-2.html">Shop V2</a></li>
+                        <li><a href="#">Shop Banner Leftbar</a></li>
+                        <li><a href="#">Shop Banner Rightbar</a></li>
+                        <li><a href="#">Shop Product Style 2</a></li>
+                        <li><a href="#">Shop Product Style 3</a></li>
+                        <li><a href="#"">Shop PStyle 3 (List)</a></li>
+                        <li><a href="#">Shop Product Style 4</a></li>
+                        <li><a href="#">Shop Product Style 5</a></li>
+                        <li><a href="#">Shop Infinite Scroll</a></li>
+                        <li><a href="#">Single Product Pages <i class="fa-solid fa-chevron-right"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="shop-details.html">Single Product</a></li>
+                                <li><a href="#">Product Countdown</a></li>
+                                <li><a href="#">Product Ask a Question</a></li>
+                                <li><a href="#">Product Size Guide</a></li>
+                                <li><a href="#">Product Color Compare</a></li>
+                                <li><a href="#">Product Image Slider</a></li>
+                                <li><a href="#">Product Image Slider V2</a></li>
+                                <li><a href="#">Product Sidebar</a></li>
+                                <li><a href="#">Product Image Gallery</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </li>
+                    <li><a href="#">Mega Menu <i class="fa-solid fa-chevron-down"></i></a>
+                    <div class="submenu_cols-black">
+                        <div class="sub-menu-item">
+                        <h3>Jersey</h3>
+                        <ul>
+                            <li><a href="#">Category Name</a></li>
+                            <li><a href="#">Category Name</a></li>
+                            <li><a href="#">Category Name</a></li>
+                            <li><a href="#">Category Name</a></li>
+                            <li><a href="#">Category Name</a></li>
+                            <li><a href="#">Category Name</a></li>
+                            <li><a href="#">Category Name</a></li>
+                            <li><a href="#">Category Name</a></li>
+                            <li><a href="#">Category Name</a></li>
+                            <li><a href="#">Category Name</a></li>
+                            <li><a href="#">Category Name</a></li>
+                            <li><a href="#">Category Name</a></li>
+                        </ul>
+                        </div>
+                        <div class="sub-menu-item">
+                        <h3>Shorts</h3>
+                        <ul>
+                            <li><a href="#">Category Name</a></li>
+                            <li><a href="#">Category Name</a></li>
+                            <li><a href="#">Category Name</a></li>
+                            <li><a href="#">Category Name</a></li>
+                            <li><a href="#">Category Name</a></li>
+                            <li><a href="#">Category Name</a></li>
+                            <li><a href="#">Category Name</a></li>
+                            <li><a href="#">Category Name</a></li>
+                            <li><a href="#">Category Name</a></li>
+                            <li><a href="#">Category Name</a></li>
+                            <li><a href="#">Category Name</a></li>
+                        </ul>
+                        </div>
+                        <div class="sub-menu-item">
+                        <h3>Footware</h3>
+                        <ul>
+                            <li><a href="#">Category Name</a></li>
+                            <li><a href="#">Category Name</a></li>
+                            <li><a href="#">Category Name</a></li>
+                            <li><a href="#">Category Name</a></li>
+                            <li><a href="#">Category Name</a></li>
+                            <li><a href="#">Category Name</a></li>
+                            <li><a href="#">Category Name</a></li>
+                            <li><a href="#">Category Name</a></li>
+                            <li><a href="#">Category Name</a></li>
+
+                        </ul>
+                        </div>
+                        <div class="sub-menu-item">
+                        <h3>Football Gifts</h3>
+                        <ul>
+                            <li><a href="#">Category Name</a></li>
+                            <li><a href="#">Category Name</a></li>
+                            <li><a href="#">Category Name</a></li>
+                            <li><a href="#">Category Name</a></li>
+                            <li><a href="#">Category Name</a></li>
+                            <li><a href="#">Category Name</a></li>
+                            <li><a href="#">Category Name</a></li>
+                            <li><a href="#">Category Name</a></li>
+                            <li><a href="#">Category Name</a></li>
+                            <li><a href="#">Category Name</a></li>
+                            <li><a href="#">Category Name</a></li>
+                            <li><a href="#">Category Name</a></li>
+                        </ul>
+                        </div>
+                        <div class="sub-menu-item">
+                        <p>Write a promo here that matches what you're selling on your amazing store!</p>
+                        <div class="promo-image">
+                            <img src="image/home-five/promo-img.png" alt="Promo Image">
+                        </div>
+                        </div>
+                    </div>
+                    </li>
+                    <li><a href="#">More Pages <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Vendor List</a></li>
+                        <li><a href="#">Vendor Left Sidebar</a></li>
+                        <li><a href="#">Vendor Right Sidebar</a></li>
+                        <li><a href="#">Vendor Banner Leftbar</a></li>
+                        <li><a href="#">Vendor Banner Rightbar</a></li>
+                    </ul>
+                    </li>
+                </ul>
+                <div id="h5_m-menu-btn"><a href="#"><i class="fa-solid fa-bars"></i> Menu</a></div>
+                </div>
+                <div class="social-prof">
+                <span>Follow us:</span>
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-reddit-alien"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <!-- Mobile Menu (Style Five) -->
+    <div class="mobile-menu-style5">
+        <div class="h5_mobile-menu">
+        <div class="logo">
+            <a href="index.html"><img src="image/logo/logo.png" alt="Elmart" title="Elmart"></a>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li class="menu-notification">
+                <a class="h5_has-submenu" href="#">Shop <i class="fa-solid fa-chevron-down"></i><span style="background:#FF5400;" class="notify">Hot</span></a>
+                <ul class="h5_is-submenu">
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="shop-2.html">Shop V2</a></li>
+                    <li><a href="#">Shop Banner Leftbar</a></li>
+                    <li><a href="#">Shop Banner Rightbar</a></li>
+                    <li><a href="#">Shop Product Style 2</a></li>
+                    <li><a href="#">Shop Product Style 3</a></li>
+                    <li><a href="#">Shop PStyle 3 (List)</a></li>
+                    <li><a href="#">Shop Product Style 4</a></li>
+                    <li><a href="#">Shop Product Style 5</a></li>
+                    <li><a href="#">Shop Infinite Scroll</a></li>
+                    <li><a class="h5_has-submenu" href="#">Single Product Pages <i class="fa-solid fa-chevron-right"></i></a>
+                        <ul class="h5_is-submenu">
+                            <li><a href="shop-details.html">Single Product</a></li>
+                            <li><a href="#">Product Countdown</a></li>
+                            <li><a href="#">Product Ask a Question</a></li>
+                            <li><a href="#">Product Size Guide</a></li>
+                            <li><a href="#">Product Color Compare</a></li>
+                            <li><a href="#">Product Image Slider</a></li>
+                            <li><a href="#">Product Image Slider V2</a></li>
+                            <li><a href="#">Product Sidebar</a></li>
+                            <li><a href="#">Product Image Gallery</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a class="h5_has-submenu menu-notification" href="#">Blog <i class="fa-solid fa-chevron-down"></i><span style="background:#FFAC4A;" class="notify">New</span></a>
+                <ul class="h5_is-submenu">
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Blog Post Right Sidebar</a></li>
+                    <li><a href="#">Blog Post Left Sidebar</a></li>
+                    <li><a href="#">Blog Post No Sidebar</a></li>
+                </ul>
+            </li>
+            <li><a class="h5_has-submenu" href="#">Pages</a>
+                <ul class="h5_is-submenu">
+                    <li><a href="#">Blog Post</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a class="h5_has-submenu" href="#">More Pages <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="h5_is-submenu">
+                            <li><a href="#">User Dashboard</a></li>
+                            <li><a href="#">Wishlist</a></li>
+                            <li><a href="cart.html">Cart</a></li>
+                            <li><a href="checkout.html">Checkout</a></li>
+                            <li><a class="h5_has-submenu" href="#">Seller <i class="fa-solid fa-chevron-down"></i></a>
+                                <ul class="h5_is-submenu">
+                                    <li><a href="#">Seller Dashboard</a></li>
+                                    <li><a href="#">Vendor List</a></li>
+                                    <li><a href="#">Vendor Left Sidebar</a></li>
+                                    <li><a href="#">Vendor Right Sidebar</a></li>
+                                    <li><a href="#">Vendor Banner Leftbar</a></li>
+                                    <li><a href="#">Vendor Banner Rightbar</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="h5_social-profiles">
+            <ul>
+            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+            </ul>
+        </div>
+        </div>
+        <div class="h5m-close-btn"><i class="fa-regular fa-circle-xmark"></i></div>
+    </div>
+    <!-- Off-canvas Menu -->
+    <div class="h5_off-canvas-menu">
+        <div class="oc-main-menu">
+        <div class="logo">
+            <img src="image/logo/logo.png" alt="Elmart Logo">
+        </div>
+        <div class="about-company">
+            <p>From the day Elmart started back in 2023, to today, Elmart's mission is to provide quality product and value for modern people.</p>
+        </div>
+        <hr>
+        <div class="off-canvas-menu">
+            <ul>
+            <li><a href="#">Sale</a></li>
+            <li><a href="#">Football Kits</a></li>
+            <li><a href="#">Bestsellers</a></li>
+            <li><a href="#">Sports Accessories</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">Discounts</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            </ul>
+        </div>
+        <hr>
+        <div class="oc-newsletter">
+            <h3 class="title">Newsletter</h3>
+            <form action="#">
+            <input type="email" name="oc-email" id="oc-email" placeholder="Enter your email">
+            <button><i class="fa-solid fa-arrow-right-long"></i></button>
+            </form>
+        </div>
+        <hr>
+        <div class="h5_social-profiles">
+            <ul>
+            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+            </ul>
+        </div>
+        </div>
+        <div class="oc-close-btn"><i class="fa-regular fa-circle-xmark"></i></div>
+    </div>
+    <!-- Cart View -->
+    <div class="cart-slide">
+        <div class="cart-content">
+        <div class="cart-header">
+            <h2 class="cart-title">Cart View</h2>
+            <button class="cart-close"><i class="fa-regular fa-circle-xmark"></i></button>
+        </div>
+        <div class="cart-body">
+            <ul class="cart-item-list">
+            <li class="cart-item">
+                <div class="item-img">
+                <a href="shop-details.html"><img src="image/home-five/shop-details-style4/small4.png" alt="image"></a>
+                <button class="close-btn"><i class="fa-regular fa-circle-xmark"></i></button>
+                </div>
+                <div class="item-content">
+                <div class="product-rating">
+                    <span class="icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    </span>
+                    <span class="total-rating">(64)</span>
+                </div>
+                <h3 class="item-title"><a href="shop-details.html">Arsenal 23/24 Authentic Home Shirt</a></h3>
+                <div class="item-price">$120.00</div>
+                <div class="item-quantity"><span class="decrease qty-btn">-</span>
+                    <input disabled type="number" value="1">
+                    <span class="increase qty-btn">+</span>
+                </div>
+                </div>
+            </li>
+            <li class="cart-item">
+                <div class="item-img">
+                <a href="shop-details.html"><img src="image/home-five/popular-product/predator-elite-firm-ground-boots.png" alt="image"></a>
+                <button class="close-btn"><i class="fa-regular fa-circle-xmark"></i></button>
+                </div>
+                <div class="item-content">
+                <div class="product-rating">
+                    <span class="icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    </span>
+                    <span class="total-rating">(64)</span>
+                </div>
+                <h3 class="item-title"><a href="shop-details.html">Predator Elite firm ground boots</a></h3>
+                <div class="item-price">$241.49</div>
+                <div class="item-quantity"><span class="decrease qty-btn">-</span>
+                    <input disabled type="number" value="1">
+                    <span class="increase qty-btn">+</span>
+                </div>
+                </div>
+            </li>
+            </ul>
+        </div>
+        <div class="cart-bottom">
+            <h3 class="cart-subtotal">
+                <span class="subtotal-title">Subtotal:</span>
+                <span class="subtotal-amount">$361.49</span>
+            </h3>
+            <div class="btn-group">
+                <a href="cart.html" class="h5-button-2">View Cart</a>
+                <a href="checkout.html" class="h5-button-2">Checkout</a>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Search Box -->
+    <div class="search-box">
+        <div class="search-box-container">
+        <div class="close-btn"><i class="fa-regular fa-circle-xmark"></i></div>
+        <form action="#"><input type="search" placeholder="Search what you're looking for...">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        <div class="pro-search-result-area">
+            <div class="search-result-header">
+                <h6>15 Results Found</h6>
+                <a href="shop.html">View All</a>
+            </div>
+            <div class="search-results">
+            <div class="search-product">
+                <div class="search-product-img">
+                <a href="shop-details.html">
+                    <img src="image/home-four/hero-section/computer-mouse.png" alt="Gaming Mouse for PC">
+                </a>
+                </div>
+                <div class="search-content">
+                <div class="product-rating">
+                    <span class="rating-icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                </span>
+                    <span class="total-rating"><span>50+</span> Reviews</span>
+                </div>
+                <h6 class="product-title"><a href="shop-details.html">Gaming Mouse for PC</a></h6>
+                <div class="product-price-variant">
+                    <h4>$8.71 <span>$9.71</span></h4>
+                </div>
+                <div class="product-cart">
+                    <a href="cart.html" class="cart-btn"><i class="fa-solid fa-bag-shopping"></i></a>
+                    <a href="wishlist.html" class="cart-btn"><i class="fa-regular fa-heart"></i></a>
+                </div>
+                </div>
+            </div>
+            <div class="search-product">
+                <div class="search-product-img">
+                <a href="shop-details.html">
+                    <img src="image/home-four/hero-section/mobile-accessories.png" alt="Liaome BlipTuds Pro">
+                </a>
+                </div>
+                <div class="search-content">
+                <div class="product-rating">
+                    <span class="rating-icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </span>
+                    <span class="total-rating"><span>30+</span> Reviews</span>
+                </div>
+                <h6 class="product-title"><a href="shop-details.html">Liaome BlipTuds Pro</a></h6>
+                <div class="product-price-variant">
+                    <h4>$199 <span>$299</span></h4>
+                </div>
+                <div class="product-cart">
+                    <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+                    <a href="wishlist.html"><i class="fa-regular fa-heart"></i></a>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!---- End of Header Section (Header - Style Five) ---->
+
+    <!-- Start of Breadcrumb Section -->
+    <section class="breadcrumb-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 breadcrumb-left">
+                    <div class="breadcrumb-left-bg"></div>
+                    <img src="image/breadcrumb/left-img.png" alt="">
+                </div>
+                <div class="col-sm-4 breadcrumb-wrap">
+                    <h2>Checkout</h2>
+                    <div class="breadcrumb">
+                        <p>Home</p>
+                        <span></span>
+                        <p class="current-page">Checkout</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 breadcrumb-right">
+                    <div class="breadcrumb-right-bg"></div>
+                    <img src="image/breadcrumb/right-img.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Breadcrumb Section -->
+
+    <!-- Start of Checkout Section -->
+    <section class="checkout-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 put-coupon">
+                    <div class="have-a-coupon">
+                        <div>
+                            <img src="image/checkout-page/icon1.svg" alt="icon">
+                            <span>Have a coupon? <span class="click-to-redeem">Click here to enter your code</span></span>
+                        </div>
+                    </div>
+                    <form class="coupon-code checkout-coupn-area" action="#">
+                        <input type="text" name="coupon-code" id="coupon-code" placeholder="Discount Code">
+                        <a href="#" class="coupon-btn button-b">Apply</a>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="billing-details">
+                        <h2>Billing Details</h2>
+                        <form action="#">
+                            <div class="input-name">
+                                <input type="text" name="checkout-form" id="fname" placeholder="First Name*" required>
+                                <input type="text" name="checkout-form" id="lname" placeholder="Last Name*" required>
+                            </div>
+                            <div class="input-contact">
+                                <input type="email" name="checkout-form" id="email" placeholder="Email Address*" required>
+                                <input type="tel" name="checkout-form" id="phone" placeholder="Phone Number*" required>
+                            </div>
+                            <select class="checkout-country" name="checkout-form" id="country" required>
+                                <option value="0">United Kingdom</option>
+                                <option value="1">Spain</option>
+                                <option value="2">Portugal</option>
+                                <option value="3">Russia</option>
+                                <option value="4">Bangladesh</option>
+                                <option value="5">India</option>
+                            </select>
+                            <input class="input-address" type="text" name="checkout-form" id="address" placeholder="Address*" required>
+                            <div class="town-zip">
+                                <select class="checkout-city" name="checkout-form" id="city" required>
+                                    <option value="0">City 1</option>
+                                    <option value="1">City 2</option>
+                                    <option value="2">City 3</option>
+                                    <option value="3">City 4</option>
+                                    <option value="4">City 5</option>
+                                    <option value="5">City 6</option>
+                                </select>
+                                <input type="text" name="checkout-form" id="zip-code" placeholder="Postcode / ZIP*" required>
+                            </div>
+                            <div class="checkout-signup">
+                                <input type="checkbox" name="checkout-form" id="signup">
+                                <label for="signup">Create an account?</label>
+                            </div>
+                            <h2 class="shipping-address">Shipping Address</h2>
+                            <div class="checkout-ship-address">
+                                <input type="checkbox" name="checkout-form" id="ship-address">
+                                <label for="ship-address">Ship to a different address</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6 checkout-main-area">
+                    <div class="order-summary">
+                        <h2>Order Summary</h2>
+                        <div class="order-summary-wrapper">
+                            <div class="title-area">
+                                <h4>Product</h4>
+                                <h4>Total</h4>
+                            </div>
+                            <div class="product-in-cart">
+                                <div class="product-item-wrap">
+                                    <div class="item">
+                                        <div class="product-name">Arsenal 23/24 Authentic Home Shirt</div>
+                                        <div class="product-amount-price">
+                                            <span>x1</span>
+                                            <span>$120</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="product-name">Predator Elite firm ground boots</div>
+                                        <div class="product-amount-price">
+                                            <span>x1</span>
+                                            <span>$$241.49</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="shipping-charge">
+                                    <div class="title-area">
+                                        <h4>Subtotal</h4>
+                                        <h4>$200.00</h4>
+                                    </div>
+                                    <div class="item">
+                                        <span>Local Delivery</span>
+                                        <span>$20.00</span>
+                                    </div>
+                                </div>
+                                <div class="sub-total-amount">
+                                    <h4>Total</h4>
+                                    <p class="the-amount">$381.49</p>
+                                </div>
+                                <div class="payment-method">
+                                    <form action="#">
+                                        <div class="pay-meth">
+                                            <input type="radio" name="pay-meth" id="direct-transfer" checked>
+                                            <label for="direct-transfer">Direct Bank Transfer</label>
+                                        </div>
+                                        <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference.</p>
+                                        <div class="pay-meth">
+                                            <input type="radio" name="pay-meth" id="cashon-delivery">
+                                            <label for="cashon-delivery">Cash on Delivery</label>
+                                        </div>
+                                        <div class="pay-meth">
+                                            <input type="radio" name="pay-meth" id="card-pay">
+                                            <label for="card-pay">Credit/Debit Cards or Paypal</label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <a href="#" class="payment-button h5-button-3">Place Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Start of Checkout Section -->
+
+    <!-- Back to Top -->
+    <div class="back-top-progress">
+        <svg class="progression" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+
+    <!-- Start of Footer Section (Variant 2) -->
+    <section class="footer-section-v2">
+        <div class="container footer-top-v2">
+        <div class="row">
+            <div class="col-lg-3 col-sm-6 footer-widget-v2">
+                <div class="logo-footer">
+                <img src="image/logo/logo-full-white.png" alt="Logo">
+                </div>
+                <h3>About us</h3>
+                <p>Elmart is a fashion brand where you can find everything in one place that you require!</p>
+                <h3>Contact us</h3>
+                <div class="email">
+                <i class="fa-solid fa-envelope"></i><a href="#">info@mydomain.com</a>
+                </div>
+                <div class="phone">
+                <i class="fa-solid fa-phone"></i><a href="#">+777 2345 7885</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 footer-widget-v2">
+                <h2>Infomation</h2>
+                <ul class="footer-link-v2">
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Delivery & Return</a></li>
+                <li><a href="#">Shipping & Costs</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-sm-6 footer-widget-v2">
+                <h2>Helpful Links</h2>
+                <ul class="footer-link-v2">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms Of Use</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Login / Register</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-sm-6 footer-widget-v2">
+                <h3>subscribe for latest discount & deals</h3>
+                <div class="ftr-newsletter">
+                <form action="#">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" name="ftrNewsletter" id="ftr_newsletter" placeholder="enter your email">
+                </form>
+                <button class="h5-button-2" type="submit">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="container footer-bottom-v2">
+        <div class="row">
+            <div class="col-12 text-center">
+            <ul class="f2-social-links">
+                <li><a href="#" title="Our Facebook Page"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#" title="Follow on X-Twitter"><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href="#" title="Our LinkedIn Page"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="#" title="Our YouTube Channel"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+            <div class="copyright-text">
+                <span>&copy; <script>document.write(new Date().getFullYear())</script>. All rights reserved by <a href="index.html">Elmart</a></span>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- End of Footer Section (Variant 2) -->
+
+    <!-- JS Links -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/magnific-popup.min.js"></script>
+    <script src="js/counterup.min.js"></script>
+    <script src="js/clipboard.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+@use './effects' as effect;
+
+.bg__rounded__color {
+    @include effect.border__50p;
+    height: 276px;
+    width: 389px;
+    background: rgba($color: #F57847, $alpha: 0.1);
+    box-shadow: 0 0 250px 250px rgba($color: #F57847, $alpha: 0.1);
+    position: absolute;
+    top: -40%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}

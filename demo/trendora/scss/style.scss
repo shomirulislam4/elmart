@@ -1,0 +1,271 @@
+@use './base/index' as base;
+@use './utilities/index' as utils;
+
+/************ TABLE OF CONTENTS ***************
+1. Global CSS
+2. Home Page
+    1. Header Section
+3. Shop Page
+4. Blog Page
+
+
+**********************************************/
+
+/*** 1. Global CSS ***/
+//Container Width
+@media (min-width: 1640px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1640px;
+    }
+}
+
+body {
+    background: base.$backgroundPrimaryColor;
+    position: relative;
+}
+
+/* ====================================================================
+   2. Home Page
+==================================================================== */
+/*** Start of Header Section ***/
+header {
+    padding: 28px 0;
+    border-bottom: 1px solid base.$backgroundTertiaryColor;
+}
+
+.logo {
+    width: 143px;
+    height: auto;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width: 992px) {
+    .elt__mmenu__btn {
+        display: none
+    }
+    header .wrapper nav {
+        @include utils.primary__blur;
+        @include utils.border__50;
+        background: rgba(base.$base800, $alpha: 0.4);
+        padding: 12px;
+    
+        ul {
+            padding: 0;
+            margin: 0;
+    
+            li {
+                display: inline-block;
+                margin: 0 28px;
+                text-transform: capitalize;
+                position: relative;
+    
+                a {
+                    @include utils.border__50;
+                    display: block;
+                    padding: 8px 16px;
+                    color: base.$base200;
+                    @include base.medium__text;
+    
+                    svg {
+                        stroke: base.$base200;
+                    }
+                }
+    
+                .active, a:hover {
+                    background: base.$base200;
+                    color: base.$base800;
+                    font-weight: 500;
+    
+                    svg {
+                        stroke: base.$base800;
+                    }
+                }
+    
+                //Sub Menu
+                ul {
+                    @include utils.primary__blur;
+                    @include utils.transition-03s;
+                    background: rgba(base.$base800, $alpha: 0.4);
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    z-index: 99999;
+                    display: block;
+                    width: 200px;
+                    border-radius: 16px;
+                    opacity: 0;
+                    visibility: hidden;
+                
+                    li {
+                        width: 100%;
+                        text-align: center;
+                        margin: 0;
+                    }
+                }
+            }
+    
+            //Sub Menu (Hover)
+            li:hover ul {
+                opacity: 1;
+                visibility: visible;
+            }
+    
+            li:first-child {
+                margin-left: 0;
+            }
+            li:last-child {
+                margin-right: 0;
+            }
+        }
+
+        .elt__mobilemenu__closebtn {
+            display: none;
+        }
+    }
+}
+
+header .wrapper .header__cta {
+    display: flex;
+    gap: 28px;
+
+    button {
+        @include utils.border__50p;
+        height: 52px;
+        width: 52px;
+        background: base.$backgroundTertiaryColor;
+
+        img {
+            height: 24px;
+            width: 24px;
+        }
+    }
+    button:hover {
+        background: base.$brandPrimaryColor;
+    }
+}
+
+//Mobile Menu
+@media (max-width: 991px) {
+    .elt__mmenu__btn {
+        @include utils.border__50p;
+        @include utils.transition-03s;
+        display: block;
+        height: 40px;
+        width: 40px;
+        background: base.$backgroundTertiaryColor;
+
+        img {
+            height: 24px;
+            width: 24px;
+        }
+    }
+    .elt__mmenu__btn:hover {
+        background: base.$brandPrimaryColor;
+    }
+    header .wrapper nav {
+        @include utils.primary__blur;
+        @include utils.transition-06s;
+        background: rgba(base.$base800, $alpha: 0.2);
+        height: 100vh;
+        width: 300px;
+        padding: 20px 40px;
+        position: absolute;
+        left: -120%;
+        top: 0;
+        z-index: 99999;
+        
+        ul {
+            padding: 0;
+            margin: 0;
+
+            li {
+                a {
+                    display: block;
+                    padding: 8px 0;
+                    @include base.medium__text;
+                    text-transform: capitalize;
+                    color: base.$base200;
+
+                    svg {
+                        stroke: base.$base200;
+                    }
+                }
+                a:hover {
+                    color: base.$brandPrimaryColor;
+
+                    svg {
+                        stroke: base.$brandPrimaryColor;
+                    }
+                }
+
+                .submenu {
+                    @include utils.transition-06s;
+                    padding-left: 20px;
+                    max-height: 0;
+                    overflow: hidden;
+                }
+                .submenu.show {
+                    max-height: 600px;
+                }
+            }
+        }
+
+        .elt__mobilemenu__closebtn {
+            @include utils.border__50p;
+            display: block;
+            height: 40px;
+            width: 40px;
+            position: absolute;
+            top: 10px;
+            left: calc(100% + 10px);
+            background: base.$base200;
+
+            svg {
+                stroke: base.$base800;
+            }
+        }
+        .elt__mobilemenu__closebtn:hover {
+            background: base.$brandPrimaryColor;
+
+            svg {
+                stroke: base.$base200;
+            }
+        }
+    }
+    header .wrapper nav.show {
+        left: 0;
+    }
+    header .wrapper .header__cta {
+        gap: 12px;
+        button {
+            height: 40px;
+            width: 40px;
+            img {
+                height: 18px;
+                width: 18px;
+            }
+        }
+    }
+}
+/*** End of Header Section ***/
+
+.hero__section__text {
+    @include base.medium__text;
+    color: white;
+}
