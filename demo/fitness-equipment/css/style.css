@@ -18,6 +18,8 @@
 3. Single Product Page
 4. Shop Page
 5. Contact Us Page
+6. Cart
+7. Checkout
 
 **********************************************/
 
@@ -185,14 +187,14 @@ button:focus {
     border-radius: 5px;
 }
 
+.fes__button__b::before {
+    background: var(--main-color);
+}
+
 .fes__button__a:hover::after,
 .fes__button__b:hover::after {
     height: 100%;
     width: 100%;
-    background: var(--main-color);
-}
-
-.fes__button__b::before {
     background: var(--main-color);
 }
 
@@ -611,10 +613,13 @@ input[type="checkbox"] {
     appearance: none;
     background: #FFF;
     margin: 0;
-    width: 14px;
-    height: 14px;
+    width: 14px !important;
+    height: 14px !important;
     border: 1px solid var(--secondary-color);
     position: relative;
+    border-radius: 0 !important;
+    flex-shrink: 0;
+    flex-grow: 0;
 }
 
 input[type="checkbox"]::before {
@@ -649,11 +654,13 @@ input[type="radio"] {
     appearance: none;
     background: #FFF;
     margin: 0;
-    width: 14px;
-    height: 14px;
+    width: 14px !important;
+    height: 14px !important;
     border: 1px solid var(--secondary-color);
     position: relative;
     border-radius: 50%;
+    flex-shrink: 0;
+    flex-grow: 0;
 }
 
 input[type="radio"]::before {
@@ -4762,4 +4769,722 @@ input[type="radio"]:checked::before {
 .fes__contactus__page .title__with__text .twt__vertical__line,
 .fes__contactus__page .title__with__text::before {
     background: var(--section--bg);
+}
+
+/* ====================================================================
+6. Cart Page
+==================================================================== */
+.cart-section,
+.proceed-to-pay {
+    margin-top: 80px;
+}
+
+.wish-item.with-bg {
+    background: #FF033611;
+}
+
+.cart-section .wish-item .product {
+	width: 480px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.cart-section .wish-item p {
+    margin-bottom: 0;
+}
+
+.cart-section .wish-item .price,
+.cart-section .wish-item .total {
+	width: 220px;
+}
+
+.cart-section .wish-item .quantity {
+	width: 250px;
+}
+
+.cart-section .wish-item .close-icon {
+    width: 59px;
+}
+
+.cart-section .wish-item .item-image {
+    width: 100px;
+    height: 100px;
+}
+
+.cart-section .wish-item .item-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.quantity .item-quantity {
+    display: flex;
+    width: 120px;
+    height: 40px;
+    background: #FFF;
+    border: 1px solid var(--secondary-color);
+    border-radius: 50px;
+    padding: 0 26px;
+    align-items: center;
+}
+
+.quantity .item-quantity input {
+    width: 100%;
+    text-align: center;
+    background: none;
+}
+
+.quantity .item-quantity input[type="number"]::-webkit-inner-spin-button, 
+.quantity .item-quantity input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 0;
+    height: 0;
+    margin: 0;
+}
+
+.quantity .item-quantity .decrease.qty-btn,
+.quantity .item-quantity .increase.qty-btn {
+    color: #9A9A9A;
+    font-size: 20px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.coupon-code {
+    display: flex;
+    width: 339px;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid #FF033611;
+    background: #FFF;
+    padding-left: 20px;
+    position: relative;
+    z-index: 0;
+}
+
+.coupon-code input {
+    width: 100%;
+    color: #4A4949;
+}
+
+.coupon-code input::placeholder {
+    color: #CECECE;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: capitalize;
+}
+
+.coupon-btn.fes__button__b {
+	height: 100%;
+	line-height: 50px;
+    text-align: center;
+    padding: 0;
+    width: 100px;
+}
+
+.sub-total-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.essential-button {
+    width: 390px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.essential-button .esn-btn,
+.essential-button-2 .esn-btn {
+    border-radius: 50px;
+    background: var(--main-color);
+    padding: 15px 25px;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: capitalize;
+    display: inline-block;
+}
+
+.essential-button .esn-btn:hover,
+.essential-button-2 .esn-btn:hover {
+    background: var(--secondary-color);
+}
+
+.sub-total-box {
+    padding: 40px;
+    border: 1px solid #FF033611;
+    margin-top: 30px;
+    width: 390px;
+}
+
+.sub-total-amount {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 26px;
+    border-bottom: 1px solid #FF033611;
+}
+
+.sub-total-amount h4 {
+    color: var(--text-color);
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.sub-total-amount .the-amount {
+    color: var(--main-color);
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.sub-total-inner .shipping {
+    margin-top: 24px;
+    margin-bottom: 23px;
+}
+
+.sub-total-inner .shipping h6 {
+    color: var(--text-color);
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.ship-items-wrap {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.ship-items-wrap .ship-items {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.ship-items-wrap .ship-items label,
+.ship-items-wrap .ship-items span {
+    color: #5A5858;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.calculate-shipping h6 {
+    margin-bottom: 14px;
+}
+
+.shipping-select {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.shipping-select .nice-select {
+    width: 100%;
+    height: 48px;
+    border-radius: 50px;
+    border: 1px solid #FF033611;
+    background: #FFF;
+    padding: 0 20px;
+}
+
+.shipping-select .nice-select span {
+    color: #A4A4A4;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 48px;
+    text-transform: capitalize;
+}
+
+.shipping-select .nice-select .list {
+    color: #5A5858;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-transform: capitalize;
+    text-align: center;
+    background: #FFF;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.shipping-select .nice-select.open .option.selected,
+.shipping-select .nice-select.open .option:hover  {
+    background: var(--main-color);
+    color: #FFF;
+    border-radius: 5px;
+    font-weight: 400;
+}
+
+.shipping-select .nice-select .option.selected.focus {
+    color: #5A5858;
+}
+
+.shipping-select .nice-select:after {
+    all: unset;
+    display: block;
+    content: '\f078';
+    font-size: 10px;
+    font-family: 'Fontawesome';
+    color: #4A4949;
+    pointer-events: none;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.zip-code {
+    width: 100%;
+    height: 48px;
+    border-radius: 50px;
+    border: 1px solid #FF033611;
+    background: #FFF;
+    padding: 12px 20px;
+    margin-top: 10px;
+}
+
+.zip-code input {
+    width: 100%;
+}
+
+.zip-code input::placeholder {
+    color: #A4A4A4;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: capitalize;
+}
+
+.essential-button-2 {
+    width: 100%;
+    margin-top: 13px;
+    margin-bottom: 36px;
+}
+
+.sub-total-amount.final-price {
+    border: 0;
+}
+
+.to-checkout-btn.fes__button__a {
+    display: block;
+    padding: 17px 22px;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+/* ====================================================================
+7. Checkout Page
+==================================================================== */
+.checkout-section {
+    margin-top: 80px;
+}
+
+.put-coupon {
+    height: fit-content;
+    margin-bottom: 50px;
+}
+
+.have-a-coupon {
+    height: fit-content;
+    border-radius: 0px 0px 5px 5px;
+    background: #FF033611;
+    border-top: 2px solid var(--main-color);
+    padding: 24px 30px;
+}
+
+.have-a-coupon img {
+    margin-right: 15px;
+}
+
+.have-a-coupon span {
+    color: #5A5858;
+    text-align: center;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.have-a-coupon span span {
+    color: var(--secondary-color);
+    cursor: pointer;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.have-a-coupon span span:hover {
+    color: var(--main-color);
+}
+
+.coupon-code.checkout-coupn-area {
+    height: 0;
+    border: 0;
+    padding: 0;
+    padding-left: 0;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    margin-top: 10px;
+    margin-left: 24px;
+}
+
+.coupon-code.checkout-coupn-area input {
+    display: none;
+}
+
+.coupon-code.checkout-coupn-area::placeholder {
+    display: none;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.coupon-code.checkout-coupn-area .coupon-btn.button-b {
+    display: none;
+}
+
+.coupon-code.checkout-coupn-area.show {
+    display: flex;
+    width: 339px;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid #FF033611;
+    background: #FFF;
+    padding-left: 20px;
+}
+
+.coupon-code.checkout-coupn-area.show input {
+    display: block;
+}
+
+.coupon-code.checkout-coupn-area.show input::placeholder {
+    color: #CECECE;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: capitalize;
+}
+
+.coupon-code.checkout-coupn-area.show .coupon-btn.button-b {
+    display: flex;
+    border-left: 1px solid #FF033611;
+    padding: 0 5px;
+    align-items: center;
+}
+
+/* Billing Details */
+.billing-details h2,
+.order-summary h2 {
+    color: var(--text-color);
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 35px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.billing-details form {
+    width: 100%;
+}
+
+.billing-details input {
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #FF033611;
+    background: #FFF;
+    color: #A4A4A4;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 50px;
+    text-transform: capitalize;
+}
+
+.billing-details input::placeholder {
+    color: #A4A4A4;
+}
+
+.billing-details .input-name,
+.billing-details .input-contact,
+.billing-details .town-zip {
+    display: flex;
+    justify-content: space-between;
+}
+
+.billing-details .input-name input,
+.billing-details .town-zip input {
+    width: 48.3%;
+    padding: 13px 15px;
+    margin-bottom: 20px;
+}
+
+.billing-details .input-contact input {
+    width: 48.3%;
+    padding: 13px 15px;
+    margin-bottom: 20px;
+}
+
+.billing-details .input-address {
+    width: 100%;
+    padding: 13px 15px;
+    margin-bottom: 20px;
+}
+
+.nice-select.checkout-country {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 50px;
+    position: relative;
+    color: var(--text-color);
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    padding-top: 20px;
+    padding-left: 15px;
+    border-color: #FF033611;
+}
+
+.nice-select.checkout-country::before {
+    content: 'Country*';
+	position: absolute;
+	left: 15px;
+	top: 0;
+	color: #A4A4A4;
+	font-family: 'Signika Negative', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.nice-select.checkout-city {
+    width: 48.3%;
+    height: 50px;
+    position: relative;
+    color: var(--text-color);
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    padding-top: 20px;
+    padding-left: 15px;
+    border-color: #FF033611;
+}
+
+.nice-select.checkout-city::before {
+	content: 'Town / City*';
+	position: absolute;
+	left: 15px;
+	top: 0;
+	color: #A4A4A4;
+	font-family: 'Signika Negative', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.nice-select.checkout-country::after,
+.nice-select.checkout-city::after {
+    all: unset;
+    display: block;
+    content: '\f078';
+    font-size: 10px;
+    font-family: 'Fontawesome';
+    color: var(--text-color);
+    pointer-events: none;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nice-select.checkout-country .list,
+.nice-select.checkout-city .list {
+	width: 100%;
+}
+
+
+.checkout-signup,
+.checkout-ship-address {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #5A5858;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.checkout-signup {
+    margin-bottom: 30px;
+}
+
+.shipping-address {
+    margin-bottom: 15px !important;
+}
+
+/* Order Summary */
+.checkout-main-area {
+    display: flex;
+    justify-content: end;
+}
+
+.order-summary {
+    width: 586px;
+}
+
+.order-summary-wrapper {
+    padding: 40px;
+    border-radius: 5px;
+    border: 1px solid #FF033611;
+}
+
+.order-summary-wrapper .title-area {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 26px;
+    border-bottom: 1px solid #FF033611;
+    margin-bottom: 25px;
+}
+
+.order-summary-wrapper .title-area h4 {
+    color: var(--text-color);
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+
+.product-item-wrap {
+    padding-bottom: 22px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #FF033611;
+}
+
+.shipping-charge .item,
+.product-in-cart .item {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+
+.product-in-cart .item .product-name {
+    width: 60%;
+    color: #5A5858;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.product-in-cart .item .product-amount-price {
+    display: flex;
+    justify-content: space-between;
+    width: 38%;
+}
+
+.product-in-cart .item .product-amount-price span {
+    color: #5A5858;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.shipping-charge {
+    padding-bottom: 22px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #FF033611;
+}
+
+.shipping-charge .title-area {
+    border: 0;
+    padding: 0;
+    margin-bottom: 17px;
+}
+
+.shipping-charge .item span {
+    color: #5A5858;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.product-in-cart .sub-total-amount {
+    border: 0;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.payment-method {
+    margin-bottom: 25px;
+}
+
+.payment-method label {
+    color: #5A5858;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.payment-method .pay-meth {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.payment-method p {
+    color: #5A5858;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: capitalize;
+    margin-left: 36px;
+}
+
+.payment-button.fes__button__a {
+    display: block;
+    padding: 16px 30px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
 }

@@ -3,7 +3,7 @@
     //Preloader
     $(function(){
         $(window).on('load',function(){
-        $('.fes__preloader').delay(2000).fadeOut(500);
+        $('.fes__preloader').delay(1000).fadeOut(500);
         });
         $('.fespl__close').on('click', function(){
         $('.fes__preloader').fadeOut(500);
@@ -67,7 +67,7 @@
         });
     });
 
-
+/*============================ Home Page ============================*/
     //Nice Select
     if ($('.fitequip__store').length) {
         $('.fesps__select').niceSelect();
@@ -418,6 +418,7 @@
         });
     });
 
+/*============================ Shop Page ============================*/
     //Shop Page Filter Sidebar
     $(function(){
         $('.fessp__filter__button').on('click', function(){
@@ -455,6 +456,28 @@
     
         $('.fes__nwsltrpop__close__btn').on('click', function() {
         $('.fes__newsletter__popup').removeClass('show');
+        });
+    });
+
+/*============================ Cart & Checkout ============================*/
+    if($('.cart-page').length){
+        $('#shipping__select__cty').niceSelect();
+    }
+    
+    if($('.checkout-page').length){
+        $('.checkout-country').niceSelect();
+        $('.checkout-city').niceSelect();
+    }
+    
+    $(function() {
+        $('.click-to-redeem').click(function(){
+        if ($('.checkout-coupn-area').hasClass('show')) {
+            $('.checkout-coupn-area').removeClass('show');
+        }
+        else {
+            $('.checkout-coupn-area').removeClass('show');
+            $('.checkout-coupn-area').addClass('show');    
+        }
         });
     });
 
