@@ -1,7 +1,8 @@
-@use './effects' as effect;
+@use './effects' as utils;
+@use '../base/index' as base;
 
 .bg__rounded__color {
-    @include effect.border__50p;
+    @include utils.border__50p;
     height: 276px;
     width: 389px;
     background: rgba($color: #F57847, $alpha: 0.1);
@@ -11,4 +12,143 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: -1;
+}
+
+
+/* Main CTA Button */
+.elt__cta__button {
+    @include utils.border__50p;
+    display: block;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+    background: base.$base200;
+
+    svg {
+        stroke: base.$base800;
+    }
+}
+
+.elt__cta__button:hover {
+    background: base.$brandPrimaryColor;
+
+    svg {
+        stroke: base.$base200;
+    }
+}
+
+/* Inputs */
+input {
+    @include utils.primary__blur;
+    @include base.medium__text;
+    background: base.$backgroundTertiaryColor;
+    width: 350px;
+    height: 48px;
+    border: 0;
+    border-radius: 12px;
+    padding: 0 20px;
+    color: base.$base400;
+    font-weight: 400;
+}
+
+/* Buttons */
+@mixin eltButtonStyling {
+    @include base.medium__text;
+    @include utils.transition-03s;
+    height: 48px;
+    width: auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    text-align: center;
+    color: base.$base100;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+@mixin elt__button__a {
+    @include eltButtonStyling();
+    background: base.$brandPrimaryColor;
+  
+    &:hover {
+        background: base.$brandTertiaryColor;
+    }
+  
+    &:active {
+        background: base.$brandTertiaryColor;
+        box-shadow: 0 0 0 4px base.$FillSecondaryColor;
+    }
+  
+    &:disabled {
+        background: base.$backgroundTertiaryColor;
+        color: base.$base500;
+        cursor: not-allowed;
+    }
+}
+
+@mixin elt__button__b {
+    @include eltButtonStyling();
+    background: base.$FillPrimaryColor;
+    color: base.$brandPrimaryColor;
+  
+    &:hover {
+        background: base.$FillSecondaryColor;
+    }
+  
+    &:active {
+        background: base.$FillPrimaryColor;
+        box-shadow: 0 0 0 4px base.$FillSecondaryColor;
+    }
+  
+    &:disabled {
+        background: base.$backgroundTertiaryColor;
+        color: base.$base500;
+        cursor: not-allowed;
+    }
+}
+
+@mixin elt__button__c {
+    @include eltButtonStyling();
+    background: base.$brandPrimaryColor;
+  
+    &:hover {
+        background: base.$brandTertiaryColor;
+    }
+  
+    &:active {
+        background: base.$brandTertiaryColor;
+        box-shadow: 0 0 0 4px base.$FillSecondaryColor;
+    }
+  
+    &:disabled {
+        background: base.$backgroundTertiaryColor;
+        color: base.$base500;
+        cursor: not-allowed;
+    }
+}
+
+@mixin elt__button__d {
+    @include eltButtonStyling();
+    background: base.$brandPrimaryColor;
+  
+    &:hover {
+        background: base.$brandTertiaryColor;
+    }
+  
+    &:active {
+        background: base.$brandTertiaryColor;
+        box-shadow: 0 0 0 4px base.$FillSecondaryColor;
+    }
+  
+    &:disabled {
+        background: base.$backgroundTertiaryColor;
+        color: base.$base500;
+        cursor: not-allowed;
+    }
 }

@@ -86,6 +86,68 @@ a:hover {
   z-index: -1;
 }
 
+/* Main CTA Button */
+.elt__cta__button {
+  border-radius: 50%;
+  display: block;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  flex-shrink: 0;
+  flex-grow: 0;
+  background: #D7DFE9;
+}
+.elt__cta__button svg {
+  stroke: #2D3643;
+}
+
+.elt__cta__button:hover {
+  background: #F27240;
+}
+.elt__cta__button:hover svg {
+  stroke: #D7DFE9;
+}
+
+/* Inputs */
+input {
+  -webkit-backdrop-filter: blur(9px);
+          backdrop-filter: blur(9px);
+  background: #2D2D32;
+  width: 350px;
+  height: 48px;
+  border: 0;
+  border-radius: 12px;
+  padding: 0 20px;
+  color: #8897AE;
+  font-weight: 400;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  input {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  input {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  input {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  input {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+
+/* Buttons */
 /************ TABLE OF CONTENTS ***************
 1. Global CSS
 2. Home Page
@@ -109,6 +171,7 @@ a:hover {
 body {
   background: #1C1C20;
   position: relative;
+  overflow: hidden;
 }
 
 /* ====================================================================
@@ -288,7 +351,7 @@ header .wrapper .header__cta button:hover {
     height: 100vh;
     width: 300px;
     padding: 20px 40px;
-    position: absolute;
+    position: fixed;
     left: -120%;
     top: 0;
     z-index: 99999;
@@ -352,23 +415,10 @@ header .wrapper .header__cta button:hover {
     max-height: 600px;
   }
   header .wrapper nav .elt__mobilemenu__closebtn {
-    border-radius: 50%;
     display: block;
-    height: 40px;
-    width: 40px;
     position: absolute;
     top: 10px;
     left: calc(100% + 10px);
-    background: #D7DFE9;
-  }
-  header .wrapper nav .elt__mobilemenu__closebtn svg {
-    stroke: #2D3643;
-  }
-  header .wrapper nav .elt__mobilemenu__closebtn:hover {
-    background: #F27240;
-  }
-  header .wrapper nav .elt__mobilemenu__closebtn:hover svg {
-    stroke: #D7DFE9;
   }
   header .wrapper nav.show {
     left: 0;
@@ -385,6 +435,487 @@ header .wrapper .header__cta button:hover {
     width: 18px;
   }
 }
+/** Search Popup **/
+.elt__search__popup {
+  -webkit-backdrop-filter: blur(9px);
+          backdrop-filter: blur(9px);
+  transition: 0.6s ease;
+  -moz-transition: 0.6s ease;
+  -webkit-transition: 0.6s ease;
+  -ms-transition: 0.6s ease;
+  -o-transition: 0.6s ease;
+  background: rgba(45, 54, 67, 0.2);
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 16px;
+  z-index: 99999;
+}
+.elt__search__popup .elt__search__closebtn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.elt__search__popup .elt__search__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 60px 40px;
+  padding-bottom: 40px;
+}
+.elt__search__popup .elt__search__wrapper form {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.elt__search__popup .elt__search__wrapper form input {
+  flex: auto;
+}
+.elt__search__popup .elt__search__wrapper form button {
+  height: 48px;
+  width: 48px;
+  background: #312321;
+  border-radius: 12px;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.elt__search__popup .elt__search__wrapper form button svg {
+  stroke: #F27240;
+}
+.elt__search__popup .elt__search__wrapper form button:hover {
+  background: #3F2B28;
+}
+.elt__search__popup .elt__search__wrapper form button:hover svg {
+  stroke: #F1662F;
+}
+.elt__search__popup .elt__search__wrapper p {
+  color: #D7DFE9;
+  font-weight: 600;
+  border-bottom: 1px solid #D7DFE9;
+  padding-bottom: 20px;
+  margin: 0;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__search__popup .elt__search__wrapper p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__search__popup .elt__search__wrapper p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__search__popup .elt__search__wrapper p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__search__popup .elt__search__wrapper p {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+.elt__search__popup .elt__search__wrapper .elt__search__result {
+  display: flex;
+  flex-direction: column;
+  height: 310px;
+  gap: 30px;
+  overflow-y: auto;
+}
+.elt__search__popup .elt__search__wrapper .elt__search__result .item {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background: #2D2D32;
+  padding: 20px;
+  border-radius: 12px;
+}
+.elt__search__popup .elt__search__wrapper .elt__search__result .item .image {
+  height: 100px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+.elt__search__popup .elt__search__wrapper .elt__search__result .item .image img {
+  width: auto;
+  height: 100%;
+}
+.elt__search__popup .elt__search__wrapper .elt__search__result .item h3 {
+  display: flex;
+  justify-content: space-between;
+  flex: auto;
+  margin: 0;
+}
+.elt__search__popup .elt__search__wrapper .elt__search__result .item h3 a {
+  font-weight: 600;
+}
+.elt__search__popup .elt__search__wrapper .elt__search__result .item h3 a, .elt__search__popup .elt__search__wrapper .elt__search__result .item h3 span {
+  color: #D7DFE9;
+}
+.elt__search__popup .elt__search__wrapper .elt__search__result .item .cta__btns {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.elt__search__popup .elt__search__wrapper .elt__search__result .item:hover h3 a {
+  color: #F27240;
+}
+
+.elt__search__popup.show {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 900px;
+}
+
+@media (max-width: 991px) {
+  .elt__search__popup.show {
+    width: 95%;
+  }
+}
+/** Cart Slider **/
+.elt__cart__slide {
+  -webkit-backdrop-filter: blur(9px);
+          backdrop-filter: blur(9px);
+  transition: 0.6s ease;
+  -moz-transition: 0.6s ease;
+  -webkit-transition: 0.6s ease;
+  -ms-transition: 0.6s ease;
+  -o-transition: 0.6s ease;
+  background: rgba(45, 54, 67, 0.2);
+  width: 450px;
+  height: 100vh;
+  padding: 20px 40px;
+  position: fixed;
+  right: -120%;
+  top: 0;
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.elt__cart__slide .title {
+  color: #D7DFE9;
+  display: flex;
+  justify-content: space-between;
+  background: #2D2D32;
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 0;
+}
+.elt__cart__slide .title span {
+  font-weight: 600;
+}
+.elt__cart__slide .elt__cart__items {
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: auto;
+}
+.elt__cart__slide .elt__cart__items .item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  background: #2D2D32;
+  padding: 10px;
+  border-radius: 12px;
+}
+.elt__cart__slide .elt__cart__items .item .top {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+.elt__cart__slide .elt__cart__items .item .top .image {
+  height: 100px;
+  width: -moz-fit-content;
+  width: fit-content;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.elt__cart__slide .elt__cart__items .item .top .image img {
+  height: 100%;
+  width: auto;
+}
+.elt__cart__slide .elt__cart__items .item .top .product__title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.elt__cart__slide .elt__cart__items .item .top .product__title a, .elt__cart__slide .elt__cart__items .item .top .product__title span {
+  color: #D7DFE9;
+  font-weight: 600;
+}
+.elt__cart__slide .elt__cart__items .item .top .product__title a:hover {
+  color: #F27240;
+}
+.elt__cart__slide .elt__cart__items .item .elt__quantity__widget {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 0;
+  width: 110px;
+  height: 38px;
+  background: #312321;
+}
+.elt__cart__slide .elt__cart__items .item .elt__quantity__widget span {
+  line-height: 38px;
+  height: 38px;
+  width: 40px;
+}
+.elt__cart__slide .elt__cart__subtotal {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: #2D2D32;
+  border-radius: 12px;
+  padding: 10px;
+}
+.elt__cart__slide .elt__cart__subtotal h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+.elt__cart__slide .elt__cart__subtotal h3, .elt__cart__slide .elt__cart__subtotal span {
+  color: #D7DFE9;
+}
+.elt__cart__slide .elt__cart__subtotal .cta__btns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.elt__cart__slide .elt__cart__subtotal .cta__btns a {
+  width: 48% !important;
+}
+.elt__cart__slide .elt__cart__subtotal .cta__btns a:first-child {
+  transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  height: 48px;
+  width: auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  text-align: center;
+  color: #E9EFF6;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  background: #F27240;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__cart__slide .elt__cart__subtotal .cta__btns a:first-child {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__cart__slide .elt__cart__subtotal .cta__btns a:first-child {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__cart__slide .elt__cart__subtotal .cta__btns a:first-child {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__cart__slide .elt__cart__subtotal .cta__btns a:first-child {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+.elt__cart__slide .elt__cart__subtotal .cta__btns a:first-child:hover {
+  background: #E0531B;
+}
+.elt__cart__slide .elt__cart__subtotal .cta__btns a:first-child:active {
+  background: #E0531B;
+  box-shadow: 0 0 0 4px #3F2B28;
+}
+.elt__cart__slide .elt__cart__subtotal .cta__btns a:first-child:disabled {
+  background: #2D2D32;
+  color: #5E718D;
+  cursor: not-allowed;
+}
+.elt__cart__slide .elt__cart__subtotal .cta__btns a:last-child {
+  transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  height: 48px;
+  width: auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  text-align: center;
+  color: #E9EFF6;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  background: #312321;
+  color: #F27240;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__cart__slide .elt__cart__subtotal .cta__btns a:last-child {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__cart__slide .elt__cart__subtotal .cta__btns a:last-child {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__cart__slide .elt__cart__subtotal .cta__btns a:last-child {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__cart__slide .elt__cart__subtotal .cta__btns a:last-child {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+.elt__cart__slide .elt__cart__subtotal .cta__btns a:last-child:hover {
+  background: #3F2B28;
+}
+.elt__cart__slide .elt__cart__subtotal .cta__btns a:last-child:active {
+  background: #312321;
+  box-shadow: 0 0 0 4px #3F2B28;
+}
+.elt__cart__slide .elt__cart__subtotal .cta__btns a:last-child:disabled {
+  background: #2D2D32;
+  color: #5E718D;
+  cursor: not-allowed;
+}
+.elt__cart__slide .elt__cartslide__closebtn {
+  position: absolute;
+  top: 10px;
+  right: calc(100% + 10px);
+}
+
+.elt__cart__slide.show {
+  right: 0;
+}
+
+/* Quantity Widget */
+.elt__quantity__widget {
+  -webkit-backdrop-filter: blur(9px);
+          backdrop-filter: blur(9px);
+  width: 162px;
+  height: 48px;
+  border-radius: 8px;
+  background: #2D2D32;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.elt__quantity__widget span {
+  transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  color: #D7DFE9;
+  line-height: 40px;
+  height: 40px;
+  width: 48px;
+  text-align: center;
+  border-radius: 8px;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__quantity__widget span {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__quantity__widget span {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__quantity__widget span {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__quantity__widget span {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+.elt__quantity__widget span svg {
+  stroke: #D7DFE9;
+}
+.elt__quantity__widget span:hover {
+  background: #3F2B28;
+}
+.elt__quantity__widget p {
+  color: #AFBACA;
+  line-height: 48px;
+  margin: 0;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__quantity__widget p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__quantity__widget p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__quantity__widget p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__quantity__widget p {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+
 /*** End of Header Section ***/
 .hero__section__text {
   color: white;
