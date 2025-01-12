@@ -1,0 +1,198 @@
+@use '../utilities/index' as utils;
+@use '../base/index' as base;
+
+/* Button Styling */
+@mixin eltButtonStyling {
+    @include base.medium__text;
+    @include utils.transition-03s;
+    height: 48px;
+    width: fit-content;
+    padding: 0 24px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    color: base.$base100;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+    cursor: pointer;
+
+    svg {
+        height: 24px;
+        width: 24px;
+        stroke: base.$base100;
+    }
+
+    @each $breakpoint, $config in $buttonStyle-breakpoints {
+        $min-width: map-get($config, min-width);
+        $max-width: map-get($config, max-width);
+        $eltbuttonstyle: map-get($config, eltButtonStyling);
+
+        @if $eltbuttonstyle != null {
+            @media screen and (min-width: $min-width) and (max-width: $max-width) {
+                padding: map-get($eltbuttonstyle, padding);
+                gap: map-get($eltbuttonstyle, gap);
+            }
+        }
+    }
+}
+
+/* Breakpoints Configuration */
+$buttonStyle-breakpoints: (
+    xxs: (
+        min-width: 200px,
+        max-width: 289px,
+            eltButtonStyling: (padding: 0 12px, gap: 5px),
+    ),
+    xs: (
+        min-width: 290px,
+        max-width: 414px,
+            eltButtonStyling: (padding: 0 14px, gap: 7px),
+    ),
+    s: (
+        min-width: 415px,
+        max-width: 575px,
+            eltButtonStyling: (padding: 0 16px, gap: 9px),
+    ),
+    sm: (
+        min-width: 576px,
+        max-width: 767px,
+            eltButtonStyling: (padding: 0 18px, gap: 11px),
+    ),
+);
+
+@mixin apply-buttonStyle() {
+    @each $breakpoint, $config in $buttonStyle-breakpoints {
+        $min-width: map-get($config, min-width);
+        $max-width: map-get($config, max-width);
+        $eltbuttonstyle: map-get($config, eltButtonStyling);
+  
+        @media screen and (min-width: $min-width) and (max-width: $max-width) {
+            .elt__button__a,
+            .elt__button__b,
+            .elt__button__c,
+            .elt__button__d {
+                padding: map-get($eltbuttonstyle, padding);
+                gap: map-get($eltbuttonstyle, gap);
+            }
+        }
+    }
+}
+
+/* Button Variants */
+@mixin elt__button__a {
+    @include eltButtonStyling();
+    @include apply-buttonStyle();
+    background: base.$brandPrimaryColor;
+
+    &:hover {
+        background: base.$brandTertiaryColor;
+    }
+
+    &:active {
+        background: base.$brandTertiaryColor;
+        box-shadow: 0 0 0 4px base.$FillSecondaryColor;
+    }
+
+    &:disabled {
+        background: base.$backgroundTertiaryColor;
+        color: base.$base500;
+        cursor: not-allowed;
+    }
+}
+
+@mixin elt__button__b {
+    @include eltButtonStyling();
+    @include apply-buttonStyle();
+    background: base.$FillPrimaryColor;
+    color: base.$brandPrimaryColor;
+
+    &:hover {
+        background: base.$FillSecondaryColor;
+    }
+
+    &:active {
+        background: base.$FillPrimaryColor;
+        box-shadow: 0 0 0 4px base.$FillSecondaryColor;
+    }
+
+    &:disabled {
+        background: base.$backgroundTertiaryColor;
+        color: base.$base500;
+        cursor: not-allowed;
+    }
+
+    svg {
+        stroke: base.$brandPrimaryColor;
+    }
+}
+
+@mixin elt__button__c {
+    @include eltButtonStyling();
+    background: base.$brandPrimaryColor;
+
+    &:hover {
+        background: base.$brandTertiaryColor;
+    }
+
+    &:active {
+        background: base.$brandTertiaryColor;
+        box-shadow: 0 0 0 4px base.$FillSecondaryColor;
+    }
+
+    &:disabled {
+        background: base.$backgroundTertiaryColor;
+        color: base.$base500;
+        cursor: not-allowed;
+    }
+}
+
+@mixin elt__button__d {
+    @include eltButtonStyling();
+    background: base.$brandPrimaryColor;
+
+    &:hover {
+        background: base.$brandTertiaryColor;
+    }
+
+    &:active {
+        background: base.$brandTertiaryColor;
+        box-shadow: 0 0 0 4px base.$FillSecondaryColor;
+    }
+
+    &:disabled {
+        background: base.$backgroundTertiaryColor;
+        color: base.$base500;
+        cursor: not-allowed;
+    }
+}
+
+
+/* Main CTA Button */
+.elt__cta__button {
+    @include utils.border__50p;
+    display: block;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+    background: base.$base200;
+
+    svg {
+        height: 24px;
+        width: 24px;
+        stroke: base.$base800;
+    }
+}
+
+.elt__cta__button:hover {
+    background: base.$brandPrimaryColor;
+
+    svg {
+        stroke: base.$base200;
+    }
+}

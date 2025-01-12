@@ -3,152 +3,44 @@
 
 .bg__rounded__color {
     @include utils.border__50p;
-    height: 276px;
+    height: 450px;
     width: 389px;
     background: rgba($color: #F57847, $alpha: 0.1);
-    box-shadow: 0 0 250px 250px rgba($color: #F57847, $alpha: 0.1);
+    box-shadow: 0 0 400px 400px rgba($color: #F57847, $alpha: 0.1);
     position: absolute;
     top: -40%;
     left: 50%;
-    transform: translateX(-50%);
     z-index: -1;
+    transform: translateX(-50%);
 }
 
+/* Custom Curosr */
+$cursor__dot__size: 10px;
+$cursor__outline__size: 12px;
 
-/* Main CTA Button */
-.elt__cta__button {
-    @include utils.border__50p;
-    display: block;
-    height: 40px;
-    width: 40px;
-    line-height: 40px;
-    text-align: center;
-    flex-shrink: 0;
-    flex-grow: 0;
-    background: base.$base200;
-
-    svg {
-        stroke: base.$base800;
-    }
+#cursor__dot,
+#cursor__dot__outline {
+    pointer-events: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.15s ease-in-out, transform 0.15s ease-in-out;
+    z-index: 9999999999;
 }
 
-.elt__cta__button:hover {
+#cursor__dot {
+    width: $cursor__dot__size;
+    height: $cursor__dot__size;
     background: base.$brandPrimaryColor;
-
-    svg {
-        stroke: base.$base200;
-    }
+    opacity: 1;
 }
 
-/* Inputs */
-input {
-    @include utils.primary__blur;
-    @include base.medium__text;
-    background: base.$backgroundTertiaryColor;
-    width: 350px;
-    height: 48px;
-    border: 0;
-    border-radius: 12px;
-    padding: 0 20px;
-    color: base.$base400;
-    font-weight: 400;
-}
-
-/* Buttons */
-@mixin eltButtonStyling {
-    @include base.medium__text;
+#cursor__dot__outline {
     @include utils.transition-03s;
-    height: 48px;
-    width: auto;
-    padding: 0 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
-    text-align: center;
-    color: base.$base100;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: 600;
-}
-
-@mixin elt__button__a {
-    @include eltButtonStyling();
-    background: base.$brandPrimaryColor;
-  
-    &:hover {
-        background: base.$brandTertiaryColor;
-    }
-  
-    &:active {
-        background: base.$brandTertiaryColor;
-        box-shadow: 0 0 0 4px base.$FillSecondaryColor;
-    }
-  
-    &:disabled {
-        background: base.$backgroundTertiaryColor;
-        color: base.$base500;
-        cursor: not-allowed;
-    }
-}
-
-@mixin elt__button__b {
-    @include eltButtonStyling();
-    background: base.$FillPrimaryColor;
-    color: base.$brandPrimaryColor;
-  
-    &:hover {
-        background: base.$FillSecondaryColor;
-    }
-  
-    &:active {
-        background: base.$FillPrimaryColor;
-        box-shadow: 0 0 0 4px base.$FillSecondaryColor;
-    }
-  
-    &:disabled {
-        background: base.$backgroundTertiaryColor;
-        color: base.$base500;
-        cursor: not-allowed;
-    }
-}
-
-@mixin elt__button__c {
-    @include eltButtonStyling();
-    background: base.$brandPrimaryColor;
-  
-    &:hover {
-        background: base.$brandTertiaryColor;
-    }
-  
-    &:active {
-        background: base.$brandTertiaryColor;
-        box-shadow: 0 0 0 4px base.$FillSecondaryColor;
-    }
-  
-    &:disabled {
-        background: base.$backgroundTertiaryColor;
-        color: base.$base500;
-        cursor: not-allowed;
-    }
-}
-
-@mixin elt__button__d {
-    @include eltButtonStyling();
-    background: base.$brandPrimaryColor;
-  
-    &:hover {
-        background: base.$brandTertiaryColor;
-    }
-  
-    &:active {
-        background: base.$brandTertiaryColor;
-        box-shadow: 0 0 0 4px base.$FillSecondaryColor;
-    }
-  
-    &:disabled {
-        background: base.$backgroundTertiaryColor;
-        color: base.$base500;
-        cursor: not-allowed;
-    }
+    width: $cursor__outline__size;
+    height: $cursor__outline__size;
+    background: rgba($color: base.$brandSecondaryColor, $alpha: 0.3);
 }

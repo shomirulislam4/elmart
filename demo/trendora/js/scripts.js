@@ -2,31 +2,78 @@
     'use strict';
 
     //Custom Cursor
-    $(function(){
-        $('body').prepend('<div class="cursor"></div>');
-        $(document).mousemove(function(e) {
-            $('.cursor').css({
-                "left": e.pageX,
-                "top": e.pageY - $(window).scrollTop()
-            });
+    $(function() {
+        const cursorDot = $('<div id="cursor__dot"></div>').appendTo('body');
+        const cursorOutline = $('<div id="cursor__dot__outline"></div>').appendTo('body');
+      
+        let endX = 0, endY = 0;
+        let coords = { x: 0, y: 0 };
+      
+        $(document).on('mousemove', function(e) {
+            const { clientX, clientY } = e;
+            coords.x = clientX;
+            coords.y = clientY;
+            cursorDot.css({ top: clientY, left: clientX });
+            endX = clientX;
+            endY = clientY;
         });
-        $('a, button, span, input[type=submit]').mouseenter(function(){
-            var cursorStyle = $(this).css('cursor');
-            if (cursorStyle === 'pointer') {
-                $('.cursor').addClass('hover');
+      
+        function animateOuterCursor() {
+            coords.x += (endX - coords.x) / 8;
+            coords.y += (endY - coords.y) / 8;
+            cursorOutline.css({ top: coords.y, left: coords.x });
+            requestAnimationFrame(animateOuterCursor);
+        }
+        animateOuterCursor();
+      
+        $(document).on('mousedown', function() {
+            cursorDot.css('transform', 'scale(0.7)');
+            cursorOutline.css('transform', 'scale(5)');
+        });
+      
+        $(document).on('mouseup', function() {
+            cursorDot.css('transform', 'scale(1)');
+            cursorOutline.css('transform', 'scale(1)');
+        });
+      
+        $(document).on('mouseenter', function() {
+            cursorOutline.css('opacity', '1');
+        });
+      
+        $(document).on('mouseleave', function() {
+            cursorOutline.css('opacity', '0');
+        });
+      
+        $(document).on('mousemove', function(e) {
+            const targetCursor = window.getComputedStyle(e.target).cursor;
+            if (targetCursor === 'pointer') {
+                cursorOutline.css('opacity', '1');
+            } else {
+                cursorOutline.css('opacity', '0');
             }
-        }).mouseleave(function(){
-            $('.cursor').removeClass('hover');
+        });
+      
+        $('a, button, input[type="submit"]').on({
+            mouseenter: function() {
+                cursorDot.css('transform', 'scale(0.7)');
+                cursorOutline.css('transform', 'scale(5)');
+            },
+            mousedown: function() {
+                cursorDot.css('transform', 'scale(1)');
+                cursorOutline.css('transform', 'scale(1.4)');
+            },
+            mouseup: function() {
+                cursorDot.css('transform', 'scale(0.7)');
+                cursorOutline.css('transform', 'scale(5)');
+            },
+            mouseleave: function() {
+                cursorDot.css('transform', 'scale(1)');
+                cursorOutline.css('transform', 'scale(1)');
+            }
         });
     });
 
 /*============================ Home Page ============================*/
-    //All Nice Select
-    if ($('.els__header__section').length) {
-        $('#elsLanguageSelect').niceSelect();
-        $('#elsCurrencySelect').niceSelect();
-    }
-
     //Mobile Menu
     $(function(){
         //Mobile Menu Show/Hide
@@ -83,30 +130,19 @@
         })
     });
 
-    //Hero Slider
+    //What's New Section Slider
     $(function(){
-        var swiper = new Swiper(".els__hero__slider", {
+        var swiper = new Swiper(".elt__product__sliders", {
             loop: true,
-            slidesPerView: 2,
-            spaceBetween: 20,
+            slidesPerView: 4,
+            spaceBetween: 22,
             navigation: {
-                nextEl: "#els__heroslider__next",
+              nextEl: ".elt__prodsldrs__next",
+              prevEl: ".elt__prodsldrs__prev",
             },
-            breakpoints: {
-                1200: {
-                    spaceBetween: 20,
-                },
-                415: {
-                    spaceBetween: 10,
-                },
-                200: {
-                    slidesPerView: 1,
-                    spaceBetween: 5,
-                }
-            }
         });
-    })
-    
+    });
+
     //On Sale Timer
     function makeTimer() {
         var endTime = new Date("30 March 2025 0:00:00 UTC+0");    
@@ -130,96 +166,7 @@
         $(".els__countdown__timer .seconds").html(addLeadingZero(seconds));        
     }
     setInterval(function() {makeTimer();}, 1000);
-    
-    //Newsletter Popup
-    $(function(){
-        var currentIndex = 0;
-        var scrollThreshold = 2000;
-        var isScrollTriggered = false;
-    
-        function fesnwsltrPopupScroll() {
-        if (!isScrollTriggered && $(window).scrollTop() > scrollThreshold) {
-            isScrollTriggered = true;
-            $('.els__newsletter__popup').addClass('show');
-        }
-        }
-    
-        fesnwsltrPopupScroll();
-        $(window).scroll(function() {
-        fesnwsltrPopupScroll();
-        });
-    
-        $('.els__nwltrpop__close').on('click', function() {
-        $('.els__newsletter__popup').removeClass('show');
-        });
-    });
 
-    //Fashion Models Slider
-    $(function(){
-        var swiper = new Swiper(".els__fashionmodels__slider", {
-            loop: true,
-            slidesPerView: 3,
-            spaceBetween: 24,
-            breakpoints: {
-                1395: {
-                    spaceBetween: 24,
-                },
-                1200: {
-                    spaceBetween: 15,
-                },
-                768: {
-                    slidesPerView: 3,
-                    spaceBetween: 10,
-                },
-                576: {
-                    slidesPerView: 2,
-                    spaceBetween: 10,
-                },
-                415: {
-                    slidesPerView: 2,
-                    spaceBetween: 10,
-                },
-                200: {
-                    slidesPerView: 1,
-                    spaceBetween: 5,
-                }
-            }
-        });
-    });
-
-    //Testimonials Slider
-    $(function () {
-        var swipers = [];
-    
-        $(".els__testimonials__slider").each(function (index, element) {
-            var swiper = new Swiper(element, {
-                loop: true,
-                slidesPerView: 3,
-                spaceBetween: 0,
-                pagination: {
-                    el: ".els__testimonialsslider__dots",
-                },
-                breakpoints: {
-                    992: {
-                        slidesPerView: 3,
-                    },
-                    576: {
-                        slidesPerView: 2,
-                    },
-                    200: {
-                        slidesPerView: 1,
-                    }
-                }
-            });
-
-            swipers.push(swiper);
-        });
-    
-        swipers.forEach(function (swiper, index) {
-            swiper.controller.control = swipers.filter((_, i) => i !== index);
-        });
-    });
-        
 /*============================ About Us Page ============================*/
 
 

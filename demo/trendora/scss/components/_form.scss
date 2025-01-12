@@ -1,0 +1,14 @@
+@use '../utilities/index' as utils;
+@use '../base/index' as base;
+
+input {
+    @include utils.primary__blur;
+    @include base.medium__text;
+    background: base.$backgroundTertiaryColor;
+    height: 48px;
+    border: 0;
+    border-radius: 12px;
+    padding: 0 20px;
+    color: base.$base400;
+    font-weight: 400;
+}

@@ -28,12 +28,87 @@
     src: url('../../assets/fonts/inter/inter-v18-latin-700.woff2') format('woff2');
 }
 
-body {
-    font-family: 'Inter', Arial, sans-serif;
-    font-weight: 400;
+//Font Sizes
+h1 {font-size: 56px; line-height: 84px}
+h2 {font-size: 48px; line-height: 72px}
+h3 {font-size: 40px; line-height: 60px}
+h4 {font-size: 32px; line-height: 50px}
+h5 {font-size: 28px; line-height: 42px}
+h6 {font-size: 24px; line-height: 36px}
+p {font-size: 18px; line-height: 29px}
+
+/*** Responsive ***/
+@media (min-width: 200px) and (max-width: 289px) {
+    h1 {font-size: 42px; line-height: 60px}
+    h2 {font-size: 34px; line-height: 50px}
+    h3 {font-size: 26px; line-height: 42px}
+    h4 {font-size: 20px; line-height: 34px}
+    h5 {font-size: 16px; line-height: 26px}
+    h6 {font-size: 14px; line-height: 22px}
+    p {font-size: 12px; line-height: 18px}
+}
+@media (min-width: 290px) and (max-width: 414px) {
+    h1 {font-size: 44px; line-height: 62px;}
+    h2 {font-size: 36px; line-height: 52px;}
+    h3 {font-size: 28px; line-height: 44px;}
+    h4 {font-size: 22px; line-height: 36px;}
+    h5 {font-size: 18px; line-height: 28px;}
+    h6 {font-size: 16px; line-height: 24px;}
+    p {font-size: 14px; line-height: 21px;}
+}
+@media (min-width: 415px) and (max-width: 575px) {
+    h1 {font-size: 46px; line-height: 66px;}
+    h2 {font-size: 38px; line-height: 56px;}
+    h3 {font-size: 30px; line-height: 48px;}
+    h4 {font-size: 24px; line-height: 40px;}
+    h5 {font-size: 20px; line-height: 30px;}
+    h6 {font-size: 17px; line-height: 26px;}
+    p {font-size: 15px; line-height: 22px;}
+}
+@media (min-width: 576px) and (max-width: 767px) {
+    h1 {font-size: 46px; line-height: 66px;}
+    h2 {font-size: 38px; line-height: 56px;}
+    h3 {font-size: 30px; line-height: 48px;}
+    h4 {font-size: 24px; line-height: 40px;}
+    h5 {font-size: 20px; line-height: 30px;}
+    h6 {font-size: 17px; line-height: 26px;}
+    p {font-size: 15px; line-height: 22px;}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    h1 {font-size: 48px; line-height: 70px;}
+    h2 {font-size: 40px; line-height: 60px;}
+    h3 {font-size: 32px; line-height: 50px;}
+    h4 {font-size: 26px; line-height: 42px;}
+    h5 {font-size: 22px; line-height: 32px;}
+    h6 {font-size: 18px; line-height: 28px;}
+    p {font-size: 16px; line-height: 24px;}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    h1 {font-size: 52px; line-height: 78px;}
+    h2 {font-size: 44px; line-height: 66px;}
+    h3 {font-size: 36px; line-height: 56px;}
+    h4 {font-size: 28px; line-height: 46px;}
+    h5 {font-size: 24px; line-height: 34px;}
+    h6 {font-size: 19px; line-height: 29px;}
+    p {font-size: 17px; line-height: 26px;}
 }
 
-//Font Sizes
+/* Overriding Text */
+@mixin display__text {
+    @each $breakpoint, $config in $typography-breakpoints {
+        $min-width: map-get($config, min-width);
+        $max-width: map-get($config, max-width);
+        $display-text: map-get($config, display__text);
+
+        @if $display-text != null {
+            @media screen and (min-width: $min-width) and (max-width: $max-width) {
+                font-size: map-get($display-text, font-size);
+                line-height: map-get($display-text, line-height);
+            }
+        }
+    }
+}
+
 @mixin medium__text {
     @each $breakpoint, $config in $typography-breakpoints {
         $min-width: map-get($config, min-width);
@@ -62,100 +137,64 @@ body {
             }
         }
     }
-}  
-
+}
 
 $typography-breakpoints: (
     xxs: (
         min-width: 200px,
         max-width: 289px,
-        styles: (
-            display__text: (font-size: 56px, line-height: 76px),
-            h1: (font-size: 42px, line-height: 60px),
-            h2: (font-size: 34px, line-height: 50px),
-            h3: (font-size: 26px, line-height: 42px),
-            h4: (font-size: 20px, line-height: 34px),
-            h5: (font-size: 16px, line-height: 26px),
-            h6: (font-size: 14px, line-height: 22px),
-            p: (font-size: 12px, line-height: 18px),
-            ),
             medium__text: (font-size: 12px, line-height: 18px),
             small__text: (font-size: 11px, line-height: 17px),
+            display__text: (font-size: 44px, line-height: 62px),
     ),
     xs: (
         min-width: 290px,
         max-width: 414px,
-        styles: (
-            display__text: (font-size: 58px, line-height: 80px),
-            h1: (font-size: 44px, line-height: 62px),
-            h2: (font-size: 36px, line-height: 52px),
-            h3: (font-size: 28px, line-height: 44px),
-            h4: (font-size: 22px, line-height: 36px),
-            h5: (font-size: 18px, line-height: 28px),
-            h6: (font-size: 16px, line-height: 24px),
-            p: (font-size: 14px, line-height: 21px),
-            ),
             medium__text: (font-size: 13px, line-height: 20px),
             small__text: (font-size: 12px, line-height: 18px),
+            display__text: (font-size: 48px, line-height: 68px),
     ),
     s: (
         min-width: 415px,
         max-width: 575px,
-        styles: (
-            display__text: (font-size: 60px, line-height: 86px),
-            h1: (font-size: 46px, line-height: 66px),
-            h2: (font-size: 38px, line-height: 56px),
-            h3: (font-size: 30px, line-height: 48px),
-            h4: (font-size: 24px, line-height: 40px),
-            h5: (font-size: 20px, line-height: 30px),
-            h6: (font-size: 17px, line-height: 26px),
-            p: (font-size: 15px, line-height: 22px),
-            ),
             medium__text: (font-size: 14px, line-height: 22px),
             small__text: (font-size: 13px, line-height: 19px),
+            display__text: (font-size: 52px, line-height: 74px),
     ),
     sm: (
         min-width: 576px,
         max-width: 767px,
-        styles: (
-            display__text: (font-size: 60px, line-height: 86px),
-            h1: (font-size: 46px, line-height: 66px),
-            h2: (font-size: 38px, line-height: 56px),
-            h3: (font-size: 30px, line-height: 48px),
-            h4: (font-size: 24px, line-height: 40px),
-            h5: (font-size: 20px, line-height: 30px),
-            h6: (font-size: 17px, line-height: 26px),
-            p: (font-size: 15px, line-height: 22px),
-            ),
             medium__text: (font-size: 15px, line-height: 23px),
+            small__text: (font-size: 14px, line-height: 21px),
+            display__text: (font-size: 56px, line-height: 80px),
     ),
     md: (
         min-width: 768px,
         max-width: 991px,
-        styles: (
-            display__text: (font-size: 64px, line-height: 94px),
-            h1: (font-size: 48px, line-height: 70px),
-            h2: (font-size: 40px, line-height: 60px),
-            h3: (font-size: 32px, line-height: 50px),
-            h4: (font-size: 26px, line-height: 42px),
-            h5: (font-size: 22px, line-height: 32px),
-            h6: (font-size: 18px, line-height: 28px),
-            p: (font-size: 16px, line-height: 24px),
-        ),
+            medium__text: (font-size: 16px, line-height: 24px),
+            small__text: (font-size: 14px, line-height: 21px),
+            display__text: (font-size: 60px, line-height: 90px),
     ),
     lg: (
         min-width: 992px,
         max-width: 1199px,
-        styles: (
-            display__text: (font-size: 70px, line-height: 104px),
-            h1: (font-size: 52px, line-height: 78px),
-            h2: (font-size: 44px, line-height: 66px),
-            h3: (font-size: 36px, line-height: 56px),
-            h4: (font-size: 28px, line-height: 46px),
-            h5: (font-size: 24px, line-height: 34px),
-            h6: (font-size: 19px, line-height: 29px),
-            p: (font-size: 17px, line-height: 26px),
-        ),
+            medium__text: (font-size: 16px, line-height: 24px),
+            small__text: (font-size: 14px, line-height: 21px),
+            display__text: (font-size: 64px, line-height: 94px),
+    ),
+    xl: (
+        min-width: 1200px,
+        max-width: 1399px,
+            medium__text: (font-size: 16px, line-height: 24px),
+            small__text: (font-size: 14px, line-height: 21px),
+            display__text: (font-size: 68px, line-height: 102px),
+    ),
+    xxl: (
+        min-width: 1400px,
+        max-width: 1920px,
+            medium__text: (font-size: 16px, line-height: 24px),
+            small__text: (font-size: 14px, line-height: 21px),
+            display__text: (font-size: 76px, line-height: 114px),
     ),
 );
 
@@ -163,40 +202,24 @@ $typography-breakpoints: (
     @each $breakpoint, $config in $typography-breakpoints {
         $min-width: map-get($config, min-width);
         $max-width: map-get($config, max-width);
-        $styles: map-get($config, styles);
+        $display-text: map-get($config, display__text);
         $medium-text: map-get($config, medium__text);
         $small-text: map-get($config, small__text);
   
         @media screen and (min-width: $min-width) and (max-width: $max-width) {
-            @each $element, $style in $styles {
-                #{$element} {
-                    font-size: map-get($style, font-size);
-                    line-height: map-get($style, line-height);
-                }
+            .display-text {
+                font-size: map-get($display-text, font-size);
+                line-height: map-get($display-text, line-height);
             }
-    
-            @if $medium-text != null {
-                .medium-text {
-                    font-size: map-get($medium-text, font-size);
-                    line-height: map-get($medium-text, line-height);
-                }
-            } @else {
-                .medium-text {
-                    font-size: 16px;
-                    line-height: 24px;
-                }
+
+            .medium-text {
+                font-size: map-get($medium-text, font-size);
+                line-height: map-get($medium-text, line-height);
             }
-    
-            @if $small-text != null {
-                .small-text {
-                    font-size: map-get($small-text, font-size);
-                    line-height: map-get($small-text, line-height);
-                }
-            } @else {
-                .small-text {
-                    font-size: 14px;
-                    line-height: 21px;
-                }
+
+            .small-text {
+                font-size: map-get($small-text, font-size);
+                line-height: map-get($small-text, line-height);
             }
         }
     }
