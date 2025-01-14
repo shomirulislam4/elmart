@@ -44,22 +44,22 @@ $buttonStyle-breakpoints: (
     xxs: (
         min-width: 200px,
         max-width: 289px,
-            eltButtonStyling: (padding: 0 12px, gap: 5px),
+            eltButtonStyling: (padding: 0 12px, gap: 5px, height: 38px, svg-size: (height: 14px, width: 14px)),
     ),
     xs: (
         min-width: 290px,
         max-width: 414px,
-            eltButtonStyling: (padding: 0 14px, gap: 7px),
+            eltButtonStyling: (padding: 0 14px, gap: 7px, height: 42px, svg-size: (height: 16px, width: 16px)),
     ),
     s: (
         min-width: 415px,
         max-width: 575px,
-            eltButtonStyling: (padding: 0 16px, gap: 9px),
+            eltButtonStyling: (padding: 0 16px, gap: 9px, height: 44px, svg-size: (height: 18px, width: 18px)),
     ),
     sm: (
         min-width: 576px,
         max-width: 767px,
-            eltButtonStyling: (padding: 0 18px, gap: 11px),
+            eltButtonStyling: (padding: 0 18px, gap: 11px, height: 46px, svg-size: (height: 20px, width: 20px)),
     ),
 );
 
@@ -70,12 +70,13 @@ $buttonStyle-breakpoints: (
         $eltbuttonstyle: map-get($config, eltButtonStyling);
   
         @media screen and (min-width: $min-width) and (max-width: $max-width) {
-            .elt__button__a,
-            .elt__button__b,
-            .elt__button__c,
-            .elt__button__d {
-                padding: map-get($eltbuttonstyle, padding);
-                gap: map-get($eltbuttonstyle, gap);
+            padding: map-get($eltbuttonstyle, padding);
+            gap: map-get($eltbuttonstyle, gap);
+            height: map-get($eltbuttonstyle, height);
+
+            svg {
+                height: map-get(map-get($eltbuttonstyle, svg-size), height);
+                width: map-get(map-get($eltbuttonstyle, svg-size), width);
             }
         }
     }

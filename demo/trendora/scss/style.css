@@ -417,7 +417,7 @@ input {
   }
 }
 
-/* Tabs and Nav */
+/*** Start of Tabs and Nav ***/
 .elt__tabsandnav {
   display: flex;
   align-items: center;
@@ -490,6 +490,7 @@ input {
   background: #2D2D32;
 }
 
+/*** End of Tabs and Nav ***/
 /*** Start of Product Style ***/
 .elt__product__style {
   width: 389px;
@@ -509,7 +510,7 @@ input {
   -ms-transition: 0.3s ease;
   -o-transition: 0.3s ease;
   width: 100%;
-  height: 426px;
+  height: 100%;
   border-radius: 16px;
   overflow: hidden;
 }
@@ -603,6 +604,7 @@ input {
   left: 50%;
   transform: translateX(-50%);
   z-index: 99;
+  width: 180px;
 }
 @media screen and (min-width: 200px) and (max-width: 289px) {
   .elt__product__style .image .addtocart {
@@ -682,39 +684,47 @@ input {
   }
 }
 @media screen and (min-width: 200px) and (max-width: 289px) {
-  .elt__product__style .image .addtocart .elt__button__a,
-  .elt__product__style .image .addtocart .elt__button__b,
-  .elt__product__style .image .addtocart .elt__button__c,
-  .elt__product__style .image .addtocart .elt__button__d {
+  .elt__product__style .image .addtocart {
     padding: 0 12px;
     gap: 5px;
+    height: 38px;
+  }
+  .elt__product__style .image .addtocart svg {
+    height: 14px;
+    width: 14px;
   }
 }
 @media screen and (min-width: 290px) and (max-width: 414px) {
-  .elt__product__style .image .addtocart .elt__button__a,
-  .elt__product__style .image .addtocart .elt__button__b,
-  .elt__product__style .image .addtocart .elt__button__c,
-  .elt__product__style .image .addtocart .elt__button__d {
+  .elt__product__style .image .addtocart {
     padding: 0 14px;
     gap: 7px;
+    height: 42px;
+  }
+  .elt__product__style .image .addtocart svg {
+    height: 16px;
+    width: 16px;
   }
 }
 @media screen and (min-width: 415px) and (max-width: 575px) {
-  .elt__product__style .image .addtocart .elt__button__a,
-  .elt__product__style .image .addtocart .elt__button__b,
-  .elt__product__style .image .addtocart .elt__button__c,
-  .elt__product__style .image .addtocart .elt__button__d {
+  .elt__product__style .image .addtocart {
     padding: 0 16px;
     gap: 9px;
+    height: 44px;
+  }
+  .elt__product__style .image .addtocart svg {
+    height: 18px;
+    width: 18px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
-  .elt__product__style .image .addtocart .elt__button__a,
-  .elt__product__style .image .addtocart .elt__button__b,
-  .elt__product__style .image .addtocart .elt__button__c,
-  .elt__product__style .image .addtocart .elt__button__d {
+  .elt__product__style .image .addtocart {
     padding: 0 18px;
     gap: 11px;
+    height: 46px;
+  }
+  .elt__product__style .image .addtocart svg {
+    height: 20px;
+    width: 20px;
   }
 }
 .elt__product__style .image .addtocart:hover {
@@ -860,6 +870,217 @@ input {
 }
 
 /*** End of Product Style ***/
+/* ==================== Responsive ==================== */
+@media (min-width: 200px) and (max-width: 289px) {
+  /*Tabs and Nav*/
+  .elt__tabsandnav {
+    gap: 4px;
+    padding: 5px;
+    border-radius: 15px;
+    justify-content: space-around;
+  }
+  .elt__tabsandnav button {
+    padding: 6px 14px;
+  }
+  /*Product Style*/
+  .elt__product__style {
+    width: 176px;
+  }
+  .elt__product__style .image {
+    height: 193px;
+    margin-bottom: 10px;
+  }
+  .elt__product__style .image .tag {
+    top: 8px;
+    left: 8px;
+    padding: 5px 12px;
+  }
+  .elt__product__style .image .addtocart {
+    width: 118px;
+  }
+  .elt__product__style .info .product__name h6 {
+    margin-top: 4px;
+    margin-bottom: 8px;
+  }
+  .elt__product__style:hover .image .img {
+    height: 176px;
+  }
+}
+@media (min-width: 290px) and (max-width: 414px) {
+  /*Tabs and Nav*/
+  .elt__tabsandnav {
+    gap: 6px;
+    padding: 6px;
+    border-radius: 20px;
+    justify-content: center;
+  }
+  .elt__tabsandnav button {
+    padding: 8px 18px;
+  }
+  /*Product Style*/
+  .elt__product__style {
+    width: 266px;
+  }
+  .elt__product__style .image {
+    height: 291px;
+    margin-bottom: 15px;
+  }
+  .elt__product__style .image .tag {
+    top: 12px;
+    left: 12px;
+    padding: 5px 12px;
+  }
+  .elt__product__style .image .addtocart {
+    width: 133px;
+  }
+  .elt__product__style .info .product__name h6 {
+    margin-top: 6px;
+    margin-bottom: 10px;
+  }
+  .elt__product__style:hover .image .img {
+    height: 273px;
+  }
+}
+@media (min-width: 415px) and (max-width: 575px) {
+  /*Tabs and Nav*/
+  .elt__tabsandnav {
+    gap: 4px;
+    padding: 7px;
+  }
+  .elt__tabsandnav button {
+    padding: 5px 12px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  /*Tabs and Nav*/
+  .elt__tabsandnav {
+    gap: 13px;
+    padding: 8px;
+  }
+  .elt__tabsandnav button {
+    padding: 8px 18px;
+  }
+  /*Product Style*/
+  .elt__product__style {
+    width: 251px;
+  }
+  .elt__product__style .image {
+    height: 275px;
+    margin-bottom: 20px;
+  }
+  .elt__product__style .image .tag {
+    top: 12px;
+    left: 12px;
+    padding: 5px 12px;
+  }
+  .elt__product__style .image .addtocart {
+    width: 154px;
+  }
+  .elt__product__style .info .product__name h6 {
+    margin-top: 6px;
+    margin-bottom: 10px;
+  }
+  .elt__product__style:hover .image .img {
+    height: 255px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /*Tabs and Nav*/
+  .elt__tabsandnav {
+    gap: 32px;
+    padding: 10px;
+  }
+  /*Product Style*/
+  .elt__product__style {
+    width: 339px;
+  }
+  .elt__product__style .image {
+    height: 371px;
+    margin-bottom: 30px;
+  }
+  .elt__product__style:hover .image .img {
+    height: 351px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /*Tabs and Nav*/
+  .elt__tabsandnav {
+    gap: 35px;
+    padding: 10px;
+  }
+  /*Product Style*/
+  .elt__product__style {
+    width: 301px;
+  }
+  .elt__product__style .image {
+    height: 330px;
+    margin-bottom: 30px;
+  }
+  .elt__product__style .image .img {
+    border-radius: 14px;
+  }
+  .elt__product__style .image .tag {
+    top: 15px;
+    left: 15px;
+    padding: 7px 15px;
+  }
+  .elt__product__style .info .product__name h6 {
+    margin-top: 10px;
+    margin-bottom: 14px;
+  }
+  .elt__product__style:hover .image .img {
+    height: 312px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  /*Product Style*/
+  .elt__product__style {
+    width: 272px;
+  }
+  .elt__product__style .image {
+    height: 298px;
+    margin-bottom: 30px;
+  }
+  .elt__product__style .image .img {
+    border-radius: 14px;
+  }
+  .elt__product__style .image .tag {
+    top: 14px;
+    left: 14px;
+    padding: 6px 14px;
+  }
+  .elt__product__style .info .product__name h6 {
+    margin-top: 10px;
+    margin-bottom: 14px;
+  }
+  .elt__product__style:hover .image .img {
+    height: 278px;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1639px) {
+  /*Product Style*/
+  .elt__product__style {
+    width: 331px;
+  }
+  .elt__product__style .image {
+    height: 362px;
+    margin-bottom: 30px;
+  }
+  .elt__product__style .image .tag {
+    top: 15px;
+    left: 15px;
+    padding: 7px 15px;
+  }
+  .elt__product__style:hover .image .img {
+    height: 342px;
+  }
+}
+@media (max-width: 575px) {
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
+}
 /************ TABLE OF CONTENTS ***************
 1. Global CSS
 2. Home Page
@@ -1597,39 +1818,47 @@ header .wrapper .header__cta button:hover {
   }
 }
 @media screen and (min-width: 200px) and (max-width: 289px) {
-  .elt__cart__slide .elt__cart__subtotal .cta__btns a:first-child .elt__button__a,
-  .elt__cart__slide .elt__cart__subtotal .cta__btns a:first-child .elt__button__b,
-  .elt__cart__slide .elt__cart__subtotal .cta__btns a:first-child .elt__button__c,
-  .elt__cart__slide .elt__cart__subtotal .cta__btns a:first-child .elt__button__d {
+  .elt__cart__slide .elt__cart__subtotal .cta__btns a:first-child {
     padding: 0 12px;
     gap: 5px;
+    height: 38px;
+  }
+  .elt__cart__slide .elt__cart__subtotal .cta__btns a:first-child svg {
+    height: 14px;
+    width: 14px;
   }
 }
 @media screen and (min-width: 290px) and (max-width: 414px) {
-  .elt__cart__slide .elt__cart__subtotal .cta__btns a:first-child .elt__button__a,
-  .elt__cart__slide .elt__cart__subtotal .cta__btns a:first-child .elt__button__b,
-  .elt__cart__slide .elt__cart__subtotal .cta__btns a:first-child .elt__button__c,
-  .elt__cart__slide .elt__cart__subtotal .cta__btns a:first-child .elt__button__d {
+  .elt__cart__slide .elt__cart__subtotal .cta__btns a:first-child {
     padding: 0 14px;
     gap: 7px;
+    height: 42px;
+  }
+  .elt__cart__slide .elt__cart__subtotal .cta__btns a:first-child svg {
+    height: 16px;
+    width: 16px;
   }
 }
 @media screen and (min-width: 415px) and (max-width: 575px) {
-  .elt__cart__slide .elt__cart__subtotal .cta__btns a:first-child .elt__button__a,
-  .elt__cart__slide .elt__cart__subtotal .cta__btns a:first-child .elt__button__b,
-  .elt__cart__slide .elt__cart__subtotal .cta__btns a:first-child .elt__button__c,
-  .elt__cart__slide .elt__cart__subtotal .cta__btns a:first-child .elt__button__d {
+  .elt__cart__slide .elt__cart__subtotal .cta__btns a:first-child {
     padding: 0 16px;
     gap: 9px;
+    height: 44px;
+  }
+  .elt__cart__slide .elt__cart__subtotal .cta__btns a:first-child svg {
+    height: 18px;
+    width: 18px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
-  .elt__cart__slide .elt__cart__subtotal .cta__btns a:first-child .elt__button__a,
-  .elt__cart__slide .elt__cart__subtotal .cta__btns a:first-child .elt__button__b,
-  .elt__cart__slide .elt__cart__subtotal .cta__btns a:first-child .elt__button__c,
-  .elt__cart__slide .elt__cart__subtotal .cta__btns a:first-child .elt__button__d {
+  .elt__cart__slide .elt__cart__subtotal .cta__btns a:first-child {
     padding: 0 18px;
     gap: 11px;
+    height: 46px;
+  }
+  .elt__cart__slide .elt__cart__subtotal .cta__btns a:first-child svg {
+    height: 20px;
+    width: 20px;
   }
 }
 .elt__cart__slide .elt__cart__subtotal .cta__btns a:first-child:hover {
@@ -1745,39 +1974,47 @@ header .wrapper .header__cta button:hover {
   }
 }
 @media screen and (min-width: 200px) and (max-width: 289px) {
-  .elt__cart__slide .elt__cart__subtotal .cta__btns a:last-child .elt__button__a,
-  .elt__cart__slide .elt__cart__subtotal .cta__btns a:last-child .elt__button__b,
-  .elt__cart__slide .elt__cart__subtotal .cta__btns a:last-child .elt__button__c,
-  .elt__cart__slide .elt__cart__subtotal .cta__btns a:last-child .elt__button__d {
+  .elt__cart__slide .elt__cart__subtotal .cta__btns a:last-child {
     padding: 0 12px;
     gap: 5px;
+    height: 38px;
+  }
+  .elt__cart__slide .elt__cart__subtotal .cta__btns a:last-child svg {
+    height: 14px;
+    width: 14px;
   }
 }
 @media screen and (min-width: 290px) and (max-width: 414px) {
-  .elt__cart__slide .elt__cart__subtotal .cta__btns a:last-child .elt__button__a,
-  .elt__cart__slide .elt__cart__subtotal .cta__btns a:last-child .elt__button__b,
-  .elt__cart__slide .elt__cart__subtotal .cta__btns a:last-child .elt__button__c,
-  .elt__cart__slide .elt__cart__subtotal .cta__btns a:last-child .elt__button__d {
+  .elt__cart__slide .elt__cart__subtotal .cta__btns a:last-child {
     padding: 0 14px;
     gap: 7px;
+    height: 42px;
+  }
+  .elt__cart__slide .elt__cart__subtotal .cta__btns a:last-child svg {
+    height: 16px;
+    width: 16px;
   }
 }
 @media screen and (min-width: 415px) and (max-width: 575px) {
-  .elt__cart__slide .elt__cart__subtotal .cta__btns a:last-child .elt__button__a,
-  .elt__cart__slide .elt__cart__subtotal .cta__btns a:last-child .elt__button__b,
-  .elt__cart__slide .elt__cart__subtotal .cta__btns a:last-child .elt__button__c,
-  .elt__cart__slide .elt__cart__subtotal .cta__btns a:last-child .elt__button__d {
+  .elt__cart__slide .elt__cart__subtotal .cta__btns a:last-child {
     padding: 0 16px;
     gap: 9px;
+    height: 44px;
+  }
+  .elt__cart__slide .elt__cart__subtotal .cta__btns a:last-child svg {
+    height: 18px;
+    width: 18px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
-  .elt__cart__slide .elt__cart__subtotal .cta__btns a:last-child .elt__button__a,
-  .elt__cart__slide .elt__cart__subtotal .cta__btns a:last-child .elt__button__b,
-  .elt__cart__slide .elt__cart__subtotal .cta__btns a:last-child .elt__button__c,
-  .elt__cart__slide .elt__cart__subtotal .cta__btns a:last-child .elt__button__d {
+  .elt__cart__slide .elt__cart__subtotal .cta__btns a:last-child {
     padding: 0 18px;
     gap: 11px;
+    height: 46px;
+  }
+  .elt__cart__slide .elt__cart__subtotal .cta__btns a:last-child svg {
+    height: 20px;
+    width: 20px;
   }
 }
 .elt__cart__slide .elt__cart__subtotal .cta__btns a:last-child:hover {
@@ -2216,39 +2453,47 @@ header .wrapper .header__cta button:hover {
   }
 }
 @media screen and (min-width: 200px) and (max-width: 289px) {
-  .elt__hero__section .wrapper .left__side .button .elt__button__a,
-  .elt__hero__section .wrapper .left__side .button .elt__button__b,
-  .elt__hero__section .wrapper .left__side .button .elt__button__c,
-  .elt__hero__section .wrapper .left__side .button .elt__button__d {
+  .elt__hero__section .wrapper .left__side .button {
     padding: 0 12px;
     gap: 5px;
+    height: 38px;
+  }
+  .elt__hero__section .wrapper .left__side .button svg {
+    height: 14px;
+    width: 14px;
   }
 }
 @media screen and (min-width: 290px) and (max-width: 414px) {
-  .elt__hero__section .wrapper .left__side .button .elt__button__a,
-  .elt__hero__section .wrapper .left__side .button .elt__button__b,
-  .elt__hero__section .wrapper .left__side .button .elt__button__c,
-  .elt__hero__section .wrapper .left__side .button .elt__button__d {
+  .elt__hero__section .wrapper .left__side .button {
     padding: 0 14px;
     gap: 7px;
+    height: 42px;
+  }
+  .elt__hero__section .wrapper .left__side .button svg {
+    height: 16px;
+    width: 16px;
   }
 }
 @media screen and (min-width: 415px) and (max-width: 575px) {
-  .elt__hero__section .wrapper .left__side .button .elt__button__a,
-  .elt__hero__section .wrapper .left__side .button .elt__button__b,
-  .elt__hero__section .wrapper .left__side .button .elt__button__c,
-  .elt__hero__section .wrapper .left__side .button .elt__button__d {
+  .elt__hero__section .wrapper .left__side .button {
     padding: 0 16px;
     gap: 9px;
+    height: 44px;
+  }
+  .elt__hero__section .wrapper .left__side .button svg {
+    height: 18px;
+    width: 18px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
-  .elt__hero__section .wrapper .left__side .button .elt__button__a,
-  .elt__hero__section .wrapper .left__side .button .elt__button__b,
-  .elt__hero__section .wrapper .left__side .button .elt__button__c,
-  .elt__hero__section .wrapper .left__side .button .elt__button__d {
+  .elt__hero__section .wrapper .left__side .button {
     padding: 0 18px;
     gap: 11px;
+    height: 46px;
+  }
+  .elt__hero__section .wrapper .left__side .button svg {
+    height: 20px;
+    width: 20px;
   }
 }
 .elt__hero__section .wrapper .left__side .button:hover {

@@ -140,6 +140,33 @@
               nextEl: ".elt__prodsldrs__next",
               prevEl: ".elt__prodsldrs__prev",
             },
+            breakpoints: {
+                1640: {
+                    spaceBetween: 22,
+                },
+                1400: {
+                    spaceBetween: 16,
+                },
+                1200: {
+                    slidesPerView: 4,
+                    spaceBetween: 10,
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 16,
+                },
+                768: {
+                    spaceBetween: 18,
+                },
+                576: {
+                    slidesPerView: 2,
+                    spaceBetween: 14,
+                },
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                },
+            },
         });
     });
 
