@@ -156,6 +156,7 @@
                     spaceBetween: 16,
                 },
                 768: {
+                    slidesPerView: 2,
                     spaceBetween: 18,
                 },
                 576: {
@@ -167,6 +168,14 @@
                     spaceBetween: 0,
                 },
             },
+        });
+    });
+
+    //Promo Section
+    $(function() {
+        $('.number').counterUp({
+            delay: 10,
+            time: 1000,
         });
     });
 

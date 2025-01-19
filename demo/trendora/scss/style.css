@@ -2596,6 +2596,18 @@ header .wrapper .header__cta button:hover {
 
 /*** End of Hero Section ***/
 /*** Start of What's New Section ***/
+.elt__whatsnew__section {
+  position: relative;
+}
+.elt__whatsnew__section .bg__rounded__color {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  height: 259px;
+  width: 614px;
+  background: rgba(245, 120, 71, 0.05);
+  box-shadow: 0 0 400px 400px rgba(245, 120, 71, 0.05);
+}
 .elt__whatsnew__section .title {
   color: #FFFFFF;
   margin-bottom: 48px;
@@ -2631,4 +2643,314 @@ header .wrapper .header__cta button:hover {
   right: -26px;
 }
 
-/*** End of What's New Section ***//*# sourceMappingURL=style.css.map */
+/*** End of What's New Section ***/
+/*** Start of Promo Section ***/
+.elt__promo__section {
+  margin-top: 186px;
+  margin-bottom: 300px;
+  position: relative;
+}
+.elt__promo__section .bg__rounded__color.one {
+  height: 80px;
+  width: 300px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.elt__promo__section .bg__rounded__color.two {
+  left: unset;
+  right: -5%;
+  top: 10%;
+  height: 150px;
+  background: rgba(61, 235, 100, 0.04);
+  box-shadow: 0 0 400px 400px rgba(61, 235, 100, 0.04);
+}
+.elt__promo__section .wrapper {
+  display: flex;
+  gap: 120px;
+  position: relative;
+}
+.elt__promo__section .wrapper .left__side {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  padding-left: 40px;
+  padding-bottom: 30px;
+}
+.elt__promo__section .wrapper .left__side::after {
+  content: "";
+  position: absolute;
+  width: 603px;
+  height: 669px;
+  border-radius: 16px;
+  border: 2px solid #F59670;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  background: transparent;
+}
+.elt__promo__section .wrapper .left__side .image {
+  width: 603px;
+  height: 669px;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+}
+.elt__promo__section .wrapper .left__side .image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+}
+.elt__promo__section .wrapper .content h1 {
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+.elt__promo__section .wrapper .content p {
+  color: #AFBACA;
+  margin-bottom: 68px;
+}
+.elt__promo__section .wrapper .content .button {
+  transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  height: 48px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 24px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  color: #E9EFF6;
+  font-weight: 600;
+  text-align: center;
+  text-transform: capitalize;
+  cursor: pointer;
+  background: #F27240;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__promo__section .wrapper .content .button {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__promo__section .wrapper .content .button {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__promo__section .wrapper .content .button {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__promo__section .wrapper .content .button {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .elt__promo__section .wrapper .content .button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .elt__promo__section .wrapper .content .button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__promo__section .wrapper .content .button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__promo__section .wrapper .content .button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.elt__promo__section .wrapper .content .button svg {
+  height: 24px;
+  width: 24px;
+  stroke: #E9EFF6;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__promo__section .wrapper .content .button {
+    padding: 0 12px;
+    gap: 5px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__promo__section .wrapper .content .button {
+    padding: 0 14px;
+    gap: 7px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__promo__section .wrapper .content .button {
+    padding: 0 16px;
+    gap: 9px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__promo__section .wrapper .content .button {
+    padding: 0 18px;
+    gap: 11px;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__promo__section .wrapper .content .button {
+    padding: 0 12px;
+    gap: 5px;
+    height: 38px;
+  }
+  .elt__promo__section .wrapper .content .button svg {
+    height: 14px;
+    width: 14px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__promo__section .wrapper .content .button {
+    padding: 0 14px;
+    gap: 7px;
+    height: 42px;
+  }
+  .elt__promo__section .wrapper .content .button svg {
+    height: 16px;
+    width: 16px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__promo__section .wrapper .content .button {
+    padding: 0 16px;
+    gap: 9px;
+    height: 44px;
+  }
+  .elt__promo__section .wrapper .content .button svg {
+    height: 18px;
+    width: 18px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__promo__section .wrapper .content .button {
+    padding: 0 18px;
+    gap: 11px;
+    height: 46px;
+  }
+  .elt__promo__section .wrapper .content .button svg {
+    height: 20px;
+    width: 20px;
+  }
+}
+.elt__promo__section .wrapper .content .button:hover {
+  background: #E0531B;
+}
+.elt__promo__section .wrapper .content .button:active {
+  background: #E0531B;
+  box-shadow: 0 0 0 4px #3F2B28;
+}
+.elt__promo__section .wrapper .content .button:disabled {
+  background: #2D2D32;
+  color: #5E718D;
+  cursor: not-allowed;
+}
+
+@media (min-width: 1417px) {
+  .elt__promo__section .wrapper {
+    max-width: 1417px;
+  }
+}
+@media (min-width: 806px) {
+  .elt__promo__section .promo__total {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    background: rgba(45, 45, 50, 0.8);
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .elt__promo__section .promo__total .item {
+    width: 229px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .elt__promo__section .promo__total .item .number {
+    font-weight: 600;
+    color: #F0F3F9;
+    margin-bottom: 0;
+  }
+  .elt__promo__section .promo__total .item .name {
+    color: #AFBACA;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 806px) and (min-width: 200px) and (max-width: 289px) {
+  .elt__promo__section .promo__total .item .name {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 806px) and (min-width: 290px) and (max-width: 414px) {
+  .elt__promo__section .promo__total .item .name {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 806px) and (min-width: 415px) and (max-width: 575px) {
+  .elt__promo__section .promo__total .item .name {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 806px) and (min-width: 576px) and (max-width: 767px) {
+  .elt__promo__section .promo__total .item .name {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 806px) and (min-width: 768px) and (max-width: 991px) {
+  .elt__promo__section .promo__total .item .name {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 806px) and (min-width: 992px) and (max-width: 1199px) {
+  .elt__promo__section .promo__total .item .name {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 806px) and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__promo__section .promo__total .item .name {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 806px) and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__promo__section .promo__total .item .name {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+/*** End of Promo Section ***//*# sourceMappingURL=style.css.map */
