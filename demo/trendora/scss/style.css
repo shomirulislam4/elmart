@@ -291,42 +291,10 @@ a:hover {
   background: rgba(245, 120, 71, 0.1);
   box-shadow: 0 0 400px 400px rgba(245, 120, 71, 0.1);
   position: absolute;
-  top: -40%;
+  top: -20%;
   left: 50%;
   z-index: -1;
   transform: translateX(-50%);
-}
-
-/* Custom Curosr */
-#cursor__dot,
-#cursor__dot__outline {
-  pointer-events: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  border-radius: 50%;
-  opacity: 0;
-  transform: translate(-50%, -50%);
-  transition: opacity 0.15s ease-in-out, transform 0.15s ease-in-out;
-  z-index: 9999999999;
-}
-
-#cursor__dot {
-  width: 10px;
-  height: 10px;
-  background: #F27240;
-  opacity: 1;
-}
-
-#cursor__dot__outline {
-  transition: 0.3s ease;
-  -moz-transition: 0.3s ease;
-  -webkit-transition: 0.3s ease;
-  -ms-transition: 0.3s ease;
-  -o-transition: 0.3s ease;
-  width: 12px;
-  height: 12px;
-  background: rgba(241, 102, 47, 0.3);
 }
 
 /* Button Styling */
@@ -417,6 +385,44 @@ input {
   }
 }
 
+/*** Start of Custom Curosr ***/
+#cursor__dot,
+#cursor__dot__outline {
+  pointer-events: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.15s ease-in-out, transform 0.15s ease-in-out;
+  z-index: 9999999999;
+}
+
+#cursor__dot {
+  width: 10px;
+  height: 10px;
+  background: #F27240;
+  opacity: 1;
+}
+
+#cursor__dot__outline {
+  transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  width: 12px;
+  height: 12px;
+  background: rgba(241, 102, 47, 0.3);
+}
+
+@media (max-width: 991px) {
+  #cursor__dot {
+    display: none;
+  }
+}
+/*** End of Custom Curosr ***/
 /*** Start of Tabs and Nav ***/
 .elt__tabsandnav {
   display: flex;
@@ -2645,6 +2651,11 @@ header .wrapper .header__cta button:hover {
 
 /*** End of What's New Section ***/
 /*** Start of Promo Section ***/
+@media (min-width: 1417px) {
+  .elt__promo__section .wrapper {
+    max-width: 1417px;
+  }
+}
 .elt__promo__section {
   margin-top: 186px;
   margin-bottom: 300px;
@@ -2870,87 +2881,91 @@ header .wrapper .header__cta button:hover {
   color: #5E718D;
   cursor: not-allowed;
 }
-
-@media (min-width: 1417px) {
-  .elt__promo__section .wrapper {
-    max-width: 1417px;
-  }
+.elt__promo__section .promo__total {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px;
+  background: rgba(45, 45, 50, 0.8);
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
-@media (min-width: 806px) {
-  .elt__promo__section .promo__total {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 20px;
-    background: rgba(45, 45, 50, 0.8);
-    border-radius: 16px;
-    display: flex;
-    justify-content: space-around;
-  }
-  .elt__promo__section .promo__total .item {
-    width: 229px;
-    height: 70px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .elt__promo__section .promo__total .item .number {
-    font-weight: 600;
-    color: #F0F3F9;
-    margin-bottom: 0;
-  }
-  .elt__promo__section .promo__total .item .name {
-    color: #AFBACA;
-    margin-bottom: 0;
-  }
+.elt__promo__section .promo__total .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-@media screen and (min-width: 806px) and (min-width: 200px) and (max-width: 289px) {
+.elt__promo__section .promo__total .item h5 {
+  margin-bottom: 4px;
+}
+.elt__promo__section .promo__total .item .number {
+  font-weight: 600;
+  color: #F0F3F9;
+  margin-bottom: 0;
+}
+.elt__promo__section .promo__total .item .name {
+  color: #AFBACA;
+  margin-bottom: 0;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
   .elt__promo__section .promo__total .item .name {
     font-size: 12px;
     line-height: 18px;
   }
 }
-@media screen and (min-width: 806px) and (min-width: 290px) and (max-width: 414px) {
+@media screen and (min-width: 290px) and (max-width: 414px) {
   .elt__promo__section .promo__total .item .name {
     font-size: 13px;
     line-height: 20px;
   }
 }
-@media screen and (min-width: 806px) and (min-width: 415px) and (max-width: 575px) {
+@media screen and (min-width: 415px) and (max-width: 575px) {
   .elt__promo__section .promo__total .item .name {
     font-size: 14px;
     line-height: 22px;
   }
 }
-@media screen and (min-width: 806px) and (min-width: 576px) and (max-width: 767px) {
+@media screen and (min-width: 576px) and (max-width: 767px) {
   .elt__promo__section .promo__total .item .name {
     font-size: 15px;
     line-height: 23px;
   }
 }
-@media screen and (min-width: 806px) and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .elt__promo__section .promo__total .item .name {
     font-size: 16px;
     line-height: 24px;
   }
 }
-@media screen and (min-width: 806px) and (min-width: 992px) and (max-width: 1199px) {
+@media screen and (min-width: 992px) and (max-width: 1199px) {
   .elt__promo__section .promo__total .item .name {
     font-size: 16px;
     line-height: 24px;
   }
 }
-@media screen and (min-width: 806px) and (min-width: 1200px) and (max-width: 1399px) {
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
   .elt__promo__section .promo__total .item .name {
     font-size: 16px;
     line-height: 24px;
   }
 }
-@media screen and (min-width: 806px) and (min-width: 1400px) and (max-width: 1920px) {
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
   .elt__promo__section .promo__total .item .name {
     font-size: 16px;
     line-height: 24px;
+  }
+}
+
+@media (min-width: 806px) {
+  .elt__promo__section .promo__total {
+    width: 806px;
+  }
+  .elt__promo__section .promo__total .item {
+    width: 229px;
+    height: 70px;
   }
 }
 /*** End of Promo Section ***//*# sourceMappingURL=style.css.map */

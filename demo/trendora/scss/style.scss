@@ -838,6 +838,12 @@ header .wrapper .header__cta {
 /*** End of What's New Section ***/
 
 /*** Start of Promo Section ***/
+@media (min-width: 1417px) {
+    .elt__promo__section .wrapper {
+        max-width: 1417px;
+    }
+}
+
 .elt__promo__section {
     margin-top: 186px;
     margin-bottom: 300px;
@@ -920,46 +926,49 @@ header .wrapper .header__cta {
             }
         }
     }
-}
 
-@media (min-width: 1417px) {
-    .elt__promo__section .wrapper {
-        max-width: 1417px;
+    .promo__total {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 20px;
+        background: rgba($color: #2D2D32, $alpha: 0.8);
+        border-radius: 16px;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+
+        .item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h5 {
+                margin-bottom: 4px;
+            }
+
+            .number {
+                font-weight: 600;
+                color: base.$base50;
+                margin-bottom: 0;
+            }
+
+            .name {
+                @include base.medium__text;
+                color: base.$base300;
+                margin-bottom: 0;
+            }
+        }
     }
 }
 
 @media (min-width: 806px) {
-    .elt__promo__section {
-        .promo__total {
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            padding: 20px;
-            background: rgba($color: #2D2D32, $alpha: 0.8);
-            border-radius: 16px;
-            display: flex;
-            justify-content: space-around;
-
-            .item {
-                width: 229px;
-                height: 70px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-
-                .number {
-                    font-weight: 600;
-                    color: base.$base50;
-                    margin-bottom: 0;
-                }
-
-                .name {
-                    @include base.medium__text;
-                    color: base.$base300;
-                    margin-bottom: 0;
-                }
-            }
+    .elt__promo__section .promo__total {
+        width: 806px;
+        .item {
+            width: 229px;
+            height: 70px;
         }
     }
 }

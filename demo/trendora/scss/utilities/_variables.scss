@@ -8,39 +8,8 @@
     background: rgba($color: #F57847, $alpha: 0.1);
     box-shadow: 0 0 400px 400px rgba($color: #F57847, $alpha: 0.1);
     position: absolute;
-    top: -40%;
+    top: -20%;
     left: 50%;
     z-index: -1;
     transform: translateX(-50%);
-}
-
-/* Custom Curosr */
-$cursor__dot__size: 10px;
-$cursor__outline__size: 12px;
-
-#cursor__dot,
-#cursor__dot__outline {
-    pointer-events: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    border-radius: 50%;
-    opacity: 0;
-    transform: translate(-50%, -50%);
-    transition: opacity 0.15s ease-in-out, transform 0.15s ease-in-out;
-    z-index: 9999999999;
-}
-
-#cursor__dot {
-    width: $cursor__dot__size;
-    height: $cursor__dot__size;
-    background: base.$brandPrimaryColor;
-    opacity: 1;
-}
-
-#cursor__dot__outline {
-    @include utils.transition-03s;
-    width: $cursor__outline__size;
-    height: $cursor__outline__size;
-    background: rgba($color: base.$brandSecondaryColor, $alpha: 0.3);
 }
