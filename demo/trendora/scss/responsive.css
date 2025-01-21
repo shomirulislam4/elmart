@@ -274,6 +274,33 @@
     font-size: 10px;
     line-height: 14px;
   }
+  /*Today's Deal Section*/
+  .elt__todaysdeal__section {
+    margin-top: 40px;
+  }
+  .elt__todaysdeal__section .title {
+    margin-bottom: 20px;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .elt__todaysdeal__section .title .elt__countdown__timer {
+    padding: 10px 14px;
+  }
+  .elt__todaysdeal__section .title h2 {
+    text-align: center;
+  }
+  .elt__todaysdeal__section .content .elt__cta__button {
+    height: 36px;
+    width: 36px;
+    line-height: 36px;
+    top: 30%;
+  }
+  .elt__todaysdeal__section .content .elt__cta__button.elt__tddlsldrs__prev {
+    left: -10px;
+  }
+  .elt__todaysdeal__section .content .elt__cta__button.elt__tddlsldrs__next {
+    right: -10px;
+  }
 }
 @media (min-width: 290px) and (max-width: 414px) {
   .bg__rounded__color {
@@ -522,6 +549,33 @@
   .elt__promo__section .wrapper .promo__total .item h5 {
     margin-bottom: 0;
   }
+  /*Today's Deal Section*/
+  .elt__todaysdeal__section {
+    margin-top: 60px;
+  }
+  .elt__todaysdeal__section .title {
+    margin-bottom: 20px;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .elt__todaysdeal__section .title .elt__countdown__timer {
+    padding: 10px 14px;
+  }
+  .elt__todaysdeal__section .title h2 {
+    text-align: center;
+  }
+  .elt__todaysdeal__section .content .elt__cta__button {
+    height: 42px;
+    width: 42px;
+    line-height: 42px;
+    top: 33%;
+  }
+  .elt__todaysdeal__section .content .elt__cta__button.elt__tddlsldrs__prev {
+    left: -10px;
+  }
+  .elt__todaysdeal__section .content .elt__cta__button.elt__tddlsldrs__next {
+    right: -10px;
+  }
 }
 @media (min-width: 415px) and (max-width: 575px) {
   /*===== Home Page =====*/
@@ -699,6 +753,27 @@
   .elt__promo__section .wrapper .promo__total .item h5 {
     margin-bottom: 0;
   }
+  /*Today's Deal Section*/
+  .elt__todaysdeal__section {
+    margin-top: 70px;
+  }
+  .elt__todaysdeal__section .title {
+    margin-bottom: 25px;
+  }
+  .elt__todaysdeal__section .title .elt__countdown__timer {
+    padding: 10px 14px;
+  }
+  .elt__todaysdeal__section .content .elt__cta__button {
+    height: 42px;
+    width: 42px;
+    line-height: 42px;
+  }
+  .elt__todaysdeal__section .content .elt__cta__button.elt__tddlsldrs__prev {
+    left: -10px;
+  }
+  .elt__todaysdeal__section .content .elt__cta__button.elt__tddlsldrs__next {
+    right: -10px;
+  }
 }
 @media (min-width: 576px) and (max-width: 767px) {
   /*===== Home Page =====*/
@@ -858,6 +933,22 @@
   .elt__promo__section .wrapper .promo__total .item h5 {
     margin-bottom: 0;
   }
+  /*Today's Deal Section*/
+  .elt__todaysdeal__section {
+    margin-top: 80px;
+  }
+  .elt__todaysdeal__section .title {
+    margin-bottom: 30px;
+  }
+  .elt__todaysdeal__section .title .elt__countdown__timer {
+    padding: 12px 16px;
+  }
+  .elt__todaysdeal__section .content .elt__cta__button {
+    height: 42px;
+    width: 42px;
+    line-height: 42px;
+    top: 31%;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   /*===== Home Page =====*/
@@ -992,6 +1083,13 @@
   }
   .elt__promo__section .wrapper .promo__total .item h5 {
     margin-bottom: 0;
+  }
+  /*Today's Deal Section*/
+  .elt__todaysdeal__section {
+    margin-top: 90px;
+  }
+  .elt__todaysdeal__section .title {
+    margin-bottom: 35px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -1139,6 +1237,16 @@
   .elt__promo__section .wrapper .content p {
     margin-bottom: 40px;
   }
+  /*Today's Deal Section*/
+  .elt__todaysdeal__section {
+    margin-top: 110px;
+  }
+  .elt__todaysdeal__section .title {
+    margin-bottom: 40px;
+  }
+  .elt__todaysdeal__section .content .elt__cta__button {
+    top: 32%;
+  }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
   /*===== Home Page =====*/
@@ -1239,6 +1347,10 @@
   .elt__promo__section .wrapper .content p {
     margin-bottom: 60px;
   }
+  /*Today's Deal Section*/
+  .elt__todaysdeal__section {
+    margin-top: 130px;
+  }
 }
 @media (min-width: 1400px) and (max-width: 1639px) {
   /*===== Home Page =====*/
@@ -1293,6 +1405,16 @@
   /*Promo Section*/
   .elt__promo__section {
     margin-top: 150px;
+  }
+  /*Today's Deal Section*/
+  .elt__todaysdeal__section {
+    margin-top: 150px;
+  }
+  .elt__todaysdeal__section .content .elt__cta__button.elt__tddlsldrs__prev {
+    left: -11px;
+  }
+  .elt__todaysdeal__section .content .elt__cta__button.elt__tddlsldrs__next {
+    right: -11px;
   }
 }
 @media (min-width: 1640px) and (max-width: 1700px) {

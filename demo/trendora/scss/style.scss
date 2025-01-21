@@ -846,7 +846,6 @@ header .wrapper .header__cta {
 
 .elt__promo__section {
     margin-top: 186px;
-    margin-bottom: 300px;
     position: relative;
 
     .bg__rounded__color.one {
@@ -974,3 +973,77 @@ header .wrapper .header__cta {
     }
 }
 /*** End of Promo Section ***/
+
+/*** Start of Today's Deal Section ***/
+.elt__todaysdeal__section {
+    margin-top: 180px;
+    position: relative;
+
+    .bg__rounded__color {
+        left: unset;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 250px;
+        width: 189px;
+        background: rgba(245, 120, 71, 0.05);
+        box-shadow: 0 0 300px 300px rgba(245, 120, 71, 0.05);
+    }
+
+    .title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 48px;
+
+        .elt__countdown__timer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px 20px;
+            background: base.$FillSecondaryColor;
+            border-radius: 12px;
+
+            p, span {
+                @include base.medium__text;
+                margin: 0;
+                color: base.$base50;
+            }
+        }
+    }
+
+    .content {
+        position: relative;
+
+        .elt__cta__button {
+            height: 52px;
+            width: 52px;
+            line-height: 52px;
+            background: base.$base00;
+            position: absolute;
+            top: 35%;
+            z-index: 99;
+
+            svg {
+                stroke: base.$brandPrimaryColor;
+            }
+
+            &:hover {
+                background: base.$brandPrimaryColor;
+            
+                svg {
+                    stroke: base.$base200;
+                }
+            }
+        }
+
+        .elt__cta__button.elt__tddlsldrs__prev {
+            left: -26px;
+        }
+    
+        .elt__cta__button.elt__tddlsldrs__next {
+            right: -26px;
+        }
+    }
+}
+/*** End of Today's Deal Section ***/

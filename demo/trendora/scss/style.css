@@ -2656,7 +2656,6 @@ header .wrapper .header__cta button:hover {
 }
 .elt__promo__section {
   margin-top: 186px;
-  margin-bottom: 300px;
   position: relative;
 }
 .elt__promo__section .bg__rounded__color.one {
@@ -2967,4 +2966,114 @@ header .wrapper .header__cta button:hover {
     height: 70px;
   }
 }
-/*** End of Promo Section ***//*# sourceMappingURL=style.css.map */
+/*** End of Promo Section ***/
+/*** Start of Today's Deal Section ***/
+.elt__todaysdeal__section {
+  margin-top: 180px;
+  position: relative;
+}
+.elt__todaysdeal__section .bg__rounded__color {
+  left: unset;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 250px;
+  width: 189px;
+  background: rgba(245, 120, 71, 0.05);
+  box-shadow: 0 0 300px 300px rgba(245, 120, 71, 0.05);
+}
+.elt__todaysdeal__section .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+.elt__todaysdeal__section .title .elt__countdown__timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 20px;
+  background: #3F2B28;
+  border-radius: 12px;
+}
+.elt__todaysdeal__section .title .elt__countdown__timer p, .elt__todaysdeal__section .title .elt__countdown__timer span {
+  margin: 0;
+  color: #F0F3F9;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__todaysdeal__section .title .elt__countdown__timer p, .elt__todaysdeal__section .title .elt__countdown__timer span {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__todaysdeal__section .title .elt__countdown__timer p, .elt__todaysdeal__section .title .elt__countdown__timer span {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__todaysdeal__section .title .elt__countdown__timer p, .elt__todaysdeal__section .title .elt__countdown__timer span {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__todaysdeal__section .title .elt__countdown__timer p, .elt__todaysdeal__section .title .elt__countdown__timer span {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .elt__todaysdeal__section .title .elt__countdown__timer p, .elt__todaysdeal__section .title .elt__countdown__timer span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .elt__todaysdeal__section .title .elt__countdown__timer p, .elt__todaysdeal__section .title .elt__countdown__timer span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__todaysdeal__section .title .elt__countdown__timer p, .elt__todaysdeal__section .title .elt__countdown__timer span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__todaysdeal__section .title .elt__countdown__timer p, .elt__todaysdeal__section .title .elt__countdown__timer span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.elt__todaysdeal__section .content {
+  position: relative;
+}
+.elt__todaysdeal__section .content .elt__cta__button {
+  height: 52px;
+  width: 52px;
+  line-height: 52px;
+  background: #FFFFFF;
+  position: absolute;
+  top: 35%;
+  z-index: 99;
+}
+.elt__todaysdeal__section .content .elt__cta__button svg {
+  stroke: #F27240;
+}
+.elt__todaysdeal__section .content .elt__cta__button:hover {
+  background: #F27240;
+}
+.elt__todaysdeal__section .content .elt__cta__button:hover svg {
+  stroke: #D7DFE9;
+}
+.elt__todaysdeal__section .content .elt__cta__button.elt__tddlsldrs__prev {
+  left: -26px;
+}
+.elt__todaysdeal__section .content .elt__cta__button.elt__tddlsldrs__next {
+  right: -26px;
+}
+
+/*** End of Today's Deal Section ***//*# sourceMappingURL=style.css.map */

@@ -179,7 +179,7 @@
         });
     });
 
-    //On Sale Timer
+    //Today's Deal Section Timer
     function makeTimer() {
         var endTime = new Date("30 March 2025 0:00:00 UTC+0");    
         endTime = (Date.parse(endTime) / 1000);
@@ -196,12 +196,53 @@
             return (num < 10 ? '0' : '') + num;
         }
     
-        $(".els__countdown__timer .days").html(addLeadingZero(days));
-        $(".els__countdown__timer .hours").html(addLeadingZero(hours));
-        $(".els__countdown__timer .minutes").html(addLeadingZero(minutes));
-        $(".els__countdown__timer .seconds").html(addLeadingZero(seconds));        
+        $("#timer1 .days").html(addLeadingZero(days));
+        $("#timer1 .hours").html(addLeadingZero(hours));
+        $("#timer1 .minutes").html(addLeadingZero(minutes));
+        $("#timer1 .seconds").html(addLeadingZero(seconds));        
     }
     setInterval(function() {makeTimer();}, 1000);
+
+    //Today's Deal Section Slider
+    $(function(){
+        var swiper = new Swiper(".elt__todaysdeal__sliders", {
+            loop: true,
+            slidesPerView: 4,
+            spaceBetween: 22,
+            navigation: {
+              nextEl: ".elt__tddlsldrs__next",
+              prevEl: ".elt__tddlsldrs__prev",
+            },
+            breakpoints: {
+                1640: {
+                    spaceBetween: 22,
+                },
+                1400: {
+                    spaceBetween: 16,
+                },
+                1200: {
+                    slidesPerView: 4,
+                    spaceBetween: 10,
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 16,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 18,
+                },
+                576: {
+                    slidesPerView: 2,
+                    spaceBetween: 14,
+                },
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                },
+            },
+        });
+    });
 
 /*============================ About Us Page ============================*/
 
