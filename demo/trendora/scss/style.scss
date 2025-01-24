@@ -792,47 +792,14 @@ header .wrapper .header__cta {
         box-shadow: 0 0 400px 400px rgba(245, 120, 71, 0.05);
     }
 
-    .title {
+    .section__title h2 {
         color: base.$base00;
         margin-bottom: 48px;
+        text-align: center;
     }
 
     .elt__tabsandnav {
         margin-bottom: 88px;
-    }
-
-    .tab-content {
-        position: relative;
-
-        .elt__cta__button {
-            height: 52px;
-            width: 52px;
-            line-height: 52px;
-            background: base.$base00;
-            position: absolute;
-            top: 35%;
-            z-index: 99;
-
-            svg {
-                stroke: base.$brandPrimaryColor;
-            }
-
-            &:hover {
-                background: base.$brandPrimaryColor;
-            
-                svg {
-                    stroke: base.$base200;
-                }
-            }
-        }
-
-        .elt__cta__button.elt__prodsldrs__prev {
-            left: -26px;
-        }
-
-        .elt__cta__button.elt__prodsldrs__next {
-            right: -26px;
-        }
     }
 }
 /*** End of What's New Section ***/
@@ -989,61 +956,15 @@ header .wrapper .header__cta {
         background: rgba(245, 120, 71, 0.05);
         box-shadow: 0 0 300px 300px rgba(245, 120, 71, 0.05);
     }
-
-    .title {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 48px;
-
-        .elt__countdown__timer {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 16px 20px;
-            background: base.$FillSecondaryColor;
-            border-radius: 12px;
-
-            p, span {
-                @include base.medium__text;
-                margin: 0;
-                color: base.$base50;
-            }
-        }
-    }
-
-    .content {
-        position: relative;
-
-        .elt__cta__button {
-            height: 52px;
-            width: 52px;
-            line-height: 52px;
-            background: base.$base00;
-            position: absolute;
-            top: 35%;
-            z-index: 99;
-
-            svg {
-                stroke: base.$brandPrimaryColor;
-            }
-
-            &:hover {
-                background: base.$brandPrimaryColor;
-            
-                svg {
-                    stroke: base.$base200;
-                }
-            }
-        }
-
-        .elt__cta__button.elt__tddlsldrs__prev {
-            left: -26px;
-        }
-    
-        .elt__cta__button.elt__tddlsldrs__next {
-            right: -26px;
-        }
-    }
 }
 /*** End of Today's Deal Section ***/
+
+/*** Start of Trending Section ***/
+.elt__trending__section {
+    margin-top: 160px;
+
+    .section__title .button {
+        @include comps.elt__button__b;
+    }
+}
+/*** End of Trending Section ***/

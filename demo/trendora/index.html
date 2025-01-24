@@ -308,7 +308,9 @@
         <div class="bg__rounded__color"></div>
         <div class="container">
 
-            <h2 class="title text-center">What's New</h2>
+            <div class="section__title">
+                <h2>What's New</h2>
+            </div>
 
             <div class="elt__tabsandnav" id="nav-tab" role="tablist">
                 <button class="active" id="first-tab" data-bs-toggle="tab" data-bs-target="#first" type="button" role="tab" aria-controls="first" aria-selected="true">All</button>
@@ -319,7 +321,7 @@
                 <button id="six-tab" data-bs-toggle="tab" data-bs-target="#six" type="button" role="tab" aria-controls="six" aria-selected="false">Shorts</button>
             </div>
 
-            <div class="tab-content" id="nav-tabContent">
+            <div class="tab-content elt__mainslider__products" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="first" role="tabpanel" aria-labelledby="first-tab" tabindex="0">
                     <div class="swiper elt__product__sliders">
                         <div class="swiper-wrapper">
@@ -730,12 +732,12 @@
                     </div>
                 </div>
 
-                <div class="elt__cta__button elt__prodsldrs__prev">
+                <div class="elt__cta__button prev" id="elt__prodsldrs__prev">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14 7L10 12L14 17" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>
-                <div class="elt__cta__button elt__prodsldrs__next">
+                <div class="elt__cta__button next" id="elt__prodsldrs__next">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10 17L14 12L10 7" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
@@ -791,7 +793,7 @@
         <div class="bg__rounded__color"></div>
 
         <div class="container">
-            <div class="title">
+            <div class="section__title">
                 <h2>Today's Deal</h2>
                 <div class="elt__countdown__timer" id="timer1">
                     <p class="days"></p><span>d&nbsp;:&nbsp;</span>
@@ -801,7 +803,7 @@
                 </div>
             </div>
             
-            <div class="content">
+            <div class="elt__mainslider__products">
                 <div class="swiper elt__todaysdeal__sliders">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -991,12 +993,12 @@
                     </div>
                 </div>
     
-                <div class="elt__cta__button elt__tddlsldrs__prev">
+                <div class="elt__cta__button prev" id="elt__tddlsldrs__prev">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14 7L10 12L14 17" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>
-                <div class="elt__cta__button elt__tddlsldrs__next">
+                <div class="elt__cta__button next" id="elt__tddlsldrs__next">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10 17L14 12L10 7" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
@@ -1006,6 +1008,221 @@
     </section>
     <!-- End of Today's Deal Section -->
     
+    <!-- Start of Trending Section -->
+    <section class="elt__trending__section">
+        <div class="container">
+            <div class="section__title">
+                <h2>Trending Products</h2>
+                <a class="button" href="shop.html">view all
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 16L18 12M18 12L14 8M18 12H6" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="elt__mainslider__products">
+                <div class="swiper elt__trendprod__sliders">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="elt__product__style">
+                                <div class="image">
+                                    <div class="img">
+                                        <img src="assets/images/product/8.png" alt="featured image">
+                                    </div>
+                                    <span class="tag">20% off</span>
+                                    <button class="addtocart">
+                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 21C11 21.8284 10.3284 22.5 9.5 22.5C8.67157 22.5 8 21.8284 8 21C8 20.1716 8.67157 19.5 9.5 19.5C10.3284 19.5 11 20.1716 11 21Z" stroke="#E9EFF7" stroke-width="1.5"/>
+                                            <path d="M20 21C20 21.8284 19.3284 22.5 18.5 22.5C17.6716 22.5 17 21.8284 17 21C17 20.1716 17.6716 19.5 18.5 19.5C19.3284 19.5 20 20.1716 20 21Z" stroke="#E9EFF7" stroke-width="1.5"/>
+                                            <path d="M6 4.5H18C20.2091 4.5 22 6.29086 22 8.5V13.5C22 15.7091 20.2091 17.5 18 17.5H10C7.79086 17.5 6 15.7091 6 13.5V4.5ZM6 4.5C6 3.39543 5.10457 2.5 4 2.5H2M6 8.5H21.5" stroke="#E9EFF7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        add to cart
+                                    </button>
+                                </div>
+                                <div class="info">
+                                    <a href="#" class="category">Women's Tops</a>
+                                    <a href="single-product.html" class="product__name"><h6>Cozy Knit Cardigan Sweater</h6></a>
+                                    <h6 class="price"><span>$16.00</span> $12.00</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="elt__product__style">
+                                <div class="image">
+                                    <div class="img">
+                                        <img src="assets/images/product/9.png" alt="featured image">
+                                    </div>
+                                    <span class="tag">20% off</span>
+                                    <button class="addtocart">
+                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 21C11 21.8284 10.3284 22.5 9.5 22.5C8.67157 22.5 8 21.8284 8 21C8 20.1716 8.67157 19.5 9.5 19.5C10.3284 19.5 11 20.1716 11 21Z" stroke="#E9EFF7" stroke-width="1.5"/>
+                                            <path d="M20 21C20 21.8284 19.3284 22.5 18.5 22.5C17.6716 22.5 17 21.8284 17 21C17 20.1716 17.6716 19.5 18.5 19.5C19.3284 19.5 20 20.1716 20 21Z" stroke="#E9EFF7" stroke-width="1.5"/>
+                                            <path d="M6 4.5H18C20.2091 4.5 22 6.29086 22 8.5V13.5C22 15.7091 20.2091 17.5 18 17.5H10C7.79086 17.5 6 15.7091 6 13.5V4.5ZM6 4.5C6 3.39543 5.10457 2.5 4 2.5H2M6 8.5H21.5" stroke="#E9EFF7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        add to cart
+                                    </button>
+                                </div>
+                                <div class="info">
+                                    <a href="#" class="category">Women's Wear</a>
+                                    <a href="single-product.html" class="product__name"><h6>Cozy Knit Cardigan Sweater</h6></a>
+                                    <h6 class="price"><span>$16.00</span> $12.00</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="elt__product__style">
+                                <div class="image">
+                                    <div class="img">
+                                        <img src="assets/images/product/10.png" alt="featured image">
+                                    </div>
+                                    <span class="tag">20% off</span>
+                                    <button class="addtocart">
+                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 21C11 21.8284 10.3284 22.5 9.5 22.5C8.67157 22.5 8 21.8284 8 21C8 20.1716 8.67157 19.5 9.5 19.5C10.3284 19.5 11 20.1716 11 21Z" stroke="#E9EFF7" stroke-width="1.5"/>
+                                            <path d="M20 21C20 21.8284 19.3284 22.5 18.5 22.5C17.6716 22.5 17 21.8284 17 21C17 20.1716 17.6716 19.5 18.5 19.5C19.3284 19.5 20 20.1716 20 21Z" stroke="#E9EFF7" stroke-width="1.5"/>
+                                            <path d="M6 4.5H18C20.2091 4.5 22 6.29086 22 8.5V13.5C22 15.7091 20.2091 17.5 18 17.5H10C7.79086 17.5 6 15.7091 6 13.5V4.5ZM6 4.5C6 3.39543 5.10457 2.5 4 2.5H2M6 8.5H21.5" stroke="#E9EFF7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        add to cart
+                                    </button>
+                                </div>
+                                <div class="info">
+                                    <a href="#" class="category">Women's Wear</a>
+                                    <a href="single-product.html" class="product__name"><h6>Cozy Knit Cardigan Sweater</h6></a>
+                                    <h6 class="price"><span>$16.00</span> $12.00</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="elt__product__style">
+                                <div class="image">
+                                    <div class="img">
+                                        <img src="assets/images/product/11.png" alt="featured image">
+                                    </div>
+                                    <span class="tag">20% off</span>
+                                    <button class="addtocart">
+                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 21C11 21.8284 10.3284 22.5 9.5 22.5C8.67157 22.5 8 21.8284 8 21C8 20.1716 8.67157 19.5 9.5 19.5C10.3284 19.5 11 20.1716 11 21Z" stroke="#E9EFF7" stroke-width="1.5"/>
+                                            <path d="M20 21C20 21.8284 19.3284 22.5 18.5 22.5C17.6716 22.5 17 21.8284 17 21C17 20.1716 17.6716 19.5 18.5 19.5C19.3284 19.5 20 20.1716 20 21Z" stroke="#E9EFF7" stroke-width="1.5"/>
+                                            <path d="M6 4.5H18C20.2091 4.5 22 6.29086 22 8.5V13.5C22 15.7091 20.2091 17.5 18 17.5H10C7.79086 17.5 6 15.7091 6 13.5V4.5ZM6 4.5C6 3.39543 5.10457 2.5 4 2.5H2M6 8.5H21.5" stroke="#E9EFF7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        add to cart
+                                    </button>
+                                </div>
+                                <div class="info">
+                                    <a href="#" class="category">Men's Wear</a>
+                                    <a href="single-product.html" class="product__name"><h6>Cozy Knit Cardigan Sweater</h6></a>
+                                    <h6 class="price"><span>$16.00</span> $12.00</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="elt__product__style">
+                                <div class="image">
+                                    <div class="img">
+                                        <img src="assets/images/product/8.png" alt="featured image">
+                                    </div>
+                                    <span class="tag">20% off</span>
+                                    <button class="addtocart">
+                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 21C11 21.8284 10.3284 22.5 9.5 22.5C8.67157 22.5 8 21.8284 8 21C8 20.1716 8.67157 19.5 9.5 19.5C10.3284 19.5 11 20.1716 11 21Z" stroke="#E9EFF7" stroke-width="1.5"/>
+                                            <path d="M20 21C20 21.8284 19.3284 22.5 18.5 22.5C17.6716 22.5 17 21.8284 17 21C17 20.1716 17.6716 19.5 18.5 19.5C19.3284 19.5 20 20.1716 20 21Z" stroke="#E9EFF7" stroke-width="1.5"/>
+                                            <path d="M6 4.5H18C20.2091 4.5 22 6.29086 22 8.5V13.5C22 15.7091 20.2091 17.5 18 17.5H10C7.79086 17.5 6 15.7091 6 13.5V4.5ZM6 4.5C6 3.39543 5.10457 2.5 4 2.5H2M6 8.5H21.5" stroke="#E9EFF7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        add to cart
+                                    </button>
+                                </div>
+                                <div class="info">
+                                    <a href="#" class="category">Women's Tops</a>
+                                    <a href="single-product.html" class="product__name"><h6>Cozy Knit Cardigan Sweater</h6></a>
+                                    <h6 class="price"><span>$16.00</span> $12.00</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="elt__product__style">
+                                <div class="image">
+                                    <div class="img">
+                                        <img src="assets/images/product/9.png" alt="featured image">
+                                    </div>
+                                    <span class="tag">20% off</span>
+                                    <button class="addtocart">
+                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 21C11 21.8284 10.3284 22.5 9.5 22.5C8.67157 22.5 8 21.8284 8 21C8 20.1716 8.67157 19.5 9.5 19.5C10.3284 19.5 11 20.1716 11 21Z" stroke="#E9EFF7" stroke-width="1.5"/>
+                                            <path d="M20 21C20 21.8284 19.3284 22.5 18.5 22.5C17.6716 22.5 17 21.8284 17 21C17 20.1716 17.6716 19.5 18.5 19.5C19.3284 19.5 20 20.1716 20 21Z" stroke="#E9EFF7" stroke-width="1.5"/>
+                                            <path d="M6 4.5H18C20.2091 4.5 22 6.29086 22 8.5V13.5C22 15.7091 20.2091 17.5 18 17.5H10C7.79086 17.5 6 15.7091 6 13.5V4.5ZM6 4.5C6 3.39543 5.10457 2.5 4 2.5H2M6 8.5H21.5" stroke="#E9EFF7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        add to cart
+                                    </button>
+                                </div>
+                                <div class="info">
+                                    <a href="#" class="category">Women's Wear</a>
+                                    <a href="single-product.html" class="product__name"><h6>Cozy Knit Cardigan Sweater</h6></a>
+                                    <h6 class="price"><span>$16.00</span> $12.00</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="elt__product__style">
+                                <div class="image">
+                                    <div class="img">
+                                        <img src="assets/images/product/10.png" alt="featured image">
+                                    </div>
+                                    <span class="tag">20% off</span>
+                                    <button class="addtocart">
+                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 21C11 21.8284 10.3284 22.5 9.5 22.5C8.67157 22.5 8 21.8284 8 21C8 20.1716 8.67157 19.5 9.5 19.5C10.3284 19.5 11 20.1716 11 21Z" stroke="#E9EFF7" stroke-width="1.5"/>
+                                            <path d="M20 21C20 21.8284 19.3284 22.5 18.5 22.5C17.6716 22.5 17 21.8284 17 21C17 20.1716 17.6716 19.5 18.5 19.5C19.3284 19.5 20 20.1716 20 21Z" stroke="#E9EFF7" stroke-width="1.5"/>
+                                            <path d="M6 4.5H18C20.2091 4.5 22 6.29086 22 8.5V13.5C22 15.7091 20.2091 17.5 18 17.5H10C7.79086 17.5 6 15.7091 6 13.5V4.5ZM6 4.5C6 3.39543 5.10457 2.5 4 2.5H2M6 8.5H21.5" stroke="#E9EFF7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        add to cart
+                                    </button>
+                                </div>
+                                <div class="info">
+                                    <a href="#" class="category">Women's Wear</a>
+                                    <a href="single-product.html" class="product__name"><h6>Cozy Knit Cardigan Sweater</h6></a>
+                                    <h6 class="price"><span>$16.00</span> $12.00</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="elt__product__style">
+                                <div class="image">
+                                    <div class="img">
+                                        <img src="assets/images/product/11.png" alt="featured image">
+                                    </div>
+                                    <span class="tag">20% off</span>
+                                    <button class="addtocart">
+                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 21C11 21.8284 10.3284 22.5 9.5 22.5C8.67157 22.5 8 21.8284 8 21C8 20.1716 8.67157 19.5 9.5 19.5C10.3284 19.5 11 20.1716 11 21Z" stroke="#E9EFF7" stroke-width="1.5"/>
+                                            <path d="M20 21C20 21.8284 19.3284 22.5 18.5 22.5C17.6716 22.5 17 21.8284 17 21C17 20.1716 17.6716 19.5 18.5 19.5C19.3284 19.5 20 20.1716 20 21Z" stroke="#E9EFF7" stroke-width="1.5"/>
+                                            <path d="M6 4.5H18C20.2091 4.5 22 6.29086 22 8.5V13.5C22 15.7091 20.2091 17.5 18 17.5H10C7.79086 17.5 6 15.7091 6 13.5V4.5ZM6 4.5C6 3.39543 5.10457 2.5 4 2.5H2M6 8.5H21.5" stroke="#E9EFF7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        add to cart
+                                    </button>
+                                </div>
+                                <div class="info">
+                                    <a href="#" class="category">Men's Wear</a>
+                                    <a href="single-product.html" class="product__name"><h6>Cozy Knit Cardigan Sweater</h6></a>
+                                    <h6 class="price"><span>$16.00</span> $12.00</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="elt__cta__button prev" id="elt__trndprdsldrs__prev">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 7L10 12L14 17" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="elt__cta__button next" id="elt__trndprdsldrs__next">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 17L14 12L10 7" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Trending Section -->
     
     <!-- JS Links -->
     <script src="js/vendors/jquery.min.js"></script>

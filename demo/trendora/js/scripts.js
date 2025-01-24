@@ -137,8 +137,8 @@
             slidesPerView: 4,
             spaceBetween: 22,
             navigation: {
-              nextEl: ".elt__prodsldrs__next",
-              prevEl: ".elt__prodsldrs__prev",
+              nextEl: "#elt__prodsldrs__next",
+              prevEl: "#elt__prodsldrs__prev",
             },
             breakpoints: {
                 1640: {
@@ -210,8 +210,49 @@
             slidesPerView: 4,
             spaceBetween: 22,
             navigation: {
-              nextEl: ".elt__tddlsldrs__next",
-              prevEl: ".elt__tddlsldrs__prev",
+              nextEl: "#elt__tddlsldrs__next",
+              prevEl: "#elt__tddlsldrs__prev",
+            },
+            breakpoints: {
+                1640: {
+                    spaceBetween: 22,
+                },
+                1400: {
+                    spaceBetween: 16,
+                },
+                1200: {
+                    slidesPerView: 4,
+                    spaceBetween: 10,
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 16,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 18,
+                },
+                576: {
+                    slidesPerView: 2,
+                    spaceBetween: 14,
+                },
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                },
+            },
+        });
+    });
+
+    //Trending Section Slider
+    $(function(){
+        var swiper = new Swiper(".elt__trendprod__sliders", {
+            loop: true,
+            slidesPerView: 4,
+            spaceBetween: 22,
+            navigation: {
+              nextEl: "#elt__trndprdsldrs__next",
+              prevEl: "#elt__trndprdsldrs__prev",
             },
             breakpoints: {
                 1640: {

@@ -742,6 +742,10 @@ input {
   background: #2D2D32;
   color: #5E718D;
   cursor: not-allowed;
+  box-shadow: none;
+}
+.elt__product__style .image .addtocart:disabled svg {
+  stroke: #5E718D;
 }
 .elt__product__style .info .category {
   color: #8897AE;
@@ -874,8 +878,119 @@ input {
 }
 
 /*** End of Product Style ***/
+/*** Start of Products Slider ***/
+.elt__mainslider__products {
+  position: relative;
+}
+.elt__mainslider__products .elt__cta__button {
+  height: 52px;
+  width: 52px;
+  line-height: 52px;
+  background: #FFFFFF;
+  position: absolute;
+  top: 35%;
+  z-index: 99;
+}
+.elt__mainslider__products .elt__cta__button svg {
+  stroke: #F27240;
+}
+.elt__mainslider__products .elt__cta__button:hover {
+  background: #F27240;
+}
+.elt__mainslider__products .elt__cta__button:hover svg {
+  stroke: #D7DFE9;
+}
+.elt__mainslider__products .elt__cta__button.prev {
+  left: -26px;
+}
+.elt__mainslider__products .elt__cta__button.next {
+  right: -26px;
+}
+
+/*** End of Products Slider ***/
+/*** Start of Section Title ***/
+.section__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+/*** End of Section Title ***/
+/*** Start of Countdown ***/
+.elt__countdown__timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 20px;
+  background: #3F2B28;
+  border-radius: 12px;
+}
+.elt__countdown__timer p, .elt__countdown__timer span {
+  margin: 0;
+  color: #F0F3F9;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__countdown__timer p, .elt__countdown__timer span {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__countdown__timer p, .elt__countdown__timer span {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__countdown__timer p, .elt__countdown__timer span {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__countdown__timer p, .elt__countdown__timer span {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .elt__countdown__timer p, .elt__countdown__timer span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .elt__countdown__timer p, .elt__countdown__timer span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__countdown__timer p, .elt__countdown__timer span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__countdown__timer p, .elt__countdown__timer span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+/*** End of Countdown ***/
 /* ==================== Responsive ==================== */
 @media (min-width: 200px) and (max-width: 289px) {
+  /*Section Title*/
+  .section__title {
+    margin-bottom: 24px;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .section__title h2 {
+    text-align: center;
+  }
   /*Tabs and Nav*/
   .elt__tabsandnav {
     gap: 4px;
@@ -909,8 +1024,34 @@ input {
   .elt__product__style:hover .image .img {
     height: 176px;
   }
+  /*Products Slider*/
+  .elt__mainslider__products .elt__cta__button {
+    height: 36px;
+    width: 36px;
+    line-height: 36px;
+    top: 30%;
+  }
+  .elt__mainslider__products .elt__cta__button.prev {
+    left: -10px;
+  }
+  .elt__mainslider__products .elt__cta__button.next {
+    right: -10px;
+  }
+  /*Countdown*/
+  .elt__countdown__timer {
+    padding: 10px 14px;
+  }
 }
 @media (min-width: 290px) and (max-width: 414px) {
+  /*Section Title*/
+  .section__title {
+    margin-bottom: 28px;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .section__title h2 {
+    text-align: center;
+  }
   /*Tabs and Nav*/
   .elt__tabsandnav {
     gap: 6px;
@@ -944,8 +1085,34 @@ input {
   .elt__product__style:hover .image .img {
     height: 273px;
   }
+  /*Products Slider*/
+  .elt__mainslider__products .elt__cta__button {
+    height: 42px;
+    width: 42px;
+    line-height: 42px;
+    top: 33%;
+  }
+  .elt__mainslider__products .elt__cta__button.prev {
+    left: -10px;
+  }
+  .elt__mainslider__products .elt__cta__button.next {
+    right: -10px;
+  }
+  /*Countdown*/
+  .elt__countdown__timer {
+    padding: 10px 14px;
+  }
 }
 @media (min-width: 415px) and (max-width: 575px) {
+  /*Section Title*/
+  .section__title {
+    margin-bottom: 32px;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .section__title h2 {
+    text-align: center;
+  }
   /*Tabs and Nav*/
   .elt__tabsandnav {
     gap: 4px;
@@ -954,8 +1121,28 @@ input {
   .elt__tabsandnav button {
     padding: 5px 12px;
   }
+  /*Products Slider*/
+  .elt__mainslider__products .elt__cta__button {
+    height: 42px;
+    width: 42px;
+    line-height: 42px;
+  }
+  .elt__mainslider__products .elt__cta__button.prev {
+    left: -10px;
+  }
+  .elt__mainslider__products .elt__cta__button.next {
+    right: -10px;
+  }
+  /*Countdown*/
+  .elt__countdown__timer {
+    padding: 10px 14px;
+  }
 }
 @media (min-width: 576px) and (max-width: 767px) {
+  /*Section Title*/
+  .section__title {
+    margin-bottom: 36px;
+  }
   /*Tabs and Nav*/
   .elt__tabsandnav {
     gap: 13px;
@@ -987,8 +1174,23 @@ input {
   .elt__product__style:hover .image .img {
     height: 255px;
   }
+  /*Products Slider*/
+  .elt__mainslider__products .elt__cta__button {
+    height: 42px;
+    width: 42px;
+    line-height: 42px;
+    top: 31%;
+  }
+  /*Countdown*/
+  .elt__countdown__timer {
+    padding: 12px 16px;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
+  /*Section Title*/
+  .section__title {
+    margin-bottom: 40px;
+  }
   /*Tabs and Nav*/
   .elt__tabsandnav {
     gap: 32px;
@@ -1007,6 +1209,10 @@ input {
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
+  /*Section Title*/
+  .section__title {
+    margin-bottom: 44px;
+  }
   /*Tabs and Nav*/
   .elt__tabsandnav {
     gap: 35px;
@@ -1034,6 +1240,10 @@ input {
   }
   .elt__product__style:hover .image .img {
     height: 312px;
+  }
+  /*Products Slider*/
+  .elt__mainslider__products .elt__cta__button {
+    top: 32%;
   }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -1077,6 +1287,13 @@ input {
   }
   .elt__product__style:hover .image .img {
     height: 342px;
+  }
+  /*Products Slider*/
+  .elt__mainslider__products .elt__cta__button.prev {
+    left: -11px;
+  }
+  .elt__mainslider__products .elt__cta__button.next {
+    right: -11px;
   }
 }
 @media (max-width: 575px) {
@@ -1876,6 +2093,10 @@ header .wrapper .header__cta button:hover {
   background: #2D2D32;
   color: #5E718D;
   cursor: not-allowed;
+  box-shadow: none;
+}
+.elt__cart__slide .elt__cart__subtotal .cta__btns a:first-child:disabled svg {
+  stroke: #5E718D;
 }
 .elt__cart__slide .elt__cart__subtotal .cta__btns a:last-child {
   transition: 0.3s ease;
@@ -2028,13 +2249,17 @@ header .wrapper .header__cta button:hover {
   background: #312321;
   box-shadow: 0 0 0 4px #3F2B28;
 }
+.elt__cart__slide .elt__cart__subtotal .cta__btns a:last-child svg {
+  stroke: #F27240;
+}
 .elt__cart__slide .elt__cart__subtotal .cta__btns a:last-child:disabled {
   background: #2D2D32;
   color: #5E718D;
   cursor: not-allowed;
+  box-shadow: none;
 }
-.elt__cart__slide .elt__cart__subtotal .cta__btns a:last-child svg {
-  stroke: #F27240;
+.elt__cart__slide .elt__cart__subtotal .cta__btns a:last-child:disabled svg {
+  stroke: #5E718D;
 }
 .elt__cart__slide .elt__cartslide__closebtn {
   position: absolute;
@@ -2511,6 +2736,10 @@ header .wrapper .header__cta button:hover {
   background: #2D2D32;
   color: #5E718D;
   cursor: not-allowed;
+  box-shadow: none;
+}
+.elt__hero__section .wrapper .left__side .button:disabled svg {
+  stroke: #5E718D;
 }
 .elt__hero__section .wrapper .right__side {
   max-width: 811px;
@@ -2612,39 +2841,13 @@ header .wrapper .header__cta button:hover {
   background: rgba(245, 120, 71, 0.05);
   box-shadow: 0 0 400px 400px rgba(245, 120, 71, 0.05);
 }
-.elt__whatsnew__section .title {
+.elt__whatsnew__section .section__title h2 {
   color: #FFFFFF;
   margin-bottom: 48px;
+  text-align: center;
 }
 .elt__whatsnew__section .elt__tabsandnav {
   margin-bottom: 88px;
-}
-.elt__whatsnew__section .tab-content {
-  position: relative;
-}
-.elt__whatsnew__section .tab-content .elt__cta__button {
-  height: 52px;
-  width: 52px;
-  line-height: 52px;
-  background: #FFFFFF;
-  position: absolute;
-  top: 35%;
-  z-index: 99;
-}
-.elt__whatsnew__section .tab-content .elt__cta__button svg {
-  stroke: #F27240;
-}
-.elt__whatsnew__section .tab-content .elt__cta__button:hover {
-  background: #F27240;
-}
-.elt__whatsnew__section .tab-content .elt__cta__button:hover svg {
-  stroke: #D7DFE9;
-}
-.elt__whatsnew__section .tab-content .elt__cta__button.elt__prodsldrs__prev {
-  left: -26px;
-}
-.elt__whatsnew__section .tab-content .elt__cta__button.elt__prodsldrs__next {
-  right: -26px;
 }
 
 /*** End of What's New Section ***/
@@ -2878,6 +3081,10 @@ header .wrapper .header__cta button:hover {
   background: #2D2D32;
   color: #5E718D;
   cursor: not-allowed;
+  box-shadow: none;
+}
+.elt__promo__section .wrapper .content .button:disabled svg {
+  stroke: #5E718D;
 }
 .elt__promo__section .promo__total {
   position: absolute;
@@ -2982,98 +3189,174 @@ header .wrapper .header__cta button:hover {
   background: rgba(245, 120, 71, 0.05);
   box-shadow: 0 0 300px 300px rgba(245, 120, 71, 0.05);
 }
-.elt__todaysdeal__section .title {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 48px;
+
+/*** End of Today's Deal Section ***/
+/*** Start of Trending Section ***/
+.elt__trending__section {
+  margin-top: 160px;
 }
-.elt__todaysdeal__section .title .elt__countdown__timer {
+.elt__trending__section .section__title .button {
+  transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  height: 48px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 24px;
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 16px 20px;
-  background: #3F2B28;
-  border-radius: 12px;
-}
-.elt__todaysdeal__section .title .elt__countdown__timer p, .elt__todaysdeal__section .title .elt__countdown__timer span {
-  margin: 0;
-  color: #F0F3F9;
+  gap: 16px;
+  color: #E9EFF6;
+  font-weight: 600;
+  text-align: center;
+  text-transform: capitalize;
+  cursor: pointer;
+  background: #312321;
+  color: #F27240;
 }
 @media screen and (min-width: 200px) and (max-width: 289px) {
-  .elt__todaysdeal__section .title .elt__countdown__timer p, .elt__todaysdeal__section .title .elt__countdown__timer span {
+  .elt__trending__section .section__title .button {
     font-size: 12px;
     line-height: 18px;
   }
 }
 @media screen and (min-width: 290px) and (max-width: 414px) {
-  .elt__todaysdeal__section .title .elt__countdown__timer p, .elt__todaysdeal__section .title .elt__countdown__timer span {
+  .elt__trending__section .section__title .button {
     font-size: 13px;
     line-height: 20px;
   }
 }
 @media screen and (min-width: 415px) and (max-width: 575px) {
-  .elt__todaysdeal__section .title .elt__countdown__timer p, .elt__todaysdeal__section .title .elt__countdown__timer span {
+  .elt__trending__section .section__title .button {
     font-size: 14px;
     line-height: 22px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
-  .elt__todaysdeal__section .title .elt__countdown__timer p, .elt__todaysdeal__section .title .elt__countdown__timer span {
+  .elt__trending__section .section__title .button {
     font-size: 15px;
     line-height: 23px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .elt__todaysdeal__section .title .elt__countdown__timer p, .elt__todaysdeal__section .title .elt__countdown__timer span {
+  .elt__trending__section .section__title .button {
     font-size: 16px;
     line-height: 24px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  .elt__todaysdeal__section .title .elt__countdown__timer p, .elt__todaysdeal__section .title .elt__countdown__timer span {
+  .elt__trending__section .section__title .button {
     font-size: 16px;
     line-height: 24px;
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
-  .elt__todaysdeal__section .title .elt__countdown__timer p, .elt__todaysdeal__section .title .elt__countdown__timer span {
+  .elt__trending__section .section__title .button {
     font-size: 16px;
     line-height: 24px;
   }
 }
 @media screen and (min-width: 1400px) and (max-width: 1920px) {
-  .elt__todaysdeal__section .title .elt__countdown__timer p, .elt__todaysdeal__section .title .elt__countdown__timer span {
+  .elt__trending__section .section__title .button {
     font-size: 16px;
     line-height: 24px;
   }
 }
-.elt__todaysdeal__section .content {
-  position: relative;
+.elt__trending__section .section__title .button svg {
+  height: 24px;
+  width: 24px;
+  stroke: #E9EFF6;
 }
-.elt__todaysdeal__section .content .elt__cta__button {
-  height: 52px;
-  width: 52px;
-  line-height: 52px;
-  background: #FFFFFF;
-  position: absolute;
-  top: 35%;
-  z-index: 99;
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__trending__section .section__title .button {
+    padding: 0 12px;
+    gap: 5px;
+  }
 }
-.elt__todaysdeal__section .content .elt__cta__button svg {
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__trending__section .section__title .button {
+    padding: 0 14px;
+    gap: 7px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__trending__section .section__title .button {
+    padding: 0 16px;
+    gap: 9px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__trending__section .section__title .button {
+    padding: 0 18px;
+    gap: 11px;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__trending__section .section__title .button {
+    padding: 0 12px;
+    gap: 5px;
+    height: 38px;
+  }
+  .elt__trending__section .section__title .button svg {
+    height: 14px;
+    width: 14px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__trending__section .section__title .button {
+    padding: 0 14px;
+    gap: 7px;
+    height: 42px;
+  }
+  .elt__trending__section .section__title .button svg {
+    height: 16px;
+    width: 16px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__trending__section .section__title .button {
+    padding: 0 16px;
+    gap: 9px;
+    height: 44px;
+  }
+  .elt__trending__section .section__title .button svg {
+    height: 18px;
+    width: 18px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__trending__section .section__title .button {
+    padding: 0 18px;
+    gap: 11px;
+    height: 46px;
+  }
+  .elt__trending__section .section__title .button svg {
+    height: 20px;
+    width: 20px;
+  }
+}
+.elt__trending__section .section__title .button:hover {
+  background: #3F2B28;
+}
+.elt__trending__section .section__title .button:active {
+  background: #312321;
+  box-shadow: 0 0 0 4px #3F2B28;
+}
+.elt__trending__section .section__title .button svg {
   stroke: #F27240;
 }
-.elt__todaysdeal__section .content .elt__cta__button:hover {
-  background: #F27240;
+.elt__trending__section .section__title .button:disabled {
+  background: #2D2D32;
+  color: #5E718D;
+  cursor: not-allowed;
+  box-shadow: none;
 }
-.elt__todaysdeal__section .content .elt__cta__button:hover svg {
-  stroke: #D7DFE9;
-}
-.elt__todaysdeal__section .content .elt__cta__button.elt__tddlsldrs__prev {
-  left: -26px;
-}
-.elt__todaysdeal__section .content .elt__cta__button.elt__tddlsldrs__next {
-  right: -26px;
+.elt__trending__section .section__title .button:disabled svg {
+  stroke: #5E718D;
 }
 
-/*** End of Today's Deal Section ***//*# sourceMappingURL=style.css.map */
+/*** End of Trending Section ***//*# sourceMappingURL=style.css.map */

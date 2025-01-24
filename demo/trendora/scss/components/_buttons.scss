@@ -101,6 +101,11 @@ $buttonStyle-breakpoints: (
         background: base.$backgroundTertiaryColor;
         color: base.$base500;
         cursor: not-allowed;
+        box-shadow: none;
+
+        svg {
+            stroke: base.$base500;
+        }
     }
 }
 
@@ -119,54 +124,81 @@ $buttonStyle-breakpoints: (
         box-shadow: 0 0 0 4px base.$FillSecondaryColor;
     }
 
+    svg {
+        stroke: base.$brandPrimaryColor;
+    }
+
     &:disabled {
         background: base.$backgroundTertiaryColor;
         color: base.$base500;
         cursor: not-allowed;
-    }
+        box-shadow: none;
 
-    svg {
-        stroke: base.$brandPrimaryColor;
+        svg {
+            stroke: base.$base500;
+        }
     }
 }
 
 @mixin elt__button__c {
     @include eltButtonStyling();
-    background: base.$brandPrimaryColor;
+    background: base.$backgroundPrimaryColor;
+    color: base.$brandPrimaryColor;
+    border: 1px solid base.$brandPrimaryColor;
+
+    svg {
+        stroke: base.$brandPrimaryColor;
+    }
 
     &:hover {
-        background: base.$brandTertiaryColor;
+        background: base.$FillPrimaryColor;
     }
 
     &:active {
-        background: base.$brandTertiaryColor;
+        background: base.$FillPrimaryColor;
         box-shadow: 0 0 0 4px base.$FillSecondaryColor;
     }
 
     &:disabled {
-        background: base.$backgroundTertiaryColor;
         color: base.$base500;
+        background: base.$backgroundPrimaryColor;
+        border: 1px solid base.$backgroundTertiaryColor;
         cursor: not-allowed;
+        box-shadow: none;
+        
+        svg {
+            stroke: base.$base500;
+        }
     }
 }
 
 @mixin elt__button__d {
     @include eltButtonStyling();
-    background: base.$brandPrimaryColor;
+    background: base.$backgroundPrimaryColor;
+    color: base.$brandPrimaryColor;
 
     &:hover {
-        background: base.$brandTertiaryColor;
+        background: base.$FillPrimaryColor;
     }
 
     &:active {
-        background: base.$brandTertiaryColor;
+        background: base.$FillPrimaryColor;
         box-shadow: 0 0 0 4px base.$FillSecondaryColor;
     }
 
+    svg {
+        stroke: base.$brandPrimaryColor;
+    }
+
     &:disabled {
-        background: base.$backgroundTertiaryColor;
+        background: base.$backgroundPrimaryColor;
         color: base.$base500;
         cursor: not-allowed;
+        box-shadow: none;
+
+        svg {
+            stroke: base.$base500;
+        }
     }
 }
 
