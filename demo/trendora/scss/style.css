@@ -3359,4 +3359,248 @@ header .wrapper .header__cta button:hover {
   stroke: #5E718D;
 }
 
-/*** End of Trending Section ***//*# sourceMappingURL=style.css.map */
+/*** End of Trending Section ***/
+/*** Start of Promo V2 Section ***/
+.elt__promov2__section {
+  position: relative;
+  height: 844px;
+  margin-top: 200px;
+}
+.elt__promov2__section .bg__image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.elt__promov2__section .bg__rounded__color {
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 70px;
+  width: 180px;
+  background: rgba(245, 120, 71, 0.07);
+  box-shadow: 0 0 400px 400px rgba(245, 120, 71, 0.07);
+}
+.elt__promov2__section .wrapper {
+  height: 100%;
+  position: relative;
+}
+.elt__promov2__section .wrapper .images {
+  position: relative;
+  height: 100%;
+}
+.elt__promov2__section .wrapper .images div {
+  position: absolute;
+  overflow: hidden;
+  width: 174px;
+  height: 208px;
+}
+.elt__promov2__section .wrapper .images div img {
+  width: 100%;
+  height: auto;
+}
+.elt__promov2__section .wrapper .images .one {
+  top: 132px;
+  left: 0;
+  border-top-left-radius: 87px;
+}
+.elt__promov2__section .wrapper .images .two {
+  top: 118px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 130px;
+  height: 156px;
+  border-radius: 31px;
+}
+.elt__promov2__section .wrapper .images .three {
+  top: 132px;
+  right: 0;
+  border-radius: 87px;
+}
+.elt__promov2__section .wrapper .images .four {
+  left: 174px;
+  bottom: 122px;
+  border-radius: 87px;
+}
+.elt__promov2__section .wrapper .images .five {
+  right: 176px;
+  bottom: 122px;
+  border-bottom-right-radius: 87px;
+}
+.elt__promov2__section .wrapper .text {
+  position: absolute;
+  top: 370px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 677px;
+  text-align: center;
+}
+.elt__promov2__section .wrapper .text h2 {
+  color: #FFFFFF;
+  font-weight: 500;
+  margin-bottom: 52px;
+}
+.elt__promov2__section .wrapper .text .button {
+  transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  height: 48px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 24px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  color: #E9EFF6;
+  font-weight: 600;
+  text-align: center;
+  text-transform: capitalize;
+  cursor: pointer;
+  background: #F27240;
+  margin: 0 auto;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__promov2__section .wrapper .text .button {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__promov2__section .wrapper .text .button {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__promov2__section .wrapper .text .button {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__promov2__section .wrapper .text .button {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .elt__promov2__section .wrapper .text .button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .elt__promov2__section .wrapper .text .button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__promov2__section .wrapper .text .button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__promov2__section .wrapper .text .button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.elt__promov2__section .wrapper .text .button svg {
+  height: 24px;
+  width: 24px;
+  stroke: #E9EFF6;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__promov2__section .wrapper .text .button {
+    padding: 0 12px;
+    gap: 5px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__promov2__section .wrapper .text .button {
+    padding: 0 14px;
+    gap: 7px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__promov2__section .wrapper .text .button {
+    padding: 0 16px;
+    gap: 9px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__promov2__section .wrapper .text .button {
+    padding: 0 18px;
+    gap: 11px;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__promov2__section .wrapper .text .button {
+    padding: 0 12px;
+    gap: 5px;
+    height: 38px;
+  }
+  .elt__promov2__section .wrapper .text .button svg {
+    height: 14px;
+    width: 14px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__promov2__section .wrapper .text .button {
+    padding: 0 14px;
+    gap: 7px;
+    height: 42px;
+  }
+  .elt__promov2__section .wrapper .text .button svg {
+    height: 16px;
+    width: 16px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__promov2__section .wrapper .text .button {
+    padding: 0 16px;
+    gap: 9px;
+    height: 44px;
+  }
+  .elt__promov2__section .wrapper .text .button svg {
+    height: 18px;
+    width: 18px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__promov2__section .wrapper .text .button {
+    padding: 0 18px;
+    gap: 11px;
+    height: 46px;
+  }
+  .elt__promov2__section .wrapper .text .button svg {
+    height: 20px;
+    width: 20px;
+  }
+}
+.elt__promov2__section .wrapper .text .button:hover {
+  background: #E0531B;
+}
+.elt__promov2__section .wrapper .text .button:active {
+  background: #E0531B;
+  box-shadow: 0 0 0 4px #3F2B28;
+}
+.elt__promov2__section .wrapper .text .button:disabled {
+  background: #2D2D32;
+  color: #5E718D;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+.elt__promov2__section .wrapper .text .button:disabled svg {
+  stroke: #5E718D;
+}
+
+/*** End of Promo V2 Section ***//*# sourceMappingURL=style.css.map */
