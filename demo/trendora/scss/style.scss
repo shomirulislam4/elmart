@@ -962,10 +962,6 @@ header .wrapper .header__cta {
 /*** Start of Trending Section ***/
 .elt__trending__section {
     margin-top: 160px;
-
-    .section__title .button {
-        @include comps.elt__button__b;
-    }
 }
 /*** End of Trending Section ***/
 
@@ -1070,5 +1066,24 @@ header .wrapper .header__cta {
         }
     }
 }
-
 /*** End of Promo V2 Section ***/
+
+/*** Start of Blog Section ***/
+.elt__blog__section {
+    position: relative;
+
+    .bg__rounded__color {
+        left: unset;
+        top: unset;
+        right: 0;
+        bottom: 0;
+        background: rgba(245, 120, 71, 0.05);
+        box-shadow: 0 0 300px 300px rgba(245, 120, 71, 0.05);
+    }
+
+    .elt__blognews__sliders {
+        position: relative;
+        padding-bottom: 78px;
+    }
+}
+/*** End of Blog Section ***/

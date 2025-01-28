@@ -285,6 +285,42 @@
         });
     });
 
+    //Trending Section Slider
+    $(function(){
+        var swiper = new Swiper(".elt__blognews__sliders", {
+            loop: true,
+            slidesPerView: 3,
+            spaceBetween: 22,
+            pagination: {
+                el: ".elt__blognews__dots",
+            },
+            breakpoints: {
+                1400: {
+                    spaceBetween: 22,
+                },
+                1200: {
+                    spaceBetween: 18,
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 16,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 18,
+                },
+                576: {
+                    slidesPerView: 2,
+                    spaceBetween: 14,
+                },
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                },
+            },
+        });
+    });
+
 /*============================ About Us Page ============================*/
 
 
