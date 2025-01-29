@@ -1087,3 +1087,190 @@ header .wrapper .header__cta {
     }
 }
 /*** End of Blog Section ***/
+
+/*** Start of Newsletter Section ***/
+.elt__newsletter__section {
+    margin-top: 148px;
+
+    .wrapper {
+        overflow: hidden;
+        border-radius: 16px;
+        height: 344px;
+        position: relative;
+        padding: 0;
+
+        .bg__image {
+            width: 100%;
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            background: rgba($color: base.$backgroundTertiaryColor, $alpha: 0.8);
+
+            .text {
+                width: 684px;
+                height: 100%;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+
+                h3 {
+                    color: base.$base100;
+                    font-weight: 500;
+                }
+
+                span {
+                    @include base.medium__text;
+                    color: base.$base100;
+                }
+
+                form {
+                    padding: 6px;
+                    padding-left: 28px;
+                    margin-top: 48px;
+                    border-radius: 12px;
+                    border: 2px solid base.$base300;
+                    width: 100%;
+                    height: 60px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 6px;
+
+                    input {
+                        all: unset;
+                        @include base.medium__text;
+                        background: transparent;
+                        color: base.$base300;
+                        text-align: left;
+                        width: 100%;
+
+                        &::placeholder {
+                            color: base.$base300;
+                        }
+                    }
+
+                    button {
+                        @include comps.elt__button__a;
+                    }
+                }
+            }
+        }
+    }
+}
+/*** End of Newsletter Section ***/
+
+/*** Start of Footer Section ***/
+.elt__footer__section {
+    margin-top: 124px;
+    padding: 60px 0;
+
+    .logo {
+        margin-bottom: 30px;
+    }
+
+    span {
+        @include base.medium__text;
+        color: base.$base400;
+        display: block;
+        max-width: 528px;
+        font-weight: 500;
+    }
+
+    .social__profiles {
+        margin-top: 50px;
+    }
+
+    .title {
+        color: base.$base200;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    .elt__footer__list {
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin-bottom: 24px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            a {
+                @include base.medium__text;
+                color: base.$base300;
+                display: block;
+
+                &:hover {
+                    color: base.$brandPrimaryColor;
+                }
+            }
+        }
+    }
+
+    .bottom {
+        padding-top: 40px;
+        margin-top: 40px;
+        border-top: 1px solid base.$base800;
+        display: flex;
+        justify-content: space-between;
+
+        p {
+            @include base.medium__text;
+            color: base.$base300;
+            width: fit-content;
+
+            a {
+                color: base.$base300;
+
+                &:hover {
+                    color: base.$brandPrimaryColor;
+                }
+            }
+        }
+
+        .elt__footer__list__bottom {
+            padding: 0;
+            margin: 0;
+            width: fit-content;
+            li {
+                display: inline-block;
+                margin-right: 5px;
+
+                a {
+                    @include base.medium__text;
+                    color: base.$base300;
+
+                    &:hover {
+                        color: base.$brandPrimaryColor;
+                    }
+                }
+
+                &::after {
+                    padding-left: 7px;
+                    content: '|';
+                }
+
+                &:last-child {
+                    margin-right: 0;
+
+                    &::after {
+                        padding-left: 0;
+                        content: none;
+                    }
+                }
+            }
+        }
+    }
+}
+/*** End of Footer Section ***/

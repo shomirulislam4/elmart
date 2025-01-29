@@ -1213,6 +1213,28 @@ input {
 }
 
 /*** End of Slider Dots ***/
+/*** Start of Social Profiles ***/
+.social__profiles {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.social__profiles a {
+  height: 42px;
+  width: 42px;
+  line-height: 42px;
+  text-align: center;
+  border-radius: 50%;
+  background: #2D2D32;
+}
+.social__profiles a p {
+  color: #D7DFE9;
+}
+.social__profiles a:hover {
+  background: #312321;
+}
+
+/*** End of Social Profiles ***/
 /* ==================== Responsive ==================== */
 @media (min-width: 200px) and (max-width: 289px) {
   /*Section Title*/
@@ -3719,4 +3741,605 @@ header .wrapper .header__cta button:hover {
   padding-bottom: 78px;
 }
 
-/*** End of Blog Section ***//*# sourceMappingURL=style.css.map */
+/*** End of Blog Section ***/
+/*** Start of Newsletter Section ***/
+.elt__newsletter__section {
+  margin-top: 148px;
+}
+.elt__newsletter__section .wrapper {
+  overflow: hidden;
+  border-radius: 16px;
+  height: 344px;
+  position: relative;
+  padding: 0;
+}
+.elt__newsletter__section .wrapper .bg__image {
+  width: 100%;
+}
+.elt__newsletter__section .wrapper .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: rgba(45, 45, 50, 0.8);
+}
+.elt__newsletter__section .wrapper .content .text {
+  width: 684px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.elt__newsletter__section .wrapper .content .text h3 {
+  color: #E9EFF6;
+  font-weight: 500;
+}
+.elt__newsletter__section .wrapper .content .text span {
+  color: #E9EFF6;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__newsletter__section .wrapper .content .text span {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__newsletter__section .wrapper .content .text span {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__newsletter__section .wrapper .content .text span {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__newsletter__section .wrapper .content .text span {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .elt__newsletter__section .wrapper .content .text span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .elt__newsletter__section .wrapper .content .text span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__newsletter__section .wrapper .content .text span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__newsletter__section .wrapper .content .text span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.elt__newsletter__section .wrapper .content .text form {
+  padding: 6px;
+  padding-left: 28px;
+  margin-top: 48px;
+  border-radius: 12px;
+  border: 2px solid #AFBACA;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+.elt__newsletter__section .wrapper .content .text form input {
+  all: unset;
+  background: transparent;
+  color: #AFBACA;
+  text-align: left;
+  width: 100%;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__newsletter__section .wrapper .content .text form input {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__newsletter__section .wrapper .content .text form input {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__newsletter__section .wrapper .content .text form input {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__newsletter__section .wrapper .content .text form input {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .elt__newsletter__section .wrapper .content .text form input {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .elt__newsletter__section .wrapper .content .text form input {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__newsletter__section .wrapper .content .text form input {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__newsletter__section .wrapper .content .text form input {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.elt__newsletter__section .wrapper .content .text form input::-moz-placeholder {
+  color: #AFBACA;
+}
+.elt__newsletter__section .wrapper .content .text form input::placeholder {
+  color: #AFBACA;
+}
+.elt__newsletter__section .wrapper .content .text form button {
+  transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  height: 48px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 24px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  color: #E9EFF6;
+  font-weight: 600;
+  text-align: center;
+  text-transform: capitalize;
+  cursor: pointer;
+  background: #F27240;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__newsletter__section .wrapper .content .text form button {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__newsletter__section .wrapper .content .text form button {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__newsletter__section .wrapper .content .text form button {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__newsletter__section .wrapper .content .text form button {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .elt__newsletter__section .wrapper .content .text form button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .elt__newsletter__section .wrapper .content .text form button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__newsletter__section .wrapper .content .text form button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__newsletter__section .wrapper .content .text form button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.elt__newsletter__section .wrapper .content .text form button svg {
+  height: 24px;
+  width: 24px;
+  stroke: #E9EFF6;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__newsletter__section .wrapper .content .text form button {
+    padding: 0 12px;
+    gap: 5px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__newsletter__section .wrapper .content .text form button {
+    padding: 0 14px;
+    gap: 7px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__newsletter__section .wrapper .content .text form button {
+    padding: 0 16px;
+    gap: 9px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__newsletter__section .wrapper .content .text form button {
+    padding: 0 18px;
+    gap: 11px;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__newsletter__section .wrapper .content .text form button {
+    padding: 0 12px;
+    gap: 5px;
+    height: 38px;
+  }
+  .elt__newsletter__section .wrapper .content .text form button svg {
+    height: 14px;
+    width: 14px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__newsletter__section .wrapper .content .text form button {
+    padding: 0 14px;
+    gap: 7px;
+    height: 42px;
+  }
+  .elt__newsletter__section .wrapper .content .text form button svg {
+    height: 16px;
+    width: 16px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__newsletter__section .wrapper .content .text form button {
+    padding: 0 16px;
+    gap: 9px;
+    height: 44px;
+  }
+  .elt__newsletter__section .wrapper .content .text form button svg {
+    height: 18px;
+    width: 18px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__newsletter__section .wrapper .content .text form button {
+    padding: 0 18px;
+    gap: 11px;
+    height: 46px;
+  }
+  .elt__newsletter__section .wrapper .content .text form button svg {
+    height: 20px;
+    width: 20px;
+  }
+}
+.elt__newsletter__section .wrapper .content .text form button:hover {
+  background: #E0531B;
+}
+.elt__newsletter__section .wrapper .content .text form button:active {
+  background: #E0531B;
+  box-shadow: 0 0 0 4px #3F2B28;
+}
+.elt__newsletter__section .wrapper .content .text form button:disabled {
+  background: #2D2D32;
+  color: #5E718D;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+.elt__newsletter__section .wrapper .content .text form button:disabled svg {
+  stroke: #5E718D;
+}
+
+/*** End of Newsletter Section ***/
+/*** Start of Footer Section ***/
+.elt__footer__section {
+  margin-top: 124px;
+  padding: 60px 0;
+}
+.elt__footer__section .logo {
+  margin-bottom: 30px;
+}
+.elt__footer__section span {
+  color: #8897AE;
+  display: block;
+  max-width: 528px;
+  font-weight: 500;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__footer__section span {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__footer__section span {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__footer__section span {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__footer__section span {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .elt__footer__section span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .elt__footer__section span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__footer__section span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__footer__section span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.elt__footer__section .social__profiles {
+  margin-top: 50px;
+}
+.elt__footer__section .title {
+  color: #D7DFE9;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.elt__footer__section .elt__footer__list {
+  margin: 0;
+  padding: 0;
+}
+.elt__footer__section .elt__footer__list li {
+  margin-bottom: 24px;
+}
+.elt__footer__section .elt__footer__list li:last-child {
+  margin-bottom: 0;
+}
+.elt__footer__section .elt__footer__list li a {
+  color: #AFBACA;
+  display: block;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__footer__section .elt__footer__list li a {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__footer__section .elt__footer__list li a {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__footer__section .elt__footer__list li a {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__footer__section .elt__footer__list li a {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .elt__footer__section .elt__footer__list li a {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .elt__footer__section .elt__footer__list li a {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__footer__section .elt__footer__list li a {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__footer__section .elt__footer__list li a {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.elt__footer__section .elt__footer__list li a:hover {
+  color: #F27240;
+}
+.elt__footer__section .bottom {
+  padding-top: 40px;
+  margin-top: 40px;
+  border-top: 1px solid #2D3643;
+  display: flex;
+  justify-content: space-between;
+}
+.elt__footer__section .bottom p {
+  color: #AFBACA;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__footer__section .bottom p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__footer__section .bottom p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__footer__section .bottom p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__footer__section .bottom p {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .elt__footer__section .bottom p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .elt__footer__section .bottom p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__footer__section .bottom p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__footer__section .bottom p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.elt__footer__section .bottom p a {
+  color: #AFBACA;
+}
+.elt__footer__section .bottom p a:hover {
+  color: #F27240;
+}
+.elt__footer__section .bottom .elt__footer__list__bottom {
+  padding: 0;
+  margin: 0;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.elt__footer__section .bottom .elt__footer__list__bottom li {
+  display: inline-block;
+  margin-right: 5px;
+}
+.elt__footer__section .bottom .elt__footer__list__bottom li a {
+  color: #AFBACA;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__footer__section .bottom .elt__footer__list__bottom li a {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__footer__section .bottom .elt__footer__list__bottom li a {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__footer__section .bottom .elt__footer__list__bottom li a {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__footer__section .bottom .elt__footer__list__bottom li a {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .elt__footer__section .bottom .elt__footer__list__bottom li a {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .elt__footer__section .bottom .elt__footer__list__bottom li a {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__footer__section .bottom .elt__footer__list__bottom li a {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__footer__section .bottom .elt__footer__list__bottom li a {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.elt__footer__section .bottom .elt__footer__list__bottom li a:hover {
+  color: #F27240;
+}
+.elt__footer__section .bottom .elt__footer__list__bottom li::after {
+  padding-left: 7px;
+  content: "|";
+}
+.elt__footer__section .bottom .elt__footer__list__bottom li:last-child {
+  margin-right: 0;
+}
+.elt__footer__section .bottom .elt__footer__list__bottom li:last-child::after {
+  padding-left: 0;
+  content: none;
+}
+
+/*** End of Footer Section ***//*# sourceMappingURL=style.css.map */

@@ -276,6 +276,31 @@
 }
 /*** End of Slider Dots ***/
 
+/*** Start of Social Profiles ***/
+.social__profiles {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+
+    a {
+        height: 42px;
+        width: 42px;
+        line-height: 42px;
+        text-align: center;
+        border-radius: 50%;
+        background: base.$backgroundTertiaryColor;
+        
+        p {
+            color: base.$base200;
+        }
+
+        &:hover {
+            background: base.$FillPrimaryColor;
+        }
+    }
+}
+/*** End of Social Profiles ***/
+
 /* ==================== Responsive ==================== */
 @media (min-width: 200px) and (max-width: 289px) {
     /*Section Title*/
