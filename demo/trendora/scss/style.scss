@@ -794,7 +794,6 @@ header .wrapper .header__cta {
 
     .section__title h2 {
         color: base.$base00;
-        margin-bottom: 48px;
         text-align: center;
     }
 
@@ -1071,10 +1070,12 @@ header .wrapper .header__cta {
 /*** Start of Blog Section ***/
 .elt__blog__section {
     position: relative;
+    margin-top: 200px;
 
     .bg__rounded__color {
         left: unset;
         top: unset;
+        transform: none;
         right: 0;
         bottom: 0;
         background: rgba(245, 120, 71, 0.05);
@@ -1160,6 +1161,7 @@ header .wrapper .header__cta {
 
                     button {
                         @include comps.elt__button__a;
+                        height: 100% !important;
                     }
                 }
             }
@@ -1229,6 +1231,7 @@ header .wrapper .header__cta {
             @include base.medium__text;
             color: base.$base300;
             width: fit-content;
+            margin: 0;
 
             a {
                 color: base.$base300;

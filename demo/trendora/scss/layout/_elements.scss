@@ -219,6 +219,11 @@
                 }
             }
         }
+
+        span {
+            @include base.medium__text;
+            color: base.$base300;
+        }
     }
 }
 /*** End of Blog Item ***/
@@ -364,6 +369,31 @@
     .elt__countdown__timer {
         padding: 10px 14px;
     }
+    /*Blog Item*/
+    .elt__blog__item {
+        width: 176px;
+        .image {
+            height: 114px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+        }
+        .content {
+            .meta__info {
+                gap: 10px;
+                margin-bottom: 8px;
+                .item {
+                    gap: 4px;
+                    svg {
+                        height: 12px;
+                        width: 12px;
+                    }
+                }
+            }
+            h5 {
+                margin-bottom: 4px;
+            }
+        }
+    }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
@@ -428,6 +458,31 @@
     .elt__countdown__timer {
         padding: 10px 14px;
     }
+    /*Blog Item*/
+    .elt__blog__item {
+        width: 266px;
+        .image {
+            height: 173px;
+            margin-bottom: 14px;
+            border-radius: 8px;
+        }
+        .content {
+            .meta__info {
+                gap: 15px;
+                margin-bottom: 10px;
+                .item {
+                    gap: 5px;
+                    svg {
+                        height: 14px;
+                        width: 14px;
+                    }
+                }
+            }
+            h5 {
+                margin-bottom: 5px;
+            }
+        }
+    }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -465,6 +520,30 @@
     /*Countdown*/
     .elt__countdown__timer {
         padding: 10px 14px;
+    }
+    /*Blog Item*/
+    .elt__blog__item {
+        width: 391px;
+        .image {
+            height: 255px;
+            margin-bottom: 28px;
+        }
+        .content {
+            .meta__info {
+                gap: 28px;
+                margin-bottom: 12px;
+                .item {
+                    gap: 8px;
+                    svg {
+                        height: 14px;
+                        width: 14px;
+                    }
+                }
+            }
+            h5 {
+                margin-bottom: 10px;
+            }
+        }
     }
 }
 
@@ -515,6 +594,31 @@
     .elt__countdown__timer {
         padding: 12px 16px;
     }
+    /*Blog Item*/
+    .elt__blog__item {
+        width: 251px;
+        .image {
+            height: 164px;
+            margin-bottom: 16px;
+            border-radius: 10px;
+        }
+        .content {
+            .meta__info {
+                gap: 15px;
+                margin-bottom: 10px;
+                .item {
+                    gap: 5px;
+                    svg {
+                        height: 16px;
+                        width: 16px;
+                    }
+                }
+            }
+            h5 {
+                margin-bottom: 6px;
+            }
+        }
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -536,6 +640,25 @@
         }
         &:hover .image .img {
             height: 351px;
+        }
+    }
+    /*Blog Item*/
+    .elt__blog__item {
+        width: 339px;
+        .image {
+            height: 221px;
+            margin-bottom: 22px;
+        }
+        .content .meta__info {
+            gap: 22px;
+            margin-bottom: 12px;
+            .item {
+                gap: 8px;
+                svg {
+                    height: 16px;
+                    width: 16px;
+                }
+            }
         }
     }
 }
@@ -576,6 +699,30 @@
     /*Products Slider*/
     .elt__mainslider__products .elt__cta__button {
         top: 32%;
+    }
+    /*Blog Item*/
+    .elt__blog__item {
+        width: 301px;
+        .image {
+            height: 196px;
+            margin-bottom: 20px;
+        }
+        .content {
+            .meta__info {
+                gap: 20px;
+                margin-bottom: 10px;
+                .item {
+                    gap: 6px;
+                    svg {
+                        height: 16px;
+                        width: 16px;
+                    }
+                }
+            }
+            h5 {
+                margin-bottom: 10px;
+            }
+        }
     }
 }
 

@@ -142,6 +142,7 @@ $buttonStyle-breakpoints: (
 
 @mixin elt__button__c {
     @include eltButtonStyling();
+    @include apply-buttonStyle();
     background: base.$backgroundPrimaryColor;
     color: base.$brandPrimaryColor;
     border: 1px solid base.$brandPrimaryColor;
@@ -174,6 +175,7 @@ $buttonStyle-breakpoints: (
 
 @mixin elt__button__d {
     @include eltButtonStyling();
+    @include apply-buttonStyle();
     background: base.$backgroundPrimaryColor;
     color: base.$brandPrimaryColor;
 
