@@ -286,6 +286,7 @@
     display: flex;
     align-items: center;
     gap: 28px;
+    flex-wrap: wrap;
 
     a {
         height: 42px;
@@ -394,6 +395,15 @@
             }
         }
     }
+    /*Social Profiles*/
+    .social__profiles {
+        gap: 5px;
+        a {
+            height: 36px;
+            width: 36px;
+            line-height: 36px;
+        }
+    }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
@@ -483,6 +493,10 @@
             }
         }
     }
+    /*Social Profiles*/
+    .social__profiles {
+        gap: 14px;
+    }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -544,6 +558,10 @@
                 margin-bottom: 10px;
             }
         }
+    }
+    /*Social Profiles*/
+    .social__profiles {
+        gap: 20px;
     }
 }
 
@@ -618,6 +636,10 @@
                 margin-bottom: 6px;
             }
         }
+    }
+    /*Social Profiles*/
+    .social__profiles {
+        gap: 9px;
     }
 }
 

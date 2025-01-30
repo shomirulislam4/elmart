@@ -1313,6 +1313,7 @@ input {
   display: flex;
   align-items: center;
   gap: 28px;
+  flex-wrap: wrap;
 }
 .social__profiles a {
   height: 42px;
@@ -1414,6 +1415,15 @@ input {
   .elt__blog__item .content h5 {
     margin-bottom: 4px;
   }
+  /*Social Profiles*/
+  .social__profiles {
+    gap: 5px;
+  }
+  .social__profiles a {
+    height: 36px;
+    width: 36px;
+    line-height: 36px;
+  }
 }
 @media (min-width: 290px) and (max-width: 414px) {
   /*Section Title*/
@@ -1498,6 +1508,10 @@ input {
   .elt__blog__item .content h5 {
     margin-bottom: 5px;
   }
+  /*Social Profiles*/
+  .social__profiles {
+    gap: 14px;
+  }
 }
 @media (min-width: 415px) and (max-width: 575px) {
   /*Section Title*/
@@ -1554,6 +1568,10 @@ input {
   }
   .elt__blog__item .content h5 {
     margin-bottom: 10px;
+  }
+  /*Social Profiles*/
+  .social__profiles {
+    gap: 20px;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
@@ -1625,6 +1643,10 @@ input {
   }
   .elt__blog__item .content h5 {
     margin-bottom: 6px;
+  }
+  /*Social Profiles*/
+  .social__profiles {
+    gap: 9px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -3973,6 +3995,14 @@ header .wrapper .header__cta button:hover {
 /*** Start of Newsletter Section ***/
 .elt__newsletter__section {
   margin-top: 148px;
+  position: relative;
+}
+.elt__newsletter__section .bg__rounded__color {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(61, 235, 100, 0.04);
+  box-shadow: 0 0 200px 200px rgba(61, 235, 100, 0.04);
 }
 .elt__newsletter__section .wrapper {
   overflow: hidden;
@@ -4298,6 +4328,8 @@ header .wrapper .header__cta button:hover {
 .elt__footer__section {
   margin-top: 124px;
   padding: 60px 0;
+  background: #2D2D32;
+  background: linear-gradient(180deg, rgba(45, 45, 50, 0.6) 10%, #1C1C20 60%);
 }
 .elt__footer__section .logo {
   margin-bottom: 30px;

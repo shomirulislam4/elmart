@@ -1092,6 +1092,15 @@ header .wrapper .header__cta {
 /*** Start of Newsletter Section ***/
 .elt__newsletter__section {
     margin-top: 148px;
+    position: relative;
+
+    .bg__rounded__color {
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(61, 235, 100, 0.04);
+        box-shadow: 0 0 200px 200px rgba(61, 235, 100, 0.04);
+    }
 
     .wrapper {
         overflow: hidden;
@@ -1174,6 +1183,8 @@ header .wrapper .header__cta {
 .elt__footer__section {
     margin-top: 124px;
     padding: 60px 0;
+    background: base.$backgroundTertiaryColor;
+    background: linear-gradient(180deg, rgba($color: base.$backgroundTertiaryColor, $alpha: 0.6) 10%, base.$backgroundPrimaryColor 60%);
 
     .logo {
         margin-bottom: 30px;
