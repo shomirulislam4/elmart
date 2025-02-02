@@ -1,14 +1,104 @@
 @use '../utilities/index' as utils;
 @use '../base/index' as base;
 
+label {
+    color: base.$base100;
+}
+
 input {
     @include utils.primary__blur;
     @include base.medium__text;
     background: base.$backgroundTertiaryColor;
+    width: 100%;
     height: 48px;
-    border: 0;
+    border: 1px solid base.$base800;
     border-radius: 12px;
     padding: 0 20px;
     color: base.$base400;
     font-weight: 400;
+
+    &::placeholder {
+        color: base.$base400;
+    }
+}
+
+/* Form */
+.search__input {
+    flex: auto;
+    height: 48px;
+    border: 1px solid base.$base800;
+    border-radius: 12px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    background: base.$backgroundTertiaryColor;
+
+    input {
+        all: unset;
+        background: transparent;
+        width: 100%;
+        height: 100%;
+    }
+
+    button {
+        height: 100%;
+        width: 68px;
+        background: transparent;
+
+        svg {
+            stroke: base.$base400;
+            height: 20px;
+            width: 20px;
+        }
+    }
+}
+
+/* Checkbox */
+input[type=checkbox] {
+    all: unset;
+    position: relative;
+    height: 16px;
+    width: 16px;
+    border-radius: 2px;
+    background: transparent;
+    box-shadow: inset 0 0 0 1px base.$base200;
+}
+
+input[type=checkbox]:checked::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: '';
+    height: 11px;
+    width: 11px;
+    border-radius: 1px;
+    background: base.$brandPrimaryColor;
+}
+
+/* Responsive */
+@media (min-width: 200px) and (max-width: 289px) {
+    input {
+        width: 100%;
+        height: 40px;
+        padding: 0 10px;
+    }
+    .search__input {
+        height: 40px;
+        padding-left: 10px;
+    }
+}
+
+@media (min-width: 290px) and (max-width: 414px) {
+    input {
+        width: 100%;
+        height: 40px;
+        padding: 0 14px;
+    }
+    .search__input {
+        height: 40px;
+        padding-left: 14px;
+    }
 }

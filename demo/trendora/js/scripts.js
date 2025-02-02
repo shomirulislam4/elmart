@@ -324,102 +324,70 @@
 /*============================ About Us Page ============================*/
 
 
-/*============================ Shop & Single Product Page ============================*/
+/*============================ Shop Page ============================*/
     //All Nice Select (Shop Page)
-    if ($('.els__shop__section').length) {
-        $('#elsshop__sort').niceSelect();
-        $('#elsshop__prodamount').niceSelect();
+    if ($('.elt__shoppage').length) {
+        $('#eltShopSortingNC').niceSelect();
     }
-    if ($('.els__singleproductpage').length) {
-        $('.elsReviewFilterTiming').niceSelect();
-        $('.elsReviewFilterRating').niceSelect();
-    }
-
-    //Category Section Slider
-    $(function(){
-        var swiper = new Swiper(".elsshop__cat__slider", {
-            loop: true,
-            slidesPerView: 7,
-            spaceBetween: 0,
-            breakpoints: {
-                200: {
-                    slidesPerView: 1,
-                },
-                290: {
-                    slidesPerView: 2,
-                },
-                415: {
-                    slidesPerView: 3,
-                },
-                576: {
-                    slidesPerView: 4,
-                },
-                768: {
-                    slidesPerView: 5,
-                },
-                992: {
-                    slidesPerView: 7,
-                }
-            }
-        });
-    });
 
     //Price Filter
-    $(function(){
+    $(function () {
         var rangeInput = document.querySelectorAll(".range-input input"),
-        priceInput = document.querySelectorAll(".price-input input"),
-        range = document.querySelector(".price-range-slider .progress");
+            priceMin = document.querySelector(".input-min"),
+            priceMax = document.querySelector(".input-max"),
+            range = document.querySelector(".price-range-slider .progress");
+    
         let priceGap = 5;
-        
-        rangeInput.forEach(input =>{
-            input.addEventListener("input", e =>{
+    
+        rangeInput.forEach(input => {
+            input.addEventListener("input", e => {
                 let minVal = parseInt(rangeInput[0].value),
-                maxVal = parseInt(rangeInput[1].value);
-        
-                if((maxVal - minVal) < priceGap){
-                    if(e.target.className === "range-min"){
-                        rangeInput[0].value = maxVal - priceGap
-                    }else{
+                    maxVal = parseInt(rangeInput[1].value);
+    
+                if ((maxVal - minVal) < priceGap) {
+                    if (e.target.classList.contains("range-min")) {
+                        rangeInput[0].value = maxVal - priceGap;
+                    } else {
                         rangeInput[1].value = minVal + priceGap;
                     }
-                }else{
-                    priceInput[0].value = minVal;
-                    priceInput[1].value = maxVal;
+                } else {
+                    // Update span values instead of input values
+                    priceMin.textContent = minVal;
+                    priceMax.textContent = maxVal;
+    
+                    // Update progress bar
                     range.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
                     range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
                 }
             });
-        
-            priceInput.forEach(input =>{
-                input.addEventListener("input", e =>{
-                    let minPrice = parseInt(priceInput[0].value),
-                    maxPrice = parseInt(priceInput[1].value);
-                    
-                    if((maxPrice - minPrice >= priceGap) && maxPrice <= rangeInput[1].max){
-                        if(e.target.className === "input-min"){
-                            rangeInput[0].value = minPrice;
-                            range.style.left = ((minPrice / rangeInput[0].max) * 100) + "%";
-                        }else{
-                            rangeInput[1].value = maxPrice;
-                            range.style.right = 100 - (maxPrice / rangeInput[1].max) * 100 + "%";
-                        }
-                    }
-                });
-            });
         });
-    });
+    });    
     
-    //Shop Sidebar
+    //Shop Sidebar Mobile Toggle
     $(function(){
-        //Mobile Menu Main Show/Hide
         $('.elsshop__filter__btn').on('click', function(){
-            $('.els__shop__sidebar').addClass('show')
+            $('.elt__shop__sidebar').addClass('show')
         })
         $('.elsshop__sidebar__closebtn').on('click', function(){
-            $('.els__shop__sidebar').removeClass('show')
+            $('.elt__shop__sidebar').removeClass('show')
         })
     });
 
+    //Sizes Select
+    $(function () {
+        $(".elt__shopsdbr__sizes .item").on("click", function () {
+            $(this).toggleClass("active");
+        });
+    });
+
+    //Colors Select
+    $(function () {
+        $(".elt__shopsdbr__colors .item").on("click", function () {
+            $(this).toggleClass("active");
+        });
+    });
+    
+/*============================ Single Product Page ============================*/
     //Single Product Active Toggle
     $(function() {
         //Size
