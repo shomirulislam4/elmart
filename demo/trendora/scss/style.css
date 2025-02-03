@@ -330,6 +330,7 @@ label {
 }
 
 input {
+  background: rgba(45, 54, 67, 0.2);
   -webkit-backdrop-filter: blur(9px);
           backdrop-filter: blur(9px);
   background: #2D2D32;
@@ -1706,6 +1707,54 @@ input[type=checkbox]:checked::after {
   font-size: 16px;
   line-height: 16px;
 }
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .nice-select .current {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .nice-select .current {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .nice-select .current {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .nice-select .current {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .nice-select .current {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .nice-select .current {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .nice-select .current {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .nice-select .current {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
 .nice-select::after {
   border-bottom: 2px solid #D7DFE9;
   border-right: 2px solid #D7DFE9;
@@ -1721,8 +1770,222 @@ input[type=checkbox]:checked::after {
 .nice-select.active, .nice-select.open, .nice-select:focus {
   border-color: #F27240;
 }
+.nice-select .list {
+  background: rgba(45, 54, 67, 0.2);
+  -webkit-backdrop-filter: blur(9px);
+          backdrop-filter: blur(9px);
+  min-width: 198px;
+  left: unset;
+  right: 0;
+  z-index: 99999;
+}
+.nice-select .list .option {
+  line-height: 40px !important;
+  text-align: center;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .nice-select .list .option {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .nice-select .list .option {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .nice-select .list .option {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .nice-select .list .option {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .nice-select .list .option {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .nice-select .list .option {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .nice-select .list .option {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .nice-select .list .option {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.nice-select .list .option:hover, .nice-select .list .option.focus, .nice-select .list .option.selected.focus {
+  background: #D7DFE9;
+  color: #2D3643;
+}
 
 /*** End of Nice Select ***/
+/*** Start of Pagination ***/
+.elt__pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.elt__pagination form {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.elt__pagination form label,
+.elt__pagination form span {
+  color: #AFBACA;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__pagination form label,
+  .elt__pagination form span {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__pagination form label,
+  .elt__pagination form span {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__pagination form label,
+  .elt__pagination form span {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__pagination form label,
+  .elt__pagination form span {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .elt__pagination form label,
+  .elt__pagination form span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .elt__pagination form label,
+  .elt__pagination form span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__pagination form label,
+  .elt__pagination form span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__pagination form label,
+  .elt__pagination form span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.elt__pagination .next__prev__btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.elt__pagination .next__prev__btn button {
+  padding: 0 24px;
+  border: 1px solid #5E718D;
+  border-radius: 8px;
+  color: #5E718D;
+  background: transparent;
+  height: 46px;
+  line-height: 46px;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__pagination .next__prev__btn button {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__pagination .next__prev__btn button {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__pagination .next__prev__btn button {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__pagination .next__prev__btn button {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .elt__pagination .next__prev__btn button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .elt__pagination .next__prev__btn button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__pagination .next__prev__btn button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__pagination .next__prev__btn button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.elt__pagination .next__prev__btn button svg {
+  height: 20px;
+  width: 20px;
+  stroke: #5E718D;
+  margin-top: -3px;
+}
+.elt__pagination .next__prev__btn button:hover {
+  color: #D7DFE9;
+  border-color: #D7DFE9;
+}
+.elt__pagination .next__prev__btn button:hover svg {
+  stroke: #D7DFE9;
+}
+
+/*** End of Pagination ***/
 /* ==================== Responsive ==================== */
 @media (min-width: 200px) and (max-width: 289px) {
   /*Section Title*/
@@ -1831,6 +2094,37 @@ input[type=checkbox]:checked::after {
   .elt__breadcrumbs__section .wrapper .content .title {
     line-height: 22px;
   }
+  /*Pagination*/
+  .elt__pagination {
+    margin-top: 30px;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .elt__pagination form {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .elt__pagination .next__prev__btn {
+    gap: 12px;
+  }
+  .elt__pagination .next__prev__btn button {
+    padding: 0 12px;
+    height: 40px;
+  }
+  /*Nice Select*/
+  .nice-select {
+    padding: 7px 15px;
+    padding-right: 38px;
+  }
+  .nice-select::after {
+    top: 15px;
+    height: 8px;
+    width: 8px;
+    right: 18px;
+  }
+  .nice-select .list {
+    min-width: 174px;
+  }
 }
 @media (min-width: 290px) and (max-width: 414px) {
   /*Section Title*/
@@ -1931,6 +2225,30 @@ input[type=checkbox]:checked::after {
     font-size: 8px;
     padding: 0 8px;
   }
+  /*Pagination*/
+  .elt__pagination {
+    margin-top: 30px;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .elt__pagination .next__prev__btn {
+    gap: 12px;
+  }
+  .elt__pagination .next__prev__btn button {
+    padding: 0 16px;
+    height: 40px;
+  }
+  /*Nice Select*/
+  .nice-select {
+    padding: 7px 15px;
+    padding-right: 38px;
+  }
+  .nice-select::after {
+    top: 15px;
+    height: 8px;
+    width: 8px;
+    right: 18px;
+  }
 }
 @media (min-width: 415px) and (max-width: 575px) {
   /*Section Title*/
@@ -1998,6 +2316,30 @@ input[type=checkbox]:checked::after {
   }
   .elt__breadcrumbs__section .wrapper {
     height: 190px;
+  }
+  /*Pagination*/
+  .elt__pagination {
+    margin-top: 40px;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .elt__pagination .next__prev__btn {
+    gap: 12px;
+  }
+  .elt__pagination .next__prev__btn button {
+    padding: 0 16px;
+    height: 40px;
+  }
+  /*Nice Select*/
+  .nice-select {
+    padding: 7px 15px;
+    padding-right: 38px;
+  }
+  .nice-select::after {
+    top: 15px;
+    height: 8px;
+    width: 8px;
+    right: 18px;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
@@ -2081,6 +2423,27 @@ input[type=checkbox]:checked::after {
   .elt__breadcrumbs__section .wrapper {
     height: 200px;
   }
+  /*Pagination*/
+  .elt__pagination {
+    margin-top: 50px;
+  }
+  .elt__pagination .next__prev__btn {
+    gap: 14px;
+  }
+  .elt__pagination .next__prev__btn button {
+    padding: 0 18px;
+    height: 42px;
+  }
+  /*Nice Select*/
+  .nice-select {
+    padding: 8px 16px;
+    padding-right: 40px;
+  }
+  .nice-select::after {
+    top: 15px;
+    height: 8px;
+    width: 8px;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   /*Section Title*/
@@ -2128,6 +2491,24 @@ input[type=checkbox]:checked::after {
   }
   .elt__breadcrumbs__section .wrapper {
     height: 220px;
+  }
+  /*Pagination*/
+  .elt__pagination {
+    margin-top: 60px;
+  }
+  .elt__pagination .next__prev__btn button {
+    padding: 0 18px;
+    height: 42px;
+  }
+  /*Nice Select*/
+  .nice-select {
+    padding: 8px 16px;
+    padding-right: 40px;
+  }
+  .nice-select::after {
+    top: 15px;
+    height: 8px;
+    width: 8px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -2193,6 +2574,19 @@ input[type=checkbox]:checked::after {
   .elt__breadcrumbs__section {
     margin: 44px 0;
   }
+  /*Pagination*/
+  .elt__pagination {
+    margin-top: 70px;
+  }
+  .elt__pagination .next__prev__btn button {
+    padding: 0 18px;
+    height: 42px;
+  }
+  /*Nice Select*/
+  .nice-select {
+    padding: 8px 16px;
+    padding-right: 40px;
+  }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
   /*Product Style*/
@@ -2229,6 +2623,10 @@ input[type=checkbox]:checked::after {
   .elt__blog__item .content .meta__info {
     gap: 25px;
     margin-bottom: 12px;
+  }
+  /*Pagination*/
+  .elt__pagination {
+    margin-top: 80px;
   }
 }
 @media (min-width: 1400px) and (max-width: 1639px) {
@@ -2270,6 +2668,10 @@ input[type=checkbox]:checked::after {
     gap: 35px;
     margin-bottom: 16px;
   }
+  /*Pagination*/
+  .elt__pagination {
+    margin-top: 90px;
+  }
 }
 @media (max-width: 575px) {
   .swiper-slide {
@@ -2289,6 +2691,8 @@ input[type=checkbox]:checked::after {
   height: 1px;
   width: 100%;
   background: #2D3643;
+  flex-shrink: 0;
+  flex-grow: 0;
 }
 
 .vertical__seperator {
@@ -2296,108 +2700,166 @@ input[type=checkbox]:checked::after {
   height: 100%;
   width: 1px;
   background: #2D3643;
+  flex-shrink: 0;
+  flex-grow: 0;
 }
 
 /*** Start of Shop Section ***/
 .elt__shop__section {
   /** Sidebar ***/
   /** Top Bar **/
+  /** Content **/
 }
 .elt__shop__section .elt__shop__sidebar {
+  width: calc(100% - 22px);
+}
+.elt__shop__section .elt__shop__sidebar .elt__shop__sidebar__close {
+  display: none;
+}
+.elt__shop__section .elt__shop__sidebar .all__widgets {
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 44px;
   padding: 28px;
   background: #212126;
   border-radius: 12px;
+  width: 100%;
 }
-.elt__shop__section .elt__shop__sidebar .elt__shopsdbr__widget .title {
+.elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .title {
   margin-bottom: 28px;
 }
-.elt__shop__section .elt__shop__sidebar .elt__shopsdbr__widget .elt__sdbr__brandcats {
+.elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__sdbr__brandcats {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.elt__shop__section .elt__shop__sidebar .elt__shopsdbr__widget .elt__sdbr__brandcats .eltsdbrcat__item {
+.elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__sdbr__brandcats .eltsdbrcat__item {
   display: flex;
   align-items: center;
   justify-content: space-between;
   color: #D7DFE9;
 }
 @media screen and (min-width: 200px) and (max-width: 289px) {
-  .elt__shop__section .elt__shop__sidebar .elt__shopsdbr__widget .elt__sdbr__brandcats .eltsdbrcat__item {
+  .elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__sdbr__brandcats .eltsdbrcat__item {
     font-size: 12px;
     line-height: 18px;
   }
 }
 @media screen and (min-width: 290px) and (max-width: 414px) {
-  .elt__shop__section .elt__shop__sidebar .elt__shopsdbr__widget .elt__sdbr__brandcats .eltsdbrcat__item {
+  .elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__sdbr__brandcats .eltsdbrcat__item {
     font-size: 13px;
     line-height: 20px;
   }
 }
 @media screen and (min-width: 415px) and (max-width: 575px) {
-  .elt__shop__section .elt__shop__sidebar .elt__shopsdbr__widget .elt__sdbr__brandcats .eltsdbrcat__item {
+  .elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__sdbr__brandcats .eltsdbrcat__item {
     font-size: 14px;
     line-height: 22px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
-  .elt__shop__section .elt__shop__sidebar .elt__shopsdbr__widget .elt__sdbr__brandcats .eltsdbrcat__item {
+  .elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__sdbr__brandcats .eltsdbrcat__item {
     font-size: 15px;
     line-height: 23px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .elt__shop__section .elt__shop__sidebar .elt__shopsdbr__widget .elt__sdbr__brandcats .eltsdbrcat__item {
+  .elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__sdbr__brandcats .eltsdbrcat__item {
     font-size: 16px;
     line-height: 24px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  .elt__shop__section .elt__shop__sidebar .elt__shopsdbr__widget .elt__sdbr__brandcats .eltsdbrcat__item {
+  .elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__sdbr__brandcats .eltsdbrcat__item {
     font-size: 16px;
     line-height: 24px;
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
-  .elt__shop__section .elt__shop__sidebar .elt__shopsdbr__widget .elt__sdbr__brandcats .eltsdbrcat__item {
+  .elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__sdbr__brandcats .eltsdbrcat__item {
     font-size: 16px;
     line-height: 24px;
   }
 }
 @media screen and (min-width: 1400px) and (max-width: 1920px) {
-  .elt__shop__section .elt__shop__sidebar .elt__shopsdbr__widget .elt__sdbr__brandcats .eltsdbrcat__item {
+  .elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__sdbr__brandcats .eltsdbrcat__item {
     font-size: 16px;
     line-height: 24px;
   }
 }
-.elt__shop__section .elt__shop__sidebar .elt__shopsdbr__widget .elt__sdbr__brandcats .eltsdbrcat__item:hover {
+.elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__sdbr__brandcats .eltsdbrcat__item:hover {
   color: #F27240;
 }
-.elt__shop__section .elt__shop__sidebar .elt__shopsdbr__widget .elt__sdbr__brandcats .eltsdbrcat__item .eltsdbr__catname {
+.elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__sdbr__brandcats .eltsdbrcat__item .eltsdbr__catname {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-.elt__shop__section .elt__shop__sidebar .elt__shopsdbr__widget .elt__sidbr__checkboxes {
+.elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__sidbr__checkboxes {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.elt__shop__section .elt__shop__sidebar .elt__shopsdbr__widget .elt__sidbr__checkboxes .item {
+.elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__sidbr__checkboxes .item {
   width: 100%;
   display: flex;
   align-items: center;
   gap: 8px;
 }
-.elt__shop__section .elt__shop__sidebar .elt__shopsdbr__widget .elt__shopsdbr__sizes {
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__sidbr__checkboxes .item label {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__sidbr__checkboxes .item label {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__sidbr__checkboxes .item label {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__sidbr__checkboxes .item label {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__sidbr__checkboxes .item label {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__sidbr__checkboxes .item label {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__sidbr__checkboxes .item label {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__sidbr__checkboxes .item label {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__shopsdbr__sizes {
   display: flex;
   gap: 22px;
   flex-wrap: wrap;
 }
-.elt__shop__section .elt__shop__sidebar .elt__shopsdbr__widget .elt__shopsdbr__sizes .item {
+.elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__shopsdbr__sizes .item {
   padding: 12px 38px;
   box-shadow: inset 0 0 0 1px #3D4A5C;
   border-radius: 8px;
@@ -2405,54 +2867,54 @@ input[type=checkbox]:checked::after {
   color: #D7DFE9;
 }
 @media screen and (min-width: 200px) and (max-width: 289px) {
-  .elt__shop__section .elt__shop__sidebar .elt__shopsdbr__widget .elt__shopsdbr__sizes .item {
+  .elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__shopsdbr__sizes .item {
     font-size: 12px;
     line-height: 18px;
   }
 }
 @media screen and (min-width: 290px) and (max-width: 414px) {
-  .elt__shop__section .elt__shop__sidebar .elt__shopsdbr__widget .elt__shopsdbr__sizes .item {
+  .elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__shopsdbr__sizes .item {
     font-size: 13px;
     line-height: 20px;
   }
 }
 @media screen and (min-width: 415px) and (max-width: 575px) {
-  .elt__shop__section .elt__shop__sidebar .elt__shopsdbr__widget .elt__shopsdbr__sizes .item {
+  .elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__shopsdbr__sizes .item {
     font-size: 14px;
     line-height: 22px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
-  .elt__shop__section .elt__shop__sidebar .elt__shopsdbr__widget .elt__shopsdbr__sizes .item {
+  .elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__shopsdbr__sizes .item {
     font-size: 15px;
     line-height: 23px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .elt__shop__section .elt__shop__sidebar .elt__shopsdbr__widget .elt__shopsdbr__sizes .item {
+  .elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__shopsdbr__sizes .item {
     font-size: 16px;
     line-height: 24px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  .elt__shop__section .elt__shop__sidebar .elt__shopsdbr__widget .elt__shopsdbr__sizes .item {
+  .elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__shopsdbr__sizes .item {
     font-size: 16px;
     line-height: 24px;
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
-  .elt__shop__section .elt__shop__sidebar .elt__shopsdbr__widget .elt__shopsdbr__sizes .item {
+  .elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__shopsdbr__sizes .item {
     font-size: 16px;
     line-height: 24px;
   }
 }
 @media screen and (min-width: 1400px) and (max-width: 1920px) {
-  .elt__shop__section .elt__shop__sidebar .elt__shopsdbr__widget .elt__shopsdbr__sizes .item {
+  .elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__shopsdbr__sizes .item {
     font-size: 16px;
     line-height: 24px;
   }
 }
-.elt__shop__section .elt__shop__sidebar .elt__shopsdbr__widget .elt__shopsdbr__sizes .item.active, .elt__shop__section .elt__shop__sidebar .elt__shopsdbr__widget .elt__shopsdbr__sizes .item:hover {
+.elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__shopsdbr__sizes .item.active, .elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__shopsdbr__sizes .item:hover {
   transition: 0.3s ease;
   -moz-transition: 0.3s ease;
   -webkit-transition: 0.3s ease;
@@ -2461,12 +2923,12 @@ input[type=checkbox]:checked::after {
   box-shadow: inset 0 0 0 1px #F27240;
   background: #312321;
 }
-.elt__shop__section .elt__shop__sidebar .elt__shopsdbr__widget .elt__shopsdbr__colors {
+.elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__shopsdbr__colors {
   display: flex;
-  gap: 28px;
+  gap: 20px;
   flex-wrap: wrap;
 }
-.elt__shop__section .elt__shop__sidebar .elt__shopsdbr__widget .elt__shopsdbr__colors .item {
+.elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__shopsdbr__colors .item {
   transition: 0.3s ease;
   -moz-transition: 0.3s ease;
   -webkit-transition: 0.3s ease;
@@ -2475,67 +2937,67 @@ input[type=checkbox]:checked::after {
   background: #2D2D32;
   border-radius: 50px;
   padding: 8px;
-  padding-right: 16px;
+  padding-right: 14px;
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 10px;
 }
-.elt__shop__section .elt__shop__sidebar .elt__shopsdbr__widget .elt__shopsdbr__colors .item.active, .elt__shop__section .elt__shop__sidebar .elt__shopsdbr__widget .elt__shopsdbr__colors .item:hover {
+.elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__shopsdbr__colors .item.active, .elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__shopsdbr__colors .item:hover {
   box-shadow: inset 0 0 0 1px #F27240;
 }
-.elt__shop__section .elt__shop__sidebar .elt__shopsdbr__widget .elt__shopsdbr__colors .item .color {
+.elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__shopsdbr__colors .item .color {
   display: block;
   height: 26px;
   width: 26px;
   border-radius: 50%;
 }
-.elt__shop__section .elt__shop__sidebar .elt__shopsdbr__widget .elt__shopsdbr__colors .item .color__name {
+.elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__shopsdbr__colors .item .color__name {
   color: #D7DFE9;
 }
 @media screen and (min-width: 200px) and (max-width: 289px) {
-  .elt__shop__section .elt__shop__sidebar .elt__shopsdbr__widget .elt__shopsdbr__colors .item .color__name {
+  .elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__shopsdbr__colors .item .color__name {
     font-size: 12px;
     line-height: 18px;
   }
 }
 @media screen and (min-width: 290px) and (max-width: 414px) {
-  .elt__shop__section .elt__shop__sidebar .elt__shopsdbr__widget .elt__shopsdbr__colors .item .color__name {
+  .elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__shopsdbr__colors .item .color__name {
     font-size: 13px;
     line-height: 20px;
   }
 }
 @media screen and (min-width: 415px) and (max-width: 575px) {
-  .elt__shop__section .elt__shop__sidebar .elt__shopsdbr__widget .elt__shopsdbr__colors .item .color__name {
+  .elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__shopsdbr__colors .item .color__name {
     font-size: 14px;
     line-height: 22px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
-  .elt__shop__section .elt__shop__sidebar .elt__shopsdbr__widget .elt__shopsdbr__colors .item .color__name {
+  .elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__shopsdbr__colors .item .color__name {
     font-size: 15px;
     line-height: 23px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .elt__shop__section .elt__shop__sidebar .elt__shopsdbr__widget .elt__shopsdbr__colors .item .color__name {
+  .elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__shopsdbr__colors .item .color__name {
     font-size: 16px;
     line-height: 24px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  .elt__shop__section .elt__shop__sidebar .elt__shopsdbr__widget .elt__shopsdbr__colors .item .color__name {
+  .elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__shopsdbr__colors .item .color__name {
     font-size: 16px;
     line-height: 24px;
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
-  .elt__shop__section .elt__shop__sidebar .elt__shopsdbr__widget .elt__shopsdbr__colors .item .color__name {
+  .elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__shopsdbr__colors .item .color__name {
     font-size: 16px;
     line-height: 24px;
   }
 }
 @media screen and (min-width: 1400px) and (max-width: 1920px) {
-  .elt__shop__section .elt__shop__sidebar .elt__shopsdbr__widget .elt__shopsdbr__colors .item .color__name {
+  .elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__shopsdbr__colors .item .color__name {
     font-size: 16px;
     line-height: 24px;
   }
@@ -2547,6 +3009,7 @@ input[type=checkbox]:checked::after {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 48px;
 }
 .elt__shop__section .elt__shop__topbar .itemsshown {
   color: #AFBACA;
@@ -2607,7 +3070,152 @@ input[type=checkbox]:checked::after {
 .elt__shop__section .elt__shop__topbar form label {
   color: #8897AE;
 }
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__shop__section .elt__shop__topbar form label {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__shop__section .elt__shop__topbar form label {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__shop__section .elt__shop__topbar form label {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__shop__section .elt__shop__topbar form label {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .elt__shop__section .elt__shop__topbar form label {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .elt__shop__section .elt__shop__topbar form label {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__shop__section .elt__shop__topbar form label {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__shop__section .elt__shop__topbar form label {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.elt__shop__section .elt__shop__topbar .elt__shopsdbr__btn {
+  display: none;
+}
+.elt__shop__section .elt__shop__all__products {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+}
 
+@media (max-width: 1199px) {
+  .elt__shop__section .elt__shop__sidebar {
+    transition: 0.6s ease;
+    -moz-transition: 0.6s ease;
+    -webkit-transition: 0.6s ease;
+    -ms-transition: 0.6s ease;
+    -o-transition: 0.6s ease;
+    position: fixed;
+    height: 85dvh;
+    z-index: 999999;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 120%;
+  }
+  .elt__shop__section .elt__shop__sidebar .elt__shop__sidebar__close {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: calc(100% + 20px);
+  }
+  .elt__shop__section .elt__shop__sidebar .all__widgets {
+    overflow-y: auto;
+    height: 100%;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .elt__shop__section .elt__shop__sidebar.show {
+    top: 15%;
+  }
+  .elt__shop__section .elt__shop__topbar .elt__shopsdbr__btn {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 8px 16px;
+    color: #AFBACA;
+    border: 1px solid #AFBACA;
+    border-radius: 8px;
+    background: transparent;
+  }
+}
+@media screen and (max-width: 1199px) and (min-width: 200px) and (max-width: 289px) {
+  .elt__shop__section .elt__shop__topbar .elt__shopsdbr__btn {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (max-width: 1199px) and (min-width: 290px) and (max-width: 414px) {
+  .elt__shop__section .elt__shop__topbar .elt__shopsdbr__btn {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (max-width: 1199px) and (min-width: 415px) and (max-width: 575px) {
+  .elt__shop__section .elt__shop__topbar .elt__shopsdbr__btn {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (max-width: 1199px) and (min-width: 576px) and (max-width: 767px) {
+  .elt__shop__section .elt__shop__topbar .elt__shopsdbr__btn {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (max-width: 1199px) and (min-width: 768px) and (max-width: 991px) {
+  .elt__shop__section .elt__shop__topbar .elt__shopsdbr__btn {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (max-width: 1199px) and (min-width: 992px) and (max-width: 1199px) {
+  .elt__shop__section .elt__shop__topbar .elt__shopsdbr__btn {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (max-width: 1199px) and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__shop__section .elt__shop__topbar .elt__shopsdbr__btn {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (max-width: 1199px) and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__shop__section .elt__shop__topbar .elt__shopsdbr__btn {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
 /*** End of Shop Section ***/
 /************ TABLE OF CONTENTS ***************
 1. Global CSS
@@ -2680,10 +3288,10 @@ header .wrapper {
   }
   /* Main Nav */
   header .wrapper nav {
+    background: rgba(45, 54, 67, 0.2);
     -webkit-backdrop-filter: blur(9px);
             backdrop-filter: blur(9px);
     border-radius: 50px;
-    background: rgba(45, 54, 67, 0.4);
     padding: 12px;
   }
   header .wrapper nav ul {
@@ -2764,6 +3372,7 @@ header .wrapper {
     stroke: #2D3643;
   }
   header .wrapper nav ul li ul {
+    background: rgba(45, 54, 67, 0.2);
     -webkit-backdrop-filter: blur(9px);
             backdrop-filter: blur(9px);
     transition: 0.3s ease;
@@ -2842,6 +3451,7 @@ header .wrapper .header__cta button:hover {
     background: #F27240;
   }
   header .wrapper nav {
+    background: rgba(45, 54, 67, 0.2);
     -webkit-backdrop-filter: blur(9px);
             backdrop-filter: blur(9px);
     transition: 0.6s ease;
@@ -2849,7 +3459,6 @@ header .wrapper .header__cta button:hover {
     -webkit-transition: 0.6s ease;
     -ms-transition: 0.6s ease;
     -o-transition: 0.6s ease;
-    background: rgba(45, 54, 67, 0.2);
     height: 100vh;
     width: 300px;
     padding: 20px 40px;
@@ -2867,6 +3476,7 @@ header .wrapper .header__cta button:hover {
     padding: 8px 0;
     text-transform: capitalize;
     color: #D7DFE9;
+    font-weight: 600;
   }
 }
 @media screen and (max-width: 991px) and (min-width: 200px) and (max-width: 289px) {
@@ -2963,6 +3573,7 @@ header .wrapper .header__cta button:hover {
 }
 /** Search Popup **/
 .elt__search__popup {
+  background: rgba(45, 54, 67, 0.2);
   -webkit-backdrop-filter: blur(9px);
           backdrop-filter: blur(9px);
   transition: 0.6s ease;
@@ -2970,7 +3581,6 @@ header .wrapper .header__cta button:hover {
   -webkit-transition: 0.6s ease;
   -ms-transition: 0.6s ease;
   -o-transition: 0.6s ease;
-  background: rgba(45, 54, 67, 0.2);
   height: 0;
   width: 0;
   overflow: hidden;
@@ -2979,7 +3589,7 @@ header .wrapper .header__cta button:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 16px;
-  z-index: 99999;
+  z-index: 9999999;
 }
 .elt__search__popup .elt__search__closebtn {
   position: absolute;
@@ -3138,6 +3748,7 @@ header .wrapper .header__cta button:hover {
 }
 /** Cart Slider **/
 .elt__cart__slide {
+  background: rgba(45, 54, 67, 0.2);
   -webkit-backdrop-filter: blur(9px);
           backdrop-filter: blur(9px);
   transition: 0.6s ease;
@@ -3145,14 +3756,13 @@ header .wrapper .header__cta button:hover {
   -webkit-transition: 0.6s ease;
   -ms-transition: 0.6s ease;
   -o-transition: 0.6s ease;
-  background: rgba(45, 54, 67, 0.2);
   width: 450px;
   height: 100vh;
   padding: 20px 40px;
   position: fixed;
   right: -120%;
   top: 0;
-  z-index: 99999;
+  z-index: 9999999;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -3591,6 +4201,7 @@ header .wrapper .header__cta button:hover {
 
 /* Quantity Widget */
 .elt__quantity__widget {
+  background: rgba(45, 54, 67, 0.2);
   -webkit-backdrop-filter: blur(9px);
           backdrop-filter: blur(9px);
   width: 162px;

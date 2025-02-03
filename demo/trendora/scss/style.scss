@@ -82,7 +82,6 @@ header .wrapper {
     header .wrapper nav {
         @include utils.primary__blur;
         @include utils.border__50;
-        background: rgba(base.$base800, $alpha: 0.4);
         padding: 12px;
     
         ul {
@@ -202,7 +201,6 @@ header .wrapper .header__cta {
     header .wrapper nav {
         @include utils.primary__blur;
         @include utils.transition-06s;
-        background: rgba(base.$base800, $alpha: 0.2);
         height: 100vh;
         width: 300px;
         padding: 20px 40px;
@@ -222,6 +220,7 @@ header .wrapper .header__cta {
                     @include base.medium__text;
                     text-transform: capitalize;
                     color: base.$base200;
+                    font-weight: 600;
 
                     svg {
                         stroke: base.$base200;
@@ -274,7 +273,6 @@ header .wrapper .header__cta {
 .elt__search__popup {
     @include utils.primary__blur;
     @include utils.transition-06s;
-    background: rgba(base.$base800, $alpha: 0.2);
     height: 0;
     width: 0;
     overflow: hidden;
@@ -283,7 +281,7 @@ header .wrapper .header__cta {
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 16px;
-    z-index: 99999;
+    z-index: 9999999;
 
     .elt__search__closebtn {
         position: absolute;
@@ -411,14 +409,13 @@ header .wrapper .header__cta {
 .elt__cart__slide {
     @include utils.primary__blur;
     @include utils.transition-06s;
-    background: rgba(base.$base800, $alpha: 0.2);
     width: 450px;
     height: 100vh;
     padding: 20px 40px;
     position: fixed;
     right: -120%;
     top: 0;
-    z-index: 99999;
+    z-index: 9999999;
     display: flex;
     flex-direction: column;
     gap: 20px;

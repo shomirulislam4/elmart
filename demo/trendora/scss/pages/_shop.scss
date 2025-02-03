@@ -6,111 +6,125 @@
 
     /** Sidebar ***/
     .elt__shop__sidebar {
-        display: flex;
-        flex-direction: column;
-        gap: 48px;
-        padding: 28px;
-        background: base.$backgroundSecondaryColor;
-        border-radius: 12px;
+        width: calc(100% - 22px);
 
-        .elt__shopsdbr__widget {
-            .title {
-                margin-bottom: 28px;
-            }
+        .elt__shop__sidebar__close {
+            display: none;
+        }
 
-            .elt__sdbr__brandcats {
-                display: flex;
-                flex-direction: column;
-                gap: 20px;
-
-                .eltsdbrcat__item {
-                    @include base.medium__text;
+        .all__widgets {
+            display: flex;
+            flex-direction: column;
+            gap: 44px;
+            padding: 28px;
+            background: base.$backgroundSecondaryColor;
+            border-radius: 12px;
+            width: 100%;
+    
+            .elt__shopsdbr__widget {
+                .title {
+                    margin-bottom: 28px;
+                }
+    
+                .elt__sdbr__brandcats {
                     display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    color: base.$base200;
-
-                    &:hover {
-                        color: base.$brandPrimaryColor;
-                    }
-
-                    .eltsdbr__catname {
+                    flex-direction: column;
+                    gap: 20px;
+    
+                    .eltsdbrcat__item {
+                        @include base.medium__text;
                         display: flex;
                         align-items: center;
-                        gap: 20px;
-                    }
-                }
-            }
-
-            .elt__sidbr__checkboxes {
-                display: flex;
-                flex-direction: column;
-                gap: 20px;
-
-                .item {
-                    width: 100%;
-                    display: flex;
-                    align-items: center;
-                    gap: 8px;
-                }
-            }
-
-            .elt__shopsdbr__sizes {
-                display: flex;
-                gap: 22px;
-                flex-wrap: wrap;
-
-                .item {
-                    @include base.medium__text;
-                    padding: 12px 38px;
-                    box-shadow: inset 0 0 0 1px base.$base700;
-                    border-radius: 8px;
-                    background: transparent;
-                    color: base.$base200;
-
-                    &.active,
-                    &:hover {
-                        @include utils.transition-03s;
-                        box-shadow: inset 0 0 0 1px base.$brandPrimaryColor;
-                        background: base.$FillPrimaryColor;
-                    }
-                }
-            }
-
-            .elt__shopsdbr__colors {
-                display: flex;
-                gap: 28px;
-                flex-wrap: wrap;
-
-                .item {
-                    @include utils.transition-03s;
-                    background: base.$backgroundTertiaryColor;
-                    border-radius: 50px;
-                    padding: 8px;
-                    padding-right: 16px;
-                    display: flex;
-                    align-items: center;
-                    gap: 16px;
-
-                    &.active,
-                    &:hover {
-                        box-shadow: inset 0 0 0 1px base.$brandPrimaryColor;
-                    }
-
-                    .color {
-                        display: block;
-                        height: 26px;
-                        width: 26px;
-                        border-radius: 50%;
-                    }
-
-                    .color__name {
-                        @include base.medium__text;
+                        justify-content: space-between;
                         color: base.$base200;
+    
+                        &:hover {
+                            color: base.$brandPrimaryColor;
+                        }
+    
+                        .eltsdbr__catname {
+                            display: flex;
+                            align-items: center;
+                            gap: 20px;
+                        }
+                    }
+                }
+    
+                .elt__sidbr__checkboxes {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+    
+                    .item {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+
+                        label {
+                            @include base.medium__text;
+                        }
+                    }
+                }
+    
+                .elt__shopsdbr__sizes {
+                    display: flex;
+                    gap: 22px;
+                    flex-wrap: wrap;
+    
+                    .item {
+                        @include base.medium__text;
+                        padding: 12px 38px;
+                        box-shadow: inset 0 0 0 1px base.$base700;
+                        border-radius: 8px;
+                        background: transparent;
+                        color: base.$base200;
+    
+                        &.active,
+                        &:hover {
+                            @include utils.transition-03s;
+                            box-shadow: inset 0 0 0 1px base.$brandPrimaryColor;
+                            background: base.$FillPrimaryColor;
+                        }
+                    }
+                }
+    
+                .elt__shopsdbr__colors {
+                    display: flex;
+                    gap: 20px;
+                    flex-wrap: wrap;
+    
+                    .item {
+                        @include utils.transition-03s;
+                        background: base.$backgroundTertiaryColor;
+                        border-radius: 50px;
+                        padding: 8px;
+                        padding-right: 14px;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+    
+                        &.active,
+                        &:hover {
+                            box-shadow: inset 0 0 0 1px base.$brandPrimaryColor;
+                        }
+    
+                        .color {
+                            display: block;
+                            height: 26px;
+                            width: 26px;
+                            border-radius: 50%;
+                        }
+    
+                        .color__name {
+                            @include base.medium__text;
+                            color: base.$base200;
+                        }
                     }
                 }
             }
         }
+        
     }
 
     /** Top Bar **/
@@ -121,6 +135,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin-bottom: 48px;
 
         .itemsshown {
             @include base.medium__text;
@@ -133,12 +148,67 @@
             gap: 20px;
 
             label {
+                @include base.medium__text;
                 color: base.$base400;
             }
         }
+
+        .elt__shopsdbr__btn {
+            display: none;
+        }
+    }
+
+    /** Content **/
+    .elt__shop__all__products {
+        display: flex;
+        gap: 28px;
+        flex-wrap: wrap;
     }
 }
 
+@media (max-width: 1199px) {
+    .elt__shop__section {
+        .elt__shop__sidebar {
+            @include utils.transition-06s;
+            position: fixed;
+            height: 85dvh;
+            z-index: 999999;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 120%;
 
+            .elt__shop__sidebar__close {
+                display: block;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: calc(100% + 20px);
+            }
+
+            .all__widgets {
+                overflow-y: auto;
+                height: 100%;
+                border-bottom-right-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+
+            &.show {
+                top: 15%;
+            }
+        }
+
+        .elt__shop__topbar .elt__shopsdbr__btn {
+            @include base.medium__text;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            padding: 8px 16px;
+            color: base.$base300;
+            border: 1px solid base.$base300;
+            border-radius: 8px;
+            background: transparent;
+        }
+    }
+}
 
 /*** End of Shop Section ***/

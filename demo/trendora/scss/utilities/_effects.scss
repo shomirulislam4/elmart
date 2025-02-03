@@ -1,14 +1,16 @@
-@use '../base/colors' as color;
+@use '../base/index' as base;
 
 @mixin drop__shadow {
     box-shadow: 0 0 20px 0 rgba($color: #000000, $alpha: 0.1);
 }
 
 @mixin primary__blur {
+    background: rgba(base.$base800, $alpha: 0.2);
     backdrop-filter: blur(9px);
 }
 
 @mixin secondary__blur {
+    background: rgba(base.$base800, $alpha: 0.4);
     backdrop-filter: blur(4px);
 }
 
@@ -37,8 +39,8 @@
 }
 
 ::selection {
-    background: color.$brandPrimaryColor;
-    color: color.$base100;
+    background: base.$brandPrimaryColor;
+    color: base.$base100;
 }
 
 a,
@@ -53,9 +55,9 @@ button {
 }
 
 a {
-    color: color.$AccentLink;
+    color: base.$AccentLink;
 }
 
 a:hover {
-    color: color.$brandPrimaryColor;
+    color: base.$brandPrimaryColor;
 }

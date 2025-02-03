@@ -465,6 +465,7 @@
     border-radius: 8px;
 
     .current {
+        @include base.medium__text;
         color: base.$base200;
         font-size: 16px;
         line-height: 16px;
@@ -489,9 +490,83 @@
     &:focus {
         border-color: base.$brandPrimaryColor;
     }
-    
+
+    .list {
+        @include utils.primary__blur;
+        min-width: 198px;
+        left: unset;
+        right: 0;
+        z-index: 99999;
+
+        .option {
+            @include base.medium__text;
+            line-height: 40px !important;
+            text-align: center;
+
+            &:hover,
+            &.focus,
+            &.selected.focus {
+                background: base.$base200;
+                color: base.$base800;
+            }
+        }
+    }
 }
 /*** End of Nice Select ***/
+
+/*** Start of Pagination ***/
+.elt__pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+
+    form {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+
+        label,
+        span {
+            @include base.medium__text;
+            color: base.$base300;
+        }
+    }
+
+    .next__prev__btn {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        button {
+            @include base.medium__text;
+            padding: 0 24px;
+            border: 1px solid base.$base500;
+            border-radius: 8px;
+            color: base.$base500;
+            background: transparent;
+            height: 46px;
+            line-height: 46px;
+
+            svg {
+                height: 20px;
+                width: 20px;
+                stroke: base.$base500;
+                margin-top: -3px;
+            }
+
+            &:hover {
+                color: base.$base200;
+                border-color: base.$base200;
+
+                svg {
+                    stroke: base.$base200;
+                }
+            }
+        }
+    }
+}
+/*** End of Pagination ***/
 
 /* ==================== Responsive ==================== */
 @media (min-width: 200px) and (max-width: 289px) {
@@ -607,6 +682,37 @@
             }
         }
     }
+    /*Pagination*/
+    .elt__pagination {
+        margin-top: 30px;
+        flex-direction: column;
+        gap: 10px;
+        form {
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .next__prev__btn {
+            gap: 12px;
+            button {
+                padding: 0 12px;
+                height: 40px;
+            }
+        }
+    }
+    /*Nice Select*/
+    .nice-select {
+        padding: 7px 15px;
+        padding-right: 38px;
+        &::after {
+            top: 15px;
+            height: 8px;
+            width: 8px;
+            right: 18px;
+        }
+        .list {
+            min-width: 174px;
+        }
+    }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
@@ -712,6 +818,30 @@
             }
         }
     }
+    /*Pagination*/
+    .elt__pagination {
+        margin-top: 30px;
+        flex-direction: column;
+        gap: 15px;
+        .next__prev__btn {
+            gap: 12px;
+            button {
+                padding: 0 16px;
+                height: 40px;
+            }
+        }
+    }
+    /*Nice Select*/
+    .nice-select {
+        padding: 7px 15px;
+        padding-right: 38px;
+        &::after {
+            top: 15px;
+            height: 8px;
+            width: 8px;
+            right: 18px;
+        }
+    }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -783,6 +913,30 @@
         margin: 30px 0;
         .wrapper {
             height: 190px;
+        }
+    }
+    /*Pagination*/
+    .elt__pagination {
+        margin-top: 40px;
+        flex-direction: column;
+        gap: 15px;
+        .next__prev__btn {
+            gap: 12px;
+            button {
+                padding: 0 16px;
+                height: 40px;
+            }
+        }
+    }
+    /*Nice Select*/
+    .nice-select {
+        padding: 7px 15px;
+        padding-right: 38px;
+        &::after {
+            top: 15px;
+            height: 8px;
+            width: 8px;
+            right: 18px;
         }
     }
 }
@@ -870,6 +1024,27 @@
             height: 200px;
         }
     }
+    /*Pagination*/
+    .elt__pagination {
+        margin-top: 50px;
+        .next__prev__btn {
+            gap: 14px;
+            button {
+                padding: 0 18px;
+                height: 42px;
+            }
+        }
+    }
+    /*Nice Select*/
+    .nice-select {
+        padding: 8px 16px;
+        padding-right: 40px;
+        &::after {
+            top: 15px;
+            height: 8px;
+            width: 8px;
+        }
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -917,6 +1092,24 @@
         margin: 38px 0;
         .wrapper {
             height: 220px;
+        }
+    }
+    /*Pagination*/
+    .elt__pagination {
+        margin-top: 60px;
+        .next__prev__btn button {
+            padding: 0 18px;
+            height: 42px;
+        }
+    }
+    /*Nice Select*/
+    .nice-select {
+        padding: 8px 16px;
+        padding-right: 40px;
+        &::after {
+            top: 15px;
+            height: 8px;
+            width: 8px;
         }
     }
 }
@@ -986,6 +1179,19 @@
     .elt__breadcrumbs__section {
         margin: 44px 0;
     }
+    /*Pagination*/
+    .elt__pagination {
+        margin-top: 70px;
+        .next__prev__btn button {
+            padding: 0 18px;
+            height: 42px;
+        }
+    }
+    /*Nice Select*/
+    .nice-select {
+        padding: 8px 16px;
+        padding-right: 40px;
+    }
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -1023,6 +1229,10 @@
             gap: 25px;
             margin-bottom: 12px;
         }
+    }
+    /*Pagination*/
+    .elt__pagination {
+        margin-top: 80px;
     }
 }
 
@@ -1068,6 +1278,10 @@
                 margin-bottom: 16px;
             }
         }
+    }
+    /*Pagination*/
+    .elt__pagination {
+        margin-top: 90px;
     }
 }
 

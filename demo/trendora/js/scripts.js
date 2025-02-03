@@ -328,6 +328,7 @@
     //All Nice Select (Shop Page)
     if ($('.elt__shoppage').length) {
         $('#eltShopSortingNC').niceSelect();
+        $('#eltPaginationShop').niceSelect();
     }
 
     //Price Filter
@@ -363,12 +364,12 @@
         });
     });    
     
-    //Shop Sidebar Mobile Toggle
+    //Shop Sidebar Mobile
     $(function(){
-        $('.elsshop__filter__btn').on('click', function(){
+        $('.elt__shopsdbr__btn').on('click', function(){
             $('.elt__shop__sidebar').addClass('show')
         })
-        $('.elsshop__sidebar__closebtn').on('click', function(){
+        $('.elt__shop__sidebar__close').on('click', function(){
             $('.elt__shop__sidebar').removeClass('show')
         })
     });
