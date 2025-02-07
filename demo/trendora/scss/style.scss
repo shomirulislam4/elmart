@@ -554,43 +554,6 @@ header .wrapper .header__cta {
 .elt__cart__slide.show {
     right: 0;
 }
-
-/* Quantity Widget */
-.elt__quantity__widget {
-    @include utils.primary__blur;
-    width: 162px;
-    height: 48px;
-    border-radius: 8px;
-    background: base.$backgroundTertiaryColor;
-    padding: 0 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-        span {
-            @include utils.transition-03s;
-            @include base.medium__text;
-            color: base.$base200;
-            line-height: 40px;
-            height: 40px;
-            width: 48px;
-            text-align: center;
-            border-radius: 8px;
-
-            svg {
-                stroke: base.$base200;
-            }
-        }
-        span:hover {
-            background: base.$FillSecondaryColor;
-        }
-        p {
-            @include base.medium__text;
-            color: base.$base300;
-            line-height: 48px;
-            margin: 0;
-        }
-}
 /*** End of Header Section ***/
 
 /*** Start of Hero Section ***/

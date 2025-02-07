@@ -30,6 +30,44 @@
 }
 /*** End of Tabs and Nav ***/
 
+/*** Start of Quantity Widget ***/
+.elt__quantity__widget {
+    @include utils.primary__blur;
+    width: 162px;
+    height: 48px;
+    border-radius: 8px;
+    background: base.$backgroundTertiaryColor;
+    padding: 0 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+        span {
+            @include utils.transition-03s;
+            @include base.medium__text;
+            color: base.$base200;
+            line-height: 40px !important;
+            height: 40px;
+            width: 48px;
+            text-align: center;
+            border-radius: 8px;
+
+            svg {
+                stroke: base.$base200;
+            }
+        }
+        span:hover {
+            background: base.$FillSecondaryColor;
+        }
+        p {
+            @include base.medium__text;
+            color: base.$base300;
+            line-height: 48px;
+            margin: 0;
+        }
+}
+/*** End of Quantity Widget ***/
+
 /*** Start of Product Style ***/
 .elt__product__style {
     width: 389px;
@@ -311,6 +349,7 @@
 .elt__breadcrumbs__section {
     margin: 48px 0;
 
+    /*V1*/
     .wrapper {
         border-radius: 20px;
         overflow: hidden;
@@ -359,6 +398,7 @@
                         font-family: 'Fontawesome';
                         font-size: 10px;
                         padding: 0 12px;
+                        color: base.$base200;
                     }
                 }
 
@@ -367,6 +407,32 @@
                     color: base.$base300;
                 }
             }
+        }
+    }
+
+    /*V2*/
+    .breadcrumbs__v2 {
+        a {
+            @include base.medium__text;
+            color: base.$base100;
+            text-transform: capitalize;
+
+            &:hover {
+                color: base.$brandPrimaryColor;
+            }
+
+            &::after {
+                content: '\f054';
+                font-family: 'Fontawesome';
+                font-size: 10px;
+                padding: 0 12px;
+                color: base.$base500;
+            }
+        }
+
+        span {
+            @include base.medium__text;
+            color: base.$base500;
         }
     }
 }
@@ -681,6 +747,10 @@
                 }
             }
         }
+        .breadcrumbs__v2 a::after {
+            font-size: 8px;
+            padding: 0 8px;
+        }
     }
     /*Pagination*/
     .elt__pagination {
@@ -816,6 +886,10 @@
                 font-size: 8px;
                 padding: 0 8px;
             }
+        }
+        .breadcrumbs__v2 a::after {
+            font-size: 8px;
+            padding: 0 8px;
         }
     }
     /*Pagination*/

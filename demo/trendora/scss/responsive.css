@@ -141,7 +141,7 @@
     height: 30px;
   }
   .elt__cart__slide .elt__cart__items .item .elt__quantity__widget span {
-    line-height: 30px;
+    line-height: 30px !important;
     height: 30px;
     width: 30px;
   }
@@ -422,12 +422,6 @@
     height: 20px;
     width: 20px;
   }
-  .elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__shopsdbr__sizes {
-    gap: 10px;
-  }
-  .elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__shopsdbr__sizes .item {
-    padding: 10px 30px;
-  }
   .elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__sdbr__brandcats .eltsdbrcat__item .eltsdbr__catname {
     gap: 15px;
   }
@@ -442,6 +436,12 @@
   }
   .elt__shop__section .elt__shop__topbar form {
     gap: 10px;
+  }
+  .elt__shopsdbr__sizes {
+    gap: 10px;
+  }
+  .elt__shopsdbr__sizes .item {
+    padding: 10px 30px;
   }
 }
 @media (min-width: 290px) and (max-width: 414px) {
@@ -564,7 +564,7 @@
     height: 30px;
   }
   .elt__cart__slide .elt__cart__items .item .elt__quantity__widget span {
-    line-height: 30px;
+    line-height: 30px !important;
     height: 30px;
     width: 30px;
   }
@@ -819,12 +819,6 @@
     height: 20px;
     width: 20px;
   }
-  .elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__shopsdbr__sizes {
-    gap: 10px;
-  }
-  .elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__shopsdbr__sizes .item {
-    padding: 10px 30px;
-  }
   .elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__sdbr__brandcats .eltsdbrcat__item .eltsdbr__catname {
     gap: 15px;
   }
@@ -839,6 +833,12 @@
   }
   .elt__shop__section .elt__shop__topbar form {
     gap: 12px;
+  }
+  .elt__shopsdbr__sizes {
+    gap: 10px;
+  }
+  .elt__shopsdbr__sizes .item {
+    padding: 10px 30px;
   }
 }
 @media (min-width: 415px) and (max-width: 575px) {
@@ -2061,12 +2061,6 @@
     font-size: 14px;
     line-height: 14px;
   }
-  .elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__shopsdbr__sizes {
-    gap: 10px;
-  }
-  .elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__shopsdbr__sizes .item {
-    padding: 8px 28px;
-  }
   .elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__sdbr__brandcats {
     gap: 10px;
   }
@@ -2075,6 +2069,26 @@
   }
   .elt__shop__section .elt__shop__sidebar .all__widgets .elt__shopsdbr__widget .elt__sidbr__checkboxes {
     gap: 10px;
+  }
+  .elt__shopsdbr__sizes {
+    gap: 10px;
+  }
+  .elt__shopsdbr__sizes .item {
+    padding: 8px 28px;
+  }
+  /*===== Single Product Page =====*/
+  .elt__singleproduct__section .elt__sp__images {
+    gap: 20px;
+  }
+  .elt__singleproduct__section .elt__sp__images .thumbnails {
+    gap: 20px;
+  }
+  .elt__singleproduct__section .elt__sp__images .tab-content .tab-pane {
+    width: 631px;
+    height: 690px;
+  }
+  .elt__singleproduct__section .elt__sp__info {
+    width: 100%;
   }
 }
 @media (min-width: 1400px) and (max-width: 1639px) {
@@ -2158,6 +2172,15 @@
   .elt__shop__section .elt__shop__sidebar .all__widgets {
     gap: 34px;
     padding: 20px;
+  }
+  /*===== Single Product Page =====*/
+  .elt__singleproduct__section .elt__sp__images .tab-content .tab-pane {
+    width: 631px;
+  }
+  .elt__singleproduct__section .elt__sp__info {
+    gap: 35px;
+    width: 85%;
+    margin-left: auto;
   }
 }
 @media (min-width: 1640px) and (max-width: 1700px) {

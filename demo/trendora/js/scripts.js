@@ -389,46 +389,11 @@
     });
     
 /*============================ Single Product Page ============================*/
-    //Single Product Active Toggle
-    $(function() {
-        //Size
-        $('.elssp__size__item').on('click', function() {
-            $('.elssp__size__item').removeClass('active');
+    //Colors Select
+    $(function () {
+        $(".eltsp__color__visual .color__item").on("click", function () {
+            $(".eltsp__color__visual .color__item").removeClass('active');
             $(this).addClass('active');
-        });
-
-        //Color
-        $('.elssp__color__item').on('click', function() {
-            $('.elssp__color__item').removeClass('active');
-            $(this).addClass('active');
-        });
-    });
-
-    //Single Product Image Slider
-    $(function(){
-        var swiper = new Swiper(".elssp__smallimage__slider", {
-            spaceBetween: 5,
-            slidesPerView: 2,
-            pagination: {
-                el: ".elssp__slidercontrols__pagination",
-                type: "fraction",
-                formatFractionCurrent: (number) => {
-                    return number < 10 ? '0' + number : number;
-                },
-                formatFractionTotal: (number) => {
-                    return number < 10 ? '0' + number : number;
-                },
-            },
-            scrollbar: {
-                el: ".elssp__slidercontrols__scrollbar",
-            },
-        });
-        var swiper2 = new Swiper(".elssp__mainimage__slider", {
-            loop: true,
-            allowTouchMove: false,
-            thumbs: {
-                swiper: swiper,
-            },
         });
     });
 

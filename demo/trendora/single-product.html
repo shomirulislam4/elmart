@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#F27240">
+
+    <title>Single Product - Trendora</title>
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/icon.png">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="assets/vendors/bootstrap.css">
+    <link rel="stylesheet" href="assets/vendors/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/vendors/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/vendors/nice-select.css">
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="scss/responsive.css">
+</head>
+<body class="elt__shoppage">
+    <!-- Start of Header -->
+    <header>
+        <div class="container wrapper">
+            <a class="logo" href="index.html">
+                <img src="assets/images/logo.png" alt="trendora logo">
+            </a>
+            <button class="elt__mmenu__btn">
+                <img src="assets/icons/hamburger-menu.svg" alt="mobile menu btn">
+            </button>
+            <nav>
+                <button class="elt__cta__button elt__mobilemenu__closebtn sldbtn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.2431 7.75786L7.75781 16.2431M16.2431 16.2431L7.75781 7.75781" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <ul>
+                    <li><a href="index.html" class="active">home</a></li>
+                    <li class="has__submenu">
+                        <a href="#">shop 
+                            <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.25 7.5L9.5 10.5L5.75 7.5" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <ul class="submenu">
+                            <li><a href="shop.html">Shop Page</a></li>
+                            <li><a href="single-product.html">Single Product</a></li>
+                            <li><a href="wishlist.html">My Wishlist</a></li>
+                            <li><a href="cart.html">My Cart</a></li>
+                            <li><a href="cart-empty.html">My Cart (Empty)</a></li>
+                            <li><a href="checkout.html">Checkout</a></li>
+                            <li><a href="payment.html">Payment</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">hot sales</a></li>
+                    <li><a href="about-us.html">about us</a></li>
+                    <li><a href="contact-us.html">contact us</a></li>
+                    <li class="has__submenu">
+                        <a href="#">blogs
+                            <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.25 7.5L9.5 10.5L5.75 7.5" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <ul class="submenu">
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="blog-post.html">Blog Post</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__cta">
+                <button id="eltSearchBtn">
+                    <img src="assets/icons/search.svg" alt="search">
+                </button>
+                <button id="eltCartBtn">
+                    <img src="assets/icons/cart.svg" alt="cart">
+                </button>
+                <a href="login.html">
+                    <button>
+                        <img src="assets/icons/user.svg" alt="login">
+                    </button>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search Popup -->
+    <div class="elt__search__popup">
+        <button class="elt__cta__button elt__search__closebtn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.2431 7.75786L7.75781 16.2431M16.2431 16.2431L7.75781 7.75781" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <div class="elt__search__wrapper">
+            <form action="#">
+                <input type="search" name="eltSearchPopup" id="eltSearchPopup" placeholder="Search what you're looking for...">
+                <button type="submit">
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.5 17.2076L21.4217 19.1292C22.1928 19.9004 22.1928 21.1506 21.4217 21.9217C20.6506 22.6928 19.4004 22.6928 18.6293 21.9217L16.7076 20M2 11C2 6.30558 5.80558 2.5 10.5 2.5C15.1944 2.5 19 6.30558 19 11C19 15.6944 15.1944 19.5 10.5 19.5C5.80558 19.5 2 15.6944 2 11Z" stroke="" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </form>
+            <p>We found '3' products in our inventory from your search</p>
+            <div class="elt__search__result">
+
+                <div class="item">
+                    <div class="image">
+                        <img src="assets/images/product/1.png" alt="product image">
+                    </div>
+                    <h4><a href="single-product.html" class="product__name">Cozy Knit Cardigan Sweater</a><span class="price">$12.00</span></h4>
+                    <div class="cta__btns">
+                        <a href="#" class="elt__cta__button wishlist__btn">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.6374 3.91857L9.99984 4.60352L9.3623 3.91857C7.60178 2.02714 4.74741 2.02714 2.98689 3.91857C1.22637 5.81 1.22637 8.87662 2.98689 10.768L8.72475 16.9326C9.42896 17.6891 10.5707 17.6891 11.2749 16.9326L17.0128 10.768C18.7733 8.87661 18.7733 5.81 17.0128 3.91857C15.2523 2.02714 12.3979 2.02714 10.6374 3.91857Z" fill=""/>
+                            </svg>
+                        </a>
+                        <a href="#" class="elt__cta__button addtocart__btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2 2C2 1.58579 2.33579 1.25 2.75 1.25H4.75C6.26878 1.25 7.5 2.48122 7.5 4H18C19.9528 4 21.5787 5.39935 21.9298 7.25H6V6V4C6 3.30964 5.44036 2.75 4.75 2.75H2.75C2.33579 2.75 2 2.41421 2 2ZM9.5 22C10.3284 22 11 21.3284 11 20.5C11 19.6716 10.3284 19 9.5 19C8.67157 19 8 19.6716 8 20.5C8 21.3284 8.67157 22 9.5 22ZM18.5 22C19.3284 22 20 21.3284 20 20.5C20 19.6716 19.3284 19 18.5 19C17.6716 19 17 19.6716 17 20.5C17 21.3284 17.6716 22 18.5 22ZM6 8.75H22V13C22 15.2091 20.2091 17 18 17H10C7.79086 17 6 15.2091 6 13V8.75Z" fill=""/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="image">
+                        <img src="assets/images/product/2.png" alt="product image">
+                    </div>
+                    <h4><a href="single-product.html" class="product__name">Cozy Knit Cardigan Sweater</a><span class="price">$12.00</span></h4>
+                    <div class="cta__btns">
+                        <a href="#" class="elt__cta__button wishlist__btn">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.6374 3.91857L9.99984 4.60352L9.3623 3.91857C7.60178 2.02714 4.74741 2.02714 2.98689 3.91857C1.22637 5.81 1.22637 8.87662 2.98689 10.768L8.72475 16.9326C9.42896 17.6891 10.5707 17.6891 11.2749 16.9326L17.0128 10.768C18.7733 8.87661 18.7733 5.81 17.0128 3.91857C15.2523 2.02714 12.3979 2.02714 10.6374 3.91857Z" fill=""/>
+                            </svg>
+                        </a>
+                        <a href="#" class="elt__cta__button addtocart__btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2 2C2 1.58579 2.33579 1.25 2.75 1.25H4.75C6.26878 1.25 7.5 2.48122 7.5 4H18C19.9528 4 21.5787 5.39935 21.9298 7.25H6V6V4C6 3.30964 5.44036 2.75 4.75 2.75H2.75C2.33579 2.75 2 2.41421 2 2ZM9.5 22C10.3284 22 11 21.3284 11 20.5C11 19.6716 10.3284 19 9.5 19C8.67157 19 8 19.6716 8 20.5C8 21.3284 8.67157 22 9.5 22ZM18.5 22C19.3284 22 20 21.3284 20 20.5C20 19.6716 19.3284 19 18.5 19C17.6716 19 17 19.6716 17 20.5C17 21.3284 17.6716 22 18.5 22ZM6 8.75H22V13C22 15.2091 20.2091 17 18 17H10C7.79086 17 6 15.2091 6 13V8.75Z" fill=""/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="image">
+                        <img src="assets/images/product/3.png" alt="product image">
+                    </div>
+                    <h4><a href="single-product.html" class="product__name">Cozy Knit Cardigan Sweater</a><span class="price">$12.00</span></h4>
+                    <div class="cta__btns">
+                        <a href="#" class="elt__cta__button wishlist__btn">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.6374 3.91857L9.99984 4.60352L9.3623 3.91857C7.60178 2.02714 4.74741 2.02714 2.98689 3.91857C1.22637 5.81 1.22637 8.87662 2.98689 10.768L8.72475 16.9326C9.42896 17.6891 10.5707 17.6891 11.2749 16.9326L17.0128 10.768C18.7733 8.87661 18.7733 5.81 17.0128 3.91857C15.2523 2.02714 12.3979 2.02714 10.6374 3.91857Z" fill=""/>
+                            </svg>
+                        </a>
+                        <a href="#" class="elt__cta__button addtocart__btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2 2C2 1.58579 2.33579 1.25 2.75 1.25H4.75C6.26878 1.25 7.5 2.48122 7.5 4H18C19.9528 4 21.5787 5.39935 21.9298 7.25H6V6V4C6 3.30964 5.44036 2.75 4.75 2.75H2.75C2.33579 2.75 2 2.41421 2 2ZM9.5 22C10.3284 22 11 21.3284 11 20.5C11 19.6716 10.3284 19 9.5 19C8.67157 19 8 19.6716 8 20.5C8 21.3284 8.67157 22 9.5 22ZM18.5 22C19.3284 22 20 21.3284 20 20.5C20 19.6716 19.3284 19 18.5 19C17.6716 19 17 19.6716 17 20.5C17 21.3284 17.6716 22 18.5 22ZM6 8.75H22V13C22 15.2091 20.2091 17 18 17H10C7.79086 17 6 15.2091 6 13V8.75Z" fill=""/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Slide -->
+    <div class="elt__cart__slide">
+        <button class="elt__cta__button elt__cartslide__closebtn sldbtn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.2431 7.75786L7.75781 16.2431M16.2431 16.2431L7.75781 7.75781" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <h2 class="title">My Cart <span>3</span></h2>
+        <div class="elt__cart__items">
+            <div class="item">
+                <div class="top">
+                    <div class="image">
+                        <img src="assets/images/product/12.png" alt="product image">
+                    </div>
+                    <div class="product__title">
+                        <a href="single-product.html" class="product__name">Floral Print Summer Dress</a>
+                        <span class="price">$25.08</span>
+                    </div>
+                </div>
+                <div class="elt__quantity__widget">
+                    <span class="elt__quantity__decrease">
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.625 10L5.625 10" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    <p class="elt__quantity__display">01</p>
+                    <span class="elt__quantity__increase">
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.625 5V15M15.625 10L5.625 10" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="top">
+                    <div class="image">
+                        <img src="assets/images/product/13.png" alt="product image">
+                    </div>
+                    <div class="product__title">
+                        <a href="single-product.html" class="product__name">Floral Print Summer Dress</a>
+                        <span class="price">$22.93</span>
+                    </div>
+                </div>
+                <div class="elt__quantity__widget">
+                    <span class="elt__quantity__decrease">
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.625 10L5.625 10" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    <p class="elt__quantity__display">01</p>
+                    <span class="elt__quantity__increase">
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.625 5V15M15.625 10L5.625 10" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="top">
+                    <div class="image">
+                        <img src="assets/images/product/1.png" alt="product image">
+                    </div>
+                    <div class="product__title">
+                        <a href="single-product.html" class="product__name">Cozy Knit Cardigan Sweater</a>
+                        <span class="price">$17.28</span>
+                    </div>
+                </div>
+                <div class="elt__quantity__widget">
+                    <span class="elt__quantity__decrease">
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.625 10L5.625 10" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    <p class="elt__quantity__display">01</p>
+                    <span class="elt__quantity__increase">
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.625 5V15M15.625 10L5.625 10" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="elt__cart__subtotal">
+            <h3>Subtotal: <span class="eltcartslide__total__price">$65.29</span></h3>
+            <div class="cta__btns">
+                <a href="cart.html">View Cart</a>
+                <a href="checkout.html">Checkout</a>
+            </div>
+        </div>
+    </div>
+    <!-- End of Header -->
+
+    <!-- Start of Breadcrumbs V2 Section -->
+    <section class="elt__breadcrumbs__section">
+        <div class="container">
+            <div class="breadcrumbs__v2">
+                <a href="index.html">home</a>
+                <a href="shop.html">Shop</a>
+                <span>Single Product</span>
+            </div>
+        </div>
+    </section>
+    <!-- End of Breadcrumbs V2 Section -->
+
+    <!-- Start of Single Product Section -->
+    <section class="elt__singleproduct__section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-xxl-6 position-relative">
+                    <div class="d-flex align-items-start elt__sp__images">
+
+                        <div class="nav flex-column nav-pills thumbnails" id="eltSPImage__tab" role="tablist" aria-orientation="vertical">
+                            <div class="thumb active" id="eltSPIMG1-tab" data-bs-toggle="pill" data-bs-target="#eltSPIMG1" type="button" role="tab" aria-controls="eltSPIMG1" aria-selected="true">
+                                <img src="assets/images/product/12.png" alt="product image slider">
+                            </div>
+
+                            <div class="thumb" id="eltSPIMG2-tab" data-bs-toggle="pill" data-bs-target="#eltSPIMG2" type="button" role="tab" aria-controls="eltSPIMG2" aria-selected="false">
+                                <img src="assets/images/product/12.png" alt="product image slider">
+                            </div>
+
+                            <div class="thumb" id="eltSPIMG3-tab" data-bs-toggle="pill" data-bs-target="#eltSPIMG3" type="button" role="tab" aria-controls="eltSPIMG3" aria-selected="false">
+                                <img src="assets/images/product/12.png" alt="product image slider">
+                            </div>
+
+                            <div class="thumb" id="eltSPIMG4-tab" data-bs-toggle="pill" data-bs-target="#eltSPIMG4" type="button" role="tab" aria-controls="eltSPIMG4" aria-selected="false">
+                                <img src="assets/images/product/12.png" alt="product image slider">
+                            </div>
+
+                            <div class="thumb" id="eltSPIMG5-tab" data-bs-toggle="pill" data-bs-target="#eltSPIMG5" type="button" role="tab" aria-controls="eltSPIMG5" aria-selected="false">
+                                <img src="assets/images/product/12.png" alt="product image slider">
+                            </div>
+                        </div>
+
+                        <div class="tab-content" id="eltSPImage__tabContent">
+                            <div class="tab-pane fade show active" id="eltSPIMG1" role="tabpanel" aria-labelledby="eltSPIMG1-tab" tabindex="0">
+                                <img src="assets/images/product/12.png" alt="product image">
+                            </div>
+
+                            <div class="tab-pane fade" id="eltSPIMG2" role="tabpanel" aria-labelledby="eltSPIMG2-tab" tabindex="0">
+                                <img src="assets/images/product/12.png" alt="product image">
+                            </div>
+
+                            <div class="tab-pane fade" id="eltSPIMG3" role="tabpanel" aria-labelledby="eltSPIMG3-tab" tabindex="0">
+                                <img src="assets/images/product/12.png" alt="product image">
+                            </div>
+
+                            <div class="tab-pane fade" id="eltSPIMG4" role="tabpanel" aria-labelledby="eltSPIMG4-tab" tabindex="0">
+                                <img src="assets/images/product/12.png" alt="product image">
+                            </div>
+
+                            <div class="tab-pane fade" id="eltSPIMG5" role="tabpanel" aria-labelledby="eltSPIMG5-tab" tabindex="0">
+                                <img src="assets/images/product/12.png" alt="product image">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-xxl-6">
+                    <div class="elt__sp__info">
+
+                        <div class="title">
+                            <h4 class="eltsp__prodtitle">Floral Print Summer Dress</h4>
+                            <span class="eltsp__rating">
+                                <p class="eltsp__filledstar">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                                <p class="eltsp__prodratenum">5.0</p>
+                                <p class="eltsp__totalrevnum">( 145 Reviews )</p>
+                            </span>
+                        </div>
+
+                        <div class="brand__category">
+                            <span>Brand: <a href="#" class="eltsp__brand">Loffy</a></span>
+                            <span>Category: <a href="#" class="eltsp__category">Women's Wear</a></span>
+                            <span>SKU: <span class="eltsp__sku">ASG33447</span></span>
+                        </div>
+
+                        <div class="price">
+                            <p class="eltsp__originalprice">$250.00</p>
+                            <h3 class="eltsp__discountprice">$200.00</h3>
+                        </div>
+
+                        <div class="features">
+                            <span>Key Features:</span>
+                            <ul>
+                                <li>Material: 100% Cotton</li>
+                                <li>Fit: A-Line</li>
+                                <li>Care: Machine washable</li>
+                                <li>Available Colors: Blue, Red, Green</li>
+                            </ul>
+                        </div>
+
+                        <div class="sizes">
+                            <div class="title">
+                                <span>Size:</span>
+                                <a href="javascript:()" class="eltsp__sizeguide">Size Guide</a>
+                            </div>
+                            <div class="elt__shopsdbr__sizes">
+                                <button class="item">XS</button>
+                                <button class="item">S</button>
+                                <button class="item">M</button>
+                                <button class="item">L</button>
+                                <button class="item">XL</button>
+                                <button class="item">XXL</button>
+                            </div>
+                        </div>
+
+                        <div class="colors">
+                            <span>Color: <span class="eltsp__colorname">Light Beige</span></span>
+                            <div class="eltsp__color__visual">
+                                <span class="color__item active" style="background:var(--color1);border-color:var(--color1);"></span>
+                                <span class="color__item" style="background:var(--color2);border-color:var(--color2);"></span>
+                                <span class="color__item" style="background:var(--color3);border-color:var(--color3);"></span>
+                                <span class="color__item" style="background:var(--color4);border-color:var(--color4);"></span>
+                                <span class="color__item" style="background:var(--color5);border-color:var(--color5);"></span>
+                            </div>
+                        </div>
+
+                        <div class="quantity">
+                            <span>Quantity:</span>
+                            <div class="ctas">
+                                <div class="elt__quantity__widget">
+                                    <span class="elt__quantity__decrease">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15.625 10L5.625 10" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <p class="elt__quantity__display">01</p>
+                                    <span class="elt__quantity__increase">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.625 5V15M15.625 10L5.625 10" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <button class="eltsp__addtocart">add to cart</button>
+                                <button class="eltsp__addwishlist">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.6374 3.91857L9.99984 4.60352L9.3623 3.91857C7.60178 2.02714 4.74741 2.02714 2.98689 3.91857C1.22637 5.81 1.22637 8.87662 2.98689 10.768L8.72475 16.9326C9.42896 17.6891 10.5707 17.6891 11.2749 16.9326L17.0128 10.768C18.7733 8.87661 18.7733 5.81 17.0128 3.91857C15.2523 2.02714 12.3979 2.02714 10.6374 3.91857Z" stroke="" stroke-width="1.5" stroke-linejoin="round"/>
+                                    </svg>
+                                    Add to Wishlist
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="buy__btn">
+                            <button class="eltsp__buybtn">buy now</button>
+                            <span>
+                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.3569 15.8333V5.83333M12.3569 15.8333H14.0236M12.3569 15.8333H8.19027M12.3569 5.83333C12.3569 3.99238 10.8645 2.5 9.0236 2.5H5.69027C3.84932 2.5 2.35693 3.99238 2.35693 5.83333V12.5C2.35693 14.0544 3.42082 15.3602 4.86014 15.7291M12.3569 5.83333H15.0312C15.4546 5.83333 15.8622 5.9945 16.1711 6.2841L18.4968 8.46449C18.8329 8.77957 19.0236 9.2197 19.0236 9.68039V14.1667C19.0236 15.0871 18.2774 15.8333 17.3569 15.8333M17.3569 15.8333C17.3569 16.7538 16.6107 17.5 15.6903 17.5C14.7698 17.5 14.0236 16.7538 14.0236 15.8333M17.3569 15.8333C17.3569 14.9129 16.6107 14.1667 15.6903 14.1667C14.7698 14.1667 14.0236 14.9129 14.0236 15.8333M8.19027 15.8333C8.19027 16.7538 7.44407 17.5 6.5236 17.5C5.60313 17.5 4.85693 16.7538 4.85693 15.8333C4.85693 15.7983 4.85801 15.7636 4.86014 15.7291M8.19027 15.8333C8.19027 14.9129 7.44407 14.1667 6.5236 14.1667C5.63812 14.1667 4.91392 14.8572 4.86014 15.7291" stroke="#AFBACA" stroke-width="1.5"/>
+                                    <path d="M9.0236 6.66663L7.35693 6.66663" stroke="#AFBACA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9.02376 10L5.69043 10" stroke="#AFBACA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                Free Delivery on over $500
+                            </span>
+                        </div>
+
+                        <div class="horizontal__seperator"></div>
+
+                        <div class="social__share">
+                            <span>Share:</span>
+                            <button class="eltsp__socialshare"><i class="fa-brands fa-facebook-f"></i></button>
+                            <button class="eltsp__socialshare"><i class="fa-brands fa-whatsapp"></i></button>
+                            <button class="eltsp__socialshare"><i class="fa-brands fa-linkedin-in"></i></button>
+                            <button class="eltsp__socialshare"><i class="fa-brands fa-instagram"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Single Product Section -->
+
+    <!-- Start of Footer Section -->
+    <section class="elt__footer__section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-lg-5">
+                    <div class="logo">
+                        <img src="assets/images/logo.png" alt="logo">
+                    </div>
+                    <span>Lorem ipsum dolor sit amet consectetur. Dignissim est dolor leo donec tellus varius scelerisque magna. Blandit enim commodo turpis interdum nullam.</span>
+                    <div class="social__profiles">
+                        <a href="#"><p class="fa-brands fa-linkedin-in"></p></a>
+                        <a href="#"><p class="fa-brands fa-instagram"></p></a>
+                        <a href="#"><p class="fa-brands fa-facebook-f"></p></a>
+                        <a href="#"><p class="fa-brands fa-youtube"></p></a>
+                        <a href="#"><p class="fa-brands fa-x-twitter"></p></a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 mt-4 mt-sm-0">
+                    <h5 class="title">Women</h5>
+                    <ul class="elt__footer__list">
+                        <li><a href="#">Hoodies & Sweatshirts</a></li>
+                        <li><a href="#">Sweaters & Cardigans</a></li>
+                        <li><a href="#">Shirts & Blouses</a></li>
+                        <li><a href="#">Tops & T-shirts</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-2 mt-4 mt-lg-0">
+                    <h5 class="title">Men</h5>
+                    <ul class="elt__footer__list">
+                        <li><a href="#">T-Shirts</a></li>
+                        <li><a href="#">Overshirts</a></li>
+                        <li><a href="#">Jackets & Coats</a></li>
+                        <li><a href="#">Men's Jeans</a></li>
+                        <li><a href="#">Pajama Pants</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-2 mt-4 mt-lg-0">
+                    <h5 class="title">Help</h5>
+                    <ul class="elt__footer__list">
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row bottom">
+                <p>© <script>document.write(new Date().getFullYear())</script> <a href="index.html">Tendora</a>. All Rights Reserved.</p>
+                <ul class="elt__footer__list__bottom">
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- End of Footer Section -->
+    
+    <!-- JS Links -->
+    <script src="js/vendors/jquery.min.js"></script>
+    <script src="js/vendors/bootstrap.bundle.js"></script>
+    <script src="js/vendors/fontawesome.min.js"></script>
+    <script src="js/vendors/swiper-bundle.min.js"></script>
+    <script src="js/vendors/jquery.nice-select.min.js"></script>
+    <script src="js/vendors/counterup.min.js"></script>
+    <script src="js/vendors/waypoint.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

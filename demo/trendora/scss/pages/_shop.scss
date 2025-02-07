@@ -1,5 +1,6 @@
 @use '../base/index' as base;
 @use '../utilities/index' as utils;
+@use '../components/index' as comps;
 
 /*** Start of Shop Section ***/
 .elt__shop__section {
@@ -63,28 +64,6 @@
 
                         label {
                             @include base.medium__text;
-                        }
-                    }
-                }
-    
-                .elt__shopsdbr__sizes {
-                    display: flex;
-                    gap: 22px;
-                    flex-wrap: wrap;
-    
-                    .item {
-                        @include base.medium__text;
-                        padding: 12px 38px;
-                        box-shadow: inset 0 0 0 1px base.$base700;
-                        border-radius: 8px;
-                        background: transparent;
-                        color: base.$base200;
-    
-                        &.active,
-                        &:hover {
-                            @include utils.transition-03s;
-                            box-shadow: inset 0 0 0 1px base.$brandPrimaryColor;
-                            background: base.$FillPrimaryColor;
                         }
                     }
                 }
@@ -211,4 +190,346 @@
     }
 }
 
+/*Product Size Select*/
+.elt__shopsdbr__sizes {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+
+    .item {
+        @include base.medium__text;
+        padding: 12px 38px;
+        box-shadow: inset 0 0 0 1px base.$base700;
+        border-radius: 8px;
+        background: transparent;
+        color: base.$base200;
+
+        &.active,
+        &:hover {
+            @include utils.transition-03s;
+            box-shadow: inset 0 0 0 1px base.$brandPrimaryColor;
+            background: base.$FillPrimaryColor;
+        }
+    }
+}
 /*** End of Shop Section ***/
+
+/*** Start of Single Product Section ***/
+.elt__singleproduct__section {
+    .elt__sp__images {
+        position: sticky;
+        top: 0;
+        left: 0;
+        gap: 20px;
+
+        .thumbnails {
+            gap: 20px;
+            flex-shrink: 0;
+            flex-grow: 0;
+
+            .thumb {
+                height: 122px;
+                width: 111px;
+                border-radius: 14px;
+                overflow: hidden;
+                flex-shrink: 0;
+                flex-grow: 0;
+    
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+        .tab-content .tab-pane {
+            width: 100%;
+            height: 690px;
+            border-radius: 14px;
+            overflow: hidden;
+            flex-shrink: 0;
+            flex-grow: 0;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        
+    }
+
+    .elt__sp__info {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 100%;
+
+        .title {
+            .eltsp__prodtitle {
+                color: base.$base100;
+                font-weight: 600;
+                margin-bottom: 16px;
+            }
+
+            .eltsp__rating {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                p {
+                    margin: 0;
+                }
+
+                .eltsp__filledstar {
+                    display: flex;
+                    gap: 16px;
+                    align-items: center;
+                    color: base.$AccentYellow;
+                }
+
+                .eltsp__prodratenum {
+                    color: base.$base200;
+                }
+
+                .eltsp__totalrevnum {
+                    color: base.$base400;
+                }
+            }
+        }
+
+        .brand__category {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            color: base.$base300;
+
+            a {
+                color: base.$base300;
+
+                &:hover {
+                    color: base.$brandPrimaryColor;
+                }
+            }
+        }
+
+        .price {
+            display: flex;
+            align-items: flex-end;
+            gap: 12px;
+
+            .eltsp__originalprice {
+                color: base.$base500;
+                line-height: 100% !important;
+                text-decoration: line-through;
+                margin: 0;
+            }
+
+            .eltsp__discountprice {
+                color: base.$base100;
+                line-height: 100% !important;
+                margin: 0;
+                font-weight: 500;
+            }
+        }
+
+        .features {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            span {
+                @include base.medium__text;
+                color: base.$base300;
+            }
+
+            li {
+                list-style: disc;
+                color: base.$base100;
+            }
+        }
+
+        .sizes {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .title {
+                display: flex;
+                justify-content: space-between;
+
+                span, a {
+                    @include base.medium__text;
+                    font-weight: 500;
+                    color: base.$base300;
+                }
+
+                a {
+                    color: base.$AccentLink;
+                    text-decoration: underline;
+
+                    &:hover {
+                        color: base.$brandPrimaryColor;
+                    }
+                }
+            }
+
+            .elt__shopsdbr__sizes {
+                justify-content: flex-start;
+            }
+        }
+
+        .colors {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            span {
+                @include base.medium__text;
+                color: base.$base300;
+                display: flex;
+                gap: 20px;
+
+                .eltsp__colorname {
+                    color: base.$base100;
+                }
+            }
+
+            .eltsp__color__visual {
+                --color1: #D4CDBB;
+                --color2: #CFA781;
+                --color3: #8FB98B;
+                --color4: #5F6CAF;
+                --color5: #C763B1;
+
+                display: flex;
+                align-items: center;
+                gap: 28px;
+                flex-wrap: wrap;
+
+                .color__item {
+                    @include utils.transition-03s;
+                    display: block;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    flex-shrink: 0;
+                    flex-grow: 0;
+                    height: 38px;
+                    width: 38px;
+                    box-shadow: inset 0 0 0 7px base.$backgroundPrimaryColor;
+
+                    &:hover,
+                    &.active {
+                        border: 1px solid;
+                        box-shadow: inset 0 0 0 6px base.$backgroundPrimaryColor;
+                    }
+                }
+            }
+        }
+
+        .quantity {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            span {
+                @include base.medium__text;
+                color: base.$base300;
+            }
+
+            .ctas {
+                display: flex;
+                align-items: center;
+                gap: 28px;
+            }
+
+            .eltsp__addtocart {
+                @include comps.elt__button__c;
+                width: 183px;
+            }
+
+            .eltsp__addwishlist {
+                @include comps.elt__button__d;
+                color: base.$base300;
+                
+                svg {
+                    stroke: base.$base300;
+                }
+
+                &:hover {
+                    background: base.$backgroundTertiaryColor;
+                }
+            }
+        }
+
+        .buy__btn {
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+
+            .eltsp__buybtn {
+                @include comps.elt__button__a;
+                width: 373px;
+            }
+
+            span {
+                @include base.medium__text;
+                color: base.$base300;
+                display: flex;
+                align-items: center;
+                gap: 12px;
+
+                svg {
+                    height: 16px;
+                    width: 16px;
+                }
+            }
+        }
+
+        .social__share {
+            display: flex;
+            align-items: center;
+            gap: 48px;
+            flex-wrap: wrap;
+
+            span {
+                color: base.$base300;
+            }
+
+            .eltsp__socialshare {
+                background: transparent;
+                color: base.$base300;
+                font-size: 24px;
+
+                &:hover {
+                    color: base.$brandPrimaryColor;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1640px) {
+    .elt__singleproduct__section {
+        .container,
+        .col-xxl-6 {
+            padding: 0;
+        }
+        .elt__sp__images {
+            gap: 28px;
+    
+            .thumbnails {
+                gap: 28px;
+            }
+    
+            .tab-content .tab-pane {
+                width: 660px;
+                height: 722px;
+            }
+        }
+        .elt__sp__info {
+            width: 753px;
+            margin-left: auto;
+        }
+    }
+}
+/*** End of Single Product Section ***/
