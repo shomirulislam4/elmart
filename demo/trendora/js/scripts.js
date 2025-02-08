@@ -415,8 +415,8 @@
 
     //Review Form Show/Hide
     $(function(){
-        $('#elsReviewFormToggle').on('click', function(){
-            $('.els__review__form').toggleClass('show')
+        $('#eltReviewFormToggle').on('click', function(){
+            $('.elt__review__form').toggleClass('show')
         })
     });
 

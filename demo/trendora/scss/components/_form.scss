@@ -22,7 +22,60 @@ input {
     }
 }
 
-/* Form */
+textarea {
+    @include utils.primary__blur;
+    @include base.medium__text;
+    background: base.$backgroundTertiaryColor;
+    width: 100%;
+    height: 194px;
+    border: 1px solid base.$base800;
+    border-radius: 12px;
+    padding: 0 20px;
+    color: base.$base400;
+    font-weight: 400;
+    resize: none;
+
+    &::placeholder {
+        color: base.$base400;
+    }
+}
+
+/* Form Layout */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .form__row {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .with__label {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    
+        label {
+            color: base.$base200;
+            @include base.medium__text;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    form {
+        gap: 15px;
+        .form__row {
+            flex-direction: column;
+            gap: 15px;
+        }
+    }
+}
+
+/* Search */
 .search__input {
     flex: auto;
     height: 48px;
@@ -30,6 +83,7 @@ input {
     border-radius: 12px;
     padding-left: 20px;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
@@ -37,6 +91,7 @@ input {
 
     input {
         all: unset;
+        @include base.medium__text;
         background: transparent;
         width: 100%;
         height: 100%;
