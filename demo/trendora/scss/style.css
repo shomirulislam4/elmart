@@ -7,10 +7,6 @@
   box-sizing: border-box;
 }
 
-ul {
-  margin-bottom: 0;
-}
-
 @font-face {
   font-display: swap;
   font-family: "Inter";
@@ -69,7 +65,7 @@ h6 {
   line-height: 36px;
 }
 
-p {
+p, li {
   font-size: 18px;
   line-height: 29px;
 }
@@ -100,7 +96,7 @@ p {
     font-size: 14px;
     line-height: 22px;
   }
-  p {
+  p, li {
     font-size: 12px;
     line-height: 18px;
   }
@@ -130,7 +126,7 @@ p {
     font-size: 16px;
     line-height: 24px;
   }
-  p {
+  p, li {
     font-size: 14px;
     line-height: 21px;
   }
@@ -160,7 +156,7 @@ p {
     font-size: 17px;
     line-height: 26px;
   }
-  p {
+  p, li {
     font-size: 15px;
     line-height: 22px;
   }
@@ -190,7 +186,7 @@ p {
     font-size: 17px;
     line-height: 26px;
   }
-  p {
+  p, li {
     font-size: 15px;
     line-height: 22px;
   }
@@ -220,7 +216,7 @@ p {
     font-size: 18px;
     line-height: 28px;
   }
-  p {
+  p, li {
     font-size: 16px;
     line-height: 24px;
   }
@@ -250,7 +246,7 @@ p {
     font-size: 19px;
     line-height: 29px;
   }
-  p {
+  p, li {
     font-size: 17px;
     line-height: 26px;
   }
@@ -3533,6 +3529,7 @@ input[type=checkbox]:checked::after {
 .elt__singleproduct__section .elt__sp__info .title .eltsp__rating {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 20px;
 }
 .elt__singleproduct__section .elt__sp__info .title .eltsp__rating p {
@@ -3555,6 +3552,55 @@ input[type=checkbox]:checked::after {
   align-items: center;
   gap: 60px;
   color: #AFBACA;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__singleproduct__section .elt__sp__info .brand__category span, .elt__singleproduct__section .elt__sp__info .brand__category a {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__singleproduct__section .elt__sp__info .brand__category span, .elt__singleproduct__section .elt__sp__info .brand__category a {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__singleproduct__section .elt__sp__info .brand__category span, .elt__singleproduct__section .elt__sp__info .brand__category a {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__singleproduct__section .elt__sp__info .brand__category span, .elt__singleproduct__section .elt__sp__info .brand__category a {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .elt__singleproduct__section .elt__sp__info .brand__category span, .elt__singleproduct__section .elt__sp__info .brand__category a {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .elt__singleproduct__section .elt__sp__info .brand__category span, .elt__singleproduct__section .elt__sp__info .brand__category a {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__singleproduct__section .elt__sp__info .brand__category span, .elt__singleproduct__section .elt__sp__info .brand__category a {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__singleproduct__section .elt__sp__info .brand__category span, .elt__singleproduct__section .elt__sp__info .brand__category a {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 .elt__singleproduct__section .elt__sp__info .brand__category a {
   color: #AFBACA;
@@ -3635,7 +3681,10 @@ input[type=checkbox]:checked::after {
     line-height: 24px;
   }
 }
-.elt__singleproduct__section .elt__sp__info .features li {
+.elt__singleproduct__section .elt__sp__info .features ul {
+  margin-bottom: 0;
+}
+.elt__singleproduct__section .elt__sp__info .features ul li {
   list-style: disc;
   color: #E9EFF6;
 }
@@ -3861,6 +3910,7 @@ input[type=checkbox]:checked::after {
   display: flex;
   align-items: center;
   gap: 28px;
+  flex-wrap: wrap;
 }
 .elt__singleproduct__section .elt__sp__info .quantity .eltsp__addtocart {
   transition: 0.3s ease;
@@ -4439,17 +4489,23 @@ input[type=checkbox]:checked::after {
   color: #F27240;
 }
 
+@media (max-width: 767px) {
+  .elt__singleproduct__section .elt__sp__images .tab-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
 @media (min-width: 1640px) {
   .elt__singleproduct__section .container,
-  .elt__singleproduct__section .col-xxl-6 {
-    padding: 0;
-  }
   .elt__singleproduct__section .elt__sp__images {
     gap: 28px;
   }
+  .elt__singleproduct__section .container .thumbnails,
   .elt__singleproduct__section .elt__sp__images .thumbnails {
     gap: 28px;
   }
+  .elt__singleproduct__section .container .tab-content .tab-pane,
   .elt__singleproduct__section .elt__sp__images .tab-content .tab-pane {
     width: 660px;
     height: 722px;
@@ -4459,6 +4515,333 @@ input[type=checkbox]:checked::after {
     margin-left: auto;
   }
 }
+@media (min-width: 1701px) {
+  .elt__singleproduct__section .col-xxl-6 {
+    padding: 0;
+  }
+}
+/* Size Guide Popup */
+.elt__sizeguide__popup {
+  background: rgba(45, 54, 67, 0.2);
+  -webkit-backdrop-filter: blur(9px);
+          backdrop-filter: blur(9px);
+  transition: 0.6s ease;
+  -moz-transition: 0.6s ease;
+  -webkit-transition: 0.6s ease;
+  -ms-transition: 0.6s ease;
+  -o-transition: 0.6s ease;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 16px;
+  z-index: 999999;
+}
+.elt__sizeguide__popup.show {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 900px;
+  height: 600px;
+}
+.elt__sizeguide__popup .eltsgpp__close__btn {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+}
+.elt__sizeguide__popup .wrapper {
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.elt__sizeguide__popup .wrapper .item {
+  padding: 20px;
+  background: #2D2D32;
+  border-radius: 16px;
+}
+.elt__sizeguide__popup .wrapper .item img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 991px) {
+  .elt__sizeguide__popup.show {
+    width: 90dvw;
+  }
+}
+@media (max-width: 767px) {
+  .elt__sizeguide__popup.show {
+    height: 70dvw;
+  }
+}
+/** Product Information Section **/
+.elt__productinfo__section {
+  margin-top: 70px;
+  /*Tabs*/
+  /*Content*/
+  /*Customer Review Area*/
+}
+.elt__productinfo__section .elt__pis__nav {
+  display: flex;
+  align-items: center;
+  gap: 82px;
+  border-bottom: 1px solid #2D3643;
+  padding-bottom: 28px;
+  margin-bottom: 48px;
+}
+.elt__productinfo__section .elt__pis__nav h6 {
+  background: transparent;
+  color: #8897AE;
+  line-height: 100%;
+  margin: 0;
+}
+.elt__productinfo__section .elt__pis__nav h6.active {
+  color: #E9EFF6;
+}
+.elt__productinfo__section .elt__pis__cont .tab-pane li {
+  list-style: disc;
+}
+.elt__productinfo__section .elt__productreview p {
+  margin-bottom: 4px;
+}
+.elt__productinfo__section .elt__productreview .wrapper .title {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.elt__productinfo__section .elt__productreview .wrapper .title .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.elt__productinfo__section .elt__productreview .wrapper .title .top h3 {
+  margin-bottom: 0;
+}
+.elt__productinfo__section .elt__productreview .wrapper .title .bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.elt__productinfo__section .elt__productreview .wrapper .elt__submitted__review {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  margin-top: 30px;
+}
+.elt__productinfo__section .elt__productreview .wrapper .elt__submitted__review .elt__user__review {
+  width: 100%;
+}
+.elt__productinfo__section .elt__productreview .wrapper .elt__submitted__review .elt__user__review .eltur__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.elt__productinfo__section .elt__productreview .wrapper .elt__submitted__review .elt__user__review .eltur__top .name__image {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.elt__productinfo__section .elt__productreview .wrapper .elt__submitted__review .elt__user__review .eltur__top img {
+  height: 60px;
+  width: 60px;
+  border: 1px solid #8897AE;
+  border-radius: 50%;
+}
+.elt__productinfo__section .elt__productreview .wrapper .elt__submitted__review .elt__user__review .eltur__top .text {
+  display: flex;
+  flex-direction: column;
+}
+.elt__productinfo__section .elt__productreview .wrapper .elt__submitted__review .elt__user__review .eltur__top .text .userfullname {
+  font-weight: 600;
+  margin-bottom: 3px;
+  color: #8897AE;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__productinfo__section .elt__productreview .wrapper .elt__submitted__review .elt__user__review .eltur__top .text .userfullname {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__productinfo__section .elt__productreview .wrapper .elt__submitted__review .elt__user__review .eltur__top .text .userfullname {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__productinfo__section .elt__productreview .wrapper .elt__submitted__review .elt__user__review .eltur__top .text .userfullname {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__productinfo__section .elt__productreview .wrapper .elt__submitted__review .elt__user__review .eltur__top .text .userfullname {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .elt__productinfo__section .elt__productreview .wrapper .elt__submitted__review .elt__user__review .eltur__top .text .userfullname {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .elt__productinfo__section .elt__productreview .wrapper .elt__submitted__review .elt__user__review .eltur__top .text .userfullname {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__productinfo__section .elt__productreview .wrapper .elt__submitted__review .elt__user__review .eltur__top .text .userfullname {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__productinfo__section .elt__productreview .wrapper .elt__submitted__review .elt__user__review .eltur__top .text .userfullname {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.elt__productinfo__section .elt__productreview .wrapper .elt__submitted__review .elt__user__review .eltur__top .text .reviewsubmitdate {
+  color: #8897AE;
+  font-weight: 500;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__productinfo__section .elt__productreview .wrapper .elt__submitted__review .elt__user__review .eltur__top .text .reviewsubmitdate {
+    font-size: 11px;
+    line-height: 17px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__productinfo__section .elt__productreview .wrapper .elt__submitted__review .elt__user__review .eltur__top .text .reviewsubmitdate {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__productinfo__section .elt__productreview .wrapper .elt__submitted__review .elt__user__review .eltur__top .text .reviewsubmitdate {
+    font-size: 13px;
+    line-height: 19px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__productinfo__section .elt__productreview .wrapper .elt__submitted__review .elt__user__review .eltur__top .text .reviewsubmitdate {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .elt__productinfo__section .elt__productreview .wrapper .elt__submitted__review .elt__user__review .eltur__top .text .reviewsubmitdate {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .elt__productinfo__section .elt__productreview .wrapper .elt__submitted__review .elt__user__review .eltur__top .text .reviewsubmitdate {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__productinfo__section .elt__productreview .wrapper .elt__submitted__review .elt__user__review .eltur__top .text .reviewsubmitdate {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__productinfo__section .elt__productreview .wrapper .elt__submitted__review .elt__user__review .eltur__top .text .reviewsubmitdate {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+.elt__productinfo__section .elt__productreview .wrapper .elt__submitted__review .elt__user__review .eltur__bottom {
+  padding-left: 76px;
+}
+.elt__productinfo__section .elt__productreview .wrapper .elt__submitted__review .elt__user__review .eltur__bottom .submittedreviewtext {
+  color: #AFBACA;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__productinfo__section .elt__productreview .wrapper .elt__submitted__review .elt__user__review .eltur__bottom .submittedreviewtext {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__productinfo__section .elt__productreview .wrapper .elt__submitted__review .elt__user__review .eltur__bottom .submittedreviewtext {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__productinfo__section .elt__productreview .wrapper .elt__submitted__review .elt__user__review .eltur__bottom .submittedreviewtext {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__productinfo__section .elt__productreview .wrapper .elt__submitted__review .elt__user__review .eltur__bottom .submittedreviewtext {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .elt__productinfo__section .elt__productreview .wrapper .elt__submitted__review .elt__user__review .eltur__bottom .submittedreviewtext {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .elt__productinfo__section .elt__productreview .wrapper .elt__submitted__review .elt__user__review .eltur__bottom .submittedreviewtext {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__productinfo__section .elt__productreview .wrapper .elt__submitted__review .elt__user__review .eltur__bottom .submittedreviewtext {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__productinfo__section .elt__productreview .wrapper .elt__submitted__review .elt__user__review .eltur__bottom .submittedreviewtext {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.elt__productinfo__section .elt__review__form {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.6s;
+  -moz-transition: 0.6s;
+  -webkit-transition: 0.6s;
+  -ms-transition: 0.6s;
+  -o-transition: 0.6s;
+  margin-top: 30px;
+}
+.elt__productinfo__section .elt__review__form.show {
+  max-height: 600px;
+}
+.elt__productinfo__section .elt__review__form form {
+  padding: 0 2px;
+}
+.elt__productinfo__section .jq-ry-container {
+  padding: 0;
+  margin-bottom: 15px;
+}
+.elt__productinfo__section .star__rating {
+  display: flex;
+  gap: 5px;
+}
+
 /*** End of Single Product Section ***/
 /************ TABLE OF CONTENTS ***************
 1. Global CSS

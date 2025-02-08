@@ -325,7 +325,7 @@
 
 
 /*============================ Shop Page ============================*/
-    //All Nice Select (Shop Page)
+    //All Nice Select
     if ($('.elt__shoppage').length) {
         $('#eltShopSortingNC').niceSelect();
         $('#eltPaginationShop').niceSelect();
@@ -389,11 +389,27 @@
     });
     
 /*============================ Single Product Page ============================*/
+    //All Nice Select
+    if ($('.elt__singleprodpage').length) {
+        $('.eltReviewFilterTiming').niceSelect();
+        $('.eltReviewFilterRating').niceSelect();
+    }
+
     //Colors Select
     $(function () {
         $(".eltsp__color__visual .color__item").on("click", function () {
             $(".eltsp__color__visual .color__item").removeClass('active');
             $(this).addClass('active');
+        });
+    });
+
+    //Search Popup
+    $(function(){
+        $('.eltsp__sizeguide').on('click',function() {
+            $('.elt__sizeguide__popup').addClass('show');
+        });
+        $('.eltsgpp__close__btn').on('click',function() {
+            $('.elt__sizeguide__popup').removeClass('show');
         });
     });
 
