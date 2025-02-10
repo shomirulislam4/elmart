@@ -1,0 +1,155 @@
+@use '../base/index' as base;
+@use '../utilities/index' as utils;
+@use '../components/index' as comps;
+
+/*** Start of Wishlist Section ***/
+
+/*** End of Wishlist Section ***/
+.elt__wishlist__Section {
+    margin-top: 20px;
+
+    .wrapper {
+        overflow-x: auto;
+        white-space: nowrap;
+    
+        table tbody tr {
+            th:nth-child(1),
+            td:nth-child(1) {
+                width: 5.19%;
+                display: flex;
+                justify-content: center;
+            }
+            th:nth-child(2),
+            td:nth-child(2) {
+                width: 36.48%;
+            }
+            th:nth-child(3),
+            td:nth-child(3) {
+                width: 16.50%;
+            }
+            th:nth-child(4),
+            td:nth-child(4) {
+                width: 20.50%;
+            }
+            th:nth-child(5),
+            td:nth-child(5) {
+                width: 21.33%;
+            }
+
+            th {
+                text-align: center;
+            }
+
+            td {
+                text-align: center;
+
+                &.products {
+                    display: flex;
+                    align-items: center;
+
+                    i {
+                        @include utils.transition-03s;
+                        width: 18.16%;
+                        text-align: center;
+                        color: base.$base200;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: base.$brandPrimaryColor;
+                        }
+                    }
+
+                    .item {
+                        width: 81.84%;
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+
+                        .prod__img {
+                            height: 112px;
+                            width: 102px;
+                            border-radius: 8px;
+                            overflow: hidden;
+
+                            img {
+                                width: 100%;
+                                height: 100%
+                            }
+                        }
+
+                        .text {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 5px;
+
+                            .prod__name {
+                                @include base.medium__text;
+                                color: base.$base100;
+
+                                &:hover {
+                                    color: base.$brandPrimaryColor;
+                                }
+                            }
+
+                            .prod__info {
+                                display: flex;
+                                gap: 16px;
+                                
+                                span {
+                                    @include base.small__text;
+                                    color: base.$base400;
+                                }
+
+                                .size::before {
+                                    content: 'Size: ';
+                                }
+                                
+                                .color::before {
+                                    content: 'Color: ';
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .stock__status {
+                    @include base.medium__text;
+
+                    &.instock {
+                        color: base.$AccentGreen;
+                    }
+
+                    &.outstock {
+                        color: base.$AccentRed;
+                    }
+                }
+
+                button {
+                    @include comps.elt__button__b;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+
+    .elt__wishlist__tocart__ctas {
+        display: flex;
+        align-items: center;
+        gap: 88px;
+        margin-left: auto;
+        margin-top: 59px;
+        width: fit-content;
+        
+        .selected__to__cart {
+            @include comps.elt__button__c;
+        }
+    
+        .addall__to__cart {
+            @include comps.elt__button__a;
+        }
+    }
+}
+
+
+/*** Start of Cart Section ***/
+/*** End of Cart Section ***/
