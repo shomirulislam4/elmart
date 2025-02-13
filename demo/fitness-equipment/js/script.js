@@ -67,6 +67,27 @@
         });
     });
 
+    //Quantity Widget V2
+    $(function() {
+        $(".qty-btn").on("click", function() {
+        var $span = $(this);
+        var $parent = $span.parent(); 
+        var oldValue = $parent.find('input').val();
+        
+        if ($span.text() == "+") {
+            var newVal = parseFloat(oldValue) + 1;
+            } else {
+            // Don't allow decrementing below zero
+            if (oldValue > 1) {
+                var newVal = parseFloat(oldValue) - 1;
+                } else {
+                newVal = 1;
+            }
+            }
+            $parent.find('input').val(newVal);
+        });
+    });
+
 /*============================ Home Page ============================*/
     //Nice Select
     if ($('.fitequip__store').length) {

@@ -646,6 +646,29 @@ input[type=checkbox]:checked::after {
   background: #F27240;
 }
 
+/* Radio */
+input[type=radio] {
+  all: unset;
+  position: relative;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: transparent;
+  box-shadow: inset 0 0 0 1px #D7DFE9;
+}
+
+input[type=radio]:checked::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  height: 11px;
+  width: 11px;
+  border-radius: 50%;
+  background: #F27240;
+}
+
 /* Responsive */
 @media (min-width: 200px) and (max-width: 289px) {
   input {
@@ -2586,6 +2609,14 @@ table tbody tr td {
   }
 }
 
+@media (max-width: 991px) {
+  table {
+    overflow-x: auto;
+  }
+  table tbody {
+    width: 934px;
+  }
+}
 /*** End of Table ***/
 /* ==================== Responsive ==================== */
 @media (min-width: 200px) and (max-width: 289px) {
@@ -5540,47 +5571,46 @@ table tbody tr td {
 
 /*** End of Single Product Section ***/
 /*** Start of Wishlist Section ***/
-/*** End of Wishlist Section ***/
-.elt__wishlist__Section {
-  margin-top: 20px;
+.elt__wishlistcart__Section {
+  padding-top: 20px;
 }
-.elt__wishlist__Section .wrapper {
+.elt__wishlistcart__Section .wrapper {
   overflow-x: auto;
   white-space: nowrap;
 }
-.elt__wishlist__Section .wrapper table tbody tr th:nth-child(1),
-.elt__wishlist__Section .wrapper table tbody tr td:nth-child(1) {
+.elt__wishlistcart__Section .wrapper table tbody tr th:nth-child(1),
+.elt__wishlistcart__Section .wrapper table tbody tr td:nth-child(1) {
   width: 5.19%;
   display: flex;
   justify-content: center;
 }
-.elt__wishlist__Section .wrapper table tbody tr th:nth-child(2),
-.elt__wishlist__Section .wrapper table tbody tr td:nth-child(2) {
+.elt__wishlistcart__Section .wrapper table tbody tr th:nth-child(2),
+.elt__wishlistcart__Section .wrapper table tbody tr td:nth-child(2) {
   width: 36.48%;
 }
-.elt__wishlist__Section .wrapper table tbody tr th:nth-child(3),
-.elt__wishlist__Section .wrapper table tbody tr td:nth-child(3) {
+.elt__wishlistcart__Section .wrapper table tbody tr th:nth-child(3),
+.elt__wishlistcart__Section .wrapper table tbody tr td:nth-child(3) {
   width: 16.5%;
 }
-.elt__wishlist__Section .wrapper table tbody tr th:nth-child(4),
-.elt__wishlist__Section .wrapper table tbody tr td:nth-child(4) {
+.elt__wishlistcart__Section .wrapper table tbody tr th:nth-child(4),
+.elt__wishlistcart__Section .wrapper table tbody tr td:nth-child(4) {
   width: 20.5%;
 }
-.elt__wishlist__Section .wrapper table tbody tr th:nth-child(5),
-.elt__wishlist__Section .wrapper table tbody tr td:nth-child(5) {
+.elt__wishlistcart__Section .wrapper table tbody tr th:nth-child(5),
+.elt__wishlistcart__Section .wrapper table tbody tr td:nth-child(5) {
   width: 21.33%;
 }
-.elt__wishlist__Section .wrapper table tbody tr th {
+.elt__wishlistcart__Section .wrapper table tbody tr th {
   text-align: center;
 }
-.elt__wishlist__Section .wrapper table tbody tr td {
+.elt__wishlistcart__Section .wrapper table tbody tr td {
   text-align: center;
 }
-.elt__wishlist__Section .wrapper table tbody tr td.products {
+.elt__wishlistcart__Section .wrapper table tbody tr td.products {
   display: flex;
   align-items: center;
 }
-.elt__wishlist__Section .wrapper table tbody tr td.products i {
+.elt__wishlistcart__Section .wrapper table tbody tr td.products i {
   transition: 0.3s ease;
   -moz-transition: 0.3s ease;
   -webkit-transition: 0.3s ease;
@@ -5591,200 +5621,201 @@ table tbody tr td {
   color: #D7DFE9;
   cursor: pointer;
 }
-.elt__wishlist__Section .wrapper table tbody tr td.products i:hover {
+.elt__wishlistcart__Section .wrapper table tbody tr td.products i:hover {
   color: #F27240;
 }
-.elt__wishlist__Section .wrapper table tbody tr td.products .item {
+.elt__wishlistcart__Section .wrapper table tbody tr td.products .item {
   width: 81.84%;
   display: flex;
   align-items: center;
   gap: 20px;
 }
-.elt__wishlist__Section .wrapper table tbody tr td.products .item .prod__img {
+.elt__wishlistcart__Section .wrapper table tbody tr td.products .item .prod__img {
   height: 112px;
   width: 102px;
   border-radius: 8px;
   overflow: hidden;
+  flex-shrink: 0;
 }
-.elt__wishlist__Section .wrapper table tbody tr td.products .item .prod__img img {
+.elt__wishlistcart__Section .wrapper table tbody tr td.products .item .prod__img img {
   width: 100%;
   height: 100%;
 }
-.elt__wishlist__Section .wrapper table tbody tr td.products .item .text {
+.elt__wishlistcart__Section .wrapper table tbody tr td.products .item .text {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-.elt__wishlist__Section .wrapper table tbody tr td.products .item .text .prod__name {
+.elt__wishlistcart__Section .wrapper table tbody tr td.products .item .text .prod__name {
   color: #E9EFF6;
 }
 @media screen and (min-width: 200px) and (max-width: 289px) {
-  .elt__wishlist__Section .wrapper table tbody tr td.products .item .text .prod__name {
+  .elt__wishlistcart__Section .wrapper table tbody tr td.products .item .text .prod__name {
     font-size: 12px;
     line-height: 18px;
   }
 }
 @media screen and (min-width: 290px) and (max-width: 414px) {
-  .elt__wishlist__Section .wrapper table tbody tr td.products .item .text .prod__name {
+  .elt__wishlistcart__Section .wrapper table tbody tr td.products .item .text .prod__name {
     font-size: 13px;
     line-height: 20px;
   }
 }
 @media screen and (min-width: 415px) and (max-width: 575px) {
-  .elt__wishlist__Section .wrapper table tbody tr td.products .item .text .prod__name {
+  .elt__wishlistcart__Section .wrapper table tbody tr td.products .item .text .prod__name {
     font-size: 14px;
     line-height: 22px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
-  .elt__wishlist__Section .wrapper table tbody tr td.products .item .text .prod__name {
+  .elt__wishlistcart__Section .wrapper table tbody tr td.products .item .text .prod__name {
     font-size: 15px;
     line-height: 23px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .elt__wishlist__Section .wrapper table tbody tr td.products .item .text .prod__name {
+  .elt__wishlistcart__Section .wrapper table tbody tr td.products .item .text .prod__name {
     font-size: 16px;
     line-height: 24px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  .elt__wishlist__Section .wrapper table tbody tr td.products .item .text .prod__name {
+  .elt__wishlistcart__Section .wrapper table tbody tr td.products .item .text .prod__name {
     font-size: 16px;
     line-height: 24px;
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
-  .elt__wishlist__Section .wrapper table tbody tr td.products .item .text .prod__name {
+  .elt__wishlistcart__Section .wrapper table tbody tr td.products .item .text .prod__name {
     font-size: 16px;
     line-height: 24px;
   }
 }
 @media screen and (min-width: 1400px) and (max-width: 1920px) {
-  .elt__wishlist__Section .wrapper table tbody tr td.products .item .text .prod__name {
+  .elt__wishlistcart__Section .wrapper table tbody tr td.products .item .text .prod__name {
     font-size: 16px;
     line-height: 24px;
   }
 }
-.elt__wishlist__Section .wrapper table tbody tr td.products .item .text .prod__name:hover {
+.elt__wishlistcart__Section .wrapper table tbody tr td.products .item .text .prod__name:hover {
   color: #F27240;
 }
-.elt__wishlist__Section .wrapper table tbody tr td.products .item .text .prod__info {
+.elt__wishlistcart__Section .wrapper table tbody tr td.products .item .text .prod__info {
   display: flex;
   gap: 16px;
 }
-.elt__wishlist__Section .wrapper table tbody tr td.products .item .text .prod__info span {
+.elt__wishlistcart__Section .wrapper table tbody tr td.products .item .text .prod__info span {
   color: #8897AE;
 }
 @media screen and (min-width: 200px) and (max-width: 289px) {
-  .elt__wishlist__Section .wrapper table tbody tr td.products .item .text .prod__info span {
+  .elt__wishlistcart__Section .wrapper table tbody tr td.products .item .text .prod__info span {
     font-size: 11px;
     line-height: 17px;
   }
 }
 @media screen and (min-width: 290px) and (max-width: 414px) {
-  .elt__wishlist__Section .wrapper table tbody tr td.products .item .text .prod__info span {
+  .elt__wishlistcart__Section .wrapper table tbody tr td.products .item .text .prod__info span {
     font-size: 12px;
     line-height: 18px;
   }
 }
 @media screen and (min-width: 415px) and (max-width: 575px) {
-  .elt__wishlist__Section .wrapper table tbody tr td.products .item .text .prod__info span {
+  .elt__wishlistcart__Section .wrapper table tbody tr td.products .item .text .prod__info span {
     font-size: 13px;
     line-height: 19px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
-  .elt__wishlist__Section .wrapper table tbody tr td.products .item .text .prod__info span {
+  .elt__wishlistcart__Section .wrapper table tbody tr td.products .item .text .prod__info span {
     font-size: 14px;
     line-height: 21px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .elt__wishlist__Section .wrapper table tbody tr td.products .item .text .prod__info span {
+  .elt__wishlistcart__Section .wrapper table tbody tr td.products .item .text .prod__info span {
     font-size: 14px;
     line-height: 21px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  .elt__wishlist__Section .wrapper table tbody tr td.products .item .text .prod__info span {
+  .elt__wishlistcart__Section .wrapper table tbody tr td.products .item .text .prod__info span {
     font-size: 14px;
     line-height: 21px;
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
-  .elt__wishlist__Section .wrapper table tbody tr td.products .item .text .prod__info span {
+  .elt__wishlistcart__Section .wrapper table tbody tr td.products .item .text .prod__info span {
     font-size: 14px;
     line-height: 21px;
   }
 }
 @media screen and (min-width: 1400px) and (max-width: 1920px) {
-  .elt__wishlist__Section .wrapper table tbody tr td.products .item .text .prod__info span {
+  .elt__wishlistcart__Section .wrapper table tbody tr td.products .item .text .prod__info span {
     font-size: 14px;
     line-height: 21px;
   }
 }
-.elt__wishlist__Section .wrapper table tbody tr td.products .item .text .prod__info .size::before {
+.elt__wishlistcart__Section .wrapper table tbody tr td.products .item .text .prod__info .size::before {
   content: "Size: ";
 }
-.elt__wishlist__Section .wrapper table tbody tr td.products .item .text .prod__info .color::before {
+.elt__wishlistcart__Section .wrapper table tbody tr td.products .item .text .prod__info .color::before {
   content: "Color: ";
 }
 @media screen and (min-width: 200px) and (max-width: 289px) {
-  .elt__wishlist__Section .wrapper table tbody tr td .stock__status {
+  .elt__wishlistcart__Section .wrapper table tbody tr td .stock__status {
     font-size: 12px;
     line-height: 18px;
   }
 }
 @media screen and (min-width: 290px) and (max-width: 414px) {
-  .elt__wishlist__Section .wrapper table tbody tr td .stock__status {
+  .elt__wishlistcart__Section .wrapper table tbody tr td .stock__status {
     font-size: 13px;
     line-height: 20px;
   }
 }
 @media screen and (min-width: 415px) and (max-width: 575px) {
-  .elt__wishlist__Section .wrapper table tbody tr td .stock__status {
+  .elt__wishlistcart__Section .wrapper table tbody tr td .stock__status {
     font-size: 14px;
     line-height: 22px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
-  .elt__wishlist__Section .wrapper table tbody tr td .stock__status {
+  .elt__wishlistcart__Section .wrapper table tbody tr td .stock__status {
     font-size: 15px;
     line-height: 23px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .elt__wishlist__Section .wrapper table tbody tr td .stock__status {
+  .elt__wishlistcart__Section .wrapper table tbody tr td .stock__status {
     font-size: 16px;
     line-height: 24px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  .elt__wishlist__Section .wrapper table tbody tr td .stock__status {
+  .elt__wishlistcart__Section .wrapper table tbody tr td .stock__status {
     font-size: 16px;
     line-height: 24px;
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
-  .elt__wishlist__Section .wrapper table tbody tr td .stock__status {
+  .elt__wishlistcart__Section .wrapper table tbody tr td .stock__status {
     font-size: 16px;
     line-height: 24px;
   }
 }
 @media screen and (min-width: 1400px) and (max-width: 1920px) {
-  .elt__wishlist__Section .wrapper table tbody tr td .stock__status {
+  .elt__wishlistcart__Section .wrapper table tbody tr td .stock__status {
     font-size: 16px;
     line-height: 24px;
   }
 }
-.elt__wishlist__Section .wrapper table tbody tr td .stock__status.instock {
+.elt__wishlistcart__Section .wrapper table tbody tr td .stock__status.instock {
   color: #3DEB64;
 }
-.elt__wishlist__Section .wrapper table tbody tr td .stock__status.outstock {
+.elt__wishlistcart__Section .wrapper table tbody tr td .stock__status.outstock {
   color: #F13648;
 }
-.elt__wishlist__Section .wrapper table tbody tr td button {
+.elt__wishlistcart__Section .wrapper table tbody tr td .eltwishlist__addtocart {
   transition: 0.3s ease;
   -moz-transition: 0.3s ease;
   -webkit-transition: 0.3s ease;
@@ -5809,146 +5840,146 @@ table tbody tr td {
   margin: 0 auto;
 }
 @media screen and (min-width: 200px) and (max-width: 289px) {
-  .elt__wishlist__Section .wrapper table tbody tr td button {
+  .elt__wishlistcart__Section .wrapper table tbody tr td .eltwishlist__addtocart {
     font-size: 12px;
     line-height: 18px;
   }
 }
 @media screen and (min-width: 290px) and (max-width: 414px) {
-  .elt__wishlist__Section .wrapper table tbody tr td button {
+  .elt__wishlistcart__Section .wrapper table tbody tr td .eltwishlist__addtocart {
     font-size: 13px;
     line-height: 20px;
   }
 }
 @media screen and (min-width: 415px) and (max-width: 575px) {
-  .elt__wishlist__Section .wrapper table tbody tr td button {
+  .elt__wishlistcart__Section .wrapper table tbody tr td .eltwishlist__addtocart {
     font-size: 14px;
     line-height: 22px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
-  .elt__wishlist__Section .wrapper table tbody tr td button {
+  .elt__wishlistcart__Section .wrapper table tbody tr td .eltwishlist__addtocart {
     font-size: 15px;
     line-height: 23px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .elt__wishlist__Section .wrapper table tbody tr td button {
+  .elt__wishlistcart__Section .wrapper table tbody tr td .eltwishlist__addtocart {
     font-size: 16px;
     line-height: 24px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  .elt__wishlist__Section .wrapper table tbody tr td button {
+  .elt__wishlistcart__Section .wrapper table tbody tr td .eltwishlist__addtocart {
     font-size: 16px;
     line-height: 24px;
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
-  .elt__wishlist__Section .wrapper table tbody tr td button {
+  .elt__wishlistcart__Section .wrapper table tbody tr td .eltwishlist__addtocart {
     font-size: 16px;
     line-height: 24px;
   }
 }
 @media screen and (min-width: 1400px) and (max-width: 1920px) {
-  .elt__wishlist__Section .wrapper table tbody tr td button {
+  .elt__wishlistcart__Section .wrapper table tbody tr td .eltwishlist__addtocart {
     font-size: 16px;
     line-height: 24px;
   }
 }
-.elt__wishlist__Section .wrapper table tbody tr td button svg {
+.elt__wishlistcart__Section .wrapper table tbody tr td .eltwishlist__addtocart svg {
   height: 24px;
   width: 24px;
   stroke: #E9EFF6;
 }
 @media screen and (min-width: 200px) and (max-width: 289px) {
-  .elt__wishlist__Section .wrapper table tbody tr td button {
+  .elt__wishlistcart__Section .wrapper table tbody tr td .eltwishlist__addtocart {
     padding: 0 12px;
     gap: 5px;
   }
 }
 @media screen and (min-width: 290px) and (max-width: 414px) {
-  .elt__wishlist__Section .wrapper table tbody tr td button {
+  .elt__wishlistcart__Section .wrapper table tbody tr td .eltwishlist__addtocart {
     padding: 0 14px;
     gap: 7px;
   }
 }
 @media screen and (min-width: 415px) and (max-width: 575px) {
-  .elt__wishlist__Section .wrapper table tbody tr td button {
+  .elt__wishlistcart__Section .wrapper table tbody tr td .eltwishlist__addtocart {
     padding: 0 16px;
     gap: 9px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
-  .elt__wishlist__Section .wrapper table tbody tr td button {
+  .elt__wishlistcart__Section .wrapper table tbody tr td .eltwishlist__addtocart {
     padding: 0 18px;
     gap: 11px;
   }
 }
 @media screen and (min-width: 200px) and (max-width: 289px) {
-  .elt__wishlist__Section .wrapper table tbody tr td button {
+  .elt__wishlistcart__Section .wrapper table tbody tr td .eltwishlist__addtocart {
     padding: 0 12px;
     gap: 5px;
     height: 38px;
   }
-  .elt__wishlist__Section .wrapper table tbody tr td button svg {
+  .elt__wishlistcart__Section .wrapper table tbody tr td .eltwishlist__addtocart svg {
     height: 14px;
     width: 14px;
   }
 }
 @media screen and (min-width: 290px) and (max-width: 414px) {
-  .elt__wishlist__Section .wrapper table tbody tr td button {
+  .elt__wishlistcart__Section .wrapper table tbody tr td .eltwishlist__addtocart {
     padding: 0 14px;
     gap: 7px;
     height: 42px;
   }
-  .elt__wishlist__Section .wrapper table tbody tr td button svg {
+  .elt__wishlistcart__Section .wrapper table tbody tr td .eltwishlist__addtocart svg {
     height: 16px;
     width: 16px;
   }
 }
 @media screen and (min-width: 415px) and (max-width: 575px) {
-  .elt__wishlist__Section .wrapper table tbody tr td button {
+  .elt__wishlistcart__Section .wrapper table tbody tr td .eltwishlist__addtocart {
     padding: 0 16px;
     gap: 9px;
     height: 44px;
   }
-  .elt__wishlist__Section .wrapper table tbody tr td button svg {
+  .elt__wishlistcart__Section .wrapper table tbody tr td .eltwishlist__addtocart svg {
     height: 18px;
     width: 18px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
-  .elt__wishlist__Section .wrapper table tbody tr td button {
+  .elt__wishlistcart__Section .wrapper table tbody tr td .eltwishlist__addtocart {
     padding: 0 18px;
     gap: 11px;
     height: 46px;
   }
-  .elt__wishlist__Section .wrapper table tbody tr td button svg {
+  .elt__wishlistcart__Section .wrapper table tbody tr td .eltwishlist__addtocart svg {
     height: 20px;
     width: 20px;
   }
 }
-.elt__wishlist__Section .wrapper table tbody tr td button:hover {
+.elt__wishlistcart__Section .wrapper table tbody tr td .eltwishlist__addtocart:hover {
   background: #3F2B28;
 }
-.elt__wishlist__Section .wrapper table tbody tr td button:active {
+.elt__wishlistcart__Section .wrapper table tbody tr td .eltwishlist__addtocart:active {
   background: #312321;
   box-shadow: 0 0 0 4px #3F2B28;
 }
-.elt__wishlist__Section .wrapper table tbody tr td button svg {
+.elt__wishlistcart__Section .wrapper table tbody tr td .eltwishlist__addtocart svg {
   stroke: #F27240;
 }
-.elt__wishlist__Section .wrapper table tbody tr td button:disabled {
+.elt__wishlistcart__Section .wrapper table tbody tr td .eltwishlist__addtocart:disabled {
   background: #2D2D32;
   color: #5E718D;
   cursor: not-allowed;
   box-shadow: none;
 }
-.elt__wishlist__Section .wrapper table tbody tr td button:disabled svg {
+.elt__wishlistcart__Section .wrapper table tbody tr td .eltwishlist__addtocart:disabled svg {
   stroke: #5E718D;
 }
-.elt__wishlist__Section .elt__wishlist__tocart__ctas {
+.elt__wishlistcart__Section .elt__wishlist__tocart__ctas {
   display: flex;
   align-items: center;
   gap: 88px;
@@ -5957,7 +5988,7 @@ table tbody tr td {
   width: -moz-fit-content;
   width: fit-content;
 }
-.elt__wishlist__Section .elt__wishlist__tocart__ctas .selected__to__cart {
+.elt__wishlistcart__Section .elt__wishlist__tocart__ctas .selected__to__cart {
   transition: 0.3s ease;
   -moz-transition: 0.3s ease;
   -webkit-transition: 0.3s ease;
@@ -5982,147 +6013,147 @@ table tbody tr td {
   border: 1px solid #F27240;
 }
 @media screen and (min-width: 200px) and (max-width: 289px) {
-  .elt__wishlist__Section .elt__wishlist__tocart__ctas .selected__to__cart {
+  .elt__wishlistcart__Section .elt__wishlist__tocart__ctas .selected__to__cart {
     font-size: 12px;
     line-height: 18px;
   }
 }
 @media screen and (min-width: 290px) and (max-width: 414px) {
-  .elt__wishlist__Section .elt__wishlist__tocart__ctas .selected__to__cart {
+  .elt__wishlistcart__Section .elt__wishlist__tocart__ctas .selected__to__cart {
     font-size: 13px;
     line-height: 20px;
   }
 }
 @media screen and (min-width: 415px) and (max-width: 575px) {
-  .elt__wishlist__Section .elt__wishlist__tocart__ctas .selected__to__cart {
+  .elt__wishlistcart__Section .elt__wishlist__tocart__ctas .selected__to__cart {
     font-size: 14px;
     line-height: 22px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
-  .elt__wishlist__Section .elt__wishlist__tocart__ctas .selected__to__cart {
+  .elt__wishlistcart__Section .elt__wishlist__tocart__ctas .selected__to__cart {
     font-size: 15px;
     line-height: 23px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .elt__wishlist__Section .elt__wishlist__tocart__ctas .selected__to__cart {
+  .elt__wishlistcart__Section .elt__wishlist__tocart__ctas .selected__to__cart {
     font-size: 16px;
     line-height: 24px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  .elt__wishlist__Section .elt__wishlist__tocart__ctas .selected__to__cart {
+  .elt__wishlistcart__Section .elt__wishlist__tocart__ctas .selected__to__cart {
     font-size: 16px;
     line-height: 24px;
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
-  .elt__wishlist__Section .elt__wishlist__tocart__ctas .selected__to__cart {
+  .elt__wishlistcart__Section .elt__wishlist__tocart__ctas .selected__to__cart {
     font-size: 16px;
     line-height: 24px;
   }
 }
 @media screen and (min-width: 1400px) and (max-width: 1920px) {
-  .elt__wishlist__Section .elt__wishlist__tocart__ctas .selected__to__cart {
+  .elt__wishlistcart__Section .elt__wishlist__tocart__ctas .selected__to__cart {
     font-size: 16px;
     line-height: 24px;
   }
 }
-.elt__wishlist__Section .elt__wishlist__tocart__ctas .selected__to__cart svg {
+.elt__wishlistcart__Section .elt__wishlist__tocart__ctas .selected__to__cart svg {
   height: 24px;
   width: 24px;
   stroke: #E9EFF6;
 }
 @media screen and (min-width: 200px) and (max-width: 289px) {
-  .elt__wishlist__Section .elt__wishlist__tocart__ctas .selected__to__cart {
+  .elt__wishlistcart__Section .elt__wishlist__tocart__ctas .selected__to__cart {
     padding: 0 12px;
     gap: 5px;
   }
 }
 @media screen and (min-width: 290px) and (max-width: 414px) {
-  .elt__wishlist__Section .elt__wishlist__tocart__ctas .selected__to__cart {
+  .elt__wishlistcart__Section .elt__wishlist__tocart__ctas .selected__to__cart {
     padding: 0 14px;
     gap: 7px;
   }
 }
 @media screen and (min-width: 415px) and (max-width: 575px) {
-  .elt__wishlist__Section .elt__wishlist__tocart__ctas .selected__to__cart {
+  .elt__wishlistcart__Section .elt__wishlist__tocart__ctas .selected__to__cart {
     padding: 0 16px;
     gap: 9px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
-  .elt__wishlist__Section .elt__wishlist__tocart__ctas .selected__to__cart {
+  .elt__wishlistcart__Section .elt__wishlist__tocart__ctas .selected__to__cart {
     padding: 0 18px;
     gap: 11px;
   }
 }
 @media screen and (min-width: 200px) and (max-width: 289px) {
-  .elt__wishlist__Section .elt__wishlist__tocart__ctas .selected__to__cart {
+  .elt__wishlistcart__Section .elt__wishlist__tocart__ctas .selected__to__cart {
     padding: 0 12px;
     gap: 5px;
     height: 38px;
   }
-  .elt__wishlist__Section .elt__wishlist__tocart__ctas .selected__to__cart svg {
+  .elt__wishlistcart__Section .elt__wishlist__tocart__ctas .selected__to__cart svg {
     height: 14px;
     width: 14px;
   }
 }
 @media screen and (min-width: 290px) and (max-width: 414px) {
-  .elt__wishlist__Section .elt__wishlist__tocart__ctas .selected__to__cart {
+  .elt__wishlistcart__Section .elt__wishlist__tocart__ctas .selected__to__cart {
     padding: 0 14px;
     gap: 7px;
     height: 42px;
   }
-  .elt__wishlist__Section .elt__wishlist__tocart__ctas .selected__to__cart svg {
+  .elt__wishlistcart__Section .elt__wishlist__tocart__ctas .selected__to__cart svg {
     height: 16px;
     width: 16px;
   }
 }
 @media screen and (min-width: 415px) and (max-width: 575px) {
-  .elt__wishlist__Section .elt__wishlist__tocart__ctas .selected__to__cart {
+  .elt__wishlistcart__Section .elt__wishlist__tocart__ctas .selected__to__cart {
     padding: 0 16px;
     gap: 9px;
     height: 44px;
   }
-  .elt__wishlist__Section .elt__wishlist__tocart__ctas .selected__to__cart svg {
+  .elt__wishlistcart__Section .elt__wishlist__tocart__ctas .selected__to__cart svg {
     height: 18px;
     width: 18px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
-  .elt__wishlist__Section .elt__wishlist__tocart__ctas .selected__to__cart {
+  .elt__wishlistcart__Section .elt__wishlist__tocart__ctas .selected__to__cart {
     padding: 0 18px;
     gap: 11px;
     height: 46px;
   }
-  .elt__wishlist__Section .elt__wishlist__tocart__ctas .selected__to__cart svg {
+  .elt__wishlistcart__Section .elt__wishlist__tocart__ctas .selected__to__cart svg {
     height: 20px;
     width: 20px;
   }
 }
-.elt__wishlist__Section .elt__wishlist__tocart__ctas .selected__to__cart svg {
+.elt__wishlistcart__Section .elt__wishlist__tocart__ctas .selected__to__cart svg {
   stroke: #F27240;
 }
-.elt__wishlist__Section .elt__wishlist__tocart__ctas .selected__to__cart:hover {
+.elt__wishlistcart__Section .elt__wishlist__tocart__ctas .selected__to__cart:hover {
   background: #312321;
 }
-.elt__wishlist__Section .elt__wishlist__tocart__ctas .selected__to__cart:active {
+.elt__wishlistcart__Section .elt__wishlist__tocart__ctas .selected__to__cart:active {
   background: #312321;
   box-shadow: 0 0 0 4px #3F2B28;
 }
-.elt__wishlist__Section .elt__wishlist__tocart__ctas .selected__to__cart:disabled {
+.elt__wishlistcart__Section .elt__wishlist__tocart__ctas .selected__to__cart:disabled {
   color: #5E718D;
   background: #1C1C20;
   border: 1px solid #2D2D32;
   cursor: not-allowed;
   box-shadow: none;
 }
-.elt__wishlist__Section .elt__wishlist__tocart__ctas .selected__to__cart:disabled svg {
+.elt__wishlistcart__Section .elt__wishlist__tocart__ctas .selected__to__cart:disabled svg {
   stroke: #5E718D;
 }
-.elt__wishlist__Section .elt__wishlist__tocart__ctas .addall__to__cart {
+.elt__wishlistcart__Section .elt__wishlist__tocart__ctas .addall__to__cart {
   transition: 0.3s ease;
   -moz-transition: 0.3s ease;
   -webkit-transition: 0.3s ease;
@@ -6145,144 +6176,715 @@ table tbody tr td {
   background: #F27240;
 }
 @media screen and (min-width: 200px) and (max-width: 289px) {
-  .elt__wishlist__Section .elt__wishlist__tocart__ctas .addall__to__cart {
+  .elt__wishlistcart__Section .elt__wishlist__tocart__ctas .addall__to__cart {
     font-size: 12px;
     line-height: 18px;
   }
 }
 @media screen and (min-width: 290px) and (max-width: 414px) {
-  .elt__wishlist__Section .elt__wishlist__tocart__ctas .addall__to__cart {
+  .elt__wishlistcart__Section .elt__wishlist__tocart__ctas .addall__to__cart {
     font-size: 13px;
     line-height: 20px;
   }
 }
 @media screen and (min-width: 415px) and (max-width: 575px) {
-  .elt__wishlist__Section .elt__wishlist__tocart__ctas .addall__to__cart {
+  .elt__wishlistcart__Section .elt__wishlist__tocart__ctas .addall__to__cart {
     font-size: 14px;
     line-height: 22px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
-  .elt__wishlist__Section .elt__wishlist__tocart__ctas .addall__to__cart {
+  .elt__wishlistcart__Section .elt__wishlist__tocart__ctas .addall__to__cart {
     font-size: 15px;
     line-height: 23px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .elt__wishlist__Section .elt__wishlist__tocart__ctas .addall__to__cart {
+  .elt__wishlistcart__Section .elt__wishlist__tocart__ctas .addall__to__cart {
     font-size: 16px;
     line-height: 24px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  .elt__wishlist__Section .elt__wishlist__tocart__ctas .addall__to__cart {
+  .elt__wishlistcart__Section .elt__wishlist__tocart__ctas .addall__to__cart {
     font-size: 16px;
     line-height: 24px;
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
-  .elt__wishlist__Section .elt__wishlist__tocart__ctas .addall__to__cart {
+  .elt__wishlistcart__Section .elt__wishlist__tocart__ctas .addall__to__cart {
     font-size: 16px;
     line-height: 24px;
   }
 }
 @media screen and (min-width: 1400px) and (max-width: 1920px) {
-  .elt__wishlist__Section .elt__wishlist__tocart__ctas .addall__to__cart {
+  .elt__wishlistcart__Section .elt__wishlist__tocart__ctas .addall__to__cart {
     font-size: 16px;
     line-height: 24px;
   }
 }
-.elt__wishlist__Section .elt__wishlist__tocart__ctas .addall__to__cart svg {
+.elt__wishlistcart__Section .elt__wishlist__tocart__ctas .addall__to__cart svg {
   height: 24px;
   width: 24px;
   stroke: #E9EFF6;
 }
 @media screen and (min-width: 200px) and (max-width: 289px) {
-  .elt__wishlist__Section .elt__wishlist__tocart__ctas .addall__to__cart {
+  .elt__wishlistcart__Section .elt__wishlist__tocart__ctas .addall__to__cart {
     padding: 0 12px;
     gap: 5px;
   }
 }
 @media screen and (min-width: 290px) and (max-width: 414px) {
-  .elt__wishlist__Section .elt__wishlist__tocart__ctas .addall__to__cart {
+  .elt__wishlistcart__Section .elt__wishlist__tocart__ctas .addall__to__cart {
     padding: 0 14px;
     gap: 7px;
   }
 }
 @media screen and (min-width: 415px) and (max-width: 575px) {
-  .elt__wishlist__Section .elt__wishlist__tocart__ctas .addall__to__cart {
+  .elt__wishlistcart__Section .elt__wishlist__tocart__ctas .addall__to__cart {
     padding: 0 16px;
     gap: 9px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
-  .elt__wishlist__Section .elt__wishlist__tocart__ctas .addall__to__cart {
+  .elt__wishlistcart__Section .elt__wishlist__tocart__ctas .addall__to__cart {
     padding: 0 18px;
     gap: 11px;
   }
 }
 @media screen and (min-width: 200px) and (max-width: 289px) {
-  .elt__wishlist__Section .elt__wishlist__tocart__ctas .addall__to__cart {
+  .elt__wishlistcart__Section .elt__wishlist__tocart__ctas .addall__to__cart {
     padding: 0 12px;
     gap: 5px;
     height: 38px;
   }
-  .elt__wishlist__Section .elt__wishlist__tocart__ctas .addall__to__cart svg {
+  .elt__wishlistcart__Section .elt__wishlist__tocart__ctas .addall__to__cart svg {
     height: 14px;
     width: 14px;
   }
 }
 @media screen and (min-width: 290px) and (max-width: 414px) {
-  .elt__wishlist__Section .elt__wishlist__tocart__ctas .addall__to__cart {
+  .elt__wishlistcart__Section .elt__wishlist__tocart__ctas .addall__to__cart {
     padding: 0 14px;
     gap: 7px;
     height: 42px;
   }
-  .elt__wishlist__Section .elt__wishlist__tocart__ctas .addall__to__cart svg {
+  .elt__wishlistcart__Section .elt__wishlist__tocart__ctas .addall__to__cart svg {
     height: 16px;
     width: 16px;
   }
 }
 @media screen and (min-width: 415px) and (max-width: 575px) {
-  .elt__wishlist__Section .elt__wishlist__tocart__ctas .addall__to__cart {
+  .elt__wishlistcart__Section .elt__wishlist__tocart__ctas .addall__to__cart {
     padding: 0 16px;
     gap: 9px;
     height: 44px;
   }
-  .elt__wishlist__Section .elt__wishlist__tocart__ctas .addall__to__cart svg {
+  .elt__wishlistcart__Section .elt__wishlist__tocart__ctas .addall__to__cart svg {
     height: 18px;
     width: 18px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
-  .elt__wishlist__Section .elt__wishlist__tocart__ctas .addall__to__cart {
+  .elt__wishlistcart__Section .elt__wishlist__tocart__ctas .addall__to__cart {
     padding: 0 18px;
     gap: 11px;
     height: 46px;
   }
-  .elt__wishlist__Section .elt__wishlist__tocart__ctas .addall__to__cart svg {
+  .elt__wishlistcart__Section .elt__wishlist__tocart__ctas .addall__to__cart svg {
     height: 20px;
     width: 20px;
   }
 }
-.elt__wishlist__Section .elt__wishlist__tocart__ctas .addall__to__cart:hover {
+.elt__wishlistcart__Section .elt__wishlist__tocart__ctas .addall__to__cart:hover {
   background: #E0531B;
 }
-.elt__wishlist__Section .elt__wishlist__tocart__ctas .addall__to__cart:active {
+.elt__wishlistcart__Section .elt__wishlist__tocart__ctas .addall__to__cart:active {
   background: #E0531B;
   box-shadow: 0 0 0 4px #3F2B28;
 }
-.elt__wishlist__Section .elt__wishlist__tocart__ctas .addall__to__cart:disabled {
+.elt__wishlistcart__Section .elt__wishlist__tocart__ctas .addall__to__cart:disabled {
   background: #2D2D32;
   color: #5E718D;
   cursor: not-allowed;
   box-shadow: none;
 }
-.elt__wishlist__Section .elt__wishlist__tocart__ctas .addall__to__cart:disabled svg {
+.elt__wishlistcart__Section .elt__wishlist__tocart__ctas .addall__to__cart:disabled svg {
   stroke: #5E718D;
 }
 
+@media (max-width: 1199px) {
+  .elt__wishlist__Section .wrapper table tbody tr th:nth-child(2),
+  .elt__wishlist__Section .wrapper table tbody tr td:nth-child(2) {
+    width: 43.48%;
+  }
+  .elt__wishlist__Section .wrapper table tbody tr th:nth-child(3),
+  .elt__wishlist__Section .wrapper table tbody tr td:nth-child(3) {
+    width: 14.5%;
+  }
+  .elt__wishlist__Section .wrapper table tbody tr th:nth-child(4),
+  .elt__wishlist__Section .wrapper table tbody tr td:nth-child(4) {
+    width: 15.5%;
+  }
+  .elt__wishlist__Section .wrapper table tbody tr td.products i {
+    width: 14.16%;
+  }
+  .elt__wishlist__Section .wrapper table tbody tr td.products .item {
+    width: 85.84%;
+  }
+}
+/*** End of Wishlist Section ***/
 /*** Start of Cart Section ***/
+.elt__cartpage .elt__wishlistcart__Section .wrapper table tbody tr th:nth-child(1),
+.elt__cartpage .elt__wishlistcart__Section .wrapper table tbody tr td:nth-child(1) {
+  width: 34.2%;
+}
+.elt__cartpage .elt__wishlistcart__Section .wrapper table tbody tr th:nth-child(1) .item,
+.elt__cartpage .elt__wishlistcart__Section .wrapper table tbody tr td:nth-child(1) .item {
+  width: 100%;
+}
+.elt__cartpage .elt__wishlistcart__Section .wrapper table tbody tr th:nth-child(2),
+.elt__cartpage .elt__wishlistcart__Section .wrapper table tbody tr td:nth-child(2) {
+  width: 16.45%;
+}
+.elt__cartpage .elt__wishlistcart__Section .wrapper table tbody tr th:nth-child(3),
+.elt__cartpage .elt__wishlistcart__Section .wrapper table tbody tr td:nth-child(3) {
+  width: 16.45%;
+}
+.elt__cartpage .elt__wishlistcart__Section .wrapper table tbody tr th:nth-child(4),
+.elt__cartpage .elt__wishlistcart__Section .wrapper table tbody tr td:nth-child(4) {
+  width: 16.45%;
+}
+.elt__cartpage .elt__wishlistcart__Section .wrapper table tbody tr th:nth-child(5),
+.elt__cartpage .elt__wishlistcart__Section .wrapper table tbody tr td:nth-child(5) {
+  width: 16.45%;
+}
+.elt__cartpage .elt__wishlistcart__Section .wrapper table tbody tr td .elt__quantity__widget {
+  margin: 0 auto;
+}
+.elt__cartpage .elt__wishlistcart__Section .wrapper table tbody tr td .eltcart__removefromcart {
+  width: 50%;
+  background: transparent;
+}
+.elt__cartpage .elt__wishlistcart__Section .wrapper table tbody tr td .eltcart__removefromcart svg {
+  stroke: #F13648;
+}
+.elt__cartpage .elt__wishlistcart__Section .wrapper table tbody tr td .eltcart__removefromcart:hover svg {
+  stroke: #E9EFF6;
+}
+.elt__cartpage .elt__wishlistcart__Section .elt__cart__totals {
+  padding: 28px;
+  width: 100%;
+  background: #212126;
+  border-radius: 20px;
+}
+.elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .all__info {
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .all__info h6, .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .all__info span {
+  color: #E9EFF6;
+  margin-bottom: 0;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .all__info span {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .all__info span {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .all__info span {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .all__info span {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .all__info span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .all__info span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .all__info span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .all__info span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .all__info .subtotal__text {
+  border-top: 1px solid #2D3643;
+  border-bottom: 1px solid #2D3643;
+  padding: 28px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .all__info .subtotal__text .top,
+.elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .all__info .subtotal__text .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .all__info .subtotal__text .bottom form {
+  align-items: flex-end;
+}
+.elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .all__info .subtotal__text .bottom form label {
+  color: #AFBACA;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .all__info .subtotal__text .bottom form label {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .all__info .subtotal__text .bottom form label {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .all__info .subtotal__text .bottom form label {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .all__info .subtotal__text .bottom form label {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .all__info .subtotal__text .bottom form label {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .all__info .subtotal__text .bottom form label {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .all__info .subtotal__text .bottom form label {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .all__info .subtotal__text .bottom form label {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .all__info .subtotal__text .bottom form label span {
+  color: #AFBACA;
+}
+.elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .all__info .total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .eltcart__checkout__btn {
+  transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  height: 48px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 24px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  color: #E9EFF6;
+  font-weight: 500;
+  text-align: center;
+  text-transform: capitalize;
+  cursor: pointer;
+  background: #F27240;
+  width: 100%;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .eltcart__checkout__btn {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .eltcart__checkout__btn {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .eltcart__checkout__btn {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .eltcart__checkout__btn {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .eltcart__checkout__btn {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .eltcart__checkout__btn {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .eltcart__checkout__btn {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .eltcart__checkout__btn {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .eltcart__checkout__btn svg {
+  height: 24px;
+  width: 24px;
+  stroke: #E9EFF6;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .eltcart__checkout__btn {
+    padding: 0 12px;
+    gap: 5px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .eltcart__checkout__btn {
+    padding: 0 14px;
+    gap: 7px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .eltcart__checkout__btn {
+    padding: 0 16px;
+    gap: 9px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .eltcart__checkout__btn {
+    padding: 0 18px;
+    gap: 11px;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .eltcart__checkout__btn {
+    padding: 0 12px;
+    gap: 5px;
+    height: 38px;
+  }
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .eltcart__checkout__btn svg {
+    height: 14px;
+    width: 14px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .eltcart__checkout__btn {
+    padding: 0 14px;
+    gap: 7px;
+    height: 42px;
+  }
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .eltcart__checkout__btn svg {
+    height: 16px;
+    width: 16px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .eltcart__checkout__btn {
+    padding: 0 16px;
+    gap: 9px;
+    height: 44px;
+  }
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .eltcart__checkout__btn svg {
+    height: 18px;
+    width: 18px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .eltcart__checkout__btn {
+    padding: 0 18px;
+    gap: 11px;
+    height: 46px;
+  }
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .eltcart__checkout__btn svg {
+    height: 20px;
+    width: 20px;
+  }
+}
+.elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .eltcart__checkout__btn:hover {
+  background: #E0531B;
+}
+.elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .eltcart__checkout__btn:active {
+  background: #E0531B;
+  box-shadow: 0 0 0 4px #3F2B28;
+}
+.elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .eltcart__checkout__btn:disabled {
+  background: #2D2D32;
+  color: #5E718D;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+.elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .eltcart__checkout__btn:disabled svg {
+  stroke: #5E718D;
+}
+
+.elt__coupon__code {
+  margin-top: 60px;
+}
+.elt__coupon__code form {
+  width: 523px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+.elt__coupon__code form input {
+  flex: auto;
+}
+.elt__coupon__code form button {
+  transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  height: 48px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 24px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  color: #E9EFF6;
+  font-weight: 500;
+  text-align: center;
+  text-transform: capitalize;
+  cursor: pointer;
+  background: #312321;
+  color: #F27240;
+  width: 157px;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__coupon__code form button {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__coupon__code form button {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__coupon__code form button {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__coupon__code form button {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .elt__coupon__code form button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .elt__coupon__code form button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__coupon__code form button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__coupon__code form button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.elt__coupon__code form button svg {
+  height: 24px;
+  width: 24px;
+  stroke: #E9EFF6;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__coupon__code form button {
+    padding: 0 12px;
+    gap: 5px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__coupon__code form button {
+    padding: 0 14px;
+    gap: 7px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__coupon__code form button {
+    padding: 0 16px;
+    gap: 9px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__coupon__code form button {
+    padding: 0 18px;
+    gap: 11px;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__coupon__code form button {
+    padding: 0 12px;
+    gap: 5px;
+    height: 38px;
+  }
+  .elt__coupon__code form button svg {
+    height: 14px;
+    width: 14px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__coupon__code form button {
+    padding: 0 14px;
+    gap: 7px;
+    height: 42px;
+  }
+  .elt__coupon__code form button svg {
+    height: 16px;
+    width: 16px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__coupon__code form button {
+    padding: 0 16px;
+    gap: 9px;
+    height: 44px;
+  }
+  .elt__coupon__code form button svg {
+    height: 18px;
+    width: 18px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__coupon__code form button {
+    padding: 0 18px;
+    gap: 11px;
+    height: 46px;
+  }
+  .elt__coupon__code form button svg {
+    height: 20px;
+    width: 20px;
+  }
+}
+.elt__coupon__code form button:hover {
+  background: #3F2B28;
+}
+.elt__coupon__code form button:active {
+  background: #312321;
+  box-shadow: 0 0 0 4px #3F2B28;
+}
+.elt__coupon__code form button svg {
+  stroke: #F27240;
+}
+.elt__coupon__code form button:disabled {
+  background: #2D2D32;
+  color: #5E718D;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+.elt__coupon__code form button:disabled svg {
+  stroke: #5E718D;
+}
+
+@media (min-width: 1200px) and (max-width: 1639px) {
+  .elt__cartpage .elt__wishlistcart__Section .wrapper table tbody tr th:nth-child(1),
+  .elt__cartpage .elt__wishlistcart__Section .wrapper table tbody tr td:nth-child(1) {
+    width: 39.1%;
+  }
+  .elt__cartpage .elt__wishlistcart__Section .wrapper table tbody tr th:nth-child(2),
+  .elt__cartpage .elt__wishlistcart__Section .wrapper table tbody tr td:nth-child(2) {
+    width: 14%;
+  }
+  .elt__cartpage .elt__wishlistcart__Section .wrapper table tbody tr th:nth-child(3),
+  .elt__cartpage .elt__wishlistcart__Section .wrapper table tbody tr td:nth-child(3) {
+    width: 20%;
+  }
+  .elt__cartpage .elt__wishlistcart__Section .wrapper table tbody tr th:nth-child(4),
+  .elt__cartpage .elt__wishlistcart__Section .wrapper table tbody tr td:nth-child(4) {
+    width: 12.45%;
+  }
+  .elt__cartpage .elt__wishlistcart__Section .wrapper table tbody tr th:nth-child(5),
+  .elt__cartpage .elt__wishlistcart__Section .wrapper table tbody tr td:nth-child(5) {
+    width: 14.45%;
+  }
+}
+@media (max-width: 1399px) {
+  .elt__cartpage .elt__wishlistcart__Section .wrapper {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .elt__cartpage .elt__wishlistcart__Section .wrapper table {
+    width: 910px;
+  }
+}
 /*** End of Cart Section ***/
 /************ TABLE OF CONTENTS ***************
 1. Global CSS
@@ -6675,6 +7277,7 @@ header .wrapper .header__cta button:hover {
   height: -moz-fit-content;
   height: fit-content;
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 10px;
 }

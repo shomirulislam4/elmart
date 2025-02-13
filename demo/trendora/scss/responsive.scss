@@ -577,6 +577,15 @@
                 padding-left: 46px;
             }
         }
+    /*===== Cart & Wishlist Page =====*/
+        /*Wishlist*/
+        .elt__wishlistcart__Section .elt__wishlist__tocart__ctas {
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 25px;
+            align-items: center;
+            width: 100%;
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
@@ -1097,6 +1106,15 @@
                 padding-left: 60px;
             }
         }
+    /*===== Cart & Wishlist Page =====*/
+        /*Wishlist*/
+        .elt__wishlistcart__Section .elt__wishlist__tocart__ctas {
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 30px;
+            align-items: center;
+            width: 100%;
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -1490,6 +1508,12 @@
                 }
             }
         }
+    /*===== Cart & Wishlist Page =====*/
+        /*Wishlist*/
+        .elt__wishlistcart__Section .elt__wishlist__tocart__ctas {
+            gap: 42px;
+            margin-top: 30px;
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -1840,6 +1864,12 @@
                 }
             }
         }
+    /*===== Cart & Wishlist Page =====*/
+        /*Wishlist*/
+        .elt__wishlistcart__Section .elt__wishlist__tocart__ctas {
+            gap: 48px;
+            margin-top: 34px;
+        }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -2140,6 +2170,12 @@
                 gap: 50px;
             }
         }
+    /*===== Cart & Wishlist Page =====*/
+        /*Wishlist*/
+        .elt__wishlistcart__Section .elt__wishlist__tocart__ctas {
+            gap: 58px;
+            margin-top: 40px;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -2429,6 +2465,32 @@
         .elt__productinfo__section .elt__pis__nav {
             gap: 60px;
         }
+    /*===== Cart & Wishlist Page =====*/
+        /*Wishlist*/
+        .elt__wishlistcart__Section .elt__wishlist__tocart__ctas {
+            gap: 68px;
+            margin-top: 49px;
+        }
+        /*Cart*/
+        .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals {
+            padding: 15px;
+            .all__info {
+                margin-bottom: 50px;
+                .subtotal__text {
+                    padding: 20px 0;
+                    gap: 36px;
+                    .bottom form {
+                        gap: 15px;
+                        .form__row {
+                            gap: 15px;
+                        }
+                    }
+                }
+            }
+        }
+        .elt__coupon__code {
+            margin-top: 50px;
+        }
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -2670,6 +2732,22 @@
                     gap: 20px;
                 }
             }
+        }
+    /*===== Cart & Wishlist Page =====*/
+        /*Wishlist*/
+        .elt__wishlistcart__Section .wrapper table tbody tr {
+            th:nth-child(2),
+            td:nth-child(2) {
+                width: 40.48%;
+            }
+            th:nth-child(4),
+            td:nth-child(4) {
+                width: 16.5%;
+            }
+        }
+        /*Cart*/
+        .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals {
+            padding: 20px;
         }
 }
 

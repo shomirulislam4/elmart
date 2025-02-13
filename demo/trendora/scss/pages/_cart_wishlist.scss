@@ -3,10 +3,8 @@
 @use '../components/index' as comps;
 
 /*** Start of Wishlist Section ***/
-
-/*** End of Wishlist Section ***/
-.elt__wishlist__Section {
-    margin-top: 20px;
+.elt__wishlistcart__Section {
+    padding-top: 20px;
 
     .wrapper {
         overflow-x: auto;
@@ -70,6 +68,7 @@
                             width: 102px;
                             border-radius: 8px;
                             overflow: hidden;
+                            flex-shrink: 0;
 
                             img {
                                 width: 100%;
@@ -124,7 +123,7 @@
                     }
                 }
 
-                button {
+                .eltwishlist__addtocart {
                     @include comps.elt__button__b;
                     margin: 0 auto;
                 }
@@ -150,6 +149,198 @@
     }
 }
 
+@media (max-width: 1199px) {
+    .elt__wishlist__Section .wrapper table tbody tr {
+        th:nth-child(2),
+        td:nth-child(2) {
+            width: 43.48%;
+        }
+        th:nth-child(3),
+        td:nth-child(3) {
+            width: 14.5%;
+        }
+        th:nth-child(4),
+        td:nth-child(4) {
+            width: 15.5%;
+        }
+        td.products {
+            i {
+                width: 14.16%;
+            }
+            .item {
+                width: 85.84%;
+            }
+        }
+    }
+}
+/*** End of Wishlist Section ***/
 
 /*** Start of Cart Section ***/
+.elt__cartpage .elt__wishlistcart__Section {
+    .wrapper table tbody tr {
+        th:nth-child(1),
+        td:nth-child(1) {
+            width: 34.20%;
+            .item {
+                width: 100%;
+            }
+        }
+        th:nth-child(2),
+        td:nth-child(2) {
+            width: 16.45%;
+        }
+        th:nth-child(3),
+        td:nth-child(3) {
+            width: 16.45%;
+        }
+        th:nth-child(4),
+        td:nth-child(4) {
+            width: 16.45%;
+        }
+        th:nth-child(5),
+        td:nth-child(5) {
+            width: 16.45%;
+        }
+
+        td {
+            .elt__quantity__widget {
+                margin: 0 auto;
+            }
+
+            .eltcart__removefromcart {
+                width: 50%;
+                background: transparent;
+
+                svg {
+                    stroke: base.$AccentRed;
+                }
+
+                &:hover svg {
+                    stroke: base.$base100;
+                }
+            }
+        }
+    }
+
+    .elt__cart__totals {
+        padding: 28px;
+        width: 100%;
+        background: base.$backgroundSecondaryColor;
+        border-radius: 20px;
+
+        .all__info {
+            margin-bottom: 60px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            h6, span {
+                color: base.$base100;
+                margin-bottom: 0;
+            }
+            
+            span {
+                @include base.medium__text;
+            }
+
+            .subtotal__text {
+                border-top: 1px solid base.$base800;
+                border-bottom: 1px solid base.$base800;
+                padding: 28px 0;
+                display: flex;
+                flex-direction: column;
+                gap: 48px;
+
+                .top,
+                .bottom {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+
+                .bottom form {
+                    align-items: flex-end;
+                    label {
+                        @include base.medium__text;
+                        color: base.$base300;
+                        span {
+                            color: base.$base300;
+                        }
+                    }
+                }
+            }
+
+            .total {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+
+        .eltcart__checkout__btn {
+            @include comps.elt__button__a;
+            width: 100%;
+        }
+    }
+}
+
+.elt__coupon__code {
+    margin-top: 60px;
+
+    form {
+        width: 523px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 10px;
+
+        input {
+            flex: auto;
+        }
+
+        button {
+            @include comps.elt__button__b;
+            width: 157px;
+            flex-grow: 0;
+            flex-shrink: 0;
+        }
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1639px) {
+    .elt__cartpage .elt__wishlistcart__Section .wrapper table tbody tr {
+        th:nth-child(1),
+        td:nth-child(1) {
+            width: 39.10%;
+        }
+        th:nth-child(2),
+        td:nth-child(2) {
+            width: 14%;
+        }
+        th:nth-child(3),
+        td:nth-child(3) {
+            width: 20%;
+        }
+        th:nth-child(4),
+        td:nth-child(4) {
+            width: 12.45%;
+        }
+        th:nth-child(5),
+        td:nth-child(5) {
+            width: 14.45%;
+        }
+    }
+}
+
+@media (max-width: 1399px) {
+    .elt__cartpage .elt__wishlistcart__Section .wrapper {
+        overflow-x: auto;
+        white-space: nowrap;
+
+        table {
+            width: 910px;
+        }
+    }
+}
 /*** End of Cart Section ***/
