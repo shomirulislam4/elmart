@@ -335,11 +335,12 @@
 
 @media (max-width: 1399px) {
     .elt__cartpage .elt__wishlistcart__Section .wrapper {
-        overflow-x: auto;
-        white-space: nowrap;
-
         table {
-            width: 910px;
+            overflow-x: auto;
+            white-space: nowrap;
+            tbody {
+                width: 910px;
+            }
         }
     }
 }

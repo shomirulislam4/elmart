@@ -2639,6 +2639,17 @@ table tbody tr td {
   .elt__tabsandnav button {
     padding: 6px 14px;
   }
+  /*Quantity Widget*/
+  .elt__quantity__widget {
+    width: 130px;
+    height: 44px;
+    padding: 0 3px;
+  }
+  .elt__quantity__widget span {
+    line-height: 36px !important;
+    height: 36px;
+    width: 40px;
+  }
   /*Product Style*/
   .elt__product__style {
     width: 176px;
@@ -2760,6 +2771,16 @@ table tbody tr td {
   }
   .nice-select .list {
     min-width: 174px;
+  }
+  /*Table*/
+  table tbody {
+    padding: 0 10px;
+  }
+  table tbody::before {
+    height: 44px;
+  }
+  table tbody tr th {
+    padding: 12px 0;
   }
 }
 @media (min-width: 290px) and (max-width: 414px) {
@@ -2889,6 +2910,16 @@ table tbody tr td {
     width: 8px;
     right: 18px;
   }
+  /*Table*/
+  table tbody {
+    padding: 0 10px;
+  }
+  table tbody::before {
+    height: 44px;
+  }
+  table tbody tr th {
+    padding: 12px 0;
+  }
 }
 @media (min-width: 415px) and (max-width: 575px) {
   /*Section Title*/
@@ -2980,6 +3011,16 @@ table tbody tr td {
     height: 8px;
     width: 8px;
     right: 18px;
+  }
+  /*Table*/
+  table tbody {
+    padding: 0 15px;
+  }
+  table tbody::before {
+    height: 51px;
+  }
+  table tbody tr th {
+    padding: 14px 0;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
@@ -3083,6 +3124,13 @@ table tbody tr td {
     top: 15px;
     height: 8px;
     width: 8px;
+  }
+  /*Table*/
+  table tbody::before {
+    height: 51px;
+  }
+  table tbody tr th {
+    padding: 14px 0;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -6877,11 +6925,11 @@ table tbody tr td {
   }
 }
 @media (max-width: 1399px) {
-  .elt__cartpage .elt__wishlistcart__Section .wrapper {
+  .elt__cartpage .elt__wishlistcart__Section .wrapper table {
     overflow-x: auto;
     white-space: nowrap;
   }
-  .elt__cartpage .elt__wishlistcart__Section .wrapper table {
+  .elt__cartpage .elt__wishlistcart__Section .wrapper table tbody {
     width: 910px;
   }
 }

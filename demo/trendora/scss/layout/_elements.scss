@@ -729,6 +729,17 @@ table {
             padding: 6px 14px;
         }
     }
+    /*Quantity Widget*/
+    .elt__quantity__widget {
+        width: 130px;
+        height: 44px;
+        padding: 0 3px;
+        span {
+            line-height: 36px !important;
+            height: 36px;
+            width: 40px;
+        }
+    }
     /*Product Style*/
     .elt__product__style {
         width: 176px;
@@ -855,6 +866,16 @@ table {
         }
         .list {
             min-width: 174px;
+        }
+    }
+    /*Table*/
+    table tbody {
+        padding: 0 10px;
+        &::before {
+            height: 44px;
+        }
+        tr th {
+            padding: 12px 0;
         }
     }
 }
@@ -990,6 +1011,16 @@ table {
             right: 18px;
         }
     }
+    /*Table*/
+    table tbody {
+        padding: 0 10px;
+        &::before {
+            height: 44px;
+        }
+        tr th {
+            padding: 12px 0;
+        }
+    }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -1085,6 +1116,16 @@ table {
             height: 8px;
             width: 8px;
             right: 18px;
+        }
+    }
+    /*Table*/
+    table tbody {
+        padding: 0 15px;
+        &::before {
+            height: 51px;
+        }
+        tr th {
+            padding: 14px 0;
         }
     }
 }
@@ -1191,6 +1232,15 @@ table {
             top: 15px;
             height: 8px;
             width: 8px;
+        }
+    }
+    /*Table*/
+    table tbody {
+        &::before {
+            height: 51px;
+        }
+        tr th {
+            padding: 14px 0;
         }
     }
 }

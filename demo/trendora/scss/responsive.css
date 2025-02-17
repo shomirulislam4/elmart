@@ -563,6 +563,78 @@
     align-items: center;
     width: 100%;
   }
+  .elt__wishlistcart__Section .wrapper table tbody tr td.products .item {
+    gap: 7px;
+  }
+  .elt__wishlistcart__Section .wrapper table tbody tr td.products .item .prod__img {
+    height: 70px;
+    width: 64px;
+  }
+  /*Cart*/
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals {
+    margin-top: 20px;
+    padding: 10px;
+  }
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .all__info {
+    margin-bottom: 20px;
+  }
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .all__info .subtotal__text {
+    padding: 10px 0;
+    gap: 20px;
+  }
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .all__info .subtotal__text .bottom {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .all__info .subtotal__text .bottom span {
+    text-align: left;
+    width: 100%;
+  }
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .all__info .subtotal__text .bottom form {
+    gap: 10px;
+    margin-left: auto;
+  }
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .all__info .subtotal__text .bottom form .form__row {
+    gap: 10px;
+    flex-flow: wrap;
+  }
+  .elt__cartpage .elt__wishlistcart__Section .wrapper table tbody {
+    width: 600px;
+  }
+  .elt__cartpage .elt__wishlistcart__Section .wrapper table tbody tr th:nth-child(1),
+  .elt__cartpage .elt__wishlistcart__Section .wrapper table tbody tr td:nth-child(1) {
+    width: 37.2%;
+  }
+  .elt__cartpage .elt__wishlistcart__Section .wrapper table tbody tr th:nth-child(2),
+  .elt__cartpage .elt__wishlistcart__Section .wrapper table tbody tr td:nth-child(2) {
+    width: 12.45%;
+  }
+  .elt__cartpage .elt__wishlistcart__Section .wrapper table tbody tr th:nth-child(3),
+  .elt__cartpage .elt__wishlistcart__Section .wrapper table tbody tr td:nth-child(3) {
+    width: 26.45%;
+  }
+  .elt__cartpage .elt__wishlistcart__Section .wrapper table tbody tr th:nth-child(4),
+  .elt__cartpage .elt__wishlistcart__Section .wrapper table tbody tr td:nth-child(4) {
+    width: 12.45%;
+  }
+  .elt__cartpage .elt__wishlistcart__Section .wrapper table tbody tr th:nth-child(5),
+  .elt__cartpage .elt__wishlistcart__Section .wrapper table tbody tr td:nth-child(5) {
+    width: 11.45%;
+  }
+  .elt__coupon__code {
+    margin-top: 20px;
+  }
+  .elt__coupon__code form {
+    width: 100%;
+    gap: 10px;
+    flex-direction: column;
+  }
+  .elt__coupon__code form input {
+    height: 40px;
+  }
+  .elt__coupon__code form button {
+    width: 100%;
+  }
 }
 @media (min-width: 290px) and (max-width: 414px) {
   .bg__rounded__color {
@@ -1066,6 +1138,65 @@
     align-items: center;
     width: 100%;
   }
+  .elt__wishlistcart__Section .wrapper table tbody tr td.products .item {
+    gap: 10px;
+  }
+  .elt__wishlistcart__Section .wrapper table tbody tr td.products .item .prod__img {
+    height: 80px;
+    width: 73px;
+  }
+  /*Cart*/
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals {
+    margin-top: 20px;
+    padding: 10px;
+  }
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .all__info {
+    margin-bottom: 20px;
+  }
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .all__info .subtotal__text {
+    padding: 15px 0;
+    gap: 20px;
+  }
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .all__info .subtotal__text .bottom form {
+    gap: 10px;
+  }
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .all__info .subtotal__text .bottom form .form__row {
+    gap: 8px;
+    flex-flow: wrap;
+  }
+  .elt__cartpage .elt__wishlistcart__Section .wrapper table tbody tr th:nth-child(1),
+  .elt__cartpage .elt__wishlistcart__Section .wrapper table tbody tr td:nth-child(1) {
+    width: 32.2%;
+  }
+  .elt__cartpage .elt__wishlistcart__Section .wrapper table tbody tr th:nth-child(2),
+  .elt__cartpage .elt__wishlistcart__Section .wrapper table tbody tr td:nth-child(2) {
+    width: 14.45%;
+  }
+  .elt__cartpage .elt__wishlistcart__Section .wrapper table tbody tr th:nth-child(3),
+  .elt__cartpage .elt__wishlistcart__Section .wrapper table tbody tr td:nth-child(3) {
+    width: 25.45%;
+  }
+  .elt__cartpage .elt__wishlistcart__Section .wrapper table tbody tr th:nth-child(4),
+  .elt__cartpage .elt__wishlistcart__Section .wrapper table tbody tr td:nth-child(4) {
+    width: 15.45%;
+  }
+  .elt__cartpage .elt__wishlistcart__Section .wrapper table tbody tr th:nth-child(5),
+  .elt__cartpage .elt__wishlistcart__Section .wrapper table tbody tr td:nth-child(5) {
+    width: 12.45%;
+  }
+  .elt__coupon__code {
+    margin-top: 20px;
+  }
+  .elt__coupon__code form {
+    width: 100%;
+    gap: 9px;
+  }
+  .elt__coupon__code form input {
+    height: 44px;
+  }
+  .elt__coupon__code form button {
+    width: 75px;
+  }
 }
 @media (min-width: 415px) and (max-width: 575px) {
   /*===== Home Page =====*/
@@ -1447,6 +1578,41 @@
     gap: 42px;
     margin-top: 30px;
   }
+  .elt__wishlistcart__Section .wrapper table tbody tr td.products .item {
+    gap: 10px;
+  }
+  .elt__wishlistcart__Section .wrapper table tbody tr td.products .item .prod__img {
+    height: 80px;
+    width: 73px;
+  }
+  /*Cart*/
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals {
+    margin-top: 20px;
+    padding: 15px;
+  }
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .all__info {
+    margin-bottom: 40px;
+  }
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .all__info .subtotal__text {
+    padding: 20px 0;
+    gap: 30px;
+  }
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .all__info .subtotal__text .bottom form {
+    gap: 15px;
+  }
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .all__info .subtotal__text .bottom form .form__row {
+    gap: 10px;
+    flex-flow: wrap;
+  }
+  .elt__coupon__code {
+    margin-top: 20px;
+  }
+  .elt__coupon__code form {
+    width: 100%;
+  }
+  .elt__coupon__code form input {
+    height: 44px;
+  }
 }
 @media (min-width: 576px) and (max-width: 767px) {
   /*===== Home Page =====*/
@@ -1786,6 +1952,20 @@
     gap: 48px;
     margin-top: 34px;
   }
+  .elt__wishlistcart__Section .wrapper table tbody tr td.products .item .prod__img {
+    height: 90px;
+    width: 82px;
+  }
+  /*Cart*/
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals {
+    margin-top: 25px;
+  }
+  .elt__coupon__code {
+    margin-top: 30px;
+  }
+  .elt__coupon__code form {
+    width: 100%;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   /*===== Home Page =====*/
@@ -2073,6 +2253,13 @@
   /*Wishlist*/
   .elt__wishlistcart__Section .elt__wishlist__tocart__ctas {
     gap: 58px;
+    margin-top: 40px;
+  }
+  /*Cart*/
+  .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals {
+    margin-top: 30px;
+  }
+  .elt__coupon__code {
     margin-top: 40px;
   }
 }
