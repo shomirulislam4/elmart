@@ -384,6 +384,10 @@
             }
 
             .breadcrumbs {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                
                 a {
                     @include base.medium__text;
                     color: base.$base100;

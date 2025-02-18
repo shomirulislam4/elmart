@@ -412,8 +412,8 @@
         });
     });
 
-    /*============================ Cart Page ============================*/
-    //Cart Page Quantity Price Multiplier
+    /*============================ Cart, Checkout Page ============================*/
+    //Quantity Price Multiplier
     $(function() {
         $('.elt__quantity__widget').each(function() {
             const $decreaseBtn = $(this).find('.elt__quantity__decrease');
@@ -451,5 +451,14 @@
             $display.text(formatQuantity(parseInt($display.text())));
         });
     });
+    
+    //Checkout Coupon Submit
+    $(function() {
+        $('.eltcheckout__couponcode__toggle').on('click', function() {
+            $('.elt__coupon__code').toggleClass('show')
+        })
+    });
+
+
 
 }) (jQuery);

@@ -260,9 +260,12 @@
 
                 .bottom form {
                     align-items: flex-end;
+
                     label {
                         @include base.medium__text;
                         color: base.$base300;
+                        display: flex;
+
                         span {
                             color: base.$base300;
                         }

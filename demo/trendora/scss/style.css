@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+span {
+  display: block;
+}
+
 @font-face {
   font-display: swap;
   font-family: "Inter";
@@ -406,7 +410,7 @@ textarea {
   height: 194px;
   border: 1px solid #2D3643;
   border-radius: 12px;
-  padding: 0 20px;
+  padding: 8px 20px;
   color: #8897AE;
   font-weight: 400;
   resize: none;
@@ -629,9 +633,11 @@ input[type=checkbox] {
   position: relative;
   height: 16px;
   width: 16px;
-  border-radius: 2px;
+  border-radius: 4px;
   background: transparent;
   box-shadow: inset 0 0 0 1px #D7DFE9;
+  flex-shrink: 0;
+  flex-grow: 0;
 }
 
 input[type=checkbox]:checked::after {
@@ -640,9 +646,9 @@ input[type=checkbox]:checked::after {
   left: 50%;
   transform: translate(-50%, -50%);
   content: "";
-  height: 11px;
-  width: 11px;
-  border-radius: 1px;
+  height: 10px;
+  width: 10px;
+  border-radius: 2px;
   background: #F27240;
 }
 
@@ -655,6 +661,8 @@ input[type=radio] {
   border-radius: 50%;
   background: transparent;
   box-shadow: inset 0 0 0 1px #D7DFE9;
+  flex-shrink: 0;
+  flex-grow: 0;
 }
 
 input[type=radio]:checked::after {
@@ -663,8 +671,8 @@ input[type=radio]:checked::after {
   left: 50%;
   transform: translate(-50%, -50%);
   content: "";
-  height: 11px;
-  width: 11px;
+  height: 10px;
+  width: 10px;
   border-radius: 50%;
   background: #F27240;
 }
@@ -1810,6 +1818,11 @@ input[type=radio]:checked::after {
 .elt__breadcrumbs__section .wrapper .content .title {
   color: #E9EFF6;
   font-weight: 500;
+}
+.elt__breadcrumbs__section .wrapper .content .breadcrumbs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .elt__breadcrumbs__section .wrapper .content .breadcrumbs a {
   color: #E9EFF6;
@@ -6503,6 +6516,7 @@ table tbody tr td {
 }
 .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .all__info .subtotal__text .bottom form label {
   color: #AFBACA;
+  display: flex;
 }
 @media screen and (min-width: 200px) and (max-width: 289px) {
   .elt__cartpage .elt__wishlistcart__Section .elt__cart__totals .all__info .subtotal__text .bottom form label {
@@ -6934,6 +6948,684 @@ table tbody tr td {
   }
 }
 /*** End of Cart Section ***/
+/*** Start of Checkout Section ***/
+.elt__checkout__section .wrapper .elt__checkout__couponcode {
+  background: #212126;
+  border: 1px solid #2D3643;
+  border-radius: 12px;
+  padding: 20px 28px;
+  width: 100%;
+  max-height: 200px;
+  margin-bottom: 48px;
+}
+.elt__checkout__section .wrapper .elt__checkout__couponcode .top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.elt__checkout__section .wrapper .elt__checkout__couponcode .top span {
+  color: #D7DFE9;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__checkout__section .wrapper .elt__checkout__couponcode .top span {
+    font-size: 11px;
+    line-height: 17px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__checkout__section .wrapper .elt__checkout__couponcode .top span {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__checkout__section .wrapper .elt__checkout__couponcode .top span {
+    font-size: 13px;
+    line-height: 19px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__checkout__section .wrapper .elt__checkout__couponcode .top span {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .elt__checkout__section .wrapper .elt__checkout__couponcode .top span {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .elt__checkout__section .wrapper .elt__checkout__couponcode .top span {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__checkout__section .wrapper .elt__checkout__couponcode .top span {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__checkout__section .wrapper .elt__checkout__couponcode .top span {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+.elt__checkout__section .wrapper .elt__checkout__couponcode .top span svg {
+  fill: #D7DFE9;
+}
+.elt__checkout__section .wrapper .elt__checkout__couponcode .top span.eltcheckout__couponcode__toggle {
+  transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.elt__checkout__section .wrapper .elt__checkout__couponcode .top span.eltcheckout__couponcode__toggle:hover {
+  color: #F27240;
+}
+.elt__checkout__section .wrapper .elt__checkout__couponcode .elt__coupon__code {
+  margin-top: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.6s ease;
+  -moz-transition: 0.6s ease;
+  -webkit-transition: 0.6s ease;
+  -ms-transition: 0.6s ease;
+  -o-transition: 0.6s ease;
+}
+.elt__checkout__section .wrapper .elt__checkout__couponcode .elt__coupon__code.show {
+  margin-top: 30px;
+  max-height: 70px;
+}
+.elt__checkout__section .wrapper .left__side form {
+  gap: 36px;
+  padding: 28px;
+  background: transparent;
+  border: 1px solid #2D3643;
+  border-radius: 20px;
+}
+.elt__checkout__section .wrapper .left__side form .horizontal__seperator {
+  margin: 12px 0;
+}
+.elt__checkout__section .wrapper .left__side form .address1 .with__label:nth-child(1) {
+  flex: auto;
+}
+.elt__checkout__section .wrapper .left__side form .address1 .with__label:nth-child(2) {
+  width: 35%;
+}
+.elt__checkout__section .wrapper .left__side form .checkboxes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__checkout__section .wrapper .left__side form .checkboxes label {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__checkout__section .wrapper .left__side form .checkboxes label {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__checkout__section .wrapper .left__side form .checkboxes label {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__checkout__section .wrapper .left__side form .checkboxes label {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .elt__checkout__section .wrapper .left__side form .checkboxes label {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .elt__checkout__section .wrapper .left__side form .checkboxes label {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__checkout__section .wrapper .left__side form .checkboxes label {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__checkout__section .wrapper .left__side form .checkboxes label {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.elt__checkout__section .elt__place__order {
+  background: #212126;
+  border: 1px solid #F27240;
+  border-radius: 20px;
+  padding: 28px;
+  gap: 60px;
+  display: flex;
+  flex-direction: column;
+}
+.elt__checkout__section .elt__place__order h6 {
+  margin-bottom: 0;
+}
+.elt__checkout__section .elt__place__order .subtotal__text {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.elt__checkout__section .elt__place__order .subtotal__text .item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.elt__checkout__section .elt__place__order .subtotal__text .item span, .elt__checkout__section .elt__place__order .subtotal__text .item label {
+  color: #AFBACA;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__checkout__section .elt__place__order .subtotal__text .item span, .elt__checkout__section .elt__place__order .subtotal__text .item label {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__checkout__section .elt__place__order .subtotal__text .item span, .elt__checkout__section .elt__place__order .subtotal__text .item label {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__checkout__section .elt__place__order .subtotal__text .item span, .elt__checkout__section .elt__place__order .subtotal__text .item label {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__checkout__section .elt__place__order .subtotal__text .item span, .elt__checkout__section .elt__place__order .subtotal__text .item label {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .elt__checkout__section .elt__place__order .subtotal__text .item span, .elt__checkout__section .elt__place__order .subtotal__text .item label {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .elt__checkout__section .elt__place__order .subtotal__text .item span, .elt__checkout__section .elt__place__order .subtotal__text .item label {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__checkout__section .elt__place__order .subtotal__text .item span, .elt__checkout__section .elt__place__order .subtotal__text .item label {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__checkout__section .elt__place__order .subtotal__text .item span, .elt__checkout__section .elt__place__order .subtotal__text .item label {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.elt__checkout__section .elt__place__order .subtotal__text .item form {
+  align-items: flex-end;
+}
+.elt__checkout__section .elt__place__order .subtotal__text .item form .form__row {
+  gap: 16px;
+}
+.elt__checkout__section .elt__place__order .subtotal__text .item.products {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.elt__checkout__section .elt__place__order .subtotal__text .item.products .prod {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.elt__checkout__section .elt__place__order .subtotal__text .item.products .prod .prod__item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.elt__checkout__section .elt__place__order .subtotal__text .item.products .prod .prod__item .prod__img {
+  width: 79px;
+  height: 86px;
+  border-radius: 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+.elt__checkout__section .elt__place__order .subtotal__text .item.products .prod .prod__item .prod__img img {
+  width: 100%;
+  height: 100%;
+}
+.elt__checkout__section .elt__place__order .subtotal__text .item.products .prod .prod__item .text span {
+  color: #D7DFE9;
+}
+.elt__checkout__section .elt__place__order .subtotal__text .item.products .prod .prod__item .text .prod__name {
+  display: flex;
+  gap: 5px;
+}
+.elt__checkout__section .elt__place__order .subtotal__text .item.products .prod .prod__item .text .prod__info {
+  display: flex;
+  gap: 16px;
+}
+.elt__checkout__section .elt__place__order .subtotal__text .item.products .prod .prod__item .text .prod__info span {
+  color: #8897AE;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__checkout__section .elt__place__order .subtotal__text .item.products .prod .prod__item .text .prod__info span {
+    font-size: 11px;
+    line-height: 17px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__checkout__section .elt__place__order .subtotal__text .item.products .prod .prod__item .text .prod__info span {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__checkout__section .elt__place__order .subtotal__text .item.products .prod .prod__item .text .prod__info span {
+    font-size: 13px;
+    line-height: 19px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__checkout__section .elt__place__order .subtotal__text .item.products .prod .prod__item .text .prod__info span {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .elt__checkout__section .elt__place__order .subtotal__text .item.products .prod .prod__item .text .prod__info span {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .elt__checkout__section .elt__place__order .subtotal__text .item.products .prod .prod__item .text .prod__info span {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__checkout__section .elt__place__order .subtotal__text .item.products .prod .prod__item .text .prod__info span {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__checkout__section .elt__place__order .subtotal__text .item.products .prod .prod__item .text .prod__info span {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+.elt__checkout__section .elt__place__order .subtotal__text .item.products .prod .prod__item .text .prod__info .size::before {
+  content: "Size: ";
+}
+.elt__checkout__section .elt__place__order .subtotal__text .item.products .prod .prod__item .text .prod__info .color::before {
+  content: "Color: ";
+}
+.elt__checkout__section .elt__place__order .subtotal__text .item.shipping label {
+  display: flex;
+  align-items: center;
+}
+.elt__checkout__section .elt__place__order .subtotal__text .item.subtotal span, .elt__checkout__section .elt__place__order .subtotal__text .item.total span, .elt__checkout__section .elt__place__order .subtotal__text .item.total h6 {
+  color: #E9EFF6;
+}
+.elt__checkout__section .elt__place__order .payment__method {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.elt__checkout__section .elt__place__order .payment__method .op span {
+  color: #AFBACA;
+  margin-top: 12px;
+  margin-left: 36px;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__checkout__section .elt__place__order .payment__method .op span {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__checkout__section .elt__place__order .payment__method .op span {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__checkout__section .elt__place__order .payment__method .op span {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__checkout__section .elt__place__order .payment__method .op span {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .elt__checkout__section .elt__place__order .payment__method .op span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .elt__checkout__section .elt__place__order .payment__method .op span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__checkout__section .elt__place__order .payment__method .op span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__checkout__section .elt__place__order .payment__method .op span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.elt__checkout__section .elt__place__order .privacy__terms {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.elt__checkout__section .elt__place__order .privacy__terms span {
+  color: #8897AE;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__checkout__section .elt__place__order .privacy__terms span {
+    font-size: 11px;
+    line-height: 17px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__checkout__section .elt__place__order .privacy__terms span {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__checkout__section .elt__place__order .privacy__terms span {
+    font-size: 13px;
+    line-height: 19px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__checkout__section .elt__place__order .privacy__terms span {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .elt__checkout__section .elt__place__order .privacy__terms span {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .elt__checkout__section .elt__place__order .privacy__terms span {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__checkout__section .elt__place__order .privacy__terms span {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__checkout__section .elt__place__order .privacy__terms span {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+.elt__checkout__section .elt__place__order .privacy__terms label {
+  color: #D7DFE9;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__checkout__section .elt__place__order .privacy__terms label {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__checkout__section .elt__place__order .privacy__terms label {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__checkout__section .elt__place__order .privacy__terms label {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__checkout__section .elt__place__order .privacy__terms label {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .elt__checkout__section .elt__place__order .privacy__terms label {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .elt__checkout__section .elt__place__order .privacy__terms label {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__checkout__section .elt__place__order .privacy__terms label {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__checkout__section .elt__place__order .privacy__terms label {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.elt__checkout__section .elt__place__order .elt__placeorder__btn {
+  transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  height: 48px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 24px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  color: #E9EFF6;
+  font-weight: 500;
+  text-align: center;
+  text-transform: capitalize;
+  cursor: pointer;
+  background: #F27240;
+  width: 100%;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__checkout__section .elt__place__order .elt__placeorder__btn {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__checkout__section .elt__place__order .elt__placeorder__btn {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__checkout__section .elt__place__order .elt__placeorder__btn {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__checkout__section .elt__place__order .elt__placeorder__btn {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .elt__checkout__section .elt__place__order .elt__placeorder__btn {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .elt__checkout__section .elt__place__order .elt__placeorder__btn {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__checkout__section .elt__place__order .elt__placeorder__btn {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__checkout__section .elt__place__order .elt__placeorder__btn {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.elt__checkout__section .elt__place__order .elt__placeorder__btn svg {
+  height: 24px;
+  width: 24px;
+  stroke: #E9EFF6;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__checkout__section .elt__place__order .elt__placeorder__btn {
+    padding: 0 12px;
+    gap: 5px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__checkout__section .elt__place__order .elt__placeorder__btn {
+    padding: 0 14px;
+    gap: 7px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__checkout__section .elt__place__order .elt__placeorder__btn {
+    padding: 0 16px;
+    gap: 9px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__checkout__section .elt__place__order .elt__placeorder__btn {
+    padding: 0 18px;
+    gap: 11px;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__checkout__section .elt__place__order .elt__placeorder__btn {
+    padding: 0 12px;
+    gap: 5px;
+    height: 38px;
+  }
+  .elt__checkout__section .elt__place__order .elt__placeorder__btn svg {
+    height: 14px;
+    width: 14px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__checkout__section .elt__place__order .elt__placeorder__btn {
+    padding: 0 14px;
+    gap: 7px;
+    height: 42px;
+  }
+  .elt__checkout__section .elt__place__order .elt__placeorder__btn svg {
+    height: 16px;
+    width: 16px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__checkout__section .elt__place__order .elt__placeorder__btn {
+    padding: 0 16px;
+    gap: 9px;
+    height: 44px;
+  }
+  .elt__checkout__section .elt__place__order .elt__placeorder__btn svg {
+    height: 18px;
+    width: 18px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__checkout__section .elt__place__order .elt__placeorder__btn {
+    padding: 0 18px;
+    gap: 11px;
+    height: 46px;
+  }
+  .elt__checkout__section .elt__place__order .elt__placeorder__btn svg {
+    height: 20px;
+    width: 20px;
+  }
+}
+.elt__checkout__section .elt__place__order .elt__placeorder__btn:hover {
+  background: #E0531B;
+}
+.elt__checkout__section .elt__place__order .elt__placeorder__btn:active {
+  background: #E0531B;
+  box-shadow: 0 0 0 4px #3F2B28;
+}
+.elt__checkout__section .elt__place__order .elt__placeorder__btn:disabled {
+  background: #2D2D32;
+  color: #5E718D;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+.elt__checkout__section .elt__place__order .elt__placeorder__btn:disabled svg {
+  stroke: #5E718D;
+}
+
+/*** End of Checkout Section ***/
 /************ TABLE OF CONTENTS ***************
 1. Global CSS
 2. Home Page
