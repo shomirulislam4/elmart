@@ -459,6 +459,12 @@
         })
     });
 
+    /*============================ Blog Page ============================*/
+    //All Nice Select
+    if ($('.elt__blogpage').length) {
+        $('#eltPaginationBlog').niceSelect();
+    }
+
 
 
 }) (jQuery);

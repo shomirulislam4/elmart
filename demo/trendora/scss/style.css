@@ -1329,6 +1329,149 @@ input[type=radio]:checked::after {
 }
 
 /*** End of Product Style ***/
+/*** Start of Small Product Style ***/
+.small__product__style {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.small__product__style .prod__item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.small__product__style .prod__item .prod__img {
+  width: 79px;
+  height: 86px;
+  border-radius: 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+.small__product__style .prod__item .prod__img img {
+  width: 100%;
+  height: 100%;
+}
+.small__product__style .prod__item .text span {
+  color: #D7DFE9;
+}
+.small__product__style .prod__item .text .prod__name {
+  display: flex;
+  gap: 5px;
+  color: #D7DFE9 !important;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .small__product__style .prod__item .text .prod__name {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .small__product__style .prod__item .text .prod__name {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .small__product__style .prod__item .text .prod__name {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .small__product__style .prod__item .text .prod__name {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .small__product__style .prod__item .text .prod__name {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .small__product__style .prod__item .text .prod__name {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .small__product__style .prod__item .text .prod__name {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .small__product__style .prod__item .text .prod__name {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.small__product__style .prod__item .text .prod__info {
+  display: flex;
+  gap: 16px;
+}
+.small__product__style .prod__item .text .prod__info span {
+  color: #8897AE !important;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .small__product__style .prod__item .text .prod__info span {
+    font-size: 11px;
+    line-height: 17px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .small__product__style .prod__item .text .prod__info span {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .small__product__style .prod__item .text .prod__info span {
+    font-size: 13px;
+    line-height: 19px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .small__product__style .prod__item .text .prod__info span {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .small__product__style .prod__item .text .prod__info span {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .small__product__style .prod__item .text .prod__info span {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .small__product__style .prod__item .text .prod__info span {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .small__product__style .prod__item .text .prod__info span {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+.small__product__style .prod__item .text .prod__info .size::before {
+  content: "Size: ";
+}
+.small__product__style .prod__item .text .prod__info .color::before {
+  content: "Color: ";
+}
+
+/*** End of Small Product Style ***/
 /*** Start of Products Slider ***/
 .elt__mainslider__products {
   position: relative;
@@ -1373,72 +1516,6 @@ input[type=radio]:checked::after {
 .elt__blog__item .image img {
   width: 100%;
   height: 100%;
-}
-.elt__blog__item .content .meta__info {
-  display: flex;
-  align-items: center;
-  gap: 45px;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
-}
-.elt__blog__item .content .meta__info .item {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-}
-.elt__blog__item .content .meta__info .item svg {
-  stroke: #8897AE;
-}
-.elt__blog__item .content .meta__info .item span {
-  color: #8897AE;
-}
-@media screen and (min-width: 200px) and (max-width: 289px) {
-  .elt__blog__item .content .meta__info .item span {
-    font-size: 12px;
-    line-height: 18px;
-  }
-}
-@media screen and (min-width: 290px) and (max-width: 414px) {
-  .elt__blog__item .content .meta__info .item span {
-    font-size: 13px;
-    line-height: 20px;
-  }
-}
-@media screen and (min-width: 415px) and (max-width: 575px) {
-  .elt__blog__item .content .meta__info .item span {
-    font-size: 14px;
-    line-height: 22px;
-  }
-}
-@media screen and (min-width: 576px) and (max-width: 767px) {
-  .elt__blog__item .content .meta__info .item span {
-    font-size: 15px;
-    line-height: 23px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .elt__blog__item .content .meta__info .item span {
-    font-size: 16px;
-    line-height: 24px;
-  }
-}
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-  .elt__blog__item .content .meta__info .item span {
-    font-size: 16px;
-    line-height: 24px;
-  }
-}
-@media screen and (min-width: 1200px) and (max-width: 1399px) {
-  .elt__blog__item .content .meta__info .item span {
-    font-size: 16px;
-    line-height: 24px;
-  }
-}
-@media screen and (min-width: 1400px) and (max-width: 1920px) {
-  .elt__blog__item .content .meta__info .item span {
-    font-size: 16px;
-    line-height: 24px;
-  }
 }
 .elt__blog__item .content h5 {
   margin-bottom: 12px;
@@ -1496,6 +1573,74 @@ input[type=radio]:checked::after {
 }
 @media screen and (min-width: 1400px) and (max-width: 1920px) {
   .elt__blog__item .content span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+/* Meta Info */
+.blog__meta__info {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.blog__meta__info .item {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.blog__meta__info .item svg {
+  stroke: #8897AE;
+}
+.blog__meta__info .item span {
+  color: #8897AE;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .blog__meta__info .item span {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .blog__meta__info .item span {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .blog__meta__info .item span {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .blog__meta__info .item span {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .blog__meta__info .item span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .blog__meta__info .item span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .blog__meta__info .item span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .blog__meta__info .item span {
     font-size: 16px;
     line-height: 24px;
   }
@@ -1937,6 +2082,10 @@ input[type=radio]:checked::after {
     line-height: 24px;
   }
 }
+.elt__breadcrumbs__section .breadcrumbs__v2 {
+  display: flex;
+  flex-wrap: wrap;
+}
 .elt__breadcrumbs__section .breadcrumbs__v2 a {
   color: #E9EFF6;
   text-transform: capitalize;
@@ -2333,63 +2482,57 @@ input[type=radio]:checked::after {
   display: flex;
   align-items: center;
   gap: 24px;
+  flex-flow: row;
 }
-.elt__pagination form label,
-.elt__pagination form span {
+.elt__pagination form label {
   color: #AFBACA;
+  display: flex;
+  gap: 5px;
 }
 @media screen and (min-width: 200px) and (max-width: 289px) {
-  .elt__pagination form label,
-  .elt__pagination form span {
+  .elt__pagination form label {
     font-size: 12px;
     line-height: 18px;
   }
 }
 @media screen and (min-width: 290px) and (max-width: 414px) {
-  .elt__pagination form label,
-  .elt__pagination form span {
+  .elt__pagination form label {
     font-size: 13px;
     line-height: 20px;
   }
 }
 @media screen and (min-width: 415px) and (max-width: 575px) {
-  .elt__pagination form label,
-  .elt__pagination form span {
+  .elt__pagination form label {
     font-size: 14px;
     line-height: 22px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
-  .elt__pagination form label,
-  .elt__pagination form span {
+  .elt__pagination form label {
     font-size: 15px;
     line-height: 23px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .elt__pagination form label,
-  .elt__pagination form span {
+  .elt__pagination form label {
     font-size: 16px;
     line-height: 24px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  .elt__pagination form label,
-  .elt__pagination form span {
+  .elt__pagination form label {
     font-size: 16px;
     line-height: 24px;
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
-  .elt__pagination form label,
-  .elt__pagination form span {
+  .elt__pagination form label {
     font-size: 16px;
     line-height: 24px;
   }
 }
 @media screen and (min-width: 1400px) and (max-width: 1920px) {
-  .elt__pagination form label,
-  .elt__pagination form span {
+  .elt__pagination form label {
     font-size: 16px;
     line-height: 24px;
   }
@@ -2686,6 +2829,25 @@ table tbody tr td {
   .elt__product__style:hover .image .img {
     height: 176px;
   }
+  /*Small Product Style*/
+  .small__product__style {
+    align-items: flex-end;
+  }
+  .small__product__style .prod__item {
+    gap: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .small__product__style .prod__item .text .prod__name {
+    margin-bottom: 8px;
+  }
+  .small__product__style .prod__item .text .prod__info {
+    gap: 6px;
+  }
+  .small__product__style .prod__item .text .prod__info span {
+    font-size: 10px;
+    line-height: 16px;
+  }
   /*Products Slider*/
   .elt__mainslider__products .elt__cta__button {
     height: 36px;
@@ -2712,19 +2874,19 @@ table tbody tr td {
     margin-bottom: 10px;
     border-radius: 8px;
   }
-  .elt__blog__item .content .meta__info {
+  .elt__blog__item .content h5 {
+    margin-bottom: 4px;
+  }
+  .blog__meta__info {
     gap: 10px;
     margin-bottom: 8px;
   }
-  .elt__blog__item .content .meta__info .item {
+  .blog__meta__info .item {
     gap: 4px;
   }
-  .elt__blog__item .content .meta__info .item svg {
+  .blog__meta__info .item svg {
     height: 12px;
     width: 12px;
-  }
-  .elt__blog__item .content h5 {
-    margin-bottom: 4px;
   }
   /*Social Profiles*/
   .social__profiles {
@@ -2839,6 +3001,18 @@ table tbody tr td {
   .elt__product__style:hover .image .img {
     height: 273px;
   }
+  /*Small Product Style*/
+  .small__product__style {
+    align-items: flex-end;
+  }
+  .small__product__style .prod__item {
+    gap: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .small__product__style .prod__item .text .prod__name {
+    margin-bottom: 8px;
+  }
   /*Products Slider*/
   .elt__mainslider__products .elt__cta__button {
     height: 42px;
@@ -2865,19 +3039,19 @@ table tbody tr td {
     margin-bottom: 14px;
     border-radius: 8px;
   }
-  .elt__blog__item .content .meta__info {
+  .elt__blog__item .content h5 {
+    margin-bottom: 5px;
+  }
+  .blog__meta__info {
     gap: 15px;
     margin-bottom: 10px;
   }
-  .elt__blog__item .content .meta__info .item {
+  .blog__meta__info .item {
     gap: 5px;
   }
-  .elt__blog__item .content .meta__info .item svg {
+  .blog__meta__info .item svg {
     height: 14px;
     width: 14px;
-  }
-  .elt__blog__item .content h5 {
-    margin-bottom: 5px;
   }
   /*Social Profiles*/
   .social__profiles {
@@ -2976,19 +3150,19 @@ table tbody tr td {
     height: 255px;
     margin-bottom: 28px;
   }
-  .elt__blog__item .content .meta__info {
+  .elt__blog__item .content h5 {
+    margin-bottom: 10px;
+  }
+  .blog__meta__info {
     gap: 28px;
     margin-bottom: 12px;
   }
-  .elt__blog__item .content .meta__info .item {
+  .blog__meta__info .item {
     gap: 8px;
   }
-  .elt__blog__item .content .meta__info .item svg {
+  .blog__meta__info .item svg {
     height: 14px;
     width: 14px;
-  }
-  .elt__blog__item .content h5 {
-    margin-bottom: 10px;
   }
   /*Social Profiles*/
   .social__profiles {
@@ -3092,19 +3266,19 @@ table tbody tr td {
     margin-bottom: 16px;
     border-radius: 10px;
   }
-  .elt__blog__item .content .meta__info {
+  .elt__blog__item .content h5 {
+    margin-bottom: 6px;
+  }
+  .blog__meta__info {
     gap: 15px;
     margin-bottom: 10px;
   }
-  .elt__blog__item .content .meta__info .item {
+  .blog__meta__info .item {
     gap: 5px;
   }
-  .elt__blog__item .content .meta__info .item svg {
+  .blog__meta__info .item svg {
     height: 16px;
     width: 16px;
-  }
-  .elt__blog__item .content h5 {
-    margin-bottom: 6px;
   }
   /*Social Profiles*/
   .social__profiles {
@@ -3175,14 +3349,14 @@ table tbody tr td {
     height: 221px;
     margin-bottom: 22px;
   }
-  .elt__blog__item .content .meta__info {
+  .blog__meta__info {
     gap: 22px;
     margin-bottom: 12px;
   }
-  .elt__blog__item .content .meta__info .item {
+  .blog__meta__info .item {
     gap: 8px;
   }
-  .elt__blog__item .content .meta__info .item svg {
+  .blog__meta__info .item svg {
     height: 16px;
     width: 16px;
   }
@@ -3245,6 +3419,18 @@ table tbody tr td {
   .elt__product__style:hover .image .img {
     height: 312px;
   }
+  /*Small Product Style*/
+  .small__product__style span {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .small__product__style .prod__item .prod__img {
+    width: 69px;
+    height: 75px;
+  }
+  .small__product__style .prod__item .text .prod__info {
+    gap: 10px;
+  }
   /*Products Slider*/
   .elt__mainslider__products .elt__cta__button {
     top: 32%;
@@ -3257,19 +3443,19 @@ table tbody tr td {
     height: 196px;
     margin-bottom: 20px;
   }
-  .elt__blog__item .content .meta__info {
+  .elt__blog__item .content h5 {
+    margin-bottom: 10px;
+  }
+  .blog__meta__info {
     gap: 20px;
     margin-bottom: 10px;
   }
-  .elt__blog__item .content .meta__info .item {
+  .blog__meta__info .item {
     gap: 6px;
   }
-  .elt__blog__item .content .meta__info .item svg {
+  .blog__meta__info .item svg {
     height: 16px;
     width: 16px;
-  }
-  .elt__blog__item .content h5 {
-    margin-bottom: 10px;
   }
   /*Breadcrumbs Section*/
   .elt__breadcrumbs__section {
@@ -3321,7 +3507,7 @@ table tbody tr td {
     height: 234px;
     margin-bottom: 24px;
   }
-  .elt__blog__item .content .meta__info {
+  .blog__meta__info {
     gap: 25px;
     margin-bottom: 12px;
   }
@@ -3365,7 +3551,7 @@ table tbody tr td {
   .elt__blog__item .content h5 {
     margin-bottom: 8px;
   }
-  .elt__blog__item .content .meta__info {
+  .blog__meta__info {
     gap: 35px;
     margin-bottom: 16px;
   }
@@ -6947,6 +7133,251 @@ table tbody tr td {
     width: 910px;
   }
 }
+/* Empty Cart Page */
+.elt__emptycart__section .wrapper {
+  display: flex;
+  justify-content: center;
+}
+.elt__emptycart__section .wrapper .cart {
+  max-width: 465px;
+  text-align: center;
+}
+.elt__emptycart__section .wrapper .cart .image {
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+  margin-bottom: 28px;
+}
+.elt__emptycart__section .wrapper .cart .image img {
+  width: 100%;
+  height: auto;
+}
+.elt__emptycart__section .wrapper .cart .text {
+  margin-bottom: 48px;
+}
+.elt__emptycart__section .wrapper .cart .text h5 {
+  color: #E9EFF6;
+  font-weight: 500;
+}
+.elt__emptycart__section .wrapper .cart .text span {
+  color: #AFBACA;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__emptycart__section .wrapper .cart .text span {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__emptycart__section .wrapper .cart .text span {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__emptycart__section .wrapper .cart .text span {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__emptycart__section .wrapper .cart .text span {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .elt__emptycart__section .wrapper .cart .text span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .elt__emptycart__section .wrapper .cart .text span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__emptycart__section .wrapper .cart .text span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__emptycart__section .wrapper .cart .text span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.elt__emptycart__section .wrapper .cart .button {
+  transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  height: 48px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 24px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  color: #E9EFF6;
+  font-weight: 500;
+  text-align: center;
+  text-transform: capitalize;
+  cursor: pointer;
+  background: #1C1C20;
+  color: #F27240;
+  border: 1px solid #F27240;
+  background: transparent;
+  margin: 0 auto;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__emptycart__section .wrapper .cart .button {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__emptycart__section .wrapper .cart .button {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__emptycart__section .wrapper .cart .button {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__emptycart__section .wrapper .cart .button {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .elt__emptycart__section .wrapper .cart .button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .elt__emptycart__section .wrapper .cart .button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__emptycart__section .wrapper .cart .button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__emptycart__section .wrapper .cart .button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.elt__emptycart__section .wrapper .cart .button svg {
+  height: 24px;
+  width: 24px;
+  stroke: #E9EFF6;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__emptycart__section .wrapper .cart .button {
+    padding: 0 12px;
+    gap: 5px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__emptycart__section .wrapper .cart .button {
+    padding: 0 14px;
+    gap: 7px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__emptycart__section .wrapper .cart .button {
+    padding: 0 16px;
+    gap: 9px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__emptycart__section .wrapper .cart .button {
+    padding: 0 18px;
+    gap: 11px;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__emptycart__section .wrapper .cart .button {
+    padding: 0 12px;
+    gap: 5px;
+    height: 38px;
+  }
+  .elt__emptycart__section .wrapper .cart .button svg {
+    height: 14px;
+    width: 14px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__emptycart__section .wrapper .cart .button {
+    padding: 0 14px;
+    gap: 7px;
+    height: 42px;
+  }
+  .elt__emptycart__section .wrapper .cart .button svg {
+    height: 16px;
+    width: 16px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__emptycart__section .wrapper .cart .button {
+    padding: 0 16px;
+    gap: 9px;
+    height: 44px;
+  }
+  .elt__emptycart__section .wrapper .cart .button svg {
+    height: 18px;
+    width: 18px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__emptycart__section .wrapper .cart .button {
+    padding: 0 18px;
+    gap: 11px;
+    height: 46px;
+  }
+  .elt__emptycart__section .wrapper .cart .button svg {
+    height: 20px;
+    width: 20px;
+  }
+}
+.elt__emptycart__section .wrapper .cart .button svg {
+  stroke: #F27240;
+}
+.elt__emptycart__section .wrapper .cart .button:hover {
+  background: #312321;
+}
+.elt__emptycart__section .wrapper .cart .button:active {
+  background: #312321;
+  box-shadow: 0 0 0 4px #3F2B28;
+}
+.elt__emptycart__section .wrapper .cart .button:disabled {
+  color: #5E718D;
+  background: #1C1C20;
+  border: 1px solid #2D2D32;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+.elt__emptycart__section .wrapper .cart .button:disabled svg {
+  stroke: #5E718D;
+}
+
 /*** End of Cart Section ***/
 /*** Start of Checkout Section ***/
 .elt__checkout__section .wrapper .elt__checkout__couponcode {
@@ -7200,97 +7631,6 @@ table tbody tr td {
   display: flex;
   flex-direction: column;
   gap: 16px;
-}
-.elt__checkout__section .elt__place__order .subtotal__text .item.products .prod {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-.elt__checkout__section .elt__place__order .subtotal__text .item.products .prod .prod__item {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-.elt__checkout__section .elt__place__order .subtotal__text .item.products .prod .prod__item .prod__img {
-  width: 79px;
-  height: 86px;
-  border-radius: 8px;
-  overflow: hidden;
-  flex-shrink: 0;
-  flex-grow: 0;
-}
-.elt__checkout__section .elt__place__order .subtotal__text .item.products .prod .prod__item .prod__img img {
-  width: 100%;
-  height: 100%;
-}
-.elt__checkout__section .elt__place__order .subtotal__text .item.products .prod .prod__item .text span {
-  color: #D7DFE9;
-}
-.elt__checkout__section .elt__place__order .subtotal__text .item.products .prod .prod__item .text .prod__name {
-  display: flex;
-  gap: 5px;
-}
-.elt__checkout__section .elt__place__order .subtotal__text .item.products .prod .prod__item .text .prod__info {
-  display: flex;
-  gap: 16px;
-}
-.elt__checkout__section .elt__place__order .subtotal__text .item.products .prod .prod__item .text .prod__info span {
-  color: #8897AE;
-}
-@media screen and (min-width: 200px) and (max-width: 289px) {
-  .elt__checkout__section .elt__place__order .subtotal__text .item.products .prod .prod__item .text .prod__info span {
-    font-size: 11px;
-    line-height: 17px;
-  }
-}
-@media screen and (min-width: 290px) and (max-width: 414px) {
-  .elt__checkout__section .elt__place__order .subtotal__text .item.products .prod .prod__item .text .prod__info span {
-    font-size: 12px;
-    line-height: 18px;
-  }
-}
-@media screen and (min-width: 415px) and (max-width: 575px) {
-  .elt__checkout__section .elt__place__order .subtotal__text .item.products .prod .prod__item .text .prod__info span {
-    font-size: 13px;
-    line-height: 19px;
-  }
-}
-@media screen and (min-width: 576px) and (max-width: 767px) {
-  .elt__checkout__section .elt__place__order .subtotal__text .item.products .prod .prod__item .text .prod__info span {
-    font-size: 14px;
-    line-height: 21px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .elt__checkout__section .elt__place__order .subtotal__text .item.products .prod .prod__item .text .prod__info span {
-    font-size: 14px;
-    line-height: 21px;
-  }
-}
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-  .elt__checkout__section .elt__place__order .subtotal__text .item.products .prod .prod__item .text .prod__info span {
-    font-size: 14px;
-    line-height: 21px;
-  }
-}
-@media screen and (min-width: 1200px) and (max-width: 1399px) {
-  .elt__checkout__section .elt__place__order .subtotal__text .item.products .prod .prod__item .text .prod__info span {
-    font-size: 14px;
-    line-height: 21px;
-  }
-}
-@media screen and (min-width: 1400px) and (max-width: 1920px) {
-  .elt__checkout__section .elt__place__order .subtotal__text .item.products .prod .prod__item .text .prod__info span {
-    font-size: 14px;
-    line-height: 21px;
-  }
-}
-.elt__checkout__section .elt__place__order .subtotal__text .item.products .prod .prod__item .text .prod__info .size::before {
-  content: "Size: ";
-}
-.elt__checkout__section .elt__place__order .subtotal__text .item.products .prod .prod__item .text .prod__info .color::before {
-  content: "Color: ";
 }
 .elt__checkout__section .elt__place__order .subtotal__text .item.shipping label {
   display: flex;
@@ -7626,6 +7966,1107 @@ table tbody tr td {
 }
 
 /*** End of Checkout Section ***/
+/*** Start of Payment Section ***/
+.elt__payment__Section .elt__payment__progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 100px;
+  flex-wrap: wrap;
+}
+.elt__payment__Section .elt__payment__progress .item {
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.elt__payment__Section .elt__payment__progress .item:nth-child(1)::before {
+  content: "1";
+}
+.elt__payment__Section .elt__payment__progress .item:nth-child(2)::before {
+  content: "2";
+}
+.elt__payment__Section .elt__payment__progress .item:nth-child(3)::before {
+  content: "3";
+}
+.elt__payment__Section .elt__payment__progress .item::before {
+  content: "";
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 50%;
+  background: #2D2D32;
+}
+.elt__payment__Section .elt__payment__progress .item::after {
+  content: "";
+  width: 60px;
+  height: 0;
+  border: 1px dashed #3D4A5C;
+}
+.elt__payment__Section .elt__payment__progress .item:last-child::after {
+  display: none;
+}
+.elt__payment__Section .elt__payment__progress .item.completed:nth-child(1)::before {
+  content: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.66699 10.0001L8.77923 11.9011C9.13881 12.2247 9.69748 12.1752 9.99449 11.7933L13.3337 7.50008M10.0003 18.3334C14.6027 18.3334 18.3337 14.6025 18.3337 10.0001C18.3337 5.39771 14.6027 1.66675 10.0003 1.66675C5.39795 1.66675 1.66699 5.39771 1.66699 10.0001C1.66699 14.6025 5.39795 18.3334 10.0003 18.3334Z" stroke="%233DEB64" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+}
+.elt__payment__Section .elt__payment__options {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 80px;
+  flex-wrap: wrap;
+}
+.elt__payment__Section .elt__payment__options .elt__payment__details {
+  padding: 28px;
+  border: 1px solid #F27240;
+  background: #212126;
+  border-radius: 20px;
+  width: 667px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.elt__payment__Section .elt__payment__options .elt__payment__details h5 {
+  margin-bottom: 0;
+}
+.elt__payment__Section .elt__payment__options .elt__payment__details .nav {
+  display: flex;
+  gap: 40px;
+}
+.elt__payment__Section .elt__payment__options .elt__payment__details .nav button {
+  transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  height: 48px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 24px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  color: #E9EFF6;
+  font-weight: 500;
+  text-align: center;
+  text-transform: capitalize;
+  cursor: pointer;
+  background: #1C1C20;
+  color: #F27240;
+  border: 1px solid #F27240;
+  color: #D7DFE9;
+  border-color: #3D4A5C;
+  background: transparent;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__payment__Section .elt__payment__options .elt__payment__details .nav button {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__payment__Section .elt__payment__options .elt__payment__details .nav button {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__payment__Section .elt__payment__options .elt__payment__details .nav button {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__payment__Section .elt__payment__options .elt__payment__details .nav button {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .elt__payment__Section .elt__payment__options .elt__payment__details .nav button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .elt__payment__Section .elt__payment__options .elt__payment__details .nav button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__payment__Section .elt__payment__options .elt__payment__details .nav button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__payment__Section .elt__payment__options .elt__payment__details .nav button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.elt__payment__Section .elt__payment__options .elt__payment__details .nav button svg {
+  height: 24px;
+  width: 24px;
+  stroke: #E9EFF6;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__payment__Section .elt__payment__options .elt__payment__details .nav button {
+    padding: 0 12px;
+    gap: 5px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__payment__Section .elt__payment__options .elt__payment__details .nav button {
+    padding: 0 14px;
+    gap: 7px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__payment__Section .elt__payment__options .elt__payment__details .nav button {
+    padding: 0 16px;
+    gap: 9px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__payment__Section .elt__payment__options .elt__payment__details .nav button {
+    padding: 0 18px;
+    gap: 11px;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__payment__Section .elt__payment__options .elt__payment__details .nav button {
+    padding: 0 12px;
+    gap: 5px;
+    height: 38px;
+  }
+  .elt__payment__Section .elt__payment__options .elt__payment__details .nav button svg {
+    height: 14px;
+    width: 14px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__payment__Section .elt__payment__options .elt__payment__details .nav button {
+    padding: 0 14px;
+    gap: 7px;
+    height: 42px;
+  }
+  .elt__payment__Section .elt__payment__options .elt__payment__details .nav button svg {
+    height: 16px;
+    width: 16px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__payment__Section .elt__payment__options .elt__payment__details .nav button {
+    padding: 0 16px;
+    gap: 9px;
+    height: 44px;
+  }
+  .elt__payment__Section .elt__payment__options .elt__payment__details .nav button svg {
+    height: 18px;
+    width: 18px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__payment__Section .elt__payment__options .elt__payment__details .nav button {
+    padding: 0 18px;
+    gap: 11px;
+    height: 46px;
+  }
+  .elt__payment__Section .elt__payment__options .elt__payment__details .nav button svg {
+    height: 20px;
+    width: 20px;
+  }
+}
+.elt__payment__Section .elt__payment__options .elt__payment__details .nav button svg {
+  stroke: #F27240;
+}
+.elt__payment__Section .elt__payment__options .elt__payment__details .nav button:hover {
+  background: #312321;
+}
+.elt__payment__Section .elt__payment__options .elt__payment__details .nav button:active {
+  background: #312321;
+  box-shadow: 0 0 0 4px #3F2B28;
+}
+.elt__payment__Section .elt__payment__options .elt__payment__details .nav button:disabled {
+  color: #5E718D;
+  background: #1C1C20;
+  border: 1px solid #2D2D32;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+.elt__payment__Section .elt__payment__options .elt__payment__details .nav button:disabled svg {
+  stroke: #5E718D;
+}
+.elt__payment__Section .elt__payment__options .elt__payment__details .nav button.active {
+  color: #F27240;
+  border-color: #F27240;
+}
+.elt__payment__Section .elt__payment__options .elt__payment__details .tab-pane form {
+  gap: 40px;
+}
+.elt__payment__Section .elt__payment__options .elt__payment__details .tab-pane button {
+  transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  height: 48px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 24px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  color: #E9EFF6;
+  font-weight: 500;
+  text-align: center;
+  text-transform: capitalize;
+  cursor: pointer;
+  background: #F27240;
+  width: 100%;
+  margin-top: 10px;
+  gap: 6px;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__payment__Section .elt__payment__options .elt__payment__details .tab-pane button {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__payment__Section .elt__payment__options .elt__payment__details .tab-pane button {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__payment__Section .elt__payment__options .elt__payment__details .tab-pane button {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__payment__Section .elt__payment__options .elt__payment__details .tab-pane button {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .elt__payment__Section .elt__payment__options .elt__payment__details .tab-pane button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .elt__payment__Section .elt__payment__options .elt__payment__details .tab-pane button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__payment__Section .elt__payment__options .elt__payment__details .tab-pane button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__payment__Section .elt__payment__options .elt__payment__details .tab-pane button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.elt__payment__Section .elt__payment__options .elt__payment__details .tab-pane button svg {
+  height: 24px;
+  width: 24px;
+  stroke: #E9EFF6;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__payment__Section .elt__payment__options .elt__payment__details .tab-pane button {
+    padding: 0 12px;
+    gap: 5px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__payment__Section .elt__payment__options .elt__payment__details .tab-pane button {
+    padding: 0 14px;
+    gap: 7px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__payment__Section .elt__payment__options .elt__payment__details .tab-pane button {
+    padding: 0 16px;
+    gap: 9px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__payment__Section .elt__payment__options .elt__payment__details .tab-pane button {
+    padding: 0 18px;
+    gap: 11px;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__payment__Section .elt__payment__options .elt__payment__details .tab-pane button {
+    padding: 0 12px;
+    gap: 5px;
+    height: 38px;
+  }
+  .elt__payment__Section .elt__payment__options .elt__payment__details .tab-pane button svg {
+    height: 14px;
+    width: 14px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__payment__Section .elt__payment__options .elt__payment__details .tab-pane button {
+    padding: 0 14px;
+    gap: 7px;
+    height: 42px;
+  }
+  .elt__payment__Section .elt__payment__options .elt__payment__details .tab-pane button svg {
+    height: 16px;
+    width: 16px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__payment__Section .elt__payment__options .elt__payment__details .tab-pane button {
+    padding: 0 16px;
+    gap: 9px;
+    height: 44px;
+  }
+  .elt__payment__Section .elt__payment__options .elt__payment__details .tab-pane button svg {
+    height: 18px;
+    width: 18px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__payment__Section .elt__payment__options .elt__payment__details .tab-pane button {
+    padding: 0 18px;
+    gap: 11px;
+    height: 46px;
+  }
+  .elt__payment__Section .elt__payment__options .elt__payment__details .tab-pane button svg {
+    height: 20px;
+    width: 20px;
+  }
+}
+.elt__payment__Section .elt__payment__options .elt__payment__details .tab-pane button:hover {
+  background: #E0531B;
+}
+.elt__payment__Section .elt__payment__options .elt__payment__details .tab-pane button:active {
+  background: #E0531B;
+  box-shadow: 0 0 0 4px #3F2B28;
+}
+.elt__payment__Section .elt__payment__options .elt__payment__details .tab-pane button:disabled {
+  background: #2D2D32;
+  color: #5E718D;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+.elt__payment__Section .elt__payment__options .elt__payment__details .tab-pane button:disabled svg {
+  stroke: #5E718D;
+}
+.elt__payment__Section .elt__payment__options .elt__order__summary {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  width: 472px;
+  border: 1px solid #2D3643;
+  border-radius: 20px;
+  padding: 28px;
+  height: 100%;
+}
+.elt__payment__Section .elt__payment__options .elt__order__summary h6, .elt__payment__Section .elt__payment__options .elt__order__summary h5 {
+  margin-bottom: 0;
+}
+.elt__payment__Section .elt__payment__options .elt__order__summary .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.elt__payment__Section .elt__payment__options .elt__order__summary .item span {
+  color: #AFBACA;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__payment__Section .elt__payment__options .elt__order__summary .item span {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__payment__Section .elt__payment__options .elt__order__summary .item span {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__payment__Section .elt__payment__options .elt__order__summary .item span {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__payment__Section .elt__payment__options .elt__order__summary .item span {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .elt__payment__Section .elt__payment__options .elt__order__summary .item span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .elt__payment__Section .elt__payment__options .elt__order__summary .item span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__payment__Section .elt__payment__options .elt__order__summary .item span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__payment__Section .elt__payment__options .elt__order__summary .item span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.elt__payment__Section .elt__payment__options .elt__order__summary .item.products {
+  flex-direction: column;
+  gap: 16px;
+}
+.elt__payment__Section .elt__payment__options .elt__order__summary .item.subtotal span, .elt__payment__Section .elt__payment__options .elt__order__summary .item.total h5, .elt__payment__Section .elt__payment__options .elt__order__summary .item.total h6 {
+  color: #E9EFF6;
+}
+
+/*** End of Payment Section ***/
+/*** Start of Blog Page ***/
+.elt__blogpage__section .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 76px;
+}
+.elt__blogpage__section .elt__blog__sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding: 28px;
+  background: #212126;
+  border-radius: 12px;
+}
+.elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  /* Category */
+  /* Popular Posts */
+  /* Tags */
+}
+.elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__widget__title, .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets p {
+  color: #E9EFF6;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets span, .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets label {
+  color: #D7DFE9;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets span, .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets label {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets span, .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets label {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets span, .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets label {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets span, .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets label {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets span, .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets label {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets span, .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets label {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets span, .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets label {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets span, .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets label {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__categories {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__categories .eltblog__catitem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__categories .eltblog__catitem form .form__row {
+  flex-direction: row;
+}
+.elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__popularposts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__popularposts .elt__small__blog__item {
+  display: flex;
+  gap: 20px;
+}
+.elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__popularposts .elt__small__blog__item .image {
+  width: 140px;
+  height: 90px;
+  overflow: hidden;
+  border-radius: 8px;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+.elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__popularposts .elt__small__blog__item .image img {
+  width: 100%;
+  height: auto;
+}
+.elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__popularposts .elt__small__blog__item .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__popularposts .elt__small__blog__item .content a {
+  color: #E9EFF6;
+}
+.elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__popularposts .elt__small__blog__item .content a:hover {
+  color: #F27240;
+}
+.elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__popularposts .elt__small__blog__item .content .eltblogsmall__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__popularposts .elt__small__blog__item .content .eltblogsmall__meta .eltblogsmall__metadate {
+  color: #8897AE;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__popularposts .elt__small__blog__item .content .eltblogsmall__meta .eltblogsmall__metadate {
+    font-size: 11px;
+    line-height: 17px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__popularposts .elt__small__blog__item .content .eltblogsmall__meta .eltblogsmall__metadate {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__popularposts .elt__small__blog__item .content .eltblogsmall__meta .eltblogsmall__metadate {
+    font-size: 13px;
+    line-height: 19px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__popularposts .elt__small__blog__item .content .eltblogsmall__meta .eltblogsmall__metadate {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__popularposts .elt__small__blog__item .content .eltblogsmall__meta .eltblogsmall__metadate {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__popularposts .elt__small__blog__item .content .eltblogsmall__meta .eltblogsmall__metadate {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__popularposts .elt__small__blog__item .content .eltblogsmall__meta .eltblogsmall__metadate {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__popularposts .elt__small__blog__item .content .eltblogsmall__meta .eltblogsmall__metadate {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+.elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__popularposts .elt__small__blog__item .content .eltblogsmall__meta .eltblogsmall__metadate svg {
+  height: 16px;
+  width: 16px;
+  stroke: #8897AE;
+}
+.elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__tags {
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+  row-gap: 28px;
+}
+.elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__tags .item {
+  padding: 8px 20px;
+  border: 1px solid #3D4A5C;
+  color: #AFBACA;
+  border-radius: 8px;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__tags .item {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__tags .item {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__tags .item {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__tags .item {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__tags .item {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__tags .item {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__tags .item {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__tags .item {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__tags .item:hover {
+  color: #F27240;
+  border-color: #F27240;
+}
+
+@media (min-width: 1400px) {
+  .elt__blogpage__section .left {
+    padding-left: 0;
+  }
+  .elt__blogpage__section .right {
+    padding: 0;
+  }
+}
+/*** End of Blog Page ***/
+/*** Start of Blog Post Page ***/
+.eltblog__post {
+  max-width: 1130px;
+}
+.eltblog__post .eltblog__featured__image {
+  width: 100%;
+  height: 730px;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+.eltblog__post .eltblog__featured__image img {
+  width: 100%;
+}
+.eltblog__post .eltblog__content .blog__meta__info span {
+  color: #8897AE;
+  margin-bottom: 0;
+}
+.eltblog__post .eltblog__content .eltblog__posttitle {
+  color: #E9EFF6;
+  margin-bottom: 28px;
+}
+.eltblog__post .eltblog__content h2, .eltblog__post .eltblog__content h3, .eltblog__post .eltblog__content h4, .eltblog__post .eltblog__content h5, .eltblog__post .eltblog__content h6, .eltblog__post .eltblog__content p, .eltblog__post .eltblog__content span, .eltblog__post .eltblog__content ul, .eltblog__post .eltblog__content ol {
+  margin-bottom: 28px;
+  color: #D7DFE9;
+}
+
+/*** End of Blog Post Page ***/
+.elt__contact__page {
+  padding-top: 20px;
+}
+.elt__contact__page .wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.elt__contact__page .wrapper .eltcontact__heading {
+  max-width: 595px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 120px;
+}
+.elt__contact__page .wrapper .eltcontact__heading h2 {
+  color: #E9EFF6;
+  font-weight: 500;
+}
+.elt__contact__page .wrapper .eltcontact__heading span {
+  color: #AFBACA;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__contact__page .wrapper .eltcontact__heading span {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__contact__page .wrapper .eltcontact__heading span {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__contact__page .wrapper .eltcontact__heading span {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__contact__page .wrapper .eltcontact__heading span {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .elt__contact__page .wrapper .eltcontact__heading span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .elt__contact__page .wrapper .eltcontact__heading span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__contact__page .wrapper .eltcontact__heading span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__contact__page .wrapper .eltcontact__heading span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.elt__contact__page .wrapper .contact__info {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding-top: 28px;
+}
+.elt__contact__page .wrapper .contact__info .top h4 {
+  color: #D7DFE9;
+  font-weight: 500;
+}
+.elt__contact__page .wrapper .contact__info .top span {
+  color: #AFBACA;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__contact__page .wrapper .contact__info .top span {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__contact__page .wrapper .contact__info .top span {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__contact__page .wrapper .contact__info .top span {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__contact__page .wrapper .contact__info .top span {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .elt__contact__page .wrapper .contact__info .top span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .elt__contact__page .wrapper .contact__info .top span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__contact__page .wrapper .contact__info .top span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__contact__page .wrapper .contact__info .top span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.elt__contact__page .wrapper .contact__info .middle {
+  margin: 0;
+  padding: 0;
+}
+.elt__contact__page .wrapper .contact__info .middle li {
+  color: #E9EFF6;
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.elt__contact__page .wrapper .contact__info .middle li:last-child {
+  margin-bottom: 0;
+}
+.elt__contact__page .wrapper .contact__info .middle li svg {
+  stroke: #E9EFF6;
+}
+.elt__contact__page .wrapper .contact__form {
+  padding: 40px;
+  padding-top: 28px;
+  background: #212126;
+  border-radius: 20px;
+}
+.elt__contact__page .wrapper .contact__form h4 {
+  color: #D7DFE9;
+  margin-bottom: 40px;
+}
+.elt__contact__page .wrapper .contact__form form {
+  gap: 40px;
+}
+.elt__contact__page .wrapper .contact__form form button {
+  transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  height: 48px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 24px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  color: #E9EFF6;
+  font-weight: 500;
+  text-align: center;
+  text-transform: capitalize;
+  cursor: pointer;
+  background: #F27240;
+  margin-top: 8px;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__contact__page .wrapper .contact__form form button {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__contact__page .wrapper .contact__form form button {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__contact__page .wrapper .contact__form form button {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__contact__page .wrapper .contact__form form button {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .elt__contact__page .wrapper .contact__form form button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .elt__contact__page .wrapper .contact__form form button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__contact__page .wrapper .contact__form form button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__contact__page .wrapper .contact__form form button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.elt__contact__page .wrapper .contact__form form button svg {
+  height: 24px;
+  width: 24px;
+  stroke: #E9EFF6;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__contact__page .wrapper .contact__form form button {
+    padding: 0 12px;
+    gap: 5px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__contact__page .wrapper .contact__form form button {
+    padding: 0 14px;
+    gap: 7px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__contact__page .wrapper .contact__form form button {
+    padding: 0 16px;
+    gap: 9px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__contact__page .wrapper .contact__form form button {
+    padding: 0 18px;
+    gap: 11px;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__contact__page .wrapper .contact__form form button {
+    padding: 0 12px;
+    gap: 5px;
+    height: 38px;
+  }
+  .elt__contact__page .wrapper .contact__form form button svg {
+    height: 14px;
+    width: 14px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__contact__page .wrapper .contact__form form button {
+    padding: 0 14px;
+    gap: 7px;
+    height: 42px;
+  }
+  .elt__contact__page .wrapper .contact__form form button svg {
+    height: 16px;
+    width: 16px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__contact__page .wrapper .contact__form form button {
+    padding: 0 16px;
+    gap: 9px;
+    height: 44px;
+  }
+  .elt__contact__page .wrapper .contact__form form button svg {
+    height: 18px;
+    width: 18px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__contact__page .wrapper .contact__form form button {
+    padding: 0 18px;
+    gap: 11px;
+    height: 46px;
+  }
+  .elt__contact__page .wrapper .contact__form form button svg {
+    height: 20px;
+    width: 20px;
+  }
+}
+.elt__contact__page .wrapper .contact__form form button:hover {
+  background: #E0531B;
+}
+.elt__contact__page .wrapper .contact__form form button:active {
+  background: #E0531B;
+  box-shadow: 0 0 0 4px #3F2B28;
+}
+.elt__contact__page .wrapper .contact__form form button:disabled {
+  background: #2D2D32;
+  color: #5E718D;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+.elt__contact__page .wrapper .contact__form form button:disabled svg {
+  stroke: #5E718D;
+}
+
+@media (min-width: 1640px) {
+  .elt__contact__page .wrapper .contact__info {
+    padding-right: 60px;
+  }
+}
 /************ TABLE OF CONTENTS ***************
 1. Global CSS
 2. Home Page

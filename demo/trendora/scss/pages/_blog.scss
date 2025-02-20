@@ -1,0 +1,185 @@
+@use '../utilities/index' as utils;
+@use '../base/index' as base;
+@use '../components/index' as comps;
+
+/*** Start of Blog Page ***/
+.elt__blogpage__section {
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 76px;
+    }
+
+    .elt__blog__sidebar {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        padding: 28px;
+        background: base.$backgroundSecondaryColor;
+        border-radius: 12px;
+
+        .eltblog__sidebar__widgets {
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+
+            .eltblog__widget__title,p {
+                color: base.$base100;
+                font-weight: 500;
+                margin-bottom: 0;
+            }
+
+            span,label {
+                @include base.medium__text;
+                color: base.$base200;
+            }
+            
+            /* Category */
+            .eltblog__categories {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .eltblog__catitem {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    form .form__row {
+                        flex-direction: row;
+                    }
+                }
+            }
+
+            /* Popular Posts */
+            .eltblog__popularposts {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .elt__small__blog__item {
+                    display: flex;
+                    gap: 20px;
+
+                    .image {
+                        width: 140px;
+                        height: 90px;
+                        overflow: hidden;
+                        border-radius: 8px;
+                        flex-shrink: 0;
+                        flex-grow: 0;
+
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+
+                    .content {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        a {
+                            color: base.$base100;
+
+                            &:hover {
+                                color: base.$brandPrimaryColor;
+                            }
+                        }
+
+                        .eltblogsmall__meta {
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 5px;
+
+                            .eltblogsmall__metadate {
+                                @include base.small__text;
+                                color: base.$base400;
+                                display: flex;
+                                align-items: center;
+                                gap: 4px;
+
+                                svg {
+                                    height: 16px;
+                                    width: 16px;
+                                    stroke: base.$base400;
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            /* Tags */
+            .eltblog__tags {
+                display: flex;
+                flex-wrap: wrap;
+                column-gap: 12px;
+                row-gap: 28px;
+
+                .item {
+                    @include base.medium__text;
+                    padding: 8px 20px;
+                    border: 1px solid base.$base700;
+                    color: base.$base300;
+                    border-radius: 8px;
+
+                    &:hover {
+                        color: base.$brandPrimaryColor;
+                        border-color: base.$brandPrimaryColor;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    .elt__blogpage__section {
+        .left {
+            padding-left: 0;
+        }
+    
+        .right {
+            padding: 0;
+        }
+    }
+}
+/*** End of Blog Page ***/
+
+/*** Start of Blog Post Page ***/
+.eltblog__post {
+    max-width: 1130px;
+
+    .eltblog__featured__image {
+        width: 100%;
+        height: 730px;
+        overflow: hidden;
+        border-radius: 12px;
+        margin-bottom: 40px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .eltblog__content {
+        .blog__meta__info span {
+            color: base.$base400;
+            margin-bottom: 0;
+        }
+
+        .eltblog__posttitle {
+            color: base.$base100;
+            margin-bottom: 28px;
+        }
+
+        h2,h3,h4,h5,h6,p,span,ul,ol {
+            margin-bottom: 28px;
+            color: base.$base200;
+        }
+    }
+}
+/*** End of Blog Post Page ***/

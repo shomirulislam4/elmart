@@ -635,7 +635,16 @@
   .elt__coupon__code form button {
     width: 100%;
   }
+  .elt__emptycart__section .wrapper .cart .image {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 15px;
+  }
+  .elt__emptycart__section .wrapper .cart .text {
+    margin-bottom: 25px;
+  }
   /*===== Checkout Page =====*/
+  /*Checkout*/
   .elt__checkout__section .wrapper .elt__checkout__couponcode {
     padding: 10px;
     margin-bottom: 20px;
@@ -663,6 +672,13 @@
     flex-direction: row;
     gap: 10px;
   }
+  .elt__checkout__section .wrapper .elt__place__order .subtotal__text .item form .form__row {
+    gap: 5px;
+  }
+  .elt__checkout__section .wrapper .elt__place__order .small__product__style {
+    gap: 5px;
+    flex-direction: column;
+  }
   .elt__checkout__section .wrapper .elt__place__order .subtotal__text,
   .elt__checkout__section .wrapper .elt__place__order .payment__method {
     gap: 10px;
@@ -671,16 +687,119 @@
     margin-top: 6px;
     margin-left: 30px;
   }
-  .elt__checkout__section .wrapper .elt__place__order .subtotal__text .item.products .prod {
-    align-items: flex-end;
+  /*Payment*/
+  .elt__payment__Section .elt__payment__progress {
+    margin-top: 30px;
   }
-  .elt__checkout__section .wrapper .elt__place__order .subtotal__text .item.products .prod .prod__item {
-    gap: 8px;
+  .elt__payment__Section .elt__payment__options {
+    gap: 20px;
+    margin-top: 20px;
+  }
+  .elt__payment__Section .elt__payment__options .elt__payment__details {
+    width: 100%;
+    padding: 10px;
+    gap: 10px;
+  }
+  .elt__payment__Section .elt__payment__options .elt__payment__details .nav,
+  .elt__payment__Section .elt__payment__options .elt__payment__details .tab-pane form {
+    gap: 10px;
+  }
+  .elt__payment__Section .elt__payment__options .elt__order__summary {
+    gap: 15px;
+    width: 100%;
+    padding: 10px;
+  }
+  .elt__payment__Section .elt__payment__options .elt__order__summary .small__product__style {
+    gap: 5px;
     flex-direction: column;
-    align-items: flex-start;
   }
-  .elt__checkout__section .wrapper .elt__place__order .subtotal__text .item.products .prod .prod__item .text .prod__name {
-    margin-bottom: 8px;
+  /*===== Blog Page =====*/
+  /*Blog Page*/
+  .elt__blogpage__section .wrapper {
+    -moz-column-gap: 0;
+         column-gap: 0;
+    row-gap: 20px;
+  }
+  .elt__blogpage__section .right {
+    margin-top: 30px;
+  }
+  .elt__blogpage__section .elt__blog__sidebar {
+    padding: 10px;
+    gap: 30px;
+  }
+  .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets {
+    gap: 20px;
+  }
+  .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__widget__title {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__categories .eltblog__catitem form .form__row {
+    gap: 10px;
+  }
+  .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__popularposts {
+    gap: 10px;
+  }
+  .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__popularposts .elt__small__blog__item {
+    gap: 10px;
+  }
+  .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__popularposts .elt__small__blog__item .image {
+    width: 60px;
+    height: 39px;
+    border-radius: 6px;
+  }
+  .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__popularposts .elt__small__blog__item .content .eltblogsmall__meta .eltblogsmall__metadate svg {
+    height: 12px;
+    width: 12px;
+  }
+  .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__tags {
+    gap: 8px;
+  }
+  .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__tags .item {
+    padding: 6px 15px;
+    border-radius: 6px;
+  }
+  /*Blog Post*/
+  .eltblog__post {
+    max-width: 176px;
+  }
+  .eltblog__post .eltblog__featured__image {
+    height: 114px;
+    margin-bottom: 20px;
+  }
+  .eltblog__post .eltblog__content .eltblog__posttitle,
+  .eltblog__post .eltblog__content h2, .eltblog__post .eltblog__content h3, .eltblog__post .eltblog__content h4, .eltblog__post .eltblog__content h5, .eltblog__post .eltblog__content h6, .eltblog__post .eltblog__content p, .eltblog__post .eltblog__content span, .eltblog__post .eltblog__content ul, .eltblog__post .eltblog__content ol {
+    margin-bottom: 14px;
+  }
+  /*===== Contact Us Page =====*/
+  .elt__contact__page {
+    padding-top: 0;
+  }
+  .elt__contact__page .wrapper .eltcontact__heading {
+    margin-bottom: 20px;
+  }
+  .elt__contact__page .wrapper .contact__info {
+    padding-top: 10px;
+    gap: 30px;
+  }
+  .elt__contact__page .wrapper .contact__info .middle li {
+    margin-bottom: 10px;
+    gap: 5px;
+  }
+  .elt__contact__page .wrapper .contact__info .middle li svg {
+    height: 12px;
+    width: 12px;
+  }
+  .elt__contact__page .wrapper .contact__form {
+    margin-top: 20px;
+    padding: 15px;
+    padding-top: 10px;
+  }
+  .elt__contact__page .wrapper .contact__form h4 {
+    margin-bottom: 15px;
+  }
+  .elt__contact__page .wrapper .contact__form form {
+    gap: 12px;
   }
 }
 @media (min-width: 290px) and (max-width: 414px) {
@@ -1244,7 +1363,16 @@
   .elt__coupon__code form button {
     width: 75px;
   }
+  .elt__emptycart__section .wrapper .cart .image {
+    height: 150px;
+    width: 150px;
+    margin-bottom: 15px;
+  }
+  .elt__emptycart__section .wrapper .cart .text {
+    margin-bottom: 30px;
+  }
   /*===== Checkout Page =====*/
+  /*Checkout*/
   .elt__checkout__section .wrapper .elt__checkout__couponcode {
     padding: 15px;
     margin-bottom: 25px;
@@ -1279,16 +1407,99 @@
     margin-top: 6px;
     margin-left: 30px;
   }
-  .elt__checkout__section .wrapper .elt__place__order .subtotal__text .item.products .prod {
-    align-items: flex-end;
+  /*Payment*/
+  .elt__payment__Section .elt__payment__progress {
+    margin-top: 40px;
   }
-  .elt__checkout__section .wrapper .elt__place__order .subtotal__text .item.products .prod .prod__item {
+  .elt__payment__Section .elt__payment__options {
+    gap: 25px;
+    margin-top: 30px;
+  }
+  .elt__payment__Section .elt__payment__options .elt__payment__details {
+    width: 100%;
+    padding: 15px;
+    gap: 15px;
+  }
+  .elt__payment__Section .elt__payment__options .elt__payment__details .nav,
+  .elt__payment__Section .elt__payment__options .elt__payment__details .tab-pane form {
+    gap: 15px;
+  }
+  .elt__payment__Section .elt__payment__options .elt__order__summary {
+    gap: 20px;
+    width: 100%;
+    padding: 15px;
+  }
+  .elt__payment__Section .elt__payment__options .elt__order__summary .item .small__product__style {
+    gap: 5px;
+  }
+  /*===== Blog Page =====*/
+  /*Blog Page*/
+  .elt__blogpage__section .wrapper {
+    -moz-column-gap: 0;
+         column-gap: 0;
+    row-gap: 20px;
+  }
+  .elt__blogpage__section .right {
+    margin-top: 30px;
+  }
+  .elt__blogpage__section .elt__blog__sidebar {
+    padding: 10px;
+    gap: 35px;
+  }
+  .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__categories .eltblog__catitem form .form__row {
     gap: 10px;
-    flex-direction: column;
-    align-items: flex-start;
   }
-  .elt__checkout__section .wrapper .elt__place__order .subtotal__text .item.products .prod .prod__item .text .prod__name {
-    margin-bottom: 8px;
+  .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__popularposts .elt__small__blog__item {
+    gap: 10px;
+  }
+  .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__popularposts .elt__small__blog__item .image {
+    width: 90px;
+    height: 58px;
+  }
+  .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__tags {
+    gap: 12px;
+  }
+  /*Blog Post*/
+  .eltblog__post {
+    max-width: 266px;
+  }
+  .eltblog__post .eltblog__featured__image {
+    height: 172px;
+    margin-bottom: 20px;
+  }
+  .eltblog__post .eltblog__content .eltblog__posttitle,
+  .eltblog__post .eltblog__content h2, .eltblog__post .eltblog__content h3, .eltblog__post .eltblog__content h4, .eltblog__post .eltblog__content h5, .eltblog__post .eltblog__content h6, .eltblog__post .eltblog__content p, .eltblog__post .eltblog__content span, .eltblog__post .eltblog__content ul, .eltblog__post .eltblog__content ol {
+    margin-bottom: 15px;
+  }
+  /*===== Contact Us Page =====*/
+  .elt__contact__page {
+    padding-top: 0;
+  }
+  .elt__contact__page .wrapper .eltcontact__heading {
+    margin-bottom: 30px;
+  }
+  .elt__contact__page .wrapper .contact__info {
+    padding-top: 14px;
+    gap: 35px;
+  }
+  .elt__contact__page .wrapper .contact__info .middle li {
+    margin-bottom: 14px;
+    gap: 7px;
+  }
+  .elt__contact__page .wrapper .contact__info .middle li svg {
+    height: 14px;
+    width: 14px;
+  }
+  .elt__contact__page .wrapper .contact__form {
+    margin-top: 30px;
+    padding: 20px;
+    padding-top: 14px;
+  }
+  .elt__contact__page .wrapper .contact__form h4 {
+    margin-bottom: 20px;
+  }
+  .elt__contact__page .wrapper .contact__form form {
+    gap: 12px;
   }
 }
 @media (min-width: 415px) and (max-width: 575px) {
@@ -1707,6 +1918,7 @@
     height: 44px;
   }
   /*===== Checkout Page =====*/
+  /*Checkout*/
   .elt__checkout__section .wrapper .elt__checkout__couponcode {
     padding: 20px;
     margin-bottom: 30px;
@@ -1739,6 +1951,83 @@
   .elt__checkout__section .wrapper .elt__place__order .payment__method .op span {
     margin-top: 8px;
     margin-left: 34px;
+  }
+  /*Payment*/
+  .elt__payment__Section .elt__payment__progress {
+    margin-top: 50px;
+  }
+  .elt__payment__Section .elt__payment__options {
+    gap: 30px;
+    margin-top: 40px;
+  }
+  .elt__payment__Section .elt__payment__options .elt__payment__details {
+    width: 100%;
+    padding: 20px;
+    gap: 40px;
+  }
+  .elt__payment__Section .elt__payment__options .elt__order__summary {
+    gap: 24px;
+    width: 100%;
+    padding: 20px;
+  }
+  .elt__payment__Section .elt__payment__options .elt__order__summary .item .small__product__style {
+    gap: 5px;
+  }
+  /*===== Blog Page =====*/
+  /*Blog Page*/
+  .elt__blogpage__section .wrapper {
+    -moz-column-gap: 14px;
+         column-gap: 14px;
+    row-gap: 25px;
+  }
+  .elt__blogpage__section .right {
+    margin-top: 40px;
+  }
+  .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  /*Blog Post*/
+  .eltblog__post {
+    max-width: 391px;
+  }
+  .eltblog__post .eltblog__featured__image {
+    height: 253px;
+    margin-bottom: 25px;
+  }
+  .eltblog__post .eltblog__content .eltblog__posttitle,
+  .eltblog__post .eltblog__content h2, .eltblog__post .eltblog__content h3, .eltblog__post .eltblog__content h4, .eltblog__post .eltblog__content h5, .eltblog__post .eltblog__content h6, .eltblog__post .eltblog__content p, .eltblog__post .eltblog__content span, .eltblog__post .eltblog__content ul, .eltblog__post .eltblog__content ol {
+    margin-bottom: 16px;
+  }
+  /*===== Contact Us Page =====*/
+  .elt__contact__page {
+    padding-top: 0;
+  }
+  .elt__contact__page .wrapper .eltcontact__heading {
+    margin-bottom: 30px;
+  }
+  .elt__contact__page .wrapper .contact__info {
+    padding-top: 14px;
+    gap: 35px;
+  }
+  .elt__contact__page .wrapper .contact__info .middle li {
+    margin-bottom: 14px;
+    gap: 7px;
+  }
+  .elt__contact__page .wrapper .contact__info .middle li svg {
+    height: 14px;
+    width: 14px;
+  }
+  .elt__contact__page .wrapper .contact__form {
+    margin-top: 30px;
+    padding: 20px;
+    padding-top: 14px;
+  }
+  .elt__contact__page .wrapper .contact__form h4 {
+    margin-bottom: 20px;
+  }
+  .elt__contact__page .wrapper .contact__form form {
+    gap: 12px;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
@@ -2094,11 +2383,72 @@
     width: 100%;
   }
   /*===== Checkout Page =====*/
+  /*Checkout*/
   .elt__checkout__section .elt__place__order {
     margin-top: 30px;
   }
   .elt__checkout__section .wrapper .left__side form .address1 .with__label:nth-child(2) {
     width: 50%;
+  }
+  /*Payment*/
+  .elt__payment__Section .elt__payment__progress {
+    margin-top: 60px;
+  }
+  .elt__payment__Section .elt__payment__options {
+    gap: 30px;
+    margin-top: 50px;
+  }
+  /*===== Blog Page =====*/
+  /*Blog Page*/
+  .elt__blogpage__section .wrapper {
+    -moz-column-gap: 14px;
+         column-gap: 14px;
+    row-gap: 20px;
+  }
+  .elt__blogpage__section .right {
+    margin-top: 40px;
+  }
+  /*Blog Post*/
+  .eltblog__post {
+    max-width: 516px;
+  }
+  .eltblog__post .eltblog__featured__image {
+    height: 333px;
+    margin-bottom: 30px;
+  }
+  .eltblog__post .eltblog__content .eltblog__posttitle,
+  .eltblog__post .eltblog__content h2, .eltblog__post .eltblog__content h3, .eltblog__post .eltblog__content h4, .eltblog__post .eltblog__content h5, .eltblog__post .eltblog__content h6, .eltblog__post .eltblog__content p, .eltblog__post .eltblog__content span, .eltblog__post .eltblog__content ul, .eltblog__post .eltblog__content ol {
+    margin-bottom: 18px;
+  }
+  /*===== Contact Us Page =====*/
+  .elt__contact__page {
+    padding-top: 0;
+  }
+  .elt__contact__page .wrapper .eltcontact__heading {
+    margin-bottom: 30px;
+  }
+  .elt__contact__page .wrapper .contact__info {
+    padding-top: 14px;
+    gap: 35px;
+  }
+  .elt__contact__page .wrapper .contact__info .middle li {
+    margin-bottom: 14px;
+    gap: 7px;
+  }
+  .elt__contact__page .wrapper .contact__info .middle li svg {
+    height: 14px;
+    width: 14px;
+  }
+  .elt__contact__page .wrapper .contact__form {
+    margin-top: 30px;
+    padding: 20px;
+    padding-top: 14px;
+  }
+  .elt__contact__page .wrapper .contact__form h4 {
+    margin-bottom: 20px;
+  }
+  .elt__contact__page .wrapper .contact__form form {
+    gap: 20px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -2397,11 +2747,72 @@
     margin-top: 40px;
   }
   /*===== Checkout Page =====*/
+  /*Checkout*/
   .elt__checkout__section .elt__place__order {
     margin-top: 30px;
   }
   .elt__checkout__section .wrapper .left__side form .address1 .with__label:nth-child(2) {
     width: 50%;
+  }
+  /*Payment*/
+  .elt__payment__Section .elt__payment__progress {
+    margin-top: 70px;
+  }
+  .elt__payment__Section .elt__payment__options {
+    gap: 30px;
+    margin-top: 60px;
+  }
+  /*===== Blog Page =====*/
+  /*Blog Page*/
+  .elt__blogpage__section .wrapper {
+    -moz-column-gap: 18px;
+         column-gap: 18px;
+    row-gap: 25px;
+  }
+  .elt__blogpage__section .right {
+    margin-top: 50px;
+  }
+  /*Blog Post*/
+  .eltblog__post {
+    max-width: 696px;
+  }
+  .eltblog__post .eltblog__featured__image {
+    height: 450px;
+    margin-bottom: 30px;
+  }
+  .eltblog__post .eltblog__content .eltblog__posttitle,
+  .eltblog__post .eltblog__content h2, .eltblog__post .eltblog__content h3, .eltblog__post .eltblog__content h4, .eltblog__post .eltblog__content h5, .eltblog__post .eltblog__content h6, .eltblog__post .eltblog__content p, .eltblog__post .eltblog__content span, .eltblog__post .eltblog__content ul, .eltblog__post .eltblog__content ol {
+    margin-bottom: 18px;
+  }
+  /*===== Contact Us Page =====*/
+  .elt__contact__page {
+    padding-top: 0;
+  }
+  .elt__contact__page .wrapper .eltcontact__heading {
+    margin-bottom: 40px;
+  }
+  .elt__contact__page .wrapper .contact__info {
+    padding-top: 14px;
+    gap: 35px;
+  }
+  .elt__contact__page .wrapper .contact__info .middle li {
+    margin-bottom: 14px;
+    gap: 7px;
+  }
+  .elt__contact__page .wrapper .contact__info .middle li svg {
+    height: 14px;
+    width: 14px;
+  }
+  .elt__contact__page .wrapper .contact__form {
+    margin-top: 30px;
+    padding: 20px;
+    padding-top: 14px;
+  }
+  .elt__contact__page .wrapper .contact__form h4 {
+    margin-bottom: 20px;
+  }
+  .elt__contact__page .wrapper .contact__form form {
+    gap: 20px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -2703,6 +3114,7 @@
     margin-top: 50px;
   }
   /*===== Checkout Page =====*/
+  /*Checkout*/
   .elt__checkout__section .wrapper .left__side form {
     gap: 30px;
     padding: 20px;
@@ -2723,17 +3135,6 @@
   .elt__checkout__section .elt__place__order .subtotal__text .item form {
     gap: 15px;
   }
-  .elt__checkout__section .elt__place__order .subtotal__text .item.products .prod span {
-    font-size: 14px;
-    line-height: 22px;
-  }
-  .elt__checkout__section .elt__place__order .subtotal__text .item.products .prod .prod__item .prod__img {
-    width: 69px;
-    height: 75px;
-  }
-  .elt__checkout__section .elt__place__order .subtotal__text .item.products .prod .prod__item .text .prod__info {
-    gap: 10px;
-  }
   .elt__checkout__section .elt__place__order .payment__method {
     gap: 15px;
   }
@@ -2742,6 +3143,104 @@
   }
   .elt__checkout__section .elt__place__order .payment__method .op span {
     margin-left: 31px;
+  }
+  /*Payment*/
+  .elt__payment__Section .elt__payment__progress {
+    margin-top: 80px;
+  }
+  .elt__payment__Section .elt__payment__options {
+    gap: 20px;
+    margin-top: 70px;
+  }
+  .elt__payment__Section .elt__payment__options .elt__payment__details {
+    width: 536px;
+    padding: 20px;
+    gap: 40px;
+  }
+  .elt__payment__Section .elt__payment__options .elt__order__summary {
+    gap: 24px;
+    width: 380px;
+    padding: 20px;
+  }
+  /*===== Blog Page =====*/
+  /*Blog Page*/
+  .elt__blogpage__section .wrapper {
+    -moz-column-gap: 14px;
+         column-gap: 14px;
+    row-gap: 20px;
+  }
+  .elt__blogpage__section .right {
+    padding-left: 0;
+  }
+  .elt__blogpage__section .elt__blog__sidebar {
+    padding: 10px;
+    gap: 35px;
+  }
+  .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__categories {
+    gap: 15px;
+  }
+  .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__categories .eltblog__catitem form .form__row {
+    gap: 10px;
+  }
+  .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__popularposts {
+    gap: 15px;
+  }
+  .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__popularposts .elt__small__blog__item {
+    gap: 10px;
+  }
+  .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__popularposts .elt__small__blog__item .image {
+    width: 90px;
+    height: 58px;
+  }
+  .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__tags {
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    row-gap: 18px;
+  }
+  /*Blog Post*/
+  .eltblog__post {
+    max-width: 616px;
+  }
+  .eltblog__post .eltblog__featured__image {
+    height: 398px;
+    margin-bottom: 30px;
+  }
+  .eltblog__post .eltblog__content .eltblog__posttitle,
+  .eltblog__post .eltblog__content h2, .eltblog__post .eltblog__content h3, .eltblog__post .eltblog__content h4, .eltblog__post .eltblog__content h5, .eltblog__post .eltblog__content h6, .eltblog__post .eltblog__content p, .eltblog__post .eltblog__content span, .eltblog__post .eltblog__content ul, .eltblog__post .eltblog__content ol {
+    margin-bottom: 18px;
+  }
+  /*===== Contact Us Page =====*/
+  .elt__contact__page {
+    padding-top: 10px;
+  }
+  .elt__contact__page .wrapper .eltcontact__heading {
+    margin-bottom: 60px;
+  }
+  .elt__contact__page .wrapper .contact__info {
+    padding-top: 18px;
+    padding-right: 0;
+    gap: 45px;
+  }
+  .elt__contact__page .wrapper .contact__info .middle li {
+    margin-bottom: 18px;
+    gap: 10px;
+  }
+  .elt__contact__page .wrapper .contact__info .middle li svg {
+    height: 16px;
+    width: 16px;
+  }
+  .elt__contact__page .wrapper .contact__info .social__profiles {
+    gap: 24px;
+  }
+  .elt__contact__page .wrapper .contact__form {
+    padding: 30px;
+    padding-top: 18px;
+  }
+  .elt__contact__page .wrapper .contact__form h4 {
+    margin-bottom: 30px;
+  }
+  .elt__contact__page .wrapper .contact__form form {
+    gap: 30px;
   }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -2982,6 +3481,7 @@
     padding: 20px;
   }
   /*===== Checkout Page =====*/
+  /*Checkout*/
   .elt__checkout__section .wrapper .left__side form .address1 .with__label:nth-child(2) {
     width: 50%;
   }
@@ -2991,6 +3491,78 @@
   }
   .elt__checkout__section .elt__place__order .payment__method {
     gap: 20px;
+  }
+  /*Payment*/
+  .elt__payment__Section .elt__payment__progress {
+    margin-top: 90px;
+  }
+  .elt__payment__Section .elt__payment__options {
+    gap: 20px;
+  }
+  .elt__payment__Section .elt__payment__options .elt__payment__details {
+    width: 624px;
+  }
+  /*===== Blog Page =====*/
+  /*Blog Page*/
+  .elt__blogpage__section .wrapper {
+    row-gap: 50px;
+  }
+  .elt__blogpage__section .right {
+    padding-left: 0;
+  }
+  .elt__blogpage__section .elt__blog__sidebar {
+    padding: 10px;
+    gap: 35px;
+  }
+  .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__categories .eltblog__catitem form .form__row {
+    gap: 10px;
+  }
+  .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__popularposts .elt__small__blog__item {
+    gap: 10px;
+  }
+  .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__popularposts .elt__small__blog__item .image {
+    width: 90px;
+    height: 58px;
+  }
+  .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__tags {
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    row-gap: 18px;
+  }
+  /*Blog Post*/
+  .eltblog__post {
+    max-width: 821px;
+  }
+  .eltblog__post .eltblog__featured__image {
+    height: 530px;
+    margin-bottom: 35px;
+  }
+  .eltblog__post .eltblog__content .eltblog__posttitle,
+  .eltblog__post .eltblog__content h2, .eltblog__post .eltblog__content h3, .eltblog__post .eltblog__content h4, .eltblog__post .eltblog__content h5, .eltblog__post .eltblog__content h6, .eltblog__post .eltblog__content p, .eltblog__post .eltblog__content span, .eltblog__post .eltblog__content ul, .eltblog__post .eltblog__content ol {
+    margin-bottom: 20px;
+  }
+  /*===== Contact Us Page =====*/
+  .elt__contact__page {
+    padding-top: 15px;
+  }
+  .elt__contact__page .wrapper .eltcontact__heading {
+    margin-bottom: 80px;
+  }
+  .elt__contact__page .wrapper .contact__info {
+    padding-top: 20px;
+    padding-right: 0;
+    gap: 50px;
+  }
+  .elt__contact__page .wrapper .contact__info .middle li {
+    margin-bottom: 20px;
+    gap: 12px;
+  }
+  .elt__contact__page .wrapper .contact__form {
+    padding-top: 20px;
+    padding: 35px;
+  }
+  .elt__contact__page .wrapper .contact__form form {
+    gap: 35px;
   }
 }
 @media (min-width: 1400px) and (max-width: 1639px) {
@@ -3085,6 +3657,7 @@
     margin-left: auto;
   }
   /*===== Checkout Page =====*/
+  /*Checkout*/
   .elt__checkout__section .wrapper .left__side form .address1 .with__label:nth-child(2) {
     width: 45%;
   }
@@ -3093,6 +3666,29 @@
   }
   .elt__checkout__section .elt__place__order .payment__method {
     gap: 30px;
+  }
+  /*===== Blog Page =====*/
+  /*Blog Page*/
+  .elt__blogpage__section .elt__blog__sidebar {
+    padding: 20px;
+  }
+  .elt__blogpage__section .elt__blog__sidebar .eltblog__sidebar__widgets .eltblog__popularposts .elt__small__blog__item .image {
+    width: 110px;
+    height: 71px;
+  }
+  /*Blog Post*/
+  .eltblog__post {
+    max-width: 1000px;
+  }
+  .eltblog__post .eltblog__featured__image {
+    height: 646px;
+  }
+  /*===== Contact Us Page =====*/
+  .elt__contact__page .wrapper .eltcontact__heading {
+    margin-bottom: 100px;
+  }
+  .elt__contact__page .wrapper .contact__info {
+    padding-right: 0;
   }
 }
 @media (min-width: 1640px) and (max-width: 1700px) {

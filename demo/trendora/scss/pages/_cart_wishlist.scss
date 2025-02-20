@@ -347,4 +347,48 @@
         }
     }
 }
+
+/* Empty Cart Page */
+.elt__emptycart__section .wrapper {
+    display: flex;
+    justify-content: center;
+
+    .cart {
+        max-width: 465px;
+        text-align: center;
+
+        .image {
+            height: 200px;
+            width: 200px;
+            margin: 0 auto;
+            margin-bottom: 28px;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .text {
+            margin-bottom: 48px;
+
+            h5 {
+                color: base.$base100;
+                font-weight: 500;
+            }
+
+            span {
+                @include base.medium__text;
+                color: base.$base300;
+            }
+        }
+
+        .button {
+            @include comps.elt__button__c;
+            background: transparent;
+            margin: 0 auto;
+        }
+    }
+}
+
 /*** End of Cart Section ***/

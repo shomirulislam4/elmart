@@ -1,0 +1,96 @@
+@use '../utilities/index' as utils;
+@use '../base/index' as base;
+@use '../components/index' as comps;
+
+.elt__contact__page {
+    padding-top: 20px;
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+
+        .eltcontact__heading {
+            max-width: 595px;
+            text-align: center;
+            margin: 0 auto;
+            margin-bottom: 120px;
+
+            h2 {
+                color: base.$base100;
+                font-weight: 500;
+            }
+
+            span {
+                @include base.medium__text;
+                color: base.$base300;
+            }
+        }
+
+        .contact__info {
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+            padding-top: 28px;
+
+            .top {
+                h4 {
+                    color: base.$base200;
+                    font-weight: 500;
+                }
+
+                span {
+                    @include base.medium__text;
+                    color: base.$base300;
+                }
+            }
+
+            .middle {
+                margin: 0;
+                padding: 0;
+
+                li {
+                    color: base.$base100;
+                    margin-bottom: 28px;
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+    
+                    svg {
+                        stroke: base.$base100;
+                    }
+                }
+            }
+        }
+
+        .contact__form {
+            padding: 40px;
+            padding-top: 28px;
+            background: base.$backgroundSecondaryColor;
+            border-radius: 20px;
+
+            h4 {
+                color: base.$base200;
+                margin-bottom: 40px;
+            }
+
+            form {
+                gap: 40px;
+
+                button {
+                    @include comps.elt__button__a;
+                    margin-top: 8px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1640px) {
+    .elt__contact__page .wrapper .contact__info {
+        padding-right: 60px;
+    }
+}
