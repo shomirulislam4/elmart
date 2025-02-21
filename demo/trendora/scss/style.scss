@@ -765,9 +765,12 @@ header .wrapper .header__cta {
         box-shadow: 0 0 400px 400px rgba(245, 120, 71, 0.05);
     }
 
-    .section__title h2 {
-        color: base.$base00;
-        text-align: center;
+    .section__title {
+        justify-content: center;
+        
+        h2 {
+            color: base.$base00;
+        }
     }
 
     .elt__tabsandnav {

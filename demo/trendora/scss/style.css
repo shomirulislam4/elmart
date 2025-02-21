@@ -9067,6 +9067,273 @@ table tbody tr td {
     padding-right: 60px;
   }
 }
+/* About Us Section */
+.elt__aboutus__section .container {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+.elt__aboutus__section .container .image {
+  display: flex;
+  gap: 28px;
+}
+.elt__aboutus__section .container .image .left {
+  overflow: hidden;
+  border-radius: 20px;
+  height: 741px;
+  width: 389px;
+}
+.elt__aboutus__section .container .image .left img {
+  width: 100%;
+  height: auto;
+}
+.elt__aboutus__section .container .image .right {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.elt__aboutus__section .container .image .right img {
+  border-radius: 20px;
+  height: 356.5px;
+}
+.elt__aboutus__section .container .content {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.elt__aboutus__section .container .content h2 {
+  color: #E9EFF6;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+.elt__aboutus__section .container .content p {
+  color: #AFBACA;
+  margin-bottom: 25px;
+}
+.elt__aboutus__section .container .content .about__info {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 68px;
+  gap: 138px;
+  flex-wrap: wrap;
+}
+.elt__aboutus__section .container .content .about__info .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.elt__aboutus__section .container .content .about__info .item h3 {
+  color: #E9EFF6;
+  font-weight: 600;
+  margin-bottom: 0;
+  display: flex;
+}
+.elt__aboutus__section .container .content .about__info .item .type {
+  color: #E9EFF6;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__aboutus__section .container .content .about__info .item .type {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__aboutus__section .container .content .about__info .item .type {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__aboutus__section .container .content .about__info .item .type {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__aboutus__section .container .content .about__info .item .type {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .elt__aboutus__section .container .content .about__info .item .type {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .elt__aboutus__section .container .content .about__info .item .type {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__aboutus__section .container .content .about__info .item .type {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__aboutus__section .container .content .about__info .item .type {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 1640px) {
+  .elt__aboutus__section .container {
+    padding: 0;
+  }
+}
+/* Our Services */
+.elt__our__services__section {
+  margin-top: 180px;
+}
+.elt__our__services__section .section__title {
+  justify-content: center;
+}
+.elt__our__services__section .section__title h2 {
+  color: #E9EFF6;
+}
+.elt__our__services__section .service__item {
+  padding: 28px;
+  border: 1px solid #2D3643;
+  border-radius: 20px;
+}
+.elt__our__services__section .service__item i {
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  font-size: 20px;
+  border-radius: 12px;
+  text-align: center;
+  background: #212126;
+  margin-bottom: 36px;
+  color: #F1662F;
+}
+.elt__our__services__section .service__item h6 {
+  margin-bottom: 12px;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+.elt__our__services__section .service__item span {
+  color: #AFBACA;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__our__services__section .service__item span {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__our__services__section .service__item span {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__our__services__section .service__item span {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__our__services__section .service__item span {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .elt__our__services__section .service__item span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .elt__our__services__section .service__item span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__our__services__section .service__item span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__our__services__section .service__item span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+/* Testimonials Slider */
+.elt__testimonials__section {
+  margin-top: 168px;
+}
+.elt__testimonials__section .wrapper {
+  background: #212126;
+  padding: 120px 0;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+}
+.elt__testimonials__section .wrapper .elttestimonials__slider {
+  width: 845px;
+  height: auto;
+  position: relative;
+}
+.elt__testimonials__section .wrapper .elttestimonials__slider::before {
+  content: url('data:image/svg+xml,<svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.1072 30.74C21.9286 30.74 22.5259 30.852 22.8992 31.076C23.7952 31.5987 24.5792 32.308 25.2512 33.204C25.9232 34.0253 26.2592 35.22 26.2592 36.788C26.1099 39.1773 25.1765 40.82 23.4592 41.716C21.9659 42.4627 19.9499 42.836 17.4112 42.836C15.6939 42.836 14.3126 42.2013 13.2672 40.932C12.2219 39.6627 11.6992 38.0573 11.6992 36.116C11.6992 33.876 12.3339 31.3 13.6032 28.388C14.9472 25.4013 16.2539 23.124 17.5232 21.556C18.4192 20.3613 19.5019 19.3533 20.7712 18.532C22.0406 17.7107 23.1232 17.3 24.0192 17.3C25.7366 17.3 26.7819 17.5613 27.1552 18.084C27.6032 18.6067 27.8272 19.6147 27.8272 21.108C27.8272 21.4813 27.4539 22.0413 26.7072 22.788C26.0352 23.46 25.6246 23.8707 25.4752 24.02C24.2806 25.0653 23.5339 25.812 23.2352 26.26C21.9659 28.052 21.1072 29.5453 20.6592 30.74H21.1072ZM40.4832 30.74C41.3792 30.74 42.0139 30.852 42.3872 31.076C43.2832 31.6733 44.0299 32.3827 44.6272 33.204C45.2992 34.0253 45.6352 35.22 45.6352 36.788C45.4859 39.1773 44.5899 40.82 42.9472 41.716C41.4539 42.4627 39.4379 42.836 36.8992 42.836C35.1819 42.836 33.8006 42.2013 32.7552 40.932C31.7099 39.6627 31.1872 38.0573 31.1872 36.116C31.1872 33.876 31.8219 31.3 33.0912 28.388C34.4352 25.4013 35.7419 23.124 37.0112 21.556C37.9819 20.3613 39.0646 19.3533 40.2592 18.532C41.4539 17.7107 42.4992 17.3 43.3952 17.3C45.1872 17.3 46.2699 17.5613 46.6432 18.084C47.0912 18.6067 47.3152 19.6147 47.3152 21.108C47.3152 21.7053 46.4566 22.7133 44.7392 24.132C44.4406 24.4307 44.0672 24.804 43.6192 25.252C43.1712 25.6253 42.8352 25.9613 42.6112 26.26C41.4912 27.828 40.6699 29.3213 40.1472 30.74H40.4832Z" fill="%235E718D"/></svg>');
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 60px;
+  width: 60px;
+}
+.elt__testimonials__section .wrapper .elttestimonials__slider::after {
+  content: url('data:image/svg+xml,<svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M35.8928 30.74C35.0714 30.74 34.4741 30.852 34.1008 31.076C33.2048 31.5987 32.4208 32.308 31.7488 33.204C31.0768 34.0253 30.7408 35.22 30.7408 36.788C30.8901 39.1773 31.8235 40.82 33.5408 41.716C35.0341 42.4627 37.0501 42.836 39.5888 42.836C41.3061 42.836 42.6874 42.2013 43.7328 40.932C44.7781 39.6627 45.3008 38.0573 45.3008 36.116C45.3008 33.876 44.6661 31.3 43.3968 28.388C42.0528 25.4013 40.7461 23.124 39.4768 21.556C38.5808 20.3613 37.4981 19.3533 36.2288 18.532C34.9594 17.7107 33.8768 17.3 32.9808 17.3C31.2634 17.3 30.2181 17.5613 29.8448 18.084C29.3968 18.6067 29.1728 19.6147 29.1728 21.108C29.1728 21.4813 29.5461 22.0413 30.2928 22.788C30.9648 23.46 31.3754 23.8707 31.5248 24.02C32.7194 25.0653 33.4661 25.812 33.7648 26.26C35.0341 28.052 35.8928 29.5453 36.3408 30.74H35.8928ZM16.5168 30.74C15.6208 30.74 14.9861 30.852 14.6128 31.076C13.7168 31.6733 12.9701 32.3827 12.3728 33.204C11.7008 34.0253 11.3648 35.22 11.3648 36.788C11.5141 39.1773 12.4101 40.82 14.0528 41.716C15.5461 42.4627 17.5621 42.836 20.1008 42.836C21.8181 42.836 23.1994 42.2013 24.2448 40.932C25.2901 39.6627 25.8128 38.0573 25.8128 36.116C25.8128 33.876 25.1781 31.3 23.9088 28.388C22.5648 25.4013 21.2581 23.124 19.9888 21.556C19.0181 20.3613 17.9354 19.3533 16.7408 18.532C15.5461 17.7107 14.5008 17.3 13.6048 17.3C11.8128 17.3 10.7301 17.5613 10.3568 18.084C9.90878 18.6067 9.68478 19.6147 9.68478 21.108C9.68478 21.7053 10.5434 22.7133 12.2608 24.132C12.5594 24.4307 12.9328 24.804 13.3808 25.252C13.8288 25.6253 14.1648 25.9613 14.3888 26.26C15.5088 27.828 16.3301 29.3213 16.8528 30.74H16.5168Z" fill="%235E718D"/></svg>');
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 60px;
+  width: 60px;
+}
+.elt__testimonials__section .wrapper .elttestimonials__slider .elttestimonial__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.elt__testimonials__section .wrapper .elttestimonials__slider .elttestimonial__item .user__testimonial__profile {
+  height: 78px;
+  width: 78px;
+  border-radius: 50%;
+  margin-bottom: 43px;
+}
+.elt__testimonials__section .wrapper .elttestimonials__slider .elttestimonial__item .user__testimonial__text {
+  color: #AFBACA;
+  margin-bottom: 28px;
+}
+.elt__testimonials__section .wrapper .elttestimonials__slider .elttestimonial__item .name__rating {
+  display: flex;
+  flex-direction: column;
+}
+.elt__testimonials__section .wrapper .elttestimonials__slider .elttestimonial__item .name__rating .user__testimonial__name {
+  color: #E9EFF6;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.elt__testimonials__section .wrapper .elttestimonials__slider .elttestimonial__item .name__rating .user__testimonial__star {
+  margin-bottom: 0;
+  color: #FFC107;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
 /************ TABLE OF CONTENTS ***************
 1. Global CSS
 2. Home Page
@@ -10486,9 +10753,11 @@ header .wrapper .header__cta button:hover {
   background: rgba(245, 120, 71, 0.05);
   box-shadow: 0 0 400px 400px rgba(245, 120, 71, 0.05);
 }
+.elt__whatsnew__section .section__title {
+  justify-content: center;
+}
 .elt__whatsnew__section .section__title h2 {
   color: #FFFFFF;
-  text-align: center;
 }
 .elt__whatsnew__section .elt__tabsandnav {
   margin-bottom: 88px;

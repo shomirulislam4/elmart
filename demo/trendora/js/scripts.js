@@ -459,12 +459,20 @@
         })
     });
 
-    /*============================ Blog Page ============================*/
+    /*============================ Blog, About, Contact Page ============================*/
     //All Nice Select
     if ($('.elt__blogpage').length) {
         $('#eltPaginationBlog').niceSelect();
     }
 
-
+    //Testimonials
+    $(function() {
+        var swiper = new Swiper(".elttestimonials__slider", {
+            loop: true,
+            pagination: {
+              el: ".elttestimonials__sliderdot",
+            },
+        });
+    });
 
 }) (jQuery);
