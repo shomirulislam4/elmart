@@ -839,6 +839,44 @@
                 }
             }
         }
+    /*===== About Us Page =====*/
+        .elt__aboutus__section {
+            margin-top: 30px;
+            .container {
+                gap: 15px;
+                flex-direction: column;
+                .image {
+                    gap: 5px;
+                    .left {
+                        height: 165px;
+                        width: 84px;
+                        border-radius: 5px;
+                    }
+                    .right {
+                        width: 87px;
+                        gap: 5px;
+                        img {
+                            border-radius: 5px;
+                        }
+                    }
+                }
+                .content {
+                    h2 {
+                        font-size: 28px;
+                        line-height: 40px;
+                        margin-bottom: 14px;
+                    }
+                    p {
+                        margin-bottom: 16px;
+                    }
+                    .about__info {
+                        gap: 15px;
+                        margin-top: 20px;
+                        justify-content: space-around;
+                    }
+                }
+            }
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
@@ -1582,6 +1620,55 @@
                 }
             }
         }
+    /*===== About Us Page =====*/
+        .elt__aboutus__section {
+            margin-top: 40px;
+            .container {
+                gap: 20px;
+                flex-direction: column;
+                .image {
+                    gap: 6px;
+                    .left {
+                        height: 247px;
+                        width: 131px;
+                        border-radius: 10px;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    .right {
+                        width: 131px;
+                        gap: 6px;
+                        img {
+                            border-radius: 10px;
+                        }
+                    }
+                }
+                .content {
+                    h2 {
+                        margin-bottom: 14px;
+                    }
+                    p {
+                        margin-bottom: 16px;
+                    }
+                    .about__info {
+                        gap: 14px;
+                        margin-top: 30px;
+                        justify-content: space-around;
+                        .item {
+                            h3 {
+                                font-size: 24px;
+                                line-height: 34px;
+                            }
+                            .type {
+                                font-size: 12px;
+                                line-height: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -2143,6 +2230,52 @@
                 }
             }
         }
+    /*===== About Us Page =====*/
+        .elt__aboutus__section {
+            margin-top: 50px;
+            .container {
+                gap: 30px;
+                flex-direction: column;
+                .image {
+                    gap: 10px;
+                    .left {
+                        height: 370px;
+                        width: 194px;
+                        border-radius: 10px;
+                    }
+                    .right {
+                        width: 194px;
+                        gap: 10px;
+                        img {
+                            border-radius: 10px;
+                        }
+                    }
+                }
+                .content {
+                    h2 {
+                        margin-bottom: 16px;
+                    }
+                    p {
+                        margin-bottom: 18px;
+                    }
+                    .about__info {
+                        gap: 14px;
+                        margin-top: 35px;
+                        justify-content: space-around;
+                        .item {
+                            h3 {
+                                font-size: 24px;
+                                line-height: 34px;
+                            }
+                            .type {
+                                font-size: 12px;
+                                line-height: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -2591,6 +2724,49 @@
                 }
             }
         }
+    /*===== About Us Page =====*/
+        .elt__aboutus__section {
+            margin-top: 50px;
+            .container {
+                gap: 30px;
+                flex-direction: column;
+                .image {
+                    gap: 10px;
+                    .left {
+                        height: 482px;
+                        width: 253px;
+                        border-radius: 14px;
+                    }
+                    .right {
+                        width: 257px;
+                        gap: 10px;
+                        img {
+                            border-radius: 14px;
+                        }
+                    }
+                }
+                .content {
+                    h2 {
+                        margin-bottom: 16px;
+                    }
+                    .about__info {
+                        gap: 30px;
+                        margin-top: 35px;
+                        justify-content: space-around;
+                        .item {
+                            h3 {
+                                font-size: 34px;
+                                line-height: 54px;
+                            }
+                            .type {
+                                font-size: 14px;
+                                line-height: 22px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -2978,6 +3154,42 @@
                     }
                     form {
                         gap: 20px;
+                    }
+                }
+            }
+        }
+    /*===== About Us Page =====*/
+        .elt__aboutus__section {
+            margin-top: 70px;
+            .container {
+                gap: 40px;
+                flex-direction: column;
+                .image {
+                    gap: 24px;
+                    .left {
+                        height: 641px;
+                        width: 336px;
+                    }
+                    .right {
+                        width: 336px;
+                        gap: 24px;
+                    }
+                }
+                .content {
+                    .about__info {
+                        gap: 45px;
+                        justify-content: space-around;
+                        margin-top: 48px;
+                        .item {
+                            h3 {
+                                font-size: 34px;
+                                line-height: 54px;
+                            }
+                            .type {
+                                font-size: 14px;
+                                line-height: 22px;
+                            }
+                        }
                     }
                 }
             }
@@ -3441,6 +3653,48 @@
                 }
             }
         }
+    /*===== About Us Page =====*/
+        .elt__aboutus__section {
+            margin-top: 90px;
+            .container {
+                gap: 30px;
+                .image {
+                    gap: 15px;
+                    .left {
+                        height: 441px;
+                        width: 231.5px;
+                    }
+                    .right {
+                        width: 231.5px;
+                        gap: 15px;
+                    }
+                }
+                .content {
+                    h2 {
+                        font-size: 36px;
+                        line-height: 52px;
+                    }
+                    p {
+                        font-size: 14px;
+                        line-height: 24px;
+                    }
+                    .about__info {
+                        gap: 40px;
+                        margin-top: 40px;
+                        .item {
+                            h3 {
+                                font-size: 30px;
+                                line-height: 46px;
+                            }
+                            .type {
+                                font-size: 12px;
+                                line-height: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -3794,6 +4048,48 @@
                 }
             }
         }
+    /*===== About Us Page =====*/
+        .elt__aboutus__section {
+            margin-top: 110px;
+            .container {
+                gap: 40px;
+                .image {
+                    gap: 20px;
+                    .left {
+                        height: 541px;
+                        width: 284px;
+                    }
+                    .right {
+                        width: 284px;
+                        gap: 20px;
+                    }
+                }
+                .content {
+                    h2 {
+                        font-size: 42px;
+                        line-height: 62px;
+                    }
+                    p {
+                        font-size: 16px;
+                        line-height: 27px;
+                    }
+                    .about__info {
+                        gap: 45px;
+                        margin-top: 48px;
+                        .item {
+                            h3 {
+                                font-size: 34px;
+                                line-height: 54px;
+                            }
+                            .type {
+                                font-size: 14px;
+                                line-height: 22px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
 }
 
 @media (min-width: 1400px) and (max-width: 1639px) {
@@ -3929,6 +4225,27 @@
             }
             .contact__info {
                 padding-right: 0;
+            }
+        }
+    /*===== About Us Page =====*/
+        .elt__aboutus__section {
+            margin-top: 130px;
+            .container {
+                .image {
+                    .left {
+                        height: 641px;
+                        width: 336.5px;
+                    }
+                    .right {
+                        width: 336.5px;
+                        img {
+                            height: 307px;
+                        }
+                    }
+                }
+                .content .about__info {
+                    gap: 90px;
+                }
             }
         }
 }

@@ -9068,6 +9068,9 @@ table tbody tr td {
   }
 }
 /* About Us Section */
+.elt__aboutus__section {
+  margin-top: 148px;
+}
 .elt__aboutus__section .container {
   display: flex;
   align-items: center;
@@ -9084,17 +9087,19 @@ table tbody tr td {
   width: 389px;
 }
 .elt__aboutus__section .container .image .left img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
 }
 .elt__aboutus__section .container .image .right {
   display: flex;
   flex-direction: column;
   gap: 28px;
+  width: 389px;
 }
 .elt__aboutus__section .container .image .right img {
   border-radius: 20px;
-  height: 356.5px;
+  width: 100%;
+  height: auto;
 }
 .elt__aboutus__section .container .content {
   height: -moz-fit-content;
@@ -9199,6 +9204,7 @@ table tbody tr td {
   padding: 28px;
   border: 1px solid #2D3643;
   border-radius: 20px;
+  height: 100%;
 }
 .elt__our__services__section .service__item i {
   height: 60px;

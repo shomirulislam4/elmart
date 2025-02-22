@@ -3,76 +3,82 @@
 @use '../components/index' as comps;
 
 /* About Us Section */
-.elt__aboutus__section .container {
-    display: flex;
-    align-items: center;
-    gap: 80px;
+.elt__aboutus__section {
+    margin-top: 148px;
 
-    .image {
+    .container {
         display: flex;
-        gap: 28px;
-
-        .left {
-            overflow: hidden;
-            border-radius: 20px;
-            height: 741px;
-            width: 389px;
-
-            img {
-                width: 100%;
-                height: auto;
-            }
-        }
-
-        .right {
+        align-items: center;
+        gap: 80px;
+    
+        .image {
             display: flex;
-            flex-direction: column;
             gap: 28px;
-
-            img {
+    
+            .left {
+                overflow: hidden;
                 border-radius: 20px;
-                height: 356.5px;
+                height: 741px;
+                width: 389px;
+    
+                img {
+                    width: auto;
+                    height: 100%;
+                }
             }
-        }
-    }
-
-    .content {
-        height: fit-content;
-
-        h2 {
-            color: base.$base100;
-            font-weight: 600;
-            margin-bottom: 25px;
-        }
-
-        p {
-            color: base.$base300;
-            margin-bottom: 25px;
-        }
-
-        .about__info {
-            display: flex;
-            align-items: flex-end;
-            margin-top: 68px;
-            gap: 138px;
-            flex-wrap: wrap;
-
-            .item {
+    
+            .right {
                 display: flex;
                 flex-direction: column;
-                align-items: center;
-                text-align: center;
-                
-                h3 {
-                    color: base.$base100;
-                    font-weight: 600;
-                    margin-bottom: 0;
-                    display: flex;
+                gap: 28px;
+                width: 389px;
+    
+                img {
+                    border-radius: 20px;
+                    width: 100%;
+                    height: auto;
                 }
-
-                .type {
-                    @include base.medium__text;
-                    color: base.$base100;
+            }
+        }
+    
+        .content {
+            height: fit-content;
+    
+            h2 {
+                color: base.$base100;
+                font-weight: 600;
+                margin-bottom: 25px;
+            }
+    
+            p {
+                color: base.$base300;
+                margin-bottom: 25px;
+            }
+    
+            .about__info {
+                display: flex;
+                align-items: flex-end;
+                margin-top: 68px;
+                gap: 138px;
+                flex-wrap: wrap;
+    
+                .item {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    
+                    h3 {
+                        color: base.$base100;
+                        font-weight: 600;
+                        margin-bottom: 0;
+                        display: flex;
+                    }
+    
+                    .type {
+                        @include base.medium__text;
+                        color: base.$base100;
+                    }
                 }
             }
         }
@@ -101,6 +107,7 @@
         padding: 28px;
         border: 1px solid base.$base800;
         border-radius: 20px;
+        height: 100%;
 
         i {
             height: 60px;
