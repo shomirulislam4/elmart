@@ -1,0 +1,161 @@
+@use '../utilities/index' as utils;
+@use '../base/index' as base;
+@use '../components/index' as comps;
+
+.elt__logreg__section {
+    padding: 48px 0;
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+
+        .logo__2 {
+            position: absolute;
+            left: 10px;
+            top: -20px;
+            z-index: 10;
+            width: 140px;
+        }
+
+        .left__side {
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+            max-width: 613px;
+
+            .page__title {
+                h3 {
+                    color: base.$base00;
+                    font-weight: 500;
+                }
+                
+                span {
+                    @include base.medium__text;
+                    color: base.$base300;
+                }
+            }
+
+            form {
+                gap: 60px;
+
+                .social__login {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 40px;
+    
+                    .seperator {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 12px;
+    
+                        .horizontal__seperator {
+                            width: calc(47.5% - 12px);
+                        }
+                    }
+    
+                    .google__continue {
+                        @include comps.elt__button__d;
+                        background: base.$backgroundTertiaryColor;
+                        color: base.$base200;
+                        width: 100%;
+    
+                        svg {
+                            stroke: transparent;
+                        }
+                    }
+    
+                    .inputs {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 28px;
+                    }
+                }
+
+                .logreg__btn {
+                    @include comps.elt__button__a;
+                    width: 100%;
+                }
+            }
+
+            span {
+                @include base.medium__text;
+                color: base.$base200;
+            }
+        }
+
+        .right__side {
+            height: 984px;
+            width: 787px;
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+
+            .product__image {
+                position: absolute;
+                top: 0;
+                left: -93px;
+                height: 100%;
+            }
+
+            .product__testimonials {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                z-index: 99;
+                height: 100%;
+                width: 100%;
+                background: linear-gradient(0deg, rgba($color: base.$backgroundTertiaryColor, $alpha: 0.7) 0%, transparent 100%);
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                padding: 40px 28px;
+
+                .testimonial__item {
+                    display: flex;
+                    align-items: center;
+                    gap: 28px;
+
+                    .image {
+                        height: 78px;
+                        width: 78px;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        flex-shrink: 0;
+                        flex-grow: 0;
+
+                        img {
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+
+                    .text {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 8px;
+
+                        .user__testimonial__name {
+                            color: base.$base100;
+                            margin-bottom: 0;
+                        }
+
+                        .user__testimonial__star {
+                            display: flex;
+                            gap: 12px;
+                            color: base.$AccentYellow;
+                            margin-bottom: 0;
+                        }
+
+                        .user__testimonial__desc {
+                            color: base.$base200;
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

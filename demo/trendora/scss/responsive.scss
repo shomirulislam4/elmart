@@ -877,6 +877,91 @@
                 }
             }
         }
+        /*Our Services*/
+        .elt__our__services__section {
+            margin-top: 30px;
+            .service__item {
+                padding: 15px;
+                i {
+                    height: 45px;
+                    width: 45px;
+                    line-height: 45px;
+                    font-size: 16px;
+                    border-radius: 10px;
+                    margin-bottom: 18px;
+                }
+                h6 {
+                    margin-bottom: 6px;
+                }
+            }
+        }
+        /*Testimonials Section*/
+        .elt__testimonials__section {
+            margin-top: 30px;
+            .wrapper {
+                padding: 30px;
+                .elttestimonials__slider {
+                    width: 100%;
+                    .elttestimonial__item {
+                        .user__testimonial__profile {
+                            height: 40px;
+                            width: 40px;
+                            margin-bottom: 15px;
+                        }
+                        .user__testimonial__text {
+                            margin-bottom: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    /*===== Login & Register Page =====*/
+        .elt__logreg__section .wrapper {
+            flex-direction: column;
+            gap: 15px;
+            .left__side {
+                max-width: 100%;
+                gap: 20px;
+                padding-top: 30px;
+                form {
+                    gap: 20px;
+                    .social__login {
+                        gap: 20px;
+                        .inputs {
+                            gap: 10px;
+                        }
+                    }
+                }
+            }
+            .right__side {
+                height: 220px;
+                width: 176px;
+                .product__image {
+                    left: -15px;
+                }
+                .product__testimonials {
+                    padding: 10px;
+                    .testimonial__item {
+                        gap: 5px;
+                        .image {
+                            height: 40px;
+                            width: 40px;
+                        }
+                        .text {
+                            gap: 4px;
+                            .user__testimonial__desc {
+                                font-size: 10px;
+                                line-height: 14px;
+                            }
+                            .user__testimonial__star {
+                                gap: 6px;
+                                font-size: 8px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
 }
 
 @media (min-width: 290px) and (max-width: 414px) {
@@ -1669,6 +1754,90 @@
                 }
             }
         }
+        /*Our Services*/
+        .elt__our__services__section {
+            margin-top: 40px;
+            .service__item {
+                padding: 20px;
+                i {
+                    margin-bottom: 22px;
+                }
+                h6 {
+                    margin-bottom: 8px;
+                }
+            }
+        }
+        /*Testimonials Section*/
+        .elt__testimonials__section {
+            margin-top: 40px;
+            .wrapper {
+                padding: 35px;
+                .elttestimonials__slider {
+                    width: 100%;
+                    .elttestimonial__item {
+                        .user__testimonial__profile {
+                            height: 50px;
+                            width: 50px;
+                            margin-bottom: 18px;
+                        }
+                        .user__testimonial__text {
+                            margin-bottom: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    /*===== Login & Register Page =====*/
+        .elt__logreg__section .wrapper {
+            flex-direction: column;
+            gap: 20px;
+            .left__side {
+                max-width: 100%;
+                gap: 30px;
+                padding-top: 30px;
+                form {
+                    gap: 30px;
+                    .social__login {
+                        gap: 20px;
+                        .inputs {
+                            gap: 14px;
+                        }
+                    }
+                }
+            }
+            .right__side {
+                height: 333px;
+                width: 266px;
+                .product__image {
+                    left: -30px;
+                }
+                .product__testimonials {
+                    padding: 20px 10px;
+                    .testimonial__item {
+                        gap: 10px;
+                        .image {
+                            height: 50px;
+                            width: 50px;
+                        }
+                        .text {
+                            gap: 6px;
+                            .user__testimonial__name {
+                                font-size: 18px;
+                                line-height: 24px;
+                            }
+                            .user__testimonial__desc {
+                                font-size: 11px;
+                                line-height: 17px;
+                            }
+                            .user__testimonial__star {
+                                gap: 8px;
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
 }
 
 @media (min-width: 415px) and (max-width: 575px) {
@@ -2276,6 +2445,70 @@
                 }
             }
         }
+        /*Our Services*/
+        .elt__our__services__section {
+            margin-top: 60px;
+        }
+        /*Testimonials Section*/
+        .elt__testimonials__section {
+            margin-top: 60px;
+            .wrapper {
+                padding: 40px;
+                .elttestimonials__slider {
+                    width: 100%;
+                    .elttestimonial__item {
+                        .user__testimonial__profile {
+                            height: 55px;
+                            width: 55px;
+                            margin-bottom: 20px;
+                        }
+                        .user__testimonial__text {
+                            margin-bottom: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    /*===== Login & Register Page =====*/
+        .elt__logreg__section .wrapper {
+            flex-direction: column;
+            gap: 30px;
+            padding-top: 30px;
+            .left__side {
+                max-width: 100%;
+                gap: 40px;
+                form {
+                    gap: 40px;
+                    .social__login {
+                        gap: 25px;
+                        .inputs {
+                            gap: 14px;
+                        }
+                    }
+                }
+            }
+            .right__side {
+                height: 489px;
+                width: 391px;
+                .product__image {
+                    left: -40px;
+                }
+                .product__testimonials {
+                    padding: 20px;
+                    .testimonial__item {
+                        gap: 14px;
+                        .image {
+                            height: 60px;
+                            width: 60px;
+                        }
+                        .text .user__testimonial__name {
+                            font-size: 20px;
+                            line-height: 26px;
+                        }
+                    }
+                }
+            }
+        }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -2767,6 +3000,89 @@
                 }
             }
         }
+        /*Our Services*/
+        .elt__our__services__section {
+            margin-top: 80px;
+            .service__item {
+                padding: 20px;
+                i {
+                    margin-bottom: 22px;
+                }
+                h6 {
+                    margin-bottom: 8px;
+                }
+                span {
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+            }
+        }
+        /*Testimonials Section*/
+        .elt__testimonials__section {
+            margin-top: 70px;
+            .wrapper {
+                padding: 50px 0;
+                .elttestimonials__slider {
+                    width: 80%;
+                    .elttestimonial__item {
+                        .user__testimonial__profile {
+                            height: 60px;
+                            width: 60px;
+                            margin-bottom: 20px;
+                        }
+                        .user__testimonial__text {
+                            margin-bottom: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    /*===== Login & Register Page =====*/
+        .elt__logreg__section .wrapper {
+            flex-direction: column;
+            gap: 30px;
+            padding-top: 40px;
+            .logo__2 {
+                left: 20px;
+            }
+            .left__side {
+                max-width: 500px;
+                gap: 50px;
+                form {
+                    gap: 50px;
+                    .social__login {
+                        gap: 35px;
+                        .inputs {
+                            gap: 22px;
+                        }
+                    }
+                }
+            }
+            .right__side {
+                height: 625px;
+                width: 500px;
+                .product__image {
+                    left: -50px;
+                }
+                .product__testimonials .testimonial__item {
+                    gap: 20px;
+                    .text {
+                        .image {
+                            height: 60px;
+                            width: 60px;
+                        }
+                        .user__testimonial__name {
+                            font-size: 20px;
+                            line-height: 26px;
+                          }
+                          .user__testimonial__desc {
+                            font-size: 14px;
+                            line-height: 22px;
+                        }
+                    }
+                }
+            }
+        }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -3186,6 +3502,78 @@
                                 line-height: 54px;
                             }
                             .type {
+                                font-size: 14px;
+                                line-height: 22px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        /*Our Services*/
+        .elt__our__services__section {
+            margin-top: 100px;
+        }
+        /*Testimonials Section*/
+        .elt__testimonials__section {
+            margin-top: 88px;
+            .wrapper {
+                padding: 50px 0;
+                .elttestimonials__slider {
+                    width: 80%;
+                    .elttestimonial__item {
+                        .user__testimonial__profile {
+                            height: 70px;
+                            width: 70px;
+                            margin-bottom: 25px;
+                        }
+                        .user__testimonial__text {
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    /*===== Login & Register Page =====*/
+        .elt__logreg__section .wrapper {
+            .left__side {
+                max-width: 300px;
+                gap: 30px;
+                padding-top: 30px;
+                .page__title span {
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+                form {
+                    gap: 30px;
+                    .social__login {
+                        gap: 18px;
+                        .inputs {
+                            gap: 14px;
+                        }
+                    }
+                }
+            }
+            .right__side {
+                height: 475px;
+                width: 380px;
+                .product__image {
+                    left: -40px;
+                }
+                .product__testimonials {
+                    padding: 25px 15px;
+                    .testimonial__item {
+                        gap: 14px;
+                        .text {
+                            .image {
+                                height: 60px;
+                                width: 60px;
+                            }
+                            .user__testimonial__name {
+                                font-size: 20px;
+                                line-height: 26px;
+                              }
+                              .user__testimonial__desc {
                                 font-size: 14px;
                                 line-height: 22px;
                             }
@@ -3695,6 +4083,63 @@
                 }
             }
         }
+        /*Our Services*/
+        .elt__our__services__section {
+            margin-top: 120px;
+            .service__item {
+                padding: 20px;
+                i {
+                    margin-bottom: 25px;
+                }
+                h6 {
+                    margin-bottom: 8px;
+                }
+                span {
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+            }
+        }
+        /*Testimonials Section*/
+        .elt__testimonials__section {
+            margin-top: 108px;
+            .wrapper {
+                padding: 60px 0;
+                .elttestimonials__slider {
+                    width: 720px;
+                }
+            }
+        }
+    /*===== Login & Register Page =====*/
+        .elt__logreg__section .wrapper {
+            .left__side {
+                max-width: 400px;
+                gap: 40px;
+                padding-top: 40px;
+                form {
+                    gap: 40px;
+                    .social__login {
+                        gap: 25px;
+                        .inputs {
+                            gap: 14px;
+                        }
+                    }
+                }
+            }
+            .right__side {
+                height: 638px;
+                width: 510px;
+                .product__image {
+                    left: -70px;
+                }
+                .product__testimonials {
+                    padding: 30px 20px;
+                    .testimonial__item {
+                        gap: 14px;
+                    }
+                }
+            }
+        }
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -4090,6 +4535,50 @@
                 }
             }
         }
+        /*Our Services*/
+        .elt__our__services__section {
+            margin-top: 140px;
+            .service__item {
+                padding: 24px;
+                i {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        /*Testimonials Section*/
+        .elt__testimonials__section {
+            margin-top: 128px;
+            .wrapper {
+                padding: 80px 0;
+            }
+        }
+    /*===== Login & Register Page =====*/
+        .elt__logreg__section .wrapper {
+            .left__side {
+                max-width: 500px;
+                gap: 50px;
+                padding-top: 20px;
+                form {
+                    gap: 50px;
+                    .social__login {
+                        gap: 35px;
+                        .inputs {
+                            gap: 22px;
+                        }
+                    }
+                }
+            }
+            .right__side {
+                height: 725px;
+                width: 580px;
+                .product__image {
+                    left: -70px;
+                }
+                .product__testimonials .testimonial__item {
+                    gap: 20px;
+                }
+            }
+        }
 }
 
 @media (min-width: 1400px) and (max-width: 1639px) {
@@ -4246,6 +4735,27 @@
                 .content .about__info {
                     gap: 90px;
                 }
+            }
+        }
+        /*Our Services*/
+        .elt__our__services__section {
+            margin-top: 160px;
+        }
+        /*Testimonials Section*/
+        .elt__testimonials__section {
+            margin-top: 148px;
+            .wrapper {
+                padding: 100px 0;
+            }
+        }
+    /*===== Login & Register Page =====*/
+        .elt__logreg__section .wrapper {
+            .left__side {
+                max-width: 550px;
+            }
+            .right__side {
+                height: 863px;
+                width: 690px;
             }
         }
 }

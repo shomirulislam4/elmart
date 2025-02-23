@@ -2614,6 +2614,21 @@ input[type=radio]:checked::after {
 }
 
 /*** End of Pagination ***/
+/*** Start of Swiper Slider Dots ***/
+.swiper-pagination-bullet {
+  height: 10px;
+  width: 10px;
+  background: #1C1C20;
+  border: 2px solid #D7DFE9;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #F1662F;
+  border-color: #F1662F;
+}
+
+/*** End of Swiper Slider Dots ***/
 /*** Start of Table ***/
 table {
   display: block;
@@ -9289,22 +9304,19 @@ table tbody tr td {
   width: 845px;
   height: auto;
   position: relative;
+  padding-bottom: 20px;
 }
 .elt__testimonials__section .wrapper .elttestimonials__slider::before {
   content: url('data:image/svg+xml,<svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.1072 30.74C21.9286 30.74 22.5259 30.852 22.8992 31.076C23.7952 31.5987 24.5792 32.308 25.2512 33.204C25.9232 34.0253 26.2592 35.22 26.2592 36.788C26.1099 39.1773 25.1765 40.82 23.4592 41.716C21.9659 42.4627 19.9499 42.836 17.4112 42.836C15.6939 42.836 14.3126 42.2013 13.2672 40.932C12.2219 39.6627 11.6992 38.0573 11.6992 36.116C11.6992 33.876 12.3339 31.3 13.6032 28.388C14.9472 25.4013 16.2539 23.124 17.5232 21.556C18.4192 20.3613 19.5019 19.3533 20.7712 18.532C22.0406 17.7107 23.1232 17.3 24.0192 17.3C25.7366 17.3 26.7819 17.5613 27.1552 18.084C27.6032 18.6067 27.8272 19.6147 27.8272 21.108C27.8272 21.4813 27.4539 22.0413 26.7072 22.788C26.0352 23.46 25.6246 23.8707 25.4752 24.02C24.2806 25.0653 23.5339 25.812 23.2352 26.26C21.9659 28.052 21.1072 29.5453 20.6592 30.74H21.1072ZM40.4832 30.74C41.3792 30.74 42.0139 30.852 42.3872 31.076C43.2832 31.6733 44.0299 32.3827 44.6272 33.204C45.2992 34.0253 45.6352 35.22 45.6352 36.788C45.4859 39.1773 44.5899 40.82 42.9472 41.716C41.4539 42.4627 39.4379 42.836 36.8992 42.836C35.1819 42.836 33.8006 42.2013 32.7552 40.932C31.7099 39.6627 31.1872 38.0573 31.1872 36.116C31.1872 33.876 31.8219 31.3 33.0912 28.388C34.4352 25.4013 35.7419 23.124 37.0112 21.556C37.9819 20.3613 39.0646 19.3533 40.2592 18.532C41.4539 17.7107 42.4992 17.3 43.3952 17.3C45.1872 17.3 46.2699 17.5613 46.6432 18.084C47.0912 18.6067 47.3152 19.6147 47.3152 21.108C47.3152 21.7053 46.4566 22.7133 44.7392 24.132C44.4406 24.4307 44.0672 24.804 43.6192 25.252C43.1712 25.6253 42.8352 25.9613 42.6112 26.26C41.4912 27.828 40.6699 29.3213 40.1472 30.74H40.4832Z" fill="%235E718D"/></svg>');
   position: absolute;
   top: 0;
   left: 0;
-  height: 60px;
-  width: 60px;
 }
 .elt__testimonials__section .wrapper .elttestimonials__slider::after {
   content: url('data:image/svg+xml,<svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M35.8928 30.74C35.0714 30.74 34.4741 30.852 34.1008 31.076C33.2048 31.5987 32.4208 32.308 31.7488 33.204C31.0768 34.0253 30.7408 35.22 30.7408 36.788C30.8901 39.1773 31.8235 40.82 33.5408 41.716C35.0341 42.4627 37.0501 42.836 39.5888 42.836C41.3061 42.836 42.6874 42.2013 43.7328 40.932C44.7781 39.6627 45.3008 38.0573 45.3008 36.116C45.3008 33.876 44.6661 31.3 43.3968 28.388C42.0528 25.4013 40.7461 23.124 39.4768 21.556C38.5808 20.3613 37.4981 19.3533 36.2288 18.532C34.9594 17.7107 33.8768 17.3 32.9808 17.3C31.2634 17.3 30.2181 17.5613 29.8448 18.084C29.3968 18.6067 29.1728 19.6147 29.1728 21.108C29.1728 21.4813 29.5461 22.0413 30.2928 22.788C30.9648 23.46 31.3754 23.8707 31.5248 24.02C32.7194 25.0653 33.4661 25.812 33.7648 26.26C35.0341 28.052 35.8928 29.5453 36.3408 30.74H35.8928ZM16.5168 30.74C15.6208 30.74 14.9861 30.852 14.6128 31.076C13.7168 31.6733 12.9701 32.3827 12.3728 33.204C11.7008 34.0253 11.3648 35.22 11.3648 36.788C11.5141 39.1773 12.4101 40.82 14.0528 41.716C15.5461 42.4627 17.5621 42.836 20.1008 42.836C21.8181 42.836 23.1994 42.2013 24.2448 40.932C25.2901 39.6627 25.8128 38.0573 25.8128 36.116C25.8128 33.876 25.1781 31.3 23.9088 28.388C22.5648 25.4013 21.2581 23.124 19.9888 21.556C19.0181 20.3613 17.9354 19.3533 16.7408 18.532C15.5461 17.7107 14.5008 17.3 13.6048 17.3C11.8128 17.3 10.7301 17.5613 10.3568 18.084C9.90878 18.6067 9.68478 19.6147 9.68478 21.108C9.68478 21.7053 10.5434 22.7133 12.2608 24.132C12.5594 24.4307 12.9328 24.804 13.3808 25.252C13.8288 25.6253 14.1648 25.9613 14.3888 26.26C15.5088 27.828 16.3301 29.3213 16.8528 30.74H16.5168Z" fill="%235E718D"/></svg>');
   position: absolute;
   bottom: 0;
   right: 0;
-  height: 60px;
-  width: 60px;
 }
 .elt__testimonials__section .wrapper .elttestimonials__slider .elttestimonial__item {
   display: flex;
@@ -9338,6 +9350,551 @@ table tbody tr td {
   display: flex;
   justify-content: center;
   gap: 12px;
+}
+.elt__testimonials__section .wrapper .elttestimonials__slider .elttestimonials__sliderdot {
+  text-align: center;
+}
+
+.elt__logreg__section {
+  padding: 48px 0;
+}
+.elt__logreg__section .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.elt__logreg__section .wrapper .logo__2 {
+  position: absolute;
+  left: 10px;
+  top: -20px;
+  z-index: 10;
+  width: 140px;
+}
+.elt__logreg__section .wrapper .left__side {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  max-width: 613px;
+}
+.elt__logreg__section .wrapper .left__side .page__title h3 {
+  color: #FFFFFF;
+  font-weight: 500;
+}
+.elt__logreg__section .wrapper .left__side .page__title span {
+  color: #AFBACA;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__logreg__section .wrapper .left__side .page__title span {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__logreg__section .wrapper .left__side .page__title span {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__logreg__section .wrapper .left__side .page__title span {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__logreg__section .wrapper .left__side .page__title span {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .elt__logreg__section .wrapper .left__side .page__title span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .elt__logreg__section .wrapper .left__side .page__title span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__logreg__section .wrapper .left__side .page__title span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__logreg__section .wrapper .left__side .page__title span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.elt__logreg__section .wrapper .left__side form {
+  gap: 60px;
+}
+.elt__logreg__section .wrapper .left__side form .social__login {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.elt__logreg__section .wrapper .left__side form .social__login .seperator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.elt__logreg__section .wrapper .left__side form .social__login .seperator .horizontal__seperator {
+  width: calc(47.5% - 12px);
+}
+.elt__logreg__section .wrapper .left__side form .social__login .google__continue {
+  transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  height: 48px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 24px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  color: #E9EFF6;
+  font-weight: 500;
+  text-align: center;
+  text-transform: capitalize;
+  cursor: pointer;
+  background: #1C1C20;
+  color: #F27240;
+  background: #2D2D32;
+  color: #D7DFE9;
+  width: 100%;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__logreg__section .wrapper .left__side form .social__login .google__continue {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__logreg__section .wrapper .left__side form .social__login .google__continue {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__logreg__section .wrapper .left__side form .social__login .google__continue {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__logreg__section .wrapper .left__side form .social__login .google__continue {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .elt__logreg__section .wrapper .left__side form .social__login .google__continue {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .elt__logreg__section .wrapper .left__side form .social__login .google__continue {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__logreg__section .wrapper .left__side form .social__login .google__continue {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__logreg__section .wrapper .left__side form .social__login .google__continue {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.elt__logreg__section .wrapper .left__side form .social__login .google__continue svg {
+  height: 24px;
+  width: 24px;
+  stroke: #E9EFF6;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__logreg__section .wrapper .left__side form .social__login .google__continue {
+    padding: 0 12px;
+    gap: 5px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__logreg__section .wrapper .left__side form .social__login .google__continue {
+    padding: 0 14px;
+    gap: 7px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__logreg__section .wrapper .left__side form .social__login .google__continue {
+    padding: 0 16px;
+    gap: 9px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__logreg__section .wrapper .left__side form .social__login .google__continue {
+    padding: 0 18px;
+    gap: 11px;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__logreg__section .wrapper .left__side form .social__login .google__continue {
+    padding: 0 12px;
+    gap: 5px;
+    height: 38px;
+  }
+  .elt__logreg__section .wrapper .left__side form .social__login .google__continue svg {
+    height: 14px;
+    width: 14px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__logreg__section .wrapper .left__side form .social__login .google__continue {
+    padding: 0 14px;
+    gap: 7px;
+    height: 42px;
+  }
+  .elt__logreg__section .wrapper .left__side form .social__login .google__continue svg {
+    height: 16px;
+    width: 16px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__logreg__section .wrapper .left__side form .social__login .google__continue {
+    padding: 0 16px;
+    gap: 9px;
+    height: 44px;
+  }
+  .elt__logreg__section .wrapper .left__side form .social__login .google__continue svg {
+    height: 18px;
+    width: 18px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__logreg__section .wrapper .left__side form .social__login .google__continue {
+    padding: 0 18px;
+    gap: 11px;
+    height: 46px;
+  }
+  .elt__logreg__section .wrapper .left__side form .social__login .google__continue svg {
+    height: 20px;
+    width: 20px;
+  }
+}
+.elt__logreg__section .wrapper .left__side form .social__login .google__continue:hover {
+  background: #312321;
+}
+.elt__logreg__section .wrapper .left__side form .social__login .google__continue:active {
+  background: #312321;
+  box-shadow: 0 0 0 4px #3F2B28;
+}
+.elt__logreg__section .wrapper .left__side form .social__login .google__continue svg {
+  stroke: #F27240;
+}
+.elt__logreg__section .wrapper .left__side form .social__login .google__continue:disabled {
+  background: #1C1C20;
+  color: #5E718D;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+.elt__logreg__section .wrapper .left__side form .social__login .google__continue:disabled svg {
+  stroke: #5E718D;
+}
+.elt__logreg__section .wrapper .left__side form .social__login .google__continue svg {
+  stroke: transparent;
+}
+.elt__logreg__section .wrapper .left__side form .social__login .inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.elt__logreg__section .wrapper .left__side form .logreg__btn {
+  transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  height: 48px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 24px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  color: #E9EFF6;
+  font-weight: 500;
+  text-align: center;
+  text-transform: capitalize;
+  cursor: pointer;
+  background: #F27240;
+  width: 100%;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__logreg__section .wrapper .left__side form .logreg__btn {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__logreg__section .wrapper .left__side form .logreg__btn {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__logreg__section .wrapper .left__side form .logreg__btn {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__logreg__section .wrapper .left__side form .logreg__btn {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .elt__logreg__section .wrapper .left__side form .logreg__btn {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .elt__logreg__section .wrapper .left__side form .logreg__btn {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__logreg__section .wrapper .left__side form .logreg__btn {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__logreg__section .wrapper .left__side form .logreg__btn {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.elt__logreg__section .wrapper .left__side form .logreg__btn svg {
+  height: 24px;
+  width: 24px;
+  stroke: #E9EFF6;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__logreg__section .wrapper .left__side form .logreg__btn {
+    padding: 0 12px;
+    gap: 5px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__logreg__section .wrapper .left__side form .logreg__btn {
+    padding: 0 14px;
+    gap: 7px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__logreg__section .wrapper .left__side form .logreg__btn {
+    padding: 0 16px;
+    gap: 9px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__logreg__section .wrapper .left__side form .logreg__btn {
+    padding: 0 18px;
+    gap: 11px;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__logreg__section .wrapper .left__side form .logreg__btn {
+    padding: 0 12px;
+    gap: 5px;
+    height: 38px;
+  }
+  .elt__logreg__section .wrapper .left__side form .logreg__btn svg {
+    height: 14px;
+    width: 14px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__logreg__section .wrapper .left__side form .logreg__btn {
+    padding: 0 14px;
+    gap: 7px;
+    height: 42px;
+  }
+  .elt__logreg__section .wrapper .left__side form .logreg__btn svg {
+    height: 16px;
+    width: 16px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__logreg__section .wrapper .left__side form .logreg__btn {
+    padding: 0 16px;
+    gap: 9px;
+    height: 44px;
+  }
+  .elt__logreg__section .wrapper .left__side form .logreg__btn svg {
+    height: 18px;
+    width: 18px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__logreg__section .wrapper .left__side form .logreg__btn {
+    padding: 0 18px;
+    gap: 11px;
+    height: 46px;
+  }
+  .elt__logreg__section .wrapper .left__side form .logreg__btn svg {
+    height: 20px;
+    width: 20px;
+  }
+}
+.elt__logreg__section .wrapper .left__side form .logreg__btn:hover {
+  background: #E0531B;
+}
+.elt__logreg__section .wrapper .left__side form .logreg__btn:active {
+  background: #E0531B;
+  box-shadow: 0 0 0 4px #3F2B28;
+}
+.elt__logreg__section .wrapper .left__side form .logreg__btn:disabled {
+  background: #2D2D32;
+  color: #5E718D;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+.elt__logreg__section .wrapper .left__side form .logreg__btn:disabled svg {
+  stroke: #5E718D;
+}
+.elt__logreg__section .wrapper .left__side span {
+  color: #D7DFE9;
+}
+@media screen and (min-width: 200px) and (max-width: 289px) {
+  .elt__logreg__section .wrapper .left__side span {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 414px) {
+  .elt__logreg__section .wrapper .left__side span {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 575px) {
+  .elt__logreg__section .wrapper .left__side span {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .elt__logreg__section .wrapper .left__side span {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .elt__logreg__section .wrapper .left__side span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .elt__logreg__section .wrapper .left__side span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .elt__logreg__section .wrapper .left__side span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .elt__logreg__section .wrapper .left__side span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.elt__logreg__section .wrapper .right__side {
+  height: 984px;
+  width: 787px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+.elt__logreg__section .wrapper .right__side .product__image {
+  position: absolute;
+  top: 0;
+  left: -93px;
+  height: 100%;
+}
+.elt__logreg__section .wrapper .right__side .product__testimonials {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(45, 45, 50, 0.7) 0%, transparent 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 40px 28px;
+}
+.elt__logreg__section .wrapper .right__side .product__testimonials .testimonial__item {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.elt__logreg__section .wrapper .right__side .product__testimonials .testimonial__item .image {
+  height: 78px;
+  width: 78px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+.elt__logreg__section .wrapper .right__side .product__testimonials .testimonial__item .image img {
+  height: 100%;
+  width: 100%;
+}
+.elt__logreg__section .wrapper .right__side .product__testimonials .testimonial__item .text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.elt__logreg__section .wrapper .right__side .product__testimonials .testimonial__item .text .user__testimonial__name {
+  color: #E9EFF6;
+  margin-bottom: 0;
+}
+.elt__logreg__section .wrapper .right__side .product__testimonials .testimonial__item .text .user__testimonial__star {
+  display: flex;
+  gap: 12px;
+  color: #FFC107;
+  margin-bottom: 0;
+}
+.elt__logreg__section .wrapper .right__side .product__testimonials .testimonial__item .text .user__testimonial__desc {
+  color: #D7DFE9;
+  margin-bottom: 0;
 }
 
 /************ TABLE OF CONTENTS ***************

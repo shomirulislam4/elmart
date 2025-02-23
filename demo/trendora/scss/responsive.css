@@ -837,6 +837,89 @@
     margin-top: 20px;
     justify-content: space-around;
   }
+  /*Our Services*/
+  .elt__our__services__section {
+    margin-top: 30px;
+  }
+  .elt__our__services__section .service__item {
+    padding: 15px;
+  }
+  .elt__our__services__section .service__item i {
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-bottom: 18px;
+  }
+  .elt__our__services__section .service__item h6 {
+    margin-bottom: 6px;
+  }
+  /*Testimonials Section*/
+  .elt__testimonials__section {
+    margin-top: 30px;
+  }
+  .elt__testimonials__section .wrapper {
+    padding: 30px;
+  }
+  .elt__testimonials__section .wrapper .elttestimonials__slider {
+    width: 100%;
+  }
+  .elt__testimonials__section .wrapper .elttestimonials__slider .elttestimonial__item .user__testimonial__profile {
+    height: 40px;
+    width: 40px;
+    margin-bottom: 15px;
+  }
+  .elt__testimonials__section .wrapper .elttestimonials__slider .elttestimonial__item .user__testimonial__text {
+    margin-bottom: 12px;
+  }
+  /*===== Login & Register Page =====*/
+  .elt__logreg__section .wrapper {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .elt__logreg__section .wrapper .left__side {
+    max-width: 100%;
+    gap: 20px;
+    padding-top: 30px;
+  }
+  .elt__logreg__section .wrapper .left__side form {
+    gap: 20px;
+  }
+  .elt__logreg__section .wrapper .left__side form .social__login {
+    gap: 20px;
+  }
+  .elt__logreg__section .wrapper .left__side form .social__login .inputs {
+    gap: 10px;
+  }
+  .elt__logreg__section .wrapper .right__side {
+    height: 220px;
+    width: 176px;
+  }
+  .elt__logreg__section .wrapper .right__side .product__image {
+    left: -15px;
+  }
+  .elt__logreg__section .wrapper .right__side .product__testimonials {
+    padding: 10px;
+  }
+  .elt__logreg__section .wrapper .right__side .product__testimonials .testimonial__item {
+    gap: 5px;
+  }
+  .elt__logreg__section .wrapper .right__side .product__testimonials .testimonial__item .image {
+    height: 40px;
+    width: 40px;
+  }
+  .elt__logreg__section .wrapper .right__side .product__testimonials .testimonial__item .text {
+    gap: 4px;
+  }
+  .elt__logreg__section .wrapper .right__side .product__testimonials .testimonial__item .text .user__testimonial__desc {
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .elt__logreg__section .wrapper .right__side .product__testimonials .testimonial__item .text .user__testimonial__star {
+    gap: 6px;
+    font-size: 8px;
+  }
 }
 @media (min-width: 290px) and (max-width: 414px) {
   .bg__rounded__color {
@@ -1582,6 +1665,88 @@
     font-size: 12px;
     line-height: 18px;
   }
+  /*Our Services*/
+  .elt__our__services__section {
+    margin-top: 40px;
+  }
+  .elt__our__services__section .service__item {
+    padding: 20px;
+  }
+  .elt__our__services__section .service__item i {
+    margin-bottom: 22px;
+  }
+  .elt__our__services__section .service__item h6 {
+    margin-bottom: 8px;
+  }
+  /*Testimonials Section*/
+  .elt__testimonials__section {
+    margin-top: 40px;
+  }
+  .elt__testimonials__section .wrapper {
+    padding: 35px;
+  }
+  .elt__testimonials__section .wrapper .elttestimonials__slider {
+    width: 100%;
+  }
+  .elt__testimonials__section .wrapper .elttestimonials__slider .elttestimonial__item .user__testimonial__profile {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 18px;
+  }
+  .elt__testimonials__section .wrapper .elttestimonials__slider .elttestimonial__item .user__testimonial__text {
+    margin-bottom: 14px;
+  }
+  /*===== Login & Register Page =====*/
+  .elt__logreg__section .wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .elt__logreg__section .wrapper .left__side {
+    max-width: 100%;
+    gap: 30px;
+    padding-top: 30px;
+  }
+  .elt__logreg__section .wrapper .left__side form {
+    gap: 30px;
+  }
+  .elt__logreg__section .wrapper .left__side form .social__login {
+    gap: 20px;
+  }
+  .elt__logreg__section .wrapper .left__side form .social__login .inputs {
+    gap: 14px;
+  }
+  .elt__logreg__section .wrapper .right__side {
+    height: 333px;
+    width: 266px;
+  }
+  .elt__logreg__section .wrapper .right__side .product__image {
+    left: -30px;
+  }
+  .elt__logreg__section .wrapper .right__side .product__testimonials {
+    padding: 20px 10px;
+  }
+  .elt__logreg__section .wrapper .right__side .product__testimonials .testimonial__item {
+    gap: 10px;
+  }
+  .elt__logreg__section .wrapper .right__side .product__testimonials .testimonial__item .image {
+    height: 50px;
+    width: 50px;
+  }
+  .elt__logreg__section .wrapper .right__side .product__testimonials .testimonial__item .text {
+    gap: 6px;
+  }
+  .elt__logreg__section .wrapper .right__side .product__testimonials .testimonial__item .text .user__testimonial__name {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .elt__logreg__section .wrapper .right__side .product__testimonials .testimonial__item .text .user__testimonial__desc {
+    font-size: 11px;
+    line-height: 17px;
+  }
+  .elt__logreg__section .wrapper .right__side .product__testimonials .testimonial__item .text .user__testimonial__star {
+    gap: 8px;
+    font-size: 10px;
+  }
 }
 @media (min-width: 415px) and (max-width: 575px) {
   /*===== Home Page =====*/
@@ -2152,6 +2317,68 @@
     font-size: 12px;
     line-height: 18px;
   }
+  /*Our Services*/
+  .elt__our__services__section {
+    margin-top: 60px;
+  }
+  /*Testimonials Section*/
+  .elt__testimonials__section {
+    margin-top: 60px;
+  }
+  .elt__testimonials__section .wrapper {
+    padding: 40px;
+  }
+  .elt__testimonials__section .wrapper .elttestimonials__slider {
+    width: 100%;
+  }
+  .elt__testimonials__section .wrapper .elttestimonials__slider .elttestimonial__item .user__testimonial__profile {
+    height: 55px;
+    width: 55px;
+    margin-bottom: 20px;
+  }
+  .elt__testimonials__section .wrapper .elttestimonials__slider .elttestimonial__item .user__testimonial__text {
+    margin-bottom: 16px;
+  }
+  /*===== Login & Register Page =====*/
+  .elt__logreg__section .wrapper {
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 30px;
+  }
+  .elt__logreg__section .wrapper .left__side {
+    max-width: 100%;
+    gap: 40px;
+  }
+  .elt__logreg__section .wrapper .left__side form {
+    gap: 40px;
+  }
+  .elt__logreg__section .wrapper .left__side form .social__login {
+    gap: 25px;
+  }
+  .elt__logreg__section .wrapper .left__side form .social__login .inputs {
+    gap: 14px;
+  }
+  .elt__logreg__section .wrapper .right__side {
+    height: 489px;
+    width: 391px;
+  }
+  .elt__logreg__section .wrapper .right__side .product__image {
+    left: -40px;
+  }
+  .elt__logreg__section .wrapper .right__side .product__testimonials {
+    padding: 20px;
+  }
+  .elt__logreg__section .wrapper .right__side .product__testimonials .testimonial__item {
+    gap: 14px;
+  }
+  .elt__logreg__section .wrapper .right__side .product__testimonials .testimonial__item .image {
+    height: 60px;
+    width: 60px;
+  }
+  .elt__logreg__section .wrapper .right__side .product__testimonials .testimonial__item .text .user__testimonial__name {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 @media (min-width: 576px) and (max-width: 767px) {
   /*===== Home Page =====*/
@@ -2612,6 +2839,85 @@
     font-size: 14px;
     line-height: 22px;
   }
+  /*Our Services*/
+  .elt__our__services__section {
+    margin-top: 80px;
+  }
+  .elt__our__services__section .service__item {
+    padding: 20px;
+  }
+  .elt__our__services__section .service__item i {
+    margin-bottom: 22px;
+  }
+  .elt__our__services__section .service__item h6 {
+    margin-bottom: 8px;
+  }
+  .elt__our__services__section .service__item span {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  /*Testimonials Section*/
+  .elt__testimonials__section {
+    margin-top: 70px;
+  }
+  .elt__testimonials__section .wrapper {
+    padding: 50px 0;
+  }
+  .elt__testimonials__section .wrapper .elttestimonials__slider {
+    width: 80%;
+  }
+  .elt__testimonials__section .wrapper .elttestimonials__slider .elttestimonial__item .user__testimonial__profile {
+    height: 60px;
+    width: 60px;
+    margin-bottom: 20px;
+  }
+  .elt__testimonials__section .wrapper .elttestimonials__slider .elttestimonial__item .user__testimonial__text {
+    margin-bottom: 16px;
+  }
+  /*===== Login & Register Page =====*/
+  .elt__logreg__section .wrapper {
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 40px;
+  }
+  .elt__logreg__section .wrapper .logo__2 {
+    left: 20px;
+  }
+  .elt__logreg__section .wrapper .left__side {
+    max-width: 500px;
+    gap: 50px;
+  }
+  .elt__logreg__section .wrapper .left__side form {
+    gap: 50px;
+  }
+  .elt__logreg__section .wrapper .left__side form .social__login {
+    gap: 35px;
+  }
+  .elt__logreg__section .wrapper .left__side form .social__login .inputs {
+    gap: 22px;
+  }
+  .elt__logreg__section .wrapper .right__side {
+    height: 625px;
+    width: 500px;
+  }
+  .elt__logreg__section .wrapper .right__side .product__image {
+    left: -50px;
+  }
+  .elt__logreg__section .wrapper .right__side .product__testimonials .testimonial__item {
+    gap: 20px;
+  }
+  .elt__logreg__section .wrapper .right__side .product__testimonials .testimonial__item .text .image {
+    height: 60px;
+    width: 60px;
+  }
+  .elt__logreg__section .wrapper .right__side .product__testimonials .testimonial__item .text .user__testimonial__name {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .elt__logreg__section .wrapper .right__side .product__testimonials .testimonial__item .text .user__testimonial__desc {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   /*===== Home Page =====*/
@@ -3005,6 +3311,72 @@
     line-height: 54px;
   }
   .elt__aboutus__section .container .content .about__info .item .type {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  /*Our Services*/
+  .elt__our__services__section {
+    margin-top: 100px;
+  }
+  /*Testimonials Section*/
+  .elt__testimonials__section {
+    margin-top: 88px;
+  }
+  .elt__testimonials__section .wrapper {
+    padding: 50px 0;
+  }
+  .elt__testimonials__section .wrapper .elttestimonials__slider {
+    width: 80%;
+  }
+  .elt__testimonials__section .wrapper .elttestimonials__slider .elttestimonial__item .user__testimonial__profile {
+    height: 70px;
+    width: 70px;
+    margin-bottom: 25px;
+  }
+  .elt__testimonials__section .wrapper .elttestimonials__slider .elttestimonial__item .user__testimonial__text {
+    margin-bottom: 20px;
+  }
+  /*===== Login & Register Page =====*/
+  .elt__logreg__section .wrapper .left__side {
+    max-width: 300px;
+    gap: 30px;
+    padding-top: 30px;
+  }
+  .elt__logreg__section .wrapper .left__side .page__title span {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .elt__logreg__section .wrapper .left__side form {
+    gap: 30px;
+  }
+  .elt__logreg__section .wrapper .left__side form .social__login {
+    gap: 18px;
+  }
+  .elt__logreg__section .wrapper .left__side form .social__login .inputs {
+    gap: 14px;
+  }
+  .elt__logreg__section .wrapper .right__side {
+    height: 475px;
+    width: 380px;
+  }
+  .elt__logreg__section .wrapper .right__side .product__image {
+    left: -40px;
+  }
+  .elt__logreg__section .wrapper .right__side .product__testimonials {
+    padding: 25px 15px;
+  }
+  .elt__logreg__section .wrapper .right__side .product__testimonials .testimonial__item {
+    gap: 14px;
+  }
+  .elt__logreg__section .wrapper .right__side .product__testimonials .testimonial__item .text .image {
+    height: 60px;
+    width: 60px;
+  }
+  .elt__logreg__section .wrapper .right__side .product__testimonials .testimonial__item .text .user__testimonial__name {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .elt__logreg__section .wrapper .right__side .product__testimonials .testimonial__item .text .user__testimonial__desc {
     font-size: 14px;
     line-height: 22px;
   }
@@ -3474,6 +3846,61 @@
     font-size: 12px;
     line-height: 20px;
   }
+  /*Our Services*/
+  .elt__our__services__section {
+    margin-top: 120px;
+  }
+  .elt__our__services__section .service__item {
+    padding: 20px;
+  }
+  .elt__our__services__section .service__item i {
+    margin-bottom: 25px;
+  }
+  .elt__our__services__section .service__item h6 {
+    margin-bottom: 8px;
+  }
+  .elt__our__services__section .service__item span {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  /*Testimonials Section*/
+  .elt__testimonials__section {
+    margin-top: 108px;
+  }
+  .elt__testimonials__section .wrapper {
+    padding: 60px 0;
+  }
+  .elt__testimonials__section .wrapper .elttestimonials__slider {
+    width: 720px;
+  }
+  /*===== Login & Register Page =====*/
+  .elt__logreg__section .wrapper .left__side {
+    max-width: 400px;
+    gap: 40px;
+    padding-top: 40px;
+  }
+  .elt__logreg__section .wrapper .left__side form {
+    gap: 40px;
+  }
+  .elt__logreg__section .wrapper .left__side form .social__login {
+    gap: 25px;
+  }
+  .elt__logreg__section .wrapper .left__side form .social__login .inputs {
+    gap: 14px;
+  }
+  .elt__logreg__section .wrapper .right__side {
+    height: 638px;
+    width: 510px;
+  }
+  .elt__logreg__section .wrapper .right__side .product__image {
+    left: -70px;
+  }
+  .elt__logreg__section .wrapper .right__side .product__testimonials {
+    padding: 30px 20px;
+  }
+  .elt__logreg__section .wrapper .right__side .product__testimonials .testimonial__item {
+    gap: 14px;
+  }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
   /*===== Home Page =====*/
@@ -3834,6 +4261,48 @@
     font-size: 14px;
     line-height: 22px;
   }
+  /*Our Services*/
+  .elt__our__services__section {
+    margin-top: 140px;
+  }
+  .elt__our__services__section .service__item {
+    padding: 24px;
+  }
+  .elt__our__services__section .service__item i {
+    margin-bottom: 30px;
+  }
+  /*Testimonials Section*/
+  .elt__testimonials__section {
+    margin-top: 128px;
+  }
+  .elt__testimonials__section .wrapper {
+    padding: 80px 0;
+  }
+  /*===== Login & Register Page =====*/
+  .elt__logreg__section .wrapper .left__side {
+    max-width: 500px;
+    gap: 50px;
+    padding-top: 20px;
+  }
+  .elt__logreg__section .wrapper .left__side form {
+    gap: 50px;
+  }
+  .elt__logreg__section .wrapper .left__side form .social__login {
+    gap: 35px;
+  }
+  .elt__logreg__section .wrapper .left__side form .social__login .inputs {
+    gap: 22px;
+  }
+  .elt__logreg__section .wrapper .right__side {
+    height: 725px;
+    width: 580px;
+  }
+  .elt__logreg__section .wrapper .right__side .product__image {
+    left: -70px;
+  }
+  .elt__logreg__section .wrapper .right__side .product__testimonials .testimonial__item {
+    gap: 20px;
+  }
 }
 @media (min-width: 1400px) and (max-width: 1639px) {
   /*===== Home Page =====*/
@@ -3976,6 +4445,25 @@
   }
   .elt__aboutus__section .container .content .about__info {
     gap: 90px;
+  }
+  /*Our Services*/
+  .elt__our__services__section {
+    margin-top: 160px;
+  }
+  /*Testimonials Section*/
+  .elt__testimonials__section {
+    margin-top: 148px;
+  }
+  .elt__testimonials__section .wrapper {
+    padding: 100px 0;
+  }
+  /*===== Login & Register Page =====*/
+  .elt__logreg__section .wrapper .left__side {
+    max-width: 550px;
+  }
+  .elt__logreg__section .wrapper .right__side {
+    height: 863px;
+    width: 690px;
   }
 }
 @media (min-width: 1640px) and (max-width: 1700px) {

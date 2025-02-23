@@ -706,6 +706,21 @@
 }
 /*** End of Pagination ***/
 
+/*** Start of Swiper Slider Dots ***/
+.swiper-pagination-bullet {
+    height: 10px;
+    width: 10px;
+	background: base.$backgroundPrimaryColor;
+	border: 2px solid base.$base200;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background: base.$brandSecondaryColor;
+    border-color: base.$brandSecondaryColor;
+}
+/*** End of Swiper Slider Dots ***/
+
 /*** Start of Table ***/
 table {
     display: block;
