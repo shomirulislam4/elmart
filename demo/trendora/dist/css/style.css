@@ -3846,6 +3846,9 @@ table tbody tr td {
 }
 .elt__shop__section .elt__shop__topbar .itemsshown {
   color: #AFBACA;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 @media screen and (min-width: 200px) and (max-width: 289px) {
   .elt__shop__section .elt__shop__topbar .itemsshown {
@@ -3897,6 +3900,7 @@ table tbody tr td {
 }
 .elt__shop__section .elt__shop__topbar form {
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 20px;
 }
